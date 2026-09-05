@@ -1,0 +1,8 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  # opencollective || exit 0 -- zararsız funding/bağış mesajı, bilinen NestJS deseni
+  '@nestjs/core': true
+  # node install.js -- platforma özel esbuild binary'sini seçer, drizzle-kit'in transitive bağımlılığı
+  esbuild: true

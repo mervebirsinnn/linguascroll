@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "noEmit": false,
+    "types": ["jest", "node"]
+  },
+  // tsconfig.json'daki *.test.ts exclude'unu burada tersine çeviriyoruz — ts-jest
+  // test dosyalarını TAM OLARAK bu tsconfig ile derliyor.
+  "exclude": []
+}

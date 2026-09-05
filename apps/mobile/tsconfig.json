@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true
+  },
+  // *.test.ts app-level typecheck'ten (bu dosya) hariç — jest globals (describe/it/
+  // expect) app runtime tipinin parçası değil. Test dosyaları kendi tsconfig'iyle
+  // (tsconfig.jest.json, bkz. jest.config.js) tip kontrolünden geçiyor.
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"]
+}

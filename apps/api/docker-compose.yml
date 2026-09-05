@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: linguascroll
+      POSTGRES_PASSWORD: linguascroll
+      POSTGRES_DB: linguascroll
+    ports:
+      - "5432:5432"
+    volumes:
+      - linguascroll-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  linguascroll-postgres-data:
