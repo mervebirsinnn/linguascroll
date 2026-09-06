@@ -1,12 +1,14 @@
 import { Inject, Injectable } from "@nestjs/common";
 import { eq, inArray } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
+import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { quizSchema, type Quiz } from "./quiz";
 import { quizOptionsTable, quizzesTable } from "./quizzes.schema";
 
 type QuizOptionRow = {
   quizId: string;
   question: string;
+  sourceSegmentId: string;
   optionId: string;
   optionText: string;
   isCorrect: boolean;
@@ -16,6 +18,7 @@ type QuizOptionRow = {
 const QUIZ_OPTION_ROW_COLUMNS = {
   quizId: quizzesTable.id,
   question: quizzesTable.question,
+  sourceSegmentId: quizzesTable.sourceTranscriptSegmentId,
   optionId: quizOptionsTable.id,
   optionText: quizOptionsTable.text,
   isCorrect: quizOptionsTable.isCorrect,
@@ -29,16 +32,6 @@ const QUIZ_OPTION_ROW_COLUMNS = {
 @Injectable()
 export class QuizzesRepository {
   constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
-
-  async findQuizFeed(): Promise<Quiz[]> {
-    const rows = await this.db
-      .select(QUIZ_OPTION_ROW_COLUMNS)
-      .from(quizzesTable)
-      .innerJoin(quizOptionsTable, eq(quizOptionsTable.quizId, quizzesTable.id))
-      .orderBy(quizzesTable.id, quizOptionsTable.position);
-
-    return groupRowsIntoQuizzes(rows);
-  }
 
   async findQuizById(quizId: string): Promise<Quiz | null> {
     const rows = await this.db
@@ -70,6 +63,41 @@ export class QuizzesRepository {
       .orderBy(quizzesTable.id, quizOptionsTable.position);
     return groupRowsIntoQuizzes(rows);
   }
+
+  /**
+   * Chunk 10 — feed composition-time (startSession) ihtiyacı: bu session'ın
+   * ranklandığı video id'leri için "hangi quiz hangi videodan geliyor" bilgisi,
+   * TEK bir sorguda (quizzes JOIN quiz_options JOIN video_transcript_segments,
+   * WHERE segments.video_id IN (...)) — id başına ayrı sorgu YOK. Dönüş,
+   * `{videoId, quiz}` çiftleri: quiz'i HANGİ videoya gruplayacağı (Map'e
+   * çevirme) FeedService/QuizzesService'in işi, repository sadece ham
+   * eşleşmeyi taşıyor.
+   *
+   * `source_video_id` DB'de YOK (bkz. quizzes.schema.ts) — video_id burada
+   * segment JOIN'i üzerinden türetiliyor, quiz'in kendisinde hiç depolanmıyor.
+   */
+  async findQuizzesForVideos(videoIds: string[]): Promise<{ videoId: string; quiz: Quiz }[]> {
+    if (videoIds.length === 0) {
+      return [];
+    }
+    const rows = await this.db
+      .select({ ...QUIZ_OPTION_ROW_COLUMNS, videoId: videoTranscriptSegmentsTable.videoId })
+      .from(quizzesTable)
+      .innerJoin(quizOptionsTable, eq(quizOptionsTable.quizId, quizzesTable.id))
+      .innerJoin(videoTranscriptSegmentsTable, eq(videoTranscriptSegmentsTable.id, quizzesTable.sourceTranscriptSegmentId))
+      .where(inArray(videoTranscriptSegmentsTable.videoId, videoIds))
+      .orderBy(quizzesTable.id, quizOptionsTable.position);
+
+    const videoIdByQuizId = new Map<string, string>();
+    for (const row of rows) {
+      videoIdByQuizId.set(row.quizId, row.videoId);
+    }
+
+    return groupRowsIntoQuizzes(rows).map((quiz) => ({
+      videoId: videoIdByQuizId.get(quiz.id)!,
+      quiz,
+    }));
+  }
 }
 
 /**
@@ -82,6 +110,7 @@ function groupRowsIntoQuizzes(rows: QuizOptionRow[]): Quiz[] {
   type GroupedQuiz = {
     id: string;
     question: string;
+    sourceSegmentId: string;
     options: { id: string; text: string; isCorrect: boolean; position: number }[];
   };
   const quizzesById = new Map<string, GroupedQuiz>();
@@ -89,7 +118,7 @@ function groupRowsIntoQuizzes(rows: QuizOptionRow[]): Quiz[] {
   for (const row of rows) {
     let quiz = quizzesById.get(row.quizId);
     if (!quiz) {
-      quiz = { id: row.quizId, question: row.question, options: [] };
+      quiz = { id: row.quizId, question: row.question, sourceSegmentId: row.sourceSegmentId, options: [] };
       quizzesById.set(row.quizId, quiz);
     }
     quiz.options.push({ id: row.optionId, text: row.optionText, isCorrect: row.isCorrect, position: row.position });
@@ -99,6 +128,11 @@ function groupRowsIntoQuizzes(rows: QuizOptionRow[]): Quiz[] {
     const orderedOptions = [...quiz.options]
       .sort((a, b) => a.position - b.position)
       .map(({ id, text, isCorrect }) => ({ id, text, isCorrect }));
-    return quizSchema.parse({ id: quiz.id, question: quiz.question, options: orderedOptions });
+    return quizSchema.parse({
+      id: quiz.id,
+      question: quiz.question,
+      sourceSegmentId: quiz.sourceSegmentId,
+      options: orderedOptions,
+    });
   });
 }

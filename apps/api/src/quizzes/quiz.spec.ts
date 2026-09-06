@@ -4,6 +4,7 @@ describe("quizSchema — 'tam olarak bir doğru cevap' invariant'ı", () => {
   const baseQuiz = {
     id: "00000000-0000-4000-8000-000000000001",
     question: "test",
+    sourceSegmentId: "00000000-0000-4000-8000-000000000099",
   };
 
   it("tam olarak bir isCorrect:true varsa kabul eder", () => {

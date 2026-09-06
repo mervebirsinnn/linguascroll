@@ -10,3 +10,20 @@ build/
 # Local Claude Code runtime state (machine/session-specific, not project config)
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
+
+# Chunk 10 content-generation scratch (TTS wav intermediates, not shipped)
+apps/api/scripts/tts-tmp/
+
+# Chunk 11 STT pipeline — kullanıcının kendi (izinli) video dosyaları ve
+# ephemeral/reviewable çıktılar hiç commit edilmemeli. input/.gitkeep izlenir
+# (klasörün kendisi repo'da var olsun diye) — içindeki gerçek video dosyaları
+# ignore edilir. tmp/ (wav+candidate, run-id'li scratch) ve output/ (draft.json/
+# preview.srt/qa.json, insan-review edilebilir ama kişisel/telif taşıyan
+# transcript içeriği) TAMAMEN ignore — dist/ zaten üstte global olarak ignore.
+apps/api/scripts/stt/input/*
+!apps/api/scripts/stt/input/.gitkeep
+apps/api/scripts/stt/tmp/
+apps/api/scripts/stt/output/
+# Python byte-code cache (cleanup_test.py/transcribe.py çalıştırılınca oluşur) — kaynak değil.
+__pycache__/
+*.pyc

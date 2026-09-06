@@ -1,4 +1,4 @@
-import type { FeedQuiz, PlayableVideo, VideoVocabularyItem } from "@linguascroll/shared-types";
+import type { FeedQuiz, PlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
 import { decodeFeedCursor } from "./feed-cursor";
 import { FeedService } from "./feed.service";
 import type { PersonalizationService } from "../personalization/personalization.service";
@@ -59,24 +59,35 @@ function makeQuiz(n: number): FeedQuiz {
 }
 
 /**
- * MAX_SESSION_VIDEOS=27'yi TAM dolduran ve MAX_SESSION_FEED_ITEMS=36'ya TAM
- * oturan bir senaryo: 30 video (ilk 27'si kullanılacak, son 3'ü bound testi için
- * fazladan), 9 quiz (27/3 = tam 9, kalan yok). personalizationService identity
- * olduğu için nihai plan sırası aynen bu video sırası + her 3 videoda bir quiz:
+ * MAX_SESSION_VIDEOS=27'yi TAM dolduran ve MAX_SESSION_FEED_ITEMS=40'a TAM oturan
+ * bir senaryo (Chunk 10, 2:1 cadence): 30 video (ilk 27'si kullanılacak, son 3'ü
+ * bound testi için fazladan). 13 quiz — HER video ÇİFTİNİN (v1,v2)/(v3,v4)/...
+ * ikinci videosundan kaynaklanıyor (grubun EN YENİ videosuyla eşleşme davranışını
+ * doğal olarak sergiler, bkz. findUnusedQuizForGroup). v27 tek kalır (eksik grup),
+ * quiz'siz. Nihai plan (personalizationService identity olduğu için bu video
+ * sırasıyla BİREBİR aynı):
  *
- * v1,v2,v3,q1, v4,v5,v6,q2, v7,v8,v9,q3, v10,v11,v12,q4, v13,v14,v15,q5,
- * v16,v17,v18,q6, v19,v20,v21,q7, v22,v23,v24,q8, v25,v26,v27,q9   (36 item, 3 sayfa × 12)
+ * v1,v2,q1, v3,v4,q2, v5,v6,q3, v7,v8,q4, v9,v10,q5, v11,v12,q6, v13,v14,q7,
+ * v15,v16,q8, v17,v18,q9, v19,v20,q10, v21,v22,q11, v23,v24,q12, v25,v26,q13, v27
+ * (40 item, PAGE_SIZE=12'ye göre: 12+12+12+4 — 4 sayfa)
  */
 function makeFullSessionVideos(): PlayableVideo[] {
   return Array.from({ length: 30 }, (_, i) => makeVideo(i + 1));
 }
-function makeFullSessionQuizzes(): FeedQuiz[] {
-  return Array.from({ length: 9 }, (_, i) => makeQuiz(i + 1));
+
+/** Her (v_{2k-1}, v_{2k}) çiftinin İKİNCİ videosuna (v_{2k}) bağlı bir quiz. */
+function makeFullSessionQuizzesByVideoId(): Map<string, FeedQuiz[]> {
+  const map = new Map<string, FeedQuiz[]>();
+  for (let k = 1; k <= 13; k++) {
+    map.set(vId(k * 2), [makeQuiz(k)]);
+  }
+  return map;
 }
 
 type ServiceOverrides = {
   videos?: PlayableVideo[];
-  quizzes?: FeedQuiz[];
+  /** QuizzesService.getQuizzesGroupedByVideoId'nin gerçek DB davranışını simüle eder: sourceVideoId → quiz'ler. */
+  quizzesByVideoId?: Map<string, FeedQuiz[]>;
   /** Gerçek DB batch-resolve'unu simüle eder: id sırasını KARIŞTIRABİLİR, bazı id'leri hiç DÖNDÜRMEYEBİLİR (silinmiş). */
   resolveVideosByIds?: (ids: string[]) => PlayableVideo[];
   resolveQuizzesByIds?: (ids: string[]) => FeedQuiz[];
@@ -90,13 +101,17 @@ type ServiceOverrides = {
    */
   vocabularyByVideoId?: Map<string, VideoVocabularyItem[]>;
   onGetVocabularyForVideos?: (videoIds: string[], userId: string) => void;
+  /** Chunk 10 — VideosService.getSegmentsForVideos stub'ı, vocabulary'yle aynı desen. */
+  segmentsByVideoId?: Map<string, TranscriptSegment[]>;
+  onGetSegmentsForVideos?: (videoIds: string[]) => void;
+  onGetQuizzesGroupedByVideoId?: (videoIds: string[]) => void;
 };
 
 function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   const videos = overrides.videos ?? makeFullSessionVideos();
-  const quizzes = overrides.quizzes ?? makeFullSessionQuizzes();
+  const quizzesByVideoId = overrides.quizzesByVideoId ?? makeFullSessionQuizzesByVideoId();
   const videoById = new Map(videos.map((v) => [v.id, v]));
-  const quizById = new Map(quizzes.map((q) => [q.id, q]));
+  const allQuizzesById = new Map(Array.from(quizzesByVideoId.values()).flat().map((q) => [q.id, q]));
 
   const videosService = {
     getVideoFeed: () => Promise.resolve(videos),
@@ -106,15 +121,29 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
           ? overrides.resolveVideosByIds(ids)
           : ids.map((id) => videoById.get(id)).filter((v): v is PlayableVideo => !!v),
       ),
+    getSegmentsForVideos: (videoIds: string[]) => {
+      overrides.onGetSegmentsForVideos?.(videoIds);
+      return Promise.resolve(overrides.segmentsByVideoId ?? new Map<string, TranscriptSegment[]>());
+    },
   } as unknown as VideosService;
 
   const quizzesService = {
-    getQuizFeed: () => Promise.resolve(quizzes),
+    getQuizzesGroupedByVideoId: (videoIds: string[]) => {
+      overrides.onGetQuizzesGroupedByVideoId?.(videoIds);
+      const requested = new Set(videoIds);
+      const filtered = new Map<string, FeedQuiz[]>();
+      for (const [videoId, quizzes] of quizzesByVideoId) {
+        if (requested.has(videoId)) {
+          filtered.set(videoId, quizzes);
+        }
+      }
+      return Promise.resolve(filtered);
+    },
     getFeedQuizzesByIds: (ids: string[]) =>
       Promise.resolve(
         overrides.resolveQuizzesByIds
           ? overrides.resolveQuizzesByIds(ids)
-          : ids.map((id) => quizById.get(id)).filter((q): q is FeedQuiz => !!q),
+          : ids.map((id) => allQuizzesById.get(id)).filter((q): q is FeedQuiz => !!q),
       ),
   } as unknown as QuizzesService;
 
@@ -145,6 +174,9 @@ function itemTypes(items: { type: string }[]): string[] {
 function videoIds(items: ({ type: "video"; video: PlayableVideo } | { type: "quiz"; quiz: FeedQuiz })[]): string[] {
   return items.filter((item): item is { type: "video"; video: PlayableVideo } => item.type === "video").map((item) => item.video.id);
 }
+function quizIds(items: ({ type: "video"; video: PlayableVideo } | { type: "quiz"; quiz: FeedQuiz })[]): string[] {
+  return items.filter((item): item is { type: "quiz"; quiz: FeedQuiz } => item.type === "quiz").map((item) => item.quiz.id);
+}
 
 describe("FeedService.getFeed — session start (cursor yok)", () => {
   it("ilk sayfa tam PAGE_SIZE (12) FeedItem döner, nextCursor non-null", async () => {
@@ -154,12 +186,13 @@ describe("FeedService.getFeed — session start (cursor yok)", () => {
     expect(page.nextCursor).not.toBeNull();
   });
 
-  it("3:1 video:quiz composition korunuyor (ilk sayfa)", async () => {
+  it("2:1 video:quiz composition korunuyor (ilk sayfa) — Chunk 10", async () => {
     const page = await makeFeedService().getFeed(TEST_USER_ID);
     expect(itemTypes(page.items)).toEqual([
-      "video", "video", "video", "quiz",
-      "video", "video", "video", "quiz",
-      "video", "video", "video", "quiz",
+      "video", "video", "quiz",
+      "video", "video", "quiz",
+      "video", "video", "quiz",
+      "video", "video", "quiz",
     ]);
   });
 
@@ -184,24 +217,87 @@ describe("FeedService.getFeed — session start (cursor yok)", () => {
   });
 });
 
+describe("FeedService.getFeed — quiz kaynak-eşleşmesi (Chunk 10)", () => {
+  it("bir video grubu için eşleşen quiz yoksa, quiz HİÇ gösterilmez (alakasız quiz interleave edilmez)", async () => {
+    const videos = [makeVideo(1), makeVideo(2), makeVideo(3), makeVideo(4)];
+    // Sadece v4 için bir quiz var — (v1,v2) grubunun eşleşeni yok.
+    const quizzesByVideoId = new Map([[vId(4), [makeQuiz(1)]]]);
+    const service = makeFeedService({ videos, quizzesByVideoId });
+
+    const page = await service.getFeed(TEST_USER_ID);
+    expect(itemTypes(page.items)).toEqual(["video", "video", "video", "video", "quiz"]);
+    expect(quizIds(page.items)).toEqual([qId(1)]);
+  });
+
+  it("bir grupta HEM ilk HEM ikinci video için quiz varsa, grubun EN YENİ (ikinci) videosununki tercih edilir", async () => {
+    const videos = [makeVideo(1), makeVideo(2)];
+    const quizzesByVideoId = new Map([
+      [vId(1), [makeQuiz(1)]],
+      [vId(2), [makeQuiz(2)]],
+    ]);
+    const service = makeFeedService({ videos, quizzesByVideoId });
+
+    const page = await service.getFeed(TEST_USER_ID);
+    expect(quizIds(page.items)).toEqual([qId(2)]);
+  });
+
+  it("ikinci videonun quiz'i yoksa ilk videonunki kullanılır (grup içinde geriye doğru arama)", async () => {
+    const videos = [makeVideo(1), makeVideo(2)];
+    const quizzesByVideoId = new Map([[vId(1), [makeQuiz(1)]]]);
+    const service = makeFeedService({ videos, quizzesByVideoId });
+
+    const page = await service.getFeed(TEST_USER_ID);
+    expect(quizIds(page.items)).toEqual([qId(1)]);
+  });
+
+  it("aynı quiz iki farklı gruba eşleşse bile, aynı feed üretiminde SADECE bir kez gösterilir", async () => {
+    const videos = [makeVideo(1), makeVideo(2), makeVideo(3), makeVideo(4)];
+    const sharedQuiz = makeQuiz(1);
+    // Kurgusal ama savunmacı bir senaryo: aynı quiz objesi iki farklı videoya bağlı.
+    const quizzesByVideoId = new Map([
+      [vId(2), [sharedQuiz]],
+      [vId(4), [sharedQuiz]],
+    ]);
+    const service = makeFeedService({ videos, quizzesByVideoId });
+
+    const page = await service.getFeed(TEST_USER_ID);
+    expect(quizIds(page.items)).toEqual([qId(1)]);
+  });
+
+  it("QuizzesService.getQuizzesGroupedByVideoId, SADECE bu session'ın bounded video id'leriyle çağrılır", async () => {
+    const calls: string[][] = [];
+    const service = makeFeedService({ onGetQuizzesGroupedByVideoId: (ids) => calls.push(ids) });
+    await service.getFeed(TEST_USER_ID);
+
+    expect(calls).toHaveLength(1);
+    expect(calls[0]).toHaveLength(27);
+    expect(calls[0]?.[0]).toBe(vId(1));
+    expect(calls[0]?.[26]).toBe(vId(27));
+  });
+});
+
 describe("FeedService.getFeed — pagination continuation", () => {
-  it("frozen sırayı koruyarak devam eder (3 sayfa, 36 item, exact bound)", async () => {
+  it("frozen sırayı koruyarak devam eder (4 sayfa, 40 item, exact bound — Chunk 10)", async () => {
     const service = makeFeedService();
 
     const page1 = await service.getFeed(TEST_USER_ID);
     expect(itemTypes(page1.items)).toEqual([
-      "video", "video", "video", "quiz", "video", "video", "video", "quiz", "video", "video", "video", "quiz",
+      "video", "video", "quiz", "video", "video", "quiz", "video", "video", "quiz", "video", "video", "quiz",
     ]);
-    expect(videoIds(page1.items)).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8), vId(9)]);
+    expect(videoIds(page1.items)).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8)]);
 
     const page2 = await service.getFeed(TEST_USER_ID, page1.nextCursor ?? undefined);
-    expect(videoIds(page2.items)).toEqual([vId(10), vId(11), vId(12), vId(13), vId(14), vId(15), vId(16), vId(17), vId(18)]);
+    expect(videoIds(page2.items)).toEqual([vId(9), vId(10), vId(11), vId(12), vId(13), vId(14), vId(15), vId(16)]);
 
     const page3 = await service.getFeed(TEST_USER_ID, page2.nextCursor ?? undefined);
-    expect(videoIds(page3.items)).toEqual([vId(19), vId(20), vId(21), vId(22), vId(23), vId(24), vId(25), vId(26), vId(27)]);
+    expect(videoIds(page3.items)).toEqual([vId(17), vId(18), vId(19), vId(20), vId(21), vId(22), vId(23), vId(24)]);
+
+    const page4 = await service.getFeed(TEST_USER_ID, page3.nextCursor ?? undefined);
+    expect(itemTypes(page4.items)).toEqual(["video", "video", "quiz", "video"]);
+    expect(videoIds(page4.items)).toEqual([vId(25), vId(26), vId(27)]);
 
     // Son sayfa → nextCursor null (Chunk 8 kararı).
-    expect(page3.nextCursor).toBeNull();
+    expect(page4.nextCursor).toBeNull();
   });
 
   it("sayfalar arasında aynı video hiç tekrar etmiyor (global dedupe zaten session start'ta tek sefer oluşuyor)", async () => {
@@ -219,11 +315,10 @@ describe("FeedService.getFeed — pagination continuation", () => {
     // pagination bunu hiç yeniden sıralamamalı, sadece dilimlemeli.
     const scrambledOrder = [vId(5), vId(1), vId(9), vId(3), vId(7), vId(2), vId(8), vId(4), vId(6)];
     const videos = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => makeVideo(n));
-    const quizzes = [makeQuiz(1), makeQuiz(2), makeQuiz(3)];
 
     const service = makeFeedService({
       videos,
-      quizzes,
+      quizzesByVideoId: new Map(),
       personalize: (candidates) => scrambledOrder.map((id) => candidates.find((v) => v.id === id)!),
     });
 
@@ -248,7 +343,7 @@ describe("FeedService.getFeed — batch resolution & content-change davranışı
 
     const page = await service.getFeed(TEST_USER_ID);
     // Batch sonucu ters gelse de, response frozen ref sırasında (v1,v2,v3,...) kalmalı.
-    expect(videoIds(page.items)).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8), vId(9)]);
+    expect(videoIds(page.items)).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8)]);
   });
 
   it("silinmiş bir frozen item sadece o slot'u atlıyor, diğer item'ların relative sırası bozulmuyor", async () => {
@@ -257,19 +352,19 @@ describe("FeedService.getFeed — batch resolution & content-change davranışı
     });
 
     const page = await service.getFeed(TEST_USER_ID);
-    expect(videoIds(page.items)).toEqual([vId(1), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8), vId(9)]);
-    // İlk sayfa (12 ham slot): v1,v2,v3,q1,v4,v5,v6,q2,v7,v8,v9,q3 — v2 atlanınca
-    // 11 item kalır, diğer TÜM item'ların (3 quiz dahil) relative sırası aynen korunur.
+    expect(videoIds(page.items)).toEqual([vId(1), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8)]);
+    // İlk sayfa (12 ham slot): v1,v2,q1,v3,v4,q2,v5,v6,q3,v7,v8,q4 — v2 atlanınca
+    // 11 item kalır, diğer TÜM item'ların (4 quiz dahil) relative sırası aynen korunur.
     expect(itemTypes(page.items)).toEqual([
-      "video", "video", "quiz", "video", "video", "video", "quiz", "video", "video", "video", "quiz",
+      "video", "quiz", "video", "video", "quiz", "video", "video", "quiz", "video", "video", "quiz",
     ]);
   });
 
   it("bir ham sayfanın TAMAMI unavailable ise, next cursor RAW SLOT'a göre ilerliyor (resolve edilen item sayısına göre DEĞİL)", async () => {
-    // İlk 12 ham slot'un (position 0-11: v1,v2,v3,q1,v4,v5,v6,q2,v7,v8,v9,q3) TÜM
+    // İlk 12 ham slot'un (position 0-11: v1,v2,q1,v3,v4,q2,v5,v6,q3,v7,v8,q4) TÜM
     // ref'lerini "silinmiş" say — sayfa TAMAMEN boş resolve olmalı ki bridging tetiklensin.
-    const deletedVideoIds = new Set([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8), vId(9)]);
-    const deletedQuizIds = new Set([qId(1), qId(2), qId(3)]);
+    const deletedVideoIds = new Set([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8)]);
+    const deletedQuizIds = new Set([qId(1), qId(2), qId(3), qId(4)]);
     const service = makeFeedService({
       resolveVideosByIds: (ids) => ids.filter((id) => !deletedVideoIds.has(id)).map((id) => ({ ...makeVideo(1), id })),
       resolveQuizzesByIds: (ids) => ids.filter((id) => !deletedQuizIds.has(id)).map((id) => ({ ...makeQuiz(1), id })),
@@ -279,7 +374,7 @@ describe("FeedService.getFeed — batch resolution & content-change davranışı
 
     // Sunucu ilk (tamamen boş) dilimi atlayıp ikinci dilimden (position 12-23) döndü.
     expect(page.items.length).toBeGreaterThan(0);
-    expect(videoIds(page.items)[0]).toBe(vId(10));
+    expect(videoIds(page.items)[0]).toBe(vId(9));
 
     // Kritik doğrulama: nextCursor'ın position'ı 24 olmalı (12 + 12), 12 DEĞİL —
     // aksi halde bir sonraki istek aynı (bilinen-boş) dilimi tekrar döndürürdü.
@@ -337,19 +432,66 @@ describe("FeedService.getFeed — vocabulary enrichment (Chunk 9)", () => {
 
     expect(calls).toHaveLength(1);
     expect(calls[0]?.userId).toBe(TEST_USER_ID);
-    expect(calls[0]?.videoIds).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8), vId(9)]);
+    expect(calls[0]?.videoIds).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8)]);
   });
 
-  it("mevcut 3:1 quiz cadence ve dedupe, vocabulary enrichment sonrası da regression olmadan korunuyor", async () => {
+  it("mevcut 2:1 quiz cadence ve dedupe, vocabulary enrichment sonrası da regression olmadan korunuyor", async () => {
     const vocabularyByVideoId = new Map<string, VideoVocabularyItem[]>([[vId(1), [makeVocabularyItem(1, true)]]]);
     const service = makeFeedService({ vocabularyByVideoId });
 
     const page1 = await service.getFeed(TEST_USER_ID);
     expect(itemTypes(page1.items)).toEqual([
-      "video", "video", "video", "quiz", "video", "video", "video", "quiz", "video", "video", "video", "quiz",
+      "video", "video", "quiz", "video", "video", "quiz", "video", "video", "quiz", "video", "video", "quiz",
     ]);
     const page2 = await service.getFeed(TEST_USER_ID, page1.nextCursor ?? undefined);
     const allIds = [...videoIds(page1.items), ...videoIds(page2.items)];
     expect(new Set(allIds).size).toBe(allIds.length);
+  });
+});
+
+describe("FeedService.getFeed — transcript segment enrichment (Chunk 10)", () => {
+  function makeSegment(n: number): TranscriptSegment {
+    return {
+      id: uuidFor(5, n),
+      ordinal: 1,
+      startMs: 0,
+      endMs: 1000,
+      text: `segment-${n}`,
+      englishExplanation: `en-${n}`,
+      turkishExplanation: `tr-${n}`,
+      learningPoints: [],
+    };
+  }
+
+  it("her video'nun segments'i VideosService'ten gelen değerle dolduruluyor", async () => {
+    const segmentsByVideoId = new Map<string, TranscriptSegment[]>([[vId(1), [makeSegment(1)]]]);
+    const service = makeFeedService({ segmentsByVideoId });
+
+    const page = await service.getFeed(TEST_USER_ID);
+    const firstVideo = page.items[0];
+    if (firstVideo?.type !== "video") {
+      throw new Error("Test kurgusu bozuk");
+    }
+    expect(firstVideo.video.segments).toEqual([makeSegment(1)]);
+  });
+
+  it("segment'i olmayan bir video için boş dizi döner (undefined değil)", async () => {
+    const service = makeFeedService({ segmentsByVideoId: new Map() });
+    const page = await service.getFeed(TEST_USER_ID);
+    const firstVideo = page.items[0];
+    if (firstVideo?.type !== "video") {
+      throw new Error("Test kurgusu bozuk");
+    }
+    expect(firstVideo.video.segments).toEqual([]);
+  });
+
+  it("segment lookup TEK bir batch çağrı — sayfadaki TÜM video id'leriyle (N+1 yok)", async () => {
+    const calls: string[][] = [];
+    const service = makeFeedService({ onGetSegmentsForVideos: (videoIds) => calls.push(videoIds) });
+
+    await service.getFeed(TEST_USER_ID);
+
+    expect(calls).toHaveLength(1);
+    expect(calls[0]).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8)]);
   });
 });

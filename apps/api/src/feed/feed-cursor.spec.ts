@@ -30,7 +30,7 @@ describe("feed-cursor encode/decode roundtrip", () => {
     expect(decodeFeedCursor(cursor, SECRET)).toEqual(payload);
   });
 
-  it("MAX_SESSION_FEED_ITEMS (36) ile TAM dolu, legitimate bir plan roundtrip'i başarılı olur", () => {
+  it("MAX_SESSION_FEED_ITEMS ile TAM dolu, legitimate bir plan roundtrip'i başarılı olur", () => {
     const payload = makePayload({ plan: makePlan(MAX_SESSION_FEED_ITEMS), position: MAX_SESSION_FEED_ITEMS });
     const cursor = encodeFeedCursor(payload, SECRET);
     expect(decodeFeedCursor(cursor, SECRET)).toEqual(payload);

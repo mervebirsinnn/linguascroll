@@ -24,8 +24,15 @@ export const FEED_CURSOR_VERSION = 1;
  * uyguladığı ayrı bir invariant. Amaç: forged/oversized bir cursor'ın server'a
  * devasa bir plan dizisi (ve dolayısıyla devasa bir batch-resolve sorgusu)
  * enjekte etmesini önlemek (Chunk 8 review düzeltmesi #1).
+ *
+ * Chunk 10: FeedService'teki MAX_SESSION_VIDEOS=27 + VIDEOS_PER_QUIZ=2 (2:1
+ * cadence) ile üretilebilecek GERÇEK teorik maksimum plan uzunluğu
+ * 27 + floor(27/2) = 40 — 36 (eski 3:1 cadence'in üst sınırı) artık bunu
+ * karşılamıyordu. Keyfi bir "güvenlik payı" EKLENMEDİ: 40, cadence
+ * değiştirilmediği sürece interleaveFeed'in üretebileceği MUTLAK üst sınır
+ * (assertFitsSessionBound bunu her session'da runtime'da doğrular).
  */
-export const MAX_SESSION_FEED_ITEMS = 36;
+export const MAX_SESSION_FEED_ITEMS = 40;
 
 const feedPlanItemRefSchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("video"), id: z.string().uuid() }),

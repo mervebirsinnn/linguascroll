@@ -42,12 +42,13 @@ export function createTestDatabaseConnection(): { db: NodePgDatabase; pool: Pool
 /**
  * Chunk 5 ile videos'un yanına quizzes/quiz_options eklendi, Chunk 6 ile
  * users/video_watch_events/quiz_answer_events, Chunk 9 ile words/video_words/
- * user_saved_words — hepsi tek bir TRUNCATE ifadesinde listeleniyor (Postgres,
- * aynı ifadede listelenen FK'li tabloları CASCADE'e gerek kalmadan birlikte
- * temizler).
+ * user_saved_words, Chunk 10 ile video_transcript_segments/
+ * transcript_segment_learning_points — hepsi tek bir TRUNCATE ifadesinde
+ * listeleniyor (Postgres, aynı ifadede listelenen FK'li tabloları CASCADE'e
+ * gerek kalmadan birlikte temizler).
  */
 export async function truncateTestTables(db: NodePgDatabase): Promise<void> {
   await db.execute(
-    sql`TRUNCATE TABLE videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words`,
+    sql`TRUNCATE TABLE videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points`,
   );
 }

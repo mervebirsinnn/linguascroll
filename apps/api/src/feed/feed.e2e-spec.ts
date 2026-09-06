@@ -8,6 +8,8 @@ import request from "supertest";
 import { AppModule } from "../app.module";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
+import { transcriptSegmentLearningPointsTable } from "../videos/transcript-segment-learning-points.schema";
+import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { videoWatchEventsTable } from "../videos/video-watch-events.schema";
 import { videosTable } from "../videos/videos.schema";
 import { quizOptionsTable, quizzesTable } from "../quizzes/quizzes.schema";
@@ -49,7 +51,7 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   async function createVideo(topic: string, durationMs = 10000): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic, durationMs })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-working-out-again", topic, durationMs })
       .returning();
     if (!video) {
       throw new Error("Beklenen video insert edilemedi");
@@ -57,13 +59,37 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     return video.id;
   }
 
-  async function createQuiz(question: string): Promise<void> {
-    const [quiz] = await db.insert(quizzesTable).values({ question }).returning();
+  /** Chunk 10 — bir segment yoksa quiz artık var olamaz (source_transcript_segment_id NOT NULL). */
+  async function createSegment(videoId: string, ordinal = 1): Promise<string> {
+    const [segment] = await db
+      .insert(videoTranscriptSegmentsTable)
+      .values({
+        videoId,
+        ordinal,
+        startMs: 0,
+        endMs: 1000,
+        text: `segment-${ordinal}`,
+        englishExplanation: "english explanation",
+        turkishExplanation: "türkçe açıklama",
+      })
+      .returning();
+    if (!segment) {
+      throw new Error("Beklenen transcript segment insert edilemedi");
+    }
+    return segment.id;
+  }
+
+  /**
+   * Chunk 10 — quiz artık HANGİ videodan geldiğini (segment üzerinden) taşımak
+   * zorunda: `videoId` parametresi bu yüzden zorunlu (eski generic/video-bağımsız
+   * quiz artık DB seviyesinde imkansız).
+   */
+  async function createQuiz(question: string, videoId: string): Promise<void> {
+    const segmentId = await createSegment(videoId);
+    const [quiz] = await db.insert(quizzesTable).values({ question, sourceTranscriptSegmentId: segmentId }).returning();
     if (!quiz) {
       throw new Error("Beklenen quiz insert edilemedi");
     }
-    // findQuizFeed()/findQuizzesByIds() quiz_options ile INNER JOIN yapıyor —
-    // option'sız bir quiz zaten answerable değil, bu yüzden feed'e hiç girmez.
     await db.insert(quizOptionsTable).values([
       { quizId: quiz.id, text: "doğru", isCorrect: true, position: 0 },
       { quizId: quiz.id, text: "yanlış", isCorrect: false, position: 1 },
@@ -112,14 +138,11 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
 
   it("video ve quiz item'larını doğru contract ile döner; internal/persistence-only alanlar sızmaz", async () => {
     const userId = await createUser();
-    // Interleave policy 3 video → 1 quiz — quiz'in feed'de gerçekten çıkması için
-    // en az 3 video gerekiyor, tek video fixture'ı quiz'i asla tetiklemezdi.
-    await db.insert(videosTable).values([
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "travel", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-2", topic: "career", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-3", topic: "humor", durationMs: 1000 },
-    ]);
-    await createQuiz("feed-e2e-question");
+    // Interleave policy (Chunk 10) 2 video → 1 quiz — quiz'in feed'de gerçekten
+    // çıkması için hem 2 video (bir grup tamamlanmalı) HEM de quiz'in o gruptaki
+    // bir videodan kaynaklanması gerekiyor (source-matching, bkz. feed.service.ts).
+    const [_videoId1, videoId2] = await Promise.all([createVideo("travel"), createVideo("career")]);
+    await createQuiz("feed-e2e-question", videoId2);
 
     const response = await getFeed(userId);
     expect(response.status).toBe(200);
@@ -158,23 +181,29 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     }
   });
 
-  it("3 video : 1 quiz composition, personalization sonrası da korunuyor (regression)", async () => {
+  it("2 video : 1 quiz composition (Chunk 10), personalization sonrası da korunuyor (regression)", async () => {
     const userId = await createUser();
-    await db.insert(videosTable).values([
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "travel", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "career", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "humor", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "lifestyle", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "dating", durationMs: 1000 },
-      { learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "travel", durationMs: 1000 },
-    ]);
-    await createQuiz("q1");
+    // BEŞ FARKLI topic (her biri bir video) — PersonalizationRepository cold-start
+    // için COLD_START_TOPIC_ORDER'ı (travel,lifestyle,humor,career,dating) izliyor
+    // (bkz. personalization-ranking.ts); aynı topic'ten iki video olsaydı aralarındaki
+    // sıra video.id'ye (rastgele UUID) göre belirlenirdi — bu testin "hangi video
+    // hangi grupta" iddiasını rastgeleliğe bağımlı kılardı. Farklı topic'lerle final
+    // sıra TAM olarak deterministic: travel, lifestyle, humor, career, dating.
+    const travelId = await createVideo("travel");
+    await createVideo("lifestyle");
+    await createVideo("humor");
+    await createVideo("career");
+    await createVideo("dating");
+    // Quiz SADECE travel videosuna (ilk gruptaki İKİNCİ değil, birinci video) bağlı
+    // — (travel,lifestyle) grubu tamamlanınca eşleşmeli; (humor,career) grubunda
+    // eşleşen yok (quiz'siz kalmalı), dating tek başına kalan (eksik) grup.
+    await createQuiz("q1", travelId);
 
     const response = await getFeed(userId);
     expect(response.status).toBe(200);
 
     const page = feedPageSchema.parse(response.body);
-    expect(page.items.map((item) => item.type)).toEqual(["video", "video", "video", "quiz", "video", "video", "video"]);
+    expect(page.items.map((item) => item.type)).toEqual(["video", "video", "quiz", "video", "video", "video"]);
   });
 
   it("personalized ranking: gerçek watch history'si travel'e yoğun olan kullanıcı feed'in başında travel görür", async () => {
@@ -215,16 +244,18 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   });
 
   describe("pagination (Chunk 8)", () => {
-    /** 20 video (5 topic × 4), cold start (watch history yok) — MAX_SESSION_VIDEOS(27)'yi aşmadığı için tamamı tek session'da, 2 sayfaya yayılır. */
+    /**
+     * 20 video (5 topic × 4), cold start (watch history yok) — MAX_SESSION_VIDEOS(27)'yi
+     * aşmadığı için tamamı tek session'da, 2 sayfaya yayılır. Quiz BİLİNÇLİ OLARAK
+     * YOK — bu describe bloğu sadece VİDEO pagination/dedupe/cursor davranışını
+     * doğruluyor, quiz-source-matching'in kendi testleri yukarıda ayrı.
+     */
     async function seedMultiPageCatalog(): Promise<void> {
       const topics = ["travel", "career", "humor", "lifestyle", "dating"];
       for (const topic of topics) {
         for (let i = 0; i < 4; i += 1) {
           await createVideo(topic);
         }
-      }
-      for (let i = 0; i < 3; i += 1) {
-        await createQuiz(`multi-page-q${i}`);
       }
     }
 
@@ -396,6 +427,82 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
         throw new Error("Test kurgusu bozuk");
       }
       expect(videoItem.video.vocabulary.map((v) => v.word.lemma)).toEqual(["apple", "zebra"]);
+    });
+  });
+
+  describe("transcript segments (Chunk 10)", () => {
+    it("bir videonun transcript segment'i (learning point dahil) feed response'una gömülü gelir", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo("travel");
+      const segmentId = await createSegment(videoId);
+      await db.insert(transcriptSegmentLearningPointsTable).values({
+        transcriptSegmentId: segmentId,
+        type: "phrase",
+        expression: "ended up + V-ing",
+        englishExplanation: "reaching an unplanned result",
+        turkishExplanation: "beklenmedik bir sonuca ulaşmak",
+        exampleEn: "I ended up working late.",
+        exampleTr: "Sonunda geç saate kadar çalıştım.",
+        ordinal: 1,
+      });
+
+      const response = await getFeed(userId);
+      const page = feedPageSchema.parse(response.body);
+      const videoItem = page.items.find((item) => item.type === "video" && item.video.id === videoId);
+      if (videoItem?.type !== "video") {
+        throw new Error("Test kurgusu bozuk: video item bulunamadı");
+      }
+
+      expect(videoItem.video.segments).toHaveLength(1);
+      expect(videoItem.video.segments[0]?.text).toBe("segment-1");
+      expect(videoItem.video.segments[0]?.learningPoints).toEqual([
+        expect.objectContaining({ type: "phrase", expression: "ended up + V-ing" }),
+      ]);
+    });
+
+    it("transcript'i olmayan bir video için boş dizi döner", async () => {
+      const userId = await createUser();
+      await createVideo("travel");
+
+      const response = await getFeed(userId);
+      const page = feedPageSchema.parse(response.body);
+      const videoItem = page.items.find((item) => item.type === "video");
+      if (videoItem?.type !== "video") {
+        throw new Error("Test kurgusu bozuk");
+      }
+      expect(videoItem.video.segments).toEqual([]);
+    });
+
+    it("segment'ler ordinal sırasına göre döner", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo("travel");
+      // Bilinçli olarak TERS sırada insert ediyoruz — dönüş sırasının insert
+      // sırasına değil `ordinal`e dayandığını kanıtlamak için.
+      await createSegment(videoId, 2);
+      await createSegment(videoId, 1);
+
+      const response = await getFeed(userId);
+      const page = feedPageSchema.parse(response.body);
+      const videoItem = page.items.find((item) => item.type === "video" && item.video.id === videoId);
+      if (videoItem?.type !== "video") {
+        throw new Error("Test kurgusu bozuk");
+      }
+      expect(videoItem.video.segments.map((s) => s.ordinal)).toEqual([1, 2]);
+    });
+
+    it("quiz gerçekten kendi source segment'ine bağlı — cevap sonrası bile quiz'in kendi kimliği bozulmuyor", async () => {
+      const userId = await createUser();
+      const videoId1 = await createVideo("travel");
+      await createVideo("career");
+      await createQuiz("hangi segment?", videoId1);
+
+      const page = feedPageSchema.parse((await getFeed(userId)).body);
+      const quizItem = page.items.find((item) => item.type === "quiz");
+      expect(quizItem).toBeDefined();
+      if (quizItem?.type !== "quiz") {
+        throw new Error("Test kurgusu bozuk");
+      }
+      expect(quizItem.quiz.question).toBe("hangi segment?");
     });
   });
 });
