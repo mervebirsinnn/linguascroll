@@ -41,6 +41,7 @@ function makeVideoItem(videoId: string, vocabulary: { wordId: string; saved: boo
         word: { id: wordId, language: "en", lemma: "x", gloss: "y" },
         saved,
       })),
+      segments: [],
     },
   };
 }

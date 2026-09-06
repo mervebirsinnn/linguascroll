@@ -98,7 +98,7 @@ export function applyLoadMoreError(state: FeedState, error: unknown): FeedState 
   return state.status === "success" ? { ...state, isLoadingMore: false, loadMoreError: errorMessage(error) } : state;
 }
 
-export function useFeed(userId: string): { state: FeedState; loadMore: () => void; refresh: () => void } {
+export function useFeed(userId: string): { state: FeedState; loadMore: () => void; refresh: () => Promise<void> } {
   const [state, setState] = useState<FeedState>({ status: "loading" });
 
   // TEK paylaşılan concurrency guard — initial mount fetch, loadMore() ve
@@ -118,18 +118,28 @@ export function useFeed(userId: string): { state: FeedState; loadMore: () => voi
    * NASIL yansıtılacağı çağırana bırakılıyor (mount ve refresh'in ihtiyaçları
    * farklı: mount'ın kendi `isCancelled` sarmalaması var, refresh'in hata
    * davranışı applyLoadMoreError'ı yeniden kullanıyor — bkz. yukarısı).
+   *
+   * Dönen Promise BİLEREK reject de edebiliyor (onError çağrıldıktan SONRA
+   * re-throw) — refresh()'in çağıranı (Feed.tsx), state'i tekrar okumadan,
+   * SADECE bu promise'in resolve/reject olmasına bakarak "başarılı mıydı"
+   * bilebilsin diye (bkz. Feed.tsx'teki scroll-to-top mantığı). Mount effect'i
+   * bu promise'i hiç TÜKETMİYOR (aşağıda `.catch(() => {})` ile kasıtlı olarak
+   * yutuluyor) — zaten kendi onError'ı üzerinden state'i güncelliyor, unhandled
+   * rejection riskini önlemek için bu yeterli.
    */
-  function requestFreshSession(onSuccess: (page: FeedPage) => void, onError: (error: unknown) => void): void {
+  function requestFreshSession(onSuccess: (page: FeedPage) => void, onError: (error: unknown) => void): Promise<void> {
     isFetchingRef.current = true;
-    fetchFeed(userId)
-      .then((page) => {
+    return fetchFeed(userId).then(
+      (page) => {
         isFetchingRef.current = false;
         onSuccess(page);
-      })
-      .catch((error: unknown) => {
+      },
+      (error: unknown) => {
         isFetchingRef.current = false;
         onError(error);
-      });
+        throw error;
+      },
+    );
   }
 
   useEffect(() => {
@@ -147,7 +157,10 @@ export function useFeed(userId: string): { state: FeedState; loadMore: () => voi
           setState(applyFreshSessionError(error));
         }
       },
-    );
+    ).catch(() => {
+      // Hata zaten yukarıdaki onError üzerinden state'e yansıtıldı — burada
+      // sadece unhandled rejection oluşmasını önlüyoruz.
+    });
 
     return () => {
       isCancelled = true;
@@ -180,14 +193,18 @@ export function useFeed(userId: string): { state: FeedState; loadMore: () => voi
    * cursor'ını kullanmamalı" invariant'ının kodda görünür hali. Tek guard:
    * `canRefresh` — başka bir request (loadMore YA DA önceki bir refresh) devam
    * etmiyor olmalı.
+   *
+   * Promise döner (resolve=başarılı, reject=başarısız) — Feed.tsx bunu
+   * "yeni session başarıyla geldiyse listeyi başa kaydır" kararı için kullanıyor
+   * (state'i tekrar okumadan, sadece bu promise'in sonucuna bakarak).
    */
-  function refresh(): void {
+  function refresh(): Promise<void> {
     if (!canRefresh(isFetchingRef.current)) {
-      return;
+      return Promise.resolve();
     }
 
     setState((current) => applyLoadMoreStart(current));
-    requestFreshSession(
+    return requestFreshSession(
       (page) => setState(applyFreshSessionSuccess(page)),
       (error) => setState((current) => applyLoadMoreError(current, error)),
     );

@@ -1,7 +1,9 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
-import { playableVideoSchema, type PlayableVideo, type Video } from "@linguascroll/shared-types";
+import { ConfigService } from "@nestjs/config";
+import { playableVideoSchema, type PlayableVideo, type TranscriptSegment, type Video } from "@linguascroll/shared-types";
 import { UsersService } from "../users/users.service";
 import { resolvePlaybackUrl } from "./resolve-playback-url";
+import { TranscriptSegmentsRepository } from "./transcript-segments-repository";
 import { VideoWatchEventsRepository } from "./video-watch-events-repository";
 import { VideosRepository } from "./videos-repository";
 
@@ -12,15 +14,21 @@ import { VideosRepository } from "./videos-repository";
  */
 @Injectable()
 export class VideosService {
+  private readonly mediaBaseUrl: string;
+
   constructor(
     private readonly videosRepository: VideosRepository,
     private readonly videoWatchEventsRepository: VideoWatchEventsRepository,
+    private readonly transcriptSegmentsRepository: TranscriptSegmentsRepository,
     private readonly usersService: UsersService,
-  ) {}
+    configService: ConfigService,
+  ) {
+    this.mediaBaseUrl = configService.getOrThrow<string>("PUBLIC_MEDIA_BASE_URL");
+  }
 
   async getVideoFeed(): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideos();
-    return videos.map(toPlayableVideo);
+    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl));
   }
 
   /**
@@ -30,7 +38,18 @@ export class VideosService {
    */
   async getPlayableVideosByIds(videoIds: string[]): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideosByIds(videoIds);
-    return videos.map(toPlayableVideo);
+    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl));
+  }
+
+  /**
+   * Chunk 10 — FeedService'in resolvePlanRefs'teki batch enrichment adımlarından
+   * biri (vocabulary/quiz-grouping ile aynı Promise.all içinde). VideosService
+   * "transcript" kavramını burada TEK bir metodla, doğrudan
+   * TranscriptSegmentsRepository'ye delege ederek biliyor — ayrı bir
+   * TranscriptSegmentsService YOK (bkz. transcript-segments-repository.ts yorumu).
+   */
+  async getSegmentsForVideos(videoIds: string[]): Promise<Map<string, TranscriptSegment[]>> {
+    return this.transcriptSegmentsRepository.findSegmentsForVideos(videoIds);
   }
 
   /**
@@ -68,7 +87,7 @@ export class VideosService {
  * hiç YOK (ne gerçek ne sahte bir placeholder). Gerçek vocabulary/saved-state
  * enrichment'ı sadece FeedService'in ürettiği `FeedPlayableVideo`'da var.
  */
-function toPlayableVideo(video: Video): PlayableVideo {
+function toPlayableVideo(video: Video, mediaBaseUrl: string): PlayableVideo {
   const { muxAssetId, ...rest } = video;
-  return playableVideoSchema.parse({ ...rest, playbackUrl: resolvePlaybackUrl(muxAssetId) });
+  return playableVideoSchema.parse({ ...rest, playbackUrl: resolvePlaybackUrl(muxAssetId, mediaBaseUrl) });
 }

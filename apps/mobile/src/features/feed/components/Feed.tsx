@@ -28,6 +28,29 @@ export function Feed({ userId }: FeedProps) {
   // kalır — bu durumda ilk item, render sırasında varsayılan olarak aktif sayılır.
   const [activeItemKey, setActiveItemKey] = useState<string | null>(null);
 
+  // "Feed'i yenile" kullanıcının en alta (footer'a) kaydırmış OLDUĞU an
+  // tetikleniyor — yeni session'ın içeriği (deterministic ranking yüzünden sık
+  // sık ÖNCEKİYLE AYNI) items'a yazılsa bile, FlatList kendi scroll pozisyonunu
+  // otomatik SIFIRLAMIYOR. Bu yüzden refresh GERÇEKTEN başarılı olduğunda listeyi
+  // elle başa (offset 0) kaydırıyoruz — aksi halde kullanıcı hâlâ footer'da kalır
+  // ve "yenile hiçbir şey yapmadı" izlenimi oluşur (gerçek kullanıcı raporu).
+  // `activeItemKey`'i de sıfırlıyoruz ki "aktif" (oynatılan) video da yeni
+  // session'ın ilk item'ıyla tutarlı olsun — FlatList'in kendi
+  // onViewableItemsChanged'i scroll bitene kadar henüz tetiklenmemiş olabilir.
+  const flatListRef = useRef<FlatList>(null);
+
+  function handleRefresh(): void {
+    refresh()
+      .then(() => {
+        setActiveItemKey(null);
+        flatListRef.current?.scrollToOffset({ offset: 0, animated: false });
+      })
+      .catch(() => {
+        // Hata zaten FeedListFooter'da loadMoreError olarak gösteriliyor —
+        // scroll pozisyonu BİLEREK değiştirilmiyor, kullanıcı retry edebilsin.
+      });
+  }
+
   const onViewableItemsChanged = useRef(({ viewableItems }: { viewableItems: ViewToken[] }) => {
     const activeItem = viewableItems[0]?.item as FeedItem | undefined;
     if (activeItem) {
@@ -70,10 +93,11 @@ export function Feed({ userId }: FeedProps) {
   // nextCursor null'ken hiç çalışmıyor (bkz. canLoadMore) — yani loadMoreError
   // ANCAK nextCursor non-null'ken loadMore'dan, nextCursor null'ken SADECE
   // refresh'ten gelmiş olabilir.
-  const footerAction = nextCursor === null ? refresh : loadMore;
+  const footerAction = nextCursor === null ? handleRefresh : loadMore;
 
   return (
     <FlatList
+      ref={flatListRef}
       data={items}
       keyExtractor={getFeedItemKey}
       renderItem={({ item }) => {

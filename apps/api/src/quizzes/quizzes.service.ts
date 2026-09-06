@@ -18,9 +18,23 @@ export class QuizzesService {
     private readonly usersService: UsersService,
   ) {}
 
-  async getQuizFeed(): Promise<FeedQuiz[]> {
-    const quizzes = await this.quizzesRepository.findQuizFeed();
-    return quizzes.map(toFeedQuiz);
+  /**
+   * Chunk 10 — feed composition-time (startSession) ihtiyacı: bu session'ın
+   * ranklandığı video id'leri için, HANGİ videonun HANGİ quiz(ler)e sahip
+   * olduğunu tek bir batch sorguda döner. `Map` key'i sourceVideoId — bu,
+   * FeedQuiz'in KENDİSİNDE değil (public contract'a sızmıyor, bkz. quiz.ts),
+   * sadece bu Map'in yapısında yaşayan internal bir gruplama.
+   */
+  async getQuizzesGroupedByVideoId(videoIds: string[]): Promise<Map<string, FeedQuiz[]>> {
+    const rows = await this.quizzesRepository.findQuizzesForVideos(videoIds);
+
+    const quizzesByVideoId = new Map<string, FeedQuiz[]>();
+    for (const { videoId, quiz } of rows) {
+      const list = quizzesByVideoId.get(videoId) ?? [];
+      list.push(toFeedQuiz(quiz));
+      quizzesByVideoId.set(videoId, list);
+    }
+    return quizzesByVideoId;
   }
 
   /** Chunk 8 — frozen feed-plan pagination'ın bir sayfasını resolve ederken kullanılır. */

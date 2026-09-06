@@ -16,7 +16,10 @@ import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { WordsService } from "../words/words.service";
 
-const VIDEOS_PER_QUIZ = 3;
+// Chunk 10: 3:1 → 2:1. Ürün kararı: dil öğreniminde quiz, az önce izlenen
+// içerikle olabildiğince yakın olmalı — 2 videoda bir quiz görülmesi, 3'e göre
+// daha sık bir pekiştirme döngüsü.
+const VIDEOS_PER_QUIZ = 2;
 
 /** Final `FeedItem` sayısı, sayfa başına (video+quiz karışık). */
 const PAGE_SIZE = 12;
@@ -31,9 +34,11 @@ const PAGE_SIZE = 12;
  * şimdi değil.
  *
  * MAX_SESSION_FEED_ITEMS (feed-cursor.ts) ile KARIŞTIRILMAMALI: o, cursor'ın
- * kendi başına uyguladığı ayrı bir invariant. Bugün 27 video + 3:1 quiz cadence
- * ≤36 item'a denk düşüyor (assertFitsSessionBound bunu runtime'da doğruluyor)
- * ama bu iki sabit BİLİNÇLİ OLARAK ayrı tutuluyor (Chunk 8 review kararı).
+ * kendi başına uyguladığı ayrı bir invariant. Bugün 27 video + 2:1 quiz cadence
+ * (Chunk 10) teorik olarak EN FAZLA 27 + floor(27/2) = 40 item'a denk düşüyor
+ * (assertFitsSessionBound bunu runtime'da doğruluyor) ama bu iki sabit BİLİNÇLİ
+ * OLARAK ayrı tutuluyor (Chunk 8 review kararı) — feed-cursor.ts'teki
+ * MAX_SESSION_FEED_ITEMS bu üst sınırı YANSITMALI, otomatik türetilmiyor.
  */
 const MAX_SESSION_VIDEOS = 27;
 
@@ -83,15 +88,23 @@ export class FeedService {
   }
 
   private async startSession(userId: string): Promise<FeedPage> {
-    const [videos, quizzes] = await Promise.all([this.videosService.getVideoFeed(), this.quizzesService.getQuizFeed()]);
-
+    const videos = await this.videosService.getVideoFeed();
     const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
+
+    // Chunk 10: quiz seçimi artık "sıradaki quiz" değil, "bounded session'daki
+    // GERÇEK videoların kaynak olduğu quiz" — bu yüzden quiz sorgusu, hangi
+    // videoların bu session'a dahil olduğu belli OLDUKTAN SONRA, o video
+    // id'leriyle yapılıyor (bkz. interleaveFeed).
+    const quizzesByVideoId = await this.quizzesService.getQuizzesGroupedByVideoId(
+      boundedVideos.map((video) => video.id),
+    );
+
     // interleaveFeed'in çıktısı (ComposedItem[]) PUBLIC FeedItem[] DEĞİL — burada
-    // videolar henüz vocabulary-enrich edilmemiş (bkz. ComposedItem yorumu). Bu
-    // adım sadece plan'ın {type,id} sırasını üretmek için var, hiçbir zaman
+    // videolar henüz vocabulary/segment-enrich edilmemiş (bkz. ComposedItem yorumu).
+    // Bu adım sadece plan'ın {type,id} sırasını üretmek için var, hiçbir zaman
     // client'a serialize edilmiyor.
-    const composedItems = interleaveFeed(boundedVideos, quizzes);
+    const composedItems = interleaveFeed(boundedVideos, quizzesByVideoId);
     const plan = composedItems.map(toFeedPlanItemRef);
     assertFitsSessionBound(plan);
 
@@ -177,19 +190,28 @@ export class FeedService {
    * şeklini inşa ediyor. Bu enrichment SADECE bu sayfanın video id'leri için
    * (session'ın tamamı için değil) — Chunk 8'in "sadece bu sayfa için gereken
    * kadar resolve et" disipliniyle tutarlı.
+   *
+   * Chunk 10: aynı disiplinle, transcript segment'leri de burada, aynı
+   * Promise.all içinde batch resolve ediliyor (VideosService.getSegmentsForVideos
+   * — id başına sorgu yok). Segment'i olmayan video için `segments: []` (madde
+   * 1'deki "transcript'siz video" davranışı).
    */
   private async resolvePlanRefs(refs: readonly FeedPlanItemRef[], userId: string): Promise<FeedItem[]> {
     const videoIds = refs.filter((ref) => ref.type === "video").map((ref) => ref.id);
     const quizIds = refs.filter((ref) => ref.type === "quiz").map((ref) => ref.id);
 
-    const [videos, quizzes, vocabularyByVideoId] = await Promise.all([
+    const [videos, quizzes, vocabularyByVideoId, segmentsByVideoId] = await Promise.all([
       this.videosService.getPlayableVideosByIds(videoIds),
       this.quizzesService.getFeedQuizzesByIds(quizIds),
       this.wordsService.getVocabularyForVideos(videoIds, userId),
+      this.videosService.getSegmentsForVideos(videoIds),
     ]);
 
     const videoById = new Map(
-      videos.map((video) => [video.id, { ...video, vocabulary: vocabularyByVideoId.get(video.id) ?? [] }]),
+      videos.map((video) => [
+        video.id,
+        { ...video, vocabulary: vocabularyByVideoId.get(video.id) ?? [], segments: segmentsByVideoId.get(video.id) ?? [] },
+      ]),
     );
     const quizById = new Map(quizzes.map((quiz) => [quiz.id, quiz]));
 
@@ -225,7 +247,7 @@ function toFeedPlanItemRef(item: ComposedItem): FeedPlanItemRef {
 }
 
 /**
- * MAX_SESSION_VIDEOS + 3:1 quiz cadence'in matematiksel olarak
+ * MAX_SESSION_VIDEOS + 2:1 quiz cadence'in matematiksel olarak
  * MAX_SESSION_FEED_ITEMS'ı aşmadığını runtime'da doğrular. İki sabit bilinçli
  * olarak ayrı dosyalarda/ayrı invariant olarak tutulduğu için (Chunk 8 kararı),
  * biri ileride değişirse diğerinin sessizce ihlal edilmesini önlüyor.
@@ -240,35 +262,68 @@ function assertFitsSessionBound(plan: FeedPlanItemRef[]): void {
 }
 
 /**
- * 3 video → 1 quiz. Bu bir feed composition policy'si — ne bir DB constraint
- * ne bir domain invariant, sadece burada, tek bir sabit + saf bir fonksiyon.
- * Quiz havuzu tükenirse kalan videolar video-only devam eder; aynı feed
- * üretiminde bir quiz tekrar kullanılmaz.
+ * 2 video → 1 quiz (Chunk 10: 3:1'den değişti). Bu bir feed composition
+ * policy'si — ne bir DB constraint ne bir domain invariant, sadece burada,
+ * tek bir sabit + saf bir fonksiyon.
+ *
+ * Chunk 10: quiz seçimi artık "havuzdaki sıradaki quiz" DEĞİL — az önce
+ * tamamlanan video grubunun GERÇEK kaynağı olan bir quiz aranıyor
+ * (`findUnusedQuizForGroup`, en yeni videodan en eskiye). Eşleşen yoksa quiz
+ * hiç gösterilmiyor (alakasız bir quiz göstermekten daha doğru — language-
+ * learning UX kararı) — bu, "quiz havuzu tükenirse video-only devam" invariant'ının
+ * kaynak-bağımlı hali. Aynı feed üretiminde bir quiz asla tekrar kullanılmıyor.
  *
  * Chunk 8: pagination'ı HİÇ bilmiyor — session başında (startSession) bounded
  * video listesi üzerinde TEK SEFER çalışıp tam frozen plan'ı üretiyor; sayfalama
  * bu ÇIKTININ üzerine sonradan bindiriliyor (bkz. buildPage).
  */
-function interleaveFeed(videos: PlayableVideo[], quizzes: FeedQuiz[]): ComposedItem[] {
+function interleaveFeed(videos: PlayableVideo[], quizzesByVideoId: Map<string, FeedQuiz[]>): ComposedItem[] {
   const feed: ComposedItem[] = [];
-  let nextQuizIndex = 0;
+  const usedQuizIds = new Set<string>();
+  let currentGroupVideoIds: string[] = [];
 
   videos.forEach((video, index) => {
     feed.push({ type: "video", video });
+    currentGroupVideoIds.push(video.id);
 
     const completedVideoGroup = (index + 1) % VIDEOS_PER_QUIZ === 0;
     if (!completedVideoGroup) {
       return;
     }
 
-    const quiz = quizzes[nextQuizIndex];
+    const quiz = findUnusedQuizForGroup(currentGroupVideoIds, quizzesByVideoId, usedQuizIds);
+    currentGroupVideoIds = [];
     if (!quiz) {
       return;
     }
 
     feed.push({ type: "quiz", quiz });
-    nextQuizIndex += 1;
+    usedQuizIds.add(quiz.id);
   });
 
   return feed;
+}
+
+/**
+ * Bir video grubu (en son tamamlanan `VIDEOS_PER_QUIZ` video) için, kaynağı bu
+ * gruptaki bir video olan, henüz kullanılmamış bir quiz arar — en YENİ videodan
+ * en eskiye doğru (quiz mümkün olduğunca "az önce izlenen"e bağlı olsun diye).
+ */
+function findUnusedQuizForGroup(
+  groupVideoIds: readonly string[],
+  quizzesByVideoId: Map<string, FeedQuiz[]>,
+  usedQuizIds: ReadonlySet<string>,
+): FeedQuiz | undefined {
+  for (let i = groupVideoIds.length - 1; i >= 0; i--) {
+    const videoId = groupVideoIds[i];
+    if (!videoId) {
+      continue;
+    }
+    const candidates = quizzesByVideoId.get(videoId) ?? [];
+    const unused = candidates.find((quiz) => !usedQuizIds.has(quiz.id));
+    if (unused) {
+      return unused;
+    }
+  }
+  return undefined;
 }

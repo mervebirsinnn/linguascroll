@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { anonymousUserSchema } from "@linguascroll/shared-types";
+import { checkUserExists } from "./api/check-user-exists";
 import { createAnonymousUser } from "./api/create-anonymous-user";
 import { getStoredAnonymousUserId, storeAnonymousUserId } from "./storage";
 
@@ -28,12 +29,14 @@ function isValidAnonymousUserId(value: string): boolean {
  * useAnonymousUserId hook'undan BİLEREK ayrı: RNTL gibi yeni bir test kütüphanesi
  * eklemeden, ileride sade bir Jest testiyle doğrudan çağrılabilir.
  *
- * storage boş VEYA formatı geçersiz → yeni anonymous user yaratılır, storage
- * yeni id ile overwrite edilir. Geçerli bir UUID varsa aynen kullanılır.
+ * storage boş VEYA formatı geçersiz VEYA backend'de artık var olmayan
+ * ("hayalet" — bkz. checkUserExists yorumu, örn. bir dev/test DB reset'i
+ * sonrası) → yeni anonymous user yaratılır, storage yeni id ile overwrite
+ * edilir. Format geçerli VE backend'de gerçekten varsa aynen kullanılır.
  */
 async function resolveAnonymousUserId(): Promise<string> {
   const existingUserId = await getStoredAnonymousUserId();
-  if (existingUserId && isValidAnonymousUserId(existingUserId)) {
+  if (existingUserId && isValidAnonymousUserId(existingUserId) && (await checkUserExists(existingUserId))) {
     return existingUserId;
   }
 

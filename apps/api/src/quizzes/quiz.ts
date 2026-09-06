@@ -22,6 +22,10 @@ export const quizSchema = z
     id: z.string().uuid(),
     question: z.string(),
     options: z.array(quizOptionSchema),
+    // Chunk 10 — server quiz → transcript segment → video ilişkisini biliyor
+    // (bkz. quizzes.schema.ts yorumu). Public FeedQuiz'e BİLİNÇLİ OLARAK
+    // sızmıyor (mobile'ın buna ihtiyacı yok, bkz. quizzes.service.ts).
+    sourceSegmentId: z.string().uuid(),
   })
   .refine((quiz) => quiz.options.filter((option) => option.isCorrect).length === 1, {
     message: "Bir quiz'in tam olarak bir doğru cevabı olmalı",

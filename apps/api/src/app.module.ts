@@ -32,6 +32,13 @@ const envSchema = z.object({
   // Confidentiality değil tamper-detection hedefi — yine de zayıf/tahmin edilebilir
   // bir secret imzayı anlamsız kılar, bu yüzden minimum bir uzunluk zorunlu.
   FEED_CURSOR_SECRET: z.string().min(32, "FEED_CURSOR_SECRET en az 32 karakter olmalı"),
+  // Chunk 10 — curated (locally üretilmiş) video dosyalarının servis edildiği
+  // base URL (bkz. main.ts'teki static asset serving, resolve-playback-url.ts).
+  // Mobile'daki EXPO_PUBLIC_API_BASE_URL ile AYNI operasyonel gerçeklik: localhost
+  // sadece web/simulator için işe yarar, fiziksel cihazda gerçek bir LAN IP'si
+  // gerekir — bu yüzden burada da bir default var ama production/cihaz testi
+  // için override edilmesi bekleniyor.
+  PUBLIC_MEDIA_BASE_URL: z.string().url().default("http://localhost:3000"),
 });
 
 @Module({

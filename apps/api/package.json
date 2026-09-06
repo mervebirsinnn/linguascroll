@@ -9,9 +9,13 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "seed": "node dist/videos/seed-videos.js",
+    "seed:transcripts": "node dist/videos/seed-transcript-segments.js",
     "seed:quizzes": "node dist/quizzes/seed-quizzes.js",
     "seed:words": "node dist/words/seed-words.js",
-    "test": "jest"
+    "test": "jest",
+    "stt:build": "tsc -p scripts/stt/tsconfig.json",
+    "stt:test": "jest -c scripts/stt/jest.config.js",
+    "stt:process": "pnpm run stt:build && node scripts/stt/dist/run-stt-pipeline.js"
   },
   "dependencies": {
     "@linguascroll/shared-types": "workspace:*",

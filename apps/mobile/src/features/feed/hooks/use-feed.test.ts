@@ -39,6 +39,7 @@ const item: FeedItem = {
     durationMs: 1000,
     playbackUrl: "https://example.com/v.mp4",
     vocabulary: [],
+    segments: [],
   },
 };
 

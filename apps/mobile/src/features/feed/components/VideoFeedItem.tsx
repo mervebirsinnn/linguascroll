@@ -1,9 +1,15 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { useEventListener } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
-import type { FeedPlayableVideo } from "@linguascroll/shared-types";
+import type { FeedPlayableVideo, TranscriptSegment } from "@linguascroll/shared-types";
 import { recordVideoWatchEvent } from "../api/record-video-watch-event";
+import { ExplanationSheet } from "../../subtitles/ExplanationSheet";
+import { SubtitleOverlay } from "../../subtitles/SubtitleOverlay";
+import { useActiveSubtitle } from "../../subtitles/use-active-subtitle";
+
+/** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
+const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
 
 type VideoFeedItemProps = {
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
@@ -37,11 +43,40 @@ export function VideoFeedItem({
   onToggleSaveWord,
 }: VideoFeedItemProps) {
   // useVideoPlayer, component unmount olduğunda player'ı otomatik temizler.
-  // Burada sadece başlangıç ayarlarını yapıyoruz (döngü); play/pause kararı
-  // isActive'e bağlı olduğu için aşağıdaki useEffect'te veriliyor.
+  // Burada sadece başlangıç ayarlarını yapıyoruz (döngü + subtitle sync için
+  // timeUpdate aralığı); play/pause kararı isActive'e bağlı olduğu için
+  // aşağıdaki useEffect'te veriliyor.
   const player = useVideoPlayer(video.playbackUrl, (playerInstance) => {
     playerInstance.loop = true;
+    playerInstance.timeUpdateEventInterval = SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS;
   });
+
+  // Chunk 10 — video → subtitle → tap → explanation akışı. `activeSegment`
+  // player'ın native timeUpdate'ine göre CANLI değişir (bkz. useActiveSubtitle).
+  // `openSegment` ise tıklandığı anda SNAPSHOT'lanan, sheet kapanana kadar
+  // asla değişmeyen dondurulmuş kopya — ikisi BİLİNÇLİ OLARAK ayrı state:
+  // sheet açıkken activeSegment değişse bile (video zaten pause'da, ama seek/
+  // stall gibi bir tetikleyici teorik olarak yine de bir timeUpdate üretebilir)
+  // gösterilen açıklama ASLA değişmemeli.
+  const activeSegment = useActiveSubtitle(player, video.segments);
+  const [openSegment, setOpenSegment] = useState<TranscriptSegment | null>(null);
+  const wasPlayingBeforeOpenRef = useRef(false);
+
+  function handleSubtitleTap(segment: TranscriptSegment): void {
+    wasPlayingBeforeOpenRef.current = player.playing;
+    player.pause();
+    setOpenSegment(segment);
+  }
+
+  function handleCloseSheet(): void {
+    setOpenSegment(null);
+    // Sadece açılmadan ÖNCE gerçekten oynatılıyorduysa VE bu item hâlâ aktifse
+    // resume et — isActive false'a düşmüşse (kullanıcı scroll etmiş) isActive
+    // effect'i zaten paused tutuyor, burada onunla çakışmamalıyız.
+    if (wasPlayingBeforeOpenRef.current && isActive) {
+      player.play();
+    }
+  }
 
   // watchedMs'i "isActive olduğu wall-clock süre" ile ölçmüyoruz — bu, buffering/
   // loading sırasında player henüz hiçbir kare oynatmıyorken bile süreyi şişirir.
@@ -113,6 +148,8 @@ export function VideoFeedItem({
         contentFit="cover"
         nativeControls={false}
       />
+      <SubtitleOverlay segment={activeSegment} onPress={handleSubtitleTap} />
+      <ExplanationSheet segment={openSegment} onClose={handleCloseSheet} />
       {video.vocabulary.length > 0 && (
         <View style={styles.vocabularyPanel}>
           {video.vocabulary.map(({ word }) => {

@@ -1,0 +1,3 @@
+# Chunk 11 STT pipeline — bu makinede zaten kurulu (bkz. sonuç raporu), ama
+# başka bir makinede reproducibility için pinned. Kurulum: pip install -r requirements.txt
+faster-whisper==1.1.0

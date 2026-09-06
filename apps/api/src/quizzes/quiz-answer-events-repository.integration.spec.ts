@@ -3,6 +3,8 @@ import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
+import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
+import { videosTable } from "../videos/videos.schema";
 import { QuizAnswerEventsRepository } from "./quiz-answer-events-repository";
 import { quizAnswerEventsTable } from "./quiz-answer-events.schema";
 import { quizOptionsTable, quizzesTable } from "./quizzes.schema";
@@ -33,8 +35,24 @@ describe("QuizAnswerEventsRepository / quiz_answer_events FK davranışı (integ
     return user.id;
   }
 
+  /** Chunk 10 — quiz artık bir transcript segment'e (dolayısıyla bir videoya) bağlı olmak ZORUNDA. */
+  async function createSourceSegment(): Promise<string> {
+    const [video] = await db
+      .insert(videosTable)
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "travel", durationMs: 1000 })
+      .returning();
+    if (!video) throw new Error("Beklenen video insert edilemedi");
+    const [segment] = await db
+      .insert(videoTranscriptSegmentsTable)
+      .values({ videoId: video.id, ordinal: 1, startMs: 0, endMs: 1000, text: "segment", englishExplanation: "e", turkishExplanation: "t" })
+      .returning();
+    if (!segment) throw new Error("Beklenen transcript segment insert edilemedi");
+    return segment.id;
+  }
+
   async function createQuizOption(): Promise<string> {
-    const [quiz] = await db.insert(quizzesTable).values({ question: "test soru" }).returning();
+    const sourceTranscriptSegmentId = await createSourceSegment();
+    const [quiz] = await db.insert(quizzesTable).values({ question: "test soru", sourceTranscriptSegmentId }).returning();
     if (!quiz) throw new Error("Beklenen quiz insert edilemedi");
     const [option] = await db
       .insert(quizOptionsTable)

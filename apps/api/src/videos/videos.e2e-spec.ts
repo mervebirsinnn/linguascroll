@@ -52,12 +52,12 @@ describe("GET /videos (e2e, gerçek Postgres → Drizzle → Repository → Serv
 
   it("videoları PlayableVideo contract'ı ile döner, muxAssetId/createdAt sızdırmaz", async () => {
     // muxAssetId, resolvePlaybackUrl'ün TANIDIĞI bir değer olmak zorunda — bilinmeyen
-    // bir muxAssetId artık (bilinçli olarak) fail-fast throw ediyor, sessizce
-    // fallback'e düşmüyor. Bu yüzden gerçek mock eşlemesindeki bir id kullanıyoruz.
+    // bir muxAssetId (bilinçli olarak) fail-fast throw ediyor, sessizce fallback'e
+    // düşmüyor. Bu yüzden gerçek curated eşlemedeki (local-*) bir id kullanıyoruz.
     await db.insert(videosTable).values({
       learningLanguage: "en",
       cefrLevel: "B1",
-      muxAssetId: "mock-mux-asset-3",
+      muxAssetId: "local-ordering-food",
       topic: "travel",
       durationMs: 5000,
     });
@@ -92,7 +92,7 @@ describe("GET /videos (e2e, gerçek Postgres → Drizzle → Repository → Serv
   it("Chunk 9 review düzeltmesi: doğrudan /videos projeksiyonu SAHTE bir vocabulary alanı TAŞIMIYOR (VideosService vocabulary'den habersiz)", async () => {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "travel", durationMs: 1000 })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-working-out-again", topic: "travel", durationMs: 1000 })
       .returning();
     if (!video) {
       throw new Error("Beklenen video insert edilemedi");
