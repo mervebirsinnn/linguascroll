@@ -15,9 +15,13 @@
     "test": "jest",
     "stt:build": "tsc -p scripts/stt/tsconfig.json",
     "stt:test": "jest -c scripts/stt/jest.config.js",
-    "stt:process": "pnpm run stt:build && node scripts/stt/dist/run-stt-pipeline.js"
+    "stt:process": "pnpm run stt:build && node scripts/stt/dist/run-stt-pipeline.js",
+    "enrich": "node dist/content-enrichment/enrich-transcript.js",
+    "publish-content": "node dist/content-enrichment/publish-content.js",
+    "publish-vocabulary": "node dist/content-enrichment/publish-vocabulary.js"
   },
   "dependencies": {
+    "@google/genai": "^2.22.0",
     "@linguascroll/shared-types": "workspace:*",
     "@nestjs/common": "^10.4.4",
     "@nestjs/config": "^3.3.0",

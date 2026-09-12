@@ -1,4 +1,4 @@
-import { feedPageSchema, type FeedPage } from "@linguascroll/shared-types";
+import { feedPageSchema, type FeedPage, type FeedPreferences } from "@linguascroll/shared-types";
 import { API_BASE_URL } from "../../../shared/api-base-url";
 
 /**
@@ -16,8 +16,13 @@ import { API_BASE_URL } from "../../../shared/api-base-url";
  * `cursor` (Chunk 8) — opaque bir string, mobile onun İÇİNİ HİÇ parse etmiyor;
  * sadece bir önceki `fetchFeed` çağrısının döndürdüğü `nextCursor`'ı olduğu gibi
  * geri gönderiyor. Verilmezse (ilk istek / yeni session) query'ye hiç eklenmiyor.
+ *
+ * `preference` (Chunk 15 — onboarding'in level/topics'i) SADECE `cursor` YOKKEN
+ * (yeni session) query'ye eklenir — backend zaten devam isteklerinde bunu yok
+ * sayıyor (bkz. feed.service.ts), burada da aynı gerçeği yansıtan tek bir
+ * `if/else`, iki ayrı kod yolu DEĞİL.
  */
-export async function fetchFeed(userId: string, cursor?: string): Promise<FeedPage> {
+export async function fetchFeed(userId: string, cursor?: string, preference?: FeedPreferences): Promise<FeedPage> {
   if (!userId) {
     throw new Error("fetchFeed userId olmadan çağrılamaz");
   }
@@ -25,6 +30,13 @@ export async function fetchFeed(userId: string, cursor?: string): Promise<FeedPa
   const params = new URLSearchParams({ userId });
   if (cursor) {
     params.set("cursor", cursor);
+  } else if (preference) {
+    if (preference.level) {
+      params.set("level", preference.level);
+    }
+    if (preference.topics.length > 0) {
+      params.set("topics", preference.topics.join(","));
+    }
   }
 
   const response = await fetch(`${API_BASE_URL}/feed?${params.toString()}`);

@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { feedPageSchema, type FeedItem, type FeedPage, type FeedQuiz, type PlayableVideo } from "@linguascroll/shared-types";
+import { feedPageSchema, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type PlayableVideo } from "@linguascroll/shared-types";
 import {
   decodeFeedCursor,
   encodeFeedCursor,
@@ -16,10 +16,14 @@ import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { WordsService } from "../words/words.service";
 
-// Chunk 10: 3:1 → 2:1. Ürün kararı: dil öğreniminde quiz, az önce izlenen
-// içerikle olabildiğince yakın olmalı — 2 videoda bir quiz görülmesi, 3'e göre
-// daha sık bir pekiştirme döngüsü.
-const VIDEOS_PER_QUIZ = 2;
+// Chunk 14: 2:1 → 4:1. Kullanıcı kararı: Chunk 10'un "pekiştirme az önce
+// izlenen içerikle olabildiğince yakın olsun" gerekçesi hâlâ geçerli (quiz
+// yine SADECE son izlenen gerçek video grubunun kaynağı olan bir segment'ten
+// geliyor, bkz. findUnusedQuizForGroup) — ama 2 videoda bir quiz, feed'i bir
+// video-feed olarak akıcı hissettirmek yerine sık sık kesiyordu. 4 videoda
+// bir quiz, ürünün "önce eğlenceli/akıcı video-feed, quiz PEKİŞTİRME içindir,
+// feed'in kendisi değildir" önceliğiyle daha tutarlı.
+const VIDEOS_PER_QUIZ = 4;
 
 /** Final `FeedItem` sayısı, sayfa başına (video+quiz karışık). */
 const PAGE_SIZE = 12;
@@ -34,11 +38,13 @@ const PAGE_SIZE = 12;
  * şimdi değil.
  *
  * MAX_SESSION_FEED_ITEMS (feed-cursor.ts) ile KARIŞTIRILMAMALI: o, cursor'ın
- * kendi başına uyguladığı ayrı bir invariant. Bugün 27 video + 2:1 quiz cadence
- * (Chunk 10) teorik olarak EN FAZLA 27 + floor(27/2) = 40 item'a denk düşüyor
- * (assertFitsSessionBound bunu runtime'da doğruluyor) ama bu iki sabit BİLİNÇLİ
- * OLARAK ayrı tutuluyor (Chunk 8 review kararı) — feed-cursor.ts'teki
- * MAX_SESSION_FEED_ITEMS bu üst sınırı YANSITMALI, otomatik türetilmiyor.
+ * kendi başına uyguladığı ayrı bir invariant. Bugün 27 video + 4:1 quiz cadence
+ * (Chunk 14 — eskiden 2:1, bkz. VIDEOS_PER_QUIZ yorumu) teorik olarak EN FAZLA
+ * 27 + floor(27/4) = 33 item'a denk düşüyor (assertFitsSessionBound bunu
+ * runtime'da doğruluyor) ama bu iki sabit BİLİNÇLİ OLARAK ayrı tutuluyor
+ * (Chunk 8 review kararı) — feed-cursor.ts'teki MAX_SESSION_FEED_ITEMS bu üst
+ * sınırı YANSITMALI, otomatik türetilmiyor. Cadence her değiştiğinde bu iki
+ * yorum VE feed-cursor.ts'teki sabit BİRLİKTE elle güncellenmeli.
  */
 const MAX_SESSION_VIDEOS = 27;
 
@@ -73,7 +79,14 @@ export class FeedService {
     this.cursorSecret = configService.getOrThrow<string>("FEED_CURSOR_SECRET");
   }
 
-  async getFeed(userId: string, cursor?: string): Promise<FeedPage> {
+  /**
+   * Chunk 15 — `preference` (onboarding'in level/topics'i) SADECE yeni bir
+   * session başlatırken (`cursor` YOK) anlamlı — `continueSession` frozen
+   * plan'dan devam ettiği için ranking'i bir daha hiç çalıştırmıyor, bu
+   * yüzden `preference` continuation isteklerinde SESSİZCE yok sayılıyor
+   * (mobile zaten sadece cursor'sız isteklerde gönderiyor, bkz. fetch-feed.ts).
+   */
+  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences): Promise<FeedPage> {
     const userExists = await this.usersService.userExists(userId);
     if (!userExists) {
       throw new BadRequestException(`"${userId}", var olan bir kullanıcıya ait değil`);
@@ -84,12 +97,12 @@ export class FeedService {
     if (cursor) {
       return this.continueSession(userId, cursor);
     }
-    return this.startSession(userId);
+    return this.startSession(userId, preference);
   }
 
-  private async startSession(userId: string): Promise<FeedPage> {
+  private async startSession(userId: string, preference?: FeedPreferences): Promise<FeedPage> {
     const videos = await this.videosService.getVideoFeed();
-    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos);
+    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, preference);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
     // Chunk 10: quiz seçimi artık "sıradaki quiz" değil, "bounded session'daki

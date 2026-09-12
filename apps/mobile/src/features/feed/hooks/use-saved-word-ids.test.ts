@@ -150,8 +150,8 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const deps = makeDeps();
     const pending = new Set<string>();
 
-    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, () => {}, deps);
-    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, () => {}, deps);
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, () => {}, undefined, deps);
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, () => {}, undefined, deps);
 
     expect(deps.saveWord).toHaveBeenCalledTimes(1);
   });
@@ -160,8 +160,8 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const deps = makeDeps();
     const pending = new Set<string>();
 
-    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, () => {}, deps);
-    toggleSaveWord(WORD_HABIT, USER_ID, false, pending, () => {}, () => {}, deps);
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, () => {}, undefined, deps);
+    toggleSaveWord(WORD_HABIT, USER_ID, false, pending, () => {}, () => {}, undefined, deps);
 
     expect(deps.saveWord).toHaveBeenCalledTimes(2);
   });
@@ -172,7 +172,7 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const onSuccess = jest.fn();
     const onPendingChange = jest.fn();
 
-    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, onPendingChange, onSuccess, deps);
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, onPendingChange, onSuccess, undefined, deps);
     await Promise.resolve().then(() => Promise.resolve()); // mikro-task kuyruğunu boşalt
 
     expect(onSuccess).toHaveBeenCalledWith(WORD_JOURNEY, true);
@@ -184,7 +184,7 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const pending = new Set<string>();
     const onSuccess = jest.fn();
 
-    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, onSuccess, deps);
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, onSuccess, undefined, deps);
     await Promise.resolve().then(() => Promise.resolve());
 
     expect(onSuccess).not.toHaveBeenCalled();
@@ -193,8 +193,15 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
 
   it("currentlySaved=true verildiğinde unsaveWord çağrılır (saveWord değil)", () => {
     const deps = makeDeps();
-    toggleSaveWord(WORD_JOURNEY, USER_ID, true, new Set(), () => {}, () => {}, deps);
+    toggleSaveWord(WORD_JOURNEY, USER_ID, true, new Set(), () => {}, () => {}, undefined, deps);
     expect(deps.unsaveWord).toHaveBeenCalledWith(WORD_JOURNEY, USER_ID);
     expect(deps.saveWord).not.toHaveBeenCalled();
+  });
+
+  it("sourceSegmentId verilmişse saveWord'e AYNEN iletilir", () => {
+    const deps = makeDeps();
+    const SEGMENT_ID = "00000000-0000-4000-a000-000000000001";
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, new Set(), () => {}, () => {}, SEGMENT_ID, deps);
+    expect(deps.saveWord).toHaveBeenCalledWith(WORD_JOURNEY, USER_ID, SEGMENT_ID);
   });
 });

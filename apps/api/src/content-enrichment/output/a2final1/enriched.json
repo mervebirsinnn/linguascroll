@@ -1,0 +1,163 @@
+{
+  "contentId": "a2final1",
+  "muxAssetId": "local-baking-fresh-bread-at-home",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A2final1.mp4",
+  "durationMs": 30020,
+  "topic": "lifestyle",
+  "cefrLevel": "A2",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 4200,
+      "text": "First, I mix flour, water, salt, and a little yeast in a bowl.",
+      "englishExplanation": "The speaker lists the initial ingredients they combine in a bowl.",
+      "turkishExplanation": "Konuşmacı bir kapta karıştırdığı temel malzemeleri sayıyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 4700,
+      "endMs": 6320,
+      "text": "I stir until the mixture looks sticky.",
+      "englishExplanation": "The speaker explains how long they mix the ingredients until the texture becomes sticky.",
+      "turkishExplanation": "Karışım yapışkan bir kıvam alana kadar karıştırdığını belirtiyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 6840,
+      "endMs": 12160,
+      "text": "Next, I knead the dough for 5 minutes, and I say, I knead the dough until it feels smooth.",
+      "englishExplanation": "The speaker describes working the dough with their hands until it becomes smooth.",
+      "turkishExplanation": "Hamuru pürüzsüzleşene kadar yaklaşık 5 dakika yoğurduğunu anlatıyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 12660,
+      "endMs": 14720,
+      "text": "Then I cover it and let it rise for an hour.",
+      "englishExplanation": "The speaker covers the dough and leaves it to expand for one hour.",
+      "turkishExplanation": "Hamurun üstünü kapatıp mayalanması ve kabarması için bir saat beklettiğini söylüyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 15180,
+      "endMs": 17020,
+      "text": "I let the dough rise so it gets bigger.",
+      "englishExplanation": "The speaker clarifies that resting the dough allows it to increase in volume.",
+      "turkishExplanation": "Hamurun kabarmasını, boyutunun büyümesi amacıyla beklettiğini açıklıyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 17500,
+      "endMs": 19840,
+      "text": "After that I shape the loaf and put it on a tray.",
+      "englishExplanation": "The speaker forms the dough into a loaf shape and places it onto a baking sheet.",
+      "turkishExplanation": "Hamura somun şekli verip fırın tepsisine yerleştirdiğini ifade ediyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 20340,
+      "endMs": 22620,
+      "text": "I bake the bread in a hot oven for 30 minutes.",
+      "englishExplanation": "The speaker mentions cooking the dough in a preheated oven for half an hour.",
+      "turkishExplanation": "Ekmeği sıcak bir fırında 30 dakika pişirdiğini belirtiyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 23160,
+      "endMs": 25120,
+      "text": "I bake the loaf until it turns golden.",
+      "englishExplanation": "The speaker notes that baking continues until the crust acquires a golden-brown color.",
+      "turkishExplanation": "Ekmeği üzeri altın sarısı bir renk alana kadar pişirdiğini söylüyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 25120,
+      "endMs": 29600,
+      "text": "When you take it out, the smell is amazing, and you know fresh bread is ready.",
+      "englishExplanation": "The speaker describes taking the bread out and enjoying the wonderful aroma of freshly baked bread.",
+      "turkishExplanation": "Ekmeği fırından çıkarınca harika bir koku yayıldığını ve taze ekmeğin hazır olduğunu anlatıyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "knead",
+      "gloss": "hamur yoğurmak"
+    },
+    {
+      "lemma": "dough",
+      "gloss": "hamur"
+    },
+    {
+      "lemma": "rise",
+      "gloss": "kabarmak, mayalanmak"
+    },
+    {
+      "lemma": "loaf",
+      "gloss": "somun (ekmek)"
+    },
+    {
+      "lemma": "sticky",
+      "gloss": "yapışkan"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 4,
+      "type": "grammar",
+      "expression": "let + object + base verb",
+      "englishExplanation": "The verb 'let' is followed by an object and a bare infinitive (verb without 'to') to mean allow or leave something to happen.",
+      "turkishExplanation": "'Let' fiilinden sonra bir nesne ve yalın hâlde fiil ('to' olmadan) kullanılır; bir şeye izin vermek veya kendi hâlinde olmaya bırakmak anlamı taşır.",
+      "exampleEn": "Let the cake cool before slicing it.",
+      "exampleTr": "Dilimlemeden önce kekin soğumasını bekle."
+    },
+    {
+      "segmentOrdinal": 8,
+      "type": "phrase",
+      "expression": "turn golden",
+      "englishExplanation": "The linking verb 'turn' is used here with an adjective of color to indicate a change of state or appearance during cooking.",
+      "turkishExplanation": "'Turn' fiili burada renk bildiren bir sıfatla kullanılarak pişme sırasında rengin altın sarısına dönüşmesini ifade eder.",
+      "exampleEn": "Fry the onions until they turn golden brown.",
+      "exampleTr": "Soğanları pembeleşip altın sarısı olana kadar kavurun."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 3,
+    "question": "According to segment 3, how does the speaker know when to stop kneading the dough?",
+    "options": [
+      {
+        "text": "When it feels smooth to the touch",
+        "isCorrect": true
+      },
+      {
+        "text": "When it doubles in size",
+        "isCorrect": false
+      },
+      {
+        "text": "When it turns golden in color",
+        "isCorrect": false
+      },
+      {
+        "text": "When it becomes sticky in the bowl",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 4,
+        "message": "Learning point ifadesi (\"let + object + base verb\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 8,
+        "message": "Learning point ifadesi (\"turn golden\") segment 8'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

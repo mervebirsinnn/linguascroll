@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { useEventListener } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
-import type { FeedPlayableVideo, TranscriptSegment } from "@linguascroll/shared-types";
+import type { FeedPlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
 import { recordVideoWatchEvent } from "../api/record-video-watch-event";
 import { ExplanationSheet } from "../../subtitles/ExplanationSheet";
 import { SubtitleOverlay } from "../../subtitles/SubtitleOverlay";
 import { useActiveSubtitle } from "../../subtitles/use-active-subtitle";
+import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
@@ -29,7 +30,11 @@ type VideoFeedItemProps = {
    */
   isWordSaved: (wordId: string) => boolean;
   isWordPending: (wordId: string) => boolean;
-  onToggleSaveWord: (wordId: string) => void;
+  /** Chunk 16 — sourceSegmentId opsiyonel: word-tap akışı geçirir, panel-chip akışı geçirmez (bkz. çağrı yerleri). */
+  onToggleSaveWord: (wordId: string, sourceSegmentId?: string | null) => void;
+  /** Chunk 15 — AYNI "tek mantıksal state, Feed.tsx'te yaşar" deseni (bkz. use-vocabulary-hint.ts). */
+  vocabularyHintVisible: boolean;
+  onDismissVocabularyHint: () => void;
 };
 
 export function VideoFeedItem({
@@ -41,6 +46,8 @@ export function VideoFeedItem({
   isWordSaved,
   isWordPending,
   onToggleSaveWord,
+  vocabularyHintVisible,
+  onDismissVocabularyHint,
 }: VideoFeedItemProps) {
   // useVideoPlayer, component unmount olduğunda player'ı otomatik temizler.
   // Burada sadece başlangıç ayarlarını yapıyoruz (döngü + subtitle sync için
@@ -60,6 +67,17 @@ export function VideoFeedItem({
   // gösterilen açıklama ASLA değişmemeli.
   const activeSegment = useActiveSubtitle(player, video.segments);
   const [openSegment, setOpenSegment] = useState<TranscriptSegment | null>(null);
+  // Chunk 14 — word-tap: subtitle içindeki bilinen bir vocabulary kelimesine
+  // dokunulunca açılan AYRI bir sheet. `openSegment`'le AYNI snapshot deseni
+  // (bkz. yukarısı) — ikisi ASLA aynı anda açık olamaz (biri açıkken Modal tüm
+  // ekranı kapladığı için diğerine dokunmak mümkün değil), bu yüzden AYNI
+  // `wasPlayingBeforeOpenRef`'i güvenle paylaşıyorlar.
+  const [openVocabularyWord, setOpenVocabularyWord] = useState<VideoVocabularyItem | null>(null);
+  // Chunk 16 — kelimenin tıklandığı ANDAKİ segment'in id'si, `openVocabularyWord`
+  // ile AYNI snapshot ömrüne sahip (birlikte set/reset edilir). save() bu segment
+  // id'sini "gerçek kaynak context" olarak backend'e gönderir — TAHMİNİ bir
+  // context ASLA üretilmiyor.
+  const [openVocabularySegmentId, setOpenVocabularySegmentId] = useState<string | null>(null);
   const wasPlayingBeforeOpenRef = useRef(false);
 
   function handleSubtitleTap(segment: TranscriptSegment): void {
@@ -73,6 +91,21 @@ export function VideoFeedItem({
     // Sadece açılmadan ÖNCE gerçekten oynatılıyorduysa VE bu item hâlâ aktifse
     // resume et — isActive false'a düşmüşse (kullanıcı scroll etmiş) isActive
     // effect'i zaten paused tutuyor, burada onunla çakışmamalıyız.
+    if (wasPlayingBeforeOpenRef.current && isActive) {
+      player.play();
+    }
+  }
+
+  function handleVocabularyWordTap(word: VideoVocabularyItem, segment: TranscriptSegment): void {
+    wasPlayingBeforeOpenRef.current = player.playing;
+    player.pause();
+    setOpenVocabularyWord(word);
+    setOpenVocabularySegmentId(segment.id);
+  }
+
+  function handleCloseVocabularySheet(): void {
+    setOpenVocabularyWord(null);
+    setOpenVocabularySegmentId(null);
     if (wasPlayingBeforeOpenRef.current && isActive) {
       player.play();
     }
@@ -97,6 +130,19 @@ export function VideoFeedItem({
       accumulatedMsRef.current += Date.now() - playingSinceRef.current;
       playingSinceRef.current = null;
     }
+  });
+
+  /**
+   * Chunk 15, madde 8 — video playback hatası (bozuk/erişilemez medya dosyası
+   * vb.) için fallback. `expo-video`'nun `statusChange` event'i `status`'un
+   * `"error"`e geçtiği anı bildiriyor — mevcut kodda ŞİMDİYE KADAR hiç
+   * dinlenmiyordu (audit'te bulunan gerçek boşluk). Retry butonu YOK
+   * (bilinçli, madde 8 sadece "fallback ekle" diyor — kullanıcının doğal
+   * kurtarma yolu zaten scroll edip bir sonraki videoya geçmek).
+   */
+  const [playbackError, setPlaybackError] = useState<string | null>(null);
+  useEventListener(player, "statusChange", ({ status }) => {
+    setPlaybackError(status === "error" ? "Bu video oynatılamadı." : null);
   });
 
   // Aktiflik değiştiğinde player'ı buna göre başlat/durdur. FlatList kaydırma
@@ -148,8 +194,34 @@ export function VideoFeedItem({
         contentFit="cover"
         nativeControls={false}
       />
-      <SubtitleOverlay segment={activeSegment} onPress={handleSubtitleTap} />
+      {playbackError && (
+        <View style={styles.playbackErrorOverlay}>
+          <Text style={styles.playbackErrorText}>{playbackError}</Text>
+        </View>
+      )}
+      <SubtitleOverlay
+        segment={activeSegment}
+        onPress={handleSubtitleTap}
+        vocabulary={video.vocabulary}
+        onPressWord={handleVocabularyWordTap}
+      />
       <ExplanationSheet segment={openSegment} onClose={handleCloseSheet} />
+      <VocabularyWordSheet
+        word={openVocabularyWord}
+        onClose={handleCloseVocabularySheet}
+        isSaved={openVocabularyWord ? isWordSaved(openVocabularyWord.word.id) : false}
+        isPending={openVocabularyWord ? isWordPending(openVocabularyWord.word.id) : false}
+        onToggleSave={() => {
+          if (openVocabularyWord) {
+            onToggleSaveWord(openVocabularyWord.word.id, openVocabularySegmentId);
+          }
+        }}
+      />
+      {isActive && video.vocabulary.length > 0 && vocabularyHintVisible && (
+        <Pressable style={styles.vocabularyHint} onPress={onDismissVocabularyHint}>
+          <Text style={styles.vocabularyHintText}>Vurgulu kelimeye dokun → anlamını gör ve kaydet</Text>
+        </Pressable>
+      )}
       {video.vocabulary.length > 0 && (
         <View style={styles.vocabularyPanel}>
           {video.vocabulary.map(({ word }) => {
@@ -183,6 +255,38 @@ const styles = StyleSheet.create({
   },
   video: {
     flex: 1,
+  },
+  playbackErrorOverlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#000",
+  },
+  playbackErrorText: {
+    color: "#fff",
+    fontSize: 15,
+    paddingHorizontal: 32,
+    textAlign: "center",
+  },
+  vocabularyHint: {
+    position: "absolute",
+    left: 16,
+    right: 16,
+    bottom: 200,
+    backgroundColor: "rgba(142,205,250,0.95)",
+    borderRadius: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+  },
+  vocabularyHintText: {
+    color: "#000",
+    fontSize: 13,
+    fontWeight: "600",
+    textAlign: "center",
   },
   vocabularyPanel: {
     position: "absolute",

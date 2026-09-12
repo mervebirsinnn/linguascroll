@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import type { PlayableVideo } from "@linguascroll/shared-types";
+import type { FeedPreferences, PlayableVideo } from "@linguascroll/shared-types";
 import { PersonalizationRepository } from "./personalization-repository";
 import { rankVideos } from "./personalization-ranking";
 
@@ -11,13 +11,17 @@ import { rankVideos } from "./personalization-ranking";
  * bunlar FeedService'in işi (bkz. feed.service.ts). HTTP concern bilmiyor,
  * kendi userId-var-mı kontrolünü yapmıyor (bu FeedService'in sorumluluğu) —
  * BadRequestException gibi bir exception hiç üretmiyor.
+ *
+ * Chunk 15 — `preference` (opsiyonel) saydam şekilde `rankVideos`'a taşınıyor,
+ * bu katman kendi başına HİÇBİR yorum/politika eklemiyor (boost/hard-filter
+ * kararlarının TAMAMI personalization-ranking.ts'te).
  */
 @Injectable()
 export class PersonalizationService {
   constructor(private readonly personalizationRepository: PersonalizationRepository) {}
 
-  async getPersonalizedVideos(userId: string, candidates: PlayableVideo[]): Promise<PlayableVideo[]> {
+  async getPersonalizedVideos(userId: string, candidates: PlayableVideo[], preference?: FeedPreferences): Promise<PlayableVideo[]> {
     const affinityByTopic = await this.personalizationRepository.getTopicAffinity(userId);
-    return rankVideos(candidates, affinityByTopic);
+    return rankVideos(candidates, affinityByTopic, preference);
   }
 }

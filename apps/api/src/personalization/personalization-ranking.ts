@@ -1,4 +1,4 @@
-import type { PlayableVideo, Topic } from "@linguascroll/shared-types";
+import type { CefrLevel, FeedPreferences, PlayableVideo, Topic } from "@linguascroll/shared-types";
 
 /**
  * Kullanıcının watch history'si yoksa (cold start) veya bir topic hiç
@@ -12,6 +12,17 @@ export const COLD_START_TOPIC_ORDER: readonly Topic[] = ["travel", "lifestyle", 
 
 /** Her 5. SEÇİLEN video (quiz item'lar sayılmaz — FeedService'in composition aşamasında eklenir) bir exploration slot'udur. */
 export const VIDEOS_PER_EXPLORATION = 5;
+
+/**
+ * Chunk 15 — onboarding'de seçilen bir topic'in SWRR ağırlığına eklenen sabit,
+ * additive boost. `affinity + 1` smoothing'iyle AYNI ölçekte (1) — bilinçli:
+ * gerçek watch-affinity SIFIRKEN bile tercih edilen bir topic'i 2x öne çıkarır
+ * (weight 1 → 2), ama affinity büyüdükçe (örn. 5) bu boost'un TOPLAM ağırlık
+ * içindeki payı küçülür (6 vs 2) — ayrı bir "decay" mekanizması YOK, additive
+ * yapının kendisi zamanla gerçek davranışın baskın olmasını doğal olarak
+ * sağlıyor (kullanıcı kararı, Chunk 15).
+ */
+const PREFERENCE_TOPIC_BOOST = 1;
 
 /**
  * PersonalizationRepository'den bağımsız, saf bir fonksiyon — DB/Nest/HTTP
@@ -31,13 +42,30 @@ export const VIDEOS_PER_EXPLORATION = 5;
  * feed'de asla iki kez çıkmaz. Candidate tükenirse (dedupe/exhaustion) feed
  * kısa kalır, duplicate üretilmez.
  *
- * Determinism: aynı `candidates` + aynı `affinityByTopic` → her zaman aynı
- * output. RNG/Math.random yok. Topic içi sıralama video.id'ye göre stabilize
- * edilir — DB'nin implicit row order'ına hiç güvenilmiyor.
+ * Determinism: aynı `candidates` + aynı `affinityByTopic` + aynı `preference`
+ * → her zaman aynı output. RNG/Math.random yok. Topic içi sıralama video.id'ye
+ * göre stabilize edilir — DB'nin implicit row order'ına hiç güvenilmiyor.
+ *
+ * Chunk 15 — `preference` opsiyonel 3. parametre: verilmezse (veya
+ * `{level:null, topics:[]}` ise) davranış ÖNCEKİ (Chunk 14) davranışla
+ * BİREBİR aynıdır — mevcut çağrı yerleri/testler regression'sız çalışmaya
+ * devam eder. `preference.topics` SADECE `buildPrimaryQueue`'nun SWRR
+ * ağırlığını artırır (hard filter DEĞİL — seçilmeyen topic'ler candidate
+ * havuzundan hiç ÇIKARILMIYOR). `preference.level` SADECE aynı topic
+ * içindeki sıralamayı etkiler (bkz. groupByTopicSorted) — exploration
+ * sırası (`buildExplorationQueue`) BİLİNÇLİ OLARAK preference'tan habersiz
+ * bırakıldı (kapsam: sadece primary sıralama, kullanıcı kararı).
  */
-export function rankVideos(candidates: PlayableVideo[], affinityByTopic: ReadonlyMap<Topic, number>): PlayableVideo[] {
-  const byTopic = groupByTopicSorted(candidates);
-  const primaryQueue = buildPrimaryQueue(byTopic, affinityByTopic);
+export function rankVideos(
+  candidates: PlayableVideo[],
+  affinityByTopic: ReadonlyMap<Topic, number>,
+  preference?: FeedPreferences,
+): PlayableVideo[] {
+  const preferredTopics = new Set<Topic>(preference?.topics ?? []);
+  const preferredLevel: CefrLevel | null = preference?.level ?? null;
+
+  const byTopic = groupByTopicSorted(candidates, preferredLevel);
+  const primaryQueue = buildPrimaryQueue(byTopic, affinityByTopic, preferredTopics);
   const explorationQueue = buildExplorationQueue(byTopic, affinityByTopic);
 
   const used = new Set<string>();
@@ -65,8 +93,15 @@ export function rankVideos(candidates: PlayableVideo[], affinityByTopic: Readonl
   return result;
 }
 
-/** video.id'ye göre stabil sıralanmış, topic'e göre gruplanmış candidate'ler. */
-function groupByTopicSorted(candidates: PlayableVideo[]): Map<Topic, PlayableVideo[]> {
+/**
+ * video.id'ye göre stabil sıralanmış, topic'e göre gruplanmış candidate'ler.
+ *
+ * Chunk 15 — `preferredLevel` verilmişse (null değilse), AYNI topic içinde
+ * o level'e eşit videolar ÖNCE gelir (ikincil sıralama anahtarı) — id sıralaması
+ * hâlâ nihai, stabil tie-break olarak kalıyor. Hard filter DEĞİL: eşleşmeyen
+ * level'deki videolar listeden ÇIKARILMIYOR, sadece geriye alınıyor.
+ */
+function groupByTopicSorted(candidates: PlayableVideo[], preferredLevel: CefrLevel | null): Map<Topic, PlayableVideo[]> {
   const byTopic = new Map<Topic, PlayableVideo[]>();
   for (const video of candidates) {
     const list = byTopic.get(video.topic) ?? [];
@@ -74,7 +109,16 @@ function groupByTopicSorted(candidates: PlayableVideo[]): Map<Topic, PlayableVid
     byTopic.set(video.topic, list);
   }
   for (const list of byTopic.values()) {
-    list.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+    list.sort((a, b) => {
+      if (preferredLevel) {
+        const aMatches = a.cefrLevel === preferredLevel;
+        const bMatches = b.cefrLevel === preferredLevel;
+        if (aMatches !== bMatches) {
+          return aMatches ? -1 : 1;
+        }
+      }
+      return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+    });
   }
   return byTopic;
 }
@@ -86,14 +130,28 @@ function groupByTopicSorted(candidates: PlayableVideo[]): Map<Topic, PlayableVid
  * eşitlenir ve SWRR, COLD_START_TOPIC_ORDER'ı bozmadan bu sırayla eşit şekilde
  * döner — cold start ayrı bir kod yolu DEĞİL, algoritmanın doğal, dejenere
  * durumu.
+ *
+ * Chunk 15 — `preferredTopics`'teki bir topic'in ağırlığına `PREFERENCE_TOPIC_BOOST`
+ * eklenir (additive, madde başındaki sabitin yorumuna bkz.) — cold-start'ta
+ * (tüm affinity=0) bu, tercih edilen topic'leri COLD_START_TOPIC_ORDER'ın
+ * ÖNÜNE geçirmeye YETMEYEBİLİR (SWRR hâlâ TÜM ağırlıkları dikkate alıyor,
+ * sadece tercih edilenler 1 yerine 2 ağırlığında) — bu BİLİNÇLİ: preference
+ * bir sinyal, "seçilen topic'ler her zaman ilk sırada" gibi bir hard-order
+ * garantisi DEĞİL.
  */
 function buildPrimaryQueue(
   byTopic: Map<Topic, PlayableVideo[]>,
   affinityByTopic: ReadonlyMap<Topic, number>,
+  preferredTopics: ReadonlySet<Topic>,
 ): PlayableVideo[] {
   const topics = COLD_START_TOPIC_ORDER.filter((topic) => byTopic.has(topic));
   const queues = new Map(topics.map((topic) => [topic, [...(byTopic.get(topic) ?? [])]]));
-  const weight = new Map(topics.map((topic) => [topic, (affinityByTopic.get(topic) ?? 0) + 1]));
+  const weight = new Map(
+    topics.map((topic) => [
+      topic,
+      (affinityByTopic.get(topic) ?? 0) + 1 + (preferredTopics.has(topic) ? PREFERENCE_TOPIC_BOOST : 0),
+    ]),
+  );
   const current = new Map(topics.map((topic) => [topic, 0]));
   const remaining = new Set(topics);
 

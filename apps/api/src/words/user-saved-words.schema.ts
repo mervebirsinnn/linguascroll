@@ -1,5 +1,6 @@
 import { pgTable, primaryKey, timestamp, uuid } from "drizzle-orm/pg-core";
 import { usersTable } from "../users/users.schema";
+import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { wordsTable } from "./words.schema";
 
 /**
@@ -15,11 +16,22 @@ import { wordsTable } from "./words.schema";
  *   faydası yok, üstelik NO ACTION seçilseydi yeterince kullanıcı kaydettikten sonra
  *   bir kelimeyi ASLA silememe gibi istenmeyen bir operasyonel kilide yol açardı.
  *
- * `nextReviewAt`/familiarityScore/reviewCount YOK (Chunk 9 kararı) — henüz bir
- * spaced-repetition/scheduling davranışı yokken bu alanları eklemek "önce state
- * model'i yaz, davranışı sonra uydur" hatası olurdu. Gerçek review-scheduling
- * geldiğinde ayrı bir domain concept (ör. user_word_progress) olarak, kendi
- * migration'ıyla yeniden tasarlanacak.
+ * `nextReviewAt`/familiarityScore/reviewCount YOK (Chunk 9 kararı, Chunk 16'da
+ * DOĞRULANDI) — bu satırın tahmin ettiği gibi, gerçek review-scheduling
+ * geldiğinde bu alanlar BURAYA eklenmedi: ayrı bir append-only event log'da
+ * (`word_review_events`, bkz. o dosya) yaşıyor, "due" durumu her seferinde o
+ * log'dan hesaplanıyor — hiçbir türetilmiş/cache'lenmiş alan bu tabloya
+ * girmedi.
+ *
+ * Chunk 16 — `sourceSegmentId` (NULLABLE): kelime bir altyazı içindeki vurgulu
+ * kelimeye dokunularak kaydedildiyse (bkz. shared-types/save-word-request.ts),
+ * o anki GERÇEK segment referansı. `ON DELETE SET NULL` — segment content-ops
+ * tarafından silinirse (video/transcript güncellemesi), kaydedilen kelimenin
+ * KENDİSİ etkilenmemeli, sadece context linki kaybolmalı (bilinçli: bu,
+ * `video_words`'ün "yapısal ilişki" CASCADE kararından FARKLI — orada
+ * kelime-video ilişkisinin kendisi anlamsızlaşıyordu, burada sadece bir
+ * "nereden geldi" ipucu kayboluyor, saved-word'ün var olma sebebi değil).
+ * `quizzes.sourceTranscriptSegmentId`'nin AYNI cross-feature FK precedent'i.
  */
 export const userSavedWordsTable = pgTable(
   "user_saved_words",
@@ -31,6 +43,7 @@ export const userSavedWordsTable = pgTable(
       .notNull()
       .references(() => wordsTable.id, { onDelete: "cascade" }),
     savedAt: timestamp("saved_at", { withTimezone: true }).notNull().defaultNow(),
+    sourceSegmentId: uuid("source_segment_id").references(() => videoTranscriptSegmentsTable.id, { onDelete: "set null" }),
   },
   (table) => [primaryKey({ columns: [table.userId, table.wordId] })],
 );

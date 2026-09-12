@@ -36,11 +36,17 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
     await app.close();
   });
 
-  /** Chunk 10 — quiz artık bir transcript segment'e (dolayısıyla bir videoya) bağlı olmak ZORUNDA. */
+  let nextMuxAssetId = 1;
+  /**
+   * Chunk 10 — quiz artık bir transcript segment'e (dolayısıyla bir videoya) bağlı olmak ZORUNDA.
+   * Chunk 12: videos.mux_asset_id artık UNIQUE (bkz. videos.schema.ts) — bu
+   * testte bu helper birden fazla kez çağrıldığı için sabit bir literal artık
+   * çakışır, her çağrı kendi benzersiz id'sini üretmeli.
+   */
   async function createSourceSegment(): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic: "travel", durationMs: 1000 })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: `mock-mux-asset-${nextMuxAssetId++}`, topic: "travel", durationMs: 1000 })
       .returning();
     if (!video) {
       throw new Error("Beklenen video insert edilemedi");

@@ -1,0 +1,161 @@
+{
+  "contentId": "a1final5",
+  "muxAssetId": "local-counting-sheep-to-sleep",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A1final5.mp4",
+  "durationMs": 21867,
+  "topic": "humor",
+  "cefrLevel": "A1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 2040,
+      "text": "You lie in bed at night and want to sleep.",
+      "englishExplanation": "Describing a common situation where someone is in bed trying to fall asleep.",
+      "turkishExplanation": "Gece yatakta yatıp uyumak istediğiniz anı anlatıyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 2560,
+      "endMs": 3560,
+      "text": "So, you count sheep.",
+      "englishExplanation": "Mentioning the traditional method people use to fall asleep by counting sheep.",
+      "turkishExplanation": "Uyumak için yaygın bir yöntem olan koyun saymaktan bahsediyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 4040,
+      "endMs": 5120,
+      "text": "Count means to say numbers.",
+      "englishExplanation": "Defining the word 'count' simply as reciting numbers in order.",
+      "turkishExplanation": "'Saymak' kelimesini sayıları sırayla söylemek olarak açıklıyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 5640,
+      "endMs": 7240,
+      "text": "One, two, three.",
+      "englishExplanation": "Starting the count with the first three numbers.",
+      "turkishExplanation": "İlk üç sayıyı sayıyor: Bir, iki, üç."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 7700,
+      "endMs": 8120,
+      "text": "Easy, right?",
+      "englishExplanation": "Checking rhetorically if this action seems simple so far.",
+      "turkishExplanation": "Bunun ne kadar kolay olduğunu teyit ediyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 8600,
+      "endMs": 10540,
+      "text": "But tonight, you feel very sleepy.",
+      "englishExplanation": "Setting the scene that you are unusually exhausted tonight.",
+      "turkishExplanation": "Bu gece kendinizi fazlasıyla uykulu hissettiğinizi söylüyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 11060,
+      "endMs": 14140,
+      "text": "Sleepy means your eyes are heavy and you want to sleep right now.",
+      "englishExplanation": "Explaining the feeling of being sleepy, when eyes feel heavy and you need rest.",
+      "turkishExplanation": "Uykulu olmanın ne anlama geldiğini; gözlerin ağırlaşması ve hemen uyumak istemek olarak açıklıyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 14620,
+      "endMs": 15540,
+      "text": "You see sheep four,",
+      "englishExplanation": "Continuing to count the fourth sheep in your mind.",
+      "turkishExplanation": "Zihninizde dördüncü koyunu gördüğünüzü belirtiyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 16040,
+      "endMs": 17300,
+      "text": "sheep five, and wait.",
+      "englishExplanation": "Counting the fifth sheep, then pausing because confusion sets in.",
+      "turkishExplanation": "Beşinci koyunu sayıp aniden durakladığınızı ifade ediyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 17820,
+      "endMs": 18800,
+      "text": "What comes after five?",
+      "englishExplanation": "Asking what number follows five, showing mental fatigue.",
+      "turkishExplanation": "Uykusuzluktan dolayı beşten sonra hangi sayının geldiğini hatırlayamama durumunu soruyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 19260,
+      "endMs": 19780,
+      "text": "Is it seven?",
+      "englishExplanation": "Guessing the wrong number seven due to being half-asleep.",
+      "turkishExplanation": "Uykulu kafayla yanlış bir tahmin yapıp 'Yedi mi?' diye soruyor."
+    },
+    {
+      "ordinal": 12,
+      "startMs": 20280,
+      "endMs": 20760,
+      "text": "Is it banana?",
+      "englishExplanation": "Humorously guessing a completely unrelated word, 'banana'.",
+      "turkishExplanation": "Uykulu zihnin saçmalamasını mizahi bir şekilde 'Muz mu?' diyerek gösteriyor."
+    },
+    {
+      "ordinal": 13,
+      "startMs": 21340,
+      "endMs": 21480,
+      "text": "You.",
+      "englishExplanation": "An abrupt, unfinished utterance as the speaker trails off or falls asleep.",
+      "turkishExplanation": "Cümlenin tam uykuya dalarken yarıda kalması."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "sleepy",
+      "gloss": "uykulu, uykusu gelmiş"
+    },
+    {
+      "lemma": "count",
+      "gloss": "saymak"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 2,
+      "type": "phrase",
+      "expression": "count sheep",
+      "englishExplanation": "An idiom meaning to imagine sheep jumping over a fence and counting them one by one to help yourself fall asleep.",
+      "turkishExplanation": "Uykusu gelmeyen birinin uykuya dalabilmek için zihninde koyunları tek tek sayması anlamına gelen geleneksel bir deyim.",
+      "exampleEn": "When I suffer from insomnia, I try counting sheep.",
+      "exampleTr": "Uykusuzluk çektiğimde koyun saymayı denerim."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 7,
+    "question": "According to the speaker, what does feeling 'sleepy' mean?",
+    "options": [
+      {
+        "text": "Your eyes feel heavy and you want to sleep right now.",
+        "isCorrect": true
+      },
+      {
+        "text": "You feel wide awake and want to get out of bed.",
+        "isCorrect": false
+      },
+      {
+        "text": "You feel energetic enough to count numbers backwards.",
+        "isCorrect": false
+      },
+      {
+        "text": "You are hungry and want to eat something in bed.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "pass",
+    "issues": []
+  }
+}

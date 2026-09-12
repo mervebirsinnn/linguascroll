@@ -4,5 +4,13 @@ packages:
 allowBuilds:
   # opencollective || exit 0 -- zararsız funding/bağış mesajı, bilinen NestJS deseni
   '@nestjs/core': true
+  # Chunk 15 — "prepare": "node scripts/prepare.js", ama yayınlanan pakette
+  # scripts/ dizini YOK (paketten hariç tutulmuş, sadece kaynak repo için) —
+  # install sırasında gerçekte çalışacak bir şey yok (kaynağı incelenip
+  # doğrulandı: apps/api/node_modules/.pnpm altında scripts/ bulunmuyor).
+  '@google/genai': true
   # node install.js -- platforma özel esbuild binary'sini seçer, drizzle-kit'in transitive bağımlılığı
   esbuild: true
+  # postinstall sadece bir version-scheme uyarısı yazıyor (stderr), dosya/ağ
+  # erişimi yok — kaynağı incelenip doğrulandı (scripts/postinstall.js).
+  protobufjs: true

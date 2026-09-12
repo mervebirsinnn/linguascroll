@@ -1,0 +1,156 @@
+{
+  "contentId": "a1final3",
+  "muxAssetId": "local-funny-pizza-order",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A1final3.mp4",
+  "durationMs": 20600,
+  "topic": "humor",
+  "cefrLevel": "A2",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 840,
+      "text": "I want pizza today.",
+      "englishExplanation": "The speaker expresses a simple desire to have pizza today.",
+      "turkishExplanation": "Konuşmacı bugün canının pizza istediğini belirtiyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1360,
+      "endMs": 2040,
+      "text": "I called a restaurant.",
+      "englishExplanation": "The speaker made a phone call to a restaurant.",
+      "turkishExplanation": "Bir restoranı telefonla aradığını söylüyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 2620,
+      "endMs": 4060,
+      "text": "To order means to ask for food.",
+      "englishExplanation": "Defining the verb 'to order' as requesting food.",
+      "turkishExplanation": "'Sipariş vermek' (to order) eyleminin yemek istemek anlamına geldiğini açıklıyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 4520,
+      "endMs": 5220,
+      "text": "I say to the worker.",
+      "englishExplanation": "The speaker sets up what they said to the restaurant employee.",
+      "turkishExplanation": "Restoran çalışanına ne söylediğini aktarmaya başlıyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 5780,
+      "endMs": 6760,
+      "text": "I want to order a pizza.",
+      "englishExplanation": "The standard phrase used to place an order for a pizza.",
+      "turkishExplanation": "Bir pizza sipariş etmek istediğini belirtiyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 7440,
+      "endMs": 9000,
+      "text": "Next, he asks about toppings.",
+      "englishExplanation": "The restaurant worker asks what ingredients the speaker wants on the pizza.",
+      "turkishExplanation": "Çalışan pizzanın üzerine hangi malzemelerin ekleneceğini soruyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 9600,
+      "endMs": 12900,
+      "text": "Toppings are things on top of the pizza, like cheese or meat.",
+      "englishExplanation": "Explaining the term 'toppings' as ingredients added on top of a pizza.",
+      "turkishExplanation": "'Topping' sözcüğünün peynir veya et gibi pizza üstü malzemeler anlamına geldiğini anlatıyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 13420,
+      "endMs": 15480,
+      "text": "I am nervous, so my words get mixed up.",
+      "englishExplanation": "The speaker felt anxious, which caused their words to become jumbled.",
+      "turkishExplanation": "Heyecanlandığı için dili sürçüyor ve kelimeleri birbirine karıştırıyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 15980,
+      "endMs": 16580,
+      "text": "I want pineapple.",
+      "englishExplanation": "The speaker mentions the ingredient they actually wanted: pineapple.",
+      "turkishExplanation": "Aslında pizzasına ananas koydurmak istediğini belirtiyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 17160,
+      "endMs": 17680,
+      "text": "But I say,",
+      "englishExplanation": "Introducing the mistake that came out of their mouth instead.",
+      "turkishExplanation": "Fakat ağzından çıkan yanlış söze geçiş yapıyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 18220,
+      "endMs": 20180,
+      "text": "please put pineapple and hot socks on.",
+      "englishExplanation": "The humorous mix-up where the speaker asks for 'hot socks' instead of hot sauce.",
+      "turkishExplanation": "Acı sos yerine yanlışlıkla 'sıcak çorap' koymalarını istediği komik anı aktarıyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "topping",
+      "gloss": "pizzanın veya yiyeceğin üzerine konulan malzeme"
+    },
+    {
+      "lemma": "nervous",
+      "gloss": "gergin, heyecanlı, tedirgin"
+    },
+    {
+      "lemma": "mix up",
+      "gloss": "birbirine karıştırmak (kafa karışıklığı nedeniyle)"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 8,
+      "type": "phrase",
+      "expression": "get mixed up",
+      "englishExplanation": "To become confused, disorganized, or jumbled due to stress or nervousness.",
+      "turkishExplanation": "Heyecan veya kafa karışıklığı nedeniyle kelimelerin ya da düşüncelerin birbirine girmesi, karışması.",
+      "exampleEn": "Whenever I feel nervous during an interview, my words get mixed up.",
+      "exampleTr": "Mülakatta ne zaman heyecanlansam kelimelerim birbirine karışır."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 8,
+    "question": "What does the speaker mean by 'my words get mixed up'?",
+    "options": [
+      {
+        "text": "They accidentally jumbled their words because of feeling nervous.",
+        "isCorrect": true
+      },
+      {
+        "text": "They decided to speak in a foreign language.",
+        "isCorrect": false
+      },
+      {
+        "text": "They forgot the phone number of the restaurant.",
+        "isCorrect": false
+      },
+      {
+        "text": "They could not hear what the worker said.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"mix up\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

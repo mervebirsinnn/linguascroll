@@ -1,0 +1,144 @@
+{
+  "contentId": "a1final1",
+  "muxAssetId": "local-dog-knows-three-words",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A1final1.mp4",
+  "durationMs": 20900,
+  "topic": "humor",
+  "cefrLevel": "A1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 2740,
+      "text": "My dog is very cute, but he is not very smart.",
+      "englishExplanation": "The speaker introduces their dog as adorable but not particularly clever.",
+      "turkishExplanation": "Konuşmacı, köpeğinin çok sevimli ama pek zeki olmadığını söylüyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 3340,
+      "endMs": 4920,
+      "text": "He knows only three English words.",
+      "englishExplanation": "The speaker mentions that the dog understands just three English words.",
+      "turkishExplanation": "Köpeğin yalnızca üç İngilizce kelime bildiğini belirtiyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 5540,
+      "endMs": 6500,
+      "text": "The first word is food.",
+      "englishExplanation": "The speaker reveals the first word the dog knows: 'food'.",
+      "turkishExplanation": "Köpeğin bildiği ilk kelimenin 'yemek' (food) olduğunu açıklıyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 7020,
+      "endMs": 9820,
+      "text": "I say food, and he runs to his bowl very fast.",
+      "englishExplanation": "When the word 'food' is spoken, the dog immediately sprints to his food dish.",
+      "turkishExplanation": "Konuşmacı 'yemek' deyince köpek çok hızlı bir şekilde mama kabına koşuyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 10460,
+      "endMs": 11160,
+      "text": "He loves to eat.",
+      "englishExplanation": "The speaker highlights that eating is one of the dog's favorite things.",
+      "turkishExplanation": "Köpeğin yemek yemeyi çok sevdiğini ifade ediyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 11620,
+      "endMs": 12700,
+      "text": "The second word is walk.",
+      "englishExplanation": "The speaker introduces the second word: 'walk'.",
+      "turkishExplanation": "İkinci kelimenin 'yürüyüş' (walk) olduğunu söylüyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 13200,
+      "endMs": 15160,
+      "text": "I say walk, and he brings me his leash.",
+      "englishExplanation": "Hearing 'walk', the dog fetches his walking strap for the owner.",
+      "turkishExplanation": "'Yürüyüş' dendiğinde köpeğin tasmasını alıp getirdiğini anlatıyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 15700,
+      "endMs": 16700,
+      "text": "He jumps up and down.",
+      "englishExplanation": "The dog shows excitement by leaping repeatedly into the air.",
+      "turkishExplanation": "Köpeğin heyecandan yerinde zıplayıp durduğunu söylüyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 17180,
+      "endMs": 18080,
+      "text": "The third word is no.",
+      "englishExplanation": "The speaker introduces the third word: 'no'.",
+      "turkishExplanation": "Üçüncü kelimenin 'hayır' (no) olduğunu belirtiyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 18520,
+      "endMs": 20460,
+      "text": "I say no when he eats my favorite shoe.",
+      "englishExplanation": "The speaker uses 'no' to scold the dog whenever it chews on their favorite footwear.",
+      "turkishExplanation": "Köpek en sevdiği ayakkabısını kemirirken ona 'hayır' dediğini anlatıyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "leash",
+      "gloss": "köpek gezdirme tasması"
+    },
+    {
+      "lemma": "bowl",
+      "gloss": "mama kabı, kase"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 8,
+      "type": "phrase",
+      "expression": "jump up and down",
+      "englishExplanation": "Used to describe repeated jumping, usually to show excitement, happiness, or agitation.",
+      "turkishExplanation": "Genellikle aşırı sevinç, heyecan ya da sabırsızlık sebebiyle yerinde zıplayıp durmayı anlatmak için kullanılır.",
+      "exampleEn": "The children jumped up and down when they saw the gifts.",
+      "exampleTr": "Çocuklar hediyeleri görünce sevinçten zıplayıp durdular."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 10,
+    "question": "Why does the speaker tell the dog 'no'?",
+    "options": [
+      {
+        "text": "Because the dog is chewing on their favorite shoe.",
+        "isCorrect": true
+      },
+      {
+        "text": "Because the dog refuses to go outside for a walk.",
+        "isCorrect": false
+      },
+      {
+        "text": "Because the dog is barking loudly at the bowl.",
+        "isCorrect": false
+      },
+      {
+        "text": "Because the dog jumps onto the dinner table.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 8,
+        "message": "Learning point ifadesi (\"jump up and down\") segment 8'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

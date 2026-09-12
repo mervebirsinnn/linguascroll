@@ -48,10 +48,14 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     return user.id;
   }
 
+  let nextMuxAssetId = 1;
+  // Chunk 12: videos.mux_asset_id artık UNIQUE (bkz. videos.schema.ts) — bu
+  // testte createVideo() birden fazla kez çağrıldığı için sabit bir literal
+  // artık çakışır, her çağrı kendi benzersiz id'sini üretmeli.
   async function createVideo(topic: string, durationMs = 10000): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-working-out-again", topic, durationMs })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: `local-working-out-again-${nextMuxAssetId++}`, topic, durationMs })
       .returning();
     if (!video) {
       throw new Error("Beklenen video insert edilemedi");
@@ -102,6 +106,13 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
       : request(app.getHttpServer()).get(`/feed?userId=${userId}`);
   }
 
+  async function getFeedWithPreference(userId: string, level?: string, topics?: string): Promise<request.Response> {
+    const params = new URLSearchParams({ userId });
+    if (level) params.set("level", level);
+    if (topics) params.set("topics", topics);
+    return request(app.getHttpServer()).get(`/feed?${params.toString()}`);
+  }
+
   it("malformed userId için 400 döner", async () => {
     const response = await request(app.getHttpServer()).get("/feed?userId=not-a-uuid");
     expect(response.status).toBe(400);
@@ -138,11 +149,16 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
 
   it("video ve quiz item'larını doğru contract ile döner; internal/persistence-only alanlar sızmaz", async () => {
     const userId = await createUser();
-    // Interleave policy (Chunk 10) 2 video → 1 quiz — quiz'in feed'de gerçekten
-    // çıkması için hem 2 video (bir grup tamamlanmalı) HEM de quiz'in o gruptaki
+    // Interleave policy (Chunk 14) 4 video → 1 quiz — quiz'in feed'de gerçekten
+    // çıkması için hem 4 video (bir grup tamamlanmalı) HEM de quiz'in o gruptaki
     // bir videodan kaynaklanması gerekiyor (source-matching, bkz. feed.service.ts).
-    const [_videoId1, videoId2] = await Promise.all([createVideo("travel"), createVideo("career")]);
-    await createQuiz("feed-e2e-question", videoId2);
+    const [_videoId1, _videoId2, _videoId3, videoId4] = await Promise.all([
+      createVideo("travel"),
+      createVideo("career"),
+      createVideo("humor"),
+      createVideo("lifestyle"),
+    ]);
+    await createQuiz("feed-e2e-question", videoId4);
 
     const response = await getFeed(userId);
     expect(response.status).toBe(200);
@@ -181,7 +197,7 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     }
   });
 
-  it("2 video : 1 quiz composition (Chunk 10), personalization sonrası da korunuyor (regression)", async () => {
+  it("4 video : 1 quiz composition (Chunk 14), personalization sonrası da korunuyor (regression)", async () => {
     const userId = await createUser();
     // BEŞ FARKLI topic (her biri bir video) — PersonalizationRepository cold-start
     // için COLD_START_TOPIC_ORDER'ı (travel,lifestyle,humor,career,dating) izliyor
@@ -194,16 +210,16 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     await createVideo("humor");
     await createVideo("career");
     await createVideo("dating");
-    // Quiz SADECE travel videosuna (ilk gruptaki İKİNCİ değil, birinci video) bağlı
-    // — (travel,lifestyle) grubu tamamlanınca eşleşmeli; (humor,career) grubunda
-    // eşleşen yok (quiz'siz kalmalı), dating tek başına kalan (eksik) grup.
+    // Quiz SADECE travel videosuna (grubun İLK, dördüncü değil, videosuna) bağlı
+    // — (travel,lifestyle,humor,career) grubu tamamlanınca geriye doğru arama
+    // travel'i bulup eşleştirmeli; dating tek başına kalan (eksik) grup, quiz'siz.
     await createQuiz("q1", travelId);
 
     const response = await getFeed(userId);
     expect(response.status).toBe(200);
 
     const page = feedPageSchema.parse(response.body);
-    expect(page.items.map((item) => item.type)).toEqual(["video", "video", "quiz", "video", "video", "video"]);
+    expect(page.items.map((item) => item.type)).toEqual(["video", "video", "video", "video", "quiz", "video"]);
   });
 
   it("personalized ranking: gerçek watch history'si travel'e yoğun olan kullanıcı feed'in başında travel görür", async () => {
@@ -493,7 +509,11 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     it("quiz gerçekten kendi source segment'ine bağlı — cevap sonrası bile quiz'in kendi kimliği bozulmuyor", async () => {
       const userId = await createUser();
       const videoId1 = await createVideo("travel");
+      // Chunk 14: 4:1 cadence — quiz'in feed'de görünmesi için bir grubun (4 video)
+      // tamamlanması gerekiyor.
       await createVideo("career");
+      await createVideo("humor");
+      await createVideo("lifestyle");
       await createQuiz("hangi segment?", videoId1);
 
       const page = feedPageSchema.parse((await getFeed(userId)).body);
@@ -503,6 +523,27 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
         throw new Error("Test kurgusu bozuk");
       }
       expect(quizItem.quiz.question).toBe("hangi segment?");
+    });
+  });
+
+  describe("preference (Chunk 15 — level/topics query param'ları)", () => {
+    it("geçerli level/topics ile 200 döner, ranking gerçekten çalışır", async () => {
+      const userId = await createUser();
+      await createVideo("travel");
+      await createVideo("career");
+
+      const response = await getFeedWithPreference(userId, "B1", "travel,dating");
+      expect(response.status).toBe(200);
+      feedPageSchema.parse(response.body); // contract'ı bozmuyor
+    });
+
+    it("malformed level/topics REQUEST'İ REDDETMEZ — sessizce yok sayılıp 200 döner (userId'nin AKSİNE)", async () => {
+      const userId = await createUser();
+      await createVideo("travel");
+
+      const response = await getFeedWithPreference(userId, "not-a-real-level", "not-a-real-topic,also-invalid");
+      expect(response.status).toBe(200);
+      feedPageSchema.parse(response.body);
     });
   });
 });

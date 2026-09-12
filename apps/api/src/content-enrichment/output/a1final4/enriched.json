@@ -1,0 +1,180 @@
+{
+  "contentId": "a1final4",
+  "muxAssetId": "local-mixing-colors-painting-sun",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A1final4.mp4",
+  "durationMs": 21220,
+  "topic": "lifestyle",
+  "cefrLevel": "A1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1420,
+      "text": "Today I want to paint a nice sun.",
+      "englishExplanation": "The speaker states their intention to paint a nice picture of the sun.",
+      "turkishExplanation": "Konuşmacı güzel bir güneş resmi yapmak istediğini belirtiyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1940,
+      "endMs": 3940,
+      "text": "I grab my blue paint and my yellow paint.",
+      "englishExplanation": "The speaker takes their blue and yellow paint to start.",
+      "turkishExplanation": "Konuşmacı mavi ve sarı boyalarını eline alıyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 4380,
+      "endMs": 4980,
+      "text": "I mix colors.",
+      "englishExplanation": "The speaker combines the paints together.",
+      "turkishExplanation": "Konuşmacı renkleri birbirine karıştırıyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 5640,
+      "endMs": 7260,
+      "text": "Yellow plus blue makes green.",
+      "englishExplanation": "The speaker explains the result of mixing yellow and blue.",
+      "turkishExplanation": "Sarı ile mavinin birleştiğinde yeşil renk oluşturduğunu söylüyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 7820,
+      "endMs": 8000,
+      "text": "Wait.",
+      "englishExplanation": "The speaker pauses suddenly as they notice something unexpected.",
+      "turkishExplanation": "Konuşmacı beklenmedik bir şeyi fark edip duraksıyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 8440,
+      "endMs": 9380,
+      "text": "Why is my sun green?",
+      "englishExplanation": "The speaker wonders why the sun they painted turned out green.",
+      "turkishExplanation": "Konuşmacı çizdiği güneşin neden yeşil olduğunu sorguluyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 9840,
+      "endMs": 10800,
+      "text": "That is the wrong color.",
+      "englishExplanation": "The speaker points out that green is not the correct color for a sun.",
+      "turkishExplanation": "Bunun yanlış bir renk olduğunu ifade ediyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 11380,
+      "endMs": 12840,
+      "text": "Suns are yellow, not green.",
+      "englishExplanation": "The speaker reminds themselves that the sun is normally yellow, not green.",
+      "turkishExplanation": "Güneşin yeşil değil, sarı olduğunu hatırlatıyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 13320,
+      "endMs": 13900,
+      "text": "I try again.",
+      "englishExplanation": "The speaker decides to give it another shot to fix the painting.",
+      "turkishExplanation": "Resmi düzeltmek için tekrar denemeye karar veriyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 14360,
+      "endMs": 16300,
+      "text": "I add red, black, and white.",
+      "englishExplanation": "The speaker adds more colors: red, black, and white.",
+      "turkishExplanation": "Kırmızı, siyah ve beyaz renklerini de karışıma ekliyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 16780,
+      "endMs": 17820,
+      "text": "Now my painting is gray.",
+      "englishExplanation": "The speaker notes that the painting has now turned into a gray mess.",
+      "turkishExplanation": "Tüm renkler karışınca tablonun griye döndüğünü söylüyor."
+    },
+    {
+      "ordinal": 12,
+      "startMs": 18280,
+      "endMs": 18600,
+      "text": "Oh dear.",
+      "englishExplanation": "The speaker expresses mild distress or disappointment at the ruined painting.",
+      "turkishExplanation": "İşler ters gittiğinde duyulan hafif hayal kırıklığını 'hay aksi' diyerek belirtiyor."
+    },
+    {
+      "ordinal": 13,
+      "startMs": 19140,
+      "endMs": 19840,
+      "text": "Look at my hands.",
+      "englishExplanation": "The speaker draws attention to how messy their hands have become.",
+      "turkishExplanation": "Boyadan kirlenen ellerine dikkat çekiyor."
+    },
+    {
+      "ordinal": 14,
+      "startMs": 20360,
+      "endMs": 20820,
+      "text": "Look at my.",
+      "englishExplanation": "The speaker starts to say something else about their messy state, but trails off.",
+      "turkishExplanation": "Sözünü tamamlayamadan bir başka yerine bakılmasını isterken cümlesi yarım kalıyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "grab",
+      "gloss": "kapmak, hemen eline almak"
+    },
+    {
+      "lemma": "mix",
+      "gloss": "karıştırmak"
+    },
+    {
+      "lemma": "wrong",
+      "gloss": "yanlış, hatalı"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 12,
+      "type": "phrase",
+      "expression": "oh dear",
+      "englishExplanation": "A common conversational expression used to express mild worry, disappointment, sympathy, or surprise when something goes wrong.",
+      "turkishExplanation": "Bir şeyler ters gittiğinde, hafif bir üzüntü, hayal kırıklığı veya şaşkınlık belirtmek için kullanılan 'hay aksi', 'vah vah' anlamında bir ünlemdir.",
+      "exampleEn": "Oh dear, I spilled coffee on my shirt.",
+      "exampleTr": "Hay aksi, gömleğime kahve döktüm."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 12,
+    "question": "What does the speaker express by saying \"Oh dear\"?",
+    "options": [
+      {
+        "text": "Mild frustration or dismay because their painting attempt failed.",
+        "isCorrect": true
+      },
+      {
+        "text": "Affection while politely addressing a friend.",
+        "isCorrect": false
+      },
+      {
+        "text": "Great excitement about starting a brand-new hobby.",
+        "isCorrect": false
+      },
+      {
+        "text": "Relief that the mixed colors finally look right.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointOnTrivialSegment",
+        "severity": "warning",
+        "segmentOrdinal": 12,
+        "message": "Segment 12 çok kısa/trivial (\"Oh dear.\") ama bir learning point üretilmiş."
+      }
+    ]
+  }
+}

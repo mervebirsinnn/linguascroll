@@ -1,0 +1,18 @@
+{
+  "_readme": "Chunk 14B — mevcut 15 video seed-videos.ts ile (publish-content.ts pipeline'ından hiç GEÇMEDEN) yayınlandığı için, bu videoları enrich-transcript.ts'ten tekrar geçirdiğimizde LLM'in ÜRETECEĞİ yeni contentSlug/muxAssetId (enriched.json'daki draft.muxAssetId), DB'deki GERÇEK muxAssetId ile eşleşmeyecek — publish-vocabulary.ts bu yüzden draft.muxAssetId'yi DEĞİL, STT contentId'sinden bu sabit eşlemeyle bulduğu muxAssetId'yi kullanıp mevcut videoyu hedefler. Eşleme, STT'nin (ffprobe ile) ölçtüğü durationMs (scripts/stt/output/<content-id>/draft.json) ile gerçek DB'deki videos.duration_ms'in TEK ve BİREBİR eşleşmesiyle doğrulandı (2026-09-12, canlı `linguascroll` DB'sine karşı sorgulanarak) — 15 videonun 15'i de FARKLI sürede, çakışma/belirsizlik riski yok. Bu dosya SADECE bu 15 legacy video içindir; publish-content.ts pipeline'ından GEÇEREK yeni yayınlanan videolar için (draft.muxAssetId zaten doğru olduğundan) buraya satır eklemeye gerek YOK.",
+  "a1final1": "local-dog-three-words",
+  "a1final2": "local-how-are-you-answers",
+  "a1final3": "local-ordering-pizza-mixup",
+  "a1final4": "local-painting-mishap",
+  "a1final5": "local-counting-sheep",
+  "a1final6": "local-video-call-mute",
+  "a2final1": "local-baking-bread",
+  "b1final1": "local-daily-habits-idioms",
+  "b2final1": "local-ai-double-edged-sword",
+  "b2final2": "local-turning-over-new-leaf",
+  "b2final3": "local-failure-is-a-teacher",
+  "final-1": "local-common-mistakes",
+  "final-2": "local-introduce-yourself",
+  "final-3": "local-ordering-food",
+  "whatsapp-video-2026-09-06-at-01-50-44": "local-working-out-again"
+}

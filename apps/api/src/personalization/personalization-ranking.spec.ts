@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { PlayableVideo, Topic } from "@linguascroll/shared-types";
+import type { CefrLevel, PlayableVideo, Topic } from "@linguascroll/shared-types";
 import { COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
 
 /**
@@ -9,11 +9,11 @@ import { COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./pe
  * gerçek Postgres testleri personalization-repository.integration.spec.ts'te; burada
  * SADECE scheduling/exploration/determinism policy'si doğrulanıyor.
  */
-function makeVideo(id: string, topic: Topic, durationMs = 1000): PlayableVideo {
+function makeVideo(id: string, topic: Topic, durationMs = 1000, cefrLevel: CefrLevel = "A1"): PlayableVideo {
   return {
     id,
     learningLanguage: "en",
-    cefrLevel: "A1",
+    cefrLevel,
     topic,
     durationMs,
     playbackUrl: `https://example.com/${id}.mp4`,
@@ -183,5 +183,70 @@ describe("rankVideos", () => {
     const result = rankVideos(candidates, new Map());
 
     expect(result).toEqual([candidates[0]]);
+  });
+});
+
+describe("rankVideos — Chunk 15 preference (topic boost + level boost)", () => {
+  it("preference verilmediğinde (undefined) davranış ÖNCEKİ (Chunk 14) davranışla birebir aynı — regression yok", () => {
+    const candidates = COLD_START_TOPIC_ORDER.map((topic) => makeVideo(topic, topic));
+
+    const withoutArg = rankVideos(candidates, new Map());
+    const withUndefined = rankVideos(candidates, new Map(), undefined);
+    const withEmptyPreference = rankVideos(candidates, new Map(), { level: null, topics: [] });
+
+    expect(withUndefined).toEqual(withoutArg);
+    expect(withEmptyPreference).toEqual(withoutArg);
+  });
+
+  it("cold start'ta tercih edilen bir topic (dating — kanonik sırada EN SONDA), SWRR ağırlığı arttığı için baseline'a göre BELİRGİN ÖNCE gelir", () => {
+    const candidates = COLD_START_TOPIC_ORDER.map((topic) => makeVideo(topic, topic));
+
+    const baseline = rankVideos(candidates, new Map());
+    expect(baseline[baseline.length - 1]?.topic).toBe("dating"); // baseline: dating en sonda (bkz. cold-start testi)
+
+    const boosted = rankVideos(candidates, new Map(), { level: null, topics: ["dating"] });
+    expect(boosted[0]?.topic).toBe("dating"); // boost'lu: dating artık İLK sırada
+  });
+
+  it("aynı topic içinde, tercih edilen level'e eşit videolar ÖNCE gelir (id sıralamasını EZER) — hard filter DEĞİL, diğer level'ler listede kalır", () => {
+    const candidates = [
+      makeVideo("v-a", "travel", 1000, "A2"),
+      makeVideo("v-b", "travel", 1000, "B1"),
+      makeVideo("v-c", "travel", 1000, "B2"),
+    ];
+
+    const withoutPreference = rankVideos(candidates, new Map());
+    expect(withoutPreference.map((v) => v.id)).toEqual(["v-a", "v-b", "v-c"]); // saf id sırası
+
+    const withLevelPreference = rankVideos(candidates, new Map(), { level: "B1", topics: [] });
+    expect(withLevelPreference.map((v) => v.id)).toEqual(["v-b", "v-a", "v-c"]); // B1 (v-b) öne alındı
+    expect(withLevelPreference).toHaveLength(3); // hiçbir video ELENMEDİ
+  });
+
+  it("seçilmeyen topic'ler/level'ler candidate havuzundan HİÇ çıkarılmaz (hard filter yok) — TÜM video id'leri sonuçta mevcut", () => {
+    const candidates = [
+      makeVideo("travel-0", "travel"),
+      makeVideo("career-0", "career"),
+      makeVideo("humor-0", "humor"),
+    ];
+
+    const result = rankVideos(candidates, new Map(), { level: "C2", topics: ["dating"] });
+
+    expect(new Set(result.map((v) => v.id))).toEqual(new Set(["travel-0", "career-0", "humor-0"]));
+  });
+
+  it("gerçek watch-affinity, preference boost'undan DAHA BASKIN kalır (kullanıcı kararı — tercih zamanla gerçek davranışın gerisinde kalmalı)", () => {
+    const candidates = [
+      ...Array.from({ length: 10 }, (_, i) => makeVideo(`travel-${i}`, "travel")), // yüksek GERÇEK affinity, tercih EDİLMEDİ
+      ...Array.from({ length: 10 }, (_, i) => makeVideo(`dating-${i}`, "dating")), // sıfır affinity, ONBOARDING'DE tercih EDİLDİ
+    ];
+    const affinity = new Map<Topic, number>([["travel", 10]]); // weight(travel) = 11, weight(dating) = 0+1+1(boost) = 2
+
+    const result = rankVideos(candidates, affinity, { level: null, topics: ["dating"] });
+    const firstTen = result.slice(0, 10).map((video) => video.topic);
+
+    expect(firstTen.filter((topic) => topic === "travel").length).toBeGreaterThan(
+      firstTen.filter((topic) => topic === "dating").length,
+    );
   });
 });

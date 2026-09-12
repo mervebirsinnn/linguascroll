@@ -10,32 +10,51 @@ type QuizFeedItemProps = {
   userId: string;
 };
 
+/**
+ * Chunk 15, madde 9 — Chunk 5'in "hata durumunda seçim sessizce sıfırlanır"
+ * kararı DEĞİŞTİ: artık (a) seçim KORUNUYOR (kullanıcı hangi seçeneğe
+ * bastığını unutmuyor), (b) görünür bir hata mesajı var, (c) "Tekrar dene"
+ * ile AYNI seçimle yeniden submit edilebiliyor — `submit` tek, paylaşılan bir
+ * fonksiyon (`handleSelect`'in İLK submit'i, `handleRetry`'ın YENİDEN submit'i
+ * AYNI kod yolunu kullanıyor, iki ayrı implementasyon YOK).
+ */
 export function QuizFeedItem({ quiz, height, width, userId }: QuizFeedItemProps) {
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [result, setResult] = useState<AnswerQuizResponse | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const hasAnswered = result !== null;
 
-  const handleSelect = (optionId: string) => {
-    if (hasAnswered || isSubmitting) {
-      return;
-    }
-    setSelectedOptionId(optionId);
+  function submit(optionId: string): void {
     setIsSubmitting(true);
+    setSubmitError(null);
     answerQuiz(quiz.id, optionId, userId)
       .then((response) => {
         setResult(response);
       })
       .catch(() => {
-        // Chunk 5 kapsamında ayrı bir hata UI'ı yok — bilinçli minimal davranış:
-        // seçim sıfırlanır, kullanıcı tekrar deneyebilir.
-        setSelectedOptionId(null);
+        setSubmitError("Cevap gönderilemedi.");
       })
       .finally(() => {
         setIsSubmitting(false);
       });
-  };
+  }
+
+  function handleSelect(optionId: string): void {
+    if (hasAnswered || isSubmitting) {
+      return;
+    }
+    setSelectedOptionId(optionId);
+    submit(optionId);
+  }
+
+  function handleRetry(): void {
+    if (!selectedOptionId || isSubmitting) {
+      return;
+    }
+    submit(selectedOptionId);
+  }
 
   return (
     <View style={[styles.container, { height, width }]}>
@@ -49,6 +68,7 @@ export function QuizFeedItem({ quiz, height, width, userId }: QuizFeedItemProps)
           <Pressable
             key={option.id}
             onPress={() => handleSelect(option.id)}
+            disabled={hasAnswered || isSubmitting}
             style={[
               styles.option,
               isSelected && styles.optionSelected,
@@ -60,6 +80,14 @@ export function QuizFeedItem({ quiz, height, width, userId }: QuizFeedItemProps)
           </Pressable>
         );
       })}
+      {submitError && (
+        <View style={styles.errorContainer}>
+          <Text style={styles.errorText}>{submitError}</Text>
+          <Pressable onPress={handleRetry} style={styles.retryButton}>
+            <Text style={styles.retryText}>Tekrar dene</Text>
+          </Pressable>
+        </View>
+      )}
     </View>
   );
 }
@@ -101,5 +129,27 @@ const styles = StyleSheet.create({
   optionText: {
     color: "#fff",
     fontSize: 16,
+  },
+  errorContainer: {
+    marginTop: 8,
+    alignItems: "center",
+    gap: 8,
+  },
+  errorText: {
+    color: "#e74c3c",
+    fontSize: 14,
+    textAlign: "center",
+  },
+  retryButton: {
+    borderWidth: 1,
+    borderColor: "#444",
+    borderRadius: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 20,
+  },
+  retryText: {
+    color: "#8ecdfa",
+    fontSize: 14,
+    fontWeight: "600",
   },
 });

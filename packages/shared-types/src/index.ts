@@ -1,4 +1,4 @@
-export { videoSchema, type Video, topicSchema, type Topic } from "./video";
+export { videoSchema, type Video, topicSchema, type Topic, cefrLevelSchema, type CefrLevel } from "./video";
 export { wordSchema, type Word } from "./word";
 export { videoVocabularyItemSchema, type VideoVocabularyItem } from "./video-vocabulary-item";
 export { learningPointTypeSchema, type LearningPointType, learningPointSchema, type LearningPoint } from "./learning-point";
@@ -21,3 +21,7 @@ export {
   recordVideoWatchEventRequestSchema,
   type RecordVideoWatchEventRequest,
 } from "./video-watch-event";
+export { feedPreferencesSchema, type FeedPreferences } from "./feed-preferences";
+export { savedWordSchema, type SavedWord } from "./saved-word";
+export { recordWordReviewRequestSchema, type RecordWordReviewRequest } from "./record-word-review-request";
+export { wordsProgressSchema, type WordsProgress } from "./words-progress";
