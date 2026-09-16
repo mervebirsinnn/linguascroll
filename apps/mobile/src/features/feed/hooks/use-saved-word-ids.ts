@@ -36,7 +36,7 @@ export function useSavedWordIds(
 ): {
   isSaved: (wordId: string) => boolean;
   isPending: (wordId: string) => boolean;
-  toggleSave: (wordId: string) => void;
+  toggleSave: (wordId: string, sourceSegmentId?: string | null) => void;
 } {
   const serverSavedWordIds = useMemo(() => deriveServerSavedWordIds(items), [items]);
   const [confirmedOverrides, setConfirmedOverrides] = useState<Map<string, boolean>>(new Map());
@@ -65,7 +65,7 @@ export function useSavedWordIds(
     return pendingWordIds.has(wordId);
   }
 
-  function toggleSave(wordId: string): void {
+  function toggleSave(wordId: string, sourceSegmentId?: string | null): void {
     toggleSaveWord(
       wordId,
       userId,
@@ -73,6 +73,7 @@ export function useSavedWordIds(
       pendingWordIdsRef.current,
       (next) => setPendingWordIds(next),
       (id, nowSaved) => setConfirmedOverrides((current) => applyToggleSuccess(current, id, nowSaved)),
+      sourceSegmentId,
     );
   }
 
@@ -148,6 +149,7 @@ export function toggleSaveWord(
   pendingWordIdsRef: Set<string>,
   onPendingChange: (next: Set<string>) => void,
   onSuccess: (wordId: string, nowSaved: boolean) => void,
+  sourceSegmentId?: string | null,
   deps: { saveWord: typeof saveWord; unsaveWord: typeof unsaveWord } = { saveWord, unsaveWord },
 ): void {
   if (!canToggleSave(pendingWordIdsRef, wordId)) {
@@ -158,7 +160,9 @@ export function toggleSaveWord(
   pendingWordIdsRef.add(wordId);
   onPendingChange(new Set(pendingWordIdsRef));
 
-  const mutate = nowSaving ? deps.saveWord(wordId, userId) : deps.unsaveWord(wordId, userId);
+  // sourceSegmentId sadece SAVE ederken anlamlı — unsave'de kaynak context
+  // kavramı yok (kayıt zaten siliniyor).
+  const mutate = nowSaving ? deps.saveWord(wordId, userId, sourceSegmentId) : deps.unsaveWord(wordId, userId);
   mutate
     .then(() => {
       onSuccess(wordId, nowSaving);

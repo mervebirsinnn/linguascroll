@@ -1,0 +1,177 @@
+{
+  "contentId": "business-b1-blocked",
+  "muxAssetId": "local-blocked-by-another-teams-api",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b1-blocked.mp4",
+  "durationMs": 23970,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1820,
+      "text": "I finished my part of the feature by Tuesday.",
+      "englishExplanation": "The speaker completed their assigned part of the software feature by Tuesday.",
+      "turkishExplanation": "Konuşmacı, özelliğin kendisine düşen kısmını Salı gününe kadar bitirdi."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 2440,
+      "endMs": 5700,
+      "text": "But I couldn't test it, the other team's API still wasn't live.",
+      "englishExplanation": "They could not test their work because the API built by another team was not ready yet.",
+      "turkishExplanation": "Ancak test edemedi çünkü diğer ekibin API'si henüz yayında değildi."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 6260,
+      "endMs": 8300,
+      "text": "My manager asked why the ticket was still open.",
+      "englishExplanation": "The manager inquired why the assigned task was still marked as open.",
+      "turkishExplanation": "Yöneticisi, görevin (biletin) neden hâlâ açık olduğunu sordu."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 8760,
+      "endMs": 11040,
+      "text": "I said, I'm blocked by another team's endpoint.",
+      "englishExplanation": "The speaker explained that they are unable to proceed until another team's API endpoint is ready.",
+      "turkishExplanation": "Konuşmacı, diğer ekibin uç noktası (endpoint) tamamlanmadığı için ilerleyemediğini söyledi."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 11660,
+      "endMs": 14340,
+      "text": "As soon as it's deployed, I can finish the integration.",
+      "englishExplanation": "The integration work can be finished as soon as the external service goes live.",
+      "turkishExplanation": "Sistem canlıya alınır alınmaz entegrasyonu tamamlayabileceğini belirtti."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 14940,
+      "endMs": 15380,
+      "text": "He nodded.",
+      "englishExplanation": "The manager nodded his head to acknowledge the explanation.",
+      "turkishExplanation": "Yöneticisi anladığını göstermek için başını salladı."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 15800,
+      "endMs": 16300,
+      "text": "Makes sense.",
+      "englishExplanation": "A conversational phrase meaning that something is logical or understandable.",
+      "turkishExplanation": "Söylenen şeyin mantıklı ve anlaşılır olduğunu belirten kısa bir ifade."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 16920,
+      "endMs": 17700,
+      "text": "Anything I can do?",
+      "englishExplanation": "The manager offered to help if there was anything he could do.",
+      "turkishExplanation": "Yöneticisi yapabileceği bir yardım olup olmadığını sordu."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 18120,
+      "endMs": 18600,
+      "text": "Not really.",
+      "englishExplanation": "A simple response indicating that no help is needed right now.",
+      "turkishExplanation": "Şu an için gerekmediğini belirten kısa ve doğal bir yanıt."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 19060,
+      "endMs": 20520,
+      "text": "There's not much I can do until then.",
+      "englishExplanation": "The speaker explains that they cannot take further action until the dependency is resolved.",
+      "turkishExplanation": "Konuşmacı, o zamana kadar kendisinin yapabileceği pek bir şey olmadığını açıkladı."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 20920,
+      "endMs": 22080,
+      "text": "So I opened a different ticket.",
+      "englishExplanation": "Because of the delay, the speaker picked up another task ticket to work on.",
+      "turkishExplanation": "Bu yüzden farklı bir görev kaydı açıp ona başladı."
+    },
+    {
+      "ordinal": 12,
+      "startMs": 22560,
+      "endMs": 23500,
+      "text": "Waiting is still work.",
+      "englishExplanation": "A lighthearted statement observing that waiting for external tasks is still a normal part of working.",
+      "turkishExplanation": "Beklemenin de iş sürecinin doğal bir parçası olduğunu belirten esprili bir kapanış."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "feature",
+      "gloss": "yazılım özelliği"
+    },
+    {
+      "lemma": "ticket",
+      "gloss": "iş/görev kaydı"
+    },
+    {
+      "lemma": "endpoint",
+      "gloss": "API uç noktası"
+    },
+    {
+      "lemma": "deploy",
+      "gloss": "canlıya/yayına almak"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 4,
+      "type": "phrase",
+      "expression": "blocked by",
+      "englishExplanation": "In work and project management contexts, 'blocked by' means being unable to move forward on a task because you are waiting for another team or prerequisite to be finished.",
+      "turkishExplanation": "İş ve proje süreçlerinde 'blocked by' olmak, harici bir bağımlılık veya başka bir ekibin işi tamamlanmadığı için kendi işine devam edememek anlamına gelir.",
+      "exampleEn": "We are currently blocked by the legal team's review.",
+      "exampleTr": "Şu anda hukuk ekibinin incelemesini beklediğimiz için ilerleyemiyoruz."
+    },
+    {
+      "segmentOrdinal": 7,
+      "type": "phrase",
+      "expression": "Makes sense",
+      "englishExplanation": "A common informal expression used to indicate that an explanation or statement is reasonable and clear.",
+      "turkishExplanation": "Bir açıklama veya durumun mantıklı, makul ve anlaşılır olduğunu belirtmek için kullanılan yaygın bir günlük ifade.",
+      "exampleEn": "The train was delayed, so I took the bus. — Makes sense.",
+      "exampleTr": "Tren gecikti, ben de otobüse bindim. — Mantıklı."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 4,
+    "question": "In the video, what does the speaker mean by saying \"I'm blocked by another team's endpoint\"?",
+    "options": [
+      {
+        "text": "They cannot continue their work because they depend on another team's API to be ready first.",
+        "isCorrect": true
+      },
+      {
+        "text": "They are unable to write code because their server access was temporarily revoked.",
+        "isCorrect": false
+      },
+      {
+        "text": "They canceled the ticket because the other team decided not to build the feature.",
+        "isCorrect": false
+      },
+      {
+        "text": "They finished the integration but were asked not to test it until next week.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointOnTrivialSegment",
+        "severity": "warning",
+        "segmentOrdinal": 7,
+        "message": "Segment 7 çok kısa/trivial (\"Makes sense.\") ama bir learning point üretilmiş."
+      }
+    ]
+  }
+}

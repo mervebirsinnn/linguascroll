@@ -33,6 +33,22 @@ const seedVideos = [
   { id: "60000000-0000-4000-8000-000000000002", learningLanguage: "en", cefrLevel: "B1", muxAssetId: "local-common-mistakes", topic: "career", durationMs: 36467 },
   { id: "60000000-0000-4000-8000-000000000003", learningLanguage: "en", cefrLevel: "A2", muxAssetId: "local-introduce-yourself", topic: "career", durationMs: 21600 },
   { id: "60000000-0000-4000-8000-000000000004", learningLanguage: "en", cefrLevel: "A2", muxAssetId: "local-ordering-food", topic: "travel", durationMs: 30200 },
+
+  // Chunk 11 — ikinci batch (11 yeni gerçek video, aynı STT pipeline'ından).
+  // Ayrı id prefix (70000000-...) kullanılıyor — ilk batch'in
+  // 60000000-.../61000000-.../62000000-.../63000000-.../64000000-... aralığıyla
+  // çakışmasın diye.
+  { id: "70000000-0000-4000-8000-000000000001", learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-dog-three-words", topic: "humor", durationMs: 20900 },
+  { id: "70000000-0000-4000-8000-000000000002", learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-how-are-you-answers", topic: "lifestyle", durationMs: 20110 },
+  { id: "70000000-0000-4000-8000-000000000003", learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-ordering-pizza-mixup", topic: "humor", durationMs: 20600 },
+  { id: "70000000-0000-4000-8000-000000000004", learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-painting-mishap", topic: "humor", durationMs: 21220 },
+  { id: "70000000-0000-4000-8000-000000000005", learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-counting-sheep", topic: "humor", durationMs: 21867 },
+  { id: "70000000-0000-4000-8000-000000000006", learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-video-call-mute", topic: "humor", durationMs: 20300 },
+  { id: "70000000-0000-4000-8000-000000000007", learningLanguage: "en", cefrLevel: "A2", muxAssetId: "local-baking-bread", topic: "lifestyle", durationMs: 30020 },
+  { id: "70000000-0000-4000-8000-000000000008", learningLanguage: "en", cefrLevel: "B1", muxAssetId: "local-daily-habits-idioms", topic: "lifestyle", durationMs: 34467 },
+  { id: "70000000-0000-4000-8000-000000000009", learningLanguage: "en", cefrLevel: "B2", muxAssetId: "local-ai-double-edged-sword", topic: "career", durationMs: 38210 },
+  { id: "70000000-0000-4000-8000-000000000010", learningLanguage: "en", cefrLevel: "B2", muxAssetId: "local-turning-over-new-leaf", topic: "career", durationMs: 34320 },
+  { id: "70000000-0000-4000-8000-000000000011", learningLanguage: "en", cefrLevel: "B2", muxAssetId: "local-failure-is-a-teacher", topic: "career", durationMs: 32667 },
 ];
 
 async function seed(): Promise<void> {

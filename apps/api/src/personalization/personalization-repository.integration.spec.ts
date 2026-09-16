@@ -32,10 +32,14 @@ describe("PersonalizationRepository (integration, gerçek Postgres)", () => {
     return user.id;
   }
 
+  let nextMuxAssetId = 1;
+  // Chunk 12: videos.mux_asset_id artık UNIQUE (bkz. videos.schema.ts) — bu
+  // testte createVideo() birden fazla kez çağrıldığı için sabit bir literal
+  // artık çakışır, her çağrı kendi benzersiz id'sini üretmeli.
   async function createVideo(topic: string, durationMs: number): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "test-mux-asset", topic, durationMs })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: `test-mux-asset-${nextMuxAssetId++}`, topic, durationMs })
       .returning();
     if (!video) throw new Error("Beklenen video insert edilemedi");
     return video.id;

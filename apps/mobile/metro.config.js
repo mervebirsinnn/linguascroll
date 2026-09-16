@@ -33,4 +33,18 @@ config.resolver.nodeModulesPaths = [
 // 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
 config.resolver.disableHierarchicalLookup = true;
 
+// 4. `watchFolders = [workspaceRoot]` tüm monorepo'yu (packages/shared-types'ı
+// çözebilmek için) izliyor — ama bu, mobile'ın hiç ihtiyaç duymadığı
+// `apps/api`'yi de kapsıyor. `apps/api/scripts/stt/{input,tmp,output}` STT
+// pipeline'ının SANİYELER içinde yaratıp SİLDİĞİ scratch klasörler — Metro'nun
+// dosya izleyicisi (Watchman yoksa FallbackWatcher) bir klasörü izlemeye
+// başladığı ANDA o klasör silinirse ENOENT ile TAMAMEN ÇÖKÜYOR (gerçekte
+// yaşanmış bir crash, bkz. proje geçmişi). Bu üç klasörün + backend'in kendi
+// `dist`/derleme çıktısının Metro tarafından hiç izlenmemesi gerekiyor —
+// zaten JS/TS kaynak kodu değiller, mobile bundle'ına hiç girmiyorlar.
+config.resolver.blockList = [
+  /apps[\\/]api[\\/]scripts[\\/]stt[\\/](input|tmp|output)[\\/].*/,
+  /apps[\\/]api[\\/]dist[\\/].*/,
+];
+
 module.exports = config;

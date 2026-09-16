@@ -2,7 +2,8 @@ import { z } from "zod";
 import { languageCodeSchema } from "./primitives/language-code";
 
 /** CEFR ölçeği (Avrupa Ortak Dil Referans Çerçevesi) — dış standart, keyfi bir seçim değil. */
-const cefrLevelSchema = z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]);
+export const cefrLevelSchema = z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]);
+export type CefrLevel = z.infer<typeof cefrLevelSchema>;
 
 /**
  * topic = content-interest kategorisi, curriculum/öğrenim sıralaması DEĞİL.

@@ -1,0 +1,167 @@
+{
+  "contentId": "c1final3",
+  "muxAssetId": "local-cleft-sentences-in-academic-writing",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\C1final3.mp4",
+  "durationMs": 42367,
+  "topic": "career",
+  "cefrLevel": "C1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 5340,
+      "text": "Academic writing requires precision, yet scholars frequently need to direct their audience",
+      "englishExplanation": "Academic writing demands accuracy, but researchers often have to guide their readers.",
+      "turkishExplanation": "Akademik yazım kesinlik gerektirir, ancak araştırmacıların genellikle okuyucularını yönlendirmeleri gerekir."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 5340,
+      "endMs": 6860,
+      "text": "towards specific arguments.",
+      "englishExplanation": "Leading the audience toward particular points and claims.",
+      "turkishExplanation": "Okuyucuyu belirli argümanlara ve savlara doğru yönlendirmek."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 7540,
+      "endMs": 12080,
+      "text": "It is through rigorous empirical research that authors establish credible assertions.",
+      "englishExplanation": "Authors build trustworthy claims specifically by conducting strict, data-driven research.",
+      "turkishExplanation": "Yazarlar güvenilir iddialarını ancak titiz deneysel araştırmalar yoluyla temellendirirler."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 12680,
+      "endMs": 15520,
+      "text": "When standard sentence structures obscure key evidence,",
+      "englishExplanation": "When conventional sentence formats make crucial evidence hard to see or distinguish.",
+      "turkishExplanation": "Standart cümle yapıları önemli kanıtların üzerini örtüp onları belirsizleştirdiğinde."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 16020,
+      "endMs": 19960,
+      "text": "what writers often deploy is the cleft construction to shift emphasis.",
+      "englishExplanation": "Writers frequently use cleft sentences to redirect and highlight their focus.",
+      "turkishExplanation": "Yazarlar vurguyu değiştirmek için sıklıkla bölünmüş (cleft) cümle yapısını kullanırlar."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 20640,
+      "endMs": 25280,
+      "text": "It was this exact grammatical strategy that enabled historical analysts to isolate",
+      "englishExplanation": "This specific grammatical structure allowed historians to separate key points.",
+      "turkishExplanation": "Tarihsel analistlerin ana nedenleri ayrıştırmasını sağlayan şey tam olarak bu dilbilgisi stratejisiydi."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 25280,
+      "endMs": 28180,
+      "text": "critical causes from secondary background factors.",
+      "englishExplanation": "Distinguishing major causal factors from less important background details.",
+      "turkishExplanation": "Kritik nedenleri ikincil plandaki arka plan etkenlerinden ayırt etmek."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 28180,
+      "endMs": 33340,
+      "text": "What matters most in formal composition is controlling where the reader directs focus.",
+      "englishExplanation": "The most crucial aspect of formal writing is managing where the reader pays attention.",
+      "turkishExplanation": "Resmi metin yazımında en önemli olan şey, okuyucunun odağını nereye yönelttiğini kontrol etmektir."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 34080,
+      "endMs": 36880,
+      "text": "By altering basic clause patterns into cleft forms,",
+      "englishExplanation": "By converting standard clauses into cleft sentences.",
+      "turkishExplanation": "Temel cümlecik kalıplarını bölünmüş (cleft) formlara dönüştürerek."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 37440,
+      "endMs": 41820,
+      "text": "writers guarantee that essential insights achieve their intended rhetorical power.",
+      "englishExplanation": "Authors ensure that crucial arguments deliver their desired persuasive impact.",
+      "turkishExplanation": "Yazarlar temel çıkarımların amaçlanan retorik güce ulaşmasını garanti ederler."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "obscure",
+      "gloss": "anlaşılmasını zorlaştırmak, gölgelemek"
+    },
+    {
+      "lemma": "deploy",
+      "gloss": "etkili biçimde devreye sokmak, kullanmak"
+    },
+    {
+      "lemma": "empirical",
+      "gloss": "deneysel, gözleme ve kanıta dayalı"
+    },
+    {
+      "lemma": "rhetorical power",
+      "gloss": "retorik güç, ikna edici anlatım gücü"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 3,
+      "type": "grammar",
+      "expression": "It is through ... that ...",
+      "englishExplanation": "An 'it-cleft' construction used to emphasize a prepositional phrase or adverbial element expressing means or method.",
+      "turkishExplanation": "Bir eylemin hangi araçla ya da yöntemle yapıldığını vurgulamak için kullanılan 'it-cleft' (vurgulu bölünmüş cümle) kalıbı.",
+      "exampleEn": "It is through open dialogue that teams resolve misunderstandings.",
+      "exampleTr": "Ekipler yanlış anlaşılmaları ancak açık diyalog yoluyla çözer."
+    },
+    {
+      "segmentOrdinal": 8,
+      "type": "grammar",
+      "expression": "What matters most is ...",
+      "englishExplanation": "A wh-cleft (pseudo-cleft) construction used to place strong focus on the subject or the primary issue being discussed.",
+      "turkishExplanation": "Ele alınan asıl meseleyi veya konunun en can alıcı noktasını vurgulamak için kullanılan 'wh-cleft' (sahte bölünmüş) yapı.",
+      "exampleEn": "What matters most in negotiation is mutual respect.",
+      "exampleTr": "Müzakerelerde en çok önem taşıyan şey karşılıklı saygıdır."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 5,
+    "question": "In segment 5, why do writers deploy cleft constructions according to the speaker?",
+    "options": [
+      {
+        "text": "To change and control where the emphasis falls in a sentence",
+        "isCorrect": true
+      },
+      {
+        "text": "To shorten complex paragraphs and eliminate passive voice",
+        "isCorrect": false
+      },
+      {
+        "text": "To introduce informal idioms into academic publications",
+        "isCorrect": false
+      },
+      {
+        "text": "To minimize the number of empirical claims in their text",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 3,
+        "message": "Learning point ifadesi (\"It is through ... that ...\") segment 3'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 8,
+        "message": "Learning point ifadesi (\"What matters most is ...\") segment 8'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "contentId": "a1final6",
+  "muxAssetId": "local-video-call-problems",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A1final6.mp4",
+  "durationMs": 20300,
+  "topic": "humor",
+  "cefrLevel": "A1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1140,
+      "text": "I want to call my friend today.",
+      "englishExplanation": "The speaker expresses a wish to phone their friend today.",
+      "turkishExplanation": "Konuşmacı bugün arkadaşını aramak istediğini söylüyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1640,
+      "endMs": 3420,
+      "text": "I open my computer and press start.",
+      "englishExplanation": "Opening the computer and starting the video call.",
+      "turkishExplanation": "Bilgisayarı açıp başlatma düğmesine basıyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 3900,
+      "endMs": 5060,
+      "text": "But wait, where is my sound?",
+      "englishExplanation": "Noticing a problem and wondering why there is no audio.",
+      "turkishExplanation": "Sesin gelmediğini fark edip nedenini merak ediyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 5580,
+      "endMs": 6420,
+      "text": "Oh, I am on mute.",
+      "englishExplanation": "Realizing that the microphone is muted.",
+      "turkishExplanation": "Mikrofonunun kapalı (sessizde) olduğunu fark ediyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 6940,
+      "endMs": 8340,
+      "text": "On mute means no sound.",
+      "englishExplanation": "Clarifying that 'on mute' means audio is turned off.",
+      "turkishExplanation": "'On mute' ifadesinin sesin iletilmediği anlamına geldiğini açıklıyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 8880,
+      "endMs": 11340,
+      "text": "I talk to my dog for 5 minutes because I am on mute.",
+      "englishExplanation": "Explaining that because the mic was muted, the speaker ended up talking to their dog instead.",
+      "turkishExplanation": "Sesi kapalı olduğu için beş dakika boyunca köpeğiyle konuştuğunu anlatıyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 11840,
+      "endMs": 13000,
+      "text": "My dog is very confused.",
+      "englishExplanation": "Describing the dog's puzzled reaction.",
+      "turkishExplanation": "Köpeğinin bu duruma oldukça şaşırdığını ve kafasının karıştığını belirtiyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 13700,
+      "endMs": 14780,
+      "text": "Now, the video stops.",
+      "englishExplanation": "Noticing that the video screen has frozen or stopped.",
+      "turkishExplanation": "Görüntünün aniden donduğunu veya durduğunu ifade ediyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 15480,
+      "endMs": 16480,
+      "text": "This is a bad connection.",
+      "englishExplanation": "Identifying the problem as a poor network connection.",
+      "turkishExplanation": "Sorunun internet bağlantısının zayıflığından kaynaklandığını söylüyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 17000,
+      "endMs": 19080,
+      "text": "A bad connection means weak internet.",
+      "englishExplanation": "Explaining that a 'bad connection' refers to weak internet service.",
+      "turkishExplanation": "'Bad connection' tabirinin zayıf internet anlamına geldiğini açıklıyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 19640,
+      "endMs": 19820,
+      "text": "Look.",
+      "englishExplanation": "Calling the viewer's attention to what is on the screen.",
+      "turkishExplanation": "İzleyicinin dikkatini ekrana çekmek için 'Bakın' diyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "on mute",
+      "gloss": "sessizde, mikrofonu kapalı"
+    },
+    {
+      "lemma": "confused",
+      "gloss": "kafası karışık, şaşkın"
+    },
+    {
+      "lemma": "connection",
+      "gloss": "bağlantı (internet)"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 4,
+      "type": "phrase",
+      "expression": "on mute",
+      "englishExplanation": "Used when your microphone is switched off during a video or phone call so others cannot hear you.",
+      "turkishExplanation": "Görüntülü veya sesli aramalarda mikrofonun kapalı tutulması durumunu anlatmak için kullanılır.",
+      "exampleEn": "You are on mute; we can't hear what you are saying.",
+      "exampleTr": "Mikrofonun kapalı, söylediklerini duyamıyoruz."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 4,
+    "question": "What does the speaker mean by saying 'I am on mute'?",
+    "options": [
+      {
+        "text": "Their microphone is turned off, so the other person cannot hear them.",
+        "isCorrect": true
+      },
+      {
+        "text": "Their computer screen turned black completely.",
+        "isCorrect": false
+      },
+      {
+        "text": "Their internet connection was disconnected.",
+        "isCorrect": false
+      },
+      {
+        "text": "They cannot hear what the friend is saying.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "pass",
+    "issues": []
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "contentId": "business-b1-unclear-requirements",
+  "muxAssetId": "local-asking-saves-time",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b1-unclear-requirements.mp4",
+  "durationMs": 24070,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1860,
+      "text": "The ticket said, improve the UX.",
+      "englishExplanation": "The speaker introduces a task ticket that contained a very vague instruction.",
+      "turkishExplanation": "Konuşmacı, belirsiz bir talimat içeren bir iş biletini anlatmaya başlıyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 2520,
+      "endMs": 2900,
+      "text": "That's it.",
+      "englishExplanation": "A short phrase emphasizing that there was no further information provided.",
+      "turkishExplanation": "Başka hiçbir bilginin verilmediğini vurgulayan kısa bir ifade."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 3280,
+      "endMs": 4140,
+      "text": "That was the whole ticket.",
+      "englishExplanation": "Reiterates that the entire ticket consisted only of those few words.",
+      "turkishExplanation": "Biletin tamamının sadece o birkaç kelimeden ibaret olduğunu yineliyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 4640,
+      "endMs": 7780,
+      "text": "I stared at it for a solid minute, then messaged the product owner.",
+      "englishExplanation": "tells how the speaker spent a full minute looking at the brief instruction before messaging their manager.",
+      "turkishExplanation": "Konuşmacının yöneticisine yazmadan önce tam bir dakika boyunca bu mesaja nasıl bakakaldığını anlatıyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 8320,
+      "endMs": 10020,
+      "text": "Could you clarify what you mean by improve?",
+      "englishExplanation": "The speaker asks for specific clarification on what needs to be improved.",
+      "turkishExplanation": "Konuşmacı, 'geliştirmek' ile neyin kastedildiğinin açıklanmasını istiyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 10440,
+      "endMs": 11200,
+      "text": "Just to confirm.",
+      "englishExplanation": "A common phrase used to explain that you are asking to double-check details.",
+      "turkishExplanation": "Detayları teyit etmek için soru sorulduğunu belirten yaygın bir ifade."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 11680,
+      "endMs": 15020,
+      "text": "Is this about the loading speed, the layout, or the error messages?",
+      "englishExplanation": "The speaker lists specific possibilities to narrow down the actual problem.",
+      "turkishExplanation": "Konuşmacı, asıl sorunu daraltmak için belirli olasılıkları sıralıyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 15700,
+      "endMs": 16180,
+      "text": "She replied,",
+      "englishExplanation": "Introduces the response from the product owner.",
+      "turkishExplanation": "Ürün sahibinin verdiği yanıtı başlatıyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 16740,
+      "endMs": 18520,
+      "text": "Oh, mainly the error messages.",
+      "englishExplanation": "The product owner specifies that the main issue is the error messages.",
+      "turkishExplanation": "Ürün sahibi, asıl konunun hata mesajları olduğunu açıklıyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 18960,
+      "endMs": 20460,
+      "text": "Sorry, I should have said that.",
+      "englishExplanation": "The product owner apologizes for omitting that detail originally.",
+      "turkishExplanation": "Ürün sahibi bu detayı en başta belirtmediği için özür diliyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 20460,
+      "endMs": 23500,
+      "text": "Two minutes of asking saved me two days of guessing.",
+      "englishExplanation": "The speaker concludes that asking a quick question saved days of wasted work.",
+      "turkishExplanation": "Konuşmacı, kısa bir soru sormanın günlerce sürecek boş çabayı önlediği sonucuna varıyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "clarify",
+      "gloss": "to make something clear or easier to understand"
+    },
+    {
+      "lemma": "product owner",
+      "gloss": "the person responsible for defining requirements and task goals in a project"
+    },
+    {
+      "lemma": "guess",
+      "gloss": "to try to form an opinion or give an answer without clear facts"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 4,
+      "type": "phrase",
+      "expression": "a solid (minute/hour/day)",
+      "englishExplanation": "Used to emphasize a complete, uninterrupted period of time.",
+      "turkishExplanation": "Kesintisiz ve tam bir zaman dilimini vurgulamak için kullanılır.",
+      "exampleEn": "We waited in line for a solid hour.",
+      "exampleTr": "Kuyrukta tam bir saat boyunca bekledik."
+    },
+    {
+      "segmentOrdinal": 10,
+      "type": "grammar",
+      "expression": "should have + past participle",
+      "englishExplanation": "Used to express regret or mention an action that was desirable in the past but did not happen.",
+      "turkishExplanation": "Geçmişte yapılması gerekip de yapılmayan eylemler için pişmanlık veya eleştiri bildirmek amacıyla kullanılır.",
+      "exampleEn": "I should have called you earlier.",
+      "exampleTr": "Seni daha önce aramalıydım."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 11,
+    "question": "In the video, what does the speaker mean by \"Two minutes of asking saved me two days of guessing\"?",
+    "options": [
+      {
+        "text": "A quick question prevented spending days working on wrong assumptions.",
+        "isCorrect": true
+      },
+      {
+        "text": "Spending two days guessing helped the speaker solve the task much faster.",
+        "isCorrect": false
+      },
+      {
+        "text": "The product owner required two days to answer a simple question.",
+        "isCorrect": false
+      },
+      {
+        "text": "Asking questions immediately caused a two-day delay in the project schedule.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 4,
+        "message": "Learning point ifadesi (\"a solid (minute/hour/day)\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 10,
+        "message": "Learning point ifadesi (\"should have + past participle\") segment 10'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

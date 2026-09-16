@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { check, integer, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { check, integer, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 
 /**
  * Persistence model — shared-types'taki Video (domain contract) ile KASITLI olarak
@@ -46,5 +46,15 @@ export const videosTable = pgTable(
     // imkansız bir durum, ranking'in kolaylığı için değil, bağımsız bir domain
     // düzeltmesi (bkz. shared-types'taki videoSchema.durationMs yorumu).
     check("duration_ms_positive_check", sql`${table.durationMs} > 0`),
+    // Chunk 12: content-enrichment publish pipeline'ının idempotency garantisi —
+    // aynı muxAssetId iki kez publish edilmeye çalışılırsa (aynı video yanlışlıkla
+    // tekrar işlenirse) uygulama katmanındaki ön-kontrole (bkz. publish-content.ts)
+    // EK OLARAK burada da, DB seviyesinde, race-condition'a karşı da geçerli bir
+    // garanti var. resolve-playback-url.ts artık muxAssetId'den dosya adını
+    // deterministik türettiği için (bkz. o dosyadaki Chunk 12 yorumu) iki farklı
+    // videonun aynı muxAssetId'yi taşıması zaten aynı medya dosyasını işaret
+    // etmesi anlamına gelirdi — bu constraint o durumu da yapısal olarak imkansız
+    // kılıyor.
+    unique("videos_mux_asset_id_unique").on(table.muxAssetId),
   ],
 );

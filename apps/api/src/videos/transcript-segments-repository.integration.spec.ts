@@ -27,10 +27,14 @@ describe("TranscriptSegmentsRepository (integration, gerçek Postgres)", () => {
     await pool.end();
   });
 
+  let nextMuxAssetId = 1;
+  // Chunk 12: videos.mux_asset_id artık UNIQUE (bkz. videos.schema.ts) — bu
+  // testte createVideo() birden fazla kez çağrıldığı için sabit bir literal
+  // artık çakışır, her çağrı kendi benzersiz id'sini üretmeli.
   async function createVideo(topic = "travel"): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-mux-asset-1", topic, durationMs: 60000 })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: `mock-mux-asset-${nextMuxAssetId++}`, topic, durationMs: 60000 })
       .returning();
     if (!video) {
       throw new Error("Beklenen video insert edilemedi");

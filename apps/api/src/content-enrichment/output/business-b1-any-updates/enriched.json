@@ -1,0 +1,193 @@
+{
+  "contentId": "business-b1-any-updates",
+  "muxAssetId": "local-buying-time-at-work",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b1-any-updates.mp4",
+  "durationMs": 24130,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1560,
+      "text": "My manager messages me.",
+      "englishExplanation": "The speaker receives a direct message from their manager.",
+      "turkishExplanation": "Konuşmacının yöneticisi kendisine mesaj atıyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1980,
+      "endMs": 3380,
+      "text": "Any updates on the login bug?",
+      "englishExplanation": "The manager asks if there is any progress on fixing the login problem.",
+      "turkishExplanation": "Yönetici, giriş hatasıyla ilgili herhangi bir gelişme olup olmadığını soruyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 4000,
+      "endMs": 4520,
+      "text": "To be honest,",
+      "englishExplanation": "A conversational transition introducing a candid truth.",
+      "turkishExplanation": "Dürüst bir itirafın başlangıcı: 'Doğrusunu söylemek gerekirse'."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 5160,
+      "endMs": 6080,
+      "text": "nothing was working.",
+      "englishExplanation": "The speaker admits that none of their attempts were successful.",
+      "turkishExplanation": "Hiçbir şeyin yolunda gitmediğini, hiçbir çözümün çalışmadığını belirtiyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 6780,
+      "endMs": 9260,
+      "text": "The fix I pushed that morning broke two other things.",
+      "englishExplanation": "The fix deployed earlier created errors in two other areas.",
+      "turkishExplanation": "O sabah sisteme yüklediği düzeltmenin başka iki yeri bozduğunu anlatıyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 9960,
+      "endMs": 10820,
+      "text": "I typed a reply,",
+      "englishExplanation": "The speaker started writing an answer to the manager.",
+      "turkishExplanation": "Bir yanıt yazmaya başladığını söylüyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 11420,
+      "endMs": 12080,
+      "text": "deleted it,",
+      "englishExplanation": "The speaker erased the message they had just drafted.",
+      "turkishExplanation": "Yazdığı mesajı sildiğini ifade ediyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 12580,
+      "endMs": 13200,
+      "text": "typed it again.",
+      "englishExplanation": "The speaker tried phrasing the response once more.",
+      "turkishExplanation": "Cevabı yeniden yazdığını belirtiyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 13860,
+      "endMs": 17700,
+      "text": "I'm still working through a few issues, but I'll keep you posted by end of day.",
+      "englishExplanation": "The message promised progress and an update before the workday finishes.",
+      "turkishExplanation": "Hâlâ bazı sorunları çözmeye çalıştığını ve gün sonuna kadar haber vereceğini yazdığını söylüyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 18300,
+      "endMs": 20340,
+      "text": "He replied, sounds good thumbs up.",
+      "englishExplanation": "The manager accepted the reply and sent an approving emoji.",
+      "turkishExplanation": "Yöneticinin 'Tamamdır' diyerek başparmak yukarı emojisiyle yanıt verdiğini anlatıyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 20900,
+      "endMs": 23540,
+      "text": "It wasn't good, but it bought me three more hours.",
+      "englishExplanation": "The situation was unresolved, but the reply delayed pressure by three hours.",
+      "turkishExplanation": "Durum iyi olmasa da bu cevabın kendisine üç saat daha zaman kazandırdığını söylüyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "keep someone posted",
+      "gloss": "birini gelişmelerden haberdar etmek"
+    },
+    {
+      "lemma": "work through",
+      "gloss": "bir sorunu adım adım ele alıp çözmeye çalışmak"
+    },
+    {
+      "lemma": "buy time",
+      "gloss": "zaman kazanmak"
+    },
+    {
+      "lemma": "end of day",
+      "gloss": "mesai bitimi, gün sonu"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 9,
+      "type": "phrase",
+      "expression": "keep (someone) posted",
+      "englishExplanation": "An informal but professional idiom meaning to give someone regular updates as a situation develops.",
+      "turkishExplanation": "İş hayatında ve günlük dilde sıkça kullanılan, 'birini gelişmelerden haberdar etmek / bilgilendirmek' anlamına gelen bir deyimdir.",
+      "exampleEn": "I'm heading into the meeting now, but I'll keep you posted.",
+      "exampleTr": "Şimdi toplantıya giriyorum ama seni gelişmelerden haberdar ederim."
+    },
+    {
+      "segmentOrdinal": 11,
+      "type": "phrase",
+      "expression": "buy (someone) time",
+      "englishExplanation": "A common idiom meaning to delay an outcome so that you have more time to prepare or fix something.",
+      "turkishExplanation": "Birine zor bir durumu toparlaması veya çözüm üretmesi için fazladan vakit kazandırmak anlamına gelen bir deyimdir.",
+      "exampleEn": "Saying our connection was slow bought us an extra ten minutes.",
+      "exampleTr": "Bağlantımızın yavaş olduğunu söylemek bize fazladan on dakika kazandırdı."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 9,
+    "question": "In segment 9, what does the speaker mean by saying \"I'll keep you posted\"?",
+    "options": [
+      {
+        "text": "I will send you updates as things develop.",
+        "isCorrect": true
+      },
+      {
+        "text": "I will post our code publicly online.",
+        "isCorrect": false
+      },
+      {
+        "text": "I will leave a written note at your desk.",
+        "isCorrect": false
+      },
+      {
+        "text": "I will assign the remaining tasks to you.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 9,
+        "message": "Learning point ifadesi (\"keep (someone) posted\") segment 9'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 11,
+        "message": "Learning point ifadesi (\"buy (someone) time\") segment 11'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"keep someone posted\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"work through\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"buy time\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

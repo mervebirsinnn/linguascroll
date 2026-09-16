@@ -1,0 +1,187 @@
+{
+  "contentId": "business-b2-trade-off",
+  "muxAssetId": "local-quick-fix-versus-proper-fix",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b2-trade-off.mp4",
+  "durationMs": 30600,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1340,
+      "text": "Can't we just do the quick version?",
+      "englishExplanation": "Asking whether a faster, simplified approach can be taken instead of the full process.",
+      "turkishExplanation": "Tam süreç yerine daha hızlı ve basit bir yöntemin uygulanıp uygulanamayacağını soruyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1900,
+      "endMs": 3380,
+      "text": "My product manager asked.",
+      "englishExplanation": "Indicating that this question was asked by the speaker's product manager.",
+      "turkishExplanation": "Bu soruyu konuşmacının ürün yöneticisinin sorduğunu açıklıyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 3980,
+      "endMs": 5620,
+      "text": "I get it, the deadlines close.",
+      "englishExplanation": "Acknowledging that the deadline is very close and understanding the urgency.",
+      "turkishExplanation": "Teslim tarihinin yaklaştığını ve aciliyetini anladığını ifade ediyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 6240,
+      "endMs": 8540,
+      "text": "But I'd already seen the shortcut before.",
+      "englishExplanation": "Mentioning that the speaker had previously experienced taking this kind of shortcut.",
+      "turkishExplanation": "Konuşmacı, bu tür kestirme yolların daha önce nasıl sonuçlandığını tecrübe ettiğini belirtiyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 9180,
+      "endMs": 13500,
+      "text": "We could, I said, but the main trade -off is speed now versus stability later.",
+      "englishExplanation": "Explaining that choosing speed right now comes at the cost of future system stability.",
+      "turkishExplanation": "Şu anki hızı seçmenin gelecekteki sistem istikrarından ödün vermek anlamına geldiğini açıklıyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 14140,
+      "endMs": 18680,
+      "text": "The quick fix would work today, but we'd end up paying for it later, probably during a",
+      "englishExplanation": "Warning that temporary solutions eventually lead to consequences or extra work later.",
+      "turkishExplanation": "Geçici çözümlerin eninde sonunda ileride bir bedel çıkaracağı konusunda uyarıyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 18680,
+      "endMs": 19600,
+      "text": "busy release week.",
+      "englishExplanation": "Completing the thought by stating the problem would likely occur during a busy product release.",
+      "turkishExplanation": "Sorunun büyük olasılıkla yoğun bir ürün yayınlama haftasında ortaya çıkacağını ekliyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 20160,
+      "endMs": 21100,
+      "text": "She thought about it.",
+      "englishExplanation": "Stating that the manager took time to evaluate the explanation.",
+      "turkishExplanation": "Yöneticinin bu açıklamayı değerlendirmek için biraz düşündüğünü belirtiyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 21580,
+      "endMs": 23780,
+      "text": "Okay, how much longer for the proper fix?",
+      "englishExplanation": "Asking how much extra time is required to complete the work correctly.",
+      "turkishExplanation": "İşi doğru yapmak için ne kadar daha fazla zamana ihtiyaç olduğunu soruyor."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 24380,
+      "endMs": 25160,
+      "text": "Two extra days.",
+      "englishExplanation": "Stating the exact amount of extra time needed.",
+      "turkishExplanation": "Gereken ek sürenin tam olarak iki gün olduğunu söylüyor."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 25820,
+      "endMs": 26320,
+      "text": "Worth it.",
+      "englishExplanation": "Deciding that spending the extra time is a good decision.",
+      "turkishExplanation": "Ekstra zaman harcamanın buna değeceğine karar verildiğini ifade ediyor."
+    },
+    {
+      "ordinal": 12,
+      "startMs": 26320,
+      "endMs": 27940,
+      "text": "We shipped the real version.",
+      "englishExplanation": "Confirming that they released the properly built version of the product.",
+      "turkishExplanation": "Ürünün doğru ve eksiksiz hazırlanmış sürümünü yayına aldıklarını doğruluyor."
+    },
+    {
+      "ordinal": 13,
+      "startMs": 28560,
+      "endMs": 30040,
+      "text": "No more midnight wake -up calls.",
+      "englishExplanation": "Highlighting that doing things properly prevented late-night system emergencies.",
+      "turkishExplanation": "İşi baştan doğru yapmanın gece yarısı acil durum krizlerini önlediğini belirtiyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "trade-off",
+      "gloss": "a balance achieved between two desirable but conflicting features"
+    },
+    {
+      "lemma": "quick fix",
+      "gloss": "an easy, temporary solution that may cause issues later"
+    },
+    {
+      "lemma": "ship",
+      "gloss": "to launch or release a completed product or software update"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 5,
+      "type": "phrase",
+      "expression": "trade-off",
+      "englishExplanation": "Refers to a situation where you accept a downside or sacrifice in one area to gain an advantage in another.",
+      "turkishExplanation": "Bir alanda kazanç elde etmek için başka bir alandan ödün verme durumunu ifade eder.",
+      "exampleEn": "There is always a trade-off between speed and quality.",
+      "exampleTr": "Hız ile kalite arasında her zaman bir ödünleşme vardır."
+    },
+    {
+      "segmentOrdinal": 6,
+      "type": "phrase",
+      "expression": "end up",
+      "englishExplanation": "Used to describe reaching a particular state, condition, or situation as a result of earlier actions.",
+      "turkishExplanation": "Önceki eylemlerin sonucunda belirli bir duruma veya sonuca ulaşmayı tanımlamak için kullanılır.",
+      "exampleEn": "If we rush the project, we'll end up fixing bugs all weekend.",
+      "exampleTr": "Projeyi aceleye getirirsek, sonunda bütün hafta sonu hataları düzeltmek zorunda kalırız."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 5,
+    "question": "In the video, what does the speaker mean by saying 'the main trade-off is speed now versus stability later'?",
+    "options": [
+      {
+        "text": "Gaining speed immediately means risking the system's future reliability.",
+        "isCorrect": true
+      },
+      {
+        "text": "Increasing current speed will automatically guarantee better stability later.",
+        "isCorrect": false
+      },
+      {
+        "text": "Building a stable product is always faster than taking a shortcut.",
+        "isCorrect": false
+      },
+      {
+        "text": "Future stability is completely unaffected by decisions made today.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 5,
+        "message": "Learning point ifadesi (\"trade-off\") segment 5'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"trade-off\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

@@ -27,3 +27,13 @@ apps/api/scripts/stt/output/
 # Python byte-code cache (cleanup_test.py/transcribe.py çalıştırılınca oluşur) — kaynak değil.
 __pycache__/
 *.pyc
+
+# Chunk 14 — public/media, resolve-playback-url.ts'in servis ettiği gerçek
+# video dosyaları için LOKAL bir development asset klasörü, bir content
+# dağıtım mekanizması DEĞİL (STT'nin input/'unun AYNI felsefesi, bkz. yukarısı) —
+# 50 videoya çıkarken git history'nin yüzlerce MB büyümesini önlemek için
+# BİLİNÇLİ olarak commit edilmiyor. Prodüksiyon medya hosting'i Chunk 18
+# (Release Readiness) kapsamında çözülecek — bkz. apps/api/public/media/README.md.
+apps/api/public/media/*
+!apps/api/public/media/.gitkeep
+!apps/api/public/media/README.md

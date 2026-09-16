@@ -69,4 +69,40 @@ describe("fetchFeed", () => {
     expect(calledUrl).toContain(`cursor=${encodeURIComponent(opaqueCursor)}`);
     expect(page.nextCursor).toBe("next-opaque-cursor");
   });
+
+  it("Chunk 15 — cursor YOKKEN, preference (level+topics) query'ye eklenir", async () => {
+    const userId = "00000000-0000-4000-8000-000000000001";
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+
+    await fetchFeed(userId, undefined, { level: "B1", topics: ["travel", "dating"] });
+
+    const [calledUrl] = fetchSpy.mock.calls[0] as [string];
+    expect(calledUrl).toContain("level=B1");
+    expect(calledUrl).toContain(`topics=${encodeURIComponent("travel,dating")}`);
+  });
+
+  it("Chunk 15 — cursor VARKEN preference verilse bile query'ye EKLENMEZ (backend zaten yok sayıyor, gereksiz)", async () => {
+    const userId = "00000000-0000-4000-8000-000000000001";
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+
+    await fetchFeed(userId, "some-cursor", { level: "B1", topics: ["travel"] });
+
+    const [calledUrl] = fetchSpy.mock.calls[0] as [string];
+    expect(calledUrl).not.toContain("level=");
+    expect(calledUrl).not.toContain("topics=");
+  });
+
+  it("Chunk 15 — preference boşsa (level:null, topics:[]) query'ye hiçbir şey eklenmez", async () => {
+    const userId = "00000000-0000-4000-8000-000000000001";
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+
+    await fetchFeed(userId, undefined, { level: null, topics: [] });
+
+    const [calledUrl] = fetchSpy.mock.calls[0] as [string];
+    expect(calledUrl).not.toContain("level=");
+    expect(calledUrl).not.toContain("topics=");
+  });
 });

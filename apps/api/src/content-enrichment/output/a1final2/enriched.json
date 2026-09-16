@@ -1,0 +1,121 @@
+{
+  "contentId": "a1final2",
+  "muxAssetId": "local-responding-to-how-are-you",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\A1final2.mp4",
+  "durationMs": 20110,
+  "topic": "humor",
+  "cefrLevel": "A2",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1280,
+      "text": "You ask your friend how are you?",
+      "englishExplanation": "Setting up the common social scenario of greeting a friend and asking how they are doing.",
+      "turkishExplanation": "Bir arkadaşınızla karşılaşıp ona 'Nasılsın?' diye sorduğunuz standart durumdan bahsediyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1700,
+      "endMs": 4720,
+      "text": "Usually, they give you the first simple answer, I'm fine.",
+      "englishExplanation": "Describing the most common and polite default response: 'I'm fine.'",
+      "turkishExplanation": "Genelde insanların verdiği ilk ve en zahmetsiz cevabın 'İyiyim' olduğunu belirtiyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 5200,
+      "endMs": 6180,
+      "text": "It is quick and safe.",
+      "englishExplanation": "Explaining why people say 'I'm fine': it is brief and avoids oversharing.",
+      "turkishExplanation": "'İyiyim' demenin hem pratik hem de kişiyi riske sokmayan güvenli bir yol olduğunu anlatıyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 6660,
+      "endMs": 9180,
+      "text": "But sometimes, people give a very strange answer.",
+      "englishExplanation": "Introducing the contrast where someone gives an unexpected or awkward response.",
+      "turkishExplanation": "Fakat bazen insanların beklenmedik ve garip bir cevap verebildiğini söylüyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 9680,
+      "endMs": 11440,
+      "text": "They say the second answer, not good.",
+      "englishExplanation": "Mentioning the alternative, negative reply: 'not good.'",
+      "turkishExplanation": "İkinci seçenek olarak 'İyi değilim' cevabını verdiklerini ifade ediyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 11840,
+      "endMs": 12640,
+      "text": "Then they start talking.",
+      "englishExplanation": "Describing how saying 'not good' opens the door to endless venting.",
+      "turkishExplanation": "Bunu söyledikten sonra durmaksızın dert anlatmaya başladıklarını belirtiyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 13160,
+      "endMs": 17180,
+      "text": "They tell you about their dirty socks, their sick cat, and their painful back.",
+      "englishExplanation": "Listing humorous, overly specific complaints like dirty laundry, an ill pet, and physical aches.",
+      "turkishExplanation": "Kirli çoraplar, hasta kedi ve sırt ağrısı gibi gereksiz tüm dertlerini dökmeye başladıklarını anlatıyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 17740,
+      "endMs": 19560,
+      "text": "My friend, that is the third phrase.",
+      "englishExplanation": "Concluding humorously that this whole rant becomes an unintended third type of response.",
+      "turkishExplanation": "İşte bu uzun uzun anlatma durumunun da üçüncü kalıp haline geldiğini esprili bir dille söylüyor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "strange",
+      "gloss": "garip, tuhaf"
+    },
+    {
+      "lemma": "painful",
+      "gloss": "ağrılı, acı veren"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 6,
+      "type": "grammar",
+      "expression": "start talking",
+      "englishExplanation": "The verb 'start' can be followed by a gerund (-ing form) to describe beginning an ongoing activity.",
+      "turkishExplanation": "'Start' fiilinden sonra gelen eylem '-ing' takısı alarak o işi yapmaya başlandığını ifade eder.",
+      "exampleEn": "As soon as the movie ended, everyone started talking.",
+      "exampleTr": "Film biter bitmez herkes konuşmaya başladı."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 7,
+    "question": "What does the speaker say people do after replying 'not good'?",
+    "options": [
+      {
+        "text": "They share too many personal complaints like their sick cat or back pain.",
+        "isCorrect": true
+      },
+      {
+        "text": "They apologize immediately and walk away quickly.",
+        "isCorrect": false
+      },
+      {
+        "text": "They change the subject and ask how you are doing instead.",
+        "isCorrect": false
+      },
+      {
+        "text": "They refuse to explain why they are having a bad day.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "pass",
+    "issues": []
+  }
+}

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { FeedItem, FeedPage } from "@linguascroll/shared-types";
+import type { FeedItem, FeedPage, FeedPreferences } from "@linguascroll/shared-types";
 import { fetchFeed } from "../api/fetch-feed";
 
 /**
@@ -98,7 +98,10 @@ export function applyLoadMoreError(state: FeedState, error: unknown): FeedState 
   return state.status === "success" ? { ...state, isLoadingMore: false, loadMoreError: errorMessage(error) } : state;
 }
 
-export function useFeed(userId: string): { state: FeedState; loadMore: () => void; refresh: () => Promise<void> } {
+export function useFeed(
+  userId: string,
+  preference?: FeedPreferences,
+): { state: FeedState; loadMore: () => void; refresh: () => Promise<void> } {
   const [state, setState] = useState<FeedState>({ status: "loading" });
 
   // TEK paylaşılan concurrency guard — initial mount fetch, loadMore() ve
@@ -129,7 +132,7 @@ export function useFeed(userId: string): { state: FeedState; loadMore: () => voi
    */
   function requestFreshSession(onSuccess: (page: FeedPage) => void, onError: (error: unknown) => void): Promise<void> {
     isFetchingRef.current = true;
-    return fetchFeed(userId).then(
+    return fetchFeed(userId, undefined, preference).then(
       (page) => {
         isFetchingRef.current = false;
         onSuccess(page);
@@ -165,7 +168,11 @@ export function useFeed(userId: string): { state: FeedState; loadMore: () => voi
     return () => {
       isCancelled = true;
     };
-  }, [userId]);
+    // `preference` App.tsx'te onboarding tamamlanana kadar Feed HİÇ mount
+    // edilmediği için stabil bir referans (bkz. App.tsx) — yine de deps'te
+    // açıkça listeleniyor, gelecekte bu varsayım bozulursa effect doğru
+    // şekilde yeniden çalışsın diye.
+  }, [userId, preference]);
 
   function loadMore(): void {
     if (!canLoadMore(state, isFetchingRef.current)) {

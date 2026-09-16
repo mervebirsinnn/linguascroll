@@ -1,0 +1,192 @@
+{
+  "contentId": "b2final1",
+  "muxAssetId": "local-ai-double-edged-sword",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\B2final1.mp4",
+  "durationMs": 38210,
+  "topic": "career",
+  "cefrLevel": "B2",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 3160,
+      "text": "Artificial intelligence feels like a double -edged sword.",
+      "englishExplanation": "The speaker compares artificial intelligence to something that brings both benefits and drawbacks.",
+      "turkishExplanation": "Konuşmacı, yapay zekâyı hem faydaları hem de zararları olan iki ucu keskin bir kılıca benzetiyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 3640,
+      "endMs": 8300,
+      "text": "It can speed up medical research, yet it may also widen the gap between skilled workers",
+      "englishExplanation": "AI can accelerate healthcare studies, but it could increase the divide between trained professionals and others.",
+      "turkishExplanation": "Yapay zekâ tıp araştırmalarını hızlandırabilir; ancak nitelikli çalışanlar ile diğerleri arasındaki farkı da açabilir."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 8300,
+      "endMs": 11480,
+      "text": "and those left behind, so we have to plan carefully.",
+      "englishExplanation": "The gap affects those who lack access or skills, requiring thoughtful preparation for the future.",
+      "turkishExplanation": "Bu durum geride kalanları olumsuz etkileyebileceğinden, dikkatli bir şekilde planlama yapmamız gerekir."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 12100,
+      "endMs": 14720,
+      "text": "What we notice today is only the tip of the iceberg.",
+      "englishExplanation": "The issues we currently observe represent only a tiny fraction of a much larger reality.",
+      "turkishExplanation": "Bugün fark ettiklerimiz, çok daha büyük bir meselenin sadece görünen kısmıdır."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 15360,
+      "endMs": 20820,
+      "text": "Hidden biases in data could later affect hiring, policing, or loan decisions in ways we",
+      "englishExplanation": "Unseen prejudices embedded in datasets could eventually influence recruitment, law enforcement, and financial approvals.",
+      "turkishExplanation": "Verilerdeki gizli önyargılar; ileride işe alım, güvenlik uygulamaları ya da kredi değerlendirmelerini etkileyebilir."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 20820,
+      "endMs": 21660,
+      "text": "don't yet understand.",
+      "englishExplanation": "These consequences may unfold in ways that are currently beyond our comprehension.",
+      "turkishExplanation": "Üstelik bu etkiler, henüz tam olarak kavrayamadığımız şekillerde gerçekleşebilir."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 22280,
+      "endMs": 23920,
+      "text": "If we rush into unchecked AI,",
+      "englishExplanation": "Adopting AI prematurely without proper supervision carries major risks.",
+      "turkishExplanation": "Eğer gerekli denetimleri yapmadan yapay zekâya balıklama atlarsak tehlikelerle karşılaşabiliriz."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 24540,
+      "endMs": 30240,
+      "text": "we might open a can of worms, dealing with privacy breaches and legal disputes that spiral",
+      "englishExplanation": "We might trigger a cascade of complex troubles, such as data leaks and legal challenges.",
+      "turkishExplanation": "Gizlilik ihlalleri ve hukuki anlaşmazlıklar gibi karmaşık sorunlar yumağına yol açabiliriz."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 30240,
+      "endMs": 31000,
+      "text": "out of control.",
+      "englishExplanation": "These challenges could quickly become unmanageable if left unchecked.",
+      "turkishExplanation": "Bu sorunlar kısa sürede çığırından çıkıp kontrolden kayabilir."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 31380,
+      "endMs": 33380,
+      "text": "Staying curious, transparent,",
+      "englishExplanation": "Maintaining an inquisitive attitude and being open about processes is essential.",
+      "turkishExplanation": "Merakı elden bırakmamak ve şeffaf olmak sürecin doğru yönetilmesini sağlar."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 33880,
+      "endMs": 37620,
+      "text": "and proactive will help us steer this powerful tool toward real benefit.",
+      "englishExplanation": "Taking early initiative will guide this technology toward positive human outcomes.",
+      "turkishExplanation": "Önceden tedbir almak, bu güçlü aracı gerçek anlamda faydalı bir yöne sevk etmemize yardımcı olacaktır."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "double-edged sword",
+      "gloss": "iki ucu keskin kılıç (hem avantajı hem dezavantajı olan durum)"
+    },
+    {
+      "lemma": "tip of the iceberg",
+      "gloss": "buzdağının görünen kısmı"
+    },
+    {
+      "lemma": "bias",
+      "gloss": "önyargı, taraflılık"
+    },
+    {
+      "lemma": "unchecked",
+      "gloss": "denetlenmemiş, kontrolsüz"
+    },
+    {
+      "lemma": "spiral out of control",
+      "gloss": "kontrolden çıkmak, çığırından çıkmak"
+    },
+    {
+      "lemma": "proactive",
+      "gloss": "inisiatif alan, önceden tedbir alan"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 1,
+      "type": "phrase",
+      "expression": "double-edged sword",
+      "englishExplanation": "An idiom used to describe something that can have both favorable and unfavorable consequences at the same time.",
+      "turkishExplanation": "Hem olumlu hem de olumsuz sonuçlar doğurabilecek durumlar için kullanılan 'iki ucu keskin kılıç' deyimidir.",
+      "exampleEn": "Social media is a double-edged sword; it connects people, but it can harm mental health.",
+      "exampleTr": "Sosyal medya iki ucu keskin bir kılıçtır; insanları birbirine bağlar ama ruh sağlığına zarar verebilir."
+    },
+    {
+      "segmentOrdinal": 4,
+      "type": "phrase",
+      "expression": "the tip of the iceberg",
+      "englishExplanation": "Refers to a small, evident part of a problem whose much larger portion remains unseen or unaddressed.",
+      "turkishExplanation": "Büyük ve karmaşık bir sorunun sadece küçük, açıkta kalan kısmını anlatan 'buzdağının görünen yüzü' ifadesidir.",
+      "exampleEn": "These preliminary losses are merely the tip of the iceberg.",
+      "exampleTr": "Bu ön kayıplar yalnızca buzdağının görünen kısmıdır."
+    },
+    {
+      "segmentOrdinal": 8,
+      "type": "phrase",
+      "expression": "open a can of worms",
+      "englishExplanation": "An informal idiom meaning to create a situation that produces many unforeseen, complicated, and unpleasant problems.",
+      "turkishExplanation": "Çözmesi zor, beklenmedik ve can sıkıcı bir dizi yeni soruna yol açmak anlamında kullanılan bir deyimdir (kabak tadı vermek veya başına çorap örmek gibi).",
+      "exampleEn": "Investigating that old contract might open a can of worms for the company.",
+      "exampleTr": "O eski sözleşmeyi kurcalamak şirket için karmaşık sorunlar yumağına yol açabilir."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 8,
+    "question": "What does the idiom 'open a can of worms' mean in this context?",
+    "options": [
+      {
+        "text": "To reveal a set of intricate and problematic issues that are difficult to manage",
+        "isCorrect": true
+      },
+      {
+        "text": "To discover an innovative scientific breakthrough by accident",
+        "isCorrect": false
+      },
+      {
+        "text": "To solve an existing legal disagreement quickly and quietly",
+        "isCorrect": false
+      },
+      {
+        "text": "To dismiss privacy concerns because they are no longer relevant",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 1,
+        "message": "Learning point ifadesi (\"double-edged sword\") segment 1'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"double-edged sword\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

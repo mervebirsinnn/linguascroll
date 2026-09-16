@@ -1,0 +1,178 @@
+{
+  "contentId": "business-b2-middle-ground",
+  "muxAssetId": "local-negotiating-middle-ground-at-work",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b2-middle-ground.mp4",
+  "durationMs": 28200,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 4400,
+      "text": "In the planning meeting, a teammate wanted to rebuild the whole module from scratch.",
+      "englishExplanation": "The speaker describes a workplace meeting where a colleague wanted to recreate a software component entirely from the start.",
+      "turkishExplanation": "Konuşmacı, bir çalışma arkadaşının bir yazılım parçasını en baştan yapmayı teklif ettiği bir iş toplantısını anlatıyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 5060,
+      "endMs": 7680,
+      "text": "I understood the appeal, the old code was messy,",
+      "englishExplanation": "The speaker acknowledges why that proposal seemed attractive, noting that the existing code was chaotic.",
+      "turkishExplanation": "Konuşmacı, mevcut kod karmaşık olduğu için bu fikrin neden cazip geldiğini anladığını belirtiyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 8180,
+      "endMs": 10200,
+      "text": "but we had three weeks, not three months.",
+      "englishExplanation": "The speaker points out the severe time limitation of having only three weeks instead of three months.",
+      "turkishExplanation": "Konuşmacı, üç ay yerine sadece üç haftaları olduğu için zamanın ne kadar kısıtlı olduğuna dikkat çekiyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 10820,
+      "endMs": 12860,
+      "text": "I see your point, but from my perspective,",
+      "englishExplanation": "A diplomatic phrase used to acknowledge a colleague's argument before offering a contrasting opinion.",
+      "turkishExplanation": "Farklı bir görüş sunmadan önce çalışma arkadaşının fikrini saygıyla karşıladığını gösteren diplomatik bir ifade."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 13400,
+      "endMs": 15420,
+      "text": "a full rewrite is risky with our timeline.",
+      "englishExplanation": "Explaining that doing a complete rebuild presents too much risk given the short deadline.",
+      "turkishExplanation": "Kısa zaman kısıtlaması göz önüne alındığında, her şeyi sıfırdan yapmanın fazla riskli olduğunu açıklıyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 16000,
+      "endMs": 19060,
+      "text": "Could we find a middle ground, refactor the worst parts first,",
+      "englishExplanation": "Proposing a compromise to clean up only the most problematic parts of the code first.",
+      "turkishExplanation": "Öncelikle sadece en sorunlu kod kısımlarını düzelterek bir orta yol bulmayı teklif ediyor."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 19560,
+      "endMs": 21260,
+      "text": "and revisit a rewrite next quarter?",
+      "englishExplanation": "Suggesting that a complete rebuild could be reconsidered during the next business quarter.",
+      "turkishExplanation": "Tam bir yeniden yazım konusunu gelecek çeyrekte tekrar değerlendirmeyi öneriyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 21640,
+      "endMs": 22100,
+      "text": "He paused.",
+      "englishExplanation": "The colleague briefly stopped to think about the suggested alternative.",
+      "turkishExplanation": "İş arkadaşı sunulan alternatif fikri düşünmek için kısa bir süre duraksadı."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 22700,
+      "endMs": 23520,
+      "text": "Actually, that works.",
+      "englishExplanation": "The colleague accepted the compromise as a practical solution.",
+      "turkishExplanation": "İş arkadaşı önerilen orta yolun mantıklı olduğunu kabul etti."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 24080,
+      "endMs": 25280,
+      "text": "Nobody lost the argument.",
+      "englishExplanation": "Neither party felt defeated because a fair agreement was reached.",
+      "turkishExplanation": "Adil bir uzlaşmaya varıldığı için iki taraf da kendini kaybeden taraf olarak görmedi."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 25820,
+      "endMs": 27700,
+      "text": "We just found the version we could actually ship.",
+      "englishExplanation": "They successfully agreed on a practical version of the project that could be delivered on time.",
+      "turkishExplanation": "Zamanında teslim edebilecekleri pratik bir proje sürümü üzerinde anlaştılar."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "appeal",
+      "gloss": "cazibe, çekicilik"
+    },
+    {
+      "lemma": "refactor",
+      "gloss": "kodu iyileştirmek, yeniden düzenlemek"
+    },
+    {
+      "lemma": "revisit",
+      "gloss": "bir konuyu yeniden değerlendirmek"
+    },
+    {
+      "lemma": "ship",
+      "gloss": "ürünü tamamlayıp yayınlamak/teslim etmek"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 1,
+      "type": "phrase",
+      "expression": "from scratch",
+      "englishExplanation": "To create or start something completely from the beginning without using existing work.",
+      "turkishExplanation": "Bir şeyi daha önceki hiçbir çalışmayı kullanmadan, tamamen en baştan yapmak.",
+      "exampleEn": "We had to design the main page from scratch.",
+      "exampleTr": "Ana sayfayı en baştan tasarlamak zorunda kaldık."
+    },
+    {
+      "segmentOrdinal": 4,
+      "type": "phrase",
+      "expression": "I see your point, but...",
+      "englishExplanation": "A polite phrase used in discussions to acknowledge another person's reasoning before introducing a counterargument.",
+      "turkishExplanation": "İş hayatında veya günlük tartışmalarda karşı tarafın fikrini kabul ettiğinizi gösterip ardından farklı bir görüş sunmak için kullanılan nazik bir kalıp.",
+      "exampleEn": "I see your point, but we don't have enough budget for that.",
+      "exampleTr": "Haklı olduğunuz noktayı anlıyorum fakat bunun için yeterli bütçemiz yok."
+    },
+    {
+      "segmentOrdinal": 6,
+      "type": "phrase",
+      "expression": "find a middle ground",
+      "englishExplanation": "To reach an agreement or compromise that satisfies both opposing sides.",
+      "turkishExplanation": "Her iki tarafın da uzlaşabileceği ortak bir yol bulmak.",
+      "exampleEn": "Both managers had to compromise to find a middle ground.",
+      "exampleTr": "Her iki yönetici de orta bir yol bulabilmek için taviz vermek zorunda kaldı."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 6,
+    "question": "In the video, what does the phrase 'find a middle ground' mean in this workplace context?",
+    "options": [
+      {
+        "text": "To reach a compromise that works for both parties",
+        "isCorrect": true
+      },
+      {
+        "text": "To postpone the meeting until next month",
+        "isCorrect": false
+      },
+      {
+        "text": "To force the other person to accept all demands",
+        "isCorrect": false
+      },
+      {
+        "text": "To assign the remaining work to a third team",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 4,
+        "message": "Learning point ifadesi (\"I see your point, but...\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}
