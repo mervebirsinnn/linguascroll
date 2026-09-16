@@ -20,6 +20,18 @@ type SubtitleOverlayProps = {
    * VideoFeedItem'da ayrı bir state senkronizasyonu gerektirmiyor.
    */
   onPressWord: (word: VideoVocabularyItem, segment: TranscriptSegment) => void;
+  /**
+   * Chunk 16 revizyon — cihaz smoke test'inde bulunan bug: vocabulary listesi
+   * sabit bir alt panel olduğunda, uzun bir listede yukarı doğru büyüyüp bu
+   * overlay'in SABİT `bottom` değerinin üstüne biniyordu. Kalıcı çözüm zIndex
+   * DEĞİL (iki view'ın aynı alanı paylaşmasını gizler ama önlemez) — VideoFeedItem
+   * artık vocabulary paneli collapsed/expanded bir bottom-sheet yaptığı için,
+   * panel açıkken bu overlay'in GERÇEKTEN panelin üstüne, ondan bağımsız bir
+   * dikey alanda oturması gerekiyor. `bottomOffset`, VideoFeedItem'ın o anki
+   * panel yüksekliğine göre hesapladığı değeri geçirir — panel kapalıyken
+   * varsayılan (eski, sabit) konuma döner.
+   */
+  bottomOffset: number;
 };
 
 /**
@@ -35,7 +47,7 @@ type SubtitleOverlayProps = {
  * (cümle açıklaması) TETİKLEMEZ — cümlenin geri kalanına dokunmak yine eskisi
  * gibi çalışır.
  */
-export function SubtitleOverlay({ segment, onPress, vocabulary, onPressWord }: SubtitleOverlayProps) {
+export function SubtitleOverlay({ segment, onPress, vocabulary, onPressWord, bottomOffset }: SubtitleOverlayProps) {
   if (!segment) {
     return null;
   }
@@ -43,7 +55,7 @@ export function SubtitleOverlay({ segment, onPress, vocabulary, onPressWord }: S
   const spans = buildSubtitleSpans(segment.text, vocabulary);
 
   return (
-    <Pressable style={styles.container} onPress={() => onPress(segment)}>
+    <Pressable style={[styles.container, { bottom: bottomOffset }]} onPress={() => onPress(segment)}>
       <Text style={styles.text}>
         {spans.map((span, index) =>
           span.word ? (
@@ -64,11 +76,19 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 16,
     right: 16,
+    // `bottom` artık statik değil — render'da `bottomOffset` prop'uyla ezilir
+    // (bkz. yukarı). Buradaki 96, sadece bottomOffset hiç geçirilmezse (olmaz,
+    // prop required) diye bir fallback DEĞİL, StyleSheet tip bütünlüğü için.
     bottom: 96,
     backgroundColor: "rgba(0,0,0,0.6)",
     borderRadius: 8,
     paddingVertical: 8,
     paddingHorizontal: 12,
+    // Savunma amaçlı ek katman (birincil çözüm `bottomOffset`): iki view aynı
+    // dikey aralığı hiç paylaşmamalı, ama olası bir hesap hatasında bile
+    // subtitle'ın en üstte kalmasını garanti eder.
+    zIndex: 10,
+    elevation: 10,
   },
   text: {
     color: "#fff",

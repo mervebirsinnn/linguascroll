@@ -283,6 +283,92 @@ describe("evaluateContentQuality — quiz quality", () => {
   });
 });
 
+/**
+ * Chunk 16 revizyonu — gerçek cihaz bulgusu: quiz PLACEMENT doğru ama İÇERİK
+ * "izlenen videoyla bağlantısız hissettiriyor"/gereğinden kolay. Bu blok,
+ * o problemin deterministik (CEFR-skorlama İÇERMEYEN) alt-kümesini test eder.
+ */
+describe("evaluateContentQuality — quiz content quality (Chunk 16)", () => {
+  it("emptyQuizOption: bir seçenek tamamen boş/sadece boşluk → reject", () => {
+    const content = cleanContent();
+    content.quiz.options[1]!.text = "   ";
+    const report = evaluateContentQuality(content);
+    expect(report.status).toBe("reject");
+    expect(report.issues.map((i) => i.code)).toContain("emptyQuizOption");
+  });
+
+  it("nearDuplicateQuizOptions: iki seçenek birebir aynı DEĞİL ama kelime düzeyinde büyük ölçüde örtüşüyor (parafraz/yeniden sıralama) → needsReview", () => {
+    const content = cleanContent();
+    content.quiz.question = "In the video, what does describing it as a 'double-edged sword' suggest?";
+    content.quiz.options = [
+      { text: "It can provide benefits but also create risks", isCorrect: true },
+      { text: "It can create risks but also provide benefits", isCorrect: false }, // aynı kelimeler, farklı sıra — near-duplicate
+      { text: "It always produces unpredictable results", isCorrect: false },
+      { text: "It should replace human decision-making", isCorrect: false },
+    ];
+    const report = evaluateContentQuality(content);
+    expect(report.status).toBe("needsReview");
+    expect(report.issues.map((i) => i.code)).toContain("nearDuplicateQuizOptions");
+    // birebir aynı DEĞİLLER — duplicateQuizOptions (reject) burada tetiklenmemeli
+    expect(report.issues.map((i) => i.code)).not.toContain("duplicateQuizOptions");
+  });
+
+  it("quizConceptNotGroundedInSegment: soru + doğru cevap, kaynak segment metniyle hiçbir anlamlı kelime paylaşmıyor → needsReview", () => {
+    const content = cleanContent();
+    // Kaynak segment 2: "She loves reading books." — ama soru tamamen alakasız bir konu soruyor.
+    content.quiz.question = "What is the capital city mentioned in the news?";
+    content.quiz.options = [
+      { text: "Ankara is the capital", isCorrect: true },
+      { text: "Istanbul is the capital", isCorrect: false },
+      { text: "Izmir is the capital", isCorrect: false },
+      { text: "Bursa is the capital", isCorrect: false },
+    ];
+    const report = evaluateContentQuality(content);
+    expect(report.status).toBe("needsReview");
+    expect(report.issues.map((i) => i.code)).toContain("quizConceptNotGroundedInSegment");
+  });
+
+  it("quizConceptNotGroundedInSegment: soru segment'teki ifadeyi ALINTILADIĞI sürece (paraphrase edilmiş doğru cevaba rağmen) TETİKLENMEZ", () => {
+    const content = cleanContent();
+    content.segments[1]!.text = "AI can be a double-edged sword.";
+    content.quiz.segmentOrdinal = 2;
+    content.quiz.question = "In the video, what does 'double-edged sword' mean in this context?";
+    content.quiz.options = [
+      { text: "It can provide benefits but also create risks", isCorrect: true },
+      { text: "It is only useful for technical work", isCorrect: false },
+      { text: "It always produces unpredictable results", isCorrect: false },
+      { text: "It should replace human decision-making", isCorrect: false },
+    ];
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("quizConceptNotGroundedInSegment");
+  });
+
+  it("quizAnswerLengthOutlier: doğru cevap distractor'lardan belirgin şekilde uzun → needsReview (okumadan tahmin edilebilir paterni)", () => {
+    const content = cleanContent();
+    content.quiz.options = [
+      { text: "Reading books is her favorite way to relax after a long and busy day at work", isCorrect: true },
+      { text: "Cooking", isCorrect: false },
+      { text: "Running", isCorrect: false },
+      { text: "Sleeping", isCorrect: false },
+    ];
+    const report = evaluateContentQuality(content);
+    expect(report.status).toBe("needsReview");
+    expect(report.issues.map((i) => i.code)).toContain("quizAnswerLengthOutlier");
+  });
+
+  it("quizAnswerLengthOutlier: benzer uzunluktaki seçenekler için TETİKLENMEZ (cleanContent baseline zaten kanıtlıyor, burada ekstra bir varyant)", () => {
+    const content = cleanContent();
+    content.quiz.options = [
+      { text: "Reading novels", isCorrect: true },
+      { text: "Cooking meals", isCorrect: false },
+      { text: "Playing chess", isCorrect: false },
+      { text: "Painting art", isCorrect: false },
+    ];
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("quizAnswerLengthOutlier");
+  });
+});
+
 describe("evaluateContentQuality — severity aggregation", () => {
   it("hem reject hem warning issue'ları birlikte varsa genel status reject kalır (reject > needsReview)", () => {
     const content = cleanContent();

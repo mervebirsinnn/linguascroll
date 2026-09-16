@@ -508,3 +508,115 @@ describe("FeedService.getFeed — transcript segment enrichment (Chunk 10)", () 
     expect(calls[0]).toEqual([vId(1), vId(2), vId(3), vId(4), vId(5), vId(6), vId(7), vId(8), vId(9), vId(10)]);
   });
 });
+
+/**
+ * Gerçek cihaz smoke test'inde bildirilen şüphe: "quiz kartları hemen önce
+ * izlenen videoyla ilgisiz görünüyor". Bu describe bloğu, o şüphenin bir
+ * PLACEMENT bug'ı (quiz, henüz izlenmemiş/session'da hiç olmayan bir videoyu
+ * test ediyor) mi yoksa değil mi olduğunu KOD SEVİYESİNDE, deterministik
+ * olarak sabitliyor — quiz.sourceTranscriptSegmentId → segment → video
+ * ilişkisi `QuizzesRepository.findQuizzesForVideos`'un video_id JOIN'i
+ * üzerinden kurulur (bkz. quizzes-repository.ts) ve `quizzesByVideoId`'nin
+ * KEY'i zaten bu gerçek ilişkinin production'daki TEK doğruluk kaynağı — bu
+ * yüzden test fixture'ında "quiz X, video Y'den geliyor" bilgisini AYNI Map'in
+ * yapısından (`quizzesByVideoId`) okumak, gerçek repository'nin davranışını
+ * simüle etmenin doğru yolu (bkz. makeFeedService'in `quizzesByVideoId` stub'ı).
+ *
+ * Sonuç (bu suite yazılırken doğrulandı, ayrıca gerçek Postgres verisiyle de
+ * elle çapraz kontrol edildi): mevcut kod bu invariant'ı ZATEN sağlıyor — bir
+ * placement bug'ı YOK. Bu testler regression'a karşı bunu SABİTLİYOR.
+ */
+describe("FeedService.getFeed — quiz placement invariant (video → segment → quiz → feed plan)", () => {
+  type FlatItem = { type: "video" | "quiz"; id: string };
+
+  async function collectFullSession(service: FeedService, userId: string): Promise<FlatItem[]> {
+    const flat: FlatItem[] = [];
+    let cursor: string | undefined;
+    for (;;) {
+      const page = await service.getFeed(userId, cursor);
+      for (const item of page.items) {
+        flat.push(item.type === "video" ? { type: "video", id: item.video.id } : { type: "quiz", id: item.quiz.id });
+      }
+      if (!page.nextCursor) {
+        break;
+      }
+      cursor = page.nextCursor;
+    }
+    return flat;
+  }
+
+  /**
+   * `quizzesByVideoId`'nin KENDİSİ zaten "quiz X, video Y'den geliyor"
+   * bilgisinin production'daki JOIN'ini simüle ediyor (bkz. yukarıdaki
+   * describe yorumu) — bu yüzden ters çevirip quizId → sourceVideoId'ye
+   * indirgemek, testin "beklenen" tarafı için gerçek veriyi TEKRAR ÜRETMEK
+   * değil, aynı fixture'dan OKUMAK.
+   */
+  function invertToSourceVideoIdByQuizId(quizzesByVideoId: Map<string, FeedQuiz[]>): Map<string, string> {
+    const bySourceVideo = new Map<string, string>();
+    for (const [videoId, quizzes] of quizzesByVideoId) {
+      for (const quiz of quizzes) {
+        bySourceVideo.set(quiz.id, videoId);
+      }
+    }
+    return bySourceVideo;
+  }
+
+  it("madde 1-4: HER quiz'in kaynak videosu, aynı frozen session'da o quiz'den ÖNCE görünmüş olmalı", async () => {
+    const quizzesByVideoId = makeFullSessionQuizzesByVideoId();
+    const service = makeFeedService({ quizzesByVideoId });
+    const flat = await collectFullSession(service, TEST_USER_ID);
+    const sourceVideoIdByQuizId = invertToSourceVideoIdByQuizId(quizzesByVideoId);
+
+    // Sanity — bu test gerçekten en az bir quiz içermiyorsa aşağıdaki döngü
+    // hiçbir şey doğrulamamış olur, bu da testi anlamsız kılar.
+    expect(flat.filter((item) => item.type === "quiz")).not.toHaveLength(0);
+
+    const seenVideoIds = new Set<string>();
+    for (const item of flat) {
+      if (item.type === "video") {
+        seenVideoIds.add(item.id);
+        continue;
+      }
+      const sourceVideoId = sourceVideoIdByQuizId.get(item.id);
+      // Madde 4 (zayıf hali): quiz'in kaynağı bu test fixture'ında TANIMLI olmalı —
+      // tanımsızsa bu, "session'da hiç olmayan bir videoyu test eden quiz" durumunun
+      // ta kendisi olurdu.
+      expect(sourceVideoId).toBeDefined();
+      // Madde 3: kaynak video, bu quiz'e gelene kadar ZATEN görülmüş (session'ın
+      // BAŞINDAN BU quiz'in pozisyonuna kadar flatten edilmiş listede mevcut).
+      expect(seenVideoIds.has(sourceVideoId as string)).toBe(true);
+    }
+  });
+
+  it("madde 5-6: bir grup TAMAMLANMADAN (VIDEOS_PER_QUIZ videoya ulaşmadan) hiçbir quiz emit edilmez — quiz her zaman kaynağından SONRA gelir", async () => {
+    // Sadece grubun SON videosunda (v4) bir quiz var — bu quiz, grup
+    // tamamlanana (v1..v4 hepsi emit edilene) kadar asla erken çıkmamalı.
+    const videos = [makeVideo(1), makeVideo(2), makeVideo(3), makeVideo(4), makeVideo(5)];
+    const quizzesByVideoId = new Map([[vId(4), [makeQuiz(1)]]]);
+    const service = makeFeedService({ videos, quizzesByVideoId });
+
+    const flat = await collectFullSession(service, TEST_USER_ID);
+    const quizIndex = flat.findIndex((item) => item.type === "quiz");
+    const sourceVideoIndex = flat.findIndex((item) => item.type === "video" && item.id === vId(4));
+
+    expect(quizIndex).toBeGreaterThan(-1);
+    expect(sourceVideoIndex).toBeGreaterThan(-1);
+    expect(quizIndex).toBeGreaterThan(sourceVideoIndex);
+  });
+
+  it("madde 4: session bound'unun (MAX_SESSION_VIDEOS) DIŞINDA kalan bir video için quiz sorgusu asla yapılmaz", async () => {
+    // 30 video verilse de sadece ilk 27'si session'a dahil (bkz. MAX_SESSION_VIDEOS) —
+    // v28/v29/v30, QuizzesService.getQuizzesGroupedByVideoId'ye giden id listesinde
+    // hiç YER ALMAMALI, aksi halde bu videoların (session'da hiç görünmeyen)
+    // quiz'lerinin yanlışlıkla eşleşme ihtimali doğardı.
+    const calls: string[][] = [];
+    const service = makeFeedService({ onGetQuizzesGroupedByVideoId: (ids) => calls.push(ids) });
+    await collectFullSession(service, TEST_USER_ID);
+
+    expect(calls).toHaveLength(1);
+    expect(calls[0]).not.toContain(vId(28));
+    expect(calls[0]).not.toContain(vId(29));
+    expect(calls[0]).not.toContain(vId(30));
+  });
+});

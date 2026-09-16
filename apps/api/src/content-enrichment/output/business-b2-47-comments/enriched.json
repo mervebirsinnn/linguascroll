@@ -1,0 +1,203 @@
+{
+  "contentId": "business-b2-47-comments",
+  "muxAssetId": "local-pull-request-code-review",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b2-47-comments.mp4",
+  "durationMs": 26370,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1200,
+      "text": "I opened a pull request.",
+      "englishExplanation": "The speaker submitted code changes for review in a software project.",
+      "turkishExplanation": "Konuşmacı, yazılım projesinde incelenmesi için bir kod geliştirme talebi (pull request) açtığını belirtiyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1780,
+      "endMs": 4360,
+      "text": "Small feature, clean code, or so I thought.",
+      "englishExplanation": "They believed the code change was simple and well-written, at least initially.",
+      "turkishExplanation": "Değişikliğin küçük ve temiz yazılmış olduğunu düşünüyordu, ya da en azından öyle sanıyordu."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 4900,
+      "endMs": 7140,
+      "text": "Would you mind taking a look at my PR when you get a chance?",
+      "englishExplanation": "A polite request asking a teammate to inspect the submitted code when free.",
+      "turkishExplanation": "Bir çalışma arkadaşından vakti olduğunda koda göz atmasını kibarca rica etme cümlesi."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 7700,
+      "endMs": 9780,
+      "text": "10 minutes later, 47 comments.",
+      "englishExplanation": "Shortly after asking, the reviewer left a surprising number of feedback comments.",
+      "turkishExplanation": "Sadece 10 dakika sonra koda 47 adet yorum bırakıldığını görüyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 10460,
+      "endMs": 11060,
+      "text": "Maming conventions.",
+      "englishExplanation": "Refinement feedback regarding naming standards or code rules.",
+      "turkishExplanation": "Kod içerisindeki adlandırma kuralları ve standartlarıyla ilgili gelen eleştiriler."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 11720,
+      "endMs": 13160,
+      "text": "Edge cases I hadn't considered.",
+      "englishExplanation": "Unusual or extreme scenarios in the code that the speaker failed to anticipate.",
+      "turkishExplanation": "Geliştiricinin daha önce hesaba katmadığı uç durumlar ve sıradışı senaryolar."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 13700,
+      "endMs": 15360,
+      "text": "One comment just said, Why though?",
+      "englishExplanation": "One reviewer questioned the fundamental reasoning behind a specific decision.",
+      "turkishExplanation": "Yorumlardan biri sadece yapılan işin gerekçesini sorguluyordu: 'Neden ama?'"
+    },
+    {
+      "ordinal": 8,
+      "startMs": 15740,
+      "endMs": 17960,
+      "text": "I took a breath and replied to the first one.",
+      "englishExplanation": "The speaker composed themselves before starting to reply to the feedback.",
+      "turkishExplanation": "Sakinleşmek için derin bir nefes alıp ilk yoruma yanıt vermeye başladı."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 18460,
+      "endMs": 18820,
+      "text": "Fair point.",
+      "englishExplanation": "A common phrase acknowledging that a reviewer's point is valid.",
+      "turkishExplanation": "Yapılan eleştirinin haklı ve yerinde olduğunu kabul etme ifadesi."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 19360,
+      "endMs": 20800,
+      "text": "Let me address these one by one.",
+      "englishExplanation": "Deciding to systematically respond to and resolve each comment one after another.",
+      "turkishExplanation": "Gelen tüm geri bildirimleri sırayla, teker teker ele alıp çözme kararlılığı."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 21240,
+      "endMs": 23040,
+      "text": "Two hours later, the code was better.",
+      "englishExplanation": "After working through the critique, the overall quality of the code improved.",
+      "turkishExplanation": "İki saatlik uğraşın sonunda kod çok daha kaliteli bir hale geldi."
+    },
+    {
+      "ordinal": 12,
+      "startMs": 23560,
+      "endMs": 24400,
+      "text": "My ego wasn't.",
+      "englishExplanation": "While the code got better, the speaker's pride felt hurt by all the criticism.",
+      "turkishExplanation": "Kod iyileşmişti ancak yoğun eleştirilerden dolayı yazarın özgüveni aynı durumda değildi."
+    },
+    {
+      "ordinal": 13,
+      "startMs": 24820,
+      "endMs": 25820,
+      "text": "But the PR got approved.",
+      "englishExplanation": "Despite the heavy feedback, the pull request was ultimately accepted.",
+      "turkishExplanation": "Tüm bu süreç sonunda kod değişikliği talebi onaylandı."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "pull request",
+      "gloss": "kod inceleme talebi"
+    },
+    {
+      "lemma": "edge case",
+      "gloss": "uç durum, sıradışı senaryo"
+    },
+    {
+      "lemma": "address",
+      "gloss": "ele almak, ilgilenmek"
+    },
+    {
+      "lemma": "approve",
+      "gloss": "onaylamak"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 2,
+      "type": "phrase",
+      "expression": "or so I thought",
+      "englishExplanation": "Used to express that an initial assumption turned out to be wrong.",
+      "turkishExplanation": "Başta öyle zannedildiğini ama sonradan durumun öyle olmadığının anlaşıldığını belirtir.",
+      "exampleEn": "It was going to be an easy day, or so I thought.",
+      "exampleTr": "Kolay bir gün olacaktı, ya da ben öyle sanıyordum."
+    },
+    {
+      "segmentOrdinal": 3,
+      "type": "phrase",
+      "expression": "when you get a chance",
+      "englishExplanation": "A polite phrase meaning 'whenever you have free time'.",
+      "turkishExplanation": "Birinden ne zaman vakti olursa o zaman yardım istemek için kullanılan kibar bir kalıp.",
+      "exampleEn": "Could you sign these documents when you get a chance?",
+      "exampleTr": "Müsait olduğunuzda bu belgeleri imzalayabilir misiniz?"
+    },
+    {
+      "segmentOrdinal": 9,
+      "type": "phrase",
+      "expression": "Fair point",
+      "englishExplanation": "Used in conversation to admit that someone else has made a reasonable argument.",
+      "turkishExplanation": "Karşı tarafın söylediği eleştiri veya düşüncenin makul olduğunu kabul etmek için kullanılır.",
+      "exampleEn": "That's a fair point; we should reconsider the schedule.",
+      "exampleTr": "Haklı bir nokta; takvimi yeniden gözden geçirmeliyiz."
+    },
+    {
+      "segmentOrdinal": 10,
+      "type": "phrase",
+      "expression": "one by one",
+      "englishExplanation": "Indicates addressing or processing items individually in sequence.",
+      "turkishExplanation": "Maddeleri veya işleri sırayla, teker teker ele almayı ifade eder.",
+      "exampleEn": "We will review the submitted applications one by one.",
+      "exampleTr": "Teslim edilen başvuruları teker teker inceleyeceğiz."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 3,
+    "question": "In the video, what does the phrase 'when you get a chance' mean when asking a colleague to look at code?",
+    "options": [
+      {
+        "text": "It asks the person to complete the request immediately, stopping everything else.",
+        "isCorrect": false
+      },
+      {
+        "text": "It politely asks the person to look at the work whenever they have free time.",
+        "isCorrect": true
+      },
+      {
+        "text": "It implies that the person will probably fail to complete the task on time.",
+        "isCorrect": false
+      },
+      {
+        "text": "It requests a formal meeting to discuss the code changes in detail.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointOnTrivialSegment",
+        "severity": "warning",
+        "segmentOrdinal": 9,
+        "message": "Segment 9 çok kısa/trivial (\"Fair point.\") ama bir learning point üretilmiş."
+      }
+    ]
+  }
+}

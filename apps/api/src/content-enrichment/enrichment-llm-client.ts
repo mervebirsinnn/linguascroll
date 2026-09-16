@@ -115,7 +115,7 @@ You will be given a timestamped English transcript (already produced by a separa
 - learningPoints: ONLY for segments that contain a phrase or grammar structure genuinely worth teaching a B1/B2 learner (a phrasal verb, an idiom, a non-obvious grammar pattern). Most segments should have none. Each must reference the exact segmentOrdinal it comes from. Do not invent generic grammar commentary that isn't tied to something actually said.
 - vocabulary: ONLY genuinely useful words/phrases for a learner — prioritize phrasal verbs, idioms, and useful conversational vocabulary at B1/B2 level. Skip trivial closed-class words (the, and, is, very, a, to, ...). It is fine for this list to be empty or short.
 - learningPoints and vocabulary must come from words/phrases that actually occur in the transcript, not invented additions.
-- quiz: exactly one multiple-choice question testing genuine comprehension (meaning in context, phrase meaning, grammar structure, or vocabulary in context) of ONE specific segment (set segmentOrdinal to that segment's ordinal). Exactly 4 options, exactly one correct. Wrong options must be plausible (not absurd, not trivially eliminable) but unambiguous — no near-duplicates of the correct answer. The correct answer must be verifiable directly from that segment's text.
+- quiz: exactly one multiple-choice question that a learner who just watched this specific segment would immediately recognize as testing something they just encountered there — never generic trivia about the video's topic. Ground it in ONE specific segment (set segmentOrdinal to that segment's ordinal) and test ONE of: the meaning of a phrase/idiom actually used in it, a vocabulary item in its real sentence context, a paraphrase/comprehension of what the sentence actually means, a grammar/usage pattern actually present in it, or an idea explicitly stated in it. Where it reads naturally, make the connection to the video's content explicit in the wording (e.g. "In the video, what does 'double-edged sword' mean in this context?") — but do not force this phrasing onto every question if it already reads as clearly about that segment without it. Match the question's difficulty to cefrLevel: A1 → concrete, basic word/sentence meaning; A2 → contextual vocabulary meaning or a simple paraphrase; B1 → phrase/idiom meaning, inference, or paraphrase; B2 → nuance, idiomatic meaning, inference, or a genuine grammar/usage point — a B1/B2 video's quiz must never collapse into an A1-level "what does this common word mean" question. Exactly 4 options, exactly one correct. Distractors must be plausible and of similar semantic category and difficulty to the correct answer, not near-duplicates of it and not absurd/trivially eliminable — never one obviously-correct answer next to three unrelated or nonsense options, and never let the correct option be conspicuously longer/more detailed than the others. The correct answer must be provable strictly from that segment's text, with no outside/general knowledge required, and the question must not be answerable by someone who never watched the video — it must depend on the specific wording or context of that segment, not common sense alone.
 
 All Turkish text must be natural Turkish, not a literal word-for-word translation.`;
 
@@ -178,10 +178,21 @@ export async function enrichTranscript(
   return parseResult.data;
 }
 
+// Chunk 17C.2 — gerçek smoke testte bulunan bulgu: `interactions.create()` SDK
+// içinde AYRI bir alt-client (speakeasy-üretimi Interactions bridge) üzerinden
+// gidiyor ve onun tek-deneme timeout_ms'i, bu option verilmezse -1 (sınırsız)
+// oluyor — SDK'nın kendi retry/backoff tavanı (maxElapsedTime/maxRetries) SADECE
+// dönen denemeler arasındaki süreyi sınırlıyor, hiç dönmeyen TEK bir denemeyi
+// sınırlayamıyor. Gerçek testte tam bu yüzden 240s+ boyunca sıfır byte'lık bir
+// yanıtsızlık gözlemlendi (retry/backoff DEĞİŞTİRİLMEDİ — sadece her denemeye
+// bir üst sınır kondu). `httpOptions.timeout` mevcut SDK'nın kendi, dokümante
+// constructor option'ı; yeni dependency veya elle AbortController yok.
+const GEMINI_REQUEST_TIMEOUT_MS = 120_000;
+
 function createDefaultClient(): GoogleGenAI {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     throw new EnrichmentLlmError("GEMINI_API_KEY tanımlı değil — apps/api/.env dosyasını kontrol edin.");
   }
-  return new GoogleGenAI({ apiKey });
+  return new GoogleGenAI({ apiKey, httpOptions: { timeout: GEMINI_REQUEST_TIMEOUT_MS } });
 }

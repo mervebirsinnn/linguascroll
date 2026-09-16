@@ -47,6 +47,80 @@ const MIN_OPTION_CHARS = 2;
  */
 const TRIVIAL_QUIZ_QUOTE_DOMINANCE_RATIO = 0.7;
 
+/**
+ * Chunk 16 revizyonu — gerçek cihaz testinde bulunan bulgu: quiz'ler PLACEMENT
+ * açısından doğru (kaynak video her zaman doğru sırada), ama İÇERİK olarak
+ * izlenen videoyla "bağlantısız hissettiriyor" ve çoğu zaman gereğinden kolay/
+ * A1-seviyesinde. Bu üç sabit/helper, o problemin deterministik (LLM/CEFR-
+ * skorlama içermeyen) bir kısmını yakalayan YENİ kontrollerin ortak altyapısı.
+ *
+ * Kasıtlı olarak YAPILMAYAN şey: CEFR seviyesine göre zorluk uyumu kontrolü.
+ * "B1/B2 sorusu A1-seviyesine düşmesin" kararı (madde 5/6) — PROMPT seviyesinde
+ * (bkz. enrichment-llm-client.ts SYSTEM_PROMPT) ele alınıyor, burada DEĞİL:
+ * "bu soru B2'ye göre çok mu kolay" sorusu güvenilir şekilde deterministik
+ * kurallarla cevaplanamaz (gerçek bir CEFR-zorluk sınıflandırıcısı gerektirir,
+ * kullanıcı kararı gereği bu KAPSAM DIŞI). Burada SADECE CEFR'den bağımsız,
+ * evrensel olarak "kötü quiz" sayılan desenler kontrol ediliyor.
+ */
+function tokenize(text: string): Set<string> {
+  return new Set(
+    text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .split(/\s+/)
+      .filter(Boolean),
+  );
+}
+
+/** `tokenize`'ın aksine, `IGNORED_VOCABULARY_LEMMAS`'taki (the/is/a/...) kelimeleri de eler — "bu quiz kaynak segmentle ANLAMLI bir kelime paylaşıyor mu" sorusu için, sadece ortak "the"/"a" gibi kelimelerin yanlışlıkla "grounded" saydırmasını önlemek amacıyla. */
+function meaningfulWords(text: string): Set<string> {
+  return new Set([...tokenize(text)].filter((word) => word.length > 2 && !IGNORED_VOCABULARY_LEMMAS.has(word)));
+}
+
+function jaccardSimilarity(a: ReadonlySet<string>, b: ReadonlySet<string>): number {
+  if (a.size === 0 && b.size === 0) {
+    return 1;
+  }
+  let intersectionSize = 0;
+  for (const item of a) {
+    if (b.has(item)) {
+      intersectionSize++;
+    }
+  }
+  const unionSize = a.size + b.size - intersectionSize;
+  return unionSize === 0 ? 0 : intersectionSize / unionSize;
+}
+
+/**
+ * İki seçenek birebir aynı DEĞİL (o zaten `duplicateQuizOptions`/reject) ama
+ * kelime kümesi düzeyinde büyük ölçüde ÖRTÜŞÜYORSA ("can provide benefits but
+ * also create risks" vs "can create risks but also provide benefits" gibi bir
+ * yeniden-sıralama/parafraz) — quiz'i fiilen cevaplanamaz/anlamsız hale
+ * getiren "near-duplicate distractor" paterni. Eşik (0.8) KASITLI OLARAK
+ * yüksek tutuluyor — tipik, meşru distractor'lar (aynı kategoriden ama farklı
+ * kelimelerle: "Cooking food" / "Playing games") çok daha düşük skor üretir.
+ */
+const NEAR_DUPLICATE_QUIZ_OPTION_JACCARD_THRESHOLD = 0.8;
+
+/**
+ * Bilinen bir LLM quiz-üretim paterni: doğru cevap, distractor'lardan BELİRGİN
+ * ŞEKİLDE uzun/kısa olduğunda, okumadan/anlamadan sadece "en detaylı görünen
+ * seçenek" seçilerek doğru cevap tahmin edilebiliyor — madde 9'un ("videoyu
+ * izlemeden cevaplanabilir olmasın") deterministik olarak yakalanabilen tek
+ * alt-kümesi. Oran (1.8x) KASITLI OLARAK gevşek — meşru, doğal uzunluk
+ * farklılıklarını false-positive ÜRETMEYECEK şekilde kalibre edildi.
+ *
+ * SADECE oran YETERSİZ: kısa tek-kelimelik seçeneklerde ("No" vs "Food"/
+ * "Walk"/"Bowl" gibi — gerçek, meşru bir LinguaScroll quiz'i, bkz.
+ * pipeline.e2e-spec.ts fixture'ı) birkaç karakterlik fark bile oranı kolayca
+ * eşiğin üstüne çıkarıyor. Bu yüzden MUTLAK karakter farkı da (madde: en az
+ * bu kadar karakter fark olmalı) AYRICA gerekiyor — sadece "uzun bir cümle
+ * seçeneği, tek kelimelik distractor'lar arasında göze batıyor" gibi GERÇEK
+ * anlamda göze çarpan durumları yakalamak için.
+ */
+const QUIZ_ANSWER_LENGTH_OUTLIER_RATIO = 1.8;
+const QUIZ_ANSWER_LENGTH_OUTLIER_MIN_ABSOLUTE_DIFFERENCE_CHARS = 6;
+
 function issue(code: QualityIssueCode, severity: QualityIssueSeverity, segmentOrdinal: number | null, message: string): QualityIssue {
   return { code, severity, segmentOrdinal, message };
 }
@@ -280,7 +354,14 @@ function checkQuizQuality(quiz: QualityCheckContent["quiz"], segmentsByOrdinal: 
   }
 
   for (const option of quiz.options) {
-    if (option.text.trim().length < MIN_OPTION_CHARS) {
+    if (option.text.trim().length === 0) {
+      // `quizTooShort` (aşağıda, <2 karakter) BUNU DA yakalar ama "obviously
+      // weak distractor" istekindeki (bkz. dosya başı Chunk 16 yorumu) TAMAMEN
+      // boş seçenek durumu, ayrıca reject şiddetinde KENDİ koduyla işaretleniyor
+      // — quizTooShort SADECE warning, ama tamamen boş bir seçenek quiz'i
+      // fiilen bozar (duplicateQuizOptions'la AYNI şiddet gerekçesi).
+      issues.push(issue("emptyQuizOption", "reject", quiz.segmentOrdinal, "Quiz seçeneklerinden biri tamamen boş/sadece boşluk."));
+    } else if (option.text.trim().length < MIN_OPTION_CHARS) {
       issues.push(issue("quizTooShort", "warning", quiz.segmentOrdinal, `Quiz seçeneği alışılmadık derecede kısa: "${option.text}".`));
     }
   }
@@ -301,6 +382,68 @@ function checkQuizQuality(quiz: QualityCheckContent["quiz"], segmentsByOrdinal: 
     issues.push(issue("duplicateQuizOptions", "reject", quiz.segmentOrdinal, "Quiz seçeneklerinden en az ikisi (case-insensitive) birebir aynı metne sahip."));
   }
 
+  // Chunk 16 revizyonu — near-duplicate seçenekler (birebir aynı DEĞİL ama
+  // kelime kümesi düzeyinde büyük ölçüde örtüşüyor, bkz. dosya başı yorumu).
+  // `hasDuplicateOption` ile İŞARETLENMİŞ birebir-aynı çiftler burada TEKRAR
+  // flag edilmiyor (jaccard zaten 1 olur ama farklı bir kod/mesaj üretmemek
+  // için `text === text` durumunu atlıyoruz).
+  const optionTokenSets = quiz.options.map((option) => tokenize(option.text));
+  let hasNearDuplicateOption = false;
+  for (let i = 0; i < optionTokenSets.length && !hasNearDuplicateOption; i++) {
+    for (let j = i + 1; j < optionTokenSets.length; j++) {
+      if (normalizedOptionTexts[i] === normalizedOptionTexts[j]) {
+        continue; // birebir aynı — duplicateQuizOptions zaten yakaladı
+      }
+      if (jaccardSimilarity(optionTokenSets[i]!, optionTokenSets[j]!) >= NEAR_DUPLICATE_QUIZ_OPTION_JACCARD_THRESHOLD) {
+        hasNearDuplicateOption = true;
+        break;
+      }
+    }
+  }
+  if (hasNearDuplicateOption) {
+    issues.push(
+      issue(
+        "nearDuplicateQuizOptions",
+        "warning",
+        quiz.segmentOrdinal,
+        "Quiz seçeneklerinden en az ikisi birebir aynı değil ama kelime düzeyinde büyük ölçüde örtüşüyor (parafraz/yeniden sıralama) — doğru cevabı belirsizleştirebilir.",
+      ),
+    );
+  }
+
+  const correctOption = quiz.options.find((option) => option.isCorrect);
+  if (correctOption) {
+    // Chunk 16 revizyonu — "trivially easy pattern" (madde 9): doğru cevap
+    // uzunluk olarak distractor'lardan belirgin şekilde sapıyorsa, soru
+    // OKUNMADAN/ANLAŞILMADAN da tahmin edilebilir hale gelir (bkz. dosya başı
+    // yorumu). Boş/az karakterli distractor'lar (zaten ayrı kodlarla
+    // yakalanıyor) bu ortalamayı BOZMASIN diye hesaplamadan çıkarılıyor.
+    const distractorLengths = quiz.options
+      .filter((option) => !option.isCorrect)
+      .map((option) => option.text.trim().length)
+      .filter((length) => length > 0);
+    if (distractorLengths.length > 0) {
+      const averageDistractorLength = distractorLengths.reduce((sum, length) => sum + length, 0) / distractorLengths.length;
+      const correctLength = correctOption.text.trim().length;
+      const isRatioOutlier =
+        averageDistractorLength > 0 &&
+        (correctLength > averageDistractorLength * QUIZ_ANSWER_LENGTH_OUTLIER_RATIO ||
+          correctLength * QUIZ_ANSWER_LENGTH_OUTLIER_RATIO < averageDistractorLength);
+      const isOutlier =
+        isRatioOutlier && Math.abs(correctLength - averageDistractorLength) >= QUIZ_ANSWER_LENGTH_OUTLIER_MIN_ABSOLUTE_DIFFERENCE_CHARS;
+      if (isOutlier) {
+        issues.push(
+          issue(
+            "quizAnswerLengthOutlier",
+            "warning",
+            quiz.segmentOrdinal,
+            `Doğru cevap ("${correctOption.text}", ${correctLength} karakter) uzunluk olarak diğer seçeneklerden (ortalama ${averageDistractorLength.toFixed(1)} karakter) belirgin şekilde farklı — bilinen bir "okumadan tahmin edilebilir quiz" paterni.`,
+          ),
+        );
+      }
+    }
+  }
+
   const segment = segmentsByOrdinal.get(quiz.segmentOrdinal);
   if (segment && question.length > 0) {
     // Sondaki noktalama (./!/?) STRIP ediliyor — bir soru segment metnini
@@ -319,6 +462,31 @@ function checkQuizQuality(quiz: QualityCheckContent["quiz"], segmentsByOrdinal: 
     const quoteShareOfQuestion = segmentText.length / question.length;
     if (segmentText.length > 0 && question.toLowerCase().includes(segmentText) && quoteShareOfQuestion > TRIVIAL_QUIZ_QUOTE_DOMINANCE_RATIO) {
       issues.push(issue("quizTooTrivial", "warning", quiz.segmentOrdinal, "Quiz sorusu neredeyse TAMAMEN kaynak segment'in transcript metninden oluşuyor, gerçek bir soru içeriği yok/çok az — çok trivial olabilir (örn. \"What did they say?\" + transcript kopyası)."));
+    }
+
+    // Chunk 16 revizyonu — gerçek cihaz bulgusu: quiz PLACEMENT olarak doğru
+    // videoya ait olsa da, İÇERİK olarak o segmentte GEÇMEYEN bir şeyi test
+    // ediyor hissi verebiliyor. "Anlamlı kelime" (stopword'ler hariç) düzeyinde
+    // SIFIR ortak kelime varsa, soru + doğru cevap muhtemelen segment'in
+    // dışından (başka bir segment/genel konu bilgisi) üretilmiş demektir.
+    // Paraphrase/idiom-anlamı sorularının ÇOĞU gene de test edilen ifadeyi
+    // (örn. "double-edged sword") soru metninde ALINTILAR — bu yüzden bu
+    // kontrol düşük false-positive riskiyle warning seviyesinde tutuluyor
+    // (learningPointExpressionNotInTranscript'teki AYNI temkinli yaklaşım).
+    if (correctOption) {
+      const segmentWords = meaningfulWords(segment.text);
+      const quizWords = meaningfulWords(`${question} ${correctOption.text}`);
+      const hasSharedMeaningfulWord = [...quizWords].some((word) => segmentWords.has(word));
+      if (segmentWords.size > 0 && quizWords.size > 0 && !hasSharedMeaningfulWord) {
+        issues.push(
+          issue(
+            "quizConceptNotGroundedInSegment",
+            "warning",
+            quiz.segmentOrdinal,
+            `Quiz sorusu ve doğru cevabı, kaynak segment ${quiz.segmentOrdinal}'in metniyle (anlamlı kelime düzeyinde) hiçbir kelime paylaşmıyor — soru başka bir segment/genel konudan üretilmiş olabilir, kaynak segment'i gerçekten test etmiyor olabilir.`,
+          ),
+        );
+      }
     }
   }
 

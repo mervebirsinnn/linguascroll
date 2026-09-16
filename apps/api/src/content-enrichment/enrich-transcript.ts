@@ -120,8 +120,12 @@ export function buildPublishDraft(
   return publishDraftSchema.parse({ ...contentWithoutQuality, quality });
 }
 
-/** STT pipeline'ın `atomicWriteFile`'ıyla AYNI desen (tmp + rename) — küçük, bilinçli bir tekrar (bkz. stt-draft.schema.ts yorumu, farklı build root). */
-function atomicWriteFile(finalPath: string, content: string): void {
+/**
+ * STT pipeline'ın `atomicWriteFile`'ıyla AYNI desen (tmp + rename) — küçük, bilinçli bir tekrar (bkz. stt-draft.schema.ts yorumu, farklı build root).
+ * Chunk 17C — export edildi: `content-admin/enrichment-processing.service.ts` bu enrichment pipeline'ının pure fonksiyonlarını
+ * (bu fonksiyon dahil) doğrudan import ederek reuse ediyor (subprocess DEĞİL — bkz. o dosyanın başındaki yorum). Davranış değişmedi.
+ */
+export function atomicWriteFile(finalPath: string, content: string): void {
   const tmpPath = `${finalPath}.tmp`;
   fs.mkdirSync(path.dirname(finalPath), { recursive: true });
   fs.writeFileSync(tmpPath, content, "utf-8");

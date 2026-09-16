@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useEventListener } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
 import type { FeedPlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
@@ -11,6 +11,34 @@ import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
+
+/**
+ * Chunk 16 revizyon — cihaz smoke test'inde bulunan bug'ın kalıcı çözümü:
+ * vocabulary listesi artık HER ZAMAN görünür, video'nun üstünü kaplayan bir
+ * panel DEĞİL — varsayılan olarak KAPALI, sadece küçük bir "N kelime" kontrolü
+ * gösteren, dokununca video'nun altından yukarı doğru açılan bir bottom-sheet.
+ *
+ * `react-native-safe-area-context` bu repo'da hiç bağımlı değil (bkz.
+ * pnpm-lock.yaml) — yeni bir native dependency eklemek yerine, iPhone'un home
+ * indicator alanı için bilinen (Apple HIG'in tüm notch/Dynamic Island'lı
+ * modellerde sabit tuttuğu) 34pt'lik payı burada SABİT bir değer olarak
+ * kullanıyoruz. Bunun native `useSafeAreaInsets()`'ten farkı: dinamik değil,
+ * ama a) bu repo'da hiçbir ekran zaten dinamik safe-area kullanmıyor (bkz.
+ * Feed.tsx — useWindowDimensions, insets değil), b) tek ihtiyacımız "handle
+ * home indicator'ın ALTINDA kalmasın" — sabit 34pt bunun için yeterli ve
+ * doğru, c) subtitle'ın `bottomOffset`'ini AYNI sabitle hesaplıyoruz (aşağı),
+ * bu yüzden native bir API'nin geç gelen/yanlış senkronize olan değeriyle
+ * layout'un çakışması riski hiç yok.
+ */
+const IOS_HOME_INDICATOR_INSET = Platform.OS === "ios" ? 34 : 0;
+/** Kapalı haldeki "N kelime ▲" kontrolünün yaklaşık yüksekliği (padding dahil). */
+const VOCABULARY_HANDLE_HEIGHT = 44;
+/** İstenen %45–55 aralığının ortası — açık panel, video/ekran yüksekliğinin bu oranını aşmaz. */
+const VOCABULARY_PANEL_HEIGHT_RATIO = 0.5;
+/** Panel kapalıyken subtitle'ın eskiden beri kullandığı sabit konum (SubtitleOverlay.tsx'in eski varsayılanıyla AYNI) — collapsed'ta hiçbir şey değişmiyor. */
+const SUBTITLE_DEFAULT_BOTTOM = 96;
+/** Panel açıkken subtitle ile panelin üst kenarı arasındaki nefes payı. */
+const SUBTITLE_GAP_ABOVE_EXPANDED_PANEL = 12;
 
 type VideoFeedItemProps = {
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
@@ -79,6 +107,24 @@ export function VideoFeedItem({
   // context ASLA üretilmiyor.
   const [openVocabularySegmentId, setOpenVocabularySegmentId] = useState<string | null>(null);
   const wasPlayingBeforeOpenRef = useRef(false);
+
+  // Chunk 16 revizyon — bottom-sheet'in açık/kapalı durumu. Item'a özel, lokal
+  // UI state: `useSavedWordIds`/`useVocabularyHint`'in aksine BİRDEN FAZLA
+  // video arasında paylaşılan mantıksal bir gerçek DEĞİL (her video'nun kendi
+  // sheet'i kendi açık/kapalı durumuna sahip olmalı), bu yüzden Feed.tsx'e
+  // taşınmadı.
+  const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
+  const vocabularyPanelHeight = height * VOCABULARY_PANEL_HEIGHT_RATIO;
+  // Sheet'in TAMAMININ (handle + varsa açık panel + home-indicator payı)
+  // ekran altından kapladığı toplam yükseklik — subtitle'ın konumu SADECE bu
+  // değere göre hesaplanıyor (bkz. SubtitleOverlay.tsx'teki "zIndex yeterli
+  // değil, gerçek pozisyon gerekir" yorumu).
+  const vocabularySheetHeight =
+    VOCABULARY_HANDLE_HEIGHT + IOS_HOME_INDICATOR_INSET + (vocabularyExpanded ? vocabularyPanelHeight : 0);
+  const subtitleBottomOffset =
+    video.vocabulary.length > 0 && vocabularyExpanded
+      ? vocabularySheetHeight + SUBTITLE_GAP_ABOVE_EXPANDED_PANEL
+      : SUBTITLE_DEFAULT_BOTTOM;
 
   function handleSubtitleTap(segment: TranscriptSegment): void {
     wasPlayingBeforeOpenRef.current = player.playing;
@@ -155,6 +201,15 @@ export function VideoFeedItem({
       // sıfırlamış olur, yine de açıkça sıfırlıyoruz.
       accumulatedMsRef.current = 0;
       playingSinceRef.current = null;
+      // Kullanıcı geri bildirimi — video yarıda kaydırılıp geri dönüldüğünde
+      // kaldığı yerden DEĞİL, baştan başlamalı (her video için, tutarlı bir
+      // kural): bu bir TikTok/Reels-tarzı feed, altyazı-senkron bir öğrenme
+      // videosuna cümlenin ortasından dönmek, baştan izlemekten daha kafa
+      // karıştırıcı. `pause()` currentTime'ı hiç sıfırlamıyordu (bkz. aşağıdaki
+      // else dalı) — bu yüzden reset burada, YENİDEN aktif olma anında yapılıyor
+      // (pasife geçerken değil — geçiş sırasında görünür bir "başa sıçrama"
+      // titremesi yaratmamak için).
+      player.replay();
       player.play();
     } else {
       player.pause();
@@ -204,8 +259,9 @@ export function VideoFeedItem({
         onPress={handleSubtitleTap}
         vocabulary={video.vocabulary}
         onPressWord={handleVocabularyWordTap}
+        bottomOffset={subtitleBottomOffset}
       />
-      <ExplanationSheet segment={openSegment} onClose={handleCloseSheet} />
+      <ExplanationSheet segment={openSegment} vocabulary={video.vocabulary} onClose={handleCloseSheet} />
       <VocabularyWordSheet
         word={openVocabularyWord}
         onClose={handleCloseVocabularySheet}
@@ -217,32 +273,53 @@ export function VideoFeedItem({
           }
         }}
       />
-      {isActive && video.vocabulary.length > 0 && vocabularyHintVisible && (
+      {isActive && video.vocabulary.length > 0 && vocabularyHintVisible && !vocabularyExpanded && (
         <Pressable style={styles.vocabularyHint} onPress={onDismissVocabularyHint}>
           <Text style={styles.vocabularyHintText}>Vurgulu kelimeye dokun → anlamını gör ve kaydet</Text>
         </Pressable>
       )}
       {video.vocabulary.length > 0 && (
-        <View style={styles.vocabularyPanel}>
-          {video.vocabulary.map(({ word }) => {
-            // Backend'in bu occurrence için gömdüğü `saved` alanı BİLİNÇLİ OLARAK
-            // okunmuyor — tek mantıksal gerçek Feed.tsx'teki useSavedWordIds'te
-            // yaşıyor (aynı wordId birden fazla videoda görünebildiği için).
-            const saved = isWordSaved(word.id);
-            const pending = isWordPending(word.id);
-            return (
-              <Pressable
-                key={word.id}
-                onPress={() => onToggleSaveWord(word.id)}
-                disabled={pending}
-                style={[styles.wordChip, saved && styles.wordChipSaved]}
-              >
-                <Text style={styles.wordLemma}>{word.lemma}</Text>
-                <Text style={styles.wordGloss}>{word.gloss}</Text>
-                <Text style={styles.wordAction}>{pending ? "…" : saved ? "Kaydedildi ✓" : "Kaydet"}</Text>
-              </Pressable>
-            );
-          })}
+        // Chunk 16 revizyon — cihaz smoke test'inde bulunan bug'ın kalıcı çözümü:
+        // panel artık her zaman açık, sınırsız yükseklikte büyüyen bir liste
+        // DEĞİL — varsayılan KAPALI bir bottom-sheet. `vocabularySheetHeight`
+        // (yukarıda hesaplanan) SubtitleOverlay'e geçirilen `bottomOffset`'le
+        // AYNI kaynaktan besleniyor, bu yüzden ikisi asla çakışmıyor — zIndex
+        // burada bir GÜVENLİK AĞI, birincil mekanizma DEĞİL.
+        <View style={styles.vocabularySheet}>
+          {vocabularyExpanded && (
+            <ScrollView
+              style={[styles.vocabularyList, { maxHeight: vocabularyPanelHeight }]}
+              contentContainerStyle={styles.vocabularyListContent}
+              showsVerticalScrollIndicator={false}
+            >
+              {video.vocabulary.map(({ word }) => {
+                // Backend'in bu occurrence için gömdüğü `saved` alanı BİLİNÇLİ OLARAK
+                // okunmuyor — tek mantıksal gerçek Feed.tsx'teki useSavedWordIds'te
+                // yaşıyor (aynı wordId birden fazla videoda görünebildiği için).
+                const saved = isWordSaved(word.id);
+                const pending = isWordPending(word.id);
+                return (
+                  <Pressable
+                    key={word.id}
+                    onPress={() => onToggleSaveWord(word.id)}
+                    disabled={pending}
+                    style={[styles.wordChip, saved && styles.wordChipSaved]}
+                  >
+                    <Text style={styles.wordLemma}>{word.lemma}</Text>
+                    <Text style={styles.wordGloss}>{word.gloss}</Text>
+                    <Text style={styles.wordAction}>{pending ? "…" : saved ? "Kaydedildi ✓" : "Kaydet"}</Text>
+                  </Pressable>
+                );
+              })}
+            </ScrollView>
+          )}
+          <Pressable
+            style={[styles.vocabularyHandle, { paddingBottom: 10 + IOS_HOME_INDICATOR_INSET }]}
+            onPress={() => setVocabularyExpanded((expanded) => !expanded)}
+          >
+            <Text style={styles.vocabularyHandleText}>{video.vocabulary.length} kelime</Text>
+            <Text style={styles.vocabularyHandleChevron}>{vocabularyExpanded ? "▼" : "▲"}</Text>
+          </Pressable>
         </View>
       )}
     </View>
@@ -288,12 +365,45 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     textAlign: "center",
   },
-  vocabularyPanel: {
+  vocabularySheet: {
     position: "absolute",
     left: 16,
     right: 16,
-    bottom: 32,
+    bottom: 0,
+    // SubtitleOverlay.tsx'teki zIndex: 10'dan BİLİNÇLİ OLARAK düşük — güvenlik
+    // ağı, birincil mekanizma değil (bkz. yukarıdaki render yorumu).
+    zIndex: 1,
+    elevation: 1,
+  },
+  vocabularyList: {
+    backgroundColor: "rgba(0,0,0,0.55)",
+    borderRadius: 12,
+    marginBottom: 8,
+  },
+  vocabularyListContent: {
     gap: 8,
+    padding: 8,
+  },
+  vocabularyHandle: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 6,
+    backgroundColor: "rgba(17,17,17,0.85)",
+    borderWidth: 1,
+    borderColor: "#444",
+    borderRadius: 20,
+    paddingTop: 10,
+    // paddingBottom, render'da IOS_HOME_INDICATOR_INSET ile ezilir (bkz. yukarı).
+  },
+  vocabularyHandleText: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  vocabularyHandleChevron: {
+    color: "#8ecdfa",
+    fontSize: 12,
   },
   wordChip: {
     backgroundColor: "rgba(17,17,17,0.85)",

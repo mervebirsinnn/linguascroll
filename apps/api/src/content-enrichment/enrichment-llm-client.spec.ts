@@ -97,4 +97,42 @@ describe("enrichTranscript", () => {
       }
     }
   });
+
+  /**
+   * Chunk 17C.2 — gerçek smoke testte bulunan bulgu: `interactions.create()`'in tek
+   * bir HTTP denemesi, `httpOptions.timeout` verilmezse SINIRSIZ bekleyebiliyor
+   * (SDK'nın kendi retry/backoff tavanı sadece DÖNEN denemeler arasını sınırlıyor,
+   * hiç dönmeyen tek bir denemeyi sınırlayamıyor — bkz. Chunk 17C.2 review). Bu test
+   * `createDefaultClient()`'ın (client enjekte edilmediğinde) gerçekten
+   * `httpOptions.timeout` ile bir GoogleGenAI oluşturduğunu, GERÇEK ağa hiç
+   * gitmeden doğruluyor — production kodu bu test için değiştirilmedi, sadece
+   * `@google/genai`'ın GoogleGenAI export'u bu tek testte constructor çağrısını
+   * yakalayacak şekilde spy'landı.
+   */
+  it("client enjekte edilmediğinde createDefaultClient GoogleGenAI'ı httpOptions.timeout=120000 ile oluşturur", async () => {
+    const originalKey = process.env.GEMINI_API_KEY;
+    process.env.GEMINI_API_KEY = "test-key-not-a-real-secret";
+    const genaiModule: { GoogleGenAI: typeof GoogleGenAI } = require("@google/genai");
+    const constructorSpy = jest.spyOn(genaiModule, "GoogleGenAI").mockImplementation(
+      (options) =>
+        ({
+          interactions: { create: jest.fn().mockResolvedValue({ status: "completed", output_text: validEnrichmentJson() }) },
+          ...options,
+        }) as unknown as GoogleGenAI,
+    );
+    try {
+      await enrichTranscript(segments);
+
+      expect(constructorSpy).toHaveBeenCalledWith(
+        expect.objectContaining({ apiKey: "test-key-not-a-real-secret", httpOptions: { timeout: 120_000 } }),
+      );
+    } finally {
+      constructorSpy.mockRestore();
+      if (originalKey !== undefined) {
+        process.env.GEMINI_API_KEY = originalKey;
+      } else {
+        delete process.env.GEMINI_API_KEY;
+      }
+    }
+  });
 });

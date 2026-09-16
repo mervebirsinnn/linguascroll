@@ -1,0 +1,185 @@
+{
+  "contentId": "business-b2-quick-change",
+  "muxAssetId": "local-one-quick-change-request",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b2-quick-change.mp4",
+  "durationMs": 29630,
+  "topic": "career",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 1460,
+      "text": "The task was basically done.",
+      "englishExplanation": "The task was almost entirely finished.",
+      "turkishExplanation": "Görev neredeyse tamamen tamamlanmıştı."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 1940,
+      "endMs": 2940,
+      "text": "Just needed a final review.",
+      "englishExplanation": "It only needed a final inspection before completion.",
+      "turkishExplanation": "Sadece son bir kontrol yapılması gerekiyordu."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 3400,
+      "endMs": 4740,
+      "text": "Then the product manager messages.",
+      "englishExplanation": "At that point, the product manager sent a message.",
+      "turkishExplanation": "Tam o anda ürün yöneticisi mesaj atar."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 5340,
+      "endMs": 6420,
+      "text": "Can we make one quick change?",
+      "englishExplanation": "She asks if a minor modification can be made.",
+      "turkishExplanation": "Hızlıca küçük bir değişiklik yapıp yapamayacaklarını sorar."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 6940,
+      "endMs": 8580,
+      "text": "Just move the button to the other side.",
+      "englishExplanation": "Her request is simply to move a button to another location.",
+      "turkishExplanation": "İsteği sadece butonu diğer tarafa taşımaktır."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 9080,
+      "endMs": 9840,
+      "text": "Sounds simple, right?",
+      "englishExplanation": "It sounds like a straightforward task at first.",
+      "turkishExplanation": "Kulağa çok basit bir iş gibi geliyor, değil mi?"
+    },
+    {
+      "ordinal": 7,
+      "startMs": 10320,
+      "endMs": 14460,
+      "text": "It sounds simple, but that button's used in three other places, and one of them has",
+      "englishExplanation": "It seems simple, but that button is used in three other places.",
+      "turkishExplanation": "Kulağa basit geliyor ama o buton üç farklı yerde daha kullanılıyor."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 14460,
+      "endMs": 15600,
+      "text": "different spacing rules.",
+      "englishExplanation": "One of those other locations has specific layout spacing rules.",
+      "turkishExplanation": "Ve bu yerlerden birinin farklı boşluk kuralları var."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 16220,
+      "endMs": 20320,
+      "text": "This affects the mobile layout too, so I'll need to check a few things before I touch it.",
+      "englishExplanation": "The change affects mobile screens, requiring checks before making edits.",
+      "turkishExplanation": "Bu durum mobil görünümü de etkiliyor, bu yüzden değiştirmeden önce birkaç şeyi kontrol etmem gerekecek."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 20740,
+      "endMs": 21240,
+      "text": "She replies,",
+      "englishExplanation": "The product manager sends a reply.",
+      "turkishExplanation": "Ürün yöneticisi cevap verir."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 21900,
+      "endMs": 22960,
+      "text": "Oh, I didn't realize.",
+      "englishExplanation": "She expresses surprise, saying she didn't realize it was complicated.",
+      "turkishExplanation": "Fark etmediğini söyleyerek şaşırır."
+    },
+    {
+      "ordinal": 12,
+      "startMs": 23680,
+      "endMs": 24240,
+      "text": "Take your time.",
+      "englishExplanation": "She tells the developer not to rush.",
+      "turkishExplanation": "Acele etmemesini, rahatça vakit ayırabileceğini söyler."
+    },
+    {
+      "ordinal": 13,
+      "startMs": 24760,
+      "endMs": 27560,
+      "text": "20 minutes later, it's a bit more involved than it looks.",
+      "englishExplanation": "After 20 minutes, the task proves to be more complicated than it seemed.",
+      "turkishExplanation": "20 dakika sonra işin göründüğünden biraz daha karmaşık olduğu anlaşılır."
+    },
+    {
+      "ordinal": 14,
+      "startMs": 27560,
+      "endMs": 29220,
+      "text": "But now, so does she.",
+      "englishExplanation": "Now she also realizes how complex the small request actually is.",
+      "turkishExplanation": "Ama artık o da işin ne kadar karmaşık olduğunun farkındadır."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "layout",
+      "gloss": "the visual arrangement of elements on a page or screen"
+    },
+    {
+      "lemma": "involved",
+      "gloss": "complex or requiring detailed work"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 12,
+      "type": "phrase",
+      "expression": "take your time",
+      "englishExplanation": "An expression used to tell someone that they do not need to hurry.",
+      "turkishExplanation": "Birine acele etmesine gerek olmadığını, sakin bir şekilde hareket edebileceğini belirtmek için kullanılır.",
+      "exampleEn": "Take your time with the report; it is not due until next week.",
+      "exampleTr": "Rapor konusunda acele etme; gelecek haftaya kadar süren var."
+    },
+    {
+      "segmentOrdinal": 13,
+      "type": "phrase",
+      "expression": "more involved than it looks",
+      "englishExplanation": "Describes a situation or task that is more complicated than it initially appears.",
+      "turkishExplanation": "Bir işin veya durumun ilk bakışta göründüğünden daha karmaşık olduğunu ifade eder.",
+      "exampleEn": "Fixing this software issue was much more involved than it looked.",
+      "exampleTr": "Bu yazılım sorununu çözmek göründüğünden çok daha karmaşıktı."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 13,
+    "question": "In the video, what does the speaker mean when saying the task is \"more involved than it looks\"?",
+    "options": [
+      {
+        "text": "It requires more effort because it is more complex than it first appeared.",
+        "isCorrect": true
+      },
+      {
+        "text": "It requires immediate cancellation because it is no longer necessary.",
+        "isCorrect": false
+      },
+      {
+        "text": "It requires extra approval from senior management before continuing.",
+        "isCorrect": false
+      },
+      {
+        "text": "It requires less technical effort than the team originally anticipated.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointOnTrivialSegment",
+        "severity": "warning",
+        "segmentOrdinal": 12,
+        "message": "Segment 12 çok kısa/trivial (\"Take your time.\") ama bir learning point üretilmiş."
+      }
+    ]
+  }
+}

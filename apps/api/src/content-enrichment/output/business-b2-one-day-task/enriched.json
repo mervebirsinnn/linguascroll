@@ -1,0 +1,175 @@
+{
+  "contentId": "business-b2-one-day-task",
+  "muxAssetId": "local-underestimating-task-complexity",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\moneyprinterTurbo\\storage\\tasks\\exports/business-b2-one-day-task.mp4",
+  "durationMs": 34030,
+  "topic": "career",
+  "cefrLevel": "B2",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 2640,
+      "text": "This should take a day, I told my manager on Monday.",
+      "englishExplanation": "The speaker told their boss on Monday that the work would take only one day.",
+      "turkishExplanation": "Konuşmacı, Pazartesi günü yöneticisine işin sadece bir gün süreceğini söylediğini anlatıyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 3300,
+      "endMs": 3720,
+      "text": "It's Thursday.",
+      "englishExplanation": "It is now Thursday, meaning much more time has passed than originally estimated.",
+      "turkishExplanation": "Bugün günlerden Perşembe, yani başlangıçta tahmin edilenden çok daha fazla zaman geçti."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 4500,
+      "endMs": 7140,
+      "text": "The task looked simple, just connect two systems.",
+      "englishExplanation": "The assignment initially seemed easy, requiring only the connection of two software systems.",
+      "turkishExplanation": "Görev başlangıçta kolay görünüyordu; sadece iki sistemi birbirine bağlamak gerekiyordu."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 7800,
+      "endMs": 10200,
+      "text": "But it turned out to be more involved than I expected.",
+      "englishExplanation": "However, the work proved to be more complicated and detailed than anticipated.",
+      "turkishExplanation": "Ancak işin beklediğimden daha karmaşık ve ayrıntılı olduğu ortaya çıktı."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 10760,
+      "endMs": 16280,
+      "text": "Mismatched data formats, an undocumented edge case, a library that broke under load.",
+      "englishExplanation": "The speaker lists technical issues encountered: incompatible data structures, undocumented rare cases, and a failing software library.",
+      "turkishExplanation": "Konuşmacı karşılaştığı teknik sorunları sıralıyor: uyumsuz veri formatları, belgelenmemiş uç durumlar ve yük altında çöken bir kütüphane."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 16800,
+      "endMs": 19860,
+      "text": "When my manager finally asked, I didn't make excuses.",
+      "englishExplanation": "When the manager eventually inquired about the delay, the speaker took responsibility instead of blaming external factors.",
+      "turkishExplanation": "Yöneticisi sonunda durumu sorduğunda, konuşmacı bahaneler üretmedi."
+    },
+    {
+      "ordinal": 7,
+      "startMs": 20640,
+      "endMs": 23180,
+      "text": "I underestimated the complexity of the integration.",
+      "englishExplanation": "The speaker admitted to miscalculating how hard it would be to combine the systems.",
+      "turkishExplanation": "Sistem entegrasyonunun karmaşıklığını azımsadığını kabul etti."
+    },
+    {
+      "ordinal": 8,
+      "startMs": 23820,
+      "endMs": 27340,
+      "text": "In hindsight, I should have scoped it properly before giving a number.",
+      "englishExplanation": "Looking back, the speaker realizes they should have thoroughly analyzed the work requirements before giving a deadline estimate.",
+      "turkishExplanation": "Geriye dönüp bakıldığında, bir süre vermeden önce işin kapsamını düzgünce belirlemesi gerektiğini fark ediyor."
+    },
+    {
+      "ordinal": 9,
+      "startMs": 27920,
+      "endMs": 29140,
+      "text": "He appreciated the honesty.",
+      "englishExplanation": "The manager valued the speaker's truthful and direct communication.",
+      "turkishExplanation": "Yöneticisi bu dürüst tavrı takdirle karşıladı."
+    },
+    {
+      "ordinal": 10,
+      "startMs": 29620,
+      "endMs": 31200,
+      "text": "The task still isn't done.",
+      "englishExplanation": "The work remains incomplete at this moment.",
+      "turkishExplanation": "Görev henüz tamamlanmış değil."
+    },
+    {
+      "ordinal": 11,
+      "startMs": 31660,
+      "endMs": 33480,
+      "text": "But at least now the estimate is real.",
+      "englishExplanation": "However, the current timeline projection is now realistic and grounded in facts.",
+      "turkishExplanation": "Ama en azından artık yapılan zaman tahmini gerçekçi."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "turn out",
+      "gloss": "ortaya çıkmak, sonuçlanmak"
+    },
+    {
+      "lemma": "involved",
+      "gloss": "karmaşık, ayrıntılı"
+    },
+    {
+      "lemma": "underestimate",
+      "gloss": "küçümsemek, zorluğunu azımsamak"
+    },
+    {
+      "lemma": "scope",
+      "gloss": "kapsamını belirlemek, incelemek"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 8,
+      "type": "grammar",
+      "expression": "should have + past participle",
+      "englishExplanation": "Used to express regret or criticism about a past action that was not performed or was done incorrectly.",
+      "turkishExplanation": "Geçmişte yapılmamış veya farklı yapılmış olması gereken bir eylemden duyulan pişmanlığı ya da eleştiriyi ifade etmek için kullanılır.",
+      "exampleEn": "I should have checked the details before submitting the report.",
+      "exampleTr": "Raporu teslim etmeden önce detayları kontrol etmeliydim."
+    },
+    {
+      "segmentOrdinal": 8,
+      "type": "phrase",
+      "expression": "in hindsight",
+      "englishExplanation": "Refers to understanding a situation only after it has happened, looking back with present knowledge.",
+      "turkishExplanation": "Geçmişte yaşanmış bir olaya bugünkü bilgi ve tecrübeyle geriye dönüp bakıldığında anlamına gelir.",
+      "exampleEn": "In hindsight, we should have launched the product later.",
+      "exampleTr": "Geriye dönüp bakıldığında, ürünü daha sonra piyasaya sürmeliydik."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 8,
+    "question": "In the video, what does the speaker mean by 'In hindsight, I should have scoped it properly before giving a number'?",
+    "options": [
+      {
+        "text": "Looking back, I ought to have carefully analyzed the work required before offering a time estimate.",
+        "isCorrect": true
+      },
+      {
+        "text": "Moving forward, I need to negotiate my salary before accepting a new task from my manager.",
+        "isCorrect": false
+      },
+      {
+        "text": "In the future, I will delegate complex technical problems to another team member immediately.",
+        "isCorrect": false
+      },
+      {
+        "text": "Looking back, I should have asked my manager to fix the system errors for me.",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "learningPointExpressionNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": 8,
+        "message": "Learning point ifadesi (\"should have + past participle\") segment 8'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+      },
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"turn out\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}

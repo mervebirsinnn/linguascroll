@@ -275,9 +275,12 @@ function assertFitsSessionBound(plan: FeedPlanItemRef[]): void {
 }
 
 /**
- * 2 video → 1 quiz (Chunk 10: 3:1'den değişti). Bu bir feed composition
- * policy'si — ne bir DB constraint ne bir domain invariant, sadece burada,
- * tek bir sabit + saf bir fonksiyon.
+ * VIDEOS_PER_QUIZ video → 1 quiz (şu an 4:1 — Chunk 14'te 2:1'den değişti, bkz.
+ * dosyanın başındaki VIDEOS_PER_QUIZ yorumu; bu yorum ESKİDEN "2 video → 1 quiz
+ * (Chunk 10: 3:1'den değişti)" diyordu — sabit chunk 14'te güncellenmiş ama bu
+ * docblock güncellenmemiş kalmıştı, gerçek davranışı YANLIŞ yansıtıyordu).
+ * Bu bir feed composition policy'si — ne bir DB constraint ne bir domain
+ * invariant, sadece burada, tek bir sabit + saf bir fonksiyon.
  *
  * Chunk 10: quiz seçimi artık "havuzdaki sıradaki quiz" DEĞİL — az önce
  * tamamlanan video grubunun GERÇEK kaynağı olan bir quiz aranıyor

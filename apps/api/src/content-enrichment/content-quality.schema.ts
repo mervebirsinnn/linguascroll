@@ -49,6 +49,11 @@ export const qualityIssueCodeSchema = z.enum([
   "quizTooShort",
   "duplicateQuizOptions",
   "quizTooTrivial",
+  // Quiz — Chunk 16 revizyonu (madde: "contextual quiz content quality")
+  "emptyQuizOption",
+  "nearDuplicateQuizOptions",
+  "quizConceptNotGroundedInSegment",
+  "quizAnswerLengthOutlier",
 ]);
 export type QualityIssueCode = z.infer<typeof qualityIssueCodeSchema>;
 

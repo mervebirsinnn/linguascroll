@@ -1,6 +1,7 @@
 import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import type { TranscriptSegment } from "@linguascroll/shared-types";
+import type { TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
 import { useExplanationLanguage } from "../preferences/use-explanation-language";
+import { resolveSegmentExplanation } from "./resolve-segment-explanation";
 
 type ExplanationSheetProps = {
   /**
@@ -10,6 +11,13 @@ type ExplanationSheetProps = {
    * değişmez (bkz. VideoFeedItem'daki `openSegment` state yorumu).
    */
   segment: TranscriptSegment | null;
+  /**
+   * Chunk 16 revizyon — `resolveSegmentExplanation`'ın vocabulary-fallback adımı
+   * için (bkz. o dosya): segment'in kendi açıklaması, orijinal cümlenin bir
+   * tekrarıysa, video'nun (segment'in DEĞİL) bilinen vocabulary'sinde bu
+   * segment'te geçen bir kelime aranıyor — SubtitleOverlay'e geçirilenle AYNI liste.
+   */
+  vocabulary: readonly VideoVocabularyItem[];
   onClose: () => void;
 };
 
@@ -18,8 +26,14 @@ type ExplanationSheetProps = {
  * RN'in kendi Modal'ı MVP için yeterli. video → subtitle → tap → explanation →
  * EN/TR mode akışının son adımı.
  */
-export function ExplanationSheet({ segment, onClose }: ExplanationSheetProps) {
+export function ExplanationSheet({ segment, vocabulary, onClose }: ExplanationSheetProps) {
   const [language, setLanguage] = useExplanationLanguage();
+  // Chunk 16 revizyon — cihaz smoke test'inde bulunan bug: `segment.englishExplanation`
+  // bazen orijinal cümlenin (neredeyse) birebir tekrarıydı. `segment` null olabildiği
+  // için resolver'ı SADECE segment doluyken çağırıyoruz (bkz. aşağıdaki JSX'teki
+  // `segment &&` guard'ıyla AYNI null-check, burada tekrar etmemek için `resolved`
+  // `segment` null iken hesaplanmıyor).
+  const resolved = segment ? resolveSegmentExplanation(segment, vocabulary, language) : null;
 
   return (
     <Modal visible={segment !== null} transparent animationType="slide" onRequestClose={onClose}>
@@ -45,9 +59,16 @@ export function ExplanationSheet({ segment, onClose }: ExplanationSheetProps) {
           {segment && (
             <ScrollView style={styles.body}>
               <Text style={styles.sentence}>{segment.text}</Text>
-              <Text style={styles.explanation}>
-                {language === "en" ? segment.englishExplanation : segment.turkishExplanation}
-              </Text>
+              {resolved?.kind === "sentence" && <Text style={styles.explanation}>{resolved.text}</Text>}
+              {resolved?.kind === "labeled" && (
+                <View>
+                  <Text style={styles.explanationLabel}>{resolved.label}</Text>
+                  <Text style={styles.explanation}>{resolved.text}</Text>
+                </View>
+              )}
+              {/* resolved?.kind === "none" — requirement madde 2: orijinal cümle ASLA
+                  tekrar gösterilmez, bu yüzden burada BİLEREK hiçbir şey render edilmiyor
+                  (segment.learningPoints listesi aşağıda zaten ayrıca gösteriliyor). */}
 
               {segment.learningPoints.map((point) => (
                 <View key={point.id} style={styles.learningPoint}>
@@ -118,6 +139,12 @@ const styles = StyleSheet.create({
     color: "#ddd",
     fontSize: 15,
     marginBottom: 16,
+  },
+  explanationLabel: {
+    color: "#8ecdfa",
+    fontSize: 13,
+    fontWeight: "700",
+    marginBottom: 2,
   },
   learningPoint: {
     borderTopWidth: 1,

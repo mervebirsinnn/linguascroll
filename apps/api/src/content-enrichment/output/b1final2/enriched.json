@@ -1,0 +1,125 @@
+{
+  "contentId": "b1final2",
+  "muxAssetId": "local-starting-conversations-with-strangers",
+  "sourceFile": "C:\\Users\\merve\\OneDrive\\Masaüstü\\LinguaScroll\\apps\\api\\scripts\\stt\\input\\B1final2.mp4",
+  "durationMs": 21600,
+  "topic": "lifestyle",
+  "cefrLevel": "B1",
+  "segments": [
+    {
+      "ordinal": 1,
+      "startMs": 0,
+      "endMs": 4260,
+      "text": "Talking to someone you do not know can feel scary, but it gets easier with practice.",
+      "englishExplanation": "Acknowledges that starting a conversation with a stranger can be intimidating, but reassures that it becomes easier the more you do it.",
+      "turkishExplanation": "Tanımadığınız biriyle konuşmanın başta korkutucu gelebileceğini, ancak pratik yaptıkça kolaylaşacağını belirtiyor."
+    },
+    {
+      "ordinal": 2,
+      "startMs": 4980,
+      "endMs": 6600,
+      "text": "To start, you need to break the ice.",
+      "englishExplanation": "Explains that the first step in talking to a new person is initiating friendly contact.",
+      "turkishExplanation": "Biriyle sohbet başlatmak için öncelikle ortamdaki çekingenliği kırmak gerektiğini ifade ediyor."
+    },
+    {
+      "ordinal": 3,
+      "startMs": 7240,
+      "endMs": 11220,
+      "text": "You can break the ice by asking a simple question, like, is this seat free?",
+      "englishExplanation": "Suggests breaking the silence with an easy, casual question such as asking if an empty seat is available.",
+      "turkishExplanation": "Buzları eritmek için 'Bu koltuk boş mu?' gibi basit bir soru sorulabileceğini örnek veriyor."
+    },
+    {
+      "ordinal": 4,
+      "startMs": 11660,
+      "endMs": 15120,
+      "text": "Next, try to keep the conversation going by asking open questions.",
+      "englishExplanation": "Advises sustaining the dialogue by asking questions that require more than a simple yes-or-no answer.",
+      "turkishExplanation": "Sohbetin devam etmesi için tek kelimelik cevaplarla sınırlı kalmayan açık uçlu sorular sormayı tavsiye ediyor."
+    },
+    {
+      "ordinal": 5,
+      "startMs": 15800,
+      "endMs": 19200,
+      "text": "For example, you can ask, what brings you to this coffee shop today?",
+      "englishExplanation": "Gives a practical example of an open question to ask someone at a café.",
+      "turkishExplanation": "Açık uçlu soruya örnek olarak bir kafede 'Bugün yolun buraya nasıl düştü?' şeklinde bir soru sorulabileceğini gösteriyor."
+    },
+    {
+      "ordinal": 6,
+      "startMs": 19700,
+      "endMs": 21520,
+      "text": "Finally, when it is time to…",
+      "englishExplanation": "Begins to transition into the final tip about ending or exiting the conversation.",
+      "turkishExplanation": "Konuşmayı sonlandırma aşamasına geçiş yapan cümlenin başlangıcı."
+    }
+  ],
+  "vocabulary": [
+    {
+      "lemma": "break the ice",
+      "gloss": "buzları eritmek, ortamdaki çekingenliği kırmak"
+    },
+    {
+      "lemma": "keep going",
+      "gloss": "devam ettirmek, sürdürmek"
+    },
+    {
+      "lemma": "what brings you to",
+      "gloss": "yolun buraya nasıl düştü, seni buraya hangi rüzgâr attı"
+    }
+  ],
+  "learningPoints": [
+    {
+      "segmentOrdinal": 2,
+      "type": "phrase",
+      "expression": "break the ice",
+      "englishExplanation": "A common idiom meaning to say or do something that relieves tension or social awkwardness when meeting someone new.",
+      "turkishExplanation": "Yeni biriyle tanışırken ortamdaki gerginliği veya çekingenliği ortadan kaldırmak için bir şeyler söylemek ya da yapmak anlamına gelen yaygın bir deyimdir.",
+      "exampleEn": "He told a short joke to break the ice at the start of the meeting.",
+      "exampleTr": "Toplantının başında çekingenliği kırmak için kısa bir fıkra anlattı."
+    },
+    {
+      "segmentOrdinal": 4,
+      "type": "phrase",
+      "expression": "keep the conversation going",
+      "englishExplanation": "A useful collocated expression meaning to maintain an active dialogue without awkward pauses.",
+      "turkishExplanation": "Sohbetin tıkanmadan, akıcı bir şekilde devam etmesini sağlamak anlamına gelen kalıplaşmış bir ifadedir.",
+      "exampleEn": "She asked about my hobbies to keep the conversation going.",
+      "exampleTr": "Sohbetin devam etmesini sağlamak için hobilerim hakkında sorular sordu."
+    }
+  ],
+  "quiz": {
+    "segmentOrdinal": 2,
+    "question": "In the video, what does the idiom \"break the ice\" mean?",
+    "options": [
+      {
+        "text": "To make strangers feel more comfortable and start talking",
+        "isCorrect": true
+      },
+      {
+        "text": "To end an awkward conversation as quickly as possible",
+        "isCorrect": false
+      },
+      {
+        "text": "To introduce two mutual friends who haven't met before",
+        "isCorrect": false
+      },
+      {
+        "text": "To politely disagree with someone in a conversation",
+        "isCorrect": false
+      }
+    ]
+  },
+  "quality": {
+    "status": "needsReview",
+    "issues": [
+      {
+        "code": "vocabularyLemmaNotInTranscript",
+        "severity": "warning",
+        "segmentOrdinal": null,
+        "message": "\"keep going\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+      }
+    ]
+  }
+}
