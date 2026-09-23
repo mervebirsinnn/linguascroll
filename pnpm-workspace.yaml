@@ -14,4 +14,8 @@ allowBuilds:
   # postinstall sadece bir version-scheme uyarısı yazıyor (stderr), dosya/ağ
   # erişimi yok — kaynağı incelenip doğrulandı (scripts/postinstall.js).
   protobufjs: true
-  workerd: set this to true or false
+  # postinstall, mevcut platforma özel workerd (Cloudflare Workers runtime)
+  # native binary'sini indiriyor -- esbuild ile aynı desen (platform binary
+  # seçici), wrangler/media-worker'ın yerel çalışması için gerekli, resmi
+  # Cloudflare paketi.
+  workerd: true
