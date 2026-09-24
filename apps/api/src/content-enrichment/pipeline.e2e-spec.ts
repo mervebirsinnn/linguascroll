@@ -151,7 +151,7 @@ describe("content-enrichment pipeline (deterministic, gerçek draft.json + gerç
 
     // 4) enrich-transcript.ts'in GERÇEK buildPublishDraft'ı — Chunk 13'ün
     // Quality Gate'i BURADA otomatik çalışıyor (buildPublishDraft'ın içinde).
-    const publishDraft = buildPublishDraft(draft.contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput);
+    const publishDraft = buildPublishDraft(draft.contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput, draft.storageKey ?? null);
     expect(publishDraft.muxAssetId).toBe("local-dog-three-words");
     // Metin (text) enrichment'tan DEĞİL, doğrudan draft'tan geliyor — STT'nin
     // ürettiği gerçek cümle asla değişmiyor (madde 2/6: transcript source of truth).

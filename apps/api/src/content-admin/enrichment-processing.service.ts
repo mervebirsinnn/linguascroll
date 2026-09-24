@@ -66,7 +66,7 @@ export class EnrichmentProcessingService {
       throw error;
     }
 
-    const publishDraft = buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput);
+    const publishDraft = buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput, draft.storageKey ?? null);
 
     // `buildPublishDraft` (Quality Gate dahil) BAŞARIYLA tamamlanana kadar
     // hiçbir dosya yazılmıyor — bir Gemini/segment-reference hatası enriched.json'ı

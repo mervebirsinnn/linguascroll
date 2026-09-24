@@ -78,6 +78,8 @@ describe("publishContent (integration, gerçek Postgres)", () => {
     expect(video?.muxAssetId).toBe("local-dog-three-words");
     expect(video?.topic).toBe("humor");
     expect(video?.cefrLevel).toBe("A1");
+    // Chunk 17D — storageKey verilmemiş bir draft (offline/yerel akış) DB'de NULL kalır.
+    expect(video?.storageKey).toBeNull();
 
     const segments = await db
       .select()
@@ -130,6 +132,17 @@ describe("publishContent (integration, gerçek Postgres)", () => {
     expect(await db.select().from(videosTable)).toHaveLength(0);
     expect(await db.select().from(videoTranscriptSegmentsTable)).toHaveLength(0);
     expect(await db.select().from(wordsTable)).toHaveLength(0);
+  });
+
+  it("Chunk 17D — storageKey dolu bir draft, videos.storage_key'e AYNEN persist edilir", async () => {
+    const { videoId } = await publishContent(
+      db,
+      makeDraft({ muxAssetId: "local-r2-backed-video", storageKey: "originals/a1final1/9f8e7d6c-uuid.mp4" }),
+    );
+
+    const [video] = await db.select().from(videosTable).where(eq(videosTable.id, videoId));
+    expect(video?.storageKey).toBe("originals/a1final1/9f8e7d6c-uuid.mp4");
+    expect(video?.muxAssetId).toBe("local-r2-backed-video");
   });
 
   describe("assertNotAlreadyPublished", () => {

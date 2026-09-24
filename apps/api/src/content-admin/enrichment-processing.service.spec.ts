@@ -152,4 +152,26 @@ describe("EnrichmentProcessingService.enrich", () => {
     // response'tan hariç tutuluyor, dosyadan DEĞİL.
     expect(onDisk.sourceFile).toBe("/tmp/should-not-leak.mp4");
   });
+
+  it("Chunk 17D — draft.json'daki storageKey'i (SttProcessingService'in yazdığı, madde 2 provenance zinciri) client'tan İSTEMEDEN enriched.json'a taşır", async () => {
+    writeDraft(CONTENT_ID, { storageKey: "originals/b1-enrich-test/9f8e7d6c-uuid.mp4" });
+    const enrichTranscriptFn = jest.fn().mockResolvedValue(validEnrichmentOutput());
+    const service = new EnrichmentProcessingService(enrichTranscriptFn);
+
+    const result = await service.enrich(CONTENT_ID);
+
+    expect(result.storageKey).toBe("originals/b1-enrich-test/9f8e7d6c-uuid.mp4");
+    const onDisk = JSON.parse(fs.readFileSync(resolveEnrichedOutputPath(CONTENT_ID), "utf-8"));
+    expect(onDisk.storageKey).toBe("originals/b1-enrich-test/9f8e7d6c-uuid.mp4");
+  });
+
+  it("Chunk 17D — draft.json'da storageKey YOKSA (offline/yerel akış) enriched.json'da null kalır", async () => {
+    writeDraft(CONTENT_ID); // storageKey hiç yok — offline draft
+    const enrichTranscriptFn = jest.fn().mockResolvedValue(validEnrichmentOutput());
+    const service = new EnrichmentProcessingService(enrichTranscriptFn);
+
+    const result = await service.enrich(CONTENT_ID);
+
+    expect(result.storageKey).toBeNull();
+  });
 });

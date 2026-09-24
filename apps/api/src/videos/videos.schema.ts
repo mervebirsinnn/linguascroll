@@ -10,6 +10,15 @@ import { check, integer, pgTable, text, timestamp, unique, uuid } from "drizzle-
  *   kararı gereği domain contract'ın parçası değil.
  * - muxAssetId burada var ama client'a hiç sızmıyor — VideosRepository bunu Video'ya
  *   map ederken bırakmaz, VideosService resolvePlaybackUrl ile playbackUrl'e çevirir.
+ * - storageKey (Chunk 17D) — muxAssetId'den KASITLI OLARAK AYRI bir kavram: content
+ *   identity (muxAssetId) != storage location (storageKey) != playback URL. NULLABLE:
+ *   local/offline pipeline'dan (scripts/stt → enrich-transcript.ts CLI → publish-content.ts)
+ *   gelen videolar için hep NULL kalır, mevcut muxAssetId/resolvePlaybackUrl davranışı
+ *   AYNEN korunur. R2-backed pipeline'dan (content-admin: upload → process-stt → enrich →
+ *   publish) gelen videolar için gerçek R2 object key'i taşır (bkz. build-storage-key.ts,
+ *   "originals/<contentId>/<uuid>.mp4"), playback R2_PUBLIC_BASE_URL + storageKey ile
+ *   çözülür (bkz. resolve-playback-url.ts, resolveR2PlaybackUrl). Şekil/uniqueness kısıtı
+ *   YOK — content identity zaten muxAssetId'nin sorumluluğu, bu SADECE lokasyon bilgisi.
  * - cefrLevel/topic ve learningLanguage bilinçli olarak text: uzunluk sınırı
  *   (varchar(n)) Postgres'te depolama/performans avantajı sağlamıyor, cefrLevel/topic'in
  *   şekli zaten aşağıdaki CHECK'lerle, learningLanguage'ın şekli ise application-level
@@ -33,6 +42,7 @@ export const videosTable = pgTable(
     learningLanguage: text("learning_language").notNull(),
     cefrLevel: text("cefr_level").notNull(),
     muxAssetId: text("mux_asset_id").notNull(),
+    storageKey: text("storage_key"),
     topic: text("topic").notNull(),
     durationMs: integer("duration_ms").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),

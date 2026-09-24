@@ -6,6 +6,9 @@ import { videoSchema } from "./video";
  * BASE (user-independent, catalog) contract. Video (core/domain contract) DEĞİL:
  *
  * - muxAssetId çıkarılır (.omit) — bu bir infra referansı, client'a hiç sızmamalı.
+ * - storageKey çıkarılır (.omit, Chunk 17D) — muxAssetId ile AYNI gerekçe: R2 object
+ *   key'i client'ı hiç ilgilendirmeyen bir depolama detayı, playbackUrl zaten bunu
+ *   çözülmüş halde taşıyor.
  * - playbackUrl eklenir — API'nin gerçek Mux entegrasyonu geldiğinde imzalı bir
  *   oynatma URL'si üreteceği alan (şimdilik mock/statik bir URL).
  *
@@ -22,7 +25,7 @@ import { videoSchema } from "./video";
  * kelime zaman damgası gibi başka domain kaygıları kendi response tiplerini alır.
  */
 export const playableVideoSchema = videoSchema
-  .omit({ muxAssetId: true })
+  .omit({ muxAssetId: true, storageKey: true })
   .extend({ playbackUrl: z.string().url() });
 
 export type PlayableVideo = z.infer<typeof playableVideoSchema>;

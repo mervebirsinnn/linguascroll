@@ -116,6 +116,46 @@ describe("SttProcessingService.processStt", () => {
     }
   });
 
+  it("Chunk 17D — draft.json'ı storageKey ile zenginleştirip DİSKE GERİ YAZAR (provenance zincirinin başlangıcı, enrich endpoint'inin sonra okuyacağı alan)", async () => {
+    const r2Storage = fakeR2Storage();
+    r2Storage.downloadOriginalVideo.mockImplementation(async (_storageKey: string, destPath: string) => {
+      fs.writeFileSync(destPath, "fake-mp4-bytes");
+    });
+
+    const child = fakeChildProcess();
+    const spawnFn = fakeSpawnReturning(child, () => child.emit("exit", 0));
+    const service = new SttProcessingService(r2Storage as unknown as R2StorageService, spawnFn as unknown as typeof import("node:child_process").spawn);
+
+    const draftDir = path.join(STT_OUTPUT_ROOT, CONTENT_ID);
+    const draftPath = path.join(draftDir, "draft.json");
+    fs.mkdirSync(draftDir, { recursive: true });
+    fs.writeFileSync(
+      draftPath,
+      JSON.stringify({
+        contentId: CONTENT_ID,
+        sourceFile: "/tmp/original-stt-source.mp4",
+        languageStatus: "ready",
+        detectedLanguage: "en",
+        languageProbability: 0.95,
+        durationMs: 5000,
+        segments: [{ ordinal: 1, startMs: 0, endMs: 1000, text: "hello" }],
+      }),
+    );
+
+    try {
+      await service.processStt(CONTENT_ID, STORAGE_KEY);
+
+      const onDisk = JSON.parse(fs.readFileSync(draftPath, "utf-8"));
+      expect(onDisk.storageKey).toBe(STORAGE_KEY);
+      // scripts/stt'nin KENDİ yazdığı alanlar (sourceFile dahil) korunuyor —
+      // sadece storageKey EKLENDİ, hiçbir şey silinmedi/değişmedi.
+      expect(onDisk.sourceFile).toBe("/tmp/original-stt-source.mp4");
+      expect(onDisk.contentId).toBe(CONTENT_ID);
+    } finally {
+      fs.rmSync(draftDir, { recursive: true, force: true });
+    }
+  });
+
   it("subprocess non-zero exit code ile biterse UnprocessableEntityException fırlatır (stderr tail dahil), temp dosyayı yine de siler", async () => {
     const r2Storage = fakeR2Storage();
     let capturedTempPath = "";

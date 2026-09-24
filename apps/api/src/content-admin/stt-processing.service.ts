@@ -4,6 +4,7 @@ import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
 import { BadRequestException, Injectable, NotFoundException, Optional, UnprocessableEntityException } from "@nestjs/common";
+import { atomicWriteFile } from "../content-enrichment/enrich-transcript";
 import { isOwnedOriginalVideoStorageKey } from "./build-storage-key";
 import { processSttResponseSchema, type ProcessSttResponse } from "./process-stt.schema";
 import { R2ObjectNotFoundError, R2StorageService } from "./r2-storage.service";
@@ -133,6 +134,17 @@ export class SttProcessingService {
     });
   }
 
+  /**
+   * Chunk 17D — draft.json'ı (scripts/stt'nin KENDİSİ yazdı, R2/storageKey'den
+   * HABERSİZ) burada, SttProcessingService'in kendi I/O orkestrasyon sorumluluğu
+   * içinde (bkz. dosya başı yorumu) `storageKey` ile zenginleştirip GERİ YAZIYORUZ
+   * — atomicWriteFile (content-enrichment/enrich-transcript.ts'ten reuse, tmp+
+   * rename deseni) ile. Bu, storageKey'in draft.json → enriched.json → publish →
+   * videos.storageKey provenance zincirinin BAŞLANGIÇ noktası (bkz. content-enrichment/
+   * stt-draft.schema.ts'teki AYNI alan): sonraki adımlar (enrich endpoint) bunu
+   * client'tan TEKRAR İSTEMEK zorunda kalmıyor, draft.json'dan okuyor.
+   * scripts/stt'nin KENDİSİ hiç değişmedi/değişmiyor — izolasyonu korunuyor.
+   */
   private readDraft(contentId: string, storageKey: string): ProcessSttResponse {
     const draftPath = path.join(STT_OUTPUT_ROOT, contentId, "draft.json");
 
@@ -142,6 +154,8 @@ export class SttProcessingService {
     } catch (error) {
       throw new UnprocessableEntityException(`STT tamamlandı ama draft.json okunamadı: ${(error as Error).message}`);
     }
+
+    atomicWriteFile(draftPath, JSON.stringify({ ...(rawDraft as Record<string, unknown>), storageKey }, null, 2));
 
     return parseSttDraft(rawDraft, contentId, storageKey);
   }

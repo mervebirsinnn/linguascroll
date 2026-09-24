@@ -1,4 +1,4 @@
-import { resolvePlaybackUrl } from "./resolve-playback-url";
+import { resolvePlaybackUrl, resolveR2PlaybackUrl } from "./resolve-playback-url";
 
 describe("resolvePlaybackUrl", () => {
   it("local-<slug> muxAssetId'sini <slug>.mp4 dosyasına çözer", () => {
@@ -31,5 +31,27 @@ describe("resolvePlaybackUrl", () => {
 
   it("boş string için throw eder", () => {
     expect(() => resolvePlaybackUrl("", "http://localhost:3000")).toThrow(/Bilinmeyen\/geçersiz muxAssetId/);
+  });
+});
+
+describe("resolveR2PlaybackUrl", () => {
+  it("R2_PUBLIC_BASE_URL trailing slash içermese de storageKey'i kaybetmeden birleştirir", () => {
+    expect(resolveR2PlaybackUrl("originals/a1final1/uuid.mp4", "https://media.example.com")).toBe(
+      "https://media.example.com/originals/a1final1/uuid.mp4",
+    );
+  });
+
+  it("R2_PUBLIC_BASE_URL trailing slash içerse de AYNI sonucu üretir (deterministik)", () => {
+    expect(resolveR2PlaybackUrl("originals/a1final1/uuid.mp4", "https://media.example.com/")).toBe(
+      "https://media.example.com/originals/a1final1/uuid.mp4",
+    );
+  });
+
+  it("R2StorageService.buildPlaybackUrl ile AYNI sonucu üretir (bilinçli tekrarın davranış paritesi)", () => {
+    // r2-storage.service.spec.ts'teki "R2StorageService.buildPlaybackUrl" testiyle
+    // AYNI girdi/çıktı çifti — iki bağımsız implementasyonun sapmadığını kanıtlar.
+    expect(resolveR2PlaybackUrl("originals/b1-cafe-order/uuid.mp4", "https://media.example.com")).toBe(
+      "https://media.example.com/originals/b1-cafe-order/uuid.mp4",
+    );
   });
 });

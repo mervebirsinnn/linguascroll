@@ -6,6 +6,8 @@ import type { EnrichContentResponse } from "./enrich.schema";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
 import { MulterUploadExceptionFilter } from "./multer-upload-exception.filter";
 import { processSttRequestSchema, type ProcessSttRequest, type ProcessSttResponse } from "./process-stt.schema";
+import { publishContentRequestSchema, type PublishContentRequest, type PublishContentResponse } from "./publish.schema";
+import { PublishProcessingService } from "./publish-processing.service";
 import { SttProcessingService } from "./stt-processing.service";
 import { uploadVideoRequestSchema, type UploadVideoRequest, type UploadVideoResponse } from "./upload-video.schema";
 
@@ -32,6 +34,7 @@ export class ContentAdminController {
     private readonly contentAdminService: ContentAdminService,
     private readonly sttProcessingService: SttProcessingService,
     private readonly enrichmentProcessingService: EnrichmentProcessingService,
+    private readonly publishProcessingService: PublishProcessingService,
   ) {}
 
   @Post("upload")
@@ -68,6 +71,19 @@ export class ContentAdminController {
     return this.enrichmentProcessingService.enrich(parsedContentId);
   }
 
+  /**
+   * Chunk 17D — storageKey body'de İSTENMİYOR (kullanıcı kararı): enrich endpoint'i
+   * gibi, gerekli storage identity'yi diskteki artifact zincirinden (draft.json →
+   * enriched.json) okuyor, client'tan tekrar istemiyor — yanlış contentId/storageKey
+   * eşleştirme riski yapısal olarak yok.
+   */
+  @Post(":contentId/publish")
+  publish(@Param("contentId") contentId: string, @Body() body: unknown): Promise<PublishContentResponse> {
+    const parsedContentId = this.parseContentId(contentId);
+    const parsedBody = this.parsePublishBody(body);
+    return this.publishProcessingService.publish(parsedContentId, parsedBody.acknowledgeNeedsReview);
+  }
+
   private parseUploadBody(body: unknown): UploadVideoRequest {
     const result = uploadVideoRequestSchema.safeParse(body);
     if (!result.success) {
@@ -85,6 +101,22 @@ export class ContentAdminController {
 
   private parseProcessSttBody(body: unknown): ProcessSttRequest {
     const result = processSttRequestSchema.safeParse(body);
+    if (!result.success) {
+      throw new BadRequestException(result.error.flatten());
+    }
+    return result.data;
+  }
+
+  /**
+   * `body ?? {}` — process-stt'nin AKSİNE (storageKey ZORUNLU alanı var, body
+   * eksikse gerçek bir hata), bu endpoint'in TEK alanı (`acknowledgeNeedsReview`)
+   * kendi başına opsiyonel/default'lu: hiç body gönderilmemesi (supertest
+   * `.send()`, body-parser'ın bazı konfigürasyonlarda `undefined` bırakabildiği
+   * durum) geçerli bir "acknowledgeNeedsReview: false" isteği ile AYNI anlama
+   * gelmeli, 400 değil.
+   */
+  private parsePublishBody(body: unknown): PublishContentRequest {
+    const result = publishContentRequestSchema.safeParse(body ?? {});
     if (!result.success) {
       throw new BadRequestException(result.error.flatten());
     }

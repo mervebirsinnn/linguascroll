@@ -103,11 +103,17 @@ export function buildPublishDraft(
   durationMs: number,
   draftSegments: readonly SttDraftSegment[],
   enrichmentOutput: EnrichmentOutput,
+  // Chunk 17D — offline CLI main() (aşağıda) hep `null` geçirir; content-admin'in
+  // enrichment-processing.service.ts'i R2-backed akışta `draft.storageKey`'i
+  // (STT draft artifact'ından, madde 2'deki provenance zincirinin devamı) geçirir.
+  // Zorunlu (opsiyonel DEĞİL) parametre: her çağıran bunu bilinçli seçmek zorunda.
+  storageKey: string | null,
 ): PublishDraft {
   const contentWithoutQuality = {
     contentId,
     muxAssetId: `local-${enrichmentOutput.contentSlug}`,
     sourceFile,
+    storageKey,
     durationMs,
     topic: enrichmentOutput.topic,
     cefrLevel: enrichmentOutput.cefrLevel,
@@ -163,7 +169,7 @@ async function main(): Promise<void> {
 
   assertValidSegmentReferences(enrichmentOutput, draft.segments);
 
-  const publishDraft = buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput);
+  const publishDraft = buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput, draft.storageKey ?? null);
 
   atomicWriteFile(outputPath, JSON.stringify(publishDraft, null, 2));
 

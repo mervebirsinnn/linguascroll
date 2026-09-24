@@ -216,6 +216,10 @@ export async function publishContent(db: Database, draft: PublishDraft): Promise
         learningLanguage: "en",
         cefrLevel: draft.cefrLevel,
         muxAssetId: draft.muxAssetId,
+        // Chunk 17D — content identity (muxAssetId) != storage location. R2-backed
+        // akışta gerçek R2 object key'i, offline/yerel akışta null (bkz.
+        // videos.schema.ts'teki storageKey yorumu).
+        storageKey: draft.storageKey ?? null,
         topic: draft.topic,
         durationMs: draft.durationMs,
       })
@@ -300,6 +304,19 @@ export async function publishContent(db: Database, draft: PublishDraft): Promise
  * olmadan diskte yetim bir dosya kalmasından daha kötü bir tutarsızlık, bkz.
  * resolve-playback-url.ts'in "bilinmeyen id'de patla" kararı).
  */
+/**
+ * Chunk 17D — TEK karar noktası: bu draft'ın medyası zaten R2'de mi (canonical
+ * media object, tekrar upload/download/copy YOK) yoksa yerel bir dosyadan mı
+ * `public/media/`'ya kopyalanması gerekiyor mu. `main()` (aşağıda) VE
+ * content-admin/publish-processing.service.ts (HTTP publish endpoint'i) AYNI
+ * bu fonksiyonu çağırıyor — mantık iki yerde kopyalanmıyor. Offline/yerel
+ * draft'larda storageKey hiç yok (`undefined`) veya `null` — ikisi de "yerel
+ * kopya gerekli" anlamına gelir (mevcut davranış, DEĞİŞMEDİ).
+ */
+export function requiresLocalMediaCopy(draft: PublishDraft): boolean {
+  return !draft.storageKey;
+}
+
 export function copyMediaFile(sourceFile: string, muxAssetId: string, mediaDir: string = MEDIA_DIR): string {
   const destination = resolveMediaDestination(muxAssetId, mediaDir);
   if (!fs.existsSync(sourceFile)) {
@@ -335,8 +352,12 @@ async function main(): Promise<void> {
   try {
     await assertNotAlreadyPublished(db, draft.muxAssetId);
 
-    const mediaDestination = copyMediaFile(draft.sourceFile, draft.muxAssetId);
-    console.error(`Medya dosyası kopyalandı: ${mediaDestination}`);
+    if (requiresLocalMediaCopy(draft)) {
+      const mediaDestination = copyMediaFile(draft.sourceFile, draft.muxAssetId);
+      console.error(`Medya dosyası kopyalandı: ${mediaDestination}`);
+    } else {
+      console.error(`R2-backed içerik: mevcut R2 object canonical media olarak kullanılıyor (storageKey: ${draft.storageKey}), yerel kopya YOK.`);
+    }
 
     const { videoId } = await publishContent(db, draft);
     console.error(`Publish tamamlandı: video id ${videoId} (muxAssetId: ${draft.muxAssetId})`);

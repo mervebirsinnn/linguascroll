@@ -81,15 +81,28 @@ describe("buildPublishDraft", () => {
   };
 
   it("contentSlug'dan \"local-<slug>\" desenli bir muxAssetId üretir", () => {
-    const draft = buildPublishDraft("a1final1", "/tmp/a1final1.mp4", 1000, draftSegments, enrichmentOutput);
+    const draft = buildPublishDraft("a1final1", "/tmp/a1final1.mp4", 1000, draftSegments, enrichmentOutput, null);
     expect(draft.muxAssetId).toBe("local-dog-three-words");
     expect(draft.contentId).toBe("a1final1");
     expect(draft.sourceFile).toBe("/tmp/a1final1.mp4");
+    expect(draft.storageKey).toBeNull();
     expect(draft.segments[0]!.englishExplanation).toBe("en");
   });
 
+  it("Chunk 17D — storageKey verilirse (R2-backed akış) aynen draft'a taşır", () => {
+    const draft = buildPublishDraft(
+      "a1final1",
+      "/tmp/a1final1.mp4",
+      1000,
+      draftSegments,
+      enrichmentOutput,
+      "originals/a1final1/uuid.mp4",
+    );
+    expect(draft.storageKey).toBe("originals/a1final1/uuid.mp4");
+  });
+
   it("Chunk 13 — quality gate'i otomatik çalıştırıp sonucu gömer (bu fixture'ın vocabulary'si transcript'te yok, quiz metinleri çok kısa — needsReview beklenir)", () => {
-    const draft = buildPublishDraft("a1final1", "/tmp/a1final1.mp4", 1000, draftSegments, enrichmentOutput);
+    const draft = buildPublishDraft("a1final1", "/tmp/a1final1.mp4", 1000, draftSegments, enrichmentOutput, null);
     expect(draft.quality.status).toBe("needsReview");
     expect(draft.quality.issues.length).toBeGreaterThan(0);
     expect(draft.quality.issues.every((issue) => issue.severity === "warning")).toBe(true);

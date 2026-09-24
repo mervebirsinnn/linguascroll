@@ -9,6 +9,7 @@ import {
   PublishPipelineError,
   PublishQualityNeedsReviewError,
   PublishQualityRejectedError,
+  requiresLocalMediaCopy,
   resolveMediaDestination,
 } from "./publish-content";
 
@@ -34,6 +35,43 @@ describe("resolveMediaDestination", () => {
     expect(resolveMediaDestination("local-dog-three-words", "/media")).toBe(
       path.join("/media", "dog-three-words.mp4"),
     );
+  });
+});
+
+describe("requiresLocalMediaCopy", () => {
+  const BASE_DRAFT: PublishDraft = {
+    contentId: "x",
+    muxAssetId: "local-x",
+    sourceFile: "/tmp/x.mp4",
+    durationMs: 5000,
+    topic: "humor",
+    cefrLevel: "A1",
+    segments: [{ ordinal: 1, startMs: 0, endMs: 1000, text: "Hi.", englishExplanation: "en", turkishExplanation: "tr" }],
+    vocabulary: [],
+    learningPoints: [],
+    quiz: {
+      segmentOrdinal: 1,
+      question: "q?",
+      options: [
+        { text: "a", isCorrect: true },
+        { text: "b", isCorrect: false },
+        { text: "c", isCorrect: false },
+        { text: "d", isCorrect: false },
+      ],
+    },
+    quality: { status: "pass", issues: [] },
+  };
+
+  it("storageKey YOKSA (offline/yerel akış) true döner — copyMediaFile ÇAĞRILMALI", () => {
+    expect(requiresLocalMediaCopy(BASE_DRAFT)).toBe(true);
+  });
+
+  it("storageKey null İSE (aynı offline/yerel akış) true döner", () => {
+    expect(requiresLocalMediaCopy({ ...BASE_DRAFT, storageKey: null })).toBe(true);
+  });
+
+  it("storageKey dolu İSE (R2-backed akış) false döner — copyMediaFile ÇAĞRILMAMALI", () => {
+    expect(requiresLocalMediaCopy({ ...BASE_DRAFT, storageKey: "originals/x/uuid.mp4" })).toBe(false);
   });
 });
 

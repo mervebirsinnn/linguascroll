@@ -43,3 +43,18 @@ export function resolvePlaybackUrl(muxAssetId: string, mediaBaseUrl: string): st
   const filename = `${muxAssetId.slice(LOCAL_MEDIA_PREFIX.length)}.mp4`;
   return new URL(`/media/${filename}`, mediaBaseUrl).toString();
 }
+
+/**
+ * Chunk 17D — R2-backed video'ların playback URL'i (storageKey != null). Bu,
+ * content-admin/r2-storage.service.ts'teki `R2StorageService.buildPlaybackUrl`'ün
+ * AYNI trailing-slash-güvenli URL-join mantığının BİLİNÇLİ, küçük bir tekrarı —
+ * yeni bir storage-provider abstraction/module-coupling yaratmak yerine (VideosService
+ * ContentAdminModule'e bağımlı OLMAMALI, mimari karar). `videos` (feed'in temel
+ * bağımlılığı) `content-admin` (admin-only, ikincil modül) modülüne bağımlı hale
+ * GELMİYOR — bu dosya zaten pure/config-parametreli fonksiyonlar deseninin
+ * (resolvePlaybackUrl ile AYNI) doğal bir devamı.
+ */
+export function resolveR2PlaybackUrl(storageKey: string, r2PublicBaseUrl: string): string {
+  const normalizedBase = r2PublicBaseUrl.endsWith("/") ? r2PublicBaseUrl : `${r2PublicBaseUrl}/`;
+  return new URL(storageKey, normalizedBase).toString();
+}

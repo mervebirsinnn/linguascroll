@@ -7,6 +7,7 @@ import { AppModule } from "../app.module";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videosTable } from "../videos/videos.schema";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
+import { PublishProcessingService } from "./publish-processing.service";
 import { R2StorageService } from "./r2-storage.service";
 import { SttProcessingService } from "./stt-processing.service";
 
@@ -248,5 +249,71 @@ describe("POST /content-admin/videos/:contentId/enrich (e2e, gerçek Nest HTTP k
     await request(app.getHttpServer()).post("/content-admin/videos/Not_Valid/enrich").send().expect(400);
 
     expect(stubEnrichmentProcessing.enrich).not.toHaveBeenCalled();
+  });
+});
+
+describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP katmanı — orchestration tamamen mock, gerçek publish-content.ts akışı publish-processing.service.integration.spec.ts'in sorumluluğu)", () => {
+  let app: INestApplication;
+  let pool: Pool;
+
+  // PublishProcessingService TÜMDEN mock'lanıyor — bu dosya "route/validation/HTTP
+  // katmanı (contentId/acknowledgeNeedsReview parse'ı) doğru mu" sorusunu test
+  // ediyor; gerçek quality-gate/idempotency/medya/DB orkestrasyonu
+  // publish-processing.service.integration.spec.ts'in sorumluluğu.
+  const stubPublishProcessing = { publish: jest.fn() };
+
+  beforeAll(async () => {
+    const moduleRef = await Test.createTestingModule({ imports: [AppModule] })
+      .overrideProvider(PublishProcessingService)
+      .useValue(stubPublishProcessing)
+      .compile();
+    app = moduleRef.createNestApplication();
+    await app.init();
+
+    const connection = createTestDatabaseConnection();
+    pool = connection.pool;
+  });
+
+  beforeEach(() => {
+    stubPublishProcessing.publish.mockReset().mockResolvedValue({
+      videoId: "00000000-0000-4000-8000-000000000001",
+      muxAssetId: "local-hello-greeting",
+    });
+  });
+
+  afterAll(async () => {
+    await pool.end();
+    await app.close();
+  });
+
+  it("body olmadan çağrılırsa acknowledgeNeedsReview=false ile PublishProcessingService'i çağırır", async () => {
+    const response = await request(app.getHttpServer()).post("/content-admin/videos/e2e-test-content/publish").send().expect(201);
+
+    expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content", false);
+    expect(response.body).toEqual({ videoId: "00000000-0000-4000-8000-000000000001", muxAssetId: "local-hello-greeting" });
+  });
+
+  it("acknowledgeNeedsReview=true gövdeyle çağrılırsa aynen taşır", async () => {
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/publish")
+      .send({ acknowledgeNeedsReview: true })
+      .expect(201);
+
+    expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content", true);
+  });
+
+  it("geçersiz (kebab-case olmayan) bir contentId'yi 400 ile reddeder, servise hiç gitmez", async () => {
+    await request(app.getHttpServer()).post("/content-admin/videos/Not_Valid/publish").send().expect(400);
+
+    expect(stubPublishProcessing.publish).not.toHaveBeenCalled();
+  });
+
+  it("geçersiz bir acknowledgeNeedsReview tipini 400 ile reddeder, servise hiç gitmez", async () => {
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/publish")
+      .send({ acknowledgeNeedsReview: "yes" })
+      .expect(400);
+
+    expect(stubPublishProcessing.publish).not.toHaveBeenCalled();
   });
 });

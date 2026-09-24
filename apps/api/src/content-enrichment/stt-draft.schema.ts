@@ -32,5 +32,11 @@ export const sttDraftSchema = z.object({
   languageProbability: z.number().min(0).max(1),
   durationMs: z.number().int().positive(),
   segments: z.array(sttDraftSegmentSchema).min(1),
+  // Chunk 17D — SADECE R2-backed content-admin akışında dolu: STT script'inin
+  // kendisi (scripts/stt, R2'den KASITLI OLARAK habersiz, izole build) bunu HİÇ
+  // yazmıyor; SttProcessingService, subprocess bittikten SONRA draft.json'ı bu
+  // alanla zenginleştirip geri yazıyor (bkz. stt-processing.service.ts). Offline/
+  // yerel `pnpm stt:process` akışında bu alan hiç var olmaz — `.optional()`.
+  storageKey: z.string().min(1).optional(),
 });
 export type SttDraft = z.infer<typeof sttDraftSchema>;

@@ -30,6 +30,14 @@ export const publishDraftSchema = z.object({
     .string()
     .regex(/^local-[a-z0-9]+(-[a-z0-9]+)*$/, "muxAssetId \"local-<slug>\" deseninde olmalı"),
   sourceFile: z.string().min(1),
+  // Chunk 17D — content identity (muxAssetId) != storage location (storageKey).
+  // R2-backed content-admin akışından geliyorsa gerçek R2 object key'i (bkz.
+  // stt-draft.schema.ts'teki AYNI alan), offline/yerel akışta null/undefined kalır
+  // (`sourceFile` bu durumda hâlâ geçerli bir yerel dosya yolu — KALDIRILMADI).
+  // `.optional()`: bu alan eklenmeden ÖNCE üretilmiş, disk üzerindeki mevcut
+  // enriched.json dosyalarının (content-enrichment/output/*/enriched.json) hâlâ
+  // parse edilebilmesi için gerekli (geriye dönük dosya uyumluluğu).
+  storageKey: z.string().min(1).nullable().optional(),
   durationMs: z.number().int().positive(),
   topic: topicSchema,
   cefrLevel: cefrLevelSchema,

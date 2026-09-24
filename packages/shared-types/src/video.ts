@@ -30,6 +30,13 @@ export const videoSchema = z.object({
   // kullanmalı, Video'yu doğrudan değil.
   muxAssetId: z.string(),
 
+  // Chunk 17D — storage LOCATION, content IDENTITY (muxAssetId) değil: R2-backed
+  // videolar için gerçek R2 object key'i, local/offline videolar için null. Video
+  // (domain contract) içinde kalıyor çünkü PlayableVideo bunu da (muxAssetId gibi)
+  // `.omit()` ile çıkarıp yerine playbackUrl koyuyor (bkz. playable-video.ts) —
+  // client'a hiç sızmıyor, sadece API'nin kendi playback-URL çözümü için.
+  storageKey: z.string().nullable(),
+
   topic: topicSchema,
 
   // "playable" bir video için 0 süre domain olarak imkansız bir durum (Chunk 7

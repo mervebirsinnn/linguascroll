@@ -2,7 +2,7 @@ import { BadRequestException, Injectable, NotFoundException } from "@nestjs/comm
 import { ConfigService } from "@nestjs/config";
 import { playableVideoSchema, type PlayableVideo, type TranscriptSegment, type Video } from "@linguascroll/shared-types";
 import { UsersService } from "../users/users.service";
-import { resolvePlaybackUrl } from "./resolve-playback-url";
+import { resolvePlaybackUrl, resolveR2PlaybackUrl } from "./resolve-playback-url";
 import { TranscriptSegmentsRepository } from "./transcript-segments-repository";
 import { VideoWatchEventsRepository } from "./video-watch-events-repository";
 import { VideosRepository } from "./videos-repository";
@@ -15,6 +15,12 @@ import { VideosRepository } from "./videos-repository";
 @Injectable()
 export class VideosService {
   private readonly mediaBaseUrl: string;
+  // Chunk 17D — `getOrThrow` DEĞİL: R2 boot-time zorunluluk taşımıyor (bkz.
+  // app.module.ts envSchema'daki R2_PUBLIC_BASE_URL.optional() gerekçesi, R2StorageService
+  // ile AYNI). Mevcut 16 video storageKey=null olduğu için bu değere hiç ihtiyaç
+  // duymadan boot olabilmeli — sadece storageKey dolu bir video GERÇEKTEN resolve
+  // edilmeye çalışıldığında (requireR2PublicBaseUrl) eksikse net bir hata verir.
+  private readonly r2PublicBaseUrl: string | undefined;
 
   constructor(
     private readonly videosRepository: VideosRepository,
@@ -24,11 +30,12 @@ export class VideosService {
     configService: ConfigService,
   ) {
     this.mediaBaseUrl = configService.getOrThrow<string>("PUBLIC_MEDIA_BASE_URL");
+    this.r2PublicBaseUrl = configService.get<string>("R2_PUBLIC_BASE_URL");
   }
 
   async getVideoFeed(): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideos();
-    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl));
+    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl, this.r2PublicBaseUrl));
   }
 
   /**
@@ -38,7 +45,7 @@ export class VideosService {
    */
   async getPlayableVideosByIds(videoIds: string[]): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideosByIds(videoIds);
-    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl));
+    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl, this.r2PublicBaseUrl));
   }
 
   /**
@@ -86,8 +93,24 @@ export class VideosService {
  * feed-playable-video.ts'teki sınır yorumu) — bu yüzden burada `vocabulary` alanı
  * hiç YOK (ne gerçek ne sahte bir placeholder). Gerçek vocabulary/saved-state
  * enrichment'ı sadece FeedService'in ürettiği `FeedPlayableVideo`'da var.
+ *
+ * Chunk 17D — playbackUrl çözümü koşullu: storageKey != null → R2/Worker URL'i
+ * (resolveR2PlaybackUrl), storageKey == null → mevcut muxAssetId/local davranışı
+ * (resolvePlaybackUrl, DEĞİŞMEDİ). `muxAssetId` İLE `storageKey` İKİSİ DE burada
+ * açıkça destructure edilip `rest`'ten çıkarılıyor — storageKey de muxAssetId gibi
+ * bir infra referansı, client'a hiç sızmamalı (playableVideoSchema zaten `.omit()`
+ * ediyor, bkz. shared-types/playable-video.ts — burada örtük strip'e güvenmek
+ * yerine AYNI açık/deliberate desen korunuyor).
  */
-function toPlayableVideo(video: Video, mediaBaseUrl: string): PlayableVideo {
-  const { muxAssetId, ...rest } = video;
-  return playableVideoSchema.parse({ ...rest, playbackUrl: resolvePlaybackUrl(muxAssetId, mediaBaseUrl) });
+function toPlayableVideo(video: Video, mediaBaseUrl: string, r2PublicBaseUrl: string | undefined): PlayableVideo {
+  const { muxAssetId, storageKey, ...rest } = video;
+  const playbackUrl = storageKey != null ? resolveR2PlaybackUrl(storageKey, requireR2PublicBaseUrl(r2PublicBaseUrl)) : resolvePlaybackUrl(muxAssetId, mediaBaseUrl);
+  return playableVideoSchema.parse({ ...rest, playbackUrl });
+}
+
+function requireR2PublicBaseUrl(value: string | undefined): string {
+  if (!value) {
+    throw new Error("R2_PUBLIC_BASE_URL tanımlı değil ama storageKey dolu bir video (R2-backed) playback URL'i çözülmeye çalışıldı.");
+  }
+  return value;
 }
