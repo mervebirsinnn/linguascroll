@@ -68,4 +68,60 @@ describe("app.module envSchema + ConfigModule entegrasyonu", () => {
   it("GEMINI_API_KEY tanımlı değilken envSchema.parse yine de BAŞARILI olur (boot-time zorunlu değil)", () => {
     expect(() => envSchema.parse(REQUIRED_BASE_ENV)).not.toThrow();
   });
+
+  /**
+   * Deploy prep — CONTENT_ADMIN_SECRET, R2_* ve GEMINI_API_KEY alanlarıyla AYNI regresyona
+   * (yukarıdaki yorumlar) açık: şemada yer almazsa ConfigService.get() onu hiçbir
+   * zaman göremez, guard (content-admin-secret.guard.ts) her zaman fail-closed
+   * davranır — yapılandırılmış bir secret'la bile.
+   */
+  it("CONTENT_ADMIN_SECRET tanımlıysa ConfigService bunu gerçekten görebiliyor", async () => {
+    const previousValue = process.env.CONTENT_ADMIN_SECRET;
+    process.env.CONTENT_ADMIN_SECRET = "regression-test-admin-secret";
+    try {
+      const moduleRef = await Test.createTestingModule({
+        imports: [
+          ConfigModule.forRoot({
+            ignoreEnvFile: true,
+            validate: (env) => envSchema.parse(env),
+          }),
+        ],
+      }).compile();
+
+      const configService = moduleRef.get(ConfigService);
+      expect(configService.get<string>("CONTENT_ADMIN_SECRET")).toBe("regression-test-admin-secret");
+
+      await moduleRef.close();
+    } finally {
+      if (previousValue === undefined) {
+        delete process.env.CONTENT_ADMIN_SECRET;
+      } else {
+        process.env.CONTENT_ADMIN_SECRET = previousValue;
+      }
+    }
+  });
+
+  it("CONTENT_ADMIN_SECRET tanımlı değilken envSchema.parse yine de BAŞARILI olur (boot-time zorunlu değil)", () => {
+    expect(() => envSchema.parse(REQUIRED_BASE_ENV)).not.toThrow();
+  });
+
+  /**
+   * Deploy prep — PORT, Render gibi platformların process.env üzerinden enjekte
+   * ettiği değer (bkz. main.ts). Sayısal bir string olarak gelir; `z.coerce.number()`
+   * bunu gerçek bir `number`'a çeviriyor mu (main.ts'in `app.listen(port)`'a
+   * doğrudan geçirebileceği şekilde) burada doğrulanıyor.
+   */
+  it("PORT sayısal bir string olarak tanımlıysa envSchema onu number'a coerce eder", () => {
+    const parsed = envSchema.parse({ ...REQUIRED_BASE_ENV, PORT: "10000" });
+    expect(parsed.PORT).toBe(10000);
+  });
+
+  it("PORT tanımlı değilken envSchema.parse yine de BAŞARILI olur (boot-time zorunlu değil, main.ts 3000'e düşer)", () => {
+    const parsed = envSchema.parse(REQUIRED_BASE_ENV);
+    expect(parsed.PORT).toBeUndefined();
+  });
+
+  it("PORT sayısal olmayan bir değerse envSchema.parse fail-fast ile FIRLATIR", () => {
+    expect(() => envSchema.parse({ ...REQUIRED_BASE_ENV, PORT: "abc" })).toThrow();
+  });
 });

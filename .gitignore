@@ -6,6 +6,10 @@ build/
 .env
 .env.local
 .env.test
+# Neon migration (Chunk 18) — geçici, SADECE bu makinede/bu migration için
+# kullanılan bir DATABASE_URL taşıyor, apps/api/.env'in yanına ekleniyor ki
+# local Postgres .env'i hiç değişmesin. Asla commit edilmemeli.
+.env.neon
 
 # Local Claude Code runtime state (machine/session-specific, not project config)
 .claude/settings.local.json

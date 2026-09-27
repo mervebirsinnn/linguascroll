@@ -1,4 +1,5 @@
 import { Module } from "@nestjs/common";
+import { ContentAdminSecretGuard } from "./content-admin-secret.guard";
 import { ContentAdminController } from "./content-admin.controller";
 import { ContentAdminService } from "./content-admin.service";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
@@ -8,6 +9,6 @@ import { SttProcessingService } from "./stt-processing.service";
 
 @Module({
   controllers: [ContentAdminController],
-  providers: [ContentAdminService, R2StorageService, SttProcessingService, EnrichmentProcessingService, PublishProcessingService],
+  providers: [ContentAdminService, R2StorageService, SttProcessingService, EnrichmentProcessingService, PublishProcessingService, ContentAdminSecretGuard],
 })
 export class ContentAdminModule {}

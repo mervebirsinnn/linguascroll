@@ -1,6 +1,7 @@
-import { BadRequestException, Body, Controller, Param, Post, UploadedFile, UseFilters, UseInterceptors } from "@nestjs/common";
+import { BadRequestException, Body, Controller, Param, Post, UploadedFile, UseFilters, UseGuards, UseInterceptors } from "@nestjs/common";
 import { FileInterceptor } from "@nestjs/platform-express";
 import { isValidContentId } from "./build-storage-key";
+import { ContentAdminSecretGuard } from "./content-admin-secret.guard";
 import { ContentAdminService } from "./content-admin.service";
 import type { EnrichContentResponse } from "./enrich.schema";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
@@ -27,8 +28,13 @@ const MAX_UPLOAD_SIZE_BYTES = 100 * 1024 * 1024;
  * (hiçbir `storage`/`dest` verilmediğinde Multer'ın kendi davranışı) dosyayı
  * DİSKE değil `file.buffer`'a (bellekte) yazar — 100MB'lık tavan bunu güvenli
  * kılıyor; R2'ye tek bir `PutObjectCommand` ile aktarılıyor (bkz. r2-storage.service.ts).
+ *
+ * `@UseGuards` controller seviyesinde: bu modülün TÜM endpoint'leri (upload/
+ * process-stt/enrich/publish) internete açıldığında auth gerektirir — bkz.
+ * content-admin-secret.guard.ts.
  */
 @Controller("content-admin/videos")
+@UseGuards(ContentAdminSecretGuard)
 export class ContentAdminController {
   constructor(
     private readonly contentAdminService: ContentAdminService,

@@ -78,6 +78,25 @@ export const envSchema = z.object({
   // kalıp process.env'e ulaşmasını sağlıyor; eksikse `enrichTranscript` kendi hatasını
   // (değişmeden) fırlatmaya devam ediyor.
   GEMINI_API_KEY: z.string().min(1).optional(),
+
+  // Deploy prep — content-admin/content-admin-secret.guard.ts'in okuduğu paylaşılan
+  // secret (bkz. o dosyadaki yorum). R2_*/GEMINI_API_KEY ile AYNI kök nedenle
+  // (yukarıdaki yorumlar) `.optional()`: boot-time zorunluluk yok (bu olmadan da
+  // uygulama ayağa kalkar, sadece content-admin endpoint'leri kilitli kalır) — ama
+  // ConfigService.get()'in bu değeri GÖREBİLMESİ için şemada YER ALMASI şart, aksi
+  // halde `.env`'de/Render'da tanımlı olsa bile guard onu hiç göremez (AYNI
+  // assignVariablesToProcess etkileşimi). Guard fail-closed: secret tanımlı değilse
+  // TÜM content-admin isteklerini reddeder — yani prod'da fiilen zorunlu, ama dev/test
+  // ortamını (bu env var'sız da boot olabildiği için) kırmıyor.
+  CONTENT_ADMIN_SECRET: z.string().min(1).optional(),
+
+  // Deploy prep — Render (ve benzeri platformlar) HTTP portunu kendisi seçip
+  // process.env.PORT üzerinden enjekte eder; local dev'de tanımlı değildir (main.ts
+  // bu durumda 3000'e düşer, bkz. main.ts). `z.coerce.number()` string'i sayıya
+  // çevirir; geçersiz bir değer (örn. "abc") NaN'a coerce olup `.int()`/`.positive()`
+  // kontrolünde fail-fast başarısız olur — sayısal olmayan bir PORT'la sessizce
+  // yanlış bir porta bind olmak yerine boot'ta net bir hata.
+  PORT: z.coerce.number().int().positive().optional(),
 });
 
 @Module({

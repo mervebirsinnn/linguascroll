@@ -1,6 +1,7 @@
 import "reflect-metadata";
 import { join } from "node:path";
 import { NestFactory } from "@nestjs/core";
+import { ConfigService } from "@nestjs/config";
 import type { NestExpressApplication } from "@nestjs/platform-express";
 import { AppModule } from "./app.module";
 
@@ -26,7 +27,13 @@ async function bootstrap(): Promise<void> {
   // şimdilik kısıtlamamanın ek bir risk maliyeti de yok.
   app.enableCors();
 
-  await app.listen(3000);
+  // Render gibi hosting platformları PORT'u kendileri seçip process.env üzerinden
+  // enjekte eder ve servisin ONA bind olmasını bekler; env'de tanımlı değilse
+  // (local dev) mevcut sabit 3000 davranışı korunur. Değer app.module.ts'teki
+  // envSchema'dan geçtiği için burada tekrar parse/validate ETMİYORUZ — geçersiz bir
+  // PORT zaten NestFactory.create() içinde (ilk satır) fail-fast ile patlamış olurdu.
+  const port = app.get(ConfigService).get<number>("PORT") ?? 3000;
+  await app.listen(port);
 }
 
 void bootstrap();

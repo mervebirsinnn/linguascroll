@@ -13,6 +13,53 @@ import { SttProcessingService } from "./stt-processing.service";
 
 const MAX_UPLOAD_SIZE_BYTES = 100 * 1024 * 1024;
 
+/**
+ * Deploy prep — ContentAdminController artık ContentAdminSecretGuard ile korunuyor
+ * (bkz. content-admin-secret.guard.ts), bu yüzden aşağıdaki TÜM mevcut testler
+ * `X-Admin-Secret` header'ını doğru secret'la göndermek ZORUNDA — aksi halde route'un
+ * kendi validation/orchestration mantığına hiç ulaşmadan 401 alırlardı. Değer
+ * `.env.test`'ten geliyor (jest.setup.ts, AppModule import edilmeden ÖNCE bunu yükler
+ * — aynı FEED_CURSOR_SECRET deseni), gerçek bir secret DEĞİL.
+ */
+const ADMIN_SECRET = process.env.CONTENT_ADMIN_SECRET;
+if (!ADMIN_SECRET) {
+  throw new Error("CONTENT_ADMIN_SECRET .env.test'te tanımlı değil — content-admin e2e testleri bu header'ı gerektiriyor.");
+}
+
+describe("ContentAdminSecretGuard (e2e, gerçek Nest HTTP katmanı — guard'ın controller'a fiilen uygulandığını doğrular)", () => {
+  let app: INestApplication;
+  let pool: Pool;
+
+  beforeAll(async () => {
+    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    app = moduleRef.createNestApplication();
+    await app.init();
+
+    const connection = createTestDatabaseConnection();
+    pool = connection.pool;
+  });
+
+  afterAll(async () => {
+    await pool.end();
+    await app.close();
+  });
+
+  it("X-Admin-Secret header'ı hiç gönderilmemişse 401 döner", async () => {
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/enrich")
+      .send()
+      .expect(401);
+  });
+
+  it("yanlış bir X-Admin-Secret 401 ile reddedilir", async () => {
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/enrich")
+      .set("X-Admin-Secret", "definitely-the-wrong-secret")
+      .send()
+      .expect(401);
+  });
+});
+
 describe("POST /content-admin/videos/upload (e2e, gerçek Nest HTTP katmanı + gerçek Postgres, mock R2 — hiçbir gerçek Cloudflare çağrısı yok)", () => {
   let app: INestApplication;
   let db: NodePgDatabase;
@@ -54,6 +101,7 @@ describe("POST /content-admin/videos/upload (e2e, gerçek Nest HTTP katmanı + g
   it("geçerli bir MP4 upload'ı draft metadata döner ve videos tablosuna HİÇBİR SATIR yazmaz", async () => {
     const response = await request(app.getHttpServer())
       .post("/content-admin/videos/upload")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .field("contentId", "e2e-test-content")
       .attach("file", Buffer.from("fake-mp4-bytes"), { filename: "clip.mp4", contentType: "video/mp4" })
       .expect(201);
@@ -75,7 +123,11 @@ describe("POST /content-admin/videos/upload (e2e, gerçek Nest HTTP katmanı + g
   });
 
   it("dosya eksikse 400 döner, R2'ye hiç gitmez", async () => {
-    await request(app.getHttpServer()).post("/content-admin/videos/upload").field("contentId", "e2e-test-content").expect(400);
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/upload")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .field("contentId", "e2e-test-content")
+      .expect(400);
 
     expect(stubR2Storage.uploadOriginalVideo).not.toHaveBeenCalled();
   });
@@ -83,6 +135,7 @@ describe("POST /content-admin/videos/upload (e2e, gerçek Nest HTTP katmanı + g
   it("video/mp4 dışındaki bir mimetype'ı 400 ile reddeder, R2'ye hiç gitmez", async () => {
     await request(app.getHttpServer())
       .post("/content-admin/videos/upload")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .field("contentId", "e2e-test-content")
       .attach("file", Buffer.from("not a video"), { filename: "notes.txt", contentType: "text/plain" })
       .expect(400);
@@ -96,6 +149,7 @@ describe("POST /content-admin/videos/upload (e2e, gerçek Nest HTTP katmanı + g
       const oversized = Buffer.alloc(MAX_UPLOAD_SIZE_BYTES + 1, 1);
       await request(app.getHttpServer())
         .post("/content-admin/videos/upload")
+        .set("X-Admin-Secret", ADMIN_SECRET)
         .field("contentId", "e2e-test-content")
         .attach("file", oversized, { filename: "big.mp4", contentType: "video/mp4" })
         .expect(413);
@@ -149,6 +203,7 @@ describe("POST /content-admin/videos/:contentId/process-stt (e2e, gerçek Nest H
   it("geçerli contentId + storageKey ile SttProcessingService'i çağırır ve draft'ı döner", async () => {
     const response = await request(app.getHttpServer())
       .post("/content-admin/videos/e2e-test-content/process-stt")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .send({ storageKey: "originals/e2e-test-content/stub-uuid.mp4" })
       .expect(201);
 
@@ -170,6 +225,7 @@ describe("POST /content-admin/videos/:contentId/process-stt (e2e, gerçek Nest H
   it("geçersiz (kebab-case olmayan) bir contentId'yi 400 ile reddeder, servise hiç gitmez", async () => {
     await request(app.getHttpServer())
       .post("/content-admin/videos/Not_Valid/process-stt")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .send({ storageKey: "originals/Not_Valid/uuid.mp4" })
       .expect(400);
 
@@ -177,7 +233,11 @@ describe("POST /content-admin/videos/:contentId/process-stt (e2e, gerçek Nest H
   });
 
   it("storageKey body'de eksikse 400 döner, servise hiç gitmez", async () => {
-    await request(app.getHttpServer()).post("/content-admin/videos/e2e-test-content/process-stt").send({}).expect(400);
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/process-stt")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send({})
+      .expect(400);
 
     expect(stubSttProcessing.processStt).not.toHaveBeenCalled();
   });
@@ -236,6 +296,7 @@ describe("POST /content-admin/videos/:contentId/enrich (e2e, gerçek Nest HTTP k
   it("geçerli contentId ile EnrichmentProcessingService'i çağırır ve enriched draft'ı döner", async () => {
     const response = await request(app.getHttpServer())
       .post("/content-admin/videos/e2e-test-content/enrich")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .send()
       .expect(201);
 
@@ -246,7 +307,11 @@ describe("POST /content-admin/videos/:contentId/enrich (e2e, gerçek Nest HTTP k
   });
 
   it("geçersiz (kebab-case olmayan) bir contentId'yi 400 ile reddeder, servise hiç gitmez", async () => {
-    await request(app.getHttpServer()).post("/content-admin/videos/Not_Valid/enrich").send().expect(400);
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/Not_Valid/enrich")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send()
+      .expect(400);
 
     expect(stubEnrichmentProcessing.enrich).not.toHaveBeenCalled();
   });
@@ -287,7 +352,11 @@ describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP 
   });
 
   it("body olmadan çağrılırsa acknowledgeNeedsReview=false ile PublishProcessingService'i çağırır", async () => {
-    const response = await request(app.getHttpServer()).post("/content-admin/videos/e2e-test-content/publish").send().expect(201);
+    const response = await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/publish")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send()
+      .expect(201);
 
     expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content", false);
     expect(response.body).toEqual({ videoId: "00000000-0000-4000-8000-000000000001", muxAssetId: "local-hello-greeting" });
@@ -296,6 +365,7 @@ describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP 
   it("acknowledgeNeedsReview=true gövdeyle çağrılırsa aynen taşır", async () => {
     await request(app.getHttpServer())
       .post("/content-admin/videos/e2e-test-content/publish")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .send({ acknowledgeNeedsReview: true })
       .expect(201);
 
@@ -303,7 +373,11 @@ describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP 
   });
 
   it("geçersiz (kebab-case olmayan) bir contentId'yi 400 ile reddeder, servise hiç gitmez", async () => {
-    await request(app.getHttpServer()).post("/content-admin/videos/Not_Valid/publish").send().expect(400);
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/Not_Valid/publish")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send()
+      .expect(400);
 
     expect(stubPublishProcessing.publish).not.toHaveBeenCalled();
   });
@@ -311,6 +385,7 @@ describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP 
   it("geçersiz bir acknowledgeNeedsReview tipini 400 ile reddeder, servise hiç gitmez", async () => {
     await request(app.getHttpServer())
       .post("/content-admin/videos/e2e-test-content/publish")
+      .set("X-Admin-Secret", ADMIN_SECRET)
       .send({ acknowledgeNeedsReview: "yes" })
       .expect(400);
 
