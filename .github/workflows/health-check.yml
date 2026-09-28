@@ -1,0 +1,20 @@
+name: API Health Check Ping
+
+# Amaç: Render Free tier'da instance'ın boşta kalıp uykuya geçmesini
+# (cold start) önlemek için düzenli bir GET /health isteği göndermek —
+# uygulama runtime koduna (setInterval/cron eklemek) DOKUNMADAN,
+# tamamen repo dışından bir mekanizma.
+on:
+  schedule:
+    # Her saatin 0/10/20/30/40/50. dakikasında — "yaklaşık 10 dakikada bir"
+    # (bkz. commit mesajı/PR açıklaması: GitHub Actions scheduled workflow'lar
+    # dakika garantisi VERMEZ, birkaç dakikaya kadar gecikebilir).
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ping-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GET /health
+        run: curl --fail --silent --show-error https://looplish-api.onrender.com/health
