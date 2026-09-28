@@ -1,4 +1,4 @@
-import { BadRequestException, Body, Controller, Param, Post, UploadedFile, UseFilters, UseGuards, UseInterceptors } from "@nestjs/common";
+import { BadRequestException, Body, Controller, Get, Param, Post, UploadedFile, UseFilters, UseGuards, UseInterceptors } from "@nestjs/common";
 import { FileInterceptor } from "@nestjs/platform-express";
 import { isValidContentId } from "./build-storage-key";
 import { ContentAdminSecretGuard } from "./content-admin-secret.guard";
@@ -42,6 +42,17 @@ export class ContentAdminController {
     private readonly enrichmentProcessingService: EnrichmentProcessingService,
     private readonly publishProcessingService: PublishProcessingService,
   ) {}
+
+  /**
+   * GEÇİCİ — Sentry production error tracking'in gerçek bir HTTP isteğiyle
+   * uçtan uca doğrulanması için (bkz. commit mesajı). Başka bir işlevi YOK;
+   * controller seviyesindeki ContentAdminSecretGuard'ın (yukarıda) altında
+   * kalıyor, ek bir guard/dependency eklenmedi.
+   */
+  @Get("sentry-test")
+  sentryTest(): never {
+    throw new Error("Looplish Sentry production test");
+  }
 
   @Post("upload")
   @UseFilters(MulterUploadExceptionFilter)
