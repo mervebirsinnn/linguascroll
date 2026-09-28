@@ -15,6 +15,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@sentry/cli": "2.58.4",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.14.10",
     "@types/react": "~19.2.2",

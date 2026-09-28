@@ -135,6 +135,9 @@ importers:
         specifier: ^3.23.8
         version: 3.25.76
     devDependencies:
+      '@sentry/cli':
+        specifier: 2.58.4
+        version: 2.58.4(supports-color@10.2.2)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.14
