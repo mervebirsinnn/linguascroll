@@ -1,6 +1,8 @@
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { Test } from "@nestjs/testing";
-import { envSchema } from "./app.module";
+import { APP_FILTER } from "@nestjs/core";
+import { SentryGlobalFilter, SentryModule } from "@sentry/nestjs/setup";
+import { AppModule, envSchema } from "./app.module";
 
 /**
  * Regresyon testi — R2 smoke test sırasında bulunan gerçek hata:
@@ -123,5 +125,52 @@ describe("app.module envSchema + ConfigModule entegrasyonu", () => {
 
   it("PORT sayısal olmayan bir değerse envSchema.parse fail-fast ile FIRLATIR", () => {
     expect(() => envSchema.parse({ ...REQUIRED_BASE_ENV, PORT: "abc" })).toThrow();
+  });
+
+  /**
+   * Sentry — R2_*, GEMINI_API_KEY ve CONTENT_ADMIN_SECRET ile AYNI regresyon şekli:
+   * SENTRY_DSN şemada yer almazsa ConfigService.get() onu hiç göremez. instrument.ts
+   * bu değeri ConfigService ÜZERİNDEN OKUMUYOR (process.env'den doğrudan okuyor,
+   * bkz. o dosyadaki yorum) ama şemada yer alması yine de gerekli: aksi halde
+   * .env/Render'da tanımlı olsa bile envSchema.parse() onu ATAR ve
+   * assignVariablesToProcess onu process.env'e hiç YAZMAZ.
+   */
+  it("SENTRY_DSN geçerli bir URL ise envSchema parse çıktısından ATMIYOR", () => {
+    const parsed = envSchema.parse({
+      ...REQUIRED_BASE_ENV,
+      SENTRY_DSN: "https://examplePublicKey@o0.ingest.sentry.io/0",
+    });
+    expect(parsed.SENTRY_DSN).toBe("https://examplePublicKey@o0.ingest.sentry.io/0");
+  });
+
+  it("SENTRY_DSN tanımlı değilken envSchema.parse yine de BAŞARILI olur (boot-time zorunlu değil)", () => {
+    expect(() => envSchema.parse(REQUIRED_BASE_ENV)).not.toThrow();
+  });
+
+  it("SENTRY_DSN geçerli bir URL değilse envSchema.parse fail-fast ile FIRLATIR", () => {
+    expect(() => envSchema.parse({ ...REQUIRED_BASE_ENV, SENTRY_DSN: "not-a-url" })).toThrow();
+  });
+});
+
+/**
+ * Sentry wiring — DB/HTTP bootstrap GEREKTİRMEDEN (bkz. testing conventions:
+ * *.spec.ts = no DB), AppModule'ün @Module() metadata'sını doğrudan okuyarak
+ * SentryModule'ün import edildiğini ve SentryGlobalFilter'ın global APP_FILTER
+ * olarak kayıtlı olduğunu doğrular. Reflect-metadata polyfill'i zaten AppModule
+ * import edilirken (yukarıdaki describe bloğu) global olarak kuruluyor.
+ */
+describe("app.module Sentry wiring", () => {
+  it("SentryModule.forRoot() AppModule'ün imports listesinde yer alıyor", () => {
+    const imports = (Reflect.getMetadata("imports", AppModule) ?? []) as unknown[];
+    const sentryImport = imports.find(
+      (imp): imp is { module: unknown } =>
+        typeof imp === "object" && imp !== null && "module" in imp && (imp as { module: unknown }).module === SentryModule,
+    );
+    expect(sentryImport).toBeDefined();
+  });
+
+  it("SentryGlobalFilter global APP_FILTER olarak kayıtlı", () => {
+    const providers = (Reflect.getMetadata("providers", AppModule) ?? []) as unknown[];
+    expect(providers).toContainEqual({ provide: APP_FILTER, useClass: SentryGlobalFilter });
   });
 });

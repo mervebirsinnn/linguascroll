@@ -1,11 +1,14 @@
-import { Module } from "@nestjs/common";
+import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
+import { APP_FILTER } from "@nestjs/core";
+import { SentryGlobalFilter, SentryModule } from "@sentry/nestjs/setup";
 import { z } from "zod";
 import { AppController } from "./app.controller";
 import { ContentAdminModule } from "./content-admin/content-admin.module";
 import { DatabaseModule } from "./database/database.module";
 import { FeedModule } from "./feed/feed.module";
 import { QuizzesModule } from "./quizzes/quizzes.module";
+import { RequestLoggingMiddleware } from "./request-logging.middleware";
 import { UsersModule } from "./users/users.module";
 import { VideosModule } from "./videos/videos.module";
 import { WordsModule } from "./words/words.module";
@@ -97,6 +100,17 @@ export const envSchema = z.object({
   // kontrolünde fail-fast başarısız olur — sayısal olmayan bir PORT'la sessizce
   // yanlış bir porta bind olmak yerine boot'ta net bir hata.
   PORT: z.coerce.number().int().positive().optional(),
+
+  // Sentry error tracking — R2_*/GEMINI_API_KEY/CONTENT_ADMIN_SECRET ile AYNI
+  // kök nedenle (yukarıdaki yorumlar) `.optional()`: boot-time zorunluluk yok
+  // (instrument.ts'teki Sentry.init() DSN tanımsızken kendiliğinden no-op'a
+  // düşer, local/test boot'u bozmaz) — ama ConfigService'in bu değeri
+  // GÖREBİLMESİ için şemada YER ALMASI şart (AYNI assignVariablesToProcess
+  // etkileşimi). instrument.ts, Nest'in DI/ConfigModule'ü hiç var olmadan
+  // NestFactory.create()'den ÖNCE çalıştığı için DSN'i process.env'den
+  // DOĞRUDAN okuyor — ConfigService.get() KULLANMIYOR (aynı GEMINI_API_KEY
+  // deseni).
+  SENTRY_DSN: z.string().url().optional(),
 });
 
 @Module({
@@ -105,6 +119,10 @@ export const envSchema = z.object({
       isGlobal: true,
       validate: (env) => envSchema.parse(env),
     }),
+    // SENTRY_DSN tanımsızken (local/test) instrument.ts'teki Sentry.init() zaten
+    // no-op — bu modül de aynı şekilde koşulsuz import edilir, ekstra bir dallanma
+    // gerekmez.
+    SentryModule.forRoot(),
     DatabaseModule,
     UsersModule,
     VideosModule,
@@ -114,5 +132,18 @@ export const envSchema = z.object({
     ContentAdminModule,
   ],
   controllers: [AppController],
+  // Global exception filter — istisnasız her route'ta (mevcut hiçbir
+  // controller-scoped filter yok, tek istisna content-admin'in kendi
+  // MulterUploadExceptionFilter'ı — o ayrı bir @UseFilters ile SADECE o
+  // controller'a scope'lu, burayla çakışmaz) beklenmeyen hataları Sentry'ye
+  // raporlayıp Nest'in normal HTTP exception davranışına (durum kodu/body)
+  // aynen devam ediyor.
+  providers: [{ provide: APP_FILTER, useClass: SentryGlobalFilter }],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  // Global request logging — her route'a (eşleşmeyen/404 dahil) uygulanıyor. Bkz.
+  // request-logging.middleware.ts'teki yorum: middleware/interceptor kararı ve neden.
+  configure(consumer: MiddlewareConsumer): void {
+    consumer.apply(RequestLoggingMiddleware).forRoutes("*");
+  }
+}

@@ -1,3 +1,6 @@
+// Sentry — EN İLK import olmalı (bkz. instrument.ts'teki yorum): Sentry.init()
+// NestFactory.create() dahil her şeyden önce çalışmalı.
+import "./instrument";
 import "reflect-metadata";
 import { join } from "node:path";
 import { NestFactory } from "@nestjs/core";

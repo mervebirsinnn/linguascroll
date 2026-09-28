@@ -18,7 +18,12 @@
     "stt:process": "pnpm run stt:build && node scripts/stt/dist/run-stt-pipeline.js",
     "enrich": "node dist/content-enrichment/enrich-transcript.js",
     "publish-content": "node dist/content-enrichment/publish-content.js",
-    "publish-vocabulary": "node dist/content-enrichment/publish-vocabulary.js"
+    "backfill-r2-videos": "node dist/content-admin/backfill-r2-videos.js",
+    "publish-vocabulary": "node dist/content-enrichment/publish-vocabulary.js",
+    "loadtest:read": "k6 run scripts/load-test/scenarios/read-only.js",
+    "loadtest:full": "k6 run scripts/load-test/scenarios/full-journey.js",
+    "loadtest:playback": "k6 run scripts/load-test/scenarios/playback-smoke.js",
+    "loadtest:warm": "k6 run scripts/load-test/scenarios/warm-baseline.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.687.0",
@@ -28,6 +33,7 @@
     "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^10.4.4",
     "@nestjs/platform-express": "^10.4.4",
+    "@sentry/nestjs": "^11.0.0",
     "drizzle-orm": "^0.45.2",
     "multer": "^2.0.2",
     "pg": "^8.13.0",
