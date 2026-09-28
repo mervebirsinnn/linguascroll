@@ -19,3 +19,7 @@ allowBuilds:
   # seçici), wrangler/media-worker'ın yerel çalışması için gerekli, resmi
   # Cloudflare paketi.
   workerd: true
+  # postinstall, mevcut platforma özel sentry-cli native binary'sini indiriyor
+  # -- esbuild/workerd ile aynı desen (platform binary seçici), source map
+  # upload için gerekli, resmi Sentry paketi.
+  '@sentry/cli': true

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import * as Sentry from '@sentry/react-native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Feed } from './src/features/feed/components/Feed';
@@ -9,7 +10,7 @@ import { useOnboardingState } from './src/features/onboarding/use-onboarding-sta
 
 type AppMode = 'feed' | 'memory';
 
-export default function App() {
+function App() {
   // Feed, quiz cevaplarını ve video watch-event'lerini bir userId'ye ihtiyaç
   // duyacak şekilde gönderiyor (bkz. Chunk 6) — bu yüzden feed'i, anonymous
   // identity hazır olmadan hiç mount etmiyoruz (identity.status === 'success'
@@ -72,3 +73,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
 });
+
+// Sentry.wrap: native crash'leri JS tarafındaki son event'e bağlıyor (Sentry'nin
+// resmi RN entegrasyon deseni) — sadece Sentry.init (instrument.ts) çalıştıktan
+// sonra register edilecek şekilde index.ts'in import sırasına bağımlı.
+export default Sentry.wrap(App);

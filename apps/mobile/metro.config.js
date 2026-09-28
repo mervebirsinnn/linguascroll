@@ -1,11 +1,14 @@
 // Learn more: https://docs.expo.dev/guides/monorepos/
-const { getDefaultConfig } = require('expo/metro-config');
+const { getSentryExpoConfig } = require('@sentry/react-native/metro');
 const path = require('path');
 
 const projectRoot = __dirname;
 const workspaceRoot = path.resolve(projectRoot, '../..');
 
-const config = getDefaultConfig(projectRoot);
+// getSentryExpoConfig, getDefaultConfig'in yerini alıyor (aynı imza) — Sentry'nin
+// source map'lere debug-id gömen Metro serializer'ını ekliyor, aşağıdaki
+// pnpm/monorepo resolver ayarlarını ETKİLEMİYOR.
+const config = getSentryExpoConfig(projectRoot);
 
 // 1. Watch all files within the monorepo
 config.watchFolders = [workspaceRoot];

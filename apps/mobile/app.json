@@ -22,7 +22,15 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-video"
+      "expo-video",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "organization": "personal-pob",
+          "project": "looplish-mobile"
+        }
+      ]
     ]
   }
 }
