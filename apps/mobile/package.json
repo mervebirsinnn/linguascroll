@@ -5,7 +5,7 @@
   "dependencies": {
     "@linguascroll/shared-types": "workspace:*",
     "@react-native-async-storage/async-storage": "2.2.0",
-    "@sentry/react-native": "~7.11.0",
+    "@sentry/react-native": "~8.28.0",
     "expo": "~57.0.19",
     "expo-dev-client": "~57.0.19",
     "expo-status-bar": "~57.0.1",
@@ -15,7 +15,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@sentry/cli": "2.58.4",
+    "@sentry/cli": "3.8.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.14.10",
     "@types/react": "~19.2.2",
