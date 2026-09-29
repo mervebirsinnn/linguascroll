@@ -50,4 +50,31 @@ config.resolver.blockList = [
   /apps[\\/]api[\\/]dist[\\/].*/,
 ];
 
+// 5. '@sentry/core' ÖZEL DURUMU — workspace'te AYNI ANDA iki uyumsuz major sürüm var:
+// apps/api'nin @sentry/nestjs zinciri @sentry/core@11.0.0 ister, apps/mobile'ın
+// @sentry/react-native@8.28.0 zinciri @sentry/core@10.75.2 ister. disableHierarchicalLookup
+// nedeniyle Metro normalde '@sentry/core' için SADECE üçüncü nodeModulesPaths girdisine
+// (pnpm'in paylaşımlı, TEK sürüm tutabilen flat hoist klasörü) bakıyor — o klasörde hangi
+// sürümün kazandığı `pnpm install` çalıştırma sırasına bağlı (doğrulandı: bir önceki
+// kurulumda 10.37.0, bu kurulumda 11.0.0 kazanmıştı) ve mobile bundle'ına yanlışlıkla
+// @sentry/core@11.0.0'ın sızıp "undefined is not a constructor" startup crash'ine yol
+// açmasının kök nedeni buydu. SADECE bu bir specifier için hierarchical lookup'ı yeniden
+// açıyoruz: import eden dosyanın (context.originModulePath) kendi dizininden yukarı arama,
+// pnpm'in HER paket için zaten doğru izole ettiği nested @sentry/core kopyasını (paylaşımlı
+// flat klasörü hiç görmeden) buluyor. Diğer TÜM modüller (diğer @sentry/* paketleri dahil —
+// onlar için collision kanıtlanmadı) değişmeden mevcut resolver'a delege ediliyor.
+const upstreamResolveRequest = config.resolver.resolveRequest;
+config.resolver.resolveRequest = (context, moduleName, platform) => {
+  if (moduleName === '@sentry/core' || moduleName.startsWith('@sentry/core/')) {
+    return context.resolveRequest(
+      { ...context, disableHierarchicalLookup: false, nodeModulesPaths: [] },
+      moduleName,
+      platform
+    );
+  }
+  return upstreamResolveRequest
+    ? upstreamResolveRequest(context, moduleName, platform)
+    : context.resolveRequest(context, moduleName, platform);
+};
+
 module.exports = config;
