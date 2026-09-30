@@ -8,6 +8,7 @@ import { ExplanationSheet } from "../../subtitles/ExplanationSheet";
 import { SubtitleOverlay } from "../../subtitles/SubtitleOverlay";
 import { useActiveSubtitle } from "../../subtitles/use-active-subtitle";
 import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
+import { ANDROID_BOTTOM_SHEET_NAV_INSET } from "../../../shared/bottom-sheet-inset";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
@@ -31,6 +32,16 @@ const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
  * layout'un çakışması riski hiç yok.
  */
 const IOS_HOME_INDICATOR_INSET = Platform.OS === "ios" ? 34 : 0;
+/**
+ * ExplanationSheet.tsx/VocabularyWordSheet.tsx'teki AYNI sabit (bkz.
+ * bottom-sheet-inset.ts) — bu "N kelime ▲" kontrolü de aynı sebeple (Android'de
+ * içerik edge-to-edge çiziliyor, `vocabularySheet` container'ı `bottom: 0`'da)
+ * sistem navigasyon çubuğunun (3-tuş veya gesture bar) ARKASINDA kalıyordu; cihaz
+ * testinde doğrulanan release blocker. `ANDROID_BOTTOM_SHEET_NAV_INSET` bir native
+ * OS inset API'si DEĞİL — `Dimensions.get('screen').height` (fiziksel ekran) ile
+ * `Dimensions.get('window').height` (uygulamanın gerçekten çizdiği alan) arasındaki
+ * farktan hesaplanan bir değer; iOS'ta her zaman 0.
+ */
 /** Kapalı haldeki "N kelime ▲" kontrolünün yaklaşık yüksekliği (padding dahil). */
 const VOCABULARY_HANDLE_HEIGHT = 44;
 /** İstenen %45–55 aralığının ortası — açık panel, video/ekran yüksekliğinin bu oranını aşmaz. */
@@ -120,7 +131,10 @@ export function VideoFeedItem({
   // değere göre hesaplanıyor (bkz. SubtitleOverlay.tsx'teki "zIndex yeterli
   // değil, gerçek pozisyon gerekir" yorumu).
   const vocabularySheetHeight =
-    VOCABULARY_HANDLE_HEIGHT + IOS_HOME_INDICATOR_INSET + (vocabularyExpanded ? vocabularyPanelHeight : 0);
+    VOCABULARY_HANDLE_HEIGHT +
+    IOS_HOME_INDICATOR_INSET +
+    ANDROID_BOTTOM_SHEET_NAV_INSET +
+    (vocabularyExpanded ? vocabularyPanelHeight : 0);
   const subtitleBottomOffset =
     video.vocabulary.length > 0 && vocabularyExpanded
       ? vocabularySheetHeight + SUBTITLE_GAP_ABOVE_EXPANDED_PANEL
@@ -314,7 +328,10 @@ export function VideoFeedItem({
             </ScrollView>
           )}
           <Pressable
-            style={[styles.vocabularyHandle, { paddingBottom: 10 + IOS_HOME_INDICATOR_INSET }]}
+            style={[
+              styles.vocabularyHandle,
+              { paddingBottom: 10 + IOS_HOME_INDICATOR_INSET + ANDROID_BOTTOM_SHEET_NAV_INSET },
+            ]}
             onPress={() => setVocabularyExpanded((expanded) => !expanded)}
           >
             <Text style={styles.vocabularyHandleText}>{video.vocabulary.length} kelime</Text>
