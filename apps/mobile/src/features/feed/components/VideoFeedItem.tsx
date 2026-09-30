@@ -8,7 +8,7 @@ import { ExplanationSheet } from "../../subtitles/ExplanationSheet";
 import { SubtitleOverlay } from "../../subtitles/SubtitleOverlay";
 import { useActiveSubtitle } from "../../subtitles/use-active-subtitle";
 import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
-import { ANDROID_BOTTOM_SHEET_NAV_INSET } from "../../../shared/bottom-sheet-inset";
+import { useAndroidBottomSheetNavInset } from "../../../shared/bottom-sheet-inset";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
@@ -19,29 +19,16 @@ const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
  * panel DEĞİL — varsayılan olarak KAPALI, sadece küçük bir "N kelime" kontrolü
  * gösteren, dokununca video'nun altından yukarı doğru açılan bir bottom-sheet.
  *
- * `react-native-safe-area-context` bu repo'da hiç bağımlı değil (bkz.
- * pnpm-lock.yaml) — yeni bir native dependency eklemek yerine, iPhone'un home
- * indicator alanı için bilinen (Apple HIG'in tüm notch/Dynamic Island'lı
- * modellerde sabit tuttuğu) 34pt'lik payı burada SABİT bir değer olarak
- * kullanıyoruz. Bunun native `useSafeAreaInsets()`'ten farkı: dinamik değil,
- * ama a) bu repo'da hiçbir ekran zaten dinamik safe-area kullanmıyor (bkz.
- * Feed.tsx — useWindowDimensions, insets değil), b) tek ihtiyacımız "handle
- * home indicator'ın ALTINDA kalmasın" — sabit 34pt bunun için yeterli ve
- * doğru, c) subtitle'ın `bottomOffset`'ini AYNI sabitle hesaplıyoruz (aşağı),
- * bu yüzden native bir API'nin geç gelen/yanlış senkronize olan değeriyle
- * layout'un çakışması riski hiç yok.
+ * iPhone'un home indicator alanı için bilinen (Apple HIG'in tüm notch/Dynamic
+ * Island'lı modellerde sabit tuttuğu) 34pt'lik payı burada SABİT bir değer
+ * olarak kullanıyoruz — iOS'ta zaten cihaz testinde doğru çalışıyordu, bu
+ * yüzden dokunulmuyor. Android tarafı artık `react-native-safe-area-context`
+ * kullanıyor (bkz. aşağıdaki `useAndroidBottomSheetNavInset` importu) — iOS'un
+ * kendi sabiti buna bilerek TAŞINMADI: subtitle'ın `bottomOffset`'i bu sabitle
+ * hesaplanıyor (aşağı), native bir API'nin geç gelen değeriyle layout'un
+ * çakışması riski olmadan, mevcut (çalışan) davranış korunuyor.
  */
 const IOS_HOME_INDICATOR_INSET = Platform.OS === "ios" ? 34 : 0;
-/**
- * ExplanationSheet.tsx/VocabularyWordSheet.tsx'teki AYNI sabit (bkz.
- * bottom-sheet-inset.ts) — bu "N kelime ▲" kontrolü de aynı sebeple (Android'de
- * içerik edge-to-edge çiziliyor, `vocabularySheet` container'ı `bottom: 0`'da)
- * sistem navigasyon çubuğunun (3-tuş veya gesture bar) ARKASINDA kalıyordu; cihaz
- * testinde doğrulanan release blocker. `ANDROID_BOTTOM_SHEET_NAV_INSET` bir native
- * OS inset API'si DEĞİL — `Dimensions.get('screen').height` (fiziksel ekran) ile
- * `Dimensions.get('window').height` (uygulamanın gerçekten çizdiği alan) arasındaki
- * farktan hesaplanan bir değer; iOS'ta her zaman 0.
- */
 /** Kapalı haldeki "N kelime ▲" kontrolünün yaklaşık yüksekliği (padding dahil). */
 const VOCABULARY_HANDLE_HEIGHT = 44;
 /** İstenen %45–55 aralığının ortası — açık panel, video/ekran yüksekliğinin bu oranını aşmaz. */
@@ -88,6 +75,10 @@ export function VideoFeedItem({
   vocabularyHintVisible,
   onDismissVocabularyHint,
 }: VideoFeedItemProps) {
+  // Android'de gerçek sistem navigasyon çubuğu payı — bkz. bottom-sheet-inset.ts'teki
+  // güncellenmiş yorum (Dimensions farkı artık edge-to-edge'de her zaman 0 dönüyordu).
+  const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
+
   // useVideoPlayer, component unmount olduğunda player'ı otomatik temizler.
   // Burada sadece başlangıç ayarlarını yapıyoruz (döngü + subtitle sync için
   // timeUpdate aralığı); play/pause kararı isActive'e bağlı olduğu için
@@ -133,7 +124,7 @@ export function VideoFeedItem({
   const vocabularySheetHeight =
     VOCABULARY_HANDLE_HEIGHT +
     IOS_HOME_INDICATOR_INSET +
-    ANDROID_BOTTOM_SHEET_NAV_INSET +
+    androidBottomSheetNavInset +
     (vocabularyExpanded ? vocabularyPanelHeight : 0);
   const subtitleBottomOffset =
     video.vocabulary.length > 0 && vocabularyExpanded
@@ -330,7 +321,7 @@ export function VideoFeedItem({
           <Pressable
             style={[
               styles.vocabularyHandle,
-              { paddingBottom: 10 + IOS_HOME_INDICATOR_INSET + ANDROID_BOTTOM_SHEET_NAV_INSET },
+              { paddingBottom: 10 + IOS_HOME_INDICATOR_INSET + androidBottomSheetNavInset },
             ]}
             onPress={() => setVocabularyExpanded((expanded) => !expanded)}
           >

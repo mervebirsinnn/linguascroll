@@ -1,7 +1,8 @@
-import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import type { TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
 import { useExplanationLanguage } from "../preferences/use-explanation-language";
 import { resolveSegmentExplanation } from "./resolve-segment-explanation";
+import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 
 type ExplanationSheetProps = {
   /**
@@ -28,6 +29,7 @@ type ExplanationSheetProps = {
  */
 export function ExplanationSheet({ segment, vocabulary, onClose }: ExplanationSheetProps) {
   const [language, setLanguage] = useExplanationLanguage();
+  const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
   // Chunk 16 revizyon — cihaz smoke test'inde bulunan bug: `segment.englishExplanation`
   // bazen orijinal cümlenin (neredeyse) birebir tekrarıydı. `segment` null olabildiği
   // için resolver'ı SADECE segment doluyken çağırıyoruz (bkz. aşağıdaki JSX'teki
@@ -40,7 +42,16 @@ export function ExplanationSheet({ segment, vocabulary, onClose }: ExplanationSh
       <Pressable style={styles.backdrop} onPress={onClose}>
         {/* İç Pressable: backdrop'a tıklayınca kapanma davranışını, kartın
             KENDİSİNE tıklamanın tetiklememesi için — event bubbling'i burada durduruyoruz. */}
-        <Pressable style={styles.card} onPress={() => {}}>
+        <Pressable
+          style={[
+            styles.card,
+            // iOS'un mevcut layout'u (sadece styles.card.padding, maxHeight:"60%")
+            // cihaz testinde doğru çalıştığı için BİLEREK dokunulmuyor — bu ek
+            // stil SADECE Android'de uygulanıyor (bkz. bottom-sheet-inset.ts).
+            Platform.OS === "android" && { paddingBottom: 16 + androidBottomSheetNavInset },
+          ]}
+          onPress={() => {}}
+        >
           <View style={styles.languageToggle}>
             <Pressable
               onPress={() => setLanguage("en")}

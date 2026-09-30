@@ -1,5 +1,6 @@
-import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
+import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import type { VideoVocabularyItem } from "@linguascroll/shared-types";
+import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 
 type VocabularyWordSheetProps = {
   /**
@@ -24,10 +25,20 @@ type VocabularyWordSheetProps = {
  * taşınmıyor).
  */
 export function VocabularyWordSheet({ word, onClose, isSaved, isPending, onToggleSave }: VocabularyWordSheetProps) {
+  const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
   return (
     <Modal visible={word !== null} transparent animationType="slide" onRequestClose={onClose}>
       <Pressable style={styles.backdrop} onPress={onClose}>
-        <Pressable style={styles.card} onPress={() => {}}>
+        <Pressable
+          style={[
+            styles.card,
+            // iOS'un mevcut layout'u (sadece styles.card.padding) cihaz testinde
+            // doğru çalıştığı için BİLEREK dokunulmuyor — bu ek stil SADECE
+            // Android'de uygulanıyor (bkz. bottom-sheet-inset.ts).
+            Platform.OS === "android" && { paddingBottom: 16 + androidBottomSheetNavInset },
+          ]}
+          onPress={() => {}}
+        >
           {word && (
             <View>
               <Text style={styles.lemma}>{word.word.lemma}</Text>

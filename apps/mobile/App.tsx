@@ -2,6 +2,7 @@ import { useState } from 'react';
 import * as Sentry from '@sentry/react-native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { initialWindowMetrics, SafeAreaProvider } from 'react-native-safe-area-context';
 import { Feed } from './src/features/feed/components/Feed';
 import { useAnonymousUserId } from './src/features/identity/use-anonymous-user-id';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
@@ -28,7 +29,12 @@ function App() {
   const [mode, setMode] = useState<AppMode>('feed');
 
   return (
-    <>
+    // bottom-sheet-inset.ts'teki useAndroidBottomSheetNavInset() (ve dolayısıyla
+    // Android sistem nav bar payına ihtiyaç duyan üç bottom-sheet/CTA) bu
+    // Provider'a bağımlı — initialMetrics, native modülün ilk raporundan önceki
+    // olası boş/flash render'ı önlüyor (react-native-safe-area-context'in kendi
+    // önerdiği desen).
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       {identity.status === 'loading' && (
         <View style={styles.centered}>
           <Text style={styles.message}>Yükleniyor…</Text>
@@ -56,7 +62,7 @@ function App() {
         <MemoryFlow userId={identity.userId} onBack={() => setMode('feed')} />
       )}
       <StatusBar style="light" />
-    </>
+    </SafeAreaProvider>
   );
 }
 
