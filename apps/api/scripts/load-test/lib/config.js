@@ -176,20 +176,32 @@ export function resolveExecutionOptions() {
 }
 
 /**
- * Threshold'lar BİLİNÇLİ OLARAK gevşek/tripwire niteliğinde — "p95 < 200ms"
- * gibi hiçbir ölçüme dayanmayan bir rakam UYDURULMADI (kullanıcının açık
- * talimatı). Bunun yerine:
- *  - error rate eşiği gerçekçi ama sıkı (yük altında bile %5'in üstü gerçek
- *    bir sorun sinyalidir).
- *  - p95 tripwire'ı ÇOK gevşek (5s) — amaç "sistem tamamen çöktü mü" sinyali,
- *    bir SLA garantisi değil.
- * GERÇEK p50/p95/p99 hedefleri, smoke/baseline/10-user koşusundan elde
- * edilen GERÇEK ölçümlerden türetilip BURAYA sonradan sıkılaştırılmalı
- * (bkz. README "Threshold'ları sıkılaştırma" bölümü).
+ * Threshold'lar, production'a karşı gerçekten koşulan read-only merdiveninin
+ * (2026-09-30) GERÇEK ölçümlerine göre sıkılaştırıldı — "p95 < 200ms" gibi
+ * hiçbir ölçüme dayanmayan bir rakam UYDURULMADI (kullanıcının açık talimatı,
+ * bkz. README "Threshold'ları sıkılaştırma"):
+ *
+ *   smoke (1 VU, warm) p95=615ms | 10 VU p95=305ms | 25 VU p95=298ms |
+ *   50 VU p95=288ms (p99=592ms) | 100 VU p95=419ms (p99=789ms, max=1.27s)
+ *   → 100 VU'ya kadar SAĞLIKLI, %0 hata.
+ *
+ *   250 VU: GERÇEK KAPASİTE TAVANI. %31.88 istek başarısız (`/health` bile
+ *   %49 başarısız — tek bir yavaş sorgu değil, instance'ın kendisi
+ *   [Render CPU/memory ve/veya Neon connection pool] doyuma ulaşmış), p95=
+ *   24.93s, p99/max 60s'lik timeout'a çarpıyor. 100 ile 250 arasında bir
+ *   yerde gerçek duvar var — 500 koşulmadı (ek bilgi değeri yok, zaten
+ *   struggling instance'a gereksiz yük).
+ *
+ * p95<1000ms: 100 VU'ya kadar gözlenen en kötü değerin (789ms p99) üstünde
+ * güvenli bir pay bırakıyor, ama "sistem tamamen çöktü" tripwire'ı olan
+ * 5000ms'den çok daha anlamlı — 250+ VU'daki gerçek çöküşü hem bu hem
+ * http_req_failed (zaten önceki koşuda doğru şekilde yakaladı) flag'leyecek.
+ * Hosting tier'ı büyütülüp tavan gerçekten kalkana kadar 250/500 profillerini
+ * "başarısız" göstermesi BEKLENEN/doğru davranış, bug değil.
  */
 export const THRESHOLDS = {
   http_req_failed: ["rate<0.05"],
-  http_req_duration: ["p(95)<5000"],
+  http_req_duration: ["p(95)<1000"],
 };
 
 export function thinkTimeSeconds() {
