@@ -103,7 +103,7 @@ export class FeedService {
   private async startSession(userId: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
     const catalog = await this.videosService.getVideoFeed();
     const videos = catalog.filter((video) => (video.category ?? "general") === category);
-    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, preference);
+    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, category, preference);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
     // Chunk 10: quiz seçimi artık "sıradaki quiz" değil, "bounded session'daki
