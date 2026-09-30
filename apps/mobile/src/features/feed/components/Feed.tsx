@@ -1,6 +1,17 @@
 import { useRef, useState } from "react";
-import { FlatList, Pressable, StyleSheet, Text, View, useWindowDimensions, type ViewToken } from "react-native";
-import type { ContentCategory, FeedItem, FeedPreferences } from "@linguascroll/shared-types";
+import {
+  FlatList,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+  type ViewToken,
+} from "react-native";
+import type {
+  ContentCategory,
+  FeedItem,
+  FeedPreferences,
+} from "@linguascroll/shared-types";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
@@ -59,22 +70,43 @@ type FeedProps = {
 export function Feed(props: FeedProps) {
   const [category, setCategory] = useState<ContentCategory>("general");
   const insets = useSafeAreaInsets();
-  const headerHeight = insets.top + 96;
+  const [viewport, setViewport] = useState({ height: 0, width: 0 });
   return (
     <View style={styles.root}>
-      <View style={[styles.header, { height: headerHeight, paddingTop: insets.top + 8 }]}>
+      <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
         <View style={styles.headerRow}>
-          <Text style={styles.brand}>languaScroll</Text>
-          <Pressable style={styles.memoryButton} onPress={props.onOpenMemory} accessibilityRole="button">
-            <Text style={styles.memoryButtonText}>📚 Kelimelerim</Text>
+          <View style={styles.brandGroup}>
+            <View style={styles.brandMark}>
+              <Text style={styles.brandMarkText}>↻</Text>
+            </View>
+            <Text style={styles.brand}>Looplish</Text>
+          </View>
+          <Pressable
+            style={styles.memoryButton}
+            onPress={props.onOpenMemory}
+            accessibilityRole="button"
+          >
+            <Text style={styles.memoryButtonText}>Kelimelerim</Text>
           </Pressable>
         </View>
         <View style={styles.categoryRow}>
           {(["general", "animation"] as const).map((value) => (
-            <Pressable key={value} onPress={() => setCategory(value)} accessibilityRole="tab"
+            <Pressable
+              key={value}
+              onPress={() => setCategory(value)}
+              accessibilityRole="tab"
               accessibilityState={{ selected: category === value }}
-              style={[styles.categoryButton, category === value && styles.categorySelected]}>
-              <Text style={[styles.categoryText, category === value && styles.categorySelectedText]}>
+              style={[
+                styles.categoryButton,
+                category === value && styles.categorySelected,
+              ]}
+            >
+              <Text
+                style={[
+                  styles.categoryText,
+                  category === value && styles.categorySelectedText,
+                ]}
+              >
                 {value === "general" ? "Akış" : "Animasyon"}
               </Text>
             </Pressable>
@@ -82,18 +114,43 @@ export function Feed(props: FeedProps) {
         </View>
       </View>
       {/* Bölüm değişince bütün oyuncular/istek state'i unmount olur; eski response yeni akışa eklenemez. */}
-      <FeedContent key={`${props.userId}:${category}`} {...props} category={category} headerHeight={headerHeight} />
+      {/* Gerçek layout ölçülür: Android sistem çubukları ve büyük yazı ayarı sabit ekran hesabını bozmaz. */}
+      <View
+        style={styles.root}
+        onLayout={({ nativeEvent: { layout } }) =>
+          setViewport({ height: layout.height, width: layout.width })
+        }
+      >
+        {viewport.height > 0 && viewport.width > 0 && (
+          <FeedContent
+            key={`${props.userId}:${category}:${viewport.height}:${viewport.width}`}
+            {...props}
+            category={category}
+            height={viewport.height}
+            width={viewport.width}
+          />
+        )}
+      </View>
     </View>
   );
 }
 
-function FeedContent({ userId, preference, category, headerHeight }: FeedProps & { category: ContentCategory; headerHeight: number }) {
-  const { state: feedState, loadMore, refresh } = useFeed(userId, preference, category);
+function FeedContent({
+  userId,
+  preference,
+  category,
+  height,
+  width,
+}: FeedProps & { category: ContentCategory; height: number; width: number }) {
+  const {
+    state: feedState,
+    loadMore,
+    refresh,
+  } = useFeed(userId, preference, category);
 
   // Tek ölçüm kaynağı: hem FlatList'in paging hesabı (getItemLayout) hem de her
   // item'ın gerçek render boyutu buradan, tek yerden besleniyor.
-  const { height: windowHeight, width } = useWindowDimensions();
-  const height = Math.max(1, windowHeight - headerHeight);
+  // height/width, parent View onLayout ölçümünden gelir; tahmini header çıkarımı yapılmaz.
 
   // Kullanıcının kaydırarak seçtiği item'ın key'i (bkz. getFeedItemKey — FeedItem
   // nested olduğu için düz bir "id" alanı yok). Kaydırma henüz başlamadıysa null
@@ -123,12 +180,14 @@ function FeedContent({ userId, preference, category, headerHeight }: FeedProps &
       });
   }
 
-  const onViewableItemsChanged = useRef(({ viewableItems }: { viewableItems: ViewToken[] }) => {
-    const activeItem = viewableItems[0]?.item as FeedItem | undefined;
-    if (activeItem) {
-      setActiveItemKey(getFeedItemKey(activeItem));
-    }
-  }).current;
+  const onViewableItemsChanged = useRef(
+    ({ viewableItems }: { viewableItems: ViewToken[] }) => {
+      const activeItem = viewableItems[0]?.item as FeedItem | undefined;
+      if (activeItem) {
+        setActiveItemKey(getFeedItemKey(activeItem));
+      }
+    },
+  ).current;
 
   // Chunk 9: aynı wordId aynı anda birden fazla yüklü videoda görünebildiği
   // (video_words many-to-many) için tek mantıksal saved-state BURADA, tüm
@@ -137,7 +196,11 @@ function FeedContent({ userId, preference, category, headerHeight }: FeedProps &
   // bu yüzden "success" durumundan önceki early return'lardan ÖNCE çağrılıyor;
   // henüz veri yokken boş dizi ile besleniyor.
   const items = feedState.status === "success" ? feedState.items : [];
-  const { isSaved: isWordSaved, isPending: isWordPending, toggleSave: onToggleSaveWord } = useSavedWordIds(userId, items);
+  const {
+    isSaved: isWordSaved,
+    isPending: isWordPending,
+    toggleSave: onToggleSaveWord,
+  } = useSavedWordIds(userId, items);
   // Chunk 15 — AYNI "tek mantıksal state, tüm VideoFeedItem'ların ortak
   // atasında" deseni (bkz. useSavedWordIds yorumu) — bkz. use-vocabulary-hint.ts.
   const vocabularyHint = useVocabularyHint();
@@ -165,15 +228,26 @@ function FeedContent({ userId, preference, category, headerHeight }: FeedProps &
 
   const { nextCursor, isLoadingMore, loadMoreError } = feedState;
   if (items.length === 0) {
-    return <View style={styles.centered}>
-      <Text style={styles.message}>{category === "animation" ? "Animasyon sahneleri henüz yayımlanmadı." : "Henüz video yok."}</Text>
-      <Pressable onPress={handleRefresh} accessibilityRole="button" style={styles.categoryButton}>
-        <Text style={styles.categoryText}>Tekrar dene</Text>
-      </Pressable>
-    </View>;
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.message}>
+          {category === "animation"
+            ? "Animasyon sahneleri henüz yayımlanmadı."
+            : "Henüz video yok."}
+        </Text>
+        <Pressable
+          onPress={handleRefresh}
+          accessibilityRole="button"
+          style={styles.categoryButton}
+        >
+          <Text style={styles.categoryText}>Tekrar dene</Text>
+        </Pressable>
+      </View>
+    );
   }
   const firstItem = items[0];
-  const resolvedActiveItemKey = activeItemKey ?? (firstItem ? getFeedItemKey(firstItem) : null);
+  const resolvedActiveItemKey =
+    activeItemKey ?? (firstItem ? getFeedItemKey(firstItem) : null);
 
   // FeedListFooter'ın tek eylem butonu iki farklı şeyi tetikleyebilir: bir
   // continuation hatasından sonra retry (loadMore) veya session bitince yeni
@@ -209,11 +283,22 @@ function FeedContent({ userId, preference, category, headerHeight }: FeedProps &
           }
           // Quiz item'lar isActive'e tepki vermiyor — video gibi play/pause'a
           // ihtiyaçları yok, statik render Chunk 5 kapsamında yeterli.
-          return <QuizFeedItem quiz={item.quiz} height={height} width={width} userId={userId} />;
+          return (
+            <QuizFeedItem
+              quiz={item.quiz}
+              height={height}
+              width={width}
+              userId={userId}
+            />
+          );
         }}
         pagingEnabled
         showsVerticalScrollIndicator={false}
-        getItemLayout={(_, index) => ({ length: height, offset: height * index, index })}
+        getItemLayout={(_, index) => ({
+          length: height,
+          offset: height * index,
+          index,
+        })}
         windowSize={WINDOW_SIZE}
         initialNumToRender={INITIAL_NUM_TO_RENDER}
         maxToRenderPerBatch={MAX_TO_RENDER_PER_BATCH}
@@ -246,25 +331,74 @@ const styles = StyleSheet.create({
     backgroundColor: "#000",
   },
   memoryButton: {
-    backgroundColor: "rgba(17,17,17,0.85)",
+    backgroundColor: "#24212f",
     borderWidth: 1,
-    borderColor: "#444",
-    borderRadius: 8,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
+    borderColor: "#3b344c",
+    borderRadius: 24,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    minHeight: 44,
+    flexShrink: 1,
   },
-  header: { paddingHorizontal: 16, backgroundColor: "#111116", gap: 10 },
-  headerRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", height: 34 },
-  brand: { color: "#d7c5ff", fontSize: 21, fontWeight: "700" },
-  categoryRow: { flexDirection: "row", gap: 8 },
-  categoryButton: { borderRadius: 8, paddingHorizontal: 18, paddingVertical: 8, backgroundColor: "#24212d" },
+  header: {
+    paddingHorizontal: 18,
+    paddingBottom: 12,
+    backgroundColor: "#111116",
+    gap: 16,
+  },
+  headerRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 12,
+  },
+  brandGroup: { flexDirection: "row", alignItems: "center", gap: 8 },
+  brandMark: {
+    width: 32,
+    height: 32,
+    borderRadius: 12,
+    backgroundColor: "#bca7ff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  brandMarkText: {
+    color: "#171221",
+    fontSize: 26,
+    fontWeight: "700",
+    includeFontPadding: false,
+  },
+  brand: {
+    color: "#f5f4f9",
+    fontSize: 23,
+    fontWeight: "800",
+    letterSpacing: -0.8,
+  },
+  categoryRow: {
+    flexDirection: "row",
+    padding: 4,
+    gap: 4,
+    borderRadius: 24,
+    backgroundColor: "#24212d",
+  },
+  categoryButton: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 20,
+    minHeight: 44,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+  },
   categorySelected: { backgroundColor: "#bca7ff" },
-  categoryText: { color: "#c8c0d6", fontSize: 14, fontWeight: "600" },
-  categorySelectedText: { color: "#171221" },
+  categoryText: { color: "#aba8b9", fontSize: 14, fontWeight: "600" },
+  categorySelectedText: { color: "#171221", fontWeight: "700" },
   memoryButtonText: {
-    color: "#8ecdfa",
+    color: "#ddf9a8",
     fontSize: 13,
-    fontWeight: "600",
+    fontWeight: "700",
+    textAlign: "center",
+    flexShrink: 1,
   },
   list: {
     flex: 1,
