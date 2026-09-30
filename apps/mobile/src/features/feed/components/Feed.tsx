@@ -64,7 +64,7 @@ export function Feed(props: FeedProps) {
     <View style={styles.root}>
       <View style={[styles.header, { height: headerHeight, paddingTop: insets.top + 8 }]}>
         <View style={styles.headerRow}>
-          <Text style={styles.brand}>languaScroll</Text>
+          <Text style={styles.brand}>Looplish</Text>
           <Pressable style={styles.memoryButton} onPress={props.onOpenMemory} accessibilityRole="button">
             <Text style={styles.memoryButtonText}>📚 Kelimelerim</Text>
           </Pressable>
