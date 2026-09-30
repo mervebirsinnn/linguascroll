@@ -14,6 +14,35 @@ import { VideoFeedItem } from "./VideoFeedItem";
 // arasında referans olarak sabit kalmasını bekler — bu yüzden useRef içinde tutuluyor.
 const VIEWABILITY_CONFIG = { itemVisiblePercentThreshold: 90 };
 
+/**
+ * Root cause #1 (hızlı repeated scroll'da donma) — item'lar TAM EKRAN
+ * (`getItemLayout`: length = height, pagingEnabled) olduğu için VirtualizedList'in
+ * "windowSize ekran-yüksekliği birimi" tanımı burada ≈ "item sayısı" ile
+ * örtüşüyor. RN'in varsayılanı (windowSize=21) bu yüzden aktif item'ın 10
+ * "ekranı" üstü + 10 altı, yani teorik olarak aynı anda 21'e kadar VideoFeedItem
+ * (her biri kendi native video player/decoder'ını KOŞULSUZ yaratıyor, bkz.
+ * VideoFeedItem.tsx'teki useVideoPlayer çağrısı) mount kalmasına izin veriyordu.
+ * Bu üç sabit, "aktif + yakın birkaç komşu" hedefiyle bilinçli olarak dar:
+ *  - WINDOW_SIZE=5 → aktif item + ~2 üst + ~2 alt komşu (21'in ~1/4'ü).
+ *  - INITIAL_NUM_TO_RENDER=2 → ilk mount'ta boş/beyaz ilk frame olmasın diye
+ *    SADECE aktif + bir sonraki item.
+ *  - MAX_TO_RENDER_PER_BATCH=2 → hızlı fling sırasında bir batch'te en fazla
+ *    2 YENİ item mount olur — çok sayıda player'ın aynı anda/art arda
+ *    allocate edilmesini (Candidate #1'in asıl mekanizması) engeller, ama
+ *    fling'in kendi hızını YAVAŞLATMAZ (bu sadece kaç item'ın ÖNCEDEN mount
+ *    edildiğini sınırlar, scroll'un kendisi native tarafta zaten akıcı).
+ * `removeClippedSubviews` BİLİNÇLİ OLARAK eklenmedi: her VideoFeedItem
+ * mutlak-konumlu overlay'ler (SubtitleOverlay, vocabularySheet) ve Modal'lar
+ * (ExplanationSheet, VocabularyWordSheet) barındırıyor — RN'in kendi
+ * dokümantasyonu bu prop'u "bazı durumlarda içerik kaybı bug'ları olabilir"
+ * diye işaretliyor; windowSize zaten 21'den 5'e indiği için ek kazancı
+ * marjinal, riski ("boş/beyaz frame" hedefiyle DOĞRUDAN çelişen bir bug
+ * sınıfı) buna değmiyor.
+ */
+const WINDOW_SIZE = 5;
+const INITIAL_NUM_TO_RENDER = 2;
+const MAX_TO_RENDER_PER_BATCH = 2;
+
 type FeedProps = {
   userId: string;
   /** Chunk 15 — onboarding'in level/topics'i, SADECE ilk session'ı etkiler (bkz. use-feed.ts). */
@@ -122,11 +151,14 @@ function FeedContent({ userId, preference, category, headerHeight }: FeedProps &
   }
 
   if (feedState.status === "error") {
-    // Chunk 15 — kullanıcı-dostu, teknik olmayan mesaj (madde 7): ham
-    // `feedState.message` (örn. "Failed to fetch") artık DOĞRUDAN gösterilmiyor.
+    // Chunk 15 — kullanıcı-dostu, teknik olmayan mesaj (madde 7). 2026-09-30:
+    // `feedState.message` artık zaten kullanıcı-dostu (bkz. use-feed.ts'teki
+    // errorMessage()) — ham teknik metin ASLA buraya kadar gelmiyor, bu yüzden
+    // burada sabit bir string yerine doğrudan gösterilebiliyor (sunucu-yoğun
+    // ile bağlantı-sorunu mesajları artık burada da doğru ayrışıyor).
     return (
       <View style={styles.centered}>
-        <Text style={styles.message}>Bağlantı kurulamadı. İnternet bağlantını kontrol edip tekrar dene.</Text>
+        <Text style={styles.message}>{feedState.message}</Text>
       </View>
     );
   }
@@ -182,6 +214,9 @@ function FeedContent({ userId, preference, category, headerHeight }: FeedProps &
         pagingEnabled
         showsVerticalScrollIndicator={false}
         getItemLayout={(_, index) => ({ length: height, offset: height * index, index })}
+        windowSize={WINDOW_SIZE}
+        initialNumToRender={INITIAL_NUM_TO_RENDER}
+        maxToRenderPerBatch={MAX_TO_RENDER_PER_BATCH}
         viewabilityConfig={VIEWABILITY_CONFIG}
         onViewableItemsChanged={onViewableItemsChanged}
         // Chunk 8: bounded frozen session'ın bir sonraki sayfasını çeker. useFeed

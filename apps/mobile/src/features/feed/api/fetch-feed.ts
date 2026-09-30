@@ -2,6 +2,23 @@ import { contentCategorySchema, feedPageSchema, type ContentCategory, type FeedP
 import { API_BASE_URL } from "../../../shared/api-base-url";
 
 /**
+ * HTTP status'ü taşıyan tipli hata — 2026-09-30, gerçek production yük
+ * testinde (500 eşzamanlı kullanıcı) sunucunun aşırı yüklenince 5xx/timeout
+ * döndüğü doğrulandı. `use-feed.ts`'teki `errorMessage()` bu status'e bakarak
+ * "sunucu yoğun" ile "bağlantı sorunu" mesajlarını AYIRT edebilsin diye —
+ * önceden sadece düz bir `Error` fırlatılıyordu, status bilgisi kayboluyordu.
+ */
+export class FeedFetchError extends Error {
+  constructor(
+    message: string,
+    readonly status?: number,
+  ) {
+    super(message);
+    this.name = "FeedFetchError";
+  }
+}
+
+/**
  * GET /feed'i çağırır ve sonucu feedPageSchema ile doğrular. Bu doğrulama
  * atlanmıyor: network'ten gelen JSON, tip sisteminin hiçbir garanti veremediği tek
  * sınır — `as FeedPage` gibi bir unchecked cast burada bir hatayı gizler,
@@ -42,7 +59,7 @@ export async function fetchFeed(userId: string, cursor?: string, preference?: Fe
   const response = await fetch(`${API_BASE_URL}/feed?${params.toString()}`);
 
   if (!response.ok) {
-    throw new Error(`Feed isteği başarısız oldu: ${response.status} ${response.statusText}`);
+    throw new FeedFetchError(`Feed isteği başarısız oldu: ${response.status} ${response.statusText}`, response.status);
   }
 
   const json: unknown = await response.json();

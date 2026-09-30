@@ -33,9 +33,14 @@ type FeedListFooterProps = {
  */
 export function FeedListFooter({ height, width, nextCursor, isLoadingMore, loadMoreError, onAction }: FeedListFooterProps) {
   if (loadMoreError) {
+    // 2026-09-30 — `loadMoreError` artık zaten kullanıcı-dostu, tam bir cümle
+    // (bkz. use-feed.ts'teki errorMessage() — "sunucu yoğun" ile "bağlantı
+    // sorunu" burada ayrışıyor); önceden buraya ham `Error.message` (örn.
+    // "Feed isteği başarısız oldu: 503 Service Unavailable") sızıyordu — bu
+    // yüzden artık "Yüklenemedi:" ön eki YOK, mesaj doğrudan gösteriliyor.
     return (
       <View style={[styles.container, { height, width }]}>
-        <Text style={styles.message}>Yüklenemedi: {loadMoreError}</Text>
+        <Text style={styles.message}>{loadMoreError}</Text>
         <Pressable onPress={onAction} style={styles.actionButton}>
           <Text style={styles.actionText}>Tekrar dene</Text>
         </Pressable>

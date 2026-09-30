@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { ContentCategory, FeedItem, FeedPage, FeedPreferences } from "@linguascroll/shared-types";
-import { fetchFeed } from "../api/fetch-feed";
+import { FeedFetchError, fetchFeed } from "../api/fetch-feed";
 
 /**
  * Üç bağımsız boolean yerine discriminated union — aynı anda "hem loading hem
@@ -29,8 +29,29 @@ export type FeedState =
 
 type SuccessFeedState = Extract<FeedState, { status: "success" }>;
 
+/**
+ * 2026-09-30 — production yük testinde doğrulanan gerçek senaryo: sunucu
+ * aşırı yüklenince (500 eşzamanlı kullanıcı civarı, bkz. proje geçmişi) 5xx
+ * status'ü ile dönüyor. Bu, "internetini kontrol et" mesajından AYRI, doğru
+ * bir bilgilendirme hak ediyor — kullanıcı interneti değil sunucu tarafı
+ * sorunu, tekrar denemesi muhtemelen işe yarayacak.
+ */
+function isServerOverloadedError(error: unknown): boolean {
+  return error instanceof FeedFetchError && error.status !== undefined && error.status >= 500;
+}
+
+/**
+ * Ham `error.message` (örn. "Feed isteği başarısız oldu: 503 Service
+ * Unavailable" ya da native fetch'in "Network request failed" gibi teknik
+ * metinleri) ASLA doğrudan kullanıcıya gösterilmiyor — hem ilk yükleme hatası
+ * (Feed.tsx tam ekran state'i) HEM loadMore/refresh hatası (FeedListFooter)
+ * AYNI bu fonksiyondan geçiyor, tek bir yerde kullanıcı-dostu metne çevriliyor.
+ */
 function errorMessage(error: unknown): string {
-  return error instanceof Error ? error.message : "Bilinmeyen bir hata oluştu";
+  if (isServerOverloadedError(error)) {
+    return "Sunucu şu an çok yoğun. Birkaç dakika sonra tekrar dene.";
+  }
+  return "Bağlantı kurulamadı. İnternet bağlantını kontrol edip tekrar dene.";
 }
 
 /**
