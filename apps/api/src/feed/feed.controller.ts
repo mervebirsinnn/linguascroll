@@ -1,5 +1,5 @@
-import { Controller, Get, ParseUUIDPipe, Query } from "@nestjs/common";
-import type { FeedPage } from "@linguascroll/shared-types";
+import { BadRequestException, Controller, Get, ParseUUIDPipe, Query } from "@nestjs/common";
+import { contentCategorySchema, type FeedPage } from "@linguascroll/shared-types";
 import { parseFeedPreferenceQuery } from "./feed-preference-query";
 import { FeedService } from "./feed.service";
 
@@ -27,7 +27,10 @@ export class FeedController {
     @Query("cursor") cursor?: string,
     @Query("level") level?: string,
     @Query("topics") topics?: string,
+    @Query("category") category?: string,
   ): Promise<FeedPage> {
-    return this.feedService.getFeed(userId, cursor, parseFeedPreferenceQuery(level, topics));
+    const parsedCategory = contentCategorySchema.safeParse(category ?? "general");
+    if (!parsedCategory.success) throw new BadRequestException("Geçersiz içerik kategorisi");
+    return this.feedService.getFeed(userId, cursor, parseFeedPreferenceQuery(level, topics), parsedCategory.data);
   }
 }

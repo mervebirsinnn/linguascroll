@@ -9,6 +9,7 @@ import { SubtitleOverlay } from "../../subtitles/SubtitleOverlay";
 import { useActiveSubtitle } from "../../subtitles/use-active-subtitle";
 import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
 import { useAndroidBottomSheetNavInset } from "../../../shared/bottom-sheet-inset";
+import { VideoAttributionSheet } from "./VideoAttributionSheet";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
@@ -78,6 +79,8 @@ export function VideoFeedItem({
   // Android'de gerçek sistem navigasyon çubuğu payı — bkz. bottom-sheet-inset.ts'teki
   // güncellenmiş yorum (Dimensions farkı artık edge-to-edge'de her zaman 0 dönüyordu).
   const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
+  const [sourceOpen, setSourceOpen] = useState(false);
+  const resumeAfterSource = useRef(false);
 
   // useVideoPlayer, component unmount olduğunda player'ı otomatik temizler.
   // Burada sadece başlangıç ayarlarını yapıyoruz (döngü + subtitle sync için
@@ -251,9 +254,18 @@ export function VideoFeedItem({
       <VideoView
         player={player}
         style={styles.video}
-        contentFit="cover"
+        contentFit={video.category === "animation" ? "contain" : "cover"}
         nativeControls={false}
       />
+      {video.attribution && <>
+        <Pressable style={{ position: "absolute", top: 16, left: 16, backgroundColor: "#211b2cdd", borderRadius: 8, padding: 10 }}
+          accessibilityRole="button" accessibilityLabel="Sahnenin kaynak ve lisans bilgisi"
+          onPress={() => { resumeAfterSource.current = player.playing; player.pause(); setSourceOpen(true); }}>
+          <Text style={{ color: "#d7c5ff", fontSize: 12 }}>{video.attribution.title} · {video.attribution.license}</Text>
+        </Pressable>
+        <VideoAttributionSheet attribution={video.attribution} open={sourceOpen}
+          onClose={() => { setSourceOpen(false); if (resumeAfterSource.current && isActive) player.play(); }} />
+      </>}
       {playbackError && (
         <View style={styles.playbackErrorOverlay}>
           <Text style={styles.playbackErrorText}>{playbackError}</Text>

@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
-import { check, integer, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
+import { check, integer, jsonb, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
+import type { VideoAttribution } from "@linguascroll/shared-types";
 
 /**
  * Persistence model — shared-types'taki Video (domain contract) ile KASITLI olarak
@@ -44,6 +45,9 @@ export const videosTable = pgTable(
     muxAssetId: text("mux_asset_id").notNull(),
     storageKey: text("storage_key"),
     topic: text("topic").notNull(),
+    category: text("category").notNull().default("general"),
+    // Yalnızca doğrulanmış VideoAttribution saklanır; ham provider metadata'sı değil.
+    attribution: jsonb("attribution").$type<VideoAttribution>(),
     durationMs: integer("duration_ms").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -52,6 +56,8 @@ export const videosTable = pgTable(
     // content-interest taxonomy — shared-types'taki topicSchema ile birebir aynı
     // değer seti (bkz. packages/shared-types/src/video.ts).
     check("topic_check", sql`${table.topic} IN ('dating', 'travel', 'career', 'lifestyle', 'humor')`),
+    check("video_category_check", sql`${table.category} IN ('general', 'animation')`),
+    check("animation_attribution_check", sql`${table.category} <> 'animation' OR ${table.attribution} IS NOT NULL`),
     // Chunk 7: >= 0 yerine > 0 — "playable" bir video için 0 süre domain olarak
     // imkansız bir durum, ranking'in kolaylığı için değil, bağımsız bir domain
     // düzeltmesi (bkz. shared-types'taki videoSchema.durationMs yorumu).

@@ -1,4 +1,4 @@
-import { feedPageSchema, type FeedPage, type FeedPreferences } from "@linguascroll/shared-types";
+import { contentCategorySchema, feedPageSchema, type ContentCategory, type FeedPage, type FeedPreferences } from "@linguascroll/shared-types";
 import { API_BASE_URL } from "../../../shared/api-base-url";
 
 /**
@@ -22,12 +22,12 @@ import { API_BASE_URL } from "../../../shared/api-base-url";
  * sayıyor (bkz. feed.service.ts), burada da aynı gerçeği yansıtan tek bir
  * `if/else`, iki ayrı kod yolu DEĞİL.
  */
-export async function fetchFeed(userId: string, cursor?: string, preference?: FeedPreferences): Promise<FeedPage> {
+export async function fetchFeed(userId: string, cursor?: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
   if (!userId) {
     throw new Error("fetchFeed userId olmadan çağrılamaz");
   }
 
-  const params = new URLSearchParams({ userId });
+  const params = new URLSearchParams({ userId, category: contentCategorySchema.parse(category) });
   if (cursor) {
     params.set("cursor", cursor);
   } else if (preference) {
@@ -48,3 +48,4 @@ export async function fetchFeed(userId: string, cursor?: string, preference?: Fe
   const json: unknown = await response.json();
   return feedPageSchema.parse(json);
 }
+

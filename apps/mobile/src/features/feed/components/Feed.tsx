@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View, useWindowDimensions, type ViewToken } from "react-native";
-import type { FeedItem, FeedPreferences } from "@linguascroll/shared-types";
+import type { ContentCategory, FeedItem, FeedPreferences } from "@linguascroll/shared-types";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
 import { useVocabularyHint } from "../hooks/use-vocabulary-hint";
@@ -26,12 +27,44 @@ type FeedProps = {
   onOpenMemory: () => void;
 };
 
-export function Feed({ userId, preference, onOpenMemory }: FeedProps) {
-  const { state: feedState, loadMore, refresh } = useFeed(userId, preference);
+export function Feed(props: FeedProps) {
+  const [category, setCategory] = useState<ContentCategory>("general");
+  const insets = useSafeAreaInsets();
+  const headerHeight = insets.top + 96;
+  return (
+    <View style={styles.root}>
+      <View style={[styles.header, { height: headerHeight, paddingTop: insets.top + 8 }]}>
+        <View style={styles.headerRow}>
+          <Text style={styles.brand}>languaScroll</Text>
+          <Pressable style={styles.memoryButton} onPress={props.onOpenMemory} accessibilityRole="button">
+            <Text style={styles.memoryButtonText}>📚 Kelimelerim</Text>
+          </Pressable>
+        </View>
+        <View style={styles.categoryRow}>
+          {(["general", "animation"] as const).map((value) => (
+            <Pressable key={value} onPress={() => setCategory(value)} accessibilityRole="tab"
+              accessibilityState={{ selected: category === value }}
+              style={[styles.categoryButton, category === value && styles.categorySelected]}>
+              <Text style={[styles.categoryText, category === value && styles.categorySelectedText]}>
+                {value === "general" ? "Akış" : "Animasyon"}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+      {/* Bölüm değişince bütün oyuncular/istek state'i unmount olur; eski response yeni akışa eklenemez. */}
+      <FeedContent key={`${props.userId}:${category}`} {...props} category={category} headerHeight={headerHeight} />
+    </View>
+  );
+}
+
+function FeedContent({ userId, preference, category, headerHeight }: FeedProps & { category: ContentCategory; headerHeight: number }) {
+  const { state: feedState, loadMore, refresh } = useFeed(userId, preference, category);
 
   // Tek ölçüm kaynağı: hem FlatList'in paging hesabı (getItemLayout) hem de her
   // item'ın gerçek render boyutu buradan, tek yerden besleniyor.
-  const { height, width } = useWindowDimensions();
+  const { height: windowHeight, width } = useWindowDimensions();
+  const height = Math.max(1, windowHeight - headerHeight);
 
   // Kullanıcının kaydırarak seçtiği item'ın key'i (bkz. getFeedItemKey — FeedItem
   // nested olduğu için düz bir "id" alanı yok). Kaydırma henüz başlamadıysa null
@@ -99,6 +132,14 @@ export function Feed({ userId, preference, onOpenMemory }: FeedProps) {
   }
 
   const { nextCursor, isLoadingMore, loadMoreError } = feedState;
+  if (items.length === 0) {
+    return <View style={styles.centered}>
+      <Text style={styles.message}>{category === "animation" ? "Animasyon sahneleri henüz yayımlanmadı." : "Henüz video yok."}</Text>
+      <Pressable onPress={handleRefresh} accessibilityRole="button" style={styles.categoryButton}>
+        <Text style={styles.categoryText}>Tekrar dene</Text>
+      </Pressable>
+    </View>;
+  }
   const firstItem = items[0];
   const resolvedActiveItemKey = activeItemKey ?? (firstItem ? getFeedItemKey(firstItem) : null);
 
@@ -160,11 +201,6 @@ export function Feed({ userId, preference, onOpenMemory }: FeedProps) {
         }
         style={styles.list}
       />
-      {/* Chunk 16 — Memory'ye giden tek, küçük giriş noktası. Sabit konum,
-          feed'in scroll/paging davranışını hiç etkilemiyor. */}
-      <Pressable style={styles.memoryButton} onPress={onOpenMemory}>
-        <Text style={styles.memoryButtonText}>📚 Kelimelerim</Text>
-      </Pressable>
     </View>
   );
 }
@@ -175,9 +211,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#000",
   },
   memoryButton: {
-    position: "absolute",
-    top: 56,
-    right: 16,
     backgroundColor: "rgba(17,17,17,0.85)",
     borderWidth: 1,
     borderColor: "#444",
@@ -185,6 +218,14 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 12,
   },
+  header: { paddingHorizontal: 16, backgroundColor: "#111116", gap: 10 },
+  headerRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", height: 34 },
+  brand: { color: "#d7c5ff", fontSize: 21, fontWeight: "700" },
+  categoryRow: { flexDirection: "row", gap: 8 },
+  categoryButton: { borderRadius: 8, paddingHorizontal: 18, paddingVertical: 8, backgroundColor: "#24212d" },
+  categorySelected: { backgroundColor: "#bca7ff" },
+  categoryText: { color: "#c8c0d6", fontSize: 14, fontWeight: "600" },
+  categorySelectedText: { color: "#171221" },
   memoryButtonText: {
     color: "#8ecdfa",
     fontSize: 13,

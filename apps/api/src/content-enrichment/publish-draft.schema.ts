@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { cefrLevelSchema, topicSchema } from "@linguascroll/shared-types";
+import { cefrLevelSchema, contentCategorySchema, topicSchema, videoAttributionSchema } from "@linguascroll/shared-types";
 import { qualityReportSchema } from "./content-quality.schema";
 import { enrichmentLearningPointSchema, enrichmentQuizSchema, enrichmentVocabularyItemSchema } from "./enrichment-output.schema";
 import { sttDraftSegmentObjectSchema } from "./stt-draft.schema";
@@ -24,7 +24,7 @@ const publishDraftSegmentSchema = sttDraftSegmentObjectSchema
   })
   .refine((segment) => segment.endMs > segment.startMs, { message: "endMs, startMs'ten büyük olmalı" });
 
-export const publishDraftSchema = z.object({
+export const publishDraftObjectSchema = z.object({
   contentId: z.string().min(1),
   muxAssetId: z
     .string()
@@ -40,6 +40,8 @@ export const publishDraftSchema = z.object({
   storageKey: z.string().min(1).nullable().optional(),
   durationMs: z.number().int().positive(),
   topic: topicSchema,
+  category: contentCategorySchema.optional(),
+  attribution: videoAttributionSchema.nullable().optional(),
   cefrLevel: cefrLevelSchema,
   segments: z.array(publishDraftSegmentSchema).min(1),
   vocabulary: z.array(enrichmentVocabularyItemSchema),
@@ -51,5 +53,9 @@ export const publishDraftSchema = z.object({
   // anında bu alana GÜVENMİYOR, `evaluateContentQuality`'i kendi fresh
   // çalıştırıyor (bkz. publish-content.ts yorumu).
   quality: qualityReportSchema,
+});
+export const publishDraftSchema = publishDraftObjectSchema.refine((draft) => draft.category !== "animation" || !!draft.attribution, {
+  message: "Animasyon içeriğinde kaynak ve lisans bilgisi zorunlu",
+  path: ["attribution"],
 });
 export type PublishDraft = z.infer<typeof publishDraftSchema>;

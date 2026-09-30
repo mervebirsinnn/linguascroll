@@ -1,5 +1,5 @@
 import type { z } from "zod";
-import { publishDraftSchema } from "../content-enrichment/publish-draft.schema";
+import { publishDraftObjectSchema } from "../content-enrichment/publish-draft.schema";
 
 /**
  * Chunk 17C — `POST /content-admin/videos/:contentId/enrich`'in response contract'ı.
@@ -10,5 +10,5 @@ import { publishDraftSchema } from "../content-enrichment/publish-draft.schema";
  * implementation detail, `process-stt.schema.ts`'teki AYNI gerekçeyle HTTP
  * response'a asla sızdırılmamalı.
  */
-export const enrichContentResponseSchema = publishDraftSchema.omit({ sourceFile: true });
+export const enrichContentResponseSchema = publishDraftObjectSchema.omit({ sourceFile: true });
 export type EnrichContentResponse = z.infer<typeof enrichContentResponseSchema>;

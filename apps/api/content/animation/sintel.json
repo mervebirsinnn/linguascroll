@@ -1,0 +1,551 @@
+[
+  {
+    "sourceStartMs": 129000,
+    "title": "Birini arıyorum",
+    "draft": {
+      "contentId": "sintel-search",
+      "muxAssetId": "local-sintel-search",
+      "sourceFile": "sintel-search.mp4",
+      "durationMs": 28000,
+      "topic": "travel",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sintel",
+        "credit": "© copyright Blender Foundation | durian.blender.org · Yönetmen: Colin Levy",
+        "sourceUrl": "https://durian.blender.org/sharing/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "changes": "Filmden kısa kesitler alındı; yeniden kodlama, stereo ses ve Türkçe çeviri/açıklamalar eklendi."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 400,
+          "endMs": 4800,
+          "text": "What brings you to the land of the gatekeepers?",
+          "englishExplanation": "The speaker asks why Sintel has come to this place.",
+          "turkishExplanation": "Seni kapı bekçilerinin diyarına getiren nedir?"
+        },
+        {
+          "ordinal": 2,
+          "startMs": 6000,
+          "endMs": 8500,
+          "text": "I'm searching for someone.",
+          "englishExplanation": "Sintel says she is trying to find someone.",
+          "turkishExplanation": "Birini arıyorum."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 9000,
+          "endMs": 13200,
+          "text": "Someone very dear? A kindred spirit?",
+          "englishExplanation": "The speaker asks whether the missing person is important to her.",
+          "turkishExplanation": "Çok değer verdiğin biri mi? Bir ruh eşi mi?"
+        },
+        {
+          "ordinal": 4,
+          "startMs": 14400,
+          "endMs": 16000,
+          "text": "A dragon.",
+          "englishExplanation": "Sintel identifies the one she is looking for as a dragon.",
+          "turkishExplanation": "Bir ejderha."
+        },
+        {
+          "ordinal": 5,
+          "startMs": 19850,
+          "endMs": 22750,
+          "text": "A dangerous quest for a lone hunter.",
+          "englishExplanation": "The speaker warns that searching alone could be dangerous.",
+          "turkishExplanation": "Yalnız bir avcı için tehlikeli bir arayış."
+        },
+        {
+          "ordinal": 6,
+          "startMs": 23950,
+          "endMs": 26870,
+          "text": "I've been alone for as long as I can remember.",
+          "englishExplanation": "Sintel says being alone is something she has known for a long time.",
+          "turkishExplanation": "Kendimi bildim bileli yalnızım."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "searching",
+          "gloss": "arıyorum / aramak"
+        },
+        {
+          "lemma": "dear",
+          "gloss": "değerli, sevilen"
+        },
+        {
+          "lemma": "quest",
+          "gloss": "arayış, zorlu yolculuk"
+        },
+        {
+          "lemma": "alone",
+          "gloss": "yalnız, tek başına"
+        }
+      ],
+      "learningPoints": [],
+      "quiz": {
+        "segmentOrdinal": 2,
+        "question": "What is Sintel doing when she says 'I'm searching for someone'?",
+        "options": [
+          {
+            "text": "Looking for someone important to her",
+            "isCorrect": true
+          },
+          {
+            "text": "Asking a stranger to leave her alone",
+            "isCorrect": false
+          },
+          {
+            "text": "Inviting someone to travel with her",
+            "isCorrect": false
+          },
+          {
+            "text": "Offering someone a place to rest",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "pass",
+        "issues": []
+      }
+    }
+  },
+  {
+    "sourceStartMs": 206500,
+    "title": "Az kaldı",
+    "draft": {
+      "contentId": "sintel-still",
+      "muxAssetId": "local-sintel-still",
+      "sourceFile": "sintel-still.mp4",
+      "durationMs": 12000,
+      "topic": "lifestyle",
+      "cefrLevel": "A2",
+      "category": "animation",
+      "attribution": {
+        "title": "Sintel",
+        "credit": "© copyright Blender Foundation | durian.blender.org · Yönetmen: Colin Levy",
+        "sourceUrl": "https://durian.blender.org/sharing/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "changes": "Filmden kısa kesitler alındı; yeniden kodlama, stereo ses ve Türkçe çeviri/açıklamalar eklendi."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 750,
+          "endMs": 4000,
+          "text": "We're almost done. Shhh…",
+          "englishExplanation": "Sintel reassures Scales that the task is nearly finished.",
+          "turkishExplanation": "Neredeyse bitti. Şşş…"
+        },
+        {
+          "ordinal": 2,
+          "startMs": 4250,
+          "endMs": 7000,
+          "text": "Hey, sit still.",
+          "englishExplanation": "She asks Scales to stop moving.",
+          "turkishExplanation": "Hey, kıpırdamadan otur."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "almost",
+          "gloss": "neredeyse"
+        },
+        {
+          "lemma": "done",
+          "gloss": "bitmiş, tamamlanmış"
+        },
+        {
+          "lemma": "sit still",
+          "gloss": "kıpırdamadan otur"
+        }
+      ],
+      "learningPoints": [],
+      "quiz": {
+        "segmentOrdinal": 2,
+        "question": "Why does Sintel tell Scales to 'sit still'?",
+        "options": [
+          {
+            "text": "She wants him to start hunting",
+            "isCorrect": false
+          },
+          {
+            "text": "She wants him to go outside",
+            "isCorrect": false
+          },
+          {
+            "text": "She wants him to find food",
+            "isCorrect": false
+          },
+          {
+            "text": "She wants him to stop moving",
+            "isCorrect": true
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "thinTranscript",
+            "severity": "warning",
+            "segmentOrdinal": null,
+            "message": "Transcript sadece 2 segment içeriyor — çok kısa/anlamsız olabilir."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sourceStartMs": 443500,
+    "title": "Sandığından daha yakın",
+    "draft": {
+      "contentId": "sintel-closer",
+      "muxAssetId": "local-sintel-closer",
+      "sourceFile": "sintel-closer.mp4",
+      "durationMs": 22000,
+      "topic": "travel",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sintel",
+        "credit": "© copyright Blender Foundation | durian.blender.org · Yönetmen: Colin Levy",
+        "sourceUrl": "https://durian.blender.org/sharing/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "changes": "Filmden kısa kesitler alındı; yeniden kodlama, stereo ses ve Türkçe çeviri/açıklamalar eklendi."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 2350,
+          "endMs": 4000,
+          "text": "I have failed.",
+          "englishExplanation": "Sintel feels that she has not succeeded.",
+          "turkishExplanation": "Başarısız oldum."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 9300,
+          "endMs": 13000,
+          "text": "You've only failed to see…",
+          "englishExplanation": "The speaker suggests that Sintel has overlooked something.",
+          "turkishExplanation": "Yalnızca görmeyi başaramadın…"
+        },
+        {
+          "ordinal": 3,
+          "startMs": 14300,
+          "endMs": 17000,
+          "text": "These are dragon lands, Sintel.",
+          "englishExplanation": "The speaker tells Sintel where dragons live.",
+          "turkishExplanation": "Buralar ejderha toprakları, Sintel."
+        },
+        {
+          "ordinal": 4,
+          "startMs": 17350,
+          "endMs": 20500,
+          "text": "You are closer than you know.",
+          "englishExplanation": "The speaker suggests that her goal is nearer than she realizes.",
+          "turkishExplanation": "Sandığından daha yakınsın."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "failed",
+          "gloss": "başarısız olmak / başaramamak"
+        },
+        {
+          "lemma": "see",
+          "gloss": "görmek, fark etmek"
+        },
+        {
+          "lemma": "closer",
+          "gloss": "daha yakın"
+        },
+        {
+          "lemma": "know",
+          "gloss": "bilmek"
+        }
+      ],
+      "learningPoints": [],
+      "quiz": {
+        "segmentOrdinal": 4,
+        "question": "What does 'closer than you know' suggest about Sintel's search?",
+        "options": [
+          {
+            "text": "Her goal is farther than before",
+            "isCorrect": false
+          },
+          {
+            "text": "Her search will take many more years",
+            "isCorrect": false
+          },
+          {
+            "text": "Her goal is nearer than she realizes",
+            "isCorrect": true
+          },
+          {
+            "text": "Her search has already reached its end",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "pass",
+        "issues": []
+      }
+    }
+  },
+  {
+    "sourceStartMs": 117000,
+    "title": "Hazırlıksız yolculuk",
+    "draft": {
+      "contentId": "sintel-journey",
+      "muxAssetId": "local-sintel-journey",
+      "sourceFile": "sintel-journey.mp4",
+      "durationMs": 12200,
+      "topic": "travel",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sintel",
+        "credit": "© copyright Blender Foundation | durian.blender.org · Yönetmen: Colin Levy",
+        "sourceUrl": "https://durian.blender.org/sharing/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "changes": "Filmden kısa kesitler alındı; yeniden kodlama, stereo ses ve Türkçe çeviri/açıklamalar eklendi."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 1000,
+          "endMs": 4450,
+          "text": "You're a fool for traveling alone, so completely unprepared.",
+          "englishExplanation": "The speaker criticizes her decision to travel without preparing.",
+          "turkishExplanation": "Böylesine hazırlıksız, tek başına yola çıkmakla aptallık etmişsin."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 4750,
+          "endMs": 7800,
+          "text": "You're lucky your blood's still flowing.",
+          "englishExplanation": "The speaker says she is fortunate to still be alive.",
+          "turkishExplanation": "Hâlâ hayatta olduğun için şanslısın."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 8250,
+          "endMs": 9300,
+          "text": "Thank you.",
+          "englishExplanation": "Sintel expresses gratitude.",
+          "turkishExplanation": "Teşekkür ederim."
+        },
+        {
+          "ordinal": 4,
+          "startMs": 10500,
+          "endMs": 12000,
+          "text": "So…",
+          "englishExplanation": "The speaker introduces the next question.",
+          "turkishExplanation": "Peki…"
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "traveling",
+          "gloss": "yolculuk etmek"
+        },
+        {
+          "lemma": "completely",
+          "gloss": "tamamen"
+        },
+        {
+          "lemma": "unprepared",
+          "gloss": "hazırlıksız"
+        },
+        {
+          "lemma": "lucky",
+          "gloss": "şanslı"
+        }
+      ],
+      "learningPoints": [],
+      "quiz": {
+        "segmentOrdinal": 1,
+        "question": "What makes traveling alone risky in this scene?",
+        "options": [
+          {
+            "text": "She has planned every detail carefully",
+            "isCorrect": false
+          },
+          {
+            "text": "She has set out completely unprepared",
+            "isCorrect": true
+          },
+          {
+            "text": "She has traveled with too many people",
+            "isCorrect": false
+          },
+          {
+            "text": "She has packed too much equipment",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "pass",
+        "issues": []
+      }
+    }
+  },
+  {
+    "sourceStartMs": 225500,
+    "title": "İyi geceler",
+    "draft": {
+      "contentId": "sintel-night",
+      "muxAssetId": "local-sintel-night",
+      "sourceFile": "sintel-night.mp4",
+      "durationMs": 10000,
+      "topic": "lifestyle",
+      "cefrLevel": "A1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sintel",
+        "credit": "© copyright Blender Foundation | durian.blender.org · Yönetmen: Colin Levy",
+        "sourceUrl": "https://durian.blender.org/sharing/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "changes": "Filmden kısa kesitler alındı; yeniden kodlama, stereo ses ve Türkçe çeviri/açıklamalar eklendi."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 2750,
+          "endMs": 6750,
+          "text": "Good night, Scales.",
+          "englishExplanation": "Sintel says goodbye for the night before resting.",
+          "turkishExplanation": "İyi geceler, Scales."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "good night",
+          "gloss": "iyi geceler"
+        }
+      ],
+      "learningPoints": [],
+      "quiz": {
+        "segmentOrdinal": 1,
+        "question": "When does Sintel say 'Good night' to Scales?",
+        "options": [
+          {
+            "text": "Before settling down to sleep",
+            "isCorrect": true
+          },
+          {
+            "text": "Before setting out to hunt",
+            "isCorrect": false
+          },
+          {
+            "text": "Before asking him for help",
+            "isCorrect": false
+          },
+          {
+            "text": "Before greeting a new friend",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "thinTranscript",
+            "severity": "warning",
+            "segmentOrdinal": null,
+            "message": "Transcript sadece 1 segment içeriyor — çok kısa/anlamsız olabilir."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sourceStartMs": 247000,
+    "title": "Hadi, yakala!",
+    "draft": {
+      "contentId": "sintel-catch",
+      "muxAssetId": "local-sintel-catch",
+      "sourceFile": "sintel-catch.mp4",
+      "durationMs": 10000,
+      "topic": "lifestyle",
+      "cefrLevel": "A1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sintel",
+        "credit": "© copyright Blender Foundation | durian.blender.org · Yönetmen: Colin Levy",
+        "sourceUrl": "https://durian.blender.org/sharing/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "changes": "Filmden kısa kesitler alındı; yeniden kodlama, stereo ses ve Türkçe çeviri/açıklamalar eklendi."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 3350,
+          "endMs": 6850,
+          "text": "Get him, Scales! Come on!",
+          "englishExplanation": "Sintel encourages Scales to catch the creature.",
+          "turkishExplanation": "Yakala onu, Scales! Hadi!"
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "get him",
+          "gloss": "yakala onu"
+        },
+        {
+          "lemma": "come on",
+          "gloss": "hadi"
+        }
+      ],
+      "learningPoints": [],
+      "quiz": {
+        "segmentOrdinal": 1,
+        "question": "What is Sintel doing when she says 'Come on'?",
+        "options": [
+          {
+            "text": "Asking Scales to stop and rest",
+            "isCorrect": false
+          },
+          {
+            "text": "Telling Scales it is bedtime",
+            "isCorrect": false
+          },
+          {
+            "text": "Introducing Scales to a stranger",
+            "isCorrect": false
+          },
+          {
+            "text": "Encouraging Scales to catch the creature",
+            "isCorrect": true
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "thinTranscript",
+            "severity": "warning",
+            "segmentOrdinal": null,
+            "message": "Transcript sadece 1 segment içeriyor — çok kısa/anlamsız olabilir."
+          }
+        ]
+      }
+    }
+  }
+]

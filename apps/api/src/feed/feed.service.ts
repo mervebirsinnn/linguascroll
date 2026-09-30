@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { feedPageSchema, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type PlayableVideo } from "@linguascroll/shared-types";
+import { feedPageSchema, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type ContentCategory, type PlayableVideo } from "@linguascroll/shared-types";
 import {
   decodeFeedCursor,
   encodeFeedCursor,
@@ -86,7 +86,7 @@ export class FeedService {
    * yüzden `preference` continuation isteklerinde SESSİZCE yok sayılıyor
    * (mobile zaten sadece cursor'sız isteklerde gönderiyor, bkz. fetch-feed.ts).
    */
-  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences): Promise<FeedPage> {
+  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
     const userExists = await this.usersService.userExists(userId);
     if (!userExists) {
       throw new BadRequestException(`"${userId}", var olan bir kullanıcıya ait değil`);
@@ -95,13 +95,14 @@ export class FeedService {
     // Boş string de "cursor yok" sayılır — query param'ın yanlışlıkla `?cursor=`
     // olarak boş gönderilmesi bir 400 değil, yeni bir session başlatır.
     if (cursor) {
-      return this.continueSession(userId, cursor);
+      return this.continueSession(userId, cursor, category);
     }
-    return this.startSession(userId, preference);
+    return this.startSession(userId, preference, category);
   }
 
-  private async startSession(userId: string, preference?: FeedPreferences): Promise<FeedPage> {
-    const videos = await this.videosService.getVideoFeed();
+  private async startSession(userId: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
+    const catalog = await this.videosService.getVideoFeed();
+    const videos = catalog.filter((video) => (video.category ?? "general") === category);
     const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, preference);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
@@ -121,10 +122,10 @@ export class FeedService {
     const plan = composedItems.map(toFeedPlanItemRef);
     assertFitsSessionBound(plan);
 
-    return this.buildPage(userId, plan, 0);
+    return this.buildPage(userId, plan, 0, category);
   }
 
-  private continueSession(userId: string, cursor: string): Promise<FeedPage> {
+  private continueSession(userId: string, cursor: string, category: ContentCategory): Promise<FeedPage> {
     let payload: FeedCursorPayload;
     try {
       payload = decodeFeedCursor(cursor, this.cursorSecret);
@@ -143,7 +144,10 @@ export class FeedService {
       throw new BadRequestException("Cursor, bu userId'ye ait değil");
     }
 
-    return this.buildPage(userId, payload.plan, payload.position);
+    if ((payload.category ?? "general") !== category) {
+      throw new BadRequestException("Cursor, bu içerik kategorisine ait değil");
+    }
+    return this.buildPage(userId, payload.plan, payload.position, category);
   }
 
   /**
@@ -162,7 +166,7 @@ export class FeedService {
    * döngü en fazla ceil(plan.length / PAGE_SIZE) kez çalışır — sonsuz döngü
    * riski yok, plan zaten sonlu ve donmuş.
    */
-  private async buildPage(userId: string, plan: FeedPlanItemRef[], startPosition: number): Promise<FeedPage> {
+  private async buildPage(userId: string, plan: FeedPlanItemRef[], startPosition: number, category: ContentCategory): Promise<FeedPage> {
     let position = startPosition;
     let items: FeedItem[] = [];
 
@@ -180,7 +184,7 @@ export class FeedService {
     const nextCursor =
       position >= plan.length
         ? null
-        : encodeFeedCursor({ v: FEED_CURSOR_VERSION, userId, plan, position }, this.cursorSecret);
+        : encodeFeedCursor({ v: FEED_CURSOR_VERSION, userId, category, plan, position }, this.cursorSecret);
 
     return feedPageSchema.parse({ items, nextCursor });
   }
@@ -343,3 +347,4 @@ function findUnusedQuizForGroup(
   }
   return undefined;
 }
+

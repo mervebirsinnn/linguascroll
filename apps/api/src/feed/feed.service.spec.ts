@@ -620,3 +620,29 @@ describe("FeedService.getFeed — quiz placement invariant (video → segment �
     expect(calls[0]).not.toContain(vId(30));
   });
 });
+
+
+
+describe("Animasyon bölümü", () => {
+  const animation = (n: number): PlayableVideo => ({ ...makeVideo(n), category: "animation" });
+  it("varsayılan akış animasyonları içermez; eski videolar general kalır", async () => {
+    const service = makeFeedService({ videos: [makeVideo(1), animation(2)], quizzesByVideoId: new Map() });
+    expect(videoIds((await service.getFeed(TEST_USER_ID)).items)).toEqual([vId(1)]);
+  });
+  it("Animasyon sayfaları ve refresh yalnızca aynı bölümün sahnelerini getirir", async () => {
+    const videos = [makeVideo(1), ...Array.from({ length: 16 }, (_, i) => animation(i + 2))];
+    const service = makeFeedService({ videos, quizzesByVideoId: new Map() });
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
+    expect(first.nextCursor).not.toBeNull();
+    expect(decodeFeedCursor(first.nextCursor!, CURSOR_SECRET).category).toBe("animation");
+    const second = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "animation");
+    expect(videoIds([...first.items, ...second.items])).toEqual(videos.slice(1).map(v => v.id));
+    const refreshed = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
+    expect(videoIds(refreshed.items)).toEqual(videoIds(first.items));
+  });
+  it("eski bölümün cursor'ı yeni bölüme taşınamaz", async () => {
+    const service = makeFeedService({ videos: Array.from({ length: 16 }, (_, i) => animation(i + 1)), quizzesByVideoId: new Map() });
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
+    await expect(service.getFeed(TEST_USER_ID, first.nextCursor!)).rejects.toThrow("kategorisine ait değil");
+  });
+});

@@ -1,5 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
+import { contentCategorySchema } from "@linguascroll/shared-types";
 
 /**
  * Chunk 8 — bounded frozen feed-plan pagination.
@@ -44,6 +45,8 @@ const feedCursorPayloadSchema = z
   .object({
     v: z.literal(FEED_CURSOR_VERSION),
     userId: z.string().uuid(),
+    // v1'in eski general cursor'ları geçerli kalır; yeni cursor bölümünü imzaya bağlar.
+    category: contentCategorySchema.optional(),
     plan: z.array(feedPlanItemRefSchema).max(MAX_SESSION_FEED_ITEMS),
     position: z.number().int().nonnegative(),
   })
