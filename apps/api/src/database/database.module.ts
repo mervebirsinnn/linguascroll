@@ -22,18 +22,17 @@ export type Database = NodePgDatabase;
       provide: PG_POOL,
       inject: [ConfigService],
       useFactory: (configService: ConfigService): Pool => {
-        // max BİLİNÇLİ OLARAK 500 — TEŞHİS AMAÇLI, kalıcı bir prod ayarı olarak
-        // seçilmedi. Sırasıyla: pg'nin varsayılanı (10) 250 VU'da %31.88 hataya
-        // yol açtı (2026-09-30 k6 testi) → 30'a çıkarınca 250 VU tamamen sağlıklı
-        // oldu AMA 500 VU'da hâlâ %80.95 hata vardı → Neon panelinde gerçek
-        // bağlantı limitinin ~901 olduğu doğrulandı (bizim 30'umuzun ÇOK
-        // altında). Bu, 500 VU'daki çöküşün artık DB pool'undan mı yoksa
-        // Render'ın kendi CPU/memory kapasitesinden mi geldiğini ayırt etmek
-        // için pool'u 500 VU'nun kendisiyle eşleşecek kadar büyütüyor — eğer bu
-        // seviyede de hata sürüyorsa, kanıt DB pool'unun DEĞİL Render
-        // instance'ının tavana çarptığını gösterir. Sonuca göre kalıcı bir
-        // değere (muhtemelen çok daha düşük) geri çekilecek.
-        const pool = new Pool({ connectionString: configService.getOrThrow<string>("DATABASE_URL"), max: 500 });
+        // max BİLİNÇLİ OLARAK 40 — kalıcı değer, teşhis süreci bitti (2026-09-30
+        // k6 testleri): pg varsayılanı (10) 250 VU'da %31.88 hataya yol açıyordu;
+        // 30'a çıkarınca 250 VU tamamen sağlıklı oldu (p95=1.03s, %0 hata). 500
+        // VU'da pool'u DENEYSEL OLARAK 500'e kadar çıkarmak (Neon'un ~901'lik
+        // gerçek limitinin çok altında) SONUCU DEĞİŞTİRMEDİ (hâlâ ~%84 hata) —
+        // bu, 500 VU'daki çöküşün DB pool'undan DEĞİL, Render instance'ının
+        // kendi CPU/memory kapasitesinden geldiğini KANITLADI. Yani pool'u daha
+        // fazla büyütmenin faydası yok; 40, 250 VU'ya kadar kanıtlanmış rahat
+        // payı olan, gereksiz kaynak tüketmeyen kalıcı değer. 500 VU'yu gerçekten
+        // desteklemek istenirse çözüm burada değil, Render hosting tier'ında.
+        const pool = new Pool({ connectionString: configService.getOrThrow<string>("DATABASE_URL"), max: 40 });
         // node-postgres'in bilinen davranışı: havuzdaki boşta bir bağlantı hata
         // alırsa (ağ kopması, DB'nin bağlantıyı kapatması) bunu bir 'error' event'i
         // olarak yayınlar. Dinleyicisi olmayan bir 'error' event'i Node'da yakalanmamış
