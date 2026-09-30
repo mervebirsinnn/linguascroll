@@ -1,4 +1,5 @@
 export { videoSchema, type Video, topicSchema, type Topic, cefrLevelSchema, type CefrLevel } from "./video";
+export { contentCategorySchema, type ContentCategory, videoAttributionSchema, type VideoAttribution } from "./content-category";
 export { wordSchema, type Word } from "./word";
 export { videoVocabularyItemSchema, type VideoVocabularyItem } from "./video-vocabulary-item";
 export { learningPointTypeSchema, type LearningPointType, learningPointSchema, type LearningPoint } from "./learning-point";

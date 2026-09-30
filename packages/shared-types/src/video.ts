@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { languageCodeSchema } from "./primitives/language-code";
+import { contentCategorySchema, videoAttributionSchema } from "./content-category";
 
 /** CEFR ölçeği (Avrupa Ortak Dil Referans Çerçevesi) — dış standart, keyfi bir seçim değil. */
 export const cefrLevelSchema = z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]);
@@ -38,6 +39,9 @@ export const videoSchema = z.object({
   storageKey: z.string().nullable(),
 
   topic: topicSchema,
+  // Eski API response/test fixture'ları geçerli kalır; DB eski videoları general yapar.
+  category: contentCategorySchema.optional(),
+  attribution: videoAttributionSchema.nullable().optional(),
 
   // "playable" bir video için 0 süre domain olarak imkansız bir durum (Chunk 7
   // kararı) — .nonnegative() değil .positive(). DB'de aynı sıkılık CHECK ile

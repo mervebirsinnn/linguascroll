@@ -23,7 +23,10 @@
     "loadtest:read": "k6 run scripts/load-test/scenarios/read-only.js",
     "loadtest:full": "k6 run scripts/load-test/scenarios/full-journey.js",
     "loadtest:playback": "k6 run scripts/load-test/scenarios/playback-smoke.js",
-    "loadtest:warm": "k6 run scripts/load-test/scenarios/warm-baseline.js"
+    "loadtest:warm": "k6 run scripts/load-test/scenarios/warm-baseline.js",
+    "animation:prepare": "python scripts/animation/prepare-animation-media.py",
+    "animation:check": "node dist/animation/publish-animation.js --check",
+    "animation:publish": "node dist/animation/publish-animation.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.687.0",

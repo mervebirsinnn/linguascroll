@@ -105,4 +105,22 @@ describe("fetchFeed", () => {
     expect(calledUrl).not.toContain("level=");
     expect(calledUrl).not.toContain("topics=");
   });
+  it("Animasyon seçimi ilk sayfa ve devam isteğinde korunur", async () => {
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+    await fetchFeed("user", undefined, { level: "B1", topics: ["travel"] }, "animation");
+    await fetchFeed("user", "signed-cursor", undefined, "animation");
+    expect(fetchSpy.mock.calls).toHaveLength(2);
+    for (const [url] of fetchSpy.mock.calls) expect(new URL(url).searchParams.get("category")).toBe("animation");
+    expect(new URL(fetchSpy.mock.calls[1][0]).searchParams.get("cursor")).toBe("signed-cursor");
+  });
+
+  it("geçersiz bölüm network'e çıkmadan reddedilir", async () => {
+    const fetchSpy = jest.fn();
+    global.fetch = fetchSpy as unknown as typeof fetch;
+    await expect(fetchFeed("user", undefined, undefined, "anime" as "animation")).rejects.toThrow();
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
+
 });
+

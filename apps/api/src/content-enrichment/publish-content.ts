@@ -221,6 +221,8 @@ export async function publishContent(db: Database, draft: PublishDraft): Promise
         // videos.schema.ts'teki storageKey yorumu).
         storageKey: draft.storageKey ?? null,
         topic: draft.topic,
+        category: draft.category ?? "general",
+        attribution: draft.attribution ?? null,
         durationMs: draft.durationMs,
       })
       .returning();
