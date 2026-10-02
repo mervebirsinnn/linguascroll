@@ -190,14 +190,54 @@ export function VideoFeedItem({
    * Chunk 15, madde 8 — video playback hatası (bozuk/erişilemez medya dosyası
    * vb.) için fallback. `expo-video`'nun `statusChange` event'i `status`'un
    * `"error"`e geçtiği anı bildiriyor — mevcut kodda ŞİMDİYE KADAR hiç
-   * dinlenmiyordu (audit'te bulunan gerçek boşluk). Retry butonu YOK
-   * (bilinçli, madde 8 sadece "fallback ekle" diyor — kullanıcının doğal
-   * kurtarma yolu zaten scroll edip bir sonraki videoya geçmek).
+   * dinlenmiyordu (audit'te bulunan gerçek boşluk). Başarısız kaynak explicit
+   * retry ile yeniden yüklenir; geliştirme build'inde native hata gösterilir.
    */
   const [playbackError, setPlaybackError] = useState<string | null>(null);
-  useEventListener(player, "statusChange", ({ status }) => {
+  const [playbackDiagnostic, setPlaybackDiagnostic] = useState<string | null>(null);
+  const [isRetrying, setIsRetrying] = useState(false);
+  const retryInFlight = useRef(false);
+  const activeRef = useRef(isActive);
+  activeRef.current = isActive;
+  const mountedRef = useRef(true);
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => { mountedRef.current = false; };
+  }, []);
+
+  // Keep the native failure visible in development without exposing signed URLs.
+  useEventListener(player, "statusChange", ({ status, error }) => {
     setPlaybackError(status === "error" ? "Bu video oynatılamadı." : null);
+    const diagnostic = status === "error"
+      ? (error?.message ?? "Native player returned an error").replace(/https?:\/\/[^\s]+/g, "[media URL]")
+      : null;
+    setPlaybackDiagnostic(diagnostic);
+    if (__DEV__ && diagnostic) {
+      console.warn("[video playback]", { videoId: video.id, message: diagnostic });
+    }
   });
+
+  async function handlePlaybackRetry(): Promise<void> {
+    if (retryInFlight.current) return;
+    retryInFlight.current = true;
+    setIsRetrying(true);
+    setPlaybackDiagnostic(null);
+    try {
+      // play()/replay() alone does not reload a failed source.
+      await player.replaceAsync(video.playbackUrl);
+      if (mountedRef.current && activeRef.current) player.play();
+    } catch (error: unknown) {
+      if (mountedRef.current) {
+        setPlaybackError("Bu video oynatılamadı.");
+        setPlaybackDiagnostic(error instanceof Error
+          ? error.message.replace(/https?:\/\/[^\s]+/g, "[media URL]")
+          : "Video yeniden yüklenemedi.");
+      }
+    } finally {
+      retryInFlight.current = false;
+      if (mountedRef.current) setIsRetrying(false);
+    }
+  }
 
   // Aktiflik değiştiğinde player'ı buna göre başlat/durdur. FlatList kaydırma
   // akıcılığı için ekran dışındaki komşu öğeleri de mount edilmiş tutabilir —
@@ -254,6 +294,7 @@ export function VideoFeedItem({
       <VideoView
         player={player}
         style={styles.video}
+        surfaceType={Platform.OS === "android" ? "textureView" : "surfaceView"}
         contentFit={video.category === "animation" ? "contain" : "cover"}
         nativeControls={false}
       />
@@ -269,6 +310,15 @@ export function VideoFeedItem({
       {playbackError && (
         <View style={styles.playbackErrorOverlay}>
           <Text style={styles.playbackErrorText}>{playbackError}</Text>
+          <Pressable onPress={() => { void handlePlaybackRetry(); }} disabled={isRetrying}
+            accessibilityRole="button" style={{ padding: 16 }}>
+            <Text style={{ color: "#8ecdfa", fontSize: 16 }}>
+              {isRetrying ? "Yükleniyor…" : "Tekrar dene"}
+            </Text>
+          </Pressable>
+          {__DEV__ && playbackDiagnostic && (
+            <Text selectable style={styles.playbackErrorText}>{playbackDiagnostic}</Text>
+          )}
         </View>
       )}
       <SubtitleOverlay
