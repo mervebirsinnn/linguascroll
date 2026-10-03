@@ -35,9 +35,25 @@ type SuccessFeedState = Extract<FeedState, { status: "success" }>;
  * status'ü ile dönüyor. Bu, "internetini kontrol et" mesajından AYRI, doğru
  * bir bilgilendirme hak ediyor — kullanıcı interneti değil sunucu tarafı
  * sorunu, tekrar denemesi muhtemelen işe yarayacak.
+ *
+ * 2026-10-01 — iki ek senaryo, AYNI kategoriye eklendi (gerçek bir gözden
+ * geçirme bulgusu):
+ *  - `error.isTimeout` — sunucu yük altında HİÇ yanıt vermeyince (bkz.
+ *    fetch-feed.ts'teki FETCH_TIMEOUT_MS) önceden bu "bağlantı sorunu"
+ *    mesajına düşüyordu — kullanıcıyı anlamsız yere interneti kontrol etmeye
+ *    yönlendiriyordu, oysa asıl sorun sunucu tarafında olabilir.
+ *  - `status === 429` (rate limit) — aşırı yükün status >= 500'den DAHA
+ *    doğrudan bir kanıtı, ama önceden bu eşiğin dışında kaldığı için genel
+ *    bağlantı mesajına düşüyordu.
  */
 function isServerOverloadedError(error: unknown): boolean {
-  return error instanceof FeedFetchError && error.status !== undefined && error.status >= 500;
+  if (!(error instanceof FeedFetchError)) {
+    return false;
+  }
+  if (error.isTimeout) {
+    return true;
+  }
+  return error.status !== undefined && (error.status === 429 || error.status >= 500);
 }
 
 /**

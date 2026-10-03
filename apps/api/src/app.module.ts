@@ -111,6 +111,17 @@ export const envSchema = z.object({
   // DOĞRUDAN okuyor — ConfigService.get() KULLANMIYOR (aynı GEMINI_API_KEY
   // deseni).
   SENTRY_DSN: z.string().url().optional(),
+
+  // 2026-10-01 — RevenueCat entitlement kontrolü (bkz. subscriptions/revenue-cat-client.ts).
+  // AYNI `.optional()` kararı: gerçek bir RevenueCat hesabı/anahtarı olmadan
+  // local dev'in boot'u bozulmamalı — tanımsızken RevenueCatClient her zaman
+  // `false` (abone değil) döner, ücretsiz günlük limit geçerli kalır.
+  REVENUECAT_SECRET_API_KEY: z.string().min(1).optional(),
+
+  // 2026-10-03 — günlük ücretsiz video limiti (paywall kapısı) için ana şalter.
+  // Varsayılan "false": mobilde satın alma akışı hazır olmadan canlıda limit
+  // uygulanmasın (bkz. subscriptions.service.ts). Faz B bitince "true" yapılır.
+  SUBSCRIPTION_GATE_ENABLED: z.enum(["true", "false"]).default("false"),
 });
 
 @Module({

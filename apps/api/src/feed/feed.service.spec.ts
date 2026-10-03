@@ -1,8 +1,9 @@
-import type { FeedQuiz, PlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
+import type { FeedItem, FeedQuiz, PlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
 import { decodeFeedCursor } from "./feed-cursor";
 import { FeedService } from "./feed.service";
 import type { PersonalizationService } from "../personalization/personalization.service";
 import type { QuizzesService } from "../quizzes/quizzes.service";
+import type { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import type { UsersService } from "../users/users.service";
 import type { VideosService } from "../videos/videos.service";
 import type { WordsService } from "../words/words.service";
@@ -93,6 +94,8 @@ type ServiceOverrides = {
   resolveVideosByIds?: (ids: string[]) => PlayableVideo[];
   resolveQuizzesByIds?: (ids: string[]) => FeedQuiz[];
   userExists?: boolean;
+  /** 2026-10-01 — ücretsiz günlük video limiti. Varsayılan: gated değil (mevcut testler etkilenmez). */
+  gated?: boolean;
   personalize?: (candidates: PlayableVideo[]) => PlayableVideo[];
   /**
    * Chunk 9 — WordsService.getVocabularyForVideos stub'ı. Çağrı argümanlarını
@@ -166,17 +169,24 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
 
   const configService = { getOrThrow: () => CURSOR_SECRET } as unknown as import("@nestjs/config").ConfigService;
 
-  return new FeedService(videosService, quizzesService, personalizationService, usersService, wordsService, configService);
+  const subscriptionsService = {
+    getPaywallGate: () => Promise.resolve({ gated: overrides.gated ?? false }),
+  } as unknown as SubscriptionsService;
+
+  return new FeedService(videosService, quizzesService, personalizationService, usersService, wordsService, subscriptionsService, configService);
 }
 
 function itemTypes(items: { type: string }[]): string[] {
   return items.map((item) => item.type);
 }
-function videoIds(items: ({ type: "video"; video: PlayableVideo } | { type: "quiz"; quiz: FeedQuiz })[]): string[] {
-  return items.filter((item): item is { type: "video"; video: PlayableVideo } => item.type === "video").map((item) => item.video.id);
+// 2026-10-01 — `FeedItem`'ın kendisi kullanılıyor (manuel re-declare DEĞİL):
+// `paywall` gibi gelecekteki yeni bir üye burada otomatik olarak kapsanır,
+// bu iki filtre fonksiyonu her yeni variant'ta elle güncellenmek zorunda kalmaz.
+function videoIds(items: FeedItem[]): string[] {
+  return items.filter((item): item is Extract<FeedItem, { type: "video" }> => item.type === "video").map((item) => item.video.id);
 }
-function quizIds(items: ({ type: "video"; video: PlayableVideo } | { type: "quiz"; quiz: FeedQuiz })[]): string[] {
-  return items.filter((item): item is { type: "quiz"; quiz: FeedQuiz } => item.type === "quiz").map((item) => item.quiz.id);
+function quizIds(items: FeedItem[]): string[] {
+  return items.filter((item): item is Extract<FeedItem, { type: "quiz" }> => item.type === "quiz").map((item) => item.quiz.id);
 }
 
 describe("FeedService.getFeed — session start (cursor yok)", () => {
@@ -535,6 +545,12 @@ describe("FeedService.getFeed — quiz placement invariant (video → segment �
     for (;;) {
       const page = await service.getFeed(userId, cursor);
       for (const item of page.items) {
+        // Bu describe bloğundaki testler hiç `gated: true` vermiyor (varsayılan
+        // false) — bir paywall item'ı burada ASLA görünmemeli, görünürse test
+        // kurgusu bozuk demektir.
+        if (item.type === "paywall") {
+          throw new Error("Test kurgusu bozuk: bu suite'te paywall item'ı beklenmiyor");
+        }
         flat.push(item.type === "video" ? { type: "video", id: item.video.id } : { type: "quiz", id: item.quiz.id });
       }
       if (!page.nextCursor) {
@@ -622,6 +638,42 @@ describe("FeedService.getFeed — quiz placement invariant (video → segment �
 });
 
 
+
+describe("FeedService.getFeed — ücretsiz günlük video limiti (paywall gate, 2026-10-01)", () => {
+  it("SubscriptionsService gated:true derse, TEK bir paywall item'ı döner, ranking/plan-resolve HİÇ çalışmaz", async () => {
+    const onGetQuizzesGroupedByVideoId = jest.fn();
+    const service = makeFeedService({ gated: true, onGetQuizzesGroupedByVideoId });
+
+    const page = await service.getFeed(TEST_USER_ID);
+
+    expect(page.items).toEqual([{ type: "paywall" }]);
+    expect(page.nextCursor).toBeNull();
+    // startSession'ın quiz-grouping sorgusu hiç tetiklenmediyse, ranking/plan-resolve
+    // gerçekten hiç çalışmamış demektir (gate en başta, startSession'dan ÖNCE durdu).
+    expect(onGetQuizzesGroupedByVideoId).not.toHaveBeenCalled();
+  });
+
+  it("gated:true, bir cursor'la devam edilirken de (continueSession'a hiç girmeden) aynı şekilde uygulanır", async () => {
+    // Önce gated:false ile normal bir session başlatıp bir cursor elde ediyoruz,
+    // sonra AYNI cursor'la, servisin gated:true döndüğü bir istek atıyoruz —
+    // continueSession'ın decode/verify adımlarına hiç girilmeden gate'in
+    // en başta devreye girdiğini doğruluyor.
+    const started = await makeFeedService({ gated: false }).getFeed(TEST_USER_ID);
+    expect(started.nextCursor).not.toBeNull();
+
+    const gatedService = makeFeedService({ gated: true });
+    const page = await gatedService.getFeed(TEST_USER_ID, started.nextCursor ?? undefined);
+
+    expect(page.items).toEqual([{ type: "paywall" }]);
+    expect(page.nextCursor).toBeNull();
+  });
+
+  it("gated:false iken davranış tamamen değişmeden devam eder (mevcut composition testleriyle aynı sonuç)", async () => {
+    const page = await makeFeedService({ gated: false }).getFeed(TEST_USER_ID);
+    expect(page.items).toHaveLength(12);
+    expect(itemTypes(page.items)).not.toContain("paywall");
+  });
+});
 
 describe("Animasyon bölümü", () => {
   const animation = (n: number): PlayableVideo => ({ ...makeVideo(n), category: "animation" });

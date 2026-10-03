@@ -42,6 +42,15 @@ export const publishDraftObjectSchema = z.object({
   topic: topicSchema,
   category: contentCategorySchema.optional(),
   attribution: videoAttributionSchema.nullable().optional(),
+  // "#rrggbb" — letterbox/pillarbox (contain) modunda gösterilen animasyon içeriği
+  // için önceden hesaplanmış arka plan rengi (bkz. shared-types videoSchema
+  // yorumu). Enrichment LLM'in ÜRETMEDİĞİ, içerik hazırlığında (ffmpeg kare
+  // ortalaması) elle eklenen bir alan — attribution ile AYNI konum/opsiyonellik.
+  backgroundColor: z
+    .string()
+    .regex(/^#[0-9a-f]{6}$/i)
+    .nullable()
+    .optional(),
   cefrLevel: cefrLevelSchema,
   segments: z.array(publishDraftSegmentSchema).min(1),
   vocabulary: z.array(enrichmentVocabularyItemSchema),

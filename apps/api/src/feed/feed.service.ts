@@ -12,6 +12,7 @@ import {
 } from "./feed-cursor";
 import { PersonalizationService } from "../personalization/personalization.service";
 import { QuizzesService } from "../quizzes/quizzes.service";
+import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { WordsService } from "../words/words.service";
@@ -74,6 +75,7 @@ export class FeedService {
     private readonly personalizationService: PersonalizationService,
     private readonly usersService: UsersService,
     private readonly wordsService: WordsService,
+    private readonly subscriptionsService: SubscriptionsService,
     configService: ConfigService,
   ) {
     this.cursorSecret = configService.getOrThrow<string>("FEED_CURSOR_SECRET");
@@ -90,6 +92,16 @@ export class FeedService {
     const userExists = await this.usersService.userExists(userId);
     if (!userExists) {
       throw new BadRequestException(`"${userId}", var olan bir kullanıcıya ait değil`);
+    }
+
+    // 2026-10-01 — ücretsiz günlük video limiti (bkz. subscriptions modülü).
+    // `startSession`/`continueSession`'a HİÇ girmeden, en başta kontrol edilir:
+    // kullanıcı zaten gated'se ne ranking (startSession) ne de frozen-plan
+    // resolve (continueSession/buildPage) çalışır — direkt tek bir paywall
+    // item'ı döner, session sona erer (nextCursor: null).
+    const gate = await this.subscriptionsService.getPaywallGate(userId);
+    if (gate.gated) {
+      return feedPageSchema.parse({ items: [{ type: "paywall" }], nextCursor: null });
     }
 
     // Boş string de "cursor yok" sayılır — query param'ın yanlışlıkla `?cursor=`

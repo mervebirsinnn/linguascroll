@@ -19,7 +19,11 @@ import { VideoAttributionSheet } from "./VideoAttributionSheet";
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
 
 // Alt kontrol ve altyazı aynı normal-flow dock içinde; tahmini yükseklikler birikmez.
-const VOCABULARY_PANEL_HEIGHT_RATIO = 0.34;
+// 2026-09-30 — 0.34'te bir sonraki kart ortadan kesiliyordu ve scroll göstergesi
+// kapalı olduğu için bu bug gibi görünüyordu (gerçek kullanıcı raporu). 0.40'a
+// çıkarmak + görünür scroll bar (aşağıdaki ScrollView) ikisini birden çözüyor:
+// hem daha fazla kart sığıyor hem de kaydırılabilir olduğu açıkça görünüyor.
+const VOCABULARY_PANEL_HEIGHT_RATIO = 0.4;
 
 type VideoFeedItemProps = {
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
@@ -98,6 +102,21 @@ export function VideoFeedItem({
     string | null
   >(null);
   const wasPlayingBeforeOpenRef = useRef(false);
+  /**
+   * Root cause fix — `player.playing`, sheet açılırken (handleSubtitleTap/
+   * handleVocabularyWordTap) `wasPlayingBeforeOpenRef`'i doldurmak için
+   * SENKRON olarak okunuyordu, ama native tarafta play()/pause()'un GERÇEKTEN
+   * uygulanması asenkron (native bridge) — bir video `isActive` olduğu için
+   * yeni play() edilmişse, `player.playing` bu senkron okuma anında henüz
+   * `false` dönebiliyordu. Sonuç: `wasPlayingBeforeOpenRef.current` yanlışlıkla
+   * `false` yazılıyor, sheet kapanınca `player.play()` hiç çağrılmıyor, video
+   * kalıcı paused kalıyor ("donma", timing'e bağlı olarak ARADA BİR).
+   * Çözüm: player'ın kendi `playingChange` event'inin (aşağıda, mevcut
+   * watchedMs listener'ı İÇİNDE) native-onaylı son değerini bu ref'te canlı
+   * tutup, sheet açılırken `player.playing` YERİNE bunu okumak — başka bir
+   * player lifecycle değişikliği YOK.
+   */
+  const isPlayingRef = useRef(player.playing);
 
   // Chunk 16 revizyon — bottom-sheet'in açık/kapalı durumu. Item'a özel, lokal
   // UI state: `useSavedWordIds`/`useVocabularyHint`'in aksine BİRDEN FAZLA
@@ -107,7 +126,7 @@ export function VideoFeedItem({
   const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
   const vocabularyPanelHeight = height * VOCABULARY_PANEL_HEIGHT_RATIO;
   function handleSubtitleTap(segment: TranscriptSegment): void {
-    wasPlayingBeforeOpenRef.current = player.playing;
+    wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
     setOpenSegment(segment);
   }
@@ -126,7 +145,7 @@ export function VideoFeedItem({
     word: VideoVocabularyItem,
     segment: TranscriptSegment,
   ): void {
-    wasPlayingBeforeOpenRef.current = player.playing;
+    wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
     setOpenVocabularyWord(word);
     setOpenVocabularySegmentId(segment.id);
@@ -151,6 +170,7 @@ export function VideoFeedItem({
   const playingSinceRef = useRef<number | null>(null);
 
   useEventListener(player, "playingChange", ({ isPlaying }) => {
+    isPlayingRef.current = isPlaying;
     if (isPlaying) {
       playingSinceRef.current = Date.now();
       return;
@@ -225,7 +245,14 @@ export function VideoFeedItem({
   }, [isActive, player, video.id, userId]);
 
   return (
-    <View style={[styles.container, { height, width }]}>
+    // 2026-09-30 — animasyon içeriği "contain" ile (kırpmadan) gösteriliyor, bu
+    // yüzden geniş ekran kaynak letterbox/pillarbox boşluk bırakıyor. O boşluk,
+    // sabit siyah yerine içerik hazırlığında (ffmpeg kare ortalaması, TEK
+    // SEFERLİK) hesaplanmış `video.backgroundColor` ile dolduruluyor — ikinci
+    // bir video/görsel katmanı YOK (performans kararı), sadece container'ın
+    // arka plan rengi. "cover" ile gösterilen genel içerikte backgroundColor
+    // hep null'dır (video zaten ekranı dolduruyor), bu yüzden davranış değişmez.
+    <View style={[styles.container, { height, width, backgroundColor: video.backgroundColor ?? "#000" }]}>
       <VideoView
         player={player}
         style={styles.video}
@@ -337,7 +364,11 @@ export function VideoFeedItem({
                   { maxHeight: vocabularyPanelHeight },
                 ]}
                 contentContainerStyle={styles.vocabularyListContent}
-                showsVerticalScrollIndicator={false}
+                // 2026-09-30 — kapalıyken kaydırılabilir olduğu hiç belli
+                // olmuyordu; alttaki kart ortadan kesilince bu bug gibi
+                // görünüyordu. Bilinçli olarak SADECE burada açık — altyazı
+                // scroll'u (yukarıda) nadiren taşıyor, göstergeye ihtiyacı yok.
+                showsVerticalScrollIndicator
               >
                 {video.vocabulary.map(({ word }) => {
                   // Backend'in bu occurrence için gömdüğü `saved` alanı BİLİNÇLİ OLARAK

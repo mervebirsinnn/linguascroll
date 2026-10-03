@@ -147,6 +147,28 @@ describe("applyLoadMoreError — hem loadMore hem refresh hatası için ortak yo
     });
   });
 
+  it("2026-10-01 — 429 (rate limit) de sunucu-yoğun mesajı gösterir — >=500 ile AYNI kategori", () => {
+    const before = successState({ isLoadingMore: true });
+    const after = applyLoadMoreError(before, new FeedFetchError("Feed isteği başarısız oldu: 429 Too Many Requests", 429));
+
+    expect(after).toEqual({
+      ...before,
+      isLoadingMore: false,
+      loadMoreError: "Sunucu şu an çok yoğun. Birkaç dakika sonra tekrar dene.",
+    });
+  });
+
+  it("2026-10-01 — timeout (isTimeout:true, status YOK) de sunucu-yoğun mesajı gösterir — 'internetini kontrol et' YANILTICI olurdu", () => {
+    const before = successState({ isLoadingMore: true });
+    const after = applyLoadMoreError(before, new FeedFetchError("Feed isteği zaman aşımına uğradı", undefined, true));
+
+    expect(after).toEqual({
+      ...before,
+      isLoadingMore: false,
+      loadMoreError: "Sunucu şu an çok yoğun. Birkaç dakika sonra tekrar dene.",
+    });
+  });
+
   it("4xx bir FeedFetchError sunucu-yoğun mesajını TETİKLEMEZ — genel bağlantı mesajına düşer", () => {
     const before = successState({ isLoadingMore: true });
     const after = applyLoadMoreError(before, new FeedFetchError("Feed isteği başarısız oldu: 400 Bad Request", 400));

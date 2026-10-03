@@ -6,13 +6,14 @@ import { evaluateContentQuality } from "../content-enrichment/content-quality-ga
 import { publishDraftSchema } from "../content-enrichment/publish-draft.schema";
 
 describe("Curated animation catalog", () => {
-  it("altı gerçek sahne, 18 altyazı ve yayınlanabilir kaynaklı içerik içerir", () => {
+  it("dokuz gerçek sahne (Sintel + Cosmos Laundromat), 33 altyazı ve yayınlanabilir kaynaklı içerik içerir", () => {
     const catalog = loadAnimationCatalog();
-    expect(catalog).toHaveLength(6);
-    expect(catalog.flatMap(entry => entry.draft.segments)).toHaveLength(18);
+    expect(catalog).toHaveLength(9);
+    expect(catalog.flatMap(entry => entry.draft.segments)).toHaveLength(33);
     for (const { draft } of catalog) {
       expect(evaluateContentQuality(draft).status).not.toBe("reject");
-      expect(draft.attribution?.license).toBe("CC BY 3.0");
+      // İki farklı film, iki farklı (ama ikisi de attribution zorunluluğunu karşılayan) lisans taşıyor.
+      expect(["CC BY 3.0", "CC BY-SA 3.0"]).toContain(draft.attribution?.license);
     }
   });
   it("kaynak/lisans bilgisi silinen animasyon yayın taslağını reddeder", () => {
@@ -26,7 +27,7 @@ describe("Curated animation catalog", () => {
     try {
       const file = path.join(dir, "catalog.json");
       fs.writeFileSync(file, JSON.stringify(catalog));
-      expect(() => loadAnimationCatalog(file)).toThrow();
+      expect(() => loadAnimationCatalog([file])).toThrow();
     } finally { fs.rmSync(dir, { recursive: true, force: true }); }
   });
 });

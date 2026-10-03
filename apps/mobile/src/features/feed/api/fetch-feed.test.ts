@@ -1,4 +1,4 @@
-import { fetchFeed } from "./fetch-feed";
+import { FeedFetchError, fetchFeed } from "./fetch-feed";
 
 /**
  * fetchFeed'in kendi guard'ı — undefined/null/boş string bir bug ile buraya kadar
@@ -122,5 +122,48 @@ describe("fetchFeed", () => {
     expect(fetchSpy).not.toHaveBeenCalled();
   });
 
+  // 2026-10-01 — gerçek bir gözden geçirme bulgusu: başarısız bir HTTP yanıtının
+  // FeedFetchError.status'e DOĞRU aktarıldığını doğrudan doğrulayan bir test
+  // yoktu (use-feed.test.ts sadece zaten üretilmiş bir FeedFetchError'ı
+  // kullanıyordu, fetchFeed'in KENDİSİNİN bunu doğru ürettiğini değil).
+  it("başarısız bir HTTP yanıtı, status'ü taşıyan bir FeedFetchError fırlatır (isTimeout: false)", async () => {
+    const userId = "00000000-0000-4000-8000-000000000001";
+    global.fetch = jest.fn().mockResolvedValue({ ok: false, status: 503, statusText: "Service Unavailable" }) as unknown as typeof fetch;
+
+    await expect(fetchFeed(userId)).rejects.toMatchObject(
+      expect.objectContaining({ status: 503, isTimeout: false }),
+    );
+  });
+
+  it("sunucu FETCH_TIMEOUT_MS içinde hiç yanıt vermezse, isTimeout:true olan (status'süz) bir FeedFetchError fırlatır", async () => {
+    jest.useFakeTimers();
+    try {
+      const userId = "00000000-0000-4000-8000-000000000001";
+      global.fetch = jest.fn((_input: unknown, init?: { signal?: AbortSignal }) => {
+        return new Promise((_resolve, reject) => {
+          init?.signal?.addEventListener("abort", () => {
+            const abortError = new Error("The operation was aborted");
+            abortError.name = "AbortError";
+            reject(abortError);
+          });
+        });
+      }) as unknown as typeof fetch;
+
+      const promise = fetchFeed(userId);
+      // fetchFeed kendi FETCH_TIMEOUT_MS'ini (15s) AŞMAYAN bir süre bekleyip
+      // timer'ı tetiklememeli — önce bunu doğruluyoruz (yanlış pozitif riski).
+      jest.advanceTimersByTime(14999);
+      await Promise.resolve();
+
+      jest.advanceTimersByTime(1);
+      const error = await promise.catch((e: unknown) => e);
+
+      expect(error).toBeInstanceOf(FeedFetchError);
+      expect((error as FeedFetchError).isTimeout).toBe(true);
+      expect((error as FeedFetchError).status).toBeUndefined();
+    } finally {
+      jest.useRealTimers();
+    }
+  });
 });
 

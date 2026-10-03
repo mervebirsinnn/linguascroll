@@ -7,5 +7,14 @@ import type { FeedItem } from "@linguascroll/shared-types";
  * katmak bunu da önlüyor.
  */
 export function getFeedItemKey(item: FeedItem): string {
-  return item.type === "video" ? `video:${item.video.id}` : `quiz:${item.quiz.id}`;
+  if (item.type === "video") {
+    return `video:${item.video.id}`;
+  }
+  if (item.type === "quiz") {
+    return `quiz:${item.quiz.id}`;
+  }
+  // 2026-10-01 — paywall item'ının payload'ı yok (id'si bile), ama bir
+  // session'da en fazla bir kez görünür (feed'in son item'ı, bkz.
+  // feed.service.ts) — sabit bir key yeterli, çakışma riski yok.
+  return "paywall";
 }

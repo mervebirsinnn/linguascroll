@@ -62,3 +62,86 @@ Yerel cihaz geliştirmesinde `--local` kullanılabilir; bu mod R2'ye yüklemez v
 Shared-types/API/mobile TypeScript kontrolleri, API build, 301 API birim testi ve 90 mobil test geçti. Android ve iOS Expo export başarılı; bunlar EAS binary build veya cihaz testi değildir. Altı gerçek MP4'ün codec/süre ve altyazı kontrolleri geçti. İzole PostgreSQL/PGlite testinde bütün migration'lar, altı içerik yayını, kaynak zorunluluğu, eski videonun general varsayılanı ve transaction rollback doğrulandı.
 
 Canlı veritabanı/R2 yayını ve mağaza/TestFlight dağıtımı bu değişikliğin geliştirme ortamında yapılmadı.
+
+## Cosmos Laundromat: First Cycle (2026-09-30 — 3/5 hazır, yayın bekliyor)
+
+Sintel'den farklı bir pipeline kullanıyor: kaynak kesitlerde diyalog zaten gömülü (ek seslendirme
+gerekmez), bu yüzden `prepare-animation-media.py` YERİNE genel STT + Gemini enrichment pipeline'ı
+(`apps/api/scripts/stt` → `content-enrichment/enrich-transcript.ts`) kullanıldı — tıpkı diğer orijinal
+içerik partileri (`a1-*`, `grammar-*`, `idiom-*` vb.) gibi. Fark: `category`/`attribution` alanları
+enrichment çıktısında hiç yok (o pipeline hiç lisanslı içerik üretmiyordu) — bu yüzden `enriched.json`
+elle bu iki alanla yamandı, sonra Sintel'inkiyle AYNI şekilde (`{sourceStartMs, title, draft}` dizisi)
+`content/animation/cosmos-laundromat.json`'a toplandı. `animation-catalog.ts`'in `loadAnimationCatalog`'u
+artık TEK bir sabit dosya değil, bir dosya listesi okuyor (`SINTEL_CATALOG_PATH` +
+`COSMOS_LAUNDROMAT_CATALOG_PATH`) — ikisi aynı `animation:publish`/`animation:check` komutuyla,
+aynı invariant'larla (benzersiz muxAssetId, zorunlu attribution, segment/süre tutarlılığı) yayınlanıyor.
+
+Ham 5 MP4 ve kullanıcının kendi lisans notu (`kaynak-lisans.json`, `OKU.txt`)
+`apps/api/scripts/stt/input/`'ta durur — bu klasör bilerek `.gitignore`'da (telif taşıyan video
+dosyaları hiç commit edilmez), bu yüzden lisans/atıf bilgisinin kalıcı, izlenen kopyası burada,
+`cosmos-laundromat-attribution.json`'da (şablon) ve artık gerçek `cosmos-laundromat.json`'da
+(uygulanmış hali) tutuluyor.
+
+**Kaynak ve lisans**: Cosmos Laundromat: First Cycle — Blender Foundation / Blender Institute.
+Yönetmen: Mathieu Auvray. [Wikimedia Commons kaynağı](https://commons.wikimedia.org/wiki/File:Cosmos_Laundromat_-_First_Cycle_-_Official_Blender_Foundation_release.webm),
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resmi proje sayfası
+([gooseberry.blender.org/license](https://gooseberry.blender.org/license/)) CC BY 3.0 belirtiyor;
+indirilen Wikimedia dosyası CC BY-SA 3.0 belirtiyor — daha sıkı (ShareAlike) şart takip edildi.
+Kesme, boyutlandırma (1280px, orijinal kadraj) ve H.264/AAC kodlama dışında değişiklik yok; orijinal
+İngilizce diyalog/müzik/efekt korunuyor. Mobilde atıf, her videonun sol üstündeki "{title} · {license}"
+rozetine dokununca açılan `VideoAttributionSheet`'te gösteriliyor — bu mekanizma `video.attribution`
+alanına göre JENERİK çalışıyor, Sintel'e özel değil, bu yüzden Cosmos Laundromat için ekstra UI kodu
+gerekmedi.
+
+**İçerik notu**: Film 13+ izleyici için tasarlanmıştır. Seçilen 5 kesit açılıştaki intihar girişimini
+ve küfürlü repliği içermez; bir klipte karakterin boynunda ip görülebilir (bkz. `OKU.txt`) — yayın
+öncesi bu kareyi gözden geçir.
+
+**ShareAlike (CC BY-SA) notu**: bu kesitlerin uyarlamalarını aynı veya uyumlu lisans altında
+paylaşmak, lisans ve atıf bağlantılarını içerik yanında göstermek (`VideoAttributionSheet` zaten
+bunu yapıyor), ve lisansın verdiği yeniden kullanım haklarını DRM veya ek kısıtlamayla
+engellememek gerekiyor. Uygulamanın geri kalan kaynak kodunun aynı lisansla açılması GEREKMİYOR —
+ShareAlike sadece bu türev videoların kendisini kapsıyor.
+
+### Durum
+
+- ✅ `cosmos-tanisma`, `cosmos-yalniz-kurt`, `cosmos-bir-dakika` — STT + Gemini enrichment tamam,
+  `category`/`attribution` yamalı, `content/animation/cosmos-laundromat.json`'a eklendi,
+  `public/media/cosmos-*.mp4`'e kopyalandı, `pnpm animation:check --acknowledge-needs-review` ile
+  doğrulandı (9/9 sahne — Sintel'in 6'sı + bu 3'ü — quality/kaynak/altyazı/medya kontrollerini geçti).
+- ⏳ `cosmos-urun-tanitimi`, `cosmos-nasil-calisir` — STT tamam (`scripts/stt/output/`'ta draft.json
+  hazır), Gemini enrichment'ı **günlük ücretsiz kota** (20 istek/gün) doldurduğu için bekliyor. Kota
+  yenilenince: `node dist/content-enrichment/enrich-transcript.js --content-id <id>`, sonra aynı elle
+  yama (category/attribution, bkz. `cosmos-laundromat-attribution.json`) ve `cosmos-laundromat.json`'a
+  ekleme adımları tekrarlanmalı.
+- Ayrıca `enrich-transcript.ts`'te gerçek bir bug bulunup düzeltildi: script `.env`'i hiç yüklemiyordu
+  (`publish-content.ts`'in aksine) — `import "dotenv/config"` eklendi.
+
+### Yeni: letterbox arka plan rengi (2026-09-30)
+
+"Animasyon" içeriği `contain` ile (kırpmadan) gösterildiği için geniş ekran kaynak dikey telefon
+ekranında üstte/altta boşluk bırakıyordu (sabit siyah). Her sahnenin `draft.backgroundColor`'ı
+(`#rrggbb`) artık ffmpeg ile kare ortalaması alınarak TEK SEFERLİK hesaplanıp katalog JSON'una
+yazılıyor; mobile bunu letterbox alanının arka planı olarak kullanıyor (bkz.
+`VideoFeedItem.tsx`, ikinci bir video/görsel katmanı YOK — sadece container rengi). Bu, yeni bir
+DB kolonu gerektirdi: `videos.background_color` (`drizzle/0010_strange_blockbuster.sql`, nullable,
+additive — veri kaybı riski yok).
+
+### Yayınlama (3 hazır Cosmos Laundromat klibi + Sintel'e renk backfill'i — production DB/R2, bunu SEN çalıştır)
+
+Bu repo'daki `.env` production'a değil yerel dev Postgres'e işaret ediyor — gerçek yayın için
+Render panelinden `DATABASE_URL`/`R2_*` değerlerini kendi terminaline geçirip aşağıdakini çalıştır
+(Sintel'de yaptığın gibi):
+
+```sh
+cd apps/api
+pnpm run build
+pnpm run db:migrate                                          # background_color kolonunu ekler
+node dist/animation/publish-animation.js --acknowledge-needs-review   # yeni: 3 Cosmos Laundromat klibi
+pnpm run animation:backfill-colors                            # zaten yayınlanmış Sintel satırlarına rengi yazar
+```
+
+Üçü de idempotent: migration zaten uygulanmışsa, `muxAssetId` zaten yayınlanmışsa veya
+`background_color` zaten doluysa ilgili adım/satır sessizce atlanır — bu üç komutu güvenle tekrar
+çalıştırabilirsin. Kalan 2 klip (Gemini kotası açılınca) hazırlanıp `cosmos-laundromat.json`'a
+eklendiğinde, sadece `animation:publish` adımı tekrar çalıştırılması yeterli.

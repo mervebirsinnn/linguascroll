@@ -10,6 +10,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.mervebirsin.looplish",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -31,6 +32,12 @@
           "project": "looplish-mobile"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4d8ec368-3e8d-4936-ba44-dcc4da3f8073"
+      }
+    },
+    "owner": "mervebbrsn"
   }
 }

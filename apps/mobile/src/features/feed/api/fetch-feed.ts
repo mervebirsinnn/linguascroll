@@ -12,11 +12,23 @@ export class FeedFetchError extends Error {
   constructor(
     message: string,
     readonly status?: number,
+    /** 2026-10-01 — sunucu HİÇ yanıt vermeyince (bkz. FETCH_TIMEOUT_MS) true. */
+    readonly isTimeout = false,
   ) {
     super(message);
     this.name = "FeedFetchError";
   }
 }
+
+/**
+ * 2026-10-01 — gerçek bir gözden geçirme bulgusu: `fetch()` önceden hiçbir
+ * timeout/abort taşımıyordu — sunucu TEPKİ VERMEDİĞİNDE (asılı kalan bir
+ * bağlantı, ör. yük altında) istek sonsuza kadar bekleyebiliyordu, "yükleniyor"
+ * ekranı asla sonlanmıyordu. 15 saniye, kullanıcıyı gereksiz bekletmeyecek
+ * kadar kısa ama normal bir mobil ağ gecikmesini yanlışlıkla timeout saymayacak
+ * kadar uzun bir sınır.
+ */
+const FETCH_TIMEOUT_MS = 15000;
 
 /**
  * GET /feed'i çağırır ve sonucu feedPageSchema ile doğrular. Bu doğrulama
@@ -56,7 +68,25 @@ export async function fetchFeed(userId: string, cursor?: string, preference?: Fe
     }
   }
 
-  const response = await fetch(`${API_BASE_URL}/feed?${params.toString()}`);
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+
+  let response: Response;
+  try {
+    response = await fetch(`${API_BASE_URL}/feed?${params.toString()}`, { signal: controller.signal });
+  } catch (error) {
+    // AbortController.abort() fetch'i bir "AbortError" ile reddettiriyor —
+    // bunu genel bir network hatasından (offline, DNS, vb.) AYIRT ediyoruz:
+    // ikisi kullanıcıya FARKLI bir mesaj hak ediyor (bkz. use-feed.ts'teki
+    // errorMessage() — timeout artık "sunucu yoğun" ile aynı kategoride,
+    // çünkü sunucunun hiç yanıt vermemesi de gerçek bir aşırı yük belirtisi).
+    if (error instanceof Error && error.name === "AbortError") {
+      throw new FeedFetchError("Feed isteği zaman aşımına uğradı (sunucu yanıt vermedi)", undefined, true);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
 
   if (!response.ok) {
     throw new FeedFetchError(`Feed isteği başarısız oldu: ${response.status} ${response.statusText}`, response.status);

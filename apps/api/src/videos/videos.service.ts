@@ -80,6 +80,17 @@ export class VideosService {
 
     await this.videoWatchEventsRepository.record({ userId, videoId, watchedMs });
   }
+
+  /**
+   * 2026-10-01 — ücretsiz günlük video limiti (bkz. subscriptions modülü) için.
+   * `VideoWatchEventsRepository` `VideosModule`'den export EDİLMİYOR (sadece
+   * `VideosService` export edilir, bkz. videos.module.ts) — bu, `UsersService`'in
+   * `userExists`'i UsersRepository'yi dışarı sızdırmadan sunması ile AYNI
+   * "feature'lar arası sınır repository değil, service seviyesinde" kararı.
+   */
+  async countDistinctVideosWatchedByUserSince(userId: string, since: Date, minWatchedMs: number): Promise<number> {
+    return this.videoWatchEventsRepository.countDistinctVideosWatchedSince(userId, since, minWatchedMs);
+  }
 }
 
 /**

@@ -1,0 +1,369 @@
+[
+  {
+    "sourceStartMs": 168000,
+    "title": "Tanışma",
+    "draft": {
+      "contentId": "cosmos-tanisma",
+      "muxAssetId": "local-cosmos-tanisma",
+      "sourceFile": "cosmos-tanisma.mp4",
+      "storageKey": null,
+      "durationMs": 21000,
+      "topic": "humor",
+      "cefrLevel": "A2",
+      "category": "animation",
+      "attribution": {
+        "title": "Cosmos Laundromat: First Cycle",
+        "credit": "Blender Foundation / Blender Institute · Yönetmen: Mathieu Auvray · (CC) Blender Foundation | gooseberry.blender.org",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cosmos_Laundromat_-_First_Cycle_-_Official_Blender_Foundation_release.webm",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Filmden kısa kesit seçimi, boyutlandırma (1280px genişlik, orijinal kadraj korunarak) ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 860,
+          "endMs": 4720,
+          "text": "My name is Victor. Hi.",
+          "englishExplanation": "The speaker introduces himself and says hello.",
+          "turkishExplanation": "Benim adım Victor. Merhaba."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 7840,
+          "endMs": 9120,
+          "text": "You are...",
+          "englishExplanation": "The speaker begins addressing the other character with a brief pause.",
+          "turkishExplanation": "Sen..."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 9120,
+          "endMs": 10260,
+          "text": "You are Frank.",
+          "englishExplanation": "The speaker states the name of the character he is addressing.",
+          "turkishExplanation": "Sen Frank'sin."
+        },
+        {
+          "ordinal": 4,
+          "startMs": 12120,
+          "endMs": 17160,
+          "text": "You are so much more than just a sheep, aren't you? Oh yeah?",
+          "englishExplanation": "The speaker suggests that Frank has depth beyond being an ordinary sheep, ending with a question tag and a playful reaction.",
+          "turkishExplanation": "Sen sadece bir koyundan çok daha fazlasısın, değil mi? Öyle mi?"
+        },
+        {
+          "ordinal": 5,
+          "startMs": 18440,
+          "endMs": 19920,
+          "text": "How would you know?",
+          "englishExplanation": "A rhetorical or skeptical question asking how the other could possibly know that.",
+          "turkishExplanation": "Nereden bileceksin ki?"
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "sheep",
+          "gloss": "koyun"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 4,
+          "type": "phrase",
+          "expression": "so much more than (just)...",
+          "englishExplanation": "Used to emphasize that someone or something has far greater value, complexity, or qualities than a basic label suggests.",
+          "turkishExplanation": "Birinin veya bir şeyin basit bir tanımdan ya da sıradan bir durumdan çok daha fazlası veya değerlisi olduğunu vurgulamak için kullanılır.",
+          "exampleEn": "This project is so much more than just a hobby.",
+          "exampleTr": "Bu proje sadece bir hobiden çok daha fazlası."
+        },
+        {
+          "segmentOrdinal": 5,
+          "type": "phrase",
+          "expression": "How would you know?",
+          "englishExplanation": "A conversational challenge used to express skepticism about how someone could possibly have information or insight about something.",
+          "turkishExplanation": "Karşıdakinin bir konuda bilgi sahibi olamayacağını ima ederek şüpheyle sorulan 'Sen nereden bileceksin ki?' kalıbı.",
+          "exampleEn": "You've never been there, so how would you know?",
+          "exampleTr": "Oraya hiç gitmedin ki, nereden bileceksin?"
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 4,
+        "question": "In segment 4, what does the speaker imply by saying Frank is \"so much more than just a sheep\"?",
+        "options": [
+          {
+            "text": "Frank has a unique personality beyond being an ordinary animal.",
+            "isCorrect": true
+          },
+          {
+            "text": "Frank is physically much larger and heavier than other sheep.",
+            "isCorrect": false
+          },
+          {
+            "text": "Frank belongs to an extremely rare and valuable sheep breed.",
+            "isCorrect": false
+          },
+          {
+            "text": "Frank requires much more food and daily care than normal.",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "learningPointExpressionNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": 4,
+            "message": "Learning point ifadesi (\"so much more than (just)...\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+          }
+        ]
+      },
+      "backgroundColor": "#2f323d"
+    }
+  },
+  {
+    "sourceStartMs": 189700,
+    "title": "Yalnız kurt",
+    "draft": {
+      "contentId": "cosmos-yalniz-kurt",
+      "muxAssetId": "local-cosmos-yalniz-kurt",
+      "sourceFile": "cosmos-yalniz-kurt.mp4",
+      "storageKey": null,
+      "durationMs": 22333,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Cosmos Laundromat: First Cycle",
+        "credit": "Blender Foundation / Blender Institute · Yönetmen: Mathieu Auvray · (CC) Blender Foundation | gooseberry.blender.org",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cosmos_Laundromat_-_First_Cycle_-_Official_Blender_Foundation_release.webm",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Filmden kısa kesit seçimi, boyutlandırma (1280px genişlik, orijinal kadraj korunarak) ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 0,
+          "endMs": 2680,
+          "text": "Look at you, you're an adventurer, Frank.",
+          "englishExplanation": "Remarking warmly that Frank behaves or looks like a daring explorer.",
+          "turkishExplanation": "Baksana sana, tam bir maceracısın, Frank."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 4100,
+          "endMs": 6740,
+          "text": "Just like me, you're a lone wolf.",
+          "englishExplanation": "Saying that Frank, just like the speaker, is an independent and solitary character.",
+          "turkishExplanation": "Tıpkı benim gibi, sen de yalnız bir kurtsun."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 8500,
+          "endMs": 11900,
+          "text": "Tell me, does one choose to be alone?",
+          "englishExplanation": "Posing a philosophical question about whether people actively decide to live in solitude.",
+          "turkishExplanation": "Söyle bana, insan yalnız olmayı kendi mi seçer?"
+        },
+        {
+          "ordinal": 4,
+          "startMs": 13040,
+          "endMs": 14320,
+          "text": "No, one doesn't.",
+          "englishExplanation": "Asserting that people do not deliberately choose loneliness.",
+          "turkishExplanation": "Hayır, seçmez."
+        },
+        {
+          "ordinal": 5,
+          "startMs": 15000,
+          "endMs": 17200,
+          "text": "One doesn't even choose to be a wolf.",
+          "englishExplanation": "Continuing the thought by stating that one does not even decide their own fundamental nature.",
+          "turkishExplanation": "İnsan kurt olmayı bile kendi seçmez."
+        },
+        {
+          "ordinal": 6,
+          "startMs": 19800,
+          "endMs": 20780,
+          "text": "Or does one?",
+          "englishExplanation": "Doubtfully reconsidering whether people actually might have a choice after all.",
+          "turkishExplanation": "Yoksa seçer mi?"
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "adventurer",
+          "gloss": "maceracı"
+        },
+        {
+          "lemma": "lone wolf",
+          "gloss": "yalnız kurt, kendi başına buyruk kimse"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 2,
+          "type": "phrase",
+          "expression": "lone wolf",
+          "englishExplanation": "An idiom used to describe an independent person who prefers doing things alone rather than being part of a group.",
+          "turkishExplanation": "Başkalarına bağımlı olmadan tek başına hareket etmeyi ve yaşamayı tercih eden kişileri tanımlayan bir deyim.",
+          "exampleEn": "He has always been a lone wolf who prefers working without a team.",
+          "exampleTr": "Her zaman bir ekip olmadan çalışmayı tercih eden yalnız bir kurt olmuştur."
+        },
+        {
+          "segmentOrdinal": 3,
+          "type": "grammar",
+          "expression": "generic pronoun 'one'",
+          "englishExplanation": "Using the pronoun 'one' as a formal or philosophical way to refer to any person or people in general.",
+          "turkishExplanation": "Resmi veya felsefi anlatımlarda genel olarak insanları ('insan', 'kişi') kastetmek için kullanılan üçüncü tekil zamir yapısı.",
+          "exampleEn": "One must be careful when walking alone at night.",
+          "exampleTr": "İnsan gece yalnız yürürken dikkatli olmalıdır."
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 2,
+        "question": "In segment 2, what does the phrase 'lone wolf' mean?",
+        "options": [
+          {
+            "text": "Someone who is independent and prefers being by themselves",
+            "isCorrect": true
+          },
+          {
+            "text": "Someone who is aggressive and dangerous toward others",
+            "isCorrect": false
+          },
+          {
+            "text": "Someone who is actively searching for a group to join",
+            "isCorrect": false
+          },
+          {
+            "text": "Someone who has lost their way in an unfamiliar environment",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "learningPointExpressionNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": 3,
+            "message": "Learning point ifadesi (\"generic pronoun 'one'\") segment 3'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+          }
+        ]
+      },
+      "backgroundColor": "#382924"
+    }
+  },
+  {
+    "sourceStartMs": 234500,
+    "title": "Bir dakika",
+    "draft": {
+      "contentId": "cosmos-bir-dakika",
+      "muxAssetId": "local-cosmos-bir-dakika",
+      "sourceFile": "cosmos-bir-dakika.mp4",
+      "storageKey": null,
+      "durationMs": 18500,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Cosmos Laundromat: First Cycle",
+        "credit": "Blender Foundation / Blender Institute · Yönetmen: Mathieu Auvray · (CC) Blender Foundation | gooseberry.blender.org",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cosmos_Laundromat_-_First_Cycle_-_Official_Blender_Foundation_release.webm",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Filmden kısa kesit seçimi, boyutlandırma (1280px genişlik, orijinal kadraj korunarak) ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      },
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 0,
+          "endMs": 2740,
+          "text": "Just give me one minute of your precious time.",
+          "englishExplanation": "A persuasive request asking the listener to spare just a single moment of their valuable time.",
+          "turkishExplanation": "Değerli vaktinden bana sadece bir dakikanı ayır."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 4260,
+          "endMs": 5340,
+          "text": "Precious time?",
+          "englishExplanation": "Questioning the description of their time as 'precious' with surprise or amusement.",
+          "turkishExplanation": "Değerli vakit mi?"
+        },
+        {
+          "ordinal": 3,
+          "startMs": 5960,
+          "endMs": 8920,
+          "text": "Yeah, just give me one minute.",
+          "englishExplanation": "Reiterating the request to have just one minute to talk.",
+          "turkishExplanation": "Evet, sadece bir dakikanı ver bana."
+        },
+        {
+          "ordinal": 4,
+          "startMs": 9520,
+          "endMs": 16020,
+          "text": "You would have one more minute, wouldn't you? Okay, half. Half of me.",
+          "englishExplanation": "Trying to persuade the listener with a tag question before immediately bargaining down to half.",
+          "turkishExplanation": "Bir dakikan daha olurdu, değil mi? Tamam, yarım olsun."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "precious",
+          "gloss": "değerli, kıymetli"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 4,
+          "type": "grammar",
+          "expression": "would ..., wouldn't you?",
+          "englishExplanation": "A tag question using the modal auxiliary 'would' to seek confirmation, agreement, or playfully persuade someone.",
+          "turkishExplanation": "Karşıdakinden onay almak veya onu ikna etmek amacıyla kullanılan 'olurdu, değil mi?' kalıbındaki soru takısı (tag question).",
+          "exampleEn": "You would help me if I asked, wouldn't you?",
+          "exampleTr": "Sorsaydım bana yardım ederdin, değil mi?"
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 1,
+        "question": "In segment 1, what does the speaker mean by the phrase 'precious time'?",
+        "options": [
+          {
+            "text": "Time that is treated as highly valuable and limited",
+            "isCorrect": true
+          },
+          {
+            "text": "A scheduled meeting that cannot be cancelled",
+            "isCorrect": false
+          },
+          {
+            "text": "Free time spent exclusively on relaxation",
+            "isCorrect": false
+          },
+          {
+            "text": "Extra minutes accumulated after working late",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "learningPointExpressionNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": 4,
+            "message": "Learning point ifadesi (\"would ..., wouldn't you?\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+          }
+        ]
+      },
+      "backgroundColor": "#332c2b"
+    }
+  }
+]

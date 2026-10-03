@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import { eq, sql } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
@@ -33,10 +34,14 @@ describe("VideoWatchEventsRepository / video_watch_events FK+index davranışı 
     return user.id;
   }
 
+  // 2026-10-01 — `muxAssetId` benzersiz OLMALI (videos_mux_asset_id_unique).
+  // Sabit bir değer önceden tek bir createVideo() çağrısı yapan testlerde
+  // sorun çıkarmıyordu; yeni ücretsiz-limit testleri AYNI test içinde birden
+  // fazla video oluşturduğu için randomUUID() ile her çağrıda benzersiz üretiliyor.
   async function createVideo(): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "test-mux-asset", topic: "travel", durationMs: 1000 })
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: `test-mux-asset-${randomUUID()}`, topic: "travel", durationMs: 1000 })
       .returning();
     if (!video) throw new Error("Beklenen video insert edilemedi");
     return video.id;
@@ -82,5 +87,59 @@ describe("VideoWatchEventsRepository / video_watch_events FK+index davranışı 
       sql`SELECT indexname FROM pg_indexes WHERE tablename = 'video_watch_events' AND indexname = 'video_watch_events_user_id_idx'`,
     );
     expect(result.rows).toHaveLength(1);
+  });
+
+  describe("countDistinctVideosWatchedSince (2026-10-01 — ücretsiz günlük video limiti)", () => {
+    it("aynı gün içinde izlenen FARKLI videoları sayar", async () => {
+      const userId = await createUser();
+      const videoA = await createVideo();
+      const videoB = await createVideo();
+      await repository.record({ userId, videoId: videoA, watchedMs: 5000 });
+      await repository.record({ userId, videoId: videoB, watchedMs: 5000 });
+
+      const count = await repository.countDistinctVideosWatchedSince(userId, new Date(0), 3000);
+      expect(count).toBe(2);
+    });
+
+    it("AYNI video birden fazla kez izlenirse (scroll-back) sadece BİR kez sayılır", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo();
+      await repository.record({ userId, videoId, watchedMs: 5000 });
+      await repository.record({ userId, videoId, watchedMs: 4000 });
+
+      const count = await repository.countDistinctVideosWatchedSince(userId, new Date(0), 3000);
+      expect(count).toBe(1);
+    });
+
+    it("minWatchedMs eşiğinin ALTINDA kalan bir exposure hiç sayılmaz (kısa scroll-geçişi)", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo();
+      await repository.record({ userId, videoId, watchedMs: 500 });
+
+      const count = await repository.countDistinctVideosWatchedSince(userId, new Date(0), 3000);
+      expect(count).toBe(0);
+    });
+
+    it("`since`'ten ÖNCEKİ (ör. dünkü) bir kayıt sayılmaz", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo();
+      const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000);
+      await db.insert(videoWatchEventsTable).values({ userId, videoId, watchedMs: 5000, createdAt: yesterday });
+
+      const startOfToday = new Date();
+      startOfToday.setUTCHours(0, 0, 0, 0);
+      const count = await repository.countDistinctVideosWatchedSince(userId, startOfToday, 3000);
+      expect(count).toBe(0);
+    });
+
+    it("başka bir kullanıcının kayıtları sayıma hiç karışmaz", async () => {
+      const userId = await createUser();
+      const otherUserId = await createUser();
+      const videoId = await createVideo();
+      await repository.record({ userId: otherUserId, videoId, watchedMs: 5000 });
+
+      const count = await repository.countDistinctVideosWatchedSince(userId, new Date(0), 3000);
+      expect(count).toBe(0);
+    });
   });
 });

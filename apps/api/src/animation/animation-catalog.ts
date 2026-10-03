@@ -4,16 +4,24 @@ import { z } from "zod";
 import { publishDraftSchema } from "../content-enrichment/publish-draft.schema";
 import { assertValidSegmentReferences } from "../content-enrichment/validate-segment-references";
 
-export const ANIMATION_CATALOG_PATH = path.resolve(__dirname, "../../content/animation/sintel.json");
+export const SINTEL_CATALOG_PATH = path.resolve(__dirname, "../../content/animation/sintel.json");
+// Cosmos Laundromat: First Cycle — CC BY-SA 3.0, bkz. content/animation/README.md'deki
+// "Cosmos Laundromat" bölümü. Sintel'den ayrı bir film/lisans olduğu için ayrı dosya;
+// loadAnimationCatalog ikisini TEK bir listeye birleştirip aynı invariant'larla (benzersiz
+// muxAssetId, zorunlu attribution, segment/süre tutarlılığı) doğruluyor.
+export const COSMOS_LAUNDROMAT_CATALOG_PATH = path.resolve(__dirname, "../../content/animation/cosmos-laundromat.json");
+const DEFAULT_CATALOG_PATHS: readonly string[] = [SINTEL_CATALOG_PATH, COSMOS_LAUNDROMAT_CATALOG_PATH];
 const catalogSchema = z.array(z.object({
   sourceStartMs: z.number().int().nonnegative(),
   title: z.string().min(1),
   draft: publishDraftSchema,
 })).min(1);
 
-export function loadAnimationCatalog(catalogPath = ANIMATION_CATALOG_PATH) {
-  const raw: unknown = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
-  const catalog = catalogSchema.parse(raw);
+export function loadAnimationCatalog(catalogPaths: readonly string[] = DEFAULT_CATALOG_PATHS) {
+  const catalog = catalogPaths.flatMap((catalogPath) => {
+    const raw: unknown = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
+    return catalogSchema.parse(raw);
+  });
   const identities = new Set<string>();
   for (const { draft } of catalog) {
     if (draft.category !== "animation" || !draft.attribution) throw new Error("Animasyon kategorisi ve kaynak bilgisi zorunlu.");

@@ -22,4 +22,8 @@ export class UsersService {
   async userExists(userId: string): Promise<boolean> {
     return this.usersRepository.existsById(userId);
   }
+
+  async getCreatedAt(userId: string): Promise<Date | null> {
+    return this.usersRepository.findCreatedAt(userId);
+  }
 }

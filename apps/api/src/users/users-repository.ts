@@ -25,4 +25,15 @@ export class UsersRepository {
     const [row] = await this.db.select({ id: usersTable.id }).from(usersTable).where(eq(usersTable.id, userId)).limit(1);
     return row !== undefined;
   }
+
+  /**
+   * 2026-10-01 — ücretsiz gün-1 kuralı (bkz. subscriptions modülü) için:
+   * kullanıcının hesabı NE ZAMAN açıldı. Var olmayan bir userId için `null`
+   * (çağıran zaten `userExists`/FK ile bu durumu başka yerde ele alıyor,
+   * burada ayrıca throw etmiyoruz — `existsById` ile aynı "sessiz not-found" stili).
+   */
+  async findCreatedAt(userId: string): Promise<Date | null> {
+    const [row] = await this.db.select({ createdAt: usersTable.createdAt }).from(usersTable).where(eq(usersTable.id, userId)).limit(1);
+    return row?.createdAt ?? null;
+  }
 }

@@ -112,7 +112,8 @@
       "quality": {
         "status": "pass",
         "issues": []
-      }
+      },
+      "backgroundColor": "#3f2010"
     }
   },
   {
@@ -199,7 +200,8 @@
             "message": "Transcript sadece 2 segment içeriyor — çok kısa/anlamsız olabilir."
           }
         ]
-      }
+      },
+      "backgroundColor": "#865943"
     }
   },
   {
@@ -299,7 +301,8 @@
       "quality": {
         "status": "pass",
         "issues": []
-      }
+      },
+      "backgroundColor": "#27150e"
     }
   },
   {
@@ -399,7 +402,8 @@
       "quality": {
         "status": "pass",
         "issues": []
-      }
+      },
+      "backgroundColor": "#25150f"
     }
   },
   {
@@ -470,7 +474,8 @@
             "message": "Transcript sadece 1 segment içeriyor — çok kısa/anlamsız olabilir."
           }
         ]
-      }
+      },
+      "backgroundColor": "#131f20"
     }
   },
   {
@@ -545,7 +550,8 @@
             "message": "Transcript sadece 1 segment içeriyor — çok kısa/anlamsız olabilir."
           }
         ]
-      }
+      },
+      "backgroundColor": "#9d764b"
     }
   }
 ]

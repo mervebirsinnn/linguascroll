@@ -14,6 +14,25 @@ export const COLD_START_TOPIC_ORDER: readonly Topic[] = ["travel", "lifestyle", 
 export const VIDEOS_PER_EXPLORATION = 5;
 
 /**
+ * Chunk — level proximity ranking (feed personalization audit'inin ardından).
+ * `COLD_START_TOPIC_ORDER`'la AYNI gerekçe: CEFR'i Zod enum'unun declaration
+ * order'ına ("accidental business policy") güvenerek değil, bu iş kararını
+ * burada, adıyla, görünür şekilde sıralı bir skala olarak tanımlıyoruz —
+ * `cefrLevelDistance` bu sırayı index farkı olarak kullanıyor.
+ */
+export const CEFR_LEVEL_ORDER: readonly CefrLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
+/**
+ * İki CEFR seviyesi arasındaki ordinal mesafe (|Δindex|) — resmi bir zorluk
+ * ağırlıklandırması DEĞİL, sadece "ne kadar yakın" için basit, doğrusal bir
+ * sıralama sinyali (kullanıcı kararı — pedagojik hassasiyet gerektirmiyor).
+ * 0 = tam eşleşme, skalanın uçları arasında (A1↔C2) en büyük değer olan 5.
+ */
+export function cefrLevelDistance(a: CefrLevel, b: CefrLevel): number {
+  return Math.abs(CEFR_LEVEL_ORDER.indexOf(a) - CEFR_LEVEL_ORDER.indexOf(b));
+}
+
+/**
  * Chunk 15 — onboarding'de seçilen bir topic'in SWRR ağırlığına eklenen sabit,
  * additive boost. `affinity + 1` smoothing'iyle AYNI ölçekte (1) — bilinçli:
  * gerçek watch-affinity SIFIRKEN bile tercih edilen bir topic'i 2x öne çıkarır
@@ -96,10 +115,14 @@ export function rankVideos(
 /**
  * video.id'ye göre stabil sıralanmış, topic'e göre gruplanmış candidate'ler.
  *
- * Chunk 15 — `preferredLevel` verilmişse (null değilse), AYNI topic içinde
- * o level'e eşit videolar ÖNCE gelir (ikincil sıralama anahtarı) — id sıralaması
- * hâlâ nihai, stabil tie-break olarak kalıyor. Hard filter DEĞİL: eşleşmeyen
- * level'deki videolar listeden ÇIKARILMIYOR, sadece geriye alınıyor.
+ * Chunk 15 (level proximity ranking'le güncellendi) — `preferredLevel`
+ * verilmişse (null değilse), AYNI topic içinde videolar `cefrLevelDistance`'a
+ * göre ARTAN sırada gelir: tam eşleşme (mesafe 0) önce, sonra en yakın
+ * seviyeler, en uzak seviyeler en sonda. Eşit mesafedeki videolar arasında
+ * (örn. preferredLevel=A2 iken A1 ve B1, ikisi de mesafe 1) id sıralaması
+ * hâlâ nihai, stabil tie-break olarak kalıyor. Hard filter DEĞİL: hiçbir
+ * video mesafesi nedeniyle listeden ÇIKARILMIYOR, sadece geriye alınıyor —
+ * bu ayrım bilinçli, kullanıcı kararı (feed personalization audit'i).
  */
 function groupByTopicSorted(candidates: PlayableVideo[], preferredLevel: CefrLevel | null): Map<Topic, PlayableVideo[]> {
   const byTopic = new Map<Topic, PlayableVideo[]>();
@@ -111,10 +134,9 @@ function groupByTopicSorted(candidates: PlayableVideo[], preferredLevel: CefrLev
   for (const list of byTopic.values()) {
     list.sort((a, b) => {
       if (preferredLevel) {
-        const aMatches = a.cefrLevel === preferredLevel;
-        const bMatches = b.cefrLevel === preferredLevel;
-        if (aMatches !== bMatches) {
-          return aMatches ? -1 : 1;
+        const distanceDiff = cefrLevelDistance(a.cefrLevel, preferredLevel) - cefrLevelDistance(b.cefrLevel, preferredLevel);
+        if (distanceDiff !== 0) {
+          return distanceDiff;
         }
       }
       return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;

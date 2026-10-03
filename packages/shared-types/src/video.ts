@@ -43,6 +43,18 @@ export const videoSchema = z.object({
   category: contentCategorySchema.optional(),
   attribution: videoAttributionSchema.nullable().optional(),
 
+  // "animasyon" içeriği letterbox/pillarbox ile (contain, kırpmadan) gösteriliyor —
+  // ekranı doldurmayan kısım siyah kalmasın diye, içerik hazırlanırken (ffmpeg ile
+  // kare ortalaması) TEK SEFERLİK hesaplanmış bir arka plan rengi. Runtime'da ikinci
+  // bir video/görsel katmanı YOK (performans kararı) — mobile bunu sadece `View`
+  // arka planı olarak kullanıyor. "cover" ile gösterilen genel içerikte hiç
+  // görünmüyor (video zaten ekranı dolduruyor), bu yüzden opsiyonel/nullable.
+  backgroundColor: z
+    .string()
+    .regex(/^#[0-9a-f]{6}$/i)
+    .nullable()
+    .optional(),
+
   // "playable" bir video için 0 süre domain olarak imkansız bir durum (Chunk 7
   // kararı) — .nonnegative() değil .positive(). DB'de aynı sıkılık CHECK ile
   // (videos.schema.ts) ayrıca zorlanıyor.

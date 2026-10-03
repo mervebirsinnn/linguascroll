@@ -15,6 +15,11 @@ import { feedQuizSchema } from "./feed-quiz";
 export const feedItemSchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("video"), video: feedPlayableVideoSchema }),
   z.object({ type: z.literal("quiz"), quiz: feedQuizSchema }),
+  // 2026-10-01 — ücretsiz günlük video limiti dolunca `FeedService` bu item'ı
+  // döner (bkz. feed.service.ts). Payload YOK: mobile kendi statik paywall
+  // UI'ını RevenueCat'in getOfferings() çağrısından besler, backend fiyat
+  // verisi taşımaz — sadece "burada dur" sinyali.
+  z.object({ type: z.literal("paywall") }),
 ]);
 
 export type FeedItem = z.infer<typeof feedItemSchema>;

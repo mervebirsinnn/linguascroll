@@ -59,7 +59,7 @@ export class PersonalizationService {
       return rankVideos(candidates, affinityByTopic, preference);
     }
 
-    const cacheKey = buildColdStartCacheKey(category, preference);
+    const cacheKey = buildColdStartCacheKey(category, preference, candidates);
     const cached = this.coldStartCache.get(cacheKey);
     const now = Date.now();
     if (cached && cached.expiresAt > now) {
@@ -73,15 +73,30 @@ export class PersonalizationService {
 }
 
 /**
- * Cold-start sonucu SADECE `candidates` (kategoriye göre zaten filtrelenmiş,
- * bkz. FeedService.startSession) + `preference.topics`/`preference.level`'a
- * bağlı (affinityByTopic her zaman boş — ayrıca bir cache-key bileşeni olmasına
+ * Cold-start sonucu `candidates` (kategoriye göre zaten filtrelenmiş, bkz.
+ * FeedService.startSession) + `preference.topics`/`preference.level`'a bağlı
+ * (affinityByTopic her zaman boş — ayrıca bir cache-key bileşeni olmasına
  * gerek yok). `topics` sırası anlamsız (bir Set) — key'in kararlı olması için
  * sıralanıyor, aksi halde AYNI seçim farklı sırayla gelince (örn. client'tan)
  * yanlışlıkla farklı cache key üretilip isabet oranı gereksiz düşerdi.
+ *
+ * 2026-10-01 — gerçek bug (bir e2e test koşumunda bulundu, bkz. git log):
+ * `candidates`'ın KENDİSİ cache key'e dahil DEĞİLDİ — sadece category/level/
+ * topics'e bakılıyordu. Aynı kombinasyona (ör. "general"/tercihsiz) farklı
+ * zamanlarda farklı bir aday kümesiyle (örn. yeni içerik yayınlandıktan sonra,
+ * ya da katalog hiç yokken) gelindiğinde, ESKİ aday kümesinden hesaplanmış
+ * sonuç TTL boyunca döndürülüyordu — bu "gecikmeli yansıma" (yukarıdaki
+ * COLD_START_CACHE_TTL_MS yorumunda kabul edilen ödünleşim) DEĞİL, doğrudan
+ * YANLIŞ bir sonuç (en uç hali: katalog boşken cache'lenen boş sonuç, içerik
+ * yayınlandıktan SONRA bile dönüyordu). Adayların id'lerinden türetilen bir
+ * fingerprint (sayı + sıralanmış id'lerin join'i) key'e eklenince, aday kümesi
+ * her değiştiğinde cache doğal olarak miss ediyor — gerçek performans
+ * gerekçesi (aynı "sığ" kataloğa art arda gelen cold-start istekleri) hâlâ
+ * korunuyor, sadece artık YANLIŞ bir eşleşme riski yok.
  */
-function buildColdStartCacheKey(category: ContentCategory, preference?: FeedPreferences): string {
+function buildColdStartCacheKey(category: ContentCategory, preference: FeedPreferences | undefined, candidates: readonly PlayableVideo[]): string {
   const level = preference?.level ?? "none";
   const topics = [...(preference?.topics ?? [])].sort().join(",");
-  return `${category}::${level}::${topics}`;
+  const candidateFingerprint = `${candidates.length}:${[...candidates.map((v) => v.id)].sort().join(",")}`;
+  return `${category}::${level}::${topics}::${candidateFingerprint}`;
 }

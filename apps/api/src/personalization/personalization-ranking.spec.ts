@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { CefrLevel, PlayableVideo, Topic } from "@linguascroll/shared-types";
-import { COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
+import { cefrLevelDistance, COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
 
 /**
  * rankVideos, DB/Nest/HTTP bilmeyen saf bir fonksiyon — bu yüzden bu testler hiçbir
@@ -248,5 +248,103 @@ describe("rankVideos — Chunk 15 preference (topic boost + level boost)", () =>
     expect(firstTen.filter((topic) => topic === "travel").length).toBeGreaterThan(
       firstTen.filter((topic) => topic === "dating").length,
     );
+  });
+});
+
+describe("cefrLevelDistance", () => {
+  it("skalanın iki ucu arasında (A1↔C2) en büyük mesafeyi (5) döner", () => {
+    expect(cefrLevelDistance("A1", "C2")).toBe(5);
+    expect(cefrLevelDistance("C2", "A1")).toBe(5); // simetrik
+  });
+
+  it("komşu seviyeler (A2↔B1) arasında mesafe 1'dir", () => {
+    expect(cefrLevelDistance("A2", "B1")).toBe(1);
+  });
+
+  it("bir seviyenin kendisiyle mesafesi 0'dır (tam eşleşme)", () => {
+    expect(cefrLevelDistance("B1", "B1")).toBe(0);
+  });
+});
+
+describe("rankVideos — level proximity (feed personalization audit sonrası)", () => {
+  it("tam eşleşen level (mesafe 0) topic içinde HER ZAMAN önce gelir", () => {
+    const candidates = [
+      makeVideo("v-b2", "travel", 1000, "B2"),
+      makeVideo("v-a1", "travel", 1000, "A2"),
+      makeVideo("v-exact", "travel", 1000, "B1"),
+    ];
+
+    const result = rankVideos(candidates, new Map(), { level: "B1", topics: [] });
+
+    expect(result[0]?.id).toBe("v-exact");
+  });
+
+  it("farklı CEFR mesafelerinde, id sırası TERS olsa bile YAKIN olan seviye önce gelir", () => {
+    // id'ler BİLEREK mesafe sırasının TERSİNE verildi (video-1 en uzak/C2,
+    // video-6 en yakın/A1) — sıralamanın id'ye değil distance'a göre olduğunu
+    // kanıtlamak için preferredLevel="A1" seçildi (tüm 6 seviye için AYRI,
+    // çakışmasız mesafe üretir: 0,1,2,3,4,5).
+    const candidates = [
+      makeVideo("video-1", "career", 1000, "C2"), // distance 5
+      makeVideo("video-2", "career", 1000, "C1"), // distance 4
+      makeVideo("video-3", "career", 1000, "B2"), // distance 3
+      makeVideo("video-4", "career", 1000, "B1"), // distance 2
+      makeVideo("video-5", "career", 1000, "A2"), // distance 1
+      makeVideo("video-6", "career", 1000, "A1"), // distance 0
+    ];
+
+    const result = rankVideos(candidates, new Map(), { level: "A1", topics: [] });
+
+    expect(result.map((v) => v.id)).toEqual(["video-6", "video-5", "video-4", "video-3", "video-2", "video-1"]);
+  });
+
+  it("eşit mesafede (preferredLevel=A2 iken A1 ve B1, ikisi de mesafe 1) mevcut id tie-break uygulanır", () => {
+    const candidates = [
+      makeVideo("v-z-b1", "humor", 1000, "B1"),
+      makeVideo("v-a-a1", "humor", 1000, "A1"),
+    ];
+
+    const result = rankVideos(candidates, new Map(), { level: "A2", topics: [] });
+
+    expect(result.map((v) => v.id)).toEqual(["v-a-a1", "v-z-b1"]); // id sırası: v-a-a1 < v-z-b1
+  });
+
+  it("preferredLevel=null iken sıralama SAF id sırasıdır (level'lar birbirinden çok farklı olsa bile)", () => {
+    const candidates = [
+      makeVideo("v-c", "lifestyle", 1000, "C2"),
+      makeVideo("v-a", "lifestyle", 1000, "A1"),
+      makeVideo("v-b", "lifestyle", 1000, "B1"),
+    ];
+
+    const result = rankVideos(candidates, new Map(), { level: null, topics: [] });
+
+    expect(result.map((v) => v.id)).toEqual(["v-a", "v-b", "v-c"]);
+  });
+
+  it("farklı preferredLevel değerleri topic SEÇİM SIKLIĞINI (SWRR) DEĞİŞTİRMEZ — sadece topic-içi video sırasını etkiler", () => {
+    const candidates = [
+      makeVideo("travel-c2", "travel", 1000, "C2"),
+      makeVideo("travel-a1", "travel", 1000, "A1"),
+      makeVideo("travel-b1", "travel", 1000, "B1"),
+      makeVideo("career-c2", "career", 1000, "C2"),
+      makeVideo("career-a1", "career", 1000, "A1"),
+      makeVideo("career-b1", "career", 1000, "B1"),
+    ];
+    const affinity = new Map<Topic, number>([["travel", 3]]); // weight(travel)=4, weight(career)=1 — eşit değil, ayırt edici
+
+    const withA1 = rankVideos(candidates, affinity, { level: "A1", topics: [] });
+    const withC2 = rankVideos(candidates, affinity, { level: "C2", topics: [] });
+    const withoutLevel = rankVideos(candidates, affinity, { level: null, topics: [] });
+
+    const topicSequence = (result: PlayableVideo[]) => result.map((v) => v.topic);
+
+    // Topic SEÇİM SIRASI (hangi topic ne zaman seçildi) preferredLevel'dan
+    // TAMAMEN bağımsız — üç çağrıda da AYNI.
+    expect(topicSequence(withA1)).toEqual(topicSequence(withoutLevel));
+    expect(topicSequence(withC2)).toEqual(topicSequence(withoutLevel));
+
+    // Ama topic-İÇİ video sırası preferredLevel'a göre GERÇEKTEN değişiyor
+    // (aksi halde bu test proximity'nin hiçbir şey yapmadığını gizlerdi).
+    expect(withA1.map((v) => v.id)).not.toEqual(withC2.map((v) => v.id));
   });
 });

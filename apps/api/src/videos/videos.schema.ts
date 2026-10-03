@@ -48,6 +48,10 @@ export const videosTable = pgTable(
     category: text("category").notNull().default("general"),
     // Yalnızca doğrulanmış VideoAttribution saklanır; ham provider metadata'sı değil.
     attribution: jsonb("attribution").$type<VideoAttribution>(),
+    // "#rrggbb" — letterbox/pillarbox (contain) modunda gösterilen içerik için
+    // önceden hesaplanmış arka plan rengi (bkz. shared-types videoSchema yorumu).
+    // NULLABLE: "cover" ile gösterilen genel içerikte hiç kullanılmıyor.
+    backgroundColor: text("background_color"),
     durationMs: integer("duration_ms").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },

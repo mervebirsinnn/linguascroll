@@ -223,6 +223,7 @@ export async function publishContent(db: Database, draft: PublishDraft): Promise
         topic: draft.topic,
         category: draft.category ?? "general",
         attribution: draft.attribution ?? null,
+        backgroundColor: draft.backgroundColor ?? null,
         durationMs: draft.durationMs,
       })
       .returning();

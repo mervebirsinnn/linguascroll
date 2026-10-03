@@ -17,10 +17,14 @@
   },
   "devDependencies": {
     "@sentry/cli": "3.8.0",
+    "@testing-library/react-native": "^14.0.1",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.14.10",
     "@types/react": "~19.2.2",
+    "babel-preset-expo": "~14.0.6",
     "jest": "^29.7.0",
+    "jest-expo": "~57.0.5",
+    "react-test-renderer": "19.2.0",
     "ts-jest": "^29.2.5",
     "typescript": "~6.0.3"
   },
@@ -32,7 +36,8 @@
     "web": "expo start --web --port 8082",
     "typecheck": "tsc --noEmit",
     "typecheck:test": "tsc -p tsconfig.jest.json --noEmit",
-    "test": "jest"
+    "test": "jest",
+    "eas-build-post-install": "pnpm --filter @linguascroll/shared-types build"
   },
   "private": true
 }

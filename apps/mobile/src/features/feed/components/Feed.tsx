@@ -219,9 +219,17 @@ function FeedContent({
     // errorMessage()) — ham teknik metin ASLA buraya kadar gelmiyor, bu yüzden
     // burada sabit bir string yerine doğrudan gösterilebiliyor (sunucu-yoğun
     // ile bağlantı-sorunu mesajları artık burada da doğru ayrışıyor).
+    // 2026-10-01 — gerçek bulgu: bu ekranda retry YOKTU, kullanıcı uygulamayı
+    // kapatıp açmak zorunda kalıyordu (footer'daki loadMore/refresh hatasında
+    // zaten vardı, sadece İLK yükleme burada eksikti). `handleRefresh` zaten
+    // var olan, aşağıdaki boş-liste durumuyla AYNI fonksiyon — cursor'sız yeni
+    // bir session dener.
     return (
       <View style={styles.centered}>
         <Text style={styles.message}>{feedState.message}</Text>
+        <Pressable onPress={handleRefresh} accessibilityRole="button" style={styles.categoryButton}>
+          <Text style={styles.categoryText}>Tekrar dene</Text>
+        </Pressable>
       </View>
     );
   }
@@ -281,15 +289,29 @@ function FeedContent({
               />
             );
           }
-          // Quiz item'lar isActive'e tepki vermiyor — video gibi play/pause'a
-          // ihtiyaçları yok, statik render Chunk 5 kapsamında yeterli.
+          if (item.type === "quiz") {
+            // Quiz item'lar isActive'e tepki vermiyor — video gibi play/pause'a
+            // ihtiyaçları yok, statik render Chunk 5 kapsamında yeterli.
+            return (
+              <QuizFeedItem
+                quiz={item.quiz}
+                height={height}
+                width={width}
+                userId={userId}
+              />
+            );
+          }
+          // 2026-10-01 — ücretsiz günlük limit dolunca backend'in döndürdüğü
+          // TERMİNAL item (bkz. feed.service.ts, nextCursor hep null gelir).
+          // Bu GEÇİCİ bir yer tutucu — gerçek satın alma akışı (RevenueCat SDK,
+          // paket listesi) ayrı bir iş; backend gate'i (abonelik olmayan + 10+
+          // video izlemiş kullanıcılar) şu an gerçekten devrede, bu yüzden
+          // kullanıcıya ASLA kırık bir ekran göstermemek için dürüst, işlevsiz
+          // olmayan bir mesaj yeterli — var olmayan bir "satın al" butonu YOK.
           return (
-            <QuizFeedItem
-              quiz={item.quiz}
-              height={height}
-              width={width}
-              userId={userId}
-            />
+            <View style={[styles.centered, { height, width }]}>
+              <Text style={styles.message}>Bugünkü ücretsiz video hakkın doldu. Yarın tekrar gel!</Text>
+            </View>
           );
         }}
         pagingEnabled
