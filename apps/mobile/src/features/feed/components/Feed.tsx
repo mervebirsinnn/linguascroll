@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import {
   FlatList,
+  Image,
   Pressable,
   StyleSheet,
   Text,
@@ -20,6 +21,10 @@ import { FeedListFooter } from "./FeedListFooter";
 import { getFeedItemKey } from "./get-feed-item-key";
 import { QuizFeedItem } from "./QuizFeedItem";
 import { VideoFeedItem } from "./VideoFeedItem";
+
+// looplish.app'in favicon.svg'siyle AYNI logo (L harfi + oynat üçgeni). react-native-svg
+// bağımlılığı eklememek için PNG olarak üretilmiş (bkz. assets/brand-mark.png).
+const brandMarkImage = require("../../../../assets/brand-mark.png") as number;
 
 // %90'ı ekranda olan öğe "aktif" kabul edilir. FlatList, bu prop'un render'lar
 // arasında referans olarak sabit kalmasını bekler — bu yüzden useRef içinde tutuluyor.
@@ -76,9 +81,7 @@ export function Feed(props: FeedProps) {
       <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
         <View style={styles.headerRow}>
           <View style={styles.brandGroup}>
-            <View style={styles.brandMark}>
-              <Text style={styles.brandMarkText}>↻</Text>
-            </View>
+            <Image source={brandMarkImage} style={styles.brandMark} accessibilityLabel="Looplish" />
             <Text style={styles.brand}>Looplish</Text>
           </View>
           <Pressable
@@ -377,18 +380,8 @@ const styles = StyleSheet.create({
   },
   brandGroup: { flexDirection: "row", alignItems: "center", gap: 8 },
   brandMark: {
-    width: 32,
-    height: 32,
-    borderRadius: 12,
-    backgroundColor: "#bca7ff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  brandMarkText: {
-    color: "#171221",
-    fontSize: 26,
-    fontWeight: "700",
-    includeFontPadding: false,
+    width: 34,
+    height: 34,
   },
   brand: {
     color: "#f5f4f9",
