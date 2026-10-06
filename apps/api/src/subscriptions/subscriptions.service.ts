@@ -1,12 +1,15 @@
 import { Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { RevenueCatClient } from "./revenue-cat-client";
 
-/** Hesap açıldıktan sonraki ilk 24 saat tamamen ücretsiz (alışkanlık oluşsun diye) — kullanıcı kararı. */
-const FIRST_DAY_FREE_MS = 24 * 60 * 60 * 1000;
-/** 2. günden itibaren, takvim günü (UTC) başına ücretsiz farklı video sayısı. */
+/**
+ * Takvim günü (UTC) başına ücretsiz farklı video sayısı — hesabın ilk gününden
+ * itibaren, her gün yenilenir. 2026-10-03 — "ilk gün tamamen ücretsiz" kuralı
+ * kaldırıldı (kullanıcı kararı): ücretsiz katman günde 10 video, sınıra gelince
+ * paywall'da 7 günlük deneme teklifi çıkar (deneme Play Console'da aboneliğin
+ * teklifi olarak tanımlanır, backend'de ayrı mantık yok).
+ */
 const DAILY_FREE_VIDEO_CAP = 10;
 /**
  * Bir video, bu süreden (ms) az izlenmişse ücretsiz hakkı YAKMAZ — kısa bir
@@ -23,7 +26,7 @@ type CacheEntry = { isSubscribed: boolean; expiresAt: number };
 /**
  * 2026-10-01 — ücretsiz günlük video limiti + RevenueCat entitlement kontrolünün
  * TEK karar noktası. `FeedService` sadece `getPaywallGate(userId)`'i çağırır,
- * gün-1-ücretsiz/günlük-sayaç/entitlement mantığının HİÇBİRİNİ bilmez (aynı
+ * günlük-sayaç/entitlement mantığının HİÇBİRİNİ bilmez (aynı
  * "policy tek bir service'te yaşar" deseni — bkz. PersonalizationService'in
  * ranking'i FeedService'ten gizlemesi).
  *
@@ -39,7 +42,6 @@ export class SubscriptionsService {
   private readonly gateEnabled: boolean;
 
   constructor(
-    private readonly usersService: UsersService,
     private readonly videosService: VideosService,
     private readonly revenueCatClient: RevenueCatClient,
     configService: ConfigService,
@@ -55,19 +57,6 @@ export class SubscriptionsService {
     // SUBSCRIPTION_GATE_ENABLED=true ile açılır. Kapalıyken ne DB sayımı ne de
     // RevenueCat çağrısı yapılır.
     if (!this.gateEnabled) {
-      return { gated: false };
-    }
-
-    const createdAt = await this.usersService.getCreatedAt(userId);
-    // `createdAt` yoksa (var olmayan userId) FeedService zaten `userExists`'i
-    // bu noktadan ÖNCE kontrol etmiş oluyor — buraya teorik olarak hiç
-    // girilmemeli, yine de fail-safe: gate uygulanmaz (FeedService'in kendi
-    // 400'ü zaten devreye girecek).
-    if (!createdAt) {
-      return { gated: false };
-    }
-
-    if (Date.now() - createdAt.getTime() < FIRST_DAY_FREE_MS) {
       return { gated: false };
     }
 
