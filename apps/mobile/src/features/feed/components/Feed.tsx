@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FlatList, Pressable, StyleSheet, Text, View, useWindowDimensions, type ViewToken } from "react-native";
+import { FlatList, Image, Pressable, StyleSheet, Text, View, useWindowDimensions, type ViewToken } from "react-native";
 import type { ContentCategory, FeedItem, FeedPreferences } from "@linguascroll/shared-types";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFeed } from "../hooks/use-feed";
@@ -35,7 +35,10 @@ export function Feed(props: FeedProps) {
     <View style={styles.root}>
       <View style={[styles.header, { height: headerHeight, paddingTop: insets.top + 8 }]}>
         <View style={styles.headerRow}>
-          <Text style={styles.brand}>Looplish</Text>
+          <View style={styles.brandGroup}>
+            <Image source={require("../../../../assets/icon.png")} style={styles.brandLogo} accessibilityIgnoresInvertColors accessible={false} />
+            <Text style={styles.brand}>Looplish</Text>
+          </View>
           <Pressable style={styles.memoryButton} onPress={props.onOpenMemory} accessibilityRole="button">
             <Text style={styles.memoryButtonText}>📚 Kelimelerim</Text>
           </Pressable>
@@ -220,6 +223,8 @@ const styles = StyleSheet.create({
   },
   header: { paddingHorizontal: 16, backgroundColor: "#111116", gap: 10 },
   headerRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", height: 34 },
+  brandGroup: { flexDirection: "row", alignItems: "center", gap: 8 },
+  brandLogo: { width: 34, height: 34, borderRadius: 9 },
   brand: { color: "#d7c5ff", fontSize: 21, fontWeight: "700" },
   categoryRow: { flexDirection: "row", gap: 8 },
   categoryButton: { borderRadius: 8, paddingHorizontal: 18, paddingVertical: 8, backgroundColor: "#24212d" },
