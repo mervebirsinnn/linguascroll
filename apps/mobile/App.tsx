@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as Sentry from '@sentry/react-native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
@@ -8,6 +8,7 @@ import { useAnonymousUserId } from './src/features/identity/use-anonymous-user-i
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
+import { initializePurchases } from './src/features/subscription/purchases-gateway';
 
 type AppMode = 'feed' | 'memory';
 
@@ -27,6 +28,18 @@ function App() {
   // DEĞİL: tek bir useState anahtarı. Feed birincil ürün olarak kalıyor —
   // Memory SADECE Feed'deki açık bir kullanıcı eylemiyle açılıyor.
   const [mode, setMode] = useState<AppMode>('feed');
+
+  // RevenueCat'in appUserID'si, backend'in entitlement sorgusunda kullandığı anonim
+  // userId ile AYNI olmalı — bu yüzden identity hazır olunca (ve sadece o zaman)
+  // yapılandırılıyor. Anahtar tanımsızsa (EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY) sessizce
+  // atlanır: satın alma kapalı kalır, uygulamanın geri kalanı etkilenmez.
+  const identityUserId = identity.status === 'success' ? identity.userId : null;
+  useEffect(() => {
+    if (identityUserId === null) return;
+    initializePurchases(identityUserId).catch((error: unknown) => {
+      Sentry.captureException(error);
+    });
+  }, [identityUserId]);
 
   return (
     // bottom-sheet-inset.ts'teki useAndroidBottomSheetNavInset() (ve dolayısıyla

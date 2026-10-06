@@ -18,8 +18,15 @@ const DAILY_FREE_VIDEO_CAP = 10;
  * karmaşıklık, bkz. plan) — sabit, basit bir saniye eşiği yeterli.
  */
 const MIN_WATCH_MS_TO_COUNT = 3000;
-/** RevenueCat entitlement kontrolünün önbelleklendiği süre — `PersonalizationService`'teki `COLD_START_CACHE_TTL_MS` (personalization.service.ts) ile AYNI değer/desen. */
-const SUBSCRIPTION_CACHE_TTL_MS = 5 * 60 * 1000;
+/** "Abone" sonucunun önbelleklendiği süre — `PersonalizationService`'teki `COLD_START_CACHE_TTL_MS` ile AYNI değer/desen. */
+const SUBSCRIBED_CACHE_TTL_MS = 5 * 60 * 1000;
+/**
+ * "Abone DEĞİL" sonucu ÇOK daha kısa önbelleklenir: kullanıcı paywall'da az önce satın aldıysa
+ * (mobil feed'i hemen yeniliyor) 5 dakika boyunca hâlâ "abone değil" görünüp kilitli kalmamalı.
+ * RevenueCat hatasında dönen fail-closed `false` de bu kısa süreyle önbelleğe girer — geçici bir
+ * RevenueCat kesintisi kullanıcıyı uzun süre kilitlemez.
+ */
+const NOT_SUBSCRIBED_CACHE_TTL_MS = 15 * 1000;
 
 type CacheEntry = { isSubscribed: boolean; expiresAt: number };
 
@@ -79,7 +86,10 @@ export class SubscriptionsService {
     }
 
     const isSubscribed = await this.revenueCatClient.checkEntitlement(userId);
-    this.subscriptionCache.set(userId, { isSubscribed, expiresAt: now + SUBSCRIPTION_CACHE_TTL_MS });
+    this.subscriptionCache.set(userId, {
+      isSubscribed,
+      expiresAt: now + (isSubscribed ? SUBSCRIBED_CACHE_TTL_MS : NOT_SUBSCRIBED_CACHE_TTL_MS),
+    });
     return isSubscribed;
   }
 }

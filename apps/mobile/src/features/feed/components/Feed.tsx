@@ -17,6 +17,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
 import { useVocabularyHint } from "../hooks/use-vocabulary-hint";
+import { PaywallFeedItem } from "../../subscription/PaywallFeedItem";
 import { FeedListFooter } from "./FeedListFooter";
 import { getFeedItemKey } from "./get-feed-item-key";
 import { QuizFeedItem } from "./QuizFeedItem";
@@ -304,18 +305,10 @@ function FeedContent({
               />
             );
           }
-          // 2026-10-01 — ücretsiz günlük limit dolunca backend'in döndürdüğü
-          // TERMİNAL item (bkz. feed.service.ts, nextCursor hep null gelir).
-          // Bu GEÇİCİ bir yer tutucu — gerçek satın alma akışı (RevenueCat SDK,
-          // paket listesi) ayrı bir iş; backend gate'i (abonelik olmayan + 10+
-          // video izlemiş kullanıcılar) şu an gerçekten devrede, bu yüzden
-          // kullanıcıya ASLA kırık bir ekran göstermemek için dürüst, işlevsiz
-          // olmayan bir mesaj yeterli — var olmayan bir "satın al" butonu YOK.
-          return (
-            <View style={[styles.centered, { height, width }]}>
-              <Text style={styles.message}>Bugünkü ücretsiz video hakkın doldu. Yarın tekrar gel!</Text>
-            </View>
-          );
+          // Ücretsiz günlük limit dolunca backend'in döndürdüğü TERMİNAL item (bkz.
+          // feed.service.ts, nextCursor hep null). Satın alma/geri yükleme aktif bir
+          // abonelik verince feed yenilenir: backend'in kapısı o kullanıcı için artık açık.
+          return <PaywallFeedItem height={height} width={width} onUnlocked={handleRefresh} />;
         }}
         pagingEnabled
         showsVerticalScrollIndicator={false}

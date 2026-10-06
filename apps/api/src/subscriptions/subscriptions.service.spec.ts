@@ -53,6 +53,33 @@ describe("SubscriptionsService.getPaywallGate", () => {
     expect((await service.getPaywallGate(USER_ID)).gated).toBe(false);
   });
 
+  it("'abone DEĞİL' sonucu kısa süre (15s) önbelleklenir: satın alan kullanıcı uzun süre kilitli kalmaz, 'abone' ise 5 dk önbellekte kalır", async () => {
+    const realNow = Date.now();
+    const nowSpy = jest.spyOn(Date, "now");
+    try {
+      nowSpy.mockReturnValue(realNow);
+      const notSubscribedChecks = jest.fn();
+      const notSubscribed = makeService({ isSubscribed: false, watchedToday: 100, onCheckEntitlement: notSubscribedChecks });
+      await notSubscribed.getPaywallGate(USER_ID);
+      nowSpy.mockReturnValue(realNow + 10_000);
+      await notSubscribed.getPaywallGate(USER_ID);
+      expect(notSubscribedChecks).toHaveBeenCalledTimes(1); // 10s: hâlâ önbellekte
+      nowSpy.mockReturnValue(realNow + 16_000);
+      await notSubscribed.getPaywallGate(USER_ID);
+      expect(notSubscribedChecks).toHaveBeenCalledTimes(2); // 16s: süre doldu, yeniden sorgulandı
+
+      nowSpy.mockReturnValue(realNow);
+      const subscribedChecks = jest.fn();
+      const subscribed = makeService({ isSubscribed: true, onCheckEntitlement: subscribedChecks });
+      await subscribed.getPaywallGate(USER_ID);
+      nowSpy.mockReturnValue(realNow + 60_000);
+      await subscribed.getPaywallGate(USER_ID);
+      expect(subscribedChecks).toHaveBeenCalledTimes(1); // 60s: abone sonucu hâlâ önbellekte
+    } finally {
+      nowSpy.mockRestore();
+    }
+  });
+
   it("RevenueCat entitlement kontrolü, AYNI userId için kısa sürede tekrar çağrılmaz (cache)", async () => {
     const onCheckEntitlement = jest.fn();
     const service = makeService({ isSubscribed: true, onCheckEntitlement });
