@@ -375,6 +375,7 @@ const styles = StyleSheet.create({
   brandMark: {
     width: 34,
     height: 34,
+    borderRadius: 9,
   },
   brand: {
     color: "#f5f4f9",
