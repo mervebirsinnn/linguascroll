@@ -4,16 +4,24 @@ import { z } from "zod";
 import { publishDraftSchema } from "../content-enrichment/publish-draft.schema";
 import { assertValidSegmentReferences } from "../content-enrichment/validate-segment-references";
 
-export const ANIMATION_CATALOG_PATH = path.resolve(__dirname, "../../content/animation/sintel.json");
+export const ANIMATION_CATALOG_DIR = path.resolve(__dirname, "../../content/animation");
 const catalogSchema = z.array(z.object({
   sourceStartMs: z.number().int().nonnegative(),
   title: z.string().min(1),
   draft: publishDraftSchema,
 })).min(1);
 
-export function loadAnimationCatalog(catalogPath = ANIMATION_CATALOG_PATH) {
-  const raw: unknown = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
-  const catalog = catalogSchema.parse(raw);
+export function loadAnimationCatalog(catalogPath = ANIMATION_CATALOG_DIR) {
+  const catalogFiles = fs.statSync(catalogPath).isDirectory()
+    ? fs.readdirSync(catalogPath)
+      .filter((filename) => filename.endsWith(".json"))
+      .sort()
+      .map((filename) => path.join(catalogPath, filename))
+    : [catalogPath];
+  const catalog = catalogFiles.flatMap((filename) => {
+    const raw: unknown = JSON.parse(fs.readFileSync(filename, "utf8"));
+    return catalogSchema.parse(raw);
+  });
   const identities = new Set<string>();
   for (const { draft } of catalog) {
     if (draft.category !== "animation" || !draft.attribution) throw new Error("Animasyon kategorisi ve kaynak bilgisi zorunlu.");

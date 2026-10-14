@@ -25,6 +25,7 @@
     "loadtest:playback": "k6 run scripts/load-test/scenarios/playback-smoke.js",
     "loadtest:warm": "k6 run scripts/load-test/scenarios/warm-baseline.js",
     "animation:prepare": "python scripts/animation/prepare-animation-media.py",
+    "animation:prepare:sprite-fright": "python scripts/animation/prepare-sprite-fright-media.py",
     "animation:check": "node dist/animation/publish-animation.js --check",
     "animation:publish": "node dist/animation/publish-animation.js"
   },

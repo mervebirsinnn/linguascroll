@@ -10,12 +10,13 @@ import { Pool } from "pg";
 import { R2StorageService } from "../content-admin/r2-storage.service";
 import { assertPassesQualityGate, copyMediaFile, publishContent, resolveMediaDestination } from "../content-enrichment/publish-content";
 import { videosTable } from "../videos/videos.schema";
-import { loadAnimationCatalog } from "./animation-catalog";
+import { ANIMATION_CATALOG_DIR, loadAnimationCatalog } from "./animation-catalog";
 
 const API_ROOT = path.resolve(__dirname, "../..");
 
 export function parseAnimationArgs(argv: readonly string[]) {
   let mediaDir = path.join(API_ROOT, "public/media");
+  let catalogPath = ANIMATION_CATALOG_DIR;
   let checkOnly = false, local = false, acknowledgeNeedsReview = false;
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
@@ -23,12 +24,18 @@ export function parseAnimationArgs(argv: readonly string[]) {
       const value = argv[++i];
       if (!value || value.startsWith("--")) throw new Error("--media-dir bir dosya yolu gerektirir.");
       mediaDir = path.resolve(value);
+    } else if (arg === "--catalog") {
+      const value = argv[++i];
+      if (!value || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value)) {
+        throw new Error("--catalog yalnızca küçük harf, rakam ve tire içeren bir katalog adı gerektirir.");
+      }
+      catalogPath = path.join(ANIMATION_CATALOG_DIR, `${value}.json`);
     } else if (arg === "--check") checkOnly = true;
     else if (arg === "--local") local = true;
     else if (arg === "--acknowledge-needs-review") acknowledgeNeedsReview = true;
     else throw new Error(`Bilinmeyen argüman: ${arg}`);
   }
-  return { mediaDir, checkOnly, local, acknowledgeNeedsReview };
+  return { mediaDir, catalogPath, checkOnly, local, acknowledgeNeedsReview };
 }
 
 // Medya, DB'ye/R2'ye dokunmadan önce doğrulanır. Dosya adı tek başına kanıt değildir.
@@ -49,7 +56,7 @@ export function verifyAnimationMedia(filename: string, durationMs: number): void
 
 export async function main(argv: readonly string[]): Promise<void> {
   const options = parseAnimationArgs(argv);
-  const catalog = loadAnimationCatalog();
+  const catalog = loadAnimationCatalog(options.catalogPath);
   // Kataloğun tümü ön kontrolden geçmeden hiçbir öğe yayımlanmaz.
   for (const entry of catalog) {
     assertPassesQualityGate(entry.draft, options.acknowledgeNeedsReview);

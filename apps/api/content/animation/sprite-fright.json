@@ -1,0 +1,239 @@
+[
+  {
+    "sourceStartMs": 42500,
+    "title": "Doğayı keşfetmek",
+    "draft": {
+      "contentId": "sprite-team-nature",
+      "muxAssetId": "local-sprite-team-nature",
+      "sourceFile": "sprite-team-nature.mp4",
+      "durationMs": 20500,
+      "topic": "lifestyle",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "© Blender Foundation | Blender Studio",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Filmden kısa kesit alındı; 9:16 dikey düzene uyarlandı, H.264/AAC olarak yeniden kodlandı ve Türkçe açıklamalar eklendi."
+      },
+      "segments": [
+        { "ordinal": 1, "startMs": 1750, "endMs": 6125, "text": "C’mon, team! We mustn’t dilly-dally when there’s so much nature to see!", "englishExplanation": "She urges the group to stop wasting time because there is a lot of nature to explore.", "turkishExplanation": "Görülecek çok fazla doğa olduğu için gruba oyalanmamalarını söylüyor." },
+        { "ordinal": 2, "startMs": 6125, "endMs": 11167, "text": "I was thinking we should call our class project ‘Fungis in a Forest!’", "englishExplanation": "She suggests a playful name for their class project.", "turkishExplanation": "Sınıf projeleri için eğlenceli bir isim öneriyor." },
+        { "ordinal": 3, "startMs": 11167, "endMs": 13667, "text": "Get it? Because we’re a group of fun guys.", "englishExplanation": "She explains the wordplay behind the project name.", "turkishExplanation": "Proje adındaki kelime oyununu açıklıyor." },
+        { "ordinal": 4, "startMs": 13667, "endMs": 15167, "text": "And also fungi, which—", "englishExplanation": "She starts adding that the name also refers to mushrooms, but she is interrupted.", "turkishExplanation": "İsmin mantarlara da gönderme yaptığını söylemeye başlıyor ancak sözü kesiliyor." },
+        { "ordinal": 5, "startMs": 15167, "endMs": 19958, "text": "Shush! That’s a yellow wagtail. And she’s in distress!", "englishExplanation": "She asks everyone to be quiet after noticing a bird that appears to need help.", "turkishExplanation": "Yardıma ihtiyacı var gibi görünen bir kuş fark edince herkesten sessiz olmasını istiyor." }
+      ],
+      "vocabulary": [
+        { "lemma": "dilly-dally", "gloss": "oyalanmak, ağırdan almak" },
+        { "lemma": "fun guys", "gloss": "eğlenceli insanlar; burada fungi ile yapılan kelime oyunu" },
+        { "lemma": "distress", "gloss": "sıkıntı veya tehlike içinde olma" }
+      ],
+      "learningPoints": [
+        { "segmentOrdinal": 1, "type": "grammar", "expression": "mustn’t dilly-dally", "englishExplanation": "Use ‘mustn’t’ to say that doing something is strongly prohibited or should be avoided.", "turkishExplanation": "Bir şeyin kesinlikle yapılmaması gerektiğini belirtmek için ‘mustn’t + fiil’ kullanılır.", "exampleEn": "We mustn’t waste any more time.", "exampleTr": "Daha fazla zaman kaybetmemeliyiz." }
+      ],
+      "quiz": {
+        "segmentOrdinal": 1,
+        "question": "In the video, what does ‘dilly-dally’ mean?",
+        "options": [
+          { "text": "Waste time instead of moving on", "isCorrect": true },
+          { "text": "Study an animal carefully", "isCorrect": false },
+          { "text": "Separate from the group", "isCorrect": false },
+          { "text": "Return to the campsite", "isCorrect": false }
+        ]
+      },
+      "quality": { "status": "pass", "issues": [] }
+    }
+  },
+  {
+    "sourceStartMs": 15000,
+    "title": "Bonus puan",
+    "draft": {
+      "contentId": "sprite-study-dont-wreck",
+      "muxAssetId": "local-sprite-study-dont-wreck",
+      "sourceFile": "sprite-study-dont-wreck.mp4",
+      "durationMs": 15833,
+      "topic": "lifestyle",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "© Blender Foundation | Blender Studio",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Filmden kısa kesit alındı; 9:16 dikey düzene uyarlandı, H.264/AAC olarak yeniden kodlandı ve Türkçe açıklamalar eklendi."
+      },
+      "segments": [
+        { "ordinal": 1, "startMs": 2375, "endMs": 4458, "text": "Hello, Mr. Snail!", "englishExplanation": "She cheerfully greets a snail as if it were a person.", "turkishExplanation": "Bir salyangozu insanmış gibi neşeyle selamlıyor." },
+        { "ordinal": 2, "startMs": 4458, "endMs": 7333, "text": "Aw, you cute little Cornu aspersum.", "englishExplanation": "She affectionately calls the snail cute and uses its scientific name.", "turkishExplanation": "Salyangoza sevgiyle sevimli diyor ve bilimsel adını kullanıyor." },
+        { "ordinal": 3, "startMs": 7333, "endMs": 10125, "text": "Latin name—bonus points!", "englishExplanation": "Someone jokes that knowing the Latin name deserves extra credit.", "turkishExplanation": "Biri Latince adını bilmenin fazladan puanı hak ettiğini söyleyerek şaka yapıyor." },
+        { "ordinal": 4, "startMs": 13375, "endMs": 15833, "text": "Can’t believe we got stuck with the tree hugger.", "englishExplanation": "He complains that their group has been paired with someone who cares deeply about nature.", "turkishExplanation": "Doğayı çok önemseyen biriyle aynı gruba düşmelerinden yakınıyor." }
+      ],
+      "vocabulary": [
+        { "lemma": "bonus points", "gloss": "ek puan; mecazen ekstra takdir" },
+        { "lemma": "got stuck with", "gloss": "istemeden biriyle veya bir şeyle kalmak" },
+        { "lemma": "tree hugger", "gloss": "çevreyi çok önemseyen kişi" }
+      ],
+      "learningPoints": [
+        { "segmentOrdinal": 4, "type": "phrase", "expression": "got stuck with", "englishExplanation": "This means being forced to stay or work with someone you did not choose.", "turkishExplanation": "Kendi seçmediğin biriyle kalmak veya çalışmak zorunda olmak anlamına gelir.", "exampleEn": "I got stuck with the hardest task.", "exampleTr": "En zor görev bana kaldı." }
+      ],
+      "quiz": {
+        "segmentOrdinal": 4,
+        "question": "What does ‘got stuck with’ mean in this scene?",
+        "options": [
+          { "text": "Had to be grouped with", "isCorrect": true },
+          { "text": "Became close friends with", "isCorrect": false },
+          { "text": "Got lost while following", "isCorrect": false },
+          { "text": "Stopped speaking to", "isCorrect": false }
+        ]
+      },
+      "quality": { "status": "pass", "issues": [] }
+    }
+  },
+  {
+    "sourceStartMs": 176500,
+    "title": "Yeni bir tür",
+    "draft": {
+      "contentId": "sprite-new-species",
+      "muxAssetId": "local-sprite-new-species",
+      "sourceFile": "sprite-new-species.mp4",
+      "durationMs": 20000,
+      "topic": "lifestyle",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "© Blender Foundation | Blender Studio",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Filmden kısa kesit alındı; 9:16 dikey düzene uyarlandı, H.264/AAC olarak yeniden kodlandı ve Türkçe açıklamalar eklendi."
+      },
+      "segments": [
+        { "ordinal": 1, "startMs": 875, "endMs": 3083, "text": "They’re absolutely adorable.", "englishExplanation": "She says the creatures are extremely cute.", "turkishExplanation": "Yaratıkların son derece sevimli olduğunu söylüyor." },
+        { "ordinal": 2, "startMs": 3083, "endMs": 5500, "text": "Yeah, absolutely bloody adorable.", "englishExplanation": "He repeats that they are cute, with strong informal emphasis.", "turkishExplanation": "Gayriresmî ve güçlü bir vurguyla onların çok sevimli olduğunu tekrarlıyor." },
+        { "ordinal": 3, "startMs": 5500, "endMs": 9125, "text": "And I bet we’ll make a fortune if we catch one of those things.", "englishExplanation": "He believes they could become very rich by catching one of the creatures.", "turkishExplanation": "Yaratıklardan birini yakalarlarsa çok zengin olabileceklerini düşünüyor." },
+        { "ordinal": 4, "startMs": 9125, "endMs": 10458, "text": "We’d be famous!", "englishExplanation": "He imagines that catching one would make them well known.", "turkishExplanation": "Birini yakalamanın onları ünlü yapacağını hayal ediyor." },
+        { "ordinal": 5, "startMs": 11792, "endMs": 13375, "text": "I wonder what they taste like.", "englishExplanation": "He is curious about what the creatures would taste like as food.", "turkishExplanation": "Yaratıkların yiyecek olarak tadının nasıl olacağını merak ediyor." },
+        { "ordinal": 6, "startMs": 13375, "endMs": 16000, "text": "We really shouldn’t disrupt their habitat.", "englishExplanation": "She warns that they should not disturb the creatures’ natural home.", "turkishExplanation": "Yaratıkların doğal yaşam alanını bozmamaları gerektiğini söylüyor." }
+      ],
+      "vocabulary": [
+        { "lemma": "adorable", "gloss": "çok sevimli" },
+        { "lemma": "make a fortune", "gloss": "servet kazanmak" },
+        { "lemma": "habitat", "gloss": "doğal yaşam alanı" }
+      ],
+      "learningPoints": [
+        { "segmentOrdinal": 3, "type": "phrase", "expression": "make a fortune", "englishExplanation": "This phrase means earning or obtaining a very large amount of money.", "turkishExplanation": "Çok büyük miktarda para kazanmak anlamına gelir.", "exampleEn": "She made a fortune from her invention.", "exampleTr": "Buluşundan bir servet kazandı." },
+        { "segmentOrdinal": 5, "type": "grammar", "expression": "I wonder what", "englishExplanation": "Use this structure to express curiosity indirectly and naturally.", "turkishExplanation": "Bir şeyi dolaylı ve doğal biçimde merak ettiğini anlatmak için kullanılır.", "exampleEn": "I wonder where they went.", "exampleTr": "Nereye gittiklerini merak ediyorum." }
+      ],
+      "quiz": {
+        "segmentOrdinal": 3,
+        "question": "What does ‘make a fortune’ mean in this context?",
+        "options": [
+          { "text": "Earn a great deal of money", "isCorrect": true },
+          { "text": "Discover a rare animal", "isCorrect": false },
+          { "text": "Become respected scientists", "isCorrect": false },
+          { "text": "Protect the creatures’ home", "isCorrect": false }
+        ]
+      },
+      "quality": { "status": "pass", "issues": [] }
+    }
+  },
+  {
+    "sourceStartMs": 195500,
+    "title": "Ormana hoş geldiniz",
+    "draft": {
+      "contentId": "sprite-welcome-friends",
+      "muxAssetId": "local-sprite-welcome-friends",
+      "sourceFile": "sprite-welcome-friends.mp4",
+      "durationMs": 24500,
+      "topic": "lifestyle",
+      "cefrLevel": "A2",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "© Blender Foundation | Blender Studio",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Filmden kısa kesit alındı; 9:16 dikey düzene uyarlandı, H.264/AAC olarak yeniden kodlandı ve Türkçe açıklamalar eklendi."
+      },
+      "segments": [
+        { "ordinal": 1, "startMs": 417, "endMs": 2000, "text": "Greetings. Welcome, friends.", "englishExplanation": "The speaker warmly welcomes the visitors.", "turkishExplanation": "Konuşmacı ziyaretçileri sıcak bir şekilde karşılıyor." },
+        { "ordinal": 2, "startMs": 3500, "endMs": 5708, "text": "I’ll be right down.", "englishExplanation": "He says he will come down very soon.", "turkishExplanation": "Birazdan aşağı geleceğini söylüyor." },
+        { "ordinal": 3, "startMs": 10750, "endMs": 13250, "text": "Could I interest you in some peppermint tea?", "englishExplanation": "He politely offers the visitors some peppermint tea.", "turkishExplanation": "Ziyaretçilere nazikçe nane çayı ikram ediyor." },
+        { "ordinal": 4, "startMs": 13250, "endMs": 15167, "text": "What are you guys?", "englishExplanation": "The visitor asks what kind of creatures they are.", "turkishExplanation": "Ziyaretçi onların ne tür yaratıklar olduğunu soruyor." },
+        { "ordinal": 5, "startMs": 15167, "endMs": 18917, "text": "We are sprites. We sprite balance to the forest.", "englishExplanation": "He explains that they are sprites who bring balance to the forest.", "turkishExplanation": "Ormana denge getiren doğa ruhları olduklarını açıklıyor." },
+        { "ordinal": 6, "startMs": 18917, "endMs": 24167, "text": "We take care of the animals, plants, birds, moss…", "englishExplanation": "He says they protect and look after the living things in the forest.", "turkishExplanation": "Ormandaki canlıları koruyup onlarla ilgilendiklerini söylüyor." }
+      ],
+      "vocabulary": [
+        { "lemma": "greetings", "gloss": "selamlar" },
+        { "lemma": "peppermint", "gloss": "nane" },
+        { "lemma": "take care of", "gloss": "ilgilenmek, bakımını üstlenmek" }
+      ],
+      "learningPoints": [
+        { "segmentOrdinal": 3, "type": "phrase", "expression": "Could I interest you in", "englishExplanation": "This is a polite way to offer someone something.", "turkishExplanation": "Birine nazikçe bir şey ikram etmek veya önermek için kullanılır.", "exampleEn": "Could I interest you in some dessert?", "exampleTr": "Size biraz tatlı ikram edebilir miyim?" },
+        { "segmentOrdinal": 6, "type": "phrase", "expression": "take care of", "englishExplanation": "This means protecting, helping, or being responsible for someone or something.", "turkishExplanation": "Birini veya bir şeyi korumak, onunla ilgilenmek ya da sorumluluğunu almak anlamına gelir.", "exampleEn": "Can you take care of my plants?", "exampleTr": "Bitkilerimle ilgilenebilir misin?" }
+      ],
+      "quiz": {
+        "segmentOrdinal": 3,
+        "question": "Why does the sprite say ‘Could I interest you in some peppermint tea?’",
+        "options": [
+          { "text": "To offer the visitors a drink", "isCorrect": true },
+          { "text": "To ask where the tea was grown", "isCorrect": false },
+          { "text": "To warn them about the forest", "isCorrect": false },
+          { "text": "To explain what sprites eat", "isCorrect": false }
+        ]
+      },
+      "quality": { "status": "pass", "issues": [] }
+    }
+  },
+  {
+    "sourceStartMs": 225500,
+    "title": "Burada kamp yapabilir miyiz?",
+    "draft": {
+      "contentId": "sprite-camping-here",
+      "muxAssetId": "local-sprite-camping-here",
+      "sourceFile": "sprite-camping-here.mp4",
+      "durationMs": 25000,
+      "topic": "travel",
+      "cefrLevel": "B1",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "© Blender Foundation | Blender Studio",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Filmden kısa kesit alındı; 9:16 dikey düzene uyarlandı, H.264/AAC olarak yeniden kodlandı ve Türkçe açıklamalar eklendi."
+      },
+      "segments": [
+        { "ordinal": 1, "startMs": 1083, "endMs": 6042, "text": "Hey, uh, little mushroom geezer, you cool with us camping here for the night?", "englishExplanation": "He informally asks the sprite whether the group may camp there overnight.", "turkishExplanation": "Doğa ruhuna grubun geceyi orada kamp yaparak geçirip geçiremeyeceğini samimi bir dille soruyor." },
+        { "ordinal": 2, "startMs": 6042, "endMs": 10833, "text": "Absolutely. A friend of the forest is a friend of the sprites.", "englishExplanation": "The sprite gladly agrees because he considers forest-friendly people to be their friends.", "turkishExplanation": "Ormana dost olanları kendi dostları saydığı için memnuniyetle izin veriyor." },
+        { "ordinal": 3, "startMs": 12208, "endMs": 15875, "text": "Maybe it was just ketchup… or something… like…", "englishExplanation": "She tries to find an innocent explanation for the red substance she noticed.", "turkishExplanation": "Fark ettiği kırmızı maddeye masum bir açıklama bulmaya çalışıyor." },
+        { "ordinal": 4, "startMs": 15875, "endMs": 23625, "text": "Red paint? Yeah, maybe they were just painting their little hats or… something…", "englishExplanation": "She nervously suggests that the red substance could simply be paint.", "turkishExplanation": "Kırmızı maddenin yalnızca boya olabileceğini gergin bir şekilde öne sürüyor." }
+      ],
+      "vocabulary": [
+        { "lemma": "for the night", "gloss": "gece boyunca, geceyi geçirmek için" },
+        { "lemma": "absolutely", "gloss": "kesinlikle, elbette" },
+        { "lemma": "cool", "gloss": "burada: uygun, kabul edilebilir" }
+      ],
+      "learningPoints": [
+        { "segmentOrdinal": 1, "type": "phrase", "expression": "you cool with", "englishExplanation": "In informal English, this means being comfortable with or agreeing to something.", "turkishExplanation": "Gayriresmî İngilizcede bir şeyi uygun bulmak veya kabul etmek anlamına gelir.", "exampleEn": "Are you cool with meeting at eight?", "exampleTr": "Sekizde buluşmak senin için uygun mu?" }
+      ],
+      "quiz": {
+        "segmentOrdinal": 1,
+        "question": "What is he asking with ‘you cool with us camping here?’",
+        "options": [
+          { "text": "Whether they have permission to camp there", "isCorrect": true },
+          { "text": "Whether the weather will become colder", "isCorrect": false },
+          { "text": "Whether the sprite owns camping equipment", "isCorrect": false },
+          { "text": "Whether they should leave before sunset", "isCorrect": false }
+        ]
+      },
+      "quality": { "status": "pass", "issues": [] }
+    }
+  }
+]
