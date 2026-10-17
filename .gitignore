@@ -41,3 +41,7 @@ __pycache__/
 apps/api/public/media/*
 !apps/api/public/media/.gitkeep
 !apps/api/public/media/README.md
+
+# free-video staging render çıktıları (mp4 + ölçüm raporları) ve scripts/stt/input toplu promotion yedekleri — üretilmiş/yedek, commit edilmez.
+apps/api/scripts/free-video/rendered-sync-v2/
+apps/api/scripts/stt/input-backups/
