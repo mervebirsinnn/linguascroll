@@ -4,6 +4,7 @@ import * as path from "node:path";
 import type { PublishDraft } from "./publish-draft.schema";
 import {
   assertPassesQualityGate,
+  assertLocalMediaAllowed,
   copyMediaFile,
   parseArgs,
   PublishPipelineError,
@@ -14,19 +15,45 @@ import {
 } from "./publish-content";
 
 describe("parseArgs", () => {
-  it("--content-id'yi ayrıştırır, --acknowledge-needs-review verilmezse false", () => {
-    expect(parseArgs(["--content-id", "a1final1"])).toEqual({ contentId: "a1final1", acknowledgeNeedsReview: false });
+  it("--content-id'yi ayrıştırır; varsayılan: approved akışı (fromOutput=false, check=false, ack=false)", () => {
+    expect(parseArgs(["--content-id", "a1final1"])).toEqual({ contentId: "a1final1", acknowledgeNeedsReview: false, checkOnly: false, fromOutput: false, local: false });
   });
 
-  it("--acknowledge-needs-review bayrağını true yapar", () => {
-    expect(parseArgs(["--content-id", "a1final1", "--acknowledge-needs-review"])).toEqual({
+  it("--from-output + --acknowledge-needs-review birlikte geçerli (eski/AI çıktı yolu, açık opt-in)", () => {
+    expect(parseArgs(["--content-id", "a1final1", "--from-output", "--acknowledge-needs-review"])).toEqual({
       contentId: "a1final1",
       acknowledgeNeedsReview: true,
+      checkOnly: false,
+      fromOutput: true,
+      local: false,
     });
+  });
+
+  it("--acknowledge-needs-review, --from-output olmadan REDDEDİLİR (global bypass yok; ack artifact'te)", () => {
+    expect(() => parseArgs(["--content-id", "a1final1", "--acknowledge-needs-review"])).toThrow(PublishPipelineError);
+  });
+
+  it("--check yalnızca approved artifact'i doğrular; --from-output ile birleşmez", () => {
+    expect(parseArgs(["--content-id", "a1final1", "--check"]).checkOnly).toBe(true);
+    expect(() => parseArgs(["--content-id", "a1final1", "--check", "--from-output"])).toThrow(PublishPipelineError);
   });
 
   it("--content-id verilmediğinde throw eder", () => {
     expect(() => parseArgs([])).toThrow(PublishPipelineError);
+  });
+
+  it("--local (dev: public/media kopyası) ayrıştırılır; --from-output ile birleşmez", () => {
+    expect(parseArgs(["--content-id", "a1final1", "--local"]).local).toBe(true);
+    expect(() => parseArgs(["--content-id", "a1final1", "--local", "--from-output"])).toThrow(PublishPipelineError);
+  });
+});
+
+describe("assertLocalMediaAllowed (production'da --local yasak)", () => {
+  it("NODE_ENV=production → hata; development/test/tanımsız → izin", () => {
+    expect(() => assertLocalMediaAllowed({ NODE_ENV: "production" })).toThrow(PublishPipelineError);
+    expect(() => assertLocalMediaAllowed({ NODE_ENV: "development" })).not.toThrow();
+    expect(() => assertLocalMediaAllowed({ NODE_ENV: "test" })).not.toThrow();
+    expect(() => assertLocalMediaAllowed({})).not.toThrow();
   });
 });
 

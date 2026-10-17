@@ -4,7 +4,7 @@ import { pipeline } from "node:stream/promises";
 import type { Readable } from "node:stream";
 import { Injectable, Optional } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { DeleteObjectCommand, GetObjectCommand, ListObjectsV2Command, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { buildOriginalVideoStorageKey } from "./build-storage-key";
 
 /**
@@ -25,6 +25,13 @@ export class R2ConfigError extends Error {}
 
 /** Chunk 17B — `GetObjectCommand`'ın modellediği `NoSuchKey` durumu için, çağıranın 404'e çevirebileceği net bir tip. */
 export class R2ObjectNotFoundError extends Error {}
+
+/** `listOriginalVideoObjects`'in döndürdüğü, orphan raporu için yeterli minimal nesne özeti. */
+export interface R2ObjectSummary {
+  readonly key: string;
+  readonly lastModified: Date | null;
+  readonly size: number | null;
+}
 
 @Injectable()
 export class R2StorageService {
@@ -64,6 +71,39 @@ export class R2StorageService {
     );
 
     return { storageKey };
+  }
+
+  /**
+   * READ-ONLY: prefix altındaki tüm nesneleri (ListObjectsV2, sayfalı) listeler. Yalnızca orphan raporu içindir
+   * (bkz. report-r2-orphans.ts); hiçbir yazma/silme yapmaz.
+   */
+  async listOriginalVideoObjects(prefix: string = "originals/"): Promise<R2ObjectSummary[]> {
+    const bucket = this.requireEnv("R2_BUCKET_NAME");
+    const objects: R2ObjectSummary[] = [];
+    let continuationToken: string | undefined;
+    do {
+      const response: { Contents?: { Key?: string; LastModified?: Date; Size?: number }[]; IsTruncated?: boolean; NextContinuationToken?: string } = await this.getClient().send(
+        new ListObjectsV2Command({ Bucket: bucket, Prefix: prefix, ContinuationToken: continuationToken }),
+      );
+      for (const item of response.Contents ?? []) {
+        if (item.Key) {
+          objects.push({ key: item.Key, lastModified: item.LastModified ?? null, size: item.Size ?? null });
+        }
+      }
+      continuationToken = response.IsTruncated ? response.NextContinuationToken : undefined;
+    } while (continuationToken);
+    return objects;
+  }
+
+  /**
+   * Yayın telafisi (compensation): R2'ye yüklendikten SONRA DB transaction'ı başarısız olursa yüklenen
+   * nesneyi geri silmek için (bkz. publish-content.ts `publishApprovedContent`). S3 DeleteObject
+   * olmayan anahtar için de hata vermez (idempotent). Dağıtık transaction/outbox DEĞİL: en-iyi-çaba
+   * temizliği; başarısız olursa çağıran yetim nesneyi raporlar.
+   */
+  async deleteOriginalVideo(storageKey: string): Promise<void> {
+    const bucket = this.requireEnv("R2_BUCKET_NAME");
+    await this.getClient().send(new DeleteObjectCommand({ Bucket: bucket, Key: storageKey }));
   }
 
   /**

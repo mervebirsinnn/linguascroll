@@ -139,6 +139,26 @@ describe("evaluateContentQuality — explanation quality", () => {
   });
 });
 
+describe("evaluateContentQuality — formatting (hyphen spacing)", () => {
+  it("malformedHyphenSpacing: 'double -edged' bozuk yazımı eşleştirici tolere etse bile needsReview/warning üretir", () => {
+    const content = cleanContent();
+    content.segments[0]!.text = "Is remote work a double -edged sword?";
+    content.learningPoints[0]!.expression = "double-edged sword"; // matcher eşleşir...
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("learningPointExpressionNotInTranscript");
+    const issue = report.issues.find((i) => i.code === "malformedHyphenSpacing"); // ...ama biçim hatası ayrıca raporlanır
+    expect(issue?.severity).toBe("warning");
+    expect(report.status).toBe("needsReview");
+  });
+
+  it("doğru yazılmış 'double-edged' ve iki yanı boşluklu ' - ' düşünce tiresi uyarı üretmez", () => {
+    const content = cleanContent();
+    content.segments[0]!.text = "It is a double-edged sword - truly.";
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("malformedHyphenSpacing");
+  });
+});
+
 describe("evaluateContentQuality — learning point quality", () => {
   it("duplicateLearningPoint: aynı expression birden fazla kez → needsReview", () => {
     const content = cleanContent();
@@ -170,14 +190,38 @@ describe("evaluateContentQuality — learning point quality", () => {
   });
 
   /**
-   * KULLANICI KARARI — false-positive riski BİLİNÇLİ kabul ediliyor: pedagojik
-   * notation ("end up + V-ing", mastar/başlangıç hali) transcript'te LİTERAL
-   * olarak bulunmaz (konuşulan gerçek ifade "ended up staying"). Bu kontrol
-   * SADECE warning/needsReview — reject DEĞİL.
+   * Inflection/notation yanlış pozitifleri expression-match.ts seam'iyle giderildi: pedagojik
+   * notation ("end up + V-ing") ve çekimli/araya kelime girmiş halleri ("ended up staying",
+   * "taken aback", "hear you out") artık flag'lenmiyor. Gerçekten metinde olmayan ifade ise
+   * hâlâ SADECE warning/needsReview (reject DEĞİL).
    */
-  it("learningPointExpressionNotInTranscript: pedagojik notation transcript'te literal geçmiyor → SADECE needsReview/warning, reject DEĞİL", () => {
+  it.each([
+    ["end up + V-ing", 0],
+    ["end up", 0],
+  ])('learningPoint "%s" çekimli transcript ("ended up staying") ile eşleşir → flag yok', (expression, index) => {
     const content = cleanContent();
-    content.learningPoints[0]!.expression = "end up + V-ing"; // gerçek konuşulan hali: "ended up staying"
+    content.learningPoints[index]!.expression = expression;
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("learningPointExpressionNotInTranscript");
+  });
+
+  it.each([
+    ["take aback", "We were simply taken aback."],
+    ["do the heavy lifting", "The void does the heavy lifting."],
+    ["hear out", "Then show us the plan and we'll hear you out."],
+    ["be good at + V-ing", "I am not good at talking."],
+    ["should have + past participle", "You should have taken the back roads."],
+  ])('learningPoint "%s" ("%s") yanlış pozitif üretmez', (expression, text) => {
+    const content = cleanContent();
+    content.segments[0]!.text = text;
+    content.learningPoints[0]!.expression = expression;
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("learningPointExpressionNotInTranscript");
+  });
+
+  it("learningPointExpressionNotInTranscript: ifade gerçekten transcript'te yok → SADECE needsReview/warning, reject DEĞİL", () => {
+    const content = cleanContent();
+    content.learningPoints[0]!.expression = "bite the bullet";
     const report = evaluateContentQuality(content);
     expect(report.status).toBe("needsReview");
     const issue = report.issues.find((i) => i.code === "learningPointExpressionNotInTranscript");
@@ -210,16 +254,16 @@ describe("evaluateContentQuality — vocabulary quality", () => {
     expect(report.issues.map((i) => i.code)).toContain("trivialVocabularyLemma");
   });
 
-  /**
-   * KULLANICI KARARI — aynı false-positive riski: "go" lemma'sı, transcript'te
-   * DÜZENSİZ (irregular) bir fiil çekimi olan "went" olarak geçiyor — "went"
-   * metninde literal "go" substring'i YOK (örn. "stay"/"staying" gibi düzenli
-   * çekimlerin aksine, "go"/"went" bir substring ilişkisi kurmuyor). Stemming/
-   * lemmatization eklenmedi (bilinçli kapsam dışı) — bu yüzden SADECE warning.
-   */
-  it("vocabularyLemmaNotInTranscript: lemma transcript'te düzensiz çekimli halde geçiyor (\"go\" vs \"went\") → SADECE needsReview/warning, reject DEĞİL", () => {
+  it("vocabulary lemma düzensiz çekimli halde geçiyor (\"go\" vs \"went\") → flag yok", () => {
     const content = cleanContent();
     content.vocabulary = [{ lemma: "go", gloss: "gitmek" }]; // transcript: "They went to the market yesterday."
+    const report = evaluateContentQuality(content);
+    expect(report.issues.map((i) => i.code)).not.toContain("vocabularyLemmaNotInTranscript");
+  });
+
+  it("vocabularyLemmaNotInTranscript: lemma gerçekten transcript'te yok → SADECE needsReview/warning, reject DEĞİL", () => {
+    const content = cleanContent();
+    content.vocabulary = [{ lemma: "umbrella", gloss: "şemsiye" }];
     const report = evaluateContentQuality(content);
     expect(report.status).toBe("needsReview");
     const issue = report.issues.find((i) => i.code === "vocabularyLemmaNotInTranscript");

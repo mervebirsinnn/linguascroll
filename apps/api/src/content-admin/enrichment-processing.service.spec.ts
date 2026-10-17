@@ -1,10 +1,10 @@
 import * as fs from "node:fs";
-import { BadGatewayException, ConflictException, NotFoundException, UnprocessableEntityException } from "@nestjs/common";
+import { BadGatewayException, ConflictException, NotFoundException, ServiceUnavailableException, UnprocessableEntityException } from "@nestjs/common";
 import { enrichSttDraft, resolveDraftPath, resolveEnrichedOutputPath } from "../content-enrichment/enrich-transcript";
 import { sttDraftSchema } from "../content-enrichment/stt-draft.schema";
 import { EnrichmentLlmError } from "../content-enrichment/enrichment-llm-client";
 import type { EnrichmentOutput } from "../content-enrichment/enrichment-output.schema";
-import { EnrichmentProcessingService } from "./enrichment-processing.service";
+import { assertHttpEnrichmentAvailable, EnrichmentProcessingService } from "./enrichment-processing.service";
 
 const CONTENT_ID = "b1-enrich-test";
 
@@ -224,5 +224,47 @@ describe("EnrichmentProcessingService.enrich", () => {
       expect(httpResult.category).toBe(cliDraft.category);
       expect(httpResult.category).toBe("ielts");
     });
+  });
+});
+
+describe("HTTP enrich production davranışı (ephemeral output + HTTP promote yok → 503)", () => {
+  const PROD_ID = "b1-enrich-prod-guard";
+  const originalNodeEnv = process.env.NODE_ENV;
+  afterEach(() => {
+    process.env.NODE_ENV = originalNodeEnv;
+    cleanup(PROD_ID);
+  });
+
+  it("assertHttpEnrichmentAvailable: yalnızca NODE_ENV=production'da 503 fırlatır", () => {
+    expect(() => assertHttpEnrichmentAvailable({ NODE_ENV: "production" })).toThrow(ServiceUnavailableException);
+    for (const env of [{}, { NODE_ENV: "development" }, { NODE_ENV: "test" }, { NODE_ENV: "local" }]) {
+      expect(() => assertHttpEnrichmentAvailable(env)).not.toThrow();
+    }
+  });
+
+  it("production: geçerli draft.json olsa bile reddedilir; Gemini çağrılmaz, hiçbir output artifact oluşmaz", async () => {
+    writeDraft(PROD_ID);
+    const enrichTranscriptFn = jest.fn();
+    const service = new EnrichmentProcessingService(enrichTranscriptFn);
+    process.env.NODE_ENV = "production";
+
+    await expect(service.enrich(PROD_ID)).rejects.toThrow(ServiceUnavailableException);
+    await expect(service.enrich(PROD_ID)).rejects.toThrow(/geçici disk|promote-content/);
+
+    expect(enrichTranscriptFn).not.toHaveBeenCalled();
+    expect(fs.existsSync(resolveEnrichedOutputPath(PROD_ID))).toBe(false);
+  });
+
+  it("local/test (NODE_ENV=test): mevcut enrichment akışı AYNEN çalışır ve output yazılır", async () => {
+    writeDraft(PROD_ID);
+    const enrichTranscriptFn = jest.fn().mockResolvedValue(validEnrichmentOutput());
+    const service = new EnrichmentProcessingService(enrichTranscriptFn);
+    process.env.NODE_ENV = "test";
+
+    const result = await service.enrich(PROD_ID);
+
+    expect(enrichTranscriptFn).toHaveBeenCalledTimes(1);
+    expect(result.contentId).toBe(PROD_ID);
+    expect(fs.existsSync(resolveEnrichedOutputPath(PROD_ID))).toBe(true);
   });
 });

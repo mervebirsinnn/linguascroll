@@ -1,104 +1,60 @@
-import { ConflictException, Inject, Injectable, UnprocessableEntityException } from "@nestjs/common";
+import { ConflictException, Inject, Injectable, Optional, ServiceUnavailableException, UnprocessableEntityException } from "@nestjs/common";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
+import { ApprovalQualityError, ApprovedArtifactError } from "../content-enrichment/approved-artifact";
 import {
-  assertNotAlreadyPublished,
-  assertPassesQualityGate,
-  copyMediaFile,
-  loadPublishDraft,
-  publishContent,
+  publishApprovedContent,
   PublishAlreadyExistsError,
   PublishPipelineError,
-  PublishQualityNeedsReviewError,
-  PublishQualityRejectedError,
-  requiresLocalMediaCopy,
+  type PublishApprovedOptions,
 } from "../content-enrichment/publish-content";
 import { publishContentResponseSchema, type PublishContentResponse } from "./publish.schema";
+import { R2ConfigError, R2StorageService } from "./r2-storage.service";
 
 /**
- * Chunk 17D — `POST /content-admin/videos/:contentId/publish`'in orchestration
- * katmanı. `publish-content.ts`'in CLI'ını subprocess olarak SPAWN ETMİYOR — onun
- * zaten exported/pure fonksiyonlarını (main()'in bugüne kadar tek çağıranı olduğu
- * aynı fonksiyonlar) doğrudan reuse ediyor. `EnrichmentProcessingService`'in
- * `enrich-transcript.ts` fonksiyonlarını aynı şekilde import ettiği desenin
- * BİREBİR karşılığı (bkz. o dosyanın başındaki yorum) — yeni bir generic "publish
- * abstraction"/BaseService YOK, sadece bu iki fonksiyon grubunun aynı orkestrasyon
- * sırasını (main()'in bugüne kadar yaptığı sıra: quality gate → idempotency →
- * medya → DB transaction) HTTP'den de erişilebilir kılan ince bir servis.
+ * `POST /content-admin/videos/:contentId/publish`'in orchestration katmanı. CLI ile AYNI uygulama-katmanı
+ * use-case'ini (`publishApprovedContent`) çağırır: kaynak YALNIZCA `approved/<id>.json`'dır
+ * (`output/<id>/enriched.json` buradan hiçbir koşulda okunmaz — bkz. publish-processing.service.spec'teki
+ * statik sınır testi). Controller dosya yolu ya da artifact türü seçmez; yalnızca contentId iletir.
+ *
+ * needsReview kabulü HTTP isteğiyle verilemez: içerik bazlı, gerekçeli acknowledgement artifact'in içindedir
+ * (promote-content ile üretilir). `--from-output` kaçış yolu HTTP'de YOKTUR.
+ *
+ * Medya: R2-önce (bkz. publishApprovedContent). Admin upload akışıyla gelen içerik zaten R2-backed
+ * (storageKey dolu) ise yeniden yükleme yapılmaz.
  */
 @Injectable()
 export class PublishProcessingService {
-  constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
+  constructor(
+    @Inject(DRIZZLE_DB) private readonly db: Database,
+    private readonly r2StorageService: R2StorageService,
+    /** Yalnızca testte dizin/yol enjeksiyonu için; prod'da Nest `undefined` geçer (varsayılanlar). */
+    @Optional() private readonly overrides: Pick<PublishApprovedOptions, "approvedDir" | "mediaSourceDir" | "mediaDir"> = {},
+  ) {}
 
-  async publish(contentId: string, acknowledgeNeedsReview: boolean): Promise<PublishContentResponse> {
-    const draft = this.loadDraft(contentId);
-
-    this.ensurePassesQualityGate(draft, acknowledgeNeedsReview);
-
-    await this.ensureNotAlreadyPublished(draft.muxAssetId);
-
-    // Chunk 17D — koşul: storageKey doluysa (R2-backed) mevcut R2 object canonical
-    // media'dır — copyMediaFile ÇAĞRILMAZ (tekrar upload/download/copy YOK).
-    // storageKey yoksa (offline/yerel akış) mevcut davranış AYNEN korunur.
-    if (requiresLocalMediaCopy(draft)) {
-      this.copyMediaFileOrThrow(draft.sourceFile, draft.muxAssetId);
-    }
-
-    const { videoId } = await publishContent(this.db, draft);
-
-    return publishContentResponseSchema.parse({ videoId, muxAssetId: draft.muxAssetId });
-  }
-
-  private copyMediaFileOrThrow(sourceFile: string, muxAssetId: string): void {
+  async publish(contentId: string): Promise<PublishContentResponse> {
     try {
-      copyMediaFile(sourceFile, muxAssetId);
+      const result = await publishApprovedContent(this.db, contentId, { ...this.overrides, mode: "r2", storage: this.r2StorageService });
+      return publishContentResponseSchema.parse({ videoId: result.videoId, muxAssetId: result.muxAssetId });
     } catch (error) {
-      if (error instanceof PublishPipelineError) {
-        throw new UnprocessableEntityException(error.message);
-      }
-      throw error;
-    }
-  }
-
-  private loadDraft(contentId: string): ReturnType<typeof loadPublishDraft> {
-    try {
-      return loadPublishDraft(contentId);
-    } catch (error) {
-      if (error instanceof PublishPipelineError) {
-        throw new UnprocessableEntityException(error.message);
-      }
-      throw error;
-    }
-  }
-
-  private async ensureNotAlreadyPublished(muxAssetId: string): Promise<void> {
-    try {
-      await assertNotAlreadyPublished(this.db, muxAssetId);
-    } catch (error) {
-      if (error instanceof PublishAlreadyExistsError) {
-        throw new ConflictException(error.message);
-      }
-      throw error;
+      throw this.toHttpException(error);
     }
   }
 
   /**
-   * `PublishQualityRejectedError`/`PublishQualityNeedsReviewError` — Nest'in
-   * `@Catch()`'süz global exception filter'ı `Error`'dan türeyen bilinmeyen bir
-   * sınıfı 500'e çevirir, bu YANLIŞ olurdu (bu ikisi "beklenen domain hatası",
-   * ikisi de aynı davranışı korur: reject HİÇBİR flag'le publish edilemez,
-   * needsReview `acknowledgeNeedsReview` ile geçer — bkz. assertPassesQualityGate'in
-   * kendi davranışı, publish-content.ts'te DEĞİŞMEDİ). İkisi de aynı 409'a
-   * çevriliyor — ayrı HTTP status'ler icat etmek yerine (EnrichmentProcessingService'in
-   * "state, bu isteği reddediyor" → ConflictException deseniyle AYNI, bkz. o dosya).
+   * Beklenen domain hataları → anlamlı HTTP durumları (Nest'in varsayılan filtresi bilinmeyen `Error`'ları 500 yapar):
+   * eksik/geçersiz approved artifact ve medya sorunları 422; reject / bayat quality-ack / zaten yayımlanmış 409;
+   * R2 yapılandırması yok 503.
    */
-  private ensurePassesQualityGate(draft: Parameters<typeof assertPassesQualityGate>[0], acknowledgeNeedsReview: boolean): void {
-    try {
-      assertPassesQualityGate(draft, acknowledgeNeedsReview);
-    } catch (error) {
-      if (error instanceof PublishQualityRejectedError || error instanceof PublishQualityNeedsReviewError) {
-        throw new ConflictException(error.message);
-      }
-      throw error;
+  private toHttpException(error: unknown): unknown {
+    if (error instanceof ApprovedArtifactError || error instanceof PublishPipelineError) {
+      return new UnprocessableEntityException(error.message);
     }
+    if (error instanceof ApprovalQualityError || error instanceof PublishAlreadyExistsError) {
+      return new ConflictException(error.message);
+    }
+    if (error instanceof R2ConfigError) {
+      return new ServiceUnavailableException(error.message);
+    }
+    return error;
   }
 }

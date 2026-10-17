@@ -3,7 +3,7 @@ import * as os from "node:os";
 import * as path from "node:path";
 import { Readable } from "node:stream";
 import type { ConfigService } from "@nestjs/config";
-import { GetObjectCommand, PutObjectCommand, type S3Client } from "@aws-sdk/client-s3";
+import { DeleteObjectCommand, GetObjectCommand, PutObjectCommand, type S3Client } from "@aws-sdk/client-s3";
 import { R2ConfigError, R2ObjectNotFoundError, R2StorageService } from "./r2-storage.service";
 
 /**
@@ -133,6 +133,27 @@ describe("R2StorageService.downloadOriginalVideo", () => {
     await expect(service.downloadOriginalVideo("originals/b1-cafe-order/uuid.mp4", path.join(tmpDir, "x.mp4"))).rejects.toThrow(
       R2ConfigError,
     );
+    expect(s3Client.send).not.toHaveBeenCalled();
+  });
+});
+
+describe("R2StorageService.deleteOriginalVideo (yayın telafisi)", () => {
+  it("DeleteObjectCommand'ı doğru bucket/key ile tek çağrı olarak gönderir", async () => {
+    const s3Client = fakeS3Client();
+    const service = new R2StorageService(fakeConfigService(FULL_ENV), s3Client);
+
+    await service.deleteOriginalVideo("originals/b1-cafe-order/9f8e7d6c-1111-2222-3333-444455556666.mp4");
+
+    expect(s3Client.send).toHaveBeenCalledTimes(1);
+    const sent = s3Client.send.mock.calls[0]![0] as DeleteObjectCommand;
+    expect(sent).toBeInstanceOf(DeleteObjectCommand);
+    expect(sent.input).toEqual({ Bucket: "linguascroll-videos", Key: "originals/b1-cafe-order/9f8e7d6c-1111-2222-3333-444455556666.mp4" });
+  });
+
+  it("R2_BUCKET_NAME yoksa R2ConfigError (S3'e hiç gitmez)", async () => {
+    const s3Client = fakeS3Client();
+    const service = new R2StorageService(fakeConfigService({ ...FULL_ENV, R2_BUCKET_NAME: undefined }), s3Client);
+    await expect(service.deleteOriginalVideo("originals/x/y.mp4")).rejects.toThrow(R2ConfigError);
     expect(s3Client.send).not.toHaveBeenCalled();
   });
 });

@@ -1,15 +1,12 @@
 import { z } from "zod";
 
 /**
- * Chunk 17D — `POST /content-admin/videos/:contentId/publish`'in body'si. CLI'daki
- * (publish-content.ts, parseArgs) `--acknowledge-needs-review` flag'inin BİREBİR HTTP
- * karşılığı — aynı iki durumu (reject: hep engelli; needsReview: flag yoksa engelli/
- * varsa geçer) taşır. Yeni bir review-state/workflow modellenmiyor, sadece mevcut
- * `assertPassesQualityGate` semantics'inin HTTP'ye taşınması.
+ * `POST /content-admin/videos/:contentId/publish`'in body'si BOŞ olmalı. needsReview kabulü artık HTTP isteğiyle
+ * verilmez (global/istek-bazlı bypass yok): içerik bazlı, gerekçeli acknowledgement approved artifact'in
+ * içindedir (promote-content). `.strict()`: eski `acknowledgeNeedsReview` gibi bilinmeyen anahtarlar sessizce
+ * yok sayılmak yerine 400 ile reddedilir — istemci davranışının değiştiği açıkça görülsün.
  */
-export const publishContentRequestSchema = z.object({
-  acknowledgeNeedsReview: z.boolean().optional().default(false),
-});
+export const publishContentRequestSchema = z.object({}).strict();
 export type PublishContentRequest = z.infer<typeof publishContentRequestSchema>;
 
 export const publishContentResponseSchema = z.object({

@@ -80,16 +80,15 @@ export class ContentAdminController {
   }
 
   /**
-   * Chunk 17D — storageKey body'de İSTENMİYOR (kullanıcı kararı): enrich endpoint'i
-   * gibi, gerekli storage identity'yi diskteki artifact zincirinden (draft.json →
-   * enriched.json) okuyor, client'tan tekrar istemiyor — yanlış contentId/storageKey
-   * eşleştirme riski yapısal olarak yok.
+   * Publish YALNIZCA approved artifact'i (approved/<id>.json) kabul eder; output/enriched.json buradan hiç
+   * okunmaz. Body boştur (needsReview kabulü artifact'tedir); storageKey de body'de istenmez.
    */
   @Post(":contentId/publish")
   publish(@Param("contentId") contentId: string, @Body() body: unknown): Promise<PublishContentResponse> {
     const parsedContentId = this.parseContentId(contentId);
-    const parsedBody = this.parsePublishBody(body);
-    return this.publishProcessingService.publish(parsedContentId, parsedBody.acknowledgeNeedsReview);
+    this.parsePublishBody(body);
+    // Controller dosya yolu/artifact türü SEÇMEZ: yalnızca contentId; kaynak çözümü ortak use-case'te (approved).
+    return this.publishProcessingService.publish(parsedContentId);
   }
 
   private parseUploadBody(body: unknown): UploadVideoRequest {
@@ -124,12 +123,8 @@ export class ContentAdminController {
   }
 
   /**
-   * `body ?? {}` — process-stt'nin AKSİNE (storageKey ZORUNLU alanı var, body
-   * eksikse gerçek bir hata), bu endpoint'in TEK alanı (`acknowledgeNeedsReview`)
-   * kendi başına opsiyonel/default'lu: hiç body gönderilmemesi (supertest
-   * `.send()`, body-parser'ın bazı konfigürasyonlarda `undefined` bırakabildiği
-   * durum) geçerli bir "acknowledgeNeedsReview: false" isteği ile AYNI anlama
-   * gelmeli, 400 değil.
+   * `body ?? {}` — hiç body gönderilmemesi (supertest `.send()`, body-parser'ın bazı konfigürasyonlarda
+   * `undefined` bırakabildiği durum) geçerli boş istektir. Dolu/bilinmeyen anahtar → 400.
    */
   private parsePublishBody(body: unknown): PublishContentRequest {
     const result = publishContentRequestSchema.safeParse(body ?? {});

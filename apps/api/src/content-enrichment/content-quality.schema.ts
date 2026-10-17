@@ -28,6 +28,7 @@ export const qualityIssueCodeSchema = z.enum([
   "overlappingSegments",
   "duplicateAdjacentSegment",
   "thinTranscript",
+  "malformedHyphenSpacing",
   // Explanation
   "emptyExplanation",
   "explanationMatchesTranscriptVerbatim",

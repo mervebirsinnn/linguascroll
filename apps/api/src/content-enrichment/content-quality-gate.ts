@@ -1,3 +1,4 @@
+import { expressionAppearsInText } from "./expression-match";
 import type { PublishDraft } from "./publish-draft.schema";
 import type { QualityIssue, QualityIssueCode, QualityIssueSeverity, QualityReport, QualityStatus } from "./content-quality.schema";
 
@@ -31,6 +32,7 @@ const IGNORED_VOCABULARY_LEMMAS = new Set([
   "these", "those", "it", "its", "he", "she", "they", "we", "you", "i", "not", "no", "yes", "do", "does", "did",
 ]);
 
+const MALFORMED_HYPHEN_SPACING = /\w\s+-\w|\w-\s+\w/;
 const MAX_EXPLANATION_CHARS = 400;
 const TRIVIAL_SEGMENT_MAX_WORDS = 3;
 const TRIVIAL_SEGMENT_EXPLANATION_MAX_CHARS = 150;
@@ -156,6 +158,15 @@ function checkTranscriptQuality(segments: readonly QualityCheckSegment[]): Quali
     }
   }
 
+  // STT bazen birleşik yazımı böler ("double -edged"). expression-match.ts eşleştirmede hyphen
+  // boşluğunu normalize eder, ama bu bozuk yazımı meşru canonical metin SAYMAZ: yalnızca tek yanında
+  // boşluk olan tire ("a -b", "a- b") işaretlenir; iki yanı boşluklu düşünce tireleri (" - ") serbesttir.
+  for (const segment of segments) {
+    if (MALFORMED_HYPHEN_SPACING.test(segment.text)) {
+      issues.push(issue("malformedHyphenSpacing", "warning", segment.ordinal, `Segment ${segment.ordinal} metninde tek taraflı boşluklu tire var ("${segment.text}") — STT biçim hatası olabilir (ör. "double -edged" → "double-edged").`));
+    }
+  }
+
   const sorted = [...segments].sort((a, b) => a.ordinal - b.ordinal);
   for (let i = 1; i < sorted.length; i++) {
     const previous = sorted[i - 1]!;
@@ -262,8 +273,9 @@ function checkLearningPointQuality(
 
     const segment = segmentsByOrdinal.get(learningPoint.segmentOrdinal);
     if (segment) {
-      const segmentText = segment.text.toLowerCase();
-      if (key.length > 0 && !segmentText.includes(key)) {
+      // Düz substring çekim farkında ("taken aback"), araya girmiş kelimede ("hear you out") ve
+      // notation'larda ("be good at + V-ing") yanlış pozitif üretiyordu — bkz. expression-match.ts.
+      if (key.length > 0 && !expressionAppearsInText(learningPoint.expression, segment.text)) {
         issues.push(
           issue(
             "learningPointExpressionNotInTranscript",
@@ -323,7 +335,7 @@ function checkVocabularyQuality(vocabulary: readonly QualityCheckVocabularyItem[
       issues.push(issue("trivialVocabularyLemma", "warning", null, `"${item.lemma}" çok temel/trivial bir kelime — muhtemelen öğretmeye değmez.`));
     }
 
-    if (lemma.length > 0 && !fullTranscriptText.includes(lemma)) {
+    if (lemma.length > 0 && !expressionAppearsInText(item.lemma, fullTranscriptText)) {
       issues.push(
         issue(
           "vocabularyLemmaNotInTranscript",

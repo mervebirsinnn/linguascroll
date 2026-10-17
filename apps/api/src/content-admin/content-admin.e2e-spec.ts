@@ -1,3 +1,4 @@
+import * as fs from "node:fs";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
@@ -7,6 +8,7 @@ import { AppModule } from "../app.module";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videosTable } from "../videos/videos.schema";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
+import { resolveEnrichedOutputPath } from "../content-enrichment/enrich-transcript";
 import { PublishProcessingService } from "./publish-processing.service";
 import { R2StorageService } from "./r2-storage.service";
 import { SttProcessingService } from "./stt-processing.service";
@@ -374,25 +376,25 @@ describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP 
     await app.close();
   });
 
-  it("body olmadan çağrılırsa acknowledgeNeedsReview=false ile PublishProcessingService'i çağırır", async () => {
+  it("body olmadan çağrılırsa yalnızca contentId ile PublishProcessingService'i çağırır (controller dosya/artifact seçmez)", async () => {
     const response = await request(app.getHttpServer())
       .post("/content-admin/videos/e2e-test-content/publish")
       .set("X-Admin-Secret", ADMIN_SECRET)
       .send()
       .expect(201);
 
-    expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content", false);
+    expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content");
     expect(response.body).toEqual({ videoId: "00000000-0000-4000-8000-000000000001", muxAssetId: "local-hello-greeting" });
   });
 
-  it("acknowledgeNeedsReview=true gövdeyle çağrılırsa aynen taşır", async () => {
+  it("boş JSON gövdeyle de aynı şekilde çalışır", async () => {
     await request(app.getHttpServer())
       .post("/content-admin/videos/e2e-test-content/publish")
       .set("X-Admin-Secret", ADMIN_SECRET)
-      .send({ acknowledgeNeedsReview: true })
+      .send({})
       .expect(201);
 
-    expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content", true);
+    expect(stubPublishProcessing.publish).toHaveBeenCalledWith("e2e-test-content");
   });
 
   it("geçersiz (kebab-case olmayan) bir contentId'yi 400 ile reddeder, servise hiç gitmez", async () => {
@@ -405,13 +407,77 @@ describe("POST /content-admin/videos/:contentId/publish (e2e, gerçek Nest HTTP 
     expect(stubPublishProcessing.publish).not.toHaveBeenCalled();
   });
 
-  it("geçersiz bir acknowledgeNeedsReview tipini 400 ile reddeder, servise hiç gitmez", async () => {
-    await request(app.getHttpServer())
-      .post("/content-admin/videos/e2e-test-content/publish")
-      .set("X-Admin-Secret", ADMIN_SECRET)
-      .send({ acknowledgeNeedsReview: "yes" })
-      .expect(400);
+  it.each([{ acknowledgeNeedsReview: true }, { acknowledgeNeedsReview: "yes" }, { fromOutput: true }, { source: "output" }])(
+    "istek gövdesinde bypass/kaynak seçimi (%j) 400 ile reddedilir, servise hiç gitmez",
+    async (body) => {
+      await request(app.getHttpServer())
+        .post("/content-admin/videos/e2e-test-content/publish")
+        .set("X-Admin-Secret", ADMIN_SECRET)
+        .send(body)
+        .expect(400);
 
-    expect(stubPublishProcessing.publish).not.toHaveBeenCalled();
+      expect(stubPublishProcessing.publish).not.toHaveBeenCalled();
+    },
+  );
+});
+
+describe("POST /content-admin/videos/:contentId/publish (e2e, GERÇEK PublishProcessingService — approved yoksa HTTP'den yayın reddedilir)", () => {
+  let app: INestApplication;
+  let pool: Pool;
+
+  beforeAll(async () => {
+    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    app = moduleRef.createNestApplication();
+    await app.init();
+    pool = createTestDatabaseConnection().pool;
+  });
+
+  afterAll(async () => {
+    await pool.end();
+    await app.close();
+  });
+
+  it("approved artifact yoksa 422 döner (output'a düşmez, DB'ye yazmaz)", async () => {
+    const response = await request(app.getHttpServer())
+      .post("/content-admin/videos/no-such-approved-content/publish")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send()
+      .expect(422);
+
+    expect(JSON.stringify(response.body)).toMatch(/promote-content/);
+  });
+});
+
+describe("POST /content-admin/videos/:contentId/enrich (e2e, GERÇEK EnrichmentProcessingService — production'da 503, yazma yok)", () => {
+  let app: INestApplication;
+  let pool: Pool;
+  const originalNodeEnv = process.env.NODE_ENV;
+
+  beforeAll(async () => {
+    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    app = moduleRef.createNestApplication();
+    await app.init();
+    pool = createTestDatabaseConnection().pool;
+  });
+
+  afterEach(() => {
+    process.env.NODE_ENV = originalNodeEnv;
+  });
+
+  afterAll(async () => {
+    await pool.end();
+    await app.close();
+  });
+
+  it("NODE_ENV=production: 503 döner ve output artifact oluşmaz", async () => {
+    process.env.NODE_ENV = "production";
+    const response = await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-prod-enrich-guard/enrich")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send()
+      .expect(503);
+
+    expect(JSON.stringify(response.body)).toMatch(/promote-content/);
+    expect(fs.existsSync(resolveEnrichedOutputPath("e2e-prod-enrich-guard"))).toBe(false);
   });
 });

@@ -11,8 +11,8 @@ import type { EnrichmentVocabularyItem } from "./enrichment-output.schema";
 import type { PublishDraft } from "./publish-draft.schema";
 import {
   assertPassesQualityGate,
-  loadPublishDraft,
   parseArgs,
+  resolvePublishDraft,
   publishVocabularyForVideo,
   PublishPipelineError,
   PublishQualityNeedsReviewError,
@@ -130,9 +130,13 @@ export async function publishVocabularyForContentId(
 }
 
 async function main(): Promise<void> {
-  const { contentId, acknowledgeNeedsReview } = parseArgs(process.argv.slice(2));
+  const args = parseArgs(process.argv.slice(2));
+  const { contentId } = args;
 
-  const draft = loadPublishDraft(contentId);
+  // Varsayılan kaynak approved artifact (bkz. publish-content.ts `resolvePublishDraft`); quality orada
+  // zaten kapıdan geçti, iç gate yalnızca `reject`i yeniden doğrular.
+  const { draft, source } = resolvePublishDraft(args);
+  const acknowledgeNeedsReview = source === "approved" ? true : args.acknowledgeNeedsReview;
 
   const databaseUrl = process.env.DATABASE_URL;
   if (!databaseUrl) {

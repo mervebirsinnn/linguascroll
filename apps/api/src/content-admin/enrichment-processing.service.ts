@@ -5,6 +5,7 @@ import {
   Injectable,
   NotFoundException,
   Optional,
+  ServiceUnavailableException,
   UnprocessableEntityException,
 } from "@nestjs/common";
 import type { ContentCategory } from "@linguascroll/shared-types";
@@ -32,6 +33,21 @@ import { enrichContentResponseSchema, type EnrichContentResponse } from "./enric
  */
 type EnrichTranscriptFn = typeof enrichTranscript;
 
+/**
+ * Production'da HTTP enrich KAPALIDIR (503): endpoint `output/<id>/enriched.json`'u sunucunun EPHEMERAL diskine yazar ve HTTP'de
+ * promote yolu yoktur (promote yalnızca CLI; approved artifact Git/deploy ile taşınır). Bu durumda "başarılı" bir enrich cevabı,
+ * yayına giden bir çıktı olduğu izlenimini verir ama dosya redeploy'da kaybolur ve publish zaten yalnızca approved kabul eder.
+ * Reddetme, Gemini çağrısından ve dosya yazımından ÖNCE yapılır. Local/test davranışı değişmez.
+ */
+export function assertHttpEnrichmentAvailable(env: NodeJS.ProcessEnv = process.env): void {
+  if (env.NODE_ENV === "production") {
+    throw new ServiceUnavailableException(
+      "HTTP enrich production'da kullanılamaz: çıktı sunucunun geçici diskine yazılır ve HTTP'den approved'a terfi yolu yoktur. " +
+        "Enrichment'ı yerelde çalıştırın (enrich-transcript), promote-content ile approved artifact üretin, commit/deploy edin.",
+    );
+  }
+}
+
 @Injectable()
 export class EnrichmentProcessingService {
   /**
@@ -44,6 +60,7 @@ export class EnrichmentProcessingService {
   constructor(@Optional() private readonly enrichTranscriptFn: EnrichTranscriptFn = enrichTranscript) {}
 
   async enrich(contentId: string, category?: ContentCategory): Promise<EnrichContentResponse> {
+    assertHttpEnrichmentAvailable();
     const draft = this.loadReadyDraft(contentId);
 
     const outputPath = resolveEnrichedOutputPath(contentId);

@@ -12,10 +12,15 @@ import { videosTable } from "../videos/videos.schema";
 import { videoWordsTable } from "../words/video-words.schema";
 import { wordsTable } from "../words/words.schema";
 import { quizOptionsTable, quizzesTable } from "../quizzes/quizzes.schema";
+import { ApprovalQualityError, ApprovedArtifactError, APPROVED_DIR, MEDIA_SOURCE_DIR } from "./approved-artifact";
+import { assertFromOutputAllowed, resolveApprovedPublication, UnapprovedPublishForbiddenError } from "./approved-publication";
 import { evaluateContentQuality } from "./content-quality-gate";
 import type { QualityReport } from "./content-quality.schema";
 import type { EnrichmentVocabularyItem } from "./enrichment-output.schema";
 import { publishDraftSchema, type PublishDraft } from "./publish-draft.schema";
+import { formatPrePublishReport, runPrePublishChecks } from "./pre-publish-check";
+import { ConfigService } from "@nestjs/config";
+import { R2StorageService } from "../content-admin/r2-storage.service";
 import { assertValidSegmentReferences } from "./validate-segment-references";
 
 /**
@@ -43,22 +48,57 @@ const API_ROOT = path.resolve(__dirname, "..", "..");
 const ENRICHMENT_OUTPUT_DIR = path.join(API_ROOT, "src", "content-enrichment", "output");
 const MEDIA_DIR = path.join(API_ROOT, "public", "media");
 
-export function parseArgs(argv: readonly string[]): { contentId: string; acknowledgeNeedsReview: boolean } {
+export interface PublishArgs {
+  contentId: string;
+  acknowledgeNeedsReview: boolean;
+  checkOnly: boolean;
+  fromOutput: boolean;
+  /** Yerel geliştirme: R2 yerine public/media'ya kopyala (storage_key NULL). Production'da yasak. */
+  local: boolean;
+}
+
+/**
+ * Varsayılan kaynak `approved/<id>.json`'dır (promote-content ile terfi ettirilmiş artifact).
+ * `--from-output` AI çıktısını (`output/<id>/enriched.json`) doğrudan yayımlamak için AÇIK, bilinçli bir
+ * kaçış yoludur; global quality bypass'ı YALNIZCA onunla birlikte anlamlıdır. Approved akışında
+ * needsReview kabulü artifact'in içindedir (içerik bazlı, gerekçeli) — CLI flag'iyle verilemez.
+ */
+export function parseArgs(argv: readonly string[]): PublishArgs {
   let contentId: string | undefined;
   let acknowledgeNeedsReview = false;
+  let checkOnly = false;
+  let fromOutput = false;
+  let local = false;
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--content-id") {
       contentId = argv[++i];
     } else if (argv[i] === "--acknowledge-needs-review") {
       acknowledgeNeedsReview = true;
+    } else if (argv[i] === "--check") {
+      checkOnly = true;
+    } else if (argv[i] === "--from-output") {
+      fromOutput = true;
+    } else if (argv[i] === "--local") {
+      local = true;
     } else {
-      throw new PublishPipelineError(`Bilinmeyen argüman: "${argv[i]}". Kullanım: --content-id <id> [--acknowledge-needs-review]`);
+      throw new PublishPipelineError(`Bilinmeyen argüman: "${argv[i]}". Kullanım: --content-id <id> [--check] [--local] [--from-output [--acknowledge-needs-review]]`);
     }
   }
   if (!contentId) {
     throw new PublishPipelineError("--content-id zorunlu (örn. --content-id a1final1).");
   }
-  return { contentId, acknowledgeNeedsReview };
+  if (acknowledgeNeedsReview && !fromOutput) {
+    throw new PublishPipelineError(
+      "--acknowledge-needs-review yalnızca --from-output ile geçerli. Approved akışında needsReview kabulü artifact'e içerik bazında, gerekçeyle yazılır: promote-content --acknowledge-needs-review --note \"...\".",
+    );
+  }
+  if (checkOnly && fromOutput) {
+    throw new PublishPipelineError("--check yalnızca approved artifact'i doğrular; --from-output ile birleştirilemez.");
+  }
+  if (local && fromOutput) {
+    throw new PublishPipelineError("--local yalnızca approved akışında anlamlıdır; --from-output ile birleştirilemez.");
+  }
+  return { contentId, acknowledgeNeedsReview, checkOnly, fromOutput, local };
 }
 
 export function resolveEnrichedPath(contentId: string): string {
@@ -335,37 +375,215 @@ export function copyMediaFile(sourceFile: string, muxAssetId: string, mediaDir: 
   return destination;
 }
 
-async function main(): Promise<void> {
-  const { contentId, acknowledgeNeedsReview } = parseArgs(process.argv.slice(2));
+/**
+ * `--local` (R2 yerine public/media kopyası): Render gibi ephemeral dosya sistemlerinde playbackUrl'ü
+ * kırık bırakır (bkz. publishApprovedContent açıklaması) — production'da yasak.
+ */
+export function assertLocalMediaAllowed(env: NodeJS.ProcessEnv = process.env): void {
+  if (env.NODE_ENV === "production") {
+    throw new PublishPipelineError("NODE_ENV=production ortamında --local (public/media kopyası) yasak: medya R2'ye yüklenmeli.");
+  }
+}
 
-  const draft = loadPublishDraft(contentId);
+/**
+ * Yayın kaynağı çözümü + quality gate — `publish-vocabulary` ve `--from-output` içindir. Varsayılan:
+ * approved artifact (ortak resolver). `--from-output`: AI çıktısı, production guard'lı ve açık opt-in.
+ */
+export function resolvePublishDraft(
+  args: Pick<PublishArgs, "contentId" | "acknowledgeNeedsReview" | "fromOutput">,
+  env: NodeJS.ProcessEnv = process.env,
+): {
+  draft: PublishDraft;
+  quality: QualityReport;
+  source: "approved" | "output";
+} {
+  if (args.fromOutput) {
+    assertFromOutputAllowed(env);
+    const draft = loadPublishDraft(args.contentId);
+    return { draft, quality: assertPassesQualityGate(draft, args.acknowledgeNeedsReview), source: "output" };
+  }
+  const publication = resolveApprovedPublication(args.contentId);
+  return { draft: publication.draft, quality: publication.quality, source: "approved" };
+}
 
-  const freshQuality = assertPassesQualityGate(draft, acknowledgeNeedsReview);
+/** R2 yazma/silme yüzeyi (R2StorageService bunu karşılar); testte mock'lanır. */
+export interface PublishStorage {
+  uploadOriginalVideo(params: { contentId: string; buffer: Buffer; contentType: string }): Promise<{ storageKey: string }>;
+  deleteOriginalVideo(storageKey: string): Promise<void>;
+}
+
+export interface PublishApprovedOptions {
+  readonly mode: "r2" | "local";
+  readonly storage: PublishStorage | null;
+  readonly approvedDir?: string;
+  readonly mediaSourceDir?: string;
+  readonly mediaDir?: string;
+}
+
+export interface PublishApprovedResult {
+  readonly videoId: string;
+  readonly muxAssetId: string;
+  readonly storageKey: string | null;
+  readonly mediaMode: "existing-r2" | "uploaded-r2" | "local-copy";
+}
+
+/** pg unique-violation (23505) — drizzle hatayı `cause` zincirine sarar. */
+export function isUniqueViolation(error: unknown): boolean {
+  let current: unknown = error;
+  for (let depth = 0; depth < 5 && current && typeof current === "object"; depth++) {
+    if ((current as { code?: unknown }).code === "23505") {
+      return true;
+    }
+    current = (current as { cause?: unknown }).cause;
+  }
+  return false;
+}
+
+/**
+ * `publishContent` + eşzamanlı yarış eşlemesi: iki publish aynı muxAssetId için `assertNotAlreadyPublished`'ı
+ * birlikte geçebilir; DB unique constraint'i (videos_mux_asset_id_unique) tek kazananı belirler. Kaybedenin ham
+ * pg hatası yerine "zaten yayımlanmış" (409) alınır; böylece çağıran (HTTP) 500 görmez.
+ */
+async function publishRow(db: Database, draft: PublishDraft): Promise<{ videoId: string }> {
+  try {
+    return await publishContent(db, draft);
+  } catch (error) {
+    if (isUniqueViolation(error)) {
+      throw new PublishAlreadyExistsError(`"${draft.muxAssetId}" eşzamanlı başka bir publish tarafından yayımlandı — bu deneme kaybetti.`);
+    }
+    throw error;
+  }
+}
+
+/**
+ * TEK publish use-case'i (CLI VE HTTP bunu çağırır; ikisi de yalnızca contentId verir, dosya yolu/artifact
+ * türü seçmez). Sıra, medya ile DB arasındaki tutarsızlığı en aza indirmek için:
+ *
+ *  1. approved artifact çöz (şema + taze quality + içerik-bazlı ack) — output'a ASLA bakılmaz.
+ *  2. idempotency: zaten yayımlanmışsa HİÇBİR yan etki (upload) olmadan dur — retry güvenli.
+ *  3. R2 (varsayılan): önce R2'ye yükle, SONRA DB transaction'ı storage_key ile yaz. DB başarısız olursa
+ *     yüklenen nesne en-iyi-çaba silinir (compensation); silme de başarısız olursa yetim anahtar hatada
+ *     RAPORLANIR. Dağıtık transaction/outbox yoktur: bilinen kalan pencere = upload ok + DB hata + silme hata.
+ *
+ * Neden R2-önce: eski sıra (DB satırı storage_key=NULL + yerel public/media kopyası, R2'ye sonradan
+ * backfill) Render'da kırık feed üretir: public/media Git'te yok ve Render dosya sistemi ephemeral;
+ * VideosService storage_key NULL için `/media/<slug>.mp4` URL'i üretir ama dosya sunucuda yoktur → backfill
+ * bitene kadar feed'de oynatılamayan video. R2-önce ile satır, medya R2'de VARKEN görünür olur.
+ * `local` mod yalnızca yerel geliştirme içindir (production'da CLI reddeder).
+ */
+export async function publishApprovedContent(db: Database, contentId: string, options: PublishApprovedOptions): Promise<PublishApprovedResult> {
+  const publication = resolveApprovedPublication(contentId, { approvedDir: options.approvedDir, mediaSourceDir: options.mediaSourceDir });
+  const draft = publication.draft;
+
+  await assertNotAlreadyPublished(db, draft.muxAssetId);
+
+  if (draft.storageKey) {
+    // Medya zaten R2'de (content-admin upload akışı): yeniden upload/kopya yok.
+    const { videoId } = await publishRow(db, draft);
+    return { videoId, muxAssetId: draft.muxAssetId, storageKey: draft.storageKey, mediaMode: "existing-r2" };
+  }
+
+  const source = publication.mediaSource;
+  if (!fs.existsSync(source)) {
+    throw new PublishPipelineError(`Kaynak video bulunamadı: "${source}" (artifact media.localFileName="${publication.artifact.media.localFileName}").`);
+  }
+  if (path.extname(source).toLowerCase() !== ".mp4") {
+    throw new PublishPipelineError(`Yayın yalnızca .mp4 kabul eder (R2 anahtarı/içerik türü video/mp4): "${publication.artifact.media.localFileName}".`);
+  }
+
+  if (options.mode === "local") {
+    const destination = copyMediaFile(source, draft.muxAssetId, options.mediaDir);
+    try {
+      const { videoId } = await publishRow(db, draft);
+      return { videoId, muxAssetId: draft.muxAssetId, storageKey: null, mediaMode: "local-copy" };
+    } catch (error) {
+      fs.rmSync(destination, { force: true });
+      throw error;
+    }
+  }
+
+  if (!options.storage) {
+    throw new PublishPipelineError("R2 storage yapılandırılmadı (mode=r2 için storage zorunlu).");
+  }
+  const { storageKey } = await options.storage.uploadOriginalVideo({ contentId: draft.contentId, buffer: fs.readFileSync(source), contentType: "video/mp4" });
+  try {
+    const { videoId } = await publishRow(db, { ...draft, storageKey });
+    return { videoId, muxAssetId: draft.muxAssetId, storageKey, mediaMode: "uploaded-r2" };
+  } catch (error) {
+    try {
+      await options.storage.deleteOriginalVideo(storageKey);
+    } catch (cleanupError) {
+      throw new PublishPipelineError(
+        `DB yazımı başarısız oldu VE R2'de yetim nesne kaldı (manuel silin): "${storageKey}". DB hatası: ${error instanceof Error ? error.message : String(error)}; silme hatası: ${cleanupError instanceof Error ? cleanupError.message : String(cleanupError)}`,
+      );
+    }
+    throw error;
+  }
+}
+
+async function publishFromOutputLegacy(args: PublishArgs): Promise<void> {
+  const { draft, quality: freshQuality } = resolvePublishDraft(args);
+  console.error("UYARI: --from-output — AI çıktısı (approved artifact DEĞİL) doğrudan yayımlanıyor.");
   if (freshQuality.status === "needsReview") {
     console.error(`UYARI: quality gate "needsReview" döndü, --acknowledge-needs-review ile publish ediliyor (${freshQuality.issues.length} issue).`);
   }
-
   const databaseUrl = process.env.DATABASE_URL;
   if (!databaseUrl) {
     throw new PublishPipelineError("DATABASE_URL tanımlı değil (.env dosyasını kontrol edin).");
   }
   const pool = new Pool({ connectionString: databaseUrl });
   const db = drizzle(pool);
-
   try {
     await assertNotAlreadyPublished(db, draft.muxAssetId);
-
     if (requiresLocalMediaCopy(draft)) {
-      const mediaDestination = copyMediaFile(draft.sourceFile, draft.muxAssetId);
-      console.error(`Medya dosyası kopyalandı: ${mediaDestination}`);
-    } else {
-      console.error(`R2-backed içerik: mevcut R2 object canonical media olarak kullanılıyor (storageKey: ${draft.storageKey}), yerel kopya YOK.`);
+      console.error(`Medya dosyası kopyalandı: ${copyMediaFile(draft.sourceFile, draft.muxAssetId)}`);
     }
-
     const { videoId } = await publishContent(db, draft);
-    console.error(`Publish tamamlandı: video id ${videoId} (muxAssetId: ${draft.muxAssetId})`);
+    console.error(`Publish tamamlandı (from-output): video id ${videoId} (muxAssetId: ${draft.muxAssetId})`);
+  } finally {
+    await pool.end();
+  }
+}
+
+async function main(): Promise<void> {
+  const args = parseArgs(process.argv.slice(2));
+  const { contentId } = args;
+
+  if (args.checkOnly) {
+    const report = runPrePublishChecks(contentId, {
+      approvedDir: APPROVED_DIR,
+      mediaSourceDir: MEDIA_SOURCE_DIR,
+      mediaDir: MEDIA_DIR,
+      mode: args.local ? "local" : "r2",
+    });
+    console.error(formatPrePublishReport(report));
+    if (!report.ok) {
+      process.exit(1);
+    }
+    return;
+  }
+
+  if (args.fromOutput) {
+    await publishFromOutputLegacy(args);
+    return;
+  }
+
+  if (args.local) {
+    assertLocalMediaAllowed();
+  }
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) {
+    throw new PublishPipelineError("DATABASE_URL tanımlı değil (.env dosyasını kontrol edin).");
+  }
+  const pool = new Pool({ connectionString: databaseUrl });
+  const db = drizzle(pool);
+  try {
+    const result = await publishApprovedContent(db, contentId, {
+      mode: args.local ? "local" : "r2",
+      storage: args.local ? null : new R2StorageService(new ConfigService()),
+    });
     console.error(
-      `  ${draft.segments.length} segment, ${draft.learningPoints.length} learning point, ${draft.vocabulary.length} vocabulary, 1 quiz`,
+      `Publish tamamlandı: video id ${result.videoId} (muxAssetId: ${result.muxAssetId}, medya: ${result.mediaMode}${result.storageKey ? `, storageKey: ${result.storageKey}` : ""})`,
     );
   } finally {
     await pool.end();
@@ -378,7 +596,10 @@ if (require.main === module) {
       error instanceof PublishPipelineError ||
       error instanceof PublishAlreadyExistsError ||
       error instanceof PublishQualityRejectedError ||
-      error instanceof PublishQualityNeedsReviewError
+      error instanceof PublishQualityNeedsReviewError ||
+      error instanceof ApprovedArtifactError ||
+      error instanceof ApprovalQualityError ||
+      error instanceof UnapprovedPublishForbiddenError
     ) {
       console.error(`\nHATA: ${error.message}`);
     } else {
