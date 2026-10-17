@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:45.146Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c1-ielts-black-sheep.mp4"
+  },
+  "draft": {
+    "contentId": "c1-ielts-black-sheep",
+    "muxAssetId": "local-black-sheep-career-choice",
+    "sourceFile": "c1-ielts-black-sheep.mp4",
+    "storageKey": null,
+    "durationMs": 18133,
+    "topic": "career",
+    "category": "ielts",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 650,
+        "endMs": 4120,
+        "text": "Everyone treats me like the black sheep just because I left law school.",
+        "englishExplanation": "The speaker feels unfairly judged and excluded by their family or peers for leaving law school.",
+        "turkishExplanation": "Sırf hukuk fakültesini bıraktım diye herkes bana ailenin kara koyunuymuşum gibi davranıyor."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5260,
+        "endMs": 6580,
+        "text": "That's not how we see it.",
+        "englishExplanation": "The other person denies that they view the speaker in such a negative light.",
+        "turkishExplanation": "Biz olaya öyle bakmıyoruz."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7130,
+        "endMs": 8680,
+        "text": "We were simply taken aback.",
+        "englishExplanation": "They explain that they were simply startled and caught off guard by the sudden choice.",
+        "turkishExplanation": "Sadece neye uğradığımızı şaşırdık, afalladık."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 9800,
+        "endMs": 11640,
+        "text": "Following my passion isn't a betrayal.",
+        "englishExplanation": "The speaker defends pursuing their true interest as a legitimate choice, not a disloyal act.",
+        "turkishExplanation": "Tutkularımın peşinden gitmek bir ihanet değil."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 12550,
+        "endMs": 13880,
+        "text": "It's a calculated risk.",
+        "englishExplanation": "The speaker emphasizes that their decision was deliberate and well-considered, not careless.",
+        "turkishExplanation": "Bu, iyi hesaplanmış bir risk."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 14970,
+        "endMs": 17120,
+        "text": "Then show us the plan and we'll hear you out.",
+        "englishExplanation": "The other person asks to see the strategy and offers to listen attentively to the explanation.",
+        "turkishExplanation": "O zaman planını bize göster, biz de seni sonuna kadar dinleyelim."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "black sheep",
+        "gloss": "kara koyun, yüz karası"
+      },
+      {
+        "lemma": "take aback",
+        "gloss": "afallatmak, şaşkına çevirmek"
+      },
+      {
+        "lemma": "betrayal",
+        "gloss": "ihanet"
+      },
+      {
+        "lemma": "calculated risk",
+        "gloss": "hesaplanmış risk"
+      },
+      {
+        "lemma": "hear out",
+        "gloss": "sonuna kadar dinlemek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "phrase",
+        "expression": "black sheep",
+        "englishExplanation": "An idiom used to describe an odd, nonconformist, or disreputable member of an otherwise respectable family or group.",
+        "turkishExplanation": "Bir ailenin veya topluluğun diğer üyelerine uymayan, farklı ya da utanç kaynağı görülen kişisini tanımlamak için kullanılan bir deyimdir.",
+        "exampleEn": "He felt like the black sheep when he chose art over the family business.",
+        "exampleTr": "Aile şirketi yerine sanatı seçtiğinde ailenin kara koyunu gibi hissetti."
+      },
+      {
+        "segmentOrdinal": 3,
+        "type": "phrase",
+        "expression": "take aback",
+        "englishExplanation": "Usually used in the passive ('be taken aback') to describe being suddenly shocked, startled, or caught off guard by unexpected news or behavior.",
+        "turkishExplanation": "Genellikle edilgen yapıda ('be taken aback') kullanılır; beklenmedik bir durum karşısında afallamak, şaşkına dönmek anlamına gelir.",
+        "exampleEn": "I was taken aback by how candid she was in the meeting.",
+        "exampleTr": "Toplantıda bu kadar açık sözlü olmasına çok şaşırdım."
+      },
+      {
+        "segmentOrdinal": 6,
+        "type": "phrase",
+        "expression": "hear someone out",
+        "englishExplanation": "A phrasal verb meaning to listen to someone patiently until they have finished presenting their thoughts or explanation.",
+        "turkishExplanation": "Bir kimsenin sözünü kesmeden, anlatacaklarını bitirene kadar onu dikkatle dinlemek anlamına gelen bir deyimsel fiildir.",
+        "exampleEn": "Even if you disagree with his approach, at least hear him out.",
+        "exampleTr": "Yaklaşımına katılmasan bile en azından onu sonuna kadar dinle."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "In segment 3, what does the speaker mean by saying \"We were simply taken aback\"?",
+      "options": [
+        {
+          "text": "They were deeply disappointed in the decision.",
+          "isCorrect": false
+        },
+        {
+          "text": "They were caught off guard and very surprised.",
+          "isCorrect": true
+        },
+        {
+          "text": "They felt disrespected and extremely angry.",
+          "isCorrect": false
+        },
+        {
+          "text": "They were persuaded to change their minds.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

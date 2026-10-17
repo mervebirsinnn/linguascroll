@@ -4,7 +4,15 @@ import * as path from "node:path";
 import type { ContentCategory } from "@linguascroll/shared-types";
 import { buildPublishDraft } from "../content-enrichment/enrich-transcript";
 import type { EnrichmentOutput } from "../content-enrichment/enrichment-output.schema";
-import { CategoryBackfillError, collectCategoryAssignments, parseArgs } from "./backfill-video-categories";
+import {
+  CATEGORY_MANIFEST_PATH,
+  CategoryBackfillError,
+  collectApprovedAssignments,
+  collectCategoryAssignments,
+  loadCategoryManifest,
+  mergeAssignments,
+  parseArgs,
+} from "./backfill-video-categories";
 
 const draftSegments = [{ ordinal: 1, startMs: 0, endMs: 1000, text: "Hi, welcome." }];
 function enrichment(contentSlug: string): EnrichmentOutput {
@@ -69,5 +77,45 @@ describe("parseArgs", () => {
   });
   it("bilinmeyen argümanda hata verir", () => {
     expect(() => parseArgs(["--force"])).toThrow(CategoryBackfillError);
+  });
+});
+
+describe("kategori kaynakları (manifest + approved)", () => {
+  let dir: string;
+  beforeEach(() => {
+    dir = fs.mkdtempSync(path.join(os.tmpdir(), "category-sources-"));
+  });
+  afterEach(() => fs.rmSync(dir, { recursive: true, force: true }));
+
+  it("git'teki manifest şemadan geçer, yalnızca general olmayan kategoriler içerir ve muxAssetId'ler benzersizdir", () => {
+    const manifest = loadCategoryManifest(CATEGORY_MANIFEST_PATH);
+    expect(manifest.length).toBeGreaterThan(0);
+    expect(manifest.every((entry) => entry.category === "ielts")).toBe(true);
+    expect(new Set(manifest.map((entry) => entry.muxAssetId)).size).toBe(manifest.length);
+  });
+
+  it("manifest dosyası yoksa boş döner", () => {
+    expect(loadCategoryManifest(path.join(dir, "yok.json"))).toEqual([]);
+  });
+
+  it("approved artifact'teki açık category okunur; kategorisiz / general olanlar atlanır", () => {
+    const approvedDir = path.join(dir, "approved");
+    fs.mkdirSync(approvedDir);
+    const write = (id: string, category?: ContentCategory): void => {
+      const draft = buildPublishDraft(id, `${id}.mp4`, 1000, draftSegments, enrichment(id), null, category);
+      fs.writeFileSync(path.join(approvedDir, `${id}.json`), JSON.stringify({ schemaVersion: 2, approval: {}, media: { localFileName: `${id}.mp4` }, draft }));
+    };
+    write("with-ielts", "ielts");
+    write("no-category");
+    write("is-general", "general");
+    expect(collectApprovedAssignments(approvedDir)).toEqual([{ muxAssetId: "local-with-ielts", category: "ielts" }]);
+    expect(collectApprovedAssignments(path.join(dir, "yok"))).toEqual([]);
+  });
+
+  it("kaynaklar birleşir, tekrarlar tek satıra iner; ÇELİŞEN kategori sessizce seçilmez", () => {
+    const a = [{ muxAssetId: "local-x", category: "ielts" as const }];
+    const b = [{ muxAssetId: "local-x", category: "ielts" as const }, { muxAssetId: "local-y", category: "animation" as const }];
+    expect(mergeAssignments(a, b)).toEqual([{ muxAssetId: "local-x", category: "ielts" }, { muxAssetId: "local-y", category: "animation" }]);
+    expect(() => mergeAssignments(a, [{ muxAssetId: "local-x", category: "animation" }])).toThrow(CategoryBackfillError);
   });
 });

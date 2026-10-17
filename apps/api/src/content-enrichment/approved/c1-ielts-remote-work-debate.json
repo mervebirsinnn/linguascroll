@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:46.107Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c1-ielts-remote-work-debate.mp4"
+  },
+  "draft": {
+    "contentId": "c1-ielts-remote-work-debate",
+    "muxAssetId": "local-remote-work-double-edged-sword",
+    "sourceFile": "c1-ielts-remote-work-debate.mp4",
+    "storageKey": null,
+    "durationMs": 19367,
+    "topic": "career",
+    "category": "ielts",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 720,
+        "endMs": 4680,
+        "text": "Is remote work a double-edged sword? Undoubtedly.",
+        "englishExplanation": "Asking if working remotely has both advantages and disadvantages, followed by an emphatic affirmation.",
+        "turkishExplanation": "Uzaktan çalışma iki ucu keskin bir kılıç mı? Kesinlikle."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5960,
+        "endMs": 9620,
+        "text": "It boosts autonomy, yet it blurs the boundary between work and rest.",
+        "englishExplanation": "Explaining that while it increases personal freedom, it also makes it harder to separate work time from personal rest.",
+        "turkishExplanation": "Özerkliği artırıyor ama işle dinlenme arasındaki çizgiyi belirsizleştiriyor."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 11260,
+        "endMs": 13100,
+        "text": "So the benefits come at a hidden cost?",
+        "englishExplanation": "Asking to confirm whether the advantages of remote work come with an unseen negative side effect.",
+        "turkishExplanation": "Yani getirileri gizli bir bedelle mi geliyor?"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 14820,
+        "endMs": 17800,
+        "text": "Precisely, and companies rarely account for that burnout.",
+        "englishExplanation": "Agreeing completely and noting that employers rarely consider or factor in the resulting exhaustion.",
+        "turkishExplanation": "Aynen öyle ve şirketler bu tükenmişliği nadiren hesaba katıyor."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "undoubtedly",
+        "gloss": "şüphesiz, kesinlikle"
+      },
+      {
+        "lemma": "autonomy",
+        "gloss": "özerklik, bağımsızlık"
+      },
+      {
+        "lemma": "blur",
+        "gloss": "bulanıklaştırmak, belirsizleştirmek"
+      },
+      {
+        "lemma": "burnout",
+        "gloss": "tükenmişlik"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "phrase",
+        "expression": "double-edged sword",
+        "englishExplanation": "An idiom used to describe something that has both beneficial and harmful aspects at the same time.",
+        "turkishExplanation": "Hem avantajları hem de dezavantajları veya tehlikeleri olan bir durumu ifade eden 'iki ucu keskin bıçak/kılıç' deyimi.",
+        "exampleEn": "Technological advancement can be a double-edged sword.",
+        "exampleTr": "Teknolojik ilerleme iki ucu keskin bir kılıç olabilir."
+      },
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "account for",
+        "englishExplanation": "A phrasal verb meaning to consider, factor in, or take something into account when making plans or evaluations.",
+        "turkishExplanation": "Bir durumu planlama yaparken veya karar verirken dikkate almak, hesaba katmak.",
+        "exampleEn": "Did you account for unexpected travel expenses?",
+        "exampleTr": "Beklenmedik seyahat masraflarını hesaba kattın mı?"
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 2,
+      "question": "In the context of segment 2, what does it mean that remote work 'blurs the boundary between work and rest'?",
+      "options": [
+        {
+          "text": "It makes it difficult to clearly separate working hours from personal downtime.",
+          "isCorrect": true
+        },
+        {
+          "text": "It requires employees to physically move their desks outside their living space.",
+          "isCorrect": false
+        },
+        {
+          "text": "It completely removes the obligation to complete daily professional duties.",
+          "isCorrect": false
+        },
+        {
+          "text": "It strictly enforces fixed schedules so that employees cannot take breaks.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

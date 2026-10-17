@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:47.126Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c1-ielts-the-big-picture.mp4"
+  },
+  "draft": {
+    "contentId": "c1-ielts-the-big-picture",
+    "muxAssetId": "local-overhauling-the-onboarding-process",
+    "sourceFile": "c1-ielts-the-big-picture.mp4",
+    "storageKey": null,
+    "durationMs": 20767,
+    "topic": "career",
+    "category": "ielts",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 740,
+        "endMs": 2540,
+        "text": "We keep arguing about small details.",
+        "englishExplanation": "We are spending too much time arguing over minor, insignificant points.",
+        "turkishExplanation": "Ufak tefek detaylar üzerine tartışıp duruyoruz."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3370,
+        "endMs": 6080,
+        "text": "Let's look at the big picture. Agreed.",
+        "englishExplanation": "Let's focus on the overall situation instead of small details, which the other person agrees with.",
+        "turkishExplanation": "Büyük resme odaklanalım. Katılıyorum."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 6520,
+        "endMs": 11100,
+        "text": "Our best practices are outdated and we're falling below average in retention.",
+        "englishExplanation": "Our standard working methods are outdated, and our employee or client retention rate is worse than normal.",
+        "turkishExplanation": "En iyi uygulamalarımız eskidi ve elde tutma oranında ortalamanın altına düşüyoruz."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12330,
+        "endMs": 15700,
+        "text": "Then we overhaul the onboarding process rather than patching it.",
+        "englishExplanation": "In that case, we should completely redesign the onboarding process instead of applying quick, temporary fixes.",
+        "turkishExplanation": "O zaman oryantasyon sürecini geçici olarak yamamak yerine baştan aşağı yenileriz."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 16700,
+        "endMs": 19620,
+        "text": "That would address the root cause, not just the symptoms.",
+        "englishExplanation": "Doing that would solve the underlying problem directly instead of just dealing with visible signs.",
+        "turkishExplanation": "Bu, sadece belirtileri değil, asıl kök nedeni çözer."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "overhaul",
+        "gloss": "tepeden tırnağa yenilemek, elden geçirmek"
+      },
+      {
+        "lemma": "retention",
+        "gloss": "elde tutma, muhafaza etme"
+      },
+      {
+        "lemma": "root cause",
+        "gloss": "kök neden, asıl sebep"
+      },
+      {
+        "lemma": "outdated",
+        "gloss": "eskimiş, modası geçmiş"
+      },
+      {
+        "lemma": "patch",
+        "gloss": "yamamak, geçici olarak düzeltmek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 2,
+        "type": "phrase",
+        "expression": "look at the big picture",
+        "englishExplanation": "To consider the entire situation or overall context rather than focusing on small, isolated details.",
+        "turkishExplanation": "Küçük detaylara takılmak yerine durumun geneline, bütününe odaklanmak.",
+        "exampleEn": "Instead of worrying about minor delays, we need to look at the big picture.",
+        "exampleTr": "Küçük gecikmelere takılmak yerine büyük resme bakmamız gerekiyor."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "root cause",
+        "englishExplanation": "The fundamental, underlying reason why a problem exists, as opposed to its superficial symptoms.",
+        "turkishExplanation": "Bir sorunun yüzeydeki belirtilerinden ziyade altında yatan temel, asıl kaynak.",
+        "exampleEn": "We must identify the root cause before introducing a new workflow.",
+        "exampleTr": "Yeni bir iş akışı uygulamadan önce kök nedeni tespit etmeliyiz."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "In segment 4, what does the speaker propose doing with the onboarding process?",
+      "options": [
+        {
+          "text": "Completely redesigning it instead of applying temporary fixes",
+          "isCorrect": true
+        },
+        {
+          "text": "Applying minor, quick adjustments to fix immediate issues",
+          "isCorrect": false
+        },
+        {
+          "text": "Suspending it entirely until retention metrics improve",
+          "isCorrect": false
+        },
+        {
+          "text": "Outsourcing it to an external agency to save staff time",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

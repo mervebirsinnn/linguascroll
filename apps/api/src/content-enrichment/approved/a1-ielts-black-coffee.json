@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:38.277Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "a1-ielts-black-coffee.mp4"
+  },
+  "draft": {
+    "contentId": "a1-ielts-black-coffee",
+    "muxAssetId": "local-ordering-morning-coffee",
+    "sourceFile": "a1-ielts-black-coffee.mp4",
+    "storageKey": null,
+    "durationMs": 15600,
+    "topic": "lifestyle",
+    "category": "ielts",
+    "cefrLevel": "A1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 650,
+        "endMs": 2520,
+        "text": "Good morning. What would you like?",
+        "englishExplanation": "A polite morning greeting followed by asking the customer what they want to order.",
+        "turkishExplanation": "Günaydın. Ne alırdınız?"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3650,
+        "endMs": 4900,
+        "text": "One black coffee, please.",
+        "englishExplanation": "Ordering a single cup of plain coffee politely.",
+        "turkishExplanation": "Bir sade kahve, lütfen."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5580,
+        "endMs": 6720,
+        "text": "No milk, no sugar.",
+        "englishExplanation": "Specifying that the coffee should not contain any milk or sugar.",
+        "turkishExplanation": "Süt ve şeker olmasın."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 7890,
+        "endMs": 8540,
+        "text": "Anything else?",
+        "englishExplanation": "Asking whether the customer wants to add anything more to the order.",
+        "turkishExplanation": "Başka bir şey ister misiniz?"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 10200,
+        "endMs": 11180,
+        "text": "Yes, a small cake.",
+        "englishExplanation": "Confirming and ordering a small cake.",
+        "turkishExplanation": "Evet, küçük bir pasta."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 11880,
+        "endMs": 13080,
+        "text": "It is my big day today.",
+        "englishExplanation": "Explaining that today is an important or special day for the speaker.",
+        "turkishExplanation": "Bugün benim için büyük bir gün."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "black coffee",
+        "gloss": "sade kahve"
+      },
+      {
+        "lemma": "big day",
+        "gloss": "önemli gün, büyük gün"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "phrase",
+        "expression": "What would you like?",
+        "englishExplanation": "A polite formula used especially by service staff to ask what a customer wants.",
+        "turkishExplanation": "Özellikle kafe ve restoranlarda servis görevlilerinin 'Ne alırdınız?' veya 'Ne istersiniz?' anlamında kullandığı kibar bir soru kalıbıdır.",
+        "exampleEn": "What would you like to drink?",
+        "exampleTr": "Ne içmek istersiniz?"
+      },
+      {
+        "segmentOrdinal": 6,
+        "type": "phrase",
+        "expression": "big day",
+        "englishExplanation": "An idiom referring to a very important, memorable, or eventful day (e.g., a wedding, exam, or job interview).",
+        "turkishExplanation": "Sınav, düğün, mülakat gibi heyecan verici ve dönüm noktası sayılabilecek çok önemli günleri ifade etmek için kullanılan bir deyimdir.",
+        "exampleEn": "Tomorrow is my big day, so I need to sleep early.",
+        "exampleTr": "Yarın benim büyük günüm, bu yüzden erken uyumam gerek."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 6,
+      "question": "In segment 6, what does the speaker mean by 'big day'?",
+      "options": [
+        {
+          "text": "An unusually long workday",
+          "isCorrect": false
+        },
+        {
+          "text": "An important or special day",
+          "isCorrect": true
+        },
+        {
+          "text": "A day with terrible weather",
+          "isCorrect": false
+        },
+        {
+          "text": "A quiet day spent alone at home",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

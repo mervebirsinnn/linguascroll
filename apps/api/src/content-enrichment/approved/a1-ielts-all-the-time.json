@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:41.733Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "a1-ielts-all-the-time.mp4"
+  },
+  "draft": {
+    "contentId": "a1-ielts-all-the-time",
+    "muxAssetId": "local-pet-routines-and-habits",
+    "sourceFile": "a1-ielts-all-the-time.mp4",
+    "storageKey": null,
+    "durationMs": 17800,
+    "topic": "lifestyle",
+    "category": "ielts",
+    "cefrLevel": "A2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 680,
+        "endMs": 2440,
+        "text": "Do you walk your dog every day?",
+        "englishExplanation": "Asking how frequently the other person takes their dog out for a walk.",
+        "turkishExplanation": "Köpeğini her gün gezdirir misin?"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4150,
+        "endMs": 5380,
+        "text": "Yes, all the time.",
+        "englishExplanation": "Confirming that they walk the dog very regularly and frequently.",
+        "turkishExplanation": "Evet, her zaman."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 6530,
+        "endMs": 7500,
+        "text": "He loves the park.",
+        "englishExplanation": "Explaining that the dog really enjoys visiting the park.",
+        "turkishExplanation": "Parkı çok seviyor."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 9150,
+        "endMs": 13160,
+        "text": "My cat sleeps all the time. Ha ha!",
+        "englishExplanation": "Contrasting with a laugh that their own pet cat spends almost all day sleeping.",
+        "turkishExplanation": "Benim kedimse hep uyuyor. Ha ha!"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 14270,
+        "endMs": 16280,
+        "text": "Maybe it is about time for her to play.",
+        "englishExplanation": "Suggesting that it is finally the right moment for the cat to wake up and play.",
+        "turkishExplanation": "Belki de artık oyun oynama vakti gelmiştir."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "all the time",
+        "gloss": "sürekli, her zaman"
+      },
+      {
+        "lemma": "about time",
+        "gloss": "tam vakti, zamanı"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "about time",
+        "englishExplanation": "Used to convey that the proper moment for something to happen has arrived, often implying it could have happened sooner.",
+        "turkishExplanation": "Bir eylemin vaktinin geldiğini veya geciktiğini belirtmek için 'artık zamanı geldi' anlamında kullanılır.",
+        "exampleEn": "It is about time we started dinner.",
+        "exampleTr": "Artık akşam yemeğine başlama vaktimiz geldi."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "In segment 5, what does the speaker mean by saying \"Maybe it is about time for her to play\"?",
+      "options": [
+        {
+          "text": "The cat should start being active and play.",
+          "isCorrect": true
+        },
+        {
+          "text": "The cat has already played for too long.",
+          "isCorrect": false
+        },
+        {
+          "text": "The cat prefers going out to the park.",
+          "isCorrect": false
+        },
+        {
+          "text": "The cat needs to take another long nap.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

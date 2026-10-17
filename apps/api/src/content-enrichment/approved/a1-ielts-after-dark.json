@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:40.726Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "a1-ielts-after-dark.mp4"
+  },
+  "draft": {
+    "contentId": "a1-ielts-after-dark",
+    "muxAssetId": "local-staying-out-after-dark",
+    "sourceFile": "a1-ielts-after-dark.mp4",
+    "storageKey": null,
+    "durationMs": 20370,
+    "topic": "lifestyle",
+    "category": "ielts",
+    "cefrLevel": "A2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 710,
+        "endMs": 1240,
+        "text": "It is late.",
+        "englishExplanation": "Stating that it is late in the day.",
+        "turkishExplanation": "Geç oldu."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 2450,
+        "endMs": 3520,
+        "text": "It is after dark now.",
+        "englishExplanation": "Noting that the sun has set and nighttime has arrived.",
+        "turkishExplanation": "Hava karardı artık."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5230,
+        "endMs": 6580,
+        "text": "Can I play five more minutes?",
+        "englishExplanation": "Asking for permission to keep playing for a brief extra amount of time.",
+        "turkishExplanation": "Beş dakika daha oynayabilir miyim?"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 8400,
+        "endMs": 14500,
+        "text": "No, it is against the rules to stay out. We go home. Okay.",
+        "englishExplanation": "Denying permission because staying outside violates the rules, and insisting on leaving for home.",
+        "turkishExplanation": "Hayır, dışarıda kalmak kurallara aykırı. Eve gidiyoruz. Tamam mı?"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15840,
+        "endMs": 16660,
+        "text": "I'm afraid not.",
+        "englishExplanation": "A polite fixed phrase for saying \"no\" and confirming the refusal: \"I'm afraid not\" softens a negative answer.",
+        "turkishExplanation": "Reddi kibarca pekiştiren kalıp: \"I'm afraid not\" = \"Korkarım olmaz\", \"hayır\"ı yumuşatır."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 17910,
+        "endMs": 18780,
+        "text": "I mean, okay.",
+        "englishExplanation": "Reluctantly accepting the decision to leave.",
+        "turkishExplanation": "Yani, peki o zaman."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "after dark",
+        "gloss": "hava karardıktan sonra"
+      },
+      {
+        "lemma": "against the rules",
+        "gloss": "kurallara aykırı"
+      },
+      {
+        "lemma": "stay out",
+        "gloss": "dışarıda kalmak"
+      },
+      {
+        "lemma": "I'm afraid not",
+        "gloss": "korkarım olmaz (kibar ret)"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "against the rules",
+        "englishExplanation": "Used to describe an action that is not permitted by an established guideline, regulation, or law.",
+        "turkishExplanation": "Belirlenmiş bir kurala, talimata veya yasaya aykırı olan durumları ifade etmek için kullanılır.",
+        "exampleEn": "Using your phone during the exam is against the rules.",
+        "exampleTr": "Sınav sırasında telefon kullanmak kurallara aykırıdır."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "In segment 4, why can't the boy keep playing in the park?",
+      "options": [
+        {
+          "text": "Staying out after dark is not allowed.",
+          "isCorrect": true
+        },
+        {
+          "text": "The park closes at noon every day.",
+          "isCorrect": false
+        },
+        {
+          "text": "He has not finished his homework.",
+          "isCorrect": false
+        },
+        {
+          "text": "His friends have already gone home.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

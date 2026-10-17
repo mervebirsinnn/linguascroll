@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:37.203Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "a1-ielts-ask-for-directions.mp4"
+  },
+  "draft": {
+    "contentId": "a1-ielts-ask-for-directions",
+    "muxAssetId": "local-airport-baggage-claim-directions",
+    "sourceFile": "a1-ielts-ask-for-directions.mp4",
+    "storageKey": null,
+    "durationMs": 15600,
+    "topic": "travel",
+    "category": "ielts",
+    "cefrLevel": "A1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 740,
+        "endMs": 2240,
+        "text": "Excuse me, I am lost.",
+        "englishExplanation": "A polite phrase used to get someone's attention and explain that you do not know where you are.",
+        "turkishExplanation": "Affedersiniz, kayboldum."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3050,
+        "endMs": 4080,
+        "text": "Where is the baggage claim?",
+        "englishExplanation": "Asking for the location where arriving passengers collect their checked luggage.",
+        "turkishExplanation": "Bagaj alım yeri nerede?"
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5280,
+        "endMs": 6840,
+        "text": "Go straight, then turn left.",
+        "englishExplanation": "Giving directions to continue forward in the same direction and then take a left turn.",
+        "turkishExplanation": "Düz gidin, sonra sola dönün."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 7420,
+        "endMs": 11220,
+        "text": "It is next to the cafe. Thank you. Is it far?",
+        "englishExplanation": "Stating that the place is beside the cafe, followed by a thank-you and a question asking if it is a long distance.",
+        "turkishExplanation": "Kafenin yanında. Teşekkür ederim. Uzak mı?"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 12330,
+        "endMs": 13800,
+        "text": "No, it is only two minutes.",
+        "englishExplanation": "Explaining that the destination is very close and takes only two minutes to walk there.",
+        "turkishExplanation": "Hayır, sadece iki dakika mesafede."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "baggage claim",
+        "gloss": "bagaj alım yeri, bagaj teslim"
+      },
+      {
+        "lemma": "go straight",
+        "gloss": "düz gitmek"
+      },
+      {
+        "lemma": "next to",
+        "gloss": "yanında, bitişiğinde"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 2,
+        "type": "phrase",
+        "expression": "baggage claim",
+        "englishExplanation": "A compound noun used at airports to describe the designated area where arriving passengers collect their checked suitcases.",
+        "turkishExplanation": "Havalimanlarında uçaktan inen yolcuların teslim ettikleri bavullarını aldıkları alanı ifade eder.",
+        "exampleEn": "Follow the signs to the baggage claim to find your suitcase.",
+        "exampleTr": "Bavulunu bulmak için bagaj alım yeri tabelalarını takip et."
+      },
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "next to",
+        "englishExplanation": "A preposition of place meaning at the side of someone or something, or adjacent to it.",
+        "turkishExplanation": "Bir nesnenin veya yerin hemen yanında, bitişiğinde olduğunu belirtmek için kullanılan bir yer edatıdır.",
+        "exampleEn": "The pharmacy is right next to the supermarket.",
+        "exampleTr": "Eczane tam süpermarketin yanındadır."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 2,
+      "question": "In the video, what does the person mean by \"baggage claim\"?",
+      "options": [
+        {
+          "text": "The area where passengers pick up their suitcases",
+          "isCorrect": true
+        },
+        {
+          "text": "The counter where travelers check in for their flight",
+          "isCorrect": false
+        },
+        {
+          "text": "The gate where passengers board the airplane",
+          "isCorrect": false
+        },
+        {
+          "text": "The security checkpoint where bags are scanned",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

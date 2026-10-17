@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:42.942Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c1-ielts-alternative-medicine.mp4"
+  },
+  "draft": {
+    "contentId": "c1-ielts-alternative-medicine",
+    "muxAssetId": "local-alternative-medicine-treatment",
+    "sourceFile": "c1-ielts-alternative-medicine.mp4",
+    "storageKey": null,
+    "durationMs": 19170,
+    "topic": "lifestyle",
+    "category": "ielts",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 690,
+        "endMs": 3300,
+        "text": "Would alternative medicine complement my treatment?",
+        "englishExplanation": "Asking whether alternative therapies can work well alongside the primary medical treatment.",
+        "turkishExplanation": "Alternatif tıp tedavimi tamamlar mı?"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5150,
+        "endMs": 8880,
+        "text": "Some practices alleviate symptoms, but evidence varies considerably.",
+        "englishExplanation": "Explaining that while some alternative methods reduce symptoms, scientific proof varies greatly.",
+        "turkishExplanation": "Bazı uygulamalar belirtileri hafifletir, ancak kanıtlar büyük ölçüde değişkenlik gösterir."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 10510,
+        "endMs": 13980,
+        "text": "So it's not a substitute? Correct.",
+        "englishExplanation": "Seeking confirmation that alternative medicine cannot replace regular care, and getting an affirmative response.",
+        "turkishExplanation": "Yani onun yerine geçecek bir şey değil, öyle mi? Doğru."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 15080,
+        "endMs": 17540,
+        "text": "Consider it supplementary, never a replacement.",
+        "englishExplanation": "Advising to view it as an addition to standard therapy, never as an outright substitute.",
+        "turkishExplanation": "Bunu tamamlayıcı olarak düşünün, asla bir ikame olarak değil."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "complement",
+        "gloss": "tamamlamak, bütünlemek"
+      },
+      {
+        "lemma": "alleviate",
+        "gloss": "hafifletmek, dindirmek"
+      },
+      {
+        "lemma": "considerably",
+        "gloss": "büyük ölçüde, oldukça"
+      },
+      {
+        "lemma": "substitute",
+        "gloss": "ikame, yedek"
+      },
+      {
+        "lemma": "supplementary",
+        "gloss": "tamamlayıcı, ek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 2,
+        "type": "phrase",
+        "expression": "alleviate symptoms",
+        "englishExplanation": "A frequent medical collocation meaning to ease discomfort, pain, or negative effects of an illness without necessarily curing the underlying cause.",
+        "turkishExplanation": "Hastalığın ana nedenini tamamen yok etmese de ağrı, rahatsızlık veya belirtileri hafifletmek anlamına gelen yaygın bir tıbbi ifadedir.",
+        "exampleEn": "The doctor prescribed a mild painkiller to alleviate her symptoms.",
+        "exampleTr": "Doktor, belirtilerini hafifletmek için ona hafif bir ağrı kesici yazdı."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "In the video, what does the speaker mean by describing alternative medicine as \"supplementary\"?",
+      "options": [
+        {
+          "text": "It should be used in addition to regular treatment, not instead of it.",
+          "isCorrect": true
+        },
+        {
+          "text": "It is an unnecessary option that provides no genuine health benefit.",
+          "isCorrect": false
+        },
+        {
+          "text": "It should completely take the place of standard medical treatment.",
+          "isCorrect": false
+        },
+        {
+          "text": "It is only effective when prescribed before conventional therapy.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

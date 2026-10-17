@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:48.134Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c2-ielts-art-and-restraint.mp4"
+  },
+  "draft": {
+    "contentId": "c2-ielts-art-and-restraint",
+    "muxAssetId": "local-power-of-artistic-restraint",
+    "sourceFile": "c2-ielts-art-and-restraint.mp4",
+    "storageKey": null,
+    "durationMs": 16500,
+    "topic": "lifestyle",
+    "category": "ielts",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 710,
+        "endMs": 3740,
+        "text": "What unsettles viewers here isn't excess, but restraint.",
+        "englishExplanation": "Viewers are unsettled not by too much on display, but by how much the artist deliberately holds back.",
+        "turkishExplanation": "Burada izleyicileri tedirgin eden şey fazlalık değil, ölçülülüktür."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5570,
+        "endMs": 9800,
+        "text": "The emptiness feels almost deliberate. It is.",
+        "englishExplanation": "The empty space seems intentional, and indeed, it was planned that way on purpose.",
+        "turkishExplanation": "Boşluk hissi neredeyse kasti gibi duruyor. Zaten öyle."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 10950,
+        "endMs": 15020,
+        "text": "The void does the heavy lifting, the artist withholds so you fill in the rest.",
+        "englishExplanation": "The empty space carries most of the impact because the artist holds back details, prompting the viewer to imagine the rest.",
+        "turkishExplanation": "Bütün ağır yükü o boşluk sırtlıyor; sanatçı kendini geri çekiyor ki geri kalanını siz tamamlayasınız."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "unsettle",
+        "gloss": "tedirgin etmek, huzursuz etmek"
+      },
+      {
+        "lemma": "restraint",
+        "gloss": "ölçülülük, kendini tutma"
+      },
+      {
+        "lemma": "deliberate",
+        "gloss": "kasti, bilinçli"
+      },
+      {
+        "lemma": "withhold",
+        "gloss": "sakınmak, esirgemek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 3,
+        "type": "phrase",
+        "expression": "do the heavy lifting",
+        "englishExplanation": "An idiom meaning to do the most difficult, substantial, or impactful part of a task.",
+        "turkishExplanation": "Bir işin en zor, en zahmetli veya asıl etkiyi yaratan kısmını üstlenmek anlamına gelen yaygın bir deyim.",
+        "exampleEn": "I gathered the initial data, but my partner did the heavy lifting on the final report.",
+        "exampleTr": "İlk verileri ben topladım ama nihai raporun asıl ağır yükünü ortağım sırtladı."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "In the video, what does the speaker mean by saying that 'the void does the heavy lifting'?",
+      "options": [
+        {
+          "text": "The empty space creates the primary emotional impact of the piece.",
+          "isCorrect": true
+        },
+        {
+          "text": "The physical structure relies on hollow materials for balance.",
+          "isCorrect": false
+        },
+        {
+          "text": "The lack of detail makes the work much easier for the artist to complete.",
+          "isCorrect": false
+        },
+        {
+          "text": "The audience is expected to ignore the missing parts of the artwork.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

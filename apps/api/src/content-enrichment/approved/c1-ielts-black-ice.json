@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:44.067Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c1-ielts-black-ice.mp4"
+  },
+  "draft": {
+    "contentId": "c1-ielts-black-ice",
+    "muxAssetId": "local-driving-on-black-ice",
+    "sourceFile": "c1-ielts-black-ice.mp4",
+    "storageKey": null,
+    "durationMs": 19410,
+    "topic": "lifestyle",
+    "category": "ielts",
+    "cefrLevel": "B1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 700,
+        "endMs": 2340,
+        "text": "I nearly skidded off the road.",
+        "englishExplanation": "The speaker mentions that their car almost slid out of control off the roadway.",
+        "turkishExplanation": "Az kalsın yoldan kayıp çıkıyordum."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3020,
+        "endMs": 5040,
+        "text": "Black ice is practically invisible.",
+        "englishExplanation": "The speaker points out that transparent road ice is almost impossible to see.",
+        "turkishExplanation": "Gizli buzlanma neredeyse görünmezdir."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 6410,
+        "endMs": 9000,
+        "text": "You should have taken the back roads instead of the motorway.",
+        "englishExplanation": "The speaker suggests that taking smaller side roads rather than the highway would have been a better choice.",
+        "turkishExplanation": "Otoyol yerine ara yollardan gitmeliydin."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 10580,
+        "endMs": 14460,
+        "text": "They're no safer when it freezes overnight. True.",
+        "englishExplanation": "The speaker responds that side roads are not any safer when temperatures drop below freezing overnight.",
+        "turkishExplanation": "Gece ayaz yaptığında onlar da hiç güvenli olmuyor. Doğru."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15570,
+        "endMs": 17960,
+        "text": "Next time, let's carpool until the thaw.",
+        "englishExplanation": "The speaker suggests sharing car rides until the weather warms up and the ice melts.",
+        "turkishExplanation": "Bir dahaki sefere buzlar çözülene kadar arabayı ortak kullanalım."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "skid",
+        "gloss": "kaymak"
+      },
+      {
+        "lemma": "black ice",
+        "gloss": "gizli buzlanma"
+      },
+      {
+        "lemma": "back road",
+        "gloss": "ara yol, tali yol"
+      },
+      {
+        "lemma": "carpool",
+        "gloss": "arabayı ortak kullanmak"
+      },
+      {
+        "lemma": "thaw",
+        "gloss": "buzların erimesi"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 3,
+        "type": "grammar",
+        "expression": "should have + past participle",
+        "englishExplanation": "Used to express criticism or regret about an action that did not happen in the past.",
+        "turkishExplanation": "Geçmişte yapılması gerekip de yapılmayan eylemler için pişmanlık veya eleştiri bildirmek amacıyla kullanılır.",
+        "exampleEn": "You should have called me before leaving the office.",
+        "exampleTr": "Ofisten çıkmadan önce beni aramalıydın."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "In segment 3, what does the speaker imply by saying \"You should have taken the back roads\"?",
+      "options": [
+        {
+          "text": "Taking side roads would have been a better decision in the past.",
+          "isCorrect": true
+        },
+        {
+          "text": "The motorway was closed, so there was no other route available.",
+          "isCorrect": false
+        },
+        {
+          "text": "Side roads are always much faster than driving on a motorway.",
+          "isCorrect": false
+        },
+        {
+          "text": "The driver should turn around right now and leave the highway.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

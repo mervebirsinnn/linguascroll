@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-10-17T23:52:39.695Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "a1-ielts-apply-for-a-job.mp4"
+  },
+  "draft": {
+    "contentId": "a1-ielts-apply-for-a-job",
+    "muxAssetId": "local-applying-for-bakery-job",
+    "sourceFile": "a1-ielts-apply-for-a-job.mp4",
+    "storageKey": null,
+    "durationMs": 18210,
+    "topic": "career",
+    "category": "ielts",
+    "cefrLevel": "A2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 700,
+        "endMs": 2840,
+        "text": "I want to apply for a job at the bakery.",
+        "englishExplanation": "The speaker expresses their wish to apply for an open position at a bakery.",
+        "turkishExplanation": "Fırındaki işe başvurmak istiyorum."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4090,
+        "endMs": 4800,
+        "text": "Great idea.",
+        "englishExplanation": "The listener enthusiastically agrees with the speaker's plan.",
+        "turkishExplanation": "Harika fikir."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 6030,
+        "endMs": 9300,
+        "text": "Are you afraid of the interview? A little.",
+        "englishExplanation": "One person asks if the interview causes fear, and the other admits to feeling slightly nervous.",
+        "turkishExplanation": "Mülakattan korkuyor musun? Biraz."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 10030,
+        "endMs": 13060,
+        "text": "I am not good at talking. Don't worry.",
+        "englishExplanation": "The speaker admits they lack confidence in speaking, and their friend tells them to stay calm.",
+        "turkishExplanation": "Konuşma konusunda iyi değilim. Endişelenme."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 14150,
+        "endMs": 16540,
+        "text": "I will help you. Best wishes.",
+        "englishExplanation": "The friend promises to offer assistance and shares supportive words.",
+        "turkishExplanation": "Sana yardım edeceğim. Başarılar dilerim."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "apply for",
+        "gloss": "başvurmak"
+      },
+      {
+        "lemma": "interview",
+        "gloss": "mülakat, iş görüşmesi"
+      },
+      {
+        "lemma": "afraid of",
+        "gloss": "-den korkan, çekinen"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "grammar",
+        "expression": "be good at + verb-ing",
+        "englishExplanation": "Used to describe skill or ability in doing an activity. The preposition 'at' is followed by a gerund (-ing form).",
+        "turkishExplanation": "Bir eylemi yapmakta başarılı ya da yetenekli olduğunu ifade etmek için 'be good at' kalıbının ardına fiile '-ing' takısı eklenerek kullanılır.",
+        "exampleEn": "She is very good at baking cakes.",
+        "exampleTr": "Pasta yapma konusunda çok iyidir."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "In segment 4, what does the speaker mean by \"I am not good at talking\"?",
+      "options": [
+        {
+          "text": "They feel nervous and lack confidence when speaking.",
+          "isCorrect": true
+        },
+        {
+          "text": "They refuse to answer any questions at work.",
+          "isCorrect": false
+        },
+        {
+          "text": "They have lost their voice and cannot talk.",
+          "isCorrect": false
+        },
+        {
+          "text": "They do not understand the language of the interview.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}
