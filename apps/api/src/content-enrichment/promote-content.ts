@@ -1,5 +1,6 @@
 import { ApprovalQualityError, ApprovedArtifactError, mapDraftMedia, promoteDraftToApproved } from "./approved-artifact";
 import { loadPublishDraft, PublishPipelineError } from "./publish-content";
+import { assertTimingQaAllowsPromotion, TimingQaGateError } from "./timing-qa-gate";
 
 /**
  * output/<id>/enriched.json → approved/<id>.json terfi CLI'ı. DB'ye/R2'ye dokunmaz, tek içerik alır
@@ -53,6 +54,8 @@ export function parsePromoteArgs(argv: readonly string[]): {
 export function main(argv: readonly string[]): void {
   const options = parsePromoteArgs(argv);
   const draft = loadPublishDraft(options.contentId);
+  // Altyazı zamanlama QA'sı (varsa) kaldıysa ya da doğruladığı zamanlama diskteki ile aynı değilse terfi yok.
+  assertTimingQaAllowsPromotion(options.contentId, draft.segments);
   // Medya dosyası AÇIKÇA eşlenir (draft.sourceFile basename'i ya da --media-file); contentId'den türetilmez, dosya yeniden adlandırılmaz.
   const media = mapDraftMedia(draft, { override: options.mediaFile });
   const { filePath, artifact } = promoteDraftToApproved(draft, { ...options, media });
@@ -66,7 +69,7 @@ if (require.main === module) {
   try {
     main(process.argv.slice(2));
   } catch (error: unknown) {
-    if (error instanceof PublishPipelineError || error instanceof ApprovedArtifactError || error instanceof ApprovalQualityError) {
+    if (error instanceof PublishPipelineError || error instanceof ApprovedArtifactError || error instanceof ApprovalQualityError || error instanceof TimingQaGateError) {
       console.error(`\nHATA: ${error.message}`);
     } else {
       console.error("\nBEKLENMEYEN HATA:");

@@ -1,0 +1,869 @@
+[
+  {
+    "contentId": "a1-ielts-ask-for-directions",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -172,
+    "maxAbsPreErrorMs": 340,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 560,
+        "correctedStartMs": 740,
+        "verifierOnsetMs": 740,
+        "preErrorMs": -180,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 3020,
+        "correctedStartMs": 3050,
+        "verifierOnsetMs": 3040,
+        "preErrorMs": -20,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 4980,
+        "correctedStartMs": 5280,
+        "verifierOnsetMs": 5280,
+        "preErrorMs": -300,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 7400,
+        "correctedStartMs": 7420,
+        "verifierOnsetMs": 7420,
+        "preErrorMs": -20,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 12000,
+        "correctedStartMs": 12330,
+        "verifierOnsetMs": 12340,
+        "preErrorMs": -340,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "a1-ielts-black-coffee",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -250,
+    "maxAbsPreErrorMs": 660,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 650,
+        "verifierOnsetMs": 660,
+        "preErrorMs": -660,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 3500,
+        "correctedStartMs": 3650,
+        "verifierOnsetMs": 3640,
+        "preErrorMs": -140,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 5580,
+        "correctedStartMs": 5580,
+        "verifierOnsetMs": 5580,
+        "preErrorMs": 0,
+        "postErrorMs": 0,
+        "status": "aligned",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 7580,
+        "correctedStartMs": 7890,
+        "verifierOnsetMs": 7880,
+        "preErrorMs": -300,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 9840,
+        "correctedStartMs": 10200,
+        "verifierOnsetMs": 10200,
+        "preErrorMs": -360,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 6,
+        "originalStartMs": 11840,
+        "correctedStartMs": 11880,
+        "verifierOnsetMs": 11880,
+        "preErrorMs": -40,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "a1-ielts-apply-for-a-job",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -284,
+    "maxAbsPreErrorMs": 700,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 700,
+        "verifierOnsetMs": 700,
+        "preErrorMs": -700,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 3880,
+        "correctedStartMs": 4090,
+        "verifierOnsetMs": 4100,
+        "preErrorMs": -220,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 5880,
+        "correctedStartMs": 6030,
+        "verifierOnsetMs": 6040,
+        "preErrorMs": -160,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 9940,
+        "correctedStartMs": 10030,
+        "verifierOnsetMs": 10020,
+        "preErrorMs": -80,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 13880,
+        "correctedStartMs": 14150,
+        "verifierOnsetMs": 14140,
+        "preErrorMs": -260,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "a1-ielts-after-dark",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -383,
+    "maxAbsPreErrorMs": 700,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 710,
+        "verifierOnsetMs": 700,
+        "preErrorMs": -700,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 2400,
+        "correctedStartMs": 2450,
+        "verifierOnsetMs": 2440,
+        "preErrorMs": -40,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 4780,
+        "correctedStartMs": 5230,
+        "verifierOnsetMs": 5240,
+        "preErrorMs": -460,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 8100,
+        "correctedStartMs": 8400,
+        "verifierOnsetMs": 8400,
+        "preErrorMs": -300,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 15440,
+        "correctedStartMs": 15840,
+        "verifierOnsetMs": 15840,
+        "preErrorMs": -400,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 6,
+        "originalStartMs": 17500,
+        "correctedStartMs": 17910,
+        "verifierOnsetMs": 17900,
+        "preErrorMs": -400,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "a1-ielts-all-the-time",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -268,
+    "maxAbsPreErrorMs": 680,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 680,
+        "verifierOnsetMs": 680,
+        "preErrorMs": -680,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 3980,
+        "correctedStartMs": 4150,
+        "verifierOnsetMs": 4140,
+        "preErrorMs": -160,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 6440,
+        "correctedStartMs": 6530,
+        "verifierOnsetMs": 6540,
+        "preErrorMs": -100,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 8960,
+        "correctedStartMs": 9150,
+        "verifierOnsetMs": 9140,
+        "preErrorMs": -180,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 14060,
+        "correctedStartMs": 14270,
+        "verifierOnsetMs": 14280,
+        "preErrorMs": -220,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c1-ielts-alternative-medicine",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -425,
+    "maxAbsPreErrorMs": 680,
+    "maxAbsPostErrorMs": 20,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 690,
+        "verifierOnsetMs": 680,
+        "preErrorMs": -680,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 4720,
+        "correctedStartMs": 5150,
+        "verifierOnsetMs": 5160,
+        "preErrorMs": -440,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 10100,
+        "correctedStartMs": 10510,
+        "verifierOnsetMs": 10520,
+        "preErrorMs": -420,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 14940,
+        "correctedStartMs": 15080,
+        "verifierOnsetMs": 15100,
+        "preErrorMs": -160,
+        "postErrorMs": -20,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c1-ielts-black-ice",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -308,
+    "maxAbsPreErrorMs": 700,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 700,
+        "verifierOnsetMs": 700,
+        "preErrorMs": -700,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 2940,
+        "correctedStartMs": 3020,
+        "verifierOnsetMs": 3020,
+        "preErrorMs": -80,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 6260,
+        "correctedStartMs": 6410,
+        "verifierOnsetMs": 6400,
+        "preErrorMs": -140,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 10100,
+        "correctedStartMs": 10580,
+        "verifierOnsetMs": 10580,
+        "preErrorMs": -480,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 15420,
+        "correctedStartMs": 15570,
+        "verifierOnsetMs": 15560,
+        "preErrorMs": -140,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c1-ielts-black-sheep",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -267,
+    "maxAbsPreErrorMs": 640,
+    "maxAbsPostErrorMs": 20,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 650,
+        "verifierOnsetMs": 640,
+        "preErrorMs": -640,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 4860,
+        "correctedStartMs": 5260,
+        "verifierOnsetMs": 5260,
+        "preErrorMs": -400,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 7060,
+        "correctedStartMs": 7130,
+        "verifierOnsetMs": 7120,
+        "preErrorMs": -60,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 9520,
+        "correctedStartMs": 9800,
+        "verifierOnsetMs": 9820,
+        "preErrorMs": -300,
+        "postErrorMs": -20,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 12500,
+        "correctedStartMs": 12550,
+        "verifierOnsetMs": 12540,
+        "preErrorMs": -40,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 6,
+        "originalStartMs": 14800,
+        "correctedStartMs": 14970,
+        "verifierOnsetMs": 14960,
+        "preErrorMs": -160,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c1-ielts-remote-work-debate",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -375,
+    "maxAbsPreErrorMs": 720,
+    "maxAbsPostErrorMs": 0,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 720,
+        "verifierOnsetMs": 720,
+        "preErrorMs": -720,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 5820,
+        "correctedStartMs": 5960,
+        "verifierOnsetMs": 5960,
+        "preErrorMs": -140,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 10700,
+        "correctedStartMs": 11260,
+        "verifierOnsetMs": 11260,
+        "preErrorMs": -560,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 14740,
+        "correctedStartMs": 14820,
+        "verifierOnsetMs": 14820,
+        "preErrorMs": -80,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c1-ielts-the-big-picture",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -292,
+    "maxAbsPreErrorMs": 740,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 740,
+        "verifierOnsetMs": 740,
+        "preErrorMs": -740,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 3320,
+        "correctedStartMs": 3370,
+        "verifierOnsetMs": 3360,
+        "preErrorMs": -40,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 6500,
+        "correctedStartMs": 6520,
+        "verifierOnsetMs": 6520,
+        "preErrorMs": -20,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 11860,
+        "correctedStartMs": 12330,
+        "verifierOnsetMs": 12320,
+        "preErrorMs": -460,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 16500,
+        "correctedStartMs": 16700,
+        "verifierOnsetMs": 16700,
+        "preErrorMs": -200,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c2-ielts-art-and-restraint",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -293,
+    "maxAbsPreErrorMs": 720,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 710,
+        "verifierOnsetMs": 720,
+        "preErrorMs": -720,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 5420,
+        "correctedStartMs": 5570,
+        "verifierOnsetMs": 5560,
+        "preErrorMs": -140,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 10920,
+        "correctedStartMs": 10950,
+        "verifierOnsetMs": 10940,
+        "preErrorMs": -20,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c2-ielts-language-and-thought",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -390,
+    "maxAbsPreErrorMs": 720,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 710,
+        "verifierOnsetMs": 720,
+        "preErrorMs": -720,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 5440,
+        "correctedStartMs": 5910,
+        "verifierOnsetMs": 5900,
+        "preErrorMs": -460,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 9820,
+        "correctedStartMs": 10170,
+        "verifierOnsetMs": 10160,
+        "preErrorMs": -340,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 14600,
+        "correctedStartMs": 14630,
+        "verifierOnsetMs": 14640,
+        "preErrorMs": -40,
+        "postErrorMs": -10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c2-ielts-moral-ambiguity",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -467,
+    "maxAbsPreErrorMs": 680,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 690,
+        "verifierOnsetMs": 680,
+        "preErrorMs": -680,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 5940,
+        "correctedStartMs": 6600,
+        "verifierOnsetMs": 6600,
+        "preErrorMs": -660,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 13840,
+        "correctedStartMs": 13900,
+        "verifierOnsetMs": 13900,
+        "preErrorMs": -60,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c2-ielts-nuance-of-persuasion",
+    "status": "pass",
+    "applied": false,
+    "meanPreErrorMs": -205,
+    "maxAbsPreErrorMs": 720,
+    "maxAbsPostErrorMs": 10,
+    "failures": [],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 730,
+        "verifierOnsetMs": 720,
+        "preErrorMs": -720,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 3620,
+        "correctedStartMs": 3640,
+        "verifierOnsetMs": 3640,
+        "preErrorMs": -20,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 8440,
+        "correctedStartMs": 8500,
+        "verifierOnsetMs": 8500,
+        "preErrorMs": -60,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 13360,
+        "correctedStartMs": 13390,
+        "verifierOnsetMs": 13380,
+        "preErrorMs": -20,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "contentId": "c2-ielts-unintended-consequences",
+    "status": "fail",
+    "applied": false,
+    "meanPreErrorMs": -285,
+    "maxAbsPreErrorMs": 640,
+    "maxAbsPostErrorMs": 10,
+    "failures": [
+      "#2: düzeltilemedi (no-onset)"
+    ],
+    "segments": [
+      {
+        "ordinal": 1,
+        "originalStartMs": 0,
+        "correctedStartMs": 650,
+        "verifierOnsetMs": 640,
+        "preErrorMs": -640,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 2,
+        "originalStartMs": 6060,
+        "correctedStartMs": 6060,
+        "verifierOnsetMs": null,
+        "preErrorMs": null,
+        "postErrorMs": null,
+        "status": "no-onset",
+        "ok": false
+      },
+      {
+        "ordinal": 3,
+        "originalStartMs": 7760,
+        "correctedStartMs": 8130,
+        "verifierOnsetMs": 8120,
+        "preErrorMs": -360,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 4,
+        "originalStartMs": 10340,
+        "correctedStartMs": 10480,
+        "verifierOnsetMs": 10480,
+        "preErrorMs": -140,
+        "postErrorMs": 0,
+        "status": "snapped",
+        "ok": true
+      },
+      {
+        "ordinal": 5,
+        "originalStartMs": 13880,
+        "correctedStartMs": 13890,
+        "verifierOnsetMs": 13880,
+        "preErrorMs": 0,
+        "postErrorMs": 10,
+        "status": "snapped",
+        "ok": true
+      }
+    ]
+  }
+]
