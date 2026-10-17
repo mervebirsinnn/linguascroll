@@ -10,7 +10,10 @@ export const SINTEL_CATALOG_PATH = path.resolve(__dirname, "../../content/animat
 // loadAnimationCatalog ikisini TEK bir listeye birleştirip aynı invariant'larla (benzersiz
 // muxAssetId, zorunlu attribution, segment/süre tutarlılığı) doğruluyor.
 export const COSMOS_LAUNDROMAT_CATALOG_PATH = path.resolve(__dirname, "../../content/animation/cosmos-laundromat.json");
-const DEFAULT_CATALOG_PATHS: readonly string[] = [SINTEL_CATALOG_PATH, COSMOS_LAUNDROMAT_CATALOG_PATH];
+// Sprite Fright — Blender Studio (CC BY), Cosmos ile AYNI STT + enrichment yolundan geçti;
+// lisans/atıf bilgisi kataloğun içindeki draft.attribution'da, bkz. README "Sprite Fright".
+export const SPRITE_FRIGHT_CATALOG_PATH = path.resolve(__dirname, "../../content/animation/sprite-fright.json");
+const DEFAULT_CATALOG_PATHS: readonly string[] = [SINTEL_CATALOG_PATH, COSMOS_LAUNDROMAT_CATALOG_PATH, SPRITE_FRIGHT_CATALOG_PATH];
 const catalogSchema = z.array(z.object({
   sourceStartMs: z.number().int().nonnegative(),
   title: z.string().min(1),

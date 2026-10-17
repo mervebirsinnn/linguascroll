@@ -1,0 +1,656 @@
+[
+  {
+    "sourceStartMs": 0,
+    "title": "Hoş geldiniz, dostlar",
+    "draft": {
+      "contentId": "sprite-welcome-friends",
+      "muxAssetId": "local-sprite-welcome-friends",
+      "sourceFile": "sprite-welcome-friends.mp4",
+      "storageKey": null,
+      "durationMs": 24500,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 0,
+          "endMs": 3060,
+          "text": "Greetings! Welcome, friends.",
+          "englishExplanation": "A friendly greeting welcoming visitors.",
+          "turkishExplanation": "Selamlar! Hoş geldiniz dostlar."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 3600,
+          "endMs": 4680,
+          "text": "I'll be right down.",
+          "englishExplanation": "The speaker says they are coming downstairs immediately.",
+          "turkishExplanation": "Hemen aşağı iniyorum."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 9680,
+          "endMs": 12860,
+          "text": "Could I interest you in some peppermint tea?",
+          "englishExplanation": "A polite offer asking if the guests would like to have some peppermint tea.",
+          "turkishExplanation": "Biraz nane çayı ikram etsem içer misiniz?"
+        },
+        {
+          "ordinal": 4,
+          "startMs": 13320,
+          "endMs": 15920,
+          "text": "What are you guys? We are sprites.",
+          "englishExplanation": "A question asking what kind of beings they are, followed by their answer identifying themselves as sprites.",
+          "turkishExplanation": "Siz nesiniz öyle? Biz periyiz."
+        },
+        {
+          "ordinal": 5,
+          "startMs": 16340,
+          "endMs": 18340,
+          "text": "We sprite balance to the forest.",
+          "englishExplanation": "A playful statement asserting that they maintain balance in the forest.",
+          "turkishExplanation": "Biz ormana denge katıyoruz."
+        },
+        {
+          "ordinal": 6,
+          "startMs": 18840,
+          "endMs": 20080,
+          "text": "We take care of the animals.",
+          "englishExplanation": "The speaker explains that their duty includes looking after the forest animals.",
+          "turkishExplanation": "Hayvanlarla ilgileniyoruz."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "sprite",
+          "gloss": "peri, doğa ruhu"
+        },
+        {
+          "lemma": "peppermint",
+          "gloss": "nane, bahçe nanesi"
+        },
+        {
+          "lemma": "take care of",
+          "gloss": "ilgilenmek, bakmak"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 3,
+          "type": "phrase",
+          "expression": "Could I interest you in...?",
+          "englishExplanation": "A courteous, hospitable way to offer someone food, drink, or an idea.",
+          "turkishExplanation": "Birine kibarca bir yiyecek, içecek veya fikir teklif etmek ya da ikramda bulunmak için kullanılan nazik bir kalıptır.",
+          "exampleEn": "Could I interest you in a slice of homemade cake?",
+          "exampleTr": "Ev yapımı bir dilim kek ikram etsem yer misiniz?"
+        },
+        {
+          "segmentOrdinal": 6,
+          "type": "phrase",
+          "expression": "take care of",
+          "englishExplanation": "A common phrasal verb meaning to look after, protect, or attend to the needs of someone or something.",
+          "turkishExplanation": "Birine veya bir şeye bakmak, onunla ilgilenmek ya da onun sorumluluğunu üstlenmek anlamına gelen yaygın bir deyimsel fiildir.",
+          "exampleEn": "Don't worry about the plants; I'll take care of them while you're away.",
+          "exampleTr": "Bitkiler için endişelenme; sen yokken onlarla ben ilgilenirim."
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 3,
+        "question": "In the video, what does the speaker mean by \"Could I interest you in some peppermint tea?\"",
+        "options": [
+          {
+            "text": "Would you like me to serve you some peppermint tea?",
+            "isCorrect": true
+          },
+          {
+            "text": "Do you know how to prepare fresh peppermint tea?",
+            "isCorrect": false
+          },
+          {
+            "text": "Are you willing to buy some peppermint tea from me?",
+            "isCorrect": false
+          },
+          {
+            "text": "Why do you prefer peppermint tea over other drinks?",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "learningPointExpressionNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": 3,
+            "message": "Learning point ifadesi (\"Could I interest you in...?\") segment 3'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+          }
+        ]
+      },
+      "backgroundColor": "#564a2e",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "Blender Studio · (CC) Blender Foundation | studio.blender.org",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/",
+        "license": "CC BY 1.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+        "changes": "Filmden kısa kesit seçimi ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      }
+    }
+  },
+  {
+    "sourceStartMs": 0,
+    "title": "Burada mı kamp yapıyorsunuz?",
+    "draft": {
+      "contentId": "sprite-camping-here",
+      "muxAssetId": "local-sprite-camping-here",
+      "sourceFile": "sprite-camping-here.mp4",
+      "storageKey": null,
+      "durationMs": 25000,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 720,
+          "endMs": 1721,
+          "text": "Hey, uh,",
+          "englishExplanation": "A casual hesitation before addressing someone.",
+          "turkishExplanation": "Hey, şey,"
+        },
+        {
+          "ordinal": 2,
+          "startMs": 2320,
+          "endMs": 6360,
+          "text": "little mushroom geezer, you call with us camping here for the night? Absolutely.",
+          "englishExplanation": "Asking the small mushroom character if it is alright to camp there overnight, and receiving an enthusiastic yes.",
+          "turkishExplanation": "Küçük mantar ihtiyar, bu gece burada kamp yapmamız senin için uygun mu? Kesinlikle."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 7200,
+          "endMs": 10360,
+          "text": "A friend of the forest is a friend of the sprites.",
+          "englishExplanation": "A rhyming proverb expressing that anyone kind to nature is welcome among woodland spirits.",
+          "turkishExplanation": "Ormanın dostu, perilerin de dostudur."
+        },
+        {
+          "ordinal": 4,
+          "startMs": 11720,
+          "endMs": 16820,
+          "text": "Maybe, maybe it was just ketchup or something like red paint?",
+          "englishExplanation": "Speculating nervously that a suspicious red substance was merely harmless sauce or paint.",
+          "turkishExplanation": "Belki de, belki sadece ketçap ya da kırmızı boya gibi bir şeydi?"
+        },
+        {
+          "ordinal": 5,
+          "startMs": 17780,
+          "endMs": 24740,
+          "text": "Yeah, maybe they were just painting their little hats or something. Mmm. Brrr.",
+          "englishExplanation": "Agreeing with the hopeful excuse while shivering with unease.",
+          "turkishExplanation": "Evet, belki de sadece küçük şapkalarını falan boyuyorlardı. Hım. Brrr."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "geezer",
+          "gloss": "ihtiyar, herif"
+        },
+        {
+          "lemma": "sprite",
+          "gloss": "peri, doğa cini"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 2,
+          "type": "phrase",
+          "expression": "for the night",
+          "englishExplanation": "Used to describe staying or doing something during the overnight period until the next morning.",
+          "turkishExplanation": "Gece boyunca kalmayı ya da bir yerde gecelemeyi ifade eden kalıp.",
+          "exampleEn": "Can we stay at your place for the night?",
+          "exampleTr": "Bu gece sende kalabilir miyiz?"
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 3,
+        "question": "In the video, what does the saying \"A friend of the forest is a friend of the sprites\" mean?",
+        "options": [
+          {
+            "text": "Anyone who respects the woods is welcomed by the magical creatures living there.",
+            "isCorrect": true
+          },
+          {
+            "text": "Only magical creatures are permitted to enter and spend the night in the forest.",
+            "isCorrect": false
+          },
+          {
+            "text": "Campers must bring gifts to the spirits if they want to stay safe until morning.",
+            "isCorrect": false
+          },
+          {
+            "text": "Forest spirits distrust any strangers who try to build a campsite nearby.",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "pass",
+        "issues": []
+      },
+      "backgroundColor": "#50461d",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "Blender Studio · (CC) Blender Foundation | studio.blender.org",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/",
+        "license": "CC BY 1.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+        "changes": "Filmden kısa kesit seçimi ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      }
+    }
+  },
+  {
+    "sourceStartMs": 0,
+    "title": "Yeni bir tür",
+    "draft": {
+      "contentId": "sprite-new-species",
+      "muxAssetId": "local-sprite-new-species",
+      "sourceFile": "sprite-new-species.mp4",
+      "storageKey": null,
+      "durationMs": 20000,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 0,
+          "endMs": 2260,
+          "text": "They're absolutely adorable!",
+          "englishExplanation": "The speaker expresses delight at how extremely cute the creatures are.",
+          "turkishExplanation": "Kesinlikle çok sevimliler!"
+        },
+        {
+          "ordinal": 2,
+          "startMs": 2880,
+          "endMs": 5040,
+          "text": "Yeah, absolutely bloody adorable!",
+          "englishExplanation": "The speaker strongly agrees, using informal emphasis to describe their cuteness.",
+          "turkishExplanation": "Evet, kesinlikle acayip sevimliler!"
+        },
+        {
+          "ordinal": 3,
+          "startMs": 5560,
+          "endMs": 8640,
+          "text": "And I bet we'll make a fortune if we catch one of those things.",
+          "englishExplanation": "The speaker predicts that catching one of the creatures will bring them a huge amount of money.",
+          "turkishExplanation": "Ve bahse girerim o şeylerden birini yakalarsak köşeyi döneriz."
+        },
+        {
+          "ordinal": 4,
+          "startMs": 9140,
+          "endMs": 11100,
+          "text": "We'll be famous! Get on MTV!",
+          "englishExplanation": "The speaker excitedly imagines becoming celebrities and appearing on music television.",
+          "turkishExplanation": "Ünlü olacağız! MTV'ye çıkacağız!"
+        },
+        {
+          "ordinal": 5,
+          "startMs": 11740,
+          "endMs": 12940,
+          "text": "I wonder what they taste like.",
+          "englishExplanation": "The speaker wonders aloud what the creatures would taste like if eaten.",
+          "turkishExplanation": "Acaba tatları nasıldır."
+        },
+        {
+          "ordinal": 6,
+          "startMs": 13060,
+          "endMs": 15280,
+          "text": "Oh, we really shouldn't disrupt their habitat.",
+          "englishExplanation": "The speaker brings up the concern that they should avoid disturbing the creatures' natural living space.",
+          "turkishExplanation": "Ah, kesinlikle yaşam alanlarını bozmamalıyız."
+        },
+        {
+          "ordinal": 7,
+          "startMs": 15760,
+          "endMs": 19620,
+          "text": "Right, sure, sure. Greetings!",
+          "englishExplanation": "The speaker quickly agrees and greets the creatures.",
+          "turkishExplanation": "Aynen, tabii, tabii. Selamlar!"
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "adorable",
+          "gloss": "çok sevimli, tatlı"
+        },
+        {
+          "lemma": "make a fortune",
+          "gloss": "köşeyi dönmek, servet kazanmak"
+        },
+        {
+          "lemma": "disrupt",
+          "gloss": "bozmak, aksatmak"
+        },
+        {
+          "lemma": "habitat",
+          "gloss": "doğal yaşam alanı"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 3,
+          "type": "phrase",
+          "expression": "make a fortune",
+          "englishExplanation": "An idiom meaning to earn or acquire a very large amount of money.",
+          "turkishExplanation": "Çok büyük miktarda para kazanmak veya zengin olmak anlamına gelen yaygın bir deyim.",
+          "exampleEn": "He made a fortune investing in real estate at a young age.",
+          "exampleTr": "Genç yaşta gayrimenkule yatırım yaparak köşeyi döndü."
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 3,
+        "question": "In segment 3, what does the speaker mean by the phrase \"make a fortune\"?",
+        "options": [
+          {
+            "text": "Earn a very large amount of money",
+            "isCorrect": true
+          },
+          {
+            "text": "Have good luck and avoid danger",
+            "isCorrect": false
+          },
+          {
+            "text": "Become respected wild animal experts",
+            "isCorrect": false
+          },
+          {
+            "text": "Build a successful outdoor business",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "pass",
+        "issues": []
+      },
+      "backgroundColor": "#5c4a28",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "Blender Studio · (CC) Blender Foundation | studio.blender.org",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/",
+        "license": "CC BY 1.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+        "changes": "Filmden kısa kesit seçimi ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      }
+    }
+  },
+  {
+    "sourceStartMs": 0,
+    "title": "Ders çalış, bozma",
+    "draft": {
+      "contentId": "sprite-study-dont-wreck",
+      "muxAssetId": "local-sprite-study-dont-wreck",
+      "sourceFile": "sprite-study-dont-wreck.mp4",
+      "storageKey": null,
+      "durationMs": 15833,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 2300,
+          "endMs": 3900,
+          "text": "Hello, Mr Snail!",
+          "englishExplanation": "A friendly greeting addressed to a snail.",
+          "turkishExplanation": "Merhaba Bay Salyangoz!"
+        },
+        {
+          "ordinal": 2,
+          "startMs": 4220,
+          "endMs": 6740,
+          "text": "Oh, you cute little corny wassparsum!",
+          "englishExplanation": "An affectionate and playful remark calling the creature a silly, cute nickname.",
+          "turkishExplanation": "Ayy, seni sevimli küçük şapşal şey!"
+        },
+        {
+          "ordinal": 3,
+          "startMs": 7380,
+          "endMs": 9380,
+          "text": "That name is bonus points!",
+          "englishExplanation": "Suggests that the invented name deserves special recognition or extra praise.",
+          "turkishExplanation": "Bu isim ekstra puan kazandırır!"
+        },
+        {
+          "ordinal": 4,
+          "startMs": 12620,
+          "endMs": 15500,
+          "text": "Ugh, can't believe we got stuck with a tree hugger!",
+          "englishExplanation": "An expression of frustration at having to spend time with someone overly obsessed with nature.",
+          "turkishExplanation": "Öf, başımıza bir doğa aşığı kaldığına inanamıyorum!"
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "get stuck with",
+          "gloss": "başına kalmak, katlanmak zorunda kalmak"
+        },
+        {
+          "lemma": "tree hugger",
+          "gloss": "aşırı çevreci, doğa aşığı"
+        },
+        {
+          "lemma": "bonus points",
+          "gloss": "artı puan, ekstra avantaj"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 4,
+          "type": "phrase",
+          "expression": "get stuck with",
+          "englishExplanation": "An informal idiom meaning to be forced to spend time with someone or deal with an unpleasant task that nobody else wants.",
+          "turkishExplanation": "İstenmeyen bir durumla baş başa kalmak veya hoşlanılmayan birine mecburen katlanmak zorunda kalındığında 'başına kalmak' anlamında kullanılır.",
+          "exampleEn": "Everyone went home, and I got stuck with all the dirty dishes.",
+          "exampleTr": "Herkes eve gitti ve bütün bulaşıklar benim başıma kaldı."
+        },
+        {
+          "segmentOrdinal": 4,
+          "type": "phrase",
+          "expression": "tree hugger",
+          "englishExplanation": "An informal, often teasing or mildly derogatory label for someone who is enthusiastic about nature and environmental conservation.",
+          "turkishExplanation": "Çevreyi, ağaçları ve hayvanları korumaya aşırı önem veren kişilere genellikle hafif alaycı veya sitemkar bir tonla verilen lakap.",
+          "exampleEn": "Stop being such a tree hugger; it's just a tiny bug!",
+          "exampleTr": "Bu kadar doğa delisi olma; alt tarafı küçücük bir böcek!"
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 4,
+        "question": "In the video, what does the speaker imply by saying they 'got stuck with a tree hugger'?",
+        "options": [
+          {
+            "text": "They are annoyed to be paired with someone overly sentimental about nature.",
+            "isCorrect": true
+          },
+          {
+            "text": "They are physically trapped in the woods with an outdoor enthusiast.",
+            "isCorrect": false
+          },
+          {
+            "text": "They are grateful to have found someone who cares about animals.",
+            "isCorrect": false
+          },
+          {
+            "text": "They were penalized for not knowing enough about local wildlife.",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "learningPointExpressionNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": 4,
+            "message": "Learning point ifadesi (\"get stuck with\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+          },
+          {
+            "code": "vocabularyLemmaNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": null,
+            "message": "\"get stuck with\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+          }
+        ]
+      },
+      "backgroundColor": "#41380f",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "Blender Studio · (CC) Blender Foundation | studio.blender.org",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/",
+        "license": "CC BY 1.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+        "changes": "Filmden kısa kesit seçimi ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      }
+    }
+  },
+  {
+    "sourceStartMs": 0,
+    "title": "Takım ve doğa",
+    "draft": {
+      "contentId": "sprite-team-nature",
+      "muxAssetId": "local-sprite-team-nature",
+      "sourceFile": "sprite-team-nature.mp4",
+      "storageKey": null,
+      "durationMs": 20500,
+      "topic": "humor",
+      "cefrLevel": "B1",
+      "segments": [
+        {
+          "ordinal": 1,
+          "startMs": 0,
+          "endMs": 2180,
+          "text": "Way ahead of you, man. Come on, team.",
+          "englishExplanation": "Saying you have already anticipated what someone is suggesting, and encouraging the group to move.",
+          "turkishExplanation": "Ben o işi çoktan hallettim dostum. Hadi takım, toparlanın."
+        },
+        {
+          "ordinal": 2,
+          "startMs": 2500,
+          "endMs": 5340,
+          "text": "We must have dilly -dally when there's so much nature to see.",
+          "englishExplanation": "Urging not to waste time or loiter because there is a lot of nature to explore.",
+          "turkishExplanation": "Görülecek bunca doğa varken öyle boş boş oyalanmak olmaz."
+        },
+        {
+          "ordinal": 3,
+          "startMs": 5820,
+          "endMs": 11500,
+          "text": "I was thinking we should call our class project fun guys in a forest. Get it?",
+          "englishExplanation": "Suggesting a pun-based name for the group assignment and checking if the listener caught the joke.",
+          "turkishExplanation": "Dönem ödevimizin adını 'Ormandaki Eğlenceli Tipler' koysak diyordum. Çaktınız mı espriyi?"
+        },
+        {
+          "ordinal": 4,
+          "startMs": 11780,
+          "endMs": 15400,
+          "text": "Because we're a group of fun guys and also fun guys. Shush!",
+          "englishExplanation": "Explaining the double meaning between 'fun guys' and 'fungi' before being silenced.",
+          "turkishExplanation": "Çünkü hem eğlenceli çocuklarız hem de birer mantarız! Şşş, sessiz ol!"
+        },
+        {
+          "ordinal": 5,
+          "startMs": 16260,
+          "endMs": 17160,
+          "text": "That's the low bar team.",
+          "englishExplanation": "Commenting that the joke sets an extremely low standard for humor.",
+          "turkishExplanation": "Çıtayı epey düşürdün takım."
+        },
+        {
+          "ordinal": 6,
+          "startMs": 17540,
+          "endMs": 18560,
+          "text": "And she's in distress.",
+          "englishExplanation": "Observing that a female is currently in trouble or in need of rescue.",
+          "turkishExplanation": "Ve başı dertte."
+        }
+      ],
+      "vocabulary": [
+        {
+          "lemma": "dilly-dally",
+          "gloss": "oyalanmak, vakit kaybetmek"
+        },
+        {
+          "lemma": "in distress",
+          "gloss": "zor durumda, tehlikede"
+        }
+      ],
+      "learningPoints": [
+        {
+          "segmentOrdinal": 1,
+          "type": "phrase",
+          "expression": "way ahead of you",
+          "englishExplanation": "Used colloquially to tell someone that you have already done, thought of, or prepared what they are about to suggest.",
+          "turkishExplanation": "Birinin önereceği şeyi zaten çoktan düşündüğünüzü, planladığınızı veya yaptığınızı belirtmek için kullanılan samimi bir kalıptır.",
+          "exampleEn": "Don't forget to lock the back door. — Way ahead of you, I already did.",
+          "exampleTr": "Arka kapıyı kilitlemeyi unutma. — Benden önce davrandın sanma, çoktan kilitledim bile."
+        },
+        {
+          "segmentOrdinal": 5,
+          "type": "phrase",
+          "expression": "low bar",
+          "englishExplanation": "Refers to a very low standard, expectation, or level of quality that is extremely easy to reach or disappointingly poor.",
+          "turkishExplanation": "Beklentinin veya kalite standardının çok düşük tutulduğunu anlatan mecazi bir ifadedir ('çıtanın düşük olması').",
+          "exampleEn": "If remembering my birthday makes him a great friend, that's a pretty low bar.",
+          "exampleTr": "Doğum günümü hatırlaması onu harika bir dost yapıyorsa, çıta gerçekten epey düşük demektir."
+        }
+      ],
+      "quiz": {
+        "segmentOrdinal": 5,
+        "question": "In segment 5, what does the speaker mean by describing the joke as 'the low bar'?",
+        "options": [
+          {
+            "text": "It relies on a very poor standard of humor.",
+            "isCorrect": true
+          },
+          {
+            "text": "It presents a physical obstacle in the forest.",
+            "isCorrect": false
+          },
+          {
+            "text": "It sets a goal that is nearly impossible to meet.",
+            "isCorrect": false
+          },
+          {
+            "text": "It violates the formal rules of the school project.",
+            "isCorrect": false
+          }
+        ]
+      },
+      "quality": {
+        "status": "needsReview",
+        "issues": [
+          {
+            "code": "vocabularyLemmaNotInTranscript",
+            "severity": "warning",
+            "segmentOrdinal": null,
+            "message": "\"dilly-dally\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+          }
+        ]
+      },
+      "backgroundColor": "#42361f",
+      "category": "animation",
+      "attribution": {
+        "title": "Sprite Fright",
+        "credit": "Blender Studio · (CC) Blender Foundation | studio.blender.org",
+        "sourceUrl": "https://studio.blender.org/projects/sprite-fright/",
+        "license": "CC BY 1.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+        "changes": "Filmden kısa kesit seçimi ve H.264/AAC kodlama yapıldı; orijinal İngilizce diyalog, müzik ve efektler değiştirilmeden korundu."
+      }
+    }
+  }
+]

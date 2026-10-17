@@ -172,7 +172,14 @@ def run_transcription(model, wav_path: Path) -> tuple[list[dict], str, float]:
         words: list[dict] = []
         for segment in segments_iter:
             for word in segment.words or []:
-                words.append({"text": word.word.strip(), "startMs": round(word.start * 1000), "endMs": round(word.end * 1000)})
+                start_ms = round(word.start * 1000)
+                # Müzik/efekt üstünde konuşan, ifadeli seslerde (animasyon klipleri) Whisper bazen
+                # sıfır uzunluklu kelime (start == end) üretiyor; şema (endMs > startMs) bunu
+                # bilerek reddediyor ve şemayı gevşetmiyoruz — bunun yerine adapter sınırında
+                # kelimeye en az 1 ms verilir (zamanlama gerçekte zaten bilinmiyor, 1 ms
+                # altyazı senkronunu etkilemez).
+                end_ms = max(round(word.end * 1000), start_ms + 1)
+                words.append({"text": word.word.strip(), "startMs": start_ms, "endMs": end_ms})
         return words, info.language, float(info.language_probability)
     except Exception as error:  # noqa: BLE001 - STT çalışma-zamanı hatasının tamamı görünür olmalı
         raise TranscribeError(f"STT transcription başarısız oldu. Orijinal hata: {error}") from error

@@ -145,3 +145,19 @@ pnpm run animation:backfill-colors                            # zaten yayınlanm
 `background_color` zaten doluysa ilgili adım/satır sessizce atlanır — bu üç komutu güvenle tekrar
 çalıştırabilirsin. Kalan 2 klip (Gemini kotası açılınca) hazırlanıp `cosmos-laundromat.json`'a
 eklendiğinde, sadece `animation:publish` adımı tekrar çalıştırılması yeterli.
+
+## Sprite Fright (2026-10-14 — 5/5 hazır, yayın bekliyor)
+
+Cosmos ile AYNI yoldan geçti: `scripts/stt/input/sprite-*.mp4` → STT → Gemini enrichment →
+`category`/`attribution`/`backgroundColor` yaması → `content/animation/sprite-fright.json`
+(`animation-catalog.ts`'e üçüncü dosya olarak eklendi) → `public/media/sprite-*.mp4`. Sonraki
+adım yukarıdaki "Yayınlama" bölümündeki `animation:publish` (R2 + DB; production env'ini sen
+geçirirsin) — idempotent, mevcut 9 sahneyi atlar, sadece 5 yeni klibi yükler.
+
+- `sourceStartMs` kaynak filmdeki başlangıcı bilinmediği için `0` (yalnızca bilgi alanı).
+- **Lisans doğrula**: Blender Studio proje sayfası "Creative Commons Attribution 1.0" diyor
+  (archive.org ise CC BY 4.0 yazıyor); resmi kaynak olan studio.blender.org takip edildi ve atıf
+  metni `(CC) Blender Foundation | studio.blender.org` olarak yazıldı. Yönetmen adı kaynaktan
+  doğrulanamadığı için `credit`'e yazılmadı.
+- `scripts/stt/transcribe.py`: Whisper'ın ifadeli seslerde ürettiği sıfır uzunluklu kelimeler
+  (start == end) artık en az 1 ms süre alıyor; şema gevşetilmedi.
