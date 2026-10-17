@@ -1,5 +1,6 @@
-import { contentCategorySchema, feedPageSchema, type ContentCategory, type FeedPage, type FeedPreferences } from "@linguascroll/shared-types";
+import { feedPageSchema, feedScopeSchema, type FeedPage, type FeedPreferences, type FeedScope } from "@linguascroll/shared-types";
 import { API_BASE_URL } from "../../../shared/api-base-url";
+import { getSessionSeed } from "../../../shared/session-seed";
 
 /**
  * HTTP status'ü taşıyan tipli hata — 2026-09-30, gerçek production yük
@@ -31,6 +32,9 @@ export class FeedFetchError extends Error {
 const FETCH_TIMEOUT_MS = 15000;
 
 /**
+ * `scope` (all | animation | ielts) HER istekte gönderilir; eski `category` parametresi artık
+ * ASLA gönderilmez (API'de yalnızca yayındaki eski build'ler için deprecated olarak duruyor).
+ *
  * GET /feed'i çağırır ve sonucu feedPageSchema ile doğrular. Bu doğrulama
  * atlanmıyor: network'ten gelen JSON, tip sisteminin hiçbir garanti veremediği tek
  * sınır — `as FeedPage` gibi bir unchecked cast burada bir hatayı gizler,
@@ -51,20 +55,26 @@ const FETCH_TIMEOUT_MS = 15000;
  * sayıyor (bkz. feed.service.ts), burada da aynı gerçeği yansıtan tek bir
  * `if/else`, iki ayrı kod yolu DEĞİL.
  */
-export async function fetchFeed(userId: string, cursor?: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
+export async function fetchFeed(userId: string, cursor?: string, preference?: FeedPreferences, scope: FeedScope = "all"): Promise<FeedPage> {
   if (!userId) {
     throw new Error("fetchFeed userId olmadan çağrılamaz");
   }
 
-  const params = new URLSearchParams({ userId, category: contentCategorySchema.parse(category) });
+  // `scope` (all | animation | ielts) bir DB kategorisi DEĞİL feed kapsamıdır; "Akış" = "all" (bütün kategoriler).
+  const params = new URLSearchParams({ userId, scope: feedScopeSchema.parse(scope) });
   if (cursor) {
+    // Devam isteği seed taşımaz: seed imzalı cursor'ın içinde (sunucu cursor'dakini kullanır).
     params.set("cursor", cursor);
-  } else if (preference) {
-    if (preference.level) {
-      params.set("level", preference.level);
-    }
-    if (preference.topics.length > 0) {
-      params.set("topics", preference.topics.join(","));
+  } else {
+    // Yeni session: process ömürlü seed (bkz. session-seed.ts) — sekme değişimi/retry/refresh aynı seed'i kullanır.
+    params.set("sessionSeed", getSessionSeed());
+    if (preference) {
+      if (preference.level) {
+        params.set("level", preference.level);
+      }
+      if (preference.topics.length > 0) {
+        params.set("topics", preference.topics.join(","));
+      }
     }
   }
 

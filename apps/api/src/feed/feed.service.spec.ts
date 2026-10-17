@@ -1,7 +1,9 @@
-import type { FeedItem, FeedQuiz, PlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
+import { createHmac } from "node:crypto";
+import type { ContentCategory, FeedItem, FeedQuiz, PlayableVideo, TranscriptSegment, VideoVocabularyItem } from "@linguascroll/shared-types";
 import { decodeFeedCursor } from "./feed-cursor";
 import { FeedService } from "./feed.service";
-import type { PersonalizationService } from "../personalization/personalization.service";
+import type { PersonalizationRepository } from "../personalization/personalization-repository";
+import { PersonalizationService } from "../personalization/personalization.service";
 import type { QuizzesService } from "../quizzes/quizzes.service";
 import type { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import type { UsersService } from "../users/users.service";
@@ -88,6 +90,8 @@ function makeFullSessionQuizzesByVideoId(): Map<string, FeedQuiz[]> {
 
 type ServiceOverrides = {
   videos?: PlayableVideo[];
+  /** `VideosService.getVideoFeed`'e geçirilen DB predicate'ini kaydeder (kapsam filtresinin repository'ye taşındığının kanıtı). */
+  onGetVideoFeed?: (filter: { category?: ContentCategory }) => void;
   /** QuizzesService.getQuizzesGroupedByVideoId'nin gerçek DB davranışını simüle eder: sourceVideoId → quiz'ler. */
   quizzesByVideoId?: Map<string, FeedQuiz[]>;
   /** Gerçek DB batch-resolve'unu simüle eder: id sırasını KARIŞTIRABİLİR, bazı id'leri hiç DÖNDÜRMEYEBİLİR (silinmiş). */
@@ -97,6 +101,10 @@ type ServiceOverrides = {
   /** 2026-10-01 — ücretsiz günlük video limiti. Varsayılan: gated değil (mevcut testler etkilenmez). */
   gated?: boolean;
   personalize?: (candidates: PlayableVideo[]) => PlayableVideo[];
+  /** Gerçek PersonalizationService (cold-start, boş affinity) kullanılır: seed'li sıralamanın uçtan uca testi için. */
+  realPersonalization?: boolean;
+  /** `false`: getFeed'e otomatik varsayılan sessionSeed EKLENMEZ (seed-zorunluluğu testleri için). */
+  autoSeed?: boolean;
   /**
    * Chunk 9 — WordsService.getVocabularyForVideos stub'ı. Çağrı argümanlarını
    * (`videoIds`, `userId`) da kaydediyor ki testler "tek batch çağrı, doğru
@@ -111,6 +119,8 @@ type ServiceOverrides = {
   onGetQuizzesGroupedByVideoId?: (videoIds: string[]) => void;
 };
 
+const DEFAULT_TEST_SEED = "00000000000000000000000000000001";
+
 function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   const videos = overrides.videos ?? makeFullSessionVideos();
   const quizzesByVideoId = overrides.quizzesByVideoId ?? makeFullSessionQuizzesByVideoId();
@@ -118,7 +128,12 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   const allQuizzesById = new Map(Array.from(quizzesByVideoId.values()).flat().map((q) => [q.id, q]));
 
   const videosService = {
-    getVideoFeed: () => Promise.resolve(videos),
+    // Gerçek repository davranışını simüle eder: `category` predicate'i varsa SADECE eşleşen satırlar döner
+    // (kapsam dışı satırlar application katmanına hiç gelmez); yoksa hepsi.
+    getVideoFeed: (filter: { category?: ContentCategory } = {}) => {
+      overrides.onGetVideoFeed?.(filter);
+      return Promise.resolve(videos.filter((video) => !filter.category || (video.category ?? "general") === filter.category));
+    },
     getPlayableVideosByIds: (ids: string[]) =>
       Promise.resolve(
         overrides.resolveVideosByIds
@@ -151,10 +166,12 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
       ),
   } as unknown as QuizzesService;
 
-  const personalizationService = {
-    getPersonalizedVideos: (_userId: string, candidates: PlayableVideo[]) =>
-      Promise.resolve(overrides.personalize ? overrides.personalize(candidates) : candidates),
-  } as unknown as PersonalizationService;
+  const personalizationService = overrides.realPersonalization
+    ? new PersonalizationService({ getTopicAffinity: () => Promise.resolve(new Map()) } as unknown as PersonalizationRepository)
+    : ({
+        getPersonalizedVideos: (_userId: string, candidates: PlayableVideo[]) =>
+          Promise.resolve(overrides.personalize ? overrides.personalize(candidates) : candidates),
+      } as unknown as PersonalizationService);
 
   const usersService = {
     userExists: () => Promise.resolve(overrides.userExists ?? true),
@@ -173,7 +190,16 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
     getPaywallGate: () => Promise.resolve({ gated: overrides.gated ?? false }),
   } as unknown as SubscriptionsService;
 
-  return new FeedService(videosService, quizzesService, personalizationService, usersService, wordsService, subscriptionsService, configService);
+  const service = new FeedService(videosService, quizzesService, personalizationService, usersService, wordsService, subscriptionsService, configService);
+  if (overrides.autoSeed === false) {
+    return service;
+  }
+  // Mevcut testlerin çoğu seed'le ilgilenmez: cursor'suz çağrılara varsayılan bir seed eklenir
+  // (cursor'lu çağrılara DOKUNULMAZ — seed cursor'dan okunur).
+  const originalGetFeed = service.getFeed.bind(service);
+  service.getFeed = (userId, cursor, preference, scope, sessionSeed) =>
+    originalGetFeed(userId, cursor, preference, scope, sessionSeed ?? (cursor ? undefined : DEFAULT_TEST_SEED));
+  return service;
 }
 
 function itemTypes(items: { type: string }[]): string[] {
@@ -675,26 +701,270 @@ describe("FeedService.getFeed — ücretsiz günlük video limiti (paywall gate,
   });
 });
 
-describe("Animasyon bölümü", () => {
+describe("Feed kapsamı (scope): all | animation | ielts", () => {
+  // `cefrLevel` kategoriden bağımsız: fixture'lar bilerek farklı gerçek seviyeler taşıyor.
+  const general = (n: number): PlayableVideo => makeVideo(n);
   const animation = (n: number): PlayableVideo => ({ ...makeVideo(n), category: "animation" });
-  it("varsayılan akış animasyonları içermez; eski videolar general kalır", async () => {
-    const service = makeFeedService({ videos: [makeVideo(1), animation(2)], quizzesByVideoId: new Map() });
-    expect(videoIds((await service.getFeed(TEST_USER_ID)).items)).toEqual([vId(1)]);
+  const ielts = (n: number, cefrLevel: PlayableVideo["cefrLevel"] = "C1"): PlayableVideo => ({ ...makeVideo(n), category: "ielts", cefrLevel });
+  const noQuizzes = { quizzesByVideoId: new Map<string, FeedQuiz[]>() };
+  const mixed = [general(1), animation(2), ielts(3), general(4), animation(5), ielts(6)];
+  // id'ler kategoriler arasında İÇ İÇE geçer (3i+1/2/3): ranking aynı topic içinde id sırasıyla ilerlediği
+  // için ardışık id blokları, session sınırı (27 video) yüzünden son kategoriyi tamamen dışarıda bırakırdı —
+  // bu bir fixture artifact'ıdır (üretimde id'ler rastgele UUID), ürün davranışı değil.
+  const bigCatalog = Array.from({ length: 16 }, (_, i) => [general(3 * i + 1), animation(3 * i + 2), ielts(3 * i + 3)]).flat();
+
+  it("scope verilmezse ve all'da: general + animation + ielts HEPSİ gelir (Akış bütün kategorileri gösterir)", async () => {
+    const service = makeFeedService({ videos: mixed, ...noQuizzes });
+    const byDefault = videoIds((await service.getFeed(TEST_USER_ID)).items).sort();
+    const explicitAll = videoIds((await service.getFeed(TEST_USER_ID, undefined, undefined, "all")).items).sort();
+    expect(byDefault).toEqual(mixed.map((v) => v.id).sort());
+    expect(explicitAll).toEqual(byDefault);
   });
-  it("Animasyon sayfaları ve refresh yalnızca aynı bölümün sahnelerini getirir", async () => {
-    const videos = [makeVideo(1), ...Array.from({ length: 16 }, (_, i) => animation(i + 2))];
-    const service = makeFeedService({ videos, quizzesByVideoId: new Map() });
-    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
+
+  it("animation yalnızca animasyon, ielts yalnızca IELTS getirir; kategori sızmaz", async () => {
+    const service = makeFeedService({ videos: mixed, ...noQuizzes });
+    expect(videoIds((await service.getFeed(TEST_USER_ID, undefined, undefined, "animation")).items).sort()).toEqual([vId(2), vId(5)]);
+    expect(videoIds((await service.getFeed(TEST_USER_ID, undefined, undefined, "ielts")).items).sort()).toEqual([vId(3), vId(6)]);
+  });
+
+  it("kapsam filtresi REPOSITORY'ye taşınır: all için predicate YOK, animation/ielts için DB predicate'i var", async () => {
+    const filters: { category?: ContentCategory }[] = [];
+    const service = makeFeedService({ videos: mixed, ...noQuizzes, onGetVideoFeed: (filter) => filters.push(filter) });
+    await service.getFeed(TEST_USER_ID);
+    await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
+    await service.getFeed(TEST_USER_ID, undefined, undefined, "ielts");
+    expect(filters).toEqual([{ category: undefined }, { category: "animation" }, { category: "ielts" }]);
+  });
+
+  it("personalization'a kapsam dışı aday HİÇ verilmez (animation kapsamında adaylar sadece animasyon)", async () => {
+    let received: PlayableVideo[] = [];
+    const service = makeFeedService({
+      videos: mixed,
+      ...noQuizzes,
+      personalize: (candidates) => {
+        received = candidates;
+        return candidates;
+      },
+    });
+    await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
+    expect(received.map((v) => v.id).sort()).toEqual([vId(2), vId(5)]);
+  });
+
+  it("level tercihi bir FİLTRE değil sıralama sinyalidir: ielts kapsamında kategori dışı sızdırmaz, seviye yüzünden de elemez; gerçek cefrLevel korunur", async () => {
+    const service = makeFeedService({ videos: [ielts(1, "C2"), ielts(2, "B1"), ielts(3, "A2"), general(4)], ...noQuizzes });
+    const page = await service.getFeed(TEST_USER_ID, undefined, { level: "B1", topics: [] }, "ielts");
+    expect(videoIds(page.items).sort()).toEqual([vId(1), vId(2), vId(3)]);
+    expect(page.items.flatMap((item) => (item.type === "video" ? [item.video.cefrLevel] : [])).sort()).toEqual(["A2", "B1", "C2"]);
+  });
+
+  it.each(["animation", "ielts"] as const)("%s sayfalaması duplicate/skip üretmez, kategori sızdırmaz; cursor scope taşır", async (scope) => {
+    const service = makeFeedService({ videos: bigCatalog, ...noQuizzes });
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, scope);
     expect(first.nextCursor).not.toBeNull();
-    expect(decodeFeedCursor(first.nextCursor!, CURSOR_SECRET).category).toBe("animation");
-    const second = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "animation");
-    expect(videoIds([...first.items, ...second.items])).toEqual(videos.slice(1).map(v => v.id));
-    const refreshed = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
-    expect(videoIds(refreshed.items)).toEqual(videoIds(first.items));
+    expect(decodeFeedCursor(first.nextCursor!, CURSOR_SECRET).scope).toBe(scope);
+    const second = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, scope);
+    const seen = videoIds([...first.items, ...second.items]);
+    expect(new Set(seen).size).toBe(seen.length);
+    expect([...seen].sort()).toEqual(bigCatalog.filter((v) => v.category === scope).map((v) => v.id).sort());
   });
-  it("eski bölümün cursor'ı yeni bölüme taşınamaz", async () => {
-    const service = makeFeedService({ videos: Array.from({ length: 16 }, (_, i) => animation(i + 1)), quizzesByVideoId: new Map() });
-    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
-    await expect(service.getFeed(TEST_USER_ID, first.nextCursor!)).rejects.toThrow("kategorisine ait değil");
+
+  it("all sayfalaması duplicate/skip üretmez ve oturum üç kategoriden de içerik barındırabilir", async () => {
+    const service = makeFeedService({ videos: bigCatalog, ...noQuizzes });
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all");
+    expect(decodeFeedCursor(first.nextCursor!, CURSOR_SECRET).scope).toBe("all");
+    const second = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "all");
+    const seen = videoIds([...first.items, ...second.items]);
+    expect(new Set(seen).size).toBe(seen.length);
+    const categoryById = new Map(bigCatalog.map((v) => [v.id, v.category ?? "general"]));
+    expect(new Set(seen.map((id) => categoryById.get(id))).size).toBe(3);
+  });
+
+  it.each([
+    ["all", "animation"],
+    ["all", "ielts"],
+    ["animation", "all"],
+    ["ielts", "all"],
+    ["animation", "ielts"],
+    ["ielts", "animation"],
+  ] as const)("%s scope'unda üretilmiş cursor %s isteğinde 400 ile reddedilir", async (issuedFor, requested) => {
+    const service = makeFeedService({ videos: bigCatalog, ...noQuizzes });
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, issuedFor);
+    await expect(service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, requested)).rejects.toThrow("feed kapsamına ait değil");
+  });
+
+  it("eski (v1) bir cursor kontrollü 400 üretir, 500 değil", async () => {
+    const service = makeFeedService({ videos: mixed, ...noQuizzes });
+    const legacy = { v: 1, userId: TEST_USER_ID, category: "animation", plan: [], position: 0 };
+    const b64 = Buffer.from(JSON.stringify(legacy), "utf-8").toString("base64url");
+    const signature = createHmac("sha256", CURSOR_SECRET).update(b64).digest("base64url");
+    await expect(service.getFeed(TEST_USER_ID, `${b64}.${signature}`, undefined, "animation")).rejects.toThrow("Geçersiz veya bozulmuş feed cursor'ı");
+  });
+});
+
+describe("FeedService.getFeed — session-scoped shuffle (sessionSeed, cursor v3)", () => {
+  const SEED_A = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  const SEED_B = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb";
+  // 30 video, hepsi aynı topic + aynı CEFR → hepsi "eşit öncelikli": sıra tamamen seed'e bağlı.
+  const videos = Array.from({ length: 30 }, (_, i) => makeVideo(i + 1));
+  const noQuizzes = { quizzesByVideoId: new Map<string, FeedQuiz[]>() };
+  const seeded = () => makeFeedService({ videos, ...noQuizzes, realPersonalization: true, autoSeed: false });
+
+  async function allPages(service: FeedService, seed: string): Promise<string[][]> {
+    const pages: string[][] = [];
+    let page = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", seed);
+    for (;;) {
+      pages.push(videoIds(page.items));
+      if (!page.nextCursor) return pages;
+      page = await service.getFeed(TEST_USER_ID, page.nextCursor, undefined, "all");
+    }
+  }
+
+  it("seed'siz cursor'suz (eski client) istek 200 döner; sunucu seed'i üretip v3 cursor'a yazar; her seed'siz istek yeni seed alır (retry sırası garanti DEĞİL)", async () => {
+    const service = seeded();
+    const a = await service.getFeed(TEST_USER_ID);
+    const b = await service.getFeed(TEST_USER_ID);
+    const payloadA = decodeFeedCursor(a.nextCursor!, CURSOR_SECRET);
+    const payloadB = decodeFeedCursor(b.nextCursor!, CURSOR_SECRET);
+    expect(payloadA.v).toBe(3);
+    expect((payloadA as { sessionSeed: string }).sessionSeed).toMatch(/^[0-9a-f]{32}$/);
+    // Dökümante edilmiş davranış: seed'siz isteklerin aynı sırayı vereceği GARANTİ EDİLMEZ (her istek yeni sunucu seed'i).
+    expect((payloadB as { sessionSeed: string }).sessionSeed).not.toBe((payloadA as { sessionSeed: string }).sessionSeed);
+  });
+
+  it("eski client: sunucu seed'li v3 cursor ile ikinci/üçüncü sayfaya devam edebilir; duplicate/skip yok", async () => {
+    const service = seeded();
+    const seen: string[] = [];
+    let page = await service.getFeed(TEST_USER_ID); // seed YOK
+    for (;;) {
+      seen.push(...videoIds(page.items));
+      if (!page.nextCursor) break;
+      page = await service.getFeed(TEST_USER_ID, page.nextCursor); // eski client yalnızca cursor gönderir
+    }
+    expect(seen).toHaveLength(27);
+    expect(new Set(seen).size).toBe(27);
+  });
+
+  it("yeni client'ın seed'i korunur: cursor'daki seed gönderilen seed'dir", async () => {
+    const page = await seeded().getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    expect((decodeFeedCursor(page.nextCursor!, CURSOR_SECRET) as { sessionSeed: string }).sessionSeed).toBe(SEED_A);
+  });
+
+  it("aynı seed → aynı plan; retry aynı ilk sayfayı döndürür", async () => {
+    const service = seeded();
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    const retry = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    expect(videoIds(retry.items)).toEqual(videoIds(first.items));
+    expect(await allPages(service, SEED_A)).toEqual(await allPages(service, SEED_A));
+  });
+
+  it("farklı seed → (eşit öncelikli yeterli aday varken) farklı sıra; aynı sıra id sırasından da farklı", async () => {
+    const service = seeded();
+    const a = (await allPages(service, SEED_A)).flat();
+    const b = (await allPages(service, SEED_B)).flat();
+    expect(a).not.toEqual(b);
+    expect(a).not.toEqual([...a].sort());
+  });
+
+  it("seed'li iki+ sayfa duplicate/skip üretmez: plan 27 video, sayfalar birleşince tam plan", async () => {
+    const pages = await allPages(seeded(), SEED_A);
+    const seen = pages.flat();
+    expect(seen).toHaveLength(27);
+    expect(new Set(seen).size).toBe(27);
+  });
+
+  it("devam sayfalarında ranking yeniden hesaplanmaz: personalization yalnızca cursor'suz istekte çağrılır", async () => {
+    let calls = 0;
+    const service = makeFeedService({ videos, ...noQuizzes, autoSeed: false, personalize: (c) => (calls++, c) });
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "all");
+    expect(calls).toBe(1);
+  });
+
+  it("nextCursor imzalı v3 payload'ında seed'i ve scope'u taşır", async () => {
+    const page = await seeded().getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    const payload = decodeFeedCursor(page.nextCursor!, CURSOR_SECRET);
+    expect(payload).toMatchObject({ v: 3, userId: TEST_USER_ID, scope: "all", sessionSeed: SEED_A });
+  });
+
+  it("cursor + aynı seed (query) kabul edilir; query'de seed yoksa cursor'daki kullanılır; FARKLI seed → 400", async () => {
+    const service = seeded();
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    expect((decodeFeedCursor(first.nextCursor!, CURSOR_SECRET) as { sessionSeed: string }).sessionSeed).toBe(SEED_A);
+
+    const sameSeed = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "all", SEED_A);
+    const noSeed = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "all");
+    expect(videoIds(sameSeed.items)).toEqual(videoIds(noSeed.items));
+    await expect(service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "all", SEED_B)).rejects.toThrow("sessionSeed");
+  });
+
+  it("farklı scope + cursor → 400", async () => {
+    const service = seeded();
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", SEED_A);
+    await expect(service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "ielts")).rejects.toThrow("kapsamına");
+  });
+});
+
+describe("FeedService.getFeed — @deprecated v2 cursor rollout uyumluluğu", () => {
+  const videos = Array.from({ length: 30 }, (_, i) => makeVideo(i + 1));
+  const noQuizzes = { quizzesByVideoId: new Map<string, FeedQuiz[]>() };
+  const sign = (payload: unknown): string => {
+    const b64 = Buffer.from(JSON.stringify(payload), "utf-8").toString("base64url");
+    return `${b64}.${createHmac("sha256", CURSOR_SECRET).update(b64).digest("base64url")}`;
+  };
+
+  /** v3 session'dan donmuş planı alıp v2 (seed'siz) cursor'a çevirir — eski API'nin ürettiği şekil. */
+  async function makeV2Cursor(service: FeedService, position: number, overrides: Record<string, unknown> = {}): Promise<{ cursor: string; v3Next: string }> {
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", "a".repeat(32));
+    const v3 = decodeFeedCursor(first.nextCursor!, CURSOR_SECRET);
+    const cursor = sign({ v: 2, userId: TEST_USER_ID, scope: "all", plan: v3.plan, position, ...overrides });
+    return { cursor, v3Next: first.nextCursor! };
+  }
+
+  it("geçerli v2 cursor continuation başarılı: aynı frozen plan, v3 continuation ile BİREBİR aynı sayfa", async () => {
+    const service = makeFeedService({ videos, ...noQuizzes, realPersonalization: true, autoSeed: false });
+    const { cursor, v3Next } = await makeV2Cursor(service, 12);
+    const viaV2 = await service.getFeed(TEST_USER_ID, cursor, undefined, "all");
+    const viaV3 = await service.getFeed(TEST_USER_ID, v3Next, undefined, "all");
+    expect(videoIds(viaV2.items)).toEqual(videoIds(viaV3.items));
+    expect(viaV2.items.length).toBeGreaterThan(0);
+  });
+
+  it("v2 continuation ranking'i/shuffle'ı HİÇ çağırmaz ve sonraki cursor v2 kalır (sahte seed uydurulmaz); son sayfada null", async () => {
+    let rankCalls = 0;
+    const service = makeFeedService({ videos, ...noQuizzes, autoSeed: false, personalize: (c) => (rankCalls++, c) });
+    const { cursor } = await makeV2Cursor(service, 12);
+    expect(rankCalls).toBe(1); // yalnızca v2 cursor'ı üretmek için açılan v3 session'ı
+    const second = await service.getFeed(TEST_USER_ID, cursor, undefined, "all");
+    expect(rankCalls).toBe(1);
+    const next = decodeFeedCursor(second.nextCursor!, CURSOR_SECRET);
+    expect(next.v).toBe(2);
+    expect(next.position).toBe(24);
+    const third = await service.getFeed(TEST_USER_ID, second.nextCursor!, undefined, "all");
+    expect(rankCalls).toBe(1);
+    expect(third.nextCursor).toBeNull();
+  });
+
+  it("v2 ile query'deki sessionSeed yok sayılır (v2 yeni shuffle'a açılamaz) ve YENİ session başlatılamaz: cursor'suz istek her zaman v3 üretir", async () => {
+    const service = makeFeedService({ videos, ...noQuizzes, realPersonalization: true, autoSeed: false });
+    const { cursor } = await makeV2Cursor(service, 12);
+    const withSeed = await service.getFeed(TEST_USER_ID, cursor, undefined, "all", "b".repeat(32));
+    expect(decodeFeedCursor(withSeed.nextCursor!, CURSOR_SECRET).v).toBe(2);
+    const fresh = await service.getFeed(TEST_USER_ID);
+    expect(decodeFeedCursor(fresh.nextCursor!, CURSOR_SECRET).v).toBe(3);
+  });
+
+  it("bozuk v2 imza → 400; farklı user'ın v2 cursor'ı → 400; farklı scope'taki v2 cursor → 400", async () => {
+    const service = makeFeedService({ videos, ...noQuizzes, realPersonalization: true, autoSeed: false });
+    const { cursor } = await makeV2Cursor(service, 12);
+    const [b64, signature] = cursor.split(".");
+    await expect(service.getFeed(TEST_USER_ID, `${b64}.${(signature as string).slice(2)}zz`, undefined, "all")).rejects.toThrow("Geçersiz veya bozulmuş feed cursor'ı");
+    await expect(service.getFeed(OTHER_USER_ID, cursor, undefined, "all")).rejects.toThrow("Cursor, bu userId'ye ait değil");
+    await expect(service.getFeed(TEST_USER_ID, cursor, undefined, "ielts")).rejects.toThrow("kapsamına");
+  });
+
+  it("v2 payload'ı sessionSeed taşıyorsa (v2 etiketli ama seed'li) reddedilir", async () => {
+    const service = makeFeedService({ videos, ...noQuizzes, realPersonalization: true, autoSeed: false });
+    const { cursor } = await makeV2Cursor(service, 12, { sessionSeed: "a".repeat(32) });
+    await expect(service.getFeed(TEST_USER_ID, cursor, undefined, "all")).rejects.toThrow("Geçersiz veya bozulmuş feed cursor'ı");
   });
 });

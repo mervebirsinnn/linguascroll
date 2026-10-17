@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { ContentCategory, FeedItem, FeedPage, FeedPreferences } from "@linguascroll/shared-types";
+import type { FeedItem, FeedPage, FeedPreferences, FeedScope } from "@linguascroll/shared-types";
 import { FeedFetchError, fetchFeed } from "../api/fetch-feed";
 
 /**
@@ -138,7 +138,7 @@ export function applyLoadMoreError(state: FeedState, error: unknown): FeedState 
 export function useFeed(
   userId: string,
   preference?: FeedPreferences,
-  category: ContentCategory = "general",
+  scope: FeedScope = "all",
 ): { state: FeedState; loadMore: () => void; refresh: () => Promise<void> } {
   const [state, setState] = useState<FeedState>({ status: "loading" });
 
@@ -170,7 +170,7 @@ export function useFeed(
    */
   function requestFreshSession(onSuccess: (page: FeedPage) => void, onError: (error: unknown) => void): Promise<void> {
     isFetchingRef.current = true;
-    return fetchFeed(userId, undefined, preference, category).then(
+    return fetchFeed(userId, undefined, preference, scope).then(
       (page) => {
         isFetchingRef.current = false;
         onSuccess(page);
@@ -210,7 +210,7 @@ export function useFeed(
     // edilmediği için stabil bir referans (bkz. App.tsx) — yine de deps'te
     // açıkça listeleniyor, gelecekte bu varsayım bozulursa effect doğru
     // şekilde yeniden çalışsın diye.
-  }, [userId, preference, category]);
+  }, [userId, preference, scope]);
 
   function loadMore(): void {
     if (!canLoadMore(state, isFetchingRef.current)) {
@@ -221,7 +221,7 @@ export function useFeed(
     const cursor = state.nextCursor;
     setState((current) => applyLoadMoreStart(current));
 
-    fetchFeed(userId, cursor, undefined, category)
+    fetchFeed(userId, cursor, undefined, scope)
       .then((page) => {
         isFetchingRef.current = false;
         setState((current) => applyLoadMoreSuccess(current, page));

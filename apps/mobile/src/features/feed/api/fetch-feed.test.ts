@@ -1,4 +1,10 @@
+import { getSessionSeed } from "../../../shared/session-seed";
 import { FeedFetchError, fetchFeed } from "./fetch-feed";
+
+jest.mock("expo-crypto", () => ({
+  // Kontrollü CSPRNG: her çağrıda aynı 16 bayt (seed testlerde sabit ve gözlemlenebilir olsun).
+  getRandomValues: (array: Uint8Array) => array.fill(0xab),
+}));
 
 /**
  * fetchFeed'in kendi guard'ı — undefined/null/boş string bir bug ile buraya kadar
@@ -111,8 +117,43 @@ describe("fetchFeed", () => {
     await fetchFeed("user", undefined, { level: "B1", topics: ["travel"] }, "animation");
     await fetchFeed("user", "signed-cursor", undefined, "animation");
     expect(fetchSpy.mock.calls).toHaveLength(2);
-    for (const [url] of fetchSpy.mock.calls) expect(new URL(url).searchParams.get("category")).toBe("animation");
+    for (const [url] of fetchSpy.mock.calls) expect(new URL(url).searchParams.get("scope")).toBe("animation");
     expect(new URL(fetchSpy.mock.calls[1][0]).searchParams.get("cursor")).toBe("signed-cursor");
+  });
+
+  it("IELTS seçimi scope=ielts olarak gönderilir; seviye tercihi ayrı param kalır, ilk sayfa cursor taşımaz", async () => {
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+    await fetchFeed("user", undefined, { level: "C1", topics: [] }, "ielts");
+    const url = new URL(fetchSpy.mock.calls[0][0]);
+    expect(url.searchParams.get("scope")).toBe("ielts");
+    expect(url.searchParams.get("level")).toBe("C1");
+    expect(url.searchParams.has("cursor")).toBe(false);
+  });
+
+  it("varsayılan (Akış) scope=all gönderir; eski `category` parametresi HİÇBİR istekte gönderilmez", async () => {
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+    await fetchFeed("user");
+    await fetchFeed("user", "signed-cursor", undefined, "ielts");
+    for (const [url] of fetchSpy.mock.calls) expect(new URL(url).searchParams.has("category")).toBe(false);
+    expect(new URL(fetchSpy.mock.calls[0][0]).searchParams.get("scope")).toBe("all");
+  });
+
+  it("cursor'suz her istek AYNI process ömürlü sessionSeed'i taşır (scope/preference/retry değişse de); cursor'lu istek seed taşımaz", async () => {
+    const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
+    global.fetch = fetchSpy as unknown as typeof fetch;
+    await fetchFeed("user", undefined, undefined, "all");
+    await fetchFeed("user", undefined, { level: "B1", topics: ["travel"] }, "animation");
+    await fetchFeed("user", undefined, undefined, "ielts");
+    await fetchFeed("user", undefined, undefined, "ielts"); // retry
+    await fetchFeed("user", "signed-cursor", undefined, "ielts");
+
+    const seeds = fetchSpy.mock.calls.slice(0, 4).map(([url]) => new URL(url).searchParams.get("sessionSeed"));
+    expect(seeds[0]).toBe("ab".repeat(16));
+    expect(new Set(seeds).size).toBe(1);
+    expect(seeds[0]).toBe(getSessionSeed());
+    expect(new URL(fetchSpy.mock.calls[4][0]).searchParams.has("sessionSeed")).toBe(false);
   });
 
   it("geçersiz bölüm network'e çıkmadan reddedilir", async () => {

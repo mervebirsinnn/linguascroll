@@ -55,7 +55,7 @@ Komut mevcut `R2StorageService` ile `originals/<contentId>/<uuid>.mp4` anahtarı
 
 Yerel cihaz geliştirmesinde `--local` kullanılabilir; bu mod R2'ye yüklemez ve API'nin `/media/sintel-*.mp4` statik yolunu kullanır. Üretimde varsayılan R2 modunu kullan.
 
-5. API'de `GET /feed?userId=<id>&category=animation` altı sahneyi getirir; kategori belirtilmeyen istek bunları getirmez. Mobile'ın mevcut API adresini kullanarak uygulamayı yeniden build edip cihazda test et. Uygulama adı `Looplish`; bölüm adı `Animasyon`.
+5. API'de `GET /feed?userId=<id>&scope=animation` yalnızca animasyon sahnelerini getirir. `scope=all` (veya `scope`/`category` hiç verilmeyen istek, mobilde "Akış") general + animation + ielts, yani bütün kategorileri getirir; `scope=ielts` yalnızca IELTS içeriğini. (`category=animation` yayındaki eski mobile build'ler için hâlâ `scope=animation` sayılır.) Mobile'ın mevcut API adresini kullanarak uygulamayı yeniden build edip cihazda test et. Uygulama adı `Looplish`; bölüm adı `Animasyon`.
 
 ## Doğrulama
 

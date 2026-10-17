@@ -79,11 +79,12 @@ export function rankVideos(
   candidates: PlayableVideo[],
   affinityByTopic: ReadonlyMap<Topic, number>,
   preference?: FeedPreferences,
+  tieBreakKey?: TieBreakKey,
 ): PlayableVideo[] {
   const preferredTopics = new Set<Topic>(preference?.topics ?? []);
   const preferredLevel: CefrLevel | null = preference?.level ?? null;
 
-  const byTopic = groupByTopicSorted(candidates, preferredLevel);
+  const byTopic = groupByTopicSorted(candidates, preferredLevel, tieBreakKey);
   const primaryQueue = buildPrimaryQueue(byTopic, affinityByTopic, preferredTopics);
   const explorationQueue = buildExplorationQueue(byTopic, affinityByTopic);
 
@@ -113,6 +114,76 @@ export function rankVideos(
 }
 
 /**
+ * Session-scoped shuffle: video → sıralama anahtarı (bkz. deterministic-tie-break.ts). SADECE eşit
+ * öncelikli adaylar (aynı topic kuyruğu + aynı CEFR distance grubu) arasındaki sırayı belirler;
+ * CEFR proximity, topic affinity ve SWRR topic dağılımı bu anahtardan etkilenmez.
+ */
+export type TieBreakKey = (video: PlayableVideo) => string;
+
+/**
+ * Bir topic kuyruğunun içindeki TEK sıralama kuralı (hem rankVideos hem applyTieBreakOrdering kullanır —
+ * iki yol aynı karşılaştırıcıyı paylaştığı için birbirinden sapamaz): önce CEFR distance, sonra (varsa)
+ * seed anahtarı, en son video.id (anahtar çakışırsa bile toplam sıra garantisi).
+ */
+function sortTopicQueue(list: PlayableVideo[], preferredLevel: CefrLevel | null, tieBreakKey?: TieBreakKey): void {
+  // Anahtarlar sort'tan ÖNCE bir kez hesaplanır (karşılaştırıcıda video başına O(log n) hash olmasın).
+  const keys = new Map<string, string>(tieBreakKey ? list.map((video) => [video.id, tieBreakKey(video)] as [string, string]) : []);
+  list.sort((a, b) => {
+    if (preferredLevel) {
+      const distanceDiff = cefrLevelDistance(a.cefrLevel, preferredLevel) - cefrLevelDistance(b.cefrLevel, preferredLevel);
+      if (distanceDiff !== 0) {
+        return distanceDiff;
+      }
+    }
+    if (tieBreakKey) {
+      const keyA = keys.get(a.id) ?? "";
+      const keyB = keys.get(b.id) ?? "";
+      if (keyA !== keyB) {
+        return keyA < keyB ? -1 : 1;
+      }
+    }
+    return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+  });
+}
+
+/**
+ * `rankVideos(candidates, affinity, preference)` (tie-break'siz) ÇIKTISINA seed'i sonradan uygular:
+ * `rankVideos(candidates, affinity, preference, key)` ile BİREBİR aynı sonucu verir ama pahalı ranking'i
+ * yeniden çalıştırmadan — cold-start cache'i seed'den bağımsız kalsın diye (bkz. PersonalizationService).
+ *
+ * Dayanak (spec'te property olarak test edilir): rankVideos'ta HER topic'in kuyruğu (primary VE exploration)
+ * ÖNDEN tüketilir, ve hangi pozisyona hangi topic'in düşeceği yalnızca topic sayılarına/ağırlıklara bağlıdır,
+ * video kimliğine değil. Dolayısıyla çıktının her topic'e ait alt dizisi tam o topic'in sıralı kuyruğudur;
+ * pozisyonları (topic dizilimini) koruyup her topic'in videolarını yeni sırayla yerleştirmek yeterlidir.
+ *
+ * `ranked` MUTATE EDİLMEZ (cache'li dizi olabilir); her zaman yeni bir dizi döner.
+ */
+export function applyTieBreakOrdering(
+  ranked: readonly PlayableVideo[],
+  preference: FeedPreferences | undefined,
+  tieBreakKey: TieBreakKey,
+): PlayableVideo[] {
+  const preferredLevel: CefrLevel | null = preference?.level ?? null;
+
+  const queues = new Map<Topic, PlayableVideo[]>();
+  for (const video of ranked) {
+    const queue = queues.get(video.topic) ?? [];
+    queue.push(video);
+    queues.set(video.topic, queue);
+  }
+  for (const queue of queues.values()) {
+    sortTopicQueue(queue, preferredLevel, tieBreakKey);
+  }
+
+  const nextIndex = new Map<Topic, number>();
+  return ranked.map((video) => {
+    const index = nextIndex.get(video.topic) ?? 0;
+    nextIndex.set(video.topic, index + 1);
+    return queues.get(video.topic)?.[index] ?? video;
+  });
+}
+
+/**
  * video.id'ye göre stabil sıralanmış, topic'e göre gruplanmış candidate'ler.
  *
  * Chunk 15 (level proximity ranking'le güncellendi) — `preferredLevel`
@@ -124,7 +195,11 @@ export function rankVideos(
  * video mesafesi nedeniyle listeden ÇIKARILMIYOR, sadece geriye alınıyor —
  * bu ayrım bilinçli, kullanıcı kararı (feed personalization audit'i).
  */
-function groupByTopicSorted(candidates: PlayableVideo[], preferredLevel: CefrLevel | null): Map<Topic, PlayableVideo[]> {
+function groupByTopicSorted(
+  candidates: PlayableVideo[],
+  preferredLevel: CefrLevel | null,
+  tieBreakKey?: TieBreakKey,
+): Map<Topic, PlayableVideo[]> {
   const byTopic = new Map<Topic, PlayableVideo[]>();
   for (const video of candidates) {
     const list = byTopic.get(video.topic) ?? [];
@@ -132,15 +207,7 @@ function groupByTopicSorted(candidates: PlayableVideo[], preferredLevel: CefrLev
     byTopic.set(video.topic, list);
   }
   for (const list of byTopic.values()) {
-    list.sort((a, b) => {
-      if (preferredLevel) {
-        const distanceDiff = cefrLevelDistance(a.cefrLevel, preferredLevel) - cefrLevelDistance(b.cefrLevel, preferredLevel);
-        if (distanceDiff !== 0) {
-          return distanceDiff;
-        }
-      }
-      return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
-    });
+    sortTopicQueue(list, preferredLevel, tieBreakKey);
   }
   return byTopic;
 }

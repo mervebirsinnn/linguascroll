@@ -11,6 +11,9 @@ import {
   type FeedState,
 } from "./use-feed";
 
+// use-feed → fetch-feed → session-seed → expo-crypto (native modül Jest/Node'da yok): kontrollü mock.
+jest.mock("expo-crypto", () => ({ getRandomValues: (array: Uint8Array) => array.fill(1) }));
+
 /**
  * useFeed'in state-transition mantığı React'ten bağımsız saf fonksiyonlara
  * çıkarıldığı için (hook bunları BİREBİR kullanıyor — bkz. use-feed.ts), bu

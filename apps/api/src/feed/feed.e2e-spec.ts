@@ -16,6 +16,8 @@ import { quizOptionsTable, quizzesTable } from "../quizzes/quizzes.schema";
 import { videoWordsTable } from "../words/video-words.schema";
 import { wordsTable } from "../words/words.schema";
 
+const E2E_SEED = "0123456789abcdef0123456789abcdef";
+
 describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Service → FeedService → Controller → HTTP)", () => {
   let app: INestApplication;
   let db: NodePgDatabase;
@@ -103,11 +105,11 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   async function getFeed(userId: string, cursor?: string): Promise<request.Response> {
     return cursor
       ? request(app.getHttpServer()).get(`/feed?userId=${userId}&cursor=${encodeURIComponent(cursor)}`)
-      : request(app.getHttpServer()).get(`/feed?userId=${userId}`);
+      : request(app.getHttpServer()).get(`/feed?userId=${userId}&sessionSeed=${E2E_SEED}`);
   }
 
   async function getFeedWithPreference(userId: string, level?: string, topics?: string): Promise<request.Response> {
-    const params = new URLSearchParams({ userId });
+    const params = new URLSearchParams({ userId, sessionSeed: E2E_SEED });
     if (level) params.set("level", level);
     if (topics) params.set("topics", topics);
     return request(app.getHttpServer()).get(`/feed?${params.toString()}`);

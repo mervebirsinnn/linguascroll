@@ -1,4 +1,6 @@
 import type { PlayableVideo } from "@linguascroll/shared-types";
+import { deterministicTieBreak } from "./deterministic-tie-break";
+import { rankVideos } from "./personalization-ranking";
 import { PersonalizationRepository } from "./personalization-repository";
 import { PersonalizationService } from "./personalization.service";
 
@@ -24,8 +26,8 @@ describe("PersonalizationService — cold-start önbellekleme", () => {
     const service = makeService(new Map());
     const candidates = [video("a"), video("b")];
 
-    const forUser1 = await service.getPersonalizedVideos("user-1", candidates, "general", { level: "A1", topics: ["travel"] });
-    const forUser2 = await service.getPersonalizedVideos("user-2", candidates, "general", { level: "A1", topics: ["travel"] });
+    const forUser1 = await service.getPersonalizedVideos("user-1", candidates, "all", { level: "A1", topics: ["travel"] });
+    const forUser2 = await service.getPersonalizedVideos("user-2", candidates, "all", { level: "A1", topics: ["travel"] });
 
     expect(forUser2).toEqual(forUser1);
   });
@@ -36,8 +38,8 @@ describe("PersonalizationService — cold-start önbellekleme", () => {
     const candidates = [video("a"), video("b")];
 
     // Cache'i önce bir cold-start kullanıcıyla doldur.
-    await service.getPersonalizedVideos("cold-user", candidates, "general", { level: "A1", topics: [] });
-    const result = await service.getPersonalizedVideos("user-with-history", candidates, "general", { level: "A1", topics: [] });
+    await service.getPersonalizedVideos("cold-user", candidates, "all", { level: "A1", topics: [] });
+    const result = await service.getPersonalizedVideos("user-with-history", candidates, "all", { level: "A1", topics: [] });
 
     // rankVideos'un kendisi zaten ayrıca test edildiği için burada SADECE
     // "cache'ten değil, gerçek hesaplamadan geldi" davranışını doğruluyoruz —
@@ -51,7 +53,7 @@ describe("PersonalizationService — cold-start önbellekleme", () => {
     const generalCandidates = [video("general-a")];
     const animationCandidates = [video("animation-a")];
 
-    const generalResult = await service.getPersonalizedVideos("user-1", generalCandidates, "general", { level: "A1", topics: [] });
+    const generalResult = await service.getPersonalizedVideos("user-1", generalCandidates, "all", { level: "A1", topics: [] });
     const animationResult = await service.getPersonalizedVideos("user-2", animationCandidates, "animation", { level: "A1", topics: [] });
 
     expect(generalResult.map((v) => v.id)).toEqual(["general-a"]);
@@ -67,11 +69,11 @@ describe("PersonalizationService — cold-start önbellekleme", () => {
     const service = makeService(new Map());
     const candidates = [video("a"), video("b")];
 
-    const first = await service.getPersonalizedVideos("user-1", candidates, "general", {
+    const first = await service.getPersonalizedVideos("user-1", candidates, "all", {
       level: "A1",
       topics: ["travel", "career"],
     });
-    const second = await service.getPersonalizedVideos("user-2", candidates, "general", {
+    const second = await service.getPersonalizedVideos("user-2", candidates, "all", {
       level: "A1",
       topics: ["career", "travel"],
     });
@@ -82,14 +84,14 @@ describe("PersonalizationService — cold-start önbellekleme", () => {
   it("2026-10-01 regression — AYNI kategori/tercihte, aday kümesi DEĞİŞİNCE (ör. katalog boşken sonra içerik yayınlanınca) önbellek YANLIŞ eski sonucu döndürmez", async () => {
     const service = makeService(new Map());
 
-    const whenEmpty = await service.getPersonalizedVideos("user-1", [], "general", { level: "A1", topics: ["travel"] });
+    const whenEmpty = await service.getPersonalizedVideos("user-1", [], "all", { level: "A1", topics: ["travel"] });
     expect(whenEmpty).toEqual([]);
 
     // AYNI category/level/topics — eski davranışta (cache key adaylardan
     // bağımsızdı) bu, yukarıdaki boş sonucu TTL boyunca döndürürdü (gerçek bir
     // e2e test koşumunda bulunan bug). Aday kümesi artık key'in parçası.
     const candidates = [video("a"), video("b")];
-    const afterPublish = await service.getPersonalizedVideos("user-2", candidates, "general", { level: "A1", topics: ["travel"] });
+    const afterPublish = await service.getPersonalizedVideos("user-2", candidates, "all", { level: "A1", topics: ["travel"] });
 
     expect(afterPublish.map((v) => v.id).sort()).toEqual(["a", "b"]);
   });
@@ -97,10 +99,62 @@ describe("PersonalizationService — cold-start önbellekleme", () => {
   it("2026-10-01 regression — AYNI kategori/tercihte FARKLI (ama ikisi de boş olmayan) aday kümeleri birbirinin sonucunu çalmaz", async () => {
     const service = makeService(new Map());
 
-    const firstCatalog = await service.getPersonalizedVideos("user-1", [video("a"), video("b")], "general", { level: "A1", topics: [] });
-    const secondCatalog = await service.getPersonalizedVideos("user-2", [video("c"), video("d")], "general", { level: "A1", topics: [] });
+    const firstCatalog = await service.getPersonalizedVideos("user-1", [video("a"), video("b")], "all", { level: "A1", topics: [] });
+    const secondCatalog = await service.getPersonalizedVideos("user-2", [video("c"), video("d")], "all", { level: "A1", topics: [] });
 
     expect(firstCatalog.map((v) => v.id).sort()).toEqual(["a", "b"]);
     expect(secondCatalog.map((v) => v.id).sort()).toEqual(["c", "d"]);
+  });
+});
+
+describe("PersonalizationService — sessionSeed ve cold-start cache", () => {
+  const uuid = (n: number) => `00000000-0000-4000-8000-${String(n).padStart(12, "0")}`;
+  const candidates = Array.from({ length: 20 }, (_, i) => video(uuid(i + 1)));
+  const seedOf = (n: number) => n.toString(16).padStart(32, "0");
+  const ids = (videos: PlayableVideo[]) => videos.map((v) => v.id);
+
+  it("cache'li (cold-start) yol, doğrudan seed'li rankVideos ile AYNI sonucu verir (hem cache miss hem hit)", async () => {
+    const service = makeService(new Map());
+    const key = (v: PlayableVideo) => deterministicTieBreak(seedOf(7), "all", "user-1", v.id);
+    const expected = ids(rankVideos(candidates, new Map(), undefined, key));
+    const miss = await service.getPersonalizedVideos("user-1", candidates, "all", undefined, seedOf(7));
+    const hit = await service.getPersonalizedVideos("user-1", candidates, "all", undefined, seedOf(7));
+    expect(ids(miss)).toEqual(expected);
+    expect(ids(hit)).toEqual(expected);
+  });
+
+  it("farklı seed'ler farklı sıra verir; seed'siz çağrı eski id sırasını korur", async () => {
+    const service = makeService(new Map());
+    const a = await service.getPersonalizedVideos("user-1", candidates, "all", undefined, seedOf(1));
+    const b = await service.getPersonalizedVideos("user-1", candidates, "all", undefined, seedOf(2));
+    const plain = await service.getPersonalizedVideos("user-1", candidates, "all");
+    expect(ids(a)).not.toEqual(ids(b));
+    expect(ids(plain)).toEqual(ids(rankVideos(candidates, new Map())));
+  });
+
+  it("çok sayıda farklı seed cache boyutunu BÜYÜTMEZ (anahtarda seed yok)", async () => {
+    const service = makeService(new Map());
+    for (let i = 1; i <= 200; i++) {
+      await service.getPersonalizedVideos("user-1", candidates, "all", undefined, seedOf(i));
+    }
+    expect(service.coldStartCacheSize).toBe(1);
+  });
+
+  it("cache'li dizi mutate edilmez: seed'li çağrı sonrası seed'siz sonuç değişmez; dönen dizi değiştirilince cache etkilenmez", async () => {
+    const service = makeService(new Map());
+    const before = ids(await service.getPersonalizedVideos("user-1", candidates, "all"));
+    await service.getPersonalizedVideos("user-1", candidates, "all", undefined, seedOf(3));
+    const returned = await service.getPersonalizedVideos("user-1", candidates, "all");
+    returned.reverse();
+    returned.length = 0;
+    expect(ids(await service.getPersonalizedVideos("user-1", candidates, "all"))).toEqual(before);
+  });
+
+  it("izleme geçmişi olan kullanıcıda seed doğrudan rankVideos'a iner ve cache kullanılmaz", async () => {
+    const service = makeService(new Map([["u", new Map([["travel", 2]])]]));
+    const key = (v: PlayableVideo) => deterministicTieBreak(seedOf(9), "all", "u", v.id);
+    const result = await service.getPersonalizedVideos("u", candidates, "all", undefined, seedOf(9));
+    expect(ids(result)).toEqual(ids(rankVideos(candidates, new Map([["travel", 2]]), undefined, key)));
+    expect(service.coldStartCacheSize).toBe(0);
   });
 });

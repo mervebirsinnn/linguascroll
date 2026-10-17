@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { playableVideoSchema, type PlayableVideo, type TranscriptSegment, type Video } from "@linguascroll/shared-types";
+import { playableVideoSchema, type ContentCategory, type PlayableVideo, type TranscriptSegment, type Video } from "@linguascroll/shared-types";
 import { UsersService } from "../users/users.service";
 import { resolvePlaybackUrl, resolveR2PlaybackUrl } from "./resolve-playback-url";
 import { TranscriptSegmentsRepository } from "./transcript-segments-repository";
@@ -33,8 +33,8 @@ export class VideosService {
     this.r2PublicBaseUrl = configService.get<string>("R2_PUBLIC_BASE_URL");
   }
 
-  async getVideoFeed(): Promise<PlayableVideo[]> {
-    const videos = await this.videosRepository.findVideos();
+  async getVideoFeed(filter: { category?: ContentCategory } = {}): Promise<PlayableVideo[]> {
+    const videos = await this.videosRepository.findVideos(filter);
     return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl, this.r2PublicBaseUrl));
   }
 

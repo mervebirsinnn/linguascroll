@@ -1,5 +1,5 @@
 import { Inject, Injectable } from "@nestjs/common";
-import { videoSchema, type Video } from "@linguascroll/shared-types";
+import { videoSchema, type ContentCategory, type Video } from "@linguascroll/shared-types";
 import { eq, inArray } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
 import { videosTable } from "./videos.schema";
@@ -14,8 +14,13 @@ type VideoRow = typeof videosTable.$inferSelect;
 export class VideosRepository {
   constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
 
-  async findVideos(): Promise<Video[]> {
-    const rows = await this.db.select().from(videosTable);
+  /**
+   * `filter.category` verilirse predicate DB'de uygulanır (`WHERE category = ...`): kapsam dışı satırlar
+   * application katmanına hiç taşınmaz. Verilmezse (feed "all" kapsamı, GET /videos) predicate yoktur.
+   */
+  async findVideos(filter: { category?: ContentCategory } = {}): Promise<Video[]> {
+    const query = this.db.select().from(videosTable);
+    const rows = await (filter.category ? query.where(eq(videosTable.category, filter.category)) : query);
     return rows.map(toVideo);
   }
 

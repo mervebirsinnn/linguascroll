@@ -1,21 +1,24 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { feedPageSchema, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type ContentCategory, type PlayableVideo } from "@linguascroll/shared-types";
+import { feedPageSchema, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type FeedScope, type PlayableVideo } from "@linguascroll/shared-types";
 import {
   decodeFeedCursor,
   encodeFeedCursor,
   FEED_CURSOR_VERSION,
+  LEGACY_FEED_CURSOR_VERSION,
   InvalidFeedCursorError,
   MAX_SESSION_FEED_ITEMS,
   type FeedCursorPayload,
   type FeedPlanItemRef,
 } from "./feed-cursor";
+import { generateServerSessionSeed } from "./feed-session-seed";
 import { PersonalizationService } from "../personalization/personalization.service";
 import { QuizzesService } from "../quizzes/quizzes.service";
 import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { WordsService } from "../words/words.service";
+import { scopeToCategoryFilter } from "./feed-scope";
 
 // Chunk 14: 2:1 → 4:1. Kullanıcı kararı: Chunk 10'un "pekiştirme az önce
 // izlenen içerikle olabildiğince yakın olsun" gerekçesi hâlâ geçerli (quiz
@@ -88,7 +91,7 @@ export class FeedService {
    * yüzden `preference` continuation isteklerinde SESSİZCE yok sayılıyor
    * (mobile zaten sadece cursor'sız isteklerde gönderiyor, bkz. fetch-feed.ts).
    */
-  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
+  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences, scope: FeedScope = "all", sessionSeed?: string): Promise<FeedPage> {
     const userExists = await this.usersService.userExists(userId);
     if (!userExists) {
       throw new BadRequestException(`"${userId}", var olan bir kullanıcıya ait değil`);
@@ -107,15 +110,18 @@ export class FeedService {
     // Boş string de "cursor yok" sayılır — query param'ın yanlışlıkla `?cursor=`
     // olarak boş gönderilmesi bir 400 değil, yeni bir session başlatır.
     if (cursor) {
-      return this.continueSession(userId, cursor, category);
+      return this.continueSession(userId, cursor, scope, sessionSeed);
     }
-    return this.startSession(userId, preference, category);
+    // Eski mobile build'ler seed göndermez (geçici uyumluluk): sunucu üretir ve v3 cursor'a yazar. Seed VARSA
+    // (yeni client) biçimi controller'da doğrulanmıştır ve aynen kullanılır.
+    return this.startSession(userId, preference, scope, sessionSeed ?? generateServerSessionSeed());
   }
 
-  private async startSession(userId: string, preference?: FeedPreferences, category: ContentCategory = "general"): Promise<FeedPage> {
-    const catalog = await this.videosService.getVideoFeed();
-    const videos = catalog.filter((video) => (video.category ?? "general") === category);
-    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, category, preference);
+  private async startSession(userId: string, preference: FeedPreferences | undefined, scope: FeedScope, sessionSeed: string): Promise<FeedPage> {
+    // Kapsam filtresi DB'de (repository predicate'i): kapsam dışı satırlar application katmanına HİÇ taşınmaz.
+    // "all" için predicate yoktur. Personalization, kapsamdaki TÜM adayları sıralamak zorunda (bkz. rankVideos).
+    const videos = await this.videosService.getVideoFeed({ category: scopeToCategoryFilter(scope) });
+    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, scope, preference, sessionSeed);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
     // Chunk 10: quiz seçimi artık "sıradaki quiz" değil, "bounded session'daki
@@ -134,10 +140,10 @@ export class FeedService {
     const plan = composedItems.map(toFeedPlanItemRef);
     assertFitsSessionBound(plan);
 
-    return this.buildPage(userId, plan, 0, category);
+    return this.buildPage(userId, plan, 0, scope, sessionSeed);
   }
 
-  private continueSession(userId: string, cursor: string, category: ContentCategory): Promise<FeedPage> {
+  private continueSession(userId: string, cursor: string, scope: FeedScope, sessionSeed?: string): Promise<FeedPage> {
     let payload: FeedCursorPayload;
     try {
       payload = decodeFeedCursor(cursor, this.cursorSecret);
@@ -156,10 +162,19 @@ export class FeedService {
       throw new BadRequestException("Cursor, bu userId'ye ait değil");
     }
 
-    if ((payload.category ?? "general") !== category) {
-      throw new BadRequestException("Cursor, bu içerik kategorisine ait değil");
+    if (payload.scope !== scope) {
+      throw new BadRequestException("Cursor, bu feed kapsamına ait değil");
     }
-    return this.buildPage(userId, payload.plan, payload.position, category);
+    // @deprecated v2 (seed'siz): yalnızca İÇİNDEKİ frozen plan devam ettirilir; ranking/shuffle hiç çalışmaz ve
+    // sonraki cursor da v2 olarak yeniden imzalanır (sahte bir seed uydurulmaz). İmza/userId/scope kontrolleri yukarıda aynen uygulandı.
+    if (payload.v === LEGACY_FEED_CURSOR_VERSION) {
+      return this.buildPage(userId, payload.plan, payload.position, scope);
+    }
+    // v3: query'de seed verilmişse imzalı cursor'daki seed'le AYNI olmalı; verilmediyse cursor'daki değer geçerlidir.
+    if (sessionSeed !== undefined && sessionSeed !== payload.sessionSeed) {
+      throw new BadRequestException("Cursor, bu sessionSeed'e ait değil");
+    }
+    return this.buildPage(userId, payload.plan, payload.position, scope, payload.sessionSeed);
   }
 
   /**
@@ -178,7 +193,7 @@ export class FeedService {
    * döngü en fazla ceil(plan.length / PAGE_SIZE) kez çalışır — sonsuz döngü
    * riski yok, plan zaten sonlu ve donmuş.
    */
-  private async buildPage(userId: string, plan: FeedPlanItemRef[], startPosition: number, category: ContentCategory): Promise<FeedPage> {
+  private async buildPage(userId: string, plan: FeedPlanItemRef[], startPosition: number, scope: FeedScope, sessionSeed?: string): Promise<FeedPage> {
     let position = startPosition;
     let items: FeedItem[] = [];
 
@@ -196,7 +211,13 @@ export class FeedService {
     const nextCursor =
       position >= plan.length
         ? null
-        : encodeFeedCursor({ v: FEED_CURSOR_VERSION, userId, category, plan, position }, this.cursorSecret);
+        : encodeFeedCursor(
+            // sessionSeed yok = v2 continuation (bkz. continueSession); yeni session'lar daima seed'li v3.
+            sessionSeed === undefined
+              ? { v: LEGACY_FEED_CURSOR_VERSION, userId, scope, plan, position }
+              : { v: FEED_CURSOR_VERSION, userId, scope, sessionSeed, plan, position },
+            this.cursorSecret,
+          );
 
     return feedPageSchema.parse({ items, nextCursor });
   }

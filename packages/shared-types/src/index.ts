@@ -33,3 +33,5 @@ export {
   findWordTokens,
   type WordToken,
 } from "./word-glosses";
+export { feedScopeSchema, scopedContentCategorySchema, type FeedScope } from "./feed-scope";
+export { sessionSeedSchema, type SessionSeed } from "./session-seed";

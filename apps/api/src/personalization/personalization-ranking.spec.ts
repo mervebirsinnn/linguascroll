@@ -1,7 +1,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { CefrLevel, PlayableVideo, Topic } from "@linguascroll/shared-types";
-import { cefrLevelDistance, COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
+import { deterministicTieBreak } from "./deterministic-tie-break";
+import { applyTieBreakOrdering, cefrLevelDistance, COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
 
 /**
  * rankVideos, DB/Nest/HTTP bilmeyen saf bir fonksiyon — bu yüzden bu testler hiçbir
@@ -346,5 +347,105 @@ describe("rankVideos — level proximity (feed personalization audit sonrası)",
     // Ama topic-İÇİ video sırası preferredLevel'a göre GERÇEKTEN değişiyor
     // (aksi halde bu test proximity'nin hiçbir şey yapmadığını gizlerdi).
     expect(withA1.map((v) => v.id)).not.toEqual(withC2.map((v) => v.id));
+  });
+});
+
+describe("session-scoped tie-break (deterministicTieBreak + rankVideos tieBreakKey)", () => {
+  const SEED_A = "a".repeat(32);
+  const SEED_B = "b".repeat(32);
+  const keyFor = (seed: string) => (video: PlayableVideo) => deterministicTieBreak(seed, "all", "user-1", video.id);
+  const uuid = (n: number) => `00000000-0000-4000-8000-${String(n).padStart(12, "0")}`;
+
+  // 3 topic, 3 CEFR seviyesi: her (topic, seviye) grubunda 4 eşit öncelikli aday.
+  const topics: Topic[] = ["travel", "humor", "career"];
+  const levels: CefrLevel[] = ["A1", "B1", "C1"];
+  const catalog: PlayableVideo[] = Array.from({ length: 36 }, (_, i) =>
+    makeVideo(uuid(i + 1), topics[i % 3] as Topic, 1000, levels[Math.floor(i / 3) % 3] as CefrLevel),
+  );
+  const preference = { level: "B1" as CefrLevel, topics: ["humor" as Topic] };
+  const ids = (videos: readonly PlayableVideo[]) => videos.map((v) => v.id);
+
+  it("deterministicTieBreak saf: aynı girdi aynı anahtar; seed/scope/userId/videoId her biri anahtarı değiştirir", () => {
+    const base = deterministicTieBreak(SEED_A, "all", "u", "v");
+    expect(deterministicTieBreak(SEED_A, "all", "u", "v")).toBe(base);
+    expect(base).toMatch(/^[0-9a-f]{64}$/);
+    for (const other of [
+      deterministicTieBreak(SEED_B, "all", "u", "v"),
+      deterministicTieBreak(SEED_A, "ielts", "u", "v"),
+      deterministicTieBreak(SEED_A, "all", "u2", "v"),
+      deterministicTieBreak(SEED_A, "all", "u", "v2"),
+    ]) {
+      expect(other).not.toBe(base);
+    }
+  });
+
+  it("aynı seed + aynı girdi → aynı sıra; farklı seed → farklı sıra", () => {
+    const a1 = ids(rankVideos(catalog, new Map(), preference, keyFor(SEED_A)));
+    const a2 = ids(rankVideos(catalog, new Map(), preference, keyFor(SEED_A)));
+    const b = ids(rankVideos(catalog, new Map(), preference, keyFor(SEED_B)));
+    expect(a1).toEqual(a2);
+    expect(a1).not.toEqual(b);
+    expect(a1).not.toEqual(ids(rankVideos(catalog, new Map(), preference)));
+  });
+
+  it("çıktı candidate'lerin permütasyonu: kayıp/duplicate yok", () => {
+    const result = ids(rankVideos(catalog, new Map(), preference, keyFor(SEED_A)));
+    expect(new Set(result).size).toBe(catalog.length);
+    expect([...result].sort()).toEqual(ids(catalog).sort());
+  });
+
+  it("CEFR proximity seed'e rağmen bozulmaz: her topic içinde distance artan sırada", () => {
+    for (const seed of [SEED_A, SEED_B]) {
+      const result = rankVideos(catalog, new Map(), preference, keyFor(seed));
+      for (const topic of topics) {
+        const distances = result.filter((v) => v.topic === topic).map((v) => cefrLevelDistance(v.cefrLevel, "B1"));
+        expect(distances).toEqual([...distances].sort((x, y) => x - y));
+      }
+    }
+  });
+
+  it("SWRR topic dağılımı bozulmaz: topic dizilimi tie-break'siz sonuçla BİREBİR aynı (affinity'li durumda da)", () => {
+    const affinity = new Map<Topic, number>([["travel", 3], ["humor", 1]]);
+    for (const aff of [new Map<Topic, number>(), affinity]) {
+      const plain = rankVideos(catalog, aff, preference).map((v) => v.topic);
+      for (const seed of [SEED_A, SEED_B]) {
+        expect(rankVideos(catalog, aff, preference, keyFor(seed)).map((v) => v.topic)).toEqual(plain);
+      }
+    }
+  });
+
+  it("aynı topic + aynı CEFR distance içindeki sıra seed'e göre DEĞİŞİR", () => {
+    const group = (videos: PlayableVideo[]) => ids(videos.filter((v) => v.topic === "travel" && v.cefrLevel === "A1"));
+    const a = group(rankVideos(catalog, new Map(), undefined, keyFor(SEED_A)));
+    const b = group(rankVideos(catalog, new Map(), undefined, keyFor(SEED_B)));
+    expect(a).not.toEqual(b);
+    expect([...a].sort()).toEqual([...b].sort());
+  });
+
+  it("level tercihi YOKKEN level'lar eşit öncelikli sayılır (aynı topic'in tamamı tek tie grubu)", () => {
+    const result = rankVideos(catalog, new Map(), undefined, keyFor(SEED_A));
+    const travelLevels = result.filter((v) => v.topic === "travel").map((v) => v.cefrLevel);
+    expect(travelLevels).not.toEqual([...travelLevels].sort());
+  });
+
+  it.each([
+    ["tercihsiz", undefined],
+    ["level+topic tercihli", preference],
+    ["sadece level", { level: "A1" as CefrLevel, topics: [] }],
+  ])("applyTieBreakOrdering(rankVideos(unseeded)) ≡ rankVideos(seeded) — %s (cold-start cache eşdeğerliği)", (_name, pref) => {
+    for (const affinity of [new Map<Topic, number>(), new Map<Topic, number>([["career", 2]])]) {
+      for (const seed of [SEED_A, SEED_B]) {
+        const viaPostProcess = applyTieBreakOrdering(rankVideos(catalog, affinity, pref), pref, keyFor(seed));
+        expect(ids(viaPostProcess)).toEqual(ids(rankVideos(catalog, affinity, pref, keyFor(seed))));
+      }
+    }
+  });
+
+  it("applyTieBreakOrdering girdiyi mutate etmez ve yeni dizi döner", () => {
+    const ranked = rankVideos(catalog, new Map(), preference);
+    const snapshot = ids(ranked);
+    const out = applyTieBreakOrdering(ranked, preference, keyFor(SEED_A));
+    expect(out).not.toBe(ranked);
+    expect(ids(ranked)).toEqual(snapshot);
   });
 });

@@ -109,4 +109,62 @@ describe("VideosRepository (integration, gerçek Postgres)", () => {
       }),
     ).rejects.toThrow();
   });
+  describe("findVideos kategori predicate'i (feed kapsamı)", () => {
+    const attribution = { title: "t", credit: "c", sourceUrl: "https://example.com/s", license: "CC BY 3.0", licenseUrl: "https://example.com/l", changes: "x" };
+    let nextAsset = 1;
+    async function insert(category: "general" | "animation" | "ielts"): Promise<void> {
+      await db.insert(videosTable).values({
+        learningLanguage: "en",
+        cefrLevel: category === "ielts" ? "C1" : "A1",
+        muxAssetId: `scope-asset-${nextAsset++}`,
+        topic: "travel",
+        durationMs: 1000,
+        category,
+        attribution: category === "animation" ? attribution : null,
+      });
+    }
+
+    async function seedMixed(): Promise<void> {
+      await insert("general");
+      await insert("animation");
+      await insert("animation");
+      await insert("ielts");
+      await insert("ielts");
+      await insert("ielts");
+    }
+
+    it("category verilirse yalnızca o kategorinin satırları DÖNER (kapsam dışı satırlar application katmanına gelmez)", async () => {
+      await seedMixed();
+      expect((await repository.findVideos({ category: "ielts" })).map((v) => v.category)).toEqual(["ielts", "ielts", "ielts"]);
+      expect((await repository.findVideos({ category: "animation" })).map((v) => v.category)).toEqual(["animation", "animation"]);
+      expect((await repository.findVideos({ category: "general" })).map((v) => v.category)).toEqual(["general"]);
+    });
+
+    it("category verilmezse (feed 'all') predicate yoktur ve hepsi döner", async () => {
+      await seedMixed();
+      expect(await repository.findVideos()).toHaveLength(6);
+      expect(await repository.findVideos({})).toHaveLength(6);
+    });
+
+    it("filtre SQL'de uygulanır: gönderilen sorguda kategori predicate'i var (JS tarafında süzme DEĞİL); 'all' sorgusunda yok", async () => {
+      await seedMixed();
+      const spy = jest.spyOn(pool, "query");
+      let sqlTexts: string[];
+      try {
+        await repository.findVideos({ category: "ielts" });
+        await repository.findVideos();
+        // mockRestore() çağrı kayıtlarını SİLER: önce oku, sonra geri yükle.
+        sqlTexts = spy.mock.calls.map((call) => {
+          const first = call[0] as unknown;
+          return typeof first === "string" ? first : String((first as { text?: string }).text ?? "");
+        });
+      } finally {
+        spy.mockRestore();
+      }
+      const selects = sqlTexts.filter((text) => /from "videos"/i.test(text));
+      expect(selects).toHaveLength(2);
+      expect(selects[0]).toMatch(/where\s+"videos"\."category"\s*=\s*\$1/i);
+      expect(selects[1]).not.toMatch(/where/i);
+    });
+  });
 });

@@ -1,5 +1,7 @@
-import { BadRequestException, Controller, Get, ParseUUIDPipe, Query } from "@nestjs/common";
-import { contentCategorySchema, type FeedPage } from "@linguascroll/shared-types";
+import { Controller, Get, ParseUUIDPipe, Query } from "@nestjs/common";
+import type { FeedPage } from "@linguascroll/shared-types";
+import { resolveFeedScope } from "./feed-scope";
+import { parseSessionSeedQuery } from "./feed-session-seed";
 import { parseFeedPreferenceQuery } from "./feed-preference-query";
 import { FeedService } from "./feed.service";
 
@@ -27,10 +29,19 @@ export class FeedController {
     @Query("cursor") cursor?: string,
     @Query("level") level?: string,
     @Query("topics") topics?: string,
-    @Query("category") category?: string,
+    @Query("scope") scope?: string,
+    /** @deprecated Yalnızca yayındaki eski mobile build'ler için (bkz. resolveFeedScope); yeni client `scope` gönderir. */
+    @Query("category") legacyCategory?: string,
+    // Session-scoped shuffle seed'i: cursor'suz istekte zorunlu (FeedService), cursor'lu istekte imzalı
+    // cursor'daki değerle aynı olmalı. `unknown`: tekrarlı param (dizi) da Zod'da 400'e düşsün.
+    @Query("sessionSeed") sessionSeed?: unknown,
   ): Promise<FeedPage> {
-    const parsedCategory = contentCategorySchema.safeParse(category ?? "general");
-    if (!parsedCategory.success) throw new BadRequestException("Geçersiz içerik kategorisi");
-    return this.feedService.getFeed(userId, cursor, parseFeedPreferenceQuery(level, topics), parsedCategory.data);
+    return this.feedService.getFeed(
+      userId,
+      cursor,
+      parseFeedPreferenceQuery(level, topics),
+      resolveFeedScope(scope, legacyCategory),
+      parseSessionSeedQuery(sessionSeed),
+    );
   }
 }

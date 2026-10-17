@@ -9,9 +9,9 @@ import {
   type ViewToken,
 } from "react-native";
 import type {
-  ContentCategory,
   FeedItem,
   FeedPreferences,
+  FeedScope,
 } from "@linguascroll/shared-types";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFeed } from "../hooks/use-feed";
@@ -59,6 +59,21 @@ const WINDOW_SIZE = 5;
 const INITIAL_NUM_TO_RENDER = 2;
 const MAX_TO_RENDER_PER_BATCH = 2;
 
+// Üst bölüm seçici: sıra ürün kararıdır (Akış | Animasyon | IELTS). `value` shared-types'taki FeedScope'tur
+// (ayrı bir string union YOK): "Akış" = "all" yani BÜTÜN kategoriler; Animasyon/IELTS yalnızca o
+// kategori. "all" bir ContentCategory/DB değeri değildir.
+const SCOPE_TABS: readonly { value: FeedScope; label: string }[] = [
+  { value: "all", label: "Akış" },
+  { value: "animation", label: "Animasyon" },
+  { value: "ielts", label: "IELTS" },
+];
+
+const EMPTY_FEED_MESSAGES: Record<FeedScope, string> = {
+  all: "Henüz video yok.",
+  animation: "Animasyon sahneleri henüz yayımlanmadı.",
+  ielts: "IELTS içerikleri henüz yayımlanmadı.",
+};
+
 type FeedProps = {
   userId: string;
   /** Chunk 15 — onboarding'in level/topics'i, SADECE ilk session'ı etkiler (bkz. use-feed.ts). */
@@ -73,7 +88,7 @@ type FeedProps = {
 };
 
 export function Feed(props: FeedProps) {
-  const [category, setCategory] = useState<ContentCategory>("general");
+  const [scope, setScope] = useState<FeedScope>("all");
   const insets = useSafeAreaInsets();
   const [viewport, setViewport] = useState({ height: 0, width: 0 });
   return (
@@ -93,24 +108,21 @@ export function Feed(props: FeedProps) {
           </Pressable>
         </View>
         <View style={styles.categoryRow}>
-          {(["general", "animation"] as const).map((value) => (
+          {SCOPE_TABS.map(({ value, label }) => (
             <Pressable
               key={value}
-              onPress={() => setCategory(value)}
+              onPress={() => setScope(value)}
               accessibilityRole="tab"
-              accessibilityState={{ selected: category === value }}
-              style={[
-                styles.categoryButton,
-                category === value && styles.categorySelected,
-              ]}
+              accessibilityState={{ selected: scope === value }}
+              style={[styles.categoryTab, scope === value && styles.categoryTabSelected]}
             >
               <Text
-                style={[
-                  styles.categoryText,
-                  category === value && styles.categorySelectedText,
-                ]}
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                minimumFontScale={0.85}
+                style={[styles.categoryTabText, scope === value && styles.categoryTabTextSelected]}
               >
-                {value === "general" ? "Akış" : "Animasyon"}
+                {label}
               </Text>
             </Pressable>
           ))}
@@ -126,9 +138,9 @@ export function Feed(props: FeedProps) {
       >
         {viewport.height > 0 && viewport.width > 0 && (
           <FeedContent
-            key={`${props.userId}:${category}:${viewport.height}:${viewport.width}`}
+            key={`${props.userId}:${scope}:${viewport.height}:${viewport.width}`}
             {...props}
-            category={category}
+            scope={scope}
             height={viewport.height}
             width={viewport.width}
           />
@@ -141,15 +153,15 @@ export function Feed(props: FeedProps) {
 function FeedContent({
   userId,
   preference,
-  category,
+  scope,
   height,
   width,
-}: FeedProps & { category: ContentCategory; height: number; width: number }) {
+}: FeedProps & { scope: FeedScope; height: number; width: number }) {
   const {
     state: feedState,
     loadMore,
     refresh,
-  } = useFeed(userId, preference, category);
+  } = useFeed(userId, preference, scope);
 
   // Tek ölçüm kaynağı: hem FlatList'in paging hesabı (getItemLayout) hem de her
   // item'ın gerçek render boyutu buradan, tek yerden besleniyor.
@@ -227,8 +239,8 @@ function FeedContent({
     return (
       <View style={styles.centered}>
         <Text style={styles.message}>{feedState.message}</Text>
-        <Pressable onPress={handleRefresh} accessibilityRole="button" style={styles.categoryButton}>
-          <Text style={styles.categoryText}>Tekrar dene</Text>
+        <Pressable onPress={handleRefresh} accessibilityRole="button" style={styles.retryButton}>
+          <Text style={styles.retryButtonText}>Tekrar dene</Text>
         </Pressable>
       </View>
     );
@@ -239,16 +251,14 @@ function FeedContent({
     return (
       <View style={styles.centered}>
         <Text style={styles.message}>
-          {category === "animation"
-            ? "Animasyon sahneleri henüz yayımlanmadı."
-            : "Henüz video yok."}
+          {EMPTY_FEED_MESSAGES[scope]}
         </Text>
         <Pressable
           onPress={handleRefresh}
           accessibilityRole="button"
-          style={styles.categoryButton}
+          style={styles.retryButton}
         >
-          <Text style={styles.categoryText}>Tekrar dene</Text>
+          <Text style={styles.retryButtonText}>Tekrar dene</Text>
         </Pressable>
       </View>
     );
@@ -384,7 +394,21 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     backgroundColor: "#24212d",
   },
-  categoryButton: {
+  // Üç sekme dar ekranda (≈360dp) kesilmesin: yatay dolgu küçük, tek satır + küçülen yazı (bkz. SCOPE_TABS render'ı).
+  categoryTab: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 20,
+    minHeight: 44,
+    paddingHorizontal: 6,
+    paddingVertical: 10,
+  },
+  categoryTabSelected: { backgroundColor: "#bca7ff" },
+  categoryTabText: { color: "#aba8b9", fontSize: 14, fontWeight: "600" },
+  categoryTabTextSelected: { color: "#171221", fontWeight: "700" },
+  // "Tekrar dene" butonları artık sekme stilini PAYLAŞMIYOR (görünümleri eskisiyle aynı, bağımsız evrilebilir).
+  retryButton: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
@@ -393,9 +417,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 10,
   },
-  categorySelected: { backgroundColor: "#bca7ff" },
-  categoryText: { color: "#aba8b9", fontSize: 14, fontWeight: "600" },
-  categorySelectedText: { color: "#171221", fontWeight: "700" },
+  retryButtonText: { color: "#aba8b9", fontSize: 14, fontWeight: "600" },
   memoryButtonText: {
     color: "#ddf9a8",
     fontSize: 13,

@@ -1,7 +1,8 @@
 import { Injectable } from "@nestjs/common";
-import type { ContentCategory, FeedPreferences, PlayableVideo } from "@linguascroll/shared-types";
+import type { FeedPreferences, FeedScope, PlayableVideo } from "@linguascroll/shared-types";
 import { PersonalizationRepository } from "./personalization-repository";
-import { rankVideos } from "./personalization-ranking";
+import { deterministicTieBreak } from "./deterministic-tie-break";
+import { applyTieBreakOrdering, rankVideos } from "./personalization-ranking";
 
 /**
  * Cold-start (izleme geçmişi olmayan) kullanıcılar için `rankVideos` sonucu
@@ -45,30 +46,49 @@ export class PersonalizationService {
 
   constructor(private readonly personalizationRepository: PersonalizationRepository) {}
 
+  /** Test gözlemi: cold-start cache girdi sayısı (seed cardinality'sinin cache'i büyütmediğini doğrulamak için). */
+  get coldStartCacheSize(): number {
+    return this.coldStartCache.size;
+  }
+
+  /**
+   * `sessionSeed` verilirse eşit öncelikli adayların (aynı topic + aynı CEFR distance) tie-break sırası
+   * `deterministicTieBreak(seed, scope, userId, videoId)` ile belirlenir; verilmezse eski video.id tie-break'i.
+   *
+   * Cold-start cache'i SEED'DEN BAĞIMSIZ (id tie-break'li) sonucu tutar ve anahtarında seed YOKTUR — aksi halde
+   * her session ayrı bir girdi üretip cache'i sınırsız büyütürdü. Seed, cache çıktısının KOPYASI üzerinde
+   * uygulanır (cache'li dizi asla mutate edilmez).
+   */
   async getPersonalizedVideos(
     userId: string,
     candidates: PlayableVideo[],
-    category: ContentCategory,
+    scope: FeedScope,
     preference?: FeedPreferences,
+    sessionSeed?: string,
   ): Promise<PlayableVideo[]> {
     const affinityByTopic = await this.personalizationRepository.getTopicAffinity(userId);
+    const tieBreakKey = sessionSeed ? (video: PlayableVideo) => deterministicTieBreak(sessionSeed, scope, userId, video.id) : undefined;
 
     // Cold start DEĞİLSE (gerçek izleme geçmişi varsa) önbellek hiç devreye
     // girmez — bu kullanıcının sıralaması gerçekten kişiye özel, paylaşılamaz.
     if (affinityByTopic.size > 0) {
-      return rankVideos(candidates, affinityByTopic, preference);
+      return rankVideos(candidates, affinityByTopic, preference, tieBreakKey);
     }
 
-    const cacheKey = buildColdStartCacheKey(category, preference, candidates);
+    const cacheKey = buildColdStartCacheKey(scope, preference, candidates);
     const cached = this.coldStartCache.get(cacheKey);
     const now = Date.now();
+    let baseRanking: PlayableVideo[];
     if (cached && cached.expiresAt > now) {
-      return cached.videos;
+      baseRanking = cached.videos;
+    } else {
+      baseRanking = rankVideos(candidates, affinityByTopic, preference);
+      this.coldStartCache.set(cacheKey, { videos: baseRanking, expiresAt: now + COLD_START_CACHE_TTL_MS });
     }
 
-    const videos = rankVideos(candidates, affinityByTopic, preference);
-    this.coldStartCache.set(cacheKey, { videos, expiresAt: now + COLD_START_CACHE_TTL_MS });
-    return videos;
+    // Cache'li diziyi ASLA doğrudan döndürmeyiz/mutate etmeyiz: seed varsa applyTieBreakOrdering yeni dizi üretir,
+    // yoksa açık bir kopya döner.
+    return tieBreakKey ? applyTieBreakOrdering(baseRanking, preference, tieBreakKey) : [...baseRanking];
   }
 }
 
@@ -81,7 +101,7 @@ export class PersonalizationService {
  * yanlışlıkla farklı cache key üretilip isabet oranı gereksiz düşerdi.
  *
  * 2026-10-01 — gerçek bug (bir e2e test koşumunda bulundu, bkz. git log):
- * `candidates`'ın KENDİSİ cache key'e dahil DEĞİLDİ — sadece category/level/
+ * `candidates`'ın KENDİSİ cache key'e dahil DEĞİLDİ — sadece scope/level/
  * topics'e bakılıyordu. Aynı kombinasyona (ör. "general"/tercihsiz) farklı
  * zamanlarda farklı bir aday kümesiyle (örn. yeni içerik yayınlandıktan sonra,
  * ya da katalog hiç yokken) gelindiğinde, ESKİ aday kümesinden hesaplanmış
@@ -94,9 +114,9 @@ export class PersonalizationService {
  * gerekçesi (aynı "sığ" kataloğa art arda gelen cold-start istekleri) hâlâ
  * korunuyor, sadece artık YANLIŞ bir eşleşme riski yok.
  */
-function buildColdStartCacheKey(category: ContentCategory, preference: FeedPreferences | undefined, candidates: readonly PlayableVideo[]): string {
+function buildColdStartCacheKey(scope: FeedScope, preference: FeedPreferences | undefined, candidates: readonly PlayableVideo[]): string {
   const level = preference?.level ?? "none";
   const topics = [...(preference?.topics ?? [])].sort().join(",");
   const candidateFingerprint = `${candidates.length}:${[...candidates.map((v) => v.id)].sort().join(",")}`;
-  return `${category}::${level}::${topics}::${candidateFingerprint}`;
+  return `${scope}::${level}::${topics}::${candidateFingerprint}`;
 }

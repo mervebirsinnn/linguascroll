@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
-import { contentCategorySchema } from "@linguascroll/shared-types";
+import { feedScopeSchema, sessionSeedSchema } from "@linguascroll/shared-types";
 
 /**
  * Chunk 8 — bounded frozen feed-plan pagination.
@@ -16,7 +16,25 @@ import { contentCategorySchema } from "@linguascroll/shared-types";
  * ayrımıyla aynı desen).
  */
 
-export const FEED_CURSOR_VERSION = 1;
+/**
+ * v3: payload'a `sessionSeed` eklendi (session-scoped shuffle'ın seed'i). Yeni session'lar DAİMA v3 cursor üretir.
+ * Seed tüm payload gibi HMAC imzası altındadır.
+ *
+ * v2 (@deprecated, rollout uyumluluğu): seed'siz cursor'lar GEÇİCİ olarak hâlâ decode edilir, çünkü eski mobile
+ * build'ler 400 alınca cursor'ı kendiliğinden sıfırlamaz (use-feed.ts: loadMore hatası `nextCursor`'ı korur,
+ * footer aynı cursor'la tekrar dener; yeni session yalnızca kullanıcının explicit refresh'iyle başlar). v2 yalnızca
+ * İÇİNDEKİ frozen planı devam ettirebilir; v2 ile yeni ranking/session başlatılamaz (FeedService). v2 desteği,
+ * minimum desteklenen mobile build yükseltildikten sonra kaldırılacaktır (tarihe bağlı değildir).
+ *
+ * v2: payload artık persist edilen category'yi DEĞİL feed `scope`'unu taşır (all | animation | ielts).
+ * Cursor kısa ömürlü bir session token'ıdır (sunucuda saklanmaz); v1 cursor'ları BİLEREK geçersiz
+ * sayılır: `v: z.literal(2)` Zod kontrolü reddeder -> InvalidFeedCursorError -> FeedService 400
+ * "Geçersiz veya bozulmuş feed cursor'ı". Client'ın doğru tepkisi zaten aynı (cursor'ı at, yeni session başlat).
+ */
+export const FEED_CURSOR_VERSION = 3;
+
+/** @deprecated Seed'siz v2 cursor'lar; bkz. yukarıdaki not. Minimum desteklenen mobile build yükseltilince kaldırılacak. */
+export const LEGACY_FEED_CURSOR_VERSION = 2;
 
 /**
  * Frozen plan'ın taşıyabileceği maksimum FeedItem sayısı. FeedService'teki
@@ -41,19 +59,29 @@ const feedPlanItemRefSchema = z.discriminatedUnion("type", [
 ]);
 export type FeedPlanItemRef = z.infer<typeof feedPlanItemRefSchema>;
 
-const feedCursorPayloadSchema = z
-  .object({
-    v: z.literal(FEED_CURSOR_VERSION),
-    userId: z.string().uuid(),
-    // v1'in eski general cursor'ları geçerli kalır; yeni cursor bölümünü imzaya bağlar.
-    category: contentCategorySchema.optional(),
-    plan: z.array(feedPlanItemRefSchema).max(MAX_SESSION_FEED_ITEMS),
-    position: z.number().int().nonnegative(),
-  })
-  .refine((payload) => payload.position <= payload.plan.length, {
-    message: "position, plan uzunluğunu aşamaz",
-  });
-export type FeedCursorPayload = z.infer<typeof feedCursorPayloadSchema>;
+const feedCursorBaseShape = {
+  userId: z.string().uuid(),
+  // Zorunlu (v1'deki gibi opsiyonel DEĞİL): her cursor, üretildiği scope'a imzayla bağlıdır.
+  scope: feedScopeSchema,
+  plan: z.array(feedPlanItemRefSchema).max(MAX_SESSION_FEED_ITEMS),
+  position: z.number().int().nonnegative(),
+};
+const positionWithinPlan = (payload: { position: number; plan: unknown[] }): boolean => payload.position <= payload.plan.length;
+const positionWithinPlanIssue = { message: "position, plan uzunluğunu aşamaz" };
+
+const feedCursorV3Schema = z
+  .object({ v: z.literal(FEED_CURSOR_VERSION), ...feedCursorBaseShape, sessionSeed: sessionSeedSchema })
+  .refine(positionWithinPlan, positionWithinPlanIssue);
+export type FeedCursorPayloadV3 = z.infer<typeof feedCursorV3Schema>;
+
+/** @deprecated v2: seed'siz frozen plan. Yalnızca continuation için decode edilir. */
+const feedCursorV2Schema = z
+  .object({ v: z.literal(LEGACY_FEED_CURSOR_VERSION), ...feedCursorBaseShape })
+  .strict()
+  .refine(positionWithinPlan, positionWithinPlanIssue);
+export type FeedCursorPayloadV2 = z.infer<typeof feedCursorV2Schema>;
+
+export type FeedCursorPayload = FeedCursorPayloadV3 | FeedCursorPayloadV2;
 
 /**
  * Tek bir hata sınıfı — sebep (imza/format/version/bounds) client için anlamlı
@@ -98,7 +126,7 @@ export function decodeFeedCursor(cursor: string, secret: string): FeedCursorPayl
     throw new InvalidFeedCursorError("Cursor payload'ı çözülemedi");
   }
 
-  const result = feedCursorPayloadSchema.safeParse(parsedJson);
+  const result = z.union([feedCursorV3Schema, feedCursorV2Schema]).safeParse(parsedJson);
   if (!result.success) {
     throw new InvalidFeedCursorError("Cursor payload'ı geçersiz");
   }
