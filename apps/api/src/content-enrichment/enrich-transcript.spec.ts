@@ -13,6 +13,16 @@ describe("parseArgs", () => {
     expect(parseArgs(["--content-id", "a1final1"])).toEqual({ contentId: "a1final1" });
   });
 
+  it("--category'yi doğrulayıp ayrıştırır; verilmezse alan hiç eklenmez", () => {
+    expect(parseArgs(["--content-id", "x", "--category", "ielts"])).toEqual({ contentId: "x", category: "ielts" });
+    expect(Object.keys(parseArgs(["--content-id", "x"]))).toEqual(["contentId"]);
+  });
+
+  it("bilinmeyen --category değerinde throw eder", () => {
+    expect(() => parseArgs(["--content-id", "x", "--category", "speaking"])).toThrow(EnrichmentPipelineError);
+    expect(() => parseArgs(["--content-id", "x", "--category"])).toThrow(EnrichmentPipelineError);
+  });
+
   it("--content-id verilmediğinde throw eder", () => {
     expect(() => parseArgs([])).toThrow(EnrichmentPipelineError);
   });
@@ -106,5 +116,23 @@ describe("buildPublishDraft", () => {
     expect(draft.quality.status).toBe("needsReview");
     expect(draft.quality.issues.length).toBeGreaterThan(0);
     expect(draft.quality.issues.every((issue) => issue.severity === "warning")).toBe(true);
+  });
+  it("category verilirse draft'a yazılır; verilmezse alan HİÇ yazılmaz (publish general varsayar)", () => {
+    const withCategory = buildPublishDraft("x", "/tmp/x.mp4", 1000, draftSegments, enrichmentOutput, null, "ielts");
+    expect(withCategory.category).toBe("ielts");
+    const without = buildPublishDraft("x", "/tmp/x.mp4", 1000, draftSegments, enrichmentOutput, null);
+    expect(without.category).toBeUndefined();
+    expect(Object.keys(without)).not.toContain("category");
+  });
+
+  it("contentId/dosya adı önekinden category ve cefrLevel TÜRETİLMEZ: kaynak yalnızca doğrulanmış artifact alanlarıdır", () => {
+    // "ielts-c1-" öneki ne ielts kategorisi ne de C1 seviyesi kanıtıdır.
+    const prefixed = buildPublishDraft("ielts-c1-foreign-languages", "/tmp/a.mp4", 1000, draftSegments, enrichmentOutput, null);
+    expect(prefixed.category).toBeUndefined();
+    expect(prefixed.cefrLevel).toBe("A1");
+    // Tersi: "a1-" önekli bir id, enrichment çıktısındaki gerçek B2 seviyesini ezmez.
+    const a1Prefixed = buildPublishDraft("a1-relationships-x", "/tmp/b.mp4", 1000, draftSegments, { ...enrichmentOutput, cefrLevel: "B2" }, null, "ielts");
+    expect(a1Prefixed.cefrLevel).toBe("B2");
+    expect(a1Prefixed.category).toBe("ielts");
   });
 });

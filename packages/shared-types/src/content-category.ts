@@ -1,7 +1,8 @@
 import { z } from "zod";
 
 // Bölüm seçimi topic/CEFR tercihinden bağımsız, açık bir katalog filtresidir.
-export const contentCategorySchema = z.enum(["general", "animation"]);
+// `cefrLevel` kategoriden de bağımsızdır: "ielts" içerik kendi gerçek seviyesini taşır.
+export const contentCategorySchema = z.enum(["general", "animation", "ielts"]);
 export type ContentCategory = z.infer<typeof contentCategorySchema>;
 
 const sourceLinkSchema = z.string().url().startsWith("https://");

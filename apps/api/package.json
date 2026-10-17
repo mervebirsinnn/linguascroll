@@ -19,6 +19,7 @@
     "enrich": "node dist/content-enrichment/enrich-transcript.js",
     "publish-content": "node dist/content-enrichment/publish-content.js",
     "backfill-r2-videos": "node dist/content-admin/backfill-r2-videos.js",
+    "backfill-video-categories": "node dist/content-admin/backfill-video-categories.js",
     "publish-vocabulary": "node dist/content-enrichment/publish-vocabulary.js",
     "loadtest:read": "k6 run scripts/load-test/scenarios/read-only.js",
     "loadtest:full": "k6 run scripts/load-test/scenarios/full-journey.js",

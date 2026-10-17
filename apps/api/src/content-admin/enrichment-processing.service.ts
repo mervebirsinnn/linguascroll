@@ -7,16 +7,17 @@ import {
   Optional,
   UnprocessableEntityException,
 } from "@nestjs/common";
+import type { ContentCategory } from "@linguascroll/shared-types";
 import {
   assertReadyForEnrichment,
   atomicWriteFile,
-  buildPublishDraft,
+  enrichSttDraft,
   EnrichmentPipelineError,
   resolveDraftPath,
   resolveEnrichedOutputPath,
 } from "../content-enrichment/enrich-transcript";
 import { enrichTranscript, EnrichmentLlmError } from "../content-enrichment/enrichment-llm-client";
-import type { EnrichmentOutput } from "../content-enrichment/enrichment-output.schema";
+import type { PublishDraft } from "../content-enrichment/publish-draft.schema";
 import { sttDraftSchema, type SttDraft } from "../content-enrichment/stt-draft.schema";
 import { assertValidSegmentReferences, SegmentReferenceError } from "../content-enrichment/validate-segment-references";
 import { enrichContentResponseSchema, type EnrichContentResponse } from "./enrich.schema";
@@ -42,7 +43,7 @@ export class EnrichmentProcessingService {
    */
   constructor(@Optional() private readonly enrichTranscriptFn: EnrichTranscriptFn = enrichTranscript) {}
 
-  async enrich(contentId: string): Promise<EnrichContentResponse> {
+  async enrich(contentId: string, category?: ContentCategory): Promise<EnrichContentResponse> {
     const draft = this.loadReadyDraft(contentId);
 
     const outputPath = resolveEnrichedOutputPath(contentId);
@@ -55,18 +56,8 @@ export class EnrichmentProcessingService {
       );
     }
 
-    const enrichmentOutput = await this.runEnrichment(draft.segments);
-
-    try {
-      assertValidSegmentReferences(enrichmentOutput, draft.segments);
-    } catch (error) {
-      if (error instanceof SegmentReferenceError) {
-        throw new UnprocessableEntityException(error.message);
-      }
-      throw error;
-    }
-
-    const publishDraft = buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput, draft.storageKey ?? null);
+    // CLI ile AYNI use-case (enrichSttDraft); burada sadece hata sınıfları HTTP status'una çevrilir.
+    const publishDraft = await this.runEnrichment(contentId, draft, category);
 
     // `buildPublishDraft` (Quality Gate dahil) BAŞARIYLA tamamlanana kadar
     // hiçbir dosya yazılmıyor — bir Gemini/segment-reference hatası enriched.json'ı
@@ -116,9 +107,9 @@ export class EnrichmentProcessingService {
     return draft;
   }
 
-  private async runEnrichment(segments: SttDraft["segments"]): Promise<EnrichmentOutput> {
+  private async runEnrichment(contentId: string, draft: SttDraft, category?: ContentCategory): Promise<PublishDraft> {
     try {
-      return await this.enrichTranscriptFn(segments);
+      return await enrichSttDraft(contentId, draft, { category, enrichFn: this.enrichTranscriptFn });
     } catch (error) {
       if (error instanceof EnrichmentLlmError) {
         // Kural 13 — retry/backoff YOK (kullanıcı kararı, bkz. Chunk 17C
@@ -127,6 +118,9 @@ export class EnrichmentProcessingService {
         // bir HTTP status'e (502 — istemcinin hatası değil, yukarı akış
         // servisi başarısız) çevriliyor.
         throw new BadGatewayException(error.message);
+      }
+      if (error instanceof SegmentReferenceError) {
+        throw new UnprocessableEntityException(error.message);
       }
       throw error;
     }

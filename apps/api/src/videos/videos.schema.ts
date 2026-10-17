@@ -60,7 +60,7 @@ export const videosTable = pgTable(
     // content-interest taxonomy — shared-types'taki topicSchema ile birebir aynı
     // değer seti (bkz. packages/shared-types/src/video.ts).
     check("topic_check", sql`${table.topic} IN ('dating', 'travel', 'career', 'lifestyle', 'humor')`),
-    check("video_category_check", sql`${table.category} IN ('general', 'animation')`),
+    check("video_category_check", sql`${table.category} IN ('general', 'animation', 'ielts')`),
     check("animation_attribution_check", sql`${table.category} <> 'animation' OR ${table.attribution} IS NOT NULL`),
     // Chunk 7: >= 0 yerine > 0 — "playable" bir video için 0 süre domain olarak
     // imkansız bir durum, ranking'in kolaylığı için değil, bağımsız bir domain

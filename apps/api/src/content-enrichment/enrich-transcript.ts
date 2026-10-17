@@ -1,11 +1,12 @@
 import "dotenv/config";
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { contentCategorySchema, type ContentCategory } from "@linguascroll/shared-types";
 import { enrichTranscript } from "./enrichment-llm-client";
 import { evaluateContentQuality } from "./content-quality-gate";
 import type { EnrichmentOutput, EnrichmentSegment } from "./enrichment-output.schema";
 import { publishDraftSchema, type PublishDraft } from "./publish-draft.schema";
-import { sttDraftSchema, type SttDraftSegment } from "./stt-draft.schema";
+import { sttDraftSchema, type SttDraft, type SttDraftSegment } from "./stt-draft.schema";
 import { assertValidSegmentReferences, SegmentReferenceError } from "./validate-segment-references";
 
 /**
@@ -23,13 +24,22 @@ export const ENRICHMENT_OUTPUT_DIR = path.join(API_ROOT, "src", "content-enrichm
 
 export class EnrichmentPipelineError extends Error {}
 
-export function parseArgs(argv: readonly string[]): { contentId: string } {
+export function parseArgs(argv: readonly string[]): { contentId: string; category?: ContentCategory } {
   let contentId: string | undefined;
+  let category: ContentCategory | undefined;
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--content-id") {
       contentId = argv[++i];
+    } else if (argv[i] === "--category") {
+      // Kategori dosya adından/contentId önekinden ASLA türetilmez (örn. "a1-..." bir seviye
+      // veya kategori kanıtı değildir): operatör açıkça verir, değer Zod'dan geçer.
+      const parsed = contentCategorySchema.safeParse(argv[++i]);
+      if (!parsed.success) {
+        throw new EnrichmentPipelineError(`--category geçersiz. İzin verilenler: ${contentCategorySchema.options.join(", ")}`);
+      }
+      category = parsed.data;
     } else {
-      throw new EnrichmentPipelineError(`Bilinmeyen argüman: "${argv[i]}". Kullanım: --content-id <id>`);
+      throw new EnrichmentPipelineError(`Bilinmeyen argüman: "${argv[i]}". Kullanım: --content-id <id> [--category <${contentCategorySchema.options.join("|")}>]`);
     }
   }
   if (!contentId) {
@@ -37,7 +47,7 @@ export function parseArgs(argv: readonly string[]): { contentId: string } {
       "--content-id zorunlu (örn. --content-id a1final1) — scripts/stt/output/ altındaki bir content-id.",
     );
   }
-  return { contentId };
+  return category ? { contentId, category } : { contentId };
 }
 
 export function resolveDraftPath(contentId: string): string {
@@ -109,6 +119,8 @@ export function buildPublishDraft(
   // (STT draft artifact'ından, madde 2'deki provenance zincirinin devamı) geçirir.
   // Zorunlu (opsiyonel DEĞİL) parametre: her çağıran bunu bilinçli seçmek zorunda.
   storageKey: string | null,
+  // Opsiyonel: verilmezse draft'ta `category` alanı HİÇ yazılmaz (publish "general" varsayar).
+  category?: ContentCategory,
 ): PublishDraft {
   const contentWithoutQuality = {
     contentId,
@@ -122,9 +134,27 @@ export function buildPublishDraft(
     vocabulary: enrichmentOutput.vocabulary,
     learningPoints: enrichmentOutput.learningPoints,
     quiz: enrichmentOutput.quiz,
+    ...(category ? { category } : {}),
   };
   const quality = evaluateContentQuality(contentWithoutQuality);
   return publishDraftSchema.parse({ ...contentWithoutQuality, quality });
+}
+
+/**
+ * CLI (`main()` aşağıda) VE HTTP (`content-admin/enrichment-processing.service.ts`) için TEK enrichment
+ * use-case'i: LLM -> segment referans doğrulaması -> `buildPublishDraft` (category'nin draft'a yazıldığı
+ * TEK nokta). Hata sınıflarını (EnrichmentLlmError/SegmentReferenceError) çevirmez: CLI bunları metne,
+ * HTTP 502/422'ye çevirir. `category` yalnızca AÇIKÇA verilirse yazılır; contentId'den/dosya adından
+ * ASLA türetilmez. Dosya yazımı çağıranın işidir.
+ */
+export async function enrichSttDraft(
+  contentId: string,
+  draft: SttDraft,
+  options: { category?: ContentCategory; enrichFn?: typeof enrichTranscript } = {},
+): Promise<PublishDraft> {
+  const enrichmentOutput = await (options.enrichFn ?? enrichTranscript)(draft.segments);
+  assertValidSegmentReferences(enrichmentOutput, draft.segments);
+  return buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput, draft.storageKey ?? null, options.category);
 }
 
 /**
@@ -140,7 +170,7 @@ export function atomicWriteFile(finalPath: string, content: string): void {
 }
 
 async function main(): Promise<void> {
-  const { contentId } = parseArgs(process.argv.slice(2));
+  const { contentId, category } = parseArgs(process.argv.slice(2));
 
   const draftPath = resolveDraftPath(contentId);
   if (!fs.existsSync(draftPath)) {
@@ -166,16 +196,12 @@ async function main(): Promise<void> {
   assertReadyForEnrichment(draft.languageStatus, contentId);
 
   console.error(`"${contentId}" için enrichment başlatılıyor (${draft.segments.length} segment)...`);
-  const enrichmentOutput = await enrichTranscript(draft.segments);
-
-  assertValidSegmentReferences(enrichmentOutput, draft.segments);
-
-  const publishDraft = buildPublishDraft(contentId, draft.sourceFile, draft.durationMs, draft.segments, enrichmentOutput, draft.storageKey ?? null);
+  const publishDraft = await enrichSttDraft(contentId, draft, { category });
 
   atomicWriteFile(outputPath, JSON.stringify(publishDraft, null, 2));
 
   console.error(`Enrichment tamamlandı: ${outputPath}`);
-  console.error(`  topic: ${publishDraft.topic}, cefrLevel: ${publishDraft.cefrLevel}, muxAssetId: ${publishDraft.muxAssetId}`);
+  console.error(`  topic: ${publishDraft.topic}, cefrLevel: ${publishDraft.cefrLevel}, category: ${publishDraft.category ?? "general"}, muxAssetId: ${publishDraft.muxAssetId}`);
   console.error(
     `  vocabulary: ${publishDraft.vocabulary.length}, learningPoints: ${publishDraft.learningPoints.length}, quiz: 1`,
   );

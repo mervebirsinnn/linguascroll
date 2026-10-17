@@ -1,6 +1,7 @@
 import * as fs from "node:fs";
 import { BadGatewayException, ConflictException, NotFoundException, UnprocessableEntityException } from "@nestjs/common";
-import { resolveDraftPath, resolveEnrichedOutputPath } from "../content-enrichment/enrich-transcript";
+import { enrichSttDraft, resolveDraftPath, resolveEnrichedOutputPath } from "../content-enrichment/enrich-transcript";
+import { sttDraftSchema } from "../content-enrichment/stt-draft.schema";
 import { EnrichmentLlmError } from "../content-enrichment/enrichment-llm-client";
 import type { EnrichmentOutput } from "../content-enrichment/enrichment-output.schema";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
@@ -173,5 +174,55 @@ describe("EnrichmentProcessingService.enrich", () => {
     const result = await service.enrich(CONTENT_ID);
 
     expect(result.storageKey).toBeNull();
+  });
+  describe("category (HTTP body'den)", () => {
+    const PREFIXED_ID = "ielts-c1-prefix-only";
+    afterEach(() => cleanup(PREFIXED_ID));
+
+    it("category=ielts verilirse response'a VE diskteki enriched.json'a açıkça yazılır", async () => {
+      writeDraft(CONTENT_ID);
+      const service = new EnrichmentProcessingService(jest.fn().mockResolvedValue(validEnrichmentOutput()));
+
+      const result = await service.enrich(CONTENT_ID, "ielts");
+
+      expect(result.category).toBe("ielts");
+      expect(JSON.parse(fs.readFileSync(resolveEnrichedOutputPath(CONTENT_ID), "utf-8")).category).toBe("ielts");
+    });
+
+    it("category verilmezse mevcut güvenli default korunur: draft'a hiçbir category yazılmaz (publish general varsayar)", async () => {
+      writeDraft(CONTENT_ID);
+      const service = new EnrichmentProcessingService(jest.fn().mockResolvedValue(validEnrichmentOutput()));
+
+      const result = await service.enrich(CONTENT_ID);
+
+      expect(result.category).toBeUndefined();
+      expect(JSON.parse(fs.readFileSync(resolveEnrichedOutputPath(CONTENT_ID), "utf-8"))).not.toHaveProperty("category");
+    });
+
+    it('contentId önekinden category/cefrLevel türetilmez: "ielts-c1-" önekli id category yazmaz, seviye enrichment çıktısından gelir', async () => {
+      writeDraft(PREFIXED_ID);
+      const service = new EnrichmentProcessingService(jest.fn().mockResolvedValue(validEnrichmentOutput()));
+
+      const result = await service.enrich(PREFIXED_ID);
+
+      expect(result.category).toBeUndefined();
+      expect(result.cefrLevel).toBe("A1");
+    });
+
+    it("CLI ve HTTP AYNI use-case'i (enrichSttDraft) kullanır: aynı girdi için aynı draft ve aynı category çıkar", async () => {
+      writeDraft(CONTENT_ID);
+      const enrichFn = jest.fn().mockResolvedValue(validEnrichmentOutput());
+      const sttDraft = sttDraftSchema.parse(JSON.parse(fs.readFileSync(resolveDraftPath(CONTENT_ID), "utf-8")));
+
+      // CLI yolu: main() `enrichSttDraft(contentId, draft, { category })` çağırır.
+      const cliDraft = await enrichSttDraft(CONTENT_ID, sttDraft, { category: "ielts", enrichFn });
+      // HTTP yolu.
+      const httpResult = await new EnrichmentProcessingService(enrichFn).enrich(CONTENT_ID, "ielts");
+
+      const { sourceFile: _omitted, ...cliComparable } = cliDraft;
+      expect(httpResult).toEqual(cliComparable);
+      expect(httpResult.category).toBe(cliDraft.category);
+      expect(httpResult.category).toBe("ielts");
+    });
   });
 });

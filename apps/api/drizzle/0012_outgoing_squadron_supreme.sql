@@ -1,0 +1,2 @@
+ALTER TABLE "videos" DROP CONSTRAINT "video_category_check";--> statement-breakpoint
+ALTER TABLE "videos" ADD CONSTRAINT "video_category_check" CHECK ("videos"."category" IN ('general', 'animation', 'ielts'));

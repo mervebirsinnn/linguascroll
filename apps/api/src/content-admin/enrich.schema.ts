@@ -1,4 +1,5 @@
-import type { z } from "zod";
+import { z } from "zod";
+import { contentCategorySchema } from "@linguascroll/shared-types";
 import { publishDraftObjectSchema } from "../content-enrichment/publish-draft.schema";
 
 /**
@@ -12,3 +13,11 @@ import { publishDraftObjectSchema } from "../content-enrichment/publish-draft.sc
  */
 export const enrichContentResponseSchema = publishDraftObjectSchema.omit({ sourceFile: true });
 export type EnrichContentResponse = z.infer<typeof enrichContentResponseSchema>;
+
+/**
+ * `POST /content-admin/videos/:contentId/enrich` request body'si — TAMAMEN opsiyonel (body hiç gönderilmezse
+ * `{}` sayılır, mevcut davranış korunur). `category` shared-types'taki ContentCategory ile doğrulanır
+ * (ayrı bir union YOK); verilmezse draft'a hiçbir category yazılmaz (publish "general" varsayar).
+ */
+export const enrichContentRequestSchema = z.object({ category: contentCategorySchema.optional() }).strict();
+export type EnrichContentRequest = z.infer<typeof enrichContentRequestSchema>;

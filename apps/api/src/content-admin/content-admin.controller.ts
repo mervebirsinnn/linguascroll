@@ -3,7 +3,7 @@ import { FileInterceptor } from "@nestjs/platform-express";
 import { isValidContentId } from "./build-storage-key";
 import { ContentAdminSecretGuard } from "./content-admin-secret.guard";
 import { ContentAdminService } from "./content-admin.service";
-import type { EnrichContentResponse } from "./enrich.schema";
+import { enrichContentRequestSchema, type EnrichContentRequest, type EnrichContentResponse } from "./enrich.schema";
 import { EnrichmentProcessingService } from "./enrichment-processing.service";
 import { MulterUploadExceptionFilter } from "./multer-upload-exception.filter";
 import { processSttRequestSchema, type ProcessSttRequest, type ProcessSttResponse } from "./process-stt.schema";
@@ -65,16 +65,18 @@ export class ContentAdminController {
 
   /**
    * Chunk 17C — kullanıcı kararı: process-stt'ten AYRI bir endpoint (birleştirilmiş
-   * tek "process" endpoint'i DEĞİL). Body YOK — enrichment, R2/storageKey'e hiç
-   * ihtiyaç duymuyor, sadece `contentId`'nin işaret ettiği yerel draft.json'ı okuyor
-   * (bkz. Chunk 17C teknik inceleme, "Recommended endpoint boundary"). Bu ayrım,
-   * STT ve Gemini'nin bağımsız retry edilebilir/ayrı failure boundary'ler olması
-   * gereğinin (kullanıcının tasarım prensibi) doğrudan yapısal karşılığı.
+   * tek "process" endpoint'i DEĞİL). Enrichment, R2/storageKey'e hiç ihtiyaç duymuyor,
+   * sadece `contentId`'nin işaret ettiği yerel draft.json'ı okuyor (bkz. Chunk 17C teknik
+   * inceleme, "Recommended endpoint boundary"). Bu ayrım, STT ve Gemini'nin bağımsız retry
+   * edilebilir/ayrı failure boundary'ler olması gereğinin (kullanıcının tasarım prensibi)
+   * doğrudan yapısal karşılığı. Body TAMAMEN opsiyonel: yalnızca `{ category? }` (ContentCategory);
+   * verilmezse draft'a category yazılmaz (mevcut güvenli default).
    */
   @Post(":contentId/enrich")
-  enrich(@Param("contentId") contentId: string): Promise<EnrichContentResponse> {
+  enrich(@Param("contentId") contentId: string, @Body() body?: unknown): Promise<EnrichContentResponse> {
     const parsedContentId = this.parseContentId(contentId);
-    return this.enrichmentProcessingService.enrich(parsedContentId);
+    const parsedBody = this.parseEnrichBody(body);
+    return this.enrichmentProcessingService.enrich(parsedContentId, parsedBody.category);
   }
 
   /**
@@ -107,6 +109,14 @@ export class ContentAdminController {
 
   private parseProcessSttBody(body: unknown): ProcessSttRequest {
     const result = processSttRequestSchema.safeParse(body);
+    if (!result.success) {
+      throw new BadRequestException(result.error.flatten());
+    }
+    return result.data;
+  }
+
+  private parseEnrichBody(body: unknown): EnrichContentRequest {
+    const result = enrichContentRequestSchema.safeParse(body ?? {});
     if (!result.success) {
       throw new BadRequestException(result.error.flatten());
     }

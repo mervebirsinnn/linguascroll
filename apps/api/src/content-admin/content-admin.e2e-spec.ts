@@ -300,11 +300,34 @@ describe("POST /content-admin/videos/:contentId/enrich (e2e, gerçek Nest HTTP k
       .send()
       .expect(201);
 
-    expect(stubEnrichmentProcessing.enrich).toHaveBeenCalledWith("e2e-test-content");
+    expect(stubEnrichmentProcessing.enrich).toHaveBeenCalledWith("e2e-test-content", undefined);
     expect(response.body.contentId).toBe("e2e-test-content");
     expect(response.body.quality).toEqual({ status: "pass", issues: [] });
     expect(response.body).not.toHaveProperty("sourceFile");
   });
+
+  it("body'deki category=ielts servise AÇIKÇA iletilir", async () => {
+    await request(app.getHttpServer())
+      .post("/content-admin/videos/e2e-test-content/enrich")
+      .set("X-Admin-Secret", ADMIN_SECRET)
+      .send({ category: "ielts" })
+      .expect(201);
+
+    expect(stubEnrichmentProcessing.enrich).toHaveBeenCalledWith("e2e-test-content", "ielts");
+  });
+
+  it.each([{ category: "speaking" }, { category: "all" }, { category: "IELTS" }, { category: 1 }, { categoy: "ielts" }])(
+    "geçersiz body %j 400 ile reddedilir, servise hiç gitmez",
+    async (body) => {
+      await request(app.getHttpServer())
+        .post("/content-admin/videos/e2e-test-content/enrich")
+        .set("X-Admin-Secret", ADMIN_SECRET)
+        .send(body)
+        .expect(400);
+
+      expect(stubEnrichmentProcessing.enrich).not.toHaveBeenCalled();
+    },
+  );
 
   it("geçersiz (kebab-case olmayan) bir contentId'yi 400 ile reddeder, servise hiç gitmez", async () => {
     await request(app.getHttpServer())
