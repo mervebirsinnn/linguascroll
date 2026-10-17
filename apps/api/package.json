@@ -28,7 +28,8 @@
     "animation:check": "node dist/animation/publish-animation.js --check",
     "animation:publish": "node dist/animation/publish-animation.js",
     "animation:backfill-colors": "node dist/animation/backfill-background-colors.js",
-    "words:fix-glosses": "node dist/words/fix-english-glosses.js"
+    "words:fix-glosses": "node dist/words/fix-english-glosses.js",
+    "words:generate-glosses": "node dist/words/generate-word-glosses.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.687.0",

@@ -16,7 +16,6 @@ import type {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
-import { useVocabularyHint } from "../hooks/use-vocabulary-hint";
 import { PaywallFeedItem } from "../../subscription/PaywallFeedItem";
 import { FeedListFooter } from "./FeedListFooter";
 import { getFeedItemKey } from "./get-feed-item-key";
@@ -205,9 +204,6 @@ function FeedContent({
     isPending: isWordPending,
     toggleSave: onToggleSaveWord,
   } = useSavedWordIds(userId, items);
-  // Chunk 15 — AYNI "tek mantıksal state, tüm VideoFeedItem'ların ortak
-  // atasında" deseni (bkz. useSavedWordIds yorumu) — bkz. use-vocabulary-hint.ts.
-  const vocabularyHint = useVocabularyHint();
 
   if (feedState.status === "loading") {
     return (
@@ -288,8 +284,6 @@ function FeedContent({
                 isWordSaved={isWordSaved}
                 isWordPending={isWordPending}
                 onToggleSaveWord={onToggleSaveWord}
-                vocabularyHintVisible={vocabularyHint.visible}
-                onDismissVocabularyHint={vocabularyHint.dismiss}
               />
             );
           }

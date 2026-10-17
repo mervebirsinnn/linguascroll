@@ -7,6 +7,9 @@ import request from "supertest";
 import { AppModule } from "../app.module";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
+import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
+import { videosTable } from "../videos/videos.schema";
+import { segmentWordGlossesTable } from "./segment-word-glosses.schema";
 import { userSavedWordsTable } from "./user-saved-words.schema";
 import { wordsTable } from "./words.schema";
 
@@ -115,5 +118,61 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
 
     const response = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).query({ userId });
     expect(response.status).toBe(200);
+  });
+});
+
+describe("GET /words/glosses (e2e, gerçek Postgres → WordGlossesService → Controller → HTTP)", () => {
+  let app: INestApplication;
+  let db: NodePgDatabase;
+  let pool: Pool;
+
+  beforeAll(async () => {
+    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    app = moduleRef.createNestApplication();
+    await app.init();
+    const connection = createTestDatabaseConnection();
+    db = connection.db;
+    pool = connection.pool;
+  });
+
+  beforeEach(async () => {
+    await truncateTestTables(db);
+  });
+
+  afterAll(async () => {
+    await pool.end();
+    await app.close();
+  });
+
+  it("malformed videoId için 400 döner", async () => {
+    const response = await request(app.getHttpServer()).get("/words/glosses?videoId=not-a-uuid");
+    expect(response.status).toBe(400);
+  });
+
+  it("videoId yoksa 400 döner", async () => {
+    const response = await request(app.getHttpServer()).get("/words/glosses");
+    expect(response.status).toBe(400);
+  });
+
+  it("anlamı olmayan (veya var olmayan) video için 200 ve boş obje döner", async () => {
+    const response = await request(app.getHttpServer()).get("/words/glosses?videoId=00000000-0000-4000-8000-000000000009");
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual({});
+  });
+
+  it("üretilmiş anlamları segmentId -> kelime -> anlam olarak döner", async () => {
+    const [video] = await db
+      .insert(videosTable)
+      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "mock-glosses-e2e", topic: "travel", durationMs: 60000 })
+      .returning();
+    const [segment] = await db
+      .insert(videoTranscriptSegmentsTable)
+      .values({ videoId: video!.id, ordinal: 1, startMs: 0, endMs: 500, text: "home", englishExplanation: "e", turkishExplanation: "t" })
+      .returning({ id: videoTranscriptSegmentsTable.id });
+    await db.insert(segmentWordGlossesTable).values({ segmentId: segment!.id, word: "home", gloss: "ev" });
+
+    const response = await request(app.getHttpServer()).get(`/words/glosses?videoId=${video!.id}`);
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual({ [segment!.id]: { home: "ev" } });
   });
 });

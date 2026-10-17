@@ -12,18 +12,13 @@ import { ExplanationSheet } from "../../subtitles/ExplanationSheet";
 import { SubtitleOverlay } from "../../subtitles/SubtitleOverlay";
 import { useActiveSubtitle } from "../../subtitles/use-active-subtitle";
 import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
+import { useWordGlosses } from "../../subtitles/use-word-glosses";
+import { WordGlossSheet, type OpenWordGloss } from "../../subtitles/WordGlossSheet";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { VideoAttributionSheet } from "./VideoAttributionSheet";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
-
-// Alt kontrol ve altyazı aynı normal-flow dock içinde; tahmini yükseklikler birikmez.
-// 2026-09-30 — 0.34'te bir sonraki kart ortadan kesiliyordu ve scroll göstergesi
-// kapalı olduğu için bu bug gibi görünüyordu (gerçek kullanıcı raporu). 0.40'a
-// çıkarmak + görünür scroll bar (aşağıdaki ScrollView) ikisini birden çözüyor:
-// hem daha fazla kart sığıyor hem de kaydırılabilir olduğu açıkça görünüyor.
-const VOCABULARY_PANEL_HEIGHT_RATIO = 0.4;
 
 type VideoFeedItemProps = {
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
@@ -45,9 +40,6 @@ type VideoFeedItemProps = {
   isWordPending: (wordId: string) => boolean;
   /** Chunk 16 — sourceSegmentId opsiyonel: word-tap akışı geçirir, panel-chip akışı geçirmez (bkz. çağrı yerleri). */
   onToggleSaveWord: (wordId: string, sourceSegmentId?: string | null) => void;
-  /** Chunk 15 — AYNI "tek mantıksal state, Feed.tsx'te yaşar" deseni (bkz. use-vocabulary-hint.ts). */
-  vocabularyHintVisible: boolean;
-  onDismissVocabularyHint: () => void;
 };
 
 export function VideoFeedItem({
@@ -59,8 +51,6 @@ export function VideoFeedItem({
   isWordSaved,
   isWordPending,
   onToggleSaveWord,
-  vocabularyHintVisible,
-  onDismissVocabularyHint,
 }: VideoFeedItemProps) {
   const insets = useSafeAreaInsets();
   const [sourceOpen, setSourceOpen] = useState(false);
@@ -118,13 +108,13 @@ export function VideoFeedItem({
    */
   const isPlayingRef = useRef(player.playing);
 
-  // Chunk 16 revizyon — bottom-sheet'in açık/kapalı durumu. Item'a özel, lokal
-  // UI state: `useSavedWordIds`/`useVocabularyHint`'in aksine BİRDEN FAZLA
-  // video arasında paylaşılan mantıksal bir gerçek DEĞİL (her video'nun kendi
-  // sheet'i kendi açık/kapalı durumuna sahip olmalı), bu yüzden Feed.tsx'e
-  // taşınmadı.
-  const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
-  const vocabularyPanelHeight = height * VOCABULARY_PANEL_HEIGHT_RATIO;
+  // Altyazıdaki (kürate olmayan) her kelime için offline üretilmiş anlamlar —
+  // sadece video aktifken yüklenir, oturum boyunca bellekte kalır (bkz.
+  // use-word-glosses.ts). `openGloss`, `openVocabularyWord` ile AYNI snapshot
+  // deseni: tıklandığı andaki kelime+anlam, sheet kapanana kadar değişmez.
+  const wordGlosses = useWordGlosses(video.id, isActive);
+  const [openGloss, setOpenGloss] = useState<OpenWordGloss | null>(null);
+
   function handleSubtitleTap(segment: TranscriptSegment): void {
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
@@ -154,6 +144,19 @@ export function VideoFeedItem({
   function handleCloseVocabularySheet(): void {
     setOpenVocabularyWord(null);
     setOpenVocabularySegmentId(null);
+    if (wasPlayingBeforeOpenRef.current && isActive) {
+      player.play();
+    }
+  }
+
+  function handleGlossTap(word: string, gloss: string): void {
+    wasPlayingBeforeOpenRef.current = isPlayingRef.current;
+    player.pause();
+    setOpenGloss({ word, gloss });
+  }
+
+  function handleCloseGlossSheet(): void {
+    setOpenGloss(null);
     if (wasPlayingBeforeOpenRef.current && isActive) {
       player.play();
     }
@@ -314,6 +317,8 @@ export function VideoFeedItem({
             onPress={handleSubtitleTap}
             vocabulary={video.vocabulary}
             onPressWord={handleVocabularyWordTap}
+            glosses={activeSegment ? wordGlosses?.[activeSegment.id] : undefined}
+            onPressGloss={handleGlossTap}
           />
         </ScrollView>
         <ExplanationSheet
@@ -341,81 +346,7 @@ export function VideoFeedItem({
             }
           }}
         />
-        {isActive &&
-          video.vocabulary.length > 0 &&
-          vocabularyHintVisible &&
-          !vocabularyExpanded && (
-            <Pressable
-              style={styles.vocabularyHint}
-              onPress={onDismissVocabularyHint}
-            >
-              <Text style={styles.vocabularyHintText}>
-                Vurgulu kelimeye dokun → anlamını gör ve kaydet
-              </Text>
-            </Pressable>
-          )}
-        {video.vocabulary.length > 0 && (
-          // Kaydırılabilir kelime listesi normal akışta altyazının altında kalır.
-          <View style={styles.vocabularySheet}>
-            {vocabularyExpanded && (
-              <ScrollView
-                style={[
-                  styles.vocabularyList,
-                  { maxHeight: vocabularyPanelHeight },
-                ]}
-                contentContainerStyle={styles.vocabularyListContent}
-                // 2026-09-30 — kapalıyken kaydırılabilir olduğu hiç belli
-                // olmuyordu; alttaki kart ortadan kesilince bu bug gibi
-                // görünüyordu. Bilinçli olarak SADECE burada açık — altyazı
-                // scroll'u (yukarıda) nadiren taşıyor, göstergeye ihtiyacı yok.
-                showsVerticalScrollIndicator
-              >
-                {video.vocabulary.map(({ word }) => {
-                  // Backend'in bu occurrence için gömdüğü `saved` alanı BİLİNÇLİ OLARAK
-                  // okunmuyor — tek mantıksal gerçek Feed.tsx'teki useSavedWordIds'te
-                  // yaşıyor (aynı wordId birden fazla videoda görünebildiği için).
-                  const saved = isWordSaved(word.id);
-                  const pending = isWordPending(word.id);
-                  return (
-                    <Pressable
-                      key={word.id}
-                      onPress={() => onToggleSaveWord(word.id)}
-                      disabled={pending}
-                      accessibilityRole="button"
-                      accessibilityLabel={`${word.lemma}: ${word.gloss}. ${saved ? "Kaydı kaldır" : "Kaydet"}`}
-                      style={[styles.wordChip, saved && styles.wordChipSaved]}
-                    >
-                      <Text style={styles.wordLemma}>{word.lemma}</Text>
-                      <Text style={styles.wordGloss}>{word.gloss}</Text>
-                      <Text style={styles.wordAction}>
-                        {pending ? "…" : saved ? "Kaydedildi ✓" : "Kaydet"}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
-              </ScrollView>
-            )}
-            <Pressable
-              style={styles.vocabularyHandle}
-              accessibilityRole="button"
-              accessibilityState={{ expanded: vocabularyExpanded }}
-              accessibilityLabel={`${video.vocabulary.length} kelime, ${vocabularyExpanded ? "listeyi kapat" : "listeyi aç"}`}
-              onPress={() => setVocabularyExpanded((expanded) => !expanded)}
-            >
-              <View style={styles.vocabularyHandleCopy}>
-                <Text style={styles.vocabularyHandleText}>
-                  {video.vocabulary.length} kelimeyi keşfet
-                </Text>
-                <Text style={styles.vocabularyHandleCaption}>
-                  Anlamını öğren, koleksiyonuna ekle
-                </Text>
-              </View>
-              <Text style={styles.vocabularyHandleChevron}>
-                {vocabularyExpanded ? "▼" : "▲"}
-              </Text>
-            </Pressable>
-          </View>
-        )}
+        <WordGlossSheet entry={openGloss} onClose={handleCloseGlossSheet} />
       </View>
     </View>
   );
@@ -451,70 +382,5 @@ const styles = StyleSheet.create({
     right: 0,
     paddingHorizontal: 16,
     gap: 10,
-  },
-  vocabularyHint: {
-    backgroundColor: "#ddf9a8",
-    borderRadius: 14,
-    paddingVertical: 10,
-    paddingHorizontal: 14,
-  },
-  vocabularyHintText: {
-    color: "#202718",
-    fontSize: 12,
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  vocabularySheet: { gap: 8 },
-  vocabularyList: {
-    backgroundColor: "rgba(17,17,22,0.96)",
-    borderRadius: 22,
-    borderWidth: 1,
-    borderColor: "#393343",
-  },
-  vocabularyListContent: { gap: 8, padding: 10 },
-  vocabularyHandle: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: 12,
-    backgroundColor: "#24212f",
-    borderWidth: 1,
-    borderColor: "#514666",
-    borderRadius: 20,
-    minHeight: 60,
-    paddingVertical: 12,
-    paddingHorizontal: 18,
-  },
-  vocabularyHandleCopy: { flex: 1, gap: 3 },
-  vocabularyHandleText: {
-    color: "#f5f4f9",
-    fontSize: 15,
-    fontWeight: "700",
-    flexShrink: 1,
-  },
-  vocabularyHandleCaption: { color: "#b7afc7", fontSize: 11, flexShrink: 1 },
-  vocabularyHandleChevron: { color: "#bca7ff", fontSize: 14 },
-  wordChip: {
-    backgroundColor: "#24212f",
-    borderWidth: 1,
-    borderColor: "#3b344c",
-    borderRadius: 16,
-    paddingVertical: 12,
-    paddingHorizontal: 14,
-    gap: 4,
-  },
-  wordChipSaved: { borderColor: "#ddf9a8", backgroundColor: "#242c22" },
-  wordLemma: {
-    color: "#f5f4f9",
-    fontSize: 17,
-    fontWeight: "700",
-    flexShrink: 1,
-  },
-  wordGloss: { color: "#c6c1d1", fontSize: 14, flexShrink: 1 },
-  wordAction: {
-    color: "#ddf9a8",
-    fontSize: 12,
-    fontWeight: "600",
-    marginTop: 4,
   },
 });

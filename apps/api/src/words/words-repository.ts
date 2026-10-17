@@ -1,6 +1,6 @@
 import { Inject, Injectable } from "@nestjs/common";
 import { wordSchema, type Word } from "@linguascroll/shared-types";
-import { and, eq, inArray, sql } from "drizzle-orm";
+import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { videoWordsTable } from "./video-words.schema";
@@ -88,7 +88,10 @@ export class WordsRepository {
       .from(userSavedWordsTable)
       .innerJoin(wordsTable, eq(wordsTable.id, userSavedWordsTable.wordId))
       .leftJoin(videoTranscriptSegmentsTable, eq(videoTranscriptSegmentsTable.id, userSavedWordsTable.sourceSegmentId))
-      .where(eq(userSavedWordsTable.userId, userId));
+      .where(eq(userSavedWordsTable.userId, userId))
+      // En yeni kayıt ilk (sözleşme + test). ORDER BY OLMADAN sıra fiziksel satır/plan sırasına bağlıydı (flaky); eşit savedAt için
+      // word id ikincil anahtarı sırayı deterministik yapar.
+      .orderBy(desc(userSavedWordsTable.savedAt), desc(wordsTable.id));
 
     return rows.map((row) => ({
       word: wordSchema.parse({ id: row.id, language: row.language, lemma: row.lemma, gloss: row.gloss }),

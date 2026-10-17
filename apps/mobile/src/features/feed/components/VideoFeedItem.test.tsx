@@ -48,6 +48,11 @@ jest.mock("react-native-safe-area-context", () => ({
   useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }),
 }));
 
+// Kelime anlamları isteği (use-word-glosses.ts) gerçek ağa gitmesin.
+jest.mock("../../subtitles/api/fetch-word-glosses", () => ({
+  fetchWordGlosses: jest.fn().mockResolvedValue({}),
+}));
+
 jest.mock("../api/record-video-watch-event", () => ({
   recordVideoWatchEvent: jest.fn().mockResolvedValue(undefined),
 }));
@@ -80,9 +85,14 @@ const baseProps = {
   isWordSaved: () => false,
   isWordPending: () => false,
   onToggleSaveWord: () => {},
-  vocabularyHintVisible: false,
-  onDismissVocabularyHint: () => {},
 };
+
+// Dosyadaki İLK render, RN/expo modüllerinin soğuk (senkron) yüklenmesini
+// ödüyor: bu makinede 9-15 sn (diğer testler ~50 ms). Önceden Jest'in 5 sn'lik
+// varsayılan timeout'u senkron yükleme sırasında işleyemediği için test şans
+// eseri geçiyordu; asenkron bir effect (kelime anlamı isteği) eklenince bu yarış
+// belirgin hale geldi. Gerçek bir regresyon değil — dürüst bir timeout.
+jest.setTimeout(60_000);
 
 describe("VideoFeedItem — render smoke testi", () => {
   // 2026-10-01 — bu RNTL sürümünde (v14) `render()` bir Promise döner
@@ -99,6 +109,15 @@ describe("VideoFeedItem — render smoke testi", () => {
       vocabulary: [{ word: { id: "w1", language: "en", lemma: "travel", gloss: "seyahat" }, saved: false }],
     });
     await expect(render(<VideoFeedItem video={video} {...baseProps} />)).resolves.toBeDefined();
+  });
+
+  it("alttaki açılır kelime paneli ('N kelimeyi keşfet') ve ipucu artık render edilmez", async () => {
+    const video = makeVideo({
+      vocabulary: [{ word: { id: "w1", language: "en", lemma: "travel", gloss: "seyahat" }, saved: false }],
+    });
+    const result = await render(<VideoFeedItem video={video} {...baseProps} />);
+    expect(result.queryByText(/kelimeyi keşfet/)).toBeNull();
+    expect(result.queryByText(/Vurgulu kelimeye dokun/)).toBeNull();
   });
 
   it("animasyon kategorisinde (attribution rozeti dahil) crash etmeden render olur", async () => {

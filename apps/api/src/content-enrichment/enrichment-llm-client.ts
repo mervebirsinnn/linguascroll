@@ -15,7 +15,7 @@ import type { SttDraftSegment } from "./stt-draft.schema";
  * (`CONTENT_ENRICHMENT_MODEL`) okunuyor, `DEFAULT_MODEL` sadece o env var
  * tanımlı DEĞİLSE kullanılan, tek satırda değiştirilebilir bir varsayılan.
  */
-const DEFAULT_MODEL = "gemini-3.8-flash";
+export const DEFAULT_MODEL = "gemini-3.8-flash";
 
 export class EnrichmentLlmError extends Error {}
 
@@ -191,7 +191,7 @@ export async function enrichTranscript(
 // constructor option'ı; yeni dependency veya elle AbortController yok.
 const GEMINI_REQUEST_TIMEOUT_MS = 120_000;
 
-function createDefaultClient(): GoogleGenAI {
+export function createDefaultClient(): GoogleGenAI {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     throw new EnrichmentLlmError("GEMINI_API_KEY tanımlı değil — apps/api/.env dosyasını kontrol edin.");

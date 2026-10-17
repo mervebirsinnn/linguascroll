@@ -90,3 +90,36 @@ describe("buildSubtitleSpans", () => {
     expect(spans.filter((span) => span.word !== null)).toHaveLength(2);
   });
 });
+
+describe("buildSubtitleSpans — gloss (anlamı bilinen her kelime)", () => {
+  it("anlamı bilinen kelimeleri tıklanabilir span yapar; noktalama ve anlamsız kelime düz kalır; metni kayıpsız kapsar", () => {
+    const spans = buildSubtitleSpans("I didn't go, ok?", [], { i: "ben", "didn't": "yapmadım", go: "gitmek" });
+    expect(spans).toEqual([
+      { text: "I", word: null, gloss: "ben" },
+      { text: " ", word: null },
+      { text: "didn't", word: null, gloss: "yapmadım" },
+      { text: " ", word: null },
+      { text: "go", word: null, gloss: "gitmek" },
+      { text: ", ok?", word: null },
+    ]);
+    expect(spans.map((span) => span.text).join("")).toBe("I didn't go, ok?");
+  });
+
+  it("kürate vocabulary phrase'i önceliklidir; içindeki kelimeler ayrıca gloss span'ı OLMAZ", () => {
+    const phrase = makeItem("1", "pile up");
+    const spans = buildSubtitleSpans("Work will pile up.", [phrase], { work: "iş", pile: "yığın", up: "yukarı" });
+    expect(spans.filter((span) => span.word)).toHaveLength(1);
+    expect(spans.some((span) => span.gloss === "yığın" || span.gloss === "yukarı")).toBe(false);
+    expect(spans.find((span) => span.gloss === "iş")?.text).toBe("Work");
+    expect(spans.map((span) => span.text).join("")).toBe("Work will pile up.");
+  });
+
+  it("büyük/küçük harf ve tipografik kesme normalize edilerek eşleşir", () => {
+    const spans = buildSubtitleSpans("It’s Home", [], { "it's": "o", home: "ev" });
+    expect(spans.filter((span) => span.gloss).map((span) => span.gloss)).toEqual(["o", "ev"]);
+  });
+
+  it("glosses boş obje ise hiçbir kelime tıklanabilir olmaz", () => {
+    expect(buildSubtitleSpans("Hello world", [], {})).toEqual([{ text: "Hello world", word: null }]);
+  });
+});

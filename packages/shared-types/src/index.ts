@@ -26,3 +26,10 @@ export { feedPreferencesSchema, type FeedPreferences } from "./feed-preferences"
 export { savedWordSchema, type SavedWord } from "./saved-word";
 export { recordWordReviewRequestSchema, type RecordWordReviewRequest } from "./record-word-review-request";
 export { wordsProgressSchema, type WordsProgress } from "./words-progress";
+export {
+  videoWordGlossesSchema,
+  type VideoWordGlosses,
+  normalizeGlossWord,
+  findWordTokens,
+  type WordToken,
+} from "./word-glosses";

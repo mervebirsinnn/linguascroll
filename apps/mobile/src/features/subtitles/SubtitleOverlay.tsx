@@ -23,6 +23,12 @@ type SubtitleOverlayProps = {
    * VideoFeedItem'da ayrı bir state senkronizasyonu gerektirmiyor.
    */
   onPressWord: (word: VideoVocabularyItem, segment: TranscriptSegment) => void;
+  /**
+   * Bu segment'in `kelime -> anlam` haritası (offline üretilmiş, bkz. use-word-glosses.ts).
+   * undefined/boşsa kelimeler tıklanabilir olmaz — Chunk 14 davranışı aynen kalır.
+   */
+  glosses?: Readonly<Record<string, string>>;
+  onPressGloss: (word: string, gloss: string) => void;
 };
 
 /**
@@ -43,12 +49,14 @@ export function SubtitleOverlay({
   onPress,
   vocabulary,
   onPressWord,
+  glosses,
+  onPressGloss,
 }: SubtitleOverlayProps) {
   if (!segment) {
     return null;
   }
 
-  const spans = buildSubtitleSpans(segment.text, vocabulary);
+  const spans = buildSubtitleSpans(segment.text, vocabulary, glosses);
 
   return (
     <Pressable style={styles.container} onPress={() => onPress(segment)}>
@@ -59,6 +67,14 @@ export function SubtitleOverlay({
               key={index}
               style={styles.vocabularyWord}
               onPress={() => onPressWord(span.word!, segment)}
+            >
+              {span.text}
+            </Text>
+          ) : span.gloss ? (
+            <Text
+              key={index}
+              style={styles.glossWord}
+              onPress={() => onPressGloss(span.text, span.gloss!)}
             >
               {span.text}
             </Text>
@@ -87,4 +103,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   vocabularyWord: { color: "#ddf9a8", textDecorationLine: "underline" },
+  // Kürate kelimeden bilinçli olarak AYRI görünüm: sadece altı çizili (renk yok) —
+  // yeşil vurgu "kaydedilebilir kelime" anlamını taşımaya devam ediyor.
+  glossWord: { textDecorationLine: "underline" },
 });

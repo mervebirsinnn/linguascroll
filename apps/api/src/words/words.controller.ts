@@ -4,14 +4,19 @@ import {
   saveWordRequestSchema,
   type RecordWordReviewRequest,
   type SavedWord,
+  type VideoWordGlosses,
   type SaveWordRequest,
   type WordsProgress,
 } from "@linguascroll/shared-types";
+import { WordGlossesService } from "./word-glosses.service";
 import { WordsService } from "./words.service";
 
 @Controller("words")
 export class WordsController {
-  constructor(private readonly wordsService: WordsService) {}
+  constructor(
+    private readonly wordsService: WordsService,
+    private readonly wordGlossesService: WordGlossesService,
+  ) {}
 
   // wordId path parametresi external input — ParseUUIDPipe malformed UUID'yi
   // service'e hiç ulaşmadan 400 ile reddeder (mevcut videos/quizzes controller
@@ -33,6 +38,15 @@ export class WordsController {
     @Query("userId", new ParseUUIDPipe()) userId: string,
   ): Promise<void> {
     await this.wordsService.unsaveWord(wordId, userId);
+  }
+
+  /**
+   * Altyazı kelime anlamları (videonun tüm segment'leri tek yanıtta). `saved`/
+   * `review` gibi sabit path'lerle çakışmaz: ":wordId/..." route'ları iki segment.
+   */
+  @Get("glosses")
+  getVideoWordGlosses(@Query("videoId", new ParseUUIDPipe()) videoId: string): Promise<VideoWordGlosses> {
+    return this.wordGlossesService.getForVideo(videoId);
   }
 
   /** Chunk 16 — Memory ekranı: kullanıcının TÜM kayıtlı kelime/phrase'leri. */

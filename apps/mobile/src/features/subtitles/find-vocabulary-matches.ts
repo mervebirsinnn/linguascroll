@@ -1,4 +1,4 @@
-import type { VideoVocabularyItem } from "@linguascroll/shared-types";
+import { findWordTokens, type VideoVocabularyItem } from "@linguascroll/shared-types";
 
 /**
  * Chunk 14 — word-tap. React/expo'dan BAĞIMSIZ, saf fonksiyon — `find-active-segment.ts`'in
@@ -21,7 +21,11 @@ export type VocabularyMatch = {
   word: VideoVocabularyItem;
 };
 
-export type SubtitleSpan = { text: string; word: VideoVocabularyItem | null };
+/**
+ * `gloss` SADECE kürate vocabulary dışında kalan, anlamı offline üretilmiş
+ * (bkz. api words/generate-word-glosses.ts) tıklanabilir kelimelerde dolu.
+ */
+export type SubtitleSpan = { text: string; word: VideoVocabularyItem | null; gloss?: string };
 
 function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -71,21 +75,64 @@ export function findVocabularyMatches(text: string, vocabulary: readonly VideoVo
   return accepted.sort((a, b) => a.start - b.start);
 }
 
-/** `SubtitleOverlay`'in render edeceği düz/vocabulary parçalarının sırası — metnin TAMAMINI, sırayla, boşluksuz kapsar. */
-export function buildSubtitleSpans(text: string, vocabulary: readonly VideoVocabularyItem[]): SubtitleSpan[] {
+/**
+ * Düz (vocabulary eşleşmesi olmayan) bir metin parçasını, anlamı bilinen
+ * kelimeler tıklanabilir `gloss` span'ları olacak şekilde böler. Anlamı OLMAYAN
+ * kelime ve noktalama düz kalır (tıklanamaz) — kullanıcıyı boş bir sheet'ten korur.
+ */
+function splitPlainSegment(text: string, glosses: Readonly<Record<string, string>>): SubtitleSpan[] {
+  const spans: SubtitleSpan[] = [];
+  let cursor = 0;
+  for (const token of findWordTokens(text)) {
+    const gloss = glosses[token.normalized];
+    if (!gloss) {
+      continue;
+    }
+    if (token.start > cursor) {
+      spans.push({ text: text.slice(cursor, token.start), word: null });
+    }
+    spans.push({ text: token.text, word: null, gloss });
+    cursor = token.end;
+  }
+  if (cursor < text.length) {
+    spans.push({ text: text.slice(cursor), word: null });
+  }
+  return spans;
+}
+
+/**
+ * `SubtitleOverlay`'in render edeceği düz/vocabulary/gloss parçalarının sırası —
+ * metnin TAMAMINI, sırayla, boşluksuz kapsar. `glosses` (bu segment'in
+ * `kelime -> anlam` haritası) verilmezse davranış Chunk 14'teki ile BİREBİR aynı.
+ * Kürate vocabulary eşleşmeleri önceliklidir: bir phrase'in içindeki kelimeler
+ * ayrıca gloss span'ı OLMAZ.
+ */
+export function buildSubtitleSpans(
+  text: string,
+  vocabulary: readonly VideoVocabularyItem[],
+  glosses?: Readonly<Record<string, string>>,
+): SubtitleSpan[] {
   const matches = findVocabularyMatches(text, vocabulary);
   const spans: SubtitleSpan[] = [];
   let cursor = 0;
 
+  function pushPlain(plain: string): void {
+    if (glosses) {
+      spans.push(...splitPlainSegment(plain, glosses));
+    } else {
+      spans.push({ text: plain, word: null });
+    }
+  }
+
   for (const match of matches) {
     if (match.start > cursor) {
-      spans.push({ text: text.slice(cursor, match.start), word: null });
+      pushPlain(text.slice(cursor, match.start));
     }
     spans.push({ text: text.slice(match.start, match.end), word: match.word });
     cursor = match.end;
   }
   if (cursor < text.length) {
-    spans.push({ text: text.slice(cursor), word: null });
+    pushPlain(text.slice(cursor));
   }
 
   return spans;
