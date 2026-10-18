@@ -15,6 +15,7 @@ export function parseSessionSeedQuery(raw: unknown): string | undefined {
 }
 
 /**
+ * LEGACY-COMPAT(seedless-feed): yalnızca yayındaki eski mobile build için; kaldırılabilir (bkz. feed.service.ts getFeed).
  * Seed göndermeyen (eski mobile build) cursor'suz istekler için sunucu seed'i: 128-bit, `sessionSeedSchema` biçiminde.
  * Üretilen seed v3 imzalı cursor'a yazılır, böylece pagination aynı frozen plan üzerinde sürer. Bu istekler için
  * "retry aynı sırayı verir" GARANTİSİ YOKTUR: her seed'siz cursor'suz istek yeni bir seed alır (client seed

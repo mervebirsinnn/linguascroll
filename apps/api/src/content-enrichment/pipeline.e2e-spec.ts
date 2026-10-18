@@ -21,18 +21,20 @@ import { assertValidSegmentReferences } from "./validate-segment-references";
 
 /**
  * Chunk 12 — "Deterministic pipeline proof" (kullanıcı kararı, live API
- * erişimi olmadan önce). GERÇEK bir STT çıktısını (scripts/stt/output/a1final1/
- * draft.json — repo'da zaten mevcut, gerçek bir insan konuşmalı videodan)
- * baştan sona pipeline'dan geçirir:
+ * erişimi olmadan önce). Gerçek bir STT çıktısının (a1final1) birebir kopyası olan
+ * küçük, deterministik bir fixture'ı baştan sona pipeline'dan geçirir. Fixture
+ * test içinde üretilir: scripts/stt/output/ gitignored olduğu için temiz clone/CI'da
+ * orada draft.json OLMAZ; kaynak video da geçici bir dummy dosyadır (copyMediaFile
+ * yalnızca varlık + kopyalama davranışını kanıtlar, video içeriğini değil):
  *
- *   gerçek draft.json → sttDraftSchema.parse
+ *   fixture draft → sttDraftSchema.parse
  *   → enrichTranscript (Gemini client MOCK'lanmış — gerçek ağ çağrısı YOK)
  *   → assertValidSegmentReferences
  *   → buildPublishDraft
  *   → diske yaz + diskten OKU (gerçek round-trip)
  *   → publishDraftSchema.parse (publish-content.ts'in okuyacağı ŞEKİLDE)
  *   → publishContent (GERÇEK test Postgres'ine, transaction içinde)
- *   → copyMediaFile (GERÇEK kaynak video dosyası, geçici bir media dir'e)
+ *   → copyMediaFile (geçici kaynak video dosyası, geçici bir media dir'e)
  *   → DB'deki TÜM ilişkiler doğrulanır
  *
  * BU TEST NE KANITLAMAZ: LLM'in ürettiği içeriğin KALİTESİNİ (topic/CEFR/
@@ -44,7 +46,35 @@ import { assertValidSegmentReferences } from "./validate-segment-references";
  * ÇALIŞTIĞI — LLM'in DIŞINDAKİ her şey.
  */
 
-const REAL_DRAFT_PATH = path.resolve(__dirname, "..", "..", "scripts", "stt", "output", "a1final1", "draft.json");
+const FIXTURE_SEGMENT_TEXTS = [
+  "My dog is very cute, but he is not very smart.",
+  "He knows only three English words.",
+  "The first word is food.",
+  "I say food, and he runs to his bowl very fast.",
+  "He loves to eat.",
+  "The second word is walk.",
+  "I say walk, and he brings me his leash.",
+  "He jumps up and down.",
+  "The third word is no.",
+  "I say no when he eats my favorite shoe.",
+];
+
+/** Gerçek a1final1 STT çıktısının zamanlamalarıyla birebir; sourceFile her testte geçici dizine yazılan dummy dosyadır. */
+function buildFixtureDraft(sourceFile: string): unknown {
+  const timings: [number, number][] = [
+    [0, 2740], [3340, 4920], [5540, 6500], [7020, 9820], [10460, 11160],
+    [11620, 12700], [13200, 15160], [15700, 16700], [17180, 18080], [18520, 20460],
+  ];
+  return {
+    contentId: "a1final1",
+    sourceFile,
+    languageStatus: "ready",
+    detectedLanguage: "en",
+    languageProbability: 0.996152937412262,
+    durationMs: 20900,
+    segments: FIXTURE_SEGMENT_TEXTS.map((text, i) => ({ ordinal: i + 1, startMs: timings[i]![0], endMs: timings[i]![1], text })),
+  };
+}
 
 function mockedEnrichmentResponseText(): string {
   return JSON.stringify({
@@ -107,7 +137,7 @@ function mockedInteraction(outputText: string): Awaited<ReturnType<GoogleGenAI["
   } as unknown as Awaited<ReturnType<GoogleGenAI["interactions"]["create"]>>;
 }
 
-describe("content-enrichment pipeline (deterministic, gerçek draft.json + gerçek Postgres, LLM MOCK'lanmış)", () => {
+describe("content-enrichment pipeline (deterministic, fixture draft + gerçek Postgres, LLM MOCK'lanmış)", () => {
   let db: NodePgDatabase;
   let pool: Pool;
   let tmpRoot: string;
@@ -131,10 +161,13 @@ describe("content-enrichment pipeline (deterministic, gerçek draft.json + gerç
     await pool.end();
   });
 
-  it("gerçek draft.json → mock LLM → enriched.json → publish → DB (uçtan uca, tüm ilişkiler doğru)", async () => {
-    // 1) Gerçek STT çıktısı (repo'da mevcut, hiç değiştirilmedi).
-    expect(fs.existsSync(REAL_DRAFT_PATH)).toBe(true);
-    const rawDraft: unknown = JSON.parse(fs.readFileSync(REAL_DRAFT_PATH, "utf-8"));
+  it("fixture draft.json → mock LLM → enriched.json → publish → DB (uçtan uca, tüm ilişkiler doğru)", async () => {
+    // 1) Fixture STT çıktısı: diske yazılıp geri okunur (gerçek draft.json round-trip'i) — repo dışı dosyaya bağımlılık YOK.
+    const sourceFile = path.join(tmpRoot, "A1final1.mp4");
+    fs.writeFileSync(sourceFile, Buffer.from("dummy-video-bytes"));
+    const draftPath = path.join(tmpRoot, "draft.json");
+    fs.writeFileSync(draftPath, JSON.stringify(buildFixtureDraft(sourceFile), null, 2), "utf-8");
+    const rawDraft: unknown = JSON.parse(fs.readFileSync(draftPath, "utf-8"));
     const draft = sttDraftSchema.parse(rawDraft);
     expect(draft.languageStatus).toBe("ready");
     expect(draft.segments).toHaveLength(10);

@@ -112,6 +112,8 @@ export class FeedService {
     if (cursor) {
       return this.continueSession(userId, cursor, scope, sessionSeed);
     }
+    // LEGACY-COMPAT(seedless-feed): kaldırma koşulu — seed gönderen mobile build'in %100'e yakın yayılması; kaldırınca
+    // `?? generateServerSessionSeed()` silinir ve seed'siz istek 400 olur (feed-session-seed.ts + feed-scope.e2e-spec.ts'teki ilgili test de gider).
     // Eski mobile build'ler seed göndermez (geçici uyumluluk): sunucu üretir ve v3 cursor'a yazar. Seed VARSA
     // (yeni client) biçimi controller'da doğrulanmıştır ve aynen kullanılır.
     return this.startSession(userId, preference, scope, sessionSeed ?? generateServerSessionSeed());
