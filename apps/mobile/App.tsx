@@ -1,25 +1,39 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import * as Sentry from '@sentry/react-native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { initialWindowMetrics, SafeAreaProvider } from 'react-native-safe-area-context';
 import { Feed } from './src/features/feed/components/Feed';
-import { useAnonymousUserId } from './src/features/identity/use-anonymous-user-id';
+import { SignInScreen } from './src/features/identity/SignInScreen';
+import { useAuth } from './src/features/identity/use-auth';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
-import { initializePurchases } from './src/features/subscription/purchases-gateway';
+import type { AccountLinkControl } from './src/features/identity/auth-state';
+import { initializePurchases, openSubscriptionManagement } from './src/features/subscription/purchases-gateway';
 
 type AppMode = 'feed' | 'memory';
 
 function App() {
-  // Feed, quiz cevaplarını ve video watch-event'lerini bir userId'ye ihtiyaç
-  // duyacak şekilde gönderiyor (bkz. Chunk 6) — bu yüzden feed'i, anonymous
-  // identity hazır olmadan hiç mount etmiyoruz (identity.status === 'success'
-  // DIŞINDA hiçbir dalda <Feed> render edilmiyor). Bu kontrol tek kullanım yeri
-  // olan, trivial bir discriminant — ayrı bir fonksiyona çıkarmak sadece test
-  // uğruna gereksiz bir production abstraction olurdu (bkz. Chunk 7 review).
-  const identity = useAnonymousUserId();
+  // 2026-10-27 — gerçek hesap: Firebase Authentication. Feed/onboarding yalnızca bir Firebase
+  // oturumu VE backend kullanıcısı varken mount edilir (auth.state.status === 'signedIn').
+  // 2026-10-28 — bu oturum ilk açılışta otomatik bir MİSAFİR (anonim) oturum: ilk 10 video
+  // girişsiz; Google girişi paywall'da (ya da Kelimelerim > Giriş yap) bu hesaba bağlanır
+  // (bkz. auth-state.ts). Eski (2026-10 öncesi) AsyncStorage anonim UUID'si hâlâ kullanılmıyor.
+  const auth = useAuth();
+  const identity = auth.state.status === 'signedIn' ? { status: 'success' as const, userId: auth.state.userId } : { status: 'pending' as const };
+  const signedIn = auth.state.status === 'signedIn' ? auth.state : null;
+  const linkAccount = auth.linkAccount;
+  // Referans yalnızca içerik değişince yenilenir: Feed'in FlatList'i bunu extraData olarak izliyor.
+  const account = useMemo<AccountLinkControl>(
+    () => ({
+      isAnonymous: signedIn?.session.isAnonymous ?? false,
+      linking: signedIn?.linking ?? false,
+      notice: signedIn?.notice ?? null,
+      onLinkAccount: linkAccount,
+    }),
+    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, linkAccount],
+  );
   // Chunk 15 — identity'den BAĞIMSIZ, paralel bir bootstrap (saf local storage,
   // network'e hiç ihtiyaç duymuyor) — Rules of Hooks gereği koşulsuz çağrılıyor.
   const onboarding = useOnboardingState();
@@ -29,10 +43,10 @@ function App() {
   // Memory SADECE Feed'deki açık bir kullanıcı eylemiyle açılıyor.
   const [mode, setMode] = useState<AppMode>('feed');
 
-  // RevenueCat'in appUserID'si, backend'in entitlement sorgusunda kullandığı anonim
-  // userId ile AYNI olmalı — bu yüzden identity hazır olunca (ve sadece o zaman)
-  // yapılandırılıyor. Anahtar tanımsızsa (EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY) sessizce
-  // atlanır: satın alma kapalı kalır, uygulamanın geri kalanı etkilenmez.
+  // RevenueCat'in appUserID'si, backend'in entitlement sorgusunda kullandığı SABİT backend
+  // kullanıcı id'si (GET /me) ile AYNI olmalı — bu yüzden giriş tamamlanınca (ve sadece o zaman)
+  // yapılandırılıyor; başka hesapla girişte kimlik değiştiriliyor (logIn). Anahtar tanımsızsa
+  // (EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY) sessizce atlanır: satın alma kapalı kalır.
   const identityUserId = identity.status === 'success' ? identity.userId : null;
   useEffect(() => {
     if (identityUserId === null) return;
@@ -48,16 +62,35 @@ function App() {
     // olası boş/flash render'ı önlüyor (react-native-safe-area-context'in kendi
     // önerdiği desen).
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      {identity.status === 'loading' && (
+      {(auth.state.status === 'initializing' || auth.state.status === 'startingGuest' || auth.state.status === 'loadingUser') && (
         <View style={styles.centered}>
           <Text style={styles.message}>Yükleniyor…</Text>
         </View>
       )}
-      {identity.status === 'error' && (
+      {auth.state.status === 'unconfigured' && (
+        <View style={styles.centered}>
+          <Text style={styles.message}>Giriş şu an kullanılamıyor (uygulama yapılandırması eksik).</Text>
+        </View>
+      )}
+      {(auth.state.status === 'signedOut' || auth.state.status === 'signingIn') && (
+        <SignInScreen
+          busy={auth.state.status === 'signingIn'}
+          notice={auth.state.status === 'signedOut' ? auth.state.notice : null}
+          onSignIn={auth.signIn}
+        />
+      )}
+      {(auth.state.status === 'userLoadFailed' || auth.state.status === 'guestFailed') && (
         // Chunk 15, madde 7 — ham teknik hata mesajı (örn. "Failed to fetch")
-        // artık DOĞRUDAN kullanıcıya gösterilmiyor.
+        // DOĞRUDAN kullanıcıya gösterilmiyor.
         <View style={styles.centered}>
           <Text style={styles.message}>Bağlantı kurulamadı. İnternet bağlantını kontrol edip tekrar dene.</Text>
+          <Pressable
+            onPress={auth.state.status === 'guestFailed' ? auth.retryGuest : auth.retryUser}
+            accessibilityRole="button"
+            style={styles.retryButton}
+          >
+            <Text style={styles.retryText}>Tekrar dene</Text>
+          </Pressable>
         </View>
       )}
       {identity.status === 'success' && onboarding.status === 'loading' && (
@@ -69,10 +102,21 @@ function App() {
         <OnboardingFlow onComplete={onboarding.completeOnboarding} onSkip={onboarding.skipOnboarding} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'feed' && (
-        <Feed userId={identity.userId} preference={onboarding.state.preferences} onOpenMemory={() => setMode('memory')} />
+        <Feed userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'memory' && (
-        <MemoryFlow userId={identity.userId} onBack={() => setMode('feed')} />
+        <MemoryFlow
+          userId={identity.userId}
+          onBack={() => setMode('feed')}
+          onSignOut={() => {
+            setMode('feed');
+            auth.signOut();
+          }}
+          account={account}
+          onManageSubscription={() => {
+            openSubscriptionManagement().catch((error: unknown) => Sentry.captureException(error));
+          }}
+        />
       )}
       <StatusBar style="light" />
     </SafeAreaProvider>
@@ -90,6 +134,19 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
     paddingHorizontal: 24,
+  },
+  retryButton: {
+    marginTop: 16,
+    borderWidth: 1,
+    borderColor: '#fff',
+    borderRadius: 10,
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+  },
+  retryText: {
+    color: '#fff',
+    fontSize: 15,
+    fontWeight: '600',
   },
 });
 

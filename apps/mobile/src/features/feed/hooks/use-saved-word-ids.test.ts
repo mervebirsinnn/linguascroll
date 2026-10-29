@@ -7,6 +7,10 @@ import {
   toggleSaveWord,
 } from "./use-saved-word-ids";
 
+// 2026-10-27 — kimlik SDK'sı (Firebase/Google Sign-In, native) testte yüklenmez: API dosyalarının
+// kullandığı header üreticisi sabit bir test token'ı döner.
+jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({ Authorization: "Bearer test-id-token" }) }));
+
 /**
  * `useSavedWordIds`'in state-transition mantığı React'ten bağımsız saf
  * fonksiyonlara çıkarıldığı için (hook bunları BİREBİR kullanıyor), bu testler
@@ -194,7 +198,7 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
   it("currentlySaved=true verildiğinde unsaveWord çağrılır (saveWord değil)", () => {
     const deps = makeDeps();
     toggleSaveWord(WORD_JOURNEY, USER_ID, true, new Set(), () => {}, () => {}, undefined, deps);
-    expect(deps.unsaveWord).toHaveBeenCalledWith(WORD_JOURNEY, USER_ID);
+    expect(deps.unsaveWord).toHaveBeenCalledWith(WORD_JOURNEY); // 2026-10-27: kimlik token'da, userId argümanı yok
     expect(deps.saveWord).not.toHaveBeenCalled();
   });
 
@@ -202,6 +206,6 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const deps = makeDeps();
     const SEGMENT_ID = "00000000-0000-4000-a000-000000000001";
     toggleSaveWord(WORD_JOURNEY, USER_ID, false, new Set(), () => {}, () => {}, SEGMENT_ID, deps);
-    expect(deps.saveWord).toHaveBeenCalledWith(WORD_JOURNEY, USER_ID, SEGMENT_ID);
+    expect(deps.saveWord).toHaveBeenCalledWith(WORD_JOURNEY, SEGMENT_ID);
   });
 });

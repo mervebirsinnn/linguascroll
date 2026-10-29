@@ -7,7 +7,8 @@ import { z } from "zod";
  * policy) bilinçli olarak burada yok — Chunk 7'nin read-side'ına ait.
  */
 export const recordVideoWatchEventRequestSchema = z.object({
-  userId: z.string().uuid(),
+  // 2026-10-27 — `userId` KALDIRILDI: kimlik istemcinin gönderdiği bir alan değil, backend'in
+  // doğruladığı Firebase token'ından çözülüyor (bkz. apps/api auth/firebase-auth.guard.ts).
   watchedMs: z.number().int().nonnegative(),
 });
 

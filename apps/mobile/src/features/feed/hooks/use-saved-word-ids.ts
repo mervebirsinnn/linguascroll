@@ -162,7 +162,7 @@ export function toggleSaveWord(
 
   // sourceSegmentId sadece SAVE ederken anlamlı — unsave'de kaynak context
   // kavramı yok (kayıt zaten siliniyor).
-  const mutate = nowSaving ? deps.saveWord(wordId, userId, sourceSegmentId) : deps.unsaveWord(wordId, userId);
+  const mutate = nowSaving ? deps.saveWord(wordId, sourceSegmentId) : deps.unsaveWord(wordId);
   mutate
     .then(() => {
       onSuccess(wordId, nowSaving);

@@ -23,3 +23,7 @@ allowBuilds:
   # -- esbuild/workerd ile aynı desen (platform binary seçici), source map
   # upload için gerekli, resmi Sentry paketi.
   '@sentry/cli': true
+  # postinstall SADECE FIREBASE_WEBAPP_CONFIG env'i varsa Firebase App Hosting için
+  # otomatik web-app config dosyası yazıyor (kaynağı incelendi: postinstall.js) —
+  # kullanmıyoruz (config açıkça env'den veriliyor), bu yüzden bilinçli olarak KAPALI.
+  '@firebase/util': false

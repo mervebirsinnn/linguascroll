@@ -154,8 +154,14 @@ first request — there's no separate config framework/file beyond this.
 
 `src/features/<feature>/` mirrors the API's feature boundaries (`feed`, `identity`,
 `subtitles`, `preferences`), each with its own `api/` (thin fetch wrappers hitting the NestJS API)
-and `components`/`hooks`. `App.tsx` gates the whole feed behind anonymous-identity bootstrap
-(`useAnonymousUserId` — `identity.status === "success"` before `<Feed>` ever mounts).
+and `components`/`hooks`. `App.tsx` mounts `<Feed>` only once there is a Firebase session plus a backend
+user (`features/identity/use-auth.ts` — `auth.state.status === "signedIn"`). On first launch that session
+is an automatic *anonymous* Firebase user (the first 10 free videos need no sign-in); Google sign-in is
+offered on the paywall and *links* to that anonymous user (same Firebase UID → same backend user, grants
+and RevenueCat id) — see `features/identity/auth-state.ts`. Every user-scoped API request carries the Firebase ID token
+(`features/identity/auth-headers.ts`); the API derives the user only from that token
+(`apps/api/src/auth/firebase-auth.guard.ts`, `@AuthUserId()`) — never from a client-sent userId.
+`features/identity/auth-gateway.ts` is the only file that touches the Firebase/Google SDKs.
 
 Notable pattern: complex hook state machines (e.g. `use-feed.ts`) separate their state-transition
 logic into plain, exported functions (`applyFreshSessionSuccess`, `applyLoadMoreError`,

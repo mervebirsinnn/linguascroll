@@ -1,4 +1,5 @@
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Image, Pressable, StyleSheet, Text, View } from "react-native";
+import type { AccountLinkControl } from "../identity/auth-state";
 import { ctaLabel, finePrint, type PaywallPackage } from "./paywall-model";
 import { usePaywall } from "./use-paywall";
 
@@ -7,24 +8,33 @@ const brandMarkImage = require("../../../assets/brand-mark.png") as number;
 type PaywallFeedItemProps = {
   height: number;
   width: number;
-  /** Satın alma/geri yükleme aktif abonelik verdiğinde çağrılır — parent feed'i yeniler. */
+  userId: string;
+  account: AccountLinkControl;
+  /** Abonelik BACKEND'de doğrulandığında çağrılır — parent feed'i yeniler (bkz. use-paywall.ts). */
   onUnlocked: () => void;
 };
 
 /**
- * Backend'in günlük ücretsiz limiti dolunca döndürdüğü TERMİNAL feed item'ı (bkz.
+ * Backend'in ücretsiz hakkı (hesap başına toplam 10 video) dolunca döndürdüğü TERMİNAL feed item'ı (bkz.
  * feed.service.ts, `{type:"paywall"}`, nextCursor null). Dikey ScrollView BİLİNÇLİ olarak yok:
  * FlatList'in dikey sayfa kaydırmasıyla aynı eksende çakışır (vocabulary listesinde yaşanan
  * "kaydırınca sonraki videoya geçiyor" sorunu) — içerik tek ekrana sığacak kadar kompakt.
+ *
+ * 2026-10-28 — misafir (anonim) kullanıcı: paketler ve fiyat/deneme metni AYNEN görünür (fiyat
+ * girişten ÖNCE belli olmalı), ama ana buton önce "Google ile devam et" — abonelik bir hesaba
+ * bağlanmadan satın alınmaz (başka cihazda/yeniden kurulumda geri yüklenebilsin). Bağlama sonrası
+ * Firebase UID aynı kaldığı için RevenueCat kimliği de aynı; buton satın almaya döner.
+ * "Satın alımları geri yükle" misafirde gizli: geri yükleme hesaba bağlıdır.
  */
-export function PaywallFeedItem({ height, width, onUnlocked }: PaywallFeedItemProps) {
-  const { state, select, purchaseSelected, restore } = usePaywall(onUnlocked);
+export function PaywallFeedItem({ height, width, userId, account, onUnlocked }: PaywallFeedItemProps) {
+  const { state, select, purchaseSelected, restore, retryVerification } = usePaywall(userId, onUnlocked);
+  const needsAccount = account.isAnonymous;
 
   return (
     <View style={[styles.root, { height, width }]}>
       <Image source={brandMarkImage} style={styles.brand} accessibilityLabel="Looplish" />
       <Text style={styles.title}>Öğrenmeye kesintisiz devam et</Text>
-      <Text style={styles.subtitle}>Bugünkü ücretsiz videoların bitti. Ücretsiz hakkın yarın yenilenir.</Text>
+      <Text style={styles.subtitle}>10 ücretsiz videonu izledin. Devam etmek için abone ol.</Text>
 
       {state.status === "loading" && <Text style={styles.muted}>Yükleniyor…</Text>}
 
@@ -33,7 +43,7 @@ export function PaywallFeedItem({ height, width, onUnlocked }: PaywallFeedItemPr
       {state.status === "ready" && (
         <>
           <View style={styles.benefits}>
-            <Text style={styles.benefit}>✓  Her gün sınırsız video ve quiz</Text>
+            <Text style={styles.benefit}>✓  Sınırsız video ve quiz</Text>
             <Text style={styles.benefit}>✓  Tüm seviyeler ve konular açık</Text>
           </View>
 
@@ -43,22 +53,47 @@ export function PaywallFeedItem({ height, width, onUnlocked }: PaywallFeedItemPr
             ))}
           </View>
 
-          <Pressable
-            onPress={purchaseSelected}
-            disabled={state.action !== "idle"}
-            accessibilityRole="button"
-            style={[styles.cta, state.action !== "idle" && styles.ctaDisabled]}
-          >
-            <Text style={styles.ctaText}>{state.action === "purchasing" ? "…" : ctaLabel(selectedOf(state.packages, state.selectedId))}</Text>
-          </Pressable>
+          {needsAccount ? (
+            <Pressable
+              onPress={account.onLinkAccount}
+              disabled={account.linking}
+              accessibilityRole="button"
+              style={[styles.cta, account.linking && styles.ctaDisabled]}
+            >
+              {account.linking ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
+            </Pressable>
+          ) : (
+            <Pressable
+              onPress={purchaseSelected}
+              disabled={state.action !== "idle"}
+              accessibilityRole="button"
+              style={[styles.cta, state.action !== "idle" && styles.ctaDisabled]}
+            >
+              <Text style={styles.ctaText}>{state.action === "purchasing" || state.action === "verifying" ? "…" : ctaLabel(selectedOf(state.packages, state.selectedId))}</Text>
+            </Pressable>
+          )}
+
+          {needsAccount && <Text style={styles.finePrint}>Aboneliğin Google hesabına bağlanır; başka bir cihazda da geçerli olur.</Text>}
 
           <Text style={styles.finePrint}>{finePrint(selectedOf(state.packages, state.selectedId))}</Text>
 
-          <Pressable onPress={restore} disabled={state.action !== "idle"} accessibilityRole="button" style={styles.restore}>
-            <Text style={styles.restoreText}>{state.action === "restoring" ? "…" : "Satın alımları geri yükle"}</Text>
-          </Pressable>
+          {!needsAccount && (
+            <Pressable onPress={restore} disabled={state.action !== "idle"} accessibilityRole="button" style={styles.restore}>
+              <Text style={styles.restoreText}>{state.action === "restoring" ? "…" : "Satın alımları geri yükle"}</Text>
+            </Pressable>
+          )}
+
+          {state.action === "verifying" && <Text style={styles.muted}>Aboneliğin doğrulanıyor…</Text>}
+
+          {account.notice !== null && <Text style={styles.notice}>{account.notice}</Text>}
 
           {state.notice !== null && <Text style={styles.notice}>{state.notice}</Text>}
+
+          {state.verificationPending && state.action === "idle" && (
+            <Pressable onPress={retryVerification} accessibilityRole="button" style={styles.restore}>
+              <Text style={styles.restoreText}>Tekrar dene</Text>
+            </Pressable>
+          )}
         </>
       )}
     </View>

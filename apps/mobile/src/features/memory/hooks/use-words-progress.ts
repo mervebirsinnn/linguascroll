@@ -20,7 +20,7 @@ export function useWordsProgress(userId: string): { state: WordsProgressState; r
     let isCancelled = false;
     setState({ status: "loading" });
 
-    fetchWordsProgress(userId)
+    fetchWordsProgress()
       .then((progress) => {
         if (!isCancelled) {
           setState({ status: "success", progress });

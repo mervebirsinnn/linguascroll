@@ -1,11 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import * as Sentry from "@sentry/react-native";
+import { refreshSubscription } from "./api/refresh-subscription";
 import { fetchPaywallPackages, purchasePackageById, restoreAndCheck } from "./purchases-gateway";
 import {
   applyActionEnd,
   applyActionStart,
   applyOfferingsError,
   applyOfferingsLoaded,
+  applyVerificationFailed,
+  applyVerificationStart,
+  applyVerificationSucceeded,
+  canRetryVerification,
   canStartAction,
   INITIAL_PAYWALL_STATE,
   NOTICE_NOTHING_TO_RESTORE,
@@ -21,15 +26,19 @@ type UsePaywallResult = {
   select: (id: string) => void;
   purchaseSelected: () => void;
   restore: () => void;
+  retryVerification: () => void;
 };
 
 /**
  * Durum geçişleri paywall-state.ts'teki SAF fonksiyonlarda (use-feed.ts ile aynı desen);
- * bu hook sadece onları SDK adaptörüne bağlıyor. `onUnlocked`, satın alma/geri yükleme
- * GERÇEKTEN aktif bir abonelik verdiğinde çağrılır (parent feed'i yeniler — backend'in
- * paywall kapısı artık kapanmış olmalı).
+ * bu hook sadece onları SDK adaptörüne ve backend'e bağlıyor.
+ *
+ * 2026-10-27 — SDK'nın "purchased"/"aktif geri yükleme" sonucu tek başına yetki SAYILMAZ:
+ * ardından backend `POST /subscriptions/refresh` ile aboneliği RevenueCat'ten doğrular
+ * (önbelleği atlayarak). `onUnlocked` (feed yenileme) SADECE backend `active: true` dediğinde
+ * çağrılır; doğrulanamazsa kullanıcıya anlaşılır bir bildirim ve "Tekrar dene" sunulur.
  */
-export function usePaywall(onUnlocked: () => void): UsePaywallResult {
+export function usePaywall(userId: string, onUnlocked: () => void): UsePaywallResult {
   const [state, setState] = useState<PaywallState>(INITIAL_PAYWALL_STATE);
   // Aksiyon sırasında en güncel state'i (closure'daki bayat değeri değil) okumak için.
   const stateRef = useRef(state);
@@ -53,6 +62,23 @@ export function usePaywall(onUnlocked: () => void): UsePaywallResult {
     };
   }, []);
 
+  function verifyWithBackend(): void {
+    setState(applyVerificationStart);
+    refreshSubscription()
+      .then(({ active }) => {
+        if (active) {
+          setState(applyVerificationSucceeded);
+          onUnlockedRef.current();
+        } else {
+          setState(applyVerificationFailed);
+        }
+      })
+      .catch((error: unknown) => {
+        Sentry.captureException(error);
+        setState(applyVerificationFailed);
+      });
+  }
+
   function select(id: string): void {
     setState((current) => selectPackage(current, id));
   }
@@ -64,8 +90,7 @@ export function usePaywall(onUnlocked: () => void): UsePaywallResult {
     purchasePackageById(current.selectedId)
       .then((outcome) => {
         if (outcome === "purchased") {
-          setState((s) => applyActionEnd(s, null));
-          onUnlockedRef.current();
+          verifyWithBackend();
         } else if (outcome === "pending") {
           setState((s) => applyActionEnd(s, NOTICE_PURCHASE_PENDING));
         } else {
@@ -85,8 +110,7 @@ export function usePaywall(onUnlocked: () => void): UsePaywallResult {
     restoreAndCheck()
       .then((active) => {
         if (active) {
-          setState((s) => applyActionEnd(s, null));
-          onUnlockedRef.current();
+          verifyWithBackend();
         } else {
           setState((s) => applyActionEnd(s, NOTICE_NOTHING_TO_RESTORE));
         }
@@ -97,5 +121,10 @@ export function usePaywall(onUnlocked: () => void): UsePaywallResult {
       });
   }
 
-  return { state, select, purchaseSelected, restore };
+  function retryVerification(): void {
+    if (!canRetryVerification(stateRef.current)) return;
+    verifyWithBackend();
+  }
+
+  return { state, select, purchaseSelected, restore, retryVerification };
 }

@@ -1,5 +1,6 @@
 import { feedPageSchema, feedScopeSchema, type FeedPage, type FeedPreferences, type FeedScope } from "@linguascroll/shared-types";
 import { API_BASE_URL } from "../../../shared/api-base-url";
+import { authHeaders } from "../../identity/auth-headers";
 import { getSessionSeed } from "../../../shared/session-seed";
 
 /**
@@ -55,13 +56,12 @@ const FETCH_TIMEOUT_MS = 15000;
  * sayıyor (bkz. feed.service.ts), burada da aynı gerçeği yansıtan tek bir
  * `if/else`, iki ayrı kod yolu DEĞİL.
  */
-export async function fetchFeed(userId: string, cursor?: string, preference?: FeedPreferences, scope: FeedScope = "all"): Promise<FeedPage> {
-  if (!userId) {
-    throw new Error("fetchFeed userId olmadan çağrılamaz");
-  }
+export async function fetchFeed(cursor?: string, preference?: FeedPreferences, scope: FeedScope = "all"): Promise<FeedPage> {
+  // 2026-10-27 — kimlik query'de değil, doğrulanmış Firebase token'ında (Authorization header).
+  const headers = await authHeaders();
 
   // `scope` (all | animation | ielts) bir DB kategorisi DEĞİL feed kapsamıdır; "Akış" = "all" (bütün kategoriler).
-  const params = new URLSearchParams({ userId, scope: feedScopeSchema.parse(scope) });
+  const params = new URLSearchParams({ scope: feedScopeSchema.parse(scope) });
   if (cursor) {
     // Devam isteği seed taşımaz: seed imzalı cursor'ın içinde (sunucu cursor'dakini kullanır).
     params.set("cursor", cursor);
@@ -83,7 +83,7 @@ export async function fetchFeed(userId: string, cursor?: string, preference?: Fe
 
   let response: Response;
   try {
-    response = await fetch(`${API_BASE_URL}/feed?${params.toString()}`, { signal: controller.signal });
+    response = await fetch(`${API_BASE_URL}/feed?${params.toString()}`, { signal: controller.signal, headers });
   } catch (error) {
     // AbortController.abort() fetch'i bir "AbortError" ile reddettiriyor —
     // bunu genel bir network hatasından (offline, DNS, vb.) AYIRT ediyoruz:

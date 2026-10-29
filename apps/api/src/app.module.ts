@@ -4,6 +4,7 @@ import { APP_FILTER } from "@nestjs/core";
 import { SentryGlobalFilter, SentryModule } from "@sentry/nestjs/setup";
 import { z } from "zod";
 import { AppController } from "./app.controller";
+import { AuthModule } from "./auth/auth.module";
 import { ContentAdminModule } from "./content-admin/content-admin.module";
 import { DatabaseModule } from "./database/database.module";
 import { FeedModule } from "./feed/feed.module";
@@ -20,7 +21,7 @@ import { WordsModule } from "./words/words.module";
 // export edilmesinin tek sebebi app.module.spec.ts'in gerçek ConfigModule + bu şema
 // zincirini (process.env'e ne yazıldığı dahil) Nest app'in tamamını boot etmeden
 // test edebilmesi — başka hiçbir yerden import edilmiyor.
-export const envSchema = z.object({
+const baseEnvSchema = z.object({
   DATABASE_URL: z
     .string()
     .min(1, "DATABASE_URL tanımlı olmalı")
@@ -118,11 +119,53 @@ export const envSchema = z.object({
   // `false` (abone değil) döner, ücretsiz günlük limit geçerli kalır.
   REVENUECAT_SECRET_API_KEY: z.string().min(1).optional(),
 
-  // 2026-10-03 — günlük ücretsiz video limiti (paywall kapısı) için ana şalter.
-  // Varsayılan "false": mobilde satın alma akışı hazır olmadan canlıda limit
-  // uygulanmasın (bkz. subscriptions.service.ts). Faz B bitince "true" yapılır.
-  SUBSCRIPTION_GATE_ENABLED: z.enum(["true", "false"]).default("false"),
+  // 2026-10-03 — ücretsiz video hakkı (paywall kapısı) için ana şalter. "false": kimse
+  // kilitlenmez (gerçek ürünler hazır olmadan canlı kullanıcıları kilitlememek için).
+  // 2026-10-27 — production'da varsayılan YOK (bkz. aşağıdaki superRefine): eksik bir env
+  // var'ı sessizce sınırsız erişim açmasın, operatör "true"/"false"u bilinçli seçsin.
+  SUBSCRIPTION_GATE_ENABLED: z.enum(["true", "false"]).optional(),
+
+  // 2026-10-27 — Firebase Authentication proje id'si: kullanıcıya ait TÜM endpoint'lerin
+  // kimliği bu projenin ID token'larından doğrulanıyor (iss/aud bu değere bağlı, bkz.
+  // auth/firebase-token-verifier.ts). Boot'ta ZORUNLU: yoksa hiçbir kullanıcı doğrulanamaz.
+  // Gizli değil (mobile config'inde de var); servis hesabı/secret gerekmiyor.
+  FIREBASE_PROJECT_ID: z.string().min(1, "FIREBASE_PROJECT_ID tanımlı olmalı"),
+
+  // 2026-10-27 — medya URL'lerinin kısa ömürlü HMAC imzası (bkz. videos/signed-media-url.ts).
+  // Media worker'a da AYNI değer `wrangler secret put MEDIA_URL_SIGNING_SECRET` ile verilmeli.
+  // Tanımsızken URL'ler imzasız (local dev/test); kapı açıkken zorunlu.
+  MEDIA_URL_SIGNING_SECRET: z.string().min(32, "MEDIA_URL_SIGNING_SECRET en az 32 karakter olmalı").optional(),
+
+  // Sadece yukarıdaki production kuralı için okunuyor; şemada olmasa da process.env'de
+  // kalırdı, ama superRefine'ın görebilmesi için burada tanımlı.
+  NODE_ENV: z.string().optional(),
 });
+
+/**
+ * 2026-10-27 — eksik yapılandırma sessizce sınırsız (ya da doğrulanamayan) erişim açmasın:
+ * - Kapı açıkken RevenueCat secret'ı zorunlu (yoksa hiçbir abone doğrulanamaz) ve medya
+ *   imza secret'ı zorunlu (yoksa URL'ler kalıcı/herkese açık olur, hak kontrolü delinir).
+ * - Production'da SUBSCRIPTION_GATE_ENABLED açıkça verilmeli; local/test'te varsayılan "false".
+ */
+export const envSchema = baseEnvSchema
+  .superRefine((env, ctx) => {
+    if (env.NODE_ENV === "production" && env.SUBSCRIPTION_GATE_ENABLED === undefined) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ["SUBSCRIPTION_GATE_ENABLED"],
+        message: 'Production\'da SUBSCRIPTION_GATE_ENABLED açıkça "true" ya da "false" olarak verilmeli',
+      });
+    }
+    if (env.SUBSCRIPTION_GATE_ENABLED === "true") {
+      if (!env.REVENUECAT_SECRET_API_KEY) {
+        ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["REVENUECAT_SECRET_API_KEY"], message: "SUBSCRIPTION_GATE_ENABLED=true iken REVENUECAT_SECRET_API_KEY zorunlu" });
+      }
+      if (!env.MEDIA_URL_SIGNING_SECRET) {
+        ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["MEDIA_URL_SIGNING_SECRET"], message: "SUBSCRIPTION_GATE_ENABLED=true iken MEDIA_URL_SIGNING_SECRET zorunlu" });
+      }
+    }
+  })
+  .transform((env) => ({ ...env, SUBSCRIPTION_GATE_ENABLED: env.SUBSCRIPTION_GATE_ENABLED ?? "false" }));
 
 @Module({
   imports: [
@@ -135,6 +178,7 @@ export const envSchema = z.object({
     // gerekmez.
     SentryModule.forRoot(),
     DatabaseModule,
+    AuthModule,
     UsersModule,
     VideosModule,
     QuizzesModule,

@@ -43,12 +43,13 @@ export function createTestDatabaseConnection(): { db: NodePgDatabase; pool: Pool
  * Chunk 5 ile videos'un yanına quizzes/quiz_options eklendi, Chunk 6 ile
  * users/video_watch_events/quiz_answer_events, Chunk 9 ile words/video_words/
  * user_saved_words, Chunk 10 ile video_transcript_segments/
- * transcript_segment_learning_points, Chunk 16 ile word_review_events, kelime anlamları (segment_word_glosses) —
+ * transcript_segment_learning_points, Chunk 16 ile word_review_events, kelime anlamları (segment_word_glosses),
+ * 2026-10-27 ile free_video_grants (ücretsiz hak defteri) —
  * hepsi tek bir TRUNCATE ifadesinde listeleniyor (Postgres, aynı ifadede
  * listelenen FK'li tabloları CASCADE'e gerek kalmadan birlikte temizler).
  */
 export async function truncateTestTables(db: NodePgDatabase): Promise<void> {
   await db.execute(
-    sql`TRUNCATE TABLE videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points, word_review_events, segment_word_glosses`,
+    sql`TRUNCATE TABLE videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points, word_review_events, segment_word_glosses, free_video_grants`,
   );
 }

@@ -7,6 +7,7 @@ import { NestFactory } from "@nestjs/core";
 import { ConfigService } from "@nestjs/config";
 import type { NestExpressApplication } from "@nestjs/platform-express";
 import { AppModule } from "./app.module";
+import { requireSignedMediaUrl } from "./videos/require-signed-media-url.middleware";
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -17,6 +18,15 @@ async function bootstrap(): Promise<void> {
   // Express'in kendi native static-file middleware'ini sarmalıyor — gerçek bir
   // CDN/object-storage/Mux entegrasyonu gelene kadar bu, ihtiyacı yeterince
   // temiz çözen mevcut platform kapasitesi.
+  //
+  // 2026-10-27 — MEDIA_URL_SIGNING_SECRET tanımlıysa static sunumdan ÖNCE imza kontrolü:
+  // aksi halde feed'in/playback-access'in verdiği URL'ler kalıcı ve herkese açık olur,
+  // ücretsiz hak kontrolü delinirdi (bkz. videos/signed-media-url.ts). Tanımsızken
+  // (local dev) eski davranış. Kapı açıkken secret boot'ta zorunlu (envSchema).
+  const mediaUrlSigningSecret = app.get(ConfigService).get<string>("MEDIA_URL_SIGNING_SECRET");
+  if (mediaUrlSigningSecret) {
+    app.use("/media", requireSignedMediaUrl(mediaUrlSigningSecret));
+  }
   app.useStaticAssets(join(__dirname, "..", "public", "media"), { prefix: "/media/" });
 
   // DatabaseModule'ün onModuleDestroy'unun (pool.end()) gerçekten tetiklenmesi için

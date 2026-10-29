@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import type { AccountLinkControl } from "../../identity/auth-state";
 import { ProgressScreen } from "./ProgressScreen";
 import { ReviewScreen } from "./ReviewScreen";
 import { SavedWordsScreen } from "./SavedWordsScreen";
@@ -7,6 +8,15 @@ import { SavedWordsScreen } from "./SavedWordsScreen";
 type MemoryFlowProps = {
   userId: string;
   onBack: () => void;
+  /** 2026-10-27 — hesap çıkışı (Firebase + RevenueCat oturumu kapanır, giriş ekranına dönülür). */
+  onSignOut: () => void;
+  /**
+   * 2026-10-28 — misafir kullanıcı çıkış yapamaz (çıkacak bir hesap yok; çıkış yeni misafir =
+   * yeni ücretsiz hak açardı), onun yerine Google hesabını bağlayabilir. Hesaplı kullanıcı
+   * aboneliğini Google Play'de yönetir/iptal eder (uygulama aboneliği kendisi iptal edemez).
+   */
+  account: AccountLinkControl;
+  onManageSubscription: () => void;
 };
 
 type MemoryTab = "saved" | "review" | "progress";
@@ -22,7 +32,7 @@ type MemoryTab = "saved" | "review" | "progress";
  * eylemiyle (Feed'deki "Kelimelerim" butonu) açılıyor, feed'e asla zorla bir
  * kesinti olarak enjekte edilmiyor.
  */
-export function MemoryFlow({ userId, onBack }: MemoryFlowProps) {
+export function MemoryFlow({ userId, onBack, onSignOut, account, onManageSubscription }: MemoryFlowProps) {
   const [tab, setTab] = useState<MemoryTab>("saved");
 
   return (
@@ -32,7 +42,22 @@ export function MemoryFlow({ userId, onBack }: MemoryFlowProps) {
           <Text style={styles.backButtonText}>← Feed</Text>
         </Pressable>
         <Text style={styles.title}>Kelimelerim</Text>
+        {account.isAnonymous ? (
+          <Pressable onPress={account.onLinkAccount} disabled={account.linking} accessibilityRole="button" style={styles.signOutButton}>
+            <Text style={styles.signInButtonText}>{account.linking ? "…" : "Giriş yap"}</Text>
+          </Pressable>
+        ) : (
+          <Pressable onPress={onSignOut} accessibilityRole="button" style={styles.signOutButton}>
+            <Text style={styles.signOutButtonText}>Çıkış yap</Text>
+          </Pressable>
+        )}
       </View>
+      {!account.isAnonymous && (
+        <Pressable onPress={onManageSubscription} accessibilityRole="button" style={styles.manageButton}>
+          <Text style={styles.manageButtonText}>Aboneliği yönet / iptal et</Text>
+        </Pressable>
+      )}
+      {account.notice !== null && <Text style={styles.notice}>{account.notice}</Text>}
       <View style={styles.tabBar}>
         <TabButton label="Kayıtlı" active={tab === "saved"} onPress={() => setTab("saved")} />
         <TabButton label="Tekrar" active={tab === "review"} onPress={() => setTab("review")} />
@@ -80,6 +105,37 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 18,
     fontWeight: "700",
+    flex: 1,
+  },
+  signOutButton: {
+    paddingVertical: 6,
+    paddingLeft: 12,
+  },
+  signOutButtonText: {
+    color: "#999",
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  signInButtonText: {
+    color: "#8ecdfa",
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  manageButton: {
+    alignSelf: "flex-end",
+    paddingHorizontal: 16,
+    paddingBottom: 10,
+  },
+  manageButtonText: {
+    color: "#8ecdfa",
+    fontSize: 13,
+    fontWeight: "600",
+  },
+  notice: {
+    color: "#ffb3b3",
+    fontSize: 13,
+    paddingHorizontal: 16,
+    paddingBottom: 8,
   },
   tabBar: {
     flexDirection: "row",

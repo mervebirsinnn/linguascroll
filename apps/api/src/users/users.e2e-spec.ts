@@ -1,19 +1,20 @@
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
-import { anonymousUserSchema } from "@linguascroll/shared-types";
+import { currentUserSchema } from "@linguascroll/shared-types";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 
-describe("POST /users/anonymous (e2e, gerçek Postgres)", () => {
+describe("GET /me + kimlik doğrulama (e2e, gerçek Postgres)", () => {
   let app: INestApplication;
   let db: NodePgDatabase;
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -31,66 +32,31 @@ describe("POST /users/anonymous (e2e, gerçek Postgres)", () => {
     await app.close();
   });
 
-  it("201 ve gerçek anonymousUserSchema ile uyumlu bir uuid id döner", async () => {
-    const response = await request(app.getHttpServer()).post("/users/anonymous");
-
-    expect(response.status).toBe(201);
-    const parsed = anonymousUserSchema.parse(response.body);
-    expect(parsed.id).toEqual(expect.any(String));
+  it("token yoksa 401", async () => {
+    expect((await request(app.getHttpServer()).get("/me")).status).toBe(401);
   });
 
-  it("her çağrı farklı bir id üretir (idempotent bir 'get-or-create' DEĞİL)", async () => {
-    const first = await request(app.getHttpServer()).post("/users/anonymous");
-    const second = await request(app.getHttpServer()).post("/users/anonymous");
-
-    expect(first.body.id).not.toBe(second.body.id);
-  });
-});
-
-describe("GET /users/:userId/exists (e2e, gerçek Postgres)", () => {
-  let app: INestApplication;
-  let db: NodePgDatabase;
-  let pool: Pool;
-
-  beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
-    app = moduleRef.createNestApplication();
-    await app.init();
-
-    const connection = createTestDatabaseConnection();
-    db = connection.db;
-    pool = connection.pool;
+  it("geçersiz token 401", async () => {
+    const response = await request(app.getHttpServer()).get("/me").set("Authorization", "Bearer bozuk-token");
+    expect(response.status).toBe(401);
   });
 
-  beforeEach(async () => {
-    await truncateTestTables(db);
+  it("ilk girişte backend kullanıcısı yaratılır; aynı hesap her seferinde AYNI sabit id'yi alır", async () => {
+    const first = await request(app.getHttpServer()).get("/me").set("Authorization", bearerFor("firebase-uid-1"));
+    const second = await request(app.getHttpServer()).get("/me").set("Authorization", bearerFor("firebase-uid-1"));
+
+    expect(first.status).toBe(200);
+    expect(currentUserSchema.parse(first.body).userId).toBe(currentUserSchema.parse(second.body).userId);
   });
 
-  afterAll(async () => {
-    await pool.end();
-    await app.close();
+  it("farklı hesap farklı backend id'si alır (cihaz/oturum değişse de kimlik hesaba bağlı)", async () => {
+    const a = await request(app.getHttpServer()).get("/me").set("Authorization", bearerFor("firebase-uid-a"));
+    const b = await request(app.getHttpServer()).get("/me").set("Authorization", bearerFor("firebase-uid-b"));
+    expect(a.body.userId).not.toBe(b.body.userId);
   });
 
-  it("gerçekten var olan bir userId için { exists: true } döner", async () => {
-    const created = await request(app.getHttpServer()).post("/users/anonymous");
-    const userId = created.body.id as string;
-
-    const response = await request(app.getHttpServer()).get(`/users/${userId}/exists`);
-
-    expect(response.status).toBe(200);
-    expect(response.body).toEqual({ exists: true });
-  });
-
-  it("var olmayan (ama geçerli UUID biçimli) bir userId için { exists: false } döner — 404/500 DEĞİL", async () => {
-    const response = await request(app.getHttpServer()).get("/users/00000000-0000-4000-8000-000000000099/exists");
-
-    expect(response.status).toBe(200);
-    expect(response.body).toEqual({ exists: false });
-  });
-
-  it("malformed userId (geçersiz UUID) için 400 döner", async () => {
-    const response = await request(app.getHttpServer()).get("/users/not-a-uuid/exists");
-
-    expect(response.status).toBe(400);
+  it("eski anonim uçlar kaldırıldı: POST /users/anonymous ve GET /users/:id/exists 404", async () => {
+    expect((await request(app.getHttpServer()).post("/users/anonymous")).status).toBe(404);
+    expect((await request(app.getHttpServer()).get("/users/00000000-0000-4000-8000-000000000001/exists")).status).toBe(404);
   });
 });

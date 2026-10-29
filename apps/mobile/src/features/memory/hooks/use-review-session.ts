@@ -26,7 +26,7 @@ export function useReviewSession(userId: string): { state: ReviewSessionState; r
     let isCancelled = false;
     setState({ status: "loading" });
 
-    fetchReviewSession(userId)
+    fetchReviewSession()
       .then((words) => {
         if (!isCancelled) {
           setState({ status: "success", words });

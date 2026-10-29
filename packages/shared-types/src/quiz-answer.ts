@@ -2,10 +2,10 @@ import { z } from "zod";
 
 export const answerQuizRequestSchema = z.object({
   optionId: z.string().uuid(),
-  // Auth henüz yok — anonymous identity, mobile'ın body'de taşıdığı bu alan.
+  // 2026-10-27 — `userId` KALDIRILDI: kimlik istemcinin gönderdiği bir alan değil, backend'in
+  // doğruladığı Firebase token'ından çözülüyor (bkz. apps/api auth/firebase-auth.guard.ts).
   // isCorrect BİLEREK burada yok: server, doğruluğu kendi hesaplıyor (bkz.
   // QuizzesService.answerQuiz), client'tan asla kabul etmiyor.
-  userId: z.string().uuid(),
 });
 export type AnswerQuizRequest = z.infer<typeof answerQuizRequestSchema>;
 

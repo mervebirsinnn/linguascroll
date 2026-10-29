@@ -1,8 +1,11 @@
-import { BadRequestException, Body, Controller, HttpCode, Param, ParseUUIDPipe, Post } from "@nestjs/common";
+import { BadRequestException, Body, Controller, HttpCode, Param, ParseUUIDPipe, Post, UseGuards } from "@nestjs/common";
 import { answerQuizRequestSchema, type AnswerQuizRequest, type AnswerQuizResponse } from "@linguascroll/shared-types";
+import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
 import { QuizzesService } from "./quizzes.service";
 
+// 2026-10-27 — kimlik SADECE doğrulanmış Firebase token'ından (body'deki userId kaldırıldı).
 @Controller("quizzes")
+@UseGuards(FirebaseAuthGuard)
 export class QuizzesController {
   constructor(private readonly quizzesService: QuizzesService) {}
 
@@ -17,8 +20,9 @@ export class QuizzesController {
   answer(
     @Param("quizId", new ParseUUIDPipe()) quizId: string,
     @Body() body: unknown,
+    @AuthUserId() userId: string,
   ): Promise<AnswerQuizResponse> {
-    const { optionId, userId } = this.parseAnswerRequest(body);
+    const { optionId } = this.parseAnswerRequest(body);
     return this.quizzesService.answerQuiz(quizId, optionId, userId);
   }
 

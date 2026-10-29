@@ -6,6 +6,10 @@ const mockConfig: { key: string | undefined; os: string } = { key: "goog_test_ke
 
 const mockPurchases = {
   configure: jest.fn(),
+  getAppUserID: jest.fn(),
+  logIn: jest.fn(),
+  logOut: jest.fn(),
+  isAnonymous: jest.fn(),
   getOfferings: jest.fn(),
   purchasePackage: jest.fn(),
   restorePurchases: jest.fn(),
@@ -81,14 +85,55 @@ describe("initializePurchases", () => {
     expect(mockPurchases.configure).not.toHaveBeenCalled();
   });
 
-  it("anonim userId'yi appUserID olarak verir ve tekrar çağrılsa da bir kez yapılandırır (idempotent)", async () => {
+  it("backend kullanıcı id'sini appUserID olarak verir; aynı kullanıcı için tekrar çağrı idempotent", async () => {
     const { initializePurchases } = loadGateway();
+    mockPurchases.getAppUserID.mockResolvedValue("user-1");
 
     expect(await initializePurchases("user-1")).toBe(true);
     expect(await initializePurchases("user-1")).toBe(true);
 
     expect(mockPurchases.configure).toHaveBeenCalledTimes(1);
     expect(mockPurchases.configure).toHaveBeenCalledWith({ apiKey: "goog_test_key", appUserID: "user-1" });
+    expect(mockPurchases.logIn).not.toHaveBeenCalled();
+  });
+
+  it("başka hesapla girişte RevenueCat kimliği yeni kullanıcıya değiştirilir (logIn) — abonelik eski hesapta kalır", async () => {
+    const { initializePurchases } = loadGateway();
+    await initializePurchases("user-1");
+    mockPurchases.getAppUserID.mockResolvedValue("user-1");
+
+    await initializePurchases("user-2");
+
+    expect(mockPurchases.configure).toHaveBeenCalledTimes(1);
+    expect(mockPurchases.logIn).toHaveBeenCalledWith("user-2");
+  });
+});
+
+describe("logOutPurchases", () => {
+  it("yapılandırılmamışsa hiçbir şey yapmaz", async () => {
+    const { logOutPurchases } = loadGateway();
+    await logOutPurchases();
+    expect(mockPurchases.logOut).not.toHaveBeenCalled();
+  });
+
+  it("giriş yapılmış (anonim olmayan) RevenueCat kullanıcısını çıkarır", async () => {
+    const { initializePurchases, logOutPurchases } = loadGateway();
+    await initializePurchases("user-1");
+    mockPurchases.isAnonymous.mockResolvedValue(false);
+
+    await logOutPurchases();
+
+    expect(mockPurchases.logOut).toHaveBeenCalledTimes(1);
+  });
+
+  it("RevenueCat zaten anonimse logOut çağrılmaz (SDK bu durumda hata verir)", async () => {
+    const { initializePurchases, logOutPurchases } = loadGateway();
+    await initializePurchases("user-1");
+    mockPurchases.isAnonymous.mockResolvedValue(true);
+
+    await logOutPurchases();
+
+    expect(mockPurchases.logOut).not.toHaveBeenCalled();
   });
 });
 

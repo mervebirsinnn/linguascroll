@@ -1,9 +1,8 @@
 import { z } from "zod";
 
 /**
- * PUT /words/:wordId/saved body contract'ı. Auth henüz yok — anonymous identity,
- * mevcut answerQuizRequestSchema/recordVideoWatchEventRequestSchema deseniyle
- * aynı: mobile kendi taşıdığı userId'yi body'de gönderiyor.
+ * PUT /words/:wordId/saved body contract'ı. Kimlik body'de DEĞİL (2026-10-27):
+ * backend doğrulanmış Firebase token'ından çözüyor.
  *
  * Chunk 16 — `sourceSegmentId` OPSİYONEL: kelime bir altyazı içindeki (Chunk 14
  * word-tap) vurgulu bir kelimeye dokunularak kaydedilmişse, mobile o ANDA
@@ -14,7 +13,8 @@ import { z } from "zod";
  * videosuyla ilişkili olduğunu doğruluyor (bkz. words.service.ts).
  */
 export const saveWordRequestSchema = z.object({
-  userId: z.string().uuid(),
+  // 2026-10-27 — `userId` KALDIRILDI: kimlik istemcinin gönderdiği bir alan değil, backend'in
+  // doğruladığı Firebase token'ından çözülüyor (bkz. apps/api auth/firebase-auth.guard.ts).
   sourceSegmentId: z.string().uuid().nullable().optional(),
 });
 

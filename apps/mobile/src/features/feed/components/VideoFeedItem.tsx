@@ -23,7 +23,10 @@ const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
 type VideoFeedItemProps = {
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
   // video her zaman FeedService'in enrichment'ından geçmiş (vocabulary dahil).
-  video: FeedPlayableVideo;
+  // 2026-10-27 — `playbackUrl` burada KESİN string: feed null taşıyabilir (erişim henüz
+  // alınmadı), ama bu component yalnızca GatedVideoFeedItem erişimi aldıktan sonra mount
+  // edilir — native player hiçbir zaman URL'siz yaratılmaz.
+  video: FeedPlayableVideo & { playbackUrl: string };
   /** true ise bu video ekranda aktif/görünür olan videodur ve oynatılmalıdır. */
   isActive: boolean;
   /** Item boyutu — tek ölçüm kaynağı olarak Feed'den gelir (bkz. Feed.tsx). */
@@ -239,7 +242,7 @@ export function VideoFeedItem({
       const watchedMs = accumulatedMsRef.current;
       accumulatedMsRef.current = 0;
       if (watchedMs > 0) {
-        recordVideoWatchEvent(video.id, userId, watchedMs).catch(() => {
+        recordVideoWatchEvent(video.id, watchedMs).catch(() => {
           // Chunk 5'teki quiz-answer hata davranışıyla aynı minimalist tutum:
           // ayrı bir retry/hata UI'ı yok, sessizce yutuluyor.
         });

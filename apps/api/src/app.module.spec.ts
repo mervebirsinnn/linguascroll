@@ -19,6 +19,7 @@ describe("app.module envSchema + ConfigModule entegrasyonu", () => {
   const REQUIRED_BASE_ENV = {
     DATABASE_URL: "postgres://user:pass@localhost:5432/db",
     FEED_CURSOR_SECRET: "a".repeat(32),
+    FIREBASE_PROJECT_ID: "linguascroll-test",
   };
 
   it("R2_* değişkeni process.env'de tanımlıysa ConfigService bunu gerçekten görebiliyor", async () => {
@@ -172,5 +173,51 @@ describe("app.module Sentry wiring", () => {
   it("SentryGlobalFilter global APP_FILTER olarak kayıtlı", () => {
     const providers = (Reflect.getMetadata("providers", AppModule) ?? []) as unknown[];
     expect(providers).toContainEqual({ provide: APP_FILTER, useClass: SentryGlobalFilter });
+  });
+});
+
+describe("app.module envSchema — abonelik kapısı yapılandırması (2026-10-27)", () => {
+  const BASE = { DATABASE_URL: "postgres://user:pass@localhost:5432/db", FEED_CURSOR_SECRET: "a".repeat(32), FIREBASE_PROJECT_ID: "linguascroll-test" };
+  const GATE_ON_COMPLETE = {
+    ...BASE,
+    SUBSCRIPTION_GATE_ENABLED: "true",
+    REVENUECAT_SECRET_API_KEY: "sk_test_not_real",
+    MEDIA_URL_SIGNING_SECRET: "m".repeat(32),
+  };
+
+  it("local/test'te SUBSCRIPTION_GATE_ENABLED verilmezse \"false\"a düşer (kimse kilitlenmez)", () => {
+    expect(envSchema.parse(BASE).SUBSCRIPTION_GATE_ENABLED).toBe("false");
+  });
+
+  it("production'da SUBSCRIPTION_GATE_ENABLED verilmezse boot fail-fast olur (sessiz sınırsız erişim yok)", () => {
+    expect(() => envSchema.parse({ ...BASE, NODE_ENV: "production" })).toThrow(/SUBSCRIPTION_GATE_ENABLED/);
+  });
+
+  it("production'da açıkça \"false\" verilirse boot olur", () => {
+    expect(envSchema.parse({ ...BASE, NODE_ENV: "production", SUBSCRIPTION_GATE_ENABLED: "false" }).SUBSCRIPTION_GATE_ENABLED).toBe("false");
+  });
+
+  it("kapı açıkken REVENUECAT_SECRET_API_KEY eksikse boot fail-fast olur", () => {
+    const { REVENUECAT_SECRET_API_KEY: _omit, ...env } = GATE_ON_COMPLETE;
+    expect(() => envSchema.parse(env)).toThrow(/REVENUECAT_SECRET_API_KEY/);
+  });
+
+  it("kapı açıkken MEDIA_URL_SIGNING_SECRET eksikse boot fail-fast olur (imzasız kalıcı URL hak kontrolünü deler)", () => {
+    const { MEDIA_URL_SIGNING_SECRET: _omit, ...env } = GATE_ON_COMPLETE;
+    expect(() => envSchema.parse(env)).toThrow(/MEDIA_URL_SIGNING_SECRET/);
+  });
+
+  it("kapı açık + tüm secret'lar tanımlıyken boot olur", () => {
+    expect(envSchema.parse({ ...GATE_ON_COMPLETE, NODE_ENV: "production" }).SUBSCRIPTION_GATE_ENABLED).toBe("true");
+  });
+
+  it("MEDIA_URL_SIGNING_SECRET 32 karakterden kısaysa reddedilir", () => {
+    expect(() => envSchema.parse({ ...BASE, MEDIA_URL_SIGNING_SECRET: "short" })).toThrow(/MEDIA_URL_SIGNING_SECRET/);
+  });
+});
+
+describe("app.module envSchema — FIREBASE_PROJECT_ID (2026-10-27)", () => {
+  it("tanımlı değilse boot fail-fast olur (hiçbir kullanıcı doğrulanamazdı)", () => {
+    expect(() => envSchema.parse({ DATABASE_URL: "postgres://user:pass@localhost:5432/db", FEED_CURSOR_SECRET: "a".repeat(32) })).toThrow(/FIREBASE_PROJECT_ID/);
   });
 });

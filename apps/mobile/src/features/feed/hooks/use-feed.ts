@@ -170,7 +170,7 @@ export function useFeed(
    */
   function requestFreshSession(onSuccess: (page: FeedPage) => void, onError: (error: unknown) => void): Promise<void> {
     isFetchingRef.current = true;
-    return fetchFeed(userId, undefined, preference, scope).then(
+    return fetchFeed(undefined, preference, scope).then(
       (page) => {
         isFetchingRef.current = false;
         onSuccess(page);
@@ -221,7 +221,7 @@ export function useFeed(
     const cursor = state.nextCursor;
     setState((current) => applyLoadMoreStart(current));
 
-    fetchFeed(userId, cursor, undefined, scope)
+    fetchFeed(cursor, undefined, scope)
       .then((page) => {
         isFetchingRef.current = false;
         setState((current) => applyLoadMoreSuccess(current, page));

@@ -63,9 +63,17 @@ config.resolver.blockList = [
 // pnpm'in HER paket için zaten doğru izole ettiği nested @sentry/core kopyasını (paylaşımlı
 // flat klasörü hiç görmeden) buluyor. Diğer TÜM modüller (diğer @sentry/* paketleri dahil —
 // onlar için collision kanıtlanmadı) değişmeden mevcut resolver'a delege ediliyor.
+//
+// 2026-10-27 — 'pretty-format' AYNI SINIFTAN ikinci kanıtlanmış collision: expo (src/async-require/hmr.ts)
+// ve react-native (HMRClient) ^29.7.0 ister; mobile'ın jest/testing-library zinciri 30.5.1 getirir ve
+// flat hoist klasöründe 30.5.1 kazanmıştı. Metro 30'un `import` koşulundaki index.mjs'ini seçiyor, orada
+// default export undefined → development build'de açılışta "[runtime not ready] Cannot read property
+// 'default' of undefined" (gerçek cihazda yaşandı). Aynı çözüm: bu specifier için de import edenin
+// kendi izole kopyası (expo/react-native → 29.7.0).
+const HIERARCHICAL_LOOKUP_PACKAGES = ['@sentry/core', 'pretty-format'];
 const upstreamResolveRequest = config.resolver.resolveRequest;
 config.resolver.resolveRequest = (context, moduleName, platform) => {
-  if (moduleName === '@sentry/core' || moduleName.startsWith('@sentry/core/')) {
+  if (HIERARCHICAL_LOOKUP_PACKAGES.some((name) => moduleName === name || moduleName.startsWith(`${name}/`))) {
     return context.resolveRequest(
       { ...context, disableHierarchicalLookup: false, nodeModulesPaths: [] },
       moduleName,
