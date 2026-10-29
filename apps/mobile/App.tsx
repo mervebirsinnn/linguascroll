@@ -10,7 +10,7 @@ import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
 import type { AccountLinkControl } from './src/features/identity/auth-state';
-import { initializePurchases, openSubscriptionManagement } from './src/features/subscription/purchases-gateway';
+import { initializePurchases } from './src/features/subscription/purchases-gateway';
 
 type AppMode = 'feed' | 'memory';
 
@@ -113,9 +113,6 @@ function App() {
             auth.signOut();
           }}
           account={account}
-          onManageSubscription={() => {
-            openSubscriptionManagement().catch((error: unknown) => Sentry.captureException(error));
-          }}
         />
       )}
       <StatusBar style="light" />

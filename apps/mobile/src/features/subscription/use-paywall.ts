@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as Sentry from "@sentry/react-native";
 import { refreshSubscription } from "./api/refresh-subscription";
-import { fetchPaywallPackages, purchasePackageById, restoreAndCheck } from "./purchases-gateway";
+import { initializePurchases, fetchPaywallPackages, purchasePackageById, restoreAndCheck } from "./purchases-gateway";
 import {
   applyActionEnd,
   applyActionStart,
@@ -23,6 +23,7 @@ import {
 
 type UsePaywallResult = {
   state: PaywallState;
+  reloadOfferings: () => void;
   select: (id: string) => void;
   purchaseSelected: () => void;
   restore: () => void;
@@ -39,6 +40,7 @@ type UsePaywallResult = {
  * çağrılır; doğrulanamazsa kullanıcıya anlaşılır bir bildirim ve "Tekrar dene" sunulur.
  */
 export function usePaywall(userId: string, onUnlocked: () => void): UsePaywallResult {
+  const [reloadKey, setReloadKey] = useState(0);
   const [state, setState] = useState<PaywallState>(INITIAL_PAYWALL_STATE);
   // Aksiyon sırasında en güncel state'i (closure'daki bayat değeri değil) okumak için.
   const stateRef = useRef(state);
@@ -48,7 +50,8 @@ export function usePaywall(userId: string, onUnlocked: () => void): UsePaywallRe
 
   useEffect(() => {
     let cancelled = false;
-    fetchPaywallPackages()
+    setState(INITIAL_PAYWALL_STATE);
+    initializePurchases(userId).then(() => fetchPaywallPackages())
       .then((packages) => {
         if (!cancelled) setState(applyOfferingsLoaded(packages));
       })
@@ -60,7 +63,7 @@ export function usePaywall(userId: string, onUnlocked: () => void): UsePaywallRe
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [userId, reloadKey]);
 
   function verifyWithBackend(): void {
     setState(applyVerificationStart);
@@ -126,5 +129,5 @@ export function usePaywall(userId: string, onUnlocked: () => void): UsePaywallRe
     verifyWithBackend();
   }
 
-  return { state, select, purchaseSelected, restore, retryVerification };
+  return { state, select, purchaseSelected, restore, retryVerification, reloadOfferings: () => setReloadKey((key) => key + 1) };
 }

@@ -22,6 +22,7 @@ const mockFetchPackages = jest.fn();
 const mockPurchase = jest.fn();
 const mockRestore = jest.fn();
 jest.mock("./purchases-gateway", () => ({
+  initializePurchases: jest.fn().mockResolvedValue(true),
   fetchPaywallPackages: (...args: unknown[]) => mockFetchPackages(...args),
   purchasePackageById: (...args: unknown[]) => mockPurchase(...args),
   restoreAndCheck: (...args: unknown[]) => mockRestore(...args),
@@ -53,6 +54,14 @@ describe("PaywallFeedItem", () => {
     expect(await screen.findByText(/Abonelik seçenekleri şu an yüklenemedi/)).toBeTruthy();
     // Limit bilgisi ve başlık, paketler olmasa da görünür — kullanıcı kırık bir ekran görmez.
     expect(screen.getByText(/10 ücretsiz videonu izledin/)).toBeTruthy();
+  });
+
+  it("yükleme başarısız olursa kullanıcı seçenekleri yeniden yükleyebilir", async () => {
+    mockFetchPackages.mockRejectedValueOnce(new Error("ağ")).mockResolvedValueOnce([annual]);
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+    await fireEvent.press(await screen.findByText("Seçenekleri yeniden yükle"));
+    expect(await screen.findByText("7 gün ücretsiz dene")).toBeTruthy();
+    expect(mockFetchPackages).toHaveBeenCalledTimes(2);
   });
 
   it("yıllık paket varsayılan seçili: 7 günlük deneme CTA'sı, gerçek tasarruf rozeti ve yasal metin görünür", async () => {

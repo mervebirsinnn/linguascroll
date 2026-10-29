@@ -135,7 +135,7 @@ export function ctaLabel(pkg: PaywallPackage): string {
  */
 export function finePrint(pkg: PaywallPackage): string {
   const price = `${pkg.priceString} / ${pkg.periodLabel}`;
-  const where = "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Aboneliği yönet.";
+  const where = "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.";
   if (pkg.trialPeriod === null) {
     return `${price}. Abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir; istediğin zaman iptal edebilirsin. ${where}`;
   }
