@@ -98,7 +98,7 @@ describe("varsayılan paket, CTA ve yasal metin", () => {
     expect(finePrint(annual!)).toBe(
       "İlk 7 gün ücretsiz. 7 gün içinde iptal edersen hiçbir ücret ödemezsin. " +
         "İptal etmezsen deneme bitince ₺600 / yıl ücretlendirilirsin ve abonelik iptal edene kadar her yıl yenilenir. " +
-        "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Aboneliği yönet.",
+        "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.",
     );
   });
 
@@ -106,7 +106,7 @@ describe("varsayılan paket, CTA ve yasal metin", () => {
     expect(monthly?.trialPeriod).toBeNull();
     expect(finePrint(monthly!)).toBe(
       "₺100 / ay. Abonelik iptal edene kadar her ay yenilenir; istediğin zaman iptal edebilirsin. " +
-        "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Aboneliği yönet.",
+        "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.",
     );
     expect(finePrint(monthly!)).not.toContain("ücretsiz");
   });

@@ -45,7 +45,7 @@ export function selectPackage(state: PaywallState, id: string): PaywallState {
 
 /** Bir satın alma/geri yükleme çalışırken ikincisi başlatılamaz (çift tıklama koruması). */
 export function canStartAction(state: PaywallState): boolean {
-  return state.status === "ready" && state.action === "idle";
+  return state.status === "ready" && state.action === "idle" && !state.verificationPending;
 }
 
 export function applyActionStart(state: PaywallState, action: Exclude<PaywallAction, "idle">): PaywallState {
@@ -94,3 +94,8 @@ export const NOTICE_PURCHASE_FAILED = "Satın alma tamamlanamadı. Tekrar dene."
 export const NOTICE_PURCHASE_PENDING = "Ödemen onay bekliyor. Onaylanınca erişimin otomatik açılır.";
 export const NOTICE_NOTHING_TO_RESTORE = "Bu hesapta geri yüklenecek aktif bir abonelik bulunamadı.";
 export const NOTICE_RESTORE_FAILED = "Geri yükleme tamamlanamadı. Tekrar dene.";
+
+/** Bekleyen ödeme yeni bir satın alma başlatmaz; manuel/SDK/önplan doğrulamasıyla tamamlanır. */
+export function applyPaymentPending(state: PaywallState): PaywallState {
+  return state.status === "ready" ? { ...state, action: "idle", verificationPending: true, notice: NOTICE_PURCHASE_PENDING } : state;
+}

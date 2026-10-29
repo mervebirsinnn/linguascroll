@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { AccountScreen } from "../../account/AccountScreen";
 import type { AccountLinkControl } from "../../identity/auth-state";
 import { ProgressScreen } from "./ProgressScreen";
 import { ReviewScreen } from "./ReviewScreen";
@@ -16,7 +18,6 @@ type MemoryFlowProps = {
    * aboneliğini Google Play'de yönetir/iptal eder (uygulama aboneliği kendisi iptal edemez).
    */
   account: AccountLinkControl;
-  onManageSubscription: () => void;
 };
 
 type MemoryTab = "saved" | "review" | "progress";
@@ -32,32 +33,25 @@ type MemoryTab = "saved" | "review" | "progress";
  * eylemiyle (Feed'deki "Kelimelerim" butonu) açılıyor, feed'e asla zorla bir
  * kesinti olarak enjekte edilmiyor.
  */
-export function MemoryFlow({ userId, onBack, onSignOut, account, onManageSubscription }: MemoryFlowProps) {
+export function MemoryFlow({ userId, onBack, onSignOut, account }: MemoryFlowProps) {
   const [tab, setTab] = useState<MemoryTab>("saved");
+  const [accountOpen, setAccountOpen] = useState(false);
+  const insets = useSafeAreaInsets();
+
+  // Hesap paneli kapandığında seçili kelime sekmesi korunur; ayrı navigation bağımlılığı yok.
+  if (accountOpen) return <AccountScreen key={userId} userId={userId} account={account} onBack={() => setAccountOpen(false)} onSignOut={onSignOut} />;
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
         <Pressable onPress={onBack} style={styles.backButton}>
-          <Text style={styles.backButtonText}>← Feed</Text>
+          <Text style={styles.backButtonText}>‹ Keşfet</Text>
         </Pressable>
         <Text style={styles.title}>Kelimelerim</Text>
-        {account.isAnonymous ? (
-          <Pressable onPress={account.onLinkAccount} disabled={account.linking} accessibilityRole="button" style={styles.signOutButton}>
-            <Text style={styles.signInButtonText}>{account.linking ? "…" : "Giriş yap"}</Text>
-          </Pressable>
-        ) : (
-          <Pressable onPress={onSignOut} accessibilityRole="button" style={styles.signOutButton}>
-            <Text style={styles.signOutButtonText}>Çıkış yap</Text>
-          </Pressable>
-        )}
-      </View>
-      {!account.isAnonymous && (
-        <Pressable onPress={onManageSubscription} accessibilityRole="button" style={styles.manageButton}>
-          <Text style={styles.manageButtonText}>Aboneliği yönet / iptal et</Text>
+        <Pressable onPress={() => setAccountOpen(true)} accessibilityRole="button" style={({ pressed }) => [styles.accountButton, pressed && styles.accountButtonPressed]}>
+          <Text style={styles.accountButtonText}>Hesabım</Text>
         </Pressable>
-      )}
-      {account.notice !== null && <Text style={styles.notice}>{account.notice}</Text>}
+      </View>
       <View style={styles.tabBar}>
         <TabButton label="Kayıtlı" active={tab === "saved"} onPress={() => setTab("saved")} />
         <TabButton label="Tekrar" active={tab === "review"} onPress={() => setTab("review")} />
@@ -88,7 +82,7 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     alignItems: "center",
-    paddingTop: 56,
+    paddingTop: 12,
     paddingHorizontal: 16,
     paddingBottom: 12,
   },
@@ -107,36 +101,17 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     flex: 1,
   },
-  signOutButton: {
-    paddingVertical: 6,
-    paddingLeft: 12,
-  },
-  signOutButtonText: {
-    color: "#999",
-    fontSize: 14,
-    fontWeight: "600",
-  },
-  signInButtonText: {
-    color: "#8ecdfa",
-    fontSize: 14,
-    fontWeight: "600",
-  },
-  manageButton: {
-    alignSelf: "flex-end",
+  accountButton: {
+    minHeight: 44,
+    justifyContent: "center",
     paddingHorizontal: 16,
-    paddingBottom: 10,
+    borderRadius: 14,
+    backgroundColor: "#221b30",
+    borderWidth: 1,
+    borderColor: "#403251",
   },
-  manageButtonText: {
-    color: "#8ecdfa",
-    fontSize: 13,
-    fontWeight: "600",
-  },
-  notice: {
-    color: "#ffb3b3",
-    fontSize: 13,
-    paddingHorizontal: 16,
-    paddingBottom: 8,
-  },
+  accountButtonPressed: { backgroundColor: "#332642" },
+  accountButtonText: { color: "#d4c5ff", fontSize: 14, fontWeight: "600" },
   tabBar: {
     flexDirection: "row",
     paddingHorizontal: 16,

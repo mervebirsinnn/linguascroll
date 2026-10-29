@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
-import { savedWordSchema, type SavedWord, type VideoVocabularyItem, type WordsProgress } from "@linguascroll/shared-types";
+import { normalizeGlossWord, savedWordSchema, type SavedWord, type VideoVocabularyItem, type WordsProgress } from "@linguascroll/shared-types";
 import { UsersService } from "../users/users.service";
 import { computeWordReviewState } from "./review-scheduling";
 import { REVIEW_SESSION_SIZE, selectReviewSession, type ReviewCandidate } from "./review-selection";
@@ -35,6 +35,13 @@ export class WordsService {
    * geçersiz, VideosService.recordWatchEvent'teki "body'de referans verilen
    * kaynak geçersiz → 400" kuralıyla AYNI).
    */
+  async saveGloss(userId: string, segmentId: string, word: string) {
+    if (!(await this.usersService.userExists(userId))) throw new BadRequestException("Kullanıcı bulunamadı");
+    const saved = await this.wordsRepository.saveSegmentGloss(userId, segmentId, normalizeGlossWord(word));
+    if (!saved) throw new NotFoundException("Bu altyazı kelimesinin hazırlanmış anlamı bulunamadı");
+    return { word: saved, saved: true as const };
+  }
+
   async saveWord(wordId: string, userId: string, sourceSegmentId?: string | null): Promise<void> {
     await this.assertWordAndUserExist(wordId, userId);
 

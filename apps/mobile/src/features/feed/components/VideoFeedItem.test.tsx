@@ -53,6 +53,9 @@ jest.mock("../../subtitles/api/fetch-word-glosses", () => ({
   fetchWordGlosses: jest.fn().mockResolvedValue({}),
 }));
 
+jest.mock("../../subtitles/api/save-gloss", () => ({ saveGloss: jest.fn() }));
+jest.mock("../api/send-video-feedback", () => ({ sendVideoFeedback: jest.fn() }));
+
 jest.mock("../api/record-video-watch-event", () => ({
   recordVideoWatchEvent: jest.fn().mockResolvedValue(undefined),
 }));

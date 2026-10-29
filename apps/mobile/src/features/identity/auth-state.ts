@@ -37,6 +37,7 @@ export type AccountLinkControl = {
   linking: boolean;
   notice: string | null;
   onLinkAccount: () => void;
+  onDeleteAccount?: () => Promise<boolean>;
 };
 
 export const NOTICE_SIGN_IN_FAILED = "Giriş yapılamadı. İnternet bağlantını kontrol edip tekrar dene.";

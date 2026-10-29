@@ -2,7 +2,7 @@ import type { ConfigService } from "@nestjs/config";
 import { RevenueCatClient } from "./revenue-cat-client";
 
 function makeClient(secretApiKey: string | undefined): RevenueCatClient {
-  const configService = { get: () => secretApiKey } as unknown as ConfigService;
+  const configService = { get: (key: string) => key === "REVENUECAT_SECRET_API_KEY" ? secretApiKey : undefined } as unknown as ConfigService;
   return new RevenueCatClient(configService);
 }
 

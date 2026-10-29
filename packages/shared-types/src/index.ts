@@ -36,3 +36,5 @@ export { feedScopeSchema, scopedContentCategorySchema, type FeedScope } from "./
 export { sessionSeedSchema, type SessionSeed } from "./session-seed";
 export { playbackAccessResponseSchema, type PlaybackAccessResponse } from "./playback-access";
 export { subscriptionStatusSchema, type SubscriptionStatus } from "./subscription-status";
+export { subscriptionDetailsSchema, subscriptionOverviewSchema, type SubscriptionDetails, type SubscriptionOverview } from "./subscription-overview";
+export { saveGlossRequestSchema, saveGlossResponseSchema, videoFeedbackRequestSchema, type SaveGlossResponse, type VideoFeedbackRequest } from "./learning-actions";

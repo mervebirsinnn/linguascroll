@@ -18,5 +18,6 @@ import { pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
 export const usersTable = pgTable("users", {
   id: uuid("id").primaryKey().defaultRandom(),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  deletedAt: timestamp("deleted_at", { withTimezone: true }),
   firebaseUid: text("firebase_uid").unique(),
 });
