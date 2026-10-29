@@ -31,8 +31,9 @@ function App() {
       linking: signedIn?.linking ?? false,
       notice: signedIn?.notice ?? null,
       onLinkAccount: linkAccount,
+      onDeleteAccount: auth.deleteAccount,
     }),
-    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, linkAccount],
+    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, linkAccount, auth.deleteAccount],
   );
   // Chunk 15 — identity'den BAĞIMSIZ, paralel bir bootstrap (saf local storage,
   // network'e hiç ihtiyaç duymuyor) — Rules of Hooks gereği koşulsuz çağrılıyor.
@@ -102,10 +103,11 @@ function App() {
         <OnboardingFlow onComplete={onboarding.completeOnboarding} onSkip={onboarding.skipOnboarding} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'feed' && (
-        <Feed userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} />
+        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'memory' && (
         <MemoryFlow
+          key={identity.userId}
           userId={identity.userId}
           onBack={() => setMode('feed')}
           onSignOut={() => {

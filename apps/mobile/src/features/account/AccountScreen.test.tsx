@@ -4,13 +4,14 @@ import { AccountScreen } from "./AccountScreen";
 import { useAccountSubscription } from "./use-account-subscription";
 
 jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 24, bottom: 24, left: 0, right: 0 }) }));
+jest.mock("../subscription/PaywallFeedItem", () => ({ PaywallFeedItem: () => null }));
 jest.mock("./use-account-subscription", () => ({ useAccountSubscription: jest.fn() }));
 const mockSubscription = jest.mocked(useAccountSubscription);
 const account = { isAnonymous: false, linking: false, notice: null, onLinkAccount: jest.fn() };
 
 beforeEach(() => {
   jest.clearAllMocks();
-  mockSubscription.mockReturnValue({ status: "active", action: "idle", notice: null, refresh: jest.fn(), restore: jest.fn(), manage: jest.fn() });
+  mockSubscription.mockReturnValue({ overview: null, status: "active", action: "idle", notice: null, refresh: jest.fn(), restore: jest.fn(), manage: jest.fn() });
 });
 
 it("misafir yalnızca hesap bağlayabilir; çıkış ve mağaza eylemleri sunulmaz", async () => {
@@ -25,6 +26,7 @@ it("misafir yalnızca hesap bağlayabilir; çıkış ve mağaza eylemleri sunulm
 it("abonelik yönetimi ve geri yükleme doğru eylemlere bağlıdır", async () => {
   await render(<AccountScreen userId="linked" account={account} onBack={jest.fn()} onSignOut={jest.fn()} />);
   await fireEvent.press(screen.getByText("Aboneliği yönet"));
+  await fireEvent.press(screen.getByText("Google Play’de yönet / iptal et".replace("’", "'")));
   expect(mockSubscription.mock.results[0]!.value.manage).toHaveBeenCalledTimes(1);
   await fireEvent.press(screen.getByText("Satın alımları geri yükle"));
   expect(mockSubscription.mock.results[0]!.value.restore).toHaveBeenCalledTimes(1);
@@ -32,7 +34,7 @@ it("abonelik yönetimi ve geri yükleme doğru eylemlere bağlıdır", async () 
 });
 
 it("doğrulama hatasını ücretsiz veya Premium olarak sunmaz", async () => {
-  mockSubscription.mockReturnValue({ status: "unknown", action: "idle", notice: null, refresh: jest.fn(), restore: jest.fn(), manage: jest.fn() });
+  mockSubscription.mockReturnValue({ overview: null, status: "unknown", action: "idle", notice: null, refresh: jest.fn(), restore: jest.fn(), manage: jest.fn() });
   await render(<AccountScreen userId="linked" account={account} onBack={jest.fn()} onSignOut={jest.fn()} />);
   expect(screen.getByText("Abonelik durumu")).toBeTruthy();
   expect(screen.queryByText("Premium")).toBeNull();

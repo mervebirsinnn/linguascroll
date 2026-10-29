@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react-native";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react-native";
 import type { AccountLinkControl } from "../identity/auth-state";
 import { PaywallFeedItem } from "./PaywallFeedItem";
 import type { PaywallPackage } from "./paywall-model";
@@ -20,8 +20,10 @@ jest.mock("./api/refresh-subscription", () => ({
 
 const mockFetchPackages = jest.fn();
 const mockPurchase = jest.fn();
+let mockPurchaseUpdate: (() => void) | null = null;
 const mockRestore = jest.fn();
 jest.mock("./purchases-gateway", () => ({
+  subscribeToPurchaseUpdates: (callback: () => void) => { mockPurchaseUpdate = callback; return () => {}; },
   initializePurchases: jest.fn().mockResolvedValue(true),
   fetchPaywallPackages: (...args: unknown[]) => mockFetchPackages(...args),
   purchasePackageById: (...args: unknown[]) => mockPurchase(...args),
@@ -110,7 +112,7 @@ describe("PaywallFeedItem", () => {
 
       await view.rerender(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
       await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
-      await waitFor(() => expect(mockPurchase).toHaveBeenCalledWith("annual"));
+      await waitFor(() => expect(mockPurchase).toHaveBeenCalledWith("annual", USER_ID));
     });
   });
 
@@ -122,7 +124,7 @@ describe("PaywallFeedItem", () => {
     await fireEvent.press(await screen.findByText("Aylık"));
     await fireEvent.press(await screen.findByText("Abone ol"));
 
-    await waitFor(() => expect(mockPurchase).toHaveBeenCalledWith("monthly"));
+    await waitFor(() => expect(mockPurchase).toHaveBeenCalledWith("monthly", USER_ID));
   });
 
   it("satın alma başarılı ama backend aboneliği doğrulayamazsa erişim açılmaz; 'Tekrar dene' doğrulayınca açılır", async () => {
@@ -194,6 +196,7 @@ describe("PaywallFeedItem", () => {
     const onUnlocked = jest.fn();
     mockFetchPackages.mockResolvedValue([annual]);
     mockRestore.mockResolvedValueOnce(false).mockResolvedValueOnce(true);
+    mockRefreshSubscription.mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: true });
     await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
 
     await fireEvent.press(await screen.findByText("Satın alımları geri yükle"));
@@ -211,4 +214,25 @@ describe("PaywallFeedItem", () => {
 
     expect(JSON.stringify(screen.toJSON())).not.toContain("RCTScrollView");
   });
+});
+
+it("bekleyen ödeme ikinci satın almayı engeller, SDK güncellemesi backend üzerinden açar", async () => {
+  const onUnlocked = jest.fn();
+  mockFetchPackages.mockResolvedValueOnce([annual]); mockPurchase.mockResolvedValueOnce("pending");
+  await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
+  await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+  expect(await screen.findByText(/Ödemen onay bekliyor/)).toBeTruthy();
+  await fireEvent.press(screen.getByText("7 gün ücretsiz dene"));
+  expect(mockPurchase).toHaveBeenCalledTimes(1); expect(onUnlocked).not.toHaveBeenCalled();
+  await act(async () => { mockPurchaseUpdate?.(); });
+  await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1));
+});
+it("satın alma devam ederken çift dokunuş yalnızca bir mağaza işlemi başlatır", async () => {
+  let finish!: (outcome: string) => void;
+  mockFetchPackages.mockResolvedValueOnce([annual]); mockPurchase.mockReturnValueOnce(new Promise((resolve) => { finish = resolve; }));
+  await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+  await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+  await fireEvent.press(screen.getByText("Google Play açılıyor…"));
+  expect(mockPurchase).toHaveBeenCalledTimes(1);
+  await act(async () => { finish("cancelled"); }); await waitFor(() => expect(screen.getByText("7 gün ücretsiz dene")).toBeTruthy());
 });

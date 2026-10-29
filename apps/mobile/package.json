@@ -41,7 +41,8 @@
     "typecheck": "tsc --noEmit",
     "typecheck:test": "tsc -p tsconfig.jest.json --noEmit",
     "test": "jest",
-    "eas-build-post-install": "pnpm --filter @linguascroll/shared-types build"
+    "eas-build-post-install": "pnpm --filter @linguascroll/shared-types build",
+    "release:check": "node scripts/check-release-config.cjs"
   },
   "private": true
 }

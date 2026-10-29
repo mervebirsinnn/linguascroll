@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import type { PlaybackAccessResponse, SubscriptionStatus } from "@linguascroll/shared-types";
+import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview } from "@linguascroll/shared-types";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { FreeVideoGrantsRepository } from "./free-video-grants-repository";
@@ -8,12 +8,11 @@ import { RevenueCatClient } from "./revenue-cat-client";
 
 /**
  * 2026-10-27 — hesap başına TOPLAM ücretsiz farklı video sayısı. Günlük YENİLENMEZ
- * (önceki "günde 10" kuralının yerini aldı, kullanıcı kararı). Ücretsiz deneme yok:
- * 10 video ürünün denemesi. 11. farklı video aktif abonelik ister.
+ * (önceki "günde 10" kuralının yerini aldı, kullanıcı kararı). Mağazadaki olası deneme teklifi bundan ayrıdır. 11. farklı video aktif abonelik ister.
  */
 export const FREE_VIDEO_CAP = 10;
 /** "Abone" sonucunun önbelleklendiği süre — `PersonalizationService`'teki `COLD_START_CACHE_TTL_MS` ile AYNI değer/desen. */
-const SUBSCRIBED_CACHE_TTL_MS = 5 * 60 * 1000;
+const SUBSCRIBED_CACHE_TTL_MS = 60 * 1000;
 /**
  * "Abone DEĞİL" sonucu ÇOK daha kısa önbelleklenir. RevenueCat hatasında dönen fail-closed
  * `false` de bu kısa süreyle önbelleğe girer — geçici bir kesinti kullanıcıyı uzun süre
@@ -114,7 +113,33 @@ export class SubscriptionsService {
    */
   async refreshSubscription(userId: string): Promise<SubscriptionStatus> {
     await this.assertUserExists(userId);
-    return { active: await this.isSubscribed(userId, { forceRefresh: true }) };
+    const subscription = await this.revenueCatClient.readSubscription(userId);
+    this.cacheSubscription(userId, subscription.active, subscription.expiresAt);
+    return { active: subscription.active };
+  }
+
+  async getOverview(userId: string): Promise<SubscriptionOverview> {
+    await this.assertUserExists(userId);
+    const { consumed } = await this.freeVideoGrantsRepository.getUsage(userId, []);
+    const base = { gateEnabled: this.gateEnabled, freeVideoLimit: FREE_VIDEO_CAP, consumedFreeVideos: consumed, remainingFreeVideos: Math.max(0, FREE_VIDEO_CAP - consumed) };
+    try {
+      const subscription = await this.revenueCatClient.readSubscription(userId);
+      this.cacheSubscription(userId, subscription.active, subscription.expiresAt);
+      return { ...base, verification: "verified", subscription };
+    } catch {
+      return { ...base, verification: "unavailable", subscription: null };
+    }
+  }
+
+  private cacheSubscription(userId: string, active: boolean, expiresAt: string | null = null): void {
+    const now = Date.now();
+    // Uzun yaşayan sunucuda kullanıcı başına Map sınırsız büyümez.
+    if (this.subscriptionCache.size >= 5000) {
+      for (const [id, entry] of this.subscriptionCache) if (entry.expiresAt <= now) this.subscriptionCache.delete(id);
+      if (this.subscriptionCache.size >= 5000) this.subscriptionCache.delete(this.subscriptionCache.keys().next().value!);
+    }
+    const ttl = active ? SUBSCRIBED_CACHE_TTL_MS : NOT_SUBSCRIBED_CACHE_TTL_MS;
+    this.subscriptionCache.set(userId, { isSubscribed: active, expiresAt: Math.min(now + ttl, active && expiresAt ? Date.parse(expiresAt) : Infinity) });
   }
 
   private async assertUserExists(userId: string): Promise<void> {
@@ -131,10 +156,7 @@ export class SubscriptionsService {
     }
 
     const isSubscribed = await this.revenueCatClient.checkEntitlement(userId);
-    this.subscriptionCache.set(userId, {
-      isSubscribed,
-      expiresAt: now + (isSubscribed ? SUBSCRIBED_CACHE_TTL_MS : NOT_SUBSCRIBED_CACHE_TTL_MS),
-    });
+    this.cacheSubscription(userId, isSubscribed);
     return isSubscribed;
   }
 }

@@ -1,5 +1,6 @@
 import { BadRequestException, Body, Controller, Delete, Get, HttpCode, Param, ParseUUIDPipe, Post, Put, Query, UseGuards } from "@nestjs/common";
 import {
+  saveGlossRequestSchema,
   recordWordReviewRequestSchema,
   saveWordRequestSchema,
   type RecordWordReviewRequest,
@@ -23,6 +24,15 @@ export class WordsController {
     private readonly wordsService: WordsService,
     private readonly wordGlossesService: WordGlossesService,
   ) {}
+
+  @Post("saved-glosses")
+  @HttpCode(200)
+  @UseGuards(FirebaseAuthGuard)
+  saveGloss(@Body() body: unknown, @AuthUserId() userId: string) {
+    const parsed = saveGlossRequestSchema.safeParse(body);
+    if (!parsed.success) throw new BadRequestException(parsed.error.flatten());
+    return this.wordsService.saveGloss(userId, parsed.data.segmentId, parsed.data.word);
+  }
 
   // wordId path parametresi external input — ParseUUIDPipe malformed UUID'yi
   // service'e hiç ulaşmadan 400 ile reddeder (mevcut videos/quizzes controller
