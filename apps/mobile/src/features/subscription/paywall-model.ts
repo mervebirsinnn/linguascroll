@@ -17,6 +17,7 @@ export type RawPackage = {
     price: number;
     priceString: string;
     introPrice: RawIntroPrice | null;
+    introductoryPriceLabel?: string | null;
   };
 };
 
@@ -39,6 +40,7 @@ export type PaywallPackage = {
    * avantajlı" etiketi göstermiyoruz (Play politikası + tüketici mevzuatı).
    */
   savingsPercent: number | null;
+  introductoryPriceLabel?: string | null;
 };
 
 const KIND_BY_TYPE: Record<string, PaywallPackageKind> = {
@@ -110,6 +112,7 @@ export function buildPaywallPackages(raw: readonly RawPackage[]): PaywallPackage
       title: TITLE_BY_KIND[kind],
       priceString: p.product.priceString,
       periodLabel: PERIOD_LABEL_BY_KIND[kind],
+      introductoryPriceLabel: p.product.introductoryPriceLabel ?? null,
       trialLabel: toTrialLabel(p.product.introPrice),
       trialPeriod: toTrialPeriod(p.product.introPrice),
       savingsPercent: kind === "annual" && monthly ? computeAnnualSavingsPercent(monthly.product.price, p.product.price) : null,
@@ -135,12 +138,13 @@ export function ctaLabel(pkg: PaywallPackage): string {
  */
 export function finePrint(pkg: PaywallPackage): string {
   const price = `${pkg.priceString} / ${pkg.periodLabel}`;
+  const payment = pkg.introductoryPriceLabel ? `${pkg.introductoryPriceLabel}, ardından ${price}` : price;
   const where = "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.";
   if (pkg.trialPeriod === null) {
-    return `${price}. Abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir; istediğin zaman iptal edebilirsin. ${where}`;
+    return `${payment}. Abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir; istediğin zaman iptal edebilirsin. ${where}`;
   }
   return (
     `İlk ${pkg.trialPeriod} ücretsiz. ${pkg.trialPeriod} içinde iptal edersen hiçbir ücret ödemezsin. ` +
-    `İptal etmezsen deneme bitince ${price} ücretlendirilirsin ve abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir. ${where}`
+    `İptal etmezsen deneme bitince ${payment} ücretlendirilirsin ve abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir. ${where}`
   );
 }

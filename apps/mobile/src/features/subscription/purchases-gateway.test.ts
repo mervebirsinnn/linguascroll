@@ -189,10 +189,10 @@ describe("purchasePackageById", () => {
     await expect(purchasePackageById("$rc_annual")).rejects.toBe(sdkError);
   });
 
-  it("satın alma tamamlandı ama aktif entitlement YOKSA başarı sayılmaz (yapılandırma hatası), fırlatır", async () => {
+  it("mağaza tamamlandıysa erişimi backend doğrular; tekrar satın almaya yönlendirilmez", async () => {
     const { purchasePackageById } = await setup();
     mockPurchases.purchasePackage.mockResolvedValueOnce({ customerInfo: INACTIVE });
-    await expect(purchasePackageById("$rc_annual")).rejects.toThrow(/entitlement/);
+    await expect(purchasePackageById("$rc_annual")).resolves.toBe("purchased");
   });
 
   it("bilinmeyen paket id'si SDK'ya hiç gitmeden hata verir", async () => {
@@ -210,4 +210,26 @@ describe("restoreAndCheck", () => {
     mockPurchases.restorePurchases.mockResolvedValueOnce(INACTIVE);
     expect(await restoreAndCheck()).toBe(false);
   });
+});
+
+it("başka entitlement Premium erişim sağlamaz", () => {
+  const { hasActiveEntitlement } = loadGateway();
+  expect(hasActiveEntitlement({ entitlements: { active: { unrelated: {} } } })).toBe(false);
+});
+
+it("Android'de uygun defaultOption denemesi esas alınır; eski introPrice kullanılmaz", async () => {
+  const gateway = loadGateway();
+  await gateway.initializePurchases("one");
+  mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith({ ...ANNUAL, product: { ...ANNUAL.product, defaultOption: { freePhase: null, introPhase: null, fullPricePhase: { price: { amountMicros: 700000000, formatted: "₺700" } } } } }));
+  expect(await gateway.fetchPaywallPackages("one")).toMatchObject([{ priceString: "₺700", trialLabel: null }]);
+});
+
+it("hesap değiştiğinde eski hesabın satın alması SDK'ya gönderilmez", async () => {
+  const gateway = loadGateway();
+  await gateway.initializePurchases("one");
+  mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(ANNUAL));
+  await gateway.fetchPaywallPackages("one");
+  await gateway.initializePurchases("two");
+  await expect(gateway.purchasePackageById("$rc_annual", "one")).rejects.toThrow("hesabı değişti");
+  expect(mockPurchases.purchasePackage).not.toHaveBeenCalled();
 });

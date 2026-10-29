@@ -7,6 +7,7 @@ import { AppController } from "./app.controller";
 import { AuthModule } from "./auth/auth.module";
 import { ContentAdminModule } from "./content-admin/content-admin.module";
 import { DatabaseModule } from "./database/database.module";
+import { FeedbackModule } from "./feedback/feedback.module";
 import { FeedModule } from "./feed/feed.module";
 import { QuizzesModule } from "./quizzes/quizzes.module";
 import { RequestLoggingMiddleware } from "./request-logging.middleware";
@@ -117,6 +118,8 @@ const baseEnvSchema = z.object({
   // AYNI `.optional()` kararı: gerçek bir RevenueCat hesabı/anahtarı olmadan
   // local dev'in boot'u bozulmamalı — tanımsızken RevenueCatClient her zaman
   // `false` (abone değil) döner, ücretsiz günlük limit geçerli kalır.
+  FIREBASE_ADMIN_SERVICE_ACCOUNT_JSON: z.string().min(1).optional(),
+  REVENUECAT_ENTITLEMENT_ID: z.string().min(1).default("premium"),
   REVENUECAT_SECRET_API_KEY: z.string().min(1).optional(),
 
   // 2026-10-03 — ücretsiz video hakkı (paywall kapısı) için ana şalter. "false": kimse
@@ -184,6 +187,7 @@ export const envSchema = baseEnvSchema
     QuizzesModule,
     WordsModule,
     FeedModule,
+    FeedbackModule,
     ContentAdminModule,
   ],
   controllers: [AppController],

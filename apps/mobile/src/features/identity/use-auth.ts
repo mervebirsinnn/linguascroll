@@ -1,8 +1,11 @@
+import { fetchWithTimeout } from "../../shared/fetch-with-timeout";
+import { API_BASE_URL } from "../../shared/api-base-url";
+import { authHeaders } from "./auth-headers";
 import { useCallback, useEffect, useRef, useState } from "react";
 import * as Sentry from "@sentry/react-native";
 import { logOutPurchases } from "../subscription/purchases-gateway";
 import { fetchCurrentUser } from "./api/fetch-current-user";
-import { isAuthConfigured, linkGoogleAccount, signInAsGuest, signInWithGoogle, signOutOfAuth, subscribeToAuthState } from "./auth-gateway";
+import { isAuthConfigured, reauthenticateForDeletion, linkGoogleAccount, signInAsGuest, signInWithGoogle, signOutOfAuth, subscribeToAuthState } from "./auth-gateway";
 import {
   applyAuthChanged,
   applyGuestFailed,
@@ -26,6 +29,7 @@ import { markAccountLinked, readLinkedAccountFlag } from "./linked-account-flag"
 type UseAuthResult = {
   state: AuthState;
   signIn: () => void;
+  deleteAccount: () => Promise<boolean>;
   signOut: () => void;
   linkAccount: () => void;
   retryUser: () => void;
@@ -41,6 +45,9 @@ export function useAuth(): UseAuthResult {
   const stateRef = useRef(state);
   stateRef.current = state;
   // Bayrak okunmadan dinleyici bağlanmıyor (aşağıda) — dinleyici her zaman kesin değeri görür.
+  const lastUid = useRef<string | null>(null);
+  const linkingLock = useRef(false);
+  const deletionToken = useRef<{ Authorization: string } | null>(null);
   const guestAllowedRef = useRef(false);
 
   useEffect(() => {
@@ -51,6 +58,8 @@ export function useAuth(): UseAuthResult {
       if (cancelled) return;
       guestAllowedRef.current = !linkedBefore;
       unsubscribe = subscribeToAuthState((session) => {
+        if (lastUid.current !== (session?.uid ?? null)) deletionToken.current = null;
+        lastUid.current = session?.uid ?? null;
         // Kalıcı bir Google oturumu da "bu cihazda hesap bağlandı" demektir — bayrak bu akıştan önce
         // (ör. 2026-10-27 build'i, girişin zorunlu olduğu sürüm) açılmış oturumlarda hiç yazılmamış
         // olabilir. Yazılmazsa çıkış giriş ekranı yerine YENİ misafir (yeni 10 hak) açmaya çalışır
@@ -120,7 +129,8 @@ export function useAuth(): UseAuthResult {
 
   // Sabit referans: App.tsx bunu useMemo'lu `account` nesnesine koyuyor (Feed'in FlatList extraData'sı).
   const linkAccount = useCallback((): void => {
-    if (!canStartLink(stateRef.current)) return;
+    if (linkingLock.current || !canStartLink(stateRef.current)) return;
+    linkingLock.current = true;
     setState(applyLinkStarted);
     linkGoogleAccount()
       .then((outcome) => {
@@ -135,7 +145,7 @@ export function useAuth(): UseAuthResult {
       .catch((error: unknown) => {
         Sentry.captureException(error);
         setState(applyLinkFailed);
-      });
+      }).finally(() => { linkingLock.current = false; });
   }, [rememberLinkedAccount]);
 
   function signOut(): void {
@@ -148,9 +158,26 @@ export function useAuth(): UseAuthResult {
       });
   }
 
+  const deleteAccount = useCallback(async (): Promise<boolean> => {
+    if (!deletionToken.current) {
+      if (!(await reauthenticateForDeletion())) return false;
+      deletionToken.current = await authHeaders();
+    }
+    const response = await fetchWithTimeout(`${API_BASE_URL}/account`, { method: "DELETE", headers: deletionToken.current });
+    if (!response.ok) {
+      if (response.status === 401) deletionToken.current = null;
+      throw new Error("Hesap silinemedi. Daha sonra tekrar dene.");
+    }
+    await logOutPurchases().catch(() => {});
+    await signOutOfAuth();
+    deletionToken.current = null;
+    return true;
+  }, []);
+
   return {
     state,
     signIn,
+    deleteAccount,
     signOut,
     linkAccount,
     retryUser: () => setState(applyUserRetry),

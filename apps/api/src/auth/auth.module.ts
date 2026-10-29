@@ -1,5 +1,6 @@
 import { Global, Module } from "@nestjs/common";
 import { UsersModule } from "../users/users.module";
+import { AccountDeletionController } from "./account-deletion.controller";
 import { FirebaseAuthGuard } from "./firebase-auth.guard";
 import { FirebaseTokenVerifier } from "./firebase-token-verifier";
 
@@ -12,6 +13,7 @@ import { FirebaseTokenVerifier } from "./firebase-token-verifier";
 @Global()
 @Module({
   imports: [UsersModule],
+  controllers: [AccountDeletionController],
   providers: [FirebaseTokenVerifier, FirebaseAuthGuard],
   exports: [FirebaseTokenVerifier, FirebaseAuthGuard, UsersModule],
 })

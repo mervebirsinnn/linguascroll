@@ -1,11 +1,6 @@
 export interface Env {
   MEDIA_BUCKET: R2Bucket;
-  /**
-   * 2026-10-27 — `wrangler secret put MEDIA_URL_SIGNING_SECRET` (API'deki AYNI değer).
-   * Tanımlıysa her istek geçerli, süresi dolmamış bir imza taşımalı; tanımsızsa eski
-   * davranış (imzasız serve). Bu sayede deploy sırası güvenli: önce API imzalı URL
-   * üretmeye başlar (worker query'yi yok sayar), SONRA secret worker'a verilir.
-   */
+  /** API ile aynı secret; eksikse medya hiçbir koşulda herkese açılmaz. */
   MEDIA_URL_SIGNING_SECRET?: string;
 }
 
@@ -51,15 +46,20 @@ export default {
       });
     }
 
+    if (!env.MEDIA_URL_SIGNING_SECRET || env.MEDIA_URL_SIGNING_SECRET.length < 32) {
+      return new Response("Media unavailable", { status: 503, headers: { "Cache-Control": "no-store" } });
+    }
     const url = new URL(request.url);
     // 2026-10-27 — ücretsiz hak kontrolü API'de; worker sadece API'nin verdiği kısa ömürlü
     // imzayı doğruluyor. Geçersizse 403 (hangi kontrolün tutmadığı sızdırılmaz).
-    if (env.MEDIA_URL_SIGNING_SECRET && !(await hasValidSignature(url, env.MEDIA_URL_SIGNING_SECRET))) {
+    if (!(await hasValidSignature(url, env.MEDIA_URL_SIGNING_SECRET))) {
       return new Response("Forbidden", { status: 403 });
     }
     // Baştaki "/" atılıyor: R2 object key'leri slash'sız saklanıyor
     // (ör. "originals/.../video.mp4"), URL path'i "/originals/.../video.mp4".
-    const key = decodeURIComponent(url.pathname.replace(/^\/+/, ""));
+    let key: string;
+    try { key = decodeURIComponent(url.pathname.replace(/^\/+/, "")); }
+    catch { return new Response("Bad Request", { status: 400 }); }
     if (!key) {
       return new Response("Not Found", { status: 404 });
     }
@@ -94,6 +94,9 @@ export default {
     headers.set("etag", object.httpEtag);
     headers.set("accept-ranges", "bytes");
 
+    // R2 koşullu GET, body olmadan dönüyorsa 304; olmayan body'yi MP4 gibi sunma.
+    headers.set("cache-control", "private, no-store");
+    if (!("body" in object)) return new Response(null, { status: 304, headers });
     const range = object.range;
     if (range) {
       const offset = "offset" in range && range.offset !== undefined ? range.offset : 0;

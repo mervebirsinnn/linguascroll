@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   initializeAuth,
   linkWithCredential,
+  reauthenticateWithCredential,
   onAuthStateChanged,
   signInAnonymously,
   signInWithCredential,
@@ -148,6 +149,7 @@ export async function linkGoogleAccount(): Promise<LinkOutcome> {
   }
   try {
     await linkWithCredential(user, credential);
+    await user.getIdToken(true);
     return "linked";
   } catch (error) {
     if (error instanceof FirebaseError && error.code === "auth/credential-already-in-use") {
@@ -171,4 +173,15 @@ export async function getIdToken(): Promise<string> {
   const user = getFirebaseAuth().currentUser;
   if (!user) throw new NotSignedInError();
   return user.getIdToken();
+}
+
+/** Yıkıcı hesap silmeden önce mağaza hesabı değil Firebase hesabı taze Google credential ile doğrulanır. */
+export async function reauthenticateForDeletion(): Promise<boolean> {
+  const user = getFirebaseAuth().currentUser;
+  if (!user || user.isAnonymous) throw new NotSignedInError();
+  const credential = await requestGoogleCredential();
+  if (!credential) return false;
+  await reauthenticateWithCredential(user, credential);
+  await user.getIdToken(true);
+  return true;
 }

@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { ForbiddenException, Injectable } from "@nestjs/common";
 import { UsersRepository } from "./users-repository";
 
 /**
@@ -16,9 +16,13 @@ export class UsersService {
   constructor(private readonly usersRepository: UsersRepository) {}
 
   async resolveFirebaseUser(firebaseUid: string): Promise<string> {
-    const { id } = await this.usersRepository.findOrCreateByFirebaseUid(firebaseUid);
+    const { id, deletedAt } = await this.usersRepository.findOrCreateByFirebaseUid(firebaseUid);
+    if (deletedAt) throw new ForbiddenException("Hesap silme işlemi sürüyor");
     return id;
   }
+
+  async beginDeletion(firebaseUid: string) { return this.usersRepository.beginDeletion(firebaseUid); }
+  async finishDeletion(userId: string) { return this.usersRepository.finishDeletion(userId); }
 
   async userExists(userId: string): Promise<boolean> {
     return this.usersRepository.existsById(userId);

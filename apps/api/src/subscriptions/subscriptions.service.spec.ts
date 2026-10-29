@@ -48,6 +48,7 @@ function makeService(overrides: {
   } as unknown as VideosService;
   const usersService = { userExists: () => Promise.resolve(overrides.userExists ?? true) } as unknown as UsersService;
   const revenueCatClient = {
+    readSubscription: async () => ({ active: typeof overrides.isSubscribed === "function" ? overrides.isSubscribed() : overrides.isSubscribed ?? false, expiresAt: null }),
     checkEntitlement: () => {
       overrides.onCheckEntitlement?.();
       const value = overrides.isSubscribed;

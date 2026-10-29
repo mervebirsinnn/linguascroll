@@ -1,7 +1,10 @@
-import { ActivityIndicator, Alert, BackHandler, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import { useEffect } from "react";
+import { APP_LINKS, openAppLink } from "../../shared/app-links";
+import { ActivityIndicator, Alert, BackHandler, Modal, useWindowDimensions, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useEffect, useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import type { AccountLinkControl } from "../identity/auth-state";
+import { PaywallFeedItem } from "../subscription/PaywallFeedItem";
+import { subscriptionDescription } from "./subscription-copy";
 import { useAccountSubscription } from "./use-account-subscription";
 
 type Props = { userId: string; account: AccountLinkControl; onBack: () => void; onSignOut: () => void };
@@ -9,8 +12,13 @@ type Props = { userId: string; account: AccountLinkControl; onBack: () => void; 
 /** Hesap işlemleri öğrenme ekranından ayrılır; çıkış ve mağaza yönetimi bilinçli eylemlerdir. */
 export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
   const insets = useSafeAreaInsets();
+  const viewport = useWindowDimensions();
+  const [plansOpen, setPlansOpen] = useState(false);
+  const [managementOpen, setManagementOpen] = useState(false);
   const subscription = useAccountSubscription(userId, account.isAnonymous);
-  const busy = subscription.action !== "idle" || account.linking;
+  const [deleting, setDeleting] = useState(false);
+  const [deleteNotice, setDeleteNotice] = useState<string | null>(null);
+  const busy = deleting || subscription.action !== "idle" || account.linking;
   useEffect(() => {
     const handler = BackHandler.addEventListener("hardwareBackPress", () => { onBack(); return true; });
     return () => handler.remove();
@@ -20,6 +28,17 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
     Alert.alert("Çıkış yapılsın mı?", "Kelimelerine ve hesabına yeniden giriş yaparak ulaşabilirsin. Çıkış yapmak aboneliğini iptal etmez.", [
       { text: "Vazgeç", style: "cancel" },
       { text: "Çıkış yap", style: "destructive", onPress: onSignOut },
+    ]);
+  }
+
+  function confirmDelete() {
+    Alert.alert("Hesabın silinsin mi?", "Kaydettiğin kelimeler, ilerlemen ve izleme geçmişin silinir. Bu işlem geri alınamaz. Google Play aboneliğin otomatik iptal olmaz; önce Aboneliği yönet bölümünden iptal edebilirsin. Devam edersen Google hesabını yeniden doğrulayacağız.", [
+      { text: "Vazgeç", style: "cancel" },
+      { text: "Aboneliği yönet", onPress: () => setManagementOpen(true) },
+      { text: "Hesabımı sil", style: "destructive", onPress: () => {
+        setDeleting(true); setDeleteNotice(null);
+        account.onDeleteAccount?.().catch(() => setDeleteNotice("Hesap silme tamamlanamadı. Aynı hesabınla tekrar deneyebilir veya destek isteyebilirsin.")).finally(() => setDeleting(false));
+      } },
     ]);
   }
 
@@ -62,13 +81,14 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
           {subscription.status === "loading" ? (
             <View style={styles.loading}><ActivityIndicator color="#bca7ff" /><Text style={styles.body}>Aboneliğin kontrol ediliyor…</Text></View>
           ) : (
-            <Text style={styles.body}>{subscription.status === "active" ? "Sınırsız video ve quiz ile öğrenmeye devam et." : subscription.status === "unknown" ? "Abonelik bilgine şu an ulaşılamıyor. Durumunu yeniden kontrol edebilirsin." : "İlk 10 farklı video ücretsiz. Premium ile sınırsız öğren."}</Text>
+            <Text style={styles.body}>{subscriptionDescription(subscription.overview)}</Text>
           )}
+          {subscription.status !== "active" && <Pressable onPress={() => setPlansOpen(true)} accessibilityRole="button" style={styles.primary}><Text style={styles.primaryText}>Premium planlarını gör</Text></Pressable>}
         </View>
 
         {!account.isAnonymous && (
           <View style={styles.group}>
-            <AccountRow title="Aboneliği yönet" detail="Plan, yenileme ve iptal işlemleri Google Play'de." onPress={subscription.manage} disabled={busy} busy={subscription.action === "managing"} />
+            <AccountRow title="Aboneliği yönet" detail="Plan, yenileme ve iptal işlemleri Google Play'de." onPress={() => setManagementOpen(true)} disabled={busy} busy={subscription.action === "managing"} />
             <AccountRow title="Satın alımları geri yükle" detail="Daha önce aldığın aboneliği kontrol et." onPress={subscription.restore} disabled={busy} busy={subscription.action === "restoring"} />
             <AccountRow title="Abonelik durumunu yenile" detail="Son ödeme veya plan değişikliğini kontrol et." onPress={subscription.refresh} disabled={busy} busy={subscription.action === "refreshing"} last />
           </View>
@@ -77,11 +97,42 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
         {!account.isAnonymous && (
           <>
             <Text style={styles.sectionLabel}>OTURUM</Text>
-            <View style={styles.group}><AccountRow title="Çıkış yap" detail="Aboneliğin ve hesabın korunur." onPress={confirmSignOut} disabled={busy} last /></View>
+            <View style={styles.group}>
+              <AccountRow title="Çıkış yap" detail="Aboneliğin ve hesabın korunur." onPress={confirmSignOut} disabled={busy} last={!account.onDeleteAccount} />
+              {account.onDeleteAccount && <AccountRow title="Hesabımı sil" detail="Hesabını ve öğrenme verilerini kalıcı olarak sil." onPress={confirmDelete} disabled={busy} busy={deleting} last />}
+            </View>
+            {deleteNotice && <Text accessibilityRole="alert" style={styles.notice}>{deleteNotice}</Text>}
           </>
         )}
+        {account.isAnonymous && <AccountRow title="Kalan hakkımı kontrol et" detail="Kalan video hakkını kontrol et." onPress={subscription.refresh} disabled={busy} />}
+        {(APP_LINKS.privacy || APP_LINKS.terms || APP_LINKS.support) && <>
+          <Text style={styles.sectionLabel}>YARDIM VE BİLGİ</Text>
+          <View style={styles.group}>
+            {APP_LINKS.support && <AccountRow title="Destek al" detail="Bir sorun veya önerin için bize ulaş." onPress={() => { void openAppLink(APP_LINKS.support!); }} disabled={false} />}
+            {APP_LINKS.privacy && <AccountRow title="Gizlilik politikası" detail="Verilerinin nasıl kullanıldığını öğren." onPress={() => { void openAppLink(APP_LINKS.privacy!); }} disabled={false} />}
+            {APP_LINKS.terms && <AccountRow title="Kullanım koşulları" detail="Hizmet ve abonelik koşullarını incele." onPress={() => { void openAppLink(APP_LINKS.terms!); }} disabled={false} last />}
+          </View>
+        </>}
         <Text style={styles.footer}>Her gün biraz, zamanla çok şey.</Text>
       </ScrollView>
+      <Modal visible={plansOpen} animationType="slide" onRequestClose={() => setPlansOpen(false)}>
+        <View style={[styles.root, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
+          <Pressable onPress={() => setPlansOpen(false)} accessibilityRole="button" style={styles.modalClose}><Text style={styles.rowTitle}>Kapat</Text></Pressable>
+          <ScrollView contentContainerStyle={{ flexGrow: 1 }}><PaywallFeedItem scrollable height={Math.max(0, viewport.height - insets.top - insets.bottom - 48)} width={viewport.width} userId={userId} account={account} reason="upgrade" onUnlocked={() => { setPlansOpen(false); void subscription.refresh(); }} /></ScrollView>
+        </View>
+      </Modal>
+      <Modal visible={managementOpen} transparent animationType="slide" onRequestClose={() => setManagementOpen(false)}>
+        <View style={styles.managementBackdrop}>
+          <View style={[styles.managementCard, { paddingBottom: insets.bottom + 24 }]}>
+            <Text style={styles.cardTitle}>Aboneliği yönet</Text>
+            <Text style={styles.body}>{subscriptionDescription(subscription.overview)}</Text>
+            {subscription.notice && <Text accessibilityRole="alert" style={styles.notice}>{subscription.notice}</Text>}
+            <Text style={styles.body}>Plan değişikliği ve iptal Google Play'de tamamlanır. İptal, sonraki yenilemeyi durdurur; mevcut erişimini hemen kapatmaz.</Text>
+            <Pressable disabled={busy} onPress={() => { void subscription.manage(); }} accessibilityRole="button" style={styles.primary}><Text style={styles.primaryText}>Google Play'de yönet / iptal et</Text></Pressable>
+            <Pressable onPress={() => setManagementOpen(false)} accessibilityRole="button" style={styles.modalClose}><Text style={styles.rowTitle}>Kapat</Text></Pressable>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -94,6 +145,9 @@ function AccountRow({ title, detail, onPress, disabled, busy = false, last = fal
 }
 
 const styles = StyleSheet.create({
+  modalClose: { minHeight: 48, alignItems: "center", justifyContent: "center", alignSelf: "flex-end", paddingHorizontal: 24 },
+  managementBackdrop: { flex: 1, justifyContent: "flex-end", backgroundColor: "#0009" },
+  managementCard: { padding: 24, gap: 18, borderTopLeftRadius: 24, borderTopRightRadius: 24, backgroundColor: "#1b1724" },
   root: { flex: 1, backgroundColor: "#100e16" },
   header: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, minHeight: 60 },
   back: { width: 48, minHeight: 48, justifyContent: "center" },

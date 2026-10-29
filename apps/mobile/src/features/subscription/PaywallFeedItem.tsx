@@ -1,4 +1,7 @@
-import { ActivityIndicator, Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { APP_LINKS, openAppLink } from "../../shared/app-links";
+import { useState } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { ActivityIndicator, Image, Modal, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from "react-native";
 import type { AccountLinkControl } from "../identity/auth-state";
 import { ctaLabel, finePrint, type PaywallPackage } from "./paywall-model";
 import { usePaywall } from "./use-paywall";
@@ -12,6 +15,8 @@ type PaywallFeedItemProps = {
   account: AccountLinkControl;
   /** Abonelik BACKEND'de doğrulandığında çağrılır — parent feed'i yeniler (bkz. use-paywall.ts). */
   onUnlocked: () => void;
+  reason?: "quota" | "upgrade";
+  scrollable?: boolean;
 };
 
 /**
@@ -26,21 +31,25 @@ type PaywallFeedItemProps = {
  * Firebase UID aynı kaldığı için RevenueCat kimliği de aynı; buton satın almaya döner.
  * "Satın alımları geri yükle" misafirde gizli: geri yükleme hesaba bağlıdır.
  */
-export function PaywallFeedItem({ height, width, userId, account, onUnlocked }: PaywallFeedItemProps) {
-  const { state, select, purchaseSelected, restore, retryVerification, reloadOfferings } = usePaywall(userId, onUnlocked);
+export function PaywallFeedItem({ height, width, userId, account, onUnlocked, reason = "quota", scrollable = false }: PaywallFeedItemProps) {
+  const { state, select, purchaseSelected, restore, retryVerification, reloadOfferings } = usePaywall(userId, onUnlocked, !account.isAnonymous);
+  const [expanded, setExpanded] = useState(false);
+  const viewport = useWindowDimensions();
   const needsAccount = account.isAnonymous;
   const compact = height < 740;
 
   return (
-    <View style={[styles.root, compact && styles.rootCompact, { height, width }]}>
+    <>
+    <View style={[styles.root, compact && !scrollable && styles.rootCompact, scrollable ? { minHeight: height, width } : { height, width }]}>
       <View style={styles.brandRow}>
         <Image source={brandMarkImage} style={styles.brand} accessibilityLabel="Looplish" />
         <Text style={styles.wordmark}>Looplish <Text style={styles.premiumLabel}>PREMIUM</Text></Text>
       </View>
-      <Text accessibilityRole="header" style={[styles.title, compact && styles.titleCompact]}>Biraz merak.
+      <Text accessibilityRole="header" style={[styles.title, compact && !scrollable && styles.titleCompact]}>Biraz merak.
 Sınırsız öğrenme.</Text>
-      <Text style={styles.subtitle}>10 ücretsiz videonu izledin. Devam etmek için abone ol.</Text>
+      <Text style={styles.subtitle}>{reason === "quota" ? "10 ücretsiz videonu izledin. Devam etmek için abone ol." : "Tüm videolar ve quiz’lerle öğrenmeye devam et."}</Text>
 
+      {!scrollable && <Pressable onPress={() => setExpanded(true)} accessibilityRole="button" style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.restoreText}>Planlar ve tüm koşullar</Text></Pressable>}
       {state.status === "loading" && <View style={styles.loading}><ActivityIndicator color="#bca7ff" /><Text style={styles.muted}>Yükleniyor…</Text></View>}
 
       {state.status === "unavailable" && <View style={styles.loading}>
@@ -58,7 +67,7 @@ Sınırsız öğrenme.</Text>
           <Text style={styles.sectionLabel}>SANA UYGUN PLANI SEÇ</Text>
           <View style={[styles.packages, compact && styles.packagesCompact]}>
             {state.packages.map((pkg) => (
-              <PackageCard key={pkg.id} pkg={pkg} compact={compact} selected={pkg.id === state.selectedId} disabled={state.action !== "idle"} onPress={() => select(pkg.id)} />
+              <PackageCard key={pkg.id} pkg={pkg} compact={compact && !scrollable} selected={pkg.id === state.selectedId} disabled={state.action !== "idle" || state.verificationPending} onPress={() => select(pkg.id)} />
             ))}
           </View>
 
@@ -74,7 +83,7 @@ Sınırsız öğrenme.</Text>
           ) : (
             <Pressable
               onPress={purchaseSelected}
-              disabled={state.action !== "idle"}
+              disabled={state.action !== "idle" || state.verificationPending}
               accessibilityRole="button"
               style={[styles.cta, compact && styles.ctaCompact, state.action !== "idle" && styles.ctaDisabled]}
             >
@@ -82,12 +91,12 @@ Sınırsız öğrenme.</Text>
             </Pressable>
           )}
 
-          {needsAccount && <Text style={[styles.finePrint, compact && styles.finePrintCompact]}>Önce hesabını bağla, sonra seçtiğin planla devam et. Giriş yapmak ödeme başlatmaz.</Text>}
+          {needsAccount && <Text style={[styles.finePrint, compact && !scrollable && styles.finePrintCompact]}>Önce hesabını bağla, sonra seçtiğin planla devam et. Giriş yapmak ödeme başlatmaz.</Text>}
 
-          <Text style={[styles.finePrint, compact && styles.finePrintCompact]}>{finePrint(selectedOf(state.packages, state.selectedId))}</Text>
+          <Text style={[styles.finePrint, compact && !scrollable && styles.finePrintCompact]}>{finePrint(selectedOf(state.packages, state.selectedId))}</Text>
 
           {!needsAccount && (
-            <Pressable onPress={restore} disabled={state.action !== "idle"} accessibilityRole="button" style={styles.restore}>
+            <Pressable onPress={restore} disabled={state.action !== "idle" || state.verificationPending} accessibilityRole="button" style={styles.restore}>
               <Text style={styles.restoreText}>{state.action === "restoring" ? "…" : "Satın alımları geri yükle"}</Text>
             </Pressable>
           )}
@@ -98,6 +107,10 @@ Sınırsız öğrenme.</Text>
 
           {state.notice !== null && <Text style={styles.notice}>{state.notice}</Text>}
 
+          {(APP_LINKS.privacy || APP_LINKS.terms) && <View style={{ flexDirection: "row", gap: 16 }}>
+            {APP_LINKS.privacy && <Pressable accessibilityRole="link" onPress={() => { void openAppLink(APP_LINKS.privacy!); }} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.finePrint}>Gizlilik</Text></Pressable>}
+            {APP_LINKS.terms && <Pressable accessibilityRole="link" onPress={() => { void openAppLink(APP_LINKS.terms!); }} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.finePrint}>Koşullar</Text></Pressable>}
+          </View>}
           {state.verificationPending && state.action === "idle" && (
             <Pressable onPress={retryVerification} accessibilityRole="button" style={styles.restore}>
               <Text style={styles.restoreText}>Tekrar dene</Text>
@@ -106,6 +119,15 @@ Sınırsız öğrenme.</Text>
         </>
       )}
     </View>
+    {!scrollable && <Modal visible={expanded} animationType="slide" onRequestClose={() => setExpanded(false)}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#100e16" }}>
+        <Pressable onPress={() => setExpanded(false)} accessibilityRole="button" style={{ minHeight: 48, justifyContent: "center", alignItems: "flex-end", paddingHorizontal: 24 }}><Text style={styles.restoreText}>Kapat</Text></Pressable>
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+          <PaywallFeedItem userId={userId} account={account} onUnlocked={onUnlocked} reason={reason} scrollable height={viewport.height - 100} width={viewport.width} />
+        </ScrollView>
+      </SafeAreaView>
+    </Modal>}
+    </>
   );
 }
 

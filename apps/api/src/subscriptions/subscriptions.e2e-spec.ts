@@ -37,7 +37,7 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
 
     const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] }))
       .overrideProvider(RevenueCatClient)
-      .useValue({ checkEntitlement: (userId: string) => Promise.resolve(entitlements.get(userId) ?? false) })
+      .useValue({ readSubscription: async (userId: string) => ({ active: entitlements.get(userId) ?? false, expiresAt: null, renewal: "unknown", period: "unknown", productId: null }), checkEntitlement: (userId: string) => Promise.resolve(entitlements.get(userId) ?? false) })
       .compile();
     app = moduleRef.createNestApplication();
     await app.init();
