@@ -18,8 +18,12 @@ test('geçerli imza oynatır; imzasız/değiştirilmiş/süresi dolmuş reddedil
   assert.equal((await worker.fetch(new Request(await signed('/video.mp4',1)),env)).status,403);
 });
 test('koşullu R2 yanıtı body olmadan 304 döner',async()=>{
-  const response=await worker.fetch(new Request(await signed()),{MEDIA_BUCKET:{get:async()=>({...object,body:undefined})},MEDIA_URL_SIGNING_SECRET:secret});
   // Gerçek R2 koşullu yanıtında body anahtarı hiç yoktur.
   const {body,...withoutBody}=object;
-  assert.equal((await worker.fetch(new Request(await signed()),{MEDIA_BUCKET:{get:async()=>withoutBody},MEDIA_URL_SIGNING_SECRET:secret})).status,304);
+  assert.equal((await worker.fetch(new Request(await signed(),{headers:{"if-none-match":"etag"}}),{MEDIA_BUCKET:{get:async()=>withoutBody},MEDIA_URL_SIGNING_SECRET:secret})).status,304);
+});
+
+test('If-Match önkoşulu başarısızsa 304 yerine 412 döner',async()=>{
+  const {body,...withoutBody}=object;
+  assert.equal((await worker.fetch(new Request(await signed(),{headers:{'if-match':'different'}}),{MEDIA_BUCKET:{get:async()=>withoutBody},MEDIA_URL_SIGNING_SECRET:secret})).status,412);
 });

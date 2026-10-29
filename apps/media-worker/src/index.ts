@@ -74,6 +74,7 @@ export default {
       headers.set("etag", object.httpEtag);
       headers.set("accept-ranges", "bytes");
       headers.set("content-length", String(object.size));
+      headers.set("cache-control", "private, no-store");
       return new Response(null, { status: 200, headers });
     }
 
@@ -94,9 +95,12 @@ export default {
     headers.set("etag", object.httpEtag);
     headers.set("accept-ranges", "bytes");
 
-    // R2 koşullu GET, body olmadan dönüyorsa 304; olmayan body'yi MP4 gibi sunma.
+    // R2 koşullu GET: önkoşul başarısızsa 412, cache doğrulamasıysa 304; body MP4 gibi sunulmaz.
     headers.set("cache-control", "private, no-store");
-    if (!("body" in object)) return new Response(null, { status: 304, headers });
+    if (!("body" in object)) {
+      const preconditionFailed = request.headers.has("if-match") || request.headers.has("if-unmodified-since");
+      return new Response(null, { status: preconditionFailed ? 412 : 304, headers });
+    }
     const range = object.range;
     if (range) {
       const offset = "offset" in range && range.offset !== undefined ? range.offset : 0;

@@ -27,9 +27,9 @@ Tarih: 29 Ekim 2026. Paket: `app.looplish.mobile`.
 - API typecheck ve production derlemesi geçti.
 - API unit: **48 suite, 636 test geçti**. Bu sayı PostgreSQL entegrasyon/e2e testlerini içermez.
 - Mobil typecheck/test typecheck ve tam Jest suite'i geçti: **24 suite, 232 test**. Android JS/Hermes bundle export başarılı.
-- Worker typecheck ve **3 gerçek fetch handler testi** geçti: secret eksik, geçerli/bozuk/süresi dolmuş imza, body içermeyen 304.
+- Worker typecheck ve **4 gerçek fetch handler testi** geçti: secret eksik, geçerli/bozuk/süresi dolmuş imza, body içermeyen 304 ve başarısız If-Match için 412.
 - Yeni PostgreSQL e2e testleri: bağlama dayalı idempotent kelime kaydı, kaynak cümlesi/tekrar, geri bildirim sahipliği, abonelik özeti ve silinen token ile hesabın diriltilememesi.
-- Bu çalışma ortamında Docker/PostgreSQL çalıştırılamadı. Tam DB suite'i için PostgreSQL 17 servisli GitHub Actions workflow'u eklendi. CI sonucu görülmeden yeni migration/e2e'ler geçmiş sayılmaz.
+- Yerelde Docker/PostgreSQL çalıştırılamadığı için PostgreSQL 17 servisli GitHub Actions eklendi. [CI çalışması](https://github.com/mervebirsinnn/linguascroll/actions/runs/40866291324) başarılı: tüm migration'lar uygulandı, **77 API suite / 917 test**, 24 mobil suite / 232 test geçti. İlk CI pnpm sürüm çakışması testler başlamadan düzeltildi. Son worker 412 iyileştirmesi ayrıca yerelde 4/4 testle doğrulandı.
 - Testlerde dış Firebase/RevenueCat servisleri taklit edilir. Google girişi, Play ödeme/iptal/geri yükleme ve Android native çalışma gerçek cihazda henüz doğrulanmadı. JS export native build veya cihaz testi yerine geçmez.
 
 ## Yayına hazırlık sırası
