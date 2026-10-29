@@ -118,7 +118,9 @@ export class FeedService {
     // Kapsam filtresi DB'de (repository predicate'i): kapsam dışı satırlar application katmanına HİÇ taşınmaz.
     // "all" için predicate yoktur. Personalization, kapsamdaki TÜM adayları sıralamak zorunda (bkz. rankVideos).
     const videos = await this.videosService.getVideoFeed({ category: scopeToCategoryFilter(scope) });
-    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, videos, scope, preference, sessionSeed);
+    const allowance = await this.subscriptionsService.getFeedAllowance(userId, videos.map((v) => v.id), scope);
+    const candidates = allowance.unlimited ? videos : videos.filter((v) => allowance.grantedVideoIds.has(v.id));
+    const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, candidates, scope, preference, sessionSeed);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
     // Chunk 10: quiz seçimi artık "sıradaki quiz" değil, "bounded session'daki
@@ -206,7 +208,7 @@ export class FeedService {
     }
 
     if (items.length > 0) {
-      const allowed = await this.applyFreeVideoAllowance(userId, items);
+      const allowed = await this.applyFreeVideoAllowance(userId, items, scope);
       if (allowed.cutOff) {
         // Hak bitti: paywall son item, session burada biter (devam cursor'ı yok).
         return feedPageSchema.parse({ items: allowed.items, nextCursor: null });
@@ -225,28 +227,19 @@ export class FeedService {
             this.cursorSecret,
           );
 
+    // Ücretsiz seçki bitince Premium gelir; yenilemede aynı videolar yeniden erişilebilir.
+    if (nextCursor === null && items.length > 0) {
+      const allowance = await this.subscriptionsService.getFeedAllowance(userId, [], scope);
+      if (!allowance.unlimited) items.push({ type: "paywall" });
+    }
     return feedPageSchema.parse({ items, nextCursor });
   }
 
-  /**
-   * 2026-10-27 — ücretsiz hakkın feed'deki (UX) yansıması. Politika SubscriptionsService'te
-   * (getFeedAllowance); burada sadece uygulanıyor:
-   *
-   * - Sınırsız (abone / kapı kapalı) → sayfa olduğu gibi, imzalı URL'lerle.
-   * - Daha önce açılmış video → URL'iyle kalır, hak tüketmez (tekrar izleme serbest).
-   * - Yeni video, bütçe varsa → `playbackUrl: null`; mobile erişimi playback-access'ten ister,
-   *   hak ORADA tüketilir (feed'i prefetch etmek hak yakmaz).
-   * - Yeni video, bütçe bittiyse → yerine `paywall`, sayfa kesilir. Böylece son (10.) ücretsiz
-   *   video tamamlanabilir ve paywall bir sonraki YENİ videodan önce gelir. Quiz'ler hak
-   *   tüketmez, kesim noktasına kadar sayfada kalır.
-   *
-   * Bütçe yalnızca KALICI tüketimden hesaplanıyor (bkz. getFeedAllowance) — önceki sayfaların
-   * açılmamış videoları düşülmüyor; prefetch edilen ya da yarıda bırakılan sayfa erken kilit
-   * yaratmıyor.
-   */
-  private async applyFreeVideoAllowance(userId: string, items: FeedItem[]): Promise<{ items: FeedItem[]; cutOff: boolean }> {
+  /** Eski cursor'lar dahil, ücretsiz seçki dışındaki videolara URL sızmasını engeller.
+   * Yeni oturumun planı zaten seçkiden kurulur; tekrar izlemeler listeyi azaltmaz. */
+  private async applyFreeVideoAllowance(userId: string, items: FeedItem[], scope: FeedScope): Promise<{ items: FeedItem[]; cutOff: boolean }> {
     const pageVideoIds = items.flatMap((item) => (item.type === "video" ? [item.video.id] : []));
-    const allowance = await this.subscriptionsService.getFeedAllowance(userId, pageVideoIds);
+    const allowance = await this.subscriptionsService.getFeedAllowance(userId, pageVideoIds, scope);
     if (allowance.unlimited) {
       return { items, cutOff: false };
     }

@@ -53,7 +53,7 @@ function PaywallContent({ height, width, userId, account, onUnlocked, reason = "
       </View>
       <Text accessibilityRole="header" style={[styles.title, compact && !scrollable && styles.titleCompact]}>Biraz merak.
 Sınırsız öğrenme.</Text>
-      <Text style={styles.subtitle}>{reason === "quota" ? "10 ücretsiz videonu izledin. Devam etmek için abone ol." : "Tüm videolar ve quiz’lerle öğrenmeye devam et."}</Text>
+      <Text style={styles.subtitle}>{reason === "quota" ? "Bu akıştaki 10 ücretsiz videoyu tekrar izleyebilirsin. Daha fazlası için Premium’a geç." : "Tüm videolar ve quiz’lerle öğrenmeye devam et."}</Text>
 
       {!scrollable && <Pressable onPress={() => setExpanded(true)} accessibilityRole="button" style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.restoreText}>Planlar ve tüm koşullar</Text></Pressable>}
       {state.status === "loading" && <View style={styles.loading}><ActivityIndicator color="#bca7ff" /><Text style={styles.muted}>Yükleniyor…</Text></View>}

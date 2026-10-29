@@ -193,7 +193,7 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   const configService = { getOrThrow: () => CURSOR_SECRET } as unknown as import("@nestjs/config").ConfigService;
 
   const subscriptionsService = overrides.freeQuota
-    ? makeQuotaSubscriptionsService(overrides.freeQuota.grantedVideoIds, usersService)
+    ? makeQuotaSubscriptionsService(overrides.freeQuota.grantedVideoIds, usersService, videosService)
     : ({ getFeedAllowance: () => Promise.resolve({ unlimited: true }) } as unknown as SubscriptionsService);
 
   const service = new FeedService(videosService, quizzesService, personalizationService, usersService, wordsService, subscriptionsService, configService);
@@ -208,15 +208,16 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   return service;
 }
 
-function makeQuotaSubscriptionsService(grantedVideoIds: string[], usersService: UsersService): SubscriptionsService {
+function makeQuotaSubscriptionsService(grantedVideoIds: string[], usersService: UsersService, videosService: VideosService): SubscriptionsService {
   const granted = new Set(grantedVideoIds);
   const repository = {
+    getOrCreatePreview: async (_userId: string, _scope: string, candidates: string[]) => new Set(candidates.slice(0, 10)),
     getUsage: (_userId: string, candidates: readonly string[]) =>
       Promise.resolve({ consumed: granted.size, grantedVideoIds: new Set(candidates.filter((id) => granted.has(id))) }),
   } as unknown as FreeVideoGrantsRepository;
   const revenueCatClient = { checkEntitlement: () => Promise.resolve(false) } as unknown as RevenueCatClient;
   const config = { get: (key: string) => (key === "SUBSCRIPTION_GATE_ENABLED" ? "true" : undefined) } as unknown as import("@nestjs/config").ConfigService;
-  return new SubscriptionsService({} as VideosService, usersService, repository, revenueCatClient, config);
+  return new SubscriptionsService(videosService, usersService, repository, revenueCatClient, config);
 }
 
 function itemTypes(items: { type: string }[]): string[] {
@@ -682,61 +683,31 @@ describe("FeedService.getFeed — quiz placement invariant (video → segment �
 
 
 
-describe("FeedService.getFeed — ücretsiz hak (hesap başına toplam 10 video, 2026-10-27)", () => {
-  function playbackUrlsOf(items: FeedItem[]): (string | null)[] {
-    return items.filter((item): item is Extract<FeedItem, { type: "video" }> => item.type === "video").map((item) => item.video.playbackUrl);
-  }
-
-  it("sınırsızken (abone / kapı kapalı) sayfa değişmez, tüm videolar URL taşır", async () => {
-    const page = await makeFeedService().getFeed(TEST_USER_ID);
-    expect(page.items).toHaveLength(12);
-    expect(itemTypes(page.items)).not.toContain("paywall");
-    expect(playbackUrlsOf(page.items).every((url) => url !== null)).toBe(true);
-  });
-
-  it("hiç hak kullanılmamışken ilk sayfa 10 yeni videoyu URL'siz (playback-access'e bırakarak) gösterir", async () => {
-    const page = await makeFeedService({ freeQuota: { grantedVideoIds: [] } }).getFeed(TEST_USER_ID);
-    // 4:1 → v1..v4, quiz, v5..v8, quiz, v9, v10 = tam 10 yeni video, kesim yok.
-    expect(videoIds(page.items)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(vId));
-    expect(playbackUrlsOf(page.items).every((url) => url === null)).toBe(true);
-    expect(page.nextCursor).not.toBeNull();
-  });
-
-  it("kalan hak kadar yeni video gösterilir, ardından paywall gelir ve session biter (nextCursor null)", async () => {
-    // Plan dışında 5 video daha önce açılmış → 5 hak kaldı.
-    const service = makeFeedService({ freeQuota: { grantedVideoIds: ["x1", "x2", "x3", "x4", "x5"] } });
-    const page = await service.getFeed(TEST_USER_ID);
-    expect(itemTypes(page.items)).toEqual(["video", "video", "video", "video", "quiz", "video", "paywall"]);
-    expect(videoIds(page.items)).toEqual([1, 2, 3, 4, 5].map(vId));
-    expect(page.nextCursor).toBeNull();
-  });
-
-  it("önceki sayfanın açılmamış videoları sonraki sayfanın bütçesinden DÜŞÜLMEZ (prefetch erken kilitlemez)", async () => {
-    // Sayfa 1: 10 yeni video gösterildi, hiçbiri açılmadı (defter boş). Sayfa 2 erken istenirse
-    // bütçe hâlâ 10'dur → paywall'a kilitlenmez. Fazla yeni video playback-access'te paywall alır.
-    const service = makeFeedService({ freeQuota: { grantedVideoIds: [] } });
+describe("Feed ücretsiz seçki — her akışta sabit 10 video", () => {
+  it("önceki tüketimden bağımsız tam 10 video ve ardından Premium döner", async () => {
+    const service = makeFeedService({ freeQuota: { grantedVideoIds: ["old1", "old2", "old3"] } });
     const first = await service.getFeed(TEST_USER_ID);
-    const second = await service.getFeed(TEST_USER_ID, first.nextCursor ?? undefined);
-    expect(itemTypes(second.items)).not.toContain("paywall");
-    expect(videoIds(second.items).length).toBeGreaterThan(0);
+    const rest = first.nextCursor ? await service.getFeed(TEST_USER_ID, first.nextCursor) : { items: [], nextCursor: null };
+    const items = [...first.items, ...rest.items];
+    expect(videoIds(items)).toHaveLength(10);
+    expect(items[items.length - 1]).toEqual({ type: "paywall" });
+    expect(rest.nextCursor).toBeNull();
+    expect(videoIds((await service.getFeed(TEST_USER_ID)).items)).toEqual(videoIds(first.items));
+    expect(items.filter((i) => i.type === "video").every((i) => i.video.playbackUrl !== null)).toBe(true);
   });
 
-  it("hak bitmişken daha önce açılmış video URL'iyle yeniden gösterilir; ilk YENİ videoda paywall", async () => {
-    const consumedElsewhere = ["x1", "x2", "x3", "x4", "x5", "x6", "x7", "x8", "x9"];
-    const service = makeFeedService({ freeQuota: { grantedVideoIds: [vId(1), ...consumedElsewhere] } });
-    const page = await service.getFeed(TEST_USER_ID);
-    expect(itemTypes(page.items)).toEqual(["video", "paywall"]);
-    expect(videoIds(page.items)).toEqual([vId(1)]);
-    expect(playbackUrlsOf(page.items)[0]).not.toBeNull();
-    expect(page.nextCursor).toBeNull();
-  });
-
-  it("hak tamamen bitmiş ve sayfada açılmış video yoksa tek paywall döner — kategori (scope) değiştirmek bunu aşmaz", async () => {
-    const allConsumed = Array.from({ length: 10 }, (_, i) => `x${i + 1}`);
-    const catalog = Array.from({ length: 12 }, (_, i) => ({ ...makeVideo(i + 1), category: i % 2 === 0 ? ("animation" as const) : ("general" as const) }));
-    const service = makeFeedService({ videos: catalog, freeQuota: { grantedVideoIds: allConsumed } });
-    expect((await service.getFeed(TEST_USER_ID)).items).toEqual([{ type: "paywall" }]);
-    expect((await service.getFeed(TEST_USER_ID, undefined, undefined, "animation")).items).toEqual([{ type: "paywall" }]);
+  it("her sekme kendi kategorisinden ayrı 10 video sunar", async () => {
+    const videos = Array.from({length: 15}, (_, i) => [
+      {...makeVideo(i + 1), category: "animation" as const},
+      {...makeVideo(i + 101), category: "ielts" as const},
+    ]).flat();
+    const service = makeFeedService({ videos, freeQuota: {grantedVideoIds: []}, quizzesByVideoId: new Map() });
+    for (const scope of ["all", "animation", "ielts"] as const) {
+      const page = await service.getFeed(TEST_USER_ID, undefined, undefined, scope);
+      expect(videoIds(page.items)).toHaveLength(10);
+      expect(page.items.at(-1)).toEqual({type: "paywall"});
+      if(scope !== "all") expect(page.items.filter((i) => i.type === "video").every((i) => i.video.category === scope)).toBe(true);
+    }
   });
 });
 

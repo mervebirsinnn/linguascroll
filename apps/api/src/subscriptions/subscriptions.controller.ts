@@ -1,5 +1,6 @@
-import { Controller, Get, HttpCode, Param, ParseUUIDPipe, Post, UseGuards } from "@nestjs/common";
+import { Controller, Get, HttpCode, Param, ParseUUIDPipe, Post, Query, UseGuards } from "@nestjs/common";
 import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview } from "@linguascroll/shared-types";
+import { resolveFeedScope } from "../feed/feed-scope";
 import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
 import { SubscriptionsService } from "./subscriptions.service";
 
@@ -23,8 +24,8 @@ export class SubscriptionsController {
 
   @Post("videos/:videoId/playback-access")
   @HttpCode(200)
-  requestPlaybackAccess(@Param("videoId", new ParseUUIDPipe()) videoId: string, @AuthUserId() userId: string): Promise<PlaybackAccessResponse> {
-    return this.subscriptionsService.requestPlaybackAccess(userId, videoId);
+  requestPlaybackAccess(@Param("videoId", new ParseUUIDPipe()) videoId: string, @AuthUserId() userId: string, @Query("scope") scope?: string): Promise<PlaybackAccessResponse> {
+    return this.subscriptionsService.requestPlaybackAccess(userId, videoId, resolveFeedScope(scope, undefined));
   }
 
   @Get("subscriptions/status")

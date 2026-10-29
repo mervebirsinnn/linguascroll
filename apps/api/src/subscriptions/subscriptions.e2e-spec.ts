@@ -9,7 +9,7 @@ import request from "supertest";
 import { bearerFor, createAuthenticatedUser, withTestAuth } from "../auth/test-auth";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videosTable } from "../videos/videos.schema";
-import { freeVideoGrantsTable } from "./free-video-grants.schema";
+import { freePreviewVideosTable } from "./free-preview-videos.schema";
 import { RevenueCatClient } from "./revenue-cat-client";
 
 const SEED = "fedcba9876543210fedcba9876543210";
@@ -75,7 +75,7 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
         })),
       )
       .returning({ id: videosTable.id });
-    return rows.map((row) => row.id);
+    return rows.map((row) => row.id).sort();
   }
 
   function access(videoId: string, authorization: string): request.Test {
@@ -83,7 +83,7 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
   }
 
   async function grantedCount(userId: string): Promise<number> {
-    return (await db.select().from(freeVideoGrantsTable).where(eq(freeVideoGrantsTable.userId, userId))).length;
+    return (await db.select().from(freePreviewVideosTable).where(eq(freePreviewVideosTable.userId, userId))).length;
   }
 
   function newVideoItems(items: FeedItem[]): Extract<FeedItem, { type: "video" }>[] {
@@ -122,49 +122,37 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
     expect(await grantedCount(userId)).toBe(10);
   });
 
-  it("9 hak kullanılmışken iki eşzamanlı farklı video isteğinden yalnızca biri açılır", async () => {
-    const { userId, authorization } = await createAuthenticatedUser(db);
-    const videos = await createVideos(11);
-    for (const videoId of videos.slice(0, 9)) await access(videoId, authorization).expect(200);
-
-    const [a, b] = await Promise.all([access(videos[9] as string, authorization), access(videos[10] as string, authorization)]);
-    expect([a.body.status, b.body.status].sort()).toEqual(["granted", "paywall"]);
+  it("eşzamanlı cihazlar aynı sabit seçkiyi alır, yenileme listeyi azaltmaz", async () => {
+    const {userId, authorization} = await createAuthenticatedUser(db);
+    const videos = await createVideos(15);
+    const [a,b] = await Promise.all([access(videos[0]!, authorization), access(videos[14]!, authorization)]);
+    expect(a.body.status).toBe("granted"); expect(b.body.status).toBe("paywall");
+    expect(await grantedCount(userId)).toBe(10);
+    for(let n=0;n<3;n++) expect((await access(videos[0]!, authorization)).body.status).toBe("granted");
     expect(await grantedCount(userId)).toBe(10);
   });
 
-  it("cihaz değişimi sınırı sıfırlamaz: aynı hesap (aynı Firebase UID) aynı sayacı paylaşır", async () => {
-    const videos = await createVideos(11);
-    const deviceA = bearerFor("same-firebase-account");
-    const deviceB = bearerFor("same-firebase-account");
-    for (const videoId of videos.slice(0, 5)) await access(videoId, deviceA).expect(200);
-    for (const videoId of videos.slice(5, 10)) await access(videoId, deviceB).expect(200);
-    expect((await access(videos[10] as string, deviceB)).body).toEqual({ status: "paywall" });
+  it("her sekmede ayrı 10 video ve paywall; önceki tüketim seçkiyi azaltmaz", async () => {
+    const {authorization} = await createAuthenticatedUser(db);
+    await createVideos(15, "general"); await createVideos(15, "ielts");
+    for(const scope of ["all", "ielts"]) {
+      const pages: FeedItem[] = [];
+      let cursor: string | null = null;
+      do {
+        const query = `/feed?scope=${scope}&sessionSeed=${SEED}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`;
+        const page = feedPageSchema.parse((await request(app.getHttpServer()).get(query).set("Authorization", authorization).expect(200)).body);
+        pages.push(...page.items); cursor = page.nextCursor;
+      } while(cursor);
+      const offered = pages.filter((i): i is Extract<FeedItem,{type:"video"}> => i.type === "video");
+      expect(offered).toHaveLength(10); expect(pages.at(-1)).toEqual({type:"paywall"});
+      for(const item of offered) expect((await request(app.getHttpServer()).post(`/videos/${item.video.id}/playback-access?scope=${scope}`).set("Authorization", authorization)).body.status).toBe("granted");
+    }
   });
 
-  it("feed kalan hak kadar yeni video gösterir, sonra paywall; kategori değiştirmek ve prefetch sınırı aşmaz", async () => {
-    const { authorization } = await createAuthenticatedUser(db);
-    const general = await createVideos(12, "general");
-    await createVideos(6, "ielts");
-    for (const videoId of general.slice(0, 7)) await access(videoId, authorization).expect(200);
-
-    // Prefetch: feed'i çekmek hak tüketmez — 3 hak kaldı, feed en fazla 3 yeni (URL'siz) video gösterir.
-    const page = feedPageSchema.parse((await request(app.getHttpServer()).get(`/feed?sessionSeed=${SEED}`).set("Authorization", authorization).expect(200)).body);
-    expect(newVideoItems(page.items).length).toBeLessThanOrEqual(3);
-    expect(page.items.at(-1)?.type).toBe("paywall");
-    expect(page.nextCursor).toBeNull();
-
-    // Kategori değişse de feed sınırı aşmaz; asıl kontrol playback-access'te.
-    const animation = feedPageSchema.parse(
-      (await request(app.getHttpServer()).get(`/feed?scope=ielts&sessionSeed=${SEED}`).set("Authorization", authorization).expect(200)).body,
-    );
-    const offered = newVideoItems(animation.items).map((item) => item.video.id);
-    expect(offered.length).toBeLessThanOrEqual(3);
-    const results = [];
-    for (const videoId of offered) results.push((await access(videoId, authorization)).body.status);
-    expect(results.every((status) => status === "granted")).toBe(true);
-    // Hak bitti: herhangi bir başka yeni video artık açılmaz.
-    const [extra] = await createVideos(1);
-    expect((await access(extra as string, authorization)).body).toEqual({ status: "paywall" });
+  it("başka kategorinin videosu scope değiştirilerek açılamaz; geçersiz scope reddedilir", async () => {
+    const {authorization} = await createAuthenticatedUser(db);
+    const [id] = await createVideos(1, "general");
+    for(const scope of ["ielts", "invalid"]) await request(app.getHttpServer()).post(`/videos/${id}/playback-access?scope=${scope}`).set("Authorization", authorization).expect(400);
   });
 
   it("satın alma sonrası refresh doğrulanmış aboneliği hemen görür ve erişimi açar (15 sn önbellek beklenmez)", async () => {

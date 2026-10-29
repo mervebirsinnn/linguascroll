@@ -292,6 +292,7 @@ function FeedContent({
             // oynatma erişimi backend'den istenir; ücretsiz hak orada tüketilir.
             return (
               <GatedVideoFeedItem
+                scope={scope}
                 video={item.video}
                 isActive={isActive}
                 height={height}

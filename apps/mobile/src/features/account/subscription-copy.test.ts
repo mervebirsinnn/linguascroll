@@ -8,6 +8,6 @@ it("hata ücretsiz abonelik değildir", () => {
   expect(subscriptionDescription({ ...base, verification: "unavailable", subscription: null })).toContain("doğrulanamıyor");
 });
 it("kalan hak gösterilir; kapı kapalıyken yanlış 10 video vaadi gösterilmez", () => {
-  expect(subscriptionDescription({ ...base, subscription: { ...base.subscription!, active: false } })).toContain("1 / 10");
+  expect(subscriptionDescription({ ...base, subscription: { ...base.subscription!, active: false } })).toContain("Her akışta 10 ücretsiz videoyu tekrar");
   expect(subscriptionDescription({ ...base, gateEnabled: false, subscription: { ...base.subscription!, active: false } })).toContain("erişimin şu anda açık");
 });

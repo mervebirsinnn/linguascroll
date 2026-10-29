@@ -58,7 +58,7 @@ describe("PaywallFeedItem", () => {
 
     expect(await screen.findByText(/Abonelik seçenekleri şu an yüklenemedi/)).toBeTruthy();
     // Limit bilgisi ve başlık, paketler olmasa da görünür — kullanıcı kırık bir ekran görmez.
-    expect(screen.getByText(/10 ücretsiz videonu izledin/)).toBeTruthy();
+    expect(screen.getByText(/10 ücretsiz videoyu tekrar izleyebilirsin/)).toBeTruthy();
   });
 
   it("yükleme başarısız olursa kullanıcı seçenekleri yeniden yükleyebilir", async () => {

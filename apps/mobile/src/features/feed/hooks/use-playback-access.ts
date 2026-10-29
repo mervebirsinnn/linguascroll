@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { PlaybackAccessResponse } from "@linguascroll/shared-types";
+import type { PlaybackAccessResponse, FeedScope } from "@linguascroll/shared-types";
 import { requestPlaybackAccess } from "../api/request-playback-access";
 
 /**
@@ -55,7 +55,7 @@ export function applyFeedPlaybackUrl(state: PlaybackAccessState, feedPlaybackUrl
   return { status: "ready", playbackUrl: feedPlaybackUrl };
 }
 
-export function usePlaybackAccess(videoId: string, feedPlaybackUrl: string | null, isActive: boolean): { state: PlaybackAccessState; retry: () => void } {
+export function usePlaybackAccess(videoId: string, feedPlaybackUrl: string | null, isActive: boolean, scope: FeedScope = "all"): { state: PlaybackAccessState; retry: () => void } {
   const [state, setState] = useState<PlaybackAccessState>(() => initialPlaybackAccessState(feedPlaybackUrl));
 
   useEffect(() => {
@@ -69,7 +69,7 @@ export function usePlaybackAccess(videoId: string, feedPlaybackUrl: string | nul
   useEffect(() => {
     if (state.status !== "requesting") return undefined;
     let cancelled = false;
-    requestPlaybackAccess(videoId)
+    requestPlaybackAccess(videoId, scope)
       .then((response) => {
         if (!cancelled) setState(applyAccessResponse(response));
       })
@@ -79,7 +79,7 @@ export function usePlaybackAccess(videoId: string, feedPlaybackUrl: string | nul
     return () => {
       cancelled = true;
     };
-  }, [state.status, videoId]);
+  }, [state.status, videoId, scope]);
 
   return { state, retry: () => setState(applyRetry) };
 }

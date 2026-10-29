@@ -2,6 +2,8 @@ import { Inject, Injectable } from "@nestjs/common";
 import { and, count, eq, inArray } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
 import { usersTable } from "../users/users.schema";
+import { freePreviewVideosTable } from "./free-preview-videos.schema";
+import type { FeedScope } from "@linguascroll/shared-types";
 import { freeVideoGrantsTable } from "./free-video-grants.schema";
 
 export type FreeGrantResult = "granted" | "already-granted" | "exhausted" | "unknown-user";
@@ -12,6 +14,22 @@ export type FreeGrantResult = "granted" | "already-granted" | "exhausted" | "unk
 @Injectable()
 export class FreeVideoGrantsRepository {
   constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
+
+  /** İlk seçki kullanıcı satırı kilidi altında oluşturulur. Farklı cihaz/sekme aynı
+   * seçkiyi görür; shuffle, tekrar izleme ve yeni içerik yayını mevcut seçkiyi değiştirmez. */
+  async getOrCreatePreview(userId: string, scope: FeedScope, candidates: readonly string[], cap: number): Promise<Set<string>> {
+    return this.db.transaction(async (tx) => {
+      const user = await tx.select({ id: usersTable.id }).from(usersTable).where(eq(usersTable.id, userId)).for("update");
+      if (!user.length) return new Set<string>();
+      const rows = await tx.select({ videoId: freePreviewVideosTable.videoId }).from(freePreviewVideosTable)
+        .where(and(eq(freePreviewVideosTable.userId, userId), eq(freePreviewVideosTable.scope, scope)));
+      const selected = new Set(rows.map((row) => row.videoId));
+      // Katalog başlangıçta 10'dan küçükse yalnızca boş yerler sonradan tamamlanır.
+      const added = [...new Set(candidates)].filter((id) => !selected.has(id)).slice(0, Math.max(0, cap - selected.size));
+      if (added.length) await tx.insert(freePreviewVideosTable).values(added.map((videoId) => ({ userId, scope, videoId })));
+      return new Set([...selected, ...added]);
+    });
+  }
 
   /**
    * Hak kontrolü + kaydı TEK transaction'da. Eşzamanlılık: önce kullanıcının `users`

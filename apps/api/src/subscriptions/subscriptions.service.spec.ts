@@ -20,6 +20,7 @@ function makeLedger(initialGranted: string[] = []) {
   const granted = new Set(initialGranted);
   const tryGrantCalls: string[] = [];
   const repository = {
+    getOrCreatePreview: async () => new Set(Array.from({length: 10}, (_, i) => `v${i+1}`)),
     tryGrant: (_userId: string, videoId: string, cap: number): Promise<FreeGrantResult> => {
       tryGrantCalls.push(videoId);
       if (granted.has(videoId)) return Promise.resolve("already-granted");
@@ -43,6 +44,7 @@ function makeService(overrides: {
 } = {}) {
   const ledger = overrides.ledger ?? makeLedger();
   const videosService = {
+    getVideoFeed: async () => Array.from({length: 15}, (_, i) => ({id: `v${i+1}`, playbackUrl: PLAYBACK_URL})),
     getPlayableVideoById: (id: string) =>
       Promise.resolve(overrides.videoExists === false ? null : ({ id, playbackUrl: PLAYBACK_URL } as unknown as PlayableVideo)),
   } as unknown as VideosService;
@@ -149,21 +151,11 @@ describe("SubscriptionsService.getFeedAllowance", () => {
     expect(await makeService({ isSubscribed: true }).service.getFeedAllowance(USER_ID, ["v1"])).toEqual({ unlimited: true });
   });
 
-  it("bütçe = 10 − KALICI tüketim; açılmış videolar ayrıca işaretlenir", async () => {
+  it("önceki tüketimden bağımsız sabit seçkiye erişim verir; yeni hak tüketmez", async () => {
     const { service } = makeService({ ledger: makeLedger(["v1", "v2", "v3"]) });
-    const allowance = await service.getFeedAllowance(USER_ID, ["v1", "v4"]);
-    expect(allowance).toEqual({ unlimited: false, grantedVideoIds: new Set(["v1"]), newVideoBudget: 7 });
-  });
-
-  it("gösterilip açılmamış videolar bütçeden düşülmez (prefetch/yarıda bırakılan sayfa erken kilitlemez)", async () => {
-    // Bir önceki sayfada 10 yeni video GÖSTERİLDİ ama hiçbiri açılmadı: defter boş → bütçe hâlâ 10.
-    const { service } = makeService({ ledger: makeLedger([]) });
-    expect(await service.getFeedAllowance(USER_ID, ["v11", "v12"])).toMatchObject({ unlimited: false, newVideoBudget: 10 });
-  });
-
-  it("bütçe negatife düşmez", async () => {
-    const { service } = makeService({ ledger: makeLedger(videoIds(FREE_VIDEO_CAP)) });
-    expect(await service.getFeedAllowance(USER_ID, ["v11"])).toMatchObject({ newVideoBudget: 0 });
+    expect(await service.getFeedAllowance(USER_ID, ["v1", "v11"])).toEqual({
+      unlimited: false, grantedVideoIds: new Set(videoIds(10)), newVideoBudget: 0,
+    });
   });
 });
 

@@ -1,15 +1,13 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview } from "@linguascroll/shared-types";
+import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview, FeedScope } from "@linguascroll/shared-types";
+import { scopeToCategoryFilter } from "../feed/feed-scope";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { FreeVideoGrantsRepository } from "./free-video-grants-repository";
 import { RevenueCatClient } from "./revenue-cat-client";
 
-/**
- * 2026-10-27 — hesap başına TOPLAM ücretsiz farklı video sayısı. Günlük YENİLENMEZ
- * (önceki "günde 10" kuralının yerini aldı, kullanıcı kararı). Mağazadaki olası deneme teklifi bundan ayrıdır. 11. farklı video aktif abonelik ister.
- */
+/** Her hesap ve akış için 10 kalıcı ücretsiz video. İzleme sayısı erişimi azaltmaz. */
 export const FREE_VIDEO_CAP = 10;
 /** "Abone" sonucunun önbelleklendiği süre — `PersonalizationService`'teki `COLD_START_CACHE_TTL_MS` ile AYNI değer/desen. */
 const SUBSCRIBED_CACHE_TTL_MS = 60 * 1000;
@@ -65,29 +63,21 @@ export class SubscriptionsService {
     this.gateEnabled = configService.get<string>("SUBSCRIPTION_GATE_ENABLED") === "true";
   }
 
-  /**
-   * Bütçe = 10 − KALICI olarak tüketilmiş hak (sadece başarılı playback-access'ler). Önceki
-   * sayfalarda gösterilip açılmamış videolar bilinçli olarak DÜŞÜLMÜYOR: prefetch edilen ya da
-   * yarıda bırakılan bir sayfa kullanıcıyı erken paywall'a kilitlememeli. Bedeli: bir sonraki
-   * sayfa, önceki sayfanın açılmamış videolarıyla birlikte kalan haktan fazla yeni video
-   * gösterebilir — fazlası playback-access'te `paywall` alır (mobile videonun yerinde paywall
-   * gösterir). Sınır yine aşılamaz; kesin kontrol orada.
-   */
-  async getFeedAllowance(userId: string, pageVideoIds: readonly string[]): Promise<FeedAllowance> {
+  /** Seçki akış başına atomik olarak sabitlenir. Eski izleme/hak defteri sayılmaz.
+   * Dönen id'ler, tekrar izlenebilen tüm ücretsiz videolardır; yeni video bütçesi yoktur. */
+  async getFeedAllowance(userId: string, _pageVideoIds: readonly string[], scope: FeedScope = "all"): Promise<FeedAllowance> {
     if (!this.gateEnabled || (await this.isSubscribed(userId))) {
       return { unlimited: true };
     }
 
-    const { consumed, grantedVideoIds } = await this.freeVideoGrantsRepository.getUsage(userId, pageVideoIds);
-    return { unlimited: false, grantedVideoIds, newVideoBudget: Math.max(0, FREE_VIDEO_CAP - consumed) };
+    const catalog = await this.videosService.getVideoFeed({ category: scopeToCategoryFilter(scope) });
+    const selected = await this.freeVideoGrantsRepository.getOrCreatePreview(userId, scope, catalog.map((v) => v.id).sort(), FREE_VIDEO_CAP);
+    return { unlimited: false, grantedVideoIds: selected, newVideoBudget: 0 };
   }
 
-  /**
-   * Oynatma erişimi: video yoksa 404, kullanıcı yoksa 400 (path kaynağı → 404, body
-   * referansı → 400; VideosService.recordWatchEvent ile aynı kural). Abone değilse
-   * ücretsiz hak burada atomik olarak tüketilir; aynı video tekrar hak tüketmez.
-   */
-  async requestPlaybackAccess(userId: string, videoId: string): Promise<PlaybackAccessResponse> {
+  /** İmzalı URL yalnızca seçkideki video veya doğrulanmış abonelik için verilir.
+   * scope istemciden gelse bile kategorisi backend'de doğrulanır. */
+  async requestPlaybackAccess(userId: string, videoId: string, scope: FeedScope = "all"): Promise<PlaybackAccessResponse> {
     const video = await this.videosService.getPlayableVideoById(videoId);
     if (!video) {
       throw new NotFoundException(`Video bulunamadı: "${videoId}"`);
@@ -98,12 +88,11 @@ export class SubscriptionsService {
       return { status: "granted", playbackUrl: video.playbackUrl };
     }
 
-    const result = await this.freeVideoGrantsRepository.tryGrant(userId, videoId, FREE_VIDEO_CAP);
-    if (result === "unknown-user") {
-      // assertUserExists'ten sonra silinmiş (yarış) — aynı 400.
-      throw new BadRequestException(`"${userId}", var olan bir kullanıcıya ait değil`);
-    }
-    return result === "exhausted" ? { status: "paywall" } : { status: "granted", playbackUrl: video.playbackUrl };
+    if (scope !== "all" && video.category !== scope) throw new BadRequestException("Video bu akışa ait değil");
+    const allowance = await this.getFeedAllowance(userId, [videoId], scope);
+    return allowance.unlimited || allowance.grantedVideoIds.has(videoId)
+      ? { status: "granted", playbackUrl: video.playbackUrl }
+      : { status: "paywall" };
   }
 
   /**
@@ -120,8 +109,7 @@ export class SubscriptionsService {
 
   async getOverview(userId: string): Promise<SubscriptionOverview> {
     await this.assertUserExists(userId);
-    const { consumed } = await this.freeVideoGrantsRepository.getUsage(userId, []);
-    const base = { gateEnabled: this.gateEnabled, freeVideoLimit: FREE_VIDEO_CAP, consumedFreeVideos: consumed, remainingFreeVideos: Math.max(0, FREE_VIDEO_CAP - consumed) };
+    const base = { gateEnabled: this.gateEnabled, freeVideoLimit: FREE_VIDEO_CAP, consumedFreeVideos: 0, remainingFreeVideos: FREE_VIDEO_CAP };
     try {
       const subscription = await this.revenueCatClient.readSubscription(userId);
       this.cacheSubscription(userId, subscription.active, subscription.expiresAt);
