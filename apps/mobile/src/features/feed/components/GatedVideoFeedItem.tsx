@@ -34,7 +34,7 @@ export function GatedVideoFeedItem({ video, account, onUnlocked, scope, ...rest 
     return <VideoFeedItem {...rest} video={{ ...video, playbackUrl: state.playbackUrl }} />;
   }
   if (state.status === "paywall") {
-    return <PaywallFeedItem height={rest.height} width={rest.width} userId={rest.userId} account={account} onUnlocked={onUnlocked} />;
+    return <PaywallFeedItem height={rest.height} width={rest.width} userId={rest.userId} account={account} onUnlocked={onUnlocked} onReplayFreeVideos={onUnlocked} />;
   }
   return (
     <View style={[styles.placeholder, { height: rest.height, width: rest.width }]}>

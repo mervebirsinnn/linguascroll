@@ -15,6 +15,7 @@ type PaywallFeedItemProps = {
   account: AccountLinkControl;
   /** Abonelik BACKEND'de doğrulandığında çağrılır — parent feed'i yeniler (bkz. use-paywall.ts). */
   onUnlocked: () => void;
+  onReplayFreeVideos?: () => void;
   reason?: "quota" | "upgrade";
   scrollable?: boolean;
 };
@@ -37,7 +38,7 @@ export function PaywallFeedItem(props: PaywallFeedItemProps) {
 }
 
 /** Tam koşullar ve feed görünümü aynı satın alma durumunu paylaşır; ikinci işlem açılmaz. */
-function PaywallContent({ height, width, userId, account, onUnlocked, reason = "quota", scrollable = false, controller }: PaywallFeedItemProps & { controller: ReturnType<typeof usePaywall> }) {
+function PaywallContent({ height, width, userId, account, onUnlocked, onReplayFreeVideos, reason = "quota", scrollable = false, controller }: PaywallFeedItemProps & { controller: ReturnType<typeof usePaywall> }) {
   const { state, select, purchaseSelected, restore, retryVerification, reloadOfferings } = controller;
   const [expanded, setExpanded] = useState(false);
   const viewport = useWindowDimensions();
@@ -55,6 +56,7 @@ function PaywallContent({ height, width, userId, account, onUnlocked, reason = "
 Sınırsız öğrenme.</Text>
       <Text style={styles.subtitle}>{reason === "quota" ? "Bu akıştaki 10 ücretsiz videoyu tekrar izleyebilirsin. Daha fazlası için Premium’a geç." : "Tüm videolar ve quiz’lerle öğrenmeye devam et."}</Text>
 
+      {reason === "quota" && onReplayFreeVideos && <Pressable accessibilityRole="button" onPress={onReplayFreeVideos} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.restoreText}>Ücretsiz videoları tekrar izle</Text></Pressable>}
       {!scrollable && <Pressable onPress={() => setExpanded(true)} accessibilityRole="button" style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.restoreText}>Planlar ve tüm koşullar</Text></Pressable>}
       {state.status === "loading" && <View style={styles.loading}><ActivityIndicator color="#bca7ff" /><Text style={styles.muted}>Yükleniyor…</Text></View>}
 

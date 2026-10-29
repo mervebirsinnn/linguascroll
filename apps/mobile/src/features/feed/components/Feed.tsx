@@ -321,7 +321,7 @@ function FeedContent({
           // Ücretsiz hak (hesap başına toplam 10 video) dolunca backend'in döndürdüğü TERMİNAL
           // item (bkz. feed.service.ts, nextCursor hep null). Abonelik backend'de doğrulanınca
           // (bkz. use-paywall.ts) feed yenilenir: backend o kullanıcı için artık sınırsız.
-          return <PaywallFeedItem height={height} width={width} userId={userId} account={account} onUnlocked={handleRefresh} />;
+          return <PaywallFeedItem height={height} width={width} userId={userId} account={account} onUnlocked={handleRefresh} onReplayFreeVideos={handleRefresh} />;
         }}
         // 2026-10-28 — misafir Google hesabını bağlayınca (account değişir) görünür paywall'ın
         // butonu yeniden çizilmeli; FlatList PureComponent olduğu için bunu extraData'dan anlar.

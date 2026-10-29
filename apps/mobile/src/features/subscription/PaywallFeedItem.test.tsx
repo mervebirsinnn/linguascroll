@@ -52,6 +52,14 @@ beforeEach(() => {
 });
 
 describe("PaywallFeedItem", () => {
+  it("ücretsiz seçkiyi yeniden açmak satın alma başlatmaz", async () => {
+    const replay = jest.fn();
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} onReplayFreeVideos={replay} />);
+    await fireEvent.press(screen.getByText("Ücretsiz videoları tekrar izle"));
+    expect(replay).toHaveBeenCalledTimes(1);
+    expect(mockPurchase).not.toHaveBeenCalled();
+  });
+
   it("paketler yüklenene kadar 'Yükleniyor…', hata olursa anlaşılır bir mesaj gösterir", async () => {
     mockFetchPackages.mockRejectedValueOnce(new Error("anahtar yok"));
     await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
