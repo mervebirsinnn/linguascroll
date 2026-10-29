@@ -31,8 +31,14 @@ type PaywallFeedItemProps = {
  * Firebase UID aynı kaldığı için RevenueCat kimliği de aynı; buton satın almaya döner.
  * "Satın alımları geri yükle" misafirde gizli: geri yükleme hesaba bağlıdır.
  */
-export function PaywallFeedItem({ height, width, userId, account, onUnlocked, reason = "quota", scrollable = false }: PaywallFeedItemProps) {
-  const { state, select, purchaseSelected, restore, retryVerification, reloadOfferings } = usePaywall(userId, onUnlocked, !account.isAnonymous);
+export function PaywallFeedItem(props: PaywallFeedItemProps) {
+  const controller = usePaywall(props.userId, props.onUnlocked, !props.account.isAnonymous);
+  return <PaywallContent {...props} controller={controller} />;
+}
+
+/** Tam koşullar ve feed görünümü aynı satın alma durumunu paylaşır; ikinci işlem açılmaz. */
+function PaywallContent({ height, width, userId, account, onUnlocked, reason = "quota", scrollable = false, controller }: PaywallFeedItemProps & { controller: ReturnType<typeof usePaywall> }) {
+  const { state, select, purchaseSelected, restore, retryVerification, reloadOfferings } = controller;
   const [expanded, setExpanded] = useState(false);
   const viewport = useWindowDimensions();
   const needsAccount = account.isAnonymous;
@@ -123,7 +129,7 @@ Sınırsız öğrenme.</Text>
       <SafeAreaView style={{ flex: 1, backgroundColor: "#100e16" }}>
         <Pressable onPress={() => setExpanded(false)} accessibilityRole="button" style={{ minHeight: 48, justifyContent: "center", alignItems: "flex-end", paddingHorizontal: 24 }}><Text style={styles.restoreText}>Kapat</Text></Pressable>
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-          <PaywallFeedItem userId={userId} account={account} onUnlocked={onUnlocked} reason={reason} scrollable height={viewport.height - 100} width={viewport.width} />
+          <PaywallContent controller={controller} userId={userId} account={account} onUnlocked={onUnlocked} reason={reason} scrollable height={viewport.height - 100} width={viewport.width} />
         </ScrollView>
       </SafeAreaView>
     </Modal>}
