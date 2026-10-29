@@ -13,7 +13,9 @@ const mockPurchases = {
   getOfferings: jest.fn(),
   purchasePackage: jest.fn(),
   restorePurchases: jest.fn(),
-  PURCHASES_ERROR_CODE: { PURCHASE_CANCELLED_ERROR: "1", PAYMENT_PENDING_ERROR: "20" },
+  invalidateCustomerInfoCache: jest.fn(),
+  getCustomerInfo: jest.fn(),
+  PURCHASES_ERROR_CODE: { PURCHASE_CANCELLED_ERROR: "1", PAYMENT_PENDING_ERROR: "20", PRODUCT_ALREADY_PURCHASED_ERROR: "6" },
 };
 
 jest.mock("react-native", () => ({
@@ -232,4 +234,21 @@ it("hesap değiştiğinde eski hesabın satın alması SDK'ya gönderilmez", asy
   await gateway.initializePurchases("two");
   await expect(gateway.purchasePackageById("$rc_annual", "one")).rejects.toThrow("hesabı değişti");
   expect(mockPurchases.purchasePackage).not.toHaveBeenCalled();
+});
+
+it("zaten sahip olunan üründe yeni satın alma yerine kurtarma sonucu döner", async () => {
+  const gateway = loadGateway();
+  await gateway.initializePurchases("one");
+  mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(ANNUAL));
+  await gateway.fetchPaywallPackages("one");
+  mockPurchases.purchasePackage.mockRejectedValueOnce({ code: "6" });
+  await expect(gateway.purchasePackageById("$rc_annual", "one")).resolves.toBe("already-owned");
+});
+it("mevcut aboneliği güncel müşteri bilgisinden kontrol eder; yanlış hesabı sorgulamaz", async () => {
+  const gateway = loadGateway(); await gateway.initializePurchases("one");
+  mockPurchases.getCustomerInfo.mockResolvedValueOnce(ACTIVE);
+  await expect(gateway.hasCurrentSubscription("one")).resolves.toBe(true);
+  expect(mockPurchases.invalidateCustomerInfoCache).toHaveBeenCalledTimes(1);
+  await expect(gateway.hasCurrentSubscription("two")).rejects.toThrow();
+  expect(mockPurchases.getCustomerInfo).toHaveBeenCalledTimes(1);
 });

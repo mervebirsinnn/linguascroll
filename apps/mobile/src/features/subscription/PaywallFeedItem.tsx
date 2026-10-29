@@ -88,12 +88,12 @@ Sınırsız öğrenme.</Text>
             </Pressable>
           ) : (
             <Pressable
-              onPress={purchaseSelected}
-              disabled={state.action !== "idle" || state.verificationPending}
+              onPress={state.verificationPending ? retryVerification : purchaseSelected}
+              disabled={state.action !== "idle"}
               accessibilityRole="button"
               style={[styles.cta, compact && styles.ctaCompact, state.action !== "idle" && styles.ctaDisabled]}
             >
-              <Text style={styles.ctaText}>{state.action === "purchasing" ? "Google Play açılıyor…" : state.action === "verifying" ? "Aboneliğin doğrulanıyor…" : ctaLabel(selectedOf(state.packages, state.selectedId))}</Text>
+              <Text style={styles.ctaText}>{state.action === "purchasing" ? "Google Play açılıyor…" : state.action === "verifying" ? "Aboneliğin doğrulanıyor…" : state.verificationPending ? "Aboneliği doğrula" : ctaLabel(selectedOf(state.packages, state.selectedId))}</Text>
             </Pressable>
           )}
 
