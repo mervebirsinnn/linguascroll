@@ -19,7 +19,7 @@ import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
 import { PaywallFeedItem } from "../../subscription/PaywallFeedItem";
 import { FeedListFooter } from "./FeedListFooter";
-import { getFeedItemKey } from "./get-feed-item-key";
+import { getFeedOccurrenceKey } from "./get-feed-item-key";
 import { GatedVideoFeedItem } from "./GatedVideoFeedItem";
 import { QuizFeedItem } from "./QuizFeedItem";
 
@@ -203,7 +203,7 @@ function FeedContent({
     ({ viewableItems }: { viewableItems: ViewToken[] }) => {
       const activeItem = viewableItems[0]?.item as FeedItem | undefined;
       if (activeItem) {
-        setActiveItemKey(getFeedItemKey(activeItem));
+        setActiveItemKey(getFeedOccurrenceKey(activeItem, viewableItems[0]?.index ?? 0));
       }
     },
   ).current;
@@ -269,7 +269,7 @@ function FeedContent({
   }
   const firstItem = items[0];
   const resolvedActiveItemKey =
-    activeItemKey ?? (firstItem ? getFeedItemKey(firstItem) : null);
+    activeItemKey ?? (firstItem ? getFeedOccurrenceKey(firstItem, 0) : null);
 
   // FeedListFooter'ın tek eylem butonu iki farklı şeyi tetikleyebilir: bir
   // continuation hatasından sonra retry (loadMore) veya session bitince yeni
@@ -284,9 +284,9 @@ function FeedContent({
       <FlatList
         ref={flatListRef}
         data={items}
-        keyExtractor={getFeedItemKey}
-        renderItem={({ item }) => {
-          const isActive = getFeedItemKey(item) === resolvedActiveItemKey;
+        keyExtractor={getFeedOccurrenceKey}
+        renderItem={({ item, index }) => {
+          const isActive = getFeedOccurrenceKey(item, index) === resolvedActiveItemKey;
           if (item.type === "video") {
             // 2026-10-27 — erişim katmanı: feed URL taşımıyorsa (henüz açılmamış video)
             // oynatma erişimi backend'den istenir; ücretsiz hak orada tüketilir.

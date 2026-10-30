@@ -38,3 +38,5 @@ export { playbackAccessResponseSchema, type PlaybackAccessResponse } from "./pla
 export { subscriptionStatusSchema, type SubscriptionStatus } from "./subscription-status";
 export { subscriptionDetailsSchema, subscriptionOverviewSchema, type SubscriptionDetails, type SubscriptionOverview } from "./subscription-overview";
 export { saveGlossRequestSchema, saveGlossResponseSchema, videoFeedbackRequestSchema, type SaveGlossResponse, type VideoFeedbackRequest } from "./learning-actions";
+
+export { TOPIC_LABELS } from "./topic-labels";

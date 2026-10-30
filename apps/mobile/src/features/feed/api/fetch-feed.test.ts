@@ -37,6 +37,7 @@ describe("fetchFeed", () => {
 
     expect(fetchSpy).toHaveBeenCalledTimes(1);
     const [calledUrl, init] = fetchSpy.mock.calls[0] as [string, { headers: Record<string, string> }];
+    expect(calledUrl).toContain("continuous=true");
     expect(calledUrl).not.toContain("userId=");
     expect(init.headers).toMatchObject({ Authorization: "Bearer test-id-token" });
     expect(calledUrl).not.toContain("cursor=");

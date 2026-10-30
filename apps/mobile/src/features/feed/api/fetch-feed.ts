@@ -61,7 +61,7 @@ export async function fetchFeed(cursor?: string, preference?: FeedPreferences, s
   const headers = await authHeaders();
 
   // `scope` (all | animation | ielts) bir DB kategorisi DEĞİL feed kapsamıdır; "Akış" = "all" (bütün kategoriler).
-  const params = new URLSearchParams({ scope: feedScopeSchema.parse(scope) });
+  const params = new URLSearchParams({ scope: feedScopeSchema.parse(scope), continuous: "true" });
   if (cursor) {
     // Devam isteği seed taşımaz: seed imzalı cursor'ın içinde (sunucu cursor'dakini kullanır).
     params.set("cursor", cursor);

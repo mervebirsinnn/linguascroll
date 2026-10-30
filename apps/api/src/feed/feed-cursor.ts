@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
-import { feedScopeSchema, sessionSeedSchema } from "@linguascroll/shared-types";
+import { feedScopeSchema, sessionSeedSchema, feedPreferencesSchema, topicSchema } from "@linguascroll/shared-types";
 
 /**
  * Chunk 8 — bounded frozen feed-plan pagination.
@@ -70,7 +70,7 @@ const positionWithinPlan = (payload: { position: number; plan: unknown[] }): boo
 const positionWithinPlanIssue = { message: "position, plan uzunluğunu aşamaz" };
 
 const feedCursorV3Schema = z
-  .object({ v: z.literal(FEED_CURSOR_VERSION), ...feedCursorBaseShape, sessionSeed: sessionSeedSchema })
+  .object({ v: z.literal(FEED_CURSOR_VERSION), ...feedCursorBaseShape, sessionSeed: sessionSeedSchema, continuous: z.boolean().optional(), preferences: feedPreferencesSchema.extend({topics: feedPreferencesSchema.shape.topics.max(topicSchema.options.length)}).optional() })
   .refine(positionWithinPlan, positionWithinPlanIssue);
 export type FeedCursorPayloadV3 = z.infer<typeof feedCursorV3Schema>;
 

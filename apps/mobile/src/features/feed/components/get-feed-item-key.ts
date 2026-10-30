@@ -18,3 +18,8 @@ export function getFeedItemKey(item: FeedItem): string {
   // feed.service.ts) — sabit bir key yeterli, çakışma riski yok.
   return "paywall";
 }
+
+/** Aynı video sonraki turda tekrar gelebilir. Her görünümün kimliği ayrıdır. */
+export function getFeedOccurrenceKey(item: FeedItem, index: number): string {
+  return `${getFeedItemKey(item)}:${index}`;
+}

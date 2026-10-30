@@ -1,3 +1,4 @@
+import { topicSchema } from "@linguascroll/shared-types";
 import { GoogleGenAI } from "@google/genai";
 import { enrichmentOutputSchema, type EnrichmentOutput } from "./enrichment-output.schema";
 import type { SttDraftSegment } from "./stt-draft.schema";
@@ -38,7 +39,7 @@ const OUTPUT_JSON_SCHEMA: Record<string, unknown> = {
   type: "object",
   properties: {
     contentSlug: { type: "string", pattern: "^[a-z0-9]+(-[a-z0-9]+)*$" },
-    topic: { type: "string", enum: ["dating", "travel", "career", "lifestyle", "humor"] },
+    topic: { type: "string", enum: [...topicSchema.options] },
     cefrLevel: { type: "string", enum: ["A1", "A2", "B1", "B2", "C1", "C2"] },
     segments: {
       type: "array",

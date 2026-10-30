@@ -25,7 +25,7 @@ jest.mock("../api/fetch-feed", () => {
 // Video/quiz/paywall item'ları bu testin konusu değil: native video player ve satın alma modülleri yerine düz stub.
 jest.mock("./VideoFeedItem", () => {
   const { Text } = require("react-native");
-  return { VideoFeedItem: ({ video }: { video: { id: string } }) => <Text>{`video:${video.id}`}</Text> };
+  return { VideoFeedItem: ({ video, isActive }: { video: { id: string }; isActive: boolean }) => <Text accessibilityLabel={isActive ? "active-video" : "paused-video"}>{`video:${video.id}`}</Text> };
 });
 jest.mock("../../subscription/PaywallFeedItem", () => ({ PaywallFeedItem: () => null }));
 jest.mock("./QuizFeedItem", () => ({ QuizFeedItem: () => null }));
@@ -199,4 +199,12 @@ describe("Feed — session seed", () => {
     expect(new Set(seeds).size).toBe(1);
     expect(seeds[0]).toBe(getSessionSeed());
   });
+});
+
+it("tekrar gelen aynı video iki oynatıcıyı birden aktif etmez", async () => {
+  const page = videoPage("1"); page.items.push(page.items[0]!);
+  mockedFetchFeed.mockResolvedValue(page);
+  await renderFeed();
+  await waitFor(() => expect(screen.getAllByLabelText("active-video")).toHaveLength(1));
+  expect(screen.getAllByLabelText("paused-video")).toHaveLength(1);
 });

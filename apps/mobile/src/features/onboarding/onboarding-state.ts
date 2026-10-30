@@ -1,4 +1,4 @@
-import { feedPreferencesSchema, type FeedPreferences } from "@linguascroll/shared-types";
+import { feedPreferencesSchema, type Topic, type FeedPreferences } from "@linguascroll/shared-types";
 import { z } from "zod";
 
 /**
@@ -39,10 +39,17 @@ export function resolveOnboardingState(raw: string | null): OnboardingState {
     return DEFAULT_ONBOARDING_STATE;
   }
   const result = onboardingStateSchema.safeParse(parsedJson);
-  return result.success ? result.data : DEFAULT_ONBOARDING_STATE;
+  if (!result.success) return DEFAULT_ONBOARDING_STATE;
+  // Önceki sürümde 0–3 konu ile geçilmişse tercihler kaybolmadan seçim yeniden açılır.
+  return {...result.data, completed: result.data.completed && canContinueInterests(result.data.preferences.topics)};
 }
 
 /** `completed:true` + verilen tercih — hem "tamamladı" HEM "atladı" (preferences boş) akışının TEK ortak yazma noktası. */
 export function buildCompletedState(preferences: FeedPreferences): OnboardingState {
-  return { completed: true, preferences };
+  return { completed: canContinueInterests(preferences.topics), preferences };
+}
+
+export const MIN_INTERESTS = 4;
+export function canContinueInterests(topics: readonly Topic[]): boolean {
+  return new Set(topics).size >= MIN_INTERESTS;
 }

@@ -8,7 +8,7 @@ import type { CefrLevel, FeedPreferences, PlayableVideo, Topic } from "@linguasc
  * cold-start baseline'ı hem de scheduling/exploration'daki tüm tie-break'leri
  * besliyor.
  */
-export const COLD_START_TOPIC_ORDER: readonly Topic[] = ["travel", "lifestyle", "humor", "career", "dating"];
+export const COLD_START_TOPIC_ORDER: readonly Topic[] = ["travel", "lifestyle", "humor", "career", "dating", "food", "fitness", "technology", "science", "culture", "psychology", "finance", "nature", "music", "cinema", "education"];
 
 /** Her 5. SEÇİLEN video (quiz item'lar sayılmaz — FeedService'in composition aşamasında eklenir) bir exploration slot'udur. */
 export const VIDEOS_PER_EXPLORATION = 5;

@@ -1,4 +1,4 @@
-import { Controller, Get, Query, UseGuards } from "@nestjs/common";
+import { BadRequestException, Controller, Get, Query, UseGuards } from "@nestjs/common";
 import type { FeedPage } from "@linguascroll/shared-types";
 import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
 import { resolveFeedScope } from "./feed-scope";
@@ -34,13 +34,16 @@ export class FeedController {
     // Session-scoped shuffle seed'i: cursor'suz istekte zorunlu (FeedService), cursor'lu istekte imzalı
     // cursor'daki değerle aynı olmalı. `unknown`: tekrarlı param (dizi) da Zod'da 400'e düşsün.
     @Query("sessionSeed") sessionSeed?: unknown,
+    @Query("continuous") continuous?: unknown,
   ): Promise<FeedPage> {
+    if (continuous !== undefined && continuous !== "true" && continuous !== "false") throw new BadRequestException("Geçersiz continuous değeri");
     return this.feedService.getFeed(
       userId,
       cursor,
       parseFeedPreferenceQuery(level, topics),
       resolveFeedScope(scope, legacyCategory),
       parseSessionSeedQuery(sessionSeed),
+      continuous === "true",
     );
   }
 }

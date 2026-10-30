@@ -16,7 +16,7 @@ export type CefrLevel = z.infer<typeof cefrLevelSchema>;
  * eklemek bilinçli olarak code + migration gerektirir — dinamik bir categories
  * tablosu/admin CRUD'u YOK, cefrLevel ile aynı desen.
  */
-export const topicSchema = z.enum(["dating", "travel", "career", "lifestyle", "humor"]);
+export const topicSchema = z.enum(["dating", "travel", "career", "lifestyle", "humor", "food", "fitness", "technology", "science", "culture", "psychology", "finance", "nature", "music", "cinema", "education"]);
 export type Topic = z.infer<typeof topicSchema>;
 
 export const videoSchema = z.object({

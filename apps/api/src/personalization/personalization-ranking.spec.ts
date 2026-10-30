@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { CefrLevel, PlayableVideo, Topic } from "@linguascroll/shared-types";
+import { topicSchema, type CefrLevel, type PlayableVideo, type Topic } from "@linguascroll/shared-types";
 import { deterministicTieBreak } from "./deterministic-tie-break";
 import { applyTieBreakOrdering, cefrLevelDistance, COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
 
@@ -199,11 +199,11 @@ describe("rankVideos — Chunk 15 preference (topic boost + level boost)", () =>
     expect(withEmptyPreference).toEqual(withoutArg);
   });
 
-  it("cold start'ta tercih edilen bir topic (dating — kanonik sırada EN SONDA), SWRR ağırlığı arttığı için baseline'a göre BELİRGİN ÖNCE gelir", () => {
+  it("cold start'ta tercih edilen bir topic (dating — kanonik sırada beşinci), SWRR ağırlığı arttığı için baseline'a göre BELİRGİN ÖNCE gelir", () => {
     const candidates = COLD_START_TOPIC_ORDER.map((topic) => makeVideo(topic, topic));
 
     const baseline = rankVideos(candidates, new Map());
-    expect(baseline[baseline.length - 1]?.topic).toBe("dating"); // baseline: dating en sonda (bkz. cold-start testi)
+    expect(baseline.findIndex((v) => v.topic === "dating")).toBe(4);
 
     const boosted = rankVideos(candidates, new Map(), { level: null, topics: ["dating"] });
     expect(boosted[0]?.topic).toBe("dating"); // boost'lu: dating artık İLK sırada
@@ -448,4 +448,11 @@ describe("session-scoped tie-break (deterministicTieBreak + rankVideos tieBreakK
     expect(out).not.toBe(ranked);
     expect(ids(ranked)).toEqual(snapshot);
   });
+});
+
+it("yeni konuların tamamı sıralamaya dahil edilir", () => {
+  expect(new Set(COLD_START_TOPIC_ORDER)).toEqual(new Set(topicSchema.options));
+  const videos = topicSchema.options.map((topic) => makeVideo(topic, topic));
+  const ranked = rankVideos(videos, new Map(), {level:null, topics:["science", "music", "food", "cinema"]});
+  expect(new Set(ranked.map((v) => v.topic))).toEqual(new Set(topicSchema.options));
 });

@@ -20,5 +20,5 @@ export function parseFeedPreferenceQuery(level: string | undefined, topics: stri
     .filter((result): result is { success: true; data: Topic } => result.success)
     .map((result) => result.data);
 
-  return { level: parsedLevel, topics: parsedTopics };
+  return { level: parsedLevel, topics: [...new Set(parsedTopics)] };
 }
