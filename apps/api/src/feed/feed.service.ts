@@ -51,7 +51,7 @@ const PAGE_SIZE = 12;
  * yorum VE feed-cursor.ts'teki sabit BİRLİKTE elle güncellenmeli.
  */
 const MAX_SESSION_VIDEOS = 27;
-type ContinuousContext = { continuous?: boolean; preferences?: FeedPreferences };
+type ContinuousContext = { continuous?: boolean; preferences?: FeedPreferences; scopedCount?: number };
 
 /**
  * FeedController
@@ -126,7 +126,7 @@ export class FeedService {
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
     const plan = await this.composePlan(boundedVideos);
-    return this.buildPage(userId, plan, 0, scope, sessionSeed, { continuous, preferences: preference });
+    return this.buildPage(userId, plan, 0, scope, sessionSeed, { continuous, preferences: preference, scopedCount: scope === "all" ? undefined : boundedVideos.length });
   }
 
   private async composePlan(videos: PlayableVideo[]): Promise<FeedPlanItemRef[]> {
@@ -138,17 +138,21 @@ export class FeedService {
 
   /** Son parti dışındaki içerikler önce gelir; katalog tükendiğinde tekrar oynatım yapılır.
    * Cursor planı daima bounded kalır. Kategori bitince bütün katalogdan beslenir. */
-  private async nextContinuousPlan(userId: string, previous: FeedPlanItemRef[], scope: FeedScope, seed: string, preferences?: FeedPreferences): Promise<FeedPlanItemRef[]> {
+  private async nextContinuousPlan(userId: string, previous: FeedPlanItemRef[], scope: FeedScope, seed: string, preferences?: FeedPreferences, scopedCount = 0): Promise<{plan: FeedPlanItemRef[]; scopedCount: number}> {
     const catalog = await this.videosService.getVideoFeed();
     const recent = new Set(previous.filter((i) => i.type === "video").map((i) => i.id));
-    const ranked = await this.personalizationService.getPersonalizedVideos(userId, catalog, scope, preferences, seed);
+    const scoped = scope === "all" ? [] : catalog.filter((v) => v.category === scope);
+    const remaining = Math.max(0, scoped.length - scopedCount);
+    const pool = remaining > 0 ? scoped : catalog;
+    const ranked = await this.personalizationService.getPersonalizedVideos(userId, pool, scope, preferences, seed);
     // Son videonun ardından döndürmek küçük katalogda anlık tekrarı, büyük
     // katalogda yalnızca ilk yüksek skorlu partiler arasında dönüp kalmayı önler.
     const lastVideo = previous.filter((i) => i.type === "video").at(-1)?.id;
     const offset = Math.max(0, ranked.findIndex((v) => v.id === lastVideo) + 1);
     const rotated = [...ranked.slice(offset), ...ranked.slice(0, offset)];
     const unseen = rotated.filter((v) => !recent.has(v.id));
-    return this.composePlan((unseen.length ? unseen : rotated).slice(0, MAX_SESSION_VIDEOS));
+    const selected = (unseen.length ? unseen : rotated).slice(0, remaining > 0 ? Math.min(MAX_SESSION_VIDEOS, remaining) : MAX_SESSION_VIDEOS);
+    return {plan: await this.composePlan(selected), scopedCount: scopedCount + (remaining > 0 ? selected.length : 0)};
   }
 
   private continueSession(userId: string, cursor: string, scope: FeedScope, sessionSeed?: string): Promise<FeedPage> {
@@ -182,7 +186,7 @@ export class FeedService {
     if (sessionSeed !== undefined && sessionSeed !== payload.sessionSeed) {
       throw new BadRequestException("Cursor, bu sessionSeed'e ait değil");
     }
-    return this.buildPage(userId, payload.plan, payload.position, scope, payload.sessionSeed, { continuous: payload.continuous, preferences: payload.preferences });
+    return this.buildPage(userId, payload.plan, payload.position, scope, payload.sessionSeed, { continuous: payload.continuous, preferences: payload.preferences, scopedCount: payload.scopedCount });
   }
 
   /**
@@ -242,8 +246,8 @@ export class FeedService {
       const allowance = await this.subscriptionsService.getFeedAllowance(userId, [], scope);
       if (allowance.unlimited) {
         const nextSeed = sessionSeed;
-        const nextPlan = await this.nextContinuousPlan(userId, plan, scope, nextSeed, context.preferences);
-        if (nextPlan.length) nextCursor = encodeFeedCursor({ v: FEED_CURSOR_VERSION, userId, scope, sessionSeed: nextSeed, plan: nextPlan, position: 0, ...context }, this.cursorSecret);
+        const nextPlan = await this.nextContinuousPlan(userId, plan, scope, nextSeed, context.preferences, context.scopedCount);
+        if (nextPlan.plan.length) nextCursor = encodeFeedCursor({ v: FEED_CURSOR_VERSION, userId, scope, sessionSeed: nextSeed, plan: nextPlan.plan, position: 0, ...context, scopedCount: nextPlan.scopedCount }, this.cursorSecret);
       }
     }
     // Ücretsiz seçki bitince Premium gelir; yenilemede aynı videolar yeniden erişilebilir.

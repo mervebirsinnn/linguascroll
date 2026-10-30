@@ -1008,6 +1008,20 @@ describe("Premium kesintisiz akış", () => {
     expect(videoIds(emptyCategory.items)).toHaveLength(2); expect(emptyCategory.nextCursor).not.toBeNull();
   });
 
+  it("kategori 27'den büyükse kategori bitene kadar başka kategoriye geçmez", async () => {
+    const catalog = [...Array.from({length:60},(_,i)=>({...makeVideo(i+1),category:"ielts" as const})), {...makeVideo(99),category:"general" as const}];
+    const service = makeFeedService({videos:catalog,quizzesByVideoId:new Map()});
+    let page = await service.getFeed(TEST_USER_ID,undefined,undefined,"ielts",DEFAULT_TEST_SEED,true);
+    const ids: string[] = [];
+    while(ids.length<60) {
+      expect(page.items.every((i)=>i.type !== "video" || i.video.category === "ielts")).toBe(true);
+      ids.push(...videoIds(page.items));
+      page = await service.getFeed(TEST_USER_ID,page.nextCursor!,undefined,"ielts");
+    }
+    expect(new Set(ids).size).toBe(60);
+    expect(page.items.some((i)=>i.type === "video" && i.video.category === "general")).toBe(true);
+  });
+
   it("continuous istemek ücretsiz kullanıcıya sınırsız erişim açmaz", async () => {
     const service = makeFeedService({freeQuota:{grantedVideoIds:[]}});
     const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", DEFAULT_TEST_SEED, true);
