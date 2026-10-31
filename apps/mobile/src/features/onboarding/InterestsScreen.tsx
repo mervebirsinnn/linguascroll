@@ -1,30 +1,20 @@
+import { canContinueInterests, MIN_INTERESTS } from "./onboarding-state";
 import { useState } from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import type { Topic } from "@linguascroll/shared-types";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { topicSchema, TOPIC_LABELS, type Topic } from "@linguascroll/shared-types";
 
 type InterestsScreenProps = {
   onContinue: (topics: Topic[]) => void;
-  onSkip: () => void;
+  initialTopics?: readonly Topic[];
 };
 
-/** topicSchema'nın 5 değeri BİREBİR — yeni bir taxonomy YOK. */
-const TOPIC_OPTIONS: { topic: Topic; label: string }[] = [
-  { topic: "dating", label: "İlişkiler" },
-  { topic: "travel", label: "Seyahat" },
-  { topic: "career", label: "Kariyer" },
-  { topic: "lifestyle", label: "Yaşam Tarzı" },
-  { topic: "humor", label: "Mizah" },
-];
+const TOPIC_OPTIONS = topicSchema.options.map((topic) => ({topic, label: TOPIC_LABELS[topic]}));
 
-/**
- * Çok-seçim — 0 seçim de geçerli bir "Devam Et" (skip'ten farkı: kullanıcı
- * bilinçli olarak akıştan geçti, sadece hiçbir topic işaretlemedi — ikisi de
- * `preferences.topics: []` üretir, ranking açısından fark yaratmaz ama
- * `onboarding_completed` vs `onboarding_skipped` analytics ayrımı için
- * ANLAMLI, bkz. ANALYTICS-EVENTS.md).
- */
-export function InterestsScreen({ onContinue, onSkip }: InterestsScreenProps) {
-  const [selected, setSelected] = useState<Set<Topic>>(new Set());
+/** İlgi alanları çoklu seçilir; dört ayrı seçim olmadan devam edilemez. */
+export function InterestsScreen({ onContinue, initialTopics = [] }: InterestsScreenProps) {
+  const [selected, setSelected] = useState<Set<Topic>>(() => new Set(initialTopics));
+
+  const canContinue = canContinueInterests([...selected]);
 
   function toggle(topic: Topic): void {
     setSelected((current) => {
@@ -39,35 +29,35 @@ export function InterestsScreen({ onContinue, onSkip }: InterestsScreenProps) {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.screen} contentContainerStyle={styles.container}>
       <Text style={styles.title}>Nelerle ilgileniyorsun?</Text>
-      <Text style={styles.subtitle}>İstediğin kadar seçebilirsin — istersen hiç seçmeyebilirsin.</Text>
+      <Text style={styles.subtitle}>Akışını çeşitlendirmek için en az 4 ilgi alanı seç.</Text>
       <View style={styles.options}>
         {TOPIC_OPTIONS.map(({ topic, label }) => {
           const isSelected = selected.has(topic);
           return (
-            <Pressable key={topic} onPress={() => toggle(topic)} style={[styles.option, isSelected && styles.optionSelected]}>
+            <Pressable key={topic} accessibilityRole="checkbox" accessibilityState={{ checked: isSelected }} onPress={() => toggle(topic)} style={[styles.option, isSelected && (canContinue ? styles.optionValid : styles.optionInvalid)]}>
               <Text style={styles.optionLabel}>{label}</Text>
             </Pressable>
           );
         })}
       </View>
-      <Pressable onPress={() => onContinue(Array.from(selected))} style={styles.continueButton}>
-        <Text style={styles.continueText}>Devam Et</Text>
+      <Text accessibilityLiveRegion="polite" style={styles.subtitle}>{selected.size} seçildi · En az {MIN_INTERESTS}</Text>
+      <Pressable accessibilityRole="button" accessibilityState={{ disabled: !canContinue }} disabled={!canContinue} onPress={() => { if (canContinue) onContinue(Array.from(selected)); }} style={[styles.continueButton, !canContinue && { opacity: 0.4 }]}>
+        <Text style={styles.continueText}>Akışa devam et</Text>
       </Pressable>
-      <Pressable onPress={onSkip} style={styles.skipButton}>
-        <Text style={styles.skipText}>Atla</Text>
-      </Pressable>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
+  screen: { flex: 1, backgroundColor: "#000" },
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: "#000",
     paddingHorizontal: 24,
-    paddingTop: 96,
+    paddingTop: 64,
+    paddingBottom: 48,
   },
   title: {
     color: "#fff",
@@ -92,10 +82,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 18,
   },
-  optionSelected: {
-    borderColor: "#8ecdfa",
-    backgroundColor: "rgba(142,205,250,0.15)",
-  },
+  optionValid: { borderColor: "#7bd88f", backgroundColor: "rgba(123,216,143,0.15)" },
+  optionInvalid: { borderColor: "#ff7b87", backgroundColor: "rgba(255,123,135,0.12)" },
   optionLabel: {
     color: "#fff",
     fontSize: 15,
@@ -111,16 +99,5 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 16,
     fontWeight: "700",
-  },
-  skipButton: {
-    marginTop: "auto",
-    marginBottom: 48,
-    alignSelf: "center",
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-  },
-  skipText: {
-    color: "#888",
-    fontSize: 15,
   },
 });

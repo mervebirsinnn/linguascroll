@@ -5,9 +5,10 @@ describe("resolveOnboardingState", () => {
     expect(resolveOnboardingState(null)).toEqual(DEFAULT_ONBOARDING_STATE);
   });
 
-  it("geçerli, tamamlanmış bir state'i olduğu gibi döner", () => {
-    const raw = JSON.stringify({ completed: true, preferences: { level: "B1", topics: ["travel", "dating"] } });
-    expect(resolveOnboardingState(raw)).toEqual({ completed: true, preferences: { level: "B1", topics: ["travel", "dating"] } });
+  it("dört ilgi alanıyla tamamlanmış state korunur; eski az seçimli state yeniden açılır", () => {
+    const preferences = {level:"B1", topics:["travel", "dating", "music", "science"]};
+    expect(resolveOnboardingState(JSON.stringify({completed:true, preferences}))).toEqual({completed:true, preferences});
+    expect(resolveOnboardingState(JSON.stringify({completed:true, preferences:{level:"B1",topics:["travel"]}}))).toEqual({completed:false, preferences:{level:"B1",topics:["travel"]}});
   });
 
   it("JSON olarak parse edilemeyen (bozuk) bir string → güvenli varsayılana düşer, throw ETMEZ", () => {
@@ -37,17 +38,10 @@ describe("resolveOnboardingState", () => {
 });
 
 describe("buildCompletedState", () => {
-  it("completed:true ve verilen tercihle bir state üretir", () => {
-    expect(buildCompletedState({ level: "A2", topics: ["humor"] })).toEqual({
-      completed: true,
-      preferences: { level: "A2", topics: ["humor"] },
-    });
-  });
-
-  it("skip akışı (boş tercih) da completed:true üretir — 'atlamak' da 'tamamlamak' sayılır", () => {
-    expect(buildCompletedState({ level: null, topics: [] })).toEqual({
-      completed: true,
-      preferences: { level: null, topics: [] },
-    });
+  it("dört farklı konu gerekir; boş veya tekrarlı seçim geçişi açmaz", () => {
+    expect(buildCompletedState({level:"A2",topics:["humor"]}).completed).toBe(false);
+    expect(buildCompletedState({level:null,topics:[]}).completed).toBe(false);
+    expect(buildCompletedState({level:null,topics:["humor","humor","humor","humor"]}).completed).toBe(false);
+    expect(buildCompletedState({level:null,topics:["humor","science","music","food"]}).completed).toBe(true);
   });
 });

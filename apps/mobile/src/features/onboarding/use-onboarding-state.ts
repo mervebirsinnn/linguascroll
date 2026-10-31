@@ -14,7 +14,6 @@ export type OnboardingHookState =
       status: "success";
       state: OnboardingState;
       completeOnboarding: (preferences: FeedPreferences) => void;
-      skipOnboarding: () => void;
     };
 
 export function useOnboardingState(): OnboardingHookState {
@@ -46,12 +45,9 @@ export function useOnboardingState(): OnboardingHookState {
     persist(buildCompletedState(preferences));
   }
 
-  function skipOnboarding(): void {
-    persist(buildCompletedState({ level: null, topics: [] }));
-  }
 
   if (state === null) {
     return { status: "loading" };
   }
-  return { status: "success", state, completeOnboarding, skipOnboarding };
+  return { status: "success", state, completeOnboarding };
 }

@@ -203,8 +203,8 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   // Mevcut testlerin çoğu seed'le ilgilenmez: cursor'suz çağrılara varsayılan bir seed eklenir
   // (cursor'lu çağrılara DOKUNULMAZ — seed cursor'dan okunur).
   const originalGetFeed = service.getFeed.bind(service);
-  service.getFeed = (userId, cursor, preference, scope, sessionSeed) =>
-    originalGetFeed(userId, cursor, preference, scope, sessionSeed ?? (cursor ? undefined : DEFAULT_TEST_SEED));
+  service.getFeed = (userId, cursor, preference, scope, sessionSeed, continuous) =>
+    originalGetFeed(userId, cursor, preference, scope, sessionSeed ?? (cursor ? undefined : DEFAULT_TEST_SEED), continuous);
   return service;
 }
 
@@ -976,5 +976,57 @@ describe("FeedService.getFeed — @deprecated v2 cursor rollout uyumluluğu", ()
     const service = makeFeedService({ videos, ...noQuizzes, realPersonalization: true, autoSeed: false });
     const { cursor } = await makeV2Cursor(service, 12, { sessionSeed: "a".repeat(32) });
     await expect(service.getFeed(TEST_USER_ID, cursor, undefined, "all")).rejects.toThrow("Geçersiz veya bozulmuş feed cursor'ı");
+  });
+});
+
+
+describe("Premium kesintisiz akış", () => {
+  it("27 video sınırında bitmez; sonraki partiler bütün katalogdan devam eder", async () => {
+    const catalog = Array.from({length: 70}, (_, i) => makeVideo(i + 1, i < 27 ? "travel" : "career"));
+    const service = makeFeedService({videos: catalog, quizzesByVideoId: new Map()});
+    let page = await service.getFeed(TEST_USER_ID, undefined, {level: "B1", topics: ["travel", "career", "dating", "humor"]}, "all", DEFAULT_TEST_SEED, true);
+    const ids = new Set<string>();
+    for(let n=0; n<12; n++) {
+      expect(page.items.length).toBeGreaterThan(0); expect(page.nextCursor).not.toBeNull();
+      for(const id of videoIds(page.items)) ids.add(id);
+      const sameRequest = await service.getFeed(TEST_USER_ID, page.nextCursor!);
+      expect(sameRequest).toEqual(await service.getFeed(TEST_USER_ID, page.nextCursor!));
+      page = sameRequest;
+    }
+    expect(ids.size).toBe(70);
+    expect(page.items.some((i) => i.type === "paywall")).toBe(false);
+  });
+
+  it("kategori bittiğinde diğer kategorilere geçer; boş kategoriden de içerik bulur", async () => {
+    const catalog = [ {...makeVideo(1), category: "ielts" as const}, {...makeVideo(2), category: "general" as const} ];
+    const service = makeFeedService({videos:catalog, quizzesByVideoId:new Map()});
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "ielts", DEFAULT_TEST_SEED, true);
+    expect(videoIds(first.items)).toEqual([vId(1)]);
+    const next = await service.getFeed(TEST_USER_ID, first.nextCursor!, undefined, "ielts");
+    expect(videoIds(next.items)).toEqual([vId(2)]); expect(next.nextCursor).not.toBeNull();
+    const emptyCategory = await service.getFeed(TEST_USER_ID, undefined, undefined, "animation", DEFAULT_TEST_SEED, true);
+    expect(videoIds(emptyCategory.items)).toHaveLength(2); expect(emptyCategory.nextCursor).not.toBeNull();
+  });
+
+  it("kategori 27'den büyükse kategori bitene kadar başka kategoriye geçmez", async () => {
+    const catalog = [...Array.from({length:60},(_,i)=>({...makeVideo(i+1),category:"ielts" as const})), {...makeVideo(99),category:"general" as const}];
+    const service = makeFeedService({videos:catalog,quizzesByVideoId:new Map()});
+    let page = await service.getFeed(TEST_USER_ID,undefined,undefined,"ielts",DEFAULT_TEST_SEED,true);
+    const ids: string[] = [];
+    while(ids.length<60) {
+      expect(page.items.every((i)=>i.type !== "video" || i.video.category === "ielts")).toBe(true);
+      ids.push(...videoIds(page.items));
+      page = await service.getFeed(TEST_USER_ID,page.nextCursor!,undefined,"ielts");
+    }
+    expect(new Set(ids).size).toBe(60);
+    expect(page.items.some((i)=>i.type === "video" && i.video.category === "general")).toBe(true);
+  });
+
+  it("continuous istemek ücretsiz kullanıcıya sınırsız erişim açmaz", async () => {
+    const service = makeFeedService({freeQuota:{grantedVideoIds:[]}});
+    const first = await service.getFeed(TEST_USER_ID, undefined, undefined, "all", DEFAULT_TEST_SEED, true);
+    expect(first.nextCursor).toBeNull();
+    expect(videoIds(first.items)).toHaveLength(10);
+    expect(first.items.at(-1)).toEqual({type:"paywall"});
   });
 });

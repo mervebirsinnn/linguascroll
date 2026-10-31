@@ -1,0 +1,2 @@
+ALTER TABLE "videos" DROP CONSTRAINT "topic_check";--> statement-breakpoint
+ALTER TABLE "videos" ADD CONSTRAINT "topic_check" CHECK ("videos"."topic" IN ('dating', 'travel', 'career', 'lifestyle', 'humor', 'food', 'fitness', 'technology', 'science', 'culture', 'psychology', 'finance', 'nature', 'music', 'cinema', 'education'));

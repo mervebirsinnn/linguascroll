@@ -100,7 +100,7 @@ function App() {
         </View>
       )}
       {identity.status === 'success' && onboarding.status === 'success' && !onboarding.state.completed && (
-        <OnboardingFlow onComplete={onboarding.completeOnboarding} onSkip={onboarding.skipOnboarding} />
+        <OnboardingFlow onComplete={onboarding.completeOnboarding} initialPreferences={onboarding.state.preferences} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'feed' && (
         <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} />

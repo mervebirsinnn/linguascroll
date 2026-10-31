@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
-import { feedPageSchema, playbackAccessResponseSchema, type FeedItem } from "@linguascroll/shared-types";
+import { feedPageSchema, playbackAccessResponseSchema, type FeedItem, topicSchema } from "@linguascroll/shared-types";
 import { eq } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
@@ -89,6 +89,44 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
   function newVideoItems(items: FeedItem[]): Extract<FeedItem, { type: "video" }>[] {
     return items.filter((item): item is Extract<FeedItem, { type: "video" }> => item.type === "video" && item.video.playbackUrl === null);
   }
+
+  it("Premium akış kategori bitince diğer konulardan kesintisiz devam eder", async () => {
+    const {userId, authorization} = await createAuthenticatedUser(db);
+    await createVideos(4,"ielts"); await createVideos(12,"general"); entitlements.set(userId,true);
+    let page = feedPageSchema.parse((await request(app.getHttpServer()).get(`/feed?scope=ielts&continuous=true&sessionSeed=${SEED}`).set("Authorization",authorization).expect(200)).body);
+    expect(page.items.filter((i) => i.type === "video")).toHaveLength(4);
+    let otherCategory = false;
+    for(let n=0;n<8;n++) {
+      expect(page.nextCursor).not.toBeNull();
+      page = feedPageSchema.parse((await request(app.getHttpServer()).get(`/feed?scope=ielts&cursor=${encodeURIComponent(page.nextCursor!)}`).set("Authorization",authorization).expect(200)).body);
+      expect(page.items.length).toBeGreaterThan(0); expect(page.items.some((i) => i.type === "paywall")).toBe(false);
+      otherCategory ||= page.items.some((i) => i.type === "video" && i.video.category === "general");
+    }
+    expect(otherCategory).toBe(true);
+    entitlements.set(userId,false);
+    await request(app.getHttpServer()).post("/subscriptions/refresh").set("Authorization",authorization).expect(200);
+    const stopped = feedPageSchema.parse((await request(app.getHttpServer()).get(`/feed?scope=ielts&cursor=${encodeURIComponent(page.nextCursor!)}`).set("Authorization",authorization).expect(200)).body);
+    expect(stopped.nextCursor).toBeNull(); expect(stopped.items.at(-1)).toEqual({type:"paywall"});
+  });
+
+  it("ücretsiz kullanıcı continuous=true ile Premium kapısını aşamaz", async () => {
+    const {authorization} = await createAuthenticatedUser(db); await createVideos(15);
+    const page = feedPageSchema.parse((await request(app.getHttpServer()).get(`/feed?continuous=true&sessionSeed=${SEED}`).set("Authorization",authorization).expect(200)).body);
+    expect(page.nextCursor).toBeNull(); expect(page.items.filter((i)=>i.type === "video")).toHaveLength(10);
+    expect(page.items.at(-1)).toEqual({type:"paywall"});
+  });
+
+  it("yeni konular DB, feed ve tercih sorgusunda geçerlidir", async () => {
+    const {userId,authorization} = await createAuthenticatedUser(db); entitlements.set(userId,true);
+    await db.insert(videosTable).values(topicSchema.options.map((topic) => ({learningLanguage:"en",cefrLevel:"A1",muxAssetId:`local-topic-${topic}`,topic,durationMs:10000})));
+    const seen = new Set<string>(); let cursor: string | null = null;
+    do {
+      const page = feedPageSchema.parse((await request(app.getHttpServer()).get(`/feed?sessionSeed=${SEED}&topics=science,music,food,cinema${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ""}`).set("Authorization",authorization).expect(200)).body);
+      for(const item of page.items) if(item.type === "video") seen.add(item.video.topic);
+      cursor = page.nextCursor;
+    } while(cursor);
+    expect(seen).toEqual(new Set(topicSchema.options));
+  });
 
   it("token yoksa playback-access ve refresh 401", async () => {
     const [videoId] = await createVideos(1);
