@@ -3,9 +3,18 @@ import { ConfigService } from "@nestjs/config";
 import { playableVideoSchema, type ContentCategory, type PlayableVideo, type TranscriptSegment, type Video } from "@linguascroll/shared-types";
 import { UsersService } from "../users/users.service";
 import { resolvePlaybackUrl, resolveR2PlaybackUrl } from "./resolve-playback-url";
+import { signMediaUrl } from "./signed-media-url";
 import { TranscriptSegmentsRepository } from "./transcript-segments-repository";
 import { VideoWatchEventsRepository } from "./video-watch-events-repository";
 import { VideosRepository } from "./videos-repository";
+
+/**
+ * 2026-10-27 — imzalı medya URL'inin geçerlilik süresi. Kısa ama bir feed sayfasının
+ * (12 item × ≤60 sn video + duraklatmalar) ömrünü rahat kapsayacak kadar uzun: süresi
+ * dolan URL oynatma sırasında range isteklerinde 403 alır ("Bu video oynatılamadı");
+ * kullanıcı feed'i yenileyince taze URL alır. Bkz. signed-media-url.ts.
+ */
+const PLAYBACK_URL_TTL_SECONDS = 60 * 60;
 
 /**
  * SQL/Drizzle bilmiyor — sadece VideosRepository'nin döndürdüğü Video[]'u alır.
@@ -21,6 +30,13 @@ export class VideosService {
   // duymadan boot olabilmeli — sadece storageKey dolu bir video GERÇEKTEN resolve
   // edilmeye çalışıldığında (requireR2PublicBaseUrl) eksikse net bir hata verir.
   private readonly r2PublicBaseUrl: string | undefined;
+  /**
+   * 2026-10-27 — tanımlıysa her playbackUrl kısa ömürlü imza taşır (bkz. signed-media-url.ts).
+   * Tanımsızken (local dev/test) URL'ler eskisi gibi imzasız: SUBSCRIPTION_GATE_ENABLED=true
+   * iken boot'ta zorunlu (app.module.ts envSchema) — kapı açıkken imzasız, kalıcı bir URL
+   * ücretsiz hak kontrolünü delip geçerdi.
+   */
+  private readonly mediaUrlSigningSecret: string | undefined;
 
   constructor(
     private readonly videosRepository: VideosRepository,
@@ -31,11 +47,12 @@ export class VideosService {
   ) {
     this.mediaBaseUrl = configService.getOrThrow<string>("PUBLIC_MEDIA_BASE_URL");
     this.r2PublicBaseUrl = configService.get<string>("R2_PUBLIC_BASE_URL");
+    this.mediaUrlSigningSecret = configService.get<string>("MEDIA_URL_SIGNING_SECRET");
   }
 
   async getVideoFeed(filter: { category?: ContentCategory } = {}): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideos(filter);
-    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl, this.r2PublicBaseUrl));
+    return videos.map((video) => this.toPlayableVideo(video));
   }
 
   /**
@@ -45,7 +62,13 @@ export class VideosService {
    */
   async getPlayableVideosByIds(videoIds: string[]): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideosByIds(videoIds);
-    return videos.map((video) => toPlayableVideo(video, this.mediaBaseUrl, this.r2PublicBaseUrl));
+    return videos.map((video) => this.toPlayableVideo(video));
+  }
+
+  /** 2026-10-27 — playback-access endpoint'i için tek video; yoksa null (404 kararı çağıranda). */
+  async getPlayableVideoById(videoId: string): Promise<PlayableVideo | null> {
+    const video = await this.videosRepository.findVideoById(videoId);
+    return video ? this.toPlayableVideo(video) : null;
   }
 
   /**
@@ -81,15 +104,12 @@ export class VideosService {
     await this.videoWatchEventsRepository.record({ userId, videoId, watchedMs });
   }
 
-  /**
-   * 2026-10-01 — ücretsiz günlük video limiti (bkz. subscriptions modülü) için.
-   * `VideoWatchEventsRepository` `VideosModule`'den export EDİLMİYOR (sadece
-   * `VideosService` export edilir, bkz. videos.module.ts) — bu, `UsersService`'in
-   * `userExists`'i UsersRepository'yi dışarı sızdırmadan sunması ile AYNI
-   * "feature'lar arası sınır repository değil, service seviyesinde" kararı.
-   */
-  async countDistinctVideosWatchedByUserSince(userId: string, since: Date, minWatchedMs: number): Promise<number> {
-    return this.videoWatchEventsRepository.countDistinctVideosWatchedSince(userId, since, minWatchedMs);
+  private toPlayableVideo(video: Video): PlayableVideo {
+    const playable = toPlayableVideo(video, this.mediaBaseUrl, this.r2PublicBaseUrl);
+    if (!this.mediaUrlSigningSecret) {
+      return playable;
+    }
+    return { ...playable, playbackUrl: signMediaUrl(playable.playbackUrl, this.mediaUrlSigningSecret, PLAYBACK_URL_TTL_SECONDS, Date.now()) };
   }
 }
 

@@ -1,22 +1,38 @@
+import { useEffect, useRef, useState } from "react";
+import { saveGloss } from "./api/save-gloss";
 import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 
-export type OpenWordGloss = { word: string; gloss: string };
+export type OpenWordGloss = { word: string; gloss: string; segmentId?: string };
 
-type WordGlossSheetProps = {
-  /** Tıklandığı ANDAKİ kelime + anlamı (snapshot) — null ise sheet kapalı. */
-  entry: OpenWordGloss | null;
-  onClose: () => void;
-};
+type WordGlossSheetProps = { entry: OpenWordGloss | null; onClose: () => void };
 
-/**
- * Kürate OLMAYAN (offline üretilmiş anlamı olan) altyazı kelimesinin anlam
- * sheet'i. `VocabularyWordSheet`'in AYNI Modal deseni, ama bilinçli olarak AYRI
- * bir component: burada "Kaydet" YOK (üretilen kelimeler `words` tablosunda değil,
- * kayıt/review akışına bağlı değil) — tek bir component'e opsiyonel prop'larla
- * iki farklı davranış sıkıştırmak yerine iki küçük, tek amaçlı sheet.
- */
+/** Hazırlanmış anlamı anında gösterir. Kaydet yalnızca backend kayıt işlemi yapar; AI çağrılmaz.
+ * Snapshot segment bağlamını korur; kapanan/eski panelin yanıtı yeni kelimeye taşınmaz. */
 export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
+  const [saved, setSaved] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
+  const generation = useRef(0);
+  const locked = useRef(false);
+  useEffect(() => {
+    generation.current++; locked.current = false;
+    setSaved(false); setPending(false); setNotice(null);
+    return () => { generation.current++; };
+  }, [entry]);
+  async function save() {
+    if (!entry?.segmentId || locked.current || saved) return;
+    const request = generation.current;
+    locked.current = true; setPending(true); setNotice(null);
+    try {
+      await saveGloss(entry.segmentId, entry.word);
+      if (generation.current === request) setSaved(true);
+    } catch {
+      if (generation.current === request) setNotice("Kaydedilemedi. Bağlantını kontrol edip tekrar dene.");
+    } finally {
+      if (generation.current === request) { locked.current = false; setPending(false); }
+    }
+  }
   const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
   return (
     <Modal visible={entry !== null} transparent animationType="slide" onRequestClose={onClose}>
@@ -29,6 +45,9 @@ export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
             <View>
               <Text style={styles.word}>{entry.word}</Text>
               <Text style={styles.gloss}>{entry.gloss}</Text>
+              {entry.segmentId && <Pressable accessibilityRole="button" disabled={pending || saved} onPress={() => { void save(); }} style={styles.save}><Text style={styles.saveText}>{pending ? "Kaydediliyor…" : saved ? "Kelimelerine eklendi ✓" : "Kelimelerime kaydet"}</Text></Pressable>}
+              {notice && <Text accessibilityRole="alert" style={styles.notice}>{notice}</Text>}
+              <Pressable onPress={onClose} accessibilityRole="button" style={styles.save}><Text style={styles.saveText}>Videoya dön</Text></Pressable>
             </View>
           )}
         </Pressable>
@@ -38,6 +57,9 @@ export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
 }
 
 const styles = StyleSheet.create({
+  save: { minHeight: 48, justifyContent: "center", alignItems: "center", borderRadius: 12, backgroundColor: "#2a2238", marginTop: 12 },
+  saveText: { color: "#c8b5ff", fontSize: 15, fontWeight: "600" },
+  notice: { color: "#ffc4ce", fontSize: 13, marginTop: 12 },
   backdrop: {
     flex: 1,
     justifyContent: "flex-end",

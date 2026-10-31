@@ -1,30 +1,20 @@
-import { Controller, Get, Param, ParseUUIDPipe, Post } from "@nestjs/common";
-import type { AnonymousUser, UserExistsResponse } from "@linguascroll/shared-types";
-import { UsersService } from "./users.service";
+import { Controller, Get, UseGuards } from "@nestjs/common";
+import { currentUserSchema, type CurrentUser } from "@linguascroll/shared-types";
+import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
 
-@Controller("users")
+@Controller()
+@UseGuards(FirebaseAuthGuard)
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
-
-  // Body yok — sadece opak bir anonymous identity yaratır. Nest'in @Post()
-  // varsayılanı olan 201 (Created) burada semantik olarak doğru: bu endpoint
-  // gerçekten yeni bir kaynak (users satırı) yaratıyor.
-  @Post("anonymous")
-  createAnonymousUser(): Promise<AnonymousUser> {
-    return this.usersService.createAnonymousUser();
-  }
-
   /**
-   * Mobile'ın AsyncStorage'da SAKLI bir anonymousUserId'yi güvenle yeniden
-   * kullanıp kullanamayacağını sormasi için (bkz. use-anonymous-user-id.ts) —
-   * bir DB reset'i (dev/test) sonrası "hayalet" bir id'nin her feed isteğinde
-   * sessizce 400 üretmesi yerine, bootstrap anında AÇIKÇA tespit edilebilsin.
-   * `userExists` zaten var olan, başka feature'ların da kullandığı service
-   * metodu — burada sadece HTTP'ye açılıyor, yeni bir iş kuralı YOK.
+   * 2026-10-27 — giriş yapmış kullanıcının sabit backend id'si. Mobile bunu RevenueCat App User
+   * ID'si olarak kullanır (backend entitlement'ı aynı id ile sorgular). İlk çağrıda kullanıcı
+   * satırı guard tarafından yaratılmış olur.
+   *
+   * `POST /users/anonymous` ve `GET /users/:userId/exists` KALDIRILDI: kimlik artık istemcinin
+   * sakladığı bir UUID değil, doğrulanmış Firebase token'ı.
    */
-  @Get(":userId/exists")
-  async checkUserExists(@Param("userId", new ParseUUIDPipe()) userId: string): Promise<UserExistsResponse> {
-    const exists = await this.usersService.userExists(userId);
-    return { exists };
+  @Get("me")
+  getCurrentUser(@AuthUserId() userId: string): CurrentUser {
+    return currentUserSchema.parse({ userId });
   }
 }

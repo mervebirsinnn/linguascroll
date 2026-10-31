@@ -6,6 +6,10 @@ const mockConfig: { key: string | undefined; os: string } = { key: "goog_test_ke
 
 const mockPurchases = {
   configure: jest.fn(),
+  getAppUserID: jest.fn(),
+  logIn: jest.fn(),
+  logOut: jest.fn(),
+  isAnonymous: jest.fn(),
   getOfferings: jest.fn(),
   purchasePackage: jest.fn(),
   restorePurchases: jest.fn(),
@@ -81,14 +85,55 @@ describe("initializePurchases", () => {
     expect(mockPurchases.configure).not.toHaveBeenCalled();
   });
 
-  it("anonim userId'yi appUserID olarak verir ve tekrar çağrılsa da bir kez yapılandırır (idempotent)", async () => {
+  it("backend kullanıcı id'sini appUserID olarak verir; aynı kullanıcı için tekrar çağrı idempotent", async () => {
     const { initializePurchases } = loadGateway();
+    mockPurchases.getAppUserID.mockResolvedValue("user-1");
 
     expect(await initializePurchases("user-1")).toBe(true);
     expect(await initializePurchases("user-1")).toBe(true);
 
     expect(mockPurchases.configure).toHaveBeenCalledTimes(1);
     expect(mockPurchases.configure).toHaveBeenCalledWith({ apiKey: "goog_test_key", appUserID: "user-1" });
+    expect(mockPurchases.logIn).not.toHaveBeenCalled();
+  });
+
+  it("başka hesapla girişte RevenueCat kimliği yeni kullanıcıya değiştirilir (logIn) — abonelik eski hesapta kalır", async () => {
+    const { initializePurchases } = loadGateway();
+    await initializePurchases("user-1");
+    mockPurchases.getAppUserID.mockResolvedValue("user-1");
+
+    await initializePurchases("user-2");
+
+    expect(mockPurchases.configure).toHaveBeenCalledTimes(1);
+    expect(mockPurchases.logIn).toHaveBeenCalledWith("user-2");
+  });
+});
+
+describe("logOutPurchases", () => {
+  it("yapılandırılmamışsa hiçbir şey yapmaz", async () => {
+    const { logOutPurchases } = loadGateway();
+    await logOutPurchases();
+    expect(mockPurchases.logOut).not.toHaveBeenCalled();
+  });
+
+  it("giriş yapılmış (anonim olmayan) RevenueCat kullanıcısını çıkarır", async () => {
+    const { initializePurchases, logOutPurchases } = loadGateway();
+    await initializePurchases("user-1");
+    mockPurchases.isAnonymous.mockResolvedValue(false);
+
+    await logOutPurchases();
+
+    expect(mockPurchases.logOut).toHaveBeenCalledTimes(1);
+  });
+
+  it("RevenueCat zaten anonimse logOut çağrılmaz (SDK bu durumda hata verir)", async () => {
+    const { initializePurchases, logOutPurchases } = loadGateway();
+    await initializePurchases("user-1");
+    mockPurchases.isAnonymous.mockResolvedValue(true);
+
+    await logOutPurchases();
+
+    expect(mockPurchases.logOut).not.toHaveBeenCalled();
   });
 });
 
@@ -144,10 +189,10 @@ describe("purchasePackageById", () => {
     await expect(purchasePackageById("$rc_annual")).rejects.toBe(sdkError);
   });
 
-  it("satın alma tamamlandı ama aktif entitlement YOKSA başarı sayılmaz (yapılandırma hatası), fırlatır", async () => {
+  it("mağaza tamamlandıysa erişimi backend doğrular; tekrar satın almaya yönlendirilmez", async () => {
     const { purchasePackageById } = await setup();
     mockPurchases.purchasePackage.mockResolvedValueOnce({ customerInfo: INACTIVE });
-    await expect(purchasePackageById("$rc_annual")).rejects.toThrow(/entitlement/);
+    await expect(purchasePackageById("$rc_annual")).resolves.toBe("purchased");
   });
 
   it("bilinmeyen paket id'si SDK'ya hiç gitmeden hata verir", async () => {
@@ -165,4 +210,26 @@ describe("restoreAndCheck", () => {
     mockPurchases.restorePurchases.mockResolvedValueOnce(INACTIVE);
     expect(await restoreAndCheck()).toBe(false);
   });
+});
+
+it("başka entitlement Premium erişim sağlamaz", () => {
+  const { hasActiveEntitlement } = loadGateway();
+  expect(hasActiveEntitlement({ entitlements: { active: { unrelated: {} } } })).toBe(false);
+});
+
+it("Android'de uygun defaultOption denemesi esas alınır; eski introPrice kullanılmaz", async () => {
+  const gateway = loadGateway();
+  await gateway.initializePurchases("one");
+  mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith({ ...ANNUAL, product: { ...ANNUAL.product, defaultOption: { freePhase: null, introPhase: null, fullPricePhase: { price: { amountMicros: 700000000, formatted: "₺700" } } } } }));
+  expect(await gateway.fetchPaywallPackages("one")).toMatchObject([{ priceString: "₺700", trialLabel: null }]);
+});
+
+it("hesap değiştiğinde eski hesabın satın alması SDK'ya gönderilmez", async () => {
+  const gateway = loadGateway();
+  await gateway.initializePurchases("one");
+  mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(ANNUAL));
+  await gateway.fetchPaywallPackages("one");
+  await gateway.initializePurchases("two");
+  await expect(gateway.purchasePackageById("$rc_annual", "one")).rejects.toThrow("hesabı değişti");
+  expect(mockPurchases.purchasePackage).not.toHaveBeenCalled();
 });

@@ -1,5 +1,6 @@
 import { saveWordRequestSchema } from "@linguascroll/shared-types";
 import { API_BASE_URL } from "../../../shared/api-base-url";
+import { authHeaders } from "../../identity/auth-headers";
 
 /**
  * PUT /words/:wordId/saved — idempotent (backend ON CONFLICT DO NOTHING), response body yok.
@@ -10,12 +11,12 @@ import { API_BASE_URL } from "../../../shared/api-base-url";
  * granularitesine sahip DEĞİL, bu yüzden hiç göndermez (undefined → backend'e
  * null olarak gider, TAHMİNİ bir context ASLA üretilmiyor).
  */
-export async function saveWord(wordId: string, userId: string, sourceSegmentId?: string | null): Promise<void> {
-  const body = saveWordRequestSchema.parse({ userId, sourceSegmentId });
+export async function saveWord(wordId: string, sourceSegmentId?: string | null): Promise<void> {
+  const body = saveWordRequestSchema.parse({ sourceSegmentId });
 
   const response = await fetch(`${API_BASE_URL}/words/${wordId}/saved`, {
     method: "PUT",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", ...(await authHeaders()) },
     body: JSON.stringify(body),
   });
 

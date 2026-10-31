@@ -35,7 +35,7 @@ export function ReviewCard({ word, userId, onAnswered }: ReviewCardProps) {
     setIsSubmitting(true);
     setSubmitError(null);
     setLastAttemptedCorrect(correct);
-    recordWordReview(word.word.id, userId, correct)
+    recordWordReview(word.word.id, correct)
       .then(() => {
         onAnswered(correct);
       })

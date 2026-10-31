@@ -3,9 +3,10 @@ import { Test } from "@nestjs/testing";
 import { feedPageSchema, type FeedPage } from "@linguascroll/shared-types";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
-import { createHmac } from "node:crypto";
+import { createHmac, randomUUID } from "node:crypto";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videosTable } from "../videos/videos.schema";
@@ -19,7 +20,7 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
     const connection = createTestDatabaseConnection();
@@ -38,7 +39,9 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
   let next = 1;
 
   async function createUser(): Promise<string> {
-    const [user] = await db.insert(usersTable).values({}).returning();
+    // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
+    const id = randomUUID();
+    const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) throw new Error("kullanıcı insert edilemedi");
     return user.id;
   }
@@ -63,7 +66,7 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
   async function get(userId: string, params: Record<string, string> = {}): Promise<request.Response> {
     // Cursor'suz istek seed ister; cursor'lu istek seed'i imzalı cursor'dan alır (query'de verilirse AYNI olmalı).
     const seedParams: Record<string, string> = params.cursor ? {} : { sessionSeed: SEED_A };
-    return request(app.getHttpServer()).get(`/feed?${new URLSearchParams({ userId, ...seedParams, ...params }).toString()}`);
+    return request(app.getHttpServer()).get(`/feed?${new URLSearchParams({ ...seedParams, ...params }).toString()}`).set("Authorization", bearerFor(userId));
   }
 
   function ids(page: FeedPage): string[] {
@@ -189,14 +192,14 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
     ] as [string, Record<string, string>][])("%s sessionSeed → kontrollü 400", async (_name, extra) => {
       const userId = await createUser();
       await createVideo("ielts");
-      const response = await request(app.getHttpServer()).get(`/feed?${new URLSearchParams({ userId, scope: "all", ...extra }).toString()}`);
+      const response = await request(app.getHttpServer()).get(`/feed?${new URLSearchParams({ scope: "all", ...extra }).toString()}`).set("Authorization", bearerFor(userId));
       expect(response.status).toBe(400);
     });
 
     it("seed'siz cursorsuz ESKİ client isteği 200; cursor v3 + sunucu seed'i (32 hex); eski client cursor ile devam eder, duplicate/skip yok", async () => {
       const userId = await createUser();
       for (let i = 0; i < 20; i++) await createVideo("ielts", "B2");
-      const legacyGet = (params: Record<string, string>) => request(app.getHttpServer()).get(`/feed?${new URLSearchParams({ userId, ...params }).toString()}`);
+      const legacyGet = (params: Record<string, string>) => request(app.getHttpServer()).get(`/feed?${new URLSearchParams(params).toString()}`).set("Authorization", bearerFor(userId));
 
       const firstResponse = await legacyGet({ category: "ielts" }); // eski build: scope/sessionSeed yok
       expect(firstResponse.status).toBe(200);
@@ -242,7 +245,7 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
 
     it("tekrarlı sessionSeed param'ı (dizi) 400 verir", async () => {
       const userId = await createUser();
-      const response = await request(app.getHttpServer()).get(`/feed?userId=${userId}&sessionSeed=${SEED_A}&sessionSeed=${SEED_B}`);
+      const response = await request(app.getHttpServer()).get(`/feed?sessionSeed=${SEED_A}&sessionSeed=${SEED_B}`).set("Authorization", bearerFor(userId));
       expect(response.status).toBe(400);
     });
 

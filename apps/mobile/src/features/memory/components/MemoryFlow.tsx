@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { AccountScreen } from "../../account/AccountScreen";
+import type { AccountLinkControl } from "../../identity/auth-state";
 import { ProgressScreen } from "./ProgressScreen";
 import { ReviewScreen } from "./ReviewScreen";
 import { SavedWordsScreen } from "./SavedWordsScreen";
@@ -7,6 +10,14 @@ import { SavedWordsScreen } from "./SavedWordsScreen";
 type MemoryFlowProps = {
   userId: string;
   onBack: () => void;
+  /** 2026-10-27 — hesap çıkışı (Firebase + RevenueCat oturumu kapanır, giriş ekranına dönülür). */
+  onSignOut: () => void;
+  /**
+   * 2026-10-28 — misafir kullanıcı çıkış yapamaz (çıkacak bir hesap yok; çıkış yeni misafir =
+   * yeni ücretsiz hak açardı), onun yerine Google hesabını bağlayabilir. Hesaplı kullanıcı
+   * aboneliğini Google Play'de yönetir/iptal eder (uygulama aboneliği kendisi iptal edemez).
+   */
+  account: AccountLinkControl;
 };
 
 type MemoryTab = "saved" | "review" | "progress";
@@ -22,16 +33,24 @@ type MemoryTab = "saved" | "review" | "progress";
  * eylemiyle (Feed'deki "Kelimelerim" butonu) açılıyor, feed'e asla zorla bir
  * kesinti olarak enjekte edilmiyor.
  */
-export function MemoryFlow({ userId, onBack }: MemoryFlowProps) {
+export function MemoryFlow({ userId, onBack, onSignOut, account }: MemoryFlowProps) {
   const [tab, setTab] = useState<MemoryTab>("saved");
+  const [accountOpen, setAccountOpen] = useState(false);
+  const insets = useSafeAreaInsets();
+
+  // Hesap paneli kapandığında seçili kelime sekmesi korunur; ayrı navigation bağımlılığı yok.
+  if (accountOpen) return <AccountScreen key={userId} userId={userId} account={account} onBack={() => setAccountOpen(false)} onSignOut={onSignOut} />;
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
         <Pressable onPress={onBack} style={styles.backButton}>
-          <Text style={styles.backButtonText}>← Feed</Text>
+          <Text style={styles.backButtonText}>‹ Keşfet</Text>
         </Pressable>
         <Text style={styles.title}>Kelimelerim</Text>
+        <Pressable onPress={() => setAccountOpen(true)} accessibilityRole="button" style={({ pressed }) => [styles.accountButton, pressed && styles.accountButtonPressed]}>
+          <Text style={styles.accountButtonText}>Hesabım</Text>
+        </Pressable>
       </View>
       <View style={styles.tabBar}>
         <TabButton label="Kayıtlı" active={tab === "saved"} onPress={() => setTab("saved")} />
@@ -63,7 +82,7 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     alignItems: "center",
-    paddingTop: 56,
+    paddingTop: 12,
     paddingHorizontal: 16,
     paddingBottom: 12,
   },
@@ -80,7 +99,19 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 18,
     fontWeight: "700",
+    flex: 1,
   },
+  accountButton: {
+    minHeight: 44,
+    justifyContent: "center",
+    paddingHorizontal: 16,
+    borderRadius: 14,
+    backgroundColor: "#221b30",
+    borderWidth: 1,
+    borderColor: "#403251",
+  },
+  accountButtonPressed: { backgroundColor: "#332642" },
+  accountButtonText: { color: "#d4c5ff", fontSize: 14, fontWeight: "600" },
   tabBar: {
     flexDirection: "row",
     paddingHorizontal: 16,

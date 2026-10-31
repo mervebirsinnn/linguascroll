@@ -53,6 +53,9 @@ jest.mock("../../subtitles/api/fetch-word-glosses", () => ({
   fetchWordGlosses: jest.fn().mockResolvedValue({}),
 }));
 
+jest.mock("../../subtitles/api/save-gloss", () => ({ saveGloss: jest.fn() }));
+jest.mock("../api/send-video-feedback", () => ({ sendVideoFeedback: jest.fn() }));
+
 jest.mock("../api/record-video-watch-event", () => ({
   recordVideoWatchEvent: jest.fn().mockResolvedValue(undefined),
 }));
@@ -63,7 +66,9 @@ jest.mock("@react-native-async-storage/async-storage", () =>
   require("@react-native-async-storage/async-storage/jest/async-storage-mock"),
 );
 
-function makeVideo(overrides: Partial<FeedPlayableVideo> = {}): FeedPlayableVideo {
+// VideoFeedItem yalnızca erişimi alınmış (URL'si kesin) videoyla mount edilir (bkz. GatedVideoFeedItem).
+type PlayableFeedVideo = FeedPlayableVideo & { playbackUrl: string };
+function makeVideo(overrides: Partial<PlayableFeedVideo> = {}): PlayableFeedVideo {
   return {
     id: "00000000-0000-4000-8000-000000000001",
     learningLanguage: "en",

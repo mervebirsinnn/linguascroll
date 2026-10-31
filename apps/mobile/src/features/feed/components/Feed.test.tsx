@@ -4,6 +4,10 @@ import { fetchFeed } from "../api/fetch-feed";
 import { getSessionSeed } from "../../../shared/session-seed";
 import { Feed } from "./Feed";
 
+// 2026-10-27 — kimlik SDK'sı (Firebase/Google Sign-In, native) testte yüklenmez: API dosyalarının
+// kullandığı header üreticisi sabit bir test token'ı döner.
+jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({ Authorization: "Bearer test-id-token" }) }));
+
 /**
  * Üst kategori seçicisinin (Akış | Animasyon | IELTS) davranışı. Gerçek native
  * render (FlatList sanallaştırma, video player) Jest ile DOĞRULANAMAZ — bu testler
@@ -71,7 +75,7 @@ function findFirst(node: TreeNode | null, predicate: (node: TreeNode) => boolean
 }
 
 async function renderFeed(): Promise<void> {
-  await render(<Feed userId={USER_ID} onOpenMemory={() => {}} />);
+  await render(<Feed userId={USER_ID} account={{ isAnonymous: true, linking: false, notice: null, onLinkAccount: () => {} }} onOpenMemory={() => {}} />);
   // Feed içerik alanını gerçek layout ölçümünden sonra mount eder.
   // Üretim koduna testID EKLENMEDİ (native view ağacına dokunan prop'lar için bkz. proje notu):
   // `onLayout` handler'ı olan düğümü render ağacından buluyoruz.
@@ -101,11 +105,11 @@ describe("Feed — kategori seçici", () => {
     mockedFetchFeed.mockResolvedValue(videoPage("1"));
     await renderFeed();
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(1));
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(USER_ID, undefined, undefined, "all");
+    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "all");
   });
 
   it("IELTS'e basınca scope=ielts ve cursor'suz ilk sayfa istenir; seçili durum IELTS'e geçer; önceki kategorinin videosu ekrandan kalkar", async () => {
-    mockedFetchFeed.mockImplementation((_user, _cursor, _pref, scope) =>
+    mockedFetchFeed.mockImplementation((_cursor, _pref, scope) =>
       Promise.resolve(scope === "ielts" ? videoPage("2") : videoPage("1", "general-cursor")),
     );
     await renderFeed();
@@ -114,7 +118,7 @@ describe("Feed — kategori seçici", () => {
     await fireEvent.press(screen.getByText("IELTS"));
 
     await waitFor(() => expect(screen.getByText("video:00000000-0000-4000-8000-000000000002")).toBeTruthy());
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(USER_ID, undefined, undefined, "ielts");
+    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "ielts");
     expect(screen.queryByText("video:00000000-0000-4000-8000-000000000001")).toBeNull();
     expect(screen.getAllByRole("tab").map((tab) => tab.props.accessibilityState?.selected)).toEqual([false, false, true]);
   });
@@ -126,13 +130,13 @@ describe("Feed — kategori seçici", () => {
 
     await fireEvent.press(screen.getByText("Animasyon"));
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(2));
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(USER_ID, undefined, undefined, "animation");
+    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "animation");
     expect(screen.getAllByRole("tab").map((tab) => tab.props.accessibilityState?.selected)).toEqual([false, true, false]);
 
     await fireEvent.press(screen.getByText("Akış"));
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(3));
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(USER_ID, undefined, undefined, "all");
-    expect(mockedFetchFeed.mock.calls.map((call) => call[3])).toEqual(["all", "animation", "all"]);
+    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "all");
+    expect(mockedFetchFeed.mock.calls.map((call) => call[2])).toEqual(["all", "animation", "all"]);
   });
 
   it("kategori değişince eski kategorinin cursor'u yeni isteğe taşınmaz (her fetch cursor'suz fresh session)", async () => {
@@ -144,12 +148,12 @@ describe("Feed — kategori seçici", () => {
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(2));
 
     for (const call of mockedFetchFeed.mock.calls) {
-      expect(call[1]).toBeUndefined();
+      expect(call[0]).toBeUndefined(); // cursor (2026-10-27: userId argümanı kalktı, cursor ilk argüman)
     }
   });
 
   it("IELTS boş döndüğünde IELTS'e özel mesaj gösterilir ve 'Tekrar dene' seçili IELTS kategorisini korur", async () => {
-    mockedFetchFeed.mockImplementation((_user, _cursor, _pref, scope) =>
+    mockedFetchFeed.mockImplementation((_cursor, _pref, scope) =>
       Promise.resolve(scope === "ielts" ? { items: [], nextCursor: null } : videoPage("1")),
     );
     await renderFeed();
@@ -160,7 +164,7 @@ describe("Feed — kategori seçici", () => {
     await fireEvent.press(screen.getByText("Tekrar dene"));
 
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalled());
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(USER_ID, undefined, undefined, "ielts");
+    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "ielts");
     expect(screen.getAllByRole("tab").map((tab) => tab.props.accessibilityState?.selected)).toEqual([false, false, true]);
   });
 });

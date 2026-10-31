@@ -12,3 +12,8 @@ config({ path: ".env.test" });
 // AppModule'ü import etmeden ÖNCE, tüm suite için TEK bir yerde kuruluyor.
 // getTestDatabaseUrl() zaten fail-fast + "linguascroll_test" guard'ını içeriyor.
 process.env.DATABASE_URL = getTestDatabaseUrl();
+
+// 2026-10-27 — FIREBASE_PROJECT_ID boot'ta zorunlu (app.module.ts envSchema). Testler gerçek bir
+// Firebase projesine gitmiyor: e2e spec'ler FirebaseTokenVerifier'ı test verifier'ıyla
+// override ediyor (bkz. src/auth/test-auth.ts) — burada sadece boot için bir değer veriliyor.
+process.env.FIREBASE_PROJECT_ID ??= "linguascroll-test";

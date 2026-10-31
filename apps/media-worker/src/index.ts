@@ -1,5 +1,31 @@
 export interface Env {
   MEDIA_BUCKET: R2Bucket;
+  /** API ile aynı secret; eksikse medya hiçbir koşulda herkese açılmaz. */
+  MEDIA_URL_SIGNING_SECRET?: string;
+}
+
+/**
+ * apps/api/src/videos/signed-media-url.ts ile BİREBİR aynı algoritma: HMAC-SHA256,
+ * girdi `${pathname}:${exp}`, imza base64url, pathname HAM (decode edilmemiş) path.
+ * Ayrı deploy birimi olduğu için ortak paket yok — birini değiştiren diğerini de değiştirmeli.
+ * `crypto.subtle.verify` karşılaştırmayı sabit zamanda yapar.
+ */
+async function hasValidSignature(url: URL, secret: string): Promise<boolean> {
+  const exp = url.searchParams.get("exp");
+  const sig = url.searchParams.get("sig");
+  if (!exp || !sig || !/^\d+$/.test(exp) || Number(exp) * 1000 <= Date.now()) {
+    return false;
+  }
+  let signature: Uint8Array;
+  try {
+    const base64 = sig.replace(/-/g, "+").replace(/_/g, "/");
+    signature = Uint8Array.from(atob(base64 + "=".repeat((4 - (base64.length % 4)) % 4)), (c) => c.charCodeAt(0));
+  } catch {
+    return false;
+  }
+  const encoder = new TextEncoder();
+  const key = await crypto.subtle.importKey("raw", encoder.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["verify"]);
+  return crypto.subtle.verify("HMAC", key, signature, encoder.encode(`${url.pathname}:${exp}`));
 }
 
 // Chunk 17 — read-only R2 playback proxy. r2.dev public dev subdomain'i
@@ -20,10 +46,20 @@ export default {
       });
     }
 
+    if (!env.MEDIA_URL_SIGNING_SECRET || env.MEDIA_URL_SIGNING_SECRET.length < 32) {
+      return new Response("Media unavailable", { status: 503, headers: { "Cache-Control": "no-store" } });
+    }
     const url = new URL(request.url);
+    // 2026-10-27 — ücretsiz hak kontrolü API'de; worker sadece API'nin verdiği kısa ömürlü
+    // imzayı doğruluyor. Geçersizse 403 (hangi kontrolün tutmadığı sızdırılmaz).
+    if (!(await hasValidSignature(url, env.MEDIA_URL_SIGNING_SECRET))) {
+      return new Response("Forbidden", { status: 403 });
+    }
     // Baştaki "/" atılıyor: R2 object key'leri slash'sız saklanıyor
     // (ör. "originals/.../video.mp4"), URL path'i "/originals/.../video.mp4".
-    const key = decodeURIComponent(url.pathname.replace(/^\/+/, ""));
+    let key: string;
+    try { key = decodeURIComponent(url.pathname.replace(/^\/+/, "")); }
+    catch { return new Response("Bad Request", { status: 400 }); }
     if (!key) {
       return new Response("Not Found", { status: 404 });
     }
@@ -38,6 +74,7 @@ export default {
       headers.set("etag", object.httpEtag);
       headers.set("accept-ranges", "bytes");
       headers.set("content-length", String(object.size));
+      headers.set("cache-control", "private, no-store");
       return new Response(null, { status: 200, headers });
     }
 
@@ -58,6 +95,12 @@ export default {
     headers.set("etag", object.httpEtag);
     headers.set("accept-ranges", "bytes");
 
+    // R2 koşullu GET: önkoşul başarısızsa 412, cache doğrulamasıysa 304; body MP4 gibi sunulmaz.
+    headers.set("cache-control", "private, no-store");
+    if (!("body" in object)) {
+      const preconditionFailed = request.headers.has("if-match") || request.headers.has("if-unmodified-since");
+      return new Response(null, { status: preconditionFailed ? 412 : 304, headers });
+    }
     const range = object.range;
     if (range) {
       const offset = "offset" in range && range.offset !== undefined ? range.offset : 0;

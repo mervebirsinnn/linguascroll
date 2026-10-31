@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
@@ -5,6 +6,7 @@ import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { videosTable } from "../videos/videos.schema";
@@ -18,7 +20,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -86,7 +88,9 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
   }
 
   async function createUser(): Promise<string> {
-    const [user] = await db.insert(usersTable).values({}).returning();
+    // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
+    const id = randomUUID();
+    const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) {
       throw new Error("Beklenen kullanıcı insert edilemedi");
     }
@@ -103,7 +107,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post(`/quizzes/${quiz.id}/answer`)
-      .send({ optionId: correctOption.id, userId });
+      .set("Authorization", bearerFor(userId)).send({ optionId: correctOption.id });
 
     expect(response.status).toBe(200);
     expect(response.body).toEqual({ correct: true, correctOptionId: correctOption.id });
@@ -120,7 +124,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post(`/quizzes/${quiz.id}/answer`)
-      .send({ optionId: wrongOption.id, userId });
+      .set("Authorization", bearerFor(userId)).send({ optionId: wrongOption.id });
 
     expect(response.status).toBe(200);
     expect(response.body).toEqual({ correct: false, correctOptionId: correctOption.id });
@@ -131,7 +135,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post("/quizzes/not-a-uuid/answer")
-      .send({ optionId: "00000000-0000-4000-8000-000000000098", userId });
+      .set("Authorization", bearerFor(userId)).send({ optionId: "00000000-0000-4000-8000-000000000098" });
 
     expect(response.status).toBe(400);
   });
@@ -141,7 +145,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post("/quizzes/00000000-0000-4000-8000-000000000099/answer")
-      .send({ optionId: "00000000-0000-4000-8000-000000000098", userId });
+      .set("Authorization", bearerFor(userId)).send({ optionId: "00000000-0000-4000-8000-000000000098" });
 
     expect(response.status).toBe(404);
   });
@@ -157,20 +161,22 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post(`/quizzes/${quizA.id}/answer`)
-      .send({ optionId: optionFromB.id, userId });
+      .set("Authorization", bearerFor(userId)).send({ optionId: optionFromB.id });
 
     expect(response.status).toBe(400);
   });
 
-  it("geçersiz request body (eksik optionId/userId) için 400 döner", async () => {
+  it("geçersiz request body (eksik optionId) için 400 döner", async () => {
     const { quiz } = await insertQuizWithOptions();
+    const userId = await createUser();
 
-    const response = await request(app.getHttpServer()).post(`/quizzes/${quiz.id}/answer`).send({});
+    const response = await request(app.getHttpServer()).post(`/quizzes/${quiz.id}/answer`).set("Authorization", bearerFor(userId)).send({});
 
     expect(response.status).toBe(400);
   });
 
-  it("malformed userId (geçersiz UUID) için 400 döner", async () => {
+  // 2026-10-27 — kimlik body'den değil token'dan: token yoksa/geçersizse 401.
+  it("token yoksa 401 döner", async () => {
     const { quiz, options } = await insertQuizWithOptions();
     const correctOption = options.find((option) => option.isCorrect);
     if (!correctOption) {
@@ -179,12 +185,12 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post(`/quizzes/${quiz.id}/answer`)
-      .send({ optionId: correctOption.id, userId: "not-a-uuid" });
+      .send({ optionId: correctOption.id });
 
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(401);
   });
 
-  it("var olmayan (ama geçerli UUID biçimli) userId için kontrollü 400 döner, 500 değil", async () => {
+  it("body'deki userId yetki kaynağı değil: geçersiz token ile başka kullanıcı adına cevap verilemez (401)", async () => {
     const { quiz, options } = await insertQuizWithOptions();
     const correctOption = options.find((option) => option.isCorrect);
     if (!correctOption) {
@@ -193,9 +199,10 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post(`/quizzes/${quiz.id}/answer`)
+      .set("Authorization", "Bearer bozuk")
       .send({ optionId: correctOption.id, userId: "00000000-0000-4000-8000-000000000099" });
 
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(401);
   });
 
   it("doğru cevap quiz_answer_events'e is_correct:true ile yazılır", async () => {
@@ -206,7 +213,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
     }
     const userId = await createUser();
 
-    await request(app.getHttpServer()).post(`/quizzes/${quiz.id}/answer`).send({ optionId: correctOption.id, userId });
+    await request(app.getHttpServer()).post(`/quizzes/${quiz.id}/answer`).set("Authorization", bearerFor(userId)).send({ optionId: correctOption.id });
 
     const [event] = await db.select().from(quizAnswerEventsTable).where(eq(quizAnswerEventsTable.userId, userId));
     expect(event).toBeDefined();
@@ -222,7 +229,7 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
     }
     const userId = await createUser();
 
-    await request(app.getHttpServer()).post(`/quizzes/${quiz.id}/answer`).send({ optionId: wrongOption.id, userId });
+    await request(app.getHttpServer()).post(`/quizzes/${quiz.id}/answer`).set("Authorization", bearerFor(userId)).send({ optionId: wrongOption.id });
 
     const [event] = await db.select().from(quizAnswerEventsTable).where(eq(quizAnswerEventsTable.userId, userId));
     expect(event).toBeDefined();
@@ -244,7 +251,8 @@ describe("POST /quizzes/:quizId/answer (e2e, gerçek Postgres)", () => {
     // hesapladığı false'u hem response'ta hem persisted event'te kullanmalı.
     const response = await request(app.getHttpServer())
       .post(`/quizzes/${quiz.id}/answer`)
-      .send({ optionId: wrongOption.id, userId, isCorrect: true });
+      .set("Authorization", bearerFor(userId))
+      .send({ optionId: wrongOption.id, isCorrect: true });
 
     expect(response.status).toBe(200);
     expect(response.body.correct).toBe(false);

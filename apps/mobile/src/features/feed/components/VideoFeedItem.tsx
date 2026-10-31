@@ -15,6 +15,7 @@ import { VocabularyWordSheet } from "../../subtitles/VocabularyWordSheet";
 import { useWordGlosses } from "../../subtitles/use-word-glosses";
 import { WordGlossSheet, type OpenWordGloss } from "../../subtitles/WordGlossSheet";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { VideoFeedbackSheet } from "./VideoFeedbackSheet";
 import { VideoAttributionSheet } from "./VideoAttributionSheet";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
@@ -23,7 +24,10 @@ const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
 type VideoFeedItemProps = {
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
   // video her zaman FeedService'in enrichment'ından geçmiş (vocabulary dahil).
-  video: FeedPlayableVideo;
+  // 2026-10-27 — `playbackUrl` burada KESİN string: feed null taşıyabilir (erişim henüz
+  // alınmadı), ama bu component yalnızca GatedVideoFeedItem erişimi aldıktan sonra mount
+  // edilir — native player hiçbir zaman URL'siz yaratılmaz.
+  video: FeedPlayableVideo & { playbackUrl: string };
   /** true ise bu video ekranda aktif/görünür olan videodur ve oynatılmalıdır. */
   isActive: boolean;
   /** Item boyutu — tek ölçüm kaynağı olarak Feed'den gelir (bkz. Feed.tsx). */
@@ -113,6 +117,7 @@ export function VideoFeedItem({
   // use-word-glosses.ts). `openGloss`, `openVocabularyWord` ile AYNI snapshot
   // deseni: tıklandığı andaki kelime+anlam, sheet kapanana kadar değişmez.
   const wordGlosses = useWordGlosses(video.id, isActive);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [openGloss, setOpenGloss] = useState<OpenWordGloss | null>(null);
 
   function handleSubtitleTap(segment: TranscriptSegment): void {
@@ -152,7 +157,7 @@ export function VideoFeedItem({
   function handleGlossTap(word: string, gloss: string): void {
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
-    setOpenGloss({ word, gloss });
+    setOpenGloss({ word, gloss, segmentId: activeSegment?.id });
   }
 
   function handleCloseGlossSheet(): void {
@@ -239,7 +244,7 @@ export function VideoFeedItem({
       const watchedMs = accumulatedMsRef.current;
       accumulatedMsRef.current = 0;
       if (watchedMs > 0) {
-        recordVideoWatchEvent(video.id, userId, watchedMs).catch(() => {
+        recordVideoWatchEvent(video.id, watchedMs).catch(() => {
           // Chunk 5'teki quiz-answer hata davranışıyla aynı minimalist tutum:
           // ayrı bir retry/hata UI'ı yok, sessizce yutuluyor.
         });
@@ -262,6 +267,8 @@ export function VideoFeedItem({
         contentFit={video.category === "animation" ? "contain" : "cover"}
         nativeControls={false}
       />
+      <Pressable onPress={() => { wasPlayingBeforeOpenRef.current = isPlayingRef.current; player.pause(); setFeedbackOpen(true); }} accessibilityRole="button" accessibilityLabel="Video hakkında geri bildirim gönder" style={{ position: "absolute", top: 12, right: 12, minWidth: 44, minHeight: 44, alignItems: "center", justifyContent: "center", backgroundColor: "#211b2cdd", borderRadius: 12 }}><Text style={{ color: "#eee", fontSize: 22 }}>⋯</Text></Pressable>
+      <VideoFeedbackSheet videoId={video.id} open={feedbackOpen} onClose={() => { setFeedbackOpen(false); if (wasPlayingBeforeOpenRef.current && isActive) player.play(); }} />
       {video.attribution && (
         <>
           <Pressable
@@ -321,6 +328,7 @@ export function VideoFeedItem({
             onPressGloss={handleGlossTap}
           />
         </ScrollView>
+        {activeSegment && <Pressable accessibilityRole="button" onPress={() => { if (isActive) { player.currentTime = activeSegment.startMs / 1000; player.play(); } }} style={{ alignSelf: "flex-end", minHeight: 44, paddingHorizontal: 14, justifyContent: "center", borderRadius: 12, backgroundColor: "#211b2cdd" }}><Text style={{ color: "#d7c5ff", fontSize: 13 }}>↺ Cümleyi tekrar dinle</Text></Pressable>}
         <ExplanationSheet
           segment={openSegment}
           vocabulary={video.vocabulary}

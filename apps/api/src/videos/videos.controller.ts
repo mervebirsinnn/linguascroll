@@ -1,19 +1,18 @@
-import { BadRequestException, Body, Controller, Get, Param, ParseUUIDPipe, Post } from "@nestjs/common";
-import {
-  recordVideoWatchEventRequestSchema,
-  type PlayableVideo,
-  type RecordVideoWatchEventRequest,
-} from "@linguascroll/shared-types";
+import { BadRequestException, Body, Controller, Param, ParseUUIDPipe, Post, UseGuards } from "@nestjs/common";
+import { recordVideoWatchEventRequestSchema, type RecordVideoWatchEventRequest } from "@linguascroll/shared-types";
+import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
 import { VideosService } from "./videos.service";
 
+// 2026-10-27 — kimlik SADECE doğrulanmış Firebase token'ından (body'deki userId kaldırıldı).
 @Controller("videos")
+@UseGuards(FirebaseAuthGuard)
 export class VideosController {
   constructor(private readonly videosService: VideosService) {}
 
-  @Get()
-  getVideos(): Promise<PlayableVideo[]> {
-    return this.videosService.getVideoFeed();
-  }
+  // 2026-10-27 — `GET /videos` KALDIRILDI: tüm kataloğu oynatılabilir URL'leriyle, hak
+  // kontrolü olmadan dönüyordu (ücretsiz sınırı deliyordu); mobile kullanmıyordu.
+  // Oynatma URL'i artık yalnızca feed (erişimi zaten olan videolar için) ve
+  // `POST /videos/:id/playback-access` (bkz. subscriptions/subscriptions.controller.ts) üzerinden.
 
   // videoId path parametresi external input — ParseUUIDPipe malformed UUID'yi
   // service/repository'ye hiç ulaşmadan 400 ile reddeder (bkz. quizzes.controller.ts'teki
@@ -23,8 +22,9 @@ export class VideosController {
   recordWatchEvent(
     @Param("videoId", new ParseUUIDPipe()) videoId: string,
     @Body() body: unknown,
+    @AuthUserId() userId: string,
   ): Promise<void> {
-    const { userId, watchedMs } = this.parseWatchEventRequest(body);
+    const { watchedMs } = this.parseWatchEventRequest(body);
     return this.videosService.recordWatchEvent(videoId, userId, watchedMs);
   }
 

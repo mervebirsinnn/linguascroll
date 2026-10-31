@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
@@ -5,6 +6,7 @@ import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
@@ -24,7 +26,7 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -43,7 +45,9 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
   });
 
   async function createUser(): Promise<string> {
-    const [user] = await db.insert(usersTable).values({}).returning();
+    // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
+    const id = randomUUID();
+    const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) throw new Error("Beklenen kullanıcı insert edilemedi");
     return user.id;
   }
@@ -77,14 +81,16 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
   }
 
   describe("GET /words/saved", () => {
-    it("malformed userId için 400 döner", async () => {
-      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId: "not-a-uuid" });
-      expect(response.status).toBe(400);
+    // 2026-10-27 — kimlik query'den değil token'dan: başkasının kelimeleri istenemez.
+    it("token yoksa 401 döner (query'deki userId yok sayılır)", async () => {
+      const victim = await createUser();
+      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId: victim });
+      expect(response.status).toBe(401);
     });
 
     it("hiç kaydedilmiş kelime yoksa boş dizi döner", async () => {
       const userId = await createUser();
-      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/saved").set("Authorization", bearerFor(userId));
       expect(response.status).toBe(200);
       expect(response.body).toEqual([]);
     });
@@ -92,9 +98,9 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
     it("kaydedilmiş bir kelime/phrase (çok kelimeli lemma dahil) memory listesinde görünür", async () => {
       const userId = await createUser();
       const wordId = await createWord("give up", "vazgeçmek");
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
 
-      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/saved").set("Authorization", bearerFor(userId));
       expect(response.status).toBe(200);
       expect(response.body).toHaveLength(1);
       expect(response.body[0].word.lemma).toBe("give up");
@@ -108,10 +114,10 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
       const segmentId = await createSegment(video, "We went on a long journey together.");
       await db.insert(videoWordsTable).values({ videoId: video, wordId });
 
-      const saveResponse = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId, sourceSegmentId: segmentId });
+      const saveResponse = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({ sourceSegmentId: segmentId });
       expect(saveResponse.status).toBe(200);
 
-      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/saved").set("Authorization", bearerFor(userId));
       expect(response.body[0].sourceSentence).toBe("We went on a long journey together.");
     });
 
@@ -126,17 +132,17 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
 
       const response = await request(app.getHttpServer())
         .put(`/words/${wordId}/saved`)
-        .send({ userId, sourceSegmentId: segmentOnVideoX });
+        .set("Authorization", bearerFor(userId)).send({ sourceSegmentId: segmentOnVideoX });
       expect(response.status).toBe(400);
     });
 
     it("unsave edilen kelime memory listesinden kalkar", async () => {
       const userId = await createUser();
       const wordId = await createWord("journey");
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
-      await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).query({ userId });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
+      await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId));
 
-      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/saved").set("Authorization", bearerFor(userId));
       expect(response.body).toEqual([]);
     });
 
@@ -146,11 +152,11 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
       const wordId = await createWord("journey");
       const segmentId = await createSegment(video, "We went on a long journey together.");
       await db.insert(videoWordsTable).values({ videoId: video, wordId });
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId, sourceSegmentId: segmentId });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({ sourceSegmentId: segmentId });
 
       await db.delete(videoTranscriptSegmentsTable).where(eq(videoTranscriptSegmentsTable.id, segmentId));
 
-      const response = await request(app.getHttpServer()).get("/words/saved").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/saved").set("Authorization", bearerFor(userId));
       expect(response.status).toBe(200);
       expect(response.body).toHaveLength(1);
       expect(response.body[0].sourceSentence).toBeNull();
@@ -161,46 +167,46 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
     it("hiç review edilmemiş kaydedilmiş kelime review session'da (due) görünür", async () => {
       const userId = await createUser();
       const wordId = await createWord("journey");
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
 
-      const response = await request(app.getHttpServer()).get("/words/review").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/review").set("Authorization", bearerFor(userId));
       expect(response.status).toBe(200);
       expect(response.body.map((w: { word: { lemma: string } }) => w.word.lemma)).toEqual(["journey"]);
     });
 
     it("kaydedilmiş kelime yoksa review session boş döner", async () => {
       const userId = await createUser();
-      const response = await request(app.getHttpServer()).get("/words/review").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/review").set("Authorization", bearerFor(userId));
       expect(response.body).toEqual([]);
     });
 
     it("review event POST edilince DB'ye kalıcı olarak yazılır — FARKLI bir GET isteğiyle (yeniden sorgu, 'restart') doğrulanır", async () => {
       const userId = await createUser();
       const wordId = await createWord("journey");
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
 
-      const postResponse = await request(app.getHttpServer()).post(`/words/${wordId}/review`).send({ userId, correct: true });
+      const postResponse = await request(app.getHttpServer()).post(`/words/${wordId}/review`).set("Authorization", bearerFor(userId)).send({ correct: true });
       expect(postResponse.status).toBe(200);
 
       // 1 doğru cevap → +1 gün dolmadan notDue, review session'dan düşmeli.
-      const response = await request(app.getHttpServer()).get("/words/review").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/review").set("Authorization", bearerFor(userId));
       expect(response.body).toEqual([]);
     });
 
     it("yanlış cevap kelimeyi HEMEN yeniden due yapar", async () => {
       const userId = await createUser();
       const wordId = await createWord("journey");
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
-      await request(app.getHttpServer()).post(`/words/${wordId}/review`).send({ userId, correct: false });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
+      await request(app.getHttpServer()).post(`/words/${wordId}/review`).set("Authorization", bearerFor(userId)).send({ correct: false });
 
-      const response = await request(app.getHttpServer()).get("/words/review").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/review").set("Authorization", bearerFor(userId));
       expect(response.body.map((w: { word: { lemma: string } }) => w.word.lemma)).toEqual(["journey"]);
     });
 
     it("malformed body (correct eksik) için 400 döner", async () => {
       const userId = await createUser();
       const wordId = await createWord("journey");
-      const response = await request(app.getHttpServer()).post(`/words/${wordId}/review`).send({ userId });
+      const response = await request(app.getHttpServer()).post(`/words/${wordId}/review`).set("Authorization", bearerFor(userId)).send({});
       expect(response.status).toBe(400);
     });
 
@@ -208,7 +214,7 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
       const userId = await createUser();
       const response = await request(app.getHttpServer())
         .post("/words/00000000-0000-4000-8000-000000000099/review")
-        .send({ userId, correct: true });
+        .set("Authorization", bearerFor(userId)).send({ correct: true });
       expect(response.status).toBe(404);
     });
 
@@ -217,23 +223,23 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
       // 2 kelime kaydet, sadece ikisi de due (hiç review edilmemiş) — tam 2 dönmeli.
       const wordAId = await createWord("apple");
       const wordBId = await createWord("banana");
-      await request(app.getHttpServer()).put(`/words/${wordAId}/saved`).send({ userId });
-      await request(app.getHttpServer()).put(`/words/${wordBId}/saved`).send({ userId });
+      await request(app.getHttpServer()).put(`/words/${wordAId}/saved`).set("Authorization", bearerFor(userId)).send({});
+      await request(app.getHttpServer()).put(`/words/${wordBId}/saved`).set("Authorization", bearerFor(userId)).send({});
 
-      const response = await request(app.getHttpServer()).get("/words/review").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/review").set("Authorization", bearerFor(userId));
       expect(response.body).toHaveLength(2);
     });
   });
 
   describe("GET /words/progress", () => {
-    it("malformed userId için 400 döner", async () => {
-      const response = await request(app.getHttpServer()).get("/words/progress").query({ userId: "not-a-uuid" });
-      expect(response.status).toBe(400);
+    it("token yoksa 401 döner", async () => {
+      const response = await request(app.getHttpServer()).get("/words/progress");
+      expect(response.status).toBe(401);
     });
 
     it("hiç kaydedilmiş/review edilmiş kelime yoksa tüm alanlar 0 döner", async () => {
       const userId = await createUser();
-      const response = await request(app.getHttpServer()).get("/words/progress").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/progress").set("Authorization", bearerFor(userId));
       expect(response.status).toBe(200);
       expect(response.body).toEqual({
         savedCount: 0,
@@ -249,11 +255,11 @@ describe("GET /words/saved, GET /words/review, POST /words/:wordId/review, GET /
       const userId = await createUser();
       const wordAId = await createWord("journey");
       const wordBId = await createWord("habit");
-      await request(app.getHttpServer()).put(`/words/${wordAId}/saved`).send({ userId });
-      await request(app.getHttpServer()).put(`/words/${wordBId}/saved`).send({ userId });
-      await request(app.getHttpServer()).post(`/words/${wordAId}/review`).send({ userId, correct: true });
+      await request(app.getHttpServer()).put(`/words/${wordAId}/saved`).set("Authorization", bearerFor(userId)).send({});
+      await request(app.getHttpServer()).put(`/words/${wordBId}/saved`).set("Authorization", bearerFor(userId)).send({});
+      await request(app.getHttpServer()).post(`/words/${wordAId}/review`).set("Authorization", bearerFor(userId)).send({ correct: true });
 
-      const response = await request(app.getHttpServer()).get("/words/progress").query({ userId });
+      const response = await request(app.getHttpServer()).get("/words/progress").set("Authorization", bearerFor(userId));
       expect(response.body.savedCount).toBe(2);
       expect(response.body.reviewedCount).toBe(1);
       expect(response.body.rememberedCorrectlyCount).toBe(1);

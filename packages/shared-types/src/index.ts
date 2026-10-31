@@ -16,8 +16,7 @@ export {
   answerQuizResponseSchema,
   type AnswerQuizResponse,
 } from "./quiz-answer";
-export { anonymousUserSchema, type AnonymousUser } from "./anonymous-user";
-export { userExistsResponseSchema, type UserExistsResponse } from "./user-exists-response";
+export { currentUserSchema, type CurrentUser } from "./current-user";
 export {
   recordVideoWatchEventRequestSchema,
   type RecordVideoWatchEventRequest,
@@ -35,3 +34,7 @@ export {
 } from "./word-glosses";
 export { feedScopeSchema, scopedContentCategorySchema, type FeedScope } from "./feed-scope";
 export { sessionSeedSchema, type SessionSeed } from "./session-seed";
+export { playbackAccessResponseSchema, type PlaybackAccessResponse } from "./playback-access";
+export { subscriptionStatusSchema, type SubscriptionStatus } from "./subscription-status";
+export { subscriptionDetailsSchema, subscriptionOverviewSchema, type SubscriptionDetails, type SubscriptionOverview } from "./subscription-overview";
+export { saveGlossRequestSchema, saveGlossResponseSchema, videoFeedbackRequestSchema, type SaveGlossResponse, type VideoFeedbackRequest } from "./learning-actions";

@@ -29,7 +29,7 @@ export function QuizFeedItem({ quiz, height, width, userId }: QuizFeedItemProps)
   function submit(optionId: string): void {
     setIsSubmitting(true);
     setSubmitError(null);
-    answerQuiz(quiz.id, optionId, userId)
+    answerQuiz(quiz.id, optionId)
       .then((response) => {
         setResult(response);
       })

@@ -15,8 +15,9 @@ import { feedQuizSchema } from "./feed-quiz";
 export const feedItemSchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("video"), video: feedPlayableVideoSchema }),
   z.object({ type: z.literal("quiz"), quiz: feedQuizSchema }),
-  // 2026-10-01 — ücretsiz günlük video limiti dolunca `FeedService` bu item'ı
-  // döner (bkz. feed.service.ts). Payload YOK: mobile kendi statik paywall
+  // 2026-10-01 — ücretsiz video hakkı dolunca `FeedService` bu item'ı döner
+  // (2026-10-27: günlük değil, hesap başına toplam 10 — sayfada kalan hak kadar
+  // yeni videodan SONRA eklenir, bkz. feed.service.ts). Payload YOK: mobile kendi statik paywall
   // UI'ını RevenueCat'in getOfferings() çağrısından besler, backend fiyat
   // verisi taşımaz — sadece "burada dur" sinyali.
   z.object({ type: z.literal("paywall") }),

@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { feedPageSchema } from "@linguascroll/shared-types";
@@ -6,6 +7,7 @@ import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { transcriptSegmentLearningPointsTable } from "../videos/transcript-segment-learning-points.schema";
@@ -24,7 +26,7 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -43,7 +45,9 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   });
 
   async function createUser(): Promise<string> {
-    const [user] = await db.insert(usersTable).values({}).returning();
+    // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
+    const id = randomUUID();
+    const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) {
       throw new Error("Beklenen kullanıcı insert edilemedi");
     }
@@ -104,30 +108,35 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
 
   async function getFeed(userId: string, cursor?: string): Promise<request.Response> {
     return cursor
-      ? request(app.getHttpServer()).get(`/feed?userId=${userId}&cursor=${encodeURIComponent(cursor)}`)
-      : request(app.getHttpServer()).get(`/feed?userId=${userId}&sessionSeed=${E2E_SEED}`);
+      ? request(app.getHttpServer()).get(`/feed?cursor=${encodeURIComponent(cursor)}`).set("Authorization", bearerFor(userId))
+      : request(app.getHttpServer()).get(`/feed?sessionSeed=${E2E_SEED}`).set("Authorization", bearerFor(userId));
   }
 
   async function getFeedWithPreference(userId: string, level?: string, topics?: string): Promise<request.Response> {
-    const params = new URLSearchParams({ userId, sessionSeed: E2E_SEED });
+    const params = new URLSearchParams({ sessionSeed: E2E_SEED });
     if (level) params.set("level", level);
     if (topics) params.set("topics", topics);
-    return request(app.getHttpServer()).get(`/feed?${params.toString()}`);
+    return request(app.getHttpServer()).get(`/feed?${params.toString()}`).set("Authorization", bearerFor(userId));
   }
 
-  it("malformed userId için 400 döner", async () => {
-    const response = await request(app.getHttpServer()).get("/feed?userId=not-a-uuid");
-    expect(response.status).toBe(400);
+  // 2026-10-27 — kimlik doğrulanmış token'dan: token yok/geçersizse 401. İstemcinin gönderdiği
+  // bir userId query param'ı artık hiçbir etki yaratmaz (başkasının feed'i istenemez).
+  it("token yoksa 401 döner", async () => {
+    expect((await request(app.getHttpServer()).get(`/feed?sessionSeed=${E2E_SEED}`)).status).toBe(401);
   });
 
-  it("userId query param'ı hiç yoksa 400 döner", async () => {
-    const response = await request(app.getHttpServer()).get("/feed");
-    expect(response.status).toBe(400);
+  it("geçersiz token için 401 döner", async () => {
+    const response = await request(app.getHttpServer()).get(`/feed?sessionSeed=${E2E_SEED}`).set("Authorization", "Bearer bozuk");
+    expect(response.status).toBe(401);
   });
 
-  it("var olmayan (ama geçerli UUID biçimli) userId için kontrollü 400 döner, 500 değil", async () => {
-    const response = await request(app.getHttpServer()).get("/feed?userId=00000000-0000-4000-8000-000000000099");
-    expect(response.status).toBe(400);
+  it("query'deki userId yetki kaynağı değil: başka kullanıcının id'si verilse de feed token sahibine aittir", async () => {
+    const owner = await createUser();
+    const other = await createUser();
+    const response = await request(app.getHttpServer())
+      .get(`/feed?userId=${other}&sessionSeed=${E2E_SEED}`)
+      .set("Authorization", bearerFor(owner));
+    expect(response.status).toBe(200);
   });
 
   it("DB'de video yokken, geçerli bir user için 200 {items:[], nextCursor:null} döner", async () => {
@@ -402,7 +411,7 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
       const videoId = await createVideo("travel");
       const wordId = await createWordForVideo(videoId, "journey");
 
-      const saveResponse = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+      const saveResponse = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
       expect(saveResponse.status).toBe(200);
 
       const response = await getFeed(userId);
@@ -418,9 +427,9 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
       const userId = await createUser();
       const videoId = await createVideo("travel");
       const wordId = await createWordForVideo(videoId, "journey");
-      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+      await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
 
-      const unsaveResponse = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).query({ userId });
+      const unsaveResponse = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId));
       expect(unsaveResponse.status).toBe(200);
 
       const response = await getFeed(userId);

@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { eq } from "drizzle-orm";
@@ -5,6 +6,7 @@ import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
@@ -19,7 +21,7 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -38,7 +40,9 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
   });
 
   async function createUser(): Promise<string> {
-    const [user] = await db.insert(usersTable).values({}).returning();
+    // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
+    const id = randomUUID();
+    const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) throw new Error("Beklenen kullanıcı insert edilemedi");
     return user.id;
   }
@@ -50,29 +54,31 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
   }
 
   it("malformed wordId için 400 döner", async () => {
-    const response = await request(app.getHttpServer()).put("/words/not-a-uuid/saved").send({ userId: await createUser() });
+    const userId = await createUser();
+    const response = await request(app.getHttpServer()).put("/words/not-a-uuid/saved").set("Authorization", bearerFor(userId)).send({});
     expect(response.status).toBe(400);
   });
 
-  it("malformed body (userId yok/geçersiz) için 400 döner", async () => {
+  it("malformed body (geçersiz sourceSegmentId) için 400 döner", async () => {
     const wordId = await createWord();
-    const response = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId: "not-a-uuid" });
+    const userId = await createUser();
+    const response = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({ sourceSegmentId: "not-a-uuid" });
     expect(response.status).toBe(400);
   });
 
-  it("var olmayan (ama geçerli UUID biçimli) userId için kontrollü 400 döner, 500 değil", async () => {
+  // 2026-10-27 — kimlik body/query'den değil token'dan.
+  it("token yoksa kaydetme/silme 401 döner; body'deki userId ile başkası adına işlem yapılamaz", async () => {
     const wordId = await createWord();
-    const response = await request(app.getHttpServer())
-      .put(`/words/${wordId}/saved`)
-      .send({ userId: "00000000-0000-4000-8000-000000000099" });
-    expect(response.status).toBe(400);
+    const victim = await createUser();
+    expect((await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId: victim })).status).toBe(401);
+    expect((await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).query({ userId: victim })).status).toBe(401);
   });
 
   it("var olmayan (ama geçerli UUID biçimli) wordId için kontrollü 404 döner, 500 değil", async () => {
     const userId = await createUser();
     const response = await request(app.getHttpServer())
       .put("/words/00000000-0000-4000-8000-000000000099/saved")
-      .send({ userId });
+      .set("Authorization", bearerFor(userId)).send({});
     expect(response.status).toBe(404);
   });
 
@@ -80,7 +86,7 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
     const userId = await createUser();
     const wordId = await createWord();
 
-    const response = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+    const response = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
     expect(response.status).toBe(200);
 
     const rows = await db.select().from(userSavedWordsTable).where(eq(userSavedWordsTable.wordId, wordId));
@@ -91,8 +97,8 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
     const userId = await createUser();
     const wordId = await createWord();
 
-    const first = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
-    const second = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+    const first = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
+    const second = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
     expect(first.status).toBe(200);
     expect(second.status).toBe(200);
 
@@ -103,9 +109,9 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
   it("unsave başarılı olur, satır DB'den silinir", async () => {
     const userId = await createUser();
     const wordId = await createWord();
-    await request(app.getHttpServer()).put(`/words/${wordId}/saved`).send({ userId });
+    await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
 
-    const response = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).query({ userId });
+    const response = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId));
     expect(response.status).toBe(200);
 
     const rows = await db.select().from(userSavedWordsTable).where(eq(userSavedWordsTable.wordId, wordId));
@@ -116,7 +122,7 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
     const userId = await createUser();
     const wordId = await createWord();
 
-    const response = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).query({ userId });
+    const response = await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId));
     expect(response.status).toBe(200);
   });
 });
@@ -127,7 +133,7 @@ describe("GET /words/glosses (e2e, gerçek Postgres → WordGlossesService → C
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
     const connection = createTestDatabaseConnection();

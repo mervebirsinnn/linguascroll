@@ -17,6 +17,7 @@ export type RawPackage = {
     price: number;
     priceString: string;
     introPrice: RawIntroPrice | null;
+    introductoryPriceLabel?: string | null;
   };
 };
 
@@ -31,12 +32,15 @@ export type PaywallPackage = {
   periodLabel: string;
   /** Örn. "7 gün ücretsiz"; ücretsiz deneme yoksa null. */
   trialLabel: string | null;
+  /** Deneme süresi tek başına, örn. "7 gün" — iptal cümlesinde kullanılır; deneme yoksa null. */
+  trialPeriod: string | null;
   /**
    * Yıllık planın aylık plana göre GERÇEK tasarruf yüzdesi. Sadece aylık + yıllık fiyatlar
    * birlikte varsa ve yıllık gerçekten daha ucuzsa dolu — uydurma/yuvarlanmış bir "%50
    * avantajlı" etiketi göstermiyoruz (Play politikası + tüketici mevzuatı).
    */
   savingsPercent: number | null;
+  introductoryPriceLabel?: string | null;
 };
 
 const KIND_BY_TYPE: Record<string, PaywallPackageKind> = {
@@ -60,23 +64,28 @@ const PERIOD_LABEL_BY_KIND: Record<PaywallPackageKind, string> = {
 };
 
 /** Sadece FİYATI 0 olan bir tanıtım teklifi "ücretsiz deneme"dir (indirimli ilk dönem değil). */
-export function toTrialLabel(intro: RawIntroPrice | null): string | null {
+export function toTrialPeriod(intro: RawIntroPrice | null): string | null {
   if (intro === null || intro.price !== 0 || intro.periodNumberOfUnits <= 0) {
     return null;
   }
   const n = intro.periodNumberOfUnits;
   switch (intro.periodUnit) {
     case "DAY":
-      return `${n} gün ücretsiz`;
+      return `${n} gün`;
     case "WEEK":
-      return `${n * 7} gün ücretsiz`;
+      return `${n * 7} gün`;
     case "MONTH":
-      return `${n} ay ücretsiz`;
+      return `${n} ay`;
     case "YEAR":
-      return `${n} yıl ücretsiz`;
+      return `${n} yıl`;
     default:
       return null;
   }
+}
+
+export function toTrialLabel(intro: RawIntroPrice | null): string | null {
+  const period = toTrialPeriod(intro);
+  return period === null ? null : `${period} ücretsiz`;
 }
 
 /** Yıllık, 12 aylık ödemeden ne kadar ucuz? Yıllık daha ucuz DEĞİLSE null. */
@@ -103,7 +112,9 @@ export function buildPaywallPackages(raw: readonly RawPackage[]): PaywallPackage
       title: TITLE_BY_KIND[kind],
       priceString: p.product.priceString,
       periodLabel: PERIOD_LABEL_BY_KIND[kind],
+      introductoryPriceLabel: p.product.introductoryPriceLabel ?? null,
       trialLabel: toTrialLabel(p.product.introPrice),
+      trialPeriod: toTrialPeriod(p.product.introPrice),
       savingsPercent: kind === "annual" && monthly ? computeAnnualSavingsPercent(monthly.product.price, p.product.price) : null,
     });
   }
@@ -119,9 +130,21 @@ export function ctaLabel(pkg: PaywallPackage): string {
   return pkg.trialLabel ? `${pkg.trialLabel} dene` : "Abone ol";
 }
 
-/** Play politikası: fiyat, ücretlendirme zamanı ve iptal yolu AÇIKÇA yazılmalı. */
+/**
+ * Play politikası: fiyat, ücretlendirme zamanı ve iptal yolu AÇIKÇA yazılmalı.
+ * 2026-10-28 — ürün kararı: 7 günlük ücretsiz deneme (Play'deki base plan teklifi). Deneme
+ * süresi metne SABİT yazılmıyor, Play'den gelen teklifin süresinden üretiliyor — panelde süre
+ * değişirse ya da teklif kaldırılırsa metin yanlış bir söz vermez.
+ */
 export function finePrint(pkg: PaywallPackage): string {
   const price = `${pkg.priceString} / ${pkg.periodLabel}`;
-  const cancel = "İstediğin zaman Google Play'den iptal edebilirsin.";
-  return pkg.trialLabel ? `Deneme bitince ${price} ücretlendirilirsin. ${cancel}` : `${price}. ${cancel}`;
+  const payment = pkg.introductoryPriceLabel ? `${pkg.introductoryPriceLabel}, ardından ${price}` : price;
+  const where = "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.";
+  if (pkg.trialPeriod === null) {
+    return `${payment}. Abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir; istediğin zaman iptal edebilirsin. ${where}`;
+  }
+  return (
+    `İlk ${pkg.trialPeriod} ücretsiz. ${pkg.trialPeriod} içinde iptal edersen hiçbir ücret ödemezsin. ` +
+    `İptal etmezsen deneme bitince ${payment} ücretlendirilirsin ve abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir. ${where}`
+  );
 }

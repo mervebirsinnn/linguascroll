@@ -11,6 +11,10 @@ import {
   type FeedState,
 } from "./use-feed";
 
+// 2026-10-27 — kimlik SDK'sı (Firebase/Google Sign-In, native) testte yüklenmez: API dosyalarının
+// kullandığı header üreticisi sabit bir test token'ı döner.
+jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({ Authorization: "Bearer test-id-token" }) }));
+
 // use-feed → fetch-feed → session-seed → expo-crypto (native modül Jest/Node'da yok): kontrollü mock.
 jest.mock("expo-crypto", () => ({ getRandomValues: (array: Uint8Array) => array.fill(1) }));
 

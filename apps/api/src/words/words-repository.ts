@@ -3,6 +3,8 @@ import { wordSchema, type Word } from "@linguascroll/shared-types";
 import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
+import { videosTable } from "../videos/videos.schema";
+import { segmentWordGlossesTable } from "./segment-word-glosses.schema";
 import { videoWordsTable } from "./video-words.schema";
 import { userSavedWordsTable } from "./user-saved-words.schema";
 import { wordsTable } from "./words.schema";
@@ -19,6 +21,23 @@ export type SavedWordRow = { word: Word; savedAt: Date; sourceSentence: string |
 @Injectable()
 export class WordsRepository {
   constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
+
+  /** Anlam istemciden alınmaz: offline segment verisinden çözülür, kayıt/review'a bağlanır. */
+  async saveSegmentGloss(userId: string, segmentId: string, lemma: string): Promise<Word | null> {
+    return this.db.transaction(async (tx) => {
+      const [segment] = await tx.select({ language: videosTable.learningLanguage })
+        .from(videoTranscriptSegmentsTable).innerJoin(videosTable, eq(videosTable.id, videoTranscriptSegmentsTable.videoId))
+        .where(eq(videoTranscriptSegmentsTable.id, segmentId)).for("update", { of: videoTranscriptSegmentsTable });
+      if (!segment) return null;
+      const [entry] = await tx.select({ gloss: segmentWordGlossesTable.gloss }).from(segmentWordGlossesTable)
+        .where(and(eq(segmentWordGlossesTable.segmentId, segmentId), eq(segmentWordGlossesTable.word, lemma)));
+      if (!entry) return null;
+      const [existing] = await tx.select().from(wordsTable).where(and(eq(wordsTable.language, segment.language), eq(wordsTable.lemma, lemma), eq(wordsTable.gloss, entry.gloss))).orderBy(wordsTable.id).limit(1);
+      const word = existing ?? (await tx.insert(wordsTable).values({ language: segment.language, lemma, gloss: entry.gloss }).returning())[0]!;
+      await tx.insert(userSavedWordsTable).values({ userId, wordId: word.id, sourceSegmentId: segmentId }).onConflictDoNothing();
+      return toWord(word);
+    });
+  }
 
   async findWordById(wordId: string): Promise<Word | null> {
     const [row] = await this.db.select().from(wordsTable).where(eq(wordsTable.id, wordId));

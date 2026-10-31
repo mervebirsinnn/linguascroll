@@ -14,13 +14,14 @@ import type {
   FeedScope,
 } from "@linguascroll/shared-types";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import type { AccountLinkControl } from "../../identity/auth-state";
 import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
 import { PaywallFeedItem } from "../../subscription/PaywallFeedItem";
 import { FeedListFooter } from "./FeedListFooter";
 import { getFeedItemKey } from "./get-feed-item-key";
+import { GatedVideoFeedItem } from "./GatedVideoFeedItem";
 import { QuizFeedItem } from "./QuizFeedItem";
-import { VideoFeedItem } from "./VideoFeedItem";
 
 // looplish.app'in favicon.svg'siyle AYNI logo (L harfi + oynat üçgeni). react-native-svg
 // bağımlılığı eklememek için PNG olarak üretilmiş (bkz. assets/brand-mark.png).
@@ -85,6 +86,8 @@ type FeedProps = {
    * edilmiyor.
    */
   onOpenMemory: () => void;
+  /** 2026-10-28 — misafir/hesaplı durum ve paywall'daki "Google ile devam et" (bkz. PaywallFeedItem). */
+  account: AccountLinkControl;
 };
 
 export function Feed(props: FeedProps) {
@@ -153,6 +156,7 @@ export function Feed(props: FeedProps) {
 function FeedContent({
   userId,
   preference,
+  account,
   scope,
   height,
   width,
@@ -284,8 +288,10 @@ function FeedContent({
         renderItem={({ item }) => {
           const isActive = getFeedItemKey(item) === resolvedActiveItemKey;
           if (item.type === "video") {
+            // 2026-10-27 — erişim katmanı: feed URL taşımıyorsa (henüz açılmamış video)
+            // oynatma erişimi backend'den istenir; ücretsiz hak orada tüketilir.
             return (
-              <VideoFeedItem
+              <GatedVideoFeedItem
                 video={item.video}
                 isActive={isActive}
                 height={height}
@@ -294,6 +300,8 @@ function FeedContent({
                 isWordSaved={isWordSaved}
                 isWordPending={isWordPending}
                 onToggleSaveWord={onToggleSaveWord}
+                account={account}
+                onUnlocked={handleRefresh}
               />
             );
           }
@@ -309,11 +317,14 @@ function FeedContent({
               />
             );
           }
-          // Ücretsiz günlük limit dolunca backend'in döndürdüğü TERMİNAL item (bkz.
-          // feed.service.ts, nextCursor hep null). Satın alma/geri yükleme aktif bir
-          // abonelik verince feed yenilenir: backend'in kapısı o kullanıcı için artık açık.
-          return <PaywallFeedItem height={height} width={width} onUnlocked={handleRefresh} />;
+          // Ücretsiz hak (hesap başına toplam 10 video) dolunca backend'in döndürdüğü TERMİNAL
+          // item (bkz. feed.service.ts, nextCursor hep null). Abonelik backend'de doğrulanınca
+          // (bkz. use-paywall.ts) feed yenilenir: backend o kullanıcı için artık sınırsız.
+          return <PaywallFeedItem height={height} width={width} userId={userId} account={account} onUnlocked={handleRefresh} />;
         }}
+        // 2026-10-28 — misafir Google hesabını bağlayınca (account değişir) görünür paywall'ın
+        // butonu yeniden çizilmeli; FlatList PureComponent olduğu için bunu extraData'dan anlar.
+        extraData={account}
         pagingEnabled
         showsVerticalScrollIndicator={false}
         getItemLayout={(_, index) => ({

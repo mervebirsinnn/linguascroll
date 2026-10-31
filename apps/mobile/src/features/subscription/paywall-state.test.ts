@@ -4,17 +4,22 @@ import {
   applyActionStart,
   applyOfferingsError,
   applyOfferingsLoaded,
+  applyVerificationFailed,
+  applyVerificationStart,
+  applyVerificationSucceeded,
+  canRetryVerification,
   canStartAction,
   INITIAL_PAYWALL_STATE,
+  NOTICE_VERIFICATION_PENDING,
   selectPackage,
   type PaywallState,
 } from "./paywall-state";
 
-const annual: PaywallPackage = { id: "annual", kind: "annual", title: "Yıllık", priceString: "₺600", periodLabel: "yıl", trialLabel: "7 gün ücretsiz", savingsPercent: 50 };
-const monthly: PaywallPackage = { id: "monthly", kind: "monthly", title: "Aylık", priceString: "₺100", periodLabel: "ay", trialLabel: null, savingsPercent: null };
+const annual: PaywallPackage = { id: "annual", kind: "annual", title: "Yıllık", priceString: "₺600", periodLabel: "yıl", trialLabel: "7 gün ücretsiz", trialPeriod: "7 gün", savingsPercent: 50 };
+const monthly: PaywallPackage = { id: "monthly", kind: "monthly", title: "Aylık", priceString: "₺100", periodLabel: "ay", trialLabel: null, trialPeriod: null, savingsPercent: null };
 
 function ready(overrides: Partial<Extract<PaywallState, { status: "ready" }>> = {}): PaywallState {
-  return { status: "ready", packages: [annual, monthly], selectedId: "annual", action: "idle", notice: null, ...overrides };
+  return { status: "ready", packages: [annual, monthly], selectedId: "annual", action: "idle", notice: null, verificationPending: false, ...overrides };
 }
 
 describe("paywall state geçişleri", () => {
@@ -55,5 +60,26 @@ describe("paywall state geçişleri", () => {
   it("ready dışındaki durumlarda aksiyon geçişleri durumu değiştirmez", () => {
     expect(applyActionStart({ status: "loading" }, "purchasing")).toEqual({ status: "loading" });
     expect(applyActionEnd({ status: "loading" }, "x")).toEqual({ status: "loading" });
+  });
+
+  it("satın alma sonrası backend doğrulaması: purchasing → verifying → (başarı) idle", () => {
+    const verifying = applyVerificationStart(ready({ action: "purchasing" }));
+    expect(verifying).toMatchObject({ action: "verifying", notice: null });
+    expect(canStartAction(verifying)).toBe(false);
+    expect(applyVerificationSucceeded(verifying)).toMatchObject({ action: "idle", verificationPending: false, notice: null });
+  });
+
+  it("doğrulama başarısızsa erişim açılmaz: anlaşılır bildirim + yeniden deneme sunulur", () => {
+    const failed = applyVerificationFailed(ready({ action: "verifying" }));
+    expect(failed).toMatchObject({ action: "idle", verificationPending: true, notice: NOTICE_VERIFICATION_PENDING });
+    expect(canRetryVerification(failed)).toBe(true);
+    expect(canRetryVerification(ready())).toBe(false);
+    expect(canRetryVerification(applyVerificationStart(failed))).toBe(false);
+  });
+
+  it("ready dışındaki durumlarda doğrulama geçişleri durumu değiştirmez", () => {
+    expect(applyVerificationStart({ status: "loading" })).toEqual({ status: "loading" });
+    expect(applyVerificationFailed({ status: "loading" })).toEqual({ status: "loading" });
+    expect(applyVerificationSucceeded({ status: "loading" })).toEqual({ status: "loading" });
   });
 });

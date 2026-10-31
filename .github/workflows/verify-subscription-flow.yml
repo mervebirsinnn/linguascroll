@@ -1,0 +1,46 @@
+name: Verify subscription and learning flows
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: linguascroll
+          POSTGRES_PASSWORD: test-only-password
+          POSTGRES_DB: linguascroll_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U linguascroll -d linguascroll_test"
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    env:
+      DATABASE_URL: postgres://linguascroll:test-only-password@localhost:5432/linguascroll_test
+      TEST_DATABASE_URL: postgres://linguascroll:test-only-password@localhost:5432/linguascroll_test
+      FIREBASE_PROJECT_ID: linguascroll-test
+      FEED_CURSOR_SECRET: test-only-feed-cursor-secret-at-least-32-chars
+      CONTENT_ADMIN_SECRET: test-only-content-admin-secret
+      SUBSCRIPTION_GATE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @linguascroll/shared-types build
+      - run: pnpm --filter @linguascroll/api db:migrate
+      - run: pnpm --filter @linguascroll/api typecheck
+      - run: pnpm --filter @linguascroll/api exec jest --runInBand
+      - run: pnpm --filter @linguascroll/mobile typecheck
+      - run: pnpm --filter @linguascroll/mobile typecheck:test
+      - run: pnpm --filter @linguascroll/mobile exec jest --runInBand
+      - run: pnpm --filter @linguascroll/media-worker typecheck
+      - run: pnpm --filter @linguascroll/media-worker test

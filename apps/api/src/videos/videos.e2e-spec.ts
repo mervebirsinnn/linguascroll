@@ -1,17 +1,18 @@
+import { randomUUID } from "node:crypto";
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
-import { playableVideoSchema } from "@linguascroll/shared-types";
 import { eq } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { AppModule } from "../app.module";
+import { bearerFor, withTestAuth } from "../auth/test-auth";
 import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "./test-database";
 import { videoWatchEventsTable } from "./video-watch-events.schema";
 import { videosTable } from "./videos.schema";
 
-describe("GET /videos (e2e, gerçek Postgres → Drizzle → Repository → Service → Controller → HTTP)", () => {
+describe("/videos (e2e, gerçek Postgres → Drizzle → Repository → Service → Controller → HTTP)", () => {
   let app: INestApplication;
   let db: NodePgDatabase;
   let pool: Pool;
@@ -21,7 +22,7 @@ describe("GET /videos (e2e, gerçek Postgres → Drizzle → Repository → Serv
     // bu dosya (ve dolayısıyla AppModule) import edilmeden ÖNCE yapılıyor — bkz.
     // jest.setup.ts'teki gerekçe. Production kodu (AppModule/DatabaseModule)
     // TEST_DATABASE_URL'in varlığını hiç bilmiyor, sadece DATABASE_URL okuyor.
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -43,17 +44,11 @@ describe("GET /videos (e2e, gerçek Postgres → Drizzle → Repository → Serv
     await app.close();
   });
 
-  it("DB boşken 200 [] döner", async () => {
-    const response = await request(app.getHttpServer()).get("/videos");
-
-    expect(response.status).toBe(200);
-    expect(response.body).toEqual([]);
-  });
-
-  it("videoları PlayableVideo contract'ı ile döner, muxAssetId/createdAt sızdırmaz", async () => {
-    // muxAssetId, resolvePlaybackUrl'ün TANIDIĞI bir değer olmak zorunda — bilinmeyen
-    // bir muxAssetId (bilinçli olarak) fail-fast throw ediyor, sessizce fallback'e
-    // düşmüyor. Bu yüzden gerçek curated eşlemedeki (local-*) bir id kullanıyoruz.
+  // 2026-10-27 — `GET /videos` KALDIRILDI: tüm kataloğu oynatılabilir URL'leriyle,
+  // kimlik/hak kontrolü olmadan dönüyordu — ücretsiz hak sınırını tamamen deliyordu.
+  // Mobile hiç kullanmıyordu (feed + playback-access kullanıyor). Bu test endpoint'in
+  // yanlışlıkla geri gelmesini yakalar.
+  it("GET /videos artık yok (404) — kataloğu URL'leriyle sızdıran endpoint kaldırıldı", async () => {
     await db.insert(videosTable).values({
       learningLanguage: "en",
       cefrLevel: "B1",
@@ -63,49 +58,7 @@ describe("GET /videos (e2e, gerçek Postgres → Drizzle → Repository → Serv
     });
 
     const response = await request(app.getHttpServer()).get("/videos");
-    expect(response.status).toBe(200);
-
-    // 1) Contract validation: gerçek playableVideoSchema, elle yazılmış bir
-    // assertion değil — üretim şemasının ta kendisi.
-    const parsed = playableVideoSchema.array().parse(response.body);
-    expect(parsed).toHaveLength(1);
-    const [video] = parsed;
-    if (!video) {
-      throw new Error("Beklenen video bulunamadı");
-    }
-    expect(video.playbackUrl).toEqual(expect.any(String));
-    expect(video.learningLanguage).toBe("en");
-    expect(video.cefrLevel).toBe("B1");
-    expect(video.topic).toBe("travel");
-    expect(video.durationMs).toBe(5000);
-
-    // 2) Internal-field leak protection: contract-validation'dan BAĞIMSIZ, explicit
-    // property assertion. Şema'nın kendisi yarın yanlışlıkla muxAssetId/createdAt/
-    // vocabulary eklerse, (1) bunu yakalamaz ama bu ikinci kontrol yine de patlar.
-    for (const item of response.body as unknown[]) {
-      expect(item).not.toHaveProperty("muxAssetId");
-      expect(item).not.toHaveProperty("createdAt");
-      expect(item).not.toHaveProperty("vocabulary");
-    }
-  });
-
-  it("Chunk 9 review düzeltmesi: doğrudan /videos projeksiyonu SAHTE bir vocabulary alanı TAŞIMIYOR (VideosService vocabulary'den habersiz)", async () => {
-    const [video] = await db
-      .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: "local-working-out-again", topic: "travel", durationMs: 1000 })
-      .returning();
-    if (!video) {
-      throw new Error("Beklenen video insert edilemedi");
-    }
-
-    const response = await request(app.getHttpServer()).get("/videos");
-    expect(response.status).toBe(200);
-
-    // playableVideoSchema (base contract) vocabulary alanı tanımlamıyor — bu yüzden
-    // response'ta fazladan bir `vocabulary` anahtarı varsa bile Zod onu sessizce
-    // stripler; asıl kanıt HAM response body'de bu alanın hiç bulunmaması.
-    const [rawVideo] = response.body as { vocabulary?: unknown }[];
-    expect(rawVideo).not.toHaveProperty("vocabulary");
+    expect(response.status).toBe(404);
   });
 });
 
@@ -115,7 +68,7 @@ describe("POST /videos/:videoId/watch-events (e2e, gerçek Postgres)", () => {
   let pool: Pool;
 
   beforeAll(async () => {
-    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    const moduleRef = await withTestAuth(Test.createTestingModule({ imports: [AppModule] })).compile();
     app = moduleRef.createNestApplication();
     await app.init();
 
@@ -151,7 +104,9 @@ describe("POST /videos/:videoId/watch-events (e2e, gerçek Postgres)", () => {
   }
 
   async function createUser(): Promise<string> {
-    const [user] = await db.insert(usersTable).values({}).returning();
+    // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
+    const id = randomUUID();
+    const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) {
       throw new Error("Beklenen kullanıcı insert edilemedi");
     }
@@ -164,7 +119,7 @@ describe("POST /videos/:videoId/watch-events (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post(`/videos/${videoId}/watch-events`)
-      .send({ userId, watchedMs: 4200 });
+      .set("Authorization", bearerFor(userId)).send({ watchedMs: 4200 });
 
     expect(response.status).toBe(201);
 
@@ -178,8 +133,8 @@ describe("POST /videos/:videoId/watch-events (e2e, gerçek Postgres)", () => {
     const videoId = await createVideo();
     const userId = await createUser();
 
-    await request(app.getHttpServer()).post(`/videos/${videoId}/watch-events`).send({ userId, watchedMs: 1000 });
-    await request(app.getHttpServer()).post(`/videos/${videoId}/watch-events`).send({ userId, watchedMs: 2000 });
+    await request(app.getHttpServer()).post(`/videos/${videoId}/watch-events`).set("Authorization", bearerFor(userId)).send({ watchedMs: 1000 });
+    await request(app.getHttpServer()).post(`/videos/${videoId}/watch-events`).set("Authorization", bearerFor(userId)).send({ watchedMs: 2000 });
 
     const events = await db.select().from(videoWatchEventsTable).where(eq(videoWatchEventsTable.userId, userId));
     expect(events).toHaveLength(2);
@@ -191,7 +146,7 @@ describe("POST /videos/:videoId/watch-events (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post("/videos/not-a-uuid/watch-events")
-      .send({ userId, watchedMs: 1000 });
+      .set("Authorization", bearerFor(userId)).send({ watchedMs: 1000 });
 
     expect(response.status).toBe(400);
   });
@@ -201,28 +156,33 @@ describe("POST /videos/:videoId/watch-events (e2e, gerçek Postgres)", () => {
 
     const response = await request(app.getHttpServer())
       .post("/videos/00000000-0000-4000-8000-000000000099/watch-events")
-      .send({ userId, watchedMs: 1000 });
+      .set("Authorization", bearerFor(userId)).send({ watchedMs: 1000 });
 
     expect(response.status).toBe(404);
   });
 
-  it("malformed userId (geçersiz UUID) için 400 döner", async () => {
+  // 2026-10-27 — kimlik body'den değil token'dan.
+  it("token yoksa 401 döner ve hiçbir satır yazılmaz", async () => {
     const videoId = await createVideo();
 
-    const response = await request(app.getHttpServer())
-      .post(`/videos/${videoId}/watch-events`)
-      .send({ userId: "not-a-uuid", watchedMs: 1000 });
+    const response = await request(app.getHttpServer()).post(`/videos/${videoId}/watch-events`).send({ watchedMs: 1000 });
 
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(401);
+    expect(await db.select().from(videoWatchEventsTable)).toHaveLength(0);
   });
 
-  it("var olmayan (ama geçerli UUID biçimli) userId için kontrollü 400 döner, 500 değil", async () => {
+  it("body'deki userId yok sayılır: olay token sahibine yazılır, başka kullanıcıya değil", async () => {
     const videoId = await createVideo();
+    const owner = await createUser();
+    const other = await createUser();
 
     const response = await request(app.getHttpServer())
       .post(`/videos/${videoId}/watch-events`)
-      .send({ userId: "00000000-0000-4000-8000-000000000099", watchedMs: 1000 });
+      .set("Authorization", bearerFor(owner))
+      .send({ userId: other, watchedMs: 1000 });
 
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(201);
+    expect(await db.select().from(videoWatchEventsTable).where(eq(videoWatchEventsTable.userId, other))).toHaveLength(0);
+    expect(await db.select().from(videoWatchEventsTable).where(eq(videoWatchEventsTable.userId, owner))).toHaveLength(1);
   });
 });

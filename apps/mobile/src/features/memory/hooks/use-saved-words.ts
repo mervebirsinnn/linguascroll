@@ -27,7 +27,7 @@ export function useSavedWords(userId: string): { state: SavedWordsState; reload:
     let isCancelled = false;
     setState({ status: "loading" });
 
-    fetchSavedWords(userId)
+    fetchSavedWords()
       .then((words) => {
         if (!isCancelled) {
           setState({ status: "success", words });
