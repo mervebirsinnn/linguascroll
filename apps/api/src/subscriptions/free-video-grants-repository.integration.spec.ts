@@ -56,6 +56,26 @@ describe("FreeVideoGrantsRepository (integration, gerçek Postgres)", () => {
     return (await db.select().from(freeVideoGrantsTable).where(eq(freeVideoGrantsTable.userId, userId))).length;
   }
 
+  it("eşzamanlı ilk seçkiler aynı 10 videoyu sabitler; tekrar izleme ve yeni içerik değiştirmez", async () => {
+    const user = await createUser(); const ids = await createVideos(15);
+    const [a,b] = await Promise.all([
+      repository.getOrCreatePreview(user, "all", ids, 10),
+      repository.getOrCreatePreview(user, "all", [...ids].reverse(), 10),
+    ]);
+    expect(a.size).toBe(10); expect(a).toEqual(b);
+    expect(await repository.getOrCreatePreview(user, "all", [...ids].reverse(), 10)).toEqual(a);
+    const other = await repository.getOrCreatePreview(user, "ielts", [...ids].reverse(), 10);
+    expect(other.size).toBe(10); expect(other).not.toEqual(a);
+  });
+
+  it("10'dan küçük katalogdaki boş yerleri tamamlar; mevcut videoları değiştirmez", async () => {
+    const user = await createUser(); const ids = await createVideos(12);
+    const first = await repository.getOrCreatePreview(user, "animation", ids.slice(0, 3), 10);
+    const completed = await repository.getOrCreatePreview(user, "animation", ids, 10);
+    expect(first.size).toBe(3); expect(completed.size).toBe(10);
+    for(const id of first) expect(completed.has(id)).toBe(true);
+  });
+
   it("ilk 10 farklı video açılır, 11. 'exhausted' döner ve deftere yazılmaz", async () => {
     const userId = await createUser();
     const videos = await createVideos(11);

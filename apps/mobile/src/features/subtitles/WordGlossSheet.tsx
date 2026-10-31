@@ -3,7 +3,7 @@ import { saveGloss } from "./api/save-gloss";
 import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 
-export type OpenWordGloss = { word: string; gloss: string; segmentId?: string };
+export type OpenWordGloss = { word: string; gloss: string; segmentId?: string; sentence?: string };
 
 type WordGlossSheetProps = { entry: OpenWordGloss | null; onClose: () => void };
 
@@ -45,6 +45,7 @@ export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
             <View>
               <Text style={styles.word}>{entry.word}</Text>
               <Text style={styles.gloss}>{entry.gloss}</Text>
+              {entry.sentence && <Text style={[styles.gloss, { marginTop: 12, fontStyle: "italic" }]}>{entry.sentence}</Text>}
               {entry.segmentId && <Pressable accessibilityRole="button" disabled={pending || saved} onPress={() => { void save(); }} style={styles.save}><Text style={styles.saveText}>{pending ? "Kaydediliyor…" : saved ? "Kelimelerine eklendi ✓" : "Kelimelerime kaydet"}</Text></Pressable>}
               {notice && <Text accessibilityRole="alert" style={styles.notice}>{notice}</Text>}
               <Pressable onPress={onClose} accessibilityRole="button" style={styles.save}><Text style={styles.saveText}>Videoya dön</Text></Pressable>

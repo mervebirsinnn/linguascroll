@@ -19,10 +19,12 @@ jest.mock("./api/refresh-subscription", () => ({
 }));
 
 const mockFetchPackages = jest.fn();
+const mockCurrentSubscription = jest.fn();
 const mockPurchase = jest.fn();
 let mockPurchaseUpdate: (() => void) | null = null;
 const mockRestore = jest.fn();
 jest.mock("./purchases-gateway", () => ({
+  hasCurrentSubscription: (...args: unknown[]) => mockCurrentSubscription(...args),
   subscribeToPurchaseUpdates: (callback: () => void) => { mockPurchaseUpdate = callback; return () => {}; },
   initializePurchases: jest.fn().mockResolvedValue(true),
   fetchPaywallPackages: (...args: unknown[]) => mockFetchPackages(...args),
@@ -46,16 +48,25 @@ jest.setTimeout(60_000);
 beforeEach(() => {
   jest.clearAllMocks();
   mockRefreshSubscription.mockResolvedValue({ active: true });
+  mockCurrentSubscription.mockResolvedValue(false);
 });
 
 describe("PaywallFeedItem", () => {
+  it("ücretsiz seçkiyi yeniden açmak satın alma başlatmaz", async () => {
+    const replay = jest.fn();
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} onReplayFreeVideos={replay} />);
+    await fireEvent.press(screen.getByText("Ücretsiz videoları tekrar izle"));
+    expect(replay).toHaveBeenCalledTimes(1);
+    expect(mockPurchase).not.toHaveBeenCalled();
+  });
+
   it("paketler yüklenene kadar 'Yükleniyor…', hata olursa anlaşılır bir mesaj gösterir", async () => {
     mockFetchPackages.mockRejectedValueOnce(new Error("anahtar yok"));
     await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
 
     expect(await screen.findByText(/Abonelik seçenekleri şu an yüklenemedi/)).toBeTruthy();
     // Limit bilgisi ve başlık, paketler olmasa da görünür — kullanıcı kırık bir ekran görmez.
-    expect(screen.getByText(/10 ücretsiz videonu izledin/)).toBeTruthy();
+    expect(screen.getByText(/10 ücretsiz videoyu tekrar izleyebilirsin/)).toBeTruthy();
   });
 
   it("yükleme başarısız olursa kullanıcı seçenekleri yeniden yükleyebilir", async () => {
@@ -131,27 +142,27 @@ describe("PaywallFeedItem", () => {
     const onUnlocked = jest.fn();
     mockFetchPackages.mockResolvedValueOnce([annual]);
     mockPurchase.mockResolvedValueOnce("purchased");
-    mockRefreshSubscription.mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: true });
+    mockRefreshSubscription.mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: true });
     await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
 
     await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
-    expect(await screen.findByText(/aboneliğin henüz doğrulanamadı/)).toBeTruthy();
+    expect(await screen.findByText(/aboneliğin henüz doğrulanamadı/, {}, { timeout: 6000 })).toBeTruthy();
     expect(onUnlocked).not.toHaveBeenCalled();
 
     await fireEvent.press(screen.getByText("Tekrar dene"));
     await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1));
-    expect(mockRefreshSubscription).toHaveBeenCalledTimes(2); // kimlik token'da — userId gönderilmez
+    expect(mockRefreshSubscription).toHaveBeenCalledTimes(4); // kimlik token'da — userId gönderilmez
   });
 
   it("doğrulama isteği ağ hatası verirse de erişim açılmaz ve yeniden deneme sunulur", async () => {
     const onUnlocked = jest.fn();
     mockFetchPackages.mockResolvedValueOnce([annual]);
     mockPurchase.mockResolvedValueOnce("purchased");
-    mockRefreshSubscription.mockRejectedValueOnce(new Error("ağ"));
+    mockRefreshSubscription.mockRejectedValue(new Error("ağ"));
     await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
 
     await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
-    expect(await screen.findByText("Tekrar dene")).toBeTruthy();
+    expect(await screen.findByText("Tekrar dene", {}, { timeout: 6000 })).toBeTruthy();
     expect(onUnlocked).not.toHaveBeenCalled();
   });
 
@@ -222,7 +233,7 @@ it("bekleyen ödeme ikinci satın almayı engeller, SDK güncellemesi backend ü
   await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
   await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
   expect(await screen.findByText(/Ödemen onay bekliyor/)).toBeTruthy();
-  await fireEvent.press(screen.getByText("7 gün ücretsiz dene"));
+  expect(screen.getByText("Aboneliği doğrula")).toBeTruthy();
   expect(mockPurchase).toHaveBeenCalledTimes(1); expect(onUnlocked).not.toHaveBeenCalled();
   await act(async () => { mockPurchaseUpdate?.(); });
   await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1));
@@ -235,4 +246,31 @@ it("satın alma devam ederken çift dokunuş yalnızca bir mağaza işlemi başl
   await fireEvent.press(screen.getByText("Google Play açılıyor…"));
   expect(mockPurchase).toHaveBeenCalledTimes(1);
   await act(async () => { finish("cancelled"); }); await waitFor(() => expect(screen.getByText("7 gün ücretsiz dene")).toBeTruthy());
+});
+
+it("zaten aboneliği olan kullanıcının satın alması geri yüklenir ve backend onayıyla akış açılır", async () => {
+  const onUnlocked = jest.fn();
+  mockFetchPackages.mockResolvedValueOnce([annual]);
+  mockPurchase.mockResolvedValueOnce("already-owned"); mockRestore.mockResolvedValueOnce(true);
+  await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
+  await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+  await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1));
+  expect(mockRestore).toHaveBeenCalledWith(USER_ID);
+  expect(mockPurchase).toHaveBeenCalledTimes(1);
+});
+it("paywall yeniden açılınca mevcut Premium yeni ödeme istenmeden doğrulanır", async () => {
+  const onUnlocked = jest.fn(); mockCurrentSubscription.mockResolvedValueOnce(true);
+  mockFetchPackages.mockResolvedValueOnce([annual]);
+  await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
+  await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1));
+  expect(mockPurchase).not.toHaveBeenCalled(); expect(mockRestore).not.toHaveBeenCalled();
+});
+it("mağaza kaydı backend'e gecikmeli ulaşınca kısa yeniden deneme akışı açar", async () => {
+  const onUnlocked = jest.fn(); mockFetchPackages.mockResolvedValueOnce([annual]);
+  mockPurchase.mockResolvedValueOnce("purchased");
+  mockRefreshSubscription.mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: true });
+  await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={onUnlocked} />);
+  await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+  await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1), { timeout: 4000 });
+  expect(mockRefreshSubscription).toHaveBeenCalledTimes(2);
 });

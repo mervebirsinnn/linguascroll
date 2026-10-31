@@ -156,7 +156,7 @@ first request — there's no separate config framework/file beyond this.
 `subtitles`, `preferences`), each with its own `api/` (thin fetch wrappers hitting the NestJS API)
 and `components`/`hooks`. `App.tsx` mounts `<Feed>` only once there is a Firebase session plus a backend
 user (`features/identity/use-auth.ts` — `auth.state.status === "signedIn"`). On first launch that session
-is an automatic *anonymous* Firebase user (the first 10 free videos need no sign-in); Google sign-in is
+is an automatic *anonymous* Firebase user (each feed has a persistent selection of 10 replayable free videos without sign-in); Google sign-in is
 offered on the paywall and *links* to that anonymous user (same Firebase UID → same backend user, grants
 and RevenueCat id) — see `features/identity/auth-state.ts`. Every user-scoped API request carries the Firebase ID token
 (`features/identity/auth-headers.ts`); the API derives the user only from that token

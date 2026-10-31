@@ -66,7 +66,7 @@ export function SubtitleOverlay({
             <Text
               key={index}
               style={styles.vocabularyWord}
-              onPress={() => onPressWord(span.word!, segment)}
+              onPress={(event) => { event.stopPropagation(); onPressWord(span.word!, segment); }}
             >
               {span.text}
             </Text>
@@ -74,7 +74,7 @@ export function SubtitleOverlay({
             <Text
               key={index}
               style={styles.glossWord}
-              onPress={() => onPressGloss(span.text, span.gloss!)}
+              onPress={(event) => { event.stopPropagation(); onPressGloss(span.text, span.gloss!); }}
             >
               {span.text}
             </Text>

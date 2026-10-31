@@ -33,7 +33,7 @@ describe("SubtitleOverlay — tıklanabilir kelimeler", () => {
       <SubtitleOverlay segment={segment} onPress={onPress} vocabulary={[]} onPressWord={jest.fn()} glosses={{ went: "gitti", i: "ben" }} onPressGloss={onPressGloss} />,
     );
 
-    await fireEvent.press(result.getByText("went"));
+    await fireEvent.press(result.getByText("went"), { stopPropagation: jest.fn() });
 
     expect(onPressGloss).toHaveBeenCalledWith("went", "gitti");
     expect(onPress).not.toHaveBeenCalled();
@@ -65,7 +65,7 @@ describe("SubtitleOverlay — tıklanabilir kelimeler", () => {
       <SubtitleOverlay segment={segment} onPress={jest.fn()} vocabulary={[vocabularyItem]} onPressWord={onPressWord} glosses={{ home: "ev", went: "gitti" }} onPressGloss={onPressGloss} />,
     );
 
-    await fireEvent.press(result.getByText("home"));
+    await fireEvent.press(result.getByText("home"), { stopPropagation: jest.fn() });
 
     expect(onPressWord).toHaveBeenCalledWith(vocabularyItem, segment);
     expect(onPressGloss).not.toHaveBeenCalled();

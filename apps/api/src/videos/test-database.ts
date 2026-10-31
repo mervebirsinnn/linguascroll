@@ -50,6 +50,6 @@ export function createTestDatabaseConnection(): { db: NodePgDatabase; pool: Pool
  */
 export async function truncateTestTables(db: NodePgDatabase): Promise<void> {
   await db.execute(
-    sql`TRUNCATE TABLE deleted_accounts, video_feedback, videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points, word_review_events, segment_word_glosses, free_video_grants`,
+    sql`TRUNCATE TABLE deleted_accounts, video_feedback, videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points, word_review_events, segment_word_glosses, free_video_grants, free_preview_videos`,
   );
 }

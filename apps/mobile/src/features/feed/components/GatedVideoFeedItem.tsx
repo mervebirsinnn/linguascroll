@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
-import type { FeedPlayableVideo } from "@linguascroll/shared-types";
+import type { FeedPlayableVideo, FeedScope } from "@linguascroll/shared-types";
 import type { AccountLinkControl } from "../../identity/auth-state";
 import { PaywallFeedItem } from "../../subscription/PaywallFeedItem";
 import { usePlaybackAccess } from "../hooks/use-playback-access";
@@ -8,6 +8,7 @@ import { VideoFeedItem } from "./VideoFeedItem";
 
 type GatedVideoFeedItemProps = Omit<ComponentProps<typeof VideoFeedItem>, "video"> & {
   video: FeedPlayableVideo;
+  scope: FeedScope;
   /** Yerinde paywall gösterilirse misafir kullanıcının Google hesabı bağlaması için (bkz. PaywallFeedItem). */
   account: AccountLinkControl;
   /** Erişim reddedilip yerinde paywall gösterilirse, satın alma sonrası feed'i yeniler. */
@@ -26,14 +27,14 @@ type GatedVideoFeedItemProps = Omit<ComponentProps<typeof VideoFeedItem>, "video
  * sayfanın açılmamış videolarıyla birlikte kalan haktan fazla yeni video gösterebilir; ayrıca
  * başka bir cihaz son hakkı aynı anda kullanmış olabilir. Bu durumda videonun yerinde paywall.
  */
-export function GatedVideoFeedItem({ video, account, onUnlocked, ...rest }: GatedVideoFeedItemProps) {
-  const { state, retry } = usePlaybackAccess(video.id, video.playbackUrl, rest.isActive);
+export function GatedVideoFeedItem({ video, account, onUnlocked, scope, ...rest }: GatedVideoFeedItemProps) {
+  const { state, retry } = usePlaybackAccess(video.id, video.playbackUrl, rest.isActive, scope);
 
   if (state.status === "ready") {
     return <VideoFeedItem {...rest} video={{ ...video, playbackUrl: state.playbackUrl }} />;
   }
   if (state.status === "paywall") {
-    return <PaywallFeedItem height={rest.height} width={rest.width} userId={rest.userId} account={account} onUnlocked={onUnlocked} />;
+    return <PaywallFeedItem height={rest.height} width={rest.width} userId={rest.userId} account={account} onUnlocked={onUnlocked} onReplayFreeVideos={onUnlocked} />;
   }
   return (
     <View style={[styles.placeholder, { height: rest.height, width: rest.width }]}>

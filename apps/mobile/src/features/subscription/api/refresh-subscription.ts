@@ -17,6 +17,7 @@ export async function refreshSubscription(): Promise<SubscriptionStatus> {
   });
 
   if (!response.ok) {
+    if (__DEV__) console.warn("[subscriptions] Backend doğrulaması başarısız", { status: response.status });
     throw new Error(`Abonelik doğrulanamadı: ${response.status} ${response.statusText}`);
   }
 

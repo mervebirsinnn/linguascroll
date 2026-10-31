@@ -19,7 +19,7 @@ import { buildPaywallPackages, type PaywallPackage } from "./paywall-model";
  * panelindeki "Restore behavior" ayarına bağlı (bkz. rapor: "Keep with original App User ID").
  */
 
-export type PurchaseOutcome = "purchased" | "cancelled" | "pending";
+export type PurchaseOutcome = "purchased" | "cancelled" | "pending" | "already-owned";
 
 let configured = false;
 let identityQueue: Promise<unknown> = Promise.resolve();
@@ -134,6 +134,9 @@ export function purchasePackageById(id: string, expectedUserId?: string): Promis
     if (code === Purchases.PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) {
       return "cancelled";
     }
+    if (code === Purchases.PURCHASES_ERROR_CODE.PRODUCT_ALREADY_PURCHASED_ERROR) {
+      return "already-owned";
+    }
     if (code === Purchases.PURCHASES_ERROR_CODE.PAYMENT_PENDING_ERROR) {
       return "pending";
     }
@@ -177,4 +180,14 @@ export function subscribeToPurchaseUpdates(onChanged: () => void): () => void {
   const listener = () => onChanged();
   Purchases.addCustomerInfoUpdateListener(listener);
   return () => Purchases.removeCustomerInfoUpdateListener(listener);
+}
+
+/** Ekran yeniden açıldığında SDK önbelleği değil güncel müşteri durumu kontrol edilir.
+ * Bu yalnızca backend doğrulamasını başlatır; tek başına erişim vermez. */
+export function hasCurrentSubscription(expectedUserId: string): Promise<boolean> {
+  return serializeIdentity(async () => {
+    if (!configured || currentUserId !== expectedUserId) throw new Error("Abonelik hesabı değişti.");
+    await Purchases.invalidateCustomerInfoCache();
+    return hasActiveEntitlement(await Purchases.getCustomerInfo());
+  });
 }

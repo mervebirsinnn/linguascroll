@@ -11,7 +11,8 @@ const wordGlossesCache = createWordGlossesCache(fetchWordGlosses);
  * (bu özellik bir artı — yüklenemezse hata ekranı çıkmaz).
  */
 export function useWordGlosses(videoId: string, enabled: boolean): VideoWordGlosses | undefined {
-  const [glosses, setGlosses] = useState<VideoWordGlosses | undefined>(() => wordGlossesCache.getCached(videoId));
+  const [loaded, setLoaded] = useState<{videoId: string; value: VideoWordGlosses} | null>(null);
+  const glosses = loaded?.videoId === videoId ? loaded.value : wordGlossesCache.getCached(videoId);
 
   useEffect(() => {
     if (!enabled || glosses) {
@@ -22,7 +23,7 @@ export function useWordGlosses(videoId: string, enabled: boolean): VideoWordGlos
       .load(videoId)
       .then((loaded) => {
         if (!isCancelled) {
-          setGlosses(loaded);
+          setLoaded({ videoId, value: loaded });
         }
       })
       .catch(() => {

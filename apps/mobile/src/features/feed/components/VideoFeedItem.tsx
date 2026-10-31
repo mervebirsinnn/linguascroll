@@ -157,7 +157,7 @@ export function VideoFeedItem({
   function handleGlossTap(word: string, gloss: string): void {
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
-    setOpenGloss({ word, gloss, segmentId: activeSegment?.id });
+    setOpenGloss({ word, gloss, segmentId: activeSegment?.id, sentence: activeSegment?.text });
   }
 
   function handleCloseGlossSheet(): void {

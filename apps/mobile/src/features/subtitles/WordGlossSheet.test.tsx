@@ -9,7 +9,8 @@ jest.mock("react-native/Libraries/Modal/Modal", () => {
 });
 it("hazırlanmış anlam anında görünür; yalnızca Kaydet eylemi API çağırır ve tekrar kaydetmez", async () => {
   jest.mocked(saveGloss).mockResolvedValue({ saved: true, word: { id: "00000000-0000-4000-8000-000000000001", language: "en", lemma: "bank", gloss: "nehir kıyısı" } });
-  await render(<WordGlossSheet entry={{ word: "bank", gloss: "nehir kıyısı", segmentId: "segment" }} onClose={jest.fn()} />);
+  await render(<WordGlossSheet entry={{ word: "bank", gloss: "nehir kıyısı", segmentId: "segment", sentence: "We sat by the bank." }} onClose={jest.fn()} />);
+  expect(screen.getByText("We sat by the bank.")).toBeTruthy();
   expect(screen.getByText("nehir kıyısı")).toBeTruthy(); expect(saveGloss).not.toHaveBeenCalled();
   await fireEvent.press(screen.getByText("Kelimelerime kaydet"));
   await screen.findByText("Kelimelerine eklendi ✓");
