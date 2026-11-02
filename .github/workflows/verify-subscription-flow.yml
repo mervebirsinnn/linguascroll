@@ -38,7 +38,11 @@ jobs:
       - run: pnpm --filter @linguascroll/shared-types build
       - run: pnpm --filter @linguascroll/api db:migrate
       - run: pnpm --filter @linguascroll/api typecheck
+      - run: pnpm --filter @linguascroll/api build
+      - run: pnpm --filter @linguascroll/api stt:build
+      - run: pnpm --filter @linguascroll/api stt:test -- --runInBand
       - run: pnpm --filter @linguascroll/api exec jest --runInBand
+      - run: pnpm --filter @linguascroll/mobile release:test
       - run: pnpm --filter @linguascroll/mobile typecheck
       - run: pnpm --filter @linguascroll/mobile typecheck:test
       - run: pnpm --filter @linguascroll/mobile exec jest --runInBand

@@ -28,7 +28,9 @@
         "buildType": "app-bundle"
       },
       "env": {
-        "EXPO_PUBLIC_API_BASE_URL": "https://looplish-api.onrender.com"
+        "EXPO_PUBLIC_API_BASE_URL": "https://looplish-api.onrender.com",
+        "EXPO_PUBLIC_SUPPORT_EMAIL": "mervebr99@outlook.com",
+        "EXPO_PUBLIC_PRIVACY_URL": "https://looplish.app/privacy"
       }
     }
   }

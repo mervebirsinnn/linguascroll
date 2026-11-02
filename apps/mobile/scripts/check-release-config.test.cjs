@@ -1,0 +1,13 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const {spawnSync}=require('node:child_process');const {validateReleaseEnv}=require('./check-release-config.cjs');
+const valid={EXPO_PUBLIC_API_BASE_URL:'https://api.looplish.app',EXPO_PUBLIC_FIREBASE_API_KEY:'public-test',EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN:'test.firebaseapp.com',EXPO_PUBLIC_FIREBASE_PROJECT_ID:'test',EXPO_PUBLIC_FIREBASE_APP_ID:'test',EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID:'test',EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY:'goog_public-test',EXPO_PUBLIC_PRIVACY_URL:'https://looplish.app/privacy',EXPO_PUBLIC_TERMS_URL:'https://looplish.app/terms',EXPO_PUBLIC_SUPPORT_EMAIL:'support@looplish.app'};
+test('tam production ortamını kabul eder',()=>assert.deepEqual(validateReleaseEnv(valid),[]));
+for(const url of ['http://looplish.app','https://localhost','https://foo.localhost','https://192.168.1.1','https://10.1.2.3','https://172.16.1.1','https://172.31.255.1','https://127.0.0.1','https://[::1]','https://[fd00::1]','https://169.254.1.1','https://100.64.0.1','https://user:pass@looplish.app'])test('erişilemeyen/uygunsuz release URL reddedilir: '+url,()=>assert.ok(validateReleaseEnv({...valid,EXPO_PUBLIC_API_BASE_URL:url}).some(e=>e.startsWith('EXPO_PUBLIC_API_BASE_URL'))));
+test('boşluk alanı eksik sayılır ve anahtar değeri yazılmaz',()=>{const e=validateReleaseEnv({...valid,EXPO_PUBLIC_FIREBASE_API_KEY:'   '});assert.deepEqual(e,['EXPO_PUBLIC_FIREBASE_API_KEY eksik']);});
+test('hatalı destek adresi ve test RevenueCat anahtarı reddedilir',()=>assert.equal(validateReleaseEnv({...valid,EXPO_PUBLIC_SUPPORT_EMAIL:'support',EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY:'test_secret-value'}).length,2));
+test('production EAS hook eksik ortamda build durdurur',()=>{const r=spawnSync(process.execPath,[require.resolve('./check-release-config.cjs'),'--eas'],{env:{EAS_BUILD_PROFILE:'production'},encoding:'utf8'});assert.equal(r.status,1);assert.match(r.stderr,/EXPO_PUBLIC_API_BASE_URL eksik/);});
+test('development EAS hook satın alma ayarlarını zorunlu tutmaz',()=>{const r=spawnSync(process.execPath,[require.resolve('./check-release-config.cjs'),'--eas'],{env:{EAS_BUILD_PROFILE:'development'},encoding:'utf8'});assert.equal(r.status,0);});
+
+test('production doğrulaması EAS build yaşam döngüsüne bağlıdır',()=>{
+  const pkg=require('../package.json');
+  assert.equal(pkg.scripts['eas-build-pre-install'],'node scripts/check-release-config.cjs --eas');
+});

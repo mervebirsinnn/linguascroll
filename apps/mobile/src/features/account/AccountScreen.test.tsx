@@ -14,6 +14,7 @@ beforeEach(() => {
   mockSubscription.mockReturnValue({ overview: null, status: "active", action: "idle", notice: null, refresh: jest.fn(), restore: jest.fn(), manage: jest.fn() });
 });
 
+// Windows/soğuk RN render ölçümü 11,7 sn; diğer testlerin zaman sınırı değişmez.
 it("misafir yalnızca hesap bağlayabilir; çıkış ve mağaza eylemleri sunulmaz", async () => {
   await render(<AccountScreen userId="guest" account={{ ...account, isAnonymous: true }} onBack={jest.fn()} onSignOut={jest.fn()} />);
   await fireEvent.press(screen.getByText("Google ile devam et"));
@@ -21,7 +22,7 @@ it("misafir yalnızca hesap bağlayabilir; çıkış ve mağaza eylemleri sunulm
   expect(screen.queryByText("Çıkış yap")).toBeNull();
   expect(screen.queryByText("Aboneliği yönet")).toBeNull();
   expect(screen.getByText("Hesap bağlamak abonelik başlatmaz.")).toBeTruthy();
-});
+}, 30000);
 
 it("abonelik yönetimi ve geri yükleme doğru eylemlere bağlıdır", async () => {
   await render(<AccountScreen userId="linked" account={account} onBack={jest.fn()} onSignOut={jest.fn()} />);
