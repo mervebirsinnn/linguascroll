@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: verify-subscription-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     services:
       postgres:
         image: postgres:17
@@ -48,3 +52,19 @@ jobs:
       - run: pnpm --filter @linguascroll/mobile exec jest --runInBand
       - run: pnpm --filter @linguascroll/media-worker typecheck
       - run: pnpm --filter @linguascroll/media-worker test
+
+  stt-windows:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @linguascroll/api stt:build
+      - run: pnpm --filter @linguascroll/api stt:test --runInBand

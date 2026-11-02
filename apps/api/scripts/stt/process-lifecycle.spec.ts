@@ -85,14 +85,22 @@ describe("killChildTree — platform dallanması (fake child, gerçek OS çağr�
   it("win32'de child.kill() DOĞRUDAN çağrılmaz — taskkill /T üzerinden gidilir", () => {
     const kill = jest.fn();
     const child: KillableChild = { pid: 999999, kill };
-
-    killChildTree(child, "win32");
-
-    expect(kill).not.toHaveBeenCalled();
+    const taskkill = jest.spyOn(require("node:child_process"), "spawnSync").mockReturnValue({ status: 0 });
+    try {
+      killChildTree(child, "win32");
+      expect(taskkill).toHaveBeenCalledWith("taskkill", ["/pid", "999999", "/T", "/F"]);
+      expect(kill).not.toHaveBeenCalled();
+    } finally {
+      taskkill.mockRestore();
+    }
   });
 });
 
-describe("killChildTree — GERÇEK entegrasyon: tüm process ağacı sonlanıyor mu (Windows)", () => {
+// taskkill yalnızca Windows'ta vardır. Linux'ta gerçek çocuk süreç başlatmak
+// testi zaman aşımına uğratır ve Jest'in açık süreçle takılmasına neden olur.
+// Windows CI job'ı bu entegrasyonu gerçekten çalıştırır; unit dalları her OS'te çalışır.
+const describeWindows = process.platform === "win32" ? describe : describe.skip;
+describeWindows("killChildTree — GERÇEK entegrasyon: tüm process ağacı sonlanıyor mu (Windows)", () => {
   it("bir process + onun spawn ettiği grandchild, killChildTree(parent,'win32') sonrası İKİSİ DE duruyor", async () => {
     const runId = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
     const ownHeartbeat = path.join(os.tmpdir(), `linguascroll-stt-test-own-${runId}.txt`);
@@ -116,7 +124,10 @@ describe("killChildTree — GERÇEK entegrasyon: tüm process ağacı sonlanıyo
       expect(ownSizeBeforeKill).toBeGreaterThan(0);
       expect(childSizeBeforeKill).toBeGreaterThan(0);
 
-      const exited = new Promise<void>((resolve) => proc.once("exit", () => resolve()));
+      const exited = new Promise<void>((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error("taskkill sonrası süreç kapanmadı")), 8000);
+        proc.once("exit", () => { clearTimeout(timer); resolve(); });
+      });
       killChildTree({ pid: proc.pid, kill: (s) => proc.kill(s) }, "win32");
       await exited;
 
@@ -133,7 +144,7 @@ describe("killChildTree — GERÇEK entegrasyon: tüm process ağacı sonlanıyo
       expect(childSizeLater).toBe(childSizeRightAfterKill);
     } finally {
       try {
-        proc.kill("SIGKILL");
+        killChildTree({ pid: proc.pid, kill: (s) => proc.kill(s) }, "win32");
       } catch {
         // zaten ölü olabilir
       }
