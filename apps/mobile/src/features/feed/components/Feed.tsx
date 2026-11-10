@@ -60,20 +60,13 @@ const WINDOW_SIZE = 5;
 const INITIAL_NUM_TO_RENDER = 2;
 const MAX_TO_RENDER_PER_BATCH = 2;
 
-// Üst bölüm seçici: sıra ürün kararıdır (Akış | Animasyon | IELTS). `value` shared-types'taki FeedScope'tur
-// (ayrı bir string union YOK): "Akış" = "all" yani BÜTÜN kategoriler; Animasyon/IELTS yalnızca o
-// kategori. "all" bir ContentCategory/DB değeri değildir.
-const SCOPE_TABS: readonly { value: FeedScope; label: string }[] = [
-  { value: "all", label: "Akış" },
-  { value: "animation", label: "Animasyon" },
-  { value: "ielts", label: "IELTS" },
-];
+// Ürün kararı (2026-11-10): Akış | Animasyon | IELTS sekmeleri kaldırıldı; uygulama doğrudan tek akışla
+// açılır ve bütün videolar oradan oynar. Alternatif (sekmeleri gizleyip kategori bazlı akışı silmek) reddedildi:
+// useFeed/API zaten `scope` taşıyor, sabit "all" vermek en küçük ve geri alınabilir değişiklik.
+// "all" bir ContentCategory/DB değeri değildir, bütün kategoriler anlamına gelen FeedScope'tur.
+const FEED_SCOPE: FeedScope = "all";
 
-const EMPTY_FEED_MESSAGES: Record<FeedScope, string> = {
-  all: "Henüz video yok.",
-  animation: "Animasyon sahneleri henüz yayımlanmadı.",
-  ielts: "IELTS içerikleri henüz yayımlanmadı.",
-};
+const EMPTY_FEED_MESSAGE = "Henüz video yok.";
 
 type FeedProps = {
   userId: string;
@@ -91,7 +84,7 @@ type FeedProps = {
 };
 
 export function Feed(props: FeedProps) {
-  const [scope, setScope] = useState<FeedScope>("all");
+  const scope = FEED_SCOPE;
   const insets = useSafeAreaInsets();
   const [viewport, setViewport] = useState({ height: 0, width: 0 });
   return (
@@ -109,26 +102,6 @@ export function Feed(props: FeedProps) {
           >
             <Text style={styles.memoryButtonText}>Kelimelerim</Text>
           </Pressable>
-        </View>
-        <View style={styles.categoryRow}>
-          {SCOPE_TABS.map(({ value, label }) => (
-            <Pressable
-              key={value}
-              onPress={() => setScope(value)}
-              accessibilityRole="tab"
-              accessibilityState={{ selected: scope === value }}
-              style={[styles.categoryTab, scope === value && styles.categoryTabSelected]}
-            >
-              <Text
-                numberOfLines={1}
-                adjustsFontSizeToFit
-                minimumFontScale={0.85}
-                style={[styles.categoryTabText, scope === value && styles.categoryTabTextSelected]}
-              >
-                {label}
-              </Text>
-            </Pressable>
-          ))}
         </View>
       </View>
       {/* Bölüm değişince bütün oyuncular/istek state'i unmount olur; eski response yeni akışa eklenemez. */}
@@ -255,7 +228,7 @@ function FeedContent({
     return (
       <View style={styles.centered}>
         <Text style={styles.message}>
-          {EMPTY_FEED_MESSAGES[scope]}
+          {EMPTY_FEED_MESSAGE}
         </Text>
         <Pressable
           onPress={handleRefresh}
@@ -399,27 +372,6 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     letterSpacing: -0.8,
   },
-  categoryRow: {
-    flexDirection: "row",
-    padding: 4,
-    gap: 4,
-    borderRadius: 24,
-    backgroundColor: "#24212d",
-  },
-  // Üç sekme dar ekranda (≈360dp) kesilmesin: yatay dolgu küçük, tek satır + küçülen yazı (bkz. SCOPE_TABS render'ı).
-  categoryTab: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 20,
-    minHeight: 44,
-    paddingHorizontal: 6,
-    paddingVertical: 10,
-  },
-  categoryTabSelected: { backgroundColor: "#bca7ff" },
-  categoryTabText: { color: "#aba8b9", fontSize: 14, fontWeight: "600" },
-  categoryTabTextSelected: { color: "#171221", fontWeight: "700" },
-  // "Tekrar dene" butonları artık sekme stilini PAYLAŞMIYOR (görünümleri eskisiyle aynı, bağımsız evrilebilir).
   retryButton: {
     flex: 1,
     alignItems: "center",

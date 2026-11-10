@@ -3,7 +3,6 @@ import { and, count, eq, inArray } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
 import { usersTable } from "../users/users.schema";
 import { freePreviewVideosTable } from "./free-preview-videos.schema";
-import type { FeedScope } from "@linguascroll/shared-types";
 import { freeVideoGrantsTable } from "./free-video-grants.schema";
 
 export type FreeGrantResult = "granted" | "already-granted" | "exhausted" | "unknown-user";
@@ -15,9 +14,11 @@ export type FreeGrantResult = "granted" | "already-granted" | "exhausted" | "unk
 export class FreeVideoGrantsRepository {
   constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
 
-  /** İlk seçki kullanıcı satırı kilidi altında oluşturulur. Farklı cihaz/sekme aynı
-   * seçkiyi görür; shuffle, tekrar izleme ve yeni içerik yayını mevcut seçkiyi değiştirmez. */
-  async getOrCreatePreview(userId: string, scope: FeedScope, candidates: readonly string[], cap: number): Promise<Set<string>> {
+  /** İlk seçki kullanıcı satırı kilidi altında oluşturulur. DB'deki `scope`
+   * kolonu eski şemayla uyumluluk için durur; yeni tek-akış politikası her zaman
+   * canonical `all` satırlarını kullanır, istemci scope'u hak havuzunu bölemez. */
+  async getOrCreatePreview(userId: string, candidates: readonly string[], cap: number): Promise<Set<string>> {
+    const scope = "all";
     return this.db.transaction(async (tx) => {
       const user = await tx.select({ id: usersTable.id }).from(usersTable).where(eq(usersTable.id, userId)).for("update");
       if (!user.length) return new Set<string>();

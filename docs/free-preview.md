@@ -1,13 +1,14 @@
 # Ücretsiz seçki ve kelime kartları
 
-Her hesapta, her FeedScope (`all`, `animation`, `ielts`) için ayrı en fazla 10 video ücretsizdir.
-İlk erişimde kategoriye ait adaylardan seçki oluşturulur ve `free_preview_videos` tablosunda
-saklanır. Kullanıcı satırı kilidi iki cihazın farklı seçkiler oluşturmasını önler. Aynı video
+Her hesapta, tüm FeedScope'lar için ortak en fazla 10 video ücretsizdir.
+İlk erişimde bütün katalogdan seçki oluşturulur ve `free_preview_videos` tablosunda
+canonical `scope=all` ile saklanır. Kullanıcı satırı kilidi iki cihazın farklı seçkiler oluşturmasını önler. Aynı video
 tekrar izlenebilir. Shuffle, izlenme kaydı, uygulamayı yeniden açma veya eski ücretsiz hak
 sayacı seçkiyi azaltmaz. Katalogda 10'dan az video varsa mevcut içerikler sunulur ve yeni
-videolar geldikçe yalnızca boş yerler tamamlanır. Sekmeler arasında video örtüşebilir.
+videolar geldikçe yalnızca boş yerler tamamlanır. Legacy `animation`/`ielts` scope
+istekleri ayrı bir ücretsiz hak havuzu oluşturmaz.
 
-Feed planı yalnızca o sekmenin seçkisinden oluşturulur. Quiz'ler 10 video sayısına dahil
+Feed planı istenen scope ile ortak seçkinin kesişiminden oluşturulur. Quiz'ler 10 video sayısına dahil
 değildir. Seçkinin sonunda Premium kartı gelir; yenileme aynı videoları yeniden sunar.
 Playback endpoint'i scope ve gerçek video kategorisini kontrol eder. Abone olanlara tüm
 katalog açılır; abonelik bitince aynı ücretsiz seçki korunur.

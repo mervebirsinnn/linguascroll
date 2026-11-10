@@ -364,7 +364,25 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
 
       // Silinen video HARİÇ, page2'nin geri kalan item'ları (sıraları dahil) aynen korunuyor.
       const beforeWithoutDeleted = page2Before.items.filter((item) => !(item.type === "video" && item.video.id === deletedVideoId));
-      expect(page2After.items).toEqual(beforeWithoutDeleted);
+      // Her HTTP resolve yeni exp/sig üretir; frozen olan medya kimliği ve item sırasıdır.
+      // Süreli kimlik bilgilerini çıkarmak diğer URL/metadata değişikliklerini gizlemez.
+      const stableItems = (items: typeof page2After.items) => items.map((item) => {
+        if (item.type !== "video" || item.video.playbackUrl === null) return item;
+        const url = new URL(item.video.playbackUrl);
+        url.searchParams.delete("exp");
+        url.searchParams.delete("sig");
+        return { ...item, video: { ...item.video, playbackUrl: url.toString() } };
+      });
+      expect(stableItems(page2After.items)).toEqual(stableItems(beforeWithoutDeleted));
+      for (const item of page2After.items) {
+        if (item.type !== "video") continue;
+        const previous = beforeWithoutDeleted.find((before) => before.type === "video" && before.video.id === item.video.id);
+        if (!previous || previous.type !== "video" || previous.video.playbackUrl === null || item.video.playbackUrl === null) throw new Error("Oynatılabilir önceki video bulunamadı");
+        const currentUrl = new URL(item.video.playbackUrl);
+        expect(currentUrl.searchParams.get("sig")).toBeTruthy();
+        expect(currentUrl.searchParams.get("exp")).toMatch(/^\d+$/);
+        expect(Number(currentUrl.searchParams.get("exp"))).toBeGreaterThanOrEqual(Number(new URL(previous.video.playbackUrl).searchParams.get("exp")));
+      }
     });
   });
 

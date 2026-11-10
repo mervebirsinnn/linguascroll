@@ -9,11 +9,10 @@ import { Feed } from "./Feed";
 jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({ Authorization: "Bearer test-id-token" }) }));
 
 /**
- * Üst kategori seçicisinin (Akış | Animasyon | IELTS) davranışı. Gerçek native
- * render (FlatList sanallaştırma, video player) Jest ile DOĞRULANAMAZ — bu testler
- * seçicinin sırasını, seçili durumunu, API'ye giden isteği, kategori değişince
- * eski listenin/cursor'un temizlenmesini ve retry'ın seçili kategoriyi korumasını
- * kanıtlar. Gerçek cihaz kontrolü (üç sekmenin dar ekranda kesilmemesi dahil) ayrıca gerekir.
+ * Tek akış davranışı (2026-11-10: Akış | Animasyon | IELTS sekmeleri kaldırıldı). Gerçek native
+ * render (FlatList sanallaştırma, video player) Jest ile DOĞRULANAMAZ — bu testler sekme
+ * olmadığını, isteğin sabit scope=all ile cursor'suz gittiğini ve retry'ın aynı kapsamı
+ * koruduğunu kanıtlar. Gerçek cihaz kontrolü ayrıca gerekir.
  */
 
 jest.mock("expo-crypto", () => ({ getRandomValues: (array: Uint8Array) => array.fill(0xcd) }));
@@ -91,81 +90,35 @@ beforeEach(() => {
 // Dosyadaki İLK render RN modüllerinin soğuk yüklenmesini ödüyor (bu makinede ~10 sn, VideoFeedItem.test.tsx ile aynı bulgu).
 jest.setTimeout(60_000);
 
-describe("Feed — kategori seçici", () => {
-  it("üç kategoriyi Akış | Animasyon | IELTS sırasıyla gösterir; varsayılan seçim Akış", async () => {
+describe("Feed — tek akış", () => {
+  it("kategori sekmesi göstermez; Animasyon/IELTS başlıkları yoktur", async () => {
     mockedFetchFeed.mockResolvedValue(videoPage("1"));
     await renderFeed();
 
-    const tabs = screen.getAllByRole("tab");
-    expect(tabs.map((tab) => tab.props.accessibilityState?.selected)).toEqual([true, false, false]);
-    expect(screen.getAllByText(/^(Akış|Animasyon|IELTS)$/).map((node) => node.props.children)).toEqual(["Akış", "Animasyon", "IELTS"]);
+    expect(screen.queryAllByRole("tab")).toHaveLength(0);
+    expect(screen.queryByText("Animasyon")).toBeNull();
+    expect(screen.queryByText("IELTS")).toBeNull();
+    expect(screen.queryByText("Akış")).toBeNull();
   });
 
-  it("ilk istek Akış (scope=all) ile, cursor'suz gider", async () => {
+  it("ilk istek scope=all ile, cursor'suz gider ve video akışta oynar", async () => {
     mockedFetchFeed.mockResolvedValue(videoPage("1"));
     await renderFeed();
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(1));
     expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "all");
-  });
-
-  it("IELTS'e basınca scope=ielts ve cursor'suz ilk sayfa istenir; seçili durum IELTS'e geçer; önceki kategorinin videosu ekrandan kalkar", async () => {
-    mockedFetchFeed.mockImplementation((_cursor, _pref, scope) =>
-      Promise.resolve(scope === "ielts" ? videoPage("2") : videoPage("1", "general-cursor")),
-    );
-    await renderFeed();
     await waitFor(() => expect(screen.getByText("video:00000000-0000-4000-8000-000000000001")).toBeTruthy());
-
-    await fireEvent.press(screen.getByText("IELTS"));
-
-    await waitFor(() => expect(screen.getByText("video:00000000-0000-4000-8000-000000000002")).toBeTruthy());
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "ielts");
-    expect(screen.queryByText("video:00000000-0000-4000-8000-000000000001")).toBeNull();
-    expect(screen.getAllByRole("tab").map((tab) => tab.props.accessibilityState?.selected)).toEqual([false, false, true]);
   });
 
-  it("Animasyon scope=animation, Akış'a geri dönüş scope=all gönderir; 'general' hiçbir istekte yoktur (Akış bütün kategorilerdir)", async () => {
-    mockedFetchFeed.mockResolvedValue(videoPage("1"));
+  it("boş akışta 'Henüz video yok.' gösterilir ve 'Tekrar dene' scope=all ile yeniden dener", async () => {
+    mockedFetchFeed.mockResolvedValue({ items: [], nextCursor: null });
     await renderFeed();
-    await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(1));
-
-    await fireEvent.press(screen.getByText("Animasyon"));
-    await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(2));
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "animation");
-    expect(screen.getAllByRole("tab").map((tab) => tab.props.accessibilityState?.selected)).toEqual([false, true, false]);
-
-    await fireEvent.press(screen.getByText("Akış"));
-    await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(3));
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "all");
-    expect(mockedFetchFeed.mock.calls.map((call) => call[2])).toEqual(["all", "animation", "all"]);
-  });
-
-  it("kategori değişince eski kategorinin cursor'u yeni isteğe taşınmaz (her fetch cursor'suz fresh session)", async () => {
-    mockedFetchFeed.mockResolvedValue(videoPage("1", "stale-general-cursor"));
-    await renderFeed();
-    await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(1));
-
-    await fireEvent.press(screen.getByText("IELTS"));
-    await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalledTimes(2));
-
-    for (const call of mockedFetchFeed.mock.calls) {
-      expect(call[0]).toBeUndefined(); // cursor (2026-10-27: userId argümanı kalktı, cursor ilk argüman)
-    }
-  });
-
-  it("IELTS boş döndüğünde IELTS'e özel mesaj gösterilir ve 'Tekrar dene' seçili IELTS kategorisini korur", async () => {
-    mockedFetchFeed.mockImplementation((_cursor, _pref, scope) =>
-      Promise.resolve(scope === "ielts" ? { items: [], nextCursor: null } : videoPage("1")),
-    );
-    await renderFeed();
-    await fireEvent.press(screen.getByText("IELTS"));
-    await waitFor(() => expect(screen.getByText("IELTS içerikleri henüz yayımlanmadı.")).toBeTruthy());
+    await waitFor(() => expect(screen.getByText("Henüz video yok.")).toBeTruthy());
 
     mockedFetchFeed.mockClear();
     await fireEvent.press(screen.getByText("Tekrar dene"));
 
     await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalled());
-    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "ielts");
-    expect(screen.getAllByRole("tab").map((tab) => tab.props.accessibilityState?.selected)).toEqual([false, false, true]);
+    expect(mockedFetchFeed).toHaveBeenLastCalledWith(undefined, undefined, "all");
   });
 });
 
@@ -176,28 +129,19 @@ describe("Feed — session seed", () => {
     global.fetch = originalFetch;
   });
 
-  it("sekme değişimi, remount (layout key'i) ve rerender aynı sessionSeed'i kullanır; her scope kendi cursor'suz isteğini atar", async () => {
+  it("gerçek fetchFeed isteği scope=all, category'siz ve oturum seed'iyle kurulur", async () => {
     const fetchSpy = jest.fn().mockResolvedValue({ ok: true, json: () => Promise.resolve({ items: [], nextCursor: null }) });
     global.fetch = fetchSpy as unknown as typeof fetch;
-    // Gerçek fetchFeed (URL'yi gerçekten kuran) çalışsın; ağ çağrısı yukarıdaki spy'a düşer.
     mockedFetchFeed.mockImplementation((...args) => actualFetchFeed(...args));
 
     await renderFeed();
     await waitFor(() => expect(fetchSpy).toHaveBeenCalledTimes(1));
-    await fireEvent.press(screen.getByText("IELTS"));
-    await waitFor(() => expect(fetchSpy).toHaveBeenCalledTimes(2));
-    await fireEvent.press(screen.getByText("Animasyon"));
-    await waitFor(() => expect(fetchSpy).toHaveBeenCalledTimes(3));
-    await fireEvent.press(screen.getByText("Akış")); // sekme remount'u (key değişir) → yeni session isteği
-    await waitFor(() => expect(fetchSpy).toHaveBeenCalledTimes(4));
 
-    const urls = fetchSpy.mock.calls.map(([url]) => new URL(url));
-    expect(urls.map((url) => url.searchParams.get("scope"))).toEqual(["all", "ielts", "animation", "all"]);
-    expect(urls.every((url) => !url.searchParams.has("category"))).toBe(true);
-    const seeds = urls.map((url) => url.searchParams.get("sessionSeed"));
-    expect(seeds[0]).toBe("cd".repeat(16));
-    expect(new Set(seeds).size).toBe(1);
-    expect(seeds[0]).toBe(getSessionSeed());
+    const url = new URL(fetchSpy.mock.calls[0]![0]);
+    expect(url.searchParams.get("scope")).toBe("all");
+    expect(url.searchParams.has("category")).toBe(false);
+    expect(url.searchParams.get("sessionSeed")).toBe("cd".repeat(16));
+    expect(url.searchParams.get("sessionSeed")).toBe(getSessionSeed());
   });
 });
 
