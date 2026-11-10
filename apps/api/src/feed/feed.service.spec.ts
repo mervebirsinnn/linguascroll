@@ -211,7 +211,7 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
 function makeQuotaSubscriptionsService(grantedVideoIds: string[], usersService: UsersService, videosService: VideosService): SubscriptionsService {
   const granted = new Set(grantedVideoIds);
   const repository = {
-    getOrCreatePreview: async (_userId: string, _scope: string, candidates: string[]) => new Set(candidates.slice(0, 10)),
+    getOrCreatePreview: async (_userId: string, candidates: string[]) => new Set(candidates.slice(0, 10)),
     getUsage: (_userId: string, candidates: readonly string[]) =>
       Promise.resolve({ consumed: granted.size, grantedVideoIds: new Set(candidates.filter((id) => granted.has(id))) }),
   } as unknown as FreeVideoGrantsRepository;
@@ -683,7 +683,7 @@ describe("FeedService.getFeed — quiz placement invariant (video → segment �
 
 
 
-describe("Feed ücretsiz seçki — her akışta sabit 10 video", () => {
+describe("Feed ücretsiz seçki — scope'lar arasında ortak 10 video", () => {
   it("önceki tüketimden bağımsız tam 10 video ve ardından Premium döner", async () => {
     const service = makeFeedService({ freeQuota: { grantedVideoIds: ["old1", "old2", "old3"] } });
     const first = await service.getFeed(TEST_USER_ID);
@@ -696,18 +696,23 @@ describe("Feed ücretsiz seçki — her akışta sabit 10 video", () => {
     expect(items.filter((i) => i.type === "video").every((i) => i.video.playbackUrl !== null)).toBe(true);
   });
 
-  it("her sekme kendi kategorisinden ayrı 10 video sunar", async () => {
+  it("legacy scope istekleri ayrı hak havuzu açmaz; ortak 10'un kategori kesişimini sunar", async () => {
     const videos = Array.from({length: 15}, (_, i) => [
       {...makeVideo(i + 1), category: "animation" as const},
       {...makeVideo(i + 101), category: "ielts" as const},
     ]).flat();
     const service = makeFeedService({ videos, freeQuota: {grantedVideoIds: []}, quizzesByVideoId: new Map() });
+    const offeredByScope = new Map<string, string[]>();
     for (const scope of ["all", "animation", "ielts"] as const) {
       const page = await service.getFeed(TEST_USER_ID, undefined, undefined, scope);
-      expect(videoIds(page.items)).toHaveLength(10);
-      expect(page.items.at(-1)).toEqual({type: "paywall"});
+      offeredByScope.set(scope, videoIds(page.items));
+      if (scope === "all") expect(page.items.at(-1)).toEqual({type: "paywall"});
       if(scope !== "all") expect(page.items.filter((i) => i.type === "video").every((i) => i.video.category === scope)).toBe(true);
     }
+    const all = new Set(offeredByScope.get("all"));
+    expect(all.size).toBe(10);
+    expect(offeredByScope.get("animation")!.every((id) => all.has(id))).toBe(true);
+    expect(offeredByScope.get("ielts")!.every((id) => all.has(id))).toBe(true);
   });
 });
 

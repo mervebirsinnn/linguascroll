@@ -48,3 +48,12 @@ apps/api/scripts/stt/input-backups/
 
 # Medya worker test derlemesi
 apps/media-worker/.test-dist/
+
+# Yerel Expo/Android teşhis artıkları. Gerçek Expo config'i
+# apps/mobile/app.json'dır; repo kökündeki boş app.json yanlış dizinde
+# çalıştırılan Expo komutlarının ürettiği makine-yerel bir stub'dır.
+/app.json
+apps/mobile/looplish-*.txt
+
+# Jest transform cache'i kaynak ağacına veya commit'e girmemeli.
+.jest-cache-codex/

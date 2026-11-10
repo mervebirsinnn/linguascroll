@@ -170,9 +170,10 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
     expect(await grantedCount(userId)).toBe(10);
   });
 
-  it("her sekmede ayrı 10 video ve paywall; önceki tüketim seçkiyi azaltmaz", async () => {
-    const {authorization} = await createAuthenticatedUser(db);
+  it("legacy scope istekleri ortak 10 video seçkisini paylaşır", async () => {
+    const {userId, authorization} = await createAuthenticatedUser(db);
     await createVideos(15, "general"); await createVideos(15, "ielts");
+    const offeredByScope = new Map<string, string[]>();
     for(const scope of ["all", "ielts"]) {
       const pages: FeedItem[] = [];
       let cursor: string | null = null;
@@ -182,9 +183,14 @@ describe("Ücretsiz hak + abonelik (e2e, gerçek Postgres, kapı açık)", () =>
         pages.push(...page.items); cursor = page.nextCursor;
       } while(cursor);
       const offered = pages.filter((i): i is Extract<FeedItem,{type:"video"}> => i.type === "video");
-      expect(offered).toHaveLength(10); expect(pages.at(-1)).toEqual({type:"paywall"});
+      offeredByScope.set(scope, offered.map((item) => item.video.id));
+      if (scope === "all") expect(pages.at(-1)).toEqual({type:"paywall"});
       for(const item of offered) expect((await request(app.getHttpServer()).post(`/videos/${item.video.id}/playback-access?scope=${scope}`).set("Authorization", authorization)).body.status).toBe("granted");
     }
+    const all = new Set(offeredByScope.get("all"));
+    expect(all.size).toBe(10);
+    expect(offeredByScope.get("ielts")!.every((id) => all.has(id))).toBe(true);
+    expect(await grantedCount(userId)).toBe(10);
   });
 
   it("başka kategorinin videosu scope değiştirilerek açılamaz; geçersiz scope reddedilir", async () => {

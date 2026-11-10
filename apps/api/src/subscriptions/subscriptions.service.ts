@@ -1,13 +1,12 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview, FeedScope } from "@linguascroll/shared-types";
-import { scopeToCategoryFilter } from "../feed/feed-scope";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { FreeVideoGrantsRepository } from "./free-video-grants-repository";
 import { RevenueCatClient } from "./revenue-cat-client";
 
-/** Her hesap ve akış için 10 kalıcı ücretsiz video. İzleme sayısı erişimi azaltmaz. */
+/** Her hesap için, feed scope'larının tamamında ortak 10 kalıcı ücretsiz video. */
 export const FREE_VIDEO_CAP = 10;
 /** "Abone" sonucunun önbelleklendiği süre — `PersonalizationService`'teki `COLD_START_CACHE_TTL_MS` ile AYNI değer/desen. */
 const SUBSCRIBED_CACHE_TTL_MS = 60 * 1000;
@@ -63,15 +62,15 @@ export class SubscriptionsService {
     this.gateEnabled = configService.get<string>("SUBSCRIPTION_GATE_ENABLED") === "true";
   }
 
-  /** Seçki akış başına atomik olarak sabitlenir. Eski izleme/hak defteri sayılmaz.
-   * Dönen id'ler, tekrar izlenebilen tüm ücretsiz videolardır; yeni video bütçesi yoktur. */
-  async getFeedAllowance(userId: string, _pageVideoIds: readonly string[], scope: FeedScope = "all"): Promise<FeedAllowance> {
+  /** Tek-akış ürün kararı: ücretsiz seçki scope'tan bağımsız, kullanıcı başına
+   * atomik olarak sabitlenir. Legacy animation/ielts istekleri ayrı 10'luk hak açamaz. */
+  async getFeedAllowance(userId: string, _pageVideoIds: readonly string[], _scope: FeedScope = "all"): Promise<FeedAllowance> {
     if (!this.gateEnabled || (await this.isSubscribed(userId))) {
       return { unlimited: true };
     }
 
-    const catalog = await this.videosService.getVideoFeed({ category: scopeToCategoryFilter(scope) });
-    const selected = await this.freeVideoGrantsRepository.getOrCreatePreview(userId, scope, catalog.map((v) => v.id).sort(), FREE_VIDEO_CAP);
+    const catalog = await this.videosService.getVideoFeed();
+    const selected = await this.freeVideoGrantsRepository.getOrCreatePreview(userId, catalog.map((v) => v.id).sort(), FREE_VIDEO_CAP);
     return { unlimited: false, grantedVideoIds: selected, newVideoBudget: 0 };
   }
 

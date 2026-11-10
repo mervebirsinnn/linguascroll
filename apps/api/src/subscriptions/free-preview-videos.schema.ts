@@ -2,8 +2,8 @@ import { pgTable, primaryKey, text, uuid } from "drizzle-orm/pg-core";
 import { usersTable } from "../users/users.schema";
 import { videosTable } from "../videos/videos.schema";
 
-/** Her hesap/akış için kalıcı ücretsiz seçki. İzlemek veya oturumu yenilemek listeyi tüketmez.
- * Eski hak defteri tarihçe olarak korunur; bu yeni politika eski tüketimden bağımsızdır. */
+/** Her hesap için kalıcı ücretsiz seçki. Yeni kod canonical `scope=all`
+ * kullanır; kolon ve composite PK mevcut migration/veriyle uyumluluk için korunur. */
 export const freePreviewVideosTable = pgTable("free_preview_videos", {
   userId: uuid("user_id").notNull().references(() => usersTable.id, { onDelete: "cascade" }),
   scope: text("scope").notNull(),
