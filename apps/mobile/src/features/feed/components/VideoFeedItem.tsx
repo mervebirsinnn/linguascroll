@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View, type GestureResponderEvent } from "react-native";
 import { useEventListener } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
 import type {
@@ -17,6 +17,7 @@ import { WordGlossSheet, type OpenWordGloss } from "../../subtitles/WordGlossShe
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { VideoFeedbackSheet } from "./VideoFeedbackSheet";
 import { VideoAttributionSheet } from "./VideoAttributionSheet";
+import { formatVideoTime, seekTimeFromTap } from "../video-progress";
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
@@ -77,7 +78,10 @@ export function VideoFeedItem({
   // sheet açıkken activeSegment değişse bile (video zaten pause'da, ama seek/
   // stall gibi bir tetikleyici teorik olarak yine de bir timeUpdate üretebilir)
   // gösterilen açıklama ASLA değişmemeli.
-  const activeSegment = useActiveSubtitle(player, video.segments);
+  const { activeSegment, syncToTime: syncActiveSubtitleToTime } = useActiveSubtitle(player, video.segments);
+  const durationSeconds = video.durationMs / 1000;
+  const [currentTimeSeconds, setCurrentTimeSeconds] = useState(0);
+  const [progressWidth, setProgressWidth] = useState(0);
   const [openSegment, setOpenSegment] = useState<TranscriptSegment | null>(
     null,
   );
@@ -189,6 +193,10 @@ export function VideoFeedItem({
     }
   });
 
+  useEventListener(player, "timeUpdate", ({ currentTime }) => {
+    setCurrentTimeSeconds(currentTime);
+  });
+
   /**
    * Chunk 15, madde 8 — video playback hatası (bozuk/erişilemez medya dosyası
    * vb.) için fallback. `expo-video`'nun `statusChange` event'i `status`'un
@@ -221,6 +229,8 @@ export function VideoFeedItem({
       // (pasife geçerken değil — geçiş sırasında görünür bir "başa sıçrama"
       // titremesi yaratmamak için).
       player.replay();
+      setCurrentTimeSeconds(0);
+      syncActiveSubtitleToTime(0);
       player.play();
     } else {
       player.pause();
@@ -251,6 +261,18 @@ export function VideoFeedItem({
       }
     };
   }, [isActive, player, video.id, userId]);
+
+  const panelOpen = openSegment !== null || openVocabularyWord !== null || openGloss !== null || feedbackOpen || sourceOpen;
+
+  function handleProgressPress(event: GestureResponderEvent): void {
+    if (!isActive || panelOpen) return;
+    const targetSeconds = seekTimeFromTap(event.nativeEvent.locationX, progressWidth, durationSeconds);
+    player.currentTime = targetSeconds;
+    setCurrentTimeSeconds(targetSeconds);
+    // Native timeUpdate, duraklatılmış player'da platforma göre gecikebilir.
+    // Altyazıyı aynı zaman eşleştirmesiyle hemen güncellemek bu yarışı kaldırır.
+    syncActiveSubtitleToTime(targetSeconds);
+  }
 
   return (
     // 2026-09-30 — animasyon içeriği "contain" ile (kırpmadan) gösteriliyor, bu
@@ -328,7 +350,24 @@ export function VideoFeedItem({
             onPressGloss={handleGlossTap}
           />
         </ScrollView>
-        {activeSegment && <Pressable accessibilityRole="button" onPress={() => { if (isActive) { player.currentTime = activeSegment.startMs / 1000; player.play(); } }} style={{ alignSelf: "flex-end", minHeight: 44, paddingHorizontal: 14, justifyContent: "center", borderRadius: 12, backgroundColor: "#211b2cdd" }}><Text style={{ color: "#d7c5ff", fontSize: 13 }}>↺ Cümleyi tekrar dinle</Text></Pressable>}
+        {activeSegment && <Pressable accessibilityRole="button" onPress={() => { if (isActive) { const targetSeconds = activeSegment.startMs / 1000; player.currentTime = targetSeconds; setCurrentTimeSeconds(targetSeconds); syncActiveSubtitleToTime(targetSeconds); player.play(); } }} style={{ alignSelf: "flex-end", minHeight: 44, paddingHorizontal: 14, justifyContent: "center", borderRadius: 12, backgroundColor: "#211b2cdd" }}><Text style={{ color: "#d7c5ff", fontSize: 13 }}>↺ Cümleyi tekrar dinle</Text></Pressable>}
+        <View style={styles.progressRow}>
+          <Text style={styles.progressTime}>{formatVideoTime(currentTimeSeconds)}</Text>
+          <Text style={styles.progressTime}>{formatVideoTime(durationSeconds)}</Text>
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`Videoda ileri veya geri sar, ${formatVideoTime(currentTimeSeconds)} / ${formatVideoTime(durationSeconds)}`}
+          accessibilityState={{ disabled: panelOpen || !isActive }}
+          disabled={panelOpen || !isActive}
+          onLayout={({ nativeEvent: { layout } }) => setProgressWidth(layout.width)}
+          onPress={handleProgressPress}
+          style={[styles.progressTouchTarget, panelOpen && styles.progressDisabled]}
+        >
+          <View style={styles.progressTrack}>
+            <View style={[styles.progressFill, { width: `${Math.min(100, Math.max(0, (currentTimeSeconds / durationSeconds) * 100 || 0))}%` }]} />
+          </View>
+        </Pressable>
         <ExplanationSheet
           segment={openSegment}
           vocabulary={video.vocabulary}
@@ -390,5 +429,32 @@ const styles = StyleSheet.create({
     right: 0,
     paddingHorizontal: 16,
     gap: 10,
+  },
+  progressRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: -10,
+  },
+  progressTime: {
+    color: "#eee",
+    fontSize: 11,
+    fontVariant: ["tabular-nums"],
+  },
+  progressTouchTarget: {
+    minHeight: 44,
+    justifyContent: "center",
+  },
+  progressDisabled: {
+    opacity: 0.45,
+  },
+  progressTrack: {
+    height: 3,
+    borderRadius: 2,
+    overflow: "hidden",
+    backgroundColor: "#ffffff55",
+  },
+  progressFill: {
+    height: "100%",
+    backgroundColor: "#d7c5ff",
   },
 });

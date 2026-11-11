@@ -11,6 +11,9 @@
     },
     "android": {
       "package": "app.looplish.mobile",
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#040c39",
         "foregroundImage": "./assets/android-icon-foreground.png",
