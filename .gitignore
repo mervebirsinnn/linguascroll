@@ -57,3 +57,8 @@ apps/mobile/looplish-*.txt
 
 # Jest transform cache'i kaynak ağacına veya commit'e girmemeli.
 .jest-cache-codex/
+
+# Content enrichment ve yerel rapor/render çıktıları üretilmiş artefaktlardır;
+# kaynak veya migration değildir, yanlışlıkla commit edilmemelidir.
+apps/api/src/content-enrichment/output/
+/output/
