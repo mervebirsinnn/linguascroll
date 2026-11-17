@@ -17,13 +17,20 @@ import { findActiveSegment } from "./find-active-segment";
  * içeren dosyaları transform edemiyor, bu yüzden test edilebilir çekirdek
  * BİLİNÇLİ OLARAK ayrıştırıldı).
  */
-export function useActiveSubtitle(player: VideoPlayer, segments: readonly TranscriptSegment[]): TranscriptSegment | null {
+export function useActiveSubtitle(player: VideoPlayer, segments: readonly TranscriptSegment[]): {
+  activeSegment: TranscriptSegment | null;
+  syncToTime: (currentTimeSeconds: number) => void;
+} {
   const [activeSegment, setActiveSegment] = useState<TranscriptSegment | null>(null);
 
-  useEventListener(player, "timeUpdate", ({ currentTime }) => {
-    const next = findActiveSegment(segments, currentTime * 1000);
+  function syncToTime(currentTimeSeconds: number): void {
+    const next = findActiveSegment(segments, currentTimeSeconds * 1000);
     setActiveSegment((previous) => (previous?.id === next?.id ? previous : next));
+  }
+
+  useEventListener(player, "timeUpdate", ({ currentTime }) => {
+    syncToTime(currentTime);
   });
 
-  return activeSegment;
+  return { activeSegment, syncToTime };
 }

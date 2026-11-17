@@ -1,4 +1,5 @@
-import { render } from "@testing-library/react-native";
+import { fireEvent, render } from "@testing-library/react-native";
+import { StyleSheet } from "react-native";
 import type { FeedPlayableVideo } from "@linguascroll/shared-types";
 import { VideoFeedItem } from "./VideoFeedItem";
 
@@ -139,6 +140,15 @@ describe("VideoFeedItem — render smoke testi", () => {
       backgroundColor: "#112233",
     });
     await expect(render(<VideoFeedItem video={video} {...baseProps} />)).resolves.toBeDefined();
+  });
+
+  it("ilerleme bandı en az 44 dp dokunma alanı taşır ve panel açıkken devre dışı kalır", async () => {
+    const result = await render(<VideoFeedItem video={makeVideo()} {...baseProps} />);
+    const progress = result.getByRole("button", { name: /Videoda ileri veya geri sar/ });
+    expect(StyleSheet.flatten(progress.props.style).minHeight).toBeGreaterThanOrEqual(44);
+
+    await fireEvent.press(result.getByLabelText("Video hakkında geri bildirim gönder"));
+    expect(result.getByRole("button", { name: /Videoda ileri veya geri sar/ }).props.accessibilityState).toEqual({ disabled: true });
   });
 
   /**
