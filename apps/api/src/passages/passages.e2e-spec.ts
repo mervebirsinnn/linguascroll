@@ -124,6 +124,12 @@ describe("GET /passages ve POST /passages/questions/:id/answer (e2e, gerçek Pos
       await getPassages(authorization, { level: "B2", cursor }).expect(400);
     });
 
+    it.each([2147483648, -2147483649])("DB integer aralığı dışındaki sort_order'lı cursor (%d) 500 değil 400 döner", async (sortOrder) => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const cursor = encodePassageCursor({ level: "B2", sortOrder, id: "00000000-0000-4000-8000-000000000001" });
+      await getPassages(authorization, { level: "B2", cursor }).expect(400);
+    });
+
     it("emekli metin listelenmez", async () => {
       const { authorization } = await createAuthenticatedUser(db);
       await createPassageFixture(db, { slug: "retired", retired: true });

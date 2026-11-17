@@ -7,10 +7,14 @@ import { z } from "zod";
  * tek etkisi kullanıcının kendi listesinde konumu oynatmak. Doğrulama Zod ile; bozuk her girdi `InvalidPassageCursorError`
  * (servis bunu 400'e çevirir).
  */
+const INT4_MIN = -2147483648;
+const INT4_MAX = 2147483647;
+
 const cursorPayloadSchema = z.object({
   v: z.literal(1),
   level: passageLevelSchema,
-  sortOrder: z.number().int(),
+  // DB `integer` (int4) aralığıyla sınırlı: aralık dışı bir değer Postgres'te hataya (500) yol açardı; burada 400 olur.
+  sortOrder: z.number().int().min(INT4_MIN).max(INT4_MAX),
   id: z.string().uuid(),
 });
 
