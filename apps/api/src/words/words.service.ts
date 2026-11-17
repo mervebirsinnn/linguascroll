@@ -47,8 +47,9 @@ export class WordsService {
   /**
    * Okuma pratiği — `sourcePassageId` opsiyonel. Verilmişse: (1) segmentle birlikte gelemez (400), (2) metin yoksa/
    * emekliyse veya kelime o metnin kelimelerinden değilse 400 (body'de referans verilen kaynak geçersiz — segment
-   * kuralıyla aynı), (3) metin KİLİTLİYSE 403: kilitli metnin kelimesini, metne erişimi olmayan biri kayıt yoluyla
-   * (gloss + bağlam cümlesi Memory'de görünür) sızdıramasın. Ücretsiz örnek abonelik sorgulanmadan açık
+   * kuralıyla aynı), (3) metin KİLİTLİYSE 403: metne erişimi olmayan biri, o metne ait bağlam cümlesini kayıt yoluyla Memory'ye
+   * taşıyamasın. NOT: yalnız bu cümleyi korur — wordId'yi bilen biri kaynaksız `{}` ile kelimeyi (ve gloss'unu) yine kaydedebilir;
+   * gloss gizliliği bu PR'ın kapsamı değil. Ücretsiz örnek abonelik sorgulanmadan açık
    * (passages.service.answerQuestion ile aynı sıra).
    */
   async saveWord(

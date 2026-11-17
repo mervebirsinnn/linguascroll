@@ -1,6 +1,7 @@
 import { eq } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
+import { createPassageFixture, FIXTURE_GLOSS } from "../passages/passage-test-fixtures";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { applyGlossFixes, loadGlossFixes } from "./fix-english-glosses";
 import { wordsTable } from "./words.schema";
@@ -52,6 +53,15 @@ describe("applyGlossFixes (integration, gerçek Postgres)", () => {
     expect(results).toEqual([{ lemma: "clarify", rowsUpdated: 0 }]);
     expect(await glossOf(alreadyTurkish)).toBe("netleştirmek");
     expect(await glossOf(otherWord)).toBe("to try to form an opinion or give an answer without clear facts");
+  });
+
+  it("paragraf kelimesinin (Türkçe yayınlanmış gloss) gloss'una DOKUNMAZ: eşleşme lemma + eski İngilizce metne bağlı", async () => {
+    const fixture = await createPassageFixture(db, { slug: "gloss-guard" }); // lemma "cat", gloss Türkçe
+
+    const results = await applyGlossFixes(db, [{ lemma: "cat", from: "a small domestic animal kept as a pet", to: "başka bir anlam" }]);
+
+    expect(results).toEqual([{ lemma: "cat", rowsUpdated: 0 }]);
+    expect(await glossOf(fixture.wordId)).toBe(FIXTURE_GLOSS);
   });
 
   it("tekrar çalıştırmak güvenli (idempotent): ikinci çalıştırma hiçbir satırı değiştirmez", async () => {
