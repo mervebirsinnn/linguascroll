@@ -34,6 +34,10 @@ jest.mock("../hooks/use-saved-word-ids", () => ({
 jest.mock("react-native-safe-area-context", () => ({
   useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }),
 }));
+// 2026-11-17 — Loopi noktası kendi hook'unda (ağ + AsyncStorage); burada yalnız Feed'in onu gösterip
+// göstermediği test edilir, mantığı loopi-state/loopi-store testlerinde.
+const mockUseLoopiDot = jest.fn(() => false);
+jest.mock("../../loopi/use-loopi-dot", () => ({ useLoopiDot: () => mockUseLoopiDot() }));
 
 const USER_ID = "00000000-0000-4000-8000-000000000099";
 const mockedFetchFeed = fetchFeed as jest.MockedFunction<typeof fetchFeed>;
@@ -142,6 +146,19 @@ describe("Feed — session seed", () => {
     expect(url.searchParams.has("category")).toBe(false);
     expect(url.searchParams.get("sessionSeed")).toBe("cd".repeat(16));
     expect(url.searchParams.get("sessionSeed")).toBe(getSessionSeed());
+  });
+});
+
+describe("Feed — Loopi noktası", () => {
+  it.each([
+    [true, "Kelimelerim, Loopi büyüdü"],
+    [false, "Kelimelerim"],
+  ])("görülmemiş eşik=%s → düğme etiketi '%s'", async (dot, label) => {
+    mockUseLoopiDot.mockReturnValue(dot);
+    mockedFetchFeed.mockResolvedValue(videoPage("1"));
+    await renderFeed();
+    expect(screen.getByLabelText(label)).toBeTruthy();
+    mockUseLoopiDot.mockReturnValue(false);
   });
 });
 

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import * as Sentry from '@sentry/react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
@@ -11,6 +11,7 @@ import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
 import type { AccountLinkControl } from './src/features/identity/auth-state';
 import { initializePurchases } from './src/features/subscription/purchases-gateway';
+import { loopiStore } from './src/features/loopi/loopi-store-instance';
 
 type AppMode = 'feed' | 'memory';
 
@@ -24,6 +25,15 @@ function App() {
   const identity = auth.state.status === 'signedIn' ? { status: 'success' as const, userId: auth.state.userId } : { status: 'pending' as const };
   const signedIn = auth.state.status === 'signedIn' ? auth.state : null;
   const linkAccount = auth.linkAccount;
+  // 2026-11-17 — hesap silinince bu hesabın cihazdaki Loopi durumu da silinir (kelime id'leri; sunucuda
+  // kullanıcı zaten siliniyor). Temizlik başarısız olsa da silme sonucu değişmez.
+  const deleteAccount = auth.deleteAccount;
+  const signedInUserId = signedIn?.userId ?? null;
+  const deleteAccountAndLocalData = useCallback(async (): Promise<boolean> => {
+    const deleted = await deleteAccount();
+    if (deleted && signedInUserId) await loopiStore.clear(signedInUserId).catch(() => {});
+    return deleted;
+  }, [deleteAccount, signedInUserId]);
   // Referans yalnızca içerik değişince yenilenir: Feed'in FlatList'i bunu extraData olarak izliyor.
   const account = useMemo<AccountLinkControl>(
     () => ({
@@ -31,9 +41,9 @@ function App() {
       linking: signedIn?.linking ?? false,
       notice: signedIn?.notice ?? null,
       onLinkAccount: linkAccount,
-      onDeleteAccount: auth.deleteAccount,
+      onDeleteAccount: deleteAccountAndLocalData,
     }),
-    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, linkAccount, auth.deleteAccount],
+    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, linkAccount, deleteAccountAndLocalData],
   );
   // Chunk 15 — identity'den BAĞIMSIZ, paralel bir bootstrap (saf local storage,
   // network'e hiç ihtiyaç duymuyor) — Rules of Hooks gereği koşulsuz çağrılıyor.

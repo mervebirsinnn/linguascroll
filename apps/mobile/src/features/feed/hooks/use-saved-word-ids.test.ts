@@ -10,6 +10,8 @@ import {
 // 2026-10-27 — kimlik SDK'sı (Firebase/Google Sign-In, native) testte yüklenmez: API dosyalarının
 // kullandığı header üreticisi sabit bir test token'ı döner.
 jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({ Authorization: "Bearer test-id-token" }) }));
+// 2026-11-17 — Loopi deposu AsyncStorage'a (native) bağlı; bu saf testler onu yüklemez.
+jest.mock("../../loopi/loopi-store-instance", () => ({ loopiStore: { recordWordCreated: jest.fn(), recordWordRemoved: jest.fn() } }));
 
 /**
  * `useSavedWordIds`'in state-transition mantığı React'ten bağımsız saf
@@ -142,6 +144,12 @@ describe("canToggleSave", () => {
   });
 });
 
+// Promise zincirinin tamamını boşaltır (2026-11-17: save cevabı artık bir .then daha geçiyor; sabit sayıda
+// mikro-task beklemek kırılgandı).
+function flushPromises(): Promise<void> {
+  return new Promise((resolve) => setImmediate(resolve));
+}
+
 describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render gerektirmez)", () => {
   function makeDeps() {
     return {
@@ -177,10 +185,32 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const onPendingChange = jest.fn();
 
     toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, onPendingChange, onSuccess, undefined, deps);
-    await Promise.resolve().then(() => Promise.resolve()); // mikro-task kuyruğunu boşalt
+    await flushPromises();
 
-    expect(onSuccess).toHaveBeenCalledWith(WORD_JOURNEY, true);
+    // Sunucu created bilgisi vermediğinde (eski API) üçüncü argüman undefined — Loopi kuyruğuna girmez.
+    expect(onSuccess).toHaveBeenCalledWith(WORD_JOURNEY, true, undefined);
     expect(pending.has(WORD_JOURNEY)).toBe(false);
+  });
+
+  // 2026-11-17 — Loopi: sunucunun "yeni kayıt mı" cevabı onSuccess'e aynen taşınır.
+  it.each([true, false])("kaydetmede sunucunun created=%s cevabı onSuccess'e iletilir", async (created) => {
+    const deps = { saveWord: jest.fn().mockResolvedValue({ created }), unsaveWord: jest.fn() };
+    const onSuccess = jest.fn();
+
+    toggleSaveWord(WORD_JOURNEY, USER_ID, false, new Set(), () => {}, onSuccess, undefined, deps);
+    await flushPromises();
+
+    expect(onSuccess).toHaveBeenCalledWith(WORD_JOURNEY, true, created);
+  });
+
+  it("unsave başarısında created her zaman undefined", async () => {
+    const deps = makeDeps();
+    const onSuccess = jest.fn();
+
+    toggleSaveWord(WORD_JOURNEY, USER_ID, true, new Set(), () => {}, onSuccess, undefined, deps);
+    await flushPromises();
+
+    expect(onSuccess).toHaveBeenCalledWith(WORD_JOURNEY, false, undefined);
   });
 
   it("mutation reddedilirse onSuccess HİÇ çağrılmaz, pending yine de temizlenir", async () => {
@@ -189,7 +219,7 @@ describe("toggleSaveWord — gerçek concurrency seam'i (ref-guarded, RN render 
     const onSuccess = jest.fn();
 
     toggleSaveWord(WORD_JOURNEY, USER_ID, false, pending, () => {}, onSuccess, undefined, deps);
-    await Promise.resolve().then(() => Promise.resolve());
+    await flushPromises();
 
     expect(onSuccess).not.toHaveBeenCalled();
     expect(pending.has(WORD_JOURNEY)).toBe(false);

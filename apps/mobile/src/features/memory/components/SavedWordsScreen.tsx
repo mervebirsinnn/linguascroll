@@ -1,6 +1,7 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { formatSavedAt } from "../format-saved-at";
 import { useSavedWords } from "../hooks/use-saved-words";
+import { LoopiCard } from "../../loopi/LoopiCard";
 
 type SavedWordsScreenProps = {
   userId: string;
@@ -35,17 +36,13 @@ export function SavedWordsScreen({ userId }: SavedWordsScreenProps) {
     );
   }
 
-  if (state.words.length === 0) {
-    return (
-      <View style={styles.centered}>
-        <Text style={styles.message}>Henüz kaydedilmiş bir kelime yok.</Text>
-        <Text style={styles.subMessage}>Videolardaki vurgulu kelimelere dokunarak kaydedebilirsin.</Text>
-      </View>
-    );
-  }
-
+  // 2026-11-17 — Loopi kartı listenin üstünde, boş durumda da (0 kelime: uykulu Loopi + "dokun ve kaydet"
+  // yönlendirmesi kartın içinde; eski ortalanmış boş-durum metni karta taşındı). Kart, ekranın zaten
+  // yüklediği tam listeyi kullanır — ek istek yok.
   return (
     <ScrollView style={styles.list} contentContainerStyle={styles.listContent}>
+      <LoopiCard userId={userId} savedWords={state.words} />
+      {state.words.length === 0 && <Text style={styles.emptyList}>Kaydettiğin kelimeler burada listelenecek.</Text>}
       {state.words.map((saved) => (
         <View key={saved.word.id} style={styles.card}>
           <Text style={styles.lemma}>{saved.word.lemma}</Text>
@@ -72,10 +69,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: "center",
   },
-  subMessage: {
+  emptyList: {
     color: "#999",
     fontSize: 13,
     textAlign: "center",
+    paddingVertical: 18,
+    borderWidth: 1,
+    borderStyle: "dashed",
+    borderColor: "#2a3a96",
+    borderRadius: 14,
   },
   retryButton: {
     marginTop: 8,
