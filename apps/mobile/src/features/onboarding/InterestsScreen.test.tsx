@@ -3,6 +3,18 @@ import { StyleSheet } from "react-native";
 import { InterestsScreen } from "./InterestsScreen";
 import { OnboardingFlow } from "./OnboardingFlow";
 
+// 2026-11-17 — kök neden (ölçüldü): dosyadaki İLK render, RN modüllerini ilk erişimde Babel'den geçirip yüklüyor.
+// Jest dönüştürme önbelleği sıcakken ilk test 1,4 sn; `--no-cache` ile (önbelleği boş makine/CI) 5 sn'yi aşıp
+// zaman aşımına düşüyordu — sonraki testler 65–240 ms. Bu bir ürün yavaşlığı değil, ilk testin süresine eklenen
+// soğuk yükleme. Adım ölçümü: önbelleksiz render 8,8 sn / sıcak 1,1 sn; sorgular ve dokunmalar < 100 ms.
+// Zaman sınırını büyütmek yerine bu maliyet ayrı bir ısınma adımına alındı: testlerin kendi 5 sn sınırı aynen
+// duruyor (gerçek bir yavaşlama yine yakalanır), yalnız ısınmanın kendi sınırı var. Isınma InterestsScreen'in
+// KENDİSİNİ çizer: OnboardingFlow önce seviye ekranını açtığı için bu ekranın RN bileşenlerini yüklemiyordu.
+beforeAll(async () => {
+  const warmup = await render(<InterestsScreen onContinue={() => {}} />);
+  await warmup.unmount();
+}, 60_000);
+
 it("dört seçimde çerçeveler kırmızıdan yeşile döner; seçim azaltılırsa devam kapanır", async () => {
   const next = jest.fn();
   await render(<InterestsScreen onContinue={next} />);
