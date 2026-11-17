@@ -23,7 +23,10 @@ export class WordsRepository {
   constructor(@Inject(DRIZZLE_DB) private readonly db: Database) {}
 
   /** Anlam istemciden alınmaz: offline segment verisinden çözülür, kayıt/review'a bağlanır. */
-  async saveSegmentGloss(userId: string, segmentId: string, lemma: string): Promise<Word | null> {
+  // 2026-11-17 — `created`: user_saved_words eklemesi satır döndürdüyse true (yeni kayıt), ON CONFLICT ile
+  // atlandıysa false. saveWord'deki gerekçenin aynısı (bkz. aşağı); segment satırındaki FOR UPDATE kilidi
+  // aynı segment üzerinden gelen paralel kayıtları ayrıca sıralar.
+  async saveSegmentGloss(userId: string, segmentId: string, lemma: string): Promise<{ word: Word; created: boolean } | null> {
     return this.db.transaction(async (tx) => {
       const [segment] = await tx.select({ language: videosTable.learningLanguage })
         .from(videoTranscriptSegmentsTable).innerJoin(videosTable, eq(videosTable.id, videoTranscriptSegmentsTable.videoId))
@@ -34,8 +37,8 @@ export class WordsRepository {
       if (!entry) return null;
       const [existing] = await tx.select().from(wordsTable).where(and(eq(wordsTable.language, segment.language), eq(wordsTable.lemma, lemma), eq(wordsTable.gloss, entry.gloss))).orderBy(wordsTable.id).limit(1);
       const word = existing ?? (await tx.insert(wordsTable).values({ language: segment.language, lemma, gloss: entry.gloss }).returning())[0]!;
-      await tx.insert(userSavedWordsTable).values({ userId, wordId: word.id, sourceSegmentId: segmentId }).onConflictDoNothing();
-      return toWord(word);
+      const inserted = await tx.insert(userSavedWordsTable).values({ userId, wordId: word.id, sourceSegmentId: segmentId }).onConflictDoNothing().returning({ wordId: userSavedWordsTable.wordId });
+      return { word: toWord(word), created: inserted.length === 1 };
     });
   }
 
@@ -54,12 +57,19 @@ export class WordsRepository {
    * kazanır. Bu bilinçli: UI zaten kayıtlı bir kelime için "Kaydet" göstermiyor
    * (bkz. mobile isWordSaved), bu yüzden ikinci bir save çağrısı pratikte
    * neredeyse hiç olmaz; olsa bile mevcut context'i sessizce EZMEMEK daha güvenli.
+   *
+   * 2026-11-17 — Loopi: `created` DB'nin kendi ekleme sonucundan geliyor (`RETURNING`: çakışmada 0 satır).
+   * "Önce var mı diye SELECT, sonra INSERT" seçilmedi: iki paralel istek ikisi de "yok" görüp ikisi de
+   * created:true dönerdi. ON CONFLICT aynı (user, word) için yalnız BİR isteğe satır döndürür — ek kilit
+   * gerekmez.
    */
-  async saveWord(userId: string, wordId: string, sourceSegmentId: string | null = null): Promise<void> {
-    await this.db
+  async saveWord(userId: string, wordId: string, sourceSegmentId: string | null = null): Promise<{ created: boolean }> {
+    const inserted = await this.db
       .insert(userSavedWordsTable)
       .values({ userId, wordId, sourceSegmentId })
-      .onConflictDoNothing({ target: [userSavedWordsTable.userId, userSavedWordsTable.wordId] });
+      .onConflictDoNothing({ target: [userSavedWordsTable.userId, userSavedWordsTable.wordId] })
+      .returning({ wordId: userSavedWordsTable.wordId });
+    return { created: inserted.length === 1 };
   }
 
   /** Idempotent by construction: var olmayan bir (user,word) çiftini silmek 0-row-affected, hatasız. */

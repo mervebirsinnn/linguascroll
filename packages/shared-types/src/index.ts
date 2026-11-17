@@ -4,7 +4,7 @@ export { wordSchema, type Word } from "./word";
 export { videoVocabularyItemSchema, type VideoVocabularyItem } from "./video-vocabulary-item";
 export { learningPointTypeSchema, type LearningPointType, learningPointSchema, type LearningPoint } from "./learning-point";
 export { transcriptSegmentSchema, type TranscriptSegment } from "./transcript-segment";
-export { saveWordRequestSchema, type SaveWordRequest } from "./save-word-request";
+export { saveWordRequestSchema, saveWordResponseSchema, type SaveWordRequest, type SaveWordResponse } from "./save-word-request";
 export { playableVideoSchema, type PlayableVideo } from "./playable-video";
 export { feedPlayableVideoSchema, type FeedPlayableVideo } from "./feed-playable-video";
 export { feedQuizSchema, type FeedQuiz } from "./feed-quiz";

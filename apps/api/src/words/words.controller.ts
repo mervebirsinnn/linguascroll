@@ -1,8 +1,11 @@
 import { BadRequestException, Body, Controller, Delete, Get, HttpCode, Param, ParseUUIDPipe, Post, Put, Query, UseGuards } from "@nestjs/common";
 import {
   saveGlossRequestSchema,
+  saveGlossResponseSchema,
   recordWordReviewRequestSchema,
   saveWordRequestSchema,
+  saveWordResponseSchema,
+  type SaveWordResponse,
   type RecordWordReviewRequest,
   type SavedWord,
   type VideoWordGlosses,
@@ -28,10 +31,12 @@ export class WordsController {
   @Post("saved-glosses")
   @HttpCode(200)
   @UseGuards(FirebaseAuthGuard)
-  saveGloss(@Body() body: unknown, @AuthUserId() userId: string) {
+  async saveGloss(@Body() body: unknown, @AuthUserId() userId: string) {
     const parsed = saveGlossRequestSchema.safeParse(body);
     if (!parsed.success) throw new BadRequestException(parsed.error.flatten());
-    return this.wordsService.saveGloss(userId, parsed.data.segmentId, parsed.data.word);
+    // 2026-11-17 — cevap sözleşmeye karşı parse ediliyor (created dahil): şekil kayarsa istemciye sessizce
+    // yanlış bir gövde gitmek yerine burada patlar.
+    return saveGlossResponseSchema.parse(await this.wordsService.saveGloss(userId, parsed.data.segmentId, parsed.data.word));
   }
 
   // wordId path parametresi external input — ParseUUIDPipe malformed UUID'yi
@@ -39,11 +44,15 @@ export class WordsController {
   // deseniyle aynı). PUT = "bu kaydı var et" — idempotent semantiği HTTP
   // metodunun kendisinde görünür (çift PUT güvenli, Service/Repository DB
   // seviyesinde de idempotent).
+  //
+  // 2026-11-17 — boş gövdeli 200 yerine 200 + { created }: Loopi yalnız GERÇEKTEN yeni kayıtları
+  // kutlayabilsin diye. Geriye uyum: Play'deki eski mobil bu cevabın gövdesini okumuyor, yalnız
+  // response.ok'a bakıyor (bkz. apps/mobile features/feed/api/save-word.ts) — durum kodu değişmedi.
   @Put(":wordId/saved")
   @UseGuards(FirebaseAuthGuard)
-  async saveWord(@Param("wordId", new ParseUUIDPipe()) wordId: string, @Body() body: unknown, @AuthUserId() userId: string): Promise<void> {
+  async saveWord(@Param("wordId", new ParseUUIDPipe()) wordId: string, @Body() body: unknown, @AuthUserId() userId: string): Promise<SaveWordResponse> {
     const { sourceSegmentId } = this.parseSaveWordRequest(body);
-    await this.wordsService.saveWord(wordId, userId, sourceSegmentId);
+    return saveWordResponseSchema.parse(await this.wordsService.saveWord(wordId, userId, sourceSegmentId));
   }
 
   // DELETE = "bu kaydın var olmadığından emin ol" — aynı idempotent semantik.

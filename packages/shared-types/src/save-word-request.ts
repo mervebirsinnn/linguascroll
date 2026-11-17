@@ -19,3 +19,14 @@ export const saveWordRequestSchema = z.object({
 });
 
 export type SaveWordRequest = z.infer<typeof saveWordRequestSchema>;
+
+/**
+ * 2026-11-17 — PUT /words/:wordId/saved cevabı (eskiden 200 + boş gövde). `created` = bu istek kaydı
+ * GERÇEKTEN yeni oluşturdu mu (DB ekleme sonucu); aynı kelimenin ikinci PUT'u false döner. Loopi'nin
+ * "yeni kelime yedi" animasyonu bu bilgiye dayanır. Opsiyonel: bkz. saveGlossResponseSchema'daki gerekçe.
+ */
+export const saveWordResponseSchema = z.object({
+  created: z.boolean().optional(),
+});
+
+export type SaveWordResponse = z.infer<typeof saveWordResponseSchema>;

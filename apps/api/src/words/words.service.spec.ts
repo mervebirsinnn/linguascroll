@@ -48,7 +48,7 @@ function makeService(overrides: Overrides = {}): WordsService {
     findWordById: overrides.findWordById ?? ((wordId: string) => Promise.resolve(makeWord(wordId, "journey"))),
     saveWord: (userId: string, wordId: string, sourceSegmentId: string | null = null) => {
       overrides.saveWordSpy?.(userId, wordId, sourceSegmentId);
-      return Promise.resolve();
+      return Promise.resolve({ created: true });
     },
     unsaveWord: () => Promise.resolve(),
     isSegmentConsistentWithWord: overrides.isSegmentConsistentWithWord ?? (() => Promise.resolve(true)),
