@@ -5,6 +5,8 @@ import { usersTable } from "../users/users.schema";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { videosTable } from "../videos/videos.schema";
+import { createPassageFixture } from "../passages/passage-test-fixtures";
+import { passagesTable } from "../passages/passages.schema";
 import { userSavedWordsTable } from "./user-saved-words.schema";
 import { videoWordsTable } from "./video-words.schema";
 import { WordsRepository } from "./words-repository";
@@ -291,6 +293,61 @@ describe("WordsRepository (integration, gerçek Postgres)", () => {
 
       const [row] = await db.select().from(userSavedWordsTable).where(eq(userSavedWordsTable.wordId, wordId));
       expect(row?.sourceSegmentId).toBeNull();
+    });
+  });
+
+  describe("okuma pratiği kaynağı (sourcePassageId)", () => {
+    it("saveWord sourcePassageId'yi kalıcı yazar; findSavedWordsForUser sourceSentence'ı passage_words.context_sentence'tan verir", async () => {
+      const userId = await createUser();
+      const fixture = await createPassageFixture(db, { slug: "p1" });
+
+      await repository.saveWord(userId, fixture.wordId, null, fixture.passageId);
+
+      const [row] = await db.select().from(userSavedWordsTable);
+      expect(row?.sourcePassageId).toBe(fixture.passageId);
+      const [saved] = await repository.findSavedWordsForUser(userId);
+      expect(saved?.sourceSentence).toBe("A cat sat.");
+    });
+
+    it("segment kaynaklı kayıt segment metnini, kaynaksız kayıt null verir (COALESCE karışmaz)", async () => {
+      const userId = await createUser();
+      const video = await createVideo();
+      const wordId = await createWord("journey");
+      const segmentId = await createSegment(video, "Segment cümlesi.");
+      await repository.saveWord(userId, wordId, segmentId);
+      const fixture = await createPassageFixture(db, { slug: "p2" });
+      await repository.saveWord(userId, fixture.wordId);
+
+      const rows = await repository.findSavedWordsForUser(userId);
+
+      expect(new Map(rows.map((r) => [r.word.id, r.sourceSentence]))).toEqual(
+        new Map([
+          [wordId, "Segment cümlesi."],
+          [fixture.wordId, null],
+        ]),
+      );
+    });
+
+    it("findPassageWordAccess: ücretsiz/emekli/kelime üyeliği olgularını verir; bilinmeyen metin null", async () => {
+      const free = await createPassageFixture(db, { slug: "free", isFreeSample: true });
+      const retired = await createPassageFixture(db, { slug: "ret", retired: true });
+      const unrelatedWordId = await createWord("dog");
+
+      await expect(repository.findPassageWordAccess(free.passageId, free.wordId)).resolves.toEqual({ isFreeSample: true, retired: false, containsWord: true });
+      await expect(repository.findPassageWordAccess(free.passageId, unrelatedWordId)).resolves.toEqual({ isFreeSample: true, retired: false, containsWord: false });
+      await expect(repository.findPassageWordAccess(retired.passageId, retired.wordId)).resolves.toMatchObject({ retired: true, containsWord: true });
+      await expect(repository.findPassageWordAccess("00000000-0000-4000-8000-0000000000ff", free.wordId)).resolves.toBeNull();
+    });
+
+    it("metin silinirse saved_words satırı kalır, source_passage_id null olur", async () => {
+      const userId = await createUser();
+      const fixture = await createPassageFixture(db, { slug: "gone" });
+      await repository.saveWord(userId, fixture.wordId, null, fixture.passageId);
+
+      await db.delete(passagesTable).where(eq(passagesTable.id, fixture.passageId));
+
+      const [row] = await db.select().from(userSavedWordsTable);
+      expect(row?.sourcePassageId).toBeNull();
     });
   });
 

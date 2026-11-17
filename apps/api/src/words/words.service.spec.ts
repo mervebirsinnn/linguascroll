@@ -1,5 +1,6 @@
-import { BadRequestException } from "@nestjs/common";
+import { BadRequestException, ForbiddenException } from "@nestjs/common";
 import type { Word } from "@linguascroll/shared-types";
+import type { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import type { UsersService } from "../users/users.service";
 import type { WordReviewEventsRepository } from "./word-review-events-repository";
 import { WordsRepository, type SavedWordRow } from "./words-repository";
@@ -19,6 +20,7 @@ const WORD_A_ID = "00000000-0000-4000-9000-00000000000a";
 const WORD_B_ID = "00000000-0000-4000-9000-00000000000b";
 const WORD_C_ID = "00000000-0000-4000-9000-00000000000c";
 const SEGMENT_ID = "00000000-0000-4000-a000-000000000001";
+const PASSAGE_ID = "00000000-0000-4000-b000-000000000001";
 
 function makeWord(id: string, lemma: string): Word {
   return { id, language: "en", lemma, gloss: `${lemma} gloss` };
@@ -32,7 +34,9 @@ type Overrides = {
   findWordById?: (wordId: string) => Promise<Word | null>;
   userExists?: boolean;
   isSegmentConsistentWithWord?: (segmentId: string, wordId: string) => Promise<boolean>;
-  saveWordSpy?: (userId: string, wordId: string, sourceSegmentId: string | null) => void;
+  saveWordSpy?: (userId: string, wordId: string, sourceSegmentId: string | null, sourcePassageId: string | null) => void;
+  findPassageWordAccess?: () => Promise<{ isFreeSample: boolean; retired: boolean; containsWord: boolean } | null>;
+  hasFullAccess?: () => Promise<boolean>;
   findSavedWordsForUser?: () => Promise<SavedWordRow[]>;
   findEventsForUser?: () => Promise<Map<string, { isCorrect: boolean; reviewedAt: Date }[]>>;
   recordSpy?: (params: { userId: string; wordId: string; isCorrect: boolean }) => void;
@@ -46,12 +50,13 @@ type Overrides = {
 function makeService(overrides: Overrides = {}): WordsService {
   const wordsRepository = {
     findWordById: overrides.findWordById ?? ((wordId: string) => Promise.resolve(makeWord(wordId, "journey"))),
-    saveWord: (userId: string, wordId: string, sourceSegmentId: string | null = null) => {
-      overrides.saveWordSpy?.(userId, wordId, sourceSegmentId);
+    saveWord: (userId: string, wordId: string, sourceSegmentId: string | null = null, sourcePassageId: string | null = null) => {
+      overrides.saveWordSpy?.(userId, wordId, sourceSegmentId, sourcePassageId);
       return Promise.resolve({ created: true });
     },
     unsaveWord: () => Promise.resolve(),
     isSegmentConsistentWithWord: overrides.isSegmentConsistentWithWord ?? (() => Promise.resolve(true)),
+    findPassageWordAccess: overrides.findPassageWordAccess ?? (() => Promise.resolve(null)),
     findSavedWordsForUser: overrides.findSavedWordsForUser ?? (() => Promise.resolve([])),
     getSavedWordCounts: overrides.getSavedWordCounts ?? (() => Promise.resolve({ total: 0, sinceCount: 0 })),
     findVocabularyForVideos: () => Promise.resolve([]),
@@ -70,7 +75,11 @@ function makeService(overrides: Overrides = {}): WordsService {
     userExists: () => Promise.resolve(overrides.userExists ?? true),
   } as unknown as UsersService;
 
-  return new WordsService(wordsRepository, wordReviewEventsRepository, usersService);
+  const subscriptionsService = {
+    hasFullAccess: overrides.hasFullAccess ?? (() => Promise.resolve(false)),
+  } as unknown as SubscriptionsService;
+
+  return new WordsService(wordsRepository, wordReviewEventsRepository, usersService, subscriptionsService);
 }
 
 describe("WordsService", () => {
@@ -83,7 +92,7 @@ describe("WordsService", () => {
       await service.saveWord(WORD_A_ID, USER_ID);
 
       expect(isSegmentConsistentWithWord).not.toHaveBeenCalled();
-      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, null);
     });
 
     it("sourceSegmentId verilmiş ve tutarlıysa saveWord bu context ile çağrılır", async () => {
@@ -94,7 +103,7 @@ describe("WordsService", () => {
       await service.saveWord(WORD_A_ID, USER_ID, SEGMENT_ID);
 
       expect(isSegmentConsistentWithWord).toHaveBeenCalledWith(SEGMENT_ID, WORD_A_ID);
-      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, SEGMENT_ID);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, SEGMENT_ID, null);
     });
 
     it("sourceSegmentId verilmiş ama TUTARSIZSA BadRequestException fırlatır, saveWord'e hiç ulaşmaz", async () => {
@@ -104,6 +113,54 @@ describe("WordsService", () => {
 
       await expect(service.saveWord(WORD_A_ID, USER_ID, SEGMENT_ID)).rejects.toThrow(BadRequestException);
       expect(saveWordSpy).not.toHaveBeenCalled();
+    });
+  });
+
+  describe("saveWord — sourcePassageId (okuma pratiği)", () => {
+    const open = { isFreeSample: false, retired: false, containsWord: true };
+
+    it("segmentle birlikte gelirse 400; hiçbir sorgu/yazma yapılmaz", async () => {
+      const saveWordSpy = jest.fn();
+      const findPassageWordAccess = jest.fn(() => Promise.resolve(open));
+      const service = makeService({ saveWordSpy, findPassageWordAccess });
+
+      await expect(service.saveWord(WORD_A_ID, USER_ID, SEGMENT_ID, PASSAGE_ID)).rejects.toThrow(BadRequestException);
+      expect(findPassageWordAccess).not.toHaveBeenCalled();
+      expect(saveWordSpy).not.toHaveBeenCalled();
+    });
+
+    it("bilinmeyen metin, emekli metin ve metinde olmayan kelime → 400, yazılmaz", async () => {
+      for (const access of [null, { ...open, retired: true }, { ...open, containsWord: false }]) {
+        const saveWordSpy = jest.fn();
+        const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve(access), hasFullAccess: () => Promise.resolve(true) });
+        await expect(service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID)).rejects.toThrow(BadRequestException);
+        expect(saveWordSpy).not.toHaveBeenCalled();
+      }
+    });
+
+    it("kilitli metin + tam erişim yok → 403, yazılmaz", async () => {
+      const saveWordSpy = jest.fn();
+      const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve(open), hasFullAccess: () => Promise.resolve(false) });
+      await expect(service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID)).rejects.toThrow(ForbiddenException);
+      expect(saveWordSpy).not.toHaveBeenCalled();
+    });
+
+    it("ücretsiz örnek abonelik sorgulanmadan kaydedilir; kaynak metin olarak yazılır", async () => {
+      const saveWordSpy = jest.fn();
+      const hasFullAccess = jest.fn(() => Promise.resolve(false));
+      const service = makeService({ saveWordSpy, hasFullAccess, findPassageWordAccess: () => Promise.resolve({ ...open, isFreeSample: true }) });
+
+      await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID);
+
+      expect(hasFullAccess).not.toHaveBeenCalled();
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID);
+    });
+
+    it("kilitli olmayan (tam erişimli) metin kaydedilir", async () => {
+      const saveWordSpy = jest.fn();
+      const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve(open), hasFullAccess: () => Promise.resolve(true) });
+      await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID);
     });
   });
 

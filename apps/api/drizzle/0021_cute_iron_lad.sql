@@ -1,0 +1,3 @@
+ALTER TABLE "user_saved_words" ADD COLUMN "source_passage_id" uuid;--> statement-breakpoint
+ALTER TABLE "user_saved_words" ADD CONSTRAINT "user_saved_words_source_passage_id_passages_id_fk" FOREIGN KEY ("source_passage_id") REFERENCES "public"."passages"("id") ON DELETE set null ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE "user_saved_words" ADD CONSTRAINT "user_saved_words_single_source_check" CHECK ("user_saved_words"."source_segment_id" is null or "user_saved_words"."source_passage_id" is null);

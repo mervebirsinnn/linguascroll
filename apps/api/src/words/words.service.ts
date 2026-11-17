@@ -1,5 +1,6 @@
-import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
+import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from "@nestjs/common";
 import { normalizeGlossWord, savedWordSchema, type SavedWord, type VideoVocabularyItem, type WordsProgress } from "@linguascroll/shared-types";
+import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { UsersService } from "../users/users.service";
 import { computeWordReviewState } from "./review-scheduling";
 import { REVIEW_SESSION_SIZE, selectReviewSession, type ReviewCandidate } from "./review-selection";
@@ -26,6 +27,7 @@ export class WordsService {
     private readonly wordsRepository: WordsRepository,
     private readonly wordReviewEventsRepository: WordReviewEventsRepository,
     private readonly usersService: UsersService,
+    private readonly subscriptionsService: SubscriptionsService,
   ) {}
 
   /**
@@ -42,8 +44,33 @@ export class WordsService {
     return { word: saved.word, saved: true as const, created: saved.created };
   }
 
-  async saveWord(wordId: string, userId: string, sourceSegmentId?: string | null): Promise<{ created: boolean }> {
+  /**
+   * Okuma pratiği — `sourcePassageId` opsiyonel. Verilmişse: (1) segmentle birlikte gelemez (400), (2) metin yoksa/
+   * emekliyse veya kelime o metnin kelimelerinden değilse 400 (body'de referans verilen kaynak geçersiz — segment
+   * kuralıyla aynı), (3) metin KİLİTLİYSE 403: kilitli metnin kelimesini, metne erişimi olmayan biri kayıt yoluyla
+   * (gloss + bağlam cümlesi Memory'de görünür) sızdıramasın. Ücretsiz örnek abonelik sorgulanmadan açık
+   * (passages.service.answerQuestion ile aynı sıra).
+   */
+  async saveWord(
+    wordId: string,
+    userId: string,
+    sourceSegmentId?: string | null,
+    sourcePassageId?: string | null,
+  ): Promise<{ created: boolean }> {
+    if (sourceSegmentId && sourcePassageId) {
+      throw new BadRequestException("sourceSegmentId ve sourcePassageId birlikte gönderilemez");
+    }
     await this.assertWordAndUserExist(wordId, userId);
+
+    if (sourcePassageId) {
+      const access = await this.wordsRepository.findPassageWordAccess(sourcePassageId, wordId);
+      if (!access || access.retired || !access.containsWord) {
+        throw new BadRequestException(`"${sourcePassageId}" metni yok ya da "${wordId}" kelimesini içermiyor`);
+      }
+      if (!access.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId))) {
+        throw new ForbiddenException("Bu metin için erişim yok");
+      }
+    }
 
     if (sourceSegmentId) {
       const isConsistent = await this.wordsRepository.isSegmentConsistentWithWord(sourceSegmentId, wordId);
@@ -54,7 +81,7 @@ export class WordsService {
       }
     }
 
-    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null);
+    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null, sourcePassageId ?? null);
   }
 
   async unsaveWord(wordId: string, userId: string): Promise<void> {
