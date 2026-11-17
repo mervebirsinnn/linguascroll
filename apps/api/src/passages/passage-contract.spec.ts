@@ -66,7 +66,9 @@ describe("passageSchema", () => {
     expect(passageSchema.safeParse(openPassage).success).toBe(true);
   });
 
-  it("kilitli metin paragraf, soru ve kelime id'si TAŞIMAZ", () => {
+  // NOT: Zod bilinmeyen anahtarları parse'ta düşürür; bu test şemanın bu alanları KABUL ETMEDİĞİNİ gösterir,
+  // sunucunun göndermediğini DEĞİL. Sunucu tarafı kanıtı PR-3 e2e'sinde ham HTTP gövdesi üzerinde yapılacak.
+  it("kilitli metin şeması paragraf ve soru alanlarını parse çıktısına almaz", () => {
     const parsed = passageSchema.parse({ ...openPassage, access: "locked" });
     expect(parsed.access).toBe("locked");
     expect(parsed).not.toHaveProperty("paragraphs");
@@ -113,7 +115,9 @@ describe("passageQuestionSchema", () => {
     expect(passageQuestionSchema.safeParse(answered).success).toBe(true);
   });
 
-  it("cevap öncesi şıkta doğruluk/açıklama alanı sızmaz", () => {
+  // Aynı sınırlama: şema bu alanları çıktıya almaz; sunucunun cevaplanmamış soruda anahtar GÖNDERMEDİĞİ
+  // (ve result: null döndürdüğü) PR-3 e2e'sinde ham gövdede doğrulanacak.
+  it("cevap öncesi şık şeması doğruluk ve açıklama alanlarını parse çıktısına almaz", () => {
     const parsed = passageQuestionSchema.parse({
       ...unansweredQuestion,
       options: [
