@@ -236,6 +236,9 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   it("personalized ranking: gerçek watch history'si travel'e yoğun olan kullanıcı feed'in başında travel görür", async () => {
     const userId = await createUser();
     const travelIds = [await createVideo("travel"), await createVideo("travel"), await createVideo("travel")];
+    // 2026-11-15 — "izlenmeyenler önce" sonrası: izlenen 3 travel videosu artık (bilinçli olarak) sona
+    // gidiyor; affinity'nin sırayı belirlediğini ölçmek için İZLENMEMİŞ bir travel videosu gerekiyor.
+    const unwatchedTravelId = await createVideo("travel");
     await createVideo("career");
     await createVideo("humor");
 
@@ -247,12 +250,13 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
 
     const response = await getFeed(userId);
     const page = feedPageSchema.parse(response.body);
-    const videoItems = page.items.filter((item) => item.type === "video");
+    const videoIds = page.items.flatMap((item) => (item.type === "video" ? [item.video.id] : []));
 
-    expect(videoItems[0]).toBeDefined();
-    if (videoItems[0]?.type === "video") {
-      expect(videoItems[0].video.topic).toBe("travel");
-    }
+    // Affinity: izlenmemiş travel videosu, career/humor'dan önce en başta.
+    expect(videoIds[0]).toBe(unwatchedTravelId);
+    // İzlenmeyenler önce: yakın zamanda izlenen 3 travel videosu en sonda (düşmüyor, sadece sona gidiyor).
+    expect(videoIds).toHaveLength(6);
+    expect(new Set(videoIds.slice(-3))).toEqual(new Set(travelIds));
   });
 
   it("feed response'unda aynı video id iki kez bulunmaz (global dedupe)", async () => {

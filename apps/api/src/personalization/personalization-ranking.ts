@@ -329,3 +329,27 @@ function takeNextUnused(
   }
   return undefined;
 }
+
+/**
+ * 2026-11-15 — "İzlenmeyenler önce" kararı: kullanıcı uygulamayı yeniden açtığında yakın zamanda izlediği
+ * videoları baştan görüyordu (gerçek testçi geri bildirimi) — izleme geçmişi yalnızca topic affinity'ye
+ * giriyordu, hangi videonun ZATEN izlendiği yeni session'ın sırasına hiç yansımıyordu.
+ *
+ * Bu fonksiyon `rankVideos`/`applyTieBreakOrdering` ÇIKTISINI kararlı (stable) biçimde ikiye böler: önce
+ * `recentlyWatchedIds`'te OLMAYANLAR, sonra olanlar — her iki grubun İÇ sırası aynen korunur (topic
+ * interleaving'i, seed'li tie-break ve preference boost'u bozulmaz). Hard-filter DEĞİL, bilinçli olarak:
+ * izlenmeyen video kalmayınca (küçük katalog, 10 videoluk ücretsiz hak) izlenenler sırayla yeniden gelir —
+ * dil öğreniminde tekrar zaten faydalı ve feed asla boş kalmaz.
+ *
+ * Saf, deterministik ve girdiyi mutate etmez; "yakın zamanda izlendi" eşiği (süre penceresi + izlenme oranı)
+ * burada DEĞİL, PersonalizationService'te — bu fonksiyon yalnızca verilen id kümesine göre sıralar.
+ */
+export function prioritizeUnwatched(ranked: readonly PlayableVideo[], recentlyWatchedIds: ReadonlySet<string>): PlayableVideo[] {
+  if (recentlyWatchedIds.size === 0) return [...ranked];
+  const unwatched: PlayableVideo[] = [];
+  const watched: PlayableVideo[] = [];
+  for (const video of ranked) {
+    (recentlyWatchedIds.has(video.id) ? watched : unwatched).push(video);
+  }
+  return [...unwatched, ...watched];
+}

@@ -117,4 +117,63 @@ describe("PersonalizationRepository (integration, gerçek Postgres)", () => {
 
     expect(affinity.size).toBe(0);
   });
+
+  describe("getRecentlyWatchedVideoIds (2026-11-15, izlenmeyenler önce)", () => {
+    const now = new Date();
+    const since = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+
+    it("pencere içinde en az %50 izlenen videoları döndürür; daha az izlenenleri döndürmez", async () => {
+      const userId = await createUser();
+      const watched = await createVideo("travel", 10000);
+      const skimmed = await createVideo("travel", 10000);
+      await db.insert(videoWatchEventsTable).values([
+        { userId, videoId: watched, watchedMs: 5000 }, // tam eşik: 0.5
+        { userId, videoId: skimmed, watchedMs: 4999 },
+      ]);
+
+      const ids = await repository.getRecentlyWatchedVideoIds(userId, since, 0.5);
+
+      expect([...ids]).toEqual([watched]);
+    });
+
+    it("pencereden (since) ÖNCEKİ izlemeler sayılmaz", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo("travel", 1000);
+      await db.insert(videoWatchEventsTable).values({ userId, videoId, watchedMs: 1000, createdAt: new Date(since.getTime() - 60 * 1000) });
+
+      const ids = await repository.getRecentlyWatchedVideoIds(userId, since, 0.5);
+
+      expect(ids.size).toBe(0);
+    });
+
+    it("kısa exposure'lar TOPLANMAZ (MAX): 3 x %20'lik kaydırma 'izlendi' sayılmaz", async () => {
+      const userId = await createUser();
+      const videoId = await createVideo("travel", 1000);
+      await db.insert(videoWatchEventsTable).values([
+        { userId, videoId, watchedMs: 200 },
+        { userId, videoId, watchedMs: 200 },
+        { userId, videoId, watchedMs: 200 },
+      ]);
+
+      const ids = await repository.getRecentlyWatchedVideoIds(userId, since, 0.5);
+
+      expect(ids.size).toBe(0);
+    });
+
+    it("aynı video birden çok kez izlendiyse tek id döner; başka kullanıcının izlemeleri sızmaz", async () => {
+      const userId = await createUser();
+      const otherUserId = await createUser();
+      const mine = await createVideo("travel", 1000);
+      const theirs = await createVideo("career", 1000);
+      await db.insert(videoWatchEventsTable).values([
+        { userId, videoId: mine, watchedMs: 900 },
+        { userId, videoId: mine, watchedMs: 5000 }, // loop artefaktı: oran 1'e clamp'lenir
+        { userId: otherUserId, videoId: theirs, watchedMs: 1000 },
+      ]);
+
+      const ids = await repository.getRecentlyWatchedVideoIds(userId, since, 0.5);
+
+      expect([...ids]).toEqual([mine]);
+    });
+  });
 });

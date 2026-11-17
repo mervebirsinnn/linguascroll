@@ -14,9 +14,14 @@ function video(id: string, topic: PlayableVideo["topic"] = "travel"): PlayableVi
   } as PlayableVideo;
 }
 
-function makeService(affinityByUserId: Map<string, Map<string, number>>): PersonalizationService {
+function makeService(
+  affinityByUserId: Map<string, Map<string, number>>,
+  recentlyWatchedByUserId: Map<string, Set<string>> = new Map(),
+  getRecentlyWatchedVideoIds: jest.Mock = jest.fn((userId: string) => Promise.resolve(recentlyWatchedByUserId.get(userId) ?? new Set())),
+): PersonalizationService {
   const repository = {
     getTopicAffinity: (userId: string) => Promise.resolve(affinityByUserId.get(userId) ?? new Map()),
+    getRecentlyWatchedVideoIds,
   } as unknown as PersonalizationRepository;
   return new PersonalizationService(repository);
 }
@@ -156,5 +161,54 @@ describe("PersonalizationService — sessionSeed ve cold-start cache", () => {
     const result = await service.getPersonalizedVideos("u", candidates, "all", undefined, seedOf(9));
     expect(ids(result)).toEqual(ids(rankVideos(candidates, new Map([["travel", 2]]), undefined, key)));
     expect(service.coldStartCacheSize).toBe(0);
+  });
+});
+
+describe("PersonalizationService — izlenmeyenler önce (2026-11-15)", () => {
+  it("izleme geçmişi olan kullanıcıda yakın zamanda izlenen videolar sona gider, diğerlerinin sırası korunur", async () => {
+    const candidates = [video("a"), video("b"), video("c"), video("d")];
+    const plain = await makeService(new Map([["u", new Map([["travel", 2]])]])).getPersonalizedVideos("u", candidates, "all");
+    const service = makeService(new Map([["u", new Map([["travel", 2]])]]), new Map([["u", new Set([plain[0]!.id, plain[2]!.id])]]));
+
+    const result = await service.getPersonalizedVideos("u", candidates, "all");
+
+    expect(result.map((v) => v.id)).toEqual([plain[1]!.id, plain[3]!.id, plain[0]!.id, plain[2]!.id]);
+  });
+
+  it("cold-start (önbellekli) yolda da uygulanır ve önbelleği kişiye özel veriyle KİRLETMEZ", async () => {
+    const candidates = [video("a"), video("b"), video("c")];
+    const service = makeService(new Map(), new Map([["watcher", new Set(["a"])]]));
+
+    const forWatcher = await service.getPersonalizedVideos("watcher", candidates, "all");
+    const forOther = await service.getPersonalizedVideos("other", candidates, "all");
+
+    expect(forWatcher.map((v) => v.id).at(-1)).toBe("a");
+    expect(forOther.map((v) => v.id)).toEqual(rankVideos(candidates, new Map()).map((v) => v.id));
+  });
+
+  it("bütün adaylar izlenmişse hiçbiri düşmez — aynı küme, orijinal sırayla döner (feed asla boş kalmaz)", async () => {
+    const candidates = [video("a"), video("b")];
+    const plain = await makeService(new Map()).getPersonalizedVideos("u", candidates, "all");
+    const service = makeService(new Map(), new Map([["u", new Set(["a", "b"])]]));
+
+    const result = await service.getPersonalizedVideos("u", candidates, "all");
+
+    expect(result.map((v) => v.id)).toEqual(plain.map((v) => v.id));
+  });
+
+  it("repository'ye 7 günlük pencere ve %50 izlenme eşiğiyle sorulur", async () => {
+    const getRecentlyWatched = jest.fn(() => Promise.resolve(new Set<string>()));
+    const service = makeService(new Map(), new Map(), getRecentlyWatched);
+    const before = Date.now();
+
+    await service.getPersonalizedVideos("u", [video("a")], "all");
+
+    expect(getRecentlyWatched).toHaveBeenCalledTimes(1);
+    const [userId, since, ratio] = getRecentlyWatched.mock.calls[0] as unknown as [string, Date, number];
+    expect(userId).toBe("u");
+    expect(ratio).toBe(0.5);
+    const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
+    expect(before - since.getTime()).toBeGreaterThanOrEqual(sevenDaysMs - 1000);
+    expect(Date.now() - since.getTime()).toBeLessThanOrEqual(sevenDaysMs + 1000);
   });
 });

@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { topicSchema, type CefrLevel, type PlayableVideo, type Topic } from "@linguascroll/shared-types";
 import { deterministicTieBreak } from "./deterministic-tie-break";
-import { applyTieBreakOrdering, cefrLevelDistance, COLD_START_TOPIC_ORDER, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
+import { applyTieBreakOrdering, cefrLevelDistance, COLD_START_TOPIC_ORDER, prioritizeUnwatched, rankVideos, VIDEOS_PER_EXPLORATION } from "./personalization-ranking";
 
 /**
  * rankVideos, DB/Nest/HTTP bilmeyen saf bir fonksiyon — bu yüzden bu testler hiçbir
@@ -455,4 +455,32 @@ it("yeni konuların tamamı sıralamaya dahil edilir", () => {
   const videos = topicSchema.options.map((topic) => makeVideo(topic, topic));
   const ranked = rankVideos(videos, new Map(), {level:null, topics:["science", "music", "food", "cinema"]});
   expect(new Set(ranked.map((v) => v.topic))).toEqual(new Set(topicSchema.options));
+});
+
+describe("prioritizeUnwatched (2026-11-15)", () => {
+  const v = (id: string) => ({ id, topic: "travel", cefrLevel: "A1", durationMs: 1000, playbackUrl: `https://x/${id}` }) as PlayableVideo;
+
+  it("izlenmeyenleri öne, izlenenleri sona alır; iki grubun iç sırası korunur (stable)", () => {
+    const ranked = [v("a"), v("b"), v("c"), v("d"), v("e")];
+    expect(prioritizeUnwatched(ranked, new Set(["a", "d"])).map((x) => x.id)).toEqual(["b", "c", "e", "a", "d"]);
+  });
+
+  it("izlenen yoksa aynı sırayı YENİ bir dizi olarak döndürür (girdiyi paylaşmaz)", () => {
+    const ranked = [v("a"), v("b")];
+    const result = prioritizeUnwatched(ranked, new Set());
+    expect(result.map((x) => x.id)).toEqual(["a", "b"]);
+    expect(result).not.toBe(ranked);
+  });
+
+  it("hepsi izlenmişse hiçbir video düşmez ve sıra değişmez", () => {
+    const ranked = [v("a"), v("b"), v("c")];
+    expect(prioritizeUnwatched(ranked, new Set(["a", "b", "c"])).map((x) => x.id)).toEqual(["a", "b", "c"]);
+  });
+
+  it("aday olmayan izlenmiş id'ler sonucu etkilemez ve girdi mutate edilmez", () => {
+    const ranked = [v("a"), v("b")];
+    const snapshot = ranked.map((x) => x.id);
+    expect(prioritizeUnwatched(ranked, new Set(["zzz", "a"])).map((x) => x.id)).toEqual(["b", "a"]);
+    expect(ranked.map((x) => x.id)).toEqual(snapshot);
+  });
 });

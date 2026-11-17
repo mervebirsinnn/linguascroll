@@ -109,6 +109,8 @@ type ServiceOverrides = {
   personalize?: (candidates: PlayableVideo[]) => PlayableVideo[];
   /** Gerçek PersonalizationService (cold-start, boş affinity) kullanılır: seed'li sıralamanın uçtan uca testi için. */
   realPersonalization?: boolean;
+  /** 2026-11-15 — `realPersonalization` ile: repository'nin "yakın zamanda en az %50 izlendi" cevabı (izlenmeyenler önce). */
+  recentlyWatchedIds?: string[];
   /** `false`: getFeed'e otomatik varsayılan sessionSeed EKLENMEZ (seed-zorunluluğu testleri için). */
   autoSeed?: boolean;
   /**
@@ -173,7 +175,7 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   } as unknown as QuizzesService;
 
   const personalizationService = overrides.realPersonalization
-    ? new PersonalizationService({ getTopicAffinity: () => Promise.resolve(new Map()) } as unknown as PersonalizationRepository)
+    ? new PersonalizationService({ getTopicAffinity: () => Promise.resolve(new Map()), getRecentlyWatchedVideoIds: () => Promise.resolve(new Set(overrides.recentlyWatchedIds ?? [])) } as unknown as PersonalizationRepository)
     : ({
         getPersonalizedVideos: (_userId: string, candidates: PlayableVideo[]) =>
           Promise.resolve(overrides.personalize ? overrides.personalize(candidates) : candidates),
@@ -713,6 +715,37 @@ describe("Feed ücretsiz seçki — scope'lar arasında ortak 10 video", () => {
     expect(all.size).toBe(10);
     expect(offeredByScope.get("animation")!.every((id) => all.has(id))).toBe(true);
     expect(offeredByScope.get("ielts")!.every((id) => all.has(id))).toBe(true);
+  });
+});
+
+describe("Feed ücretsiz seçki + izlenmeyenler önce (2026-11-15, gerçek PersonalizationService)", () => {
+  // Quiz'siz: 10 video + paywall tek sayfaya sığsın, sıra doğrudan okunabilsin.
+  const videos = makeFullSessionVideos();
+  // makeQuotaSubscriptionsService'in seçki stub'ı: sıralı katalog id'lerinin ilk 10'u.
+  const preview = videos.map((v) => v.id).sort().slice(0, 10);
+
+  it("haklı videolardan izlenmeyenler önce, yakın zamanda izlenenler sonda gelir; hak dışı video hiç açılmaz", async () => {
+    const watched = [preview[0]!, preview[3]!, preview[7]!];
+    const service = makeFeedService({ videos, quizzesByVideoId: new Map(), freeQuota: { grantedVideoIds: [] }, realPersonalization: true, recentlyWatchedIds: watched });
+
+    const page = await service.getFeed(TEST_USER_ID);
+    const ids = videoIds(page.items);
+
+    expect(ids).toHaveLength(10);
+    expect(new Set(ids)).toEqual(new Set(preview));
+    expect(new Set(ids.slice(0, 7))).toEqual(new Set(preview.filter((id) => !watched.includes(id))));
+    expect(new Set(ids.slice(-3))).toEqual(new Set(watched));
+    expect(page.items.at(-1)).toEqual({ type: "paywall" });
+  });
+
+  it("10 haklı videonun hepsi izlenmişse hiçbiri düşmez: aynı 10 video yeniden izlenebilir, ardından paywall", async () => {
+    const service = makeFeedService({ videos, quizzesByVideoId: new Map(), freeQuota: { grantedVideoIds: [] }, realPersonalization: true, recentlyWatchedIds: preview });
+
+    const page = await service.getFeed(TEST_USER_ID);
+
+    expect(new Set(videoIds(page.items))).toEqual(new Set(preview));
+    expect(page.items.filter((i) => i.type === "video").every((i) => i.video.playbackUrl !== null)).toBe(true);
+    expect(page.items.at(-1)).toEqual({ type: "paywall" });
   });
 });
 

@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 import type { FeedPreferences, FeedScope, PlayableVideo } from "@linguascroll/shared-types";
 import { PersonalizationRepository } from "./personalization-repository";
 import { deterministicTieBreak } from "./deterministic-tie-break";
-import { applyTieBreakOrdering, rankVideos } from "./personalization-ranking";
+import { applyTieBreakOrdering, prioritizeUnwatched, rankVideos } from "./personalization-ranking";
 
 /**
  * Cold-start (izleme geçmişi olmayan) kullanıcılar için `rankVideos` sonucu
@@ -18,6 +18,15 @@ import { applyTieBreakOrdering, rankVideos } from "./personalization-ranking";
  * publish-animation.ts) şu an için gereksiz bir karmaşıklık olurdu.
  */
 const COLD_START_CACHE_TTL_MS = 5 * 60 * 1000;
+
+/**
+ * 2026-11-15 — "İzlenmeyenler önce" eşiği (bkz. `prioritizeUnwatched`). 7 gün: uygulamayı her gün açan
+ * kullanıcı bir hafta boyunca aynı videoyu baştan görmez; bir hafta sonra video "tekrar" olarak öne
+ * dönebilir (dil öğreniminde aralıklı tekrar istenen bir şey). %50: videonun en az yarısı OYNATILMIŞSA
+ * "izlendi" sayılır — birkaç saniyelik geçiş/kaydırma sayılmaz, o video izlenmemiş gibi yine öne gelebilir.
+ */
+const RECENTLY_WATCHED_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+const RECENTLY_WATCHED_MIN_RATIO = 0.5;
 
 type CacheEntry = { videos: PlayableVideo[]; expiresAt: number };
 
@@ -66,13 +75,24 @@ export class PersonalizationService {
     preference?: FeedPreferences,
     sessionSeed?: string,
   ): Promise<PlayableVideo[]> {
-    const affinityByTopic = await this.personalizationRepository.getTopicAffinity(userId);
+    // KAPSAM: bu sıralama YENİ bir session'ın planı için geçerli (cursor'suz istek). Kesintisiz akışta
+    // (FeedService.nextContinuousPlan) sıralama yine buradan gelir ama ardından son videoya göre
+    // DÖNDÜRÜLÜR; izlenenler o partide sona düşmeyebilir. Bilinçli olarak bu değişikliğin dışında —
+    // kesintisiz akışın algoritması ayrı bir konu (bkz. PR açıklaması).
+    //
+    // 2026-11-15 — iki okuma PARALEL (aynı kullanıcının iki bağımsız aggregate'i; sıralı await session
+    // başlangıcına gereksiz bir round-trip eklerdi). "İzlenmeyenler önce" en SONDA, sıralamanın kendisine
+    // dokunmadan uygulanır (bkz. prioritizeUnwatched) — cold-start cache'i bu yüzden kişiye özel veri tutmaz.
+    const [affinityByTopic, recentlyWatchedIds] = await Promise.all([
+      this.personalizationRepository.getTopicAffinity(userId),
+      this.personalizationRepository.getRecentlyWatchedVideoIds(userId, new Date(Date.now() - RECENTLY_WATCHED_WINDOW_MS), RECENTLY_WATCHED_MIN_RATIO),
+    ]);
     const tieBreakKey = sessionSeed ? (video: PlayableVideo) => deterministicTieBreak(sessionSeed, scope, userId, video.id) : undefined;
 
     // Cold start DEĞİLSE (gerçek izleme geçmişi varsa) önbellek hiç devreye
     // girmez — bu kullanıcının sıralaması gerçekten kişiye özel, paylaşılamaz.
     if (affinityByTopic.size > 0) {
-      return rankVideos(candidates, affinityByTopic, preference, tieBreakKey);
+      return prioritizeUnwatched(rankVideos(candidates, affinityByTopic, preference, tieBreakKey), recentlyWatchedIds);
     }
 
     const cacheKey = buildColdStartCacheKey(scope, preference, candidates);
@@ -87,8 +107,8 @@ export class PersonalizationService {
     }
 
     // Cache'li diziyi ASLA doğrudan döndürmeyiz/mutate etmeyiz: seed varsa applyTieBreakOrdering yeni dizi üretir,
-    // yoksa açık bir kopya döner.
-    return tieBreakKey ? applyTieBreakOrdering(baseRanking, preference, tieBreakKey) : [...baseRanking];
+    // yoksa prioritizeUnwatched açık bir kopya döner (izlenen yoksa da kopya — cache'li dizi dışarı sızmaz).
+    return prioritizeUnwatched(tieBreakKey ? applyTieBreakOrdering(baseRanking, preference, tieBreakKey) : baseRanking, recentlyWatchedIds);
   }
 }
 
