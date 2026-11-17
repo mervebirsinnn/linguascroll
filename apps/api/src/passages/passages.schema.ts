@@ -29,6 +29,14 @@ import { wordsTable } from "../words/words.schema";
  * çelişmez. `sort_order` yayından sonra DEĞİŞMEZ (cursor (sort_order, id) kararlılığı için) — bunu
  * DB değil yayıncı zorlar; değişebilirlik ucuz bir kural olduğu için burada kısıt konmadı.
  *
+ * `slug` GLOBAL olarak benzersiz ve emekli edilmiş satırlar da sayılır: esaslı düzeltme eski satırı emekli edip
+ * YENİ slug'lı yeni bir satır yayınlar (aynı slug yeniden kullanılamaz). Slug'ı yalnız aktif satırlarda benzersiz
+ * yapmak ikinci bir (partial index) kural getirirdi; bugün gerçek bir ihtiyaç olmadığı için basit tutuldu.
+ *
+ * Cevabın metindeki dayanak aralığı ve editoryal kaynak kaydı (iddia/kaynak/kontrol tarihi) BURADA TUTULMUYOR:
+ * ikisi de içerik paketi dosyasında yaşar ve yayın doğrulayıcısı tarafından denetlenir; çalışma zamanında hiçbir
+ * davranış tüketmediği için kolon eklenmedi.
+ *
  * `level` kontrolü DB'de de var (veri hangi uygulamadan gelirse gelsin B1..C2 dışı imkânsız bir
  * durum): shared-types'taki passageLevelSchema ile aynı küme.
  */

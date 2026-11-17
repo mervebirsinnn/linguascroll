@@ -1,3 +1,4 @@
+import { passageLevelSchema } from "@linguascroll/shared-types";
 import { eq } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
@@ -97,7 +98,6 @@ describe("PassageAnswersRepository ve passages şema invariant'ları (integratio
       const passage = await createPassage();
       const { question, options } = await createQuestion(passage.id, 1, 2);
       const correct = options.find((option) => option.isCorrect)!;
-      const wrong = options.find((option) => !option.isCorrect)!;
 
       const first = await repository.record({ userId, questionId: question.id, optionId: correct.id });
       expect(first).toMatchObject({ status: "recorded", answer: { optionId: correct.id, isCorrect: true } });
@@ -106,7 +106,6 @@ describe("PassageAnswersRepository ve passages şema invariant'ları (integratio
       const wrongOption = otherQuestion.options.find((option) => !option.isCorrect)!;
       const second = await repository.record({ userId, questionId: otherQuestion.question.id, optionId: wrongOption.id });
       expect(second).toMatchObject({ status: "recorded", answer: { isCorrect: false } });
-      expect(wrong.id).not.toBe(correct.id);
     });
 
     it("aynı isteğin tekrarı (ağ hatası) yeni cevap sayılmaz: aynı satır döner, tek satır kalır", async () => {
@@ -219,9 +218,12 @@ describe("PassageAnswersRepository ve passages şema invariant'ları (integratio
       expect(code).toBe(UNIQUE_VIOLATION);
     });
 
-    it("seviye B1..C2 dışı (A2) DB check'inde reddedilir", async () => {
-      const code = await pgErrorCode(createPassage("bad-level", "A2"));
-      expect(code).toBe(CHECK_VIOLATION);
+    it.each(passageLevelSchema.options)("%s seviyesi DB check'inden geçer", async (level) => {
+      await expect(createPassage(`ok-${level}`, level)).resolves.toMatchObject({ level });
+    });
+
+    it.each(["A1", "A2", "b1", ""])("seviye %p DB check'inde reddedilir", async (level) => {
+      expect(await pgErrorCode(createPassage(`bad-${level}`, level))).toBe(CHECK_VIOLATION);
     });
 
     it("span: passage_words'te olmayan kelime bileşik FK ile reddedilir; ters aralık check ile reddedilir", async () => {
