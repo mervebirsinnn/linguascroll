@@ -9,6 +9,7 @@ import { ContentAdminModule } from "./content-admin/content-admin.module";
 import { DatabaseModule } from "./database/database.module";
 import { FeedbackModule } from "./feedback/feedback.module";
 import { FeedModule } from "./feed/feed.module";
+import { PassagesModule } from "./passages/passages.module";
 import { QuizzesModule } from "./quizzes/quizzes.module";
 import { RequestLoggingMiddleware } from "./request-logging.middleware";
 import { UsersModule } from "./users/users.module";
@@ -187,6 +188,7 @@ export const envSchema = baseEnvSchema
     QuizzesModule,
     WordsModule,
     FeedModule,
+    PassagesModule,
     FeedbackModule,
     ContentAdminModule,
   ],
