@@ -3,6 +3,7 @@ import { Test } from "@nestjs/testing";
 import type { INestApplication } from "@nestjs/common";
 import request from "supertest";
 import { eq } from "drizzle-orm";
+import { saveGlossResponseSchema } from "@linguascroll/shared-types";
 import { withTestAuth, createAuthenticatedUser } from "../auth/test-auth";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
 import { videosTable } from "../videos/videos.schema";
@@ -39,7 +40,12 @@ describe("Hesap ve öğrenme (gerçek PostgreSQL)", () => {
     const [a, b] = await Promise.all([save(), save()]);
     expect(a.body.word.id).toBe(b.body.word.id);
     expect(a.body.word.gloss).toBe("nehir kıyısı");
-    const saved = await request(app.getHttpServer()).get("/words/saved").set("Authorization", authorization).expect(200);
+    // 2026-11-17 — Loopi: iki paralel kayıttan yalnız biri gerçekten yeni satır ekledi; üçüncü kayıt false.
+    expect([a.body.created, b.body.created].sort()).toEqual([false, true]);
+    expect((await save()).body.created).toBe(false);
+    // Eski istemci uyumu: created'sız eski şema (z.object varsayılanı fazla alanı atar) cevabı yine kabul eder.
+    expect(saveGlossResponseSchema.omit({ created: true }).safeParse(a.body).success).toBe(true);
+    const saved =await request(app.getHttpServer()).get("/words/saved").set("Authorization", authorization).expect(200);
     expect(saved.body).toHaveLength(1); expect(saved.body[0].sourceSentence).toBe(segment.text);
     const review = await request(app.getHttpServer()).get("/words/review").set("Authorization", authorization).expect(200);
     expect(review.body).toHaveLength(1);

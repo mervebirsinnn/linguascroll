@@ -119,6 +119,44 @@ describe("WordsRepository (integration, gerçek Postgres)", () => {
       expect(rows).toHaveLength(1);
     });
 
+    // 2026-11-17 — Loopi `created`: değer DB ekleme sonucundan (RETURNING) geliyor, tahmin değil.
+    it("created: ilk kayıt true, aynı kelimenin ikinci kaydı false", async () => {
+      const userId = await createUser();
+      const wordId = await createWord("journey");
+
+      await expect(repository.saveWord(userId, wordId)).resolves.toEqual({ created: true });
+      await expect(repository.saveWord(userId, wordId)).resolves.toEqual({ created: false });
+    });
+
+    it("created: aynı (user, word) için iki PARALEL kayıttan tam olarak biri true, tek satır", async () => {
+      const userId = await createUser();
+      const wordId = await createWord("journey");
+
+      const results = await Promise.all([repository.saveWord(userId, wordId), repository.saveWord(userId, wordId)]);
+
+      expect(results.filter((r) => r.created)).toHaveLength(1);
+      const rows = await db.select().from(userSavedWordsTable).where(eq(userSavedWordsTable.wordId, wordId));
+      expect(rows).toHaveLength(1);
+    });
+
+    it("created: save → unsave → save ikinci kayıtta yine true", async () => {
+      const userId = await createUser();
+      const wordId = await createWord("journey");
+
+      await repository.saveWord(userId, wordId);
+      await repository.unsaveWord(userId, wordId);
+      await expect(repository.saveWord(userId, wordId)).resolves.toEqual({ created: true });
+    });
+
+    it("created: farklı kullanıcılar aynı kelimeyi kaydedince ikisi de true", async () => {
+      const userA = await createUser();
+      const userB = await createUser();
+      const wordId = await createWord("journey");
+
+      await expect(repository.saveWord(userA, wordId)).resolves.toEqual({ created: true });
+      await expect(repository.saveWord(userB, wordId)).resolves.toEqual({ created: true });
+    });
+
     it("unsaveWord var olmayan bir ilişkide no-op — hata fırlatmaz", async () => {
       const userId = await createUser();
       const wordId = await createWord("journey");

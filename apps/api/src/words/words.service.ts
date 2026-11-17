@@ -39,10 +39,10 @@ export class WordsService {
     if (!(await this.usersService.userExists(userId))) throw new BadRequestException("Kullanıcı bulunamadı");
     const saved = await this.wordsRepository.saveSegmentGloss(userId, segmentId, normalizeGlossWord(word));
     if (!saved) throw new NotFoundException("Bu altyazı kelimesinin hazırlanmış anlamı bulunamadı");
-    return { word: saved, saved: true as const };
+    return { word: saved.word, saved: true as const, created: saved.created };
   }
 
-  async saveWord(wordId: string, userId: string, sourceSegmentId?: string | null): Promise<void> {
+  async saveWord(wordId: string, userId: string, sourceSegmentId?: string | null): Promise<{ created: boolean }> {
     await this.assertWordAndUserExist(wordId, userId);
 
     if (sourceSegmentId) {
@@ -54,7 +54,7 @@ export class WordsService {
       }
     }
 
-    await this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null);
+    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null);
   }
 
   async unsaveWord(wordId: string, userId: string): Promise<void> {

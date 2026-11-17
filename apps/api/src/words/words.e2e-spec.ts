@@ -101,9 +101,22 @@ describe("PUT/DELETE /words/:wordId/saved (e2e, gerçek Postgres → WordsServic
     const second = await request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
     expect(first.status).toBe(200);
     expect(second.status).toBe(200);
+    // 2026-11-17 — Loopi: yalnız ilk PUT yeni kayıt; ikincisi "zaten vardı".
+    expect(first.body).toEqual({ created: true });
+    expect(second.body).toEqual({ created: false });
 
     const rows = await db.select().from(userSavedWordsTable).where(eq(userSavedWordsTable.wordId, wordId));
     expect(rows).toHaveLength(1);
+  });
+
+  it("2026-11-17 — sil + yeniden kaydet: yeniden kayıt tekrar created:true döner", async () => {
+    const userId = await createUser();
+    const wordId = await createWord();
+    const put = () => request(app.getHttpServer()).put(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).send({});
+
+    expect((await put()).body).toEqual({ created: true });
+    await request(app.getHttpServer()).delete(`/words/${wordId}/saved`).set("Authorization", bearerFor(userId)).expect(200);
+    expect((await put()).body).toEqual({ created: true });
   });
 
   it("unsave başarılı olur, satır DB'den silinir", async () => {
