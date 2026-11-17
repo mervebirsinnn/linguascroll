@@ -12,11 +12,22 @@ import { z } from "zod";
  * kararı). Backend bu alanı, verilmişse, gerçekten bu word'ün bu segment'in
  * videosuyla ilişkili olduğunu doğruluyor (bkz. words.service.ts).
  */
-export const saveWordRequestSchema = z.object({
-  // 2026-10-27 — `userId` KALDIRILDI: kimlik istemcinin gönderdiği bir alan değil, backend'in
-  // doğruladığı Firebase token'ından çözülüyor (bkz. apps/api auth/firebase-auth.guard.ts).
-  sourceSegmentId: z.string().uuid().nullable().optional(),
-});
+export const saveWordRequestSchema = z
+  .object({
+    // 2026-10-27 — `userId` KALDIRILDI: kimlik istemcinin gönderdiği bir alan değil, backend'in
+    // doğruladığı Firebase token'ından çözülüyor (bkz. apps/api auth/firebase-auth.guard.ts).
+    sourceSegmentId: z.string().uuid().nullable().optional(),
+    // Okuma pratiği: kelime bir paragraftan kaydedildiyse o metnin id'si. OPSİYONEL ve additive —
+    // eski istemciler göndermez; yeni istemci + eski API'de z.object bilinmeyen alanı düşürür, kelime
+    // kaynaksız kaydedilir (zararsız).
+    sourcePassageId: z.string().uuid().nullable().optional(),
+  })
+  // Bir kayıt TEK kaynaktan gelir (user_saved_words'te tek source kolonu mantığı): ikisi birden gelirse
+  // hangisinin geçerli olduğu belirsiz, sessizce birini seçmek yerine reddedilir.
+  .refine((value) => !(value.sourceSegmentId && value.sourcePassageId), {
+    message: "sourceSegmentId ve sourcePassageId birlikte gönderilemez",
+    path: ["sourcePassageId"],
+  });
 
 export type SaveWordRequest = z.infer<typeof saveWordRequestSchema>;
 
