@@ -251,8 +251,17 @@ export class PassagesController {
   // --- cevap ------------------------------------------------------------------------------------------------------------
 
   async answer(questionId: string, optionId: string): Promise<void> {
+    await this.sendAnswer(questionId, optionId, false);
+  }
+
+  /**
+   * `recheck`: belirsiz kalan cevabın YENİDEN GÖNDERİMİ. Elenmiş şık seçilemez kuralına takılmaz: kullanıcı o şıkkı eleme
+   * aracıyla işaretlemiş olsa bile, ZATEN gönderilmiş cevabı doğrulamak istiyor; sessizce hiçbir şey yapmamalıyız.
+   */
+  private async sendAnswer(questionId: string, optionId: string, recheck: boolean): Promise<void> {
     const question = findQuestion(this.byLevel, questionId);
-    if (!question || this.pendingAnswers[questionId] !== undefined || !canSelectOption(this.eliminated, question, optionId)) return;
+    if (!question || this.pendingAnswers[questionId] !== undefined) return;
+    if (question.result !== null || (!recheck && !canSelectOption(this.eliminated, question, optionId))) return;
     if (!question.options.some((option) => option.id === optionId)) return;
 
     const epoch = this.epoch;
@@ -325,7 +334,7 @@ export class PassagesController {
   async recheckAnswer(questionId: string): Promise<void> {
     const optionId = this.uncertainAttempts[questionId];
     if (optionId === undefined) return;
-    await this.answer(questionId, optionId);
+    await this.sendAnswer(questionId, optionId, true);
   }
 
   // --- kelime kaydı -----------------------------------------------------------------------------------------------------

@@ -79,7 +79,8 @@ export const passageWordsTable = pgTable(
     wordId: uuid("word_id")
       .notNull()
       .references(() => wordsTable.id, { onDelete: "cascade" }),
-    // Kelimenin metindeki İLK geçtiği cümle (kaynak cümle tie-break kararı: tekrar eden kelimede de aynı).
+    // Kelimenin metindeki İLK geçişinin cümlesi. YEDEK: asıl kaynak cümle geçiş (passage_word_spans.context_sentence) başınadır;
+    // bu, sourcePassageSpanId göndermeyen (eski) istemcinin kaydı ve cümlesi olmayan eski span satırları için kullanılır.
     contextSentence: text("context_sentence").notNull(),
   },
   (table) => [primaryKey({ columns: [table.passageId, table.wordId] })],

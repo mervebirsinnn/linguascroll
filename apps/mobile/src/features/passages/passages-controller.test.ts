@@ -1,4 +1,5 @@
 import type { PassageLevel, PassagePage } from "@linguascroll/shared-types";
+import { z } from "zod";
 import { PassagesApiError } from "./api/passages-api";
 import { ANSWER_FAILED_MESSAGE, ANSWER_UNCERTAIN_MESSAGE, PassagesController, type PassagesDeps } from "./passages-controller";
 import { CAT_SPAN_1, CAT_SPAN_2, CAT_WORD_ID, deferred, flush, makeAnswer, makeLockedPassage, makeOpenPassage, makePage, uuid, type OpenPassage } from "./passages-test-helpers";
@@ -583,5 +584,53 @@ describe("belirsiz cevap: ilk sayfa dışındaki soru", () => {
     await flush();
     expect(controller.getSnapshot().answerErrors[question.id]).toBe(ANSWER_UNCERTAIN_MESSAGE);
     expect(ANSWER_FAILED_MESSAGE).not.toBe(ANSWER_UNCERTAIN_MESSAGE);
+  });
+
+  it("200 dönüp gövdesi sözleşmeye UYMAYAN cevap kesin hata değil BELİRSİZDİR: 'Sonuç doğrulanamadı' + recheck çalışır", async () => {
+    const { fakes, controller, question } = await twoPages();
+    let invalidBody: unknown;
+    try {
+      z.object({ correct: z.boolean() }).parse({});
+    } catch (error) {
+      invalidBody = error;
+    }
+    fakes.answerPassageQuestion.mockRejectedValue(invalidBody);
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1"));
+    const attempted = question.options[2]!.id;
+
+    await controller.answer(question.id, attempted);
+    await flush();
+    expect(controller.getSnapshot().answerErrors[question.id]).toBe(ANSWER_UNCERTAIN_MESSAGE);
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledTimes(2); // belirsiz olduğu için bir kez otomatik yeniden gönderildi
+
+    fakes.answerPassageQuestion.mockReset().mockResolvedValueOnce(makeAnswer(question, 2, 2));
+    await controller.recheckAnswer(question.id);
+    expect(open(controller, "B2", 1).questions[0]!.result?.selectedOptionId).toBe(attempted);
+  });
+
+  it("denenen şık sonradan ELENMİŞ olsa bile 'tekrar kontrol et' sessizce boş kalmaz, aynı şıkkı yeniden gönderir", async () => {
+    const { fakes, controller, question } = await twoPages();
+    const attempted = question.options[1]!.id;
+    fakes.answerPassageQuestion.mockRejectedValue(networkError());
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1"));
+    await controller.answer(question.id, attempted);
+    await flush();
+    controller.toggleElimination(question.id, attempted); // kullanıcı bu arada şıkkı eledi
+    expect(controller.getSnapshot().eliminated.has(attempted)).toBe(true);
+    fakes.answerPassageQuestion.mockReset().mockResolvedValueOnce(makeAnswer(question, 1, 1));
+
+    await controller.recheckAnswer(question.id);
+
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledWith(question.id, attempted);
+    expect(open(controller, "B2", 1).questions[0]!.result).not.toBeNull();
+  });
+
+  it("kesin 4xx sonrası recheck gönderecek bir şey bulamaz (yalnız belirsiz denemeler hatırlanır)", async () => {
+    const { fakes, controller, question } = await twoPages();
+    fakes.answerPassageQuestion.mockRejectedValueOnce(new PassagesApiError("x", 400));
+    await controller.answer(question.id, question.options[0]!.id);
+    fakes.answerPassageQuestion.mockClear();
+    await controller.recheckAnswer(question.id);
+    expect(fakes.answerPassageQuestion).not.toHaveBeenCalled();
   });
 });

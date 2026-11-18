@@ -1,3 +1,4 @@
+import { ZodError } from "zod";
 import type { Passage, PassageAnswerResult, PassageLevel, PassagePage, PassageQuestion } from "@linguascroll/shared-types";
 import { PassagesApiError } from "./api/passages-api";
 
@@ -232,12 +233,14 @@ export function mapAllLevels(byLevel: PassagesByLevel, transform: (state: Passag
 }
 
 /**
- * İSTEĞİN SONUCU BİLİNMİYOR mu: zaman aşımı, 5xx veya düz ağ hatası → istek sunucuya ulaşıp cevabı KAYDETMİŞ olabilir.
- * 4xx (403 kilitli, 400 geçersiz şık) ve şema/oturum hataları kesin sonuçtur, yeniden gönderilmez.
+ * İSTEĞİN SONUCU BİLİNMİYOR mu: KESİN yalnız sunucu 4xx ile cevap verdiyse (403 kilitli, 400 geçersiz şık: istek reddedildi,
+ * hiçbir şey yazılmadı). Geri kalan her başarısızlık belirsizdir ve cevabı sunucu KAYDETMİŞ olabilir: zaman aşımı, 5xx, düz
+ * ağ hatası (RN: TypeError), VE 200 dönüp gövdesi okunamayan/sözleşmeye uymayan yanıt (SyntaxError/ZodError) — sunucu yazmış,
+ * istemci sonucu görememiş olur. Oturum yok gibi istek hiç atılmadan oluşan hatalar da kesin sayılır (yazım olmadı).
  */
 export function isOutcomeUncertain(error: unknown): boolean {
-  if (error instanceof PassagesApiError) return error.isTimeout || (error.status !== undefined && error.status >= 500);
-  return error instanceof TypeError; // React Native fetch ağ hatası: TypeError("Network request failed")
+  if (error instanceof PassagesApiError) return error.isTimeout || error.status === undefined || error.status >= 500;
+  return error instanceof TypeError || error instanceof SyntaxError || error instanceof ZodError;
 }
 
 /**

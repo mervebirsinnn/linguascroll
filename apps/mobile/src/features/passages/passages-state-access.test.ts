@@ -1,4 +1,5 @@
 import type { Passage } from "@linguascroll/shared-types";
+import { z } from "zod";
 import { PassagesApiError } from "./api/passages-api";
 import {
   applyFreshSuccess,
@@ -17,6 +18,15 @@ const success = (state: PassagesLevelState) => {
   if (state.status !== "success") throw new Error("success bekleniyordu");
   return state;
 };
+
+function zodFailure(): unknown {
+  try {
+    z.string().parse(1);
+  } catch (error) {
+    return error;
+  }
+  throw new Error("ZodError bekleniyordu");
+}
 
 describe("erişim durumu farklı kopyalar ve yeni saf yardımcılar (PR-7a)", () => {
   it("loadMore: eski KİLİTLİ kopya, gelen AÇIK kopyanın önüne geçmez (gelen kazanır); aynı erişimde ilk korunur", () => {
@@ -37,9 +47,11 @@ describe("erişim durumu farklı kopyalar ve yeni saf yardımcılar (PR-7a)", ()
     expect(isOutcomeUncertain(new PassagesApiError("x", undefined, true))).toBe(true);
     expect(isOutcomeUncertain(new PassagesApiError("x", 502))).toBe(true);
     expect(isOutcomeUncertain(new TypeError("Network request failed"))).toBe(true);
+    expect(isOutcomeUncertain(new SyntaxError("Unexpected end of JSON input"))).toBe(true); // 200 ama gövde okunamadı
+    expect(isOutcomeUncertain(zodFailure())).toBe(true); // 200 ama sözleşmeye uymayan gövde
     expect(isOutcomeUncertain(new PassagesApiError("x", 403))).toBe(false);
     expect(isOutcomeUncertain(new PassagesApiError("x", 400))).toBe(false);
-    expect(isOutcomeUncertain(new Error("Oturum yok"))).toBe(false);
+    expect(isOutcomeUncertain(new Error("Oturum yok"))).toBe(false); // istek hiç atılmadı
   });
 
   it("mergeAnswersFromPage: yalnız yerelde CEVAPSIZ olan soruya kayıtlı sonucu yazar; yerel cevabı ve listeyi korur", () => {
