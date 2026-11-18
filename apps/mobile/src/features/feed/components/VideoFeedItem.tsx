@@ -385,12 +385,17 @@ export function VideoFeedItem({
               ? isWordPending(openVocabularyWord.word.id)
               : false
           }
-          onToggleSave={() => {
-            if (openVocabularyWord) {
-              onToggleSaveWord(
-                openVocabularyWord.word.id,
-                openVocabularySegment?.id ?? null,
-              );
+          // İki AYRI niyet (bkz. VocabularyWordSheet): toggle yalnız kelimenin GERÇEK durumu niyetle uyuşuyorsa çağrılır —
+          // "kaydet" zaten kayıtlıyken ya da "çıkar" kayıtlı değilken (durum/prop kayması) yanlış yönde işlem yapmaz.
+          // Kaynak segment id'si değişmedi: dokunulan segmentin kendisi, TAHMİNİ bir segment asla üretilmez.
+          onSave={() => {
+            if (openVocabularyWord && !isWordSaved(openVocabularyWord.word.id)) {
+              onToggleSaveWord(openVocabularyWord.word.id, openVocabularySegment?.id ?? null);
+            }
+          }}
+          onRemove={() => {
+            if (openVocabularyWord && isWordSaved(openVocabularyWord.word.id)) {
+              onToggleSaveWord(openVocabularyWord.word.id, openVocabularySegment?.id ?? null);
             }
           }}
         />
