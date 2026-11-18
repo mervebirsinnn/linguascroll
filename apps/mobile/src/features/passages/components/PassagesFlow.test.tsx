@@ -397,3 +397,39 @@ describe("kilitli içerik ve erişim yenileme", () => {
     await waitFor(() => expect(screen.getByText("1 doğru · 0 yanlış · 3 cevaplanmadı")).toBeTruthy());
   });
 });
+
+describe("sayfalama: devam sayfası", () => {
+  const nearEnd = async () => {
+    await act(async () => {
+      screen.getByTestId("passage-pager").props.onViewableItemsChanged({ viewableItems: [{ index: 5, item: {}, key: "x", isViewable: true }] });
+    });
+  };
+
+  it("sona yaklaşınca devam sayfası istenir; HATA sonrası sayfa çevirmek OTOMATİK yeniden istek atmaz", async () => {
+    const fakes = makeDeps();
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([makeOpenPassage(1)], "c1")).mockRejectedValue(new TypeError("Network request failed"));
+    await renderFlow(fakes);
+    await waitFor(() => expect(screen.getByText("T1")).toBeTruthy());
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(1);
+
+    await nearEnd();
+    await waitFor(() => expect(fakes.fetchPassages).toHaveBeenCalledTimes(2));
+    expect(fakes.fetchPassages).toHaveBeenLastCalledWith("B1", "c1");
+
+    await nearEnd();
+    await nearEnd();
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(2); // hata sonrası yeni istek yok
+  });
+
+  it("seviyenin sonunda (nextCursor null) devam isteği atılmaz", async () => {
+    const fakes = makeDeps();
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], null));
+    await renderFlow(fakes);
+    await waitFor(() => expect(screen.getByText("T1")).toBeTruthy());
+
+    await nearEnd();
+
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(1);
+  });
+});
+

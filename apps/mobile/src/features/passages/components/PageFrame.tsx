@@ -5,11 +5,12 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
  * Okuma pratiği pager'ının TEK sayfa çerçevesi: sabit boyut (pagingEnabled FlatList'in getItemLayout'u ile uyumlu), kaydırılabilir
  * gövde ve ALTTA SABİT bir "Sonraki" çubuğu.
  *
- * Neden altta sabit "Sonraki" düğmesi: gövde bir ScrollView; uzun metin/açıklama taşarsa dikey kaydırma dış (sayfa) FlatList ile
- * AYNI eksende çakışır — iç ScrollView dokunuşu yutar ve sayfa kaydırması çalışmaz (bkz. PaywallFeedItem'ın aynı sebeple
- * ScrollView kullanmaması). Taşmayan sayfada dokunuş dış listeye geçer (kaydırınca sonraki sayfa); taşan sayfada kullanıcı içeriği
- * okuyup bu düğmeyle ilerler. Düğme sayfa türünden bağımsız her zaman erişilebilir olduğu için hiçbir sayfa "kilitli kalmaz".
- * Gerçek cihazda iç/dış kaydırma etkileşimi doğrulanmadı (raporda).
+ * Neden altta sabit "Sonraki" düğmesi: gövde bir ScrollView ve sayfa listesi de dikey bir FlatList. İç içe AYNI eksendeki kaydırmanın
+ * davranışı platforma göre değişir ve bu projede cihazda DOĞRULANMADI; iki olası başarısızlık var: (iOS) iç ScrollView sayfa
+ * kaydırmasını engelleyip sonraki sayfaya kaydırmayı zorlaştırabilir; (Android) `nestedScrollEnabled` olmadan iç ScrollView hiç
+ * kaydırılamayabilir (uzun metin/açıklama kesilir). `nestedScrollEnabled` BİLİNÇLİ OLARAK eklenmedi: bu repoda aynı prop'un video
+ * akışını kıran, kayıtlı bir cihaz gerilemesi var (bkz. VideoFeedItem.test.tsx). Bu düğme yalnız birinci durumda (sayfa geçişi)
+ * güvenli bir yoldur; ikinci durumun (içeriğe erişim) çözümü cihaz testinden sonra seçilmeli.
  */
 type PageFrameProps = {
   height: number;

@@ -99,7 +99,11 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
         pages={pages}
         height={height}
         width={width}
-        onNearEnd={passages.loadMore}
+        // Devam sayfası hata verdiyse OTOMATİK yeniden istek yok: her sayfa çevirişinde yeni istek atmak yerine kullanıcı bitiş
+        // sayfasındaki "Tekrar dene" ile yeniden dener (feed ile aynı karar).
+        onNearEnd={() => {
+          if (state.loadMoreError === null) passages.loadMore();
+        }}
         renderEnd={() => <PassageEndPage height={height} width={width} loadMoreError={state.loadMoreError} hasMore={state.nextCursor !== null} onRetry={passages.loadMore} />}
         renderPage={({ passage, page }, goNext) => {
           if (passage.access === "locked" || page.kind === "locked") {
