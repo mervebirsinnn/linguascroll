@@ -252,10 +252,15 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     const page = feedPageSchema.parse(response.body);
     const videoIds = page.items.flatMap((item) => (item.type === "video" ? [item.video.id] : []));
 
-    // Affinity: izlenmemiş travel videosu, career/humor'dan önce en başta.
-    expect(videoIds[0]).toBe(unwatchedTravelId);
-    // İzlenmeyenler önce: yakın zamanda izlenen 3 travel videosu en sonda (düşmüyor, sadece sona gidiyor).
+    // 2026-11-18 — eski assertion (`videoIds[0] === unwatchedTravelId`) rastgele UUID'ye bağlıydı: izlenmeyen
+    // travel videosu travel kuyruğunun 1. sırasında DEĞİLSE exploration (career/humor) videoları önüne geçer ve test
+    // aralıklı kırılıyordu. Kuyruk sırası ve affinity'nin sıralamaya etkisi artık sabit id'li deterministik
+    // unit testte (personalization-ranking.spec "affinity + izlenmeyenler önce"); burada UUID'den bağımsız,
+    // gerçek DB → HTTP bağlantısının değişmezleri doğrulanıyor.
     expect(videoIds).toHaveLength(6);
+    // İzlenmeyenler önce: izlenmemiş 3 video (travel + career + humor) ilk üçte; izlenmemiş travel düşmüyor.
+    expect(videoIds.slice(0, 3)).toContain(unwatchedTravelId);
+    // İzlenen 3 travel videosu en sonda (düşmüyor, sadece sona gidiyor).
     expect(new Set(videoIds.slice(-3))).toEqual(new Set(travelIds));
   });
 

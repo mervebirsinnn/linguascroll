@@ -484,3 +484,53 @@ describe("prioritizeUnwatched (2026-11-15)", () => {
     expect(ranked.map((x) => x.id)).toEqual(snapshot);
   });
 });
+
+/**
+ * 2026-11-18 — feed.e2e-spec "personalized ranking" testinin aralıklı kırılmasının DETERMİNİSTİK yeniden üretimi.
+ * Eski e2e test rastgele UUID'li 4 travel videosundan "izlenmeyen"in HER ZAMAN başta çıkmasını bekliyordu; oysa
+ * izlenmeyen videonun konumu travel kuyruğundaki (id/seed sıralı) yerine bağlı: yalnız kuyruğun 1. videosuysa başta
+ * kalır. Sabit id'lerle (t1<t2<t3<t4) dört olası durum burada tek tek sabitlenir. Ürün davranışı DEĞİŞMEDİ.
+ */
+describe("affinity + izlenmeyenler önce — sabit id'lerle deterministik (2026-11-18)", () => {
+  const travelIds = ["t1", "t2", "t3", "t4"];
+  const catalog = (): PlayableVideo[] => [...travelIds.map((id) => makeVideo(id, "travel", 10000)), makeVideo("c", "career", 10000), makeVideo("h", "humor", 10000)];
+  const travelAffinity = new Map<Topic, number>([["travel", 1]]);
+  const ids = (list: readonly PlayableVideo[]) => list.map((video) => video.id);
+
+  it("konu tercihi (affinity): izleme olmadan travel hem ilk sırayı alır hem listede çoğunluk olur", () => {
+    const ranked = rankVideos(catalog(), travelAffinity);
+
+    expect(ids(ranked)).toEqual(["t1", "h", "c", "t2", "t3", "t4"]);
+    expect(ranked[0]?.topic).toBe("travel");
+    // Aynı katalog, affinity başka konuda: ilk sıra O konunun videosu — sıralamayı affinity belirliyor.
+    expect(ids(rankVideos(catalog(), new Map<Topic, number>([["career", 1]])))[0]).toBe("c");
+  });
+
+  it("izlenmeyen travel videosu kuyruğun 1. sırasındaysa başta kalır (eski testin tuttuğu tek durum)", () => {
+    const watched = new Set(["t2", "t3", "t4"]);
+    expect(ids(prioritizeUnwatched(rankVideos(catalog(), travelAffinity), watched))).toEqual(["t1", "h", "c", "t2", "t3", "t4"]);
+  });
+
+  it.each([
+    ["t2", ["h", "c", "t2", "t1", "t3", "t4"]],
+    ["t3", ["h", "c", "t3", "t1", "t2", "t4"]],
+    ["t4", ["h", "c", "t4", "t1", "t2", "t3"]],
+  ])("izlenmeyen travel %s kuyrukta geride: exploration videoları önde, o ardından; izlenen 3 travel SONDA (flaky'nin yeniden üretimi)", (unwatched, expected) => {
+    const watched = new Set(travelIds.filter((id) => id !== unwatched));
+    const result = prioritizeUnwatched(rankVideos(catalog(), travelAffinity), watched);
+
+    expect(ids(result)).toEqual(expected);
+    expect(new Set(ids(result).slice(-3))).toEqual(watched);
+  });
+
+  it("izlenmeyenler önce: hangi travel izlenmiş olursa olsun izlenmeyenlerin HEPSİ izlenenlerden önce gelir", () => {
+    for (const unwatched of travelIds) {
+      const watched = new Set(travelIds.filter((id) => id !== unwatched));
+      const result = ids(prioritizeUnwatched(rankVideos(catalog(), travelAffinity), watched));
+      const lastUnwatchedIndex = Math.max(...result.map((id, index) => (watched.has(id) ? -1 : index)));
+      const firstWatchedIndex = Math.min(...result.map((id, index) => (watched.has(id) ? index : Infinity)));
+      expect(lastUnwatchedIndex).toBeLessThan(firstWatchedIndex);
+      expect(result).toHaveLength(6);
+    }
+  });
+});
