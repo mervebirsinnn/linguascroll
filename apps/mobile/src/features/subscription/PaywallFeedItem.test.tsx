@@ -1,5 +1,6 @@
 import { act, fireEvent, render, screen, waitFor } from "@testing-library/react-native";
 import type { AccountLinkControl } from "../identity/auth-state";
+import { resetAccessEventsForTests, subscribeToAccessVerified } from "../passages/access-events";
 import { PaywallFeedItem } from "./PaywallFeedItem";
 import type { PaywallPackage } from "./paywall-model";
 
@@ -273,4 +274,50 @@ it("mağaza kaydı backend'e gecikmeli ulaşınca kısa yeniden deneme akışı 
   await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
   await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1), { timeout: 4000 });
   expect(mockRefreshSubscription).toHaveBeenCalledTimes(2);
+});
+
+// Okuma pratiği entegrasyonu: sunucunun doğruladığı erişim, passages'a access-events ile iletilir (satın alma ve restore yolları).
+describe("PaywallFeedItem → okuma pratiği erişim olayı", () => {
+  beforeEach(() => resetAccessEventsForTests());
+
+  it("satın alma backend'de doğrulanınca (active:true) kullanıcı için erişim olayı yayınlanır", async () => {
+    const seen: boolean[] = [];
+    subscribeToAccessVerified(USER_ID, (active) => seen.push(active));
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    mockPurchase.mockResolvedValueOnce("purchased");
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+
+    await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+
+    await waitFor(() => expect(seen).toEqual([true]));
+  });
+
+  it("doğrulama başarısız (ağ hatası) olursa olay YAYINLANMAZ: belirsizlik içeriği açmak/silmek için gerekçe değil", async () => {
+    const seen: boolean[] = [];
+    subscribeToAccessVerified(USER_ID, (active) => seen.push(active));
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    mockPurchase.mockResolvedValueOnce("purchased");
+    mockRefreshSubscription.mockRejectedValue(new Error("network"));
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+
+    await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+    await waitFor(() => expect(mockRefreshSubscription).toHaveBeenCalled());
+
+    expect(seen).toEqual([]);
+  });
+
+  it("restore: doğrulanmış 'aktif değil' ve ardından 'aktif' sonuçları sırayla olay olur", async () => {
+    const seen: boolean[] = [];
+    subscribeToAccessVerified(USER_ID, (active) => seen.push(active));
+    mockFetchPackages.mockResolvedValue([annual]);
+    mockRestore.mockResolvedValueOnce(false).mockResolvedValueOnce(true);
+    mockRefreshSubscription.mockResolvedValueOnce({ active: false }).mockResolvedValueOnce({ active: true });
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+
+    await fireEvent.press(await screen.findByText("Satın alımları geri yükle"));
+    await screen.findByText("Bu hesapta geri yüklenecek aktif bir abonelik bulunamadı.");
+    await fireEvent.press(await screen.findByText("Satın alımları geri yükle"));
+
+    await waitFor(() => expect(seen).toEqual([false, true]));
+  });
 });

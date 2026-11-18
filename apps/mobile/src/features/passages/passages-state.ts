@@ -54,7 +54,7 @@ export function applyLoadMoreStart(state: PassagesLevelState): PassagesLevelStat
 
 /**
  * Devam sayfası eklenir; AYNI id'li metin ikinci kez GÖSTERİLMEZ (cursor sınırında/yeniden yayında tekrar gelebilen metin
- * ekranda iki kez çıkmasın — feed'in kopya düşürme kuralıyla aynı fikir). İlk gelen korunur (kullanıcının cevapları orada).
+ * ekranda iki kez çıkmasın — feed'in kopya düşürme kuralıyla aynı fikir). Erişim durumu aynıysa İLK gelen korunur (kullanıcının cevapları orada); farklıysa gelen kazanır (bkz. dedupeById).
  */
 export function applyLoadMoreSuccess(state: PassagesLevelState, page: PassagePage): PassagesLevelState {
   return state.status === "success"
@@ -67,13 +67,23 @@ export function applyLoadMoreError(state: PassagesLevelState, error: unknown): P
   return state.status === "success" ? { ...state, isLoadingMore: false, loadMoreError: errorMessage(error) } : state;
 }
 
+/**
+ * Aynı id'li iki kopya arasında karar: erişim durumu AYNIYSA ilk kopya korunur (kullanıcının yerel durumu/cevapları orada);
+ * erişim durumu FARKLIYSA gelen (sunucunun son hali) kazanır — eski kilitli kopya yeni açık verinin önüne geçmez, eski açık
+ * kopya da sunucu "kilitli" dediyse ekranda kalmaz. (Erişim değişince liste zaten sıfırlanır; bu, sıfırlamadan önce
+ * yola çıkmış bir sayfanın aradan sızması ihtimaline karşı ikinci savunma.)
+ */
 function dedupeById(existing: readonly Passage[], incoming: readonly Passage[]): Passage[] {
-  const seen = new Set(existing.map((item) => item.id));
+  const indexById = new Map(existing.map((item, index) => [item.id, index] as const));
   const merged = [...existing];
   for (const item of incoming) {
-    if (seen.has(item.id)) continue;
-    seen.add(item.id);
-    merged.push(item);
+    const at = indexById.get(item.id);
+    if (at === undefined) {
+      indexById.set(item.id, merged.length);
+      merged.push(item);
+    } else if (merged[at]!.access !== item.access) {
+      merged[at] = item;
+    }
   }
   return merged;
 }
@@ -174,4 +184,70 @@ export function toggleEliminated(eliminated: ReadonlySet<string>, question: Pass
 /** Elenmiş şık seçilemez; cevaplanmış soruda seçim yok. Eleme yalnız görsel yardım: seçilemezlik burada tek yerde karar verilir. */
 export function canSelectOption(eliminated: ReadonlySet<string>, question: PassageQuestion, optionId: string): boolean {
   return question.result === null && !eliminated.has(optionId);
+}
+
+// --- Hook/denetleyici için seçiciler ve uzlaştırma ---------------------------------------------------------------------
+
+/** Tüm yüklü seviyelerde (bir soru yalnız bir metne ait) soruyu bulur; yalnız AÇIK metinlerde soru vardır. */
+export function findQuestion(byLevel: PassagesByLevel, questionId: string): PassageQuestion | null {
+  for (const state of Object.values(byLevel)) {
+    const found = state ? findQuestionInLevel(state, questionId) : null;
+    if (found) return found;
+  }
+  return null;
+}
+
+function findQuestionInLevel(state: PassagesLevelState, questionId: string): PassageQuestion | null {
+  if (state.status !== "success") return null;
+  for (const passage of state.items) {
+    if (passage.access !== "open") continue;
+    const found = passage.questions.find((question) => question.id === questionId);
+    if (found) return found;
+  }
+  return null;
+}
+
+/** "Bu kelime bu AÇIK metinde var mı": kaynak metin/kelime çifti sunucuya gitmeden önce doğrulanır (yanlış çift = 400 olurdu). */
+export function passageContainsWord(byLevel: PassagesByLevel, passageId: string, wordId: string): boolean {
+  for (const state of Object.values(byLevel)) {
+    if (state?.status !== "success") continue;
+    const passage = state.items.find((item) => item.id === passageId);
+    if (passage?.access === "open") return passage.paragraphs.some((paragraph) => paragraph.some((run) => run.word?.wordId === wordId));
+  }
+  return false;
+}
+
+/** Aynı dönüşümü yüklü TÜM seviyelere uygular (cevap/kelime kaydı seviyeden bağımsız doğrudur). */
+export function mapAllLevels(byLevel: PassagesByLevel, transform: (state: PassagesLevelState) => PassagesLevelState): PassagesByLevel {
+  const next: PassagesByLevel = {};
+  for (const [level, state] of Object.entries(byLevel) as Array<[PassageLevel, PassagesLevelState | undefined]>) {
+    if (state) next[level] = transform(state);
+  }
+  return next;
+}
+
+/**
+ * İSTEĞİN SONUCU BİLİNMİYOR mu: zaman aşımı, 5xx veya düz ağ hatası → istek sunucuya ulaşıp cevabı KAYDETMİŞ olabilir.
+ * 4xx (403 kilitli, 400 geçersiz şık) ve şema/oturum hataları kesin sonuçtur, yeniden gönderilmez.
+ */
+export function isOutcomeUncertain(error: unknown): boolean {
+  if (error instanceof PassagesApiError) return error.isTimeout || (error.status !== undefined && error.status >= 500);
+  return error instanceof TypeError; // React Native fetch ağ hatası: TypeError("Network request failed")
+}
+
+/**
+ * Taze bir sayfadaki KAYITLI cevapları, yerelde henüz cevapsız görünen aynı sorulara yazar; başka hiçbir şeye dokunmaz
+ * (liste/cursor/yerel cevaplar korunur). Zaman aşımı sonrası "sunucuda kayıtlı mı" sorusunun yeniden-okuma yoludur.
+ */
+export function mergeAnswersFromPage(state: PassagesLevelState, page: PassagePage): PassagesLevelState {
+  let next = state;
+  for (const passage of page.items) {
+    if (passage.access !== "open") continue;
+    for (const question of passage.questions) {
+      if (question.result === null) continue;
+      const local = findQuestionInLevel(next, question.id);
+      if (local && local.result === null) next = applyAnswerResult(next, question.id, question.result);
+    }
+  }
+  return next;
 }

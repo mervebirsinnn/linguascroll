@@ -1,4 +1,5 @@
 import { act, renderHook, waitFor } from "@testing-library/react-native";
+import { resetAccessEventsForTests, subscribeToAccessVerified } from "../passages/access-events";
 import { useAccountSubscription } from "./use-account-subscription";
 const mockRefresh = jest.fn();
 const mockRestore = jest.fn();
@@ -48,4 +49,22 @@ it("başlangıç kontrolü sürerken mağazayı açmak durum yanıtını kaybett
   await act(async () => { await result.current.manage(); });
   await act(async () => { finish({ verification: "verified", subscription: { active: true } }); });
   expect(result.current.status).toBe("active");
+});
+it("sunucunun doğruladığı abonelik sonucu okuma pratiğine erişim olayı olur; doğrulanamayan (unknown) sonuç olay olmaz", async () => {
+  resetAccessEventsForTests();
+  const seen: boolean[] = [];
+  subscribeToAccessVerified("one", (active) => seen.push(active));
+  mockRefresh.mockResolvedValueOnce({ verification: "unavailable", subscription: null });
+  const { result } = await renderHook(() => useAccountSubscription("one", false));
+  await waitFor(() => expect(result.current.status).toBe("unknown"));
+  expect(seen).toEqual([]);
+
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: true } });
+  await act(async () => { await result.current.refresh(); });
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: true } });
+  await act(async () => { await result.current.refresh(); }); // aynı değer: tekrar olay yok
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: false } });
+  await act(async () => { await result.current.refresh(); });
+
+  expect(seen).toEqual([true, false]);
 });

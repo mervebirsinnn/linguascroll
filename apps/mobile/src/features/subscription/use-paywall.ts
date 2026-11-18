@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AppState } from "react-native";
 import * as Sentry from "@sentry/react-native";
+import { publishAccessVerified } from "../passages/access-events";
 import { refreshSubscription } from "./api/refresh-subscription";
 import { initializePurchases, hasCurrentSubscription, fetchPaywallPackages, purchasePackageById, restoreAndCheck, subscribeToPurchaseUpdates } from "./purchases-gateway";
 import { applyActionEnd, applyActionStart, applyOfferingsError, applyOfferingsLoaded, applyPaymentPending, applyVerificationFailed, applyVerificationStart, applyVerificationSucceeded, canRetryVerification, canStartAction, INITIAL_PAYWALL_STATE, NOTICE_NOTHING_TO_RESTORE, NOTICE_PURCHASE_FAILED, NOTICE_RESTORE_FAILED, selectPackage, type PaywallState } from "./paywall-state";
@@ -41,6 +42,8 @@ export function usePaywall(userId: string, onUnlocked: () => void, canPurchase =
       try {
         const { active } = await refreshSubscription();
         if (generation.current !== request) return;
+        // Sunucunun doğruladığı erişim: okuma pratiği listesi (kilitli/açık) buna göre yeniden çekilir (değişimde yayınlar).
+        publishAccessVerified(userId, active);
         if (active) {
           update(applyVerificationSucceeded);
           if (!unlocked.current) { unlocked.current = true; callback.current(); }
