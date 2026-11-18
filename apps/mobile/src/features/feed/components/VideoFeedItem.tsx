@@ -96,9 +96,9 @@ export function VideoFeedItem({
   // ile AYNI snapshot ömrüne sahip (birlikte set/reset edilir). save() bu segment
   // id'sini "gerçek kaynak context" olarak backend'e gönderir — TAHMİNİ bir
   // context ASLA üretilmiyor.
-  const [openVocabularySegmentId, setOpenVocabularySegmentId] = useState<
-    string | null
-  >(null);
+  // 2026-11-17 — id yerine segment'in kendisi tutuluyor: kelime penceresi artık altyazı kelimesi penceresiyle
+  // (WordGlossSheet) aynı görünümde ve o da cümleyi gösteriyor. Kaynak context kuralı değişmedi (id aynı yerden).
+  const [openVocabularySegment, setOpenVocabularySegment] = useState<TranscriptSegment | null>(null);
   const wasPlayingBeforeOpenRef = useRef(false);
   /**
    * Root cause fix — `player.playing`, sheet açılırken (handleSubtitleTap/
@@ -147,12 +147,12 @@ export function VideoFeedItem({
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
     setOpenVocabularyWord(word);
-    setOpenVocabularySegmentId(segment.id);
+    setOpenVocabularySegment(segment);
   }
 
   function handleCloseVocabularySheet(): void {
     setOpenVocabularyWord(null);
-    setOpenVocabularySegmentId(null);
+    setOpenVocabularySegment(null);
     if (wasPlayingBeforeOpenRef.current && isActive) {
       player.play();
     }
@@ -375,6 +375,7 @@ export function VideoFeedItem({
         />
         <VocabularyWordSheet
           word={openVocabularyWord}
+          sentence={openVocabularySegment?.text}
           onClose={handleCloseVocabularySheet}
           isSaved={
             openVocabularyWord ? isWordSaved(openVocabularyWord.word.id) : false
@@ -384,12 +385,17 @@ export function VideoFeedItem({
               ? isWordPending(openVocabularyWord.word.id)
               : false
           }
-          onToggleSave={() => {
-            if (openVocabularyWord) {
-              onToggleSaveWord(
-                openVocabularyWord.word.id,
-                openVocabularySegmentId,
-              );
+          // İki AYRI niyet (bkz. VocabularyWordSheet): toggle yalnız kelimenin GERÇEK durumu niyetle uyuşuyorsa çağrılır —
+          // "kaydet" zaten kayıtlıyken ya da "çıkar" kayıtlı değilken (durum/prop kayması) yanlış yönde işlem yapmaz.
+          // Kaynak segment id'si değişmedi: dokunulan segmentin kendisi, TAHMİNİ bir segment asla üretilmez.
+          onSave={() => {
+            if (openVocabularyWord && !isWordSaved(openVocabularyWord.word.id)) {
+              onToggleSaveWord(openVocabularyWord.word.id, openVocabularySegment?.id ?? null);
+            }
+          }}
+          onRemove={() => {
+            if (openVocabularyWord && isWordSaved(openVocabularyWord.word.id)) {
+              onToggleSaveWord(openVocabularyWord.word.id, openVocabularySegment?.id ?? null);
             }
           }}
         />

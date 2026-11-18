@@ -1,4 +1,4 @@
-import { fireEvent, render } from "@testing-library/react-native";
+import { act, fireEvent, render, screen } from "@testing-library/react-native";
 import { StyleSheet } from "react-native";
 import type { FeedPlayableVideo } from "@linguascroll/shared-types";
 import { VideoFeedItem } from "./VideoFeedItem";
@@ -189,3 +189,85 @@ function findNodesWithRiskyProps(node: JsonNode | (JsonNode | string)[] | string
   const foundHere = node.props?.nestedScrollEnabled !== undefined || node.props?.persistentScrollbar !== undefined ? [node] : [];
   return [...foundHere, ...findNodesWithRiskyProps(node.children ?? null)];
 }
+
+/**
+ * 2026-11-19 (bağımsız review) — kelime penceresi BAĞLANTI testi: altyazıdaki vurgulu kelimeye dokunma → pencere dokunulan
+ * segmentin cümlesini gösterir ve kaydet/çıkar DOKUNULAN segmentin id'siyle çağrılır ("tahmini segment asla" kuralı; eskiden
+ * yalnız id tutuluyordu, şimdi segmentin kendisi). Önceden bu kablolamayı kapsayan bir test yoktu.
+ */
+describe("VideoFeedItem — vurgulu kelime penceresi bağlantısı", () => {
+  const SEGMENT = {
+    id: "00000000-0000-4000-8000-0000000000a1",
+    ordinal: 1,
+    startMs: 0,
+    endMs: 5000,
+    text: "I love to travel often.",
+    englishExplanation: "e",
+    turkishExplanation: "t",
+    learningPoints: [],
+  };
+  const WORD_ID = "00000000-0000-4000-8000-0000000000b1";
+  const video = () => makeVideo({ vocabulary: [{ word: { id: WORD_ID, language: "en", lemma: "travel", gloss: "seyahat" }, saved: false }], segments: [SEGMENT] });
+
+  /** useEventListener mock'lanmış: kayıtlı "timeUpdate" dinleyicilerini elle tetikleyip aktif altyazıyı açıyoruz. */
+  async function showSubtitle() {
+    const { useEventListener } = require("expo") as { useEventListener: jest.Mock };
+    await act(async () => {
+      for (const call of useEventListener.mock.calls) {
+        if (call[1] === "timeUpdate") (call[2] as (event: { currentTime: number }) => void)({ currentTime: 1 });
+      }
+    });
+  }
+
+  it("vurgulu kelimeye dokununca pencere o segmentin cümlesini gösterir; 'Kelimelerime kaydet' DOKUNULAN segmentin id'siyle kaydeder", async () => {
+    const onToggleSaveWord = jest.fn();
+    await render(<VideoFeedItem video={video()} {...baseProps} onToggleSaveWord={onToggleSaveWord} />);
+    await showSubtitle();
+    expect(screen.queryByText("Videoya dön")).toBeNull();
+    const sentenceBefore = screen.getAllByText("I love to travel often.").length;
+
+    await fireEvent.press(screen.getByText("travel"));
+
+    expect(screen.getByText("Videoya dön")).toBeTruthy();
+    expect(screen.getAllByText("I love to travel often.").length).toBe(sentenceBefore + 1); // pencere cümleyi bağlam olarak gösteriyor
+    await fireEvent.press(screen.getByText("Kelimelerime kaydet"));
+    expect(onToggleSaveWord).toHaveBeenCalledTimes(1);
+    expect(onToggleSaveWord).toHaveBeenCalledWith(WORD_ID, SEGMENT.id);
+  });
+
+  it("kayıtlı kelimede YALNIZ 'Kelimelerimden çıkar' çağırır (aynı segment id'siyle); ana düğme pasif", async () => {
+    const onToggleSaveWord = jest.fn();
+    await render(<VideoFeedItem video={video()} {...baseProps} isWordSaved={() => true} onToggleSaveWord={onToggleSaveWord} />);
+    await showSubtitle();
+    await fireEvent.press(screen.getByText("travel"));
+
+    await fireEvent.press(screen.getByText("Kelimelerine eklendi ✓"));
+    expect(onToggleSaveWord).not.toHaveBeenCalled();
+
+    await fireEvent.press(screen.getByText("Kelimelerimden çıkar"));
+    expect(onToggleSaveWord).toHaveBeenCalledTimes(1);
+    expect(onToggleSaveWord).toHaveBeenCalledWith(WORD_ID, SEGMENT.id);
+  });
+
+  it("kayıtlı değilken 'çıkar' satırı basılamaz: yanlış yönde (kayıtsız kelimeyi 'çıkarırken' kaydetme) çağrı olmaz", async () => {
+    const onToggleSaveWord = jest.fn();
+    await render(<VideoFeedItem video={video()} {...baseProps} onToggleSaveWord={onToggleSaveWord} />);
+    await showSubtitle();
+    await fireEvent.press(screen.getByText("travel"));
+
+    await fireEvent.press(screen.getByText("Kelimelerimden çıkar", { includeHiddenElements: true }));
+
+    expect(onToggleSaveWord).not.toHaveBeenCalled();
+  });
+
+  it("pencere kapanınca ('Videoya dön') segment snapshot'ı bırakılır: yeniden açmadan kayıt çağrısı olmaz", async () => {
+    const onToggleSaveWord = jest.fn();
+    await render(<VideoFeedItem video={video()} {...baseProps} onToggleSaveWord={onToggleSaveWord} />);
+    await showSubtitle();
+    await fireEvent.press(screen.getByText("travel"));
+    await fireEvent.press(screen.getByText("Videoya dön"));
+
+    expect(screen.queryByText("Kelimelerime kaydet")).toBeNull();
+    expect(onToggleSaveWord).not.toHaveBeenCalled();
+  });
+});
