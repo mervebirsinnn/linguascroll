@@ -488,25 +488,27 @@ describe("prioritizeUnwatched (2026-11-15)", () => {
 /**
  * 2026-11-18 — feed.e2e-spec "personalized ranking" testinin aralıklı kırılmasının DETERMİNİSTİK yeniden üretimi.
  * Eski e2e test rastgele UUID'li 4 travel videosundan "izlenmeyen"in HER ZAMAN başta çıkmasını bekliyordu; oysa
- * izlenmeyen videonun konumu travel kuyruğundaki (id/seed sıralı) yerine bağlı: yalnız kuyruğun 1. videosuysa başta
- * kalır. Sabit id'lerle (t1<t2<t3<t4) dört olası durum burada tek tek sabitlenir. Ürün davranışı DEĞİŞMEDİ.
+ * izlenmeyen videonun konumu travel kuyruğundaki (id sıralı) yerine bağlı: yalnız kuyruğun 1. videosuysa başta kalır.
+ * Sabit id'lerle (t1<t2<t3<t4) dört olası durum burada tek tek sabitlenir. Ürün davranışı DEĞİŞMEDİ.
+ *
+ * NOT (dürüstlük): bu describe'daki travel senaryoları AFFINITY'yi kanıtlamaz — travel, COLD_START_TOPIC_ORDER'ın ilk
+ * konusu olduğu için travel affinity'siyle boş affinity AYNI sırayı verir. Burada sınanan: izlenmeyenler-önce ve kuyruk
+ * konumu. Affinity'yi gerçekten ölçen testler: "affinity sıralamayı değiştirir" (career) ve e2e pinlerinin türetimi.
  */
-describe("affinity + izlenmeyenler önce — sabit id'lerle deterministik (2026-11-18)", () => {
+describe("izlenmeyenler önce + kuyruk konumu (flaky'nin yeniden üretimi) — sabit id'lerle deterministik (2026-11-18)", () => {
   const travelIds = ["t1", "t2", "t3", "t4"];
   const catalog = (): PlayableVideo[] => [...travelIds.map((id) => makeVideo(id, "travel", 10000)), makeVideo("c", "career", 10000), makeVideo("h", "humor", 10000)];
   const travelAffinity = new Map<Topic, number>([["travel", 1]]);
   const ids = (list: readonly PlayableVideo[]) => list.map((video) => video.id);
 
-  it("konu tercihi (affinity): izleme olmadan travel hem ilk sırayı alır hem listede çoğunluk olur", () => {
-    const ranked = rankVideos(catalog(), travelAffinity);
-
-    expect(ids(ranked)).toEqual(["t1", "h", "c", "t2", "t3", "t4"]);
-    expect(ranked[0]?.topic).toBe("travel");
-    // Aynı katalog, affinity başka konuda: ilk sıra O konunun videosu — sıralamayı affinity belirliyor.
+  it("affinity sıralamayı gerçekten değiştirir: career affinity'sinde career ilk, boş affinity'de (cold-start) travel ilk", () => {
     expect(ids(rankVideos(catalog(), new Map<Topic, number>([["career", 1]])))[0]).toBe("c");
+    expect(ids(rankVideos(catalog(), new Map()))[0]).toBe("t1");
+    // Aynı katalogda travel affinity'si boş affinity ile AYNI sıradır (travel cold-start'ta zaten ilk): travel testleri affinity kanıtı değildir.
+    expect(ids(rankVideos(catalog(), travelAffinity))).toEqual(ids(rankVideos(catalog(), new Map())));
   });
 
-  it("izlenmeyen travel videosu kuyruğun 1. sırasındaysa başta kalır (eski testin tuttuğu tek durum)", () => {
+  it("izlenmeyen travel t1 kuyruğun 1. sırasındaysa başta kalır (eski testin tuttuğu tek durum)", () => {
     const watched = new Set(["t2", "t3", "t4"]);
     expect(ids(prioritizeUnwatched(rankVideos(catalog(), travelAffinity), watched))).toEqual(["t1", "h", "c", "t2", "t3", "t4"]);
   });
@@ -517,10 +519,7 @@ describe("affinity + izlenmeyenler önce — sabit id'lerle deterministik (2026-
     ["t4", ["h", "c", "t4", "t1", "t2", "t3"]],
   ])("izlenmeyen travel %s kuyrukta geride: exploration videoları önde, o ardından; izlenen 3 travel SONDA (flaky'nin yeniden üretimi)", (unwatched, expected) => {
     const watched = new Set(travelIds.filter((id) => id !== unwatched));
-    const result = prioritizeUnwatched(rankVideos(catalog(), travelAffinity), watched);
-
-    expect(ids(result)).toEqual(expected);
-    expect(new Set(ids(result).slice(-3))).toEqual(watched);
+    expect(ids(prioritizeUnwatched(rankVideos(catalog(), travelAffinity), watched))).toEqual(expected);
   });
 
   it("izlenmeyenler önce: hangi travel izlenmiş olursa olsun izlenmeyenlerin HEPSİ izlenenlerden önce gelir", () => {
@@ -532,5 +531,54 @@ describe("affinity + izlenmeyenler önce — sabit id'lerle deterministik (2026-
       expect(lastUnwatchedIndex).toBeLessThan(firstWatchedIndex);
       expect(result).toHaveLength(6);
     }
+  });
+});
+
+/**
+ * e2e pinlerinin (feed.e2e-spec "personalized ranking (sabit id)") SAF fonksiyonlardan, DB olmadan, çevrimdışı türetilmesi:
+ * aynı girdiler (seed, scope "all", sabit kullanıcı/video id'leri, career affinity'si = 3 tam izleme) → aynı sıralar. Pinlerin
+ * "gözlemlenip yapıştırılmış" değil türetilebilir olduğunu ve boş affinity'den (cold-start) ayrıştığını kanıtlar.
+ */
+describe("e2e pinlerinin saf fonksiyonlardan türetilmesi (sabit kullanıcı/video id'leri)", () => {
+  const SEED = "0123456789abcdef0123456789abcdef";
+  const USER = "00000000-0000-4000-8000-00000000f001";
+  const CAREER = [1, 2, 3, 4].map((n) => `00000000-0000-4000-8000-0000000c0${n}00`);
+  const TRAVEL = "00000000-0000-4000-8000-0000000a0100";
+  const HUMOR = "00000000-0000-4000-8000-0000000b0100";
+  const candidates = (): PlayableVideo[] => [...CAREER.map((id) => makeVideo(id, "career", 10000)), makeVideo(TRAVEL, "travel", 10000), makeVideo(HUMOR, "humor", 10000)];
+  const key = (video: PlayableVideo) => deterministicTieBreak(SEED, "all", USER, video.id);
+  const careerAffinity = new Map<Topic, number>([["career", 3]]);
+  const label = (unwatchedIndex: number | null) => (video: PlayableVideo) =>
+    video.id === TRAVEL ? "T" : video.id === HUMOR ? "H" : `c${CAREER.indexOf(video.id) + 1}${CAREER.indexOf(video.id) === unwatchedIndex ? "*" : ""}`;
+
+  it.each([
+    [0, "c1*,T,H,c3,c4,c2"],
+    [1, "T,H,c2*,c1,c3,c4"],
+    [2, "T,c3*,H,c1,c4,c2"],
+    [3, "T,c4*,H,c1,c3,c2"],
+  ])("izlenmeyen career dizin %i → %s (e2e ile aynı pin)", (unwatchedIndex, expected) => {
+    const watched = new Set(CAREER.filter((_, index) => index !== unwatchedIndex));
+    const result = prioritizeUnwatched(rankVideos(candidates(), careerAffinity, undefined, key), watched);
+    expect(result.map(label(unwatchedIndex)).join(",")).toBe(expected);
+  });
+
+  it("affinity TEK BAŞINA (izlenenler 7 günden eski, izlenmeyenler-önce etkisiz): e2e pini; boş affinity'den farklı", () => {
+    // Bu senaryoda dört career videosunun dördü de izlenmiş: affinity = 4 tam izleme (diğer senaryolarda 3).
+    const allFourAffinity = new Map<Topic, number>([["career", 4]]);
+    const withAffinity = rankVideos(candidates(), allFourAffinity, undefined, key).map(label(null)).join(",");
+    const withoutAffinity = rankVideos(candidates(), new Map(), undefined, key).map(label(null)).join(",");
+    expect(withAffinity).toBe("c1,c3,T,c4,H,c2");
+    expect(withoutAffinity).not.toBe(withAffinity);
+  });
+
+  it("boş affinity (cold-start) 4 senaryonun yalnız #1'inde aynı sırayı verir: e2e'deki affinity sinyalinin gerçek kapsamı", () => {
+    const sameAsCold: number[] = [];
+    for (const unwatchedIndex of [0, 1, 2, 3]) {
+      const watched = new Set(CAREER.filter((_, index) => index !== unwatchedIndex));
+      const withAffinity = prioritizeUnwatched(rankVideos(candidates(), careerAffinity, undefined, key), watched).map(label(unwatchedIndex)).join(",");
+      const cold = prioritizeUnwatched(rankVideos(candidates(), new Map(), undefined, key), watched).map(label(unwatchedIndex)).join(",");
+      if (withAffinity === cold) sameAsCold.push(unwatchedIndex);
+    }
+    expect(sameAsCold).toEqual([1]);
   });
 });

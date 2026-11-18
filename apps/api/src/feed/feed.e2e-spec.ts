@@ -23,8 +23,16 @@ const FIXED_USER_ID = "00000000-0000-4000-8000-00000000f001";
 const CAREER_IDS = [1, 2, 3, 4].map((n) => `00000000-0000-4000-8000-0000000c0${n}00`);
 const FIXED_TRAVEL_ID = "00000000-0000-4000-8000-0000000a0100";
 const FIXED_HUMOR_ID = "00000000-0000-4000-8000-0000000b0100";
-const EXPECTED_ORDERS: ReadonlyArray<readonly [number, string]> = [[0, "c1*,T,H,c3,c4,c2"], [1, "T,H,c2*,c1,c3,c4"], [2, "T,c3*,H,c1,c4,c2"], [3, "T,c4*,H,c1,c3,c2"]];
-
+// [izlenmeyen career dizini (0 tabanlı), beklenen sıra]. "*" izlenmeyen videoyu gösterir. Bu sıralar sabit girdilerden SAF
+// fonksiyonlarla çevrimdışı türetilebilir (bkz. personalization-ranking.spec "e2e pinlerinin saf fonksiyonlardan türetilmesi").
+const EXPECTED_ORDERS: ReadonlyArray<readonly [number, string]> = [
+  [0, "c1*,T,H,c3,c4,c2"],
+  [1, "T,H,c2*,c1,c3,c4"],
+  [2, "T,c3*,H,c1,c4,c2"],
+  [3, "T,c4*,H,c1,c3,c2"],
+];
+// Tüm izlemeler 7 günden ESKİ: "izlenmeyenler önce" etkisiz kalır, sıralamayı yalnız affinity (ve tie-break) belirler.
+const EXPECTED_ORDER_AFFINITY_ONLY = "c1,c3,T,c4,H,c2";
 
 describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Service → FeedService → Controller → HTTP)", () => {
   let app: INestApplication;
@@ -242,18 +250,22 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   });
 
   /**
-   * 2026-11-18 — "personalized ranking" testi, SABİT kullanıcı/video UUID'leriyle ve tam deterministik: sıra yalnız
-   * (seed, scope, userId, videoId) tie-break'ine ve topic ağırlıklarına bağlı; üçü de sabit.
+   * 2026-11-18 — "personalized ranking" testi, SABİT kullanıcı/video UUID'leriyle ve tam deterministik: sıra
+   * (seed, scope, userId, videoId) tie-break'ine ve topic affinity ağırlıklarına bağlı; hepsi sabit/deterministik.
    *
    * Önceki sürüm rastgele UUID kullanıyordu ve izlenmeyen videonun travel kuyruğunun 1. sırasında olmasına bağlıydı
-   * (aralıklı kırılma, aynı ortamda 10 koşunun 5'inde). Ayrıca konu olarak "travel" seçilmişti: cold-start sırası da
-   * travel ile başladığı için affinity'yi gerçekten ölçmüyordu. Burada ağır izlenen konu "career" (cold-start sırasında
-   * travel/humor'dan SONRA) — affinity DB'den ranking'e bağlı değilse beklenen sıra tutmaz.
+   * (aralıklı kırılma, aynı ortamda 10 koşunun 5'inde). Ayrıca konu "travel"di: cold-start sırası da travel ile
+   * başladığı için affinity'yi ölçmüyordu. Burada ağır izlenen konu "career" (cold-start'ta travel/humor'dan SONRA).
    *
-   * Dört senaryo, izlenmeyen career videosunun kuyruktaki dört olası konumunu tek tek sabitler (eski flaky'nin
-   * düştüğü sıralar dahil); sıralar gözlemlenip sabitlendi, anlamları unit testte (personalization-ranking.spec).
+   * Affinity'nin SINIRLARI (dürüstlük): 4 senaryodan yalnız #0, #2, #3 boş-affinity (cold-start) sıralamasından farklı
+   * çıkar; #1'de (c2 izlenmeyen) çıktı cold-start ile aynıdır ve bu senaryo yalnız izlenmeyenler-önce + tie-break'i
+   * kanıtlar. Affinity'yi İZLENMEYENLER-ÖNCE'den ayırarak ölçen test ayrıdır (aşağıda, izlemeler 7 günden eski).
+   *
+   * Dört senaryo, izlenmeyen career videosunun kuyruktaki dört olası konumunu tek tek sabitler (eski flaky'nin düştüğü
+   * sıralar dahil). Pinler gözlemlenmekle kalmadı: saf fonksiyonlardan çevrimdışı BİREBİR türetilir (bkz.
+   * personalization-ranking.spec). Tie-break algoritması bilerek değişirse pinler güncellenir.
    */
-  it.each(EXPECTED_ORDERS)("personalized ranking (sabit id): career'e yoğun izleme geçmişi, izlenmeyen career #%i → %s", async (unwatchedIndex, expectedLabels) => {
+  it.each(EXPECTED_ORDERS)("personalized ranking (sabit id): career'e yoğun izleme geçmişi, izlenmeyen career dizin %i (0 tabanlı) → %s", async (unwatchedIndex, expectedLabels) => {
     const userId = await createUser(FIXED_USER_ID);
     for (const id of CAREER_IDS) await createVideo("career", 10000, id);
     const travelId = await createVideo("travel", 10000, FIXED_TRAVEL_ID);
@@ -275,6 +287,27 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     const watchedIds = CAREER_IDS.filter((_, index) => index !== unwatchedIndex);
     expect(new Set(videoIds.slice(-3))).toEqual(new Set(watchedIds));
     expect(new Set(videoIds.slice(0, 3))).toEqual(new Set([CAREER_IDS[unwatchedIndex], travelId, humorId]));
+  });
+
+  it("affinity TEK BAŞINA (izlemeler 7 günden eski → izlenmeyenler-önce etkisiz): career ilk dört sıranın üçünü alır", async () => {
+    const userId = await createUser(FIXED_USER_ID);
+    for (const id of CAREER_IDS) await createVideo("career", 10000, id);
+    const travelId = await createVideo("travel", 10000, FIXED_TRAVEL_ID);
+    const humorId = await createVideo("humor", 10000, FIXED_HUMOR_ID);
+    // Affinity zaman penceresi kullanmaz (tüm geçmiş); recently-watched 7 gün pencereli. 8 gün öncesi → yalnız affinity kalır.
+    const eightDaysAgo = new Date(Date.now() - 8 * 24 * 60 * 60 * 1000);
+    for (const id of CAREER_IDS) {
+      await db.insert(videoWatchEventsTable).values({ userId, videoId: id, watchedMs: 10000, createdAt: eightDaysAgo });
+    }
+
+    const response = await getFeed(userId);
+    const page = feedPageSchema.parse(response.body);
+    const videoIds = page.items.flatMap((item) => (item.type === "video" ? [item.video.id] : []));
+    const label = (id: string) => (id === travelId ? "T" : id === humorId ? "H" : `c${CAREER_IDS.indexOf(id) + 1}`);
+
+    expect(videoIds.map(label).join(",")).toBe(EXPECTED_ORDER_AFFINITY_ONLY);
+    // Affinity yoksa (cold-start) sıra T,H,c1,c2,c3,c4 olurdu: burada career ilk dört sıranın üçünde.
+    expect(videoIds.slice(0, 4).filter((id) => CAREER_IDS.includes(id))).toHaveLength(3);
   });
 
   it("feed response'unda aynı video id iki kez bulunmaz (global dedupe)", async () => {
