@@ -6,6 +6,7 @@ import { PageFrame } from "./PageFrame";
 import { PassageEndPage } from "./PassageEndPage";
 import { PassagePager } from "./PassagePager";
 
+jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 34, left: 0, right: 0 }) }));
 jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({}) }));
 jest.setTimeout(60_000);
 
@@ -87,4 +88,13 @@ function collectProps(node: Json | Json[]): Array<Record<string, unknown>> {
   const children = Array.isArray(node.children) ? (node.children as Json[]) : [];
   return [...here, ...children.flatMap(collectProps)];
 }
+
+describe("PageFrame alt güvenli alan", () => {
+  it("alt çubuk, güvenli alt boşluğu (hareket çubuğu) kadar ek padding alır: 10 + inset", async () => {
+    await render(<PageFrame height={800} width={400} onNext={() => {}}><Text>içerik</Text></PageFrame>);
+    const next = screen.getByRole("button", { name: "Sonraki ›" });
+    const footer = next.parent!;
+    expect(footer).toHaveStyle({ paddingBottom: 44 }); // test mock'unda inset.bottom = 34
+  });
+});
 

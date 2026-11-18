@@ -5,6 +5,7 @@ import { PassageQuestionPage } from "./PassageQuestionPage";
 import { PassageSummaryCard } from "./PassageSummaryCard";
 import { PassageTextPage } from "./PassageTextPage";
 
+jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 34, left: 0, right: 0 }) }));
 jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({}) }));
 jest.setTimeout(60_000);
 

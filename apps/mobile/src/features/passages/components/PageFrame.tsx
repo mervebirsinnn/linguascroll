@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 /**
  * Okuma pratiği pager'ının TEK sayfa çerçevesi: sabit boyut (pagingEnabled FlatList'in getItemLayout'u ile uyumlu), kaydırılabilir
@@ -24,6 +25,9 @@ type PageFrameProps = {
 };
 
 export function PageFrame({ height, width, chip, children, onNext, nextLabel = "Sonraki ›", footerExtra }: PageFrameProps) {
+  // Alt güvenli alan (Android hareket çubuğu / iOS ana ekran göstergesi): alt çubuk onun ALTINA girmesin. Emülatörde 2.0x yazıda
+  // "Sorulara geç" düğmesi hareket çubuğuna çok yakın görüldü (2026-11-19).
+  const insets = useSafeAreaInsets();
   return (
     <View style={[styles.frame, { height, width }]}>
       <ScrollView style={styles.body} contentContainerStyle={styles.bodyContent} keyboardShouldPersistTaps="handled">
@@ -31,7 +35,7 @@ export function PageFrame({ height, width, chip, children, onNext, nextLabel = "
         {children}
       </ScrollView>
       {onNext || footerExtra ? (
-        <View style={styles.footer}>
+        <View style={[styles.footer, { paddingBottom: 10 + insets.bottom }]}>
           {footerExtra}
           {onNext ? (
             <Pressable accessibilityRole="button" onPress={onNext} style={styles.next}>
