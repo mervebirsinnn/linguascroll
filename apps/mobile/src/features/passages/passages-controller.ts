@@ -386,6 +386,16 @@ export class PassagesController {
     this.emit();
   }
 
+  /**
+   * Kelime penceresi (yeniden) açılırken o kelimenin ESKİ hatası gösterilmesin: hata yalnız başarısız işlemi yapan kullanıcıya
+   * o işlemin hemen ardından anlamlı. Süren işlem varsa dokunulmaz (hata zaten yok).
+   */
+  clearWordError(wordId: string): void {
+    if (this.wordErrors[wordId] === undefined) return;
+    this.wordErrors = withoutKey(this.wordErrors, wordId);
+    this.emit();
+  }
+
   // --- eleme ------------------------------------------------------------------------------------------------------------
 
   toggleElimination(questionId: string, optionId: string): void {

@@ -52,6 +52,7 @@ export function usePassages(userId: string, level: PassageLevel, deps: PassagesD
     recheckAnswer: controller.recheckAnswer.bind(controller),
     saveWord: controller.saveWord.bind(controller),
     unsaveWord: controller.unsaveWord.bind(controller),
+    clearWordError: controller.clearWordError.bind(controller),
     toggleElimination: controller.toggleElimination.bind(controller),
   };
 }

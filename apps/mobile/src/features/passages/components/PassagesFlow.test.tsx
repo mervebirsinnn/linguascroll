@@ -139,6 +139,23 @@ describe("metin sayfası ve ortak kelime penceresi", () => {
     expect(fakes.savePassageWord).not.toHaveBeenCalled(); // yanlış yönde KAYDETME yok
   });
 
+  it("eski kelime hatası pencere YENİDEN açılınca görünmez (hata yalnız ilgili işlemin hemen ardından anlamlı)", async () => {
+    const fakes = makeDeps();
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)]));
+    fakes.savePassageWord.mockRejectedValueOnce(new TypeError("Network request failed"));
+    await renderFlow(fakes);
+    await waitFor(() => expect(screen.getByText("T1")).toBeTruthy());
+    await fireEvent.press(screen.getAllByRole("button", { name: "cat, anlamını göster" })[0]!);
+    await fireEvent.press(screen.getByText("Kelimelerime kaydet"));
+    await waitFor(() => expect(screen.getByText("Kelime işlemi tamamlanamadı. Tekrar dene.")).toBeTruthy());
+    await fireEvent.press(screen.getByText("Metne dön"));
+
+    await fireEvent.press(screen.getAllByRole("button", { name: "cat, anlamını göster" })[0]!);
+
+    expect(screen.queryByText("Kelime işlemi tamamlanamadı. Tekrar dene.")).toBeNull();
+    expect(screen.getByText("Kelimelerime kaydet")).toBeTruthy();
+  });
+
   it("'Metne dön' pencereyi kapatır", async () => {
     const fakes = makeDeps();
     fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)]));
@@ -432,4 +449,3 @@ describe("sayfalama: devam sayfası", () => {
     expect(fakes.fetchPassages).toHaveBeenCalledTimes(1);
   });
 });
-

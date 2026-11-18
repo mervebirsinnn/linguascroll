@@ -110,7 +110,10 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
             return <PassageLockedPage title={passage.title} level={passage.level} topic={passage.topic} height={height} width={width} onUnlock={() => setPaywallOpen(true)} onNext={goNext} />;
           }
           if (page.kind === "text") {
-            return <PassageTextPage passage={passage} height={height} width={width} onPressWord={setEntry} onNext={goNext} />;
+            return <PassageTextPage passage={passage} height={height} width={width} onPressWord={(next) => {
+              passages.clearWordError(next.wordId);
+              setEntry(next);
+            }} onNext={goNext} />;
           }
           if (page.kind === "summary") {
             return <PassageSummaryPage title={passage.title} questions={passage.questions} height={height} width={width} onNext={goNext} />;
