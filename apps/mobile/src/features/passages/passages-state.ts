@@ -128,15 +128,30 @@ export function applyWordSaved(state: PassagesLevelState, wordId: string, saved:
 export type PassagePageDescriptor =
   | { kind: "locked" }
   | { kind: "text" }
-  | { kind: "question"; questionId: string; index: number; total: number };
+  | { kind: "question"; questionId: string; index: number; total: number }
+  | { kind: "summary" };
 
 /**
- * 1 metin = sayfalar: açık metin → [metin, soru1..soruN] (tasarım: 1 + 4 = 5 dikey sayfa); kilitli → tek "locked" sayfa.
- * Sayfa sayısını sabit 5 varsaymaz: soru sayısı veriden gelir (sözleşme min 1 soru).
+ * 1 metin = sayfalar: açık metin → [metin, soru1..soruN, özet] (tasarım: 1 + 4 + skor özeti = 6 dikey sayfa); kilitli → tek
+ * "locked" sayfa. Sayfa sayısını sabit varsaymaz: soru sayısı veriden gelir (sözleşme min 1 soru).
  */
 export function expandPassagePages(passage: Passage): PassagePageDescriptor[] {
   if (passage.access === "locked") return [{ kind: "locked" }];
-  return [{ kind: "text" }, ...passage.questions.map((question, index) => ({ kind: "question" as const, questionId: question.id, index, total: passage.questions.length }))];
+  return [
+    { kind: "text" },
+    ...passage.questions.map((question, index) => ({ kind: "question" as const, questionId: question.id, index, total: passage.questions.length })),
+    { kind: "summary" },
+  ];
+}
+
+/** Dikey pager'ın (FlatList) düz öğesi: hangi metnin hangi sayfası. `key` listede benzersiz ve kararlı. */
+export type FlatPage = { key: string; passage: Passage; page: PassagePageDescriptor };
+
+/** Seviyedeki tüm metinleri tek düz sayfa listesine açar (metin sırası ve metin içi sayfa sırası korunur). */
+export function flattenPassagePages(passages: readonly Passage[]): FlatPage[] {
+  return passages.flatMap((passage) =>
+    expandPassagePages(passage).map((page, index) => ({ key: `${passage.id}:${page.kind}:${index}`, passage, page })),
+  );
 }
 
 export type AnswerSummary = { correct: number; wrong: number; unanswered: number };
