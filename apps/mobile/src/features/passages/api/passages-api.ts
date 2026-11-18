@@ -4,6 +4,7 @@ import {
   passagePageSchema,
   passagesQuerySchema,
   saveWordRequestSchema,
+  saveWordResponseSchema,
   type PassageAnswerResult,
   type PassageLevel,
   type PassagePage,
@@ -72,10 +73,11 @@ export async function answerPassageQuestion(questionId: string, optionId: string
  */
 export async function savePassageWord(wordId: string, passageId: string): Promise<{ created: boolean | undefined }> {
   const body = saveWordRequestSchema.parse({ sourcePassageId: passageId });
-  const json = (await request(
+  const json = await request(
     `${API_BASE_URL}/words/${encodeURIComponent(wordId)}/saved`,
     { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) },
     "Kelime kaydedilemedi",
-  )) as { created?: boolean } | null;
-  return { created: json?.created };
+  );
+  // Okuma pratiği yalnız yeni API'de var (PUT artık { created } döner); yine de ağ JSON'u şemayla doğrulanır, cast yok.
+  return { created: saveWordResponseSchema.parse(json).created };
 }

@@ -93,8 +93,23 @@ describe("passages api", () => {
     expect(JSON.parse(init.body)).toEqual({ sourcePassageId: uuid(6) });
   });
 
-  it("savePassageWord: eski API boş gövde döndürürse (created yok) hata vermez", async () => {
+  it("savePassageWord: created opsiyonel alan: yoksa undefined döner; şemaya uymayan gövde patlar", async () => {
     mockFetch({ ok: true, json: {} });
     await expect(savePassageWord(uuid(5), uuid(6))).resolves.toEqual({ created: undefined });
+    mockFetch({ ok: true, json: { created: "yes" } });
+    await expect(savePassageWord(uuid(5), uuid(6))).rejects.toThrow();
+  });
+
+  it("timeout (AbortError) isTimeout:true tipli hata olur; düz ağ hatası olduğu gibi geçer", async () => {
+    const abort = Object.assign(new Error("aborted"), { name: "AbortError" });
+    global.fetch = jest.fn().mockRejectedValue(abort) as unknown as typeof fetch;
+    const timeout = await fetchPassages("B2").catch((e: unknown) => e);
+    expect(timeout).toBeInstanceOf(PassagesApiError);
+    expect((timeout as PassagesApiError).isTimeout).toBe(true);
+    expect((timeout as PassagesApiError).status).toBeUndefined();
+
+    const network = new Error("Network request failed");
+    global.fetch = jest.fn().mockRejectedValue(network) as unknown as typeof fetch;
+    await expect(fetchPassages("B2")).rejects.toBe(network);
   });
 });
