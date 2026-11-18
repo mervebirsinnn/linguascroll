@@ -19,6 +19,12 @@ import { videoWordsTable } from "../words/video-words.schema";
 import { wordsTable } from "../words/words.schema";
 
 const E2E_SEED = "0123456789abcdef0123456789abcdef";
+const FIXED_USER_ID = "00000000-0000-4000-8000-00000000f001";
+const CAREER_IDS = [1, 2, 3, 4].map((n) => `00000000-0000-4000-8000-0000000c0${n}00`);
+const FIXED_TRAVEL_ID = "00000000-0000-4000-8000-0000000a0100";
+const FIXED_HUMOR_ID = "00000000-0000-4000-8000-0000000b0100";
+const EXPECTED_ORDERS: ReadonlyArray<readonly [number, string]> = [[0, "c1*,T,H,c3,c4,c2"], [1, "T,H,c2*,c1,c3,c4"], [2, "T,c3*,H,c1,c4,c2"], [3, "T,c4*,H,c1,c3,c2"]];
+
 
 describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Service → FeedService → Controller → HTTP)", () => {
   let app: INestApplication;
@@ -44,9 +50,11 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     await app.close();
   });
 
-  async function createUser(): Promise<string> {
+  async function createUser(fixedId?: string): Promise<string> {
     // 2026-10-27 — firebase_uid = id: test token'ı (bearerFor(userId)) bu kullanıcıya çözülür.
-    const id = randomUUID();
+    // 2026-11-18 — `fixedId`: sıra, tie-break'te kullanıcı id'sini de karıştırdığı için (deterministicTieBreak) tam
+    // deterministik sıra isteyen test sabit kullanıcı id'si verir.
+    const id = fixedId ?? randomUUID();
     const [user] = await db.insert(usersTable).values({ id, firebaseUid: id }).returning();
     if (!user) {
       throw new Error("Beklenen kullanıcı insert edilemedi");
@@ -58,10 +66,10 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
   // Chunk 12: videos.mux_asset_id artık UNIQUE (bkz. videos.schema.ts) — bu
   // testte createVideo() birden fazla kez çağrıldığı için sabit bir literal
   // artık çakışır, her çağrı kendi benzersiz id'sini üretmeli.
-  async function createVideo(topic: string, durationMs = 10000): Promise<string> {
+  async function createVideo(topic: string, durationMs = 10000, fixedId?: string): Promise<string> {
     const [video] = await db
       .insert(videosTable)
-      .values({ learningLanguage: "en", cefrLevel: "A1", muxAssetId: `local-working-out-again-${nextMuxAssetId++}`, topic, durationMs })
+      .values({ ...(fixedId ? { id: fixedId } : {}), learningLanguage: "en", cefrLevel: "A1", muxAssetId: `local-working-out-again-${nextMuxAssetId++}`, topic, durationMs })
       .returning();
     if (!video) {
       throw new Error("Beklenen video insert edilemedi");
@@ -233,35 +241,40 @@ describe("GET /feed (e2e, gerçek Postgres → Video/Quiz/Personalization Servic
     expect(page.items.map((item) => item.type)).toEqual(["video", "video", "video", "video", "quiz", "video"]);
   });
 
-  it("personalized ranking: gerçek watch history'si travel'e yoğun olan kullanıcı feed'in başında travel görür", async () => {
-    const userId = await createUser();
-    const travelIds = [await createVideo("travel"), await createVideo("travel"), await createVideo("travel")];
-    // 2026-11-15 — "izlenmeyenler önce" sonrası: izlenen 3 travel videosu artık (bilinçli olarak) sona
-    // gidiyor; affinity'nin sırayı belirlediğini ölçmek için İZLENMEMİŞ bir travel videosu gerekiyor.
-    const unwatchedTravelId = await createVideo("travel");
-    await createVideo("career");
-    await createVideo("humor");
-
-    // Her travel videosu için ~tam oranında (durationMs=10000, watchedMs=10000)
-    // watch-event — güçlü, net bir travel affinity'si.
-    for (const videoId of travelIds) {
-      await db.insert(videoWatchEventsTable).values({ userId, videoId, watchedMs: 10000 });
+  /**
+   * 2026-11-18 — "personalized ranking" testi, SABİT kullanıcı/video UUID'leriyle ve tam deterministik: sıra yalnız
+   * (seed, scope, userId, videoId) tie-break'ine ve topic ağırlıklarına bağlı; üçü de sabit.
+   *
+   * Önceki sürüm rastgele UUID kullanıyordu ve izlenmeyen videonun travel kuyruğunun 1. sırasında olmasına bağlıydı
+   * (aralıklı kırılma, aynı ortamda 10 koşunun 5'inde). Ayrıca konu olarak "travel" seçilmişti: cold-start sırası da
+   * travel ile başladığı için affinity'yi gerçekten ölçmüyordu. Burada ağır izlenen konu "career" (cold-start sırasında
+   * travel/humor'dan SONRA) — affinity DB'den ranking'e bağlı değilse beklenen sıra tutmaz.
+   *
+   * Dört senaryo, izlenmeyen career videosunun kuyruktaki dört olası konumunu tek tek sabitler (eski flaky'nin
+   * düştüğü sıralar dahil); sıralar gözlemlenip sabitlendi, anlamları unit testte (personalization-ranking.spec).
+   */
+  it.each(EXPECTED_ORDERS)("personalized ranking (sabit id): career'e yoğun izleme geçmişi, izlenmeyen career #%i → %s", async (unwatchedIndex, expectedLabels) => {
+    const userId = await createUser(FIXED_USER_ID);
+    for (const id of CAREER_IDS) await createVideo("career", 10000, id);
+    const travelId = await createVideo("travel", 10000, FIXED_TRAVEL_ID);
+    const humorId = await createVideo("humor", 10000, FIXED_HUMOR_ID);
+    // Dört career videosundan üçü ~tam izlendi (güçlü career affinity'si); biri izlenmedi.
+    for (const [index, id] of CAREER_IDS.entries()) {
+      if (index !== unwatchedIndex) await db.insert(videoWatchEventsTable).values({ userId, videoId: id, watchedMs: 10000 });
     }
 
     const response = await getFeed(userId);
     const page = feedPageSchema.parse(response.body);
     const videoIds = page.items.flatMap((item) => (item.type === "video" ? [item.video.id] : []));
+    const label = (id: string) => (id === travelId ? "T" : id === humorId ? "H" : `c${CAREER_IDS.indexOf(id) + 1}${CAREER_IDS.indexOf(id) === unwatchedIndex ? "*" : ""}`);
 
-    // 2026-11-18 — eski assertion (`videoIds[0] === unwatchedTravelId`) rastgele UUID'ye bağlıydı: izlenmeyen
-    // travel videosu travel kuyruğunun 1. sırasında DEĞİLSE exploration (career/humor) videoları önüne geçer ve test
-    // aralıklı kırılıyordu. Kuyruk sırası ve affinity'nin sıralamaya etkisi artık sabit id'li deterministik
-    // unit testte (personalization-ranking.spec "affinity + izlenmeyenler önce"); burada UUID'den bağımsız,
-    // gerçek DB → HTTP bağlantısının değişmezleri doğrulanıyor.
+    // Tam sıra (sabit girdilerle deterministik): affinity (career önde) + izlenmeyenler önce BİRLİKTE.
+    expect(videoIds.map(label).join(",")).toBe(expectedLabels);
+    // Değişmezler (sıra pinlerinden bağımsız okunabilir kanıt): hiçbir video düşmedi; izlenenler sonda; izlenmeyen 3 video ilk üçte.
     expect(videoIds).toHaveLength(6);
-    // İzlenmeyenler önce: izlenmemiş 3 video (travel + career + humor) ilk üçte; izlenmemiş travel düşmüyor.
-    expect(videoIds.slice(0, 3)).toContain(unwatchedTravelId);
-    // İzlenen 3 travel videosu en sonda (düşmüyor, sadece sona gidiyor).
-    expect(new Set(videoIds.slice(-3))).toEqual(new Set(travelIds));
+    const watchedIds = CAREER_IDS.filter((_, index) => index !== unwatchedIndex);
+    expect(new Set(videoIds.slice(-3))).toEqual(new Set(watchedIds));
+    expect(new Set(videoIds.slice(0, 3))).toEqual(new Set([CAREER_IDS[unwatchedIndex], travelId, humorId]));
   });
 
   it("feed response'unda aynı video id iki kez bulunmaz (global dedupe)", async () => {
