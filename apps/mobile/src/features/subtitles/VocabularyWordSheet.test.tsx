@@ -1,4 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react-native";
+import { AccessibilityInfo } from "react-native";
+import { fireEvent, render, screen, within } from "@testing-library/react-native";
 import { VocabularyWordSheet } from "./VocabularyWordSheet";
 
 jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
@@ -181,5 +182,53 @@ describe("genelleştirme (okuma pratiği): kapatma metni, görünür hata, gizli
     expect(row).toBeTruthy();
     await fireEvent.press(screen.getByText("Kelimelerimden çıkar"));
     expect(props.onRemove).not.toHaveBeenCalled();
+  });
+});
+
+describe("review düzeltmeleri: taşma, duyuru, düğme durumu, stil pinleri", () => {
+  it("hata belirince ekran okuyucuya duyurulur (assertive canlı bölge + programatik duyuru); hata yokken duyuru yok", async () => {
+    const announce = jest.spyOn(AccessibilityInfo, "announceForAccessibility").mockImplementation(() => {});
+    announce.mockClear(); // RN jest kurulumunda zaten bir mock olabilir: önceki testlerin çağrıları sayılmasın
+    const view = await render(<VocabularyWordSheet entry={ENTRY} onClose={jest.fn()} isSaved={false} isPending={false} onSave={jest.fn()} onRemove={jest.fn()} />);
+    expect(announce).not.toHaveBeenCalled();
+
+    await view.rerender(<VocabularyWordSheet entry={ENTRY} error="Kelime işlemi tamamlanamadı. Tekrar dene." onClose={jest.fn()} isSaved={false} isPending={false} onSave={jest.fn()} onRemove={jest.fn()} />);
+
+    expect(announce).toHaveBeenCalledWith("Kelime işlemi tamamlanamadı. Tekrar dene.");
+    expect(screen.getByRole("alert")).toHaveProp("accessibilityLiveRegion", "assertive");
+    announce.mockRestore();
+  });
+
+  it("'Tekrar dene' yönü etiketinde söyler (kaydetmeyi/çıkarmayı) ve bekleme sırasında pasif + soluk", async () => {
+    const unsaved = await renderSheet({ error: "hata" });
+    expect(screen.getByRole("button", { name: "Kaydetmeyi tekrar dene" })).toBeTruthy();
+    await unsaved.view.unmount();
+
+    const saved = await renderSheet({ isSaved: true, error: "hata", isPending: true });
+    const retry = screen.getByRole("button", { name: "Çıkarmayı tekrar dene", disabled: true, busy: true });
+    expect(retry).toHaveStyle({ opacity: 0.5 });
+    await fireEvent.press(retry);
+    expect(saved.props.onRemove).not.toHaveBeenCalled();
+  });
+
+  it("kart ekranı aşmaz (maxHeight) ve bilgi alanı kaydırılır; DÜĞMELER kaydırılan alanın dışında (hata kutusu düğmeleri itemez)", async () => {
+    await renderSheet({ sentence: "Çok uzun bir cümle. ".repeat(40), error: "hata" });
+    const card = screen.getByTestId("word-sheet-card");
+    expect(card).toHaveStyle({ maxHeight: "88%" }); // kart ekranı aşmaz
+    // Başlık/cümle/hata bilgi ScrollView'ının İÇİNDE; düğmeler DIŞINDA (hata kutusu düğmeleri itemez).
+    const info = within(screen.getByTestId("word-sheet-info"));
+    expect(info.getByText("show")).toBeTruthy();
+    expect(info.getByText("hata")).toBeTruthy();
+    expect(info.queryByText("Kelimelerime kaydet")).toBeNull();
+    expect(info.queryByText("Videoya dön")).toBeNull();
+    expect(info.queryByText("Kelimelerimden çıkar", { includeHiddenElements: true })).toBeNull();
+  });
+
+  it("stil pinleri: çıkar satırı marginTop 12 (kapat düğmesinden ayrı), bekleme sırasında opacity 0.5 görünür", async () => {
+    await renderSheet({ isSaved: true });
+    expect(screen.getByRole("button", { name: "Kelimelerimden çıkar" })).toHaveStyle({ marginTop: 12, minHeight: 44 });
+    await screen.unmount();
+    await renderSheet({ isSaved: true, isPending: true });
+    expect(screen.getByRole("button", { name: "Kelimelerimden çıkar", disabled: true })).toHaveStyle({ opacity: 0.5 });
   });
 });

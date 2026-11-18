@@ -128,19 +128,18 @@ export function applyWordSaved(state: PassagesLevelState, wordId: string, saved:
 export type PassagePageDescriptor =
   | { kind: "locked" }
   | { kind: "text" }
-  | { kind: "question"; questionId: string; index: number; total: number }
-  | { kind: "summary" };
+  | { kind: "question"; questionId: string; index: number; total: number };
 
 /**
- * 1 metin = sayfalar: açık metin → [metin, soru1..soruN, özet] (tasarım: 1 + 4 + skor özeti = 6 dikey sayfa); kilitli → tek
- * "locked" sayfa. Sayfa sayısını sabit varsaymaz: soru sayısı veriden gelir (sözleşme min 1 soru).
+ * 1 metin = TOPLAM 5 sayfa: açık metin → [metin, soru1..soru4]; skor özeti ayrı sayfa DEĞİL, son sorunun sayfasında (tüm sorular
+ * cevaplanınca) görünür. Kilitli → tek "locked" sayfa. Sayfa sayısını sabit varsaymaz: soru sayısı veriden gelir (sözleşme min 1
+ * soru); 4 soruda 1 + 4 = 5.
  */
 export function expandPassagePages(passage: Passage): PassagePageDescriptor[] {
   if (passage.access === "locked") return [{ kind: "locked" }];
   return [
     { kind: "text" },
     ...passage.questions.map((question, index) => ({ kind: "question" as const, questionId: question.id, index, total: passage.questions.length })),
-    { kind: "summary" },
   ];
 }
 

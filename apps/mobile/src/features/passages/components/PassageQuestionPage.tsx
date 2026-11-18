@@ -2,8 +2,9 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import type { PassageQuestion } from "@linguascroll/shared-types";
 import { questionTypeLabel, trapTypeLabel } from "../passage-labels";
 import { ANSWER_UNCERTAIN_MESSAGE } from "../passages-controller";
-import { canSelectOption, formatAnswerSummary, summarizeAnswers } from "../passages-state";
+import { canSelectOption, formatAnswerSummary, isPassageComplete, summarizeAnswers } from "../passages-state";
 import { PageFrame, pageStyles } from "./PageFrame";
+import { PassageSummaryCard } from "./PassageSummaryCard";
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
@@ -57,6 +58,9 @@ export function PassageQuestionPage({
   const pending = pendingOptionId !== undefined;
   const summary = formatAnswerSummary(summarizeAnswers(questions));
   const uncertain = error === ANSWER_UNCERTAIN_MESSAGE;
+  // Skor özeti son (4.) sorunun sayfasında, TÜM sorular cevaplanınca (ayrı sayfa yok: metin toplam 5 sayfa).
+  const isLast = index + 1 === total;
+  const showSummary = isLast && isPassageComplete(questions);
 
   return (
     <PageFrame
@@ -64,7 +68,7 @@ export function PassageQuestionPage({
       width={width}
       chip={`Soru ${index + 1}/${total} · ${questionTypeLabel(question.type)}`}
       onNext={onNext}
-      nextLabel={index + 1 === total ? "Sonuç ›" : "Sonraki soru ›"}
+      nextLabel={isLast ? "Sonraki metin ›" : "Sonraki soru ›"}
       footerExtra={
         <Pressable accessibilityRole="button" onPress={onShowText} style={styles.showText}>
           <Text style={styles.showTextLabel}>Metni göster</Text>
@@ -147,6 +151,8 @@ export function PassageQuestionPage({
           </Pressable>
         </View>
       ) : null}
+
+      {showSummary ? <PassageSummaryCard questions={questions} /> : null}
     </PageFrame>
   );
 }

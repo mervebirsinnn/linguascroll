@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import { AccessibilityInfo, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 
 /**
@@ -65,6 +65,12 @@ export function VocabularyWordSheet({ entry, sentence, closeLabel = "Videoya dö
     if (!isPending || entry === null) setIntent("save");
   }, [isPending, entry]);
 
+  // Hata belirince ekran okuyucuya duyurulur: `accessibilityRole="alert"` tek başına VoiceOver/TalkBack'te konuşma tetiklemez
+  // (Android için ayrıca assertive canlı bölge; iOS için programatik duyuru).
+  useEffect(() => {
+    if (error) AccessibilityInfo.announceForAccessibility(error);
+  }, [error]);
+
   // Çıkar satırı kayıtlıyken görünür; bekleme sırasında görünür ama pasif (erişilebilirlik odağı kaybolmasın).
   const removeVisible = isSaved;
   const removeEnabled = isSaved && !isPending;
@@ -72,6 +78,7 @@ export function VocabularyWordSheet({ entry, sentence, closeLabel = "Videoya dö
     <Modal visible={entry !== null} transparent animationType="slide" onRequestClose={onClose}>
       <Pressable style={styles.backdrop} onPress={onClose}>
         <Pressable
+          testID="word-sheet-card"
           style={[
             styles.card,
             // iOS'un mevcut layout'u (sadece styles.card.padding) cihaz testinde
@@ -82,31 +89,37 @@ export function VocabularyWordSheet({ entry, sentence, closeLabel = "Videoya dö
           onPress={() => {}}
         >
           {entry && (
-            <View>
-              <Text style={styles.word}>{entry.title}</Text>
-              <Text style={styles.gloss}>{entry.gloss}</Text>
-              {sentence && <Text style={[styles.gloss, styles.sentence]}>{sentence}</Text>}
-              {error ? (
-                <View style={styles.errorBox}>
-                  <Text accessibilityRole="alert" style={styles.errorText}>{error}</Text>
-                  <Pressable
-                    accessibilityRole="button"
-                    disabled={isPending}
-                    onPress={() => {
-                      if (isSaved) {
-                        setIntent("remove");
-                        onRemove();
-                      } else {
-                        setIntent("save");
-                        onSave();
-                      }
-                    }}
-                    style={styles.retry}
-                  >
-                    <Text style={styles.retryText}>Tekrar dene</Text>
-                  </Pressable>
-                </View>
-              ) : null}
+            <View style={styles.inner}>
+              {/* Bilgi alanı (başlık, anlam, cümle, hata) kaydırılabilir ve kart ekranı AŞMAZ (maxHeight); DÜĞMELER bu alanın DIŞINDA,
+                  kartın altında sabit kalır: uzun cümle + hata kutusu düğmeleri ekran dışına itemez ve düğmelerin ekrandaki yeri değişmez. */}
+              <ScrollView testID="word-sheet-info" style={styles.info} showsVerticalScrollIndicator={false}>
+                <Text style={styles.word}>{entry.title}</Text>
+                <Text style={styles.gloss}>{entry.gloss}</Text>
+                {sentence && <Text style={[styles.gloss, styles.sentence]}>{sentence}</Text>}
+                {error ? (
+                  <View style={styles.errorBox}>
+                    <Text accessibilityRole="alert" accessibilityLiveRegion="assertive" style={styles.errorText}>{error}</Text>
+                    <Pressable
+                      accessibilityRole="button"
+                      accessibilityLabel={isSaved ? "Çıkarmayı tekrar dene" : "Kaydetmeyi tekrar dene"}
+                      accessibilityState={{ disabled: isPending, busy: isPending }}
+                      disabled={isPending}
+                      onPress={() => {
+                        if (isSaved) {
+                          setIntent("remove");
+                          onRemove();
+                        } else {
+                          setIntent("save");
+                          onSave();
+                        }
+                      }}
+                      style={[styles.retry, isPending && styles.retryDimmed]}
+                    >
+                      <Text style={styles.retryText}>Tekrar dene</Text>
+                    </Pressable>
+                  </View>
+                ) : null}
+              </ScrollView>
               <Pressable
                 accessibilityRole="button"
                 accessibilityState={{ disabled: isPending || isSaved, busy: isPending }}
@@ -158,11 +171,15 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   card: {
+    // Kart ekranı aşmasın (uzun cümle + hata kutusu); bilgi alanı kaydırılır, düğmeler sabit.
+    maxHeight: "88%",
     backgroundColor: "#111",
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,
     padding: 16,
   },
+  inner: { flexShrink: 1 },
+  info: { flexGrow: 0, flexShrink: 1 },
   word: {
     color: "#fff",
     fontSize: 20,
@@ -178,12 +195,13 @@ const styles = StyleSheet.create({
   saveText: { color: "#c8b5ff", fontSize: 15, fontWeight: "600" },
   // "Videoya dön"/kapat düğmesinden ayrı durması için 12 px (yanlışlıkla çıkarma ihtimalini azaltır).
   remove: { minHeight: 44, justifyContent: "center", alignItems: "center", marginTop: 12 },
-  // Kayıtsızken yerini korur ama görünmez (yerleşim kaymasın). minHeight/marginTop DEĞİŞMEZ (testle sabitlenir).
+  // Kayıtsızken yerini korur ama görünmez (yerleşim kaymasın). minHeight DEĞİŞMEZ ve opacity/marginTop değerleri testle sabitlenir.
   removeHidden: { opacity: 0 },
   removeDimmed: { opacity: 0.5 },
   removeText: { color: "#9a93ab", fontSize: 13, fontWeight: "600" },
   errorBox: { marginTop: 12, padding: 12, borderRadius: 12, backgroundColor: "#2b1518", gap: 8 },
   errorText: { color: "#ffb4b4", fontSize: 14 },
   retry: { minHeight: 44, justifyContent: "center", alignItems: "center", borderRadius: 10, backgroundColor: "#3a1d21" },
+  retryDimmed: { opacity: 0.5 },
   retryText: { color: "#ffd6d6", fontSize: 14, fontWeight: "700" },
 });

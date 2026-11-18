@@ -1,25 +1,25 @@
 import { fireEvent, render, screen } from "@testing-library/react-native";
 import { makeAnswer, makeLockedPassage, makeOpenPassage } from "../passages-test-helpers";
 import { PassageLockedPage } from "./PassageLockedPage";
-import { PassageSummaryPage } from "./PassageSummaryPage";
+import { PassageQuestionPage } from "./PassageQuestionPage";
+import { PassageSummaryCard } from "./PassageSummaryCard";
 import { PassageTextPage } from "./PassageTextPage";
 
 jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({}) }));
 jest.setTimeout(60_000);
 
-describe("PassageSummaryPage (skor özeti)", () => {
-  it("canlı özet metni ve soru başına durum; hepsi cevaplanmadıysa yönlendirme notu", async () => {
+describe("PassageSummaryCard (skor özeti kartı)", () => {
+  it("canlı özet metni ve soru başına durum; hiç cevap yokken hepsi cevaplanmadı", async () => {
     const passage = makeOpenPassage(1);
-    await render(<PassageSummaryPage title="T1" questions={passage.questions} height={800} width={400} onNext={() => {}} />);
+    await render(<PassageSummaryCard questions={passage.questions} />);
 
     expect(screen.getByText("0/4")).toBeTruthy();
     expect(screen.getByText("0 doğru · 0 yanlış · 4 cevaplanmadı")).toBeTruthy();
     expect(screen.getAllByText("Cevaplanmadı")).toHaveLength(4);
-    expect(screen.getByText(/geri dönüp tamamlayabilirsin/)).toBeTruthy();
     expect(screen.getByText(/seviye ölçümü değildir/)).toBeTruthy(); // "öğrenme pratiği" çerçevesi
   });
 
-  it("karışık sonuç: 2 doğru · 1 yanlış · 1 cevaplanmadı; tamamlanmadığı için not görünür; 'Sonraki metin' onNext'i çağırır", async () => {
+  it("karışık sonuç: 2 doğru · 1 yanlış · 1 cevaplanmadı", async () => {
     const passage = makeOpenPassage(1);
     const [q1, q2, q3] = passage.questions;
     const questions = [
@@ -28,24 +28,59 @@ describe("PassageSummaryPage (skor özeti)", () => {
       { ...q3!, result: makeAnswer(q3!, 0, 2) },
       passage.questions[3]!,
     ];
-    const onNext = jest.fn();
-    await render(<PassageSummaryPage title="T1" questions={questions} height={800} width={400} onNext={onNext} />);
+    await render(<PassageSummaryCard questions={questions} />);
 
     expect(screen.getByText("2/4")).toBeTruthy();
     expect(screen.getByText("2 doğru · 1 yanlış · 1 cevaplanmadı")).toBeTruthy();
     expect(screen.getAllByText("Doğru")).toHaveLength(2);
     expect(screen.getByText("Yanlış")).toBeTruthy();
+  });
+});
 
-    await fireEvent.press(screen.getByText("Sonraki metin ›"));
-    expect(onNext).toHaveBeenCalledTimes(1);
+describe("skor özeti 4. sorunun İÇİNDE (metin toplam 5 sayfa; ayrı 6. sayfa yok)", () => {
+  const baseProps = (passage: ReturnType<typeof makeOpenPassage>, index: number) => ({
+    question: passage.questions[index]!,
+    questions: passage.questions,
+    index,
+    total: passage.questions.length,
+    height: 800,
+    width: 400,
+    selectedOptionId: null,
+    eliminated: new Set<string>(),
+    pendingOptionId: undefined,
+    error: undefined,
+    onSelect: () => {},
+    onToggleElimination: () => {},
+    onCheck: () => {},
+    onRecheck: () => {},
+    onShowText: () => {},
+    onNext: () => {},
+  });
+  const answered = (passage: ReturnType<typeof makeOpenPassage>, count: number) => ({
+    ...passage,
+    questions: passage.questions.map((question, i) => (i < count ? { ...question, result: makeAnswer(question, 0, 0) } : question)),
   });
 
-  it("hepsi cevaplanınca yönlendirme notu çıkmaz", async () => {
-    const passage = makeOpenPassage(1);
-    const questions = passage.questions.map((question) => ({ ...question, result: makeAnswer(question, 0, 0) }));
-    await render(<PassageSummaryPage title="T1" questions={questions} height={800} width={400} onNext={() => {}} />);
+  it("son soruda tüm sorular cevaplanınca özet kartı görünür ve etiket 'Sonraki metin'", async () => {
+    const passage = answered(makeOpenPassage(1), 4);
+    await render(<PassageQuestionPage {...baseProps(passage, 3)} />);
+    expect(screen.getByLabelText("Skor özeti")).toBeTruthy();
     expect(screen.getByText("4/4")).toBeTruthy();
-    expect(screen.queryByText(/geri dönüp tamamlayabilirsin/)).toBeNull();
+    expect(screen.getByText("Sonraki metin ›")).toBeTruthy();
+  });
+
+  it("son soruda ama henüz TÜM sorular cevaplanmadıysa özet görünmez (kısmi skor ekranı yok)", async () => {
+    const passage = answered(makeOpenPassage(1), 3);
+    await render(<PassageQuestionPage {...baseProps(passage, 3)} />);
+    expect(screen.queryByLabelText("Skor özeti")).toBeNull();
+    expect(screen.getByText("3 doğru · 0 yanlış · 1 cevaplanmadı")).toBeTruthy(); // canlı özet satırı yine var
+  });
+
+  it("son OLMAYAN soruda özet kartı hiç çıkmaz (hepsi cevaplı olsa bile); etiket 'Sonraki soru'", async () => {
+    const passage = answered(makeOpenPassage(1), 4);
+    await render(<PassageQuestionPage {...baseProps(passage, 1)} />);
+    expect(screen.queryByLabelText("Skor özeti")).toBeNull();
+    expect(screen.getByText("Sonraki soru ›")).toBeTruthy();
   });
 });
 

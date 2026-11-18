@@ -9,6 +9,7 @@ import { useAuth } from './src/features/identity/use-auth';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
 import { PassagesFlow } from './src/features/passages/components/PassagesFlow';
 import { initialPassageLevel } from './src/features/passages/passages-state';
+import { gatedEntry, PASSAGES_ENABLED, shouldRenderPassages } from './src/shared/feature-flags';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
 import type { AccountLinkControl } from './src/features/identity/auth-state';
@@ -105,7 +106,7 @@ function App() {
         <OnboardingFlow onComplete={onboarding.completeOnboarding} initialPreferences={onboarding.state.preferences} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'feed' && (
-        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} onOpenPassages={() => setMode('passages')} />
+        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} onOpenPassages={gatedEntry(PASSAGES_ENABLED, () => setMode('passages'))} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'memory' && (
         <MemoryFlow
@@ -119,7 +120,7 @@ function App() {
           account={account}
         />
       )}
-      {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'passages' && (
+      {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && shouldRenderPassages(PASSAGES_ENABLED, mode) && (
         // Okuma pratiği: Memory ile aynı conditional-render deseni (navigasyon kütüphanesi yok). key=userId → hesap değişince tüm durum sıfırlanır.
         <PassagesFlow
           key={identity.userId}

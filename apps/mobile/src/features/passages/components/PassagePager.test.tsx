@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react-native";
 import { Text } from "react-native";
 import { makeOpenPassage } from "../passages-test-helpers";
 import { flattenPassagePages } from "../passages-state";
+import { PageFrame } from "./PageFrame";
 import { PassageEndPage } from "./PassageEndPage";
 import { PassagePager } from "./PassagePager";
 
@@ -54,3 +55,36 @@ describe("PassagePager", () => {
     expect(() => goNexts[goNexts.length - 1]!()).not.toThrow();
   });
 });
+
+describe("kaydırma yapısı: sayfa geçişi YATAY, sayfa içi DİKEY (eksenler çakışmaz)", () => {
+  const pages = flattenPassagePages([makeOpenPassage(1)]);
+
+  it("pager yatay ve sayfa genişliğiyle düzenlenir; sayfa içi ScrollView dikey (horizontal değil)", async () => {
+    await render(<PassagePager pages={pages} height={800} width={400} renderPage={() => <PageFrame height={800} width={400}><Text>içerik</Text></PageFrame>} renderEnd={() => <Text>BİTİŞ</Text>} onNearEnd={() => {}} />);
+    const list = screen.getByTestId("passage-pager");
+
+    expect(list.props.horizontal).toBe(true);
+    expect(list.props.pagingEnabled).toBe(true);
+    expect(list.props.getItemLayout(null, 3)).toEqual({ length: 400, offset: 1200, index: 3 }); // genişlik tabanlı
+
+    const inner = collectProps(screen.toJSON()).filter((props) => "keyboardShouldPersistTaps" in props); // PageFrame'in ScrollView'ı
+    expect(inner.length).toBeGreaterThan(0);
+    expect(inner.every((props) => props.horizontal !== true)).toBe(true);
+  });
+
+  it("hiçbir ScrollView/FlatList'te nestedScrollEnabled/persistentScrollbar YOK (video akışını kıran kayıtlı gerileme, bkz. VideoFeedItem.test.tsx)", async () => {
+    await render(<PassagePager pages={pages} height={800} width={400} renderPage={() => <PageFrame height={800} width={400}><Text>içerik</Text></PageFrame>} renderEnd={() => <Text>BİTİŞ</Text>} onNearEnd={() => {}} />);
+    const offenders = collectProps(screen.toJSON()).filter((props) => props.nestedScrollEnabled !== undefined || props.persistentScrollbar !== undefined);
+    expect(offenders).toEqual([]);
+  });
+});
+
+type Json = { props?: Record<string, unknown>; children?: unknown } | string | null;
+function collectProps(node: Json | Json[]): Array<Record<string, unknown>> {
+  if (node === null || typeof node === "string") return [];
+  if (Array.isArray(node)) return node.flatMap(collectProps);
+  const here = node.props ? [node.props] : [];
+  const children = Array.isArray(node.children) ? (node.children as Json[]) : [];
+  return [...here, ...children.flatMap(collectProps)];
+}
+

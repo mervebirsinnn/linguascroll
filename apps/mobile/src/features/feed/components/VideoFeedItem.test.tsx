@@ -271,3 +271,63 @@ describe("VideoFeedItem — vurgulu kelime penceresi bağlantısı", () => {
     expect(onToggleSaveWord).not.toHaveBeenCalled();
   });
 });
+
+/**
+ * 2026-11-19 (bağımsız review, ortak sheet bağlantısı) — video akışının kelime davranışının, sheet genelleştirilince (word → entry)
+ * KORUNDUĞUNU sabitleyen testler: başlık = sözlük biçimi (lemma), anlam = gloss, cümle = dokunulan segment, kapatma = "Videoya dön",
+ * hata kutusu yok, bekleme etiketi, kapat-yeniden aç.
+ */
+describe("VideoFeedItem — ortak kelime penceresi video akışında aynı kalır", () => {
+  const SEGMENT = { id: "00000000-0000-4000-8000-0000000000c1", ordinal: 1, startMs: 0, endMs: 5000, text: "She loves to travel often.", englishExplanation: "e", turkishExplanation: "t", learningPoints: [] };
+  const WORD_ID = "00000000-0000-4000-8000-0000000000d1";
+  it("başlık sözlük biçimi (lemma), anlam gloss, cümle dokunulan segmentin metni; kapatma 'Videoya dön'; hata kutusu YOK", async () => {
+    const { useEventListener } = require("expo") as { useEventListener: jest.Mock };
+    useEventListener.mockClear();
+    const plain = makeVideo({
+      vocabulary: [{ word: { id: WORD_ID, language: "en", lemma: "travel", gloss: "seyahat etmek" }, saved: false }],
+      segments: [SEGMENT],
+    });
+    await render(<VideoFeedItem video={plain} {...baseProps} />);
+    await act(async () => {
+      for (const call of useEventListener.mock.calls) {
+        if (call[1] === "timeUpdate") (call[2] as (event: { currentTime: number }) => void)({ currentTime: 1 });
+      }
+    });
+    await fireEvent.press(screen.getByText("travel"));
+
+    expect(screen.getAllByText("travel").length).toBeGreaterThan(1); // altyazıdaki + penceredeki başlık
+    expect(screen.getByText("seyahat etmek")).toBeTruthy(); // gloss
+    expect(screen.getAllByText("She loves to travel often.").length).toBeGreaterThan(1); // cümle penceredede
+    expect(screen.getByText("Videoya dön")).toBeTruthy();
+    expect(screen.queryByText("Metne dön")).toBeNull();
+    expect(screen.queryByRole("alert")).toBeNull();
+    expect(screen.queryByText("Tekrar dene")).toBeNull();
+  });
+
+  it("bekleme: 'Kaydediliyor…' (yön save) ve ana düğme basılamaz; kapat ve yeniden aç aynı içeriği gösterir", async () => {
+    const onToggleSaveWord = jest.fn();
+    const { useEventListener } = require("expo") as { useEventListener: jest.Mock };
+    useEventListener.mockClear();
+    const plain = makeVideo({
+      vocabulary: [{ word: { id: WORD_ID, language: "en", lemma: "travel", gloss: "seyahat etmek" }, saved: false }],
+      segments: [SEGMENT],
+    });
+    await render(<VideoFeedItem video={plain} {...baseProps} isWordPending={() => true} onToggleSaveWord={onToggleSaveWord} />);
+    await act(async () => {
+      for (const call of useEventListener.mock.calls) {
+        if (call[1] === "timeUpdate") (call[2] as (event: { currentTime: number }) => void)({ currentTime: 1 });
+      }
+    });
+    await fireEvent.press(screen.getByText("travel"));
+
+    expect(screen.getByText("Kaydediliyor…")).toBeTruthy();
+    await fireEvent.press(screen.getByText("Kaydediliyor…"));
+    expect(onToggleSaveWord).not.toHaveBeenCalled();
+
+    await fireEvent.press(screen.getByText("Videoya dön"));
+    expect(screen.queryByText("Kaydediliyor…")).toBeNull();
+    await fireEvent.press(screen.getByText("travel"));
+    expect(screen.getByText("seyahat etmek")).toBeTruthy();
+    expect(screen.getByText("Kaydediliyor…")).toBeTruthy();
+  });
+});

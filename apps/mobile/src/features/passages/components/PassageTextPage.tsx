@@ -41,7 +41,7 @@ export function PassageTextPage({ passage, height, width, onPressWord, onNext }:
           })}
         </Text>
       ))}
-      <Text style={pageStyles.muted}>Altı çizili kelimelere dokun: anlamını ve cümleyi gör, kelimelerine kaydet.</Text>
+      <Text style={pageStyles.muted}>Altı çizili kelimelere dokun: anlamını ve cümleyi gör, kelimelerine kaydet. Sorulara geçmek için sola kaydır ya da \"Sorulara geç\"e dokun.</Text>
     </PageFrame>
   );
 }

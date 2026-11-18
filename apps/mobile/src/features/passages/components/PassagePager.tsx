@@ -21,13 +21,16 @@ type PassagePagerProps = {
   /** Seviye değişince/erişim yenilenince liste başa dönsün diye üst bileşen anahtarla yeniden kurar. */
 };
 
-// Feed ile AYNI sayfalama sabitleri mantığı: aktif + yakın komşular; her sayfa tam yükseklik.
+// Feed ile AYNI sayfalama sabitleri mantığı: aktif + yakın komşular; her sayfa tam ekran (genişlik x yükseklik).
 const WINDOW_SIZE = 5;
 const VIEWABILITY_CONFIG = { itemVisiblePercentThreshold: 60 };
 
 /**
- * Dikey sayfa pager'ı: pagingEnabled FlatList, her öğe TAM sayfa (getItemLayout). Kaydırınca sonraki sayfa gelir; ayrıca her sayfa
- * kendi "Sonraki" düğmesiyle `scrollToIndex` çağırır (iç ScrollView kaydırmayı yutan uzun sayfalar için güvenli yol, bkz. PageFrame).
+ * YATAY sayfa pager'ı: pagingEnabled FlatList, her öğe TAM sayfa (getItemLayout: genişlik). Sayfalar arası geçiş SAĞA/SOLA kaydırma,
+ * sayfa içi uzun içerik DİKEY kaydırma (PageFrame'in ScrollView'ı): iki kaydırma FARKLI eksende olduğu için iç içe aynı-eksen
+ * çakışması (iOS'ta sayfa kaydırmasını engelleme, Android'de iç ScrollView'ın hiç kaydırılamaması) YAPISAL olarak yoktur ve
+ * `nestedScrollEnabled` gerekmez (bu repoda aynı prop'un video akışını kıran kayıtlı bir gerilemesi var; bilerek EKLENMEDİ).
+ * Her sayfa ayrıca kendi "Sonraki" düğmesiyle `scrollToIndex` çağırır.
  */
 export function PassagePager({ pages, height, width, renderPage, renderEnd, onNearEnd }: PassagePagerProps) {
   const listRef = useRef<FlatList<PagerItem>>(null);
@@ -55,10 +58,11 @@ export function PassagePager({ pages, height, width, renderPage, renderEnd, onNe
       data={data}
       keyExtractor={(item) => item.key}
       renderItem={({ item, index }) => (isEndItem(item) ? renderEnd() : renderPage(item, () => goTo(Math.min(index + 1, data.length - 1))))}
-      getItemLayout={(_, index) => ({ length: height, offset: height * index, index })}
+      horizontal
+      getItemLayout={(_, index) => ({ length: width, offset: width * index, index })}
       pagingEnabled
       decelerationRate="fast"
-      showsVerticalScrollIndicator={false}
+      showsHorizontalScrollIndicator={false}
       windowSize={WINDOW_SIZE}
       initialNumToRender={2}
       maxToRenderPerBatch={2}

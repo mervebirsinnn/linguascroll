@@ -167,22 +167,22 @@ describe("cevap ve kelime güncellemeleri", () => {
 });
 
 describe("sayfalara açma ve özet", () => {
-  it("açık metin: [metin, soru1..4, özet] = 6 sayfa; kilitli: tek sayfa; sayı veriden gelir", () => {
+  it("açık metin TOPLAM 5 sayfa: [metin, soru1..4] (özet ayrı sayfa DEĞİL); kilitli: tek sayfa; sayı veriden gelir", () => {
     const pages = expandPassagePages(openPassage(1));
-    expect(pages).toHaveLength(6);
+    expect(pages).toHaveLength(5);
     expect(pages[0]).toEqual({ kind: "text" });
     expect(pages[4]).toMatchObject({ kind: "question", index: 3, total: 4 });
-    expect(pages[5]).toEqual({ kind: "summary" });
+    expect(pages.map((page) => page.kind)).toEqual(["text", "question", "question", "question", "question"]);
     expect(expandPassagePages(lockedPassage(2))).toEqual([{ kind: "locked" }]);
-    expect(expandPassagePages(openPassage(3, { questions: [question(31)] }))).toHaveLength(3);
+    expect(expandPassagePages(openPassage(3, { questions: [question(31)] }))).toHaveLength(2);
   });
 
   it("flattenPassagePages: metin sırası ve metin içi sıra korunur, anahtarlar benzersiz; kilitli metin tek öğe", () => {
     const flat = flattenPassagePages([openPassage(1), lockedPassage(2), openPassage(3)]);
-    expect(flat.map((item) => item.page.kind)).toEqual(["text", "question", "question", "question", "question", "summary", "locked", "text", "question", "question", "question", "question", "summary"]);
+    expect(flat.map((item) => item.page.kind)).toEqual(["text", "question", "question", "question", "question", "locked", "text", "question", "question", "question", "question"]);
     expect(new Set(flat.map((item) => item.key)).size).toBe(flat.length);
     expect(flat[0]!.passage.id).toBe(uuid(1));
-    expect(flat[6]!.passage.id).toBe(uuid(2));
+    expect(flat[5]!.passage.id).toBe(uuid(2));
     expect(flattenPassagePages([])).toEqual([]);
   });
 

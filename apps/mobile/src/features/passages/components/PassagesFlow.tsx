@@ -13,7 +13,6 @@ import { PassageEndPage } from "./PassageEndPage";
 import { PassageLockedPage } from "./PassageLockedPage";
 import { PassagePager } from "./PassagePager";
 import { PassageQuestionPage } from "./PassageQuestionPage";
-import { PassageSummaryPage } from "./PassageSummaryPage";
 import { PassageTextPage } from "./PassageTextPage";
 import { ShowTextSheet } from "./ShowTextSheet";
 
@@ -114,9 +113,6 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
               passages.clearWordError(next.wordId);
               setEntry(next);
             }} onNext={goNext} />;
-          }
-          if (page.kind === "summary") {
-            return <PassageSummaryPage title={passage.title} questions={passage.questions} height={height} width={width} onNext={goNext} />;
           }
           const question = passage.questions.find((candidate) => candidate.id === page.questionId);
           if (!question) return <View style={{ height, width }} />;
