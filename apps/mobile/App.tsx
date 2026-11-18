@@ -7,12 +7,14 @@ import { Feed } from './src/features/feed/components/Feed';
 import { SignInScreen } from './src/features/identity/SignInScreen';
 import { useAuth } from './src/features/identity/use-auth';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
+import { PassagesFlow } from './src/features/passages/components/PassagesFlow';
+import { initialPassageLevel } from './src/features/passages/passages-state';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
 import type { AccountLinkControl } from './src/features/identity/auth-state';
 import { initializePurchases } from './src/features/subscription/purchases-gateway';
 
-type AppMode = 'feed' | 'memory';
+type AppMode = 'feed' | 'memory' | 'passages';
 
 function App() {
   // 2026-10-27 — gerçek hesap: Firebase Authentication. Feed/onboarding yalnızca bir Firebase
@@ -103,7 +105,7 @@ function App() {
         <OnboardingFlow onComplete={onboarding.completeOnboarding} initialPreferences={onboarding.state.preferences} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'feed' && (
-        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} />
+        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} onOpenPassages={() => setMode('passages')} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'memory' && (
         <MemoryFlow
@@ -115,6 +117,16 @@ function App() {
             auth.signOut();
           }}
           account={account}
+        />
+      )}
+      {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'passages' && (
+        // Okuma pratiği: Memory ile aynı conditional-render deseni (navigasyon kütüphanesi yok). key=userId → hesap değişince tüm durum sıfırlanır.
+        <PassagesFlow
+          key={identity.userId}
+          userId={identity.userId}
+          account={account}
+          initialLevel={initialPassageLevel(onboarding.state.preferences.level)}
+          onBack={() => setMode('feed')}
         />
       )}
       <StatusBar style="light" />

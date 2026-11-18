@@ -79,6 +79,11 @@ type FeedProps = {
    * edilmiyor.
    */
   onOpenMemory: () => void;
+  /**
+   * Okuma / Paragraf Pratiği ekranına giden giriş (Memory ile AYNI desen: küçük, isteğe bağlı bir buton; feed akışına kesinti
+   * olarak enjekte edilmez). Verilmezse buton çizilmez (eski çağıranlar/testler etkilenmez).
+   */
+  onOpenPassages?: () => void;
   /** 2026-10-28 — misafir/hesaplı durum ve paywall'daki "Google ile devam et" (bkz. PaywallFeedItem). */
   account: AccountLinkControl;
 };
@@ -95,13 +100,24 @@ export function Feed(props: FeedProps) {
             <Image source={brandMarkImage} style={styles.brandMark} accessibilityLabel="Looplish" />
             <Text style={styles.brand}>Looplish</Text>
           </View>
-          <Pressable
-            style={styles.memoryButton}
-            onPress={props.onOpenMemory}
-            accessibilityRole="button"
-          >
-            <Text style={styles.memoryButtonText}>Kelimelerim</Text>
-          </Pressable>
+          <View style={styles.headerActions}>
+            {props.onOpenPassages ? (
+              <Pressable
+                style={styles.memoryButton}
+                onPress={props.onOpenPassages}
+                accessibilityRole="button"
+              >
+                <Text style={styles.memoryButtonText}>Okuma</Text>
+              </Pressable>
+            ) : null}
+            <Pressable
+              style={styles.memoryButton}
+              onPress={props.onOpenMemory}
+              accessibilityRole="button"
+            >
+              <Text style={styles.memoryButtonText}>Kelimelerim</Text>
+            </Pressable>
+          </View>
         </View>
       </View>
       {/* Bölüm değişince bütün oyuncular/istek state'i unmount olur; eski response yeni akışa eklenemez. */}
@@ -361,6 +377,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   brandGroup: { flexDirection: "row", alignItems: "center", gap: 8 },
+  headerActions: { flexDirection: "row", alignItems: "center", gap: 8 },
   brandMark: {
     width: 34,
     height: 34,

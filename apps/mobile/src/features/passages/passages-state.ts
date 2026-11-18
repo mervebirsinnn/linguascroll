@@ -293,3 +293,37 @@ export function mergeAnswersFromPage(state: PassagesLevelState, page: PassagePag
   }
   return next;
 }
+
+// --- Ekran için seçiciler ----------------------------------------------------------------------------------------------
+
+/** Bir kelimenin (kullanıcı başına tek defter) şu an kayıtlı görünüp görünmediği: yüklü açık metinlerin herhangi bir geçişinden. */
+export function findWordSaved(state: PassagesLevelState, wordId: string): boolean {
+  if (state.status !== "success") return false;
+  for (const passage of state.items) {
+    if (passage.access !== "open") continue;
+    for (const paragraph of passage.paragraphs) {
+      for (const run of paragraph) {
+        if (run.word?.wordId === wordId) return run.word.saved;
+      }
+    }
+  }
+  return false;
+}
+
+/** Hâlâ listede AÇIK olan metin (erişim değişince kilitlenen/kaybolan metne bağlı pencereler kapansın diye). */
+export function findOpenPassage(state: PassagesLevelState, passageId: string): Extract<Passage, { access: "open" }> | null {
+  if (state.status !== "success") return null;
+  const found = state.items.find((item) => item.id === passageId);
+  return found?.access === "open" ? found : null;
+}
+
+/** Elenmiş şık seçili kalamaz: etkin seçim, seçili şık elenmediyse seçimdir, aksi hâlde null. */
+export function effectiveSelection(selectedOptionId: string | undefined, eliminated: ReadonlySet<string>): string | null {
+  return selectedOptionId !== undefined && !eliminated.has(selectedOptionId) ? selectedOptionId : null;
+}
+
+/** Onboarding seviyesi (A1..C2, boş olabilir) → okuma seviyesi: B1..C2 ise aynen, aksi hâlde B1. Seviye ASLA otomatik yükseltilmez. */
+export function initialPassageLevel(preferred: string | null | undefined): PassageLevel {
+  return preferred === "B1" || preferred === "B2" || preferred === "C1" || preferred === "C2" ? preferred : "B1";
+}
+

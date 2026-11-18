@@ -1,5 +1,4 @@
 import { fireEvent, render, screen } from "@testing-library/react-native";
-import type { VideoVocabularyItem } from "@linguascroll/shared-types";
 import { VocabularyWordSheet } from "./VocabularyWordSheet";
 
 jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
@@ -9,10 +8,10 @@ jest.mock("react-native/Libraries/Modal/Modal", () => {
 });
 
 /** 2026-11-17 — seçilmiş (yeşil) kelime penceresi, altyazı kelimesi penceresiyle aynı görünüm ve metinlerde. */
-const WORD: VideoVocabularyItem = { word: { id: "00000000-0000-4000-8000-000000000001", language: "en", lemma: "show", gloss: "göstermek" }, saved: false };
+const ENTRY = { title: "show", gloss: "göstermek" };
 
 async function renderSheet(overrides: Partial<Parameters<typeof VocabularyWordSheet>[0]> = {}) {
-  const props = { word: WORD, sentence: "I show it to my friend.", onClose: jest.fn(), isSaved: false, isPending: false, onSave: jest.fn(), onRemove: jest.fn(), ...overrides };
+  const props = { entry: ENTRY, sentence: "I show it to my friend.", onClose: jest.fn(), isSaved: false, isPending: false, onSave: jest.fn(), onRemove: jest.fn(), ...overrides };
   const view = await render(<VocabularyWordSheet {...props} />);
   return { props, view };
 }
@@ -88,7 +87,7 @@ describe("bekleme (isPending)", () => {
   });
 
   it("çıkarırken etiket YÖNÜ doğru söyler ('Kaldırılıyor…'), 'Kaydediliyor…' DEĞİL", async () => {
-    const props = { word: WORD, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
+    const props = { entry: ENTRY, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
     const view = await render(<VocabularyWordSheet {...props} isSaved isPending={false} />);
     await fireEvent.press(screen.getByText(REMOVE));
     expect(props.onRemove).toHaveBeenCalledTimes(1);
@@ -102,7 +101,7 @@ describe("bekleme (isPending)", () => {
   });
 
   it("kaydet → bekleme sırasında etiket 'Kaydediliyor…' (niyet save)", async () => {
-    const props = { word: WORD, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
+    const props = { entry: ENTRY, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
     const view = await render(<VocabularyWordSheet {...props} isSaved={false} isPending={false} />);
     await fireEvent.press(screen.getByText("Kelimelerime kaydet"));
     await view.rerender(<VocabularyWordSheet {...props} isSaved={false} isPending />);
@@ -131,8 +130,56 @@ describe("cümle", () => {
   });
 });
 
-it("word null ise (sheet kapalı) hiçbir şey çizilmez", async () => {
-  const { view } = await renderSheet({ word: null });
+it("entry null ise (sheet kapalı) hiçbir şey çizilmez", async () => {
+  const { view } = await renderSheet({ entry: null });
   expect(screen.queryByText("Videoya dön")).toBeNull();
   expect(screen.queryByText(REMOVE, { includeHiddenElements: true })).toBeNull();
+});
+
+describe("genelleştirme (okuma pratiği): kapatma metni, görünür hata, gizli satır stili", () => {
+  it("closeLabel verilirse kapatma düğmesi o metni taşır ('Metne dön') ve onClose'u çağırır; varsayılan 'Videoya dön'", async () => {
+    const custom = await renderSheet({ closeLabel: "Metne dön" });
+    expect(screen.getByText("Metne dön")).toBeTruthy();
+    expect(screen.queryByText("Videoya dön")).toBeNull();
+    await fireEvent.press(screen.getByText("Metne dön"));
+    expect(custom.props.onClose).toHaveBeenCalledTimes(1);
+  });
+
+  it("hata verilirse görünür (alert rolü) ve 'Tekrar dene' kayıtsızken KAYDET niyetini yeniden dener", async () => {
+    const { props } = await renderSheet({ error: "Kelime işlemi tamamlanamadı. Tekrar dene." });
+    expect(screen.getByRole("alert")).toBeTruthy();
+    expect(screen.getByText("Kelime işlemi tamamlanamadı. Tekrar dene.")).toBeTruthy();
+
+    await fireEvent.press(screen.getByText("Tekrar dene"));
+    expect(props.onSave).toHaveBeenCalledTimes(1);
+    expect(props.onRemove).not.toHaveBeenCalled();
+  });
+
+  it("kayıtlıyken 'Tekrar dene' ÇIKAR niyetini yeniden dener (başarısız çıkarma durumu değiştirmez)", async () => {
+    const { props } = await renderSheet({ isSaved: true, error: "Kelime işlemi tamamlanamadı. Tekrar dene." });
+    await fireEvent.press(screen.getByText("Tekrar dene"));
+    expect(props.onRemove).toHaveBeenCalledTimes(1);
+    expect(props.onSave).not.toHaveBeenCalled();
+  });
+
+  it("hata verilmezse (video akışı) hata kutusu ve 'Tekrar dene' hiç çizilmez", async () => {
+    await renderSheet();
+    expect(screen.queryByRole("alert")).toBeNull();
+    expect(screen.queryByText("Tekrar dene")).toBeNull();
+  });
+
+  it("gizli çıkar satırının YER TUTAN stili sabit: opacity 0 ama minHeight 44 korunur, display none DEĞİL (M1 gerilemesini yakalar)", async () => {
+    await renderSheet();
+    const hidden = screen.getByRole("button", { name: "Kelimelerimden çıkar", includeHiddenElements: true });
+    expect(hidden).toHaveStyle({ opacity: 0, minHeight: 44 });
+    expect(hidden).not.toHaveStyle({ display: "none" });
+  });
+
+  it("çıkarma beklerken satır görünür kalır ama pasif (odak kaybolmaz, basılamaz)", async () => {
+    const { props } = await renderSheet({ isSaved: true, isPending: true });
+    const row = screen.getByRole("button", { name: "Kelimelerimden çıkar", disabled: true });
+    expect(row).toBeTruthy();
+    await fireEvent.press(screen.getByText("Kelimelerimden çıkar"));
+    expect(props.onRemove).not.toHaveBeenCalled();
+  });
 });

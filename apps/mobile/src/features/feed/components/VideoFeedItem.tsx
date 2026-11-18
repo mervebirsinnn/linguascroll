@@ -374,7 +374,7 @@ export function VideoFeedItem({
           onClose={handleCloseSheet}
         />
         <VocabularyWordSheet
-          word={openVocabularyWord}
+          entry={openVocabularyWord ? { title: openVocabularyWord.word.lemma, gloss: openVocabularyWord.word.gloss } : null}
           sentence={openVocabularySegment?.text}
           onClose={handleCloseVocabularySheet}
           isSaved={

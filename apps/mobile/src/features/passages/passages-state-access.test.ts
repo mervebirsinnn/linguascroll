@@ -5,7 +5,11 @@ import {
   applyFreshSuccess,
   applyLoadMoreSuccess,
   classifyFailure,
+  effectiveSelection,
+  findOpenPassage,
   findQuestion,
+  findWordSaved,
+  initialPassageLevel,
   isOutcomeUncertain,
   mergeAnswersFromPage,
   passageContainsSpan,
@@ -91,5 +95,42 @@ describe("erişim durumu farklı kopyalar ve yeni saf yardımcılar (PR-7a)", ()
     expect(passageContainsSpan(byLevel, uuid(1), uuid(501), CAT_SPAN_1)).toBe(false); // başka kelime
     expect(passageContainsSpan(byLevel, uuid(1), CAT_WORD_ID, uuid(9998))).toBe(false); // bilinmeyen geçiş
     expect(passageContainsSpan(byLevel, uuid(2), CAT_WORD_ID, CAT_SPAN_1)).toBe(false); // kilitli metin
+  });
+});
+
+describe("ekran seçicileri (PR-7)", () => {
+  const withSaved = (saved: boolean) => {
+    const passage = makeOpenPassage(1);
+    passage.paragraphs = [[{ text: "cat", word: { wordId: CAT_WORD_ID, gloss: "kedi", saved, spanId: CAT_SPAN_1, contextSentence: "A cat sat." } }]];
+    return applyFreshSuccess(makePage([passage, makeLockedPassage(2)], null));
+  };
+
+  it("findWordSaved: yüklü açık metinlerde kelimenin kayıtlı bayrağı; yüklenmemiş/olmayan kelime false", () => {
+    expect(findWordSaved(withSaved(true), CAT_WORD_ID)).toBe(true);
+    expect(findWordSaved(withSaved(false), CAT_WORD_ID)).toBe(false);
+    expect(findWordSaved(withSaved(true), uuid(9999))).toBe(false);
+    expect(findWordSaved({ status: "loading" }, CAT_WORD_ID)).toBe(false);
+  });
+
+  it("findOpenPassage: yalnız hâlâ AÇIK metni verir (kilitli/yok → null)", () => {
+    const state = withSaved(false);
+    expect(findOpenPassage(state, uuid(1))?.id).toBe(uuid(1));
+    expect(findOpenPassage(state, uuid(2))).toBeNull();
+    expect(findOpenPassage(state, uuid(3))).toBeNull();
+    expect(findOpenPassage({ status: "loading" }, uuid(1))).toBeNull();
+  });
+
+  it("effectiveSelection: elenmiş şık seçili sayılmaz", () => {
+    expect(effectiveSelection("a", new Set())).toBe("a");
+    expect(effectiveSelection("a", new Set(["a"]))).toBeNull();
+    expect(effectiveSelection(undefined, new Set())).toBeNull();
+  });
+
+  it("initialPassageLevel: onboarding seviyesi B1..C2 ise aynen, A1/A2/boş ise B1 (otomatik yükseltme yok)", () => {
+    expect(initialPassageLevel("C1")).toBe("C1");
+    expect(initialPassageLevel("B2")).toBe("B2");
+    expect(initialPassageLevel("A2")).toBe("B1");
+    expect(initialPassageLevel(null)).toBe("B1");
+    expect(initialPassageLevel(undefined)).toBe("B1");
   });
 });
