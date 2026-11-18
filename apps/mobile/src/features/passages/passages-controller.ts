@@ -199,12 +199,30 @@ export class PassagesController {
   // --- erişim -----------------------------------------------------------------------------------------------------------
 
   /**
-   * Sunucunun doğruladığı erişim değişti (satın alma/restore/abonelik kaybı) YA DA bir istek 403 aldı. Önbellekteki TÜM
-   * metin/cevap/kelime verisi (açık içerik dahil) atılır, uçuştaki eski istekler geçersizlenir ve aktif seviye sunucudan
-   * yeniden çekilir: kazanımda kilitler açılır; kayıpta ücretli içerik gider, ÜCRETSİZ ÖRNEKLER sunucu yine açık döndüğü
-   * için kilitlenmez (kararı sunucu verir, istemci tahmin etmez).
+   * Sunucunun DOĞRULADIĞI erişim sonucu (satın alma / restore / hesap ekranı yenilemesi). Karar GÖSTERİLEN duruma bakar,
+   * "son bildirilen değer"e değil: doğrulanmış sonuçla çelişen bir şey ekrandaysa (aktif ama kilitli kart; aktif değil ama
+   * açık içerik) YA DA eski erişimle yola çıkmış bir istek uçuştaysa liste sıfırlanıp yeniden çekilir; tutarlıysa hiçbir şey
+   * yapılmaz (abonenin hesap ekranı her yenilendiğinde bekleyen cevap/eleme silinmesin). Bu yüzden 403 ile yeniden
+   * kilitlenmiş bir liste, sonradan gelen doğrulanmış satın almayı kaçırmaz.
    */
-  onAccessVerified(): void {
+  onAccessVerified(active: boolean): void {
+    if (!this.active || !this.contradictsAccess(active)) return;
+    this.reloadAfterAccessChange();
+  }
+
+  private contradictsAccess(active: boolean): boolean {
+    if (this.inFlight.size > 0) return true;
+    return Object.values(this.byLevel).some(
+      (state) => state?.status === "success" && state.items.some((item) => (active ? item.access === "locked" : item.access === "open")),
+    );
+  }
+
+  /**
+   * Önbellekteki TÜM metin/cevap/kelime verisi (açık içerik dahil) atılır, uçuştaki eski istekler geçersizlenir ve aktif seviye
+   * sunucudan yeniden çekilir: kazanımda kilitler açılır; kayıpta ücretli içerik gider, ÜCRETSİZ ÖRNEKLER sunucu yine açık
+   * döndürdüğü için kilitlenmez (kararı sunucu verir, istemci tahmin etmez). 403 (sunucu "kilitli" dedi) koşulsuz bunu çağırır.
+   */
+  private reloadAfterAccessChange(): void {
     if (!this.active) return;
     this.resetForAccessChange();
     if (this.activeLevel) void this.fetchFresh(this.activeLevel);
@@ -245,7 +263,7 @@ export class PassagesController {
       if (!this.isCurrent(epoch)) return;
       this.pendingAnswers = withoutKey(this.pendingAnswers, questionId);
       if (this.isLockedError(error)) {
-        this.onAccessVerified();
+        this.reloadAfterAccessChange();
         return;
       }
       const uncertain = isOutcomeUncertain(error);
@@ -323,7 +341,7 @@ export class PassagesController {
     } catch (error) {
       if (!this.isCurrent(epoch)) return;
       if (this.isLockedError(error)) {
-        this.onAccessVerified();
+        this.reloadAfterAccessChange();
         return;
       }
       this.wordErrors = { ...this.wordErrors, [wordId]: WORD_FAILED_MESSAGE };

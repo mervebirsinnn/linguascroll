@@ -1,5 +1,5 @@
 import { act, renderHook, waitFor } from "@testing-library/react-native";
-import { resetAccessEventsForTests, subscribeToAccessVerified } from "../passages/access-events";
+import { resetAccessEventsForTests, subscribeToAccessVerified } from "../subscription/access-events";
 import { useAccountSubscription } from "./use-account-subscription";
 const mockRefresh = jest.fn();
 const mockRestore = jest.fn();
@@ -62,9 +62,9 @@ it("sunucunun doğruladığı abonelik sonucu okuma pratiğine erişim olayı ol
   mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: true } });
   await act(async () => { await result.current.refresh(); });
   mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: true } });
-  await act(async () => { await result.current.refresh(); }); // aynı değer: tekrar olay yok
+  await act(async () => { await result.current.refresh(); }); // her doğrulanmış sonuç iletilir; gerekliliği tüketici karar verir
   mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: false } });
   await act(async () => { await result.current.refresh(); });
 
-  expect(seen).toEqual([true, false]);
+  expect(seen).toEqual([true, true, false]);
 });

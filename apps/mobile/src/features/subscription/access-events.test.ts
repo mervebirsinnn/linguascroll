@@ -3,26 +3,23 @@ import { publishAccessVerified, resetAccessEventsForTests, subscribeToAccessVeri
 beforeEach(resetAccessEventsForTests);
 
 describe("access-events", () => {
-  it("ilk yayın her zaman iletilir; aynı değer tekrar yayınlanınca sessiz kalır, değişimde iletilir", () => {
+  it("her doğrulanmış sonuç iletilir (aynı değer tekrar yayınlansa da): gerekliliği tüketici gösterdiği duruma bakarak karar verir", () => {
     const seen: boolean[] = [];
     subscribeToAccessVerified("u1", (active) => seen.push(active));
-    publishAccessVerified("u1", false);
-    publishAccessVerified("u1", false);
     publishAccessVerified("u1", true);
     publishAccessVerified("u1", true);
     publishAccessVerified("u1", false);
-    expect(seen).toEqual([false, true, false]);
+    expect(seen).toEqual([true, true, false]);
   });
 
-  it("kullanıcı başına ayrıdır: başka kullanıcının olayı dinleyiciye gitmez ve değerini bastırmaz", () => {
+  it("kullanıcı başına ayrıdır: başka kullanıcının olayı dinleyiciye gitmez", () => {
     const one: boolean[] = [];
     const two: boolean[] = [];
     subscribeToAccessVerified("u1", (active) => one.push(active));
     subscribeToAccessVerified("u2", (active) => two.push(active));
     publishAccessVerified("u1", true);
-    publishAccessVerified("u2", true);
     expect(one).toEqual([true]);
-    expect(two).toEqual([true]);
+    expect(two).toEqual([]);
   });
 
   it("abonelikten çıkınca olay gelmez", () => {

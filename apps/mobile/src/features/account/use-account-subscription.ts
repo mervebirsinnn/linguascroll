@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { AppState } from "react-native";
 import * as Sentry from "@sentry/react-native";
 import type { SubscriptionOverview } from "@linguascroll/shared-types";
-import { publishAccessVerified } from "../passages/access-events";
+import { publishAccessVerified } from "../subscription/access-events";
 import { fetchSubscriptionOverview } from "../subscription/api/fetch-subscription-overview";
 import { initializePurchases, openSubscriptionManagement, restoreAndCheck } from "../subscription/purchases-gateway";
 

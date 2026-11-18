@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useSyncExternalStore } from "react";
 import type { PassageLevel } from "@linguascroll/shared-types";
 import { unsaveWord } from "../feed/api/unsave-word";
 import { answerPassageQuestion, fetchPassages, savePassageWord } from "./api/passages-api";
-import { subscribeToAccessVerified } from "./access-events";
+import { subscribeToAccessVerified } from "../subscription/access-events";
 import { PassagesController, selectLevelState, type PassagesDeps } from "./passages-controller";
 
 const realDeps: PassagesDeps = {
@@ -27,7 +27,7 @@ export function usePassages(userId: string, level: PassageLevel, deps: PassagesD
 
   useEffect(() => {
     controller.activate();
-    const unsubscribe = subscribeToAccessVerified(userId, () => controller.onAccessVerified());
+    const unsubscribe = subscribeToAccessVerified(userId, (active) => controller.onAccessVerified(active));
     return () => {
       unsubscribe();
       controller.deactivate();

@@ -157,7 +157,7 @@ describe("erişim değişimi (satın alma / restore / abonelik kaybı)", () => {
 
     const refetch = deferred<PassagePage>();
     fakes.fetchPassages.mockReturnValueOnce(refetch.promise);
-    controller.onAccessVerified();
+    controller.onAccessVerified(true);
     expect(level(controller, "B2")).toEqual({ status: "loading" }); // eski kilitli kartlar anında gitti
     expect(controller.getSnapshot().accessChanged).toBe(true);
 
@@ -180,7 +180,7 @@ describe("erişim değişimi (satın alma / restore / abonelik kaybı)", () => {
     controller.loadMore("B2"); // eski (kilitli) cursor ile uçuşta
 
     fakes.fetchPassages.mockResolvedValueOnce(makePage([makeOpenPassage(1)]));
-    controller.onAccessVerified();
+    controller.onAccessVerified(true);
     await flush();
     stale.resolve(makePage([makeLockedPassage(1), makeLockedPassage(2)]));
     await flush();
@@ -204,7 +204,7 @@ describe("erişim değişimi (satın alma / restore / abonelik kaybı)", () => {
 
     const refetch = deferred<PassagePage>();
     fakes.fetchPassages.mockReturnValueOnce(refetch.promise);
-    controller.onAccessVerified();
+    controller.onAccessVerified(false);
 
     // Sunucu yanıtı gelmeden önce: açık içerik hiçbir yerde kalmadı.
     const snap = controller.getSnapshot();
@@ -219,10 +219,75 @@ describe("erişim değişimi (satın alma / restore / abonelik kaybı)", () => {
     expect(state?.status === "success" && state.items[1]!.access).toBe("locked");
   });
 
+  it("YENİDEN KİLİTLENMİŞ liste: abonelik bitti → cevapta 403 → liste kilitlendi → doğrulanmış yeni satın alma olayı yutulmaz, yeniden çekilir", async () => {
+    const fakes = makeDeps();
+    const passage = makeOpenPassage(1);
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([passage]));
+    const controller = start(fakes);
+    controller.ensureLoaded("B2");
+    await flush();
+    controller.onAccessVerified(true); // daha önce aktif doğrulanmıştı (tutarlı: hiçbir şey olmaz)
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(1);
+
+    fakes.answerPassageQuestion.mockRejectedValueOnce(new PassagesApiError("x", 403));
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([makeLockedPassage(1)])); // abonelik bitmişti: liste kilitli
+    await controller.answer(passage.questions[0]!.id, passage.questions[0]!.options[0]!.id);
+    await flush();
+    const relocked = level(controller, "B2");
+    expect(relocked?.status === "success" && relocked.items[0]!.access).toBe("locked");
+
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([makeOpenPassage(1)])); // yeniden satın alındı
+    controller.onAccessVerified(true);
+    await flush();
+
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(3);
+    const reopened = level(controller, "B2");
+    expect(reopened?.status === "success" && reopened.items[0]!.access).toBe("open");
+  });
+
+  it("TUTARLI doğrulanmış sonuç (aktif + hepsi açık; aktif değil + hepsi kilitli) listeyi, bekleyen eleme/cevabı SİLMEZ ve istek atmaz", async () => {
+    const fakes = makeDeps();
+    const passage = makeOpenPassage(1);
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([passage]));
+    const controller = start(fakes);
+    controller.ensureLoaded("B2");
+    await flush();
+    controller.toggleElimination(passage.questions[0]!.id, passage.questions[0]!.options[0]!.id);
+
+    controller.onAccessVerified(true);
+
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(1);
+    expect(controller.getSnapshot().eliminated.size).toBe(1);
+    expect(open(controller, "B2")).toBe(passage);
+
+    const lockedFakes = makeDeps();
+    lockedFakes.fetchPassages.mockResolvedValueOnce(makePage([makeLockedPassage(1)]));
+    const lockedController = start(lockedFakes);
+    lockedController.ensureLoaded("B2");
+    await flush();
+    lockedController.onAccessVerified(false);
+    expect(lockedFakes.fetchPassages).toHaveBeenCalledTimes(1);
+  });
+
+  it("uçuşta (eski erişimle başlamış) istek varken doğrulanmış sonuç gelirse istek geçersizlenir ve yeniden çekilir", async () => {
+    const fakes = makeDeps();
+    const stale = deferred<PassagePage>();
+    fakes.fetchPassages.mockReturnValueOnce(stale.promise).mockResolvedValueOnce(makePage([makeOpenPassage(1)]));
+    const controller = start(fakes);
+    controller.ensureLoaded("B2");
+
+    controller.onAccessVerified(true);
+    stale.resolve(makePage([makeLockedPassage(1)]));
+    await flush();
+
+    expect(fakes.fetchPassages).toHaveBeenCalledTimes(2);
+    expect(open(controller, "B2").access).toBe("open");
+  });
+
   it("deactivate edilmiş denetleyici erişim olayını yok sayar (istek atmaz)", async () => {
     const fakes = makeDeps();
     const controller = new PassagesController(fakes.deps);
-    controller.onAccessVerified();
+    controller.onAccessVerified(true);
     expect(fakes.fetchPassages).not.toHaveBeenCalled();
   });
 
@@ -368,7 +433,7 @@ describe("cevap gönderimi", () => {
     const pending = controller.answer(question.id, optionId);
 
     fakes.fetchPassages.mockResolvedValueOnce(makePage([makeOpenPassage(1)]));
-    controller.onAccessVerified();
+    controller.onAccessVerified(false);
     await flush();
     d.resolve(makeAnswer(question, 1, 1));
     await pending;

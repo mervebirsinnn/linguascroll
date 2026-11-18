@@ -1,6 +1,6 @@
 import { act, renderHook, waitFor } from "@testing-library/react-native";
 import type { PassageLevel, PassagePage } from "@linguascroll/shared-types";
-import { publishAccessVerified, resetAccessEventsForTests } from "./access-events";
+import { publishAccessVerified, resetAccessEventsForTests } from "../subscription/access-events";
 import type { PassagesDeps } from "./passages-controller";
 import { deferred, makeLockedPassage, makeOpenPassage, makePage, uuid } from "./passages-test-helpers";
 import { usePassages } from "./use-passages";
@@ -71,14 +71,13 @@ describe("usePassages", () => {
     const { deps, fetchPassages } = makeDeps();
     fetchPassages
       .mockResolvedValueOnce(makePage([makeOpenPassage(1), makeOpenPassage(2)]))
-      .mockResolvedValueOnce(makePage([makeOpenPassage(1), makeOpenPassage(2)]))
       .mockResolvedValueOnce(makePage([makeOpenPassage(1), makeLockedPassage(2)]));
     const { result } = await renderHook(() => usePassages("u1", "B2", deps));
     await waitFor(() => expect(accesses(result.current.state)).toEqual(["open", "open"]));
     await act(async () => {
-      publishAccessVerified("u1", true); // ilk bilinen değer (abone) → bir yeniden çekim
+      publishAccessVerified("u1", true); // tutarlı (abone + hepsi açık): yeniden çekim YOK
     });
-    await waitFor(() => expect(fetchPassages).toHaveBeenCalledTimes(2));
+    expect(fetchPassages).toHaveBeenCalledTimes(1);
 
     await act(async () => {
       publishAccessVerified("u1", false); // abonelik kaybı doğrulandı

@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen, waitFor } from "@testing-library/react-native";
 import type { AccountLinkControl } from "../identity/auth-state";
-import { resetAccessEventsForTests, subscribeToAccessVerified } from "../passages/access-events";
+import { resetAccessEventsForTests, subscribeToAccessVerified } from "./access-events";
 import { PaywallFeedItem } from "./PaywallFeedItem";
 import type { PaywallPackage } from "./paywall-model";
 
