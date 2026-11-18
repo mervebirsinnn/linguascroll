@@ -122,6 +122,15 @@ describe("validatePassagePack — her kural için bir negatif test", () => {
     expect(codes(invented)).toContain("context-sentence-mismatch");
   });
 
+  it("lemma normalize olmalı (kopya kelime defteri girdisini önler); bağlam cümlesi kelimeden uzun olmalı", () => {
+    const upper = clone();
+    upper.words[0]!.lemma = "Lighthouse";
+    expect(codes(upper)).toContain("lemma-not-normalized");
+    const bare = clone();
+    bare.words[0]!.contextSentence = "lighthouse";
+    expect(codes(bare)).toContain("context-sentence-too-short");
+  });
+
   it("aynı (lemma, anlam) iki kez", () => {
     const pack = clone();
     pack.words.push(structuredClone(pack.words[0]!));

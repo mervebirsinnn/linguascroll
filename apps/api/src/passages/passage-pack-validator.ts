@@ -1,3 +1,4 @@
+import { normalizeGlossWord } from "@linguascroll/shared-types";
 import { PASSAGE_TRAP_TYPES, passagePackSchema, type PassagePack } from "./passage-pack";
 import { buildParagraphRuns } from "./passage-runs";
 
@@ -51,6 +52,11 @@ function validateWords(pack: PassagePack, issues: PackIssue[]): void {
     const identity = `${word.lemma}\u0000${word.gloss}`;
     if (seen.has(identity)) issues.push(issue("word-duplicate", base, `Aynı (lemma, anlam) iki kez: "${word.lemma}"`));
     seen.add(identity);
+    // Video yolu lemma'yı normalizeGlossWord ile yazar; paketteki lemma farklı biçimdeyse ("Lighthouse") mevcut satırı
+    // bulamaz, kelime defterinde kopya açardı.
+    if (word.lemma !== normalizeGlossWord(word.lemma)) {
+      issues.push(issue("lemma-not-normalized", `${base}.lemma`, `Lemma normalize biçimde olmalı: "${normalizeGlossWord(word.lemma)}"`));
+    }
 
     for (const [spanIndex, span] of word.spans.entries()) {
       const paragraph = pack.paragraphs[span.paragraphIndex];
@@ -70,7 +76,9 @@ function validateWords(pack: PassagePack, issues: PackIssue[]): void {
     // İlk geçişin cümlesi: contextSentence, ilk span'ı içeren bir metin parçası olmalı (kaydedilen kaynak cümle).
     const first = [...word.spans].sort((a, b) => a.paragraphIndex - b.paragraphIndex || a.start - b.start)[0];
     const firstParagraph = first ? pack.paragraphs[first.paragraphIndex] : undefined;
-    if (first && firstParagraph !== undefined && !containsAround(firstParagraph, word.contextSentence, first.start, first.end)) {
+    if (first && word.contextSentence.length <= first.end - first.start) {
+      issues.push(issue("context-sentence-too-short", `${base}.contextSentence`, "contextSentence kelimenin kendisinden uzun, tam bir cümle/parça olmalı"));
+    } else if (first && firstParagraph !== undefined && !containsAround(firstParagraph, word.contextSentence, first.start, first.end)) {
       issues.push(issue("context-sentence-mismatch", `${base}.contextSentence`, "contextSentence, kelimenin ilk geçtiği yeri içeren metin parçası değil"));
     }
   });
