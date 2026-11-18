@@ -49,6 +49,7 @@ export function usePassages(userId: string, level: PassageLevel, deps: PassagesD
     loadMore: useCallback(() => controller.loadMore(level), [controller, level]),
     refresh: useCallback(() => controller.refresh(level), [controller, level]),
     answer: controller.answer.bind(controller),
+    recheckAnswer: controller.recheckAnswer.bind(controller),
     saveWord: controller.saveWord.bind(controller),
     unsaveWord: controller.unsaveWord.bind(controller),
     toggleElimination: controller.toggleElimination.bind(controller),

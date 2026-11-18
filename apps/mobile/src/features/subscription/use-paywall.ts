@@ -60,7 +60,7 @@ export function usePaywall(userId: string, onUnlocked: () => void, canPurchase =
     if (lastError) Sentry.captureException(lastError);
     if (restoring && !lastError) update((s) => applyActionEnd(s, NOTICE_NOTHING_TO_RESTORE));
     else update(applyVerificationFailed);
-  }, [update, waitForRetry]);
+  }, [update, waitForRetry, userId]);
 
   useEffect(() => {
     const request = ++generation.current;

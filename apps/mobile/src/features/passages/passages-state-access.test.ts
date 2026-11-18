@@ -6,10 +6,10 @@ import {
   findQuestion,
   isOutcomeUncertain,
   mergeAnswersFromPage,
-  passageContainsWord,
+  passageContainsSpan,
   type PassagesLevelState,
 } from "./passages-state";
-import { makeAnswer, makeLockedPassage, makeOpenPassage, makePage, makeQuestion, uuid } from "./passages-test-helpers";
+import { CAT_SPAN_1, CAT_SPAN_2, CAT_WORD_ID, makeAnswer, makeLockedPassage, makeOpenPassage, makePage, makeQuestion, uuid } from "./passages-test-helpers";
 
 jest.mock("../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({}) }));
 
@@ -59,12 +59,14 @@ describe("erişim durumu farklı kopyalar ve yeni saf yardımcılar (PR-7a)", ()
     expect(merged.nextCursor).toBe("c1");
   });
 
-  it("findQuestion/passageContainsWord: yalnız AÇIK metinlerde; kilitli metin ve bilinmeyen çift false", () => {
+  it("findQuestion/passageContainsSpan: yalnız AÇIK metinlerde; geçiş o metne VE kelimeye ait olmalı", () => {
     const byLevel = { B2: applyFreshSuccess(makePage([makeOpenPassage(1), makeLockedPassage(2)], null)) };
     expect(findQuestion(byLevel, makeQuestion(11).id)?.id).toBe(makeQuestion(11).id);
     expect(findQuestion(byLevel, uuid(9999))).toBeNull();
-    expect(passageContainsWord(byLevel, uuid(1), uuid(500))).toBe(true);
-    expect(passageContainsWord(byLevel, uuid(1), uuid(501))).toBe(false);
-    expect(passageContainsWord(byLevel, uuid(2), uuid(500))).toBe(false);
+    expect(passageContainsSpan(byLevel, uuid(1), CAT_WORD_ID, CAT_SPAN_1)).toBe(true);
+    expect(passageContainsSpan(byLevel, uuid(1), CAT_WORD_ID, CAT_SPAN_2)).toBe(true); // aynı kelimenin ikinci geçişi
+    expect(passageContainsSpan(byLevel, uuid(1), uuid(501), CAT_SPAN_1)).toBe(false); // başka kelime
+    expect(passageContainsSpan(byLevel, uuid(1), CAT_WORD_ID, uuid(9998))).toBe(false); // bilinmeyen geçiş
+    expect(passageContainsSpan(byLevel, uuid(2), CAT_WORD_ID, CAT_SPAN_1)).toBe(false); // kilitli metin
   });
 });

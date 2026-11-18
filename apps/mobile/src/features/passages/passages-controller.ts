@@ -16,7 +16,7 @@ import {
   isOutcomeUncertain,
   mapAllLevels,
   mergeAnswersFromPage,
-  passageContainsWord,
+  passageContainsSpan,
   toggleEliminated,
   INITIAL_LEVEL_STATE,
   type PassagesByLevel,
@@ -39,14 +39,18 @@ import {
 export type PassagesDeps = {
   fetchPassages: (level: PassageLevel, cursor?: string) => Promise<PassagePage>;
   answerPassageQuestion: (questionId: string, optionId: string) => Promise<PassageAnswerResult>;
-  savePassageWord: (wordId: string, passageId: string) => Promise<unknown>;
+  savePassageWord: (wordId: string, passageId: string, spanId: string) => Promise<unknown>;
   unsaveWord: (wordId: string) => Promise<void>;
   /** Belirsiz sonuçlu cevap yeniden gönderilmeden önce kısa bekleme (testlerde anlık). */
   sleep: (ms: number) => Promise<void>;
 };
 
 export const ANSWER_RETRY_DELAY_MS = 600;
-export const ANSWER_UNCERTAIN_MESSAGE = "Cevabının kaydedilip kaydedilmediğinden emin olamadık. Tekrar dokun, kayıtlıysa kayıtlı sonucu göstereceğiz.";
+/**
+ * Belirsiz sonuç ("kaydedilmedi" DEĞİL): istek sunucuya ulaşıp cevabı kaydetmiş olabilir. "Tekrar kontrol et" aynı şıkkı yeniden
+ * gönderir; sunucu ilk cevap kazanır kuralıyla SAKLANAN ilk sonucu döndürür.
+ */
+export const ANSWER_UNCERTAIN_MESSAGE = "Sonuç doğrulanamadı; tekrar kontrol et.";
 export const ANSWER_FAILED_MESSAGE = "Cevap gönderilemedi. Tekrar dene.";
 export const WORD_FAILED_MESSAGE = "Kelime işlemi tamamlanamadı. Tekrar dene.";
 
@@ -70,6 +74,8 @@ export class PassagesController {
   private byLevel: PassagesByLevel = {};
   private pendingAnswers: Record<string, string> = {};
   private answerErrors: Record<string, string> = {};
+  /** Belirsiz kalan cevabın denenen şıkkı: "tekrar kontrol et" AYNI şıkkı yeniden gönderir. */
+  private uncertainAttempts: Record<string, string> = {};
   private pendingWords = new Set<string>();
   private wordErrors: Record<string, string> = {};
   private eliminated: ReadonlySet<string> = new Set();
@@ -234,6 +240,7 @@ export class PassagesController {
     this.byLevel = invalidateAfterAccessChange();
     this.pendingAnswers = {};
     this.answerErrors = {};
+    this.uncertainAttempts = {};
     this.pendingWords = new Set();
     this.wordErrors = {};
     this.eliminated = new Set();
@@ -258,6 +265,7 @@ export class PassagesController {
       if (!this.isCurrent(epoch)) return;
       this.byLevel = mapAllLevels(this.byLevel, (state) => applyAnswerResult(state, questionId, result));
       this.pendingAnswers = withoutKey(this.pendingAnswers, questionId);
+      this.uncertainAttempts = withoutKey(this.uncertainAttempts, questionId);
       this.emit();
     } catch (error) {
       if (!this.isCurrent(epoch)) return;
@@ -267,6 +275,7 @@ export class PassagesController {
         return;
       }
       const uncertain = isOutcomeUncertain(error);
+      if (uncertain) this.uncertainAttempts = { ...this.uncertainAttempts, [questionId]: optionId };
       this.answerErrors = { ...this.answerErrors, [questionId]: uncertain ? ANSWER_UNCERTAIN_MESSAGE : ANSWER_FAILED_MESSAGE };
       this.emit();
       if (uncertain) void this.reconcileAnswers();
@@ -301,22 +310,35 @@ export class PassagesController {
       this.byLevel = { ...this.byLevel, [level]: mergeAnswersFromPage(current, page) };
       // Kayıtlı sonuç bulunan sorunun "emin değiliz" uyarısı kalkar.
       this.answerErrors = Object.fromEntries(Object.entries(this.answerErrors).filter(([questionId]) => findQuestion(this.byLevel, questionId)?.result === null));
+      this.uncertainAttempts = Object.fromEntries(Object.entries(this.uncertainAttempts).filter(([questionId]) => findQuestion(this.byLevel, questionId)?.result === null));
       this.emit();
     } catch {
       // Uzlaştırma en-iyi-çaba: başarısızsa kullanıcının "tekrar dokun" yolu (idempotent yeniden gönderim) duruyor.
     }
   }
 
+  /**
+   * "Tekrar kontrol et": belirsiz kalan cevabı, denenen AYNI şıkla yeniden gönderir. Cevap sunucuda kayıtlıysa (sonraki sayfadaki
+   * soru dahil: uzlaştırma yalnız ilk sayfayı okur) sunucu SAKLANAN ilk sonucu döndürür ve olduğu gibi uygulanır; kayıtlı değilse
+   * kullanıcının cevabı bu istekle kaydedilir. Yalnız belirsiz bir deneme varken anlamlı; yoksa yok sayılır.
+   */
+  async recheckAnswer(questionId: string): Promise<void> {
+    const optionId = this.uncertainAttempts[questionId];
+    if (optionId === undefined) return;
+    await this.answer(questionId, optionId);
+  }
+
   // --- kelime kaydı -----------------------------------------------------------------------------------------------------
 
   /**
-   * `passageId` = kelimeye DOKUNULAN metin (sunucu bağlam cümlesini o metnin passage_words kaydından okur; kelime başka
-   * metinlerde de geçiyorsa ilk kayıt kazanır). Çift doğrulanır: kelime o açık metinde yoksa istek atılmaz (sunucu 400 verirdi).
+   * `passageId` = kelimeye DOKUNULAN metin, `spanId` = dokunulan GEÇİŞ (run'daki word.spanId). Sunucu kaynak cümleyi o geçişten
+   * bulur (aynı kelime iki cümlede geçiyorsa doğru cümle); kelime zaten kayıtlıysa ilk kayıt kazanır. Üçlü doğrulanır: kelime
+   * o açık metinde o geçişle yoksa istek atılmaz (sunucu 400 verirdi).
    */
-  async saveWord(passageId: string, wordId: string): Promise<void> {
-    if (this.pendingWords.has(wordId) || !passageContainsWord(this.byLevel, passageId, wordId)) return;
+  async saveWord(passageId: string, wordId: string, spanId: string): Promise<void> {
+    if (this.pendingWords.has(wordId) || !passageContainsSpan(this.byLevel, passageId, wordId, spanId)) return;
     await this.runWordAction(wordId, async () => {
-      await this.deps.savePassageWord(wordId, passageId);
+      await this.deps.savePassageWord(wordId, passageId, spanId);
       return true;
     });
   }

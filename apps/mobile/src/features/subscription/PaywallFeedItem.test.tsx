@@ -320,4 +320,36 @@ describe("PaywallFeedItem → okuma pratiği erişim olayı", () => {
 
     await waitFor(() => expect(seen).toEqual([false, true]));
   });
+
+  describe("hesap değişimi: olaylar doğrulamayı BAŞLATAN hesaba bağlıdır", () => {
+    const USER_B = "00000000-0000-4000-8000-000000000002";
+
+    it("A hesabında başlayan doğrulama B'ye geçildikten SONRA tamamlanırsa ne A'ya ne B'ye olay olur; B'nin kendi doğrulaması yalnız B'ye gider", async () => {
+      const seenA: boolean[] = [];
+      const seenB: boolean[] = [];
+      subscribeToAccessVerified(USER_ID, (active) => seenA.push(active));
+      subscribeToAccessVerified(USER_B, (active) => seenB.push(active));
+
+      let finishA!: (value: { active: boolean }) => void;
+      mockFetchPackages.mockResolvedValue([annual]);
+      mockPurchase.mockResolvedValue("purchased");
+      mockRefreshSubscription.mockReturnValueOnce(new Promise((resolve) => { finishA = resolve; }));
+
+      const view = await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+      await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+      await waitFor(() => expect(mockRefreshSubscription).toHaveBeenCalledTimes(1));
+
+      // Hesap B'ye geçildi; A'nın doğrulaması hâlâ bekliyor.
+      mockRefreshSubscription.mockResolvedValue({ active: true });
+      await view.rerender(<PaywallFeedItem height={800} width={400} userId={USER_B} account={LINKED} onUnlocked={jest.fn()} />);
+      await act(async () => { finishA({ active: true }); });
+      expect(seenA).toEqual([]);
+      expect(seenB).toEqual([]);
+
+      // B kendi akışını yürütürse olay B'nindir (bayat kapanıştaki A kimliğiyle yayınlanmaz).
+      await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
+      await waitFor(() => expect(seenB).toEqual([true]));
+      expect(seenA).toEqual([]);
+    });
+  });
 });

@@ -207,12 +207,17 @@ function findQuestionInLevel(state: PassagesLevelState, questionId: string): Pas
   return null;
 }
 
-/** "Bu kelime bu AÇIK metinde var mı": kaynak metin/kelime çifti sunucuya gitmeden önce doğrulanır (yanlış çift = 400 olurdu). */
-export function passageContainsWord(byLevel: PassagesByLevel, passageId: string, wordId: string): boolean {
+/**
+ * "Bu GEÇİŞ (span) bu AÇIK metinde ve bu kelimeye ait mi": kaynak metin/kelime/geçiş üçlüsü sunucuya gitmeden önce doğrulanır
+ * (yanlış üçlü = 400 olurdu). Geçiş kimliği run'daki word.spanId'dir; kelimenin başka geçişi/başka kelimenin geçişi eşleşmez.
+ */
+export function passageContainsSpan(byLevel: PassagesByLevel, passageId: string, wordId: string, spanId: string): boolean {
   for (const state of Object.values(byLevel)) {
     if (state?.status !== "success") continue;
     const passage = state.items.find((item) => item.id === passageId);
-    if (passage?.access === "open") return passage.paragraphs.some((paragraph) => paragraph.some((run) => run.word?.wordId === wordId));
+    if (passage?.access === "open") {
+      return passage.paragraphs.some((paragraph) => paragraph.some((run) => run.word?.wordId === wordId && run.word.spanId === spanId));
+    }
   }
   return false;
 }

@@ -114,3 +114,25 @@ describe("usePassages", () => {
     expect(fetchPassages).toHaveBeenCalledTimes(1);
   });
 });
+
+it("HESAP DEĞİŞİMİNDEN SONRA gelen eski hesabın erişim olayı yeni hesabın listesini yeniden çekmez veya sıfırlamaz", async () => {
+  const { deps, fetchPassages } = makeDeps();
+  fetchPassages.mockResolvedValue(makePage([makeLockedPassage(1)]));
+  const { result, rerender } = await renderHook<ReturnType<typeof usePassages>, { userId: string }>(({ userId }) => usePassages(userId, "B2", deps), { initialProps: { userId: "A" } });
+  await waitFor(() => expect(result.current.state.status).toBe("success"));
+  await rerender({ userId: "B" });
+  await waitFor(() => expect(result.current.state.status).toBe("success"));
+  const callsBefore = fetchPassages.mock.calls.length;
+
+  await act(async () => {
+    publishAccessVerified("A", true); // A'nın geciken doğrulaması B'ye geçildikten sonra tamamlandı
+  });
+
+  expect(fetchPassages.mock.calls.length).toBe(callsBefore);
+  expect(result.current.state.status === "success" && result.current.state.items[0]!.access).toBe("locked");
+
+  await act(async () => {
+    publishAccessVerified("B", true); // B'nin kendi olayı çelişkiyi (aktif ama kilitli kart) giderir
+  });
+  await waitFor(() => expect(fetchPassages.mock.calls.length).toBe(callsBefore + 1));
+});

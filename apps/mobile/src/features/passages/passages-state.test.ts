@@ -45,7 +45,7 @@ function openPassage(n: number, overrides: Partial<Extract<Passage, { access: "o
     level: "B2",
     title: `T${n}`,
     topic: "K",
-    paragraphs: [[{ text: "A " }, { text: "cat", word: { wordId: uuid(500), gloss: "kedi", saved: false } }, { text: " sat." }]],
+    paragraphs: [[{ text: "A " }, { text: "cat", word: { wordId: uuid(500), gloss: "kedi", saved: false, spanId: uuid(601), contextSentence: "A cat sat." } }, { text: " sat." }]],
     questions: [question(n * 10 + 1), question(n * 10 + 2), question(n * 10 + 3), question(n * 10 + 4)],
     ...overrides,
   };
@@ -148,8 +148,8 @@ describe("cevap ve kelime güncellemeleri", () => {
   it("kelime kaydı: aynı wordId'nin TÜM geçişlerinde ve tüm metinlerde güncellenir; başka kelime etkilenmez; geri alınabilir", () => {
     const withTwo = openPassage(1, {
       paragraphs: [
-        [{ text: "cat", word: { wordId: uuid(500), gloss: "kedi", saved: false } }, { text: " and " }, { text: "dog", word: { wordId: uuid(501), gloss: "köpek", saved: false } }],
-        [{ text: "cat", word: { wordId: uuid(500), gloss: "kedi", saved: false } }],
+        [{ text: "cat", word: { wordId: uuid(500), gloss: "kedi", saved: false, spanId: uuid(601), contextSentence: "A cat sat." } }, { text: " and " }, { text: "dog", word: { wordId: uuid(501), gloss: "köpek", saved: false, spanId: uuid(603), contextSentence: "A dog barked." } }],
+        [{ text: "cat", word: { wordId: uuid(500), gloss: "kedi", saved: false, spanId: uuid(602), contextSentence: "The cat left." } }],
       ],
     });
     const state = applyFreshSuccess(page([withTwo, openPassage(2)], null));

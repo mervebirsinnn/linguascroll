@@ -19,6 +19,9 @@ export function makeAnswer(question: PassageQuestion, selectedIndex: number, cor
 }
 
 export const CAT_WORD_ID = uuid(500);
+/** Aynı "cat" kelimesinin iki geçişi (iki ayrı cümle): her geçişin kendi span kimliği ve cümlesi var. */
+export const CAT_SPAN_1 = uuid(601);
+export const CAT_SPAN_2 = uuid(602);
 
 export function makeOpenPassage(n: number, overrides: Partial<OpenPassage> = {}): OpenPassage {
   return {
@@ -27,7 +30,15 @@ export function makeOpenPassage(n: number, overrides: Partial<OpenPassage> = {})
     level: "B2",
     title: `T${n}`,
     topic: "K",
-    paragraphs: [[{ text: "A " }, { text: "cat", word: { wordId: CAT_WORD_ID, gloss: "kedi", saved: false } }, { text: " sat." }]],
+    paragraphs: [
+      [
+        { text: "A " },
+        { text: "cat", word: { wordId: CAT_WORD_ID, gloss: "kedi", saved: false, spanId: CAT_SPAN_1, contextSentence: "A cat sat." } },
+        { text: " sat. The " },
+        { text: "cat", word: { wordId: CAT_WORD_ID, gloss: "kedi", saved: false, spanId: CAT_SPAN_2, contextSentence: "The cat left." } },
+        { text: " left." },
+      ],
+    ],
     questions: [makeQuestion(n * 10 + 1), makeQuestion(n * 10 + 2), makeQuestion(n * 10 + 3), makeQuestion(n * 10 + 4)],
     ...overrides,
   };

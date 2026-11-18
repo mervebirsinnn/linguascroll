@@ -68,11 +68,12 @@ export async function answerPassageQuestion(questionId: string, optionId: string
 }
 
 /**
- * PUT /words/:wordId/saved, kaynak olarak metin ile. `sourceSegmentId` ile birlikte ASLA gönderilmez (şema reddeder).
+ * PUT /words/:wordId/saved, kaynak olarak metin + DOKUNULAN GEÇİŞ (span) ile: sunucu kaynak cümleyi o geçişten bulur (aynı
+ * kelime iki cümlede geçiyorsa doğru cümle). `sourceSegmentId` ile birlikte ASLA gönderilmez (şema reddeder).
  * Kaydı geri almak için mevcut feed/api/unsave-word kullanılır (kaynaktan bağımsız).
  */
-export async function savePassageWord(wordId: string, passageId: string): Promise<{ created: boolean | undefined }> {
-  const body = saveWordRequestSchema.parse({ sourcePassageId: passageId });
+export async function savePassageWord(wordId: string, passageId: string, spanId: string): Promise<{ created: boolean | undefined }> {
+  const body = saveWordRequestSchema.parse({ sourcePassageId: passageId, sourcePassageSpanId: spanId });
   const json = await request(
     `${API_BASE_URL}/words/${encodeURIComponent(wordId)}/saved`,
     { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) },

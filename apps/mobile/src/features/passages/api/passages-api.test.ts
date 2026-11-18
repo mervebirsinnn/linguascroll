@@ -82,22 +82,22 @@ describe("passages api", () => {
     expect(spy).not.toHaveBeenCalled();
   });
 
-  it("savePassageWord: PUT, gövdede YALNIZ sourcePassageId (sourceSegmentId yok); created döner", async () => {
+  it("savePassageWord: PUT, gövdede metin + dokunulan GEÇİŞ (sourceSegmentId yok); created döner", async () => {
     const spy = mockFetch({ ok: true, json: { created: true } });
 
-    await expect(savePassageWord(uuid(5), uuid(6))).resolves.toEqual({ created: true });
+    await expect(savePassageWord(uuid(5), uuid(6), uuid(7))).resolves.toEqual({ created: true });
 
     const [url, init] = spy.mock.calls[0] as [string, { method: string; body: string }];
     expect(url).toContain(`/words/${uuid(5)}/saved`);
     expect(init.method).toBe("PUT");
-    expect(JSON.parse(init.body)).toEqual({ sourcePassageId: uuid(6) });
+    expect(JSON.parse(init.body)).toEqual({ sourcePassageId: uuid(6), sourcePassageSpanId: uuid(7) });
   });
 
   it("savePassageWord: created opsiyonel alan: yoksa undefined döner; şemaya uymayan gövde patlar", async () => {
     mockFetch({ ok: true, json: {} });
-    await expect(savePassageWord(uuid(5), uuid(6))).resolves.toEqual({ created: undefined });
+    await expect(savePassageWord(uuid(5), uuid(6), uuid(7))).resolves.toEqual({ created: undefined });
     mockFetch({ ok: true, json: { created: "yes" } });
-    await expect(savePassageWord(uuid(5), uuid(6))).rejects.toThrow();
+    await expect(savePassageWord(uuid(5), uuid(6), uuid(7))).rejects.toThrow();
   });
 
   it("timeout (AbortError) isTimeout:true tipli hata olur; düz ağ hatası olduğu gibi geçer", async () => {
@@ -111,5 +111,12 @@ describe("passages api", () => {
     const network = new Error("Network request failed");
     global.fetch = jest.fn().mockRejectedValue(network) as unknown as typeof fetch;
     await expect(fetchPassages("B2")).rejects.toBe(network);
+  });
+
+  it("savePassageWord: uuid olmayan geçiş kimliği istek atılmadan reddedilir", async () => {
+    const spy = jest.fn();
+    global.fetch = spy as unknown as typeof fetch;
+    await expect(savePassageWord(uuid(5), uuid(6), "not-a-uuid")).rejects.toThrow();
+    expect(spy).not.toHaveBeenCalled();
   });
 });

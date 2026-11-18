@@ -1,7 +1,7 @@
 import type { PassageLevel, PassagePage } from "@linguascroll/shared-types";
 import { PassagesApiError } from "./api/passages-api";
 import { ANSWER_FAILED_MESSAGE, ANSWER_UNCERTAIN_MESSAGE, PassagesController, type PassagesDeps } from "./passages-controller";
-import { CAT_WORD_ID, deferred, flush, makeAnswer, makeLockedPassage, makeOpenPassage, makePage, uuid, type OpenPassage } from "./passages-test-helpers";
+import { CAT_SPAN_1, CAT_SPAN_2, CAT_WORD_ID, deferred, flush, makeAnswer, makeLockedPassage, makeOpenPassage, makePage, uuid, type OpenPassage } from "./passages-test-helpers";
 
 jest.mock("../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({}) }));
 
@@ -318,7 +318,7 @@ describe("erişim değişimi (satın alma / restore / abonelik kaybı)", () => {
     fakes.savePassageWord.mockRejectedValueOnce(new PassagesApiError("x", 403));
     fakes.fetchPassages.mockResolvedValueOnce(makePage([makeLockedPassage(1)]));
 
-    await controller.saveWord(uuid(1), CAT_WORD_ID);
+    await controller.saveWord(uuid(1), CAT_WORD_ID, CAT_SPAN_1);
     await flush();
 
     expect(fakes.fetchPassages).toHaveBeenCalledTimes(2);
@@ -451,11 +451,14 @@ describe("kelime kaydı (sourcePassageId sözleşmesi)", () => {
     controller.ensureLoaded("B2");
     await flush();
 
-    await controller.saveWord(uuid(2), CAT_WORD_ID); // kullanıcı 2. metindeki "cat"e dokundu
+    await controller.saveWord(uuid(2), CAT_WORD_ID, CAT_SPAN_2); // kullanıcı 2. metindeki "cat"in İKİNCİ geçişine dokundu
 
-    expect(fakes.savePassageWord).toHaveBeenCalledWith(CAT_WORD_ID, uuid(2));
+    // Dokunulan metin VE geçiş gönderilir: sunucu kaynak cümleyi o geçişten bulur ("The cat left.").
+    expect(fakes.savePassageWord).toHaveBeenCalledWith(CAT_WORD_ID, uuid(2), CAT_SPAN_2);
     for (const index of [0, 1]) {
+      // Kelime kullanıcı başına tek: her iki metnin HER geçişi (run 1 ve run 3) kayıtlı görünür.
       expect(open(controller, "B2", index).paragraphs[0]![1]!.word?.saved).toBe(true);
+      expect(open(controller, "B2", index).paragraphs[0]![3]!.word?.saved).toBe(true);
     }
     await controller.unsaveWord(CAT_WORD_ID);
     expect(open(controller, "B2", 0).paragraphs[0]![1]!.word?.saved).toBe(false);
@@ -468,9 +471,10 @@ describe("kelime kaydı (sourcePassageId sözleşmesi)", () => {
     controller.ensureLoaded("B2");
     await flush();
 
-    await controller.saveWord(uuid(1), uuid(9999));
-    await controller.saveWord(uuid(2), CAT_WORD_ID);
-    await controller.saveWord(uuid(777), CAT_WORD_ID);
+    await controller.saveWord(uuid(1), uuid(9999), CAT_SPAN_1); // kelime o metinde yok
+    await controller.saveWord(uuid(2), CAT_WORD_ID, CAT_SPAN_1); // metin kilitli
+    await controller.saveWord(uuid(777), CAT_WORD_ID, CAT_SPAN_1); // bilinmeyen metin
+    await controller.saveWord(uuid(1), CAT_WORD_ID, uuid(9998)); // geçiş bu metne/kelimeye ait değil
 
     expect(fakes.savePassageWord).not.toHaveBeenCalled();
   });
@@ -484,8 +488,8 @@ describe("kelime kaydı (sourcePassageId sözleşmesi)", () => {
     const d = deferred<unknown>();
     fakes.savePassageWord.mockReturnValueOnce(d.promise);
 
-    const first = controller.saveWord(uuid(1), CAT_WORD_ID);
-    const second = controller.saveWord(uuid(1), CAT_WORD_ID);
+    const first = controller.saveWord(uuid(1), CAT_WORD_ID, CAT_SPAN_1);
+    const second = controller.saveWord(uuid(1), CAT_WORD_ID, CAT_SPAN_2);
     expect(controller.getSnapshot().pendingWords.has(CAT_WORD_ID)).toBe(true);
     d.reject(networkError());
     await Promise.all([first, second]);
@@ -495,8 +499,89 @@ describe("kelime kaydı (sourcePassageId sözleşmesi)", () => {
     expect(controller.getSnapshot().pendingWords.size).toBe(0);
     expect(open(controller, "B2").paragraphs[0]![1]!.word?.saved).toBe(false);
 
-    await controller.saveWord(uuid(1), CAT_WORD_ID);
+    await controller.saveWord(uuid(1), CAT_WORD_ID, CAT_SPAN_1);
     expect(open(controller, "B2").paragraphs[0]![1]!.word?.saved).toBe(true);
     expect(controller.getSnapshot().wordErrors).toEqual({});
+  });
+});
+
+describe("belirsiz cevap: ilk sayfa dışındaki soru", () => {
+  async function twoPages() {
+    const fakes = makeDeps();
+    const onFirstPage = makeOpenPassage(1);
+    const onSecondPage = makeOpenPassage(2);
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([onFirstPage], "c1"));
+    const controller = start(fakes);
+    controller.ensureLoaded("B2");
+    await flush();
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([onSecondPage], null));
+    controller.loadMore("B2");
+    await flush();
+    const question = onSecondPage.questions[0]!;
+    return { fakes, controller, question, firstPage: makePage([makeOpenPassage(1)], "c1") };
+  }
+
+  it("uzlaştırma ilk sayfayı okur, sonraki sayfadaki soruyu BULAMAZ → kesin 'kaydedilmedi' DEĞİL, 'Sonuç doğrulanamadı; tekrar kontrol et.' gösterilir", async () => {
+    const { fakes, controller, question } = await twoPages();
+    fakes.answerPassageQuestion.mockRejectedValue(new PassagesApiError("timeout", undefined, true));
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1")); // yalnız ilk sayfa: ikinci sayfadaki soru yok
+
+    await controller.answer(question.id, question.options[1]!.id);
+    await flush();
+
+    expect(controller.getSnapshot().answerErrors[question.id]).toBe("Sonuç doğrulanamadı; tekrar kontrol et.");
+    expect(controller.getSnapshot().answerErrors[question.id]).not.toMatch(/kaydedilmedi/i);
+    expect(open(controller, "B2", 1).questions[0]!.result).toBeNull(); // sonuç uydurulmadı
+  });
+
+  it("'tekrar kontrol et' AYNI şıkkı yeniden gönderir; sunucu SAKLANAN ilk sonucu döndürür ve olduğu gibi uygulanır", async () => {
+    const { fakes, controller, question } = await twoPages();
+    const attempted = question.options[1]!.id;
+    fakes.answerPassageQuestion.mockRejectedValue(new PassagesApiError("timeout", undefined, true));
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1"));
+    await controller.answer(question.id, attempted);
+    await flush();
+    fakes.answerPassageQuestion.mockReset();
+    // Sunucu ilk isteği aslında kaydetmişti: stored sonuç ilk denenen şıkka ait.
+    fakes.answerPassageQuestion.mockResolvedValueOnce(makeAnswer(question, 1, 2));
+
+    await controller.recheckAnswer(question.id);
+
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledTimes(1);
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledWith(question.id, attempted);
+    expect(open(controller, "B2", 1).questions[0]!.result?.selectedOptionId).toBe(attempted);
+    expect(controller.getSnapshot().answerErrors).toEqual({});
+  });
+
+  it("kullanıcı kontrol sırasında BAŞKA şık seçse bile sunucunun saklanan ilk sonucu gösterilir (ilk cevap kazanır)", async () => {
+    const { fakes, controller, question } = await twoPages();
+    fakes.answerPassageQuestion.mockRejectedValue(networkError());
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1"));
+    await controller.answer(question.id, question.options[1]!.id);
+    await flush();
+    fakes.answerPassageQuestion.mockReset();
+    fakes.answerPassageQuestion.mockResolvedValueOnce(makeAnswer(question, 1, 0)); // saklanan: 1. şık
+
+    await controller.answer(question.id, question.options[3]!.id); // kullanıcı bu kez 3. şıkka dokundu
+
+    expect(open(controller, "B2", 1).questions[0]!.result?.selectedOptionId).toBe(question.options[1]!.id);
+  });
+
+  it("belirsiz deneme yokken recheckAnswer hiçbir şey göndermez", async () => {
+    const { fakes, controller, question } = await twoPages();
+    await controller.recheckAnswer(question.id);
+    expect(fakes.answerPassageQuestion).not.toHaveBeenCalled();
+  });
+
+  it("recheck yine belirsiz kalırsa mesaj aynı kalır ve yeniden denenebilir", async () => {
+    const { fakes, controller, question } = await twoPages();
+    fakes.answerPassageQuestion.mockRejectedValue(new PassagesApiError("x", 503));
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1"));
+    await controller.answer(question.id, question.options[1]!.id);
+    await flush();
+    await controller.recheckAnswer(question.id);
+    await flush();
+    expect(controller.getSnapshot().answerErrors[question.id]).toBe(ANSWER_UNCERTAIN_MESSAGE);
+    expect(ANSWER_FAILED_MESSAGE).not.toBe(ANSWER_UNCERTAIN_MESSAGE);
   });
 });
