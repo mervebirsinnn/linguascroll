@@ -35,8 +35,9 @@ export const passagePackSchema = z.object({
       z.object({
         lemma: nonEmpty.max(80),
         gloss: nonEmpty.max(160),
-        contextSentence: nonEmpty.max(500),
-        spans: z.array(textRangeSchema.extend({ surface: nonEmpty })).min(1),
+        // Cümle GEÇİŞ başına (aynı kelimenin iki cümlede geçtiği metinde doğru kaynak cümle). passage_words.context_sentence
+        // (eski istemci yedeği) yayıncıda İLK geçişin cümlesinden türetilir.
+        spans: z.array(textRangeSchema.extend({ surface: nonEmpty, contextSentence: nonEmpty.max(500) })).min(1),
       }),
     )
     .min(1),
@@ -79,10 +80,9 @@ export function computePassageContentHash(pack: PassagePack): string {
     .map((word) => ({
       lemma: word.lemma,
       gloss: word.gloss,
-      contextSentence: word.contextSentence,
       spans: [...word.spans]
         .sort((a, b) => a.paragraphIndex - b.paragraphIndex || a.start - b.start)
-        .map((span) => [span.paragraphIndex, span.start, span.end, span.surface]),
+        .map((span) => [span.paragraphIndex, span.start, span.end, span.surface, span.contextSentence]),
     }))
     .sort((a, b) => (a.lemma === b.lemma ? (a.gloss < b.gloss ? -1 : a.gloss > b.gloss ? 1 : 0) : a.lemma < b.lemma ? -1 : 1));
   const canonical = {

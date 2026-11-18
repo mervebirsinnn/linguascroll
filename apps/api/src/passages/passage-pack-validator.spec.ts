@@ -92,7 +92,7 @@ describe("validatePassagePack — her kural için bir negatif test", () => {
     mismatch.words[0]!.spans[0]!.surface = "lighthous";
     expect(codes(mismatch)).toContain("span-surface-mismatch");
     const outside = clone();
-    outside.words[0]!.spans[0] = { paragraphIndex: 0, start: 100, end: 500, surface: "x" };
+    outside.words[0]!.spans[0] = { paragraphIndex: 0, start: 100, end: 500, surface: "x", contextSentence: "x" };
     expect(codes(outside)).toContain("span-out-of-range");
     const noParagraph = clone();
     noParagraph.words[0]!.spans[0]!.paragraphIndex = 3;
@@ -113,12 +113,12 @@ describe("validatePassagePack — her kural için bir negatif test", () => {
     expect(codes(pack)).toContain("schema");
   });
 
-  it("contextSentence, kelimenin ilk geçişini içeren metin parçası olmalı", () => {
+  it("her GEÇİŞİN contextSentence'ı o geçişi içeren metin parçası olmalı (başka cümle ya da uydurma reddedilir)", () => {
     const pack = clone();
-    pack.words[0]!.contextSentence = "The lamp guided ships safely home.";
+    pack.words[0]!.spans[0]!.contextSentence = "The lamp guided ships safely home.";
     expect(codes(pack)).toContain("context-sentence-mismatch");
     const invented = clone();
-    invented.words[0]!.contextSentence = "Bu cümle metinde yok.";
+    invented.words[0]!.spans[0]!.contextSentence = "Bu cümle metinde yok.";
     expect(codes(invented)).toContain("context-sentence-mismatch");
   });
 
@@ -127,7 +127,7 @@ describe("validatePassagePack — her kural için bir negatif test", () => {
     upper.words[0]!.lemma = "Lighthouse";
     expect(codes(upper)).toContain("lemma-not-normalized");
     const bare = clone();
-    bare.words[0]!.contextSentence = "lighthouse";
+    bare.words[0]!.spans[0]!.contextSentence = "lighthouse";
     expect(codes(bare)).toContain("context-sentence-too-short");
   });
 

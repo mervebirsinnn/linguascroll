@@ -167,4 +167,28 @@ describe("publishPassagePacks (e2e, gerçek Postgres)", () => {
     const rows = await db.select().from(wordsTable);
     expect(rows.map((row) => `${row.lemma}:${row.gloss}`).sort()).toEqual(["keeper:bekçi", "keeper:kaleci", "lighthouse:deniz feneri"]);
   });
+
+  it("her geçişin cümlesi span satırına yazılır; kelimenin yedek cümlesi (passage_words) İLK geçişin cümlesidir", async () => {
+    const pack = validPack();
+    const paragraph = pack.paragraphs[0]!;
+    const first = paragraph.indexOf("the harbour");
+    const second = paragraph.indexOf("the keeper");
+    // Aynı kelime ("the") iki ayrı cümlede.
+    pack.words.push({
+      lemma: "the",
+      gloss: "belirtme tanımlığı",
+      spans: [
+        { paragraphIndex: 0, start: first, end: first + 3, surface: "the", contextSentence: "The old lighthouse stood above the harbour." },
+        { paragraphIndex: 0, start: second, end: second + 3, surface: "the", contextSentence: "Every evening the keeper climbed its stairs." },
+      ],
+    });
+
+    await publishPassagePacks(db, [pack]);
+
+    const theWord = (await db.select().from(wordsTable)).find((row) => row.lemma === "the")!;
+    const spans = (await db.select().from(passageWordSpansTable)).filter((row) => row.wordId === theWord.id).sort((a, b) => a.start - b.start);
+    expect(spans.map((row) => row.contextSentence)).toEqual(["The old lighthouse stood above the harbour.", "Every evening the keeper climbed its stairs."]);
+    const link = (await db.select().from(passageWordsTable)).find((row) => row.wordId === theWord.id);
+    expect(link?.contextSentence).toBe("The old lighthouse stood above the harbour."); // ilk geçiş
+  });
 });

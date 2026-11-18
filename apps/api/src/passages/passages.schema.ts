@@ -103,6 +103,9 @@ export const passageWordSpansTable = pgTable(
     end: integer("end").notNull(),
     wordId: uuid("word_id").notNull(),
     surface: text("surface").notNull(),
+    // BU geçişin cümlesi (kaydedilen kaynak cümle + kelime penceresinde gösterilen). NULLABLE: yayıncı her span için yazar;
+    // null ise (ör. bu alan gelmeden önce yazılmış satır) passage_words.context_sentence (ilk geçişin cümlesi) kullanılır.
+    contextSentence: text("context_sentence"),
   },
   (table) => [
     foreignKey({

@@ -25,10 +25,19 @@ export type PassagesQuery = z.infer<typeof passagesQuerySchema>;
  * vocabulary enrichment'ı ile aynı fikir). Kelime id'leri YALNIZCA açık (open) metinlerde gelir:
  * kilitli metnin payload'ında hiç yoktur, bu yüzden kaynaksız kayıt bir erişim bypass'ı değildir.
  */
+/**
+ * `spanId`: bu GEÇİŞİN kimliği (passage_word_spans.id; bir kelimenin iki geçişi iki ayrı span'dır). Mobil kaydederken bunu
+ * geri yollar; sunucu span'ın metne ve kelimeye ait olduğunu doğrular, kaynak cümleyi span'dan bulur. Yayın no-op'ta id'ler
+ * korunur; esaslı düzeltme yeni slug = yeni span'lar.
+ * `contextSentence`: bu geçişin cümlesi — kelime penceresinde gösterilen ile kaydedilen AYNI olsun diye sunucudan gelir
+ * (istemci cümle bölmez).
+ */
 export const passageWordRefSchema = z.object({
   wordId: z.string().uuid(),
   gloss: z.string(),
   saved: z.boolean(),
+  spanId: z.string().uuid(),
+  contextSentence: z.string().min(1),
 });
 
 /**

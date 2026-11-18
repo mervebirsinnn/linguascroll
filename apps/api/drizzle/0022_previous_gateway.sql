@@ -1,0 +1,3 @@
+ALTER TABLE "passage_word_spans" ADD COLUMN "context_sentence" text;--> statement-breakpoint
+ALTER TABLE "user_saved_words" ADD COLUMN "source_passage_span_id" uuid;--> statement-breakpoint
+ALTER TABLE "user_saved_words" ADD CONSTRAINT "user_saved_words_source_passage_span_id_passage_word_spans_id_fk" FOREIGN KEY ("source_passage_span_id") REFERENCES "public"."passage_word_spans"("id") ON DELETE set null ON UPDATE no action;

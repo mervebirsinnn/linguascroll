@@ -6,7 +6,7 @@ import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
 import { createAuthenticatedUser, withTestAuth } from "../auth/test-auth";
-import { passagesTable } from "../passages/passages.schema";
+import { passagesTable, passageWordsTable } from "../passages/passages.schema";
 import { createPassageFixture } from "../passages/passage-test-fixtures";
 import { RevenueCatClient } from "../subscriptions/revenue-cat-client";
 import { createTestDatabaseConnection, truncateTestTables } from "../videos/test-database";
@@ -144,5 +144,53 @@ describe("Paragraftan kelime kaydı (e2e, gerçek Postgres, kapı açık)", () =
 
     expect(failure).not.toBeNull();
     expect(`${failure?.message} ${failure?.cause?.message ?? ""}`).toContain("user_saved_words_single_source_check");
+  });
+
+  describe("kelime geçişi (span): aynı kelimenin iki ayrı cümlede geçtiği metin", () => {
+    it("dokunulan geçişin cümlesi kaydedilir (2. geçiş: The cat left.); ilk kayıt kazanır; geri alıp ilk geçişten kaydedince A cat sat.", async () => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const free = await createPassageFixture(db, { slug: "span-free", isFreeSample: true });
+
+      const second = await save(authorization, free.wordId, { sourcePassageId: free.passageId, sourcePassageSpanId: free.spanIds[1] }).expect(200);
+      expect(second.body).toEqual({ created: true });
+      expect((await saved(authorization).expect(200)).body[0].sourceSentence).toBe("The cat left.");
+
+      const again = await save(authorization, free.wordId, { sourcePassageId: free.passageId, sourcePassageSpanId: free.spanIds[0] }).expect(200);
+      expect(again.body).toEqual({ created: false });
+      expect((await saved(authorization).expect(200)).body[0].sourceSentence).toBe("The cat left.");
+
+      await request(app.getHttpServer()).delete(`/words/${free.wordId}/saved`).set("Authorization", authorization).expect(200);
+      await save(authorization, free.wordId, { sourcePassageId: free.passageId, sourcePassageSpanId: free.spanIds[0] }).expect(200);
+      expect((await saved(authorization).expect(200)).body[0].sourceSentence).toBe("A cat sat.");
+    });
+
+    it("ESKİ İSTEMCİ (span göndermez): davranış aynı kalır, kaynak cümle kelimenin ilk geçişinin cümlesidir", async () => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const free = await createPassageFixture(db, { slug: "span-old", isFreeSample: true });
+      await save(authorization, free.wordId, { sourcePassageId: free.passageId }).expect(200);
+      expect((await saved(authorization).expect(200)).body[0].sourceSentence).toBe("A cat sat.");
+    });
+
+    it("başka metnin span'ı, başka kelimenin span'ı, olmayan span ve metinsiz span 400; satır yazılmaz", async () => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const a = await createPassageFixture(db, { slug: "span-mine", isFreeSample: true });
+      const b = await createPassageFixture(db, { slug: "span-other", level: "B1", isFreeSample: true });
+      const [dog] = await db.insert(wordsTable).values({ language: "en", lemma: "dog", gloss: "köpek" }).returning();
+      await db.insert(passageWordsTable).values({ passageId: a.passageId, wordId: dog!.id, contextSentence: "A dog barked." });
+
+      await save(authorization, a.wordId, { sourcePassageId: a.passageId, sourcePassageSpanId: b.spanIds[0] }).expect(400);
+      await save(authorization, dog!.id, { sourcePassageId: a.passageId, sourcePassageSpanId: a.spanIds[0] }).expect(400);
+      await save(authorization, a.wordId, { sourcePassageId: a.passageId, sourcePassageSpanId: "00000000-0000-4000-8000-0000000000fc" }).expect(400);
+      await save(authorization, a.wordId, { sourcePassageSpanId: a.spanIds[0] }).expect(400);
+      await save(authorization, a.wordId, { sourcePassageId: a.passageId, sourcePassageSpanId: "not-a-uuid" }).expect(400);
+      expect(await db.select().from(userSavedWordsTable)).toHaveLength(0);
+    });
+
+    it("kilitli metinde span ile de 403", async () => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const paid = await createPassageFixture(db, { slug: "span-paid" });
+      await save(authorization, paid.wordId, { sourcePassageId: paid.passageId, sourcePassageSpanId: paid.spanIds[0] }).expect(403);
+      expect(await db.select().from(userSavedWordsTable)).toHaveLength(0);
+    });
   });
 });

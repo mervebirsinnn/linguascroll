@@ -6,9 +6,10 @@
  * doğrulayıcısının zaten engellemesi gereken bir veri bütünlüğü hatasıdır, bu yüzden burada açıkça patlar —
  * yanlış yerde vurgulanmış bir kelime, yanlış anlamı yanlış kelimeye bağlamaktan kötüdür.
  */
-export type RunSpan = { start: number; end: number; wordId: string; surface: string };
-export type RunWordInfo = { gloss: string; saved: boolean };
-export type PassageRun = { text: string; word?: { wordId: string; gloss: string; saved: boolean } };
+export type RunSpan = { id: string; start: number; end: number; wordId: string; surface: string; contextSentence: string | null };
+/** `contextSentence`: kelimenin ilk geçişinin cümlesi (span'ın kendi cümlesi yoksa yedek). */
+export type RunWordInfo = { gloss: string; saved: boolean; contextSentence: string };
+export type PassageRun = { text: string; word?: { wordId: string; gloss: string; saved: boolean; spanId: string; contextSentence: string } };
 
 export function buildParagraphRuns(paragraph: string, spans: readonly RunSpan[], words: ReadonlyMap<string, RunWordInfo>): PassageRun[] {
   if (paragraph.length === 0) {
@@ -36,7 +37,10 @@ export function buildParagraphRuns(paragraph: string, spans: readonly RunSpan[],
     if (span.start > cursor) {
       runs.push({ text: paragraph.slice(cursor, span.start) });
     }
-    runs.push({ text: span.surface, word: { wordId: span.wordId, gloss: info.gloss, saved: info.saved } });
+    runs.push({
+      text: span.surface,
+      word: { wordId: span.wordId, gloss: info.gloss, saved: info.saved, spanId: span.id, contextSentence: span.contextSentence ?? info.contextSentence },
+    });
     cursor = span.end;
   }
 

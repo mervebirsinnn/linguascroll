@@ -2,7 +2,7 @@ import { Inject, Injectable } from "@nestjs/common";
 import { wordSchema, type Word } from "@linguascroll/shared-types";
 import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
-import { passagesTable, passageWordsTable } from "../passages/passages.schema";
+import { passagesTable, passageWordSpansTable, passageWordsTable } from "../passages/passages.schema";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { videosTable } from "../videos/videos.schema";
 import { segmentWordGlossesTable } from "./segment-word-glosses.schema";
@@ -69,31 +69,46 @@ export class WordsRepository {
     wordId: string,
     sourceSegmentId: string | null = null,
     sourcePassageId: string | null = null,
+    sourcePassageSpanId: string | null = null,
   ): Promise<{ created: boolean }> {
     const inserted = await this.db
       .insert(userSavedWordsTable)
-      .values({ userId, wordId, sourceSegmentId, sourcePassageId })
+      .values({ userId, wordId, sourceSegmentId, sourcePassageId, sourcePassageSpanId })
       .onConflictDoNothing({ target: [userSavedWordsTable.userId, userSavedWordsTable.wordId] })
       .returning({ wordId: userSavedWordsTable.wordId });
     return { created: inserted.length === 1 };
   }
 
   /**
-   * Okuma pratiği — `sourcePassageId` doğrulaması için TEK sorgu: metin var mı, emekli mi, ücretsiz örnek mi ve bu
-   * kelime GERÇEKTEN bu metnin kelimelerinden mi (`passage_words`). Metin yoksa null; kelime metinde yoksa
-   * `containsWord: false`. HTTP kararı (400/403) WordsService'te; burada yalnız olgular.
+   * Okuma pratiği — `sourcePassageId` doğrulaması için TEK sorgu: metin var mı, emekli mi, ücretsiz örnek mi, bu kelime
+   * GERÇEKTEN bu metnin kelimelerinden mi (`passage_words`) ve — `spanId` verildiyse — bu span bu metne VE bu kelimeye mi
+   * ait (`passage_word_spans`). Metin yoksa null. HTTP kararı (400/403) WordsService'te; burada yalnız olgular.
    */
   async findPassageWordAccess(
     passageId: string,
     wordId: string,
-  ): Promise<{ isFreeSample: boolean; retired: boolean; containsWord: boolean } | null> {
+    spanId: string | null = null,
+  ): Promise<{ isFreeSample: boolean; retired: boolean; containsWord: boolean; containsSpan: boolean } | null> {
     const [row] = await this.db
-      .select({ isFreeSample: passagesTable.isFreeSample, retiredAt: passagesTable.retiredAt, linkedWordId: passageWordsTable.wordId })
+      .select({
+        isFreeSample: passagesTable.isFreeSample,
+        retiredAt: passagesTable.retiredAt,
+        linkedWordId: passageWordsTable.wordId,
+        linkedSpanId: passageWordSpansTable.id,
+      })
       .from(passagesTable)
       .leftJoin(passageWordsTable, and(eq(passageWordsTable.passageId, passagesTable.id), eq(passageWordsTable.wordId, wordId)))
+      .leftJoin(
+        passageWordSpansTable,
+        spanId === null
+          ? sql`false`
+          : and(eq(passageWordSpansTable.id, spanId), eq(passageWordSpansTable.passageId, passagesTable.id), eq(passageWordSpansTable.wordId, wordId)),
+      )
       .where(eq(passagesTable.id, passageId))
       .limit(1);
-    return row ? { isFreeSample: row.isFreeSample, retired: row.retiredAt !== null, containsWord: row.linkedWordId !== null } : null;
+    return row
+      ? { isFreeSample: row.isFreeSample, retired: row.retiredAt !== null, containsWord: row.linkedWordId !== null, containsSpan: row.linkedSpanId !== null }
+      : null;
   }
 
   /** Idempotent by construction: var olmayan bir (user,word) çiftini silmek 0-row-affected, hatasız. */
@@ -136,9 +151,9 @@ export class WordsRepository {
         lemma: wordsTable.lemma,
         gloss: wordsTable.gloss,
         savedAt: userSavedWordsTable.savedAt,
-        // Okuma pratiği: altyazı kaynağı varsa o, yoksa metindeki ilk geçtiği cümle (passage_words.context_sentence).
-        // İki kaynak birbirini dışlar (CHECK), COALESCE hangisinin dolu olduğuna göre tek değer verir.
-        sourceSentence: sql<string | null>`coalesce(${videoTranscriptSegmentsTable.text}, ${passageWordsTable.contextSentence})`,
+        // Okuma pratiği: altyazı kaynağı varsa o; yoksa kaydedilen GEÇİŞİN cümlesi (span); span yoksa (eski istemci / cümlesi
+        // olmayan eski satır) kelimenin metindeki ilk geçişinin cümlesi (passage_words.context_sentence).
+        sourceSentence: sql<string | null>`coalesce(${videoTranscriptSegmentsTable.text}, ${passageWordSpansTable.contextSentence}, ${passageWordsTable.contextSentence})`,
       })
       .from(userSavedWordsTable)
       .innerJoin(wordsTable, eq(wordsTable.id, userSavedWordsTable.wordId))
@@ -147,6 +162,7 @@ export class WordsRepository {
         passageWordsTable,
         and(eq(passageWordsTable.passageId, userSavedWordsTable.sourcePassageId), eq(passageWordsTable.wordId, userSavedWordsTable.wordId)),
       )
+      .leftJoin(passageWordSpansTable, eq(passageWordSpansTable.id, userSavedWordsTable.sourcePassageSpanId))
       .where(eq(userSavedWordsTable.userId, userId))
       // En yeni kayıt ilk (sözleşme + test). ORDER BY OLMADAN sıra fiziksel satır/plan sırasına bağlıydı (flaky); eşit savedAt için
       // word id ikincil anahtarı sırayı deterministik yapar.

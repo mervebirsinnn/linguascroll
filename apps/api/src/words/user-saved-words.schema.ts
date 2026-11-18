@@ -1,7 +1,7 @@
 import { sql } from "drizzle-orm";
 import { check, pgTable, primaryKey, timestamp, uuid } from "drizzle-orm/pg-core";
 import { usersTable } from "../users/users.schema";
-import { passagesTable } from "../passages/passages.schema";
+import { passagesTable, passageWordSpansTable } from "../passages/passages.schema";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { wordsTable } from "./words.schema";
 
@@ -52,6 +52,9 @@ export const userSavedWordsTable = pgTable(
     savedAt: timestamp("saved_at", { withTimezone: true }).notNull().defaultNow(),
     sourceSegmentId: uuid("source_segment_id").references(() => videoTranscriptSegmentsTable.id, { onDelete: "set null" }),
     sourcePassageId: uuid("source_passage_id").references(() => passagesTable.id, { onDelete: "set null" }),
+    // Kelimenin kaydedildiği GEÇİŞ (passage_word_spans.id): aynı kelimenin iki cümlede geçtiği metinde doğru kaynak cümle.
+    // ON DELETE SET NULL (metin silinince span'lar da gider); null → kaynak cümle passage_words.context_sentence'a düşer.
+    sourcePassageSpanId: uuid("source_passage_span_id").references(() => passageWordSpansTable.id, { onDelete: "set null" }),
   },
   (table) => [
     primaryKey({ columns: [table.userId, table.wordId] }),

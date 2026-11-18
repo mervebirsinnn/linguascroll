@@ -34,8 +34,8 @@ type Overrides = {
   findWordById?: (wordId: string) => Promise<Word | null>;
   userExists?: boolean;
   isSegmentConsistentWithWord?: (segmentId: string, wordId: string) => Promise<boolean>;
-  saveWordSpy?: (userId: string, wordId: string, sourceSegmentId: string | null, sourcePassageId: string | null) => void;
-  findPassageWordAccess?: () => Promise<{ isFreeSample: boolean; retired: boolean; containsWord: boolean } | null>;
+  saveWordSpy?: (userId: string, wordId: string, sourceSegmentId: string | null, sourcePassageId: string | null, sourcePassageSpanId: string | null) => void;
+  findPassageWordAccess?: () => Promise<{ isFreeSample: boolean; retired: boolean; containsWord: boolean; containsSpan: boolean } | null>;
   hasFullAccess?: () => Promise<boolean>;
   findSavedWordsForUser?: () => Promise<SavedWordRow[]>;
   findEventsForUser?: () => Promise<Map<string, { isCorrect: boolean; reviewedAt: Date }[]>>;
@@ -50,8 +50,8 @@ type Overrides = {
 function makeService(overrides: Overrides = {}): WordsService {
   const wordsRepository = {
     findWordById: overrides.findWordById ?? ((wordId: string) => Promise.resolve(makeWord(wordId, "journey"))),
-    saveWord: (userId: string, wordId: string, sourceSegmentId: string | null = null, sourcePassageId: string | null = null) => {
-      overrides.saveWordSpy?.(userId, wordId, sourceSegmentId, sourcePassageId);
+    saveWord: (userId: string, wordId: string, sourceSegmentId: string | null = null, sourcePassageId: string | null = null, sourcePassageSpanId: string | null = null) => {
+      overrides.saveWordSpy?.(userId, wordId, sourceSegmentId, sourcePassageId, sourcePassageSpanId);
       return Promise.resolve({ created: true });
     },
     unsaveWord: () => Promise.resolve(),
@@ -92,7 +92,7 @@ describe("WordsService", () => {
       await service.saveWord(WORD_A_ID, USER_ID);
 
       expect(isSegmentConsistentWithWord).not.toHaveBeenCalled();
-      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, null);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, null, null);
     });
 
     it("sourceSegmentId verilmiş ve tutarlıysa saveWord bu context ile çağrılır", async () => {
@@ -103,7 +103,7 @@ describe("WordsService", () => {
       await service.saveWord(WORD_A_ID, USER_ID, SEGMENT_ID);
 
       expect(isSegmentConsistentWithWord).toHaveBeenCalledWith(SEGMENT_ID, WORD_A_ID);
-      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, SEGMENT_ID, null);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, SEGMENT_ID, null, null);
     });
 
     it("sourceSegmentId verilmiş ama TUTARSIZSA BadRequestException fırlatır, saveWord'e hiç ulaşmaz", async () => {
@@ -117,7 +117,7 @@ describe("WordsService", () => {
   });
 
   describe("saveWord — sourcePassageId (okuma pratiği)", () => {
-    const open = { isFreeSample: false, retired: false, containsWord: true };
+    const open = { isFreeSample: false, retired: false, containsWord: true, containsSpan: false };
 
     it("segmentle birlikte gelirse 400; hiçbir sorgu/yazma yapılmaz", async () => {
       const saveWordSpy = jest.fn();
@@ -153,14 +153,42 @@ describe("WordsService", () => {
       await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID);
 
       expect(hasFullAccess).not.toHaveBeenCalled();
-      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID, null);
     });
 
     it("kilitli olmayan (tam erişimli) metin kaydedilir", async () => {
       const saveWordSpy = jest.fn();
       const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve(open), hasFullAccess: () => Promise.resolve(true) });
       await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID);
-      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID);
+      expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID, null);
+    });
+  });
+
+  describe("saveWord — sourcePassageSpanId (geçiş)", () => {
+    const SPAN_ID = "00000000-0000-4000-c000-000000000001";
+    const open = { isFreeSample: true, retired: false, containsWord: true, containsSpan: true };
+
+    it("span, metne ve kelimeye ait değilse 400 (sessizce ilk geçişe düşülmez) ve yazılmaz", async () => {
+      const saveWordSpy = jest.fn();
+      const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve({ ...open, containsSpan: false }) });
+      await expect(service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID, SPAN_ID)).rejects.toThrow(BadRequestException);
+      expect(saveWordSpy).not.toHaveBeenCalled();
+    });
+
+    it("span metin olmadan gönderilirse 400, hiçbir sorgu yapılmaz", async () => {
+      const findPassageWordAccess = jest.fn(() => Promise.resolve(open));
+      const service = makeService({ findPassageWordAccess });
+      await expect(service.saveWord(WORD_A_ID, USER_ID, null, null, SPAN_ID)).rejects.toThrow(BadRequestException);
+      expect(findPassageWordAccess).not.toHaveBeenCalled();
+    });
+
+    it("geçerli span repository'ye aynen iletilir; span'sız (eski istemci) null iletilir", async () => {
+      const saveWordSpy = jest.fn();
+      const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve(open) });
+      await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID, SPAN_ID);
+      await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID);
+      expect(saveWordSpy).toHaveBeenNthCalledWith(1, USER_ID, WORD_A_ID, null, PASSAGE_ID, SPAN_ID);
+      expect(saveWordSpy).toHaveBeenNthCalledWith(2, USER_ID, WORD_A_ID, null, PASSAGE_ID, null);
     });
   });
 

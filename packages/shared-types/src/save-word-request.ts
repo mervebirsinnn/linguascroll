@@ -21,12 +21,19 @@ export const saveWordRequestSchema = z
     // eski istemciler göndermez; yeni istemci + eski API'de z.object bilinmeyen alanı düşürür, kelime
     // kaynaksız kaydedilir (zararsız).
     sourcePassageId: z.string().uuid().nullable().optional(),
+    // Dokunulan GEÇİŞ (passage_word_spans.id): kaynak cümle bu geçişten bulunur. OPSİYONEL ve additive: göndermeyen (eski)
+    // istemci kaydı metnin ilk geçişinin cümlesiyle alır — mevcut davranış. Yalnız sourcePassageId ile anlamlı.
+    sourcePassageSpanId: z.string().uuid().nullable().optional(),
   })
   // Bir kayıt TEK kaynaktan gelir (user_saved_words'te tek source kolonu mantığı): ikisi birden gelirse
   // hangisinin geçerli olduğu belirsiz, sessizce birini seçmek yerine reddedilir.
   .refine((value) => !(value.sourceSegmentId && value.sourcePassageId), {
     message: "sourceSegmentId ve sourcePassageId birlikte gönderilemez",
     path: ["sourcePassageId"],
+  })
+  .refine((value) => !value.sourcePassageSpanId || Boolean(value.sourcePassageId), {
+    message: "sourcePassageSpanId yalnız sourcePassageId ile gönderilebilir",
+    path: ["sourcePassageSpanId"],
   });
 
 export type SaveWordRequest = z.infer<typeof saveWordRequestSchema>;

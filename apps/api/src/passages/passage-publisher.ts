@@ -132,10 +132,21 @@ async function insertPack(tx: Tx, pack: PassagePack, contentHash: string): Promi
     wordIds.push(created.id);
   }
 
-  await tx.insert(passageWordsTable).values(pack.words.map((word, index) => ({ passageId: passage.id, wordId: wordIds[index]!, contextSentence: word.contextSentence })));
+  // passage_words.context_sentence = İLK geçişin cümlesi (sourcePassageSpanId göndermeyen eski istemcinin yedeği).
+  const firstSentence = (word: PassagePack["words"][number]): string =>
+    [...word.spans].sort((a, b) => a.paragraphIndex - b.paragraphIndex || a.start - b.start)[0]!.contextSentence;
+  await tx.insert(passageWordsTable).values(pack.words.map((word, index) => ({ passageId: passage.id, wordId: wordIds[index]!, contextSentence: firstSentence(word) })));
   await tx.insert(passageWordSpansTable).values(
     pack.words.flatMap((word, index) =>
-      word.spans.map((span) => ({ passageId: passage.id, paragraphIndex: span.paragraphIndex, start: span.start, end: span.end, wordId: wordIds[index]!, surface: span.surface })),
+      word.spans.map((span) => ({
+        passageId: passage.id,
+        paragraphIndex: span.paragraphIndex,
+        start: span.start,
+        end: span.end,
+        wordId: wordIds[index]!,
+        surface: span.surface,
+        contextSentence: span.contextSentence,
+      })),
     ),
   );
 

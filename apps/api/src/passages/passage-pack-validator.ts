@@ -73,23 +73,28 @@ function validateWords(pack: PassagePack, issues: PackIssue[]): void {
       }
     }
 
-    // İlk geçişin cümlesi: contextSentence, ilk span'ı içeren bir metin parçası olmalı (kaydedilen kaynak cümle).
-    const first = [...word.spans].sort((a, b) => a.paragraphIndex - b.paragraphIndex || a.start - b.start)[0];
-    const firstParagraph = first ? pack.paragraphs[first.paragraphIndex] : undefined;
-    if (first && word.contextSentence.length <= first.end - first.start) {
-      issues.push(issue("context-sentence-too-short", `${base}.contextSentence`, "contextSentence kelimenin kendisinden uzun, tam bir cümle/parça olmalı"));
-    } else if (first && firstParagraph !== undefined && !containsAround(firstParagraph, word.contextSentence, first.start, first.end)) {
-      issues.push(issue("context-sentence-mismatch", `${base}.contextSentence`, "contextSentence, kelimenin ilk geçtiği yeri içeren metin parçası değil"));
+    // Her GEÇİŞİN cümlesi, o geçişi içeren bir metin parçası ve kelimeden uzun olmalı (kaydedilen/gösterilen kaynak cümle).
+    for (const [spanIndex, span] of word.spans.entries()) {
+      const paragraph = pack.paragraphs[span.paragraphIndex];
+      if (paragraph === undefined) continue;
+      const path = `${base}.spans.${spanIndex}.contextSentence`;
+      if (span.contextSentence.length <= span.end - span.start) {
+        issues.push(issue("context-sentence-too-short", path, "contextSentence kelimenin kendisinden uzun, tam bir cümle/parça olmalı"));
+      } else if (!containsAround(paragraph, span.contextSentence, span.start, span.end)) {
+        issues.push(issue("context-sentence-mismatch", path, "contextSentence, bu geçişi içeren bir metin parçası değil"));
+      }
     }
   });
 
   // Çakışma: sunucunun kullandığı fonksiyonla (aralık/surface hatası zaten raporlandıysa tekrar etme).
   if (spanProblem) return;
-  const info = new Map(pack.words.map((word, index) => [`w${index}`, { gloss: word.gloss, saved: false }]));
+  const info = new Map(pack.words.map((word, index) => [`w${index}`, { gloss: word.gloss, saved: false, contextSentence: word.spans[0]!.contextSentence }]));
   pack.paragraphs.forEach((paragraph, paragraphIndex) => {
     if (paragraph.length === 0) return;
     const spans = pack.words.flatMap((word, index) =>
-      word.spans.filter((span) => span.paragraphIndex === paragraphIndex).map((span) => ({ start: span.start, end: span.end, wordId: `w${index}`, surface: span.surface })),
+      word.spans
+        .filter((span) => span.paragraphIndex === paragraphIndex)
+        .map((span, spanIndex) => ({ id: `s${index}-${paragraphIndex}-${spanIndex}`, start: span.start, end: span.end, wordId: `w${index}`, surface: span.surface, contextSentence: span.contextSentence })),
     );
     try {
       buildParagraphRuns(paragraph, spans, info);

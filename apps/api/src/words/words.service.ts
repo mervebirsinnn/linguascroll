@@ -57,16 +57,25 @@ export class WordsService {
     userId: string,
     sourceSegmentId?: string | null,
     sourcePassageId?: string | null,
+    sourcePassageSpanId?: string | null,
   ): Promise<{ created: boolean }> {
     if (sourceSegmentId && sourcePassageId) {
       throw new BadRequestException("sourceSegmentId ve sourcePassageId birlikte gönderilemez");
     }
+    if (sourcePassageSpanId && !sourcePassageId) {
+      throw new BadRequestException("sourcePassageSpanId yalnız sourcePassageId ile gönderilebilir");
+    }
     await this.assertWordAndUserExist(wordId, userId);
 
     if (sourcePassageId) {
-      const access = await this.wordsRepository.findPassageWordAccess(sourcePassageId, wordId);
+      const access = await this.wordsRepository.findPassageWordAccess(sourcePassageId, wordId, sourcePassageSpanId ?? null);
       if (!access || access.retired || !access.containsWord) {
         throw new BadRequestException(`"${sourcePassageId}" metni yok ya da "${wordId}" kelimesini içermiyor`);
+      }
+      // Geçiş (span) verildiyse GÖNDERİLEN metne ve kelimeye ait olmalı; başka metnin/kelimenin span'ı kaynak cümleyi
+      // yanlış yere bağlardı. Yoksa/uyuşmazsa sessizce ilk geçişe düşülmez: 400.
+      if (sourcePassageSpanId && !access.containsSpan) {
+        throw new BadRequestException(`"${sourcePassageSpanId}" geçişi, "${sourcePassageId}" metnine ve "${wordId}" kelimesine ait değil`);
       }
       if (!access.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId))) {
         throw new ForbiddenException("Bu metin için erişim yok");
@@ -82,7 +91,7 @@ export class WordsService {
       }
     }
 
-    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null, sourcePassageId ?? null);
+    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null, sourcePassageId ?? null, sourcePassageSpanId ?? null);
   }
 
   async unsaveWord(wordId: string, userId: string): Promise<void> {

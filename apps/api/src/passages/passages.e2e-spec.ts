@@ -276,4 +276,22 @@ describe("GET /passages ve POST /passages/questions/:id/answer (e2e, gerçek Pos
       expect(await db.select().from(passageAnswersTable)).toHaveLength(0);
     });
   });
+
+  describe("geçiş (span) kimliği ve cümlesi", () => {
+    it("aynı kelimenin iki geçişi run'larda AYRI spanId ve KENDİ cümlesiyle gelir; id'ler DB span id'leridir", async () => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const fixture = await createPassageFixture(db, { slug: "span-runs" });
+
+      const res = await getPassages(authorization).expect(200);
+      const page = passagePageSchema.parse(res.body);
+      const item = page.items[0]!;
+      if (item.access !== "open") throw new Error("açık metin bekleniyordu");
+      const catRuns = item.paragraphs[0]!.filter((run) => run.word);
+
+      expect(catRuns.map((run) => [run.text, run.word!.spanId, run.word!.contextSentence])).toEqual([
+        ["cat", fixture.spanIds[0], "A cat sat."],
+        ["cat", fixture.spanIds[1], "The cat left."],
+      ]);
+    });
+  });
 });

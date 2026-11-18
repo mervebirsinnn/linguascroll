@@ -134,7 +134,7 @@ export class PassagesService {
 
   private toOpenPassage(row: PassageRow, content: OpenContent): Passage {
     const wordInfo = new Map<string, RunWordInfo>(
-      (content.wordsByPassage.get(row.id) ?? []).map((word) => [word.wordId, { gloss: word.gloss, saved: content.savedWordIds.has(word.wordId) }]),
+      (content.wordsByPassage.get(row.id) ?? []).map((word) => [word.wordId, { gloss: word.gloss, saved: content.savedWordIds.has(word.wordId), contextSentence: word.contextSentence }]),
     );
     const spans = content.spansByPassage.get(row.id) ?? [];
     const paragraphs = row.paragraphs.map((text, paragraphIndex) =>

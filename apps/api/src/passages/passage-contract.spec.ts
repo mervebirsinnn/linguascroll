@@ -31,7 +31,7 @@ const openPassage = {
   level: "C1",
   title: "T",
   topic: "Sinirbilim",
-  paragraphs: [[{ text: "plain " }, { text: "account for", word: { wordId: uuid(2), gloss: "açıklamak", saved: false } }]],
+  paragraphs: [[{ text: "plain " }, { text: "account for", word: { wordId: uuid(2), gloss: "açıklamak", saved: false, spanId: uuid(3), contextSentence: "Plain account for it." } }]],
   questions: [unansweredQuestion],
 };
 
@@ -164,5 +164,24 @@ describe("saveWordRequestSchema — sourcePassageId", () => {
 
   it("uuid olmayan sourcePassageId reddedilir", () => {
     expect(saveWordRequestSchema.safeParse({ sourcePassageId: "x" }).success).toBe(false);
+  });
+});
+
+describe("kelime geçişi (span) sözleşmesi", () => {
+  it("run'daki kelime referansı geçiş kimliğini (spanId) ve o geçişin cümlesini ZORUNLU taşır", () => {
+    const withoutSpan = structuredClone(openPassage);
+    delete (withoutSpan.paragraphs[0]![1]!.word as Partial<{ spanId: string }>).spanId;
+    expect(passageSchema.safeParse(withoutSpan).success).toBe(false);
+    const withoutSentence = structuredClone(openPassage);
+    delete (withoutSentence.paragraphs[0]![1]!.word as Partial<{ contextSentence: string }>).contextSentence;
+    expect(passageSchema.safeParse(withoutSentence).success).toBe(false);
+  });
+
+  it("sourcePassageSpanId: sourcePassageId ile geçerli; tek başına ve segmentle birlikte reddedilir; uuid zorunlu", () => {
+    expect(saveWordRequestSchema.safeParse({ sourcePassageId: uuid(1), sourcePassageSpanId: uuid(2) }).success).toBe(true);
+    expect(saveWordRequestSchema.safeParse({ sourcePassageId: uuid(1), sourcePassageSpanId: null }).success).toBe(true);
+    expect(saveWordRequestSchema.safeParse({ sourcePassageSpanId: uuid(2) }).success).toBe(false);
+    expect(saveWordRequestSchema.safeParse({ sourceSegmentId: uuid(1), sourcePassageId: uuid(2), sourcePassageSpanId: uuid(3) }).success).toBe(false);
+    expect(saveWordRequestSchema.safeParse({ sourcePassageId: uuid(1), sourcePassageSpanId: "x" }).success).toBe(false);
   });
 });

@@ -6,10 +6,21 @@ import type { PassagePack } from "./passage-pack";
  */
 const PARAGRAPH = "The old lighthouse stood above the harbour. Every evening the keeper climbed its stairs. The lamp guided ships safely home.";
 
-function span(surface: string): { paragraphIndex: number; start: number; end: number; surface: string } {
+const SENTENCES = [
+  "The old lighthouse stood above the harbour.",
+  "Every evening the keeper climbed its stairs.",
+  "The lamp guided ships safely home.",
+];
+
+function range(surface: string): { paragraphIndex: number; start: number; end: number; surface: string } {
   const start = PARAGRAPH.indexOf(surface);
   if (start < 0) throw new Error(`fixture: "${surface}" paragrafta yok`);
   return { paragraphIndex: 0, start, end: start + surface.length, surface };
+}
+
+/** Geçiş = aralık + o geçişin cümlesi (pakette her span kendi cümlesini taşır). */
+function span(surface: string, contextSentence: string): ReturnType<typeof range> & { contextSentence: string } {
+  return { ...range(surface), contextSentence };
 }
 
 function question(index: number, correctIndex: number): PassagePack["questions"][number] {
@@ -17,7 +28,7 @@ function question(index: number, correctIndex: number): PassagePack["questions"]
     key: `q${index}`,
     type: "detail",
     prompt: `Fixture soru ${index}?`,
-    evidence: span("Every evening the keeper climbed its stairs"),
+    evidence: range("Every evening the keeper climbed its stairs"),
     options: [0, 1, 2, 3].map((optionIndex) => ({
       key: `o${optionIndex}`,
       text: `Seçenek ${index}-${optionIndex} aynı uzunlukta`,
@@ -38,8 +49,8 @@ export function validPack(overrides: Partial<PassagePack> = {}): PassagePack {
     isFreeSample: false,
     paragraphs: [PARAGRAPH],
     words: [
-      { lemma: "lighthouse", gloss: "deniz feneri", contextSentence: "The old lighthouse stood above the harbour.", spans: [span("lighthouse")] },
-      { lemma: "keeper", gloss: "bekçi", contextSentence: "Every evening the keeper climbed its stairs.", spans: [span("keeper")] },
+      { lemma: "lighthouse", gloss: "deniz feneri", spans: [span("lighthouse", SENTENCES[0]!)] },
+      { lemma: "keeper", gloss: "bekçi", spans: [span("keeper", SENTENCES[1]!)] },
     ],
     // Doğru şık konumları 0,1,2,3: dengeli.
     questions: [question(1, 0), question(2, 1), question(3, 2), question(4, 3)],

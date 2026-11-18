@@ -4,44 +4,61 @@ const CAT = "00000000-0000-4000-8000-0000000000c1";
 const ACCOUNT_FOR = "00000000-0000-4000-8000-0000000000c2";
 
 const words = new Map<string, RunWordInfo>([
-  [CAT, { gloss: "kedi", saved: false }],
-  [ACCOUNT_FOR, { gloss: "açıklamak", saved: true }],
+  [CAT, { gloss: "kedi", saved: false, contextSentence: "A cat sat." }],
+  [ACCOUNT_FOR, { gloss: "açıklamak", saved: true, contextSentence: "Results account for the gap." }],
 ]);
+
+let nextSpan = 1;
+/** Test span'ı: sabit olmayan ama benzersiz id; cümle verilmezse null (kelimenin yedek cümlesi kullanılır). */
+const sp = (start: number, end: number, wordId: string, surface: string, contextSentence: string | null = null) => ({
+  id: `00000000-0000-4000-8000-00000000${String(nextSpan++).padStart(4, "0")}`,
+  start,
+  end,
+  wordId,
+  surface,
+  contextSentence,
+});
 
 describe("buildParagraphRuns", () => {
   it("span yoksa tek düz run döner", () => {
     expect(buildParagraphRuns("Plain text.", [], words)).toEqual([{ text: "Plain text." }]);
   });
 
-  it("tekrar eden kelime her geçişinde ayrı run olur, aralardaki metin korunur", () => {
-    const runs = buildParagraphRuns("A cat sat. The cat left.", [
-      { start: 15, end: 18, wordId: CAT, surface: "cat" },
-      { start: 2, end: 5, wordId: CAT, surface: "cat" },
-    ], words);
+  it("tekrar eden kelime her geçişinde ayrı run olur; HER geçiş kendi span kimliğini ve kendi cümlesini taşır", () => {
+    const second = sp(15, 18, CAT, "cat", "The cat left.");
+    const first = sp(2, 5, CAT, "cat", "A cat sat.");
+    const runs = buildParagraphRuns("A cat sat. The cat left.", [second, first], words);
 
     expect(runs).toEqual([
       { text: "A " },
-      { text: "cat", word: { wordId: CAT, gloss: "kedi", saved: false } },
+      { text: "cat", word: { wordId: CAT, gloss: "kedi", saved: false, spanId: first.id, contextSentence: "A cat sat." } },
       { text: " sat. The " },
-      { text: "cat", word: { wordId: CAT, gloss: "kedi", saved: false } },
+      { text: "cat", word: { wordId: CAT, gloss: "kedi", saved: false, spanId: second.id, contextSentence: "The cat left." } },
       { text: " left." },
     ]);
+    expect(first.id).not.toBe(second.id);
+  });
+
+  it("span'ın kendi cümlesi yoksa kelimenin yedek (ilk geçiş) cümlesi kullanılır", () => {
+    const runs = buildParagraphRuns("A cat sat.", [sp(2, 5, CAT, "cat", null)], words);
+    expect(runs[1]?.word?.contextSentence).toBe("A cat sat.");
   });
 
   it("çok kelimeli ifade TEK run'dır ve kaydedilmiş bayrağı taşınır", () => {
-    const runs = buildParagraphRuns("Results account for the gap.", [{ start: 8, end: 19, wordId: ACCOUNT_FOR, surface: "account for" }], words);
+    const span = sp(8, 19, ACCOUNT_FOR, "account for");
+    const runs = buildParagraphRuns("Results account for the gap.", [span], words);
 
     expect(runs).toEqual([
       { text: "Results " },
-      { text: "account for", word: { wordId: ACCOUNT_FOR, gloss: "açıklamak", saved: true } },
+      { text: "account for", word: { wordId: ACCOUNT_FOR, gloss: "açıklamak", saved: true, spanId: span.id, contextSentence: "Results account for the gap." } },
       { text: " the gap." },
     ]);
   });
 
   it("bitişik span'lar arasında boş düz run üretmez; metnin başında/sonunda span olabilir", () => {
     const runs = buildParagraphRuns("catcat", [
-      { start: 0, end: 3, wordId: CAT, surface: "cat" },
-      { start: 3, end: 6, wordId: CAT, surface: "cat" },
+      sp(0, 3, CAT, "cat"),
+      sp(3, 6, CAT, "cat"),
     ], words);
 
     expect(runs.map((run) => run.text)).toEqual(["cat", "cat"]);
@@ -50,7 +67,7 @@ describe("buildParagraphRuns", () => {
   it("tipografik tırnak ve em dash'li metinde indeksler doğru", () => {
     const text = "“Cats” — cat.";
     const start = text.lastIndexOf("cat");
-    const runs = buildParagraphRuns(text, [{ start, end: start + 3, wordId: CAT, surface: "cat" }], words);
+    const runs = buildParagraphRuns(text, [sp(start, start + 3, CAT, "cat")], words);
 
     expect(runs[0]).toEqual({ text: "“Cats” — " });
     expect(runs[1]?.word?.wordId).toBe(CAT);
@@ -58,15 +75,15 @@ describe("buildParagraphRuns", () => {
   });
 
   it("tutarsız veri sessizce düzeltilmez, açıkça patlar", () => {
-    expect(() => buildParagraphRuns("A cat.", [{ start: 2, end: 5, wordId: CAT, surface: "dog" }], words)).toThrow("uyuşmuyor");
-    expect(() => buildParagraphRuns("A cat.", [{ start: 2, end: 50, wordId: CAT, surface: "cat" }], words)).toThrow("dışında");
+    expect(() => buildParagraphRuns("A cat.", [sp(2, 5, CAT, "dog")], words)).toThrow("uyuşmuyor");
+    expect(() => buildParagraphRuns("A cat.", [sp(2, 50, CAT, "cat")], words)).toThrow("dışında");
     expect(() =>
       buildParagraphRuns("catcat", [
-        { start: 0, end: 4, wordId: CAT, surface: "catc" },
-        { start: 3, end: 6, wordId: CAT, surface: "cat" },
+        sp(0, 4, CAT, "catc"),
+        sp(3, 6, CAT, "cat"),
       ], words),
     ).toThrow("Çakışan");
-    expect(() => buildParagraphRuns("A cat.", [{ start: 2, end: 5, wordId: "00000000-0000-4000-8000-0000000000ff", surface: "cat" }], words)).toThrow("bulunamadı");
+    expect(() => buildParagraphRuns("A cat.", [sp(2, 5, "00000000-0000-4000-8000-0000000000ff", "cat")], words)).toThrow("bulunamadı");
     expect(() => buildParagraphRuns("", [], words)).toThrow("Boş paragraf");
   });
 });

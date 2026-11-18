@@ -16,8 +16,8 @@ import {
 export type PassageRow = typeof passagesTable.$inferSelect;
 export type PassageQuestionRow = typeof passageQuestionsTable.$inferSelect;
 export type PassageOptionRow = typeof passageOptionsTable.$inferSelect;
-export type PassageWordRow = { passageId: string; wordId: string; gloss: string };
-export type PassageSpanRow = { passageId: string; paragraphIndex: number; start: number; end: number; wordId: string; surface: string };
+export type PassageWordRow = { passageId: string; wordId: string; gloss: string; contextSentence: string };
+export type PassageSpanRow = { id: string; passageId: string; paragraphIndex: number; start: number; end: number; wordId: string; surface: string; contextSentence: string | null };
 
 export type QuestionAccessContext = { questionId: string; passageId: string; isFreeSample: boolean; retiredAt: Date | null };
 
@@ -66,7 +66,7 @@ export class PassagesRepository {
   async findWords(passageIds: readonly string[]): Promise<PassageWordRow[]> {
     if (passageIds.length === 0) return [];
     return this.db
-      .select({ passageId: passageWordsTable.passageId, wordId: passageWordsTable.wordId, gloss: wordsTable.gloss })
+      .select({ passageId: passageWordsTable.passageId, wordId: passageWordsTable.wordId, gloss: wordsTable.gloss, contextSentence: passageWordsTable.contextSentence })
       .from(passageWordsTable)
       .innerJoin(wordsTable, eq(wordsTable.id, passageWordsTable.wordId))
       .where(inArray(passageWordsTable.passageId, [...passageIds]));
@@ -76,12 +76,14 @@ export class PassagesRepository {
     if (passageIds.length === 0) return [];
     return this.db
       .select({
+        id: passageWordSpansTable.id,
         passageId: passageWordSpansTable.passageId,
         paragraphIndex: passageWordSpansTable.paragraphIndex,
         start: passageWordSpansTable.start,
         end: passageWordSpansTable.end,
         wordId: passageWordSpansTable.wordId,
         surface: passageWordSpansTable.surface,
+        contextSentence: passageWordSpansTable.contextSentence,
       })
       .from(passageWordSpansTable)
       .where(inArray(passageWordSpansTable.passageId, [...passageIds]))

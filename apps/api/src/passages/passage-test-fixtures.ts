@@ -14,6 +14,8 @@ export const EXPLANATION_PREFIX = "GİZLİ-AÇIKLAMA";
 export type PassageFixture = {
   passageId: string;
   wordId: string;
+  /** Aynı kelimenin iki geçişi: [0] = "A cat sat." cümlesindeki, [1] = "The cat left." cümlesindeki. */
+  spanIds: [string, string];
   questions: Array<{ questionId: string; correctOptionId: string; wrongOptionId: string; optionIds: string[] }>;
 };
 
@@ -41,10 +43,15 @@ export async function createPassageFixture(
   if (!word) throw new Error("Kelime eklenemedi");
   await db.insert(passageWordsTable).values({ passageId: passage.id, wordId: word.id, contextSentence: "A cat sat." });
   // "A cat sat. The cat left." → ilk "cat" [2,5), ikinci "cat" [15,18) (tekrar eden kelime: iki ayrı span).
-  await db.insert(passageWordSpansTable).values([
-    { passageId: passage.id, paragraphIndex: 0, start: 2, end: 5, wordId: word.id, surface: "cat" },
-    { passageId: passage.id, paragraphIndex: 0, start: 15, end: 18, wordId: word.id, surface: "cat" },
-  ]);
+  const spans = await db
+    .insert(passageWordSpansTable)
+    .values([
+      { passageId: passage.id, paragraphIndex: 0, start: 2, end: 5, wordId: word.id, surface: "cat", contextSentence: "A cat sat." },
+      { passageId: passage.id, paragraphIndex: 0, start: 15, end: 18, wordId: word.id, surface: "cat", contextSentence: "The cat left." },
+    ])
+    .returning({ id: passageWordSpansTable.id, start: passageWordSpansTable.start });
+  const [firstSpan, secondSpan] = [...spans].sort((a, b) => a.start - b.start);
+  if (!firstSpan || !secondSpan) throw new Error("Span'lar eklenemedi");
 
   const questions: PassageFixture["questions"] = [];
   for (const position of [1, 2, 3, 4]) {
@@ -74,5 +81,5 @@ export async function createPassageFixture(
     questions.push({ questionId: question.id, correctOptionId: correct.id, wrongOptionId: wrong.id, optionIds: options.map((option) => option.id) });
   }
 
-  return { passageId: passage.id, wordId: word.id, questions };
+  return { passageId: passage.id, wordId: word.id, spanIds: [firstSpan.id, secondSpan.id], questions };
 }
