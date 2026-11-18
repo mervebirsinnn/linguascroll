@@ -233,14 +233,33 @@ export function mapAllLevels(byLevel: PassagesByLevel, transform: (state: Passag
 }
 
 /**
- * İSTEĞİN SONUCU BİLİNMİYOR mu: KESİN yalnız sunucu 4xx ile cevap verdiyse (403 kilitli, 400 geçersiz şık: istek reddedildi,
- * hiçbir şey yazılmadı). Geri kalan her başarısızlık belirsizdir ve cevabı sunucu KAYDETMİŞ olabilir: zaman aşımı, 5xx, düz
- * ağ hatası (RN: TypeError), VE 200 dönüp gövdesi okunamayan/sözleşmeye uymayan yanıt (SyntaxError/ZodError) — sunucu yazmış,
- * istemci sonucu görememiş olur. Oturum yok gibi istek hiç atılmadan oluşan hatalar da kesin sayılır (yazım olmadı).
+ * Bir istek başarısızlığının SONUCU: sunucu işlemi yazdı mı?
+ *  - "rejected": API SÖZLEŞMESİNDEKİ kesin retler (answer/save uçları yalnız bunları üretir): 400 (geçersiz şık/gövde), 401 (oturum),
+ *    403 (kilitli), 404 (bilinmeyen/emekli). İstek işlenmeden reddedildi, hiçbir şey yazılmadı. İstek hiç atılmadan oluşan
+ *    hatalar (ör. oturum yok) da buraya düşer.
+ *  - "rate-limited": 429. API'nin kendi hız sınırı YOK; 429 yalnız altyapıdan (proxy/CDN) gelir ve istek işlenmeden döner —
+ *    yazılmadı. Ama hemen yeniden göndermek aynı sınıra takılır: otomatik yeniden deneme YOK, kullanıcıya "biraz bekle" denir.
+ *  - "uncertain": geri kalan HER ŞEY — zaman aşımı, 408 (istek sunucuya ulaşmış olabilir), sözleşmede olmayan diğer 4xx, 5xx, düz ağ
+ *    hatası (RN: TypeError) ve 200 dönüp gövdesi okunamayan/sözleşmeye uymayan yanıt (SyntaxError/ZodError). Cevap kaydedilmiş
+ *    OLABİLİR; körlemesine "4xx = kesin" kabul edilmez.
  */
+export type FailureOutcome = "rejected" | "rate-limited" | "uncertain";
+
+const CONTRACT_REJECTION_STATUSES: ReadonlySet<number> = new Set([400, 401, 403, 404]);
+
+export function classifyFailure(error: unknown): FailureOutcome {
+  if (error instanceof PassagesApiError) {
+    if (error.isTimeout || error.status === undefined) return "uncertain";
+    if (CONTRACT_REJECTION_STATUSES.has(error.status)) return "rejected";
+    if (error.status === 429) return "rate-limited";
+    return "uncertain";
+  }
+  if (error instanceof TypeError || error instanceof SyntaxError || error instanceof ZodError) return "uncertain";
+  return "rejected"; // istek atılmadan önceki hata (ör. oturum yok): hiçbir şey yazılmadı
+}
+
 export function isOutcomeUncertain(error: unknown): boolean {
-  if (error instanceof PassagesApiError) return error.isTimeout || error.status === undefined || error.status >= 500;
-  return error instanceof TypeError || error instanceof SyntaxError || error instanceof ZodError;
+  return classifyFailure(error) === "uncertain";
 }
 
 /**

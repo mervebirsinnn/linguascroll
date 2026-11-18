@@ -4,6 +4,7 @@ import { PassagesApiError } from "./api/passages-api";
 import {
   applyFreshSuccess,
   applyLoadMoreSuccess,
+  classifyFailure,
   findQuestion,
   isOutcomeUncertain,
   mergeAnswersFromPage,
@@ -41,6 +42,16 @@ describe("erişim durumu farklı kopyalar ve yeni saf yardımcılar (PR-7a)", ()
     const state = applyFreshSuccess(makePage([makeOpenPassage(1)], "c1"));
     const next = success(applyLoadMoreSuccess(state, makePage([makeLockedPassage(1)], null)));
     expect(next.items.map((item) => item.access)).toEqual(["locked"]);
+  });
+
+  it("classifyFailure: kesin ret YALNIZ sözleşmedeki 400/401/403/404; 429 ayrı; 408 ve diğer 4xx belirsiz", () => {
+    for (const status of [400, 401, 403, 404]) expect(classifyFailure(new PassagesApiError("x", status))).toBe("rejected");
+    expect(classifyFailure(new PassagesApiError("x", 429))).toBe("rate-limited");
+    for (const status of [408, 409, 410, 413, 422, 425, 500, 502, 503, 504]) expect(classifyFailure(new PassagesApiError("x", status))).toBe("uncertain");
+    expect(classifyFailure(new PassagesApiError("x", undefined, true))).toBe("uncertain");
+    expect(classifyFailure(new Error("Oturum yok"))).toBe("rejected");
+    expect(isOutcomeUncertain(new PassagesApiError("x", 408))).toBe(true);
+    expect(isOutcomeUncertain(new PassagesApiError("x", 429))).toBe(false);
   });
 
   it("isOutcomeUncertain: timeout/5xx/ağ hatası belirsiz; 4xx ve diğer hatalar kesin", () => {

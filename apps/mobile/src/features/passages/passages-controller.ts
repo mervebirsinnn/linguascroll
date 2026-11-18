@@ -13,6 +13,7 @@ import {
   canSelectOption,
   findQuestion,
   invalidateAfterAccessChange,
+  classifyFailure,
   isOutcomeUncertain,
   mapAllLevels,
   mergeAnswersFromPage,
@@ -52,6 +53,7 @@ export const ANSWER_RETRY_DELAY_MS = 600;
  */
 export const ANSWER_UNCERTAIN_MESSAGE = "Sonuç doğrulanamadı; tekrar kontrol et.";
 export const ANSWER_FAILED_MESSAGE = "Cevap gönderilemedi. Tekrar dene.";
+export const ANSWER_RATE_LIMITED_MESSAGE = "Çok fazla istek gönderildi. Biraz bekleyip tekrar dene.";
 export const WORD_FAILED_MESSAGE = "Kelime işlemi tamamlanamadı. Tekrar dene.";
 
 export type PassagesSnapshot = {
@@ -283,11 +285,12 @@ export class PassagesController {
         this.reloadAfterAccessChange();
         return;
       }
-      const uncertain = isOutcomeUncertain(error);
-      if (uncertain) this.uncertainAttempts = { ...this.uncertainAttempts, [questionId]: optionId };
-      this.answerErrors = { ...this.answerErrors, [questionId]: uncertain ? ANSWER_UNCERTAIN_MESSAGE : ANSWER_FAILED_MESSAGE };
+      const outcome = classifyFailure(error);
+      if (outcome === "uncertain") this.uncertainAttempts = { ...this.uncertainAttempts, [questionId]: optionId };
+      const message = outcome === "uncertain" ? ANSWER_UNCERTAIN_MESSAGE : outcome === "rate-limited" ? ANSWER_RATE_LIMITED_MESSAGE : ANSWER_FAILED_MESSAGE;
+      this.answerErrors = { ...this.answerErrors, [questionId]: message };
       this.emit();
-      if (uncertain) void this.reconcileAnswers();
+      if (outcome === "uncertain") void this.reconcileAnswers();
     }
   }
 

@@ -1,7 +1,7 @@
 import type { PassageLevel, PassagePage } from "@linguascroll/shared-types";
 import { z } from "zod";
 import { PassagesApiError } from "./api/passages-api";
-import { ANSWER_FAILED_MESSAGE, ANSWER_UNCERTAIN_MESSAGE, PassagesController, type PassagesDeps } from "./passages-controller";
+import { ANSWER_FAILED_MESSAGE, ANSWER_RATE_LIMITED_MESSAGE, ANSWER_UNCERTAIN_MESSAGE, PassagesController, type PassagesDeps } from "./passages-controller";
 import { CAT_SPAN_1, CAT_SPAN_2, CAT_WORD_ID, deferred, flush, makeAnswer, makeLockedPassage, makeOpenPassage, makePage, uuid, type OpenPassage } from "./passages-test-helpers";
 
 jest.mock("../identity/auth-headers", () => ({ authHeaders: () => Promise.resolve({}) }));
@@ -632,5 +632,66 @@ describe("belirsiz cevap: ilk sayfa dışındaki soru", () => {
     fakes.answerPassageQuestion.mockClear();
     await controller.recheckAnswer(question.id);
     expect(fakes.answerPassageQuestion).not.toHaveBeenCalled();
+  });
+
+  it("408 (istek sunucuya ulaşmış olabilir) belirsizdir: bir kez yeniden gönderilir ve 'Sonuç doğrulanamadı' gösterilir", async () => {
+    const { fakes, controller, question } = await twoPages();
+    fakes.answerPassageQuestion.mockRejectedValue(new PassagesApiError("x", 408));
+    fakes.fetchPassages.mockResolvedValue(makePage([makeOpenPassage(1)], "c1"));
+
+    await controller.answer(question.id, question.options[1]!.id);
+    await flush();
+
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledTimes(2);
+    expect(controller.getSnapshot().answerErrors[question.id]).toBe(ANSWER_UNCERTAIN_MESSAGE);
+  });
+
+  it("429 ayrı ele alınır: otomatik yeniden gönderim YOK, 'biraz bekle' mesajı, 'tekrar kontrol et' değil; kullanıcı bekleyip dokunabilir", async () => {
+    const { fakes, controller, question } = await twoPages();
+    fakes.answerPassageQuestion.mockRejectedValueOnce(new PassagesApiError("x", 429));
+
+    await controller.answer(question.id, question.options[1]!.id);
+    await flush();
+
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledTimes(1);
+    expect(controller.getSnapshot().answerErrors[question.id]).toBe(ANSWER_RATE_LIMITED_MESSAGE);
+    expect(controller.getSnapshot().answerErrors[question.id]).not.toBe(ANSWER_UNCERTAIN_MESSAGE);
+    fakes.fetchPassages.mockClear();
+    expect(fakes.fetchPassages).not.toHaveBeenCalled(); // uzlaştırma okuması da tetiklenmedi
+
+    fakes.answerPassageQuestion.mockResolvedValueOnce(makeAnswer(question, 1, 1));
+    await controller.answer(question.id, question.options[1]!.id);
+    expect(open(controller, "B2", 1).questions[0]!.result).not.toBeNull();
+  });
+
+  it("sözleşmedeki kesin retler (400/401/404) yeniden gönderilmez ve genel hata mesajı verir", async () => {
+    for (const status of [400, 401, 404]) {
+      const { fakes, controller, question } = await twoPages();
+      fakes.answerPassageQuestion.mockRejectedValue(new PassagesApiError("x", status));
+      await controller.answer(question.id, question.options[1]!.id);
+      expect(fakes.answerPassageQuestion).toHaveBeenCalledTimes(1);
+      expect(controller.getSnapshot().answerErrors[question.id]).toBe(ANSWER_FAILED_MESSAGE);
+    }
+  });
+});
+
+describe("erişim değişimi sonrası kayıtlı cevaplar sunucudan GERİ GELİR (ilk sürüm sınırı: liste yeniden çekilir, eleme silinir)", () => {
+  it("cevaplanmış soru erişim değişiminden sonra yeniden çekilen listede kayıtlı sonucuyla görünür; yerel eleme temizlenir", async () => {
+    const fakes = makeDeps();
+    const passage = makeOpenPassage(1);
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([passage]));
+    const controller = start(fakes);
+    controller.ensureLoaded("B2");
+    await flush();
+    controller.toggleElimination(passage.questions[1]!.id, passage.questions[1]!.options[0]!.id);
+
+    const stored = makeOpenPassage(1);
+    stored.questions[0] = { ...passage.questions[0]!, result: makeAnswer(passage.questions[0]!, 2, 2) }; // sunucuda kayıtlı
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([stored]));
+    controller.onAccessVerified(false); // ekranda açık içerik var → sıfırla ve yeniden çek
+    await flush();
+
+    expect(open(controller, "B2").questions[0]!.result?.selectedOptionId).toBe(passage.questions[0]!.options[2]!.id);
+    expect(controller.getSnapshot().eliminated.size).toBe(0);
   });
 });
