@@ -177,6 +177,7 @@ const styles = StyleSheet.create({
   verdictCorrect: { color: "#2ecc71", fontWeight: "800", fontSize: 14 },
   verdictWrong: { color: "#ff6b6b", fontWeight: "800", fontSize: 14 },
   trap: { color: "#ffd479", fontSize: 13, fontWeight: "700" },
-  showText: { minHeight: 44, justifyContent: "center", paddingHorizontal: 8 },
+  // flexShrink + maxWidth: dar ekran/büyük yazıda "Metni göster" de çubuğu taşırmadan kendi metnini sarar (bkz. PageFrame footer).
+  showText: { minHeight: 44, maxWidth: "100%", flexShrink: 1, justifyContent: "center", paddingHorizontal: 8, paddingVertical: 4 },
   showTextLabel: { color: "#ddf9a8", fontSize: 14, fontWeight: "700" },
 });

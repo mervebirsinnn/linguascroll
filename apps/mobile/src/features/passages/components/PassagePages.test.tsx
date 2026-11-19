@@ -99,6 +99,15 @@ describe("skor özeti 4. sorunun İÇİNDE (metin toplam 5 sayfa; ayrı 6. sayfa
     await fireEvent.press(screen.getByRole("radio", { name: "A. o0" }));
     expect(onSelect).not.toHaveBeenCalled();
   });
+
+  it("alt çubuk büyük yazıda SARILIR: iki eylem de taşmadan sığabilsin (yazı küçültülmez)", async () => {
+    // Jest gerçek yerleşimi ölçemez; emülatörde 2.0x'te doğrulandı. Bu test taşmayı önleyen stil sözleşmesini sabitler.
+    await render(<PassageQuestionPage {...baseProps(makeOpenPassage(1), 0)} />);
+    expect(screen.getByTestId("page-footer")).toHaveStyle({ flexWrap: "wrap" });
+    expect(screen.getByRole("button", { name: "Sonraki soru ›" })).toHaveStyle({ flexShrink: 1, maxWidth: "100%" });
+    expect(screen.getByRole("button", { name: "Metni göster" })).toHaveStyle({ flexShrink: 1, maxWidth: "100%" });
+    expect(screen.getByText("Sonraki soru ›")).not.toHaveStyle({ fontSize: 12 }); // yazı boyutu düşürülerek çözülmedi
+  });
 });
 
 describe("PassageLockedPage", () => {

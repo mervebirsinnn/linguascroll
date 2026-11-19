@@ -35,7 +35,7 @@ export function PageFrame({ height, width, chip, children, onNext, nextLabel = "
         {children}
       </ScrollView>
       {onNext || footerExtra ? (
-        <View style={[styles.footer, { paddingBottom: 10 + insets.bottom }]}>
+        <View testID="page-footer" style={[styles.footer, { paddingBottom: 10 + insets.bottom }]}>
           {footerExtra}
           {onNext ? (
             <Pressable accessibilityRole="button" onPress={onNext} style={styles.next}>
@@ -66,7 +66,10 @@ const styles = StyleSheet.create({
   body: { flex: 1 },
   bodyContent: { paddingHorizontal: 20, paddingTop: 20, paddingBottom: 12 },
   chip: { color: "#ddf9a8", fontSize: 12, fontWeight: "800", letterSpacing: 0.6, textTransform: "uppercase", marginBottom: 10 },
-  footer: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12, paddingHorizontal: 20, paddingVertical: 10, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: "#2a2838", backgroundColor: "#0b0b10" },
-  next: { minHeight: 44, minWidth: 110, borderRadius: 12, backgroundColor: "#2a2238", alignItems: "center", justifyContent: "center", paddingHorizontal: 16, marginLeft: "auto" },
-  nextText: { color: "#c8b5ff", fontSize: 15, fontWeight: "700" },
+  // 2.0x yazıda ("Metni göster" + "Sonraki metin ›") iki düğme yan yana sığmayıp sağ kenara taşıyordu (emülatör, 2026-11-19).
+  // Yazıyı küçültmek/font ölçeklemesini kapatmak erişilebilirliği bozar; bunun yerine çubuk SARILIR: sığmayan düğme alt satıra
+  // iner (marginLeft:auto ile sağda kalır), tek düğme bile satırdan geniş olursa kendi metni sarılır (flexShrink + maxWidth).
+  footer: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", columnGap: 12, rowGap: 6, paddingHorizontal: 20, paddingVertical: 10, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: "#2a2838", backgroundColor: "#0b0b10" },
+  next: { minHeight: 44, minWidth: 110, maxWidth: "100%", flexShrink: 1, borderRadius: 12, backgroundColor: "#2a2238", alignItems: "center", justifyContent: "center", paddingHorizontal: 16, paddingVertical: 8, marginLeft: "auto" },
+  nextText: { color: "#c8b5ff", fontSize: 15, fontWeight: "700", textAlign: "center" },
 });
