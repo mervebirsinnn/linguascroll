@@ -67,13 +67,12 @@ describe("publishPassagePacks (e2e, gerçek Postgres)", () => {
     expect(item.questions).toHaveLength(4);
     expect(item.questions.every((q) => q.options.length === 4 && q.result === null)).toBe(true);
     const words = item.paragraphs[0]!.filter((run) => run.word).map((run) => [run.text, run.word!.gloss]);
-    expect(words).toEqual([
-      ["lighthouse", "deniz feneri"],
-      ["keeper", "bekçi"],
-    ]);
+    const fixture = validPack();
+    const expectedWords = fixture.words.flatMap((word) => word.spans.map((span) => ({ start: span.start, text: span.surface, gloss: word.gloss }))).sort((a, b) => a.start - b.start);
+    expect(words).toEqual(expectedWords.map((word) => [word.text, word.gloss]));
     expect(item.paragraphs[0]!.map((run) => run.text).join("")).toBe(validPack().paragraphs[0]);
     expect(JSON.stringify(res.body)).not.toContain("Gerekçe"); // açıklamalar cevaptan önce gitmez
-    expect(await counts()).toEqual({ passages: 1, words: 2, passageWords: 2, spans: 2, questions: 4, options: 16 });
+    expect(await counts()).toEqual({ passages: 1, words: fixture.words.length, passageWords: fixture.words.length, spans: expectedWords.length, questions: 4, options: 16 });
   });
 
   it("idempotent = NO-OP: aynı paket tekrar yayınlanınca id'ler, satır sayıları ve mevcut cevap aynı kalır", async () => {
@@ -123,7 +122,7 @@ describe("publishPassagePacks (e2e, gerçek Postgres)", () => {
 
     expect((await db.select().from(passagesTable)).map((row) => row.slug).sort()).toEqual(["fixture-lighthouse", "fixture-lighthouse-v2"]);
     // Aynı (lemma, anlam) kelimeleri yeniden kullanıldı: words kopyalanmadı.
-    expect((await db.select().from(wordsTable)).length).toBe(2);
+    expect((await db.select().from(wordsTable)).length).toBe(validPack().words.length);
   });
 
   it("ATOMİK: ikinci paket DB durumuyla çakışınca (geç hata) birinci paketin yazımı dahil HİÇBİR tablo değişmez", async () => {
@@ -165,29 +164,19 @@ describe("publishPassagePacks (e2e, gerçek Postgres)", () => {
     await publishPassagePacks(db, [validPack()]);
 
     const rows = await db.select().from(wordsTable);
-    expect(rows.map((row) => `${row.lemma}:${row.gloss}`).sort()).toEqual(["keeper:bekçi", "keeper:kaleci", "lighthouse:deniz feneri"]);
+    expect(rows.map((row) => `${row.lemma}:${row.gloss}`).sort()).toEqual([...validPack().words.map((word) => `${word.lemma}:${word.gloss}`), "keeper:kaleci"].sort());
   });
 
   it("her geçişin cümlesi span satırına yazılır; kelimenin yedek cümlesi (passage_words) İLK geçişin cümlesidir", async () => {
     const pack = validPack();
-    const paragraph = pack.paragraphs[0]!;
-    const first = paragraph.indexOf("the harbour");
-    const second = paragraph.indexOf("the keeper");
-    // Aynı kelime ("the") iki ayrı cümlede.
-    pack.words.push({
-      lemma: "the",
-      gloss: "belirtme tanımlığı",
-      spans: [
-        { paragraphIndex: 0, start: first, end: first + 3, surface: "the", contextSentence: "The old lighthouse stood above the harbour." },
-        { paragraphIndex: 0, start: second, end: second + 3, surface: "the", contextSentence: "Every evening the keeper climbed its stairs." },
-      ],
-    });
+    // Tam kapsam fixture'ında "the" dört kez, üç ayrı cümlede geçer.
+    const expectedContexts = pack.words.find((word) => word.lemma === "the")!.spans.map((span) => span.contextSentence);
 
     await publishPassagePacks(db, [pack]);
 
     const theWord = (await db.select().from(wordsTable)).find((row) => row.lemma === "the")!;
     const spans = (await db.select().from(passageWordSpansTable)).filter((row) => row.wordId === theWord.id).sort((a, b) => a.start - b.start);
-    expect(spans.map((row) => row.contextSentence)).toEqual(["The old lighthouse stood above the harbour.", "Every evening the keeper climbed its stairs."]);
+    expect(spans.map((row) => row.contextSentence)).toEqual(expectedContexts);
     const link = (await db.select().from(passageWordsTable)).find((row) => row.wordId === theWord.id);
     expect(link?.contextSentence).toBe("The old lighthouse stood above the harbour."); // ilk geçiş
   });

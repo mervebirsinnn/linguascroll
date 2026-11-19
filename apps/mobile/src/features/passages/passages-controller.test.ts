@@ -36,6 +36,99 @@ const open = (controller: PassagesController, l: PassageLevel, index = 0) => {
 };
 const networkError = () => new TypeError("Network request failed");
 
+describe("yeniden gönderim ve taze okuma regresyonları", () => {
+  async function ready() {
+    const fakes = makeDeps();
+    const passage = makeOpenPassage(1);
+    fakes.fetchPassages.mockResolvedValueOnce(makePage([passage]));
+    const controller = start(fakes);
+    controller.ensureLoaded("B2");
+    await flush();
+    return { fakes, controller, passage, question: passage.questions[0]! };
+  }
+
+  it.each(["deactivate", "reactivate", "access"])("retry beklerken %s: eski cevap için ikinci ağ isteği HİÇ gönderilmez", async (change) => {
+    const { fakes, controller, question } = await ready();
+    const sleeping = deferred<void>();
+    const sleep = jest.fn((_ms: number, _signal?: AbortSignal) => sleeping.promise);
+    fakes.deps.sleep = sleep; // İptali desteklemeyen bağımlılıkta bile dispatch öncesi guard zorunlu.
+    fakes.answerPassageQuestion.mockRejectedValueOnce(networkError());
+    const send = controller.answer(question.id, question.options[0]!.id);
+    await flush();
+    expect(sleep).toHaveBeenCalledTimes(1);
+    const signal = sleep.mock.calls[0]![1];
+    expect(signal?.aborted).toBe(false);
+    if (change === "access") {
+      fakes.fetchPassages.mockResolvedValueOnce(makePage([makeLockedPassage(1)]));
+      controller.onAccessVerified(false);
+    } else {
+      controller.deactivate();
+      if (change === "reactivate") controller.activate();
+    }
+    expect(signal?.aborted).toBe(true);
+    sleeping.resolve();
+    await send;
+    expect(fakes.answerPassageQuestion).toHaveBeenCalledTimes(1);
+    expect(controller.getSnapshot().answerErrors).toEqual({});
+  });
+
+  it("deactivate sonrası eski soru eylemi yeni istek başlatamaz", async () => {
+    const { fakes, controller, question } = await ready();
+    controller.deactivate();
+    await controller.answer(question.id, question.options[0]!.id);
+    expect(fakes.answerPassageQuestion).not.toHaveBeenCalled();
+  });
+
+  it("refresh öncesi alınmış cevapsız snapshot, arada doğrulanmış cevabı null'a çeviremez", async () => {
+    const { fakes, controller, passage, question } = await ready();
+    const refresh = deferred<PassagePage>();
+    fakes.fetchPassages.mockReturnValueOnce(refresh.promise);
+    controller.refresh("B2");
+    const result = makeAnswer(question, 1, 1);
+    fakes.answerPassageQuestion.mockResolvedValueOnce(result);
+    await controller.answer(question.id, question.options[1]!.id);
+    expect(open(controller, "B2").questions[0]!.result).toEqual(result);
+    refresh.resolve(makePage([passage]));
+    await flush();
+    expect(open(controller, "B2").questions[0]!.result).toEqual(result);
+  });
+
+  it("refresh sırasında tamamlanan kaydet/çıkar sonucu eski GET tarafından ezilmez", async () => {
+    const { fakes, controller, passage } = await ready();
+    const refresh = deferred<PassagePage>();
+    fakes.fetchPassages.mockReturnValueOnce(refresh.promise);
+    controller.refresh("B2");
+    await controller.saveWord(passage.id, CAT_WORD_ID, CAT_SPAN_1);
+    refresh.resolve(makePage([passage]));
+    await flush();
+    expect(open(controller, "B2").paragraphs[0]![1]!.word?.saved).toBe(true);
+
+    const savedSnapshot = open(controller, "B2");
+    const nextRefresh = deferred<PassagePage>();
+    fakes.fetchPassages.mockReturnValueOnce(nextRefresh.promise);
+    controller.refresh("B2");
+    await controller.unsaveWord(CAT_WORD_ID);
+    nextRefresh.resolve(makePage([savedSnapshot]));
+    await flush();
+    expect(open(controller, "B2").paragraphs[0]![1]!.word?.saved).toBe(false);
+  });
+
+  it.each(["locked", "removed"])("fresh %s içerikte önceki açık cevap ve kelime verisini geri getirmez", async (access) => {
+    const { fakes, controller, passage, question } = await ready();
+    fakes.answerPassageQuestion.mockResolvedValueOnce(makeAnswer(question, 1, 1));
+    await controller.answer(question.id, question.options[1]!.id);
+    const refresh = deferred<PassagePage>();
+    fakes.fetchPassages.mockReturnValueOnce(refresh.promise);
+    controller.refresh("B2");
+    await controller.saveWord(passage.id, CAT_WORD_ID, CAT_SPAN_1);
+    const items = access === "locked" ? [makeLockedPassage(1)] : [];
+    refresh.resolve(makePage(items));
+    await flush();
+    const state = level(controller, "B2");
+    expect(state?.status === "success" && state.items).toEqual(items);
+  });
+});
+
 describe("yükleme ve yarışlar", () => {
   it("ensureLoaded: ilk çağrı çeker, ikinci çağrı (uçuşta ya da yüklüyken) yeniden istek atmaz", async () => {
     const fakes = makeDeps();

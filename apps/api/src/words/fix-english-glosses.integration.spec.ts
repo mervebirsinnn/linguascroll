@@ -55,13 +55,15 @@ describe("applyGlossFixes (integration, gerçek Postgres)", () => {
     expect(await glossOf(otherWord)).toBe("to try to form an opinion or give an answer without clear facts");
   });
 
-  it("paragraf kelimesinin (Türkçe yayınlanmış gloss) gloss'una DOKUNMAZ: eşleşme lemma + eski İngilizce metne bağlı", async () => {
+  it("lemma VE from eşleşse bile paragrafa bağlı ortak satırı korur; bağlı olmayan eşleşmeyi düzeltir", async () => {
     const fixture = await createPassageFixture(db, { slug: "gloss-guard" }); // lemma "cat", gloss Türkçe
 
-    const results = await applyGlossFixes(db, [{ lemma: "cat", from: "a small domestic animal kept as a pet", to: "başka bir anlam" }]);
+    const unlinked = await insertWord("cat", FIXTURE_GLOSS);
+    const results = await applyGlossFixes(db, [{ lemma: "cat", from: FIXTURE_GLOSS, to: "başka bir anlam" }]);
 
-    expect(results).toEqual([{ lemma: "cat", rowsUpdated: 0 }]);
+    expect(results).toEqual([{ lemma: "cat", rowsUpdated: 1 }]);
     expect(await glossOf(fixture.wordId)).toBe(FIXTURE_GLOSS);
+    expect(await glossOf(unlinked)).toBe("başka bir anlam");
   });
 
   it("tekrar çalıştırmak güvenli (idempotent): ikinci çalıştırma hiçbir satırı değiştirmez", async () => {

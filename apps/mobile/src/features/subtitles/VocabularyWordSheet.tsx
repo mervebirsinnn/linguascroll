@@ -10,6 +10,8 @@ import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 export type WordSheetEntry = { title: string; gloss: string };
 
 type VocabularyWordSheetProps = {
+  /** Metin penceresindeki tek native Modal içinde gösterim: ikinci iOS Modal sunumu oluşturmaz. */
+  embedded?: boolean;
   /**
    * Tıklandığı ANDAKİ kelimenin snapshot'ı — null ise sheet kapalı.
    * `ExplanationSheet`'teki `segment` prop'uyla AYNI desen (bkz. o dosyanın
@@ -56,7 +58,7 @@ type VocabularyWordSheetProps = {
  *
  * 2026-11-19 (okuma pratiği): `entry`/`closeLabel`/`error` ile genelleştirildi; ikinci bir kelime penceresi AÇILMADI.
  */
-export function VocabularyWordSheet({ entry, sentence, closeLabel = "Videoya dön", onClose, isSaved, isPending, error, onSave, onRemove }: VocabularyWordSheetProps) {
+export function VocabularyWordSheet({ embedded = false, entry, sentence, closeLabel = "Videoya dön", onClose, isSaved, isPending, error, onSave, onRemove }: VocabularyWordSheetProps) {
   const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
   // Bekleme sırasında hangi yönde işlem yapıldığı (kaydet/çıkar): etiket yanlış yönü söylemesin ("Kaydediliyor…" çıkarırken).
   const [intent, setIntent] = useState<"save" | "remove">("save");
@@ -74,11 +76,11 @@ export function VocabularyWordSheet({ entry, sentence, closeLabel = "Videoya dö
   // Çıkar satırı kayıtlıyken görünür; bekleme sırasında görünür ama pasif (erişilebilirlik odağı kaybolmasın).
   const removeVisible = isSaved;
   const removeEnabled = isSaved && !isPending;
-  return (
-    <Modal visible={entry !== null} transparent animationType="slide" onRequestClose={onClose}>
+  const content = (
       <Pressable style={styles.backdrop} onPress={onClose}>
         <Pressable
           testID="word-sheet-card"
+          accessibilityViewIsModal
           style={[
             styles.card,
             // iOS'un mevcut layout'u (sadece styles.card.padding) cihaz testinde
@@ -159,8 +161,10 @@ export function VocabularyWordSheet({ entry, sentence, closeLabel = "Videoya dö
           )}
         </Pressable>
       </Pressable>
-    </Modal>
   );
+  // Varsayılan video yolu aynı Modal'ı kullanır. Embedded yolun native pencere sahibi ShowTextSheet'tir.
+  if (embedded) return entry === null ? null : content;
+  return <Modal visible={entry !== null} transparent animationType="slide" onRequestClose={onClose}>{content}</Modal>;
 }
 
 // WordGlossSheet.tsx ile aynı değerler (iki pencere görsel olarak aynı kalsın).

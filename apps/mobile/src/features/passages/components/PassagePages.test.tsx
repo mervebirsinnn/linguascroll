@@ -70,11 +70,11 @@ describe("skor özeti 4. sorunun İÇİNDE (metin toplam 5 sayfa; ayrı 6. sayfa
     expect(screen.getByText("Sonraki metin ›")).toBeTruthy();
   });
 
-  it("son soruda ama henüz TÜM sorular cevaplanmadıysa özet görünmez (kısmi skor ekranı yok)", async () => {
+  it("son soruda eksik cevaplar olsa da canlı özet kartı görünür", async () => {
     const passage = answered(makeOpenPassage(1), 3);
     await render(<PassageQuestionPage {...baseProps(passage, 3)} />);
-    expect(screen.queryByLabelText("Skor özeti")).toBeNull();
-    expect(screen.getByText("3 doğru · 0 yanlış · 1 cevaplanmadı")).toBeTruthy(); // canlı özet satırı yine var
+    expect(screen.getByLabelText("Skor özeti")).toBeTruthy();
+    expect(screen.getAllByText("3 doğru · 0 yanlış · 1 cevaplanmadı")).toHaveLength(2);
   });
 
   it("son OLMAYAN soruda özet kartı hiç çıkmaz (hepsi cevaplı olsa bile); etiket 'Sonraki soru'", async () => {
@@ -82,6 +82,22 @@ describe("skor özeti 4. sorunun İÇİNDE (metin toplam 5 sayfa; ayrı 6. sayfa
     await render(<PassageQuestionPage {...baseProps(passage, 1)} />);
     expect(screen.queryByLabelText("Skor özeti")).toBeNull();
     expect(screen.getByText("Sonraki soru ›")).toBeTruthy();
+  });
+
+  it("cevap sonrası doğru ve yanlış şıkların eski elemeleri okunabilirliği veya etiketi bozmaz", async () => {
+    const passage = makeOpenPassage(1);
+    const question = passage.questions[0]!;
+    passage.questions[0] = { ...question, result: makeAnswer(question, 1, 0) };
+    const onSelect = jest.fn();
+    await render(<PassageQuestionPage {...baseProps(passage, 0)} eliminated={new Set(question.options.map(option => option.id))} onSelect={onSelect} />);
+    expect(screen.queryByLabelText(/elendi/)).toBeNull();
+    for (const option of question.options) {
+      expect(screen.getByText(option.text)).not.toHaveStyle({ textDecorationLine: "line-through" });
+    }
+    expect(screen.getByText("✓ Doğru cevap")).toBeTruthy();
+    expect(screen.getByText("✗ Senin cevabın")).toBeTruthy();
+    await fireEvent.press(screen.getByRole("radio", { name: "A. o0" }));
+    expect(onSelect).not.toHaveBeenCalled();
   });
 });
 

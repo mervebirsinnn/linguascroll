@@ -50,6 +50,7 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
   const status = passages.state.status;
   useEffect(() => {
     if (status !== "success") {
+      setSelected({});
       setEntry(null);
       setTextSheetPassage(null);
     }
@@ -146,6 +147,28 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
 
   const stillOpenTextPassage = textSheetPassage ? findOpenPassage(passages.state, textSheetPassage.id) : null;
 
+  function renderWordSheet(embedded: boolean) {
+    return (
+      <VocabularyWordSheet
+        embedded={embedded}
+        entry={entry ? { title: entry.displayText, gloss: entry.gloss } : null}
+        sentence={entry?.sentence}
+        closeLabel="Metne dön"
+        onClose={() => setEntry(null)}
+        isSaved={entrySaved}
+        isPending={entryPending}
+        error={entryError}
+        // İki AYRI niyet; yalnız kelimenin gerçek durumu uyuşuyorsa uygulanır (bkz. VocabularyWordSheet).
+        onSave={() => {
+          if (entry && !entrySaved) void passages.saveWord(entry.passageId, entry.wordId, entry.spanId);
+        }}
+        onRemove={() => {
+          if (entry && entrySaved) void passages.unsaveWord(entry.wordId);
+        }}
+      />
+    );
+  }
+
   return (
     <View style={styles.root}>
       <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
@@ -180,24 +203,14 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
         {renderBody()}
       </View>
 
-      <VocabularyWordSheet
-        entry={entry ? { title: entry.displayText, gloss: entry.gloss } : null}
-        sentence={entry?.sentence}
-        closeLabel="Metne dön"
-        onClose={() => setEntry(null)}
-        isSaved={entrySaved}
-        isPending={entryPending}
-        error={entryError}
-        // İki AYRI niyet; yalnız kelimenin gerçek durumu uyuşuyorsa uygulanır (bkz. VocabularyWordSheet).
-        onSave={() => {
-          if (entry && !entrySaved) void passages.saveWord(entry.passageId, entry.wordId, entry.spanId);
-        }}
-        onRemove={() => {
-          if (entry && entrySaved) void passages.unsaveWord(entry.wordId);
-        }}
+      {stillOpenTextPassage ? null : renderWordSheet(false)}
+      <ShowTextSheet
+        passage={stillOpenTextPassage}
+        onClose={() => { setEntry(null); setTextSheetPassage(null); }}
+        onPressWord={(next) => { passages.clearWordError(next.wordId); setEntry(next); }}
+        wordSheet={stillOpenTextPassage && entry ? renderWordSheet(true) : null}
+        onCloseWord={() => setEntry(null)}
       />
-
-      <ShowTextSheet passage={stillOpenTextPassage} onClose={() => setTextSheetPassage(null)} />
 
       <Modal visible={paywallOpen} animationType="slide" onRequestClose={() => setPaywallOpen(false)}>
         <View style={[styles.paywallRoot, { paddingTop: insets.top + 12 }]}>

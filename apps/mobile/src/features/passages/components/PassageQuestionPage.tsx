@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import type { PassageQuestion } from "@linguascroll/shared-types";
 import { questionTypeLabel, trapTypeLabel } from "../passage-labels";
 import { ANSWER_UNCERTAIN_MESSAGE } from "../passages-controller";
-import { canSelectOption, formatAnswerSummary, isPassageComplete, summarizeAnswers } from "../passages-state";
+import { canSelectOption, formatAnswerSummary, summarizeAnswers } from "../passages-state";
 import { PageFrame, pageStyles } from "./PageFrame";
 import { PassageSummaryCard } from "./PassageSummaryCard";
 
@@ -58,9 +58,9 @@ export function PassageQuestionPage({
   const pending = pendingOptionId !== undefined;
   const summary = formatAnswerSummary(summarizeAnswers(questions));
   const uncertain = error === ANSWER_UNCERTAIN_MESSAGE;
-  // Skor özeti son (4.) sorunun sayfasında, TÜM sorular cevaplanınca (ayrı sayfa yok: metin toplam 5 sayfa).
+  // Son soruda boşlar da görünür: kaydırmak cevaplamak değildir, eksik cevap yanlış sayılmaz.
   const isLast = index + 1 === total;
-  const showSummary = isLast && isPassageComplete(questions);
+  const showSummary = isLast;
 
   return (
     <PageFrame
@@ -80,7 +80,7 @@ export function PassageQuestionPage({
 
       {question.options.map((option, optionIndex) => {
         const optionResult = result?.options.find((candidate) => candidate.optionId === option.id) ?? null;
-        const isEliminated = eliminated.has(option.id);
+        const isEliminated = result === null && eliminated.has(option.id);
         const isSelected = result ? result.selectedOptionId === option.id : selectedOptionId === option.id;
         const isCorrect = optionResult?.isCorrect === true;
         const isWrongPick = result !== null && isSelected && !isCorrect;

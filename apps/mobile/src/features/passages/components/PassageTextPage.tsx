@@ -1,7 +1,8 @@
-import { StyleSheet, Text } from "react-native";
+import { Text } from "react-native";
 import type { Passage } from "@linguascroll/shared-types";
-import { toWordSheetEntry, type PassageWordSheetEntry } from "../passage-word-entry";
+import type { PassageWordSheetEntry } from "../passage-word-entry";
 import { PageFrame, pageStyles } from "./PageFrame";
+import { PassageParagraphs } from "./PassageParagraphs";
 
 type OpenPassage = Extract<Passage, { access: "open" }>;
 
@@ -22,31 +23,8 @@ export function PassageTextPage({ passage, height, width, onPressWord, onNext }:
   return (
     <PageFrame height={height} width={width} chip={`${passage.level} · ${passage.topic}`} onNext={onNext} nextLabel="Sorulara geç ›">
       <Text accessibilityRole="header" style={pageStyles.title}>{passage.title}</Text>
-      {passage.paragraphs.map((runs, paragraphIndex) => (
-        <Text key={paragraphIndex} style={pageStyles.paragraph}>
-          {runs.map((run, runIndex) => {
-            const entry = toWordSheetEntry(passage.id, run);
-            if (!entry) return <Text key={runIndex}>{run.text}</Text>;
-            return (
-              <Text
-                key={runIndex}
-                accessibilityRole="button"
-                accessibilityLabel={`${run.text}, anlamını göster`}
-                onPress={() => onPressWord(entry)}
-                style={entry.saved ? styles.wordSaved : styles.word}
-              >
-                {run.text}
-              </Text>
-            );
-          })}
-        </Text>
-      ))}
-      <Text style={pageStyles.muted}>Altı çizili kelimelere dokun: anlamını ve cümleyi gör, kelimelerine kaydet. Sorulara geçmek için sola kaydır ya da \"Sorulara geç\"e dokun.</Text>
+      <PassageParagraphs passage={passage} onPressWord={onPressWord} />
+      <Text style={pageStyles.muted}>Metni kaydırarak oku. Hazır olduğunda ‘Sorulara geç’ düğmesine dokun.</Text>
     </PageFrame>
   );
 }
-
-const styles = StyleSheet.create({
-  word: { color: "#c8b5ff", textDecorationLine: "underline", textDecorationStyle: "dotted" },
-  wordSaved: { color: "#ddf9a8", fontWeight: "700", textDecorationLine: "underline" },
-});

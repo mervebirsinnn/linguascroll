@@ -43,7 +43,7 @@ export type PassagesDeps = {
   savePassageWord: (wordId: string, passageId: string, spanId: string) => Promise<unknown>;
   unsaveWord: (wordId: string) => Promise<void>;
   /** Belirsiz sonuçlu cevap yeniden gönderilmeden önce kısa bekleme (testlerde anlık). */
-  sleep: (ms: number) => Promise<void>;
+  sleep: (ms: number, signal?: AbortSignal) => Promise<void>;
 };
 
 export const ANSWER_RETRY_DELAY_MS = 600;
@@ -84,6 +84,9 @@ export class PassagesController {
   private accessChanged = false;
 
   private epoch = 0;
+  private lifecycle = new AbortController();
+  private wordMutationVersion = 0;
+  private readonly confirmedWordChanges = new Map<string, { version: number; saved: boolean }>();
   private active = false;
   private activeLevel: PassageLevel | null = null;
   private readonly inFlight = new Map<PassageLevel, Token>();
@@ -131,6 +134,8 @@ export class PassagesController {
   deactivate(): void {
     this.active = false;
     this.epoch += 1;
+    this.lifecycle.abort();
+    this.lifecycle = new AbortController();
     this.inFlight.clear();
   }
 
@@ -161,6 +166,7 @@ export class PassagesController {
 
   private async fetchFresh(level: PassageLevel): Promise<void> {
     const epoch = this.epoch;
+    const wordVersion = this.wordMutationVersion;
     const token: Token = {};
     this.inFlight.set(level, token);
     // İlk yükleme ya da hata sonrası yeniden deneme "loading" gösterir; var olan liste (refresh) görünür kalır.
@@ -171,7 +177,15 @@ export class PassagesController {
     try {
       const page = await this.deps.fetchPassages(level);
       if (!this.isCurrent(epoch)) return;
-      this.byLevel = { ...this.byLevel, [level]: applyFreshSuccess(page) };
+      // GET yola çıktıktan sonra cevap/kelime kaydı tamamlanmış olabilir. Aynı epoch'un doğrulanmış cevabı null'a
+      // dönmez; ancak sunucunun kilitlediği veya kaldırdığı içerik ASLA eski listeden geri getirilmez.
+      const current = this.byLevel[level];
+      let fresh: PassagesLevelState = applyFreshSuccess(page);
+      if (current?.status === "success") fresh = mergeAnswersFromPage(fresh, { items: current.items, nextCursor: null });
+      for (const [wordId, change] of this.confirmedWordChanges) {
+        if (change.version > wordVersion) fresh = applyWordSaved(fresh, wordId, change.saved);
+      }
+      this.byLevel = { ...this.byLevel, [level]: fresh };
       this.accessChanged = false;
     } catch (error) {
       if (!this.isCurrent(epoch)) return;
@@ -238,6 +252,9 @@ export class PassagesController {
 
   private resetForAccessChange(): void {
     this.epoch += 1;
+    this.lifecycle.abort();
+    this.lifecycle = new AbortController();
+    this.confirmedWordChanges.clear();
     this.inFlight.clear();
     this.byLevel = invalidateAfterAccessChange();
     this.pendingAnswers = {};
@@ -261,6 +278,7 @@ export class PassagesController {
    * aracıyla işaretlemiş olsa bile, ZATEN gönderilmiş cevabı doğrulamak istiyor; sessizce hiçbir şey yapmamalıyız.
    */
   private async sendAnswer(questionId: string, optionId: string, recheck: boolean): Promise<void> {
+    if (!this.active) return;
     const question = findQuestion(this.byLevel, questionId);
     if (!question || this.pendingAnswers[questionId] !== undefined) return;
     if (question.result !== null || (!recheck && !canSelectOption(this.eliminated, question, optionId))) return;
@@ -272,7 +290,7 @@ export class PassagesController {
     this.emit();
 
     try {
-      const result = await this.submitAnswer(questionId, optionId);
+      const result = await this.submitAnswer(questionId, optionId, epoch);
       if (!this.isCurrent(epoch)) return;
       this.byLevel = mapAllLevels(this.byLevel, (state) => applyAnswerResult(state, questionId, result));
       this.pendingAnswers = withoutKey(this.pendingAnswers, questionId);
@@ -299,12 +317,17 @@ export class PassagesController {
    * cevap kazanır kuralıyla ya kaydı yeni yazar ya da ZATEN kayıtlı ilk sonucu döndürür; ikisinde de dönen sonuç
    * gerçeğin kendisidir ve olduğu gibi uygulanır. Kesin hatalar (4xx) yeniden denenmez.
    */
-  private async submitAnswer(questionId: string, optionId: string): Promise<PassageAnswerResult> {
+  private async submitAnswer(questionId: string, optionId: string, epoch: number): Promise<PassageAnswerResult> {
+    if (!this.isCurrent(epoch)) throw new Error("Eski okuma oturumu");
+    const signal = this.lifecycle.signal;
     try {
       return await this.deps.answerPassageQuestion(questionId, optionId);
     } catch (error) {
-      if (!isOutcomeUncertain(error)) throw error;
-      await this.deps.sleep(ANSWER_RETRY_DELAY_MS);
+      if (!this.isCurrent(epoch) || !isOutcomeUncertain(error)) throw error;
+      await this.deps.sleep(ANSWER_RETRY_DELAY_MS, signal);
+      // Sonucun yazılmasını engellemek yetmez: eski hesabın cevabı güncel token ile YENİDEN GÖNDERİLMEMELİ.
+      // Enjekte edilen sleep iptali desteklemese bile bu kontrol her retry'ın ağ yan etkisini keser.
+      if (!this.isCurrent(epoch)) throw new Error("Eski okuma oturumu");
       return this.deps.answerPassageQuestion(questionId, optionId);
     }
   }
@@ -371,6 +394,7 @@ export class PassagesController {
     try {
       const saved = await action();
       if (!this.isCurrent(epoch)) return;
+      this.confirmedWordChanges.set(wordId, { version: ++this.wordMutationVersion, saved });
       this.byLevel = mapAllLevels(this.byLevel, (state) => applyWordSaved(state, wordId, saved));
     } catch (error) {
       if (!this.isCurrent(epoch)) return;

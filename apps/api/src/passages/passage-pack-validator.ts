@@ -1,4 +1,4 @@
-import { normalizeGlossWord } from "@linguascroll/shared-types";
+import { findWordTokens, normalizeGlossWord } from "@linguascroll/shared-types";
 import { PASSAGE_TRAP_TYPES, passagePackSchema, type PassagePack } from "./passage-pack";
 import { buildParagraphRuns } from "./passage-runs";
 
@@ -100,6 +100,14 @@ function validateWords(pack: PassagePack, issues: PackIssue[]): void {
       buildParagraphRuns(paragraph, spans, info);
     } catch (error) {
       issues.push(issue("span-overlap", `paragraphs.${paragraphIndex}`, error instanceof Error ? error.message : String(error)));
+    }
+    // Video ile aynı sözcük tanımı: işlevsel sözcükler ve tekrarlar DAHİL; boşluk/rakam/noktalama hariç.
+    // Her token tek bir span içinde bütünüyle bulunmalı. Çok sözcüklü bir ifade span'ı birden fazla token'ı
+    // kapsayabilir; bir kelimenin iki yarım span'a bölünmesi tam kapsam sayılmaz. Kural yalnız paragraf içindir.
+    for (const token of findWordTokens(paragraph)) {
+      if (!spans.some((span) => span.start <= token.start && span.end >= token.end)) {
+        issues.push(issue("word-occurrence-uncovered", `paragraphs.${paragraphIndex}[${token.start}:${token.end}]`, `Anlamı eksik kelime geçişi: "${token.text}"`));
+      }
     }
   });
 }

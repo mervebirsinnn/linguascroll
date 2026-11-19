@@ -9,7 +9,7 @@ type PassageSummaryCardProps = {
 
 /**
  * Skor özeti KARTI: bir metnin TOPLAM 5 sayfası var (metin + 4 soru); özet ayrı bir sayfa DEĞİL, son (4.) sorunun sayfasında,
- * tüm sorular cevaplanınca görünür. Skor "öğrenme pratiği" geri bildirimidir (seviye ölçümü DEĞİL).
+ * cevaplanmamış soruları da ayrı gösterir. Skor "öğrenme pratiği" geri bildirimidir (seviye ölçümü DEĞİL).
  */
 export function PassageSummaryCard({ questions }: PassageSummaryCardProps) {
   const summary = summarizeAnswers(questions);

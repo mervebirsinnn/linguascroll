@@ -20,6 +20,40 @@ describe("validatePassagePack — pozitif", () => {
 });
 
 describe("validatePassagePack — her kural için bir negatif test", () => {
+  it("işlevsel sözcükler ve AYNI kelimenin her geçişi kapsanmalı", () => {
+    const missingFunctionWord = clone();
+    missingFunctionWord.words = missingFunctionWord.words.filter((word) => word.lemma !== "the");
+    expect(codes(missingFunctionWord)).toContain("word-occurrence-uncovered");
+    const missingRepeat = clone();
+    const repeated = missingRepeat.words.find((word) => word.lemma === "the")!;
+    repeated.spans.pop();
+    const result = validatePassagePack(missingRepeat);
+    expect(result.pack).toBeNull();
+    expect(result.issues.filter((entry) => entry.code === "word-occurrence-uncovered")).toHaveLength(1);
+  });
+
+  it("çok sözcüklü ifade kapsadığı sözcükleri karşılar; parçalı kelime kapsam sayılmaz", () => {
+    const phrase = clone();
+    phrase.words = phrase.words.filter((word) => word.lemma !== "old" && word.lemma !== "lighthouse");
+    const start = FIXTURE_PACK_PARAGRAPH.indexOf("old lighthouse");
+    phrase.words.push({ lemma: "old lighthouse", gloss: "eski deniz feneri", spans: [{ paragraphIndex: 0, start, end: start + 14, surface: "old lighthouse", contextSentence: "The old lighthouse stood above the harbour." }] });
+    expect(codes(phrase)).toEqual([]);
+    const partial = clone();
+    partial.words[0]!.spans[0]!.end--;
+    partial.words[0]!.spans[0]!.surface = "lighthous";
+    expect(codes(partial)).toContain("word-occurrence-uncovered");
+  });
+
+  it("kesme işareti tek token; tire ayrık token, noktalama ve rakamlar kapsam dışı", () => {
+    const paragraph = "Don't re-read 2026.";
+    const pack = validPack({ paragraphs: [paragraph], words: [
+      { lemma: "don't", gloss: "yapma", spans: [{ paragraphIndex: 0, start: 0, end: 5, surface: "Don't", contextSentence: paragraph }] },
+      { lemma: "re-read", gloss: "yeniden oku", spans: [{ paragraphIndex: 0, start: 6, end: 13, surface: "re-read", contextSentence: paragraph }] },
+    ] });
+    pack.questions.forEach((question) => { question.evidence = { paragraphIndex: 0, start: 0, end: paragraph.length }; });
+    expect(codes(pack)).toEqual([]);
+  });
+
   it("şema: B1..C2 dışı seviye, 4 olmayan soru sayısı, geçersiz tuzak türü", () => {
     expect(codes({ ...validPack(), level: "A1" })).toContain("schema");
     expect(codes({ ...validPack(), questions: validPack().questions.slice(0, 3) })).toContain("schema");

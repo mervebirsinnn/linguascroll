@@ -10,7 +10,8 @@ jest.mock("../../identity/auth-headers", () => ({ authHeaders: () => Promise.res
 jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
 jest.mock("react-native/Libraries/Modal/Modal", () => {
   const ReactActual = require("react");
-  return { __esModule: true, default: ({ visible, children }: { visible?: boolean; children?: React.ReactNode }) => (visible ? ReactActual.createElement(ReactActual.Fragment, null, children) : null) };
+  const { View } = require("react-native");
+  return { __esModule: true, default: ({ visible, children, onRequestClose }: { visible?: boolean; children?: React.ReactNode; onRequestClose?: () => void }) => (visible ? ReactActual.createElement(View, { testID: "native-modal", onRequestClose }, children) : null) };
 });
 // Paywall'ın kendisi (RevenueCat/Firebase) bu testin konusu değil: erişim açma, onUnlocked + access-events ile sınanır.
 let mockPaywallProps: { onUnlocked: () => void; reason?: string } | null = null;
@@ -298,6 +299,32 @@ describe("soru sayfası: seçim, eleme, kontrol, sonuç, hatalar", () => {
 
     await fireEvent.press(screen.getByText("Soruya dön"));
     expect(screen.queryByText("Soruya dön")).toBeNull();
+  });
+
+  it("metin penceresindeki ikinci geçiş aynı native Modal içindeki ortak kartı açar; kapatınca metne geri döner", async () => {
+    const { fakes } = await onFirstQuestion();
+    await fireEvent.press(screen.getByText("Metni göster"));
+    // İlk iki geçiş ana metindedir; son iki geçiş metin penceresindedir.
+    await fireEvent.press(screen.getAllByRole("button", { name: "cat, anlamını göster" })[3]!);
+    expect(screen.getAllByTestId("native-modal")).toHaveLength(1);
+    expect(screen.getByText("The cat left.")).toBeTruthy();
+    expect(screen.queryByText("Soruya dön")).toBeNull(); // arka metin erişilebilirlik ağacından gizlidir
+    await fireEvent.press(screen.getByText("Kelimelerime kaydet"));
+    await waitFor(() => expect(fakes.savePassageWord).toHaveBeenCalledWith(CAT_WORD_ID, uuid(1), CAT_SPAN_2));
+    await fireEvent.press(screen.getByText("Metne dön"));
+    expect(screen.getByText("Soruya dön")).toBeTruthy();
+    expect(screen.queryByText("Metne dön")).toBeNull();
+    await fireEvent.press(screen.getByText("Soruya dön"));
+    expect(screen.queryByText("Soruya dön")).toBeNull();
+  });
+
+  it("metindeki kelime açıkken Android geri önce kelimeyi kapatır, metni kapatmaz", async () => {
+    await onFirstQuestion();
+    await fireEvent.press(screen.getByText("Metni göster"));
+    await fireEvent.press(screen.getAllByRole("button", { name: "cat, anlamını göster" })[3]!);
+    await fireEvent(screen.getByTestId("native-modal"), "requestClose");
+    expect(screen.getByText("Soruya dön")).toBeTruthy();
+    expect(screen.queryByText("Metne dön")).toBeNull();
   });
 });
 

@@ -1,4 +1,5 @@
 import type { PassagePack } from "./passage-pack";
+import { findWordTokens } from "@linguascroll/shared-types";
 
 /**
  * Yayın paketi TEST fixture'ı (gerçek içerik DEĞİL; content/ altında bilerek yok). Geçerli bir paket döner; testler
@@ -18,9 +19,27 @@ function range(surface: string): { paragraphIndex: number; start: number; end: n
   return { paragraphIndex: 0, start, end: start + surface.length, surface };
 }
 
-/** Geçiş = aralık + o geçişin cümlesi (pakette her span kendi cümlesini taşır). */
-function span(surface: string, contextSentence: string): ReturnType<typeof range> & { contextSentence: string } {
-  return { ...range(surface), contextSentence };
+function allFixtureWords(): PassagePack["words"] {
+  const glosses: Record<string, string> = {
+    lighthouse: "deniz feneri", keeper: "bekçi", the: "belirtme tanımlığı", old: "eski", stood: "duruyordu",
+    above: "üstünde", harbour: "liman", every: "her", evening: "akşam", climbed: "tırmandı", its: "onun",
+    stairs: "merdivenler", lamp: "lamba", guided: "yol gösterdi", ships: "gemiler", safely: "güvenle", home: "eve",
+  };
+  const words = new Map<string, PassagePack["words"][number]>();
+  // İki eski anahtar ilk iki sırada kalır; mutasyon testleri bu iki hedefi özellikle kullanır.
+  for (const lemma of ["lighthouse", "keeper"]) words.set(lemma, { lemma, gloss: glosses[lemma]!, spans: [] });
+  for (const token of findWordTokens(PARAGRAPH)) {
+    const contextSentence = SENTENCES.find((sentence) => {
+      const start = PARAGRAPH.indexOf(sentence);
+      return start <= token.start && start + sentence.length >= token.end;
+    });
+    const gloss = glosses[token.normalized];
+    if (!contextSentence || !gloss) throw new Error(`fixture: eksik cümle/anlam: ${token.text}`);
+    const word = words.get(token.normalized) ?? { lemma: token.normalized, gloss, spans: [] };
+    word.spans.push({ paragraphIndex: 0, start: token.start, end: token.end, surface: token.text, contextSentence });
+    words.set(token.normalized, word);
+  }
+  return [...words.values()];
 }
 
 function question(index: number, correctIndex: number): PassagePack["questions"][number] {
@@ -48,10 +67,7 @@ export function validPack(overrides: Partial<PassagePack> = {}): PassagePack {
     sortOrder: 1,
     isFreeSample: false,
     paragraphs: [PARAGRAPH],
-    words: [
-      { lemma: "lighthouse", gloss: "deniz feneri", spans: [span("lighthouse", SENTENCES[0]!)] },
-      { lemma: "keeper", gloss: "bekçi", spans: [span("keeper", SENTENCES[1]!)] },
-    ],
+    words: allFixtureWords(),
     // Doğru şık konumları 0,1,2,3: dengeli.
     questions: [question(1, 0), question(2, 1), question(3, 2), question(4, 3)],
     editorial: { original: true, noFactualClaims: true, sources: [] },

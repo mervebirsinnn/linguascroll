@@ -10,7 +10,13 @@ const realDeps: PassagesDeps = {
   answerPassageQuestion,
   savePassageWord,
   unsaveWord,
-  sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
+  sleep: (ms, signal) => new Promise((resolve, reject) => {
+    // Hesap/erişim değişiminde bekleyen retry zamanlayıcısı da bırakılır; controller ayrıca dispatch öncesi epoch'u denetler.
+    if (signal?.aborted) { reject(new Error("Eski okuma oturumu")); return; }
+    const cancel = () => { clearTimeout(timer); signal?.removeEventListener("abort", cancel); reject(new Error("Eski okuma oturumu")); };
+    const timer = setTimeout(() => { signal?.removeEventListener("abort", cancel); resolve(); }, ms);
+    signal?.addEventListener("abort", cancel, { once: true });
+  }),
 };
 
 /**
