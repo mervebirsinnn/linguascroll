@@ -74,6 +74,16 @@ export class SubscriptionsService {
     return { unlimited: false, grantedVideoIds: selected, newVideoBudget: 0 };
   }
 
+  /**
+   * Okuma Pratiği gibi video-dışı içeriğin TEK erişim kararı: kapı kapalıysa veya doğrulanmış aktif abonelik
+   * varsa tam erişim. Ücretsiz örnekler içeriğin kendi işaretiyle (passages.is_free_sample) açılır; BU metot ücretsiz
+   * hak defterine (free_video_grants) hiçbir şey yazmaz ve hak tüketmez. Abonelik önbelleği/RevenueCat
+   * fail-closed davranışı `isSubscribed` ile aynı.
+   */
+  async hasFullAccess(userId: string): Promise<boolean> {
+    return !this.gateEnabled || (await this.isSubscribed(userId));
+  }
+
   /** İmzalı URL yalnızca seçkideki video veya doğrulanmış abonelik için verilir.
    * scope istemciden gelse bile kategorisi backend'de doğrulanır. */
   async requestPlaybackAccess(userId: string, videoId: string, scope: FeedScope = "all"): Promise<PlaybackAccessResponse> {

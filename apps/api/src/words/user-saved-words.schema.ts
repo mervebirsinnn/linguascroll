@@ -1,5 +1,7 @@
-import { pgTable, primaryKey, timestamp, uuid } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
+import { check, pgTable, primaryKey, timestamp, uuid } from "drizzle-orm/pg-core";
 import { usersTable } from "../users/users.schema";
+import { passagesTable, passageWordSpansTable } from "../passages/passages.schema";
 import { videoTranscriptSegmentsTable } from "../videos/transcript-segments.schema";
 import { wordsTable } from "./words.schema";
 
@@ -32,6 +34,11 @@ import { wordsTable } from "./words.schema";
  * kelime-video ilişkisinin kendisi anlamsızlaşıyordu, burada sadece bir
  * "nereden geldi" ipucu kayboluyor, saved-word'ün var olma sebebi değil).
  * `quizzes.sourceTranscriptSegmentId`'nin AYNI cross-feature FK precedent'i.
+ *
+ * Okuma pratiği — `sourcePassageId` (NULLABLE): kelime bir paragraftan kaydedildiyse o metin. `sourceSegmentId` ile
+ * AYNI gerekçeyle `ON DELETE SET NULL` (metin silinirse kelime kalır, yalnız "nereden geldi" ipucu kaybolur). Tek
+ * kolon çifti yerine iki ayrı nullable FK seçildi (polimorfik source_type/source_id DEĞİL): FK bütünlüğü DB'de
+ * kalır. Bir kayıt TEK kaynaktan gelir — iki kolon aynı anda dolu olamaz (CHECK; API de 400 ile reddeder).
  */
 export const userSavedWordsTable = pgTable(
   "user_saved_words",
@@ -44,6 +51,13 @@ export const userSavedWordsTable = pgTable(
       .references(() => wordsTable.id, { onDelete: "cascade" }),
     savedAt: timestamp("saved_at", { withTimezone: true }).notNull().defaultNow(),
     sourceSegmentId: uuid("source_segment_id").references(() => videoTranscriptSegmentsTable.id, { onDelete: "set null" }),
+    sourcePassageId: uuid("source_passage_id").references(() => passagesTable.id, { onDelete: "set null" }),
+    // Kelimenin kaydedildiği GEÇİŞ (passage_word_spans.id): aynı kelimenin iki cümlede geçtiği metinde doğru kaynak cümle.
+    // ON DELETE SET NULL (metin silinince span'lar da gider); null → kaynak cümle passage_words.context_sentence'a düşer.
+    sourcePassageSpanId: uuid("source_passage_span_id").references(() => passageWordSpansTable.id, { onDelete: "set null" }),
   },
-  (table) => [primaryKey({ columns: [table.userId, table.wordId] })],
+  (table) => [
+    primaryKey({ columns: [table.userId, table.wordId] }),
+    check("user_saved_words_single_source_check", sql`${table.sourceSegmentId} is null or ${table.sourcePassageId} is null`),
+  ],
 );

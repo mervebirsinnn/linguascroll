@@ -168,3 +168,25 @@ describe("SubscriptionsService abonelik önbelleği", () => {
     expect(checks).toBe(1);
   });
 });
+
+describe("SubscriptionsService.hasFullAccess (okuma pratiği erişim kararı)", () => {
+  it("kapı kapalıyken herkes tam erişimli ve RevenueCat'e hiç gidilmez", async () => {
+    let entitlementChecks = 0;
+    const { service } = makeService({ gateEnabled: false, onCheckEntitlement: () => (entitlementChecks += 1) });
+    expect(await service.hasFullAccess(USER_ID)).toBe(true);
+    expect(entitlementChecks).toBe(0);
+  });
+
+  it("kapı açık + aktif abone → tam erişim", async () => {
+    const { service } = makeService({ gateEnabled: true, isSubscribed: true });
+    expect(await service.hasFullAccess(USER_ID)).toBe(true);
+  });
+
+  it("kapı açık + abone değil → tam erişim yok; ücretsiz hak defterine (free_video_grants) dokunulmaz", async () => {
+    const ledger = makeLedger();
+    const { service } = makeService({ gateEnabled: true, isSubscribed: false, ledger });
+    expect(await service.hasFullAccess(USER_ID)).toBe(false);
+    expect(ledger.tryGrantCalls).toEqual([]);
+    expect(ledger.granted.size).toBe(0);
+  });
+});

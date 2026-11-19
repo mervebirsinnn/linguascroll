@@ -51,8 +51,8 @@ export class WordsController {
   @Put(":wordId/saved")
   @UseGuards(FirebaseAuthGuard)
   async saveWord(@Param("wordId", new ParseUUIDPipe()) wordId: string, @Body() body: unknown, @AuthUserId() userId: string): Promise<SaveWordResponse> {
-    const { sourceSegmentId } = this.parseSaveWordRequest(body);
-    return saveWordResponseSchema.parse(await this.wordsService.saveWord(wordId, userId, sourceSegmentId));
+    const { sourceSegmentId, sourcePassageId, sourcePassageSpanId } = this.parseSaveWordRequest(body);
+    return saveWordResponseSchema.parse(await this.wordsService.saveWord(wordId, userId, sourceSegmentId, sourcePassageId, sourcePassageSpanId));
   }
 
   // DELETE = "bu kaydın var olmadığından emin ol" — aynı idempotent semantik.

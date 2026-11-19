@@ -152,3 +152,23 @@ it("tekrar gelen aynı video iki oynatıcıyı birden aktif etmez", async () => 
   await waitFor(() => expect(screen.getAllByLabelText("active-video")).toHaveLength(1));
   expect(screen.getAllByLabelText("paused-video")).toHaveLength(1);
 });
+
+describe("Feed başlığı — okuma pratiği girişi", () => {
+  const account = { isAnonymous: true, linking: false, notice: null, onLinkAccount: () => {} };
+
+  it("onOpenPassages verilirse 'Okuma' düğmesi çıkar ve çağrılır; 'Kelimelerim' yerinde kalır", async () => {
+    const onOpenPassages = jest.fn();
+    const onOpenMemory = jest.fn();
+    await render(<Feed userId={USER_ID} account={account} onOpenMemory={onOpenMemory} onOpenPassages={onOpenPassages} />);
+
+    await fireEvent.press(screen.getByText("Okuma"));
+    expect(onOpenPassages).toHaveBeenCalledTimes(1);
+    await fireEvent.press(screen.getByText("Kelimelerim"));
+    expect(onOpenMemory).toHaveBeenCalledTimes(1);
+  });
+
+  it("onOpenPassages verilmezse 'Okuma' düğmesi çizilmez (eski çağıranlar etkilenmez)", async () => {
+    await render(<Feed userId={USER_ID} account={account} onOpenMemory={() => {}} />);
+    expect(screen.queryByText("Okuma")).toBeNull();
+  });
+});

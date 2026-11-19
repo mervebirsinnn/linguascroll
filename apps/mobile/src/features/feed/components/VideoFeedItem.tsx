@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View, type GestureResponderEvent } from "react-native";
 import { useEventListener } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
@@ -99,6 +99,11 @@ export function VideoFeedItem({
   // 2026-11-17 — id yerine segment'in kendisi tutuluyor: kelime penceresi artık altyazı kelimesi penceresiyle
   // (WordGlossSheet) aynı görünümde ve o da cümleyi gösteriyor. Kaynak context kuralı değişmedi (id aynı yerden).
   const [openVocabularySegment, setOpenVocabularySegment] = useState<TranscriptSegment | null>(null);
+  // Ortak kelime penceresinin görüntü girdisi: kararlı nesne (her render'da yenisi oluşmasın; pencere bu kimliğe bağlı efekt çalıştırır).
+  const vocabularyEntry = useMemo(
+    () => (openVocabularyWord ? { title: openVocabularyWord.word.lemma, gloss: openVocabularyWord.word.gloss } : null),
+    [openVocabularyWord],
+  );
   const wasPlayingBeforeOpenRef = useRef(false);
   /**
    * Root cause fix — `player.playing`, sheet açılırken (handleSubtitleTap/
@@ -374,7 +379,7 @@ export function VideoFeedItem({
           onClose={handleCloseSheet}
         />
         <VocabularyWordSheet
-          word={openVocabularyWord}
+          entry={vocabularyEntry}
           sentence={openVocabularySegment?.text}
           onClose={handleCloseVocabularySheet}
           isSaved={

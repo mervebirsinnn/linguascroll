@@ -12,6 +12,7 @@
     "seed:transcripts": "node dist/videos/seed-transcript-segments.js",
     "seed:quizzes": "node dist/quizzes/seed-quizzes.js",
     "seed:words": "node dist/words/seed-words.js",
+    "passages:publish": "node dist/passages/publish-passages.js",
     "test": "jest",
     "stt:build": "tsc -p scripts/stt/tsconfig.json",
     "stt:test": "jest -c scripts/stt/jest.config.js",

@@ -39,4 +39,28 @@ export { subscriptionStatusSchema, type SubscriptionStatus } from "./subscriptio
 export { subscriptionDetailsSchema, subscriptionOverviewSchema, type SubscriptionDetails, type SubscriptionOverview } from "./subscription-overview";
 export { saveGlossRequestSchema, saveGlossResponseSchema, videoFeedbackRequestSchema, type SaveGlossResponse, type VideoFeedbackRequest } from "./learning-actions";
 
+export {
+  passageLevelSchema,
+  type PassageLevel,
+  passagesQuerySchema,
+  type PassagesQuery,
+  passageWordRefSchema,
+  passageRunSchema,
+  passageParagraphSchema,
+  passageOptionSchema,
+  passageOptionResultSchema,
+  passageAnswerResultSchema,
+  type PassageAnswerResult,
+  passageQuestionSchema,
+  type PassageQuestion,
+  openPassageSchema,
+  lockedPassageSchema,
+  passageSchema,
+  type Passage,
+  passagePageSchema,
+  type PassagePage,
+  answerPassageQuestionRequestSchema,
+  type AnswerPassageQuestionRequest,
+} from "./passage";
+
 export { TOPIC_LABELS } from "./topic-labels";
