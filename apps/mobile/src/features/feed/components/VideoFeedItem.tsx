@@ -399,7 +399,7 @@ export function VideoFeedItem({
             }
           }}
         />
-        <WordGlossSheet entry={openGloss} onClose={handleCloseGlossSheet} />
+        <WordGlossSheet entry={openGloss} onClose={handleCloseGlossSheet} userId={userId} />
       </View>
     </View>
   );

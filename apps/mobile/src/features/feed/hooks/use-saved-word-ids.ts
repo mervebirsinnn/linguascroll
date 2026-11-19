@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { FeedItem } from "@linguascroll/shared-types";
 import { saveWord } from "../api/save-word";
 import { unsaveWord } from "../api/unsave-word";
+import { loopiStore } from "../../loopi/loopi-store-instance";
 
 /**
  * `video_words` many-to-many olduğu için aynı wordId aynı anda yüklü feed'de
@@ -72,7 +73,13 @@ export function useSavedWordIds(
       isSaved(wordId),
       pendingWordIdsRef.current,
       (next) => setPendingWordIds(next),
-      (id, nowSaved) => setConfirmedOverrides((current) => applyToggleSuccess(current, id, nowSaved)),
+      (id, nowSaved, created) => {
+        setConfirmedOverrides((current) => applyToggleSuccess(current, id, nowSaved));
+        // 2026-11-17 — Loopi: yalnız sunucunun GERÇEKTEN yeni dediği kayıt kuyruğa girer (created === true;
+        // false/bilinmiyor girmez). Depo hatası kaydetmeyi etkilemez — Loopi süs, kelime zaten kaydedildi.
+        if (nowSaved && created === true) loopiStore.recordWordCreated(userId, id).catch(() => {});
+        if (!nowSaved) loopiStore.recordWordRemoved(userId, id).catch(() => {});
+      },
       sourceSegmentId,
     );
   }
@@ -148,7 +155,9 @@ export function toggleSaveWord(
   currentlySaved: boolean,
   pendingWordIdsRef: Set<string>,
   onPendingChange: (next: Set<string>) => void,
-  onSuccess: (wordId: string, nowSaved: boolean) => void,
+  // 2026-11-17 — `created`: yalnız kaydetmede, sunucunun "yeni kayıt" cevabı (bkz. save-word.ts); unsave'de
+  // ve sunucu bilgi vermediğinde undefined.
+  onSuccess: (wordId: string, nowSaved: boolean, created?: boolean) => void,
   sourceSegmentId?: string | null,
   deps: { saveWord: typeof saveWord; unsaveWord: typeof unsaveWord } = { saveWord, unsaveWord },
 ): void {
@@ -162,10 +171,12 @@ export function toggleSaveWord(
 
   // sourceSegmentId sadece SAVE ederken anlamlı — unsave'de kaynak context
   // kavramı yok (kayıt zaten siliniyor).
-  const mutate = nowSaving ? deps.saveWord(wordId, sourceSegmentId) : deps.unsaveWord(wordId);
+  const mutate: Promise<boolean | undefined> = nowSaving
+    ? deps.saveWord(wordId, sourceSegmentId).then((result: { created?: boolean } | undefined) => result?.created)
+    : deps.unsaveWord(wordId).then(() => undefined);
   mutate
-    .then(() => {
-      onSuccess(wordId, nowSaving);
+    .then((created) => {
+      onSuccess(wordId, nowSaving, created);
     })
     .catch(() => {
       // Server-confirmed UI: başarısız mutation onSuccess'i hiç TETİKLEMİYOR —

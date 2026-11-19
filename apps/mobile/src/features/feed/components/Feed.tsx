@@ -17,6 +17,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import type { AccountLinkControl } from "../../identity/auth-state";
 import { useFeed } from "../hooks/use-feed";
 import { useSavedWordIds } from "../hooks/use-saved-word-ids";
+import { useLoopiDot } from "../../loopi/use-loopi-dot";
 import { PaywallFeedItem } from "../../subscription/PaywallFeedItem";
 import { FeedListFooter } from "./FeedListFooter";
 import { getFeedOccurrenceKey } from "./get-feed-item-key";
@@ -87,6 +88,9 @@ export function Feed(props: FeedProps) {
   const scope = FEED_SCOPE;
   const insets = useSafeAreaInsets();
   const [viewport, setViewport] = useState({ height: 0, width: 0 });
+  // 2026-11-17 — Loopi: yalnız GÖRÜLMEMİŞ bir büyüme eşiği varsa lime nokta (bkz. use-loopi-dot.ts). FeedContent
+  // değil burada: nokta başlıkta, oynatma ilerlemesiyle sık render olan video ağacının dışında.
+  const showLoopiDot = useLoopiDot(props.userId);
   return (
     <View style={styles.root}>
       <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
@@ -99,8 +103,10 @@ export function Feed(props: FeedProps) {
             style={styles.memoryButton}
             onPress={props.onOpenMemory}
             accessibilityRole="button"
+            accessibilityLabel={showLoopiDot ? "Kelimelerim, Loopi büyüdü" : "Kelimelerim"}
           >
             <Text style={styles.memoryButtonText}>Kelimelerim</Text>
+            {showLoopiDot && <View style={styles.loopiDot} />}
           </Pressable>
         </View>
       </View>
@@ -346,6 +352,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     minHeight: 44,
     flexShrink: 1,
+  },
+  loopiDot: {
+    position: "absolute",
+    top: -3,
+    right: -3,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    backgroundColor: "#d4f56b",
+    borderWidth: 2.5,
+    borderColor: "#111116",
   },
   header: {
     paddingHorizontal: 18,

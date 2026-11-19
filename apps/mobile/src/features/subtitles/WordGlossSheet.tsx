@@ -2,14 +2,16 @@ import { useEffect, useRef, useState } from "react";
 import { saveGloss } from "./api/save-gloss";
 import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
+import { loopiStore } from "../loopi/loopi-store-instance";
 
 export type OpenWordGloss = { word: string; gloss: string; segmentId?: string; sentence?: string };
 
-type WordGlossSheetProps = { entry: OpenWordGloss | null; onClose: () => void };
+// 2026-11-17 — userId: Loopi kuyruğu hesap başına tutulur (bkz. features/loopi/loopi-store.ts).
+type WordGlossSheetProps = { entry: OpenWordGloss | null; onClose: () => void; userId: string };
 
 /** Hazırlanmış anlamı anında gösterir. Kaydet yalnızca backend kayıt işlemi yapar; AI çağrılmaz.
  * Snapshot segment bağlamını korur; kapanan/eski panelin yanıtı yeni kelimeye taşınmaz. */
-export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
+export function WordGlossSheet({ entry, onClose, userId }: WordGlossSheetProps) {
   const [saved, setSaved] = useState(false);
   const [pending, setPending] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -25,7 +27,10 @@ export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
     const request = generation.current;
     locked.current = true; setPending(true); setNotice(null);
     try {
-      await saveGloss(entry.segmentId, entry.word);
+      const result = await saveGloss(entry.segmentId, entry.word);
+      // Loopi: yalnız sunucunun GERÇEKTEN yeni dediği kayıt (daha önce kaydedilmiş kelimeyi tekrar kaydetmek
+      // created:false döner, hapa düşmez). Panel kapanmış olsa da kayıt gerçek — kuyruğa yine girer.
+      if (result.created === true) loopiStore.recordWordCreated(userId, result.word.id).catch(() => {});
       if (generation.current === request) setSaved(true);
     } catch {
       if (generation.current === request) setNotice("Kaydedilemedi. Bağlantını kontrol edip tekrar dene.");
