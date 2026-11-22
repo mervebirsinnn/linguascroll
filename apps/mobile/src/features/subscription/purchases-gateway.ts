@@ -1,7 +1,7 @@
 import { Linking, Platform } from "react-native";
-import Purchases, { type PurchasesPackage } from "react-native-purchases";
-import { REVENUECAT_ANDROID_API_KEY, REVENUECAT_ENTITLEMENT_ID } from "../../shared/revenuecat-config";
-import { buildPaywallPackages, type PaywallPackage } from "./paywall-model";
+import Purchases, { type IntroEligibility, type PurchasesPackage } from "react-native-purchases";
+import { REVENUECAT_ANDROID_API_KEY, REVENUECAT_ENTITLEMENT_ID, REVENUECAT_IOS_API_KEY } from "../../shared/revenuecat-config";
+import { buildPaywallPackages, type PaywallPackage, type RawPackage } from "./paywall-model";
 
 /**
  * react-native-purchases'a dokunan TEK dosya — geri kalanı (model, state, hook, UI) SDK'yı
@@ -17,6 +17,11 @@ import { buildPaywallPackages, type PaywallPackage } from "./paywall-model";
  * ile RevenueCat kimliği değiştirilir; çıkışta `logOutPurchases`. Bir Google Play hesabındaki
  * aboneliğin "geri yükle" ile BAŞKA bir uygulama hesabına taşınmasını engellemek RevenueCat
  * panelindeki "Restore behavior" ayarına bağlı (bkz. rapor: "Keep with original App User ID").
+ *
+ * 2026-11-20 — iOS yayını: satın alma artık iOS'ta da açık (App Store, RevenueCat iOS anahtarı).
+ * Platform → anahtar seçimi ve mağazaya özgü ürün alanlarının (Google Play `defaultOption` /
+ * StoreKit `introPrice`) ortak `RawPackage` şekline çevrilmesi BURADA kalıyor — SDK'yı bilen tek dosya
+ * kuralı bozulmasın, model/UI hangi mağazada çalıştığını bilmesin.
  */
 
 export type PurchaseOutcome = "purchased" | "cancelled" | "pending" | "already-owned";
@@ -35,25 +40,36 @@ export function hasActiveEntitlement(customerInfo: { entitlements: { active: Rec
   return customerInfo.entitlements.active[REVENUECAT_ENTITLEMENT_ID ?? "premium"] !== undefined;
 }
 
-/** Satın alma bu build/platformda kullanılabilir mi (anahtar tanımlı + Android)? */
+/**
+ * 2026-11-20 — iOS yayını: platforma göre RevenueCat PUBLIC anahtarı. iOS ve Android'in anahtarları
+ * ayrı (RevenueCat'te her mağaza ayrı "app"); web vb. platformlarda satın alma bilinçli olarak yok.
+ */
+function platformApiKey(): string | undefined {
+  if (Platform.OS === "ios") return REVENUECAT_IOS_API_KEY;
+  if (Platform.OS === "android") return REVENUECAT_ANDROID_API_KEY;
+  return undefined;
+}
+
+/** Satın alma bu build/platformda kullanılabilir mi (iOS/Android + o platformun anahtarı tanımlı)? */
 export function isPurchasingAvailable(): boolean {
-  return Platform.OS === "android" && REVENUECAT_ANDROID_API_KEY !== undefined;
+  return platformApiKey() !== undefined;
 }
 
 /**
  * İlk çağrıda yapılandırır; sonraki çağrılarda kullanıcı değiştiyse RevenueCat kimliğini
- * değiştirir (aynı kullanıcı için idempotent). Anahtar yoksa/Android değilse false döner.
+ * değiştirir (aynı kullanıcı için idempotent). Platformun anahtarı yoksa (ya da iOS/Android değilse) false döner.
  */
 export function initializePurchases(userId: string): Promise<boolean> {
   return serializeIdentity(() => configureIdentity(userId));
 }
 
 async function configureIdentity(userId: string): Promise<boolean> {
-  if (!isPurchasingAvailable() || REVENUECAT_ANDROID_API_KEY === undefined) {
+  const apiKey = platformApiKey();
+  if (apiKey === undefined) {
     return false;
   }
   if (!configured) {
-    Purchases.configure({ apiKey: REVENUECAT_ANDROID_API_KEY, appUserID: userId });
+    Purchases.configure({ apiKey, appUserID: userId });
     configured = true;
     currentUserId = userId;
     return true;
@@ -92,25 +108,63 @@ export function fetchPaywallPackages(expectedUserId?: string): Promise<PaywallPa
     throw new Error("Purchases yapılandırılmadı (anahtar tanımsız ya da henüz başlatılmadı).");
   }
   const offerings = await Purchases.getOfferings();
-  const available = (offerings.current?.availablePackages ?? []).filter((pkg) => {
+  const packages = offerings.current?.availablePackages ?? [];
+  // 2026-11-20 — iOS yayını: `defaultOption` yalnız Google Play'de dolu (iOS'ta null) — Android filtresi
+  // iOS'ta TÜM paketleri eliyordu (boş paywall). Bu yüzden mağazaya göre iki ayrı çeviri yolu var;
+  // ön ödemeli/taksitli teklif kavramı Google Play'e özgü, iOS'ta filtre yok.
+  const available = Platform.OS === "ios" ? packages : packages.filter((pkg) => {
     const option = pkg.product.defaultOption;
     return option !== null && !option?.isPrepaid && !option?.installmentsInfo;
   });
   packageCache = new Map(available.map((p) => [p.identifier, p]));
-  // Android'de uygun teklif defaultOption'dır; introPrice tek başına eski denemeyi gösterebilir.
-  return buildPaywallPackages(available.map((pkg) => {
-    const option = pkg.product.defaultOption;
-    if (option === undefined) return pkg;
-    const free = option?.freePhase;
-    const full = option?.fullPricePhase;
-    const intro = option?.introPhase;
+  return buildPaywallPackages(Platform.OS === "ios" ? await toAppStorePackages(available) : available.map(toGooglePlayPackage));
+  });
+}
+
+/** "İlk 3 dönem, her 1 ay için ₺49,99" — indirimli (ücretsiz OLMAYAN) tanıtım dönemi metni; iki mağaza aynı cümleyi kullanır. */
+function introductoryLabel(cycles: number, units: number, unit: string, price: string): string {
+  return `İlk ${cycles} dönem, her ${units} ${unit === "MONTH" ? "ay" : unit === "WEEK" ? "hafta" : unit === "YEAR" ? "yıl" : "gün"} için ${price}`;
+}
+
+// Android'de uygun teklif defaultOption'dır; introPrice tek başına eski denemeyi gösterebilir.
+function toGooglePlayPackage(pkg: PurchasesPackage): RawPackage {
+  const option = pkg.product.defaultOption;
+  if (option === undefined) return pkg;
+  const free = option?.freePhase;
+  const full = option?.fullPricePhase;
+  const intro = option?.introPhase;
+  return { ...pkg, product: { ...pkg.product,
+    price: full ? full.price.amountMicros / 1_000_000 : pkg.product.price,
+    priceString: full?.price.formatted ?? pkg.product.priceString,
+    introductoryPriceLabel: intro ? introductoryLabel(intro.billingCycleCount ?? 1, intro.billingPeriod.value, intro.billingPeriod.unit, intro.price.formatted) : null,
+    introPrice: free ? { price: 0, periodUnit: free.billingPeriod.unit, periodNumberOfUnits: free.billingPeriod.value * (free.billingCycleCount ?? 1) } : null,
+  } };
+}
+
+/**
+ * 2026-11-20 — iOS yayını: StoreKit ürünü. `introPrice`, kullanıcı denemeyi daha önce kullanmış olsa bile
+ * döner (Apple'da uygunluk ürüne değil kullanıcıya bağlı; Android'de bunu defaultOption zaten çözüyor).
+ * Bu yüzden teklif yalnız RevenueCat uygunluğu açıkça ELIGIBLE derse gösterilir; UNKNOWN/INELIGIBLE ya da
+ * sorgu hatası "uygun değil" sayılır — doğrulayamadığımız bir ücretsiz denemeyi asla vaat etmeyiz (Apple 3.1.2:
+ * ödeme ekranında yanlış "ücretsiz" sözü, kullanıcının beklemediği bir ücret demek). Süre = birim × dönem sayısı.
+ */
+async function toAppStorePackages(packages: readonly PurchasesPackage[]): Promise<RawPackage[]> {
+  const withIntro = packages.filter((pkg) => pkg.product.introPrice !== null).map((pkg) => pkg.product.identifier);
+  let eligibility: Record<string, IntroEligibility> = {};
+  if (withIntro.length > 0) {
+    try {
+      eligibility = await Purchases.checkTrialOrIntroductoryPriceEligibility(withIntro);
+    } catch {
+      // Uygunluk bilinmiyorsa paywall yine açılır, yalnız tanıtım teklifi olmadan (tam fiyat).
+    }
+  }
+  return packages.map((pkg) => {
+    const intro = eligibility[pkg.product.identifier]?.status === Purchases.INTRO_ELIGIBILITY_STATUS.INTRO_ELIGIBILITY_STATUS_ELIGIBLE ? pkg.product.introPrice : null;
+    const free = intro !== null && intro.price === 0;
     return { ...pkg, product: { ...pkg.product,
-      price: full ? full.price.amountMicros / 1_000_000 : pkg.product.price,
-      priceString: full?.price.formatted ?? pkg.product.priceString,
-      introductoryPriceLabel: intro ? `İlk ${intro.billingCycleCount ?? 1} dönem, her ${intro.billingPeriod.value} ${intro.billingPeriod.unit === "MONTH" ? "ay" : intro.billingPeriod.unit === "WEEK" ? "hafta" : intro.billingPeriod.unit === "YEAR" ? "yıl" : "gün"} için ${intro.price.formatted}` : null,
-      introPrice: free ? { price: 0, periodUnit: free.billingPeriod.unit, periodNumberOfUnits: free.billingPeriod.value * (free.billingCycleCount ?? 1) } : null,
+      introductoryPriceLabel: intro !== null && !free ? introductoryLabel(intro.cycles, intro.periodNumberOfUnits, intro.periodUnit, intro.priceString) : null,
+      introPrice: intro !== null && free ? { price: 0, periodUnit: intro.periodUnit, periodNumberOfUnits: intro.periodNumberOfUnits * intro.cycles } : null,
     } };
-  }));
   });
 }
 
@@ -161,14 +215,17 @@ export function restoreAndCheck(expectedUserId?: string): Promise<boolean> {
  * Paket adı app.json'daki android.package ile aynı (bkz. 2026-10-27 paket kararı).
  */
 const PLAY_SUBSCRIPTIONS_URL = "https://play.google.com/store/account/subscriptions?package=app.looplish.mobile";
+/** 2026-11-20 — iOS yayını: managementURL yoksa Apple'ın genel abonelik yönetimi sayfası (iOS'ta abonelik ayarlarını açar). */
+const APP_STORE_SUBSCRIPTIONS_URL = "https://apps.apple.com/account/subscriptions";
 
 export async function openSubscriptionManagement(): Promise<void> {
-  let url = PLAY_SUBSCRIPTIONS_URL;
+  const fallback = Platform.OS === "ios" ? APP_STORE_SUBSCRIPTIONS_URL : PLAY_SUBSCRIPTIONS_URL;
+  let url = fallback;
   if (configured) {
     try {
-      url = (await Purchases.getCustomerInfo()).managementURL ?? PLAY_SUBSCRIPTIONS_URL;
+      url = (await Purchases.getCustomerInfo()).managementURL ?? fallback;
     } catch {
-      // Ağ hatasında da kullanıcı iptal yolunu kaybetmemeli: genel Play sayfası açılır.
+      // Ağ hatasında da kullanıcı iptal yolunu kaybetmemeli: mağazanın genel abonelik sayfası açılır.
     }
   }
   await Linking.openURL(url);

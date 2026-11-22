@@ -2,7 +2,7 @@
    gerçek cihazda/Play test kanalında doğrulanabilir. Burada doğrulanan: hata sınıflaması ve
    anahtarsız build'in güvenli davranışı. */
 
-const mockConfig: { key: string | undefined; os: string } = { key: "goog_test_key", os: "android" };
+const mockConfig: { key: string | undefined; iosKey: string | undefined; os: string } = { key: "goog_test_key", iosKey: "appl_test_key", os: "android" };
 
 const mockPurchases = {
   configure: jest.fn(),
@@ -15,19 +15,26 @@ const mockPurchases = {
   restorePurchases: jest.fn(),
   invalidateCustomerInfoCache: jest.fn(),
   getCustomerInfo: jest.fn(),
+  checkTrialOrIntroductoryPriceEligibility: jest.fn(),
+  INTRO_ELIGIBILITY_STATUS: { INTRO_ELIGIBILITY_STATUS_UNKNOWN: 0, INTRO_ELIGIBILITY_STATUS_INELIGIBLE: 1, INTRO_ELIGIBILITY_STATUS_ELIGIBLE: 2, INTRO_ELIGIBILITY_STATUS_NO_INTRO_OFFER_EXISTS: 3 },
   PURCHASES_ERROR_CODE: { PURCHASE_CANCELLED_ERROR: "1", PAYMENT_PENDING_ERROR: "20", PRODUCT_ALREADY_PURCHASED_ERROR: "6" },
 };
 
+const mockOpenURL = jest.fn();
 jest.mock("react-native", () => ({
   Platform: {
     get OS() {
       return mockConfig.os;
     },
   },
+  Linking: { openURL: (url: string) => mockOpenURL(url) },
 }));
 jest.mock("../../shared/revenuecat-config", () => ({
   get REVENUECAT_ANDROID_API_KEY() {
     return mockConfig.key;
+  },
+  get REVENUECAT_IOS_API_KEY() {
+    return mockConfig.iosKey;
   },
 }));
 jest.mock("react-native-purchases", () => ({ __esModule: true, default: mockPurchases }));
@@ -59,6 +66,7 @@ const INACTIVE = { entitlements: { active: {} } };
 beforeEach(() => {
   jest.clearAllMocks();
   mockConfig.key = "goog_test_key";
+  mockConfig.iosKey = "appl_test_key";
   mockConfig.os = "android";
 });
 
@@ -80,8 +88,8 @@ describe("initializePurchases", () => {
     expect(mockPurchases.configure).not.toHaveBeenCalled();
   });
 
-  it("Android dışında yapılandırmaz", async () => {
-    mockConfig.os = "ios";
+  it("iOS/Android dışında (ör. web) yapılandırmaz", async () => {
+    mockConfig.os = "web";
     const { initializePurchases } = loadGateway();
     expect(await initializePurchases("user-1")).toBe(false);
     expect(mockPurchases.configure).not.toHaveBeenCalled();
@@ -251,4 +259,117 @@ it("mevcut aboneliği güncel müşteri bilgisinden kontrol eder; yanlış hesab
   expect(mockPurchases.invalidateCustomerInfoCache).toHaveBeenCalledTimes(1);
   await expect(gateway.hasCurrentSubscription("two")).rejects.toThrow();
   expect(mockPurchases.getCustomerInfo).toHaveBeenCalledTimes(1);
+});
+
+// 2026-11-20 — iOS yayını: App Store yolu. Gerçek StoreKit/uygunluk davranışı ancak cihazda (sandbox/TestFlight)
+// doğrulanabilir; burada doğrulanan: platforma göre anahtar, StoreKit alanlarının paywall şekline çevrilmesi,
+// uygunluğu doğrulanamayan denemenin vaat edilmemesi ve mağazaya özel yönetim sayfası.
+describe("iOS (App Store)", () => {
+  function iosPackage(identifier: string, packageType: string, price: number, introPrice: unknown) {
+    return { identifier, packageType, product: { identifier: `looplish_${packageType.toLowerCase()}`, price, priceString: `₺${price}`, introPrice, defaultOption: null } };
+  }
+  const FREE_WEEK = { price: 0, priceString: "₺0", cycles: 1, period: "P1W", periodUnit: "WEEK", periodNumberOfUnits: 1 };
+  const PAID_INTRO = { price: 49.99, priceString: "₺49,99", cycles: 3, period: "P1M", periodUnit: "MONTH", periodNumberOfUnits: 1 };
+  const eligibility = (status: number) => ({ status, description: "" });
+
+  beforeEach(() => {
+    mockConfig.os = "ios";
+  });
+
+  it("iOS anahtarıyla yapılandırır (Android anahtarı kullanılmaz)", async () => {
+    const { initializePurchases, isPurchasingAvailable } = loadGateway();
+    expect(isPurchasingAvailable()).toBe(true);
+    expect(await initializePurchases("user-1")).toBe(true);
+    expect(mockPurchases.configure).toHaveBeenCalledWith({ apiKey: "appl_test_key", appUserID: "user-1" });
+  });
+
+  it("iOS anahtarı tanımsızsa Android anahtarı olsa bile satın alma kapalı", async () => {
+    mockConfig.iosKey = undefined;
+    const { initializePurchases, isPurchasingAvailable } = loadGateway();
+    expect(isPurchasingAvailable()).toBe(false);
+    expect(await initializePurchases("user-1")).toBe(false);
+    expect(mockPurchases.configure).not.toHaveBeenCalled();
+  });
+
+  it("defaultOption null olsa da paketler elenmez; uygun (ELIGIBLE) ücretsiz deneme süre × dönem olarak gösterilir", async () => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(iosPackage("$rc_annual", "ANNUAL", 600, FREE_WEEK), iosPackage("$rc_monthly", "MONTHLY", 100, null)));
+    mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockResolvedValueOnce({ looplish_annual: eligibility(2) });
+
+    expect(await gateway.fetchPaywallPackages("user-1")).toMatchObject([
+      { id: "$rc_annual", priceString: "₺600", trialLabel: "7 gün ücretsiz", trialPeriod: "7 gün", introductoryPriceLabel: null, savingsPercent: 50 },
+      { id: "$rc_monthly", priceString: "₺100", trialLabel: null },
+    ]);
+    // Uygunluk yalnız tanıtım teklifi olan ürün için sorulur.
+    expect(mockPurchases.checkTrialOrIntroductoryPriceEligibility).toHaveBeenCalledWith(["looplish_annual"]);
+    mockPurchases.purchasePackage.mockResolvedValueOnce({ customerInfo: ACTIVE });
+    await expect(gateway.purchasePackageById("$rc_monthly", "user-1")).resolves.toBe("purchased");
+  });
+
+  it("çok dönemli ücretsiz deneme süresi birim × dönem sayısıdır", async () => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(iosPackage("$rc_annual", "ANNUAL", 600, { ...FREE_WEEK, periodUnit: "DAY", periodNumberOfUnits: 7, cycles: 2 })));
+    mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockResolvedValueOnce({ looplish_annual: eligibility(2) });
+    expect(await gateway.fetchPaywallPackages("user-1")).toMatchObject([{ trialLabel: "14 gün ücretsiz" }]);
+  });
+
+  it.each([
+    ["INELIGIBLE (deneme daha önce kullanılmış)", () => mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockResolvedValueOnce({ looplish_annual: eligibility(1) })],
+    ["UNKNOWN", () => mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockResolvedValueOnce({ looplish_annual: eligibility(0) })],
+    ["ürün sonuçta yok", () => mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockResolvedValueOnce({})],
+    ["sorgu hatası", () => mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockRejectedValueOnce(new Error("ağ"))],
+  ])("uygunluk %s ise deneme vaat edilmez, paket tam fiyatla kalır", async (_label, arrange) => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(iosPackage("$rc_annual", "ANNUAL", 600, FREE_WEEK)));
+    arrange();
+    expect(await gateway.fetchPaywallPackages("user-1")).toMatchObject([{ id: "$rc_annual", priceString: "₺600", trialLabel: null, trialPeriod: null, introductoryPriceLabel: null }]);
+  });
+
+  it("uygun ücretli tanıtım fiyatı ücretsiz deneme sayılmaz; Android'deki gibi tanıtım fiyatı metni olur", async () => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(iosPackage("$rc_monthly", "MONTHLY", 100, PAID_INTRO)));
+    mockPurchases.checkTrialOrIntroductoryPriceEligibility.mockResolvedValueOnce({ looplish_monthly: eligibility(2) });
+    expect(await gateway.fetchPaywallPackages("user-1")).toMatchObject([{ trialLabel: null, introductoryPriceLabel: "İlk 3 dönem, her 1 ay için ₺49,99" }]);
+  });
+
+  it("tanıtım teklifi olan ürün yoksa uygunluk hiç sorgulanmaz", async () => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getOfferings.mockResolvedValueOnce(offeringsWith(iosPackage("$rc_monthly", "MONTHLY", 100, null)));
+    expect(await gateway.fetchPaywallPackages("user-1")).toMatchObject([{ id: "$rc_monthly", trialLabel: null }]);
+    expect(mockPurchases.checkTrialOrIntroductoryPriceEligibility).not.toHaveBeenCalled();
+  });
+});
+
+describe("openSubscriptionManagement", () => {
+  it("RevenueCat managementURL'i varsa onu açar", async () => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getCustomerInfo.mockResolvedValueOnce({ managementURL: "https://example.test/manage" });
+    await gateway.openSubscriptionManagement();
+    expect(mockOpenURL).toHaveBeenCalledWith("https://example.test/manage");
+  });
+
+  it("Android'de managementURL yoksa Google Play abonelik sayfası", async () => {
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getCustomerInfo.mockResolvedValueOnce({ managementURL: null });
+    await gateway.openSubscriptionManagement();
+    expect(mockOpenURL).toHaveBeenCalledWith("https://play.google.com/store/account/subscriptions?package=app.looplish.mobile");
+  });
+
+  it("iOS'ta managementURL yoksa ya da sorgu hata verirse Apple abonelik sayfası", async () => {
+    mockConfig.os = "ios";
+    const gateway = loadGateway();
+    await gateway.initializePurchases("user-1");
+    mockPurchases.getCustomerInfo.mockResolvedValueOnce({ managementURL: null }).mockRejectedValueOnce(new Error("ağ"));
+    await gateway.openSubscriptionManagement();
+    await gateway.openSubscriptionManagement();
+    expect(mockOpenURL).toHaveBeenNthCalledWith(1, "https://apps.apple.com/account/subscriptions");
+    expect(mockOpenURL).toHaveBeenNthCalledWith(2, "https://apps.apple.com/account/subscriptions");
+  });
 });

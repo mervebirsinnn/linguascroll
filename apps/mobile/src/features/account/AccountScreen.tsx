@@ -2,9 +2,11 @@ import { APP_LINKS, openAppLink } from "../../shared/app-links";
 import { ActivityIndicator, Alert, BackHandler, Modal, useWindowDimensions, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useEffect, useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { AppleSignInButton } from "../identity/AppleSignInButton";
 import type { AccountLinkControl } from "../identity/auth-state";
 import { PaywallFeedItem } from "../subscription/PaywallFeedItem";
-import { subscriptionDescription } from "./subscription-copy";
+import { STORE_NAME } from "../subscription/store-name";
+import { inStore, subscriptionDescription } from "./subscription-copy";
 import { useAccountSubscription } from "./use-account-subscription";
 
 type Props = { userId: string; account: AccountLinkControl; onBack: () => void; onSignOut: () => void };
@@ -31,8 +33,13 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
     ]);
   }
 
+  // 2026-11-20 — iOS yayını: kimlik metinleri bağlı sağlayıcıya göre (Apple ile girenlere "Google" demeyiz);
+  // sağlayıcı bilinmiyorsa eski davranış (Google) korunur — Android'de yalnız Google girişi var.
+  const providerName = account.provider === "apple" ? "Apple" : "Google";
+
   function confirmDelete() {
-    Alert.alert("Hesabın silinsin mi?", "Kaydettiğin kelimeler, ilerlemen ve izleme geçmişin silinir. Bu işlem geri alınamaz. Google Play aboneliğin otomatik iptal olmaz; önce Aboneliği yönet bölümünden iptal edebilirsin. Devam edersen Google hesabını yeniden doğrulayacağız.", [
+    // Silme öncesi yeniden doğrulama, oturumun sağlayıcısıyla yapılır; mağaza adı da platformun mağazası.
+    Alert.alert("Hesabın silinsin mi?", `Kaydettiğin kelimeler, ilerlemen ve izleme geçmişin silinir. Bu işlem geri alınamaz. ${STORE_NAME} aboneliğin otomatik iptal olmaz; önce Aboneliği yönet bölümünden iptal edebilirsin. Devam edersen ${providerName} hesabını yeniden doğrulayacağız.`, [
       { text: "Vazgeç", style: "cancel" },
       { text: "Aboneliği yönet", onPress: () => setManagementOpen(true) },
       { text: "Hesabımı sil", style: "destructive", onPress: () => {
@@ -54,16 +61,19 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
       </View>
       <ScrollView contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 24 }]}>
         <View style={styles.profile}>
-          <View style={styles.avatar}><Text style={styles.avatarText}>{account.isAnonymous ? "L" : "G"}</Text></View>
-          <Text style={styles.profileTitle}>{account.isAnonymous ? "Hoş geldin" : "Google hesabın bağlı"}</Text>
+          <View style={styles.avatar}><Text style={styles.avatarText}>{account.isAnonymous ? "L" : providerName[0]}</Text></View>
+          <Text style={styles.profileTitle}>{account.isAnonymous ? "Hoş geldin" : `${providerName} hesabın bağlı`}</Text>
           <Text style={styles.secondary}>{account.isAnonymous ? "Öğrenme yolculuğun burada başlıyor." : "Kelimelerin ve ilerlemen bu hesapta."}</Text>
-          <View style={styles.identityBadge}><Text style={styles.identityText}>{account.isAnonymous ? "Misafir hesabı" : "Google ile giriş yapıldı"}</Text></View>
+          <View style={styles.identityBadge}><Text style={styles.identityText}>{account.isAnonymous ? "Misafir hesabı" : `${providerName} ile giriş yapıldı`}</Text></View>
         </View>
 
         {account.isAnonymous && (
           <View style={styles.linkCard}>
             <Text style={styles.cardTitle}>Kelimelerin seninle gelsin</Text>
-            <Text style={styles.body}>Google hesabını bağla; kelimelerine ve ilerlemene başka cihazlardan da ulaş.</Text>
+            <Text style={styles.body}>{account.onLinkAppleAccount ? "Apple veya Google hesabını bağla" : "Google hesabını bağla"}; kelimelerine ve ilerlemene başka cihazlardan da ulaş.</Text>
+            {/* 2026-11-20 — iOS yayını (Apple Kuralı 4.8 / HIG): Sign in with Apple, Google ile eşit önemde — Google
+                butonunun hemen üstünde, aynı genişlik ve aynı meşgul koşuluyla. Yalnız iOS'ta (tanımlıysa) görünür. */}
+            {account.onLinkAppleAccount && <AppleSignInButton onPress={account.onLinkAppleAccount} disabled={busy} />}
             <Pressable onPress={account.onLinkAccount} disabled={busy} accessibilityRole="button" accessibilityState={{ disabled: busy, busy: account.linking }} style={[styles.primary, busy && styles.disabled]}>
               {account.linking ? <ActivityIndicator color="#171321" /> : <Text style={styles.primaryText}>Google ile devam et</Text>}
             </Pressable>
@@ -81,14 +91,14 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
           {subscription.status === "loading" ? (
             <View style={styles.loading}><ActivityIndicator color="#bca7ff" /><Text style={styles.body}>Aboneliğin kontrol ediliyor…</Text></View>
           ) : (
-            <Text style={styles.body}>{subscriptionDescription(subscription.overview)}</Text>
+            <Text style={styles.body}>{subscriptionDescription(subscription.overview, STORE_NAME)}</Text>
           )}
           {subscription.status !== "active" && <Pressable onPress={() => setPlansOpen(true)} accessibilityRole="button" style={styles.primary}><Text style={styles.primaryText}>Premium planlarını gör</Text></Pressable>}
         </View>
 
         {!account.isAnonymous && (
           <View style={styles.group}>
-            <AccountRow title="Aboneliği yönet" detail="Plan, yenileme ve iptal işlemleri Google Play'de." onPress={() => setManagementOpen(true)} disabled={busy} busy={subscription.action === "managing"} />
+            <AccountRow title="Aboneliği yönet" detail={`Plan, yenileme ve iptal işlemleri ${inStore(STORE_NAME)}.`} onPress={() => setManagementOpen(true)} disabled={busy} busy={subscription.action === "managing"} />
             <AccountRow title="Satın alımları geri yükle" detail="Daha önce aldığın aboneliği kontrol et." onPress={subscription.restore} disabled={busy} busy={subscription.action === "restoring"} />
             <AccountRow title="Abonelik durumunu yenile" detail="Son ödeme veya plan değişikliğini kontrol et." onPress={subscription.refresh} disabled={busy} busy={subscription.action === "refreshing"} last />
           </View>
@@ -125,10 +135,10 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
         <View style={styles.managementBackdrop}>
           <View style={[styles.managementCard, { paddingBottom: insets.bottom + 24 }]}>
             <Text style={styles.cardTitle}>Aboneliği yönet</Text>
-            <Text style={styles.body}>{subscriptionDescription(subscription.overview)}</Text>
+            <Text style={styles.body}>{subscriptionDescription(subscription.overview, STORE_NAME)}</Text>
             {subscription.notice && <Text accessibilityRole="alert" style={styles.notice}>{subscription.notice}</Text>}
-            <Text style={styles.body}>Plan değişikliği ve iptal Google Play'de tamamlanır. İptal, sonraki yenilemeyi durdurur; mevcut erişimini hemen kapatmaz.</Text>
-            <Pressable disabled={busy} onPress={() => { void subscription.manage(); }} accessibilityRole="button" style={styles.primary}><Text style={styles.primaryText}>Google Play'de yönet / iptal et</Text></Pressable>
+            <Text style={styles.body}>Plan değişikliği ve iptal {inStore(STORE_NAME)} tamamlanır. İptal, sonraki yenilemeyi durdurur; mevcut erişimini hemen kapatmaz.</Text>
+            <Pressable disabled={busy} onPress={() => { void subscription.manage(); }} accessibilityRole="button" style={styles.primary}><Text style={styles.primaryText}>{inStore(STORE_NAME)} yönet / iptal et</Text></Pressable>
             <Pressable onPress={() => setManagementOpen(false)} accessibilityRole="button" style={styles.modalClose}><Text style={styles.rowTitle}>Kapat</Text></Pressable>
           </View>
         </View>

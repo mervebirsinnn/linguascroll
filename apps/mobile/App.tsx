@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { initialWindowMetrics, SafeAreaProvider } from 'react-native-safe-area-context';
 import { Feed } from './src/features/feed/components/Feed';
+import { isAppleSignInAvailable } from './src/features/identity/auth-gateway';
 import { SignInScreen } from './src/features/identity/SignInScreen';
 import { useAuth } from './src/features/identity/use-auth';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
@@ -17,6 +18,8 @@ import { initializePurchases } from './src/features/subscription/purchases-gatew
 
 type AppMode = 'feed' | 'memory' | 'passages';
 
+const APPLE_SIGN_IN_AVAILABLE = isAppleSignInAvailable();
+
 function App() {
   // 2026-10-27 — gerçek hesap: Firebase Authentication. Feed/onboarding yalnızca bir Firebase
   // oturumu VE backend kullanıcısı varken mount edilir (auth.state.status === 'signedIn').
@@ -27,6 +30,11 @@ function App() {
   const identity = auth.state.status === 'signedIn' ? { status: 'success' as const, userId: auth.state.userId } : { status: 'pending' as const };
   const signedIn = auth.state.status === 'signedIn' ? auth.state : null;
   const linkAccount = auth.linkAccount;
+  const linkAppleAccount = auth.linkAppleAccount;
+  const provider = signedIn?.session.provider ?? undefined;
+  // 2026-11-20 — iOS yayını: Apple ile bağlama/giriş yalnızca Apple girişi kullanılabilen platformda (iOS)
+  // tanımlı; tanımsız callback = UI Apple butonunu hiç göstermez (Android çıktısı değişmez). Platform sabit
+  // olduğu için modül düzeyinde bir kez hesaplanıyor (APPLE_SIGN_IN_AVAILABLE).
   // Referans yalnızca içerik değişince yenilenir: Feed'in FlatList'i bunu extraData olarak izliyor.
   const account = useMemo<AccountLinkControl>(
     () => ({
@@ -34,9 +42,11 @@ function App() {
       linking: signedIn?.linking ?? false,
       notice: signedIn?.notice ?? null,
       onLinkAccount: linkAccount,
+      onLinkAppleAccount: APPLE_SIGN_IN_AVAILABLE ? linkAppleAccount : undefined,
+      provider,
       onDeleteAccount: auth.deleteAccount,
     }),
-    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, linkAccount, auth.deleteAccount],
+    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, provider, linkAccount, linkAppleAccount, auth.deleteAccount],
   );
   // Chunk 15 — identity'den BAĞIMSIZ, paralel bir bootstrap (saf local storage,
   // network'e hiç ihtiyaç duymuyor) — Rules of Hooks gereği koşulsuz çağrılıyor.
@@ -81,6 +91,7 @@ function App() {
           busy={auth.state.status === 'signingIn'}
           notice={auth.state.status === 'signedOut' ? auth.state.notice : null}
           onSignIn={auth.signIn}
+          onAppleSignIn={APPLE_SIGN_IN_AVAILABLE ? auth.signInWithApple : undefined}
         />
       )}
       {(auth.state.status === 'userLoadFailed' || auth.state.status === 'guestFailed') && (
