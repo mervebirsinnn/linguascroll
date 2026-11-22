@@ -27,7 +27,7 @@ Okuma pratiğiyle B1'den C2'ye seviyene uygun metinler oku. Her metnin ardından
 
 NELER VAR
 • Altyazılı kısa videolar: günlük konuşmadan gerçek hayattan sahnelere
-• Okuma pratiği: B1–C2 metinler, her metinde 4 soru ve Türkçe açıklamalar
+• Okuma pratiği: B1–C2 metinler, her metinde 4 soru ve Türkçe açıklamalar (B1 ve B2'de ücretsiz örnek metinler)
 • Kelimeye dokun: anlamı ve geçtiği cümleyi gör
 • Kelimelerim: videolardan ve metinlerden kaydettiğin kelimeleri tekrar et
 • Videolara bağlı kısa quizler
@@ -37,7 +37,7 @@ NELER VAR
 İlk 10 videoyu ve seçili okuma metinlerini hesap açmadan deneyebilirsin. Daha fazlası için Premium'a geçebilirsin.
 
 LOOPLISH PREMIUM
-Premium ile tüm videolara, quizlere ve okuma metinlerine sınırsız erişirsin. Abonelik, Apple Kimliği hesabından tahsil edilir ve dönem bitiminden en az 24 saat önce iptal edilmezse otomatik olarak yenilenir. Aboneliğini Ayarlar › Apple Hesabı › Abonelikler bölümünden yönetebilir veya iptal edebilirsin. Ücretsiz deneme sunuluyorsa, deneme bitmeden en az 24 saat önce iptal etmezsen ücretlendirilirsin.
+Premium ile tüm videolara ve quizlere sınırsız erişirsin; okuma pratiğinde C1 ve C2 metinleri de Premium'a dahildir. B1 ve B2 okuma metinleri şu an ücretsiz örneklerdir. Abonelik, Apple Kimliği hesabından tahsil edilir ve dönem bitiminden en az 24 saat önce iptal edilmezse otomatik olarak yenilenir. Aboneliğini Ayarlar › Apple Hesabı › Abonelikler bölümünden yönetebilir veya iptal edebilirsin. Ücretsiz deneme sunuluyorsa, deneme bitmeden en az 24 saat önce iptal etmezsen ücretlendirilirsin.
 
 Kullanım Koşulları: https://looplish.app/terms
 Gizlilik Politikası: https://looplish.app/privacy

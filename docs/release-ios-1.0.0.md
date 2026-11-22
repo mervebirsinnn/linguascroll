@@ -68,10 +68,11 @@ düzeltmesini alır. Abonelik kapısı Android'de kapalı kalır. Paragraf giri�
 ## İçerik durumu (release doğrulayıcısıyla, yalnız doğrulama)
 | Paket | Adet | Seviye | Doğrulama | Yayına uygunluk |
 |---|---|---|---|---|
-| `passages-pilot` | 4 | B1, B2, C1, C2 (B1/B2 ücretsiz örnek) | ✔ | Özgün metin → uygun |
-| `passages-newscientist` | 8 | C1 ×5, C2 ×3 | ✔ (0023 olmadan; Türkçe cümle çevirisi yayına girmez) | Kendi ifademizle yazıldı → uygun |
+| `passages-pilot` | 4 | B1, B2 (ücretsiz örnek), C1, C2 (Premium) | ✔ | Özgün metin, kaynak kullanılmadı (`editorial.original: true`, kaynak yok). Hukuki onay yine Merve'de |
+| `passages-newscientist` | 8 | C1 ×5, C2 ×3 (Premium) | ✔ (0023 olmadan; Türkçe cümle çevirisi yayına girmez) | **KULLANIM HAKKI DOĞRULANMADI.** New Scientist sayısındaki makalelere dayanan, kendi ifademizle yazılmış metinler. Olgular serbesttir, ama yapıya ve sıraya yakın bir yeniden anlatım türev eser sayılabilir. İzin ya da hukuki görüş olmadan yayına alınmamalı |
 | `passages-nyt` | 8 | B1 ×4, B2 ×4 | yayın paketi değil | **UYGUN DEĞİL**: B2 kaynaktan kelimesi kelimesine, B1 sadeleştirilmiş uyarlama (telifli gazete) |
 | `ft-reading-drafts` | 2 | C1, C2 | — | **UYGUN DEĞİL**: `verbatim-excerpt` (telifli) |
 
-Uygun toplam: **12 metin** (B1 1 · B2 1 · C1 6 · C2 4). B1/B2'de yalnız ücretsiz örnek olduğu için Premium'un B1/B2'de
-okuma değeri yok. İlk sürüm hedefi (6/6/6/6) karşılanmıyor; içerik onayı Merve'de.
+Kaynak bağımlılığı olmayan tek grup pilot: **4 metin** (B1 ve B2 ücretsiz, C1 ve C2 Premium). New Scientist onaylanırsa
+12 metin olur (C1 6, C2 4). B1/B2'de ücretli metin yok; mağaza metni buna göre yazıldı ("B1 ve B2 okuma metinleri şu an
+ücretsiz örneklerdir"). İlk sürüm hedefi (6/6/6/6) karşılanmıyor; içerik ve hak onayı Merve'de.
