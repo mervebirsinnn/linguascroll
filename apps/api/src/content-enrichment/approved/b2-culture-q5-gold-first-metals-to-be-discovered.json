@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:26:39.562Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "false positive: adj+enough+to-infinitive notasyonu transkriptte literal degil"
+  },
+  "media": {
+    "localFileName": "b2-culture-q5-gold-first-metals-to-be-discovered.mp4"
+  },
+  "draft": {
+    "contentId": "b2-culture-q5-gold-first-metals-to-be-discovered",
+    "muxAssetId": "local-history-of-gold",
+    "sourceFile": "b2-culture-q5-gold-first-metals-to-be-discovered.mp4",
+    "storageKey": null,
+    "durationMs": 30500,
+    "topic": "finance",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4800,
+        "text": "Long before banks and credit cards, people already loved one shiny metal.",
+        "englishExplanation": "Long before modern banking existed, people already valued this shiny metal.",
+        "turkishExplanation": "Bankalardan ve kredi kartlarından çok önce, insanlar parıl parıl parlayan tek bir metali zaten çok seviyordu."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5360,
+        "endMs": 7940,
+        "text": "It was easy to find in rivers, it didn't rust,",
+        "englishExplanation": "Gold was easily found in riverbeds and did not corrode.",
+        "turkishExplanation": "Nehirlerde bulması kolaydı, paslanmıyordu,"
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8440,
+        "endMs": 10340,
+        "text": "and it was soft enough to shape by hand.",
+        "englishExplanation": "It was soft enough to be easily crafted into different shapes by hand.",
+        "turkishExplanation": "ve elle şekillendirilebilecek kadar yumuşaktı."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 10960,
+        "endMs": 15380,
+        "text": "Gold was one of the first metals to be discovered, and people had been using gold for",
+        "englishExplanation": "Gold was among the earliest metals discovered, and humans had been using it...",
+        "turkishExplanation": "Altın keşfedilen ilk metallerden biriydi ve insanlar altını..."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15380,
+        "endMs": 19740,
+        "text": "jewelry and coins for thousands of years before the first paper money appeared.",
+        "englishExplanation": "...for ornaments and money for thousands of years before paper currency was invented.",
+        "turkishExplanation": "...ilk kağıt para ortaya çıkmadan binlerce yıl önce takı ve madeni para için kullanıyordu."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20320,
+        "endMs": 25060,
+        "text": "Kings wore it, traders carried it, and families kept it safe for the next generation.",
+        "englishExplanation": "Royalty wore gold, merchants used it for trade, and families saved it for future generations.",
+        "turkishExplanation": "Krallar giyer, tüccarlar taşır ve aileler gelecek nesil için onu güvende tutardı."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 25060,
+        "endMs": 29980,
+        "text": "Even today, gold still feels special, and it is easy to see why.",
+        "englishExplanation": "Gold maintains its unique status even today, and the reasons are obvious.",
+        "turkishExplanation": "Bugün bile altın hâlâ özel hissettiriyor ve nedenini anlamak çok kolay."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "rust",
+        "gloss": "paslanmak"
+      },
+      {
+        "lemma": "trader",
+        "gloss": "tüccar"
+      },
+      {
+        "lemma": "generation",
+        "gloss": "nesil, kuşak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 3,
+        "type": "grammar",
+        "expression": "adj + enough + to-infinitive",
+        "englishExplanation": "Used to indicate that something has the necessary degree of a quality to perform an action.",
+        "turkishExplanation": "Bir şeyin belirli bir eylemi gerçekleştirmek için yeterli derecede özelliğe sahip olduğunu belirtmek için kullanılır.",
+        "exampleEn": "The metal was soft enough to bend easily.",
+        "exampleTr": "Metal kolayca bükülebilecek kadar yumuşaktı."
+      },
+      {
+        "segmentOrdinal": 4,
+        "type": "grammar",
+        "expression": "had been using",
+        "englishExplanation": "The past perfect continuous tense describes an action that started in the past and continued up until another point in the past.",
+        "turkishExplanation": "Geçmişte başlayıp yine geçmişteki başka bir andan öncesine kadar devam etmiş eylemleri anlatmak için kullanılır.",
+        "exampleEn": "They had been searching for gold for months before they found any.",
+        "exampleTr": "Hiç bulamadan önce aylarca altın arıyorlardı."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "Gold was one of the first metals ______ and people ______ gold for jewellery and coins for thousands of years.",
+      "options": [
+        {
+          "text": "to be discovered / have used",
+          "isCorrect": true
+        },
+        {
+          "text": "to discover / have used",
+          "isCorrect": false
+        },
+        {
+          "text": "to be discovering / had used",
+          "isCorrect": false
+        },
+        {
+          "text": "having discovered / used",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 3,
+          "message": "Learning point ifadesi (\"adj + enough + to-infinitive\") segment 3'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:59:06.070Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "yerel test: ifade çekim/biçim farkı (transcript'te çekimli geçiyor), yanlış pozitif"
+  },
+  "media": {
+    "localFileName": "b2-cinema-the-role-she-turned-down.mp4"
+  },
+  "draft": {
+    "contentId": "b2-cinema-the-role-she-turned-down",
+    "muxAssetId": "local-turning-down-movie-roles",
+    "sourceFile": "b2-cinema-the-role-she-turned-down.mp4",
+    "storageKey": null,
+    "durationMs": 33030,
+    "topic": "cinema",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 5800,
+        "text": "Imagine being offered a role in a film that later becomes a huge hit and turning it down.",
+        "englishExplanation": "Imagine refusing a film role that later becomes a massive commercial hit.",
+        "turkishExplanation": "Sonradan büyük bir başarı yakalayan bir filmdeki rolü teklif alıp reddettiğinizi hayal edin."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 6500,
+        "endMs": 8280,
+        "text": "Actors do it more often than you think.",
+        "englishExplanation": "Famous actors reject popular film roles more frequently than expected.",
+        "turkishExplanation": "Oyuncular bunu düşündüğünüzden çok daha sık yapıyor."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 9000,
+        "endMs": 13560,
+        "text": "Picture an actress who reads a script so violent that she can't sleep that night.",
+        "englishExplanation": "Picture an actress reading a script so terrifyingly violent that she cannot sleep.",
+        "turkishExplanation": "O gece uyumasını engelleyecek kadar şiddet dolu bir senaryo okuyan bir aktrisi hayal edin."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 14200,
+        "endMs": 17180,
+        "text": "It's such a hard decision that she calls her agent in tears.",
+        "englishExplanation": "Making this decision is so painful that she cries while calling her agent.",
+        "turkishExplanation": "O kadar zor bir karar ki menajerini gözyaşları içinde arıyor."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 17800,
+        "endMs": 19420,
+        "text": "She turns the role down anyway.",
+        "englishExplanation": "Despite the potential fame, she declines the offer anyway.",
+        "turkishExplanation": "Yine de rolü reddediyor."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20300,
+        "endMs": 22700,
+        "text": "Years later, she comes across the film on television,",
+        "englishExplanation": "Many years later, she unexpectedly sees the movie playing on TV.",
+        "turkishExplanation": "Yıllar sonra televizyonda o filme denk geliyor,"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23200,
+        "endMs": 27600,
+        "text": "now famous and full of awards. Is she sorry? Not really.",
+        "englishExplanation": "The movie is now extremely famous and award-winning, yet she has no regrets.",
+        "turkishExplanation": "film artık ünlü ve ödüllerle dolu. Pişman mı? Pek sayılmaz."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 27600,
+        "endMs": 32660,
+        "text": "Some roles are such a bad fit that no amount of success would make them feel right.",
+        "englishExplanation": "Some roles simply do not feel right for an actor, regardless of how successful the movie becomes.",
+        "turkishExplanation": "Bazı roller kişiye o kadar uymaz ki hiçbir başarı onları doğru hissettirmeye yetmez."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "turn down",
+        "gloss": "reddetmek"
+      },
+      {
+        "lemma": "script",
+        "gloss": "senaryo"
+      },
+      {
+        "lemma": "come across",
+        "gloss": "denk gelmek, rastlamak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "turn down",
+        "englishExplanation": "To 'turn down' means to refuse or reject an offer or invitation.",
+        "turkishExplanation": "'Turn down' ifadesi, bir teklifi veya öneriyi reddetmek anlamına gelir.",
+        "exampleEn": "She turned down the offer because she wanted to live closer to her family.",
+        "exampleTr": "Ailesine daha yakın yaşamak istediği için teklifi reddetti."
+      },
+      {
+        "segmentOrdinal": 6,
+        "type": "phrase",
+        "expression": "come across",
+        "englishExplanation": "To 'come across' means to find or see something or someone by chance.",
+        "turkishExplanation": "'Come across' fiili, bir şeye veya birine tesadüfen rastlamak ya da denk gelmek demektir.",
+        "exampleEn": "I came across an old diary while clearing out the attic.",
+        "exampleTr": "Tavan arasını temizlerken eski bir günlüğe denk geldim."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 6,
+      "question": "In segment 6, what does the phrasal verb 'comes across' mean when the actress sees the film on television?",
+      "options": [
+        {
+          "text": "Finds or stumbles upon something by chance",
+          "isCorrect": true
+        },
+        {
+          "text": "Searches for something intentionally on TV",
+          "isCorrect": false
+        },
+        {
+          "text": "Changes the television channel quickly",
+          "isCorrect": false
+        },
+        {
+          "text": "Critiques or reviews a movie professionally",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 5,
+          "message": "Learning point ifadesi (\"turn down\") segment 5'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

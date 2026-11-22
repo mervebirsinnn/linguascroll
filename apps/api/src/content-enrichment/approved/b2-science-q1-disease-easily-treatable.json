@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:26:18.227Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript",
+      "vocabularyLemmaNotInTranscript"
+    ],
+    "note": "false positive: swept/handle cekim ve satir sonu farki"
+  },
+  "media": {
+    "localFileName": "b2-science-q1-disease-easily-treatable.mp4"
+  },
+  "draft": {
+    "contentId": "b2-science-q1-disease-easily-treatable",
+    "muxAssetId": "local-black-death-and-modern-medicine",
+    "sourceFile": "b2-science-q1-disease-easily-treatable.mp4",
+    "storageKey": null,
+    "durationMs": 34330,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4120,
+        "text": "In the 14th century, a terrible disease swept across Europe.",
+        "englishExplanation": "In the 1300s, a devastating sickness spread rapidly across Europe.",
+        "turkishExplanation": "14. yüzyılda korkunç bir hastalık tüm Avrupa'yı kasıp kavurdu."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4720,
+        "endMs": 8560,
+        "text": "People called it the Black Death, and nobody knew what caused it.",
+        "englishExplanation": "People named it the Black Death, and no one understood what caused it.",
+        "turkishExplanation": "İnsanlar buna Kara Ölüm diyordu ve neyin sebep olduğunu kimse bilmiyordu."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 9160,
+        "endMs": 10500,
+        "text": "Today, we know the answer.",
+        "englishExplanation": "Nowadays, we understand the cause.",
+        "turkishExplanation": "Bugün cevabı biliyoruz."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 11080,
+        "endMs": 16120,
+        "text": "The bacteria that causes the plague is still around, but the disease is easily treatable",
+        "englishExplanation": "The bacterium responsible for the plague still exists, but the illness can be cured easily.",
+        "turkishExplanation": "Vebaya neden olan bakteri hâlâ var, ancak hastalık kolayca tedavi edilebiliyor."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 16120,
+        "endMs": 19580,
+        "text": "with antibiotics. In fact, when doctors find it early,",
+        "englishExplanation": "Using antibiotic medication, especially if physicians detect it early.",
+        "turkishExplanation": "Antibiyotiklerle. Hatta doktorlar erken teşhis ettiğinde,"
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20080,
+        "endMs": 23100,
+        "text": "it is easily treated with antibiotics in just a few days.",
+        "englishExplanation": "It can be cured with antibiotics within just a few days.",
+        "turkishExplanation": "sadece birkaç gün içinde antibiyotiklerle kolayca tedavi ediliyor."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23740,
+        "endMs": 29040,
+        "text": "So the same illness that once emptied whole cities is now something modern medicine can",
+        "englishExplanation": "Thus, the sickness that once depopulated entire cities is now manageable by modern doctors.",
+        "turkishExplanation": "Yani bir zamanlar tüm şehirleri boşaltan aynı hastalık, artık modern tıbbın"
+      },
+      {
+        "ordinal": 8,
+        "startMs": 29040,
+        "endMs": 31360,
+        "text": "handle. The bacteria didn't disappear.",
+        "englishExplanation": "Modern medicine can deal with it. The bacteria did not disappear.",
+        "turkishExplanation": "başa çıkabildiği bir şey. Bakteri ortadan kaybolmadı."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 32140,
+        "endMs": 33580,
+        "text": "What changed was our knowledge.",
+        "englishExplanation": "What changed was human knowledge and medical understanding.",
+        "turkishExplanation": "Değişen şey bizim bilgimizdi."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "sweep across",
+        "gloss": "hızla yayılmak, kasıp kavurmak"
+      },
+      {
+        "lemma": "plague",
+        "gloss": "veba"
+      },
+      {
+        "lemma": "treatable",
+        "gloss": "tedavi edilebilir"
+      },
+      {
+        "lemma": "disappear",
+        "gloss": "yok olmak, ortadan kaybolmak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "phrase",
+        "expression": "sweep across",
+        "englishExplanation": "To spread rapidly over a large geographic area or population.",
+        "turkishExplanation": "Geniş bir alana veya nüfusa hızla yayılmak, etki altına almak.",
+        "exampleEn": "A new flu strain swept across the country last winter.",
+        "exampleTr": "Geçen kış ülke genelinde yeni bir grip türü hızla yayıldı."
+      },
+      {
+        "segmentOrdinal": 7,
+        "type": "phrase",
+        "expression": "handle",
+        "englishExplanation": "To deal with, manage, or successfully control a difficult situation or health issue.",
+        "turkishExplanation": "Bir durumun veya sorunun üstesinden gelmek, başa çıkmak.",
+        "exampleEn": "Doctors are confident they can handle the infection with standard care.",
+        "exampleTr": "Doktorlar standart bakımla enfeksiyonun üstesinden gelebileceklerinden emin."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "The bacteria that causes the plague is still around, but the disease is easily ______ with antibiotics.",
+      "options": [
+        {
+          "text": "efficient",
+          "isCorrect": false
+        },
+        {
+          "text": "significant",
+          "isCorrect": false
+        },
+        {
+          "text": "treatable",
+          "isCorrect": true
+        },
+        {
+          "text": "deficient",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 1,
+          "message": "Learning point ifadesi (\"sweep across\") segment 1'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        },
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 7,
+          "message": "Learning point ifadesi (\"handle\") segment 7'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        },
+        {
+          "code": "vocabularyLemmaNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": null,
+          "message": "\"sweep across\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

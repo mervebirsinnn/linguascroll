@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:58:46.195Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "yerel test: ifade çekim/biçim farkı (transcript'te çekimli geçiyor), yanlış pozitif"
+  },
+  "media": {
+    "localFileName": "b1-science-a-messy-lab.mp4"
+  },
+  "draft": {
+    "contentId": "b1-science-a-messy-lab",
+    "muxAssetId": "local-accidental-discovery-of-penicillin",
+    "sourceFile": "b1-science-a-messy-lab.mp4",
+    "storageKey": null,
+    "durationMs": 33400,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 2820,
+        "text": "Some of the greatest discoveries happened by accident.",
+        "englishExplanation": "Many major scientific breakthroughs occur unexpectedly rather than through deliberate planning.",
+        "turkishExplanation": "En büyük buluşlardan bazıları tesadüfen gerçekleşti."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3400,
+        "endMs": 8220,
+        "text": "Before a summer holiday, the scientist Alexander Fleming left his messy lab.",
+        "englishExplanation": "Before going on summer vacation, scientist Alexander Fleming left his laboratory untidy.",
+        "turkishExplanation": "Yaz tatilinden önce bilim insanı Alexander Fleming dağınık laboratuvarından ayrıldı."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8880,
+        "endMs": 10900,
+        "text": "Some dishes of bacteria stayed on the bench.",
+        "englishExplanation": "Certain bacterial culture plates were left behind on the worktable.",
+        "turkishExplanation": "Bazı bakteri kapları tezgahın üzerinde kaldı."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 11580,
+        "endMs": 15400,
+        "text": "Although it looked like a failure, he noticed something strange when he came back.",
+        "englishExplanation": "Even though it seemed like a mistake, he spotted an unusual phenomenon upon his return.",
+        "turkishExplanation": "Bir başarısızlık gibi görünse de geri döndüğünde garip bir şey fark etti."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15980,
+        "endMs": 19520,
+        "text": "A mold had grown on one dish, and the bacteria around it had died.",
+        "englishExplanation": "Mold had developed on a petri dish, killing the surrounding bacteria.",
+        "turkishExplanation": "Kaplardan birinde küf büyümüştü ve etrafındaki bakteriler ölmüştü."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20320,
+        "endMs": 23560,
+        "text": "Despite having no plan for this, he wanted to find out why.",
+        "englishExplanation": "Even without an intentional plan for this result, he was curious to discover the reason.",
+        "turkishExplanation": "Bunun için bir planı olmamasına rağmen nedenini öğrenmek istedi."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 24320,
+        "endMs": 27740,
+        "text": "That mold led to penicillin, one of the first antibiotics.",
+        "englishExplanation": "That specific fungus eventually resulted in the creation of penicillin, a pioneering antibiotic.",
+        "turkishExplanation": "Bu küf, ilk antibiyotiklerden biri olan penisiline yol açtı."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 28440,
+        "endMs": 31280,
+        "text": "So, next time your desk is a mess, don't apologize,",
+        "englishExplanation": "Therefore, when your workspace is untidy in the future, do not feel bad about it.",
+        "turkishExplanation": "Bu yüzden, bir dahaki sefere masanız dağınık olduğunda özür dilemeyin,"
+      },
+      {
+        "ordinal": 9,
+        "startMs": 31860,
+        "endMs": 32880,
+        "text": "you might be doing science.",
+        "englishExplanation": "You might actually be engaging in scientific discovery.",
+        "turkishExplanation": "bilim yapıyor olabilirsiniz."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "discovery",
+        "gloss": "keşif, buluş"
+      },
+      {
+        "lemma": "messy",
+        "gloss": "dağınık"
+      },
+      {
+        "lemma": "mold",
+        "gloss": "küf"
+      },
+      {
+        "lemma": "find out",
+        "gloss": "öğrenmek, keşfetmek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "phrase",
+        "expression": "by accident",
+        "englishExplanation": "Used to describe something that happens without planning or intention; by chance.",
+        "turkishExplanation": "Planlanmadan, şans eseri gerçekleşen durumları ifade etmek için kullanılır.",
+        "exampleEn": "I found this great book by accident.",
+        "exampleTr": "Bu harika kitabı tesadüfen buldum."
+      },
+      {
+        "segmentOrdinal": 6,
+        "type": "grammar",
+        "expression": "despite + -ing",
+        "englishExplanation": "Used to express contrast, showing that an action took place even without prior planning or preparation.",
+        "turkishExplanation": "Bir engel veya hazırlıksızlık olmasına rağmen bir şeyin yapıldığını anlatmak için 'despite' kelimesinden sonra fiile '-ing' eklenir.",
+        "exampleEn": "Despite having no experience, she did a great job.",
+        "exampleTr": "Hiç tecrübesi olmamasına rağmen harika bir iş çıkardı."
+      },
+      {
+        "segmentOrdinal": 7,
+        "type": "phrase",
+        "expression": "lead to",
+        "englishExplanation": "To cause or result in a particular outcome over time.",
+        "turkishExplanation": "Belli bir sonuca veya duruma yol açmak, neden olmak anlamında kullanılır.",
+        "exampleEn": "Hard work often leads to success.",
+        "exampleTr": "Çok çalışmak genellikle başarıya yol açar."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 7,
+      "question": "In the context of the video, what does the phrase 'led to' mean in this sentence?",
+      "options": [
+        {
+          "text": "Resulted in the development of",
+          "isCorrect": true
+        },
+        {
+          "text": "Prevented the creation of",
+          "isCorrect": false
+        },
+        {
+          "text": "Destroyed the main purpose of",
+          "isCorrect": false
+        },
+        {
+          "text": "Delayed the discovery of",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 7,
+          "message": "Learning point ifadesi (\"lead to\") segment 7'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

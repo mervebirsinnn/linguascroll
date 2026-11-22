@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:57:26.096Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "yerel test: ifade çekim/biçim farkı (transcript'te çekimli geçiyor), yanlış pozitif"
+  },
+  "media": {
+    "localFileName": "b1-culture-living-with-a-host-family.mp4"
+  },
+  "draft": {
+    "contentId": "b1-culture-living-with-a-host-family",
+    "muxAssetId": "local-living-with-irish-host-family",
+    "sourceFile": "b1-culture-living-with-a-host-family.mp4",
+    "storageKey": null,
+    "durationMs": 29300,
+    "topic": "culture",
+    "category": "cabincrew",
+    "cefrLevel": "B1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3560,
+        "text": "When I lived with a host family in Ireland, I made a lot of mistakes.",
+        "englishExplanation": "The speaker mentions living with a host family in Ireland and making mistakes.",
+        "turkishExplanation": "İrlanda'da bir ev sahibi ailenin yanında yaşarken çok fazla hata yaptım."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4300,
+        "endMs": 7900,
+        "text": "On my first night, I did the dishes without asking, and I broke a glass.",
+        "englishExplanation": "The speaker describes breaking a glass while doing dishes on their first night without asking.",
+        "turkishExplanation": "İlk gecemde, sormadan bulaşıkları yıkadım ve bir bardak kırdım."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8580,
+        "endMs": 12280,
+        "text": "I made an excuse and felt terrible, but my host mother just laughed.",
+        "englishExplanation": "The speaker felt guilty and apologized, but the host mother reacted kindly by laughing.",
+        "turkishExplanation": "Bir mazeret uydurdum ve kendimi berbat hissettim ama ev sahibi annem sadece güldü."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12920,
+        "endMs": 14640,
+        "text": "She told me to make myself at home.",
+        "englishExplanation": "The host mother warmly told the speaker to relax and feel comfortable.",
+        "turkishExplanation": "Bana kendimi evimde gibi hissetmemi söyledi."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15420,
+        "endMs": 17100,
+        "text": "After that, we got along really well.",
+        "englishExplanation": "The speaker notes that they developed a friendly relationship after that incident.",
+        "turkishExplanation": "Ondan sonra gerçekten çok iyi anlaştık."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 17780,
+        "endMs": 19500,
+        "text": "I did my homework at the kitchen table.",
+        "englishExplanation": "The speaker shares where they completed their homework.",
+        "turkishExplanation": "Ödevlerimi mutfak masasında yaptım."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 20080,
+        "endMs": 22060,
+        "text": "She helped me make sense of the local accent.",
+        "englishExplanation": "The host mother assisted the speaker in comprehending the local Irish accent.",
+        "turkishExplanation": "Yöresel aksanı anlamamda bana yardımcı oldu."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 22840,
+        "endMs": 25220,
+        "text": "Living with a family taught me more than any course.",
+        "englishExplanation": "The speaker reflects that living with local people was more instructive than formal classes.",
+        "turkishExplanation": "Bir ailenin yanında yaşamak bana her türlü kurstan daha fazlasını öğretti."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 26040,
+        "endMs": 28760,
+        "text": "Sometimes the best classroom is someone else's kitchen.",
+        "englishExplanation": "The speaker concludes with a thought about informal, real-life learning environments.",
+        "turkishExplanation": "Bazen en iyi sınıf başkasının mutfağıdır."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "host family",
+        "gloss": "ev sahibi aile"
+      },
+      {
+        "lemma": "do the dishes",
+        "gloss": "bulaşıkları yıkamak"
+      },
+      {
+        "lemma": "make an excuse",
+        "gloss": "mazeret uydurmak"
+      },
+      {
+        "lemma": "accent",
+        "gloss": "aksan"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "make oneself at home",
+        "englishExplanation": "Used to invite someone to relax and feel as comfortable as if they were in their own home.",
+        "turkishExplanation": "Birini rahat ettirmek ve evinde gibi hissetmesini sağlamak için kullanılan bir deyim.",
+        "exampleEn": "Please come in and make yourself at home.",
+        "exampleTr": "Lütfen içeri girin ve kendinizi evinizde gibi hissedin."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "get along",
+        "englishExplanation": "A phrasal verb that means to have a friendly, harmonious relationship with someone.",
+        "turkishExplanation": "Biriyle iyi bir ilişkiye sahip olmak, iyi anlaşmak.",
+        "exampleEn": "They got along quickly despite the language barrier.",
+        "exampleTr": "Dil engelini aşarak kısa sürede iyi anlaştılar."
+      },
+      {
+        "segmentOrdinal": 7,
+        "type": "phrase",
+        "expression": "make sense of",
+        "englishExplanation": "An idiom meaning to understand or comprehend something that might be complicated or unclear.",
+        "turkishExplanation": "Karmaşık veya anlaşılması zor bir şeyi kavramak, anlamlandırmak.",
+        "exampleEn": "It took me a while to make sense of the instructions.",
+        "exampleTr": "Talimatları anlamlandırmam biraz zaman aldı."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 7,
+      "question": "In segment 7, what does the phrase 'make sense of' mean when the speaker talks about the local accent?",
+      "options": [
+        {
+          "text": "To understand and interpret it clearly",
+          "isCorrect": true
+        },
+        {
+          "text": "To eliminate and correct it completely",
+          "isCorrect": false
+        },
+        {
+          "text": "To translate it into another language",
+          "isCorrect": false
+        },
+        {
+          "text": "To exaggerate it for humor",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 4,
+          "message": "Learning point ifadesi (\"make oneself at home\") segment 4'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1349 @@
+{
+  "slug": "pilot-b1-quiet-morning",
+  "level": "B1",
+  "title": "Before the First Message",
+  "topic": "Günlük yaşam ve alışkanlıklar",
+  "sortOrder": 1,
+  "isFreeSample": true,
+  "paragraphs": [
+    "Lena usually reads work messages while waiting for her morning bus. One Monday, her phone battery was empty, so she put the phone in her bag and looked around. She noticed a small garden beside the bus stop and watched a neighbour water the plants. She arrived at work at the usual time.",
+    "The next day, Lena charged her phone but kept it in her bag until she reached the office. She did not want to miss important messages, so she checked them before starting work. She still took the same bus, but the journey felt calmer. After a week, she decided to continue her new routine."
+  ],
+  "words": [
+    {
+      "lemma": "lena",
+      "gloss": "Lena (kişi adı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "Lena",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 18,
+          "surface": "Lena",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 12,
+          "surface": "usually",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        }
+      ]
+    },
+    {
+      "lemma": "reads",
+      "gloss": "okur",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 13,
+          "end": 18,
+          "surface": "reads",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "iş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 23,
+          "surface": "work",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 268,
+          "surface": "work",
+          "contextSentence": "She arrived at work at the usual time."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 175,
+          "surface": "work",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "messages",
+      "gloss": "mesajlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 32,
+          "surface": "messages",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 125,
+          "end": 133,
+          "surface": "messages",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "while",
+      "gloss": "-ken",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 33,
+          "end": 38,
+          "surface": "while",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        }
+      ]
+    },
+    {
+      "lemma": "waiting",
+      "gloss": "bekleme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 39,
+          "end": 46,
+          "surface": "waiting",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 50,
+          "surface": "for",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 51,
+          "end": 54,
+          "surface": "her",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 80,
+          "end": 83,
+          "surface": "her",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 136,
+          "surface": "her",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 27,
+          "end": 30,
+          "surface": "her",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 55,
+          "surface": "her",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 273,
+          "end": 276,
+          "surface": "her",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "morning",
+      "gloss": "sabah",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 55,
+          "end": 62,
+          "surface": "morning",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        }
+      ]
+    },
+    {
+      "lemma": "bus",
+      "gloss": "otobüs",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 66,
+          "surface": "bus",
+          "contextSentence": "Lena usually reads work messages while waiting for her morning bus."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 201,
+          "surface": "bus",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 204,
+          "surface": "bus",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 71,
+          "surface": "One",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "monday",
+      "gloss": "pazartesi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 78,
+          "surface": "Monday",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "phone",
+      "gloss": "telefon",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 89,
+          "surface": "phone",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 129,
+          "surface": "phone",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 36,
+          "surface": "phone",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "battery",
+      "gloss": "pil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 97,
+          "surface": "battery",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 101,
+          "surface": "was",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "empty",
+      "gloss": "boş; şarjı bitmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 107,
+          "surface": "empty",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 111,
+          "surface": "so",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 137,
+          "surface": "so",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 115,
+          "surface": "she",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 160,
+          "end": 163,
+          "surface": "She",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 252,
+          "surface": "She",
+          "contextSentence": "She arrived at work at the usual time."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 66,
+          "end": 69,
+          "surface": "she",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 93,
+          "surface": "She",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 141,
+          "surface": "she",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 180,
+          "surface": "She",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 249,
+          "end": 252,
+          "surface": "she",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "put",
+      "gloss": "koydu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 119,
+          "surface": "put",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık; bilinen ismi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 123,
+          "surface": "the",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 197,
+          "surface": "the",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 240,
+          "surface": "the",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 272,
+          "end": 275,
+          "surface": "the",
+          "contextSentence": "She arrived at work at the usual time."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 78,
+          "end": 81,
+          "surface": "the",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 192,
+          "end": 195,
+          "surface": "the",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 213,
+          "surface": "the",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 130,
+          "end": 132,
+          "surface": "in",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 49,
+          "end": 51,
+          "surface": "in",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "bag",
+      "gloss": "çanta",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 140,
+          "surface": "bag",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 56,
+          "end": 59,
+          "surface": "bag",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 141,
+          "end": 144,
+          "surface": "and",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 207,
+          "end": 210,
+          "surface": "and",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "looked",
+      "gloss": "baktı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 151,
+          "surface": "looked",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "etrafına",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 152,
+          "end": 158,
+          "surface": "around",
+          "contextSentence": "One Monday, her phone battery was empty, so she put the phone in her bag and looked around."
+        }
+      ]
+    },
+    {
+      "lemma": "noticed",
+      "gloss": "fark etti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 171,
+          "surface": "noticed",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 172,
+          "end": 173,
+          "surface": "a",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 220,
+          "surface": "a",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 242,
+          "surface": "a",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 174,
+          "end": 179,
+          "surface": "small",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "garden",
+      "gloss": "bahçe",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 186,
+          "surface": "garden",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "beside",
+      "gloss": "yanında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 193,
+          "surface": "beside",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "stop",
+      "gloss": "durak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 206,
+          "surface": "stop",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "watched",
+      "gloss": "izledi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 211,
+          "end": 218,
+          "surface": "watched",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "neighbour",
+      "gloss": "komşu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 230,
+          "surface": "neighbour",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "water",
+      "gloss": "sulamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 231,
+          "end": 236,
+          "surface": "water",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "plants",
+      "gloss": "bitkiler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 247,
+          "surface": "plants",
+          "contextSentence": "She noticed a small garden beside the bus stop and watched a neighbour water the plants."
+        }
+      ]
+    },
+    {
+      "lemma": "arrived",
+      "gloss": "vardı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 253,
+          "end": 260,
+          "surface": "arrived",
+          "contextSentence": "She arrived at work at the usual time."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "saat veya zaman noktasını belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 269,
+          "end": 271,
+          "surface": "at",
+          "contextSentence": "She arrived at work at the usual time."
+        }
+      ]
+    },
+    {
+      "lemma": "usual",
+      "gloss": "her zamanki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 281,
+          "surface": "usual",
+          "contextSentence": "She arrived at work at the usual time."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 282,
+          "end": 286,
+          "surface": "time",
+          "contextSentence": "She arrived at work at the usual time."
+        }
+      ]
+    },
+    {
+      "lemma": "charged",
+      "gloss": "şarj etti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 26,
+          "surface": "charged",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 37,
+          "end": 40,
+          "surface": "but",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 209,
+          "surface": "but",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "tuttu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 41,
+          "end": 45,
+          "surface": "kept",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onu (telefonu)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 48,
+          "surface": "it",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "until",
+      "gloss": "-e kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 60,
+          "end": 65,
+          "surface": "until",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "reached",
+      "gloss": "ulaştı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 70,
+          "end": 77,
+          "surface": "reached",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "office",
+      "gloss": "ofis",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 88,
+          "surface": "office",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "geçmiş zaman yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 97,
+          "surface": "did",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "olumsuzluk belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 101,
+          "surface": "not",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "want",
+      "gloss": "istemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 102,
+          "end": 106,
+          "surface": "want",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "mastar işareti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 109,
+          "surface": "to",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 263,
+          "surface": "to",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "miss",
+      "gloss": "kaçırmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 110,
+          "end": 114,
+          "surface": "miss",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "important",
+      "gloss": "önemli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 124,
+          "surface": "important",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "checked",
+      "gloss": "kontrol etti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 149,
+          "surface": "checked",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları (mesajları)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 154,
+          "surface": "them",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 161,
+          "surface": "before",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "starting",
+      "gloss": "başlama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 170,
+          "surface": "starting",
+          "contextSentence": "She did not want to miss important messages, so she checked them before starting work."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 186,
+          "surface": "still",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "took",
+      "gloss": "bindi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 191,
+          "surface": "took",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 200,
+          "surface": "same",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "journey",
+      "gloss": "yolculuk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 221,
+          "surface": "journey",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "felt",
+      "gloss": "gibi geldi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 222,
+          "end": 226,
+          "surface": "felt",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 235,
+          "end": 240,
+          "surface": "After",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "week",
+      "gloss": "hafta",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 243,
+          "end": 247,
+          "surface": "week",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "decided",
+      "gloss": "karar verdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 260,
+          "surface": "decided",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "continue",
+      "gloss": "sürdürmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 272,
+          "surface": "continue",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 277,
+          "end": 280,
+          "surface": "new",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "routine",
+      "gloss": "alışkanlık; günlük düzen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 288,
+          "surface": "routine",
+          "contextSentence": "After a week, she decided to continue her new routine."
+        }
+      ]
+    },
+    {
+      "lemma": "calmer",
+      "gloss": "daha sakin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 227,
+          "end": 233,
+          "surface": "calmer",
+          "contextSentence": "She still took the same bus, but the journey felt calmer."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "varış yerini belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 261,
+          "end": 263,
+          "surface": "at",
+          "contextSentence": "She arrived at work at the usual time."
+        }
+      ]
+    },
+    {
+      "lemma": "next day",
+      "gloss": "ertesi gün",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 12,
+          "surface": "next day",
+          "contextSentence": "The next day, Lena charged her phone but kept it in her bag until she reached the office."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What change in Lena’s morning does the passage describe?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 289
+      },
+      "options": [
+        {
+          "key": "o4",
+          "text": "A new route past her neighbour’s garden.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bahçeyi fark etmesi yeni bir güzergâha geçtiğini göstermez; aynı otobüsü kullanır."
+        },
+        {
+          "key": "o1",
+          "text": "A new way of spending her usual bus journey.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Lena aynı otobüsü kullanmaya devam eder; değişen şey yolculuk sırasında telefona bakmak yerine çevresini izlemesidir."
+        },
+        {
+          "key": "o3",
+          "text": "A longer journey after moving to a new office.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Yeni ofis veya daha uzun yolculuk yoktur; ofise her zamanki saatte varır."
+        },
+        {
+          "key": "o2",
+          "text": "An earlier journey after changing her usual bus.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Lena aynı otobüsü kullanır; daha erken varmak için otobüs değiştirmez."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "When did Lena check her messages on the second day?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 176
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "While she was waiting beside the garden.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Ertesi gün telefonunu ofise ulaşana kadar çantasında tuttu; bahçenin yanında kontrol etmedi."
+        },
+        {
+          "key": "o2",
+          "text": "At the office, before she started work.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "İkinci paragrafta telefonu ofise kadar çantasında tuttuğu ve işe başlamadan mesajlarını kontrol ettiği birlikte belirtiliyor."
+        },
+        {
+          "key": "o4",
+          "text": "At home, after she finished her work.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "İşten sonra evde kontrol etmesine dair bilgi yok."
+        },
+        {
+          "key": "o3",
+          "text": "On the bus, before it reached her stop.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Otobüste kontrol ettiği söylenmiyor; telefon ofise ulaşana kadar çantasında."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"routine\" mean in the final sentence?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 235,
+        "end": 289
+      },
+      "options": [
+        {
+          "key": "o3",
+          "text": "A habit she follows in daily life.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Lena bir hafta boyunca uyguladığı yeni davranışı sürdürmeye karar verir; routine burada günlük alışkanlık anlamındadır."
+        },
+        {
+          "key": "o1",
+          "text": "A message that needs a quick reply.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Routine bir mesaj türü değildir; Lena'nın tekrar ettiği davranışı anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "A problem she has with her battery.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Boş pil ilk değişimi başlatır; son cümledeki routine pil sorununun adı değildir."
+        },
+        {
+          "key": "o2",
+          "text": "A place where neighbours meet daily.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Sözcük bir yer veya buluşma alanını belirtmiyor."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does Lena seem to want from her new routine?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 90,
+        "end": 234
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "To give colleagues quicker replies before reaching work.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Telefonunu ofise varana kadar çantada tutar; daha hızlı cevap vermek için yolculukta kullanmaz."
+        },
+        {
+          "key": "o3",
+          "text": "To reduce work messages by leaving her phone uncharged.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Ertesi gün telefonu şarj eder ve önemli mesajları kontrol eder; şarjsız bırakmayı sürdürmez."
+        },
+        {
+          "key": "o4",
+          "text": "To keep up with work while enjoying a quieter journey.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yolculuk daha sakin gelirken önemli mesajları işe başlamadan kontrol eder; iki ayrıntı bu amacı destekler."
+        },
+        {
+          "key": "o2",
+          "text": "To spend more time watching her neighbour’s garden.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Bahçe ilk gün gördüğü bir ayrıntıdır; yeni rutinin amacı olarak bahçede daha çok zaman geçirmek söylenmez."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "noFactualClaims": true,
+    "sources": []
+  }
+}

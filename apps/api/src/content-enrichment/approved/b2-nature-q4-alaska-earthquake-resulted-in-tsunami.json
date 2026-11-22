@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:25:42.898Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-nature-q4-alaska-earthquake-resulted-in-tsunami.mp4"
+  },
+  "draft": {
+    "contentId": "b2-nature-q4-alaska-earthquake-resulted-in-tsunami",
+    "muxAssetId": "local-alaska-good-friday-earthquake",
+    "sourceFile": "b2-nature-q4-alaska-earthquake-resulted-in-tsunami.mp4",
+    "storageKey": null,
+    "durationMs": 30570,
+    "topic": "nature",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 1960,
+        "text": "On Good Friday in 1964,",
+        "englishExplanation": "Refers to the specific holiday date in 1964 when the earthquake occurred.",
+        "turkishExplanation": "1964 yılının Paskalya Öncesi Cuma gününde,"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 2720,
+        "endMs": 4640,
+        "text": "the ground in Alaska began to shake,",
+        "englishExplanation": "Describes the beginning of the earthquake in Alaska.",
+        "turkishExplanation": "Alaska'da yer sarsılmaya başladı,"
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5140,
+        "endMs": 7280,
+        "text": "and it didn't stop for almost five minutes.",
+        "englishExplanation": "Mentions that the shaking continued for almost five minutes.",
+        "turkishExplanation": "ve yaklaşık beş dakika boyunca durmadı."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 8040,
+        "endMs": 12360,
+        "text": "The Alaskan Good Friday earthquake, which has been considered to be the largest one in",
+        "englishExplanation": "Introduces the earthquake as the largest recorded in North America.",
+        "turkishExplanation": "Kuzey Amerika'daki en büyük deprem olarak kabul edilen Alaska Paskalya Cuma Depremi,"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 12360,
+        "endMs": 17960,
+        "text": "North America, resulted in a tsunami that traveled at a speed of over 400 miles per hour.",
+        "englishExplanation": "Explains that the earthquake caused a high-speed tsunami.",
+        "turkishExplanation": "saatte 400 milden fazla hızla ilerleyen bir tsunamiye yol açtı."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 18640,
+        "endMs": 22600,
+        "text": "Waves reached towns along the coast within minutes, and some of them were destroyed.",
+        "englishExplanation": "Describes how the tsunami waves reached coastal towns quickly and destroyed some.",
+        "turkishExplanation": "Dalgalar dakikalar içinde kıyıdaki kasabalara ulaştı ve bazıları yıkıldı."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23460,
+        "endMs": 25380,
+        "text": "Scientists learned a lot from this disaster.",
+        "englishExplanation": "States that researchers gained important scientific knowledge from studying the disaster.",
+        "turkishExplanation": "Bilim insanları bu felaketten çok şey öğrendi."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 26020,
+        "endMs": 30100,
+        "text": "Today, warning systems help coastal towns get ready before the water arrives.",
+        "englishExplanation": "Notes how modern alert systems prepare coastal towns for incoming tsunamis.",
+        "turkishExplanation": "Günümüzde uyarı sistemleri, kıyı kasabalarının su ulaşmadan önce hazırlanmasına yardımcı oluyor."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "result in",
+        "gloss": "yol açmak, neden olmak"
+      },
+      {
+        "lemma": "coastal",
+        "gloss": "kıyı, sahil"
+      },
+      {
+        "lemma": "disaster",
+        "gloss": "felaket, afet"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "result in",
+        "englishExplanation": "To cause a particular event or situation to happen as a consequence.",
+        "turkishExplanation": "Bir olayın veya durumun sonucu olarak ortaya çıkmasına, buna yol açılmasına neden olmak anlamına gelir.",
+        "exampleEn": "The unexpected heavy rainfall resulted in severe flooding across the valley.",
+        "exampleTr": "Beklenmeyen şiddetli yağmur, vadi boyunca ciddi su baskınlarına yol açtı."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "The Alaskan Good Friday earthquake, which ______ to be the largest one in North America, ______ in a tsunami that travelled at a speed of over 400 mph.",
+      "options": [
+        {
+          "text": "has been considered / resulted",
+          "isCorrect": true
+        },
+        {
+          "text": "was considering / resulting",
+          "isCorrect": false
+        },
+        {
+          "text": "has considered / to result",
+          "isCorrect": false
+        },
+        {
+          "text": "is considering / having resulted",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}
