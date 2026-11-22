@@ -1,12 +1,13 @@
 import "dotenv/config";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { and, eq } from "drizzle-orm";
+import { and, eq, notExists } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 import { z } from "zod";
 import type { Database } from "../database/database.module";
 import { wordsTable } from "./words.schema";
+import { passageWordsTable } from "../passages/passages.schema";
 
 /**
  * 2026-10-06 — kelime tekrarında (ve kelime sheet'inde) bazı anlamların İngilizce
@@ -38,7 +39,12 @@ export async function applyGlossFixes(db: Database, fixes: readonly GlossFix[]):
     const updated = await db
       .update(wordsTable)
       .set({ gloss: fix.to })
-      .where(and(eq(wordsTable.lemma, fix.lemma), eq(wordsTable.gloss, fix.from)))
+      // Aynı words satırı video ve paragraf tarafından paylaşılabilir. Paragrafa bağlı satır sabittir:
+      // global gloss düzeltmesi onu değiştirirse yayın paketinin content_hash'i ve kayıtlı bağlam ayrışır.
+      // Video da bu satırı kullanıyorsa yine koruruz; ayrı içerik sürümü olmadan ortak anlam değişmez.
+      .where(and(eq(wordsTable.lemma, fix.lemma), eq(wordsTable.gloss, fix.from), notExists(
+        db.select({ wordId: passageWordsTable.wordId }).from(passageWordsTable).where(eq(passageWordsTable.wordId, wordsTable.id)),
+      )))
       .returning({ id: wordsTable.id });
     results.push({ lemma: fix.lemma, rowsUpdated: updated.length });
   }

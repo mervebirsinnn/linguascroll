@@ -1,6 +1,8 @@
 import { APP_LINKS, openAppLink } from "../../shared/app-links";
 import { ActivityIndicator, Alert, BackHandler, Modal, useWindowDimensions, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useEffect, useState } from "react";
+import type { CefrLevel } from "@linguascroll/shared-types";
+import { LEVEL_OPTIONS } from "../onboarding/LevelScreen";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppleSignInButton } from "../identity/AppleSignInButton";
 import type { AccountLinkControl } from "../identity/auth-state";
@@ -9,10 +11,15 @@ import { STORE_NAME } from "../subscription/store-name";
 import { inStore, subscriptionDescription } from "./subscription-copy";
 import { useAccountSubscription } from "./use-account-subscription";
 
-type Props = { userId: string; account: AccountLinkControl; onBack: () => void; onSignOut: () => void };
+type Props = {
+  userId: string; account: AccountLinkControl; onBack: () => void; onSignOut: () => void;
+  /** Seviye satırı yalnızca onChangeLevel verilirse çizilir (eski çağıranlar etkilenmez). level null = henüz seçilmemiş (onboarding'de atlandı). */
+  level?: CefrLevel | null; onChangeLevel?: (level: CefrLevel) => void;
+};
 
 /** Hesap işlemleri öğrenme ekranından ayrılır; çıkış ve mağaza yönetimi bilinçli eylemlerdir. */
-export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
+export function AccountScreen({ userId, account, onBack, onSignOut, level = null, onChangeLevel }: Props) {
+  const [levelOpen, setLevelOpen] = useState(false);
   const insets = useSafeAreaInsets();
   const viewport = useWindowDimensions();
   const [plansOpen, setPlansOpen] = useState(false);
@@ -82,6 +89,15 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
         )}
         {account.notice !== null && <Text accessibilityRole="alert" style={styles.notice}>{account.notice}</Text>}
 
+        {onChangeLevel && (
+          <>
+            <Text style={styles.sectionLabel}>ÖĞRENME</Text>
+            <View style={styles.group}>
+              <AccountRow title="İngilizce seviyem" detail={level === null ? "Seçilmedi — seviyeni seç, sana uygun videolar öne çıksın." : `${level} · ${LEVEL_OPTIONS.find((o) => o.level === level)?.label ?? ""}`} onPress={() => setLevelOpen(true)} disabled={busy} last />
+            </View>
+          </>
+        )}
+
         <Text style={styles.sectionLabel}>ÜYELİK</Text>
         <View style={styles.planCard}>
           <View style={styles.planHeading}>
@@ -131,6 +147,20 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
           <ScrollView contentContainerStyle={{ flexGrow: 1 }}><PaywallFeedItem scrollable height={Math.max(0, viewport.height - insets.top - insets.bottom - 48)} width={viewport.width} userId={userId} account={account} reason="upgrade" onUnlocked={() => { setPlansOpen(false); void subscription.refresh(); }} /></ScrollView>
         </View>
       </Modal>
+      <Modal visible={levelOpen} transparent animationType="slide" onRequestClose={() => setLevelOpen(false)}>
+        <View style={styles.managementBackdrop}>
+          <View style={[styles.managementCard, { paddingBottom: insets.bottom + 24 }]}>
+            <Text style={styles.cardTitle}>İngilizce seviyen nedir?</Text>
+            {LEVEL_OPTIONS.map(({ level: option, label }) => (
+              <Pressable key={option} onPress={() => { onChangeLevel?.(option); setLevelOpen(false); }} accessibilityRole="button" accessibilityState={{ selected: option === level }} style={[styles.levelOption, option === level && styles.levelOptionActive]}>
+                <Text style={[styles.rowTitle, { width: 36 }]}>{option}</Text>
+                <Text style={styles.rowDetail}>{label}</Text>
+              </Pressable>
+            ))}
+            <Pressable onPress={() => setLevelOpen(false)} accessibilityRole="button" style={styles.modalClose}><Text style={styles.rowTitle}>Kapat</Text></Pressable>
+          </View>
+        </View>
+      </Modal>
       <Modal visible={managementOpen} transparent animationType="slide" onRequestClose={() => setManagementOpen(false)}>
         <View style={styles.managementBackdrop}>
           <View style={[styles.managementCard, { paddingBottom: insets.bottom + 24 }]}>
@@ -155,6 +185,8 @@ function AccountRow({ title, detail, onPress, disabled, busy = false, last = fal
 }
 
 const styles = StyleSheet.create({
+  levelOption: { minHeight: 52, flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 16, borderRadius: 12, borderWidth: 1, borderColor: "#332d44" },
+  levelOptionActive: { borderColor: "#bca7ff", backgroundColor: "#2a2340" },
   modalClose: { minHeight: 48, alignItems: "center", justifyContent: "center", alignSelf: "flex-end", paddingHorizontal: 24 },
   managementBackdrop: { flex: 1, justifyContent: "flex-end", backgroundColor: "#0009" },
   managementCard: { padding: 24, gap: 18, borderTopLeftRadius: 24, borderTopRightRadius: 24, backgroundColor: "#1b1724" },

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T17:00:12.277Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-psychology-getting-used-to-the-rain.mp4"
+  },
+  "draft": {
+    "contentId": "b2-psychology-getting-used-to-the-rain",
+    "muxAssetId": "local-moving-to-manchester-rain",
+    "sourceFile": "b2-psychology-getting-used-to-the-rain.mp4",
+    "storageKey": null,
+    "durationMs": 32800,
+    "topic": "lifestyle",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 880,
+        "endMs": 4440,
+        "text": "When I moved to Manchester, I couldn't believe how often it rained.",
+        "englishExplanation": "The speaker expresses surprise at the frequent rain after moving to Manchester.",
+        "turkishExplanation": "Manchester'a taşındığımda bu kadar sık yağmur yağdığına inanamamıştım."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5020,
+        "endMs": 7560,
+        "text": "Back home, I used to check the sky before going out.",
+        "englishExplanation": "In their hometown, the speaker used to check the weather before leaving home.",
+        "turkishExplanation": "Memleketimde dışarı çıkmadan önce gökyüzüne bakardım."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8060,
+        "endMs": 9080,
+        "text": "Here, nobody bothers.",
+        "englishExplanation": "In Manchester, people do not bother checking the weather before going out.",
+        "turkishExplanation": "Burada kimse aldırış etmiyor."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 9760,
+        "endMs": 13180,
+        "text": "People are used to grey mornings, and they simply carry on with their plans.",
+        "englishExplanation": "Local people are accustomed to cloudy mornings and continue their plans anyway.",
+        "turkishExplanation": "İnsanlar gri sabahlara alışkın ve planlarına aynen devam ediyorlar."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 13900,
+        "endMs": 17320,
+        "text": "For the first few months, I just put up with it and complained a lot.",
+        "englishExplanation": "Initially, the speaker tolerated the constant rain while complaining frequently.",
+        "turkishExplanation": "İlk birkaç ay boyunca sadece buna katlandım ve çokça şikayet ettim."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 17840,
+        "endMs": 18860,
+        "text": "Then something shifted.",
+        "englishExplanation": "Then the speaker's mindset or perspective changed.",
+        "turkishExplanation": "Sonra bir şeyler değişti."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 19460,
+        "endMs": 22020,
+        "text": "I bought proper boots, started walking anyway,",
+        "englishExplanation": "The speaker bought appropriate footwear and continued walking outside despite the weather.",
+        "turkishExplanation": "Uygun çizmeler aldım ve yine de yürümeye başladım,"
+      },
+      {
+        "ordinal": 8,
+        "startMs": 22520,
+        "endMs": 25060,
+        "text": "and slowly got used to the sound of rain on the window.",
+        "englishExplanation": "Over time, the speaker became accustomed to hearing rain against the windowpane.",
+        "turkishExplanation": "ve zamanla penceredeki yağmur sesine alıştım."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 25760,
+        "endMs": 27540,
+        "text": "Now I actually miss it when I travel.",
+        "englishExplanation": "Currently, the speaker misses the Manchester weather when traveling elsewhere.",
+        "turkishExplanation": "Şimdilerde seyahat ettiğimde aslında onu özlüyorum."
+      },
+      {
+        "ordinal": 10,
+        "startMs": 28260,
+        "endMs": 31580,
+        "text": "Funny how a place you once tolerated can plightly become home.",
+        "englishExplanation": "It is surprising how a place that was once just tolerated can gradually feel like home.",
+        "turkishExplanation": "Bir zamanlar katlandığınız bir yerin zamanla yuvanız haline gelmesi ne garip."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "bother",
+        "gloss": "aldırış etmek, zahmet etmek"
+      },
+      {
+        "lemma": "carry on",
+        "gloss": "devam etmek, sürdürmek"
+      },
+      {
+        "lemma": "put up with",
+        "gloss": "katlanmak, tahammül etmek"
+      },
+      {
+        "lemma": "proper",
+        "gloss": "uygun, düzgün"
+      },
+      {
+        "lemma": "tolerate",
+        "gloss": "katlanmak, hoş görmek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "carry on",
+        "englishExplanation": "To continue an activity or task, especially despite difficult circumstances.",
+        "turkishExplanation": "Özellikle zorluklara rağmen bir faaliyete veya plana devam etmek.",
+        "exampleEn": "Despite the heavy rain, they decided to carry on with their match.",
+        "exampleTr": "Şiddetli yağmura rağmen maça devam etmeye karar verdiler."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "put up with",
+        "englishExplanation": "To tolerate or accept a difficult or annoying situation without complaining.",
+        "turkishExplanation": "Zor veya rahatsız edici bir duruma sineye çekerek katlanmak.",
+        "exampleEn": "I cannot put up with this noise any longer.",
+        "exampleTr": "Bu gürültüye daha fazla katlanamıyorum."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "In segment 5, what does the phrasal verb 'put up with' mean in this context?",
+      "options": [
+        {
+          "text": "To accept or tolerate an unpleasant condition",
+          "isCorrect": true
+        },
+        {
+          "text": "To completely stop doing a daily routine",
+          "isCorrect": false
+        },
+        {
+          "text": "To change one's plans because of the weather",
+          "isCorrect": false
+        },
+        {
+          "text": "To enjoy a new experience enthusiastically",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

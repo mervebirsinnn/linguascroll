@@ -15,6 +15,8 @@ import { NO_SUBSCRIPTION } from "./revenue-cat-client";
 import { videoFeedbackTable } from "../feedback/video-feedback.schema";
 import { usersTable } from "../users/users.schema";
 import { AppModule } from "../app.module";
+import { passageAnswersTable } from "../passages/passage-answers.schema";
+import { passageOptionsTable, passageQuestionsTable, passagesTable } from "../passages/passages.schema";
 
 describe("Hesap ve öğrenme (gerçek PostgreSQL)", () => {
   const connection = createTestDatabaseConnection();
@@ -70,10 +72,16 @@ describe("Hesap ve öğrenme (gerçek PostgreSQL)", () => {
   it("silinen hesabın eski token'ı yeni hak açmaz ve kişisel kayıtlar temizlenir", async () => {
     const { userId, authorization } = await createAuthenticatedUser(connection.db);
     const [user] = await connection.db.select().from(usersTable).where(eq(usersTable.id, userId));
+    // Okuma pratiği cevabı da kişisel kayıttır: hesap silinince temizlenmeli (passage_answers.user_id CASCADE).
+    const [passage] = await connection.db.insert(passagesTable).values({ slug: "del-test", level: "B2", title: "T", topic: "K", paragraphs: ["Text."], sortOrder: 1, contentHash: "h" }).returning();
+    const [question] = await connection.db.insert(passageQuestionsTable).values({ passageId: passage!.id, key: "q1", position: 1, type: "detail", prompt: "?" }).returning();
+    const [option] = await connection.db.insert(passageOptionsTable).values({ questionId: question!.id, key: "a", position: 0, text: "a", isCorrect: true, explanation: "e" }).returning();
+    await connection.db.insert(passageAnswersTable).values({ userId, questionId: question!.id, optionId: option!.id, isCorrect: true });
     await users.beginDeletion(user!.firebaseUid!);
     await request(app.getHttpServer()).get("/me").set("Authorization", authorization).expect(403);
     await users.finishDeletion(userId);
     await request(app.getHttpServer()).get("/me").set("Authorization", authorization).expect(403);
     expect(await connection.db.select().from(usersTable)).toHaveLength(0);
+    expect(await connection.db.select().from(passageAnswersTable)).toHaveLength(0);
   });
 });

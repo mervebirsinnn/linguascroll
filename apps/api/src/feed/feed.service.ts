@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { feedPageSchema, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type FeedScope, type PlayableVideo } from "@linguascroll/shared-types";
+import { feedPageSchema, type ContentCategory, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type FeedScope, type PlayableVideo } from "@linguascroll/shared-types";
 import {
   decodeFeedCursor,
   encodeFeedCursor,
@@ -18,7 +18,7 @@ import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { WordsService } from "../words/words.service";
-import { scopeToCategoryFilter } from "./feed-scope";
+import { isIsolatedScope, MAIN_FEED_CATALOG_FILTER, scopeToVideoFilter } from "./feed-scope";
 
 // Chunk 14: 2:1 → 4:1. Kullanıcı kararı: Chunk 10'un "pekiştirme az önce
 // izlenen içerikle olabildiğince yakın olsun" gerekçesi hâlâ geçerli (quiz
@@ -118,9 +118,10 @@ export class FeedService {
   private async startSession(userId: string, preference: FeedPreferences | undefined, scope: FeedScope, sessionSeed: string, continuous = false): Promise<FeedPage> {
     // Kapsam filtresi DB'de (repository predicate'i): kapsam dışı satırlar application katmanına HİÇ taşınmaz.
     // "all" için predicate yoktur. Personalization, kapsamdaki TÜM adayları sıralamak zorunda (bkz. rankVideos).
-    let videos = await this.videosService.getVideoFeed({ category: scopeToCategoryFilter(scope) });
+    let videos = await this.videosService.getVideoFeed(scopeToVideoFilter(scope));
     const allowance = await this.subscriptionsService.getFeedAllowance(userId, videos.map((v) => v.id), scope);
-    if (continuous && allowance.unlimited && videos.length === 0 && scope !== "all") videos = await this.videosService.getVideoFeed();
+    // Kategori boşsa bütün (ana) katalogdan beslenir; izole kategori (Cabin Crew) ana akış içeriğiyle DOLDURULMAZ.
+    if (continuous && allowance.unlimited && videos.length === 0 && scope !== "all" && !isIsolatedScope(scope)) videos = await this.videosService.getVideoFeed(MAIN_FEED_CATALOG_FILTER);
     const candidates = allowance.unlimited ? videos : videos.filter((v) => allowance.grantedVideoIds.has(v.id));
     const personalizedVideos = await this.personalizationService.getPersonalizedVideos(userId, candidates, scope, preference, sessionSeed);
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
@@ -139,7 +140,8 @@ export class FeedService {
   /** Son parti dışındaki içerikler önce gelir; katalog tükendiğinde tekrar oynatım yapılır.
    * Cursor planı daima bounded kalır. Kategori bitince bütün katalogdan beslenir. */
   private async nextContinuousPlan(userId: string, previous: FeedPlanItemRef[], scope: FeedScope, seed: string, preferences?: FeedPreferences, scopedCount = 0): Promise<{plan: FeedPlanItemRef[]; scopedCount: number}> {
-    const catalog = await this.videosService.getVideoFeed();
+    // İzole kategori yalnızca kendi içeriğinden, diğer her scope izole kategoriler HARİÇ katalogdan beslenir.
+    const catalog = await this.videosService.getVideoFeed(isIsolatedScope(scope) ? { category: scope as ContentCategory } : MAIN_FEED_CATALOG_FILTER);
     const recent = new Set(previous.filter((i) => i.type === "video").map((i) => i.id));
     const scoped = scope === "all" ? [] : catalog.filter((v) => v.category === scope);
     const remaining = Math.max(0, scoped.length - scopedCount);

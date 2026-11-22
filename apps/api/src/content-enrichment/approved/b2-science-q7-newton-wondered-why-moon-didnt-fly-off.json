@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:27:23.670Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-science-q7-newton-wondered-why-moon-didnt-fly-off.mp4"
+  },
+  "draft": {
+    "contentId": "b2-science-q7-newton-wondered-why-moon-didnt-fly-off",
+    "muxAssetId": "local-why-the-moon-doesnt-fly-away",
+    "sourceFile": "b2-science-q7-newton-wondered-why-moon-didnt-fly-off.mp4",
+    "storageKey": null,
+    "durationMs": 29430,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 2400,
+        "text": "Why doesn't the moon just fly away?",
+        "englishExplanation": "The speaker asks a fundamental question about why the moon remains in orbit around Earth instead of drifting off.",
+        "turkishExplanation": "Ay neden öylece uçup gitmiyor?"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3020,
+        "endMs": 5060,
+        "text": "It sounds like a question a child might ask.",
+        "englishExplanation": "The speaker remarks that this seems like a basic or simple question a child might ask.",
+        "turkishExplanation": "Kulağa bir çocuğun sorabileceği türden bir soru gibi geliyor."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5580,
+        "endMs": 11120,
+        "text": "In the 17th century, the English scientist and mathematician Isaac Newton wondered why the",
+        "englishExplanation": "Introduces Isaac Newton in the 1600s, who pondered this exact scientific question.",
+        "turkishExplanation": "17. yüzyılda, İngiliz bilim insanı ve matematikçi Isaac Newton şunu merak etmişti:"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 11120,
+        "endMs": 16340,
+        "text": "moon and planets didn't fly off into outer space, but always moved in a curve around the",
+        "englishExplanation": "Describes Newton's observation that celestial bodies travel in curved paths rather than floating off into space.",
+        "turkishExplanation": "Ay ve gezegenler neden uzaya savrulup gitmiyor da her zaman Dünya ve Güneş etrafında kavisli bir yolda ilerliyordu?"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 16340,
+        "endMs": 19720,
+        "text": "earth and the sun. His answer changed science forever.",
+        "englishExplanation": "States that Newton's explanation transformed the course of modern science permanently.",
+        "turkishExplanation": "Verdiği yanıt bilimi sonsuza dek değiştirdi."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20280,
+        "endMs": 25040,
+        "text": "The same force that pulls an apple to the ground, he said, also holds the moon in its",
+        "englishExplanation": "Explains Newton's insight that the force pulling objects to Earth is identical to the force keeping the moon in orbit.",
+        "turkishExplanation": "Bir elmayı yere çeken aynı kuvvetin, Ay'ı da yörüngesinde tuttuğunu söyledi."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 25040,
+        "endMs": 28980,
+        "text": "path. He called it gravity, and we still use his ideas today.",
+        "englishExplanation": "Notes that Newton named this force gravity, a concept essential to physics today.",
+        "turkishExplanation": "Buna yerçekimi adını verdi ve onun fikirlerini bugün hâlâ kullanıyoruz."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "wonder",
+        "gloss": "merak etmek"
+      },
+      {
+        "lemma": "fly off",
+        "gloss": "savrulmak, fırlayıp gitmek"
+      },
+      {
+        "lemma": "curve",
+        "gloss": "kavis, eğri"
+      },
+      {
+        "lemma": "gravity",
+        "gloss": "yerçekimi"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "fly off",
+        "englishExplanation": "To suddenly or quickly depart or move away from a path or position.",
+        "turkishExplanation": "Bulunduğu yerden veya yoldan aniden ya da hızla uzaklaşmak, savrulmak.",
+        "exampleEn": "The top of the bottle flew off when he opened it.",
+        "exampleTr": "Kapağı açtığında şişenin tepesi fırlayıp gitti."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "In the 17th century, the English scientist and mathematician Isaac Newton ______ why the moon and planets ______ off into outer space but always moved in a curve around the earth and the sun.",
+      "options": [
+        {
+          "text": "had wondered / hadn't flown",
+          "isCorrect": false
+        },
+        {
+          "text": "wondered / didn't fly",
+          "isCorrect": true
+        },
+        {
+          "text": "was wondering / don't fly",
+          "isCorrect": false
+        },
+        {
+          "text": "has wondered / wouldn't fly",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

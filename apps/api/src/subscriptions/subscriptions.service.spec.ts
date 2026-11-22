@@ -159,6 +159,27 @@ describe("SubscriptionsService.getFeedAllowance", () => {
   });
 });
 
+describe("SubscriptionsService.getFeedAllowance — izole kategori (Cabin Crew)", () => {
+  it("ücretsiz seçki katalogu ana akıştan istenir: cabincrew hak havuzuna girmez", async () => {
+    const filters: unknown[] = [];
+    const videosService = {
+      getVideoFeed: async (filter: unknown) => {
+        filters.push(filter);
+        return videoIds(15).map((id) => ({ id, playbackUrl: PLAYBACK_URL }));
+      },
+    } as unknown as VideosService;
+    const service = new SubscriptionsService(
+      videosService,
+      { userExists: () => Promise.resolve(true) } as unknown as UsersService,
+      makeLedger().repository,
+      { checkEntitlement: () => Promise.resolve(false) } as unknown as RevenueCatClient,
+      { get: (key: string) => (key === "SUBSCRIPTION_GATE_ENABLED" ? "true" : undefined) } as unknown as ConfigService,
+    );
+    await service.getFeedAllowance(USER_ID, ["v1"]);
+    expect(filters).toEqual([{ excludeCategories: ["cabincrew"] }]);
+  });
+});
+
 describe("SubscriptionsService abonelik önbelleği", () => {
   it("'abone değil' kısa süre önbelleklenir: art arda isteklerde RevenueCat'e tekrar gidilmez", async () => {
     let checks = 0;
@@ -166,5 +187,27 @@ describe("SubscriptionsService abonelik önbelleği", () => {
     await service.requestPlaybackAccess(USER_ID, "v1");
     await service.requestPlaybackAccess(USER_ID, "v2");
     expect(checks).toBe(1);
+  });
+});
+
+describe("SubscriptionsService.hasFullAccess (okuma pratiği erişim kararı)", () => {
+  it("kapı kapalıyken herkes tam erişimli ve RevenueCat'e hiç gidilmez", async () => {
+    let entitlementChecks = 0;
+    const { service } = makeService({ gateEnabled: false, onCheckEntitlement: () => (entitlementChecks += 1) });
+    expect(await service.hasFullAccess(USER_ID)).toBe(true);
+    expect(entitlementChecks).toBe(0);
+  });
+
+  it("kapı açık + aktif abone → tam erişim", async () => {
+    const { service } = makeService({ gateEnabled: true, isSubscribed: true });
+    expect(await service.hasFullAccess(USER_ID)).toBe(true);
+  });
+
+  it("kapı açık + abone değil → tam erişim yok; ücretsiz hak defterine (free_video_grants) dokunulmaz", async () => {
+    const ledger = makeLedger();
+    const { service } = makeService({ gateEnabled: true, isSubscribed: false, ledger });
+    expect(await service.hasFullAccess(USER_ID)).toBe(false);
+    expect(ledger.tryGrantCalls).toEqual([]);
+    expect(ledger.granted.size).toBe(0);
   });
 });

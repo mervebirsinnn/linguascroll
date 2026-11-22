@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:25:24.122Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-science-q3-dinosaurs-wiped-out-by-disease.mp4"
+  },
+  "draft": {
+    "contentId": "b2-science-q3-dinosaurs-wiped-out-by-disease",
+    "muxAssetId": "local-dinosaur-extinction-theories",
+    "sourceFile": "b2-science-q3-dinosaurs-wiped-out-by-disease.mp4",
+    "storageKey": null,
+    "durationMs": 34470,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3960,
+        "text": "About 66 million years ago, the dinosaurs disappeared.",
+        "englishExplanation": "Dinosaurs disappeared around 66 million years ago.",
+        "turkishExplanation": "Yaklaşık 66 milyon yıl önce dinozorlar yok oldu."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4700,
+        "endMs": 9000,
+        "text": "Most scientists believe a huge asteroid hit the earth and changed the climate.",
+        "englishExplanation": "Many scientists believe a massive asteroid hit Earth and altered the global climate.",
+        "turkishExplanation": "Bilim insanlarının çoğu dev bir asteroidin dünyaya çarptığına ve iklimi değiştirdiğine inanıyor."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 9440,
+        "endMs": 12380,
+        "text": "But over the years, other ideas have been suggested too.",
+        "englishExplanation": "However, different ideas have also been proposed over time.",
+        "turkishExplanation": "Fakat yıllar içinde başka fikirler de öne sürüldü."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 13060,
+        "endMs": 17080,
+        "text": "It is possible that dinosaurs were wiped out by a disease to which they were not",
+        "englishExplanation": "It is possible that dinosaurs were eliminated by an illness to which they were not...",
+        "turkishExplanation": "Dinozorların, karşı dirençli olmadıkları bir hastalık yüzünden yok edilmiş olmaları mümkündür."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 17080,
+        "endMs": 17540,
+        "text": "resistant.",
+        "englishExplanation": "...resistant to or able to defend against.",
+        "turkishExplanation": "...dirençli."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 18260,
+        "endMs": 22480,
+        "text": "Their bodies had never met this illness before, so they had no resistance to it.",
+        "englishExplanation": "Because their bodies had never encountered this disease, they lacked immunity against it.",
+        "turkishExplanation": "Vücutları bu hastalıkla daha önce hiç karşılaşmamıştı, bu yüzden ona karşı hiçbir dirençleri yoktu."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23020,
+        "endMs": 26140,
+        "text": "Most experts think this theory is unlikely on its own.",
+        "englishExplanation": "Most specialists consider this explanation improbable by itself.",
+        "turkishExplanation": "Uzmanların çoğu bu teorinin tek başına pek olası olmadığını düşünüyor."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 26680,
+        "endMs": 28800,
+        "text": "Still, it reminds us of something important.",
+        "englishExplanation": "Nevertheless, it brings an important fact to our attention.",
+        "turkishExplanation": "Yine de bize önemli bir şeyi hatırlatıyor."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 28800,
+        "endMs": 33980,
+        "text": "Sometimes a whole group of animals can be killed off by something too small to see.",
+        "englishExplanation": "Occasionally, an entire group of animals can be destroyed by microscopic organisms.",
+        "turkishExplanation": "Bazen bütün bir hayvan grubu, görülemeyecek kadar küçük bir şey yüzünden yok olabilir."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "asteroid",
+        "gloss": "asteroit, göktaşı"
+      },
+      {
+        "lemma": "wipe out",
+        "gloss": "yok etmek, kökünü kazımak"
+      },
+      {
+        "lemma": "resistant",
+        "gloss": "dirençli, dayanıklı"
+      },
+      {
+        "lemma": "unlikely",
+        "gloss": "olası olmayan, ihtimalsiz"
+      },
+      {
+        "lemma": "kill off",
+        "gloss": "yok etmek, kökünü kurutmak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "wipe out",
+        "englishExplanation": "To completely destroy or eliminate a group or population.",
+        "turkishExplanation": "Tamamen yok etmek, kökünü kazımak.",
+        "exampleEn": "The severe drought wiped out most of the crops.",
+        "exampleTr": "Şiddetli kuraklık ekinlerin çoğunu tamamen yok etti."
+      },
+      {
+        "segmentOrdinal": 9,
+        "type": "phrase",
+        "expression": "kill off",
+        "englishExplanation": "To cause the death of all or a large number of a group.",
+        "turkishExplanation": "Bir grubun veya türün tamamını veya büyük kısmını öldürüp yok etmek.",
+        "exampleEn": "Extreme cold can kill off fragile plant species.",
+        "exampleTr": "Aşırı soğuk, hassas bitki türlerinin kökünü kurutabilir."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "It is possible that dinosaurs were ______ by a disease to which they had no resistance.",
+      "options": [
+        {
+          "text": "wiped out",
+          "isCorrect": true
+        },
+        {
+          "text": "taken over",
+          "isCorrect": false
+        },
+        {
+          "text": "put off",
+          "isCorrect": false
+        },
+        {
+          "text": "carried on",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

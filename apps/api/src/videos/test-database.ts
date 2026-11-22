@@ -44,12 +44,13 @@ export function createTestDatabaseConnection(): { db: NodePgDatabase; pool: Pool
  * users/video_watch_events/quiz_answer_events, Chunk 9 ile words/video_words/
  * user_saved_words, Chunk 10 ile video_transcript_segments/
  * transcript_segment_learning_points, Chunk 16 ile word_review_events, kelime anlamları (segment_word_glosses),
- * 2026-10-27 ile free_video_grants (ücretsiz hak defteri) —
+ * 2026-10-27 ile free_video_grants (ücretsiz hak defteri), Okuma Pratiği ile passages ve bağlı
+ * tabloları (passage_words/passage_word_spans/passage_questions/passage_options/passage_answers) —
  * hepsi tek bir TRUNCATE ifadesinde listeleniyor (Postgres, aynı ifadede
  * listelenen FK'li tabloları CASCADE'e gerek kalmadan birlikte temizler).
  */
 export async function truncateTestTables(db: NodePgDatabase): Promise<void> {
   await db.execute(
-    sql`TRUNCATE TABLE deleted_accounts, video_feedback, videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points, word_review_events, segment_word_glosses, free_video_grants, free_preview_videos`,
+    sql`TRUNCATE TABLE deleted_accounts, video_feedback, videos, quizzes, quiz_options, users, video_watch_events, quiz_answer_events, words, video_words, user_saved_words, video_transcript_segments, transcript_segment_learning_points, word_review_events, segment_word_glosses, free_video_grants, free_preview_videos, passages, passage_words, passage_word_spans, passage_questions, passage_options, passage_answers`,
   );
 }

@@ -1,4 +1,5 @@
 import { Module } from "@nestjs/common";
+import { SubscriptionsModule } from "../subscriptions/subscriptions.module";
 import { UsersModule } from "../users/users.module";
 import { SegmentWordGlossesRepository } from "./segment-word-glosses-repository";
 import { WordGlossesService } from "./word-glosses.service";
@@ -8,7 +9,7 @@ import { WordsRepository } from "./words-repository";
 import { WordsService } from "./words.service";
 
 @Module({
-  imports: [UsersModule],
+  imports: [UsersModule, SubscriptionsModule],
   controllers: [WordsController],
   providers: [WordsService, WordsRepository, WordReviewEventsRepository, SegmentWordGlossesRepository, WordGlossesService],
   exports: [WordsService],

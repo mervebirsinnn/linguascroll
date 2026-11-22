@@ -1,0 +1,3520 @@
+{
+  "slug": "pilot-c1-sleep-and-learning",
+  "level": "C1",
+  "title": "Two meanings of learning better",
+  "topic": "Uyku, bellek ve bilimsel çıkarım",
+  "sortOrder": 1,
+  "isFreeSample": false,
+  "paragraphs": [
+    "To ask whether sleep improves learning is already to compress several questions into one. Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered. Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another. A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake. What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel.",
+    "A human study published in 2025 exposes a related difficulty without resolving it. Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage. Planned analyses did not establish the anticipated relationship between retention and subsequent learning. A further analysis, which took earlier recall into account, did suggest a relationship. To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable.",
+    "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning. That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant. The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other. The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit. Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+  ],
+  "words": [
+    {
+      "lemma": "to",
+      "gloss": "mastar işareti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "To",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 52,
+          "surface": "to",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 426,
+          "end": 428,
+          "surface": "To",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 37,
+          "surface": "to",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 190,
+          "surface": "to",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 307,
+          "end": 309,
+          "surface": "to",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e/-a (yönelme veya ilişki)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 344,
+          "end": 346,
+          "surface": "to",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 193,
+          "surface": "to",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "ask",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 6,
+          "surface": "ask",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "whether",
+      "gloss": "olup olmadığını",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 14,
+          "surface": "whether",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "sleep",
+      "gloss": "uyku",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 15,
+          "end": 20,
+          "surface": "sleep",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 112,
+          "surface": "sleep",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "improves",
+      "gloss": "geliştirir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 29,
+          "surface": "improves",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "learning",
+      "gloss": "öğrenme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 30,
+          "end": 38,
+          "surface": "learning",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 336,
+          "surface": "learning",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 127,
+          "end": 135,
+          "surface": "learning",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 652,
+          "end": 660,
+          "surface": "learning",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 39,
+          "end": 41,
+          "surface": "is",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 577,
+          "end": 579,
+          "surface": "is",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 296,
+          "surface": "is",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 606,
+          "end": 608,
+          "surface": "is",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "already",
+      "gloss": "zaten",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 49,
+          "surface": "already",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "compress",
+      "gloss": "sıkıştırmak; burada birden çok soruyu tek soruda toplamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 53,
+          "end": 61,
+          "surface": "compress",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 69,
+          "surface": "several",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "questions",
+      "gloss": "sorular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 70,
+          "end": 79,
+          "surface": "questions",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "içine; bir bütün içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 80,
+          "end": 84,
+          "surface": "into",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "tek bir soru",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 88,
+          "surface": "one",
+          "contextSentence": "To ask whether sleep improves learning is already to compress several questions into one."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 313,
+          "surface": "one",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "birindeki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 395,
+          "end": 398,
+          "surface": "one",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 98,
+          "surface": "Evidence",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 77,
+          "surface": "evidence",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 410,
+          "end": 418,
+          "surface": "evidence",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "-dığını/-diğini (yan cümleyi bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 99,
+          "end": 103,
+          "surface": "that",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 148,
+          "end": 152,
+          "surface": "that",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 82,
+          "surface": "that",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "bu; söz konusu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 439,
+          "end": 443,
+          "surface": "that",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 141,
+          "surface": "That",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 105,
+          "surface": "a",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 250,
+          "surface": "a",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 356,
+          "end": 357,
+          "surface": "A",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 41,
+          "surface": "a",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 204,
+          "end": 205,
+          "surface": "a",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 338,
+          "end": 339,
+          "surface": "A",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 410,
+          "end": 411,
+          "surface": "a",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 479,
+          "end": 480,
+          "surface": "a",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 549,
+          "end": 550,
+          "surface": "a",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 500,
+          "end": 501,
+          "surface": "a",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 521,
+          "end": 522,
+          "surface": "a",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 568,
+          "end": 569,
+          "surface": "a",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "memory",
+      "gloss": "bellek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 359,
+          "end": 365,
+          "surface": "memory",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "survives",
+      "gloss": "varlığını sürdürür; korunur",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 121,
+          "surface": "survives",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 124,
+          "surface": "an",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 292,
+          "end": 294,
+          "surface": "an",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 636,
+          "end": 638,
+          "surface": "an",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 227,
+          "end": 229,
+          "surface": "an",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 638,
+          "end": 640,
+          "surface": "an",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "interval",
+      "gloss": "zaman aralığı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 133,
+          "surface": "interval",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "need",
+      "gloss": "gerekmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 138,
+          "surface": "need",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "olumsuzluk belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 142,
+          "surface": "not",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 209,
+          "surface": "not",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 580,
+          "end": 583,
+          "surface": "not",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 255,
+          "surface": "not",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 262,
+          "surface": "not",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 371,
+          "end": 374,
+          "surface": "not",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "show",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 147,
+          "surface": "show",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık; bilinen ismi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 153,
+          "end": 156,
+          "surface": "the",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 397,
+          "end": 400,
+          "surface": "the",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 584,
+          "end": 587,
+          "surface": "the",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 612,
+          "end": 615,
+          "surface": "the",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 269,
+          "surface": "the",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 510,
+          "end": 513,
+          "surface": "the",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 587,
+          "end": 590,
+          "surface": "the",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 659,
+          "end": 662,
+          "surface": "the",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 47,
+          "surface": "the",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 167,
+          "end": 170,
+          "surface": "the",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 202,
+          "surface": "the",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 272,
+          "end": 275,
+          "surface": "The",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 437,
+          "end": 440,
+          "surface": "the",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 448,
+          "end": 451,
+          "surface": "The",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 671,
+          "end": 674,
+          "surface": "the",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 691,
+          "end": 694,
+          "surface": "the",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "learner",
+      "gloss": "öğrenen kişi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 157,
+          "end": 164,
+          "surface": "learner",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "tamamlanmış zaman yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 168,
+          "surface": "has",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "dönüşmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 169,
+          "end": 175,
+          "surface": "become",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 176,
+          "end": 180,
+          "surface": "more",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 470,
+          "end": 474,
+          "surface": "more",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "receptive",
+      "gloss": "almaya ve işlemeye açık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 190,
+          "surface": "receptive",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "information",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 205,
+          "surface": "information",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "henüz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 213,
+          "surface": "yet",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "encountered",
+      "gloss": "karşılaşılmış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 225,
+          "surface": "encountered",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    },
+    {
+      "lemma": "nor",
+      "gloss": "ne de; önceki olumsuz düşünceyi sürdürür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 230,
+          "surface": "Nor",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "varsayımsal sonuç bildirir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 231,
+          "end": 236,
+          "surface": "would",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 496,
+          "end": 501,
+          "surface": "would",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 8,
+          "surface": "would",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 158,
+          "surface": "would",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "identifying",
+      "gloss": "saptamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 248,
+          "surface": "identifying",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "biological",
+      "gloss": "biyolojik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 261,
+          "surface": "biological",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değişim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 262,
+          "end": 268,
+          "surface": "change",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ne kadar ... olsa da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 277,
+          "surface": "however",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "persuasive",
+      "gloss": "ikna edici",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 288,
+          "surface": "persuasive",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 291,
+          "surface": "as",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 68,
+          "surface": "as",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 345,
+          "end": 347,
+          "surface": "as",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "explanation",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 295,
+          "end": 306,
+          "surface": "explanation",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 639,
+          "end": 650,
+          "surface": "explanation",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-in/-ın (aitlik veya ilişki)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 309,
+          "surface": "of",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 377,
+          "end": 379,
+          "surface": "of",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 514,
+          "end": 516,
+          "surface": "of",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 131,
+          "surface": "of",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 358,
+          "surface": "of",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 419,
+          "end": 421,
+          "surface": "of",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 565,
+          "end": 567,
+          "surface": "of",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 649,
+          "end": 651,
+          "surface": "of",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "task",
+      "gloss": "görev",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 314,
+          "end": 318,
+          "surface": "task",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "establish",
+      "gloss": "ortaya koymak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 320,
+          "end": 329,
+          "surface": "establish",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 265,
+          "surface": "establish",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 330,
+          "end": 333,
+          "surface": "its",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 718,
+          "end": 721,
+          "surface": "its",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "relevance",
+      "gloss": "ilgisi; uygulanabilirliği",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 334,
+          "end": 343,
+          "surface": "relevance",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "another",
+      "gloss": "başka bir görev",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 347,
+          "end": 354,
+          "surface": "another",
+          "contextSentence": "Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another."
+        }
+      ]
+    },
+    {
+      "lemma": "investigation",
+      "gloss": "araştırma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 363,
+          "end": 376,
+          "surface": "investigation",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 609,
+          "end": 622,
+          "surface": "investigation",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "mice",
+      "gloss": "fareler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 380,
+          "end": 384,
+          "surface": "mice",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "illustrates",
+      "gloss": "örnekler; görünür kılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 385,
+          "end": 396,
+          "surface": "illustrates",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "distinction",
+      "gloss": "ayrım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 401,
+          "end": 412,
+          "surface": "distinction",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "following",
+      "gloss": "sonrasında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 414,
+          "end": 423,
+          "surface": "following",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "movement",
+      "gloss": "hareket",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 432,
+          "surface": "movement",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "training",
+      "gloss": "hareket eğitimi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 433,
+          "end": 441,
+          "surface": "training",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "sleeping",
+      "gloss": "uyuyan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 443,
+          "end": 451,
+          "surface": "sleeping",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "animals",
+      "gloss": "hayvanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 452,
+          "end": 459,
+          "surface": "animals",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 534,
+          "end": 541,
+          "surface": "animals",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "developed",
+      "gloss": "geliştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 460,
+          "end": 469,
+          "surface": "developed",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 475,
+          "end": 478,
+          "surface": "new",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "connections",
+      "gloss": "bağlantılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 479,
+          "end": 490,
+          "surface": "connections",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 491,
+          "end": 493,
+          "surface": "on",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "particular",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 494,
+          "end": 504,
+          "surface": "particular",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 181,
+          "surface": "particular",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "branches",
+      "gloss": "dallar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 505,
+          "end": 513,
+          "surface": "branches",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "brain",
+      "gloss": "beyin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 517,
+          "end": 522,
+          "surface": "brain",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 523,
+          "end": 528,
+          "surface": "cells",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den/-dan (karşılaştırma)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 529,
+          "end": 533,
+          "surface": "than",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "tutulan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 542,
+          "end": 546,
+          "surface": "kept",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "awake",
+      "gloss": "uyanık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 547,
+          "end": 552,
+          "surface": "awake",
+          "contextSentence": "A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "neyin; hangi şeyin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 554,
+          "end": 558,
+          "surface": "What",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalmaya devam eder",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 559,
+          "end": 566,
+          "surface": "remains",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "unsettled",
+      "gloss": "kesinleşmemiş; çözüme kavuşmamış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 567,
+          "end": 576,
+          "surface": "unsettled",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "observation",
+      "gloss": "gözlem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 588,
+          "end": 599,
+          "surface": "observation",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 600,
+          "end": 606,
+          "surface": "itself",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 608,
+          "end": 611,
+          "surface": "but",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "distance",
+      "gloss": "mesafe; burada açıklamanın uygulanabileceği kapsam",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 616,
+          "end": 624,
+          "surface": "distance",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "over",
+      "gloss": "boyunca; burada kapsama yayılmayı belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 625,
+          "end": 629,
+          "surface": "over",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "-en/-an (ilgi cümlesini bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 630,
+          "end": 635,
+          "surface": "which",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 358,
+          "end": 363,
+          "surface": "which",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 494,
+          "end": 499,
+          "surface": "which",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "olabilir; ihtimal belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 651,
+          "end": 654,
+          "surface": "may",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "legitimately",
+      "gloss": "haklı bir gerekçeyle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 655,
+          "end": 667,
+          "surface": "legitimately",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "travel",
+      "gloss": "uzanmak; burada başka bağlamlara uygulanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 668,
+          "end": 674,
+          "surface": "travel",
+          "contextSentence": "What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insanlarla ilgili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 2,
+          "end": 7,
+          "surface": "human",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 8,
+          "end": 13,
+          "surface": "study",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "published",
+      "gloss": "yayımlanan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 23,
+          "surface": "published",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 26,
+          "surface": "in",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 392,
+          "end": 394,
+          "surface": "in",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 434,
+          "end": 436,
+          "surface": "in",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "exposes",
+      "gloss": "ortaya çıkarır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 32,
+          "end": 39,
+          "surface": "exposes",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "related",
+      "gloss": "ilişkili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 49,
+          "surface": "related",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "difficulty",
+      "gloss": "güçlük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 60,
+          "surface": "difficulty",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "olmadan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 68,
+          "surface": "without",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 203,
+          "surface": "without",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "resolving",
+      "gloss": "çözüme kavuşturmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 69,
+          "end": 78,
+          "surface": "resolving",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onu; bu güçlüğü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 81,
+          "surface": "it",
+          "contextSentence": "A human study published in 2025 exposes a related difficulty without resolving it."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o; söz konusu bulgu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 467,
+          "end": 469,
+          "surface": "it",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "cümle kuruluşunda kullanılan özne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "It",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "across",
+      "gloss": "boyunca; burada iki deneyin genelinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 89,
+          "surface": "Across",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 93,
+          "surface": "two",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "experiments",
+      "gloss": "deneyler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 105,
+          "surface": "experiments",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "favoured",
+      "gloss": "lehine sonuç verdi; destekledi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 121,
+          "surface": "favoured",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "recall",
+      "gloss": "hatırlama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 122,
+          "end": 128,
+          "surface": "recall",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 377,
+          "end": 383,
+          "surface": "recall",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "previously",
+      "gloss": "önceden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 142,
+          "surface": "previously",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrenilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 150,
+          "surface": "learned",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 195,
+          "surface": "learned",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "word",
+      "gloss": "kelime",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 155,
+          "surface": "word",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "pairs",
+      "gloss": "çiftler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 161,
+          "surface": "pairs",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 182,
+          "surface": "pairs",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "whereas",
+      "gloss": "oysa; karşıtlık kurar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 163,
+          "end": 170,
+          "surface": "whereas",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "fresh",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 176,
+          "surface": "fresh",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "edilgen geçmiş zaman yapısını kuran yardımcı fiil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 187,
+          "surface": "were",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "corresponding",
+      "gloss": "buna karşılık gelen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 219,
+          "surface": "corresponding",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        }
+      ]
+    },
+    {
+      "lemma": "advantage",
+      "gloss": "avantaj",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 229,
+          "surface": "advantage",
+          "contextSentence": "Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 56,
+          "end": 65,
+          "surface": "advantage",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "planned",
+      "gloss": "önceden planlanmış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 238,
+          "surface": "Planned",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "analyses",
+      "gloss": "analizler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 247,
+          "surface": "analyses",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "geçmiş zaman olumsuzluk yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 251,
+          "surface": "did",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "anticipated",
+      "gloss": "beklenen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 281,
+          "surface": "anticipated",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "relationship",
+      "gloss": "ilişki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 294,
+          "surface": "relationship",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 412,
+          "end": 424,
+          "surface": "relationship",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 295,
+          "end": 302,
+          "surface": "between",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "retention",
+      "gloss": "öğrenilen bilginin bellekte korunması",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 303,
+          "end": 312,
+          "surface": "retention",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 319,
+          "end": 328,
+          "surface": "retention",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 313,
+          "end": 316,
+          "surface": "and",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 329,
+          "end": 332,
+          "surface": "and",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "subsequent",
+      "gloss": "sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 317,
+          "end": 327,
+          "surface": "subsequent",
+          "contextSentence": "Planned analyses did not establish the anticipated relationship between retention and subsequent learning."
+        }
+      ]
+    },
+    {
+      "lemma": "further",
+      "gloss": "daha ileri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 340,
+          "end": 347,
+          "surface": "further",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "analysis",
+      "gloss": "analiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 356,
+          "surface": "analysis",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 591,
+          "end": 599,
+          "surface": "analysis",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "took",
+      "gloss": "aldı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 364,
+          "end": 368,
+          "surface": "took",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "earlier",
+      "gloss": "önceki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 369,
+          "end": 376,
+          "surface": "earlier",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "into account",
+      "gloss": "hesaba katarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 384,
+          "end": 396,
+          "surface": "into account",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "suggest",
+      "gloss": "düşündürmek; kesinleştirmeden işaret etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 402,
+          "end": 409,
+          "surface": "suggest",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "privilege",
+      "gloss": "ayrıcalıklı tutmak; daha fazla ağırlık vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 429,
+          "end": 438,
+          "surface": "privilege",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "finding",
+      "gloss": "bulgu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 444,
+          "end": 451,
+          "surface": "finding",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "simply",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 452,
+          "end": 458,
+          "surface": "simply",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü; neden bildirir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 459,
+          "end": 466,
+          "surface": "because",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "supplies",
+      "gloss": "sağlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 470,
+          "end": 478,
+          "surface": "supplies",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "coherent",
+      "gloss": "kendi içinde tutarlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 481,
+          "end": 489,
+          "surface": "coherent",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "story",
+      "gloss": "anlatı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 490,
+          "end": 495,
+          "surface": "story",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "reverse",
+      "gloss": "tersine çevirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 502,
+          "end": 509,
+          "surface": "reverse",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "appropriate",
+      "gloss": "uygun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 514,
+          "end": 525,
+          "surface": "appropriate",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "burden of explanation",
+      "gloss": "açıklama ve gerekçelendirme sorumluluğu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 526,
+          "end": 547,
+          "surface": "burden of explanation",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "result",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 551,
+          "end": 557,
+          "surface": "result",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "obtained",
+      "gloss": "elde edilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 558,
+          "end": 566,
+          "surface": "obtained",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonrasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 567,
+          "end": 572,
+          "surface": "after",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "reconsidering",
+      "gloss": "yeniden değerlendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 573,
+          "end": 586,
+          "surface": "reconsidering",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "requires",
+      "gloss": "gerektirir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 600,
+          "end": 608,
+          "surface": "requires",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "rather than",
+      "gloss": "... yerine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 624,
+          "end": 635,
+          "surface": "rather than",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "retrospectively",
+      "gloss": "geriye dönük biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 636,
+          "end": 651,
+          "surface": "retrospectively",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "making",
+      "gloss": "hâle getirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 652,
+          "end": 658,
+          "surface": "making",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "original",
+      "gloss": "ilk; başlangıçtaki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 663,
+          "end": 671,
+          "surface": "original",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "comparisons",
+      "gloss": "karşılaştırmalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 672,
+          "end": 683,
+          "surface": "comparisons",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "dispensable",
+      "gloss": "vazgeçilebilir; artık gerekli görülmeyen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 684,
+          "end": 695,
+          "surface": "dispensable",
+          "contextSentence": "To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable."
+        }
+      ]
+    },
+    {
+      "lemma": "nevertheless",
+      "gloss": "buna rağmen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 21,
+          "surface": "nevertheless",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 24,
+          "surface": "be",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "premature",
+      "gloss": "erken; yeterli dayanak oluşmadan yapılan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 34,
+          "surface": "premature",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "ele almak; saymak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 43,
+          "surface": "treat",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "missing",
+      "gloss": "gözlenmeyen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 48,
+          "end": 55,
+          "surface": "missing",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "preserving",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 83,
+          "end": 93,
+          "surface": "preserving",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "memories",
+      "gloss": "bellekteki bilgiler; anılar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 102,
+          "surface": "memories",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "yapamayacağını; olumsuz yeterlilik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 103,
+          "end": 109,
+          "surface": "cannot",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "facilitate",
+      "gloss": "kolaylaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 120,
+          "surface": "facilitate",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "daha sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 121,
+          "end": 126,
+          "surface": "later",
+          "contextSentence": "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning."
+        }
+      ]
+    },
+    {
+      "lemma": "conclusion",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 152,
+          "surface": "conclusion",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "require",
+      "gloss": "gerektirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 159,
+          "end": 166,
+          "surface": "require",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "tasks",
+      "gloss": "görevler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 182,
+          "end": 187,
+          "surface": "tasks",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "exhaust",
+      "gloss": "tüketmek; burada olasılıkların tamamını kapsamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 191,
+          "end": 198,
+          "surface": "exhaust",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "relevant",
+      "gloss": "ilgili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 211,
+          "surface": "relevant",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "possibilities",
+      "gloss": "olasılıklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 225,
+          "surface": "possibilities",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "assumption",
+      "gloss": "varsayım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 240,
+          "surface": "assumption",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 241,
+          "end": 246,
+          "surface": "these",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "findings",
+      "gloss": "bulgular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 247,
+          "end": 255,
+          "surface": "findings",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "olumsuzluk yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 256,
+          "end": 258,
+          "surface": "do",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "warrant",
+      "gloss": "haklı çıkarmak; yeterli dayanak sağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 263,
+          "end": 270,
+          "surface": "warrant",
+          "contextSentence": "That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant."
+        }
+      ]
+    },
+    {
+      "lemma": "converse",
+      "gloss": "ters yöndeki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 284,
+          "surface": "converse",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "shortcut",
+      "gloss": "kestirme çıkarım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 285,
+          "end": 293,
+          "surface": "shortcut",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "no",
+      "gloss": "hiç; olumsuzluk bildirir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 297,
+          "end": 299,
+          "surface": "no",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "safer",
+      "gloss": "daha güvenli; hataya daha az açık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 300,
+          "end": 305,
+          "surface": "safer",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "describe",
+      "gloss": "nitelemek; tanımlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 310,
+          "end": 318,
+          "surface": "describe",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "acquisition",
+      "gloss": "yeni bilginin edinilmesi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 333,
+          "end": 344,
+          "surface": "acquisition",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "aspects",
+      "gloss": "yönler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 348,
+          "end": 355,
+          "surface": "aspects",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "geniş zamanda yardımcı fiil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 366,
+          "end": 370,
+          "surface": "does",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "kılmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 379,
+          "surface": "make",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 713,
+          "end": 717,
+          "surface": "make",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "improvement",
+      "gloss": "gelişme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 380,
+          "end": 391,
+          "surface": "improvement",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 422,
+          "end": 433,
+          "surface": "improvement",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "sufficient",
+      "gloss": "yeterli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 399,
+          "end": 409,
+          "surface": "sufficient",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğeri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 441,
+          "end": 446,
+          "surface": "other",
+          "contextSentence": "The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other."
+        }
+      ]
+    },
+    {
+      "lemma": "studies",
+      "gloss": "çalışmalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 452,
+          "end": 459,
+          "surface": "studies",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 460,
+          "end": 463,
+          "surface": "are",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 464,
+          "end": 473,
+          "surface": "therefore",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "neither",
+      "gloss": "ne ... ne de yapısının ilk öğesi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 474,
+          "end": 481,
+          "surface": "neither",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "rivals",
+      "gloss": "birbirine rakip olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 482,
+          "end": 488,
+          "surface": "rivals",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "arasından; içinden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 489,
+          "end": 493,
+          "surface": "from",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "reader",
+      "gloss": "okur",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 502,
+          "end": 508,
+          "surface": "reader",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "zorunda",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 509,
+          "end": 513,
+          "surface": "must",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "select",
+      "gloss": "seçmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 514,
+          "end": 520,
+          "surface": "select",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "winner",
+      "gloss": "kazanan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 523,
+          "end": 529,
+          "surface": "winner",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "nor",
+      "gloss": "ne de; olumsuz düşünceyi sürdürür",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 530,
+          "end": 533,
+          "surface": "nor",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "interchangeable",
+      "gloss": "birbirinin yerine kullanılabilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 534,
+          "end": 549,
+          "surface": "interchangeable",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "demonstrations",
+      "gloss": "gösterimler; destekleyici örnekler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 550,
+          "end": 564,
+          "surface": "demonstrations",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "general",
+      "gloss": "genel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 570,
+          "end": 577,
+          "surface": "general",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "benefit",
+      "gloss": "yarar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 578,
+          "end": 585,
+          "surface": "benefit",
+          "contextSentence": "The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 587,
+          "end": 592,
+          "surface": "Their",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "contribution",
+      "gloss": "katkı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 593,
+          "end": 605,
+          "surface": "contribution",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "conditional",
+      "gloss": "koşula bağlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 609,
+          "end": 620,
+          "surface": "conditional",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her biri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 622,
+          "end": 626,
+          "surface": "each",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "constrains",
+      "gloss": "sınırlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 627,
+          "end": 637,
+          "surface": "constrains",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "account",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 641,
+          "end": 648,
+          "surface": "account",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 675,
+          "end": 682,
+          "surface": "account",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "provided",
+      "gloss": "koşuluyla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 662,
+          "end": 670,
+          "surface": "provided",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "retains",
+      "gloss": "korur",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 683,
+          "end": 690,
+          "surface": "retains",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "distinctions",
+      "gloss": "ayrımlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 695,
+          "end": 707,
+          "surface": "distinctions",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "-en/-an (ilgi cümlesini bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 708,
+          "end": 712,
+          "surface": "that",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "supporting",
+      "gloss": "destekleyen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 722,
+          "end": 732,
+          "surface": "supporting",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "observations",
+      "gloss": "gözlemler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 733,
+          "end": 745,
+          "surface": "observations",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "meaningful",
+      "gloss": "anlamlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 746,
+          "end": 756,
+          "surface": "meaningful",
+          "contextSentence": "Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumlu fiili vurgulayan geçmiş zaman yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 398,
+          "end": 401,
+          "surface": "did",
+          "contextSentence": "A further analysis, which took earlier recall into account, did suggest a relationship."
+        }
+      ]
+    },
+    {
+      "lemma": "memory",
+      "gloss": "anı; bellekte tutulan bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 112,
+          "surface": "memory",
+          "contextSentence": "Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which statement best expresses the main idea of the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 757
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Research on sleep is informative when its different measures and inferential limits remain distinct.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Ana fikir yalnız uykunun yararı değildir: farklı görev, tür ve analizlerden hangi sonucun çıkarılabileceğini ayırmak araştırmanın değerini korur."
+        },
+        {
+          "key": "o2",
+          "text": "Research on sleep becomes persuasive when biological explanations take priority over behavioural results.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Farelerdeki biyolojik açıklamayı davranış sonuçlarından üstün tutmak önerilmez; iki tür kanıtın kapsamları ayrılır."
+        },
+        {
+          "key": "o3",
+          "text": "Research on sleep should be interpreted through the analysis that offers the most coherent relationship.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Tutarlı bir anlatı sunan son analize ayrıcalık tanımak, metinde eleştirilen çıkarım kestirmesidir."
+        },
+        {
+          "key": "o4",
+          "text": "Research on sleep leaves the value of retention uncertain when a later learning advantage is missing.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Yeni öğrenmede avantajın görülmemesi, bellekte koruma bulgusunun değerini belirsizleştirmez; şık farklı sonuçları birbirine karıştırır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "sentence-meaning",
+      "prompt": "Which sentence is closest in meaning to \"Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful\"?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 587,
+        "end": 757
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Each study can explain learning if its observations are translated into a common measure of improvement.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Cümle ortak bir ölçüye çevirme koşulu koymaz; gözlemlerin anlamını veren farklılıkları korumayı ister."
+        },
+        {
+          "key": "o2",
+          "text": "Each study limits the value of the others until their observations can be combined into one explanation.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Çalışmaların birbirinin değerini kısıtlaması değil, öğrenmeye ilişkin açıklamanın kapsamını sınırlandırması anlatılır."
+        },
+        {
+          "key": "o3",
+          "text": "Each study makes a provisional contribution because the observations need to be confirmed in another task.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bu cümlede zorunlu koşul başka bir görevde doğrulama değildir; mevcut gözlemler arasındaki ayrımların açıklamada korunmasıdır."
+        },
+        {
+          "key": "o4",
+          "text": "Each study limits what an explanation can claim, provided the differences between observations are kept.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Cümledeki koşul aynı kalır: gözlemleri anlamlı kılan ayrımlar korunursa her çalışma açıklamanın ne söyleyebileceğini sınırlar."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "Which word is closest in meaning to \"dispensable\" in paragraph two?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 426,
+        "end": 696
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Unnecessary",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "İlk karşılaştırmaları “dispensable” saymak, onları artık gerekli değilmiş gibi ele almaktır. Sonraki bulgu böyle bir sonuca izin vermez."
+        },
+        {
+          "key": "o2",
+          "text": "Unreliable",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Güvenilir olmamakla artık gerekli görülmemek aynı değildir; cümle ilk karşılaştırmaların doğruluğunu değil önemsenmeyip bir kenara bırakılmasını anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Inconclusive",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kesin sonuç vermemek bir analizin tamamen gözden çıkarılabileceği anlamına gelmez; sözcüğün buradaki anlamı gereksiz sayılmaktır."
+        },
+        {
+          "key": "o4",
+          "text": "Unavailable",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Karşılaştırmalar erişilemez değildir; metin onların sonradan gereksiz görülmesini eleştirir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "Which conclusion can reasonably be drawn from the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 272
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The improved recall probably reflects a process separate from whatever supports subsequent learning.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin koruma ve edinimi farklı başarı ölçüleri olarak ayırır; altta yatan süreçlerin birbirinden bağımsız olduğunu göstermiş değildir."
+        },
+        {
+          "key": "o2",
+          "text": "The animal findings make a comparable cellular explanation the most likely account of the human results.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Fare gözlemlerinden insan sonucunun en olası hücresel açıklaması seçilemez; tür ve görev değişiminde ek gerekçe gerekir."
+        },
+        {
+          "key": "o3",
+          "text": "Failing to find an advantage in these tasks leaves open what a different task might show.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Genel olumsuz sonuç için test edilen görevlerin ilgili olasılıkları tüketmesi gerekirdi. Böyle bir dayanak verilmediğinden farklı görevlerde görülebilecek sonuç açık kalır."
+        },
+        {
+          "key": "o4",
+          "text": "The adjusted analysis provides firmer grounds than the planned comparisons for predicting a future advantage.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Sonraki ilişkinin daha sağlam bir öngörü temeli olduğu söylenmez; cazip bir ileri analizle planlı karşılaştırmaları gözden çıkarmak eleştirilir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "noFactualClaims": false,
+    "sources": [
+      {
+        "claim": "2014 fare çalışmasında hareket görevi sonrası uyuyan grupta belirli dendrit dallarında yeni bağlantı oluşumu daha fazlaydı; insan kelime öğrenmesi sonucu olarak sunulmadı.",
+        "source": "https://www.sciencedaily.com/releases/2014/06/140605141849.htm",
+        "checkedOn": "2026-11-19"
+      },
+      {
+        "claim": "İki insan deneyinde uyku sonrası önceki kelime çiftleri daha iyi korundu; yeni kelime çiftlerini öğrenmede uyku grubu avantajı bulunmadı. Planlı ilişki analizi ile önceki hatırlamayı hesaba katan keşif analizi farklı sonuç verdi.",
+        "source": "https://eprints.whiterose.ac.uk/id/eprint/229001/3/1-s2.0-S0010027725001817-main.pdf",
+        "checkedOn": "2026-11-19"
+      }
+    ]
+  }
+}

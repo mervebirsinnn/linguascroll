@@ -1,0 +1,418 @@
+[
+  {
+    "slug": "pilot-b1-quiet-morning",
+    "level": "B1",
+    "title": "Before the First Message",
+    "paragraphs": [
+      "Lena usually reads work messages while waiting for her morning bus. One Monday, her phone battery was empty, so she put the phone in her bag and looked around. She noticed a small garden beside the bus stop and watched a neighbour water the plants. She arrived at work at the usual time.",
+      "The next day, Lena charged her phone but kept it in her bag until she reached the office. She did not want to miss important messages, so she checked them before starting work. She still took the same bus, but the journey felt calmer. After a week, she decided to continue her new routine."
+    ],
+    "questions": [
+      {
+        "key": "q1",
+        "type": "main-idea",
+        "prompt": "What change in Lena’s morning does the passage describe?",
+        "options": [
+          {
+            "key": "o4",
+            "text": "A new route past her neighbour’s garden."
+          },
+          {
+            "key": "o1",
+            "text": "A new way of spending her usual bus journey."
+          },
+          {
+            "key": "o3",
+            "text": "A longer journey after moving to a new office."
+          },
+          {
+            "key": "o2",
+            "text": "An earlier journey after changing her usual bus."
+          }
+        ]
+      },
+      {
+        "key": "q2",
+        "type": "detail",
+        "prompt": "When did Lena check her messages on the second day?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "While she was waiting beside the garden."
+          },
+          {
+            "key": "o2",
+            "text": "At the office, before she started work."
+          },
+          {
+            "key": "o4",
+            "text": "At home, after she finished her work."
+          },
+          {
+            "key": "o3",
+            "text": "On the bus, before it reached her stop."
+          }
+        ]
+      },
+      {
+        "key": "q3",
+        "type": "vocabulary",
+        "prompt": "What does \"routine\" mean in the final sentence?",
+        "options": [
+          {
+            "key": "o3",
+            "text": "A habit she follows in daily life."
+          },
+          {
+            "key": "o1",
+            "text": "A message that needs a quick reply."
+          },
+          {
+            "key": "o4",
+            "text": "A problem she has with her battery."
+          },
+          {
+            "key": "o2",
+            "text": "A place where neighbours meet daily."
+          }
+        ]
+      },
+      {
+        "key": "q4",
+        "type": "inference",
+        "prompt": "What does Lena seem to want from her new routine?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "To give colleagues quicker replies before reaching work."
+          },
+          {
+            "key": "o3",
+            "text": "To reduce work messages by leaving her phone uncharged."
+          },
+          {
+            "key": "o4",
+            "text": "To keep up with work while enjoying a quieter journey."
+          },
+          {
+            "key": "o2",
+            "text": "To spend more time watching her neighbour’s garden."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pilot-b2-library-bookings",
+    "level": "B2",
+    "title": "A room for the unexpected visitor",
+    "paragraphs": [
+      "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon. The system suited regular users, who often booked several weeks ahead. However, people whose work schedules changed at short notice rarely found a room available. Several complained that a public service was becoming difficult to use unless they could plan their time far in advance.",
+      "The library tested a different arrangement for one month. Half the rooms remained bookable online, while the others could only be requested on arrival. Staff expected more complaints from regular users, but the response was mixed. Some disliked losing certainty; others welcomed the chance to make an unexpected visit. Meanwhile, a queue developed at the desk during the busiest hours.",
+      "The manager did not describe the trial as a complete success. More visitors had obtained a room, but staff were spending longer explaining the rules. She therefore kept both routes and introduced a clear sign showing which rooms were available. Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+    ],
+    "questions": [
+      {
+        "key": "main-idea",
+        "type": "main-idea",
+        "prompt": "What is the main purpose of the passage?",
+        "options": [
+          {
+            "key": "b",
+            "text": "To describe a balance between booking ahead and visiting freely."
+          },
+          {
+            "key": "d",
+            "text": "To compare online booking with a proposed system of longer visits."
+          },
+          {
+            "key": "c",
+            "text": "To explain a change designed to reward the most frequent visitors."
+          },
+          {
+            "key": "a",
+            "text": "To assess whether a booking trial reduced the staff’s workload."
+          }
+        ]
+      },
+      {
+        "key": "visitor-response",
+        "type": "detail",
+        "prompt": "How did regular users respond to the trial?",
+        "options": [
+          {
+            "key": "a",
+            "text": "They welcomed the easier access but wanted clearer opening hours."
+          },
+          {
+            "key": "c",
+            "text": "They split between secure plans and opportunities for unplanned visits."
+          },
+          {
+            "key": "d",
+            "text": "They supported the new rules after staff explained them in more detail."
+          },
+          {
+            "key": "b",
+            "text": "They disliked the queue and asked for the earlier system to return."
+          }
+        ]
+      },
+      {
+        "key": "certainty",
+        "type": "vocabulary",
+        "prompt": "In this context, what does losing certainty mean?",
+        "options": [
+          {
+            "key": "a",
+            "text": "Having less choice over how long a reserved room could be used."
+          },
+          {
+            "key": "b",
+            "text": "Being less sure that arriving at the desk would avoid a queue."
+          },
+          {
+            "key": "c",
+            "text": "Knowing less about which rooms would be available on the website."
+          },
+          {
+            "key": "d",
+            "text": "Having less assurance that a room would be secured beforehand."
+          }
+        ]
+      },
+      {
+        "key": "manager-inference",
+        "type": "inference",
+        "prompt": "What can be inferred about the manager’s decision after the trial?",
+        "options": [
+          {
+            "key": "c",
+            "text": "She expected a clear sign to remove the need for advance booking."
+          },
+          {
+            "key": "b",
+            "text": "She saw the trial’s main benefit as making afternoon visits longer."
+          },
+          {
+            "key": "d",
+            "text": "She considered the queue a reason to reserve more rooms online."
+          },
+          {
+            "key": "a",
+            "text": "She valued wider access while addressing the work created by it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pilot-c1-sleep-and-learning",
+    "level": "C1",
+    "title": "Two meanings of learning better",
+    "paragraphs": [
+      "To ask whether sleep improves learning is already to compress several questions into one. Evidence that a memory survives an interval need not show that the learner has become more receptive to information not yet encountered. Nor would identifying a biological change, however persuasive as an explanation of one task, establish its relevance to another. A 2014 investigation of mice illustrates the distinction: following movement training, sleeping animals developed more new connections on particular branches of brain cells than animals kept awake. What remains unsettled is not the observation itself, but the distance over which an explanation may legitimately travel.",
+      "A human study published in 2025 exposes a related difficulty without resolving it. Across two experiments, sleep favoured recall of previously learned word pairs, whereas fresh pairs were learned without a corresponding advantage. Planned analyses did not establish the anticipated relationship between retention and subsequent learning. A further analysis, which took earlier recall into account, did suggest a relationship. To privilege that finding simply because it supplies a coherent story would reverse the appropriate burden of explanation: a result obtained after reconsidering the analysis requires investigation, rather than retrospectively making the original comparisons dispensable.",
+      "It would nevertheless be premature to treat the missing advantage as evidence that preserving memories cannot facilitate later learning. That conclusion would require the particular tasks to exhaust the relevant possibilities, an assumption these findings do not warrant. The converse shortcut is no safer: to describe retention and acquisition as aspects of memory does not make improvement in one sufficient evidence of improvement in the other. The studies are therefore neither rivals from which a reader must select a winner nor interchangeable demonstrations of a general benefit. Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful."
+    ],
+    "questions": [
+      {
+        "key": "q1",
+        "type": "main-idea",
+        "prompt": "Which statement best expresses the main idea of the passage?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "Research on sleep is informative when its different measures and inferential limits remain distinct."
+          },
+          {
+            "key": "o2",
+            "text": "Research on sleep becomes persuasive when biological explanations take priority over behavioural results."
+          },
+          {
+            "key": "o3",
+            "text": "Research on sleep should be interpreted through the analysis that offers the most coherent relationship."
+          },
+          {
+            "key": "o4",
+            "text": "Research on sleep leaves the value of retention uncertain when a later learning advantage is missing."
+          }
+        ]
+      },
+      {
+        "key": "q2",
+        "type": "sentence-meaning",
+        "prompt": "Which sentence is closest in meaning to \"Their contribution is conditional: each constrains an account of learning, provided the account retains the distinctions that make its supporting observations meaningful\"?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "Each study can explain learning if its observations are translated into a common measure of improvement."
+          },
+          {
+            "key": "o2",
+            "text": "Each study limits the value of the others until their observations can be combined into one explanation."
+          },
+          {
+            "key": "o3",
+            "text": "Each study makes a provisional contribution because the observations need to be confirmed in another task."
+          },
+          {
+            "key": "o4",
+            "text": "Each study limits what an explanation can claim, provided the differences between observations are kept."
+          }
+        ]
+      },
+      {
+        "key": "q3",
+        "type": "vocabulary",
+        "prompt": "Which word is closest in meaning to \"dispensable\" in paragraph two?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "Unnecessary"
+          },
+          {
+            "key": "o2",
+            "text": "Unreliable"
+          },
+          {
+            "key": "o3",
+            "text": "Inconclusive"
+          },
+          {
+            "key": "o4",
+            "text": "Unavailable"
+          }
+        ]
+      },
+      {
+        "key": "q4",
+        "type": "inference",
+        "prompt": "Which conclusion can reasonably be drawn from the passage?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "The improved recall probably reflects a process separate from whatever supports subsequent learning."
+          },
+          {
+            "key": "o2",
+            "text": "The animal findings make a comparable cellular explanation the most likely account of the human results."
+          },
+          {
+            "key": "o3",
+            "text": "Failing to find an advantage in these tasks leaves open what a different task might show."
+          },
+          {
+            "key": "o4",
+            "text": "The adjusted analysis provides firmer grounds than the planned comparisons for predicting a future advantage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "pilot-c2-evidence-and-confidence",
+    "level": "C2",
+    "title": "Confidence Without a Shortcut",
+    "paragraphs": [
+      "When a disputed finding is presented to the public, the invitation to trust it can be hedged until responsibility for accepting it becomes difficult to locate. The National Academies report distinguishes reproducing an analysis with existing data and code from testing findings with newly collected data. Neither a successful repetition nor a failed one delivers an automatic verdict. The question for an explanation is consequently not whether uncertainty has been mentioned, but whether its implications have been made available for judgement.",
+      "Consider a hypothetical journal whose editors disagree over a contested result. One would postpone coverage until the objections had been resolved; another would publish immediately, attaching qualifications that readers could consult if they wished. Their disagreement appears to concern how much protection an audience requires. Yet the protection offered by each can obscure the same omission: neither proposal specifies what readers would need to understand in order to assess the conclusion. A warning held in reserve may be impeccably accurate while doing little to alter the confidence invited by the headline.",
+      "This is not an argument for giving every objection an equal hearing, as though fairness could be measured by the space allocated to opposing voices. An objection that makes a measurement unreliable has a different bearing on a conclusion from one that confines its application to a narrower setting. Were those differences explained, declining to distribute attention evenly might become more defensible, rather than less. Conversely, a meticulous account of limitations could still mislead if it left the strength of the remaining claim untouched by everything it had just conceded.",
+      "The demanding alternative is to make the relationship between confidence and its grounds inspectable, without promising that inspection will settle the dispute. Readers need not inherit the editor's judgement, but they should be able to identify what would justify revising it. Such an account asks authority to expose its dependence on reasons, including reasons that presently favour the claim. Its restraint consists neither in withholding a conclusion nor in surrounding one with reservations; it consists in refusing to let the conclusion outrun the explanation on which its credibility depends."
+    ],
+    "questions": [
+      {
+        "key": "q1",
+        "type": "main-idea",
+        "prompt": "Which statement best expresses the main idea of the passage?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "A journal protects its readers by separating provisional conclusions from the objections that await resolution."
+          },
+          {
+            "key": "o2",
+            "text": "Scientific authority becomes credible when explanations permit readers to choose how much uncertainty they will tolerate."
+          },
+          {
+            "key": "o3",
+            "text": "Responsible explanation makes confidence accountable to evidence instead of treating caution as a sufficient safeguard."
+          },
+          {
+            "key": "o4",
+            "text": "Impartial reporting depends on giving competing objections similar opportunities to determine the final judgement."
+          }
+        ]
+      },
+      {
+        "key": "q2",
+        "type": "sentence-meaning",
+        "prompt": "Which sentence is closest in meaning to the final sentence of paragraph three?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "Acknowledging detailed limitations can mislead when readers regard the surviving claim as less credible than the explanation suggests."
+          },
+          {
+            "key": "o2",
+            "text": "A careful list of reservations becomes misleading when its detail prevents readers from distinguishing the claim from its objections."
+          },
+          {
+            "key": "o3",
+            "text": "An explanation of limitations can obscure a valid conclusion when concessions are allowed to count more heavily than supporting reasons."
+          },
+          {
+            "key": "o4",
+            "text": "Even precise disclosure can mislead when the force assigned to a claim does not reflect the weaknesses the explanation has acknowledged."
+          }
+        ]
+      },
+      {
+        "key": "q3",
+        "type": "context-meaning",
+        "prompt": "In the final sentence, what does letting a conclusion \"outrun the explanation\" mean?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "Making a judgement available before readers have had sufficient time to inspect its qualifications."
+          },
+          {
+            "key": "o2",
+            "text": "Presenting a conclusion so concisely that its reasoning requires a more detailed treatment elsewhere."
+          },
+          {
+            "key": "o3",
+            "text": "Giving a conclusion a reach or degree of confidence that its stated grounds cannot sustain."
+          },
+          {
+            "key": "o4",
+            "text": "Allowing the audience to revise the conclusion more readily than the editor revises the supporting account."
+          }
+        ]
+      },
+      {
+        "key": "q4",
+        "type": "cannot-infer",
+        "prompt": "Which statement CANNOT be inferred from the passage?",
+        "options": [
+          {
+            "key": "o1",
+            "text": "An accurate warning may leave the confidence encouraged by the main presentation substantially unchanged."
+          },
+          {
+            "key": "o2",
+            "text": "A failed repetition more probably reflects an overlooked condition than a fault in the original measurement."
+          },
+          {
+            "key": "o3",
+            "text": "Explaining the different effects of objections can justify assigning those objections unequal attention."
+          },
+          {
+            "key": "o4",
+            "text": "Readers can be equipped to examine a judgement without being expected to adopt it or settle the underlying dispute."
+          }
+        ]
+      }
+    ]
+  }
+]

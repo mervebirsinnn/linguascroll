@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { FeedPreferences } from "@linguascroll/shared-types";
+import type { CefrLevel, FeedPreferences } from "@linguascroll/shared-types";
 import { buildCompletedState, type OnboardingState } from "./onboarding-state";
 import { getStoredOnboardingState, storeOnboardingState } from "./storage";
 
@@ -14,6 +14,8 @@ export type OnboardingHookState =
       status: "success";
       state: OnboardingState;
       completeOnboarding: (preferences: FeedPreferences) => void;
+      /** Hesabım'dan seviye değişikliği: yalnız level güncellenir, konular ve completed AYNEN kalır. */
+      updateLevel: (level: CefrLevel) => void;
     };
 
 export function useOnboardingState(): OnboardingHookState {
@@ -46,8 +48,13 @@ export function useOnboardingState(): OnboardingHookState {
   }
 
 
+  function updateLevel(level: CefrLevel): void {
+    if (state === null) return;
+    persist({ ...state, preferences: { ...state.preferences, level } });
+  }
+
   if (state === null) {
     return { status: "loading" };
   }
-  return { status: "success", state, completeOnboarding };
+  return { status: "success", state, completeOnboarding, updateLevel };
 }

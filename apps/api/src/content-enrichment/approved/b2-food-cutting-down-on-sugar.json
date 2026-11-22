@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T17:02:00.053Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "vocabularyLemmaNotInTranscript"
+    ],
+    "note": "yerel test: transcript'te cravings (çoğul) geçiyor, çekim farkı, yanlış pozitif"
+  },
+  "media": {
+    "localFileName": "b2-food-cutting-down-on-sugar.mp4"
+  },
+  "draft": {
+    "contentId": "b2-food-cutting-down-on-sugar",
+    "muxAssetId": "local-cutting-down-on-sugar",
+    "sourceFile": "b2-food-cutting-down-on-sugar.mp4",
+    "storageKey": null,
+    "durationMs": 30130,
+    "topic": "lifestyle",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4800,
+        "text": "Although I knew sugar wasn't doing me any favors, I kept a cookie jar on my desk for",
+        "englishExplanation": "Admitting that keeping a cookie jar on the desk was unhealthy.",
+        "turkishExplanation": "Şekerin bana hiç faydası olmadığını bildiğim halde masamda bir kurabiye kavanozu bulundurdum,"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4800,
+        "endMs": 8320,
+        "text": "years. Last spring, I finally decided to cut down on it.",
+        "englishExplanation": "Mentioning that after years, they finally decided to reduce sugar intake.",
+        "turkishExplanation": "yıllarca. Geçen bahar nihayet şekeri azaltmaya karar verdim."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8820,
+        "endMs": 12500,
+        "text": "Despite feeling tired and grumpy for the first week, I didn't give in.",
+        "englishExplanation": "Resisting sugar cravings despite feeling tired and irritable at first.",
+        "turkishExplanation": "İlk hafta yorgun ve huysuz hissetmeme rağmen pes etmedim."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 13040,
+        "endMs": 16880,
+        "text": "Even though my colleagues kept bringing cake to the office, I made a simple rule.",
+        "englishExplanation": "Setting a personal rule despite colleagues bringing cakes.",
+        "turkishExplanation": "İş arkadaşlarım ofise sürekli pasta getirse de basit bir kural koydum."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 17380,
+        "endMs": 19220,
+        "text": "Fruit first, dessert only at weekends.",
+        "englishExplanation": "Describing the rule of prioritizing fruit and limiting dessert to weekends.",
+        "turkishExplanation": "Önce meyve, tatlı sadece hafta sonları."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20040,
+        "endMs": 24520,
+        "text": "In spite of all my doubts, the cravings faded within a month. The surprising part?",
+        "englishExplanation": "Noticing that sugar cravings went away within a month despite doubts.",
+        "turkishExplanation": "Tüm şüphelerime rağmen tatlı krizlerim bir ay içinde kayboldu. Şaşırtıcı kısım mı?"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 25040,
+        "endMs": 26320,
+        "text": "Food tastes sweeter now.",
+        "englishExplanation": "Stating that food now tastes sweeter naturally.",
+        "turkishExplanation": "Yiyeceklerin tadı artık daha tatlı geliyor."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 26900,
+        "endMs": 29760,
+        "text": "Though I still love chocolate, it no longer runs my day.",
+        "englishExplanation": "Concluding that chocolate no longer controls their daily life.",
+        "turkishExplanation": "Çikolatayı hâlâ sevsem de artık günümü o yönetmiyor."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "cut down on",
+        "gloss": "azaltmak, kısmak"
+      },
+      {
+        "lemma": "give in",
+        "gloss": "pes etmek, boyun eğmek"
+      },
+      {
+        "lemma": "grumpy",
+        "gloss": "huysuz, aksi"
+      },
+      {
+        "lemma": "craving",
+        "gloss": "şiddetli istek, kriz"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 2,
+        "type": "phrase",
+        "expression": "cut down on",
+        "englishExplanation": "To reduce the amount or quantity of something you consume or do.",
+        "turkishExplanation": "Bir şeyin tüketimini veya miktarını azaltmak anlamına gelir.",
+        "exampleEn": "I am trying to cut down on caffeine this month.",
+        "exampleTr": "Bu ay kafein tüketimini azaltmaya çalışıyorum."
+      },
+      {
+        "segmentOrdinal": 3,
+        "type": "phrase",
+        "expression": "give in",
+        "englishExplanation": "To stop resisting a craving, temptation, or pressure.",
+        "turkishExplanation": "Bir isteğe veya baskıya direnmeyi bırakıp pes etmek anlamına gelir.",
+        "exampleEn": "She wanted a doughnut, but she didn't give in.",
+        "exampleTr": "Canı çörek istedi ama pes etmedi."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "In the video, what does the speaker mean by saying 'I didn't give in'?",
+      "options": [
+        {
+          "text": "They did not surrender to their cravings.",
+          "isCorrect": true
+        },
+        {
+          "text": "They did not share their snacks with colleagues.",
+          "isCorrect": false
+        },
+        {
+          "text": "They did not feel tired during the first week.",
+          "isCorrect": false
+        },
+        {
+          "text": "They did not agree to follow their diet rule.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "vocabularyLemmaNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": null,
+          "message": "\"craving\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

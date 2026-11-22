@@ -12,6 +12,9 @@ type MemoryFlowProps = {
   onBack: () => void;
   /** 2026-10-27 — hesap çıkışı (Firebase + RevenueCat oturumu kapanır, giriş ekranına dönülür). */
   onSignOut: () => void;
+  /** Hesabım'daki seviye satırı için (opsiyonel; verilmezse satır çizilmez). */
+  level?: import("@linguascroll/shared-types").CefrLevel | null;
+  onChangeLevel?: (level: import("@linguascroll/shared-types").CefrLevel) => void;
   /**
    * 2026-10-28 — misafir kullanıcı çıkış yapamaz (çıkacak bir hesap yok; çıkış yeni misafir =
    * yeni ücretsiz hak açardı), onun yerine Google hesabını bağlayabilir. Hesaplı kullanıcı
@@ -33,13 +36,13 @@ type MemoryTab = "saved" | "review" | "progress";
  * eylemiyle (Feed'deki "Kelimelerim" butonu) açılıyor, feed'e asla zorla bir
  * kesinti olarak enjekte edilmiyor.
  */
-export function MemoryFlow({ userId, onBack, onSignOut, account }: MemoryFlowProps) {
+export function MemoryFlow({ userId, onBack, onSignOut, account, level, onChangeLevel }: MemoryFlowProps) {
   const [tab, setTab] = useState<MemoryTab>("saved");
   const [accountOpen, setAccountOpen] = useState(false);
   const insets = useSafeAreaInsets();
 
   // Hesap paneli kapandığında seçili kelime sekmesi korunur; ayrı navigation bağımlılığı yok.
-  if (accountOpen) return <AccountScreen key={userId} userId={userId} account={account} onBack={() => setAccountOpen(false)} onSignOut={onSignOut} />;
+  if (accountOpen) return <AccountScreen key={userId} userId={userId} account={account} onBack={() => setAccountOpen(false)} onSignOut={onSignOut} level={level} onChangeLevel={onChangeLevel} />;
 
   return (
     <View style={styles.container}>

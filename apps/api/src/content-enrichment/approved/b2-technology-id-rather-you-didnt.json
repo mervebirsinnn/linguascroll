@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T17:00:24.584Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "yerel test: ifade çekim/biçim farkı (transcript'te çekimli geçiyor), yanlış pozitif"
+  },
+  "media": {
+    "localFileName": "b2-technology-id-rather-you-didnt.mp4"
+  },
+  "draft": {
+    "contentId": "b2-technology-id-rather-you-didnt",
+    "muxAssetId": "local-dads-new-smart-speaker",
+    "sourceFile": "b2-technology-id-rather-you-didnt.mp4",
+    "storageKey": null,
+    "durationMs": 28470,
+    "topic": "technology",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3980,
+        "text": "Last month, my dad asked me to set up a smart speaker in his kitchen.",
+        "englishExplanation": "The speaker's father asked for help installing a voice assistant device in his kitchen.",
+        "turkishExplanation": "Geçen ay babam, mutfağına akıllı bir hoparlör kurmamı istedi."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4640,
+        "endMs": 7440,
+        "text": "I'd rather have spent my Saturday outdoors, but I agreed.",
+        "englishExplanation": "The speaker would have preferred being outdoors on Saturday, but agreed to help anyway.",
+        "turkishExplanation": "Cumartesi günümü dışarıda geçirmeyi tercih ederdim ama kabul ettim."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8140,
+        "endMs": 12080,
+        "text": "Within an hour, he had figured out how to play old jazz and check the weather.",
+        "englishExplanation": "In less than an hour, the father learned how to play jazz music and get weather reports.",
+        "turkishExplanation": "Bir saat geçmeden eski caz müzikleri çalmayı ve hava durumuna bakmayı çözmüştü."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12820,
+        "endMs": 15000,
+        "text": "Then he started asking it to order groceries.",
+        "englishExplanation": "After that, he started giving the speaker commands to order groceries.",
+        "turkishExplanation": "Sonra ona mutfak alışverişi siparişi vermesini söylemeye başladı."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15820,
+        "endMs": 19500,
+        "text": "Dad, I'd rather you didn't connect it to your bank card yet, I said.",
+        "englishExplanation": "The speaker advised their father not to link his credit or debit card to the device yet.",
+        "turkishExplanation": "\"Baba, bunu henüz banka kartına bağlamamanı tercih ederim,\" dedim."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20080,
+        "endMs": 23560,
+        "text": "He laughed and said he would rather trust a machine than queue at the supermarket.",
+        "englishExplanation": "The father laughed and said he prefers trusting automated technology over waiting in store lines.",
+        "turkishExplanation": "Güldü ve süpermarkette sıra beklemektense bir makineye güvenmeyi tercih edeceğini söyledi."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 24520,
+        "endMs": 27960,
+        "text": "I'd rather not admit it, but he's probably using it better than I do.",
+        "englishExplanation": "The speaker reluctantly admits that their father is operating the device better than they do.",
+        "turkishExplanation": "İtiraf etmek istemiyorum ama muhtemelen onu benden daha iyi kullanıyor."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "set up",
+        "gloss": "kurmak, monte etmek"
+      },
+      {
+        "lemma": "figure out",
+        "gloss": "çözmek, anlamak"
+      },
+      {
+        "lemma": "queue",
+        "gloss": "sıraya girmek, kuyruk beklemek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 2,
+        "type": "grammar",
+        "expression": "would rather have + past participle",
+        "englishExplanation": "Used to express a preference or regret about a past action that did not happen.",
+        "turkishExplanation": "Geçmişte gerçekleşmemiş bir eyleme dair tercihi veya pişmanlığı ifade etmek için kullanılır.",
+        "exampleEn": "I'd rather have stayed home yesterday than gone to the party.",
+        "exampleTr": "Dün partiye gitmektense evde kalmış olmayı tercih ederdim."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "grammar",
+        "expression": "would rather + subject + past tense",
+        "englishExplanation": "Used to express how you would prefer someone else to behave or what you want them to do.",
+        "turkishExplanation": "Başka birinin ne yapmasını veya yapmamasını istediğinizi belirtirken kullanılır.",
+        "exampleEn": "I'd rather you didn't share my phone number with anyone.",
+        "exampleTr": "Telefon numaramı kimseyle paylaşmamanı tercih ederim."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 6,
+      "question": "In the video, what does the father prefer to do instead of queuing at the supermarket?",
+      "options": [
+        {
+          "text": "Trust a machine to order his groceries.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ask his child to do his shopping every week.",
+          "isCorrect": false
+        },
+        {
+          "text": "Go to the market early in the morning.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pay with cash instead of using a card.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 2,
+          "message": "Learning point ifadesi (\"would rather have + past participle\") segment 2'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        },
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 5,
+          "message": "Learning point ifadesi (\"would rather + subject + past tense\") segment 5'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

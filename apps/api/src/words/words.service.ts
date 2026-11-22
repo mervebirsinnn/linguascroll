@@ -1,5 +1,6 @@
-import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
+import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from "@nestjs/common";
 import { normalizeGlossWord, savedWordSchema, type SavedWord, type VideoVocabularyItem, type WordsProgress } from "@linguascroll/shared-types";
+import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { UsersService } from "../users/users.service";
 import { computeWordReviewState } from "./review-scheduling";
 import { REVIEW_SESSION_SIZE, selectReviewSession, type ReviewCandidate } from "./review-selection";
@@ -26,6 +27,7 @@ export class WordsService {
     private readonly wordsRepository: WordsRepository,
     private readonly wordReviewEventsRepository: WordReviewEventsRepository,
     private readonly usersService: UsersService,
+    private readonly subscriptionsService: SubscriptionsService,
   ) {}
 
   /**
@@ -42,8 +44,43 @@ export class WordsService {
     return { word: saved.word, saved: true as const, created: saved.created };
   }
 
-  async saveWord(wordId: string, userId: string, sourceSegmentId?: string | null): Promise<{ created: boolean }> {
+  /**
+   * Okuma pratiği — `sourcePassageId` opsiyonel. Verilmişse: (1) segmentle birlikte gelemez (400), (2) metin yoksa/
+   * emekliyse veya kelime o metnin kelimelerinden değilse 400 (body'de referans verilen kaynak geçersiz — segment
+   * kuralıyla aynı), (3) metin KİLİTLİYSE 403: metne erişimi olmayan biri, o metne ait bağlam cümlesini kayıt yoluyla Memory'ye
+   * taşıyamasın. NOT: yalnız bu cümleyi korur — wordId'yi bilen biri kaynaksız `{}` ile kelimeyi (ve gloss'unu) yine kaydedebilir;
+   * gloss gizliliği bu PR'ın kapsamı değil. Ücretsiz örnek abonelik sorgulanmadan açık
+   * (passages.service.answerQuestion ile aynı sıra).
+   */
+  async saveWord(
+    wordId: string,
+    userId: string,
+    sourceSegmentId?: string | null,
+    sourcePassageId?: string | null,
+    sourcePassageSpanId?: string | null,
+  ): Promise<{ created: boolean }> {
+    if (sourceSegmentId && sourcePassageId) {
+      throw new BadRequestException("sourceSegmentId ve sourcePassageId birlikte gönderilemez");
+    }
+    if (sourcePassageSpanId && !sourcePassageId) {
+      throw new BadRequestException("sourcePassageSpanId yalnız sourcePassageId ile gönderilebilir");
+    }
     await this.assertWordAndUserExist(wordId, userId);
+
+    if (sourcePassageId) {
+      const access = await this.wordsRepository.findPassageWordAccess(sourcePassageId, wordId, sourcePassageSpanId ?? null);
+      if (!access || access.retired || !access.containsWord) {
+        throw new BadRequestException(`"${sourcePassageId}" metni yok ya da "${wordId}" kelimesini içermiyor`);
+      }
+      // Geçiş (span) verildiyse GÖNDERİLEN metne ve kelimeye ait olmalı; başka metnin/kelimenin span'ı kaynak cümleyi
+      // yanlış yere bağlardı. Yoksa/uyuşmazsa sessizce ilk geçişe düşülmez: 400.
+      if (sourcePassageSpanId && !access.containsSpan) {
+        throw new BadRequestException(`"${sourcePassageSpanId}" geçişi, "${sourcePassageId}" metnine ve "${wordId}" kelimesine ait değil`);
+      }
+      if (!access.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId))) {
+        throw new ForbiddenException("Bu metin için erişim yok");
+      }
+    }
 
     if (sourceSegmentId) {
       const isConsistent = await this.wordsRepository.isSegmentConsistentWithWord(sourceSegmentId, wordId);
@@ -54,7 +91,7 @@ export class WordsService {
       }
     }
 
-    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null);
+    return this.wordsRepository.saveWord(userId, wordId, sourceSegmentId ?? null, sourcePassageId ?? null, sourcePassageSpanId ?? null);
   }
 
   async unsaveWord(wordId: string, userId: string): Promise<void> {

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { AppState } from "react-native";
 import * as Sentry from "@sentry/react-native";
 import type { SubscriptionOverview } from "@linguascroll/shared-types";
+import { publishAccessVerified } from "../subscription/access-events";
 import { fetchSubscriptionOverview } from "../subscription/api/fetch-subscription-overview";
 import { initializePurchases, openSubscriptionManagement, restoreAndCheck } from "../subscription/purchases-gateway";
 import { STORE_NAME } from "../subscription/store-name";
@@ -24,7 +25,9 @@ export function useAccountSubscription(userId: string, isAnonymous: boolean) {
   const accept = useCallback((result: SubscriptionOverview) => {
     setOverview(result);
     setStatus(result.verification !== "verified" ? "unknown" : result.subscription?.active ? "active" : "inactive");
-  }, []);
+    // Yalnız sunucunun DOĞRULADIĞI sonuç okuma pratiğine erişim olayı olur; "unknown" içerik silmek/açmak için gerekçe değil.
+    if (result.verification === "verified") publishAccessVerified(userId, result.subscription?.active === true);
+  }, [userId]);
 
   useEffect(() => {
     const request = ++generation.current;

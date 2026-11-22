@@ -137,3 +137,15 @@ describe("iOS yayını — 2026-11-20", () => {
     alert.mockRestore();
   });
 });
+
+it("seviye satırı mevcut seviyeyi gösterir, seçimi onChangeLevel'a iletir; callback yoksa satır çizilmez", async () => {
+  const onChangeLevel = jest.fn();
+  await render(<AccountScreen userId="linked" account={account} onBack={jest.fn()} onSignOut={jest.fn()} level="B1" onChangeLevel={onChangeLevel} />);
+  expect(screen.getByText("B1 · Orta")).toBeTruthy();
+  await fireEvent.press(screen.getByText("İngilizce seviyem"));
+  await fireEvent.press(screen.getByText("C1"));
+  expect(onChangeLevel).toHaveBeenCalledWith("C1");
+  await screen.unmount();
+  await render(<AccountScreen userId="linked" account={account} onBack={jest.fn()} onSignOut={jest.fn()} />);
+  expect(screen.queryByText("İngilizce seviyem")).toBeNull();
+}, 30000);

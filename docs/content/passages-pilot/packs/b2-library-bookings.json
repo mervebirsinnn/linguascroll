@@ -1,0 +1,2270 @@
+{
+  "slug": "pilot-b2-library-bookings",
+  "level": "B2",
+  "title": "A room for the unexpected visitor",
+  "topic": "Toplumsal yaşam ve hizmet tasarımı",
+  "sortOrder": 1,
+  "isFreeSample": true,
+  "paragraphs": [
+    "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon. The system suited regular users, who often booked several weeks ahead. However, people whose work schedules changed at short notice rarely found a room available. Several complained that a public service was becoming difficult to use unless they could plan their time far in advance.",
+    "The library tested a different arrangement for one month. Half the rooms remained bookable online, while the others could only be requested on arrival. Staff expected more complaints from regular users, but the response was mixed. Some disliked losing certainty; others welcomed the chance to make an unexpected visit. Meanwhile, a queue developed at the desk during the busiest hours.",
+    "The manager did not describe the trial as a complete success. More visitors had obtained a room, but staff were spending longer explaining the rules. She therefore kept both routes and introduced a clear sign showing which rooms were available. Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+  ],
+  "words": [
+    {
+      "lemma": "until",
+      "gloss": "-e kadar; until recently: yakın zamana kadar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 5,
+          "surface": "Until",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "recently",
+      "gloss": "yakın zaman; until recently: yakın zamana kadar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 6,
+          "end": 14,
+          "surface": "recently",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "visitors",
+      "gloss": "ziyaretçiler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 24,
+          "surface": "visitors",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 67,
+          "end": 75,
+          "surface": "visitors",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e, kütüphaneye yönelmeyi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 27,
+          "surface": "to",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık; bilinen ismi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 31,
+          "surface": "the",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 105,
+          "surface": "The",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The library tested a different arrangement for one month."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 66,
+          "surface": "the",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 105,
+          "end": 108,
+          "surface": "the",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 210,
+          "surface": "the",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 282,
+          "surface": "the",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 351,
+          "end": 354,
+          "surface": "the",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 367,
+          "end": 370,
+          "surface": "the",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 29,
+          "end": 32,
+          "surface": "the",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 142,
+          "surface": "the",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 300,
+          "end": 303,
+          "surface": "the",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 352,
+          "end": 355,
+          "surface": "the",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "riverside",
+      "gloss": "Riverside, kurmaca kütüphanenin adı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 41,
+          "surface": "Riverside",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "library",
+      "gloss": "kütüphane",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 49,
+          "surface": "Library",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 11,
+          "surface": "library",
+          "contextSentence": "The library tested a different arrangement for one month."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 304,
+          "end": 311,
+          "surface": "library",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "reserve",
+      "gloss": "rezervasyon yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 63,
+          "surface": "reserve",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 64,
+          "end": 65,
+          "surface": "a",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 248,
+          "surface": "a",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 290,
+          "surface": "a",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 20,
+          "surface": "a",
+          "contextSentence": "The library tested a different arrangement for one month."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 330,
+          "end": 331,
+          "surface": "a",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 43,
+          "surface": "a",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 89,
+          "end": 90,
+          "surface": "a",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 196,
+          "end": 197,
+          "surface": "a",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 66,
+          "end": 71,
+          "surface": "study",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "room",
+      "gloss": "oda",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 76,
+          "surface": "room",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 253,
+          "surface": "room",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 95,
+          "surface": "room",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "boyunca, süre belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 80,
+          "surface": "for",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 43,
+          "end": 46,
+          "surface": "for",
+          "contextSentence": "The library tested a different arrangement for one month."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 81,
+          "end": 83,
+          "surface": "an",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 298,
+          "end": 300,
+          "surface": "an",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "entire",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 90,
+          "surface": "entire",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "afternoon",
+      "gloss": "öğleden sonra",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 91,
+          "end": 100,
+          "surface": "afternoon",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 112,
+          "surface": "system",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "suited",
+      "gloss": "ihtiyacına uyuyordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 119,
+          "surface": "suited",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "regular",
+      "gloss": "düzenli gelen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 127,
+          "surface": "regular",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 195,
+          "surface": "regular",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "users",
+      "gloss": "kullanıcılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 133,
+          "surface": "users",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 201,
+          "surface": "users",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "kişiyi açıklayan ilgi zamiri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 135,
+          "end": 138,
+          "surface": "who",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 144,
+          "surface": "often",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "booked",
+      "gloss": "rezervasyon yaptı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 151,
+          "surface": "booked",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 152,
+          "end": 159,
+          "surface": "several",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "weeks",
+      "gloss": "haftalar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 160,
+          "end": 165,
+          "surface": "weeks",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "ahead",
+      "gloss": "önceden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 166,
+          "end": 171,
+          "surface": "ahead",
+          "contextSentence": "The system suited regular users, who often booked several weeks ahead."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 180,
+          "surface": "However",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 182,
+          "end": 188,
+          "surface": "people",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "çalışma programı kendilerine ait olan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 189,
+          "end": 194,
+          "surface": "whose",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "iş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 199,
+          "surface": "work",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "schedules",
+      "gloss": "çalışma programları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 209,
+          "surface": "schedules",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "changed",
+      "gloss": "değişti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 217,
+          "surface": "changed",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "yer veya zamanı belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 218,
+          "end": 220,
+          "surface": "at",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 350,
+          "surface": "at",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "short",
+      "gloss": "kısa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 226,
+          "surface": "short",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "notice",
+      "gloss": "önceden haber verme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 233,
+          "surface": "notice",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "rarely",
+      "gloss": "nadiren",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 234,
+          "end": 240,
+          "surface": "rarely",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "buldu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 246,
+          "surface": "found",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        }
+      ]
+    },
+    {
+      "lemma": "available",
+      "gloss": "kullanıma açık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 263,
+          "surface": "available",
+          "contextSentence": "However, people whose work schedules changed at short notice rarely found a room available."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 243,
+          "surface": "available",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaçı, şikâyet eden ziyaretçiler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 265,
+          "end": 272,
+          "surface": "Several",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "complained",
+      "gloss": "şikâyet etti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 283,
+          "surface": "complained",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "-dığını/-diğini (yan cümleyi bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 284,
+          "end": 288,
+          "surface": "that",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "halka açık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 291,
+          "end": 297,
+          "surface": "public",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "service",
+      "gloss": "hizmet",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 298,
+          "end": 305,
+          "surface": "service",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "geçmiş zaman yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 306,
+          "end": 309,
+          "surface": "was",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 223,
+          "surface": "was",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 315,
+          "surface": "was",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "becoming",
+      "gloss": "giderek hâle gelme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 318,
+          "surface": "becoming",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "difficult",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 328,
+          "surface": "difficult",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "mastar işareti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 329,
+          "end": 331,
+          "surface": "to",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 290,
+          "end": 292,
+          "surface": "to",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 325,
+          "surface": "to",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 335,
+          "surface": "use",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "unless",
+      "gloss": "olmadıkça",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 336,
+          "end": 342,
+          "surface": "unless",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 343,
+          "end": 347,
+          "surface": "they",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "plan",
+      "gloss": "planlamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 354,
+          "end": 358,
+          "surface": "plan",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 359,
+          "end": 364,
+          "surface": "their",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 369,
+          "surface": "time",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok önceden anlamını güçlendirir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 373,
+          "surface": "far",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "in advance ifadesinde önceden anlamını kurar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 374,
+          "end": 376,
+          "surface": "in",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "advance",
+      "gloss": "önceden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 377,
+          "end": 384,
+          "surface": "advance",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "denedi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 12,
+          "end": 18,
+          "surface": "tested",
+          "contextSentence": "The library tested a different arrangement for one month."
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 21,
+          "end": 30,
+          "surface": "different",
+          "contextSentence": "The library tested a different arrangement for one month."
+        }
+      ]
+    },
+    {
+      "lemma": "arrangement",
+      "gloss": "düzenleme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 42,
+          "surface": "arrangement",
+          "contextSentence": "The library tested a different arrangement for one month."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 50,
+          "surface": "one",
+          "contextSentence": "The library tested a different arrangement for one month."
+        }
+      ]
+    },
+    {
+      "lemma": "month",
+      "gloss": "ay",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 51,
+          "end": 56,
+          "surface": "month",
+          "contextSentence": "The library tested a different arrangement for one month."
+        }
+      ]
+    },
+    {
+      "lemma": "half",
+      "gloss": "yarısı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 62,
+          "surface": "Half",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "rooms",
+      "gloss": "odalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 67,
+          "end": 72,
+          "surface": "rooms",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 223,
+          "end": 228,
+          "surface": "rooms",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "remained",
+      "gloss": "olarak kaldı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 81,
+          "surface": "remained",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "bookable",
+      "gloss": "rezervasyon yapılabilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 90,
+          "surface": "bookable",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "online",
+      "gloss": "çevrim içi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 97,
+          "surface": "online",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "while",
+      "gloss": "oysa, karşıt durumu bağlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 99,
+          "end": 104,
+          "surface": "while",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 115,
+          "surface": "others",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 269,
+          "surface": "others",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 122,
+          "end": 126,
+          "surface": "only",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "edilgen yapıyı kuran yardımcı fiil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 129,
+          "surface": "be",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "requested",
+      "gloss": "talep edilen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 130,
+          "end": 139,
+          "surface": "requested",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "on arrival: gelindiğinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 142,
+          "surface": "on",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "arrival",
+      "gloss": "geliş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 150,
+          "surface": "arrival",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    },
+    {
+      "lemma": "staff",
+      "gloss": "personel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 152,
+          "end": 157,
+          "surface": "Staff",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 106,
+          "surface": "staff",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "expected",
+      "gloss": "bekliyordu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 158,
+          "end": 166,
+          "surface": "expected",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 171,
+          "surface": "more",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 66,
+          "surface": "More",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "complaints",
+      "gloss": "şikâyetler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 172,
+          "end": 182,
+          "surface": "complaints",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "kimden geldiğini belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 187,
+          "surface": "from",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 206,
+          "surface": "but",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 100,
+          "surface": "but",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "response",
+      "gloss": "tepki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 211,
+          "end": 219,
+          "surface": "response",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "mixed",
+      "gloss": "hem olumlu hem olumsuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 229,
+          "surface": "mixed",
+          "contextSentence": "Staff expected more complaints from regular users, but the response was mixed."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazıları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 235,
+          "surface": "Some",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "disliked",
+      "gloss": "hoşlanmadı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 244,
+          "surface": "disliked",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "losing",
+      "gloss": "kaybetmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 251,
+          "surface": "losing",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "certainty",
+      "gloss": "kesinlik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 261,
+          "surface": "certainty",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "welcomed",
+      "gloss": "memnuniyetle karşıladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 278,
+          "surface": "welcomed",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "chance",
+      "gloss": "fırsat",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 283,
+          "end": 289,
+          "surface": "chance",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 297,
+          "surface": "make",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "unexpected",
+      "gloss": "önceden planlanmamış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 311,
+          "surface": "unexpected",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "visit",
+      "gloss": "ziyaret",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 317,
+          "surface": "visit",
+          "contextSentence": "Some disliked losing certainty; others welcomed the chance to make an unexpected visit."
+        }
+      ]
+    },
+    {
+      "lemma": "meanwhile",
+      "gloss": "bu arada",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 328,
+          "surface": "Meanwhile",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "queue",
+      "gloss": "kuyruk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 337,
+          "surface": "queue",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "developed",
+      "gloss": "oluştu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 338,
+          "end": 347,
+          "surface": "developed",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "desk",
+      "gloss": "danışma masası",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 359,
+          "surface": "desk",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "sırasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 360,
+          "end": 366,
+          "surface": "during",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "busiest",
+      "gloss": "en yoğun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 371,
+          "end": 378,
+          "surface": "busiest",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "hours",
+      "gloss": "saatler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 379,
+          "end": 384,
+          "surface": "hours",
+          "contextSentence": "Meanwhile, a queue developed at the desk during the busiest hours."
+        }
+      ]
+    },
+    {
+      "lemma": "manager",
+      "gloss": "yönetici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 11,
+          "surface": "manager",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "geçmiş zamanda olumsuzluk kuran yardımcı fiil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 15,
+          "surface": "did",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "olumsuzluk belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 19,
+          "surface": "not",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "describe",
+      "gloss": "nitelendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 20,
+          "end": 28,
+          "surface": "describe",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "trial",
+      "gloss": "deneme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 33,
+          "end": 38,
+          "surface": "trial",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 41,
+          "surface": "as",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "complete",
+      "gloss": "tam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 52,
+          "surface": "complete",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "success",
+      "gloss": "başarı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 60,
+          "surface": "success",
+          "contextSentence": "The manager did not describe the trial as a complete success."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "geçmişte tamamlanmış eylem yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 76,
+          "end": 79,
+          "surface": "had",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "obtained",
+      "gloss": "elde etmişti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 80,
+          "end": 88,
+          "surface": "obtained",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "geçmiş zaman yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 111,
+          "surface": "were",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 229,
+          "end": 233,
+          "surface": "were",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "spending",
+      "gloss": "harcamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 112,
+          "end": 120,
+          "surface": "spending",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "longer",
+      "gloss": "daha uzun süre",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 121,
+          "end": 127,
+          "surface": "longer",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "explaining",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 128,
+          "end": 138,
+          "surface": "explaining",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "rules",
+      "gloss": "kurallar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 148,
+          "surface": "rules",
+          "contextSentence": "More visitors had obtained a room, but staff were spending longer explaining the rules."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o, kadın yönetici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 153,
+          "surface": "She",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 154,
+          "end": 163,
+          "surface": "therefore",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "korudu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 164,
+          "end": 168,
+          "surface": "kept",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "both",
+      "gloss": "her iki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 173,
+          "surface": "both",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "routes",
+      "gloss": "başvuru yolları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 174,
+          "end": 180,
+          "surface": "routes",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 184,
+          "surface": "and",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 283,
+          "end": 286,
+          "surface": "and",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "introduced",
+      "gloss": "uygulamaya koydu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 185,
+          "end": 195,
+          "surface": "introduced",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "clear",
+      "gloss": "açık ve anlaşılır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 203,
+          "surface": "clear",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "sign",
+      "gloss": "bilgilendirme levhası",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 208,
+          "surface": "sign",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "showing",
+      "gloss": "gösteren",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 216,
+          "surface": "showing",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 222,
+          "surface": "which",
+          "contextSentence": "She therefore kept both routes and introduced a clear sign showing which rooms were available."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "rather than ifadesinde: ... yerine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 251,
+          "surface": "Rather",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "rather than ifadesini tamamlayan bağlaç: ... yerine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 252,
+          "end": 256,
+          "surface": "than",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "choosing",
+      "gloss": "seçmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 265,
+          "surface": "choosing",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 273,
+          "surface": "between",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "planning",
+      "gloss": "önceden planlama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 282,
+          "surface": "planning",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "flexibility",
+      "gloss": "esneklik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 287,
+          "end": 298,
+          "surface": "flexibility",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "trying",
+      "gloss": "çalışıyordu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 316,
+          "end": 322,
+          "surface": "trying",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "offer",
+      "gloss": "sunmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 326,
+          "end": 331,
+          "surface": "offer",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her birini",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 332,
+          "end": 336,
+          "surface": "each",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "olmadan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 337,
+          "end": 344,
+          "surface": "without",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "making",
+      "gloss": "hâle getirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 345,
+          "end": 351,
+          "surface": "making",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğerini, öteki seçeneği",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 361,
+          "surface": "other",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "impossible",
+      "gloss": "imkânsız",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 372,
+          "surface": "impossible",
+          "contextSentence": "Rather than choosing between planning and flexibility, the library was trying to offer each without making the other impossible."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "rezervasyon yapabiliyordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 55,
+          "surface": "could",
+          "contextSentence": "Until recently, visitors to the Riverside Library could reserve a study room for an entire afternoon."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "planlayabilme koşulunu belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 348,
+          "end": 353,
+          "surface": "could",
+          "contextSentence": "Several complained that a public service was becoming difficult to use unless they could plan their time far in advance."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "talep edilebilme olanağı belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 121,
+          "surface": "could",
+          "contextSentence": "Half the rooms remained bookable online, while the others could only be requested on arrival."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "main-idea",
+      "type": "main-idea",
+      "prompt": "What is the main purpose of the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 373
+      },
+      "options": [
+        {
+          "key": "b",
+          "text": "To describe a balance between booking ahead and visiting freely.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yönetici iki yolu korur: önceden ayırtma ile plansız erişimi birlikte mümkün kılmaya çalışır."
+        },
+        {
+          "key": "d",
+          "text": "To compare online booking with a proposed system of longer visits.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Çevrim içi rezervasyon ile anlık erişim karşılaştırılır; daha uzun ziyaret sistemi önerilmez."
+        },
+        {
+          "key": "c",
+          "text": "To explain a change designed to reward the most frequent visitors.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Değişiklik düzenli kullanıcılara ödül vermek için yapılmaz; önceden planlayamayanların erişim sorununa yanıt verir."
+        },
+        {
+          "key": "a",
+          "text": "To assess whether a booking trial reduced the staff’s workload.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Personelin açıklama yükü artar; iş yükünü azaltma metnin ana amacı değildir."
+        }
+      ]
+    },
+    {
+      "key": "visitor-response",
+      "type": "detail",
+      "prompt": "How did regular users respond to the trial?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 152,
+        "end": 318
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": "They welcomed the easier access but wanted clearer opening hours.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Daha kolay erişimden hoşlananlar var; fakat açılış saatlerini netleştirme isteği metinde yok."
+        },
+        {
+          "key": "c",
+          "text": "They split between secure plans and opportunities for unplanned visits.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Bazıları önceden kesinlik kaybını olumsuz, diğerleri plansız ziyaret olanağını olumlu değerlendirir."
+        },
+        {
+          "key": "d",
+          "text": "They supported the new rules after staff explained them in more detail.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Tepkiler karışıktır; personel açıklamasından sonra ortak destek oluştuğu söylenmez."
+        },
+        {
+          "key": "b",
+          "text": "They disliked the queue and asked for the earlier system to return.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kuyruk oluştuğu belirtilir, fakat düzenli kullanıcıların bu nedenle eski sisteme dönülmesini istediği söylenmez."
+        }
+      ]
+    },
+    {
+      "key": "certainty",
+      "type": "vocabulary",
+      "prompt": "In this context, what does losing certainty mean?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 231,
+        "end": 318
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": "Having less choice over how long a reserved room could be used.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Değişiklik önceden ayırtılabilen oda sayısıyla ilgilidir; rezervasyonun kullanım süresinin kısaldığı söylenmez."
+        },
+        {
+          "key": "b",
+          "text": "Being less sure that arriving at the desk would avoid a queue.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Kuyruk başka bir sonuçtur; düzenli kullanıcıların kaybettiği önceki güvence, gelmeden oda ayırtabilmektir."
+        },
+        {
+          "key": "c",
+          "text": "Knowing less about which rooms would be available on the website.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bilginin web sitesinden kaldırıldığı söylenmez; kesinlik oda bulmanın önceden güvence altında olmasıyla ilgilidir."
+        },
+        {
+          "key": "d",
+          "text": "Having less assurance that a room would be secured beforehand.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Önceden ayırtılabilen oda sayısı azalınca, gelmeden oda ayırtma güvencesi zayıflar."
+        }
+      ]
+    },
+    {
+      "key": "manager-inference",
+      "type": "inference",
+      "prompt": "What can be inferred about the manager’s decision after the trial?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 373
+      },
+      "options": [
+        {
+          "key": "c",
+          "text": "She expected a clear sign to remove the need for advance booking.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Levha bilgi vermek içindir; yönetici önceden ayırtma yolunu korur."
+        },
+        {
+          "key": "b",
+          "text": "She saw the trial’s main benefit as making afternoon visits longer.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Öğleden sonra ziyaretlerin uzaması bir yarar olarak belirtilmez; yarar daha fazla kişinin oda bulmasıdır."
+        },
+        {
+          "key": "d",
+          "text": "She considered the queue a reason to reserve more rooms online.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yönetici iki yolu korur; kuyruk nedeniyle daha fazla odayı çevrim içi rezervasyona ayırdığı söylenmez."
+        },
+        {
+          "key": "a",
+          "text": "She valued wider access while addressing the work created by it.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Daha fazla kişinin oda bulmasını korur ve personelin açıklama yüküne levhayla yanıt verir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "noFactualClaims": true,
+    "sources": []
+  }
+}

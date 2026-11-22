@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:58:18.369Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b1-nature-my-grandfathers-farm.mp4"
+  },
+  "draft": {
+    "contentId": "b1-nature-my-grandfathers-farm",
+    "muxAssetId": "local-summers-on-grandfathers-farm",
+    "sourceFile": "b1-nature-my-grandfathers-farm.mp4",
+    "storageKey": null,
+    "durationMs": 31000,
+    "topic": "lifestyle",
+    "category": "cabincrew",
+    "cefrLevel": "B1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4620,
+        "text": "When I was a child, I used to spend every summer on my grandfather's farm.",
+        "englishExplanation": "The speaker recalls spending summers on their grandfather's farm as a child.",
+        "turkishExplanation": "Çocukken her yazı dedemin çiftliğinde geçirirdim."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5120,
+        "endMs": 9140,
+        "text": "He looked after sheep, a few dogs, and a very loud goose.",
+        "englishExplanation": "The speaker lists the animals that the grandfather took care of.",
+        "turkishExplanation": "Koyunlara, birkaç köpeğe ve çok gürültücü bir kaza bakardı."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 9740,
+        "endMs": 14520,
+        "text": "I didn't used to like waking up early, but on the farm, the animals didn't care.",
+        "englishExplanation": "The speaker shares that they disliked waking up early back then.",
+        "turkishExplanation": "Erken uyanmayı sevmezdim ama çiftlikte hayvanların umurunda değildi."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 15100,
+        "endMs": 17660,
+        "text": "My grandfather was used to starting work at sunrise.",
+        "englishExplanation": "The speaker notes that the grandfather was accustomed to early work.",
+        "turkishExplanation": "Dedem gün doğumunda işe başlamaya alışıktı."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 18500,
+        "endMs": 23620,
+        "text": "People say I take after him because I still love being outside before everyone else.",
+        "englishExplanation": "The speaker explains how people compare them to their grandfather.",
+        "turkishExplanation": "Herkesten önce dışarıda olmayı hâlâ sevdiğim için insanlar ona çektiğimi söyler."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 23620,
+        "endMs": 29740,
+        "text": "The farm is gone now, but whenever I hear a rooster, I'm a child again, standing in the",
+        "englishExplanation": "The speaker describes how hearing a rooster brings back nostalgic feelings.",
+        "turkishExplanation": "Çiftlik artık yok ama ne zaman bir horoz sesi duysam yine çocuk oluyorum,"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 29740,
+        "endMs": 30400,
+        "text": "cold grass.",
+        "englishExplanation": "The speaker finishes describing the vivid memory of standing in cold grass.",
+        "turkishExplanation": "soğuk çimlerin üzerinde duran."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "look after",
+        "gloss": "bakmak, ilgilenmek"
+      },
+      {
+        "lemma": "take after",
+        "gloss": "çekmek, benzemek"
+      },
+      {
+        "lemma": "goose",
+        "gloss": "kaz"
+      },
+      {
+        "lemma": "rooster",
+        "gloss": "horoz"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "grammar",
+        "expression": "used to + verb",
+        "englishExplanation": "Used to describe repeated past states or actions that no longer happen in the present.",
+        "turkishExplanation": "Geçmişte düzenli olarak yapılan fakat artık devam etmeyen alışkanlıkları anlatmak için kullanılır.",
+        "exampleEn": "I used to ride my bike to school every day.",
+        "exampleTr": "Her gün okula bisikletimle giderdim."
+      },
+      {
+        "segmentOrdinal": 2,
+        "type": "phrase",
+        "expression": "look after",
+        "englishExplanation": "To care for someone or something, ensuring their needs or safety are met.",
+        "turkishExplanation": "Birinin veya bir şeyin bakımını üstlenmek, ilgilenmek.",
+        "exampleEn": "Can you look after my cat while I am away?",
+        "exampleTr": "Ben uzaktayken kedime bakabilir misin?"
+      },
+      {
+        "segmentOrdinal": 4,
+        "type": "grammar",
+        "expression": "be used to + verb-ing",
+        "englishExplanation": "Used to show that someone is familiar with or accustomed to a situation or routine.",
+        "turkishExplanation": "Bir duruma veya rutine alışkın olunduğunu belirtmek için kullanılır.",
+        "exampleEn": "She is used to working under pressure.",
+        "exampleTr": "Baskı altında çalışmaya alışıktır."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "take after",
+        "englishExplanation": "To resemble an older family member in appearance, personality, or behavior.",
+        "turkishExplanation": "Aileden bir büyüğüne huy veya görünüş olarak çekmek, benzemek.",
+        "exampleEn": "He really takes after his father in how he tells stories.",
+        "exampleTr": "Hikaye anlatış biçimiyle gerçekten babasına çekmiş."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "In segment 5, what does the phrase 'take after' mean when the speaker says 'People say I take after him'?",
+      "options": [
+        {
+          "text": "They resemble or share habits with their grandfather.",
+          "isCorrect": true
+        },
+        {
+          "text": "They constantly run after their grandfather on the farm.",
+          "isCorrect": false
+        },
+        {
+          "text": "They inherited their grandfather's old property.",
+          "isCorrect": false
+        },
+        {
+          "text": "They follow their grandfather's daily instructions.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

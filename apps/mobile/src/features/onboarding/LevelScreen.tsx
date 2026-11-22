@@ -8,7 +8,7 @@ type LevelScreenProps = {
 };
 
 /** cefrLevelSchema'nın 6 değeri BİREBİR — yeni bir taxonomy YOK, sadece insan-okunabilir bir alt-etiket (sunum, veri değil). */
-const LEVEL_OPTIONS: { level: CefrLevel; label: string }[] = [
+export const LEVEL_OPTIONS: { level: CefrLevel; label: string }[] = [
   { level: "A1", label: "Başlangıç" },
   { level: "A2", label: "Temel" },
   { level: "B1", label: "Orta" },

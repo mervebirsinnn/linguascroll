@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:25:49.773Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-culture-q6-otzi-iceman-discovered-in-glacier.mp4"
+  },
+  "draft": {
+    "contentId": "b2-culture-q6-otzi-iceman-discovered-in-glacier",
+    "muxAssetId": "local-discovering-otsi-the-iceman",
+    "sourceFile": "b2-culture-q6-otzi-iceman-discovered-in-glacier.mp4",
+    "storageKey": null,
+    "durationMs": 32730,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4560,
+        "text": "One September day, two hikers were walking high in the Alps when they saw something",
+        "englishExplanation": "Two hikers were walking in the high Alps when they noticed something unusual.",
+        "turkishExplanation": "Eylül ayında bir gün, iki dağcı Alpler'in yükseklerinde yürürken bir şey gördüler,"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4560,
+        "endMs": 5540,
+        "text": "strange in the ice.",
+        "englishExplanation": "The object they noticed was frozen inside the ice.",
+        "turkishExplanation": "buzların içinde garip bir şey."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 6160,
+        "endMs": 8260,
+        "text": "At first, they thought it was a lost climber.",
+        "englishExplanation": "At first, they assumed the body belonged to a recently lost climber.",
+        "turkishExplanation": "İlk başta, kaybolmuş bir dağcı olduğunu düşündüler."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 8700,
+        "endMs": 10420,
+        "text": "It turned out to be much older.",
+        "englishExplanation": "In reality, the body proved to be thousands of years old.",
+        "turkishExplanation": "Meğer çok daha eskiymiş."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 11160,
+        "endMs": 16520,
+        "text": "The most famous natural mummy is Otsi, the Iceman, discovered in a glacier on the Austrian",
+        "englishExplanation": "Ötzi the Iceman is the most famous naturally preserved body, discovered in an alpine glacier.",
+        "turkishExplanation": "En ünlü doğal mumya, Avusturya-İtalya sınırındaki bir buzulda bulunan Buz Adam Ötzi'dir,"
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16520,
+        "endMs": 18280,
+        "text": "Italian border in 1991.",
+        "englishExplanation": "The discovery took place near the Italian border in the year 1991.",
+        "turkishExplanation": "1991 yılında İtalya sınırında bulundu."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 19080,
+        "endMs": 21600,
+        "text": "He had lived over 5 ,000 years ago.",
+        "englishExplanation": "Scientific analysis showed he lived more than five thousand years in the past.",
+        "turkishExplanation": "5.000 yıldan daha uzun bir süre önce yaşamıştı."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 22280,
+        "endMs": 27300,
+        "text": "The cold ice had kept his body, his clothes, and even his tools in amazing condition.",
+        "englishExplanation": "The freezing temperature of the ice remarkably preserved his remains, clothing, and gear.",
+        "turkishExplanation": "Soğuk buz; bedenini, kıyafetlerini ve hatta aletlerini harika bir durumda korumuştu."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 27300,
+        "endMs": 32280,
+        "text": "Thanks to him, scientists now know what people ate and wore in the Stone Age.",
+        "englishExplanation": "Because of this discovery, researchers gained important knowledge about ancient human life.",
+        "turkishExplanation": "Onun sayesinde bilim insanları artık Taş Çağı'nda insanların ne yediğini ve ne giydiğini biliyor."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "glacier",
+        "gloss": "buzul"
+      },
+      {
+        "lemma": "turn out",
+        "gloss": "ortaya çıkmak, meğer ... olmak"
+      },
+      {
+        "lemma": "Stone Age",
+        "gloss": "Taş Çağı"
+      },
+      {
+        "lemma": "thanks to",
+        "gloss": "sayesinde"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "turn out",
+        "englishExplanation": "Used when something is discovered to be a certain way, especially unexpectedly.",
+        "turkishExplanation": "Bir durumun sonradan beklenmedik bir şekilde ortaya çıktığını anlatmak için kullanılır.",
+        "exampleEn": "The test turned out to be much easier than expected.",
+        "exampleTr": "Sınav beklediğimizden çok daha kolay çıktı."
+      },
+      {
+        "segmentOrdinal": 9,
+        "type": "phrase",
+        "expression": "thanks to",
+        "englishExplanation": "Used to indicate that something happened because of a specific person, thing, or event.",
+        "turkishExplanation": "Bir şeyin kimin veya neyin sayesinde gerçekleştiğini belirtmek için kullanılır.",
+        "exampleEn": "Thanks to your help, we finished the project on time.",
+        "exampleTr": "Senin yardımın sayesinde projeyi zamanında bitirdik."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "The most famous natural mummy is Ötzi, the Iceman, ______ in a glacier on the Austrian-Italian border in 1991.",
+      "options": [
+        {
+          "text": "discovered",
+          "isCorrect": true
+        },
+        {
+          "text": "was discovered",
+          "isCorrect": false
+        },
+        {
+          "text": "discovering",
+          "isCorrect": false
+        },
+        {
+          "text": "to discover",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

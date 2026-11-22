@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:58:01.073Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b1-finance-lending-money-to-a-friend.mp4"
+  },
+  "draft": {
+    "contentId": "b1-finance-lending-money-to-a-friend",
+    "muxAssetId": "local-lending-money-to-friends",
+    "sourceFile": "b1-finance-lending-money-to-a-friend.mp4",
+    "storageKey": null,
+    "durationMs": 27700,
+    "topic": "lifestyle",
+    "category": "cabincrew",
+    "cefrLevel": "B1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3560,
+        "text": "Last year, my best friend asked if she could borrow some money.",
+        "englishExplanation": "The speaker mentions that their closest friend asked to borrow money last year.",
+        "turkishExplanation": "Geçen yıl en yakın arkadaşım benden biraz borç para istedi."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4020,
+        "endMs": 6760,
+        "text": "I lent it to her immediately because that's what friends do.",
+        "englishExplanation": "The speaker gave the money right away, believing that helping each other is what friends do.",
+        "turkishExplanation": "Arkadaşlar böyle yapar diyerek parayı ona hemen borç verdim."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7220,
+        "endMs": 9240,
+        "text": "She told me she would pay me back in a month.",
+        "englishExplanation": "The friend promised to return the money within a month.",
+        "turkishExplanation": "Bana borcunu bir ay içinde geri ödeyeceğini söyledi."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 9800,
+        "endMs": 12380,
+        "text": "Two months later, she hadn't said anything about it.",
+        "englishExplanation": "Two months went by without the friend mentioning the money at all.",
+        "turkishExplanation": "İki ay geçmesine rağmen bu konuda hiçbir şey söylememişti."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 12800,
+        "endMs": 15780,
+        "text": "I didn't want to ruin our friendship so I said nothing too.",
+        "englishExplanation": "To avoid damaging their relationship, the speaker decided to stay silent as well.",
+        "turkishExplanation": "Arkadaşlığımızı bozmak istemediğim için ben de bir şey söylemedim."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16420,
+        "endMs": 18220,
+        "text": "Finally, I told her how I felt.",
+        "englishExplanation": "Eventually, the speaker expressed their true feelings about the situation.",
+        "turkishExplanation": "Sonunda ona ne hissettiğimi söyledim."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 18760,
+        "endMs": 22320,
+        "text": "She was embarrassed and paid me back the next week. We're still close.",
+        "englishExplanation": "The friend felt ashamed, returned the money the following week, and they remain good friends.",
+        "turkishExplanation": "Mahcup oldu ve ertesi hafta bana parayı geri ödedi. Hâlâ yakınız."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 23000,
+        "endMs": 26860,
+        "text": "You can lend money to a friend, but remember to lend them honesty too.",
+        "englishExplanation": "The speaker concludes with advice that being open and honest is as important as lending money.",
+        "turkishExplanation": "Bir arkadaşına borç verebilirsin ama ona dürüst davranmayı da unutma."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "borrow",
+        "gloss": "ödünç almak, borç almak"
+      },
+      {
+        "lemma": "lend",
+        "gloss": "borç vermek, ödünç vermek"
+      },
+      {
+        "lemma": "pay back",
+        "gloss": "geri ödemek"
+      },
+      {
+        "lemma": "ruin",
+        "gloss": "bozmak, mahvetmek"
+      },
+      {
+        "lemma": "embarrassed",
+        "gloss": "mahcup, utanmış"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 3,
+        "type": "phrase",
+        "expression": "pay someone back",
+        "englishExplanation": "To return money that you previously borrowed from someone.",
+        "turkishExplanation": "Birinden alınan borç parayı geri ödemek.",
+        "exampleEn": "I will pay you back as soon as I get my salary.",
+        "exampleTr": "Maaşımı alır almaz sana olan borcumu geri ödeyeceğim."
+      },
+      {
+        "segmentOrdinal": 8,
+        "type": "grammar",
+        "expression": "remember to + verb",
+        "englishExplanation": "Used to remind someone not to forget an intended action in the future.",
+        "turkishExplanation": "Gelecekte yapılması gereken bir eylemi unutmamayı hatırlatmak için kullanılır.",
+        "exampleEn": "Remember to lock the door before leaving.",
+        "exampleTr": "Çıkmadan önce kapıyı kilitlemeyi unutma."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 8,
+      "question": "In segment 8, what advice does the speaker give alongside lending money to a friend?",
+      "options": [
+        {
+          "text": "Be open and honest with them about how you feel.",
+          "isCorrect": true
+        },
+        {
+          "text": "Always demand a strict repayment deadline in advance.",
+          "isCorrect": false
+        },
+        {
+          "text": "Avoid discussing money issues to keep the peace.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ask another mutual friend to mediate the conversation.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

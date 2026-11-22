@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-21T14:25:36.313Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-nature-q2-measuring-hottest-places-accurately.mp4"
+  },
+  "draft": {
+    "contentId": "b2-nature-q2-measuring-hottest-places-accurately",
+    "muxAssetId": "local-hottest-place-on-earth",
+    "sourceFile": "b2-nature-q2-measuring-hottest-places-accurately.mp4",
+    "storageKey": null,
+    "durationMs": 34900,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 2360,
+        "text": "Where is the hottest place on Earth?",
+        "englishExplanation": "Asking where the location with the highest temperature on Earth is.",
+        "turkishExplanation": "Dünyadaki en sıcak yer neresi?"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 2920,
+        "endMs": 6860,
+        "text": "It sounds like an easy question, but scientists still argue about it.",
+        "englishExplanation": "Stating that despite appearing simple, scientists continue to debate the answer.",
+        "turkishExplanation": "Kulağa kolay bir soru gibi geliyor ama bilim insanları bu konuda hâlâ tartışıyor."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7440,
+        "endMs": 12320,
+        "text": "Measuring the world's hottest places accurately is difficult because most of these places",
+        "englishExplanation": "Explaining that precise measurement in extreme heat zones is difficult because of the location.",
+        "turkishExplanation": "Dünyanın en sıcak yerlerini doğru bir şekilde ölçmek zor, çünkü bu yerlerin çoğu"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12320,
+        "endMs": 13220,
+        "text": "aren't occupied.",
+        "englishExplanation": "Completing the sentence to state that these places have no human residents.",
+        "turkishExplanation": "yerleşim yeri değil."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 13940,
+        "endMs": 18100,
+        "text": "Nobody lives in the middle of a desert, so there are very few weather stations there.",
+        "englishExplanation": "Noting that uninhabited desert environments lack formal weather monitoring equipment.",
+        "turkishExplanation": "Çölün ortasında kimse yaşamaz, bu yüzden orada çok az meteoroloji istasyonu vardır."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 18680,
+        "endMs": 23200,
+        "text": "Instead, researchers use satellites to check the temperature of the ground from space.",
+        "englishExplanation": "Describing how researchers monitor land temperatures using satellite instruments from space.",
+        "turkishExplanation": "Bunun yerine araştırmacılar, yerin sıcaklığını uzaydan kontrol etmek için uyduları kullanıyor."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23840,
+        "endMs": 25240,
+        "text": "The results are surprising.",
+        "englishExplanation": "Stating that the findings from these satellite measurements are unexpected.",
+        "turkishExplanation": "Sonuçlar şaşırtıcı."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 25240,
+        "endMs": 28720,
+        "text": "Some deserts reach over 70 degrees on the surface.",
+        "englishExplanation": "Highlighting that ground surface temperatures in some deserts surpass 70 degrees.",
+        "turkishExplanation": "Bazı çöller yüzeyde 70 derecenin üzerine çıkıyor."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 29440,
+        "endMs": 33500,
+        "text": "Without people on the ground, though, every record needs to be checked carefully before",
+        "englishExplanation": "Explaining that without local personnel, ground temperature records require strict verification.",
+        "turkishExplanation": "Yine de sahada insanlar olmadan, her rekorun dikkatlice kontrol edilmesi gerekiyor"
+      },
+      {
+        "ordinal": 10,
+        "startMs": 33500,
+        "endMs": 34540,
+        "text": "anyone can trust it.",
+        "englishExplanation": "Finishing the thought that data verification must occur before anyone accepts it as factual.",
+        "turkishExplanation": "herhangi birinin buna güvenebilmesi için."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "accurately",
+        "gloss": "doğru bir şekilde, tam olarak"
+      },
+      {
+        "lemma": "occupied",
+        "gloss": "yerleşim olan, insan yaşayan"
+      },
+      {
+        "lemma": "weather station",
+        "gloss": "meteoroloji istasyonu"
+      },
+      {
+        "lemma": "satellite",
+        "gloss": "uydu"
+      },
+      {
+        "lemma": "surface",
+        "gloss": "yüzey"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 9,
+        "type": "phrase",
+        "expression": "on the ground",
+        "englishExplanation": "Refers to people being physically present at a specific real-world location rather than observing remotely.",
+        "turkishExplanation": "Uzaktan izlemek yerine fiziksel olarak olay yerinde veya sahada bulunmayı ifade eder.",
+        "exampleEn": "We need more researchers on the ground to collect data.",
+        "exampleTr": "Veri toplamak için sahada daha fazla araştırmacıya ihtiyacımız var."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "Measuring the world's hottest places ______ is difficult because most of these places aren't occupied.",
+      "options": [
+        {
+          "text": "accurately",
+          "isCorrect": true
+        },
+        {
+          "text": "accurate",
+          "isCorrect": false
+        },
+        {
+          "text": "accuracy",
+          "isCorrect": false
+        },
+        {
+          "text": "more accurate",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

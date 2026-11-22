@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:59:16.202Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-education-since-or-for.mp4"
+  },
+  "draft": {
+    "contentId": "b2-education-since-or-for",
+    "muxAssetId": "local-for-vs-since-grammar-mistake",
+    "sourceFile": "b2-education-since-or-for.mp4",
+    "storageKey": null,
+    "durationMs": 33800,
+    "topic": "education",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 5420,
+        "text": "I've been teaching English for 12 years, and since my first day, one mistake keeps coming",
+        "englishExplanation": "The speaker shares their 12 years of experience encountering a specific repeated error.",
+        "turkishExplanation": "12 yıldır İngilizce öğretiyorum ve ilk günümdem beri tek bir hata sürekli karşıma çıkıyor."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5420,
+        "endMs": 6900,
+        "text": "back. Students say,",
+        "englishExplanation": "Introduces what the students typically say when making this error.",
+        "turkishExplanation": "Öğrenciler şöyle diyor:"
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7460,
+        "endMs": 9140,
+        "text": "I'm living here since three years.",
+        "englishExplanation": "Gives an example of the incorrect sentence using 'since' with duration.",
+        "turkishExplanation": "\"Üç yıldan beri burada yaşıyorum.\""
+      },
+      {
+        "ordinal": 4,
+        "startMs": 9580,
+        "endMs": 11000,
+        "text": "So let me bring it up properly.",
+        "englishExplanation": "States the speaker's intention to explain and clarify the rule properly.",
+        "turkishExplanation": "Öyleyse bunu düzgünce ele alayım."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 11640,
+        "endMs": 16100,
+        "text": "Use four with a period of time, like for three years or for a long time.",
+        "englishExplanation": "Explains that 'for' is used when referring to a duration or length of time.",
+        "turkishExplanation": "\"For\" kelimesini, \"üç yıldır\" veya \"uzun zamandır\" gibi bir zaman dilimiyle kullanın."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16620,
+        "endMs": 21420,
+        "text": "Use since with a starting point, like since Monday or since I was a child.",
+        "englishExplanation": "Explains that 'since' refers to a specific starting moment in time.",
+        "turkishExplanation": "\"Since\" kelimesini ise \"Pazartesi'den beri\" veya \"çocukluğumdan beri\" gibi bir başlangıç noktasıyla kullanın."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 21800,
+        "endMs": 25560,
+        "text": "And both usually need the present perfect, not the present simple.",
+        "englishExplanation": "Notes that both duration markers usually require the present perfect tense.",
+        "turkishExplanation": "Ve her ikisi de genellikle geniş zaman değil, yakın geçmiş zaman gerektirir."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 25980,
+        "endMs": 28300,
+        "text": "So it's, I've been living here for three years.",
+        "englishExplanation": "Provides the correct sentence combining present perfect and 'for'.",
+        "turkishExplanation": "Yani doğrusu: \"Üç yıldır burada yaşıyorum.\""
+      },
+      {
+        "ordinal": 9,
+        "startMs": 28300,
+        "endMs": 31000,
+        "text": "Next week, we'll practice with your own stories.",
+        "englishExplanation": "Mentions the plan to practice this concept using personal stories next week.",
+        "turkishExplanation": "Gelecek hafta kendi hikayelerinizle pratik yapacağız."
+      },
+      {
+        "ordinal": 10,
+        "startMs": 31440,
+        "endMs": 33300,
+        "text": "Honestly, I'm looking forward to hearing them.",
+        "englishExplanation": "Expresses genuine enthusiasm about listening to the students' stories.",
+        "turkishExplanation": "Dürüst olmak gerekirse, onları dinlemeyi iple çekiyorum."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "bring up",
+        "gloss": "gündeme getirmek, ele almak"
+      },
+      {
+        "lemma": "look forward to",
+        "gloss": "iple çekmek, sabırsızlıkla beklemek"
+      },
+      {
+        "lemma": "period of time",
+        "gloss": "zaman dilimi, süre"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "bring up",
+        "englishExplanation": "To introduce or mention a topic for discussion.",
+        "turkishExplanation": "Bir konuyu tartışılmak üzere gündeme getirmek veya dile getirmek.",
+        "exampleEn": "She decided to bring up the issue in the meeting.",
+        "exampleTr": "Toplantıda bu konuyu gündeme getirmeye karar verdi."
+      },
+      {
+        "segmentOrdinal": 10,
+        "type": "phrase",
+        "expression": "look forward to",
+        "englishExplanation": "To feel excited and eager about something that will happen in the future.",
+        "turkishExplanation": "Gelecekte gerçekleşecek bir olay için heyecan duymak ve sabırsızlanmak.",
+        "exampleEn": "I'm looking forward to starting my new job next week.",
+        "exampleTr": "Gelecek hafta yeni işime başlamayı iple çekiyorum."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 10,
+      "question": "In segment 10, what does the speaker mean by 'I'm looking forward to hearing them'?",
+      "options": [
+        {
+          "text": "They are excited and eager to listen to the stories.",
+          "isCorrect": true
+        },
+        {
+          "text": "They are reluctant and hesitant to listen to the stories.",
+          "isCorrect": false
+        },
+        {
+          "text": "They have already finished listening to all of the stories.",
+          "isCorrect": false
+        },
+        {
+          "text": "They are hoping the students write much shorter stories.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

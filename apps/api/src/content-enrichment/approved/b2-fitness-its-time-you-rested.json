@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T17:01:36.130Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript",
+      "vocabularyLemmaNotInTranscript"
+    ],
+    "note": "yerel test: transcript'te You'd better ve sat me down geçiyor (kısaltma/çekim farkı), yanlış pozitif"
+  },
+  "media": {
+    "localFileName": "b2-fitness-its-time-you-rested.mp4"
+  },
+  "draft": {
+    "contentId": "b2-fitness-its-time-you-rested",
+    "muxAssetId": "local-importance-of-rest-days",
+    "sourceFile": "b2-fitness-its-time-you-rested.mp4",
+    "storageKey": null,
+    "durationMs": 35130,
+    "topic": "fitness",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 6040,
+        "text": "For two years, I trained every single day, even when my body was begging me to stop.",
+        "englishExplanation": "The speaker trained every day for two years despite physical exhaustion.",
+        "turkishExplanation": "İki yıl boyunca, vücudum durmam için yalvarırken bile her tek bir gün antrenman yaptım."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 6760,
+        "endMs": 11400,
+        "text": "Then, I caught a cold that turned into a chest infection, and I was stuck in bed for",
+        "englishExplanation": "The speaker caught a cold that developed into a chest infection, forcing bed rest.",
+        "turkishExplanation": "Sonra göğüs enfeksiyonuna çeviren bir soğuk algınlığına yakalandım ve yatağa bağlandım"
+      },
+      {
+        "ordinal": 3,
+        "startMs": 11400,
+        "endMs": 13560,
+        "text": "weeks. My coach sat me down.",
+        "englishExplanation": "After weeks in bed, the coach had a serious conversation with the speaker.",
+        "turkishExplanation": "haftalarca. Koçum beni karşısına alıp konuştu."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 14240,
+        "endMs": 17180,
+        "text": "It's time you took recovery seriously, she told me.",
+        "englishExplanation": "The coach advised taking recovery and rest seriously.",
+        "turkishExplanation": "\"Dinlenmeyi ciddiye almanın zamanı geldi,\" dedi bana."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 17760,
+        "endMs": 20380,
+        "text": "You'd better schedule rest days, or you'll end up injured.",
+        "englishExplanation": "The coach warned that failing to schedule rest days would cause injury.",
+        "turkishExplanation": "\"Dinlenme günleri planlasan iyi edersin, yoksa kendini sakatlanmış bulacaksın.\""
+      },
+      {
+        "ordinal": 6,
+        "startMs": 21080,
+        "endMs": 23140,
+        "text": "I hated hearing it, but she was right.",
+        "englishExplanation": "The speaker disliked the advice but acknowledged its truth.",
+        "turkishExplanation": "Bunu duymaktan nefret ettim ama haklıydı."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23920,
+        "endMs": 27180,
+        "text": "Muscles get stronger while you rest, not only while you train.",
+        "englishExplanation": "Muscles strengthen during rest periods, not just active workouts.",
+        "turkishExplanation": "Kaslar sadece antrenman yaparken değil, dinlenirken de güçlenir."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 27980,
+        "endMs": 30900,
+        "text": "These days, I take two full days off every week.",
+        "englishExplanation": "The speaker now takes two full days off training every week.",
+        "turkishExplanation": "Bugünlerde her hafta iki tam gün izin kullanıyorum."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 31520,
+        "endMs": 34900,
+        "text": "Sometimes, the hardest exercise is doing nothing at all.",
+        "englishExplanation": "The speaker reflects that resting can be harder than physical activity.",
+        "turkishExplanation": "Bazen en zor egzersiz hiçbir şey yapmamaktır."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "sit someone down",
+        "gloss": "karşısına alıp konuşmak"
+      },
+      {
+        "lemma": "end up",
+        "gloss": "sonuçlanmak, kendini ... bulmak"
+      },
+      {
+        "lemma": "day off",
+        "gloss": "izin günü, dinlenme günü"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "grammar",
+        "expression": "It's time + subject + past tense",
+        "englishExplanation": "Used to say that something should be done now, often implying it is slightly overdue. Even though it refers to the present or future, a past tense verb is used.",
+        "turkishExplanation": "Şu an yapılması gereken (veya gecikmiş) bir eylemi belirtmek için kullanılır. Geniş veya gelecek zamandan bahsedilse de fiil geçmiş zamanda çekimlenir.",
+        "exampleEn": "It's time you took a break.",
+        "exampleTr": "Bir ara vermenin zamanı geldi."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "had better",
+        "englishExplanation": "Used to give strong advice or warnings about what someone should do to avoid negative consequences.",
+        "turkishExplanation": "Kötü bir sonuçtan kaçınmak için yapılması gereken güçlü tavsiye veya uyarıları ifade etmek için kullanılır.",
+        "exampleEn": "You'd better leave now, or you'll miss the bus.",
+        "exampleTr": "Şimdi çıksan iyi edersin, yoksa otobüsü kaçıracaksın."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "In segment 5, what does the coach mean when she says \"or you'll end up injured\"?",
+      "options": [
+        {
+          "text": "You will eventually find yourself in an injured state as a result of not resting.",
+          "isCorrect": true
+        },
+        {
+          "text": "You will intentionally hurt yourself during your next training session.",
+          "isCorrect": false
+        },
+        {
+          "text": "You will recover much more slowly from your current chest infection.",
+          "isCorrect": false
+        },
+        {
+          "text": "You will immediately break a bone during your very next exercise.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 5,
+          "message": "Learning point ifadesi (\"had better\") segment 5'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        },
+        {
+          "code": "vocabularyLemmaNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": null,
+          "message": "\"sit someone down\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

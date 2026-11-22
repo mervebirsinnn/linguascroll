@@ -8,12 +8,15 @@ import { isAppleSignInAvailable } from './src/features/identity/auth-gateway';
 import { SignInScreen } from './src/features/identity/SignInScreen';
 import { useAuth } from './src/features/identity/use-auth';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
+import { PassagesFlow } from './src/features/passages/components/PassagesFlow';
+import { initialPassageLevel } from './src/features/passages/passages-state';
+import { CABINCREW_ENABLED, gatedEntry, PASSAGES_ENABLED, shouldRenderPassages } from './src/shared/feature-flags';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
 import type { AccountLinkControl, AuthProvider } from './src/features/identity/auth-state';
 import { initializePurchases } from './src/features/subscription/purchases-gateway';
 
-type AppMode = 'feed' | 'memory';
+type AppMode = 'feed' | 'memory' | 'passages' | 'cabincrew';
 
 const APPLE_SIGN_IN_AVAILABLE = isAppleSignInAvailable();
 
@@ -137,7 +140,11 @@ function App() {
         <OnboardingFlow onComplete={onboarding.completeOnboarding} initialPreferences={onboarding.state.preferences} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'feed' && (
-        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} />
+        <Feed key={identity.userId} userId={identity.userId} preference={onboarding.state.preferences} account={account} onOpenMemory={() => setMode('memory')} onOpenPassages={gatedEntry(PASSAGES_ENABLED, () => setMode('passages'))} onOpenCabinCrew={gatedEntry(CABINCREW_ENABLED, () => setMode('cabincrew'))} />
+      )}
+      {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && CABINCREW_ENABLED && mode === 'cabincrew' && (
+        // Cabin Crew: aynı Feed bileşeni, scope="cabincrew" (backend yalnız bu kategoriyi verir; ana akıştan izole). key farklı: ana akıştan state taşınmaz.
+        <Feed key={`${identity.userId}:cabincrew`} userId={identity.userId} preference={onboarding.state.preferences} account={account} scope="cabincrew" onBack={() => setMode('feed')} onOpenMemory={() => setMode('memory')} />
       )}
       {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && mode === 'memory' && (
         <MemoryFlow
@@ -149,6 +156,18 @@ function App() {
             auth.signOut();
           }}
           account={account}
+          level={onboarding.state.preferences.level}
+          onChangeLevel={onboarding.updateLevel}
+        />
+      )}
+      {identity.status === 'success' && onboarding.status === 'success' && onboarding.state.completed && shouldRenderPassages(PASSAGES_ENABLED, mode) && (
+        // Okuma pratiği: Memory ile aynı conditional-render deseni (navigasyon kütüphanesi yok). key=userId → hesap değişince tüm durum sıfırlanır.
+        <PassagesFlow
+          key={identity.userId}
+          userId={identity.userId}
+          account={account}
+          initialLevel={initialPassageLevel(onboarding.state.preferences.level)}
+          onBack={() => setMode('feed')}
         />
       )}
       <StatusBar style="light" />

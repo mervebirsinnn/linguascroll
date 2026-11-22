@@ -46,7 +46,7 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
     return user.id;
   }
 
-  async function createVideo(category: "general" | "animation" | "ielts", cefrLevel = "A1"): Promise<string> {
+  async function createVideo(category: "general" | "animation" | "ielts" | "cabincrew", cefrLevel = "A1"): Promise<string> {
     const [video] = await db
       .insert(videosTable)
       .values({
@@ -84,6 +84,28 @@ describe("GET /feed?scope= (e2e, gerçek Postgres → Repository → FeedService
     expect(ids(feedPageSchema.parse((await get(userId, { scope: "all" })).body)).sort()).toEqual(everything);
     // Yayındaki eski mobile build'in "Akış" isteği (category=general) bilinçli olarak all'a eşlenir.
     expect(ids(feedPageSchema.parse((await get(userId, { category: "general" })).body)).sort()).toEqual(everything);
+  });
+
+  it("cabincrew İZOLE: all (ve scope'suz) cabincrew videosunu ASLA getirmez; scope=cabincrew yalnız cabincrew getirir, ana akış içeriğiyle DOLDURMAZ", async () => {
+    const userId = await createUser();
+    const general = await createVideo("general");
+    const ielts = await createVideo("ielts", "C1");
+    const cabin = await createVideo("cabincrew", "B2");
+
+    const main = [general, ielts].sort();
+    expect(ids(feedPageSchema.parse((await get(userId)).body)).sort()).toEqual(main);
+    expect(ids(feedPageSchema.parse((await get(userId, { scope: "all" })).body)).sort()).toEqual(main);
+    expect(ids(feedPageSchema.parse((await get(userId, { category: "general" })).body)).sort()).toEqual(main);
+    expect(ids(feedPageSchema.parse((await get(userId, { scope: "cabincrew" })).body))).toEqual([cabin]);
+    expect(ids(feedPageSchema.parse((await get(userId, { category: "cabincrew" })).body))).toEqual([cabin]);
+  });
+
+  it("cabincrew içeriği hiç yokken scope=cabincrew ana akış videolarıyla doldurulmaz (boş akış)", async () => {
+    const userId = await createUser();
+    await createVideo("general");
+    const res = await get(userId, { scope: "cabincrew" });
+    expect(res.status).toBe(200);
+    expect(ids(feedPageSchema.parse(res.body))).toEqual([]);
   });
 
   it("scope=ielts yalnızca IELTS, scope=animation yalnızca animasyon getirir; eski category=animation/ielts aynı sonucu verir", async () => {

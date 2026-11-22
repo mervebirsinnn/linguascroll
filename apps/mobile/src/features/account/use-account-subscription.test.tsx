@@ -1,4 +1,5 @@
 import { act, renderHook, waitFor } from "@testing-library/react-native";
+import { resetAccessEventsForTests, subscribeToAccessVerified } from "../subscription/access-events";
 import { useAccountSubscription } from "./use-account-subscription";
 const mockRefresh = jest.fn();
 const mockRestore = jest.fn();
@@ -48,4 +49,40 @@ it("başlangıç kontrolü sürerken mağazayı açmak durum yanıtını kaybett
   await act(async () => { await result.current.manage(); });
   await act(async () => { finish({ verification: "verified", subscription: { active: true } }); });
   expect(result.current.status).toBe("active");
+});
+it("sunucunun doğruladığı abonelik sonucu okuma pratiğine erişim olayı olur; doğrulanamayan (unknown) sonuç olay olmaz", async () => {
+  resetAccessEventsForTests();
+  const seen: boolean[] = [];
+  subscribeToAccessVerified("one", (active) => seen.push(active));
+  mockRefresh.mockResolvedValueOnce({ verification: "unavailable", subscription: null });
+  const { result } = await renderHook(() => useAccountSubscription("one", false));
+  await waitFor(() => expect(result.current.status).toBe("unknown"));
+  expect(seen).toEqual([]);
+
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: true } });
+  await act(async () => { await result.current.refresh(); });
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: true } });
+  await act(async () => { await result.current.refresh(); }); // her doğrulanmış sonuç iletilir; gerekliliği tüketici karar verir
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: false } });
+  await act(async () => { await result.current.refresh(); });
+
+  expect(seen).toEqual([true, true, false]);
+});
+it("A hesabında başlayan abonelik doğrulaması B'ye geçildikten sonra tamamlanırsa ne A'ya ne B'ye erişim olayı olur", async () => {
+  resetAccessEventsForTests();
+  const seenA: boolean[] = [];
+  const seenB: boolean[] = [];
+  subscribeToAccessVerified("A", (active) => seenA.push(active));
+  subscribeToAccessVerified("B", (active) => seenB.push(active));
+  let finishA!: (value: { verification: string; subscription: { active: boolean } }) => void;
+  mockRefresh.mockReturnValueOnce(new Promise((resolve) => { finishA = resolve; }));
+  mockRefresh.mockResolvedValueOnce({ verification: "verified", subscription: { active: false } });
+  const { result, rerender } = await renderHook<ReturnType<typeof useAccountSubscription>, { userId: string }>(({ userId }) => useAccountSubscription(userId, false), { initialProps: { userId: "A" } });
+
+  await rerender({ userId: "B" });
+  await waitFor(() => expect(result.current.status).toBe("inactive"));
+  await act(async () => { finishA({ verification: "verified", subscription: { active: true } }); });
+
+  expect(seenA).toEqual([]); // geç gelen A sonucu hiçbir yere yayınlanmadı
+  expect(seenB).toEqual([false]); // yalnız B'nin KENDİ doğrulanmış sonucu, B'ye
 });

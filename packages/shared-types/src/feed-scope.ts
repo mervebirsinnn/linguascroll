@@ -3,9 +3,9 @@ import { contentCategorySchema } from "./content-category";
 
 /**
  * Feed'in HANGİ içerik kümesini gösterdiği — persist edilen `ContentCategory`'den AYRI bir kavram:
- *  - "all": bütün yayınlanmış kategoriler (mobilde "Akış"). Bir DB değeri DEĞİLDİR; hiçbir video
- *    `category = "all"` olamaz ve DB'ye asla yazılmaz.
- *  - "animation" / "ielts": yalnızca o kategorideki içerik.
+ *  - "all": ana akışa ait kategoriler (mobilde "Akış"; "cabincrew" HARİÇ, o ayrı bir akıştır). Bir DB değeri
+ *    DEĞİLDİR; hiçbir video `category = "all"` olamaz ve DB'ye asla yazılmaz.
+ *  - "animation" / "ielts" / "cabincrew": yalnızca o kategorideki içerik.
  * Kategori değerleri `contentCategorySchema`'dan TÜRETİLİR (`general` hariç: ayrı bir "yalnızca
  * general" sekmesi yok, general içerik "all" altında görünür) — aynı string'ler ikinci bir yerde tekrar yazılmaz.
  */

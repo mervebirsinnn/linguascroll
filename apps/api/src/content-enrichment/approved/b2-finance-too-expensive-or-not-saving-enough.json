@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T16:59:32.554Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-finance-too-expensive-or-not-saving-enough.mp4"
+  },
+  "draft": {
+    "contentId": "b2-finance-too-expensive-or-not-saving-enough",
+    "muxAssetId": "local-saving-money-changing-habits",
+    "sourceFile": "b2-finance-too-expensive-or-not-saving-enough.mp4",
+    "storageKey": null,
+    "durationMs": 29730,
+    "topic": "finance",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4880,
+        "text": "I spent a whole year saying flats in my city were too expensive. The truth was simpler.",
+        "englishExplanation": "The speaker spent a year complaining about high apartment prices, but the real issue was simpler.",
+        "turkishExplanation": "Bütün bir yılı şehrimdeki dairelerin çok pahalı olduğunu söyleyerek geçirdim. Gerçek ise daha basitti."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5380,
+        "endMs": 6460,
+        "text": "I wasn't saving enough.",
+        "englishExplanation": "The speaker realized they were not saving enough money.",
+        "turkishExplanation": "Yeterince birikim yapmıyordum."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7040,
+        "endMs": 12240,
+        "text": "Every month I ran out of money a week before payday, usually after too many takeaways and",
+        "englishExplanation": "Money finished a week before getting paid, mainly due to ordering too much takeaway food.",
+        "turkishExplanation": "Her ay maaş gününden bir hafta önce param biterdi; genellikle çok fazla hazır yemek ve..."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12240,
+        "endMs": 14560,
+        "text": "not enough planning. So I tried something new.",
+        "englishExplanation": "...and a lack of financial planning led to trying a new approach.",
+        "turkishExplanation": "yetersiz planlama yüzünden. Bu yüzden yeni bir şey denedim."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15000,
+        "endMs": 19900,
+        "text": "I set aside a small amount as soon as my salary arrived and treated it like a bill.",
+        "englishExplanation": "The speaker saved a small portion of money as soon as their salary arrived, treating it like a bill.",
+        "turkishExplanation": "Maaşım yatar yatmaz küçük bir miktarı kenara ayırdım ve ona bir fatura muamelesi yaptım."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 20480,
+        "endMs": 23880,
+        "text": "It didn't feel like enough at first, but small amounts add up.",
+        "englishExplanation": "It felt insignificant initially, but small savings accumulate over time.",
+        "turkishExplanation": "İlk başta yeterli gelmedi ama küçük miktarlar birikerek çoğalır."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 24420,
+        "endMs": 29140,
+        "text": "A year later, I'm not rich enough to buy a flat, but I'm calm enough to stop blaming the",
+        "englishExplanation": "After a year, the speaker still cannot afford a flat, but feels calm enough to stop...",
+        "turkishExplanation": "Bir yıl sonra, bir daire alacak kadar zengin değilim ama şehri..."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 29140,
+        "endMs": 29340,
+        "text": "city.",
+        "englishExplanation": "...blaming the city for their situation.",
+        "turkishExplanation": "suçlamayı bırakacak kadar sakinim."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "takeaway",
+        "gloss": "paket yemek, hazır yemek"
+      },
+      {
+        "lemma": "salary",
+        "gloss": "maaş"
+      },
+      {
+        "lemma": "bill",
+        "gloss": "fatura"
+      },
+      {
+        "lemma": "blame",
+        "gloss": "suçlamak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 3,
+        "type": "phrase",
+        "expression": "run out of",
+        "englishExplanation": "To use up all of something so that none is left.",
+        "turkishExplanation": "Bir şeyin tamamını tüketmek, bitirmek.",
+        "exampleEn": "I ran out of money before the end of the month.",
+        "exampleTr": "Ay sonu gelmeden param bitti."
+      },
+      {
+        "segmentOrdinal": 5,
+        "type": "phrase",
+        "expression": "set aside",
+        "englishExplanation": "To keep or save something, such as money, for a specific purpose.",
+        "turkishExplanation": "Belli bir amaç için para veya zaman ayırmak, kenara koymak.",
+        "exampleEn": "She sets aside a portion of her income every month.",
+        "exampleTr": "Her ay gelirinin bir kısmını kenara ayırıyor."
+      },
+      {
+        "segmentOrdinal": 6,
+        "type": "phrase",
+        "expression": "add up",
+        "englishExplanation": "To accumulate or build up gradually into a larger total.",
+        "turkishExplanation": "Zamanla birikerek büyük bir toplama ulaşmak.",
+        "exampleEn": "Small daily expenses can quickly add up.",
+        "exampleTr": "Küçük günlük harcamalar hızlıca birikebilir."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "In segment 3, what does the phrasal verb 'ran out of' mean in this context?",
+      "options": [
+        {
+          "text": "Had no money left before receiving the next paycheck",
+          "isCorrect": true
+        },
+        {
+          "text": "Invested money into a new bank account",
+          "isCorrect": false
+        },
+        {
+          "text": "Borrowed money from a close friend",
+          "isCorrect": false
+        },
+        {
+          "text": "Refused to spend money on essential items",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

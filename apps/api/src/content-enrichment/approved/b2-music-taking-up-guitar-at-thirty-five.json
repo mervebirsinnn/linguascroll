@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-20T17:00:04.070Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-music-taking-up-guitar-at-thirty-five.mp4"
+  },
+  "draft": {
+    "contentId": "b2-music-taking-up-guitar-at-thirty-five",
+    "muxAssetId": "local-learning-guitar-at-35",
+    "sourceFile": "b2-music-taking-up-guitar-at-thirty-five.mp4",
+    "storageKey": null,
+    "durationMs": 31100,
+    "topic": "music",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 5520,
+        "text": "I took up the guitar at 35, and everyone warned me I'd never be as quick as the teenagers",
+        "englishExplanation": "The speaker started playing guitar at 35 despite warnings about learning slower than teens.",
+        "turkishExplanation": "35 yaşımda gitara başladım ve herkes bana sınıftaki gençler kadar hızlı olamayacağımı söyleyerek beni uyardı."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5520,
+        "endMs": 7320,
+        "text": "in my class. They were right.",
+        "englishExplanation": "The speaker admits those warnings were accurate.",
+        "turkishExplanation": "Haklıydılar."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7920,
+        "endMs": 12260,
+        "text": "My fingers aren't as flexible as theirs, and they learn songs twice as fast as I do.",
+        "englishExplanation": "The speaker notes their fingers are less flexible and teens learn songs twice as fast.",
+        "turkishExplanation": "Parmaklarım onlarınki kadar esnek değil ve şarkıları benim iki katım hızda öğreniyorlar."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12920,
+        "endMs": 14860,
+        "text": "At first I struggled to keep up with them,",
+        "englishExplanation": "Initially, matching the speed of younger students was a challenge.",
+        "turkishExplanation": "İlk başlarda onlara yetişmekte zorlandım,"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15360,
+        "endMs": 16960,
+        "text": "but here's what I didn't expect.",
+        "englishExplanation": "The speaker introduces a surprising realization they had.",
+        "turkishExplanation": "ama işte beklemediğim şey buydu."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 17620,
+        "endMs": 19520,
+        "text": "Adults practice more deliberately,",
+        "englishExplanation": "Adults tend to practice with more purpose and concentration.",
+        "turkishExplanation": "Yetişkinler daha bilinçli pratik yapıyor,"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 20020,
+        "endMs": 22560,
+        "text": "so my progress has been almost as steady as theirs.",
+        "englishExplanation": "Due to focused practice, the speaker's progress matched the teenagers' pace.",
+        "turkishExplanation": "bu yüzden benim ilerlemem de neredeyse onlarınki kadar istikrarlı oldu."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 23160,
+        "endMs": 27420,
+        "text": "I'm not as fast, but I'm just as happy when a chord finally rings out clearly.",
+        "englishExplanation": "Speed does not diminish the joy of playing a clean sound or chord.",
+        "turkishExplanation": "O kadar hızlı değilim ama bir akor sonunda net bir şekilde tınladığında en az onlar kadar mutlu oluyorum."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 27420,
+        "endMs": 30720,
+        "text": "Starting late is not the same as starting badly.",
+        "englishExplanation": "Starting a skill late in life does not imply poor results.",
+        "turkishExplanation": "Geç başlamak, kötü başlamakla aynı şey değildir."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "take up",
+        "gloss": "başlamak, hobi edinmek"
+      },
+      {
+        "lemma": "keep up with",
+        "gloss": "ayak uydurmak, yetişmek"
+      },
+      {
+        "lemma": "deliberately",
+        "gloss": "bilinçli olarak"
+      },
+      {
+        "lemma": "steady",
+        "gloss": "istikrarlı, düzenli"
+      },
+      {
+        "lemma": "ring out",
+        "gloss": "tınlamak, net duyulmak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "phrase",
+        "expression": "take up",
+        "englishExplanation": "To start doing a new activity or hobby regularly.",
+        "turkishExplanation": "Yeni bir hobiye veya faaliyete başlamak anlamında kullanılır.",
+        "exampleEn": "She decided to take up painting in her free time.",
+        "exampleTr": "Boş zamanlarında resim yapmaya başlamaya karar verdi."
+      },
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "keep up with",
+        "englishExplanation": "To move, progress, or increase at the same rate as someone or something else.",
+        "turkishExplanation": "Biriyle veya bir şeyle aynı hızda ilerlemek, tempoya ayak uydurmak.",
+        "exampleEn": "It was hard to keep up with the fast pace of the class.",
+        "exampleTr": "Dersin hızlı temposuna ayak uydurmak zordu."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "In segment 4, what does the speaker mean by saying they struggled to 'keep up with' the teenagers?",
+      "options": [
+        {
+          "text": "They found it difficult to match the teenagers' learning speed.",
+          "isCorrect": true
+        },
+        {
+          "text": "They had trouble communicating with the teenagers after class.",
+          "isCorrect": false
+        },
+        {
+          "text": "They could not afford the same instrument equipment as others.",
+          "isCorrect": false
+        },
+        {
+          "text": "They struggled to remember the names of the younger students.",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

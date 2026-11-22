@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react-native";
-import type { VideoVocabularyItem } from "@linguascroll/shared-types";
+import { AccessibilityInfo } from "react-native";
+import { fireEvent, render, screen, within } from "@testing-library/react-native";
 import { VocabularyWordSheet } from "./VocabularyWordSheet";
 
 jest.mock("react-native-safe-area-context", () => ({ useSafeAreaInsets: () => ({ top: 0, bottom: 0, left: 0, right: 0 }) }));
@@ -9,10 +9,10 @@ jest.mock("react-native/Libraries/Modal/Modal", () => {
 });
 
 /** 2026-11-17 — seçilmiş (yeşil) kelime penceresi, altyazı kelimesi penceresiyle aynı görünüm ve metinlerde. */
-const WORD: VideoVocabularyItem = { word: { id: "00000000-0000-4000-8000-000000000001", language: "en", lemma: "show", gloss: "göstermek" }, saved: false };
+const ENTRY = { title: "show", gloss: "göstermek" };
 
 async function renderSheet(overrides: Partial<Parameters<typeof VocabularyWordSheet>[0]> = {}) {
-  const props = { word: WORD, sentence: "I show it to my friend.", onClose: jest.fn(), isSaved: false, isPending: false, onSave: jest.fn(), onRemove: jest.fn(), ...overrides };
+  const props = { entry: ENTRY, sentence: "I show it to my friend.", onClose: jest.fn(), isSaved: false, isPending: false, onSave: jest.fn(), onRemove: jest.fn(), ...overrides };
   const view = await render(<VocabularyWordSheet {...props} />);
   return { props, view };
 }
@@ -88,7 +88,7 @@ describe("bekleme (isPending)", () => {
   });
 
   it("çıkarırken etiket YÖNÜ doğru söyler ('Kaldırılıyor…'), 'Kaydediliyor…' DEĞİL", async () => {
-    const props = { word: WORD, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
+    const props = { entry: ENTRY, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
     const view = await render(<VocabularyWordSheet {...props} isSaved isPending={false} />);
     await fireEvent.press(screen.getByText(REMOVE));
     expect(props.onRemove).toHaveBeenCalledTimes(1);
@@ -102,7 +102,7 @@ describe("bekleme (isPending)", () => {
   });
 
   it("kaydet → bekleme sırasında etiket 'Kaydediliyor…' (niyet save)", async () => {
-    const props = { word: WORD, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
+    const props = { entry: ENTRY, sentence: "s", onClose: jest.fn(), onSave: jest.fn(), onRemove: jest.fn() };
     const view = await render(<VocabularyWordSheet {...props} isSaved={false} isPending={false} />);
     await fireEvent.press(screen.getByText("Kelimelerime kaydet"));
     await view.rerender(<VocabularyWordSheet {...props} isSaved={false} isPending />);
@@ -131,8 +131,163 @@ describe("cümle", () => {
   });
 });
 
-it("word null ise (sheet kapalı) hiçbir şey çizilmez", async () => {
-  const { view } = await renderSheet({ word: null });
+it("entry null ise (sheet kapalı) hiçbir şey çizilmez", async () => {
+  const { view } = await renderSheet({ entry: null });
   expect(screen.queryByText("Videoya dön")).toBeNull();
   expect(screen.queryByText(REMOVE, { includeHiddenElements: true })).toBeNull();
+});
+
+describe("genelleştirme (okuma pratiği): kapatma metni, görünür hata, gizli satır stili", () => {
+  it("closeLabel verilirse kapatma düğmesi o metni taşır ('Metne dön') ve onClose'u çağırır; varsayılan 'Videoya dön'", async () => {
+    const custom = await renderSheet({ closeLabel: "Metne dön" });
+    expect(screen.getByText("Metne dön")).toBeTruthy();
+    expect(screen.queryByText("Videoya dön")).toBeNull();
+    await fireEvent.press(screen.getByText("Metne dön"));
+    expect(custom.props.onClose).toHaveBeenCalledTimes(1);
+  });
+
+  it("hata verilirse görünür (alert rolü) ve 'Tekrar dene' kayıtsızken KAYDET niyetini yeniden dener", async () => {
+    const { props } = await renderSheet({ error: "Kelime işlemi tamamlanamadı. Tekrar dene." });
+    expect(screen.getByRole("alert")).toBeTruthy();
+    expect(screen.getByText("Kelime işlemi tamamlanamadı. Tekrar dene.")).toBeTruthy();
+
+    await fireEvent.press(screen.getByText("Tekrar dene"));
+    expect(props.onSave).toHaveBeenCalledTimes(1);
+    expect(props.onRemove).not.toHaveBeenCalled();
+  });
+
+  it("kayıtlıyken 'Tekrar dene' ÇIKAR niyetini yeniden dener (başarısız çıkarma durumu değiştirmez)", async () => {
+    const { props } = await renderSheet({ isSaved: true, error: "Kelime işlemi tamamlanamadı. Tekrar dene." });
+    await fireEvent.press(screen.getByText("Tekrar dene"));
+    expect(props.onRemove).toHaveBeenCalledTimes(1);
+    expect(props.onSave).not.toHaveBeenCalled();
+  });
+
+  it("hata verilmezse (video akışı) hata kutusu ve 'Tekrar dene' hiç çizilmez", async () => {
+    await renderSheet();
+    expect(screen.queryByRole("alert")).toBeNull();
+    expect(screen.queryByText("Tekrar dene")).toBeNull();
+  });
+
+  it("gizli çıkar satırının YER TUTAN stili sabit: opacity 0 ama minHeight 44 korunur, display none DEĞİL (M1 gerilemesini yakalar)", async () => {
+    await renderSheet();
+    const hidden = screen.getByRole("button", { name: "Kelimelerimden çıkar", includeHiddenElements: true });
+    expect(hidden).toHaveStyle({ opacity: 0, minHeight: 44 });
+    expect(hidden).not.toHaveStyle({ display: "none" });
+  });
+
+  it("çıkarma beklerken satır görünür kalır ama pasif (odak kaybolmaz, basılamaz)", async () => {
+    const { props } = await renderSheet({ isSaved: true, isPending: true });
+    const row = screen.getByRole("button", { name: "Kelimelerimden çıkar", disabled: true });
+    expect(row).toBeTruthy();
+    await fireEvent.press(screen.getByText("Kelimelerimden çıkar"));
+    expect(props.onRemove).not.toHaveBeenCalled();
+  });
+});
+
+describe("review düzeltmeleri: taşma, duyuru, düğme durumu, stil pinleri", () => {
+  it("hata belirince ekran okuyucuya duyurulur (assertive canlı bölge + programatik duyuru); hata yokken duyuru yok", async () => {
+    const announce = jest.spyOn(AccessibilityInfo, "announceForAccessibility").mockImplementation(() => {});
+    announce.mockClear(); // RN jest kurulumunda zaten bir mock olabilir: önceki testlerin çağrıları sayılmasın
+    const view = await render(<VocabularyWordSheet entry={ENTRY} onClose={jest.fn()} isSaved={false} isPending={false} onSave={jest.fn()} onRemove={jest.fn()} />);
+    expect(announce).not.toHaveBeenCalled();
+
+    await view.rerender(<VocabularyWordSheet entry={ENTRY} error="Kelime işlemi tamamlanamadı. Tekrar dene." onClose={jest.fn()} isSaved={false} isPending={false} onSave={jest.fn()} onRemove={jest.fn()} />);
+
+    expect(announce).toHaveBeenCalledWith("Kelime işlemi tamamlanamadı. Tekrar dene.");
+    expect(screen.getByRole("alert")).toHaveProp("accessibilityLiveRegion", "assertive");
+    announce.mockRestore();
+  });
+
+  it("'Tekrar dene' yönü etiketinde söyler (kaydetmeyi/çıkarmayı) ve bekleme sırasında pasif + soluk", async () => {
+    const unsaved = await renderSheet({ error: "hata" });
+    expect(screen.getByRole("button", { name: "Kaydetmeyi tekrar dene" })).toBeTruthy();
+    await unsaved.view.unmount();
+
+    const saved = await renderSheet({ isSaved: true, error: "hata", isPending: true });
+    const retry = screen.getByRole("button", { name: "Çıkarmayı tekrar dene", disabled: true, busy: true });
+    expect(retry).toHaveStyle({ opacity: 0.5 });
+    await fireEvent.press(retry);
+    expect(saved.props.onRemove).not.toHaveBeenCalled();
+  });
+
+  it("kart ekranı aşmaz (maxHeight) ve bilgi alanı kaydırılır; DÜĞMELER kaydırılan alanın dışında (hata kutusu düğmeleri itemez)", async () => {
+    await renderSheet({ sentence: "Çok uzun bir cümle. ".repeat(40), error: "hata" });
+    const card = screen.getByTestId("word-sheet-card");
+    expect(card).toHaveStyle({ maxHeight: "88%" }); // kart ekranı aşmaz
+    // Başlık/cümle/hata bilgi ScrollView'ının İÇİNDE; düğmeler DIŞINDA (hata kutusu düğmeleri itemez).
+    const info = within(screen.getByTestId("word-sheet-info"));
+    expect(info.getByText("show")).toBeTruthy();
+    expect(info.getByText("hata")).toBeTruthy();
+    expect(info.queryByText("Kelimelerime kaydet")).toBeNull();
+    expect(info.queryByText("Videoya dön")).toBeNull();
+    expect(info.queryByText("Kelimelerimden çıkar", { includeHiddenElements: true })).toBeNull();
+  });
+
+  it("stil pinleri: çıkar satırı marginTop 12 (kapat düğmesinden ayrı), bekleme sırasında opacity 0.5 görünür", async () => {
+    await renderSheet({ isSaved: true });
+    expect(screen.getByRole("button", { name: "Kelimelerimden çıkar" })).toHaveStyle({ marginTop: 12, minHeight: 44 });
+    await screen.unmount();
+    await renderSheet({ isSaved: true, isPending: true });
+    expect(screen.getByRole("button", { name: "Kelimelerimden çıkar", disabled: true })).toHaveStyle({ opacity: 0.5 });
+  });
+});
+
+describe("cümle çevirisi (okuma pratiği): Türkçe cümle + 'İngilizce cümleyi göster'", () => {
+  const TR = "Arkadaşıma gösteriyorum.";
+  const EN = "I show it to my friend.";
+
+  it("çeviri varsa Türkçe cümle görünür, İngilizce cümle gizlidir ve düğmeyle açılıp kapanır", async () => {
+    await renderSheet({ sentence: EN, sentenceTr: TR });
+    expect(screen.getByText(TR)).toBeTruthy();
+    expect(screen.queryByText(EN)).toBeNull();
+
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    expect(screen.getByText(EN)).toBeTruthy();
+    expect(screen.getByText(TR)).toBeTruthy();
+    expect(screen.getByTestId("word-sheet-toggle-english").props.accessibilityState).toMatchObject({ expanded: true });
+
+    await fireEvent.press(screen.getByText("İngilizce cümleyi gizle"));
+    expect(screen.queryByText(EN)).toBeNull();
+  });
+
+  it("çeviri yoksa davranış AYNEN eskisi gibi: İngilizce cümle doğrudan görünür, düğme çizilmez", async () => {
+    await renderSheet({ sentence: EN });
+    expect(screen.getByText(EN)).toBeTruthy();
+    expect(screen.queryByText("İngilizce cümleyi göster")).toBeNull();
+    expect(screen.queryByTestId("word-sheet-sentence-tr")).toBeNull();
+  });
+
+  it("çeviri var ama İngilizce cümle yoksa düğme çizilmez ve çökmez", async () => {
+    await renderSheet({ sentence: undefined, sentenceTr: TR });
+    expect(screen.getByText(TR)).toBeTruthy();
+    expect(screen.queryByTestId("word-sheet-toggle-english")).toBeNull();
+  });
+
+  it("açılan İngilizce cümle, pencere kapanıp başka cümleyle açılınca kapalıya döner", async () => {
+    const props = { entry: ENTRY, sentence: EN, sentenceTr: TR, onClose: jest.fn(), isSaved: false, isPending: false, onSave: jest.fn(), onRemove: jest.fn() };
+    const view = await render(<VocabularyWordSheet {...props} />);
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    expect(screen.getByText(EN)).toBeTruthy();
+
+    await view.rerender(<VocabularyWordSheet {...props} sentence="Another sentence." sentenceTr="Başka bir cümle." />);
+    expect(screen.getByText("Başka bir cümle.")).toBeTruthy();
+    expect(screen.queryByText("Another sentence.")).toBeNull();
+
+    // Aynı cümle için üst bileşen her render'da YENİ entry nesnesi verir: açık durum bunda kaybolmamalı.
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    await view.rerender(<VocabularyWordSheet {...props} sentence="Another sentence." sentenceTr="Başka bir cümle." entry={{ ...ENTRY }} />);
+    expect(screen.getByText("Another sentence.")).toBeTruthy();
+  });
+
+  it("düğme ve cümleler kaydırılan bilgi alanının İÇİNDE; kaydet/kapat/çıkar düğmeleri dışında kalır (açıp kapamak onların yerini itemez)", async () => {
+    await renderSheet({ sentence: EN, sentenceTr: TR });
+    const info = within(screen.getByTestId("word-sheet-info"));
+    expect(info.getByText(TR)).toBeTruthy();
+    expect(info.getByText("İngilizce cümleyi göster")).toBeTruthy();
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    expect(info.getByText(EN)).toBeTruthy();
+    expect(info.queryByText("Kelimelerime kaydet")).toBeNull();
+    expect(info.queryByText("Videoya dön")).toBeNull();
+  });
 });
