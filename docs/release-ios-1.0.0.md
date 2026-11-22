@@ -43,10 +43,10 @@ Güncel master (5e72ec5) üzerinde bu sırayla yapılan birleştirme, test edile
 ## Production sırası
 Render master'ı otomatik deploy ediyorsa **migration'lar #16 birleşmeden önce** uygulanmalı. Aksi hâlde yeni API,
 tabloları olmayan DB'ye karşı açılır.
-1. **Neon yedeği** (branch/snapshot).
-2. **Neon migration 0023–0024** (0020–0022 zaten uygulanmış; önce `drizzle.__drizzle_migrations` ile doğrulanır). Yalnız
-   ekleme yapıyorlar (0023 kolon, 0024 kategori CHECK genişletmesi); eski API bunlarla çalışır. Hedef host komuttan önce
-   doğrulanır.
+1. ✅ **Neon yedeği** (2026-11-22): `pg_dump -Fc`, dosya `C:\Users\merve\looplish-backups\neon-looplish-2026-11-22-pre-0023-0024.dump`
+   (937 KB, 24 tablonun verisi; `pg_restore --list` ile doğrulandı).
+2. ✅ **Neon migration 0023–0024** (2026-11-22): 25/25 uygulandı. `context_sentence_tr` eklendi, kategori CHECK `cabincrew`'i
+   içeriyor, mevcut videolar etkilenmedi, canlı API `/health` 200.
 2b. **Neon'daki FT paketleri emekliye ayrılır ya da silinir** (API deploy'undan önce).
 3. **PR'ların birleşmesi ve API deploy'u.** `SUBSCRIPTION_GATE_ENABLED=false`, `SUBSCRIPTION_GATE_PLATFORMS`
    **tanımsız** (herkes bugünkü gibi sınırsız).
