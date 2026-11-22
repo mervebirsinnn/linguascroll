@@ -1,7 +1,8 @@
 import { Controller, Get, HttpCode, Param, ParseUUIDPipe, Post, Query, UseGuards } from "@nestjs/common";
-import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview } from "@linguascroll/shared-types";
+import type { ClientPlatform, PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview } from "@linguascroll/shared-types";
 import { resolveFeedScope } from "../feed/feed-scope";
 import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
+import { RequestPlatform } from "./request-platform.decorator";
 import { SubscriptionsService } from "./subscriptions.service";
 
 /**
@@ -24,13 +25,13 @@ export class SubscriptionsController {
 
   @Post("videos/:videoId/playback-access")
   @HttpCode(200)
-  requestPlaybackAccess(@Param("videoId", new ParseUUIDPipe()) videoId: string, @AuthUserId() userId: string, @Query("scope") scope?: string): Promise<PlaybackAccessResponse> {
-    return this.subscriptionsService.requestPlaybackAccess(userId, videoId, resolveFeedScope(scope, undefined));
+  requestPlaybackAccess(@Param("videoId", new ParseUUIDPipe()) videoId: string, @AuthUserId() userId: string, @RequestPlatform() platform: ClientPlatform | null, @Query("scope") scope?: string): Promise<PlaybackAccessResponse> {
+    return this.subscriptionsService.requestPlaybackAccess(userId, platform, videoId, resolveFeedScope(scope, undefined));
   }
 
   @Get("subscriptions/status")
-  getStatus(@AuthUserId() userId: string): Promise<SubscriptionOverview> {
-    return this.subscriptionsService.getOverview(userId);
+  getStatus(@AuthUserId() userId: string, @RequestPlatform() platform: ClientPlatform | null): Promise<SubscriptionOverview> {
+    return this.subscriptionsService.getOverview(userId, platform);
   }
 
   @Post("subscriptions/refresh")

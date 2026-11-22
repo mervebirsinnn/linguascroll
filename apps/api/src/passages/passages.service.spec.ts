@@ -36,6 +36,7 @@ function makeService(options: { rows?: PassageRow[]; fullAccess?: boolean } = {}
     findUserAnswers: [] as unknown[][],
     findSavedWordIds: [] as unknown[][],
     hasFullAccess: 0,
+    hasFullAccessArgs: [] as unknown[][],
     record: 0,
   };
   const passagesRepository = {
@@ -52,8 +53,9 @@ function makeService(options: { rows?: PassageRow[]; fullAccess?: boolean } = {}
     findQuestionAccessContext: async () => null,
   } as unknown as PassagesRepository;
   const subscriptions = {
-    hasFullAccess: async () => {
+    hasFullAccess: async (...args: unknown[]) => {
       calls.hasFullAccess += 1;
+      calls.hasFullAccessArgs.push(args);
       return options.fullAccess ?? false;
     },
   } as unknown as SubscriptionsService;
@@ -103,6 +105,13 @@ describe("PassagesService.listPassages", () => {
     for (const key of ["findQuestions", "findWords", "findSpans"] as const) {
       expect(calls[key].every((ids) => ids.length === 0)).toBe(true);
     }
+  });
+
+  it("erişim kararına istemci platformu iletilir; platformsuz çağrı bilinmeyen platformdur (null)", async () => {
+    const { service, calls } = makeService({ rows: [passageRow(1)] });
+    await service.listPassages(USER, { level: "B2" }, "ios");
+    await service.listPassages(USER, { level: "B2" });
+    expect(calls.hasFullAccessArgs).toEqual([[USER, "ios"], [USER, null]]);
   });
 
   it("erişim tek kez sorgulanır (metin başına değil)", async () => {

@@ -64,3 +64,4 @@ export {
 } from "./passage";
 
 export { TOPIC_LABELS } from "./topic-labels";
+export { CLIENT_PLATFORM_HEADER, clientPlatformSchema, type ClientPlatform } from "./client-platform";

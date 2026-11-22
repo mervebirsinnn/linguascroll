@@ -11,8 +11,10 @@ import {
   type VideoWordGlosses,
   type SaveWordRequest,
   type WordsProgress,
+  type ClientPlatform,
 } from "@linguascroll/shared-types";
 import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
+import { RequestPlatform } from "../subscriptions/request-platform.decorator";
 import { WordGlossesService } from "./word-glosses.service";
 import { WordsService } from "./words.service";
 
@@ -50,9 +52,9 @@ export class WordsController {
   // response.ok'a bakıyor (bkz. apps/mobile features/feed/api/save-word.ts) — durum kodu değişmedi.
   @Put(":wordId/saved")
   @UseGuards(FirebaseAuthGuard)
-  async saveWord(@Param("wordId", new ParseUUIDPipe()) wordId: string, @Body() body: unknown, @AuthUserId() userId: string): Promise<SaveWordResponse> {
+  async saveWord(@Param("wordId", new ParseUUIDPipe()) wordId: string, @Body() body: unknown, @AuthUserId() userId: string, @RequestPlatform() platform: ClientPlatform | null): Promise<SaveWordResponse> {
     const { sourceSegmentId, sourcePassageId, sourcePassageSpanId } = this.parseSaveWordRequest(body);
-    return saveWordResponseSchema.parse(await this.wordsService.saveWord(wordId, userId, sourceSegmentId, sourcePassageId, sourcePassageSpanId));
+    return saveWordResponseSchema.parse(await this.wordsService.saveWord(wordId, userId, sourceSegmentId, sourcePassageId, sourcePassageSpanId, platform));
   }
 
   // DELETE = "bu kaydın var olmadığından emin ol" — aynı idempotent semantik.

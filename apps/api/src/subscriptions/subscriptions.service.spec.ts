@@ -41,6 +41,7 @@ function makeService(overrides: {
   videoExists?: boolean;
   ledger?: ReturnType<typeof makeLedger>;
   onCheckEntitlement?: () => void;
+  gatePlatforms?: string;
 } = {}) {
   const ledger = overrides.ledger ?? makeLedger();
   const videosService = {
@@ -58,7 +59,8 @@ function makeService(overrides: {
     },
   } as unknown as RevenueCatClient;
   const configService = {
-    get: (key: string) => (key === "SUBSCRIPTION_GATE_ENABLED" ? String(overrides.gateEnabled ?? true) : undefined),
+    get: (key: string) =>
+      key === "SUBSCRIPTION_GATE_ENABLED" ? String(overrides.gateEnabled ?? true) : key === "SUBSCRIPTION_GATE_PLATFORMS" ? overrides.gatePlatforms : undefined,
   } as unknown as ConfigService;
 
   return { service: new SubscriptionsService(videosService, usersService, ledger.repository, revenueCatClient, configService), ledger };
@@ -70,22 +72,22 @@ describe("SubscriptionsService.requestPlaybackAccess", () => {
   it("ilk 10 farklı video açılır, 11. paywall döner", async () => {
     const { service } = makeService();
     for (const id of videoIds(FREE_VIDEO_CAP)) {
-      expect(await service.requestPlaybackAccess(USER_ID, id)).toEqual({ status: "granted", playbackUrl: PLAYBACK_URL });
+      expect(await service.requestPlaybackAccess(USER_ID, null, id)).toEqual({ status: "granted", playbackUrl: PLAYBACK_URL });
     }
-    expect(await service.requestPlaybackAccess(USER_ID, "v11")).toEqual({ status: "paywall" });
+    expect(await service.requestPlaybackAccess(USER_ID, null, "v11")).toEqual({ status: "paywall" });
   });
 
   it("hak bittikten sonra daha önce açılmış bir video yeniden açılabilir (aynı video hak tüketmez)", async () => {
     const ledger = makeLedger(videoIds(FREE_VIDEO_CAP));
     const { service } = makeService({ ledger });
-    expect((await service.requestPlaybackAccess(USER_ID, "v3")).status).toBe("granted");
+    expect((await service.requestPlaybackAccess(USER_ID, null, "v3")).status).toBe("granted");
     expect(ledger.granted.size).toBe(FREE_VIDEO_CAP);
   });
 
   it("aktif abone sınırsız erişir ve deftere hiç yazılmaz", async () => {
     const ledger = makeLedger(videoIds(FREE_VIDEO_CAP));
     const { service } = makeService({ isSubscribed: true, ledger });
-    expect((await service.requestPlaybackAccess(USER_ID, "v99")).status).toBe("granted");
+    expect((await service.requestPlaybackAccess(USER_ID, null, "v99")).status).toBe("granted");
     expect(ledger.tryGrantCalls).toEqual([]);
   });
 
@@ -93,29 +95,29 @@ describe("SubscriptionsService.requestPlaybackAccess", () => {
     let subscribed = true;
     const ledger = makeLedger(videoIds(FREE_VIDEO_CAP));
     const { service } = makeService({ isSubscribed: () => subscribed, ledger });
-    expect((await service.requestPlaybackAccess(USER_ID, "v50")).status).toBe("granted");
+    expect((await service.requestPlaybackAccess(USER_ID, null, "v50")).status).toBe("granted");
 
     subscribed = false;
     await service.refreshSubscription(USER_ID);
-    expect(await service.requestPlaybackAccess(USER_ID, "v51")).toEqual({ status: "paywall" });
+    expect(await service.requestPlaybackAccess(USER_ID, null, "v51")).toEqual({ status: "paywall" });
   });
 
   it("kapı kapalıyken herkes erişir, RevenueCat'e gidilmez ve deftere yazılmaz", async () => {
     let entitlementChecks = 0;
     const ledger = makeLedger(videoIds(FREE_VIDEO_CAP));
     const { service } = makeService({ gateEnabled: false, ledger, onCheckEntitlement: () => entitlementChecks++ });
-    expect((await service.requestPlaybackAccess(USER_ID, "v11")).status).toBe("granted");
+    expect((await service.requestPlaybackAccess(USER_ID, null, "v11")).status).toBe("granted");
     expect(entitlementChecks).toBe(0);
     expect(ledger.tryGrantCalls).toEqual([]);
   });
 
   it("video yoksa 404, kullanıcı yoksa 400 — hak tüketilmez", async () => {
     const missingVideo = makeService({ videoExists: false });
-    await expect(missingVideo.service.requestPlaybackAccess(USER_ID, VIDEO_ID)).rejects.toThrow(NotFoundException);
+    await expect(missingVideo.service.requestPlaybackAccess(USER_ID, null, VIDEO_ID)).rejects.toThrow(NotFoundException);
     expect(missingVideo.ledger.tryGrantCalls).toEqual([]);
 
     const missingUser = makeService({ userExists: false });
-    await expect(missingUser.service.requestPlaybackAccess(USER_ID, VIDEO_ID)).rejects.toThrow(BadRequestException);
+    await expect(missingUser.service.requestPlaybackAccess(USER_ID, null, VIDEO_ID)).rejects.toThrow(BadRequestException);
     expect(missingUser.ledger.tryGrantCalls).toEqual([]);
   });
 });
@@ -125,18 +127,18 @@ describe("SubscriptionsService.refreshSubscription", () => {
     let subscribed = false;
     const ledger = makeLedger(videoIds(FREE_VIDEO_CAP));
     const { service } = makeService({ isSubscribed: () => subscribed, ledger });
-    expect(await service.requestPlaybackAccess(USER_ID, "v11")).toEqual({ status: "paywall" });
+    expect(await service.requestPlaybackAccess(USER_ID, null, "v11")).toEqual({ status: "paywall" });
 
     subscribed = true; // RevenueCat satın almayı kaydetti
     expect(await service.refreshSubscription(USER_ID)).toEqual({ active: true });
-    expect((await service.requestPlaybackAccess(USER_ID, "v11")).status).toBe("granted");
+    expect((await service.requestPlaybackAccess(USER_ID, null, "v11")).status).toBe("granted");
   });
 
   it("başarısız/iptal edilmiş satın alma (RevenueCat'te entitlement yok) erişim açmaz", async () => {
     const ledger = makeLedger(videoIds(FREE_VIDEO_CAP));
     const { service } = makeService({ isSubscribed: false, ledger });
     expect(await service.refreshSubscription(USER_ID)).toEqual({ active: false });
-    expect(await service.requestPlaybackAccess(USER_ID, "v11")).toEqual({ status: "paywall" });
+    expect(await service.requestPlaybackAccess(USER_ID, null, "v11")).toEqual({ status: "paywall" });
   });
 
   it("kullanıcı yoksa 400", async () => {
@@ -147,13 +149,13 @@ describe("SubscriptionsService.refreshSubscription", () => {
 
 describe("SubscriptionsService.getFeedAllowance", () => {
   it("kapı kapalı ya da abone → sınırsız", async () => {
-    expect(await makeService({ gateEnabled: false }).service.getFeedAllowance(USER_ID, ["v1"])).toEqual({ unlimited: true });
-    expect(await makeService({ isSubscribed: true }).service.getFeedAllowance(USER_ID, ["v1"])).toEqual({ unlimited: true });
+    expect(await makeService({ gateEnabled: false }).service.getFeedAllowance(USER_ID, null, ["v1"])).toEqual({ unlimited: true });
+    expect(await makeService({ isSubscribed: true }).service.getFeedAllowance(USER_ID, null, ["v1"])).toEqual({ unlimited: true });
   });
 
   it("önceki tüketimden bağımsız sabit seçkiye erişim verir; yeni hak tüketmez", async () => {
     const { service } = makeService({ ledger: makeLedger(["v1", "v2", "v3"]) });
-    expect(await service.getFeedAllowance(USER_ID, ["v1", "v11"])).toEqual({
+    expect(await service.getFeedAllowance(USER_ID, null, ["v1", "v11"])).toEqual({
       unlimited: false, grantedVideoIds: new Set(videoIds(10)), newVideoBudget: 0,
     });
   });
@@ -175,7 +177,7 @@ describe("SubscriptionsService.getFeedAllowance — izole kategori (Cabin Crew)"
       { checkEntitlement: () => Promise.resolve(false) } as unknown as RevenueCatClient,
       { get: (key: string) => (key === "SUBSCRIPTION_GATE_ENABLED" ? "true" : undefined) } as unknown as ConfigService,
     );
-    await service.getFeedAllowance(USER_ID, ["v1"]);
+    await service.getFeedAllowance(USER_ID, null, ["v1"]);
     expect(filters).toEqual([{ excludeCategories: ["cabincrew"] }]);
   });
 });
@@ -184,8 +186,8 @@ describe("SubscriptionsService abonelik önbelleği", () => {
   it("'abone değil' kısa süre önbelleklenir: art arda isteklerde RevenueCat'e tekrar gidilmez", async () => {
     let checks = 0;
     const { service } = makeService({ isSubscribed: false, onCheckEntitlement: () => checks++ });
-    await service.requestPlaybackAccess(USER_ID, "v1");
-    await service.requestPlaybackAccess(USER_ID, "v2");
+    await service.requestPlaybackAccess(USER_ID, null, "v1");
+    await service.requestPlaybackAccess(USER_ID, null, "v2");
     expect(checks).toBe(1);
   });
 });
@@ -194,20 +196,58 @@ describe("SubscriptionsService.hasFullAccess (okuma pratiği erişim kararı)", 
   it("kapı kapalıyken herkes tam erişimli ve RevenueCat'e hiç gidilmez", async () => {
     let entitlementChecks = 0;
     const { service } = makeService({ gateEnabled: false, onCheckEntitlement: () => (entitlementChecks += 1) });
-    expect(await service.hasFullAccess(USER_ID)).toBe(true);
+    expect(await service.hasFullAccess(USER_ID, null)).toBe(true);
     expect(entitlementChecks).toBe(0);
   });
 
   it("kapı açık + aktif abone → tam erişim", async () => {
     const { service } = makeService({ gateEnabled: true, isSubscribed: true });
-    expect(await service.hasFullAccess(USER_ID)).toBe(true);
+    expect(await service.hasFullAccess(USER_ID, null)).toBe(true);
   });
 
   it("kapı açık + abone değil → tam erişim yok; ücretsiz hak defterine (free_video_grants) dokunulmaz", async () => {
     const ledger = makeLedger();
     const { service } = makeService({ gateEnabled: true, isSubscribed: false, ledger });
-    expect(await service.hasFullAccess(USER_ID)).toBe(false);
+    expect(await service.hasFullAccess(USER_ID, null)).toBe(false);
     expect(ledger.tryGrantCalls).toEqual([]);
     expect(ledger.granted.size).toBe(0);
   });
 });
+
+// 2026-11-22 — platforma göre kapı: global şalter kapalı, SUBSCRIPTION_GATE_PLATFORMS="ios".
+describe("SubscriptionsService — platforma göre kapı (yalnız iOS)", () => {
+  const iosOnly = () => makeService({ gateEnabled: false, gatePlatforms: "ios", isSubscribed: false });
+
+  it("iOS: 10 ücretsiz video, 11. video paywall; Android ve bilinmeyen platform sınırsız", async () => {
+    const { service } = iosOnly();
+    for (let i = 1; i <= 10; i += 1) expect((await service.requestPlaybackAccess(USER_ID, "ios", `v${i}`)).status).toBe("granted");
+    expect(await service.requestPlaybackAccess(USER_ID, "ios", "v11")).toEqual({ status: "paywall" });
+    expect((await service.requestPlaybackAccess(USER_ID, "android", "v11")).status).toBe("granted");
+    expect((await service.requestPlaybackAccess(USER_ID, null, "v11")).status).toBe("granted");
+  });
+
+  it("Android isteği ücretsiz hak defterine hiç yazmaz ve RevenueCat'e gitmez", async () => {
+    let entitlementChecks = 0;
+    const ledger = makeLedger();
+    const { service } = makeService({ gateEnabled: false, gatePlatforms: "ios", ledger, onCheckEntitlement: () => (entitlementChecks += 1) });
+    expect(await service.getFeedAllowance(USER_ID, "android", ["v1"])).toEqual({ unlimited: true });
+    expect(await service.hasFullAccess(USER_ID, "android")).toBe(true);
+    expect(ledger.granted.size).toBe(0);
+    expect(entitlementChecks).toBe(0);
+  });
+
+  it("iOS'ta Premium (backend doğrulaması) sınırsız açar; başlık Premium'u taklit edemez", async () => {
+    const subscribed = makeService({ gateEnabled: false, gatePlatforms: "ios", isSubscribed: true });
+    expect((await subscribed.service.requestPlaybackAccess(USER_ID, "ios", "v11")).status).toBe("granted");
+    expect(await subscribed.service.hasFullAccess(USER_ID, "ios")).toBe(true);
+    const { service } = iosOnly();
+    expect(await service.hasFullAccess(USER_ID, "ios")).toBe(false);
+  });
+
+  it("global şalter açıkken platformdan bağımsız herkes kapılı (bugünkü davranış)", async () => {
+    const { service } = makeService({ gateEnabled: true, isSubscribed: false });
+    expect(await service.hasFullAccess(USER_ID, "android")).toBe(false);
+    expect(await service.hasFullAccess(USER_ID, null)).toBe(false);
+  });
+});
+
