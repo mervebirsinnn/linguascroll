@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T17:11:42.221Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-technology-d40-q18-globalization-industrial-revolution.mp4"
+  },
+  "draft": {
+    "contentId": "b2-technology-d40-q18-globalization-industrial-revolution",
+    "muxAssetId": "local-history-of-globalization",
+    "sourceFile": "b2-technology-d40-q18-globalization-industrial-revolution.mp4",
+    "storageKey": null,
+    "durationMs": 30500,
+    "topic": "culture",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3120,
+        "text": "Look at the label on your shirt, your phone, or your shoes.",
+        "englishExplanation": "An instruction to check where your everyday belongings were manufactured.",
+        "turkishExplanation": "Gömleğinizdeki, telefonunuzdaki veya ayakkabınızdaki etikete bakın."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3700,
+        "endMs": 5440,
+        "text": "They were probably made far away.",
+        "englishExplanation": "A statement that these products were likely manufactured in a distant location.",
+        "turkishExplanation": "Muhtemelen çok uzaklarda üretildiler."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5980,
+        "endMs": 8060,
+        "text": "But when did the world become so connected?",
+        "englishExplanation": "A question introducing the historical origin of global interconnectedness.",
+        "turkishExplanation": "Peki dünya ne zaman bu kadar bağlantılı hale geldi?"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 8780,
+        "endMs": 13460,
+        "text": "The modern age of globalization started with the industrial revolution at the end of the",
+        "englishExplanation": "Linking the origins of modern globalization to the industrial revolution.",
+        "turkishExplanation": "Küreselleşmenin modern çağı, 18. yüzyılın sonundaki sanayi devrimiyle başladı,"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 13460,
+        "endMs": 17180,
+        "text": "18th century, and new machines were able to produce cheaper goods.",
+        "englishExplanation": "Explaining how new machinery lowered the cost of manufactured items.",
+        "turkishExplanation": "ve yeni makineler daha ucuz mallar üretebildi."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 17900,
+        "endMs": 21240,
+        "text": "Factories could make in one day what workers had made in a month.",
+        "englishExplanation": "Comparing the rapid output of factories to traditional manual labor.",
+        "turkishExplanation": "Fabrikalar, işçilerin bir ayda yaptığını bir günde yapabiliyordu."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 22060,
+        "endMs": 24960,
+        "text": "Ships and trains carried these goods across oceans and borders.",
+        "englishExplanation": "Describing the transportation networks that moved products internationally.",
+        "turkishExplanation": "Gemiler ve trenler bu malları okyanusların ve sınırların ötesine taşıdı."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 25680,
+        "endMs": 30180,
+        "text": "Soon, a cup of tea in London depended on farms on the other side of the world.",
+        "englishExplanation": "Giving a practical example of how routine daily life became reliant on foreign supply chains.",
+        "turkishExplanation": "Çok geçmeden, Londra'daki bir fincan çay dünyanın öbür ucundaki çiftliklere bağımlı hale geldi."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "globalization",
+        "gloss": "küreselleşme"
+      },
+      {
+        "lemma": "industrial revolution",
+        "gloss": "sanayi devrimi"
+      },
+      {
+        "lemma": "depend on",
+        "gloss": "bağlı olmak, bağımlı olmak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 8,
+        "type": "phrase",
+        "expression": "depend on",
+        "englishExplanation": "To rely on someone or something in order to exist, happen, or function properly.",
+        "turkishExplanation": "Bir şeye veya birine bağımlı olmak, bir şeyin başka bir şeye bağlı olması anlamına gelir.",
+        "exampleEn": "Our outdoor party will depend on the weather tomorrow.",
+        "exampleTr": "Açık hava partimiz yarınki havaya bağlı olacak."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 4,
+      "question": "The modern age of globalization ______ with the industrial revolution at the end of the 18th century, and new machines ______ cheaper goods.",
+      "options": [
+        {
+          "text": "started / were able to produce",
+          "isCorrect": true
+        },
+        {
+          "text": "has started / are able to produce",
+          "isCorrect": false
+        },
+        {
+          "text": "had started / were able producing",
+          "isCorrect": false
+        },
+        {
+          "text": "starts / was able to produce",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

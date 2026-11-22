@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T17:12:22.238Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-technology-d40-q22-nuclear-plants-need-cooling-water.mp4"
+  },
+  "draft": {
+    "contentId": "b2-technology-d40-q22-nuclear-plants-need-cooling-water",
+    "muxAssetId": "local-nuclear-plants-near-rivers",
+    "sourceFile": "b2-technology-d40-q22-nuclear-plants-need-cooling-water.mp4",
+    "storageKey": null,
+    "durationMs": 29370,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 2820,
+        "text": "Have you ever noticed where nuclear power plants are built?",
+        "englishExplanation": "Asking if you have ever paid attention to where nuclear power plants are built.",
+        "turkishExplanation": "Nükleer santrallerin nereye kurulduğunu hiç fark ettiniz mi?"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 3300,
+        "endMs": 6640,
+        "text": "Many of them stand right by the water, and it isn't for the view.",
+        "englishExplanation": "Pointing out that these plants are near water for functional reasons, not for the scenery.",
+        "turkishExplanation": "Çoğu hemen su kenarında duruyor ve bu manzara için değil."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7260,
+        "endMs": 12100,
+        "text": "Nuclear power plants are often situated next to rivers because they need large amounts of",
+        "englishExplanation": "Explaining that nuclear plants are built next to rivers because they require massive amounts of cooling water.",
+        "turkishExplanation": "Nükleer santraller genellikle nehirlerin yanına kurulur çünkü büyük miktarda soğutma suyuna ihtiyaç duyarlar."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12100,
+        "endMs": 12660,
+        "text": "cooling water.",
+        "englishExplanation": "Completing the thought about the type of water required by the plant.",
+        "turkishExplanation": "soğutma suyu."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 13220,
+        "endMs": 18380,
+        "text": "Inside the plant, the reactor produces enormous heat, which turns water into steam and",
+        "englishExplanation": "Describing how the plant's reactor generates intense heat that creates steam to move turbines.",
+        "turkishExplanation": "Santralin içinde reaktör devasa bir ısı üretir, bu ısı suyu buhara dönüştürür ve türbinleri çalıştırır."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 18380,
+        "endMs": 21580,
+        "text": "drives the turbines. Then the steam has to be cooled down again.",
+        "englishExplanation": "Explaining that the steam needs to be cooled back down into water after driving the turbines.",
+        "turkishExplanation": "Ardından buharın tekrar soğutulması gerekir."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 22080,
+        "endMs": 23560,
+        "text": "A river provides a steady supply.",
+        "englishExplanation": "Stating that a river provides a continuous and reliable flow of water.",
+        "turkishExplanation": "Bir nehir kesintisiz bir kaynak sağlar."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 24140,
+        "endMs": 28360,
+        "text": "In very hot summers, though, some plants have had to slow down when the river water became",
+        "englishExplanation": "Mentioning that during extreme summer heat, some plants are forced to reduce output because river water gets too warm.",
+        "turkishExplanation": "Yine de çok sıcak yazlarda, nehir suyu fazla ısındığında bazı santraller yavaşlamak zorunda kaldı."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 28360,
+        "endMs": 28940,
+        "text": "too warm.",
+        "englishExplanation": "Finishing the statement regarding river temperatures rising too high.",
+        "turkishExplanation": "çok ısındığında."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "reactor",
+        "gloss": "reaktör"
+      },
+      {
+        "lemma": "turbine",
+        "gloss": "türbin"
+      },
+      {
+        "lemma": "steady",
+        "gloss": "kesintisiz, düzenli"
+      },
+      {
+        "lemma": "enormous",
+        "gloss": "devasa, çok büyük"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 3,
+        "type": "phrase",
+        "expression": "be situated",
+        "englishExplanation": "Means to be placed or located in a particular position.",
+        "turkishExplanation": "Belirli bir konumda veya yerde bulunmak, yerleşmiş olmak anlamına gelir.",
+        "exampleEn": "The hotel is conveniently situated near the station.",
+        "exampleTr": "Otel istasyonun yakınında elverişli bir konumda yer almaktadır."
+      },
+      {
+        "segmentOrdinal": 7,
+        "type": "phrase",
+        "expression": "steady supply",
+        "englishExplanation": "Refers to a continuous, consistent, and uninterrupted provision of something.",
+        "turkishExplanation": "Zaman içinde kesintisiz ve düzenli bir miktar tedarik veya kaynak anlamına gelir.",
+        "exampleEn": "Plants require a steady supply of water to grow.",
+        "exampleTr": "Bitkilerin büyümek için düzenli bir su kaynağına ihtiyacı vardır."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "Nuclear power plants are often ______ next to rivers because they need large amounts of cooling water.",
+      "options": [
+        {
+          "text": "situated",
+          "isCorrect": true
+        },
+        {
+          "text": "situating",
+          "isCorrect": false
+        },
+        {
+          "text": "situate",
+          "isCorrect": false
+        },
+        {
+          "text": "to situate",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

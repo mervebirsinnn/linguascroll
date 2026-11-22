@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T17:11:52.045Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-nature-d40-q19-bamboo-low-in-nutritional-value.mp4"
+  },
+  "draft": {
+    "contentId": "b2-nature-d40-q19-bamboo-low-in-nutritional-value",
+    "muxAssetId": "local-panda-diet-and-energy",
+    "sourceFile": "b2-nature-d40-q19-bamboo-low-in-nutritional-value.mp4",
+    "storageKey": null,
+    "durationMs": 30500,
+    "topic": "nature",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4020,
+        "text": "Giant pandas spend up to 14 hours a day eating.",
+        "englishExplanation": "Giant pandas spend up to 14 hours every day eating.",
+        "turkishExplanation": "Dev pandalar günde 14 saate kadar olan zamanı yemek yiyerek geçirir."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4660,
+        "endMs": 8020,
+        "text": "That sounds like a lot of fun, but there is a reason behind it.",
+        "englishExplanation": "That might sound fun, but there is a specific reason for this behavior.",
+        "turkishExplanation": "Bu kulağa çok eğlenceli gibi geliyor ama bunun arkasında bir neden var."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8460,
+        "endMs": 13520,
+        "text": "Because bamboo is low in nutritional value, it does not give pandas much energy to move",
+        "englishExplanation": "Since bamboo lacks high nutritional value, it fails to provide pandas with enough energy to move.",
+        "turkishExplanation": "Bambunun besin değeri düşük olduğundan, pandalara hareket etmeleri için fazla enerji vermez"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 13520,
+        "endMs": 15340,
+        "text": "around for longer periods of time.",
+        "englishExplanation": "...moving around for extended periods of time.",
+        "turkishExplanation": "...uzun süreler boyunca etrafta dolanmaları için."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15660,
+        "endMs": 20540,
+        "text": "So they eat huge amounts of it, rest a lot, and avoid climbing when they don't need to.",
+        "englishExplanation": "Therefore, they eat large quantities of bamboo, rest frequently, and avoid unnecessary climbing.",
+        "turkishExplanation": "Bu yüzden bol miktarda bambu yerler, çok dinlenirler ve mecbur kalmadıkça tırmanmaktan kaçınırlar."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 21100,
+        "endMs": 23000,
+        "text": "Their slow life isn't laziness.",
+        "englishExplanation": "Living at a slow pace is not a sign of laziness.",
+        "turkishExplanation": "Onların bu yavaş yaşamı bir tembellik değildir."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 23400,
+        "endMs": 25180,
+        "text": "It's a clever way of saving energy.",
+        "englishExplanation": "It is a smart strategy to conserve their energy.",
+        "turkishExplanation": "Enerji tasarrufu yapmanın akıllıca bir yoludur."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 25180,
+        "endMs": 27700,
+        "text": "If they ate more meat, like their bare cousins,",
+        "englishExplanation": "If their diet included more meat like other bear species,",
+        "turkishExplanation": "Diğer ayı kuzenleri gibi daha fazla et yeselerdi,"
+      },
+      {
+        "ordinal": 9,
+        "startMs": 28220,
+        "endMs": 29900,
+        "text": "they would probably be far more active.",
+        "englishExplanation": "...they would likely be significantly more active.",
+        "turkishExplanation": "muhtemelen çok daha aktif olurlardı."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "nutritional value",
+        "gloss": "besin değeri"
+      },
+      {
+        "lemma": "avoid",
+        "gloss": "kaçınmak, sakınmak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 8,
+        "type": "grammar",
+        "expression": "If + past simple, would + verb",
+        "englishExplanation": "The second conditional is used to express hypothetical or unreal situations in the present or future.",
+        "turkishExplanation": "Gerçekleşmesi muhtemel olmayan veya varsayımsal durumları ifade etmek için second conditional yapısı kullanılır.",
+        "exampleEn": "If they ate more meat, they would have more energy.",
+        "exampleTr": "Daha fazla et yeselerdi daha fazla enerjileri olurdu."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "______ bamboo is low in nutritional value, it does not give pandas much energy to move around for longer periods of time.",
+      "options": [
+        {
+          "text": "Because",
+          "isCorrect": true
+        },
+        {
+          "text": "Although",
+          "isCorrect": false
+        },
+        {
+          "text": "Unless",
+          "isCorrect": false
+        },
+        {
+          "text": "Whereas",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}
