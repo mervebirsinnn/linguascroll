@@ -1,4 +1,4 @@
-import { feedPreferencesSchema, type Topic, type FeedPreferences } from "@linguascroll/shared-types";
+import { feedPreferencesSchema, type CefrLevel, type Topic, type FeedPreferences } from "@linguascroll/shared-types";
 import { z } from "zod";
 
 /**
@@ -45,6 +45,15 @@ export function resolveOnboardingState(raw: string | null): OnboardingState {
 }
 
 /** `completed:true` + verilen tercih — hem "tamamladı" HEM "atladı" (preferences boş) akışının TEK ortak yazma noktası. */
+/**
+ * Hesabım'dan seviye değişikliği: yalnız `preferences.level` değişir; konular ve `completed` aynen kalır (seviye değiştirmek
+ * onboarding'i yeniden açmamalı). Saf fonksiyon — hook bunu çağırıp sonucu AsyncStorage'a yazar; uygulama yeniden açıldığında
+ * `resolveOnboardingState` aynı seviyeyi geri okur.
+ */
+export function withLevel(state: OnboardingState, level: CefrLevel): OnboardingState {
+  return { ...state, preferences: { ...state.preferences, level } };
+}
+
 export function buildCompletedState(preferences: FeedPreferences): OnboardingState {
   return { completed: canContinueInterests(preferences.topics), preferences };
 }

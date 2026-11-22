@@ -1,4 +1,4 @@
-import { buildCompletedState, DEFAULT_ONBOARDING_STATE, resolveOnboardingState } from "./onboarding-state";
+import { buildCompletedState, DEFAULT_ONBOARDING_STATE, resolveOnboardingState, withLevel } from "./onboarding-state";
 
 describe("resolveOnboardingState", () => {
   it("storage boşsa (null) güvenli varsayılana döner", () => {
@@ -43,5 +43,21 @@ describe("buildCompletedState", () => {
     expect(buildCompletedState({level:null,topics:[]}).completed).toBe(false);
     expect(buildCompletedState({level:null,topics:["humor","humor","humor","humor"]}).completed).toBe(false);
     expect(buildCompletedState({level:null,topics:["humor","science","music","food"]}).completed).toBe(true);
+  });
+});
+
+// 2026-11-22 — Hesabım > İngilizce seviyem: yalnız seviye değişir, onboarding yeniden açılmaz.
+describe("withLevel", () => {
+  const completed = buildCompletedState({ level: "B1", topics: ["travel", "dating", "food", "career"] });
+
+  it("yalnız seviyeyi değiştirir; konular ve completed aynen kalır", () => {
+    const next = withLevel(completed, "C1");
+    expect(next).toEqual({ completed: true, preferences: { level: "C1", topics: ["travel", "dating", "food", "career"] } });
+    expect(completed.preferences.level).toBe("B1");
+  });
+
+  it("uygulama yeniden açıldığında (saklanan JSON tekrar okununca) seçilen seviye korunur", () => {
+    const stored = JSON.stringify(withLevel(completed, "C2"));
+    expect(resolveOnboardingState(stored)).toEqual({ completed: true, preferences: { level: "C2", topics: ["travel", "dating", "food", "career"] } });
   });
 });
