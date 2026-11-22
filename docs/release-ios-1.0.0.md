@@ -1,78 +1,95 @@
 # Looplish iOS 1.0.0 — birleşik yayın planı
 
 Bu plan PR'ları, migration'ları, içerik yayınını, env/bayrakları ve build/submit sırasını sıralar.
-Merge, production deploy, Neon migration'ı, içerik yayını ve submit **ayrı onay** ister.
+Merge, push, production deploy, Neon migration'ı, içerik yayını ve submit **ayrı onay** ister.
 
-## İçerik
-| Kaynak | Commit | Taban | Durum |
-|---|---|---|---|
-| PR #18 `feat/ios-app-store` | 52d6bf8 | master | Açık |
-| `fix/auth-provider-spinner` | 3183ebe | PR #18 | Yerel, push yok |
-| `feat/passages-contract` (paragraf/okuma) | e8ec3e7 | master'dan 28 commit | Push'lu, PR yok |
-| `feat/platform-subscription-gate` | 2ba70d2 | passages | Yerel, push yok |
-| `feat/account-level-setting` | 2b6287e | passages | Yerel, push yok |
-| Birleşik doğrulama: `release/ios-1.0.0` (yalnız yerel) | bkz. git log | master | Merge kaynağı **değil**; doğrulama ağacı |
+## Branch ve PR durumu (2026-11-22)
+| Branch | Commit | Taban | Uzakta | PR |
+|---|---|---|---|---|
+| `feat/ios-app-store` | 52d6bf8 | master | ✔ | #18 açık |
+| `fix/auth-provider-spinner` | 3183ebe | #18 | — | yok |
+| `chore/ios-release-config` (iOS Okuma bayrağı + dokümanlar) | bkz. git log | #18 | — | yok |
+| `feat/passages-contract` | d4c7037 | master | origin'de e8ec3e7: **2 commit geride** | #16 taslak |
+| `feat/platform-subscription-gate` | 8cd8a36 | d4c7037 | — | yok |
+| `feat/account-level-setting` (yalnız withLevel + testler) | e09989d | d4c7037 | — | yok |
+| `release/ios-1.0.0` | yerel doğrulama ağacı | master | — | PR kaynağı **değil** |
 
-Bu sürüme bilinçli olarak **dahil edilmeyenler** (ana checkout'ta commit edilmemiş, ayrı onay bekliyor):
-- Cümle çevirisi (migration 0023, `context_sentence_tr`).
-- Cabin Crew kategorisi (migration 0024).
-- Paragraf "‹ Önceki" düğmesi.
-- `.env.production` paragraf bayrağı satırı.
+`feat/passages-contract` üzerindeki yeni yerel commit'ler:
+- `2d59b92` (içerik). **Bu hâliyle push EDİLEMEZ:** repo **public**; commit NYT ve FT'den birebir alıntılar
+  (`docs/content/passages-nyt`, `docs/content/ft-reading-drafts`) içeriyor. Push'tan önce bu klasörler commit'ten
+  çıkarılmalı (yerel, henüz push'lanmamış commit; düzenleme Merve'nin onayıyla).
+- `d4c7037`: Cabin Crew (0024), cümle çevirisi (0023), paragraf "‹ Önceki", Hesabım seviye satırı, Cabin Crew görünen adı
+  "Gramer Pratiği".
+
+`feat/ios-release` (eski, paragraf tabanlı) ve onun üstündeki `5eef2db`: kullanılmıyor. `5eef2db` yarım bir spinner
+düzeltmesi (`signInProvider` set edilmiyor) ve #17'nin kopyası. Tam düzeltme `fix/auth-provider-spinner`'da.
 
 ## PR sırası (master hedefli)
-1. **PR #18** (iOS). Değişiklik yok, CI yeşil.
-2. **Spinner PR** (`fix/auth-provider-spinner` → master). PR #18'den sonra yalnız 1 commit kalır.
-3. **Paragraf PR** (`feat/passages-contract` → master). Migration 0020–0022 içerir. Merge, Neon migration planıyla birlikte
-   yapılmalı (aşağıda). Çakışma: `PaywallFeedItem.test.tsx` sonundaki iki test bloğu; ikisi de korunur.
-4. **Platform kapısı PR** (`feat/platform-subscription-gate` → master). Paragraf PR'ından sonra yalnız kendi commit'i kalır.
-5. **Seviye PR** (`feat/account-level-setting` → master). Çakışma: `AccountScreen.test.tsx`; iki test seti de korunur.
-
-Her PR'dan sonra master CI'ı yeşil olmalı. Birleşik ağaçta (release) tüm testler geçti; ayrıntı yayın raporunda.
+Güncel master (5e72ec5) üzerinde bu sırayla yapılan birleştirme, test edilen release ağacını veriyor.
+1. **#18** (iOS). Temiz.
+2. **Spinner** (`fix/auth-provider-spinner`). Temiz.
+3. **iOS release config** (`chore/ios-release-config`). Temiz.
+4. **#16 paragraf** (`feat/passages-contract`, önce `2d59b92` temizlenip push'lanmalı). Çakışmalar:
+   `PaywallFeedItem.test.tsx` ve `AccountScreen.test.tsx`; iki tarafın testleri de korunur.
+5. **Platform kapısı** (`feat/platform-subscription-gate`). Temiz.
+6. **Seviye** (`feat/account-level-setting`). Temiz.
 
 ## Production sırası
+Render master'ı otomatik deploy ediyorsa **migration'lar #16 birleşmeden önce** uygulanmalı. Aksi hâlde yeni API,
+tabloları olmayan DB'ye karşı açılır.
 1. **Neon yedeği** (branch/snapshot).
-2. **Neon migration 0020–0022** (paragraf tabloları, metinden kelime kaynağı, geçiş cümlesi). Migration'lar yalnız ekleme
-   yapıyor (yeni tablo/kolon). Eski API bunlarla çalışmaya devam eder. Bu yüzden migration **önce**, API deploy'u **sonra**.
-   Hedef DB host'u komuttan önce doğrulanmalı.
-   - Yapılmazsa: yeni API'de `/passages` ve `/words/saved` 500 döner.
-3. **API deploy** (PR'lar master'da). `SUBSCRIPTION_GATE_PLATFORMS` HENÜZ TANIMLANMAZ, yani davranış bugünkü gibi
-   (herkes sınırsız). `SUBSCRIPTION_GATE_ENABLED=false` kalır.
-4. **İçerik yayını (Neon):** yalnız yayına uygun paketler (bkz. İçerik durumu). Önce yalnız doğrulama, sonra `--apply`.
-   Hedef DB yazdırılır ve kontrol edilir.
-5. **iOS build 1.0.0 (2)** master'dan; paragraf bayrağı yalnız iOS'ta açık (bkz. Bayraklar). TestFlight'a submit.
-6. **TestFlight kabul testi** (checklist §7, §7b): giriş/bağlama spinner'ı, seviye değişikliği, paragraf, satın alma,
-   silme.
-7. **Render: `SUBSCRIPTION_GATE_PLATFORMS=ios`** (App Review'a göndermeden önce). Android etkilenmez.
-   `REVENUECAT_SECRET_API_KEY` yoksa API açılmaz (yapısal güvence).
+2. **Neon migration 0020–0024.** Hepsi ekleme yapıyor (yeni tablo/kolon; 0024 yalnız kategori CHECK'ini genişletiyor).
+   Eski API bunlarla çalışır. Hedef host komuttan önce doğrulanır.
+3. **PR'ların birleşmesi ve API deploy'u.** `SUBSCRIPTION_GATE_ENABLED=false`, `SUBSCRIPTION_GATE_PLATFORMS`
+   **tanımsız** (herkes bugünkü gibi sınırsız).
+4. **İçerik yayını (Neon):** yalnız kullanım hakkı onaylanmış paketler. Önce doğrulama, sonra `--apply`; hedef DB yazdırılır.
+5. **iOS build 1.0.0 (2)** master'dan (Okuma yalnız iOS'ta açık, Cabin Crew kapalı) → TestFlight.
+6. **TestFlight kabul testi** (checklist §7, §7b): giriş butonları, seviye kalıcılığı, Okuma, satın alma, geri yükleme,
+   hesap silme.
+7. **App Privacy, RevenueCat, mağaza bilgileri, ekran görüntüleri.**
+8. **Render: `SUBSCRIPTION_GATE_PLATFORMS=ios`** → son kontrol → **Submit for Review**.
    - Geri alma: değişkeni silmek.
-8. **App Store Connect:** metinler (`docs/app-store-listing.md`), App Privacy, abonelikler → **Submit for Review**.
 
-Android: aynı master'dan bir sonraki Android build'i başlık (`X-Client-Platform: android`), seviye değiştirme ve spinner
-düzeltmesini alır. Abonelik kapısı Android'de kapalı kalır. Paragraf girişi Android'de bayrağa bağlı (bkz. Bayraklar).
+Android: aynı master'dan bir sonraki build başlığı (`X-Client-Platform: android`), seviye ve spinner düzeltmesini alır.
+Kapı kapalı kalır; Okuma ve Cabin Crew Android'de gizli.
 
-## Bayraklar ve env
-| Ad | Nerede | iOS 1.0.0 | Android | Not |
-|---|---|---|---|---|
-| `EXPO_PUBLIC_PASSAGES_ENABLED` | mobil build zamanı | **true** gerekli | karar bekliyor | Repo'da hiçbir yerde tanımlı değil (varsayılan kapalı). Öneri: yalnız iOS için `eas.json` → `build.production.ios.env.EXPO_PUBLIC_PASSAGES_ENABLED: "true"`. EAS ortam değişkeni iki platformu birden etkiler. **Değiştirilmedi.** |
-| `SUBSCRIPTION_GATE_ENABLED` | Render | `false` | `false` | Değişmez |
-| `SUBSCRIPTION_GATE_PLATFORMS` | Render | `ios` (adım 7) | — | Yeni; tanımsız = bugünkü davranış |
-| `REVENUECAT_SECRET_API_KEY` | Render | zorunlu | — | Kapı herhangi bir platformda açıksa boot'ta zorunlu |
-| `EXPO_PUBLIC_REVENUECAT_IOS_API_KEY`, `EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID` | EAS production | tanımlı | — | Doğrulandı |
+## Bayraklar ve env (release ağacında doğrulandı)
+| Ad | iOS production | Android production | Kaynak |
+|---|---|---|---|
+| `EXPO_PUBLIC_PASSAGES_ENABLED` | **true** | yok (kapalı) | `eas.json` → `build.production.ios.env`. `.env.production` `false` diyor, ama `@expo/env` ortamda zaten tanımlı değişkeni ezmediği için EAS'in `true` değeri geçerli. Yerel build'lerde `false`. TestFlight'ta "Okuma" girişinin göründüğü doğrulanmalı |
+| `EXPO_PUBLIC_CABINCREW_ENABLED` | yok (kapalı) | yok (kapalı) | Cabin Crew/"Gramer Pratiği" bu sürümde gizli |
+| `SUBSCRIPTION_GATE_ENABLED` | Render `false` | `false` | Değişmez |
+| `SUBSCRIPTION_GATE_PLATFORMS` | Render `ios` (adım 8) | — | Tanımsız = bugünkü davranış |
+| `REVENUECAT_SECRET_API_KEY` | Render, zorunlu | — | Kapı herhangi bir platformda açıksa boot'ta zorunlu |
+
+## Platform başlığı: güvenlik sınırı DEĞİL
+Başlık gönderilmezse (ya da `android` gönderilirse) kapı uygulanmıyor. Bu yüzden istemciyi değiştiren ya da trafiği proxy'den
+geçiren bir iOS kullanıcısı ücretsiz Android erişimini elde edebilir. Bu, yayındaki eski Android sürümleriyle uyumluluk için
+bilinçli bir tercih ve **güvenli bir abonelik sınırı değildir**:
+- Premium yetkisi her zaman backend'in RevenueCat doğrulamasından gelir; taklit edilemez.
+- Taklitle elde edilen en fazla şey, Android uygulamasının bugün herkese ücretsiz verdiği erişimdir.
+
+Gerçek bir sınır için seçenekler (ayrı iş):
+- **Global kapı:** Android'de de kapıyı açmak (`SUBSCRIPTION_GATE_ENABLED=true`). Başlık bağımlılığı tamamen kalkar.
+- **Cihaz kanıtı:** Firebase App Check (iOS App Attest / Android Play Integrity) ile platformu istemci beyanı yerine
+  kanıtla belirlemek. Yeni native bağımlılık ve konsol işi gerektirir.
+- **Bilinmeyen platformu kapılı saymak:** Tüm desteklenen sürümler başlık gönderdikten sonra (zorunlu güncelleme ile).
+  Tek başına yine taklide açık; App Check'le birlikte anlamlı.
 
 ## Mobil ↔ backend uyumluluğu
-- Yayındaki Android sürümleri başlık göndermez → bilinmeyen platform → kapı kapalı. Davranış değişmez.
-- Yeni mobil sürüm eski API'ye gelirse (deploy sırası bozulursa) `/passages` 404/500 verir. Bu yüzden API, iOS build'inden önce.
-- Migration 0020–0022 eski API ile uyumlu (yalnız ekleme). 0023/0024 bu sürümde YOK; Neon'a uygulanmamalı.
+- Yayındaki Android sürümleri başlık göndermez → bilinmeyen platform → kapı kapalı.
+- Migration 0020–0024 eski API ile uyumlu (yalnız ekleme). Yeni API, migration'sız DB'de `/passages`, `/words/saved` ve
+  feed'de 500 verir. Sıra: migration → API → mobil.
 - Paragraf metinleri Postgres'te; R2 gerekmez.
 
-## İçerik durumu (release doğrulayıcısıyla, yalnız doğrulama)
-| Paket | Adet | Seviye | Doğrulama | Yayına uygunluk |
+## İçerik durumu
+| Paket | Adet | Seviye | Doğrulama | Kullanım hakkı |
 |---|---|---|---|---|
-| `passages-pilot` | 4 | B1, B2 (ücretsiz örnek), C1, C2 (Premium) | ✔ | Özgün metin, kaynak kullanılmadı (`editorial.original: true`, kaynak yok). Hukuki onay yine Merve'de |
-| `passages-newscientist` | 8 | C1 ×5, C2 ×3 (Premium) | ✔ (0023 olmadan; Türkçe cümle çevirisi yayına girmez) | **KULLANIM HAKKI DOĞRULANMADI.** New Scientist sayısındaki makalelere dayanan, kendi ifademizle yazılmış metinler. Olgular serbesttir, ama yapıya ve sıraya yakın bir yeniden anlatım türev eser sayılabilir. İzin ya da hukuki görüş olmadan yayına alınmamalı |
-| `passages-nyt` | 8 | B1 ×4, B2 ×4 | yayın paketi değil | **UYGUN DEĞİL**: B2 kaynaktan kelimesi kelimesine, B1 sadeleştirilmiş uyarlama (telifli gazete) |
-| `ft-reading-drafts` | 2 | C1, C2 | — | **UYGUN DEĞİL**: `verbatim-excerpt` (telifli) |
+| `passages-pilot` | 4 | B1, B2 (ücretsiz), C1, C2 (Premium) | ✔ | Özgün metin, kaynak kullanılmadı. Hukuki onay Merve'de |
+| `passages-newscientist` | 8 | C1 ×5, C2 ×3 (Premium) | ✔ (0023 artık dahil; Türkçe cümle çevirileri de yayına girer) | **DOĞRULANMADI.** New Scientist makalelerine dayanan yeniden anlatım. Olgular serbest, ama yapıya yakın anlatım türev sayılabilir. İzin ya da hukuki görüş olmadan yayına alınmamalı |
+| `passages-nyt` | 8 | B1 ×4, B2 ×4 | yayın paketi değil | **UYGUN DEĞİL**: B2 birebir, B1 uyarlama (telifli). Public repo'ya da girmemeli |
+| `ft-reading-drafts` | 2 | C1, C2 | — | **UYGUN DEĞİL**: `verbatim-excerpt`. Public repo'ya da girmemeli |
+| Onaylı video artefaktları (`content-enrichment/approved`) | 19 | B1/B2 genel + Cabin Crew gramer soruları | — | Video yayını ayrı karar; Cabin Crew bu sürümde gizli |
 
-Kaynak bağımlılığı olmayan tek grup pilot: **4 metin** (B1 ve B2 ücretsiz, C1 ve C2 Premium). New Scientist onaylanırsa
-12 metin olur (C1 6, C2 4). B1/B2'de ücretli metin yok; mağaza metni buna göre yazıldı ("B1 ve B2 okuma metinleri şu an
-ücretsiz örneklerdir"). İlk sürüm hedefi (6/6/6/6) karşılanmıyor; içerik ve hak onayı Merve'de.
+Kaynak bağımlılığı olmayan tek grup pilot: **4 metin**. New Scientist onaylanırsa 12 olur. B1/B2'de ücretli metin yok;
+mağaza metni buna göre yazıldı.
