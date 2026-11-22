@@ -74,12 +74,40 @@ const PREFERENCE_TOPIC_BOOST = 1;
  * içindeki sıralamayı etkiler (bkz. groupByTopicSorted) — exploration
  * sırası (`buildExplorationQueue`) BİLİNÇLİ OLARAK preference'tan habersiz
  * bırakıldı (kapsam: sadece primary sıralama, kullanıcı kararı).
+ *
+ * 2026-11-22 — seviye katmanları (kullanıcı geri bildirimi: "seviyeyi değiştirdim, hâlâ aynı seviyede videolar çıkıyor").
+ * Seviye yalnız konu İÇİNDEKİ sırayı etkilediğinde, konuların çoğunda yalnız A1/A2/C1 birer video olduğu için akışın
+ * büyük kısmı seçilen seviyeden uzak kalıyordu. Artık `preference.level` verilmişse adaylar iki katmana ayrılır:
+ * seçilen seviye ± LEVEL_BAND (yakın) ve kalanlar. Her katman AYNI algoritmayla (SWRR + exploration) ayrı sıralanır,
+ * yakın katman tamamen önce gelir. Hard filter değil: hiçbir video çıkarılmaz, yalnız uzak seviyeler geriye alınır;
+ * yakın video azsa akış uzak katmanla tamamlanır. applyTieBreakOrdering denkliği korunur: bir konunun kuyruğunda
+ * sortTopicQueue zaten mesafeye göre sıraladığı için yakınlar uzaklardan önce gelir ve katman içi pozisyonlar yalnız
+ * konu sayılarına bağlıdır (bkz. spec'teki denklik testi).
  */
 export function rankVideos(
   candidates: PlayableVideo[],
   affinityByTopic: ReadonlyMap<Topic, number>,
   preference?: FeedPreferences,
   tieBreakKey?: TieBreakKey,
+): PlayableVideo[] {
+  const preferredLevel: CefrLevel | null = preference?.level ?? null;
+  if (preferredLevel === null) {
+    return rankPool(candidates, affinityByTopic, preference, tieBreakKey);
+  }
+  const near = candidates.filter((video) => cefrLevelDistance(video.cefrLevel, preferredLevel) <= LEVEL_BAND);
+  const far = candidates.filter((video) => cefrLevelDistance(video.cefrLevel, preferredLevel) > LEVEL_BAND);
+  return [...rankPool(near, affinityByTopic, preference, tieBreakKey), ...rankPool(far, affinityByTopic, preference, tieBreakKey)];
+}
+
+/** Seviye katmanının genişliği: seçilen seviye ve bir alt/üst seviye "yakın" sayılır (B2 → B1, B2, C1). */
+export const LEVEL_BAND = 1;
+
+/** Tek bir aday havuzunun sıralaması (önceki rankVideos gövdesi; katmanlar bunu ayrı ayrı çağırır). */
+function rankPool(
+  candidates: PlayableVideo[],
+  affinityByTopic: ReadonlyMap<Topic, number>,
+  preference: FeedPreferences | undefined,
+  tieBreakKey: TieBreakKey | undefined,
 ): PlayableVideo[] {
   const preferredTopics = new Set<Topic>(preference?.topics ?? []);
   const preferredLevel: CefrLevel | null = preference?.level ?? null;
