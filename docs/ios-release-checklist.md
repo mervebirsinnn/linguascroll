@@ -50,27 +50,13 @@ Firebase, web client, Sentry DSN, gizlilik ve şartlar değerleri zaten tanıml�
 - [x] **Gizlilik Politikası (looplish.app/privacy):** Firebase/RevenueCat/mağaza ödemesi eklendi (site sürüm 16).
 - [ ] **App Privacy formu (App Store Connect):** `docs/app-store-listing.md` › App Privacy tablosuna göre doldurulmalı. AÇIK.
 
-## 5c. Abonelik kapısı (SUBSCRIPTION_GATE_ENABLED) ve App Review
-Mevcut durum (koddan):
-- Kapı Render env'inde tek bir global değer (`true`/`false`; production'da açıkça verilmesi zorunlu). `false` iken herkes
-  sınırsız izler. Akıştaki ödeme kartı yalnız kapı `true` iken çıkar.
-- Hesap ekranındaki **"Premium planlarını gör"** butonu kapıdan bağımsız: abonelik aktif değilken her zaman ödeme ekranını açar.
-  İncelemeci kapı kapalıyken de satın alabilir (yol: Kelimelerim › Hesabım › Premium planlarını gör).
-- Satın alma sonrası backend doğrulaması (`refreshSubscription`/`getOverview`) da kapıdan bağımsız. Ancak Render'da
-  `REVENUECAT_SECRET_API_KEY` tanımlı olmalı; kapı `false` iken boot bunu zorunlu tutmaz. **Manuel kontrol.**
-
-Risk: kapı `false` iken Premium ek bir şey açmaz (hesap ekranı "Videolara erişimin şu anda açık" der). Apple, değer
-sunmayan bir aboneliği 3.1.2(a)/2.1 kapsamında reddedebilir.
-
-| Seçenek | Android | iOS incelemesi | İş |
-|---|---|---|---|
-| A. Değişiklik yok, kapı `false` | Aynı | Satın alma erişilebilir; "değer yok" reddi riski | Yok |
-| B. **Platforma göre kapı (öneri):** `SUBSCRIPTION_GATE_PLATFORMS=ios` gibi yeni bir env; istemci `X-Client-Platform` başlığını gönderir, backend kapıyı yalnız listedeki platformlara uygular. Başlıksız/Android istek → kapı kapalı | Aynı (eski sürümler başlık göndermediği için de) | 10 ücretsiz video + akışta ödeme kartı; Premium gerçek değer sunar | API (env şeması, `SubscriptionsService`, controller) + mobil başlık + testler + API deploy + yeni iOS build. Başlık sahte gönderilebilir; iOS kullanıcısı "android" yazarsa Android gibi ücretsiz izler, Android zaten ücretsiz olduğu için yeni bir açık değil |
-| C. Global `true` | **Değişir** (10 video sınırı başlar) | Tam akış | Yalnız Render env, ama Android davranışını bozar; bu aşamada kapsam dışı |
-
-Öneri: **B**. Android'i korurken incelemeciye gerçek bir abonelik değeri gösteren tek seçenek. Onay verilirse ayrı bir PR'da
-yapılır; production env değerleri değiştirilmez, yalnız yeni env tanımlanır. A ile gönderilecekse incelemeci notuna kapının geçici
-olarak açık olduğu yazılmamalı (yanıltıcı olur); doğrudan ret riski kabul edilir.
+## 5c. Abonelik kapısı — KARAR: platforma göre (B), uygulandı
+- `feat/platform-subscription-gate`: yeni `SUBSCRIPTION_GATE_PLATFORMS` (ör. `ios`); mobil `X-Client-Platform` gönderir.
+  Android ve başlıksız istekler bugünkü gibi sınırsız; iOS'ta 10 ücretsiz video + paywall, Premium = RevenueCat doğrulaması.
+- Kapı herhangi bir platformda açıksa API boot'ta `REVENUECAT_SECRET_API_KEY` ve `MEDIA_URL_SIGNING_SECRET` ister.
+- Render'a `SUBSCRIPTION_GATE_PLATFORMS=ios` eklemek: API deploy'undan ve TestFlight kabul testinden sonra, App Review'dan önce
+  (bkz. `docs/release-ios-1.0.0.md`). `SUBSCRIPTION_GATE_ENABLED=false` kalır. Geri alma: değişkeni silmek.
+- Güvenlik notu: başlık bir sınıflandırma, yetki değil. Taklit en fazla Android'in zaten ücretsiz verdiği erişimi sağlar.
 
 ## 6. Build → TestFlight (1.0.0 (2), PR #18 master'a birleştikten SONRA)
 EAS iOS build sayacı şu an **1** (`appVersionSource: remote`, `autoIncrement: true`), bir sonraki production build **2** olur.
