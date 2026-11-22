@@ -27,6 +27,8 @@ function App() {
   // girişsiz; Google girişi paywall'da (ya da Kelimelerim > Giriş yap) bu hesaba bağlanır
   // (bkz. auth-state.ts). Eski (2026-10 öncesi) AsyncStorage anonim UUID'si hâlâ kullanılmıyor.
   const auth = useAuth();
+  // Giriş ekranında hangi butona basıldı: tek "signingIn" durumu sağlayıcıyı bilmez; spinner doğru butonda çıksın diye burada tutulur.
+  const [signInProvider, setSignInProvider] = useState<'google' | 'apple'>('google');
   const identity = auth.state.status === 'signedIn' ? { status: 'success' as const, userId: auth.state.userId } : { status: 'pending' as const };
   const signedIn = auth.state.status === 'signedIn' ? auth.state : null;
   const linkAccount = auth.linkAccount;

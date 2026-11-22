@@ -45,3 +45,11 @@ it("meşgulken iki buton da kapalı (aynı anda iki native giriş sayfası açı
   expect(onAppleSignIn).not.toHaveBeenCalled();
   expect(onSignIn).not.toHaveBeenCalled();
 }, 30000);
+
+it("Apple ile giriş sürerken Google butonunda spinner yok, etiketi kalır; Google ile sürerken spinner var", async () => {
+  await render(<SignInScreen busy busyProvider="apple" notice={null} onSignIn={() => {}} onAppleSignIn={() => {}} />);
+  expect(screen.getByText("Google ile devam et")).toBeTruthy();
+  await screen.unmount();
+  await render(<SignInScreen busy busyProvider="google" notice={null} onSignIn={() => {}} onAppleSignIn={() => {}} />);
+  expect(screen.queryByText("Google ile devam et")).toBeNull();
+}, 30000);
