@@ -322,7 +322,9 @@ describe("rankVideos — level proximity (feed personalization audit sonrası)",
     expect(result.map((v) => v.id)).toEqual(["v-a", "v-b", "v-c"]);
   });
 
-  it("farklı preferredLevel değerleri topic SEÇİM SIKLIĞINI (SWRR) DEĞİŞTİRMEZ — sadece topic-içi video sırasını etkiler", () => {
+  // 2026-11-22 — eski sözleşme ("seviye konu seçim sırasını değiştirmez, yalnız konu içini etkiler") bilinçli olarak
+  // değişti: seviye katmanları (rankVideos yorumu). Yeni sözleşme aşağıdaki testlerde.
+  it("seviye katmanı: seçilen seviye ± 1 videolarının TAMAMI uzak seviyelerden önce gelir (konular arası da)", () => {
     const candidates = [
       makeVideo("travel-c2", "travel", 1000, "C2"),
       makeVideo("travel-a1", "travel", 1000, "A1"),
@@ -330,23 +332,46 @@ describe("rankVideos — level proximity (feed personalization audit sonrası)",
       makeVideo("career-c2", "career", 1000, "C2"),
       makeVideo("career-a1", "career", 1000, "A1"),
       makeVideo("career-b1", "career", 1000, "B1"),
+      makeVideo("science-c1", "science", 1000, "C1"),
     ];
-    const affinity = new Map<Topic, number>([["travel", 3]]); // weight(travel)=4, weight(career)=1 — eşit değil, ayırt edici
+    const affinity = new Map<Topic, number>([["travel", 3]]);
 
-    const withA1 = rankVideos(candidates, affinity, { level: "A1", topics: [] });
-    const withC2 = rankVideos(candidates, affinity, { level: "C2", topics: [] });
-    const withoutLevel = rankVideos(candidates, affinity, { level: null, topics: [] });
+    const withC2 = rankVideos(candidates, affinity, { level: "C2", topics: [] }).map((v) => v.cefrLevel);
+    // C2 ± 1 = C1, C2 → önce bu üç video, sonra kalanlar
+    expect(withC2.slice(0, 3).sort()).toEqual(["C1", "C2", "C2"]);
+    expect(withC2.slice(3).every((level) => level !== "C1" && level !== "C2")).toBe(true);
 
-    const topicSequence = (result: PlayableVideo[]) => result.map((v) => v.topic);
+    const withA1 = rankVideos(candidates, affinity, { level: "A1", topics: [] }).map((v) => v.cefrLevel);
+    // A1 ± 1 = A1, A2 → önce iki A1
+    expect(withA1.slice(0, 2)).toEqual(["A1", "A1"]);
+  });
 
-    // Topic SEÇİM SIRASI (hangi topic ne zaman seçildi) preferredLevel'dan
-    // TAMAMEN bağımsız — üç çağrıda da AYNI.
-    expect(topicSequence(withA1)).toEqual(topicSequence(withoutLevel));
-    expect(topicSequence(withC2)).toEqual(topicSequence(withoutLevel));
+  it("seviye katmanı hard filter değildir: hiçbir video çıkarılmaz, sayılar korunur", () => {
+    const candidates = [
+      makeVideo("a", "travel", 1000, "A1"),
+      makeVideo("b", "career", 1000, "C2"),
+      makeVideo("c", "science", 1000, "B2"),
+    ];
+    const result = rankVideos(candidates, new Map(), { level: "B2", topics: [] });
+    expect(result.map((v) => v.id).sort()).toEqual(["a", "b", "c"]);
+    expect(result[0]?.id).toBe("c");
+  });
 
-    // Ama topic-İÇİ video sırası preferredLevel'a göre GERÇEKTEN değişiyor
-    // (aksi halde bu test proximity'nin hiçbir şey yapmadığını gizlerdi).
-    expect(withA1.map((v) => v.id)).not.toEqual(withC2.map((v) => v.id));
+  it("katman içinde konu dağılımı (SWRR) seviyeden bağımsız aynı kalır", () => {
+    const candidates = [
+      makeVideo("travel-b1", "travel", 1000, "B1"),
+      makeVideo("travel-b2", "travel", 1000, "B2"),
+      makeVideo("career-b1", "career", 1000, "B1"),
+      makeVideo("career-b2", "career", 1000, "B2"),
+    ];
+    const affinity = new Map<Topic, number>([["travel", 3]]);
+    // Hepsi B1/B2 → B1 ve B2 tercihinde tek (yakın) katman; konu sırası seviyesiz sırayla aynı, konu içi sıra seviyeye göre.
+    const topicSeq = (level: "B1" | "B2" | null) => rankVideos(candidates, affinity, { level, topics: [] }).map((v) => v.topic);
+    expect(topicSeq("B1")).toEqual(topicSeq(null));
+    expect(topicSeq("B2")).toEqual(topicSeq(null));
+    expect(rankVideos(candidates, affinity, { level: "B1", topics: [] }).map((v) => v.id)).not.toEqual(
+      rankVideos(candidates, affinity, { level: "B2", topics: [] }).map((v) => v.id),
+    );
   });
 });
 
