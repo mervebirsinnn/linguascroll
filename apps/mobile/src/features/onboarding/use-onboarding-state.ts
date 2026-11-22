@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { CefrLevel, FeedPreferences } from "@linguascroll/shared-types";
-import { buildCompletedState, type OnboardingState } from "./onboarding-state";
+import { buildCompletedState, withLevel, type OnboardingState } from "./onboarding-state";
 import { getStoredOnboardingState, storeOnboardingState } from "./storage";
 
 /**
@@ -50,7 +50,7 @@ export function useOnboardingState(): OnboardingHookState {
 
   function updateLevel(level: CefrLevel): void {
     if (state === null) return;
-    persist({ ...state, preferences: { ...state.preferences, level } });
+    persist(withLevel(state, level));
   }
 
   if (state === null) {

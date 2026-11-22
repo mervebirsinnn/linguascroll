@@ -156,6 +156,8 @@ function App() {
             auth.signOut();
           }}
           account={account}
+          // Hesabım > İngilizce seviyem: seçim onboarding durumuna yazılır (AsyncStorage). Feed yalnız mode === 'feed' iken
+          // mount edildiği için dönüşte yeni seviyeyle yeni oturum açar; PassagesFlow da açılışta bu seviyeden başlar.
           level={onboarding.state.preferences.level}
           onChangeLevel={onboarding.updateLevel}
         />
