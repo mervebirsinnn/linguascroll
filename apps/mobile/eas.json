@@ -35,7 +35,8 @@
       },
       "ios": {
         "env": {
-          "EXPO_PUBLIC_PASSAGES_ENABLED": "true"
+          "EXPO_PUBLIC_PASSAGES_ENABLED": "true",
+          "EXPO_PUBLIC_CABINCREW_ENABLED": "true"
         }
       }
     }
