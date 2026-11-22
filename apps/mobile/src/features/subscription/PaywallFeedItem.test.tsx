@@ -32,6 +32,28 @@ jest.mock("./purchases-gateway", () => ({
   restoreAndCheck: (...args: unknown[]) => mockRestore(...args),
 }));
 
+// 2026-11-20 — iOS yayını: mağaza adı testte değiştirilebilir (jest-expo varsayılan platformu iOS; mevcut testler
+// Google Play metnini doğruluyor, iOS testleri "App Store"a geçiriyor). Sign in with Apple native görünümü Jest'te
+// yok — aynı props sözleşmesini (onPress, disabled) taşıyan bir test dublörüyle değiştiriliyor.
+let mockStoreName: "App Store" | "Google Play" = "Google Play";
+jest.mock("./store-name", () => ({
+  get STORE_NAME() {
+    return mockStoreName;
+  },
+}));
+jest.mock("../identity/AppleSignInButton", () => {
+  const { Pressable, Text } = jest.requireActual<typeof import("react-native")>("react-native");
+  return {
+    AppleSignInButton: ({ onPress, disabled }: { onPress: () => void; disabled: boolean }) => (
+      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled }}><Text>Apple ile devam et</Text></Pressable>
+    ),
+  };
+});
+jest.mock("../../shared/app-links", () => ({
+  APP_LINKS: { privacy: "https://looplish.app/privacy", terms: "https://looplish.app/terms", support: null },
+  openAppLink: jest.fn(),
+}));
+
 const annual: PaywallPackage = { id: "annual", kind: "annual", title: "Yıllık", priceString: "₺600", periodLabel: "yıl", trialLabel: "7 gün ücretsiz", trialPeriod: "7 gün", savingsPercent: 50 };
 const monthly: PaywallPackage = { id: "monthly", kind: "monthly", title: "Aylık", priceString: "₺100", periodLabel: "ay", trialLabel: null, trialPeriod: null, savingsPercent: null };
 
@@ -47,6 +69,7 @@ jest.setTimeout(60_000);
 
 beforeEach(() => {
   jest.clearAllMocks();
+  mockStoreName = "Google Play";
   mockRefreshSubscription.mockResolvedValue({ active: true });
   mockCurrentSubscription.mockResolvedValue(false);
 });
@@ -273,4 +296,68 @@ it("mağaza kaydı backend'e gecikmeli ulaşınca kısa yeniden deneme akışı 
   await fireEvent.press(await screen.findByText("7 gün ücretsiz dene"));
   await waitFor(() => expect(onUnlocked).toHaveBeenCalledTimes(1), { timeout: 4000 });
   expect(mockRefreshSubscription).toHaveBeenCalledTimes(2);
+});
+
+// 2026-11-20 — iOS yayını: Apple Kuralı 4.8 (Google'ın yanında eşit önemde Apple girişi) ve 3.1.2 (mağaza adı,
+// otomatik yenileme ve yasal bağlantılar satın alma akışında görünür).
+describe("iOS yayını", () => {
+  it("onLinkAppleAccount tanımsızsa (Android) Apple butonu hiç görünmez", async () => {
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={guestAccount()} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText("Google ile devam et")).toBeTruthy();
+    expect(screen.queryByText("Apple ile devam et")).toBeNull();
+  });
+
+  it("onLinkAppleAccount tanımlıysa Apple butonu Google'ın hemen üstünde görünür ve Apple bağlamayı başlatır", async () => {
+    const onLinkAppleAccount = jest.fn();
+    const account = guestAccount({ onLinkAppleAccount });
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={account} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText("Google ile devam et")).toBeTruthy();
+    const tree = JSON.stringify(screen.toJSON());
+    expect(tree.indexOf("Apple ile devam et")).toBeGreaterThan(-1);
+    expect(tree.indexOf("Apple ile devam et")).toBeLessThan(tree.indexOf("Google ile devam et"));
+
+    await fireEvent.press(screen.getByText("Apple ile devam et"));
+    expect(onLinkAppleAccount).toHaveBeenCalledTimes(1);
+    expect(account.onLinkAccount).not.toHaveBeenCalled();
+    expect(mockPurchase).not.toHaveBeenCalled();
+  });
+
+  it("bağlama sürerken Apple butonu da Google ile aynı koşulda pasif", async () => {
+    const onLinkAppleAccount = jest.fn();
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={guestAccount({ linking: true, onLinkAppleAccount })} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText("₺600 / yıl")).toBeTruthy();
+    await fireEvent.press(screen.getByText("Apple ile devam et"));
+    expect(onLinkAppleAccount).not.toHaveBeenCalled();
+  });
+
+  it("hesap bağlıyken Apple butonu gösterilmez (satın alma CTA'sı görünür)", async () => {
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={{ ...LINKED, onLinkAppleAccount: jest.fn() }} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText("7 gün ücretsiz dene")).toBeTruthy();
+    expect(screen.queryByText("Apple ile devam et")).toBeNull();
+  });
+
+  it("App Store'da satın alma metinleri mağazayı App Store olarak adlandırır, 24 saat yenileme kuralını yazar; Google Play geçmez", async () => {
+    mockStoreName = "App Store";
+    let finish!: (outcome: string) => void;
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    mockPurchase.mockReturnValueOnce(new Promise((resolve) => { finish = resolve; }));
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={LINKED} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText(/Deneme bitiminden en az 24 saat önce iptal edersen hiçbir ücret ödemezsin/)).toBeTruthy();
+    expect(screen.getByText(/otomatik yenilenir\. İptal: Ayarlar › Apple Hesabı › Abonelikler/)).toBeTruthy();
+    await fireEvent.press(screen.getByText("7 gün ücretsiz dene"));
+    expect(screen.getByText("App Store açılıyor…")).toBeTruthy();
+    expect(JSON.stringify(screen.toJSON())).not.toContain("Google Play");
+    await act(async () => { finish("cancelled"); });
+  });
+
+  it("satın alma ekranında Gizlilik Politikası ve Kullanım Koşulları bağlantıları açıkça adlandırılmış olarak görünür", async () => {
+    mockFetchPackages.mockResolvedValueOnce([annual]);
+    await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={guestAccount()} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText("Gizlilik Politikası")).toBeTruthy();
+    expect(screen.getByText("Kullanım Koşulları")).toBeTruthy();
+  });
 });

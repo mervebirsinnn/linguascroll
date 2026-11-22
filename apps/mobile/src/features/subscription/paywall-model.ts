@@ -1,3 +1,5 @@
+import type { STORE_NAME } from "./store-name";
+
 /**
  * RevenueCat SDK'sının `PurchasesPackage`'ından, paywall'ın İHTİYAÇ DUYDUĞU alanlara
  * indirgenmiş yapısal tip. UI ve saf fonksiyonlar SDK tiplerini hiç import etmiyor —
@@ -136,10 +138,29 @@ export function ctaLabel(pkg: PaywallPackage): string {
  * süresi metne SABİT yazılmıyor, Play'den gelen teklifin süresinden üretiliyor — panelde süre
  * değişirse ya da teklif kaldırılırsa metin yanlış bir söz vermez.
  */
-export function finePrint(pkg: PaywallPackage): string {
+/*
+ * 2026-11-20 — iOS yayını: mağaza adı PARAMETRE olarak geliyor (store-name.ts'yi burada değer olarak import
+ * etmek bu saf modülü react-native'e bağlar; paywall-state.ts üzerinden Node'daki mantık testleri kırılır).
+ * App Store'da yenileme, dönem bitiminden EN AZ 24 SAAT önce kapatılmazsa gerçekleşir (Apple abonelik
+ * kuralı) — "7 gün içinde iptal edersen ücret ödemezsin" iOS'ta son gün iptal edene yanlış söz olurdu.
+ * Bu yüzden App Store metni 24 saat koşulunu açıkça yazar; Google Play metni birebir eskisi gibi.
+ */
+export function finePrint(pkg: PaywallPackage, storeName: typeof STORE_NAME): string {
   const price = `${pkg.priceString} / ${pkg.periodLabel}`;
   const payment = pkg.introductoryPriceLabel ? `${pkg.introductoryPriceLabel}, ardından ${price}` : price;
-  const where = "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.";
+  // iOS'ta "App Store › Abonelikler" diye bir menü yok; gerçek yol Ayarlar › Apple Hesabı › Abonelikler.
+  const storePath = storeName === "App Store" ? "Ayarlar › Apple Hesabı › Abonelikler" : `${storeName} › Abonelikler`;
+  const where = `İptal: ${storePath} ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.`;
+  if (storeName === "App Store") {
+    const renewal = `Abonelik, dönem bitiminden en az 24 saat önce iptal edilmezse her ${pkg.periodLabel} otomatik yenilenir.`;
+    if (pkg.trialPeriod === null) {
+      return `${payment}. ${renewal} ${where}`;
+    }
+    return (
+      `İlk ${pkg.trialPeriod} ücretsiz. Deneme bitiminden en az 24 saat önce iptal edersen hiçbir ücret ödemezsin. ` +
+      `İptal etmezsen deneme bitince ${payment} ücretlendirilirsin. ${renewal} ${where}`
+    );
+  }
   if (pkg.trialPeriod === null) {
     return `${payment}. Abonelik iptal edene kadar her ${pkg.periodLabel} yenilenir; istediğin zaman iptal edebilirsin. ${where}`;
   }

@@ -18,7 +18,26 @@
  * anonim hesap" ile açmamak için: cihazda bir kez Google hesabı bağlandıysa (`guestAllowed`
  * false) çıkıştan sonra misafir oturumu AÇILMAZ, giriş ekranı gösterilir.
  */
-export type AuthSession = { uid: string; isAnonymous: boolean };
+/**
+ * 2026-11-20 — iOS yayını: Apple Kuralı 4.8 gereği iOS'ta Google'ın yanında Sign in with Apple da var.
+ * Oturumun hangi sağlayıcıyla doğrulandığı yalnızca (a) hesap ekranındaki kimlik metni ve (b) silme öncesi
+ * yeniden doğrulamanın HANGİ sağlayıcıyla yapılacağı için gerekiyor. Anonim oturumda null.
+ */
+export type AuthProvider = "google" | "apple";
+export type AuthSession = { uid: string; isAnonymous: boolean; provider: AuthProvider | null };
+
+/**
+ * 2026-11-20 — iOS yayını: Firebase `user.providerData`'daki sağlayıcı id'lerinden oturum sağlayıcısı (saf; SDK
+ * tipine bağlı değil, gateway yalnızca id dizisini verir). Anonim kullanıcıda providerData boş → null.
+ * İkisi birden bağlıysa (bugünkü akışlarda oluşmuyor: bağlama yalnızca anonim hesaba yapılıyor) "apple" öncelikli:
+ * silmede Apple belirtecinin iptali (revoke) Apple'ın zorunlu tuttuğu adım — Google ile yeniden doğrulayıp onu
+ * atlamak, iptalsiz silme demek olurdu.
+ */
+export function authProviderFromProviderIds(providerIds: readonly string[]): AuthProvider | null {
+  if (providerIds.includes("apple.com")) return "apple";
+  if (providerIds.includes("google.com")) return "google";
+  return null;
+}
 
 export type AuthState =
   | { status: "unconfigured" }
@@ -36,12 +55,21 @@ export type AccountLinkControl = {
   isAnonymous: boolean;
   linking: boolean;
   notice: string | null;
+  /** Google hesabını bağlar (tüm platformlar). */
   onLinkAccount: () => void;
+  /**
+   * 2026-11-20 — Apple hesabını bağlar. YALNIZCA Apple ile giriş bu cihazda kullanılabiliyorsa (iOS) tanımlı;
+   * tanımsızsa UI Apple butonunu hiç göstermez (Android'de Apple girişi bilinçli olarak yok).
+   */
+  onLinkAppleAccount?: () => void;
+  /** Bağlı hesabın sağlayıcısı (hesap ekranı metni); misafirde/bilinmiyorsa tanımsız. */
+  provider?: AuthProvider;
   onDeleteAccount?: () => Promise<boolean>;
 };
 
 export const NOTICE_SIGN_IN_FAILED = "Giriş yapılamadı. İnternet bağlantını kontrol edip tekrar dene.";
-export const NOTICE_LINK_FAILED = "Google ile giriş yapılamadı. İnternet bağlantını kontrol edip tekrar dene.";
+// 2026-11-20 — iOS yayını: bağlama artık Google VEYA Apple ile yapılabildiği için metin sağlayıcıdan bağımsız.
+export const NOTICE_LINK_FAILED = "Hesap bağlanamadı. İnternet bağlantını kontrol edip tekrar dene.";
 
 export function initialAuthState(configured: boolean): AuthState {
   return configured ? { status: "initializing" } : { status: "unconfigured" };
@@ -61,7 +89,8 @@ export function applyAuthChanged(state: AuthState, session: AuthSession | null, 
     return { status: "signedOut", notice: state.status === "signedOut" ? state.notice : null };
   }
   if (state.status === "signedIn" && state.session.uid === session.uid) {
-    return state.session.isAnonymous === session.isAnonymous ? state : { ...state, session };
+    // 2026-11-20 — sağlayıcı da karşılaştırılıyor: hesap ekranı metni ve silme akışı session.provider'a bakıyor.
+    return state.session.isAnonymous === session.isAnonymous && state.session.provider === session.provider ? state : { ...state, session };
   }
   if (state.status === "loadingUser" && state.session.uid === session.uid) {
     return state;
@@ -114,9 +143,13 @@ export function applyLinkStarted(state: AuthState): AuthState {
   return canStartLink(state) && state.status === "signedIn" ? { ...state, linking: true, notice: null } : state;
 }
 
-/** Aynı Firebase kullanıcısı artık Google'a bağlı: backend kullanıcısı (userId) DEĞİŞMEZ. */
-export function applyLinkSucceeded(state: AuthState): AuthState {
-  return state.status === "signedIn" ? { ...state, linking: false, session: { ...state.session, isAnonymous: false } } : state;
+/**
+ * Aynı Firebase kullanıcısı artık Google'a/Apple'a bağlı: backend kullanıcısı (userId) DEĞİŞMEZ.
+ * 2026-11-20 — `provider` parametresi: linkWithCredential oturum dinleyicisini tetiklemediği için bağlanan
+ * sağlayıcıyı başka hiçbir yol state'e yazmıyor (hesap ekranı aksi hâlde "misafir değil ama sağlayıcı yok" kalırdı).
+ */
+export function applyLinkSucceeded(state: AuthState, provider: AuthProvider): AuthState {
+  return state.status === "signedIn" ? { ...state, linking: false, session: { ...state.session, isAnonymous: false, provider } } : state;
 }
 
 /**
