@@ -17,8 +17,8 @@ jest.mock("../subscription/store-name", () => ({
 jest.mock("../identity/AppleSignInButton", () => {
   const { Pressable, Text } = jest.requireActual<typeof import("react-native")>("react-native");
   return {
-    AppleSignInButton: ({ onPress, disabled }: { onPress: () => void; disabled: boolean }) => (
-      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled }}><Text>Apple ile devam et</Text></Pressable>
+    AppleSignInButton: ({ onPress, disabled, busy }: { onPress: () => void; disabled: boolean; busy?: boolean }) => (
+      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled, busy: busy === true }}><Text>Apple ile devam et</Text>{busy ? <Text>apple-busy</Text> : null}</Pressable>
     ),
   };
 });
@@ -87,6 +87,15 @@ describe("iOS yayını — 2026-11-20", () => {
     await view.rerender(<AccountScreen userId="guest" account={{ ...account, isAnonymous: true, linking: true, onLinkAppleAccount }} onBack={jest.fn()} onSignOut={jest.fn()} />);
     await fireEvent.press(screen.getByText("Apple ile devam et"));
     expect(onLinkAppleAccount).toHaveBeenCalledTimes(1);
+  }, 30000);
+
+  it("bağlama sürerken yükleniyor göstergesi yalnız basılan sağlayıcının butonunda", async () => {
+    const view = await render(<AccountScreen userId="guest" account={{ ...account, isAnonymous: true, linking: true, linkingProvider: "apple", onLinkAppleAccount: jest.fn() }} onBack={jest.fn()} onSignOut={jest.fn()} />);
+    expect(screen.getByText("Google ile devam et")).toBeTruthy();
+    expect(screen.getByText("apple-busy")).toBeTruthy();
+    await view.rerender(<AccountScreen userId="guest" account={{ ...account, isAnonymous: true, linking: true, linkingProvider: "google", onLinkAppleAccount: jest.fn() }} onBack={jest.fn()} onSignOut={jest.fn()} />);
+    expect(screen.queryByText("Google ile devam et")).toBeNull();
+    expect(screen.queryByText("apple-busy")).toBeNull();
   }, 30000);
 
   it("Apple ile girmiş hesapta kimlik metinleri Apple'ı gösterir; varsayılan Google", async () => {

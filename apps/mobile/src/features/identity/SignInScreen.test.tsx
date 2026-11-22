@@ -7,9 +7,10 @@ import { SignInScreen } from "./SignInScreen";
 jest.mock("./AppleSignInButton", () => {
   const { Pressable, Text } = jest.requireActual<typeof import("react-native")>("react-native");
   return {
-    AppleSignInButton: ({ onPress, disabled }: { onPress: () => void; disabled: boolean }) => (
-      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled }}>
+    AppleSignInButton: ({ onPress, disabled, busy }: { onPress: () => void; disabled: boolean; busy?: boolean }) => (
+      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled, busy: busy === true }}>
         <Text>Apple ile devam et</Text>
+        {busy ? <Text>apple-busy</Text> : null}
       </Pressable>
     ),
   };
@@ -44,4 +45,14 @@ it("meşgulken iki buton da kapalı (aynı anda iki native giriş sayfası açı
   }
   expect(onAppleSignIn).not.toHaveBeenCalled();
   expect(onSignIn).not.toHaveBeenCalled();
+}, 30000);
+
+it("Apple ile giriş sürerken Google butonunda spinner yok, etiketi kalır; Google ile sürerken spinner var", async () => {
+  await render(<SignInScreen busy busyProvider="apple" notice={null} onSignIn={() => {}} onAppleSignIn={() => {}} />);
+  expect(screen.getByText("Google ile devam et")).toBeTruthy();
+  expect(screen.getByText("apple-busy")).toBeTruthy();
+  await screen.unmount();
+  await render(<SignInScreen busy busyProvider="google" notice={null} onSignIn={() => {}} onAppleSignIn={() => {}} />);
+  expect(screen.queryByText("Google ile devam et")).toBeNull();
+  expect(screen.queryByText("apple-busy")).toBeNull();
 }, 30000);

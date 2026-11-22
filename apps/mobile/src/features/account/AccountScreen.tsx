@@ -73,9 +73,9 @@ export function AccountScreen({ userId, account, onBack, onSignOut }: Props) {
             <Text style={styles.body}>{account.onLinkAppleAccount ? "Apple veya Google hesabını bağla" : "Google hesabını bağla"}; kelimelerine ve ilerlemene başka cihazlardan da ulaş.</Text>
             {/* 2026-11-20 — iOS yayını (Apple Kuralı 4.8 / HIG): Sign in with Apple, Google ile eşit önemde — Google
                 butonunun hemen üstünde, aynı genişlik ve aynı meşgul koşuluyla. Yalnız iOS'ta (tanımlıysa) görünür. */}
-            {account.onLinkAppleAccount && <AppleSignInButton onPress={account.onLinkAppleAccount} disabled={busy} />}
+            {account.onLinkAppleAccount && <AppleSignInButton onPress={account.onLinkAppleAccount} disabled={busy} busy={account.linking && account.linkingProvider === "apple"} />}
             <Pressable onPress={account.onLinkAccount} disabled={busy} accessibilityRole="button" accessibilityState={{ disabled: busy, busy: account.linking }} style={[styles.primary, busy && styles.disabled]}>
-              {account.linking ? <ActivityIndicator color="#171321" /> : <Text style={styles.primaryText}>Google ile devam et</Text>}
+              {account.linking && account.linkingProvider !== "apple" ? <ActivityIndicator color="#171321" /> : <Text style={styles.primaryText}>Google ile devam et</Text>}
             </Pressable>
             <Text style={styles.caption}>Hesap bağlamak abonelik başlatmaz.</Text>
           </View>

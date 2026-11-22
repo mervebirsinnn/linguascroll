@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import * as Sentry from '@sentry/react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
@@ -10,7 +10,7 @@ import { useAuth } from './src/features/identity/use-auth';
 import { MemoryFlow } from './src/features/memory/components/MemoryFlow';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
-import type { AccountLinkControl } from './src/features/identity/auth-state';
+import type { AccountLinkControl, AuthProvider } from './src/features/identity/auth-state';
 import { initializePurchases } from './src/features/subscription/purchases-gateway';
 
 type AppMode = 'feed' | 'memory';
@@ -29,6 +29,17 @@ function App() {
   const linkAccount = auth.linkAccount;
   const linkAppleAccount = auth.linkAppleAccount;
   const provider = signedIn?.session.provider ?? undefined;
+  // 2026-11-22 — hangi sağlayıcı butonuna basıldı. Auth durumu (signingIn / linking) sağlayıcıyı bilmiyor; spinner yalnız
+  // basılan butonda görünsün diye burada tutulur. Yalnız meşgulken okunur (busy değilken değeri önemsiz).
+  const [pendingProvider, setPendingProvider] = useState<AuthProvider>('google');
+  const onLinkGoogle = useCallback(() => {
+    setPendingProvider('google');
+    linkAccount();
+  }, [linkAccount]);
+  const onLinkApple = useCallback(() => {
+    setPendingProvider('apple');
+    linkAppleAccount();
+  }, [linkAppleAccount]);
   // 2026-11-20 — iOS yayını: Apple ile bağlama/giriş yalnızca Apple girişi kullanılabilen platformda (iOS)
   // tanımlı; tanımsız callback = UI Apple butonunu hiç göstermez (Android çıktısı değişmez). Platform sabit
   // olduğu için modül düzeyinde bir kez hesaplanıyor (APPLE_SIGN_IN_AVAILABLE).
@@ -38,12 +49,13 @@ function App() {
       isAnonymous: signedIn?.session.isAnonymous ?? false,
       linking: signedIn?.linking ?? false,
       notice: signedIn?.notice ?? null,
-      onLinkAccount: linkAccount,
-      onLinkAppleAccount: APPLE_SIGN_IN_AVAILABLE ? linkAppleAccount : undefined,
+      onLinkAccount: onLinkGoogle,
+      onLinkAppleAccount: APPLE_SIGN_IN_AVAILABLE ? onLinkApple : undefined,
+      linkingProvider: signedIn?.linking ? pendingProvider : undefined,
       provider,
       onDeleteAccount: auth.deleteAccount,
     }),
-    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, provider, linkAccount, linkAppleAccount, auth.deleteAccount],
+    [signedIn?.session.isAnonymous, signedIn?.linking, signedIn?.notice, provider, pendingProvider, onLinkGoogle, onLinkApple, auth.deleteAccount],
   );
   // Chunk 15 — identity'den BAĞIMSIZ, paralel bir bootstrap (saf local storage,
   // network'e hiç ihtiyaç duymuyor) — Rules of Hooks gereği koşulsuz çağrılıyor.
@@ -86,9 +98,20 @@ function App() {
       {(auth.state.status === 'signedOut' || auth.state.status === 'signingIn') && (
         <SignInScreen
           busy={auth.state.status === 'signingIn'}
+          busyProvider={pendingProvider}
           notice={auth.state.status === 'signedOut' ? auth.state.notice : null}
-          onSignIn={auth.signIn}
-          onAppleSignIn={APPLE_SIGN_IN_AVAILABLE ? auth.signInWithApple : undefined}
+          onSignIn={() => {
+            setPendingProvider('google');
+            auth.signIn();
+          }}
+          onAppleSignIn={
+            APPLE_SIGN_IN_AVAILABLE
+              ? () => {
+                  setPendingProvider('apple');
+                  auth.signInWithApple();
+                }
+              : undefined
+          }
         />
       )}
       {(auth.state.status === 'userLoadFailed' || auth.state.status === 'guestFailed') && (
