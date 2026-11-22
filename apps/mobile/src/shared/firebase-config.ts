@@ -25,3 +25,11 @@ export const FIREBASE_WEB_CONFIG: FirebaseWebConfig | undefined =
 
 /** Google Cloud > Credentials > OAuth client "Web application" id'si — Google ID token'ının audience'ı. */
 export const GOOGLE_WEB_CLIENT_ID: string | undefined = read(process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID);
+
+/**
+ * 2026-11-20 — iOS: Google Cloud > Credentials > OAuth client "iOS" id'si (bundle id app.looplish.mobile).
+ * iOS'ta Google Sign-In bu id olmadan açılamaz; Android'de kullanılmaz. Audience yine GOOGLE_WEB_CLIENT_ID
+ * olduğu için Firebase/backend tarafında değişiklik gerekmez. Aynı değerden app.config.js, native URL
+ * şemasını (ters çevrilmiş client id) üretir — iki ayrı env tutulmaz.
+ */
+export const GOOGLE_IOS_CLIENT_ID: string | undefined = read(process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID);

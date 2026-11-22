@@ -4,6 +4,7 @@ import * as Sentry from "@sentry/react-native";
 import type { SubscriptionOverview } from "@linguascroll/shared-types";
 import { fetchSubscriptionOverview } from "../subscription/api/fetch-subscription-overview";
 import { initializePurchases, openSubscriptionManagement, restoreAndCheck } from "../subscription/purchases-gateway";
+import { STORE_NAME } from "../subscription/store-name";
 
 type Status = "loading" | "active" | "inactive" | "unknown";
 type Action = "idle" | "refreshing" | "restoring" | "managing";
@@ -63,7 +64,8 @@ export function useAccountSubscription(userId: string, isAnonymous: boolean) {
       Sentry.captureException(error);
       if (generation.current !== request) return;
       if (nextAction !== "managing") setStatus("unknown");
-      setNotice(nextAction === "managing" ? "Google Play açılamadı. Play Store'daki Abonelikler bölümünden devam edebilirsin." : "Abonelik doğrulanamadı. Bağlantını kontrol edip tekrar dene.");
+      // 2026-11-20 — iOS yayını: yönetim sayfası açılamazsa iOS'ta doğru yol Ayarlar'daki Apple abonelikleri; Android metni aynı.
+      setNotice(nextAction === "managing" ? (STORE_NAME === "App Store" ? "App Store açılamadı. Ayarlar › Apple Hesabı › Abonelikler bölümünden devam edebilirsin." : "Google Play açılamadı. Play Store'daki Abonelikler bölümünden devam edebilirsin.") : "Abonelik doğrulanamadı. Bağlantını kontrol edip tekrar dene.");
     } finally {
       if (generation.current === request) {
         locked.current = false; setAction("idle");
