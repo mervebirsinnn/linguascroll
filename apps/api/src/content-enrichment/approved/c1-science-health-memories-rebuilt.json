@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T19:55:20.449Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "yanlis pozitif: 'is believed to be [past participle]' notasyon farki; seg 7 aciklamasi yeniden yazildi"
+  },
+  "media": {
+    "localFileName": "c1-science-health-memories-rebuilt.mp4"
+  },
+  "draft": {
+    "contentId": "c1-science-health-memories-rebuilt",
+    "muxAssetId": "local-how-memories-change-in-brain",
+    "sourceFile": "c1-science-health-memories-rebuilt.mp4",
+    "storageKey": null,
+    "durationMs": 36100,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "C1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4720,
+        "text": "For a long time, memories were thought to be stored in the brain like files in a cabinet,",
+        "englishExplanation": "For a long time, people believed memories were stored in the brain like paper documents in a cabinet.",
+        "turkishExplanation": "Uzun zaman boyunca anıların, beyinde bir dosya dolabındaki dosyalar gibi saklandığı düşünülürdü,"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5080,
+        "endMs": 6060,
+        "text": "safe and unchanged.",
+        "englishExplanation": "Completely secure and unaltered over time.",
+        "turkishExplanation": "güvende ve hiç değişmeden."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 6820,
+        "endMs": 8340,
+        "text": "That picture has since been challenged.",
+        "englishExplanation": "That traditional view of memory has since been questioned and disproven.",
+        "turkishExplanation": "Bu anlayış o zamandan beri sorgulanır oldu."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 9020,
+        "endMs": 14000,
+        "text": "Researchers found that forming a memory requires the brain to build new proteins, which",
+        "englishExplanation": "Researchers discovered that creating a memory requires the brain to synthesize new proteins, which...",
+        "turkishExplanation": "Araştırmacılar, bir anı oluşturmanın beynin yeni proteinler üretmesini gerektirdiğini buldular; bu proteinler ise"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 14000,
+        "endMs": 15720,
+        "text": "strengthen the connections between cells.",
+        "englishExplanation": "Strengthen the connections between brain cells.",
+        "turkishExplanation": "hücreler arasındaki bağlantıları güçlendirir."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16500,
+        "endMs": 17660,
+        "text": "In experiments with rats,",
+        "englishExplanation": "In experiments conducted on rats,",
+        "turkishExplanation": "Sıçanlarla yapılan deneylerde,"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 18300,
+        "endMs": 22560,
+        "text": "animals given a drug that blocked these proteins failed to remember what they had learned.",
+        "englishExplanation": "Animals that were given a drug blocking these proteins were unable to recall what they had learned.",
+        "turkishExplanation": "bu proteinleri engelleyen bir ilaç verilen hayvanlar, öğrendiklerini hatırlamayı başaramadı."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 23220,
+        "endMs": 24300,
+        "text": "Even more surprising,",
+        "englishExplanation": "What is even more surprising,",
+        "turkishExplanation": "Daha da şaşırtıcı olanı,"
+      },
+      {
+        "ordinal": 9,
+        "startMs": 24900,
+        "endMs": 28620,
+        "text": "a memory is now believed to be rebuilt each time it is recalled.",
+        "englishExplanation": "It is now believed that a memory is reconstructed every time it is retrieved.",
+        "turkishExplanation": "artık bir anının her hatırlandığında yeniden inşa edildiğine inanılıyor."
+      },
+      {
+        "ordinal": 10,
+        "startMs": 29100,
+        "endMs": 33600,
+        "text": "In other words, every time you remember something, you may be changing it slightly,",
+        "englishExplanation": "In other words, whenever you remember an event, you might be altering it slightly,",
+        "turkishExplanation": "Başka bir deyişle, bir şeyi her hatırladığınızda onu biraz değiştiriyor olabilirsiniz,"
+      },
+      {
+        "ordinal": 11,
+        "startMs": 33920,
+        "endMs": 35600,
+        "text": "depending on how you feel at that moment.",
+        "englishExplanation": "Depending on how you feel at that specific moment.",
+        "turkishExplanation": "o anda nasıl hissettiğinize bağlı olarak."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "store",
+        "gloss": "saklamak, depolamak"
+      },
+      {
+        "lemma": "challenge",
+        "gloss": "sorgulamak, itiraz etmek"
+      },
+      {
+        "lemma": "recall",
+        "gloss": "hatırlamak, anımsamak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 9,
+        "type": "grammar",
+        "expression": "is believed to be [past participle]",
+        "englishExplanation": "A passive reporting structure used to express a widespread general belief or scientific consensus without specifying who holds it.",
+        "turkishExplanation": "Genel bir inancı veya bilimsel görüşü, belirten kişiyi açıkça söylemeden ifade etmek için kullanılan edilgen aktarım yapısı.",
+        "exampleEn": "The ancient ruins are believed to be over three thousand years old.",
+        "exampleTr": "Tarihi kalıntıların üç bin yıldan daha eski olduğuna inanılıyor."
+      },
+      {
+        "segmentOrdinal": 10,
+        "type": "phrase",
+        "expression": "in other words",
+        "englishExplanation": "A transitional phrase used to clarify, rephrase, or simplify a preceding statement.",
+        "turkishExplanation": "Önceki bir ifadeyi açıklamak, farklı kelimelerle ifade etmek veya sadeleştirmek için kullanılan geçiş kalıbı.",
+        "exampleEn": "He failed to meet the deadline; in other words, he was fired.",
+        "exampleTr": "Teslim tarihine uyamadı; başka bir deyişle, kovuldu."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 9,
+      "question": "Even more surprising, a memory is now believed ______ each time it is recalled.",
+      "options": [
+        {
+          "text": "to be rebuilt",
+          "isCorrect": true
+        },
+        {
+          "text": "to rebuild",
+          "isCorrect": false
+        },
+        {
+          "text": "being rebuilt",
+          "isCorrect": false
+        },
+        {
+          "text": "having rebuilt",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 9,
+          "message": "Learning point ifadesi (\"is believed to be [past participle]\") segment 9'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

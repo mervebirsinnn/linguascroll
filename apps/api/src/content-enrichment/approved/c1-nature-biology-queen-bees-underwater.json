@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T19:55:18.077Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript"
+    ],
+    "note": "yanlis pozitif: 'Hardly had... when...' notasyon farki; transkriptte 'Hardly had the results been published when' var"
+  },
+  "media": {
+    "localFileName": "c1-nature-biology-queen-bees-underwater.mp4"
+  },
+  "draft": {
+    "contentId": "c1-nature-biology-queen-bees-underwater",
+    "muxAssetId": "local-bumblebee-underwater-survival",
+    "sourceFile": "c1-nature-biology-queen-bees-underwater.mp4",
+    "storageKey": null,
+    "durationMs": 37170,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "C1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 6020,
+        "text": "Scientists studying bumblebees in Canada kept sleeping queens in small tubes of soil",
+        "englishExplanation": "Canadian scientists kept hibernating queen bumblebees inside small soil-filled tubes.",
+        "turkishExplanation": "Kanada'da yaban arılarını inceleyen bilim insanları, uyuyan kraliçe arıları küçük toprak tüpler içinde tutuyordu"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 6020,
+        "endMs": 6880,
+        "text": "inside a fridge.",
+        "englishExplanation": "These soil tubes were stored inside a refrigerator.",
+        "turkishExplanation": "bir buzdolabının içinde."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 7460,
+        "endMs": 11880,
+        "text": "One day they noticed that water had leaked into some of the tubes, leaving the bees",
+        "englishExplanation": "They eventually noticed that water had accidentally entered several of the containers, leaving the bees...",
+        "turkishExplanation": "Bir gün tüplerden bazılarına su sızdığını ve arıları..."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 11880,
+        "endMs": 13060,
+        "text": "completely submerged.",
+        "englishExplanation": "completely covered by liquid.",
+        "turkishExplanation": "tamamen su altında bıraktığını fark ettiler."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 13880,
+        "endMs": 15800,
+        "text": "Little did they expect what happened next.",
+        "englishExplanation": "They certainly did not expect the surprising outcome that followed.",
+        "turkishExplanation": "Sonrasında yaşanacakları hiç tahmin etmiyorlardı."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16400,
+        "endMs": 17480,
+        "text": "When the water was removed,",
+        "englishExplanation": "Once the team drained the water away,",
+        "turkishExplanation": "Su boşaltıldığında,"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 18040,
+        "endMs": 20940,
+        "text": "the queens woke up and crawled away as if nothing had happened.",
+        "englishExplanation": "the queen bees revived and walked off as though everything were perfectly fine.",
+        "turkishExplanation": "kraliçe arılar uyandı ve sanki hiçbir şey olmamış gibi yürüyüp gitti."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 21760,
+        "endMs": 24480,
+        "text": "Intrigued, the team repeated the test on purpose.",
+        "englishExplanation": "Curious about this outcome, the researchers intentionally recreated the test.",
+        "turkishExplanation": "Meraklanan ekip, testi bilerek tekrarladı."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 24480,
+        "endMs": 28340,
+        "text": "Not only did most queens survive a whole week underwater,",
+        "englishExplanation": "The majority of queens not only survived seven full days under water,",
+        "turkishExplanation": "Kraliçelerin çoğu su altında tam bir hafta hayatta kalmakla kalmadı,"
+      },
+      {
+        "ordinal": 10,
+        "startMs": 28900,
+        "endMs": 30980,
+        "text": "but they also seemed none the worse for it.",
+        "englishExplanation": "they also showed no signs of injury or harm from the experience.",
+        "turkishExplanation": "aynı zamanda bu durumdan hiç zarar görmemiş gibi de görünmüyorlardı."
+      },
+      {
+        "ordinal": 11,
+        "startMs": 31600,
+        "endMs": 36080,
+        "text": "Hardly had the results been published when other researchers began asking how the bees",
+        "englishExplanation": "As soon as their study was made public, other scientists immediately began inquiring how the bees...",
+        "turkishExplanation": "Sonuçlar yayımlanır yayımlanmaz, diğer araştırmacılar arıların bunu nasıl..."
+      },
+      {
+        "ordinal": 12,
+        "startMs": 36080,
+        "endMs": 36720,
+        "text": "manage it.",
+        "englishExplanation": "can manage to accomplish such a feat.",
+        "turkishExplanation": "başardığını sormaya başladı."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "submerged",
+        "gloss": "suya batmış, su altında kalmış"
+      },
+      {
+        "lemma": "intrigued",
+        "gloss": "merakı uyanmış, ilgisini çekmiş"
+      },
+      {
+        "lemma": "on purpose",
+        "gloss": "kasten, bilerek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 5,
+        "type": "grammar",
+        "expression": "Little did someone expect...",
+        "englishExplanation": "An inverted structure used for emphasis to show that someone was completely unaware of what would happen.",
+        "turkishExplanation": "Gelecekte yaşanacak bir olayın hiç beklenmediğini veya tahmin edilmediğini vurgulamak için kullanılan devrik yapı.",
+        "exampleEn": "Little did she know that her discovery would change science forever.",
+        "exampleTr": "Keşfinin bilimi sonsuza dek değiştireceğinden hiç haberi yoktu."
+      },
+      {
+        "segmentOrdinal": 10,
+        "type": "phrase",
+        "expression": "none the worse for (something)",
+        "englishExplanation": "Not damaged, injured, or harmed by a difficult experience.",
+        "turkishExplanation": "Zorlu bir deneyimden veya olaydan hiç zarar görmemiş, olumsuz etkilenmemiş olmak.",
+        "exampleEn": "After spending the night in the storm, the hikers were none the worse for wear.",
+        "exampleTr": "Fırtınada geceyi geçirdikten sonra dağcılar hiçbir zarar görmemiş durumdaydı."
+      },
+      {
+        "segmentOrdinal": 11,
+        "type": "grammar",
+        "expression": "Hardly had... when...",
+        "englishExplanation": "An inverted pattern showing that one action happened immediately after another.",
+        "turkishExplanation": "Bir olayın hemen ardından başka bir olayın gerçekleştiğini belirten devrik zaman yapısı (-er -mez anlamı katar).",
+        "exampleEn": "Hardly had I stepped outside when it started raining heavily.",
+        "exampleTr": "Dışarı adımımı atar atmaz şiddetli bir yağmur başladı."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 11,
+      "question": "Hardly ______ the results been published when other researchers began asking how the bees manage it.",
+      "options": [
+        {
+          "text": "had",
+          "isCorrect": true
+        },
+        {
+          "text": "did",
+          "isCorrect": false
+        },
+        {
+          "text": "have",
+          "isCorrect": false
+        },
+        {
+          "text": "were",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 11,
+          "message": "Learning point ifadesi (\"Hardly had... when...\") segment 11'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}
