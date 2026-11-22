@@ -44,8 +44,8 @@ jest.mock("./store-name", () => ({
 jest.mock("../identity/AppleSignInButton", () => {
   const { Pressable, Text } = jest.requireActual<typeof import("react-native")>("react-native");
   return {
-    AppleSignInButton: ({ onPress, disabled }: { onPress: () => void; disabled: boolean }) => (
-      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled }}><Text>Apple ile devam et</Text></Pressable>
+    AppleSignInButton: ({ onPress, disabled, busy }: { onPress: () => void; disabled: boolean; busy?: boolean }) => (
+      <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityState={{ disabled, busy: busy === true }}><Text>Apple ile devam et</Text>{busy ? <Text>apple-busy</Text> : null}</Pressable>
     ),
   };
 });
@@ -331,6 +331,17 @@ describe("iOS yayını", () => {
     expect(await screen.findByText("₺600 / yıl")).toBeTruthy();
     await fireEvent.press(screen.getByText("Apple ile devam et"));
     expect(onLinkAppleAccount).not.toHaveBeenCalled();
+  });
+
+  it("yükleniyor göstergesi yalnız basılan sağlayıcıda: Apple'da Google etiketi kalır, Google'da Apple göstergesi yok", async () => {
+    mockFetchPackages.mockResolvedValue([annual]);
+    const view = await render(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={guestAccount({ linking: true, linkingProvider: "apple", onLinkAppleAccount: jest.fn() })} onUnlocked={jest.fn()} />);
+    expect(await screen.findByText("₺600 / yıl")).toBeTruthy();
+    expect(screen.getByText("Google ile devam et")).toBeTruthy();
+    expect(screen.getByText("apple-busy")).toBeTruthy();
+    await view.rerender(<PaywallFeedItem height={800} width={400} userId={USER_ID} account={guestAccount({ linking: true, linkingProvider: "google", onLinkAppleAccount: jest.fn() })} onUnlocked={jest.fn()} />);
+    expect(screen.queryByText("Google ile devam et")).toBeNull();
+    expect(screen.queryByText("apple-busy")).toBeNull();
   });
 
   it("hesap bağlıyken Apple butonu gösterilmez (satın alma CTA'sı görünür)", async () => {

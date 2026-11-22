@@ -5,6 +5,8 @@ const brandMarkImage = require("../../../assets/brand-mark.png") as number;
 
 type SignInScreenProps = {
   busy: boolean;
+  /** Hangi sağlayıcıyla giriş sürüyor. Verilmezse (eski çağıranlar) busy = Google gibi davranır. */
+  busyProvider?: "google" | "apple";
   notice: string | null;
   onSignIn: () => void;
   /** 2026-11-20 — yalnızca Apple girişi kullanılabilirken (iOS) verilir; yoksa Apple butonu hiç render edilmez. */
@@ -20,7 +22,7 @@ type SignInScreenProps = {
  * kendi seçeneğinin diğer sağlayıcılardan daha az belirgin olmamasını bekliyor). Meşgulken ikisi birden kapalı:
  * tek "signingIn" durumu var, aynı anda iki native giriş sayfası açılmamalı. Alt başlık sağlayıcıdan bağımsız.
  */
-export function SignInScreen({ busy, notice, onSignIn, onAppleSignIn }: SignInScreenProps) {
+export function SignInScreen({ busy, busyProvider, notice, onSignIn, onAppleSignIn }: SignInScreenProps) {
   return (
     <View style={styles.root}>
       <Image source={brandMarkImage} style={styles.brand} accessibilityLabel="Looplish" />
@@ -29,7 +31,7 @@ export function SignInScreen({ busy, notice, onSignIn, onAppleSignIn }: SignInSc
 
       {onAppleSignIn !== undefined && (
         <View style={styles.appleWrap}>
-          <AppleSignInButton onPress={onAppleSignIn} disabled={busy} />
+          <AppleSignInButton onPress={onAppleSignIn} disabled={busy} busy={busy && busyProvider === "apple"} />
         </View>
       )}
       <Pressable
@@ -38,7 +40,8 @@ export function SignInScreen({ busy, notice, onSignIn, onAppleSignIn }: SignInSc
         accessibilityRole="button"
         style={[styles.cta, onAppleSignIn !== undefined && styles.ctaBelowApple, busy && styles.ctaDisabled]}
       >
-        {busy ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
+        {/* Spinner yalnızca Google ile giriş sürerken: Apple seçildiyse Google butonu sadece pasif kalır (yanlış sağlayıcıda yükleniyor görünmesin). */}
+        {busy && busyProvider !== "apple" ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
       </Pressable>
 
       {notice !== null && <Text style={styles.notice}>{notice}</Text>}

@@ -62,6 +62,11 @@ export type AccountLinkControl = {
    * tanımsızsa UI Apple butonunu hiç göstermez (Android'de Apple girişi bilinçli olarak yok).
    */
   onLinkAppleAccount?: () => void;
+  /**
+   * 2026-11-22 — bağlama sürerken HANGİ sağlayıcının butonuna basıldı. Auth durumu tek bir `linking` bayrağı tutuyor ve
+   * sağlayıcıyı bilmiyor; spinner yalnız basılan butonda görünsün diye App.tsx doldurur. `linking` false iken tanımsız.
+   */
+  linkingProvider?: AuthProvider;
   /** Bağlı hesabın sağlayıcısı (hesap ekranı metni); misafirde/bilinmiyorsa tanımsız. */
   provider?: AuthProvider;
   onDeleteAccount?: () => Promise<boolean>;

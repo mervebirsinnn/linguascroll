@@ -84,7 +84,7 @@ Sınırsız öğrenme.</Text>
           {/* 2026-11-20 — iOS yayını (Apple Kuralı 4.8 / HIG): Google ile girişin sunulduğu yerde Sign in with Apple
               da EŞİT önemde sunulmalı — aynı genişlikte, Google butonunun hemen üstünde, aynı "meşgul" koşuluyla.
               Yalnız onLinkAppleAccount tanımlıyken (iOS) render edilir; Android çıktısı değişmez. */}
-          {needsAccount && account.onLinkAppleAccount && <AppleSignInButton onPress={account.onLinkAppleAccount} disabled={account.linking} />}
+          {needsAccount && account.onLinkAppleAccount && <AppleSignInButton onPress={account.onLinkAppleAccount} disabled={account.linking} busy={account.linking && account.linkingProvider === "apple"} />}
           {needsAccount ? (
             <Pressable
               onPress={account.onLinkAccount}
@@ -92,7 +92,8 @@ Sınırsız öğrenme.</Text>
               accessibilityRole="button"
               style={[styles.cta, compact && styles.ctaCompact, account.linking && styles.ctaDisabled]}
             >
-              {account.linking ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
+              {/* Spinner yalnız Google ile bağlama sürerken; Apple seçildiyse bu buton yalnız pasif kalır. */}
+              {account.linking && account.linkingProvider !== "apple" ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
             </Pressable>
           ) : (
             <Pressable
