@@ -59,21 +59,66 @@ Tüm içerik kategorilerinde **Yok** (şiddet, cinsellik, küfür, kumar vb.).
 Beklenen sonuç 4+. Videoların içeriği bunun dışında bir şey içeriyorsa ilgili soruyu ona göre işaretle.
 
 ## App Privacy formu
-**Takip (tracking): Hayır.** Reklam yok, analitik SDK'sı yok, veriler üçüncü taraflarla izleme için paylaşılmıyor.
+**Takip (tracking): Hayır.** Reklam yok, analitik SDK'sı yok. Kullanılan SDK'ların hepsinin manifest'inde takip yok.
 
-| Veri türü (Apple) | Toplanıyor mu | Kimliğe bağlı mı | Amaç | Kaynak |
+Kaynak: build'e giren SDK'ların **kendi privacy manifest'leri** (aşağıdaki gerçek sürümler) ve uygulama kodu. Form, build'in
+gizlilik raporunda birleşen manifest'lerle tutarlı olmalı. SDK bir veriyi "bağlı değil" diye beyan etse bile uygulama onu
+kullanıcı kimliğiyle ilişkilendiriyorsa form "bağlı" der (ör. RevenueCat satın alma geçmişi).
+
+| SDK (gerçek sürüm) | Nasıl belirlendi | Manifest beyanı |
+|---|---|---|
+| GoogleSignIn **9.2.0** | `@react-native-google-signin/google-signin` 16.1.5 → `GoogleSignIn ~> 9.0` (bugün çözülen en güncel 9.x) | Ad, E-posta, Telefon, Diğer veri, Kaba konum, Kullanıcı ID (bağlı; Uygulama işlevselliği, bazıları +Analitik); Cihaz ID ve Diğer kullanım verisi (bağlı; Analitik) |
+| RevenueCat purchases-ios **5.92.0** | `react-native-purchases` 10.11.0 → PurchasesHybridCommon 19.5.0 → RevenueCat 5.92.0 | Satın alma geçmişi (bağlı değil; Uygulama işlevselliği) |
+| sentry-cocoa **9.29.0** | `@sentry/react-native` 8.28.0 → `sentry_cocoa_version = '9.29.0'` | Çökme, Performans ve Diğer teşhis verisi (bağlı değil; Uygulama işlevselliği) |
+| Firebase JS SDK (Auth) | `firebase` 12.19.0; native manifest yok | Google girişinde e-posta ve görünen ad, kimlik tanımlayıcıları; IP adresi güvenlik için birkaç hafta (Apple kategorisi değil) |
+
+Uygulama ayarları:
+- Sentry: `sendDefaultPii: false`, `tracesSampleRate: 0`, `setUser` yok.
+- RevenueCat: yalnız `configure({ apiKey, appUserID })`; cihaz kimliği ya da özellik gönderimi yok.
+- Firebase: `measurementId` yok (Analytics yok).
+
+**Formda işaretlenecekler:**
+
+| Veri türü (Apple) | Bağlı | Takip | Amaçlar | Neden |
 |---|---|---|---|---|
-| İletişim Bilgileri › E-posta adresi | Evet | Evet | Uygulama işlevselliği | Google ile girişte Firebase Authentication e-postayı saklar. Apple girişinde e-posta istenmez. |
-| Tanımlayıcılar › Kullanıcı kimliği | Evet | Evet | Uygulama işlevselliği | Firebase UID, backend kullanıcı kimliği, RevenueCat App User ID |
-| Satın Alımlar › Satın alma geçmişi | Evet | Evet | Uygulama işlevselliği | RevenueCat ile abonelik durumu |
-| Kullanım Verileri › Ürün etkileşimi | Evet | Evet | Uygulama işlevselliği, Ürün kişiselleştirme | İzleme olayları, quiz cevapları, kelime tekrarları (akış sıralaması) |
-| Kullanıcı İçeriği › Diğer kullanıcı içeriği | Evet | Evet | Uygulama işlevselliği | Kaydedilen kelimeler, video geri bildirimi |
-| Teşhis › Çökme verileri | Evet | **Hayır** | Uygulama işlevselliği | Sentry (`sendDefaultPii: false`, kullanıcı kimliği eklenmiyor) |
+| İletişim Bilgileri › Ad | Evet | Hayır | Uygulama işlevselliği | Google girişi: GoogleSignIn manifest'i; Firebase Auth görünen adı saklar |
+| İletişim Bilgileri › E-posta adresi | Evet | Hayır | Uygulama işlevselliği | Google girişi: GoogleSignIn + Firebase Auth. Apple girişinde istenmez |
+| İletişim Bilgileri › Telefon numarası | Evet | Hayır | Uygulama işlevselliği | GoogleSignIn 9.2.0 manifest'i beyan ediyor (uygulama telefon istemiyor) |
+| Konum › Kaba konum | Evet | Hayır | Uygulama işlevselliği | GoogleSignIn 9.2.0 manifest'i |
+| Tanımlayıcılar › Kullanıcı ID'si | Evet | Hayır | Uygulama işlevselliği, Analitik | Firebase UID, backend `users.id` = RevenueCat App User ID; GoogleSignIn Analitik de beyan ediyor |
+| Tanımlayıcılar › Cihaz ID'si | Evet | Hayır | Analitik | GoogleSignIn 9.2.0 manifest'i |
+| Satın Alımlar › Satın alma geçmişi | **Evet** | Hayır | Uygulama işlevselliği, Analitik | RevenueCat; abonelik backend'de `users.id` ile eşleniyor. RevenueCat'in önerdiği asgari amaçlar bu ikisi |
+| Kullanım Verileri › Ürün etkileşimi | Evet | Hayır | Uygulama işlevselliği, Ürün kişiselleştirme | İzleme olayları, quiz cevapları, kelime tekrarları (akış sıralaması) |
+| Kullanım Verileri › Diğer kullanım verileri | Evet | Hayır | Analitik | GoogleSignIn 9.2.0 manifest'i |
+| Kullanıcı İçeriği › Diğer kullanıcı içeriği | Evet | Hayır | Uygulama işlevselliği | Kaydedilen kelimeler, video geri bildirimi |
+| Diğer Veriler › Diğer veri türleri | Evet | Hayır | Uygulama işlevselliği, Analitik | GoogleSignIn 9.2.0 manifest'i |
+| Teşhis › Çökme verileri | Hayır | Hayır | Uygulama işlevselliği | Sentry |
+| Teşhis › Performans verileri | Hayır | Hayır | Uygulama işlevselliği | Sentry manifest'i (tracing kapalı olsa da beyan ediyor) |
+| Teşhis › Diğer teşhis verileri | Hayır | Hayır | Uygulama işlevselliği | Sentry (oturum/cihaz bağlamı) |
 
-Konum, kişiler, sağlık, finans, tarama geçmişi, fotoğraf/ses: **toplanmıyor**.
+Toplanmayanlar: hassas bilgi, kişiler, sağlık, finans, tarama/arama geçmişi, fotoğraf/video, ses, hassas konum.
 
-## Abonelik ürünleri (her ürün için)
-Ürün adları Play'deki planlarla aynı olmalı. Sadece sunduğun planları ekle.
+Notlar:
+- Sentry RN, JS console loglarını ve giden isteklerin URL'lerini de gönderir. Uygulama kodu token ya da kişisel veri loglamıyor.
+- `GoogleSignIn ~> 9.0` ileride yeni bir 9.x'e çözülürse manifest'i tekrar kontrol et.
+
+## Abonelik ürünleri
+Android ürün kimlikleri ve fiyatları repo'da yok. Play Console › Para kazanma › Abonelikler ve RevenueCat › Products'tan
+okunup **Android** sütunu doldurulmalı. iOS kimlikleri öneridir; App Store'da silinen bir product ID tekrar kullanılamaz.
+
+| Plan | Android (Play) `product:base_plan` | iOS product ID (öneri) | RevenueCat paketi | Süre | Fiyat | Deneme (iOS intro offer) |
+|---|---|---|---|---|---|---|
+| Yıllık | `<doldur>` | `looplish_premium_annual` | `$rc_annual` (ANNUAL) | 1 yıl | Android TRY fiyatına en yakın Apple fiyat seviyesi | Free, 7 gün, yeni aboneler |
+| Aylık | `<doldur>` | `looplish_premium_monthly` | `$rc_monthly` (MONTHLY) | 1 ay | aynı kural | Free, 7 gün, yeni aboneler |
+| Haftalık | `<doldur>` | `looplish_premium_weekly` | `$rc_weekly` (WEEKLY) | 1 hafta | aynı kural | Free, 7 gün, yeni aboneler |
+
+Yalnız Android'de gerçekten sunulan planları oluştur.
+- Uygulama paketleri RevenueCat paket tipiyle (ANNUAL/MONTHLY/WEEKLY) eşliyor. iOS ürünleri, Android ürünlerinin bulunduğu
+  **aynı** paketlere eklenmeli.
+- Abonelik grubu: `Looplish Premium`. Tüm planlar aynı grupta olmalı; deneme hakkı grup başına bir kez.
+- Grup içi seviye: Yıllık 1, Aylık 2, Haftalık 3.
+- Deneme: Android'deki teklif 7 günse iOS'ta da 7 gün. Uygulama süreyi mağazadan okuyor; farklı olursa doğru gösterir ama
+  iki platform tutarsız olur.
 
 | Plan | Görünen ad (30) | Açıklama (45) |
 |---|---|---|
@@ -90,9 +135,9 @@ Looplish is a short-video English learning app (UI in Turkish).
 
 - The first videos can be watched without signing in (an anonymous guest account is created automatically).
 - Subscriptions are account-based and shared with our Android app, so the paywall asks the user to continue with Apple or Google before purchasing. Sign in with Apple requests no name or email. Purchases can be restored via "Satın alımları geri yükle" (Restore Purchases).
-- To reach the paywall: keep scrolling the feed until the paywall card appears, or open Kelimelerim (top right) › Hesabım.
+- To reach the paywall and purchase: tap "Kelimelerim" on the feed › "Hesabım" › "Premium planlarını gör" (See Premium plans). This entry is always available while the account has no active subscription.
 - Account deletion: Kelimelerim › Hesabım › Hesabımı sil (Delete my account). The user re-authenticates, the Sign in with Apple token is revoked, and all account data is deleted. Deleting the account does not cancel an App Store subscription; the confirmation dialog explains this and links to subscription management.
 - No demo account is needed; any Apple ID can be used.
 ```
-Paywall'a ulaşma yolu (akışta kaçıncı video, hangi buton) gerçek uygulamaya uymuyorsa düzelt.
-İncelemeci satın almayı görebilsin diye inceleme sırasında `SUBSCRIPTION_GATE_ENABLED` açık olmalı (kararı sende).
+Yol koddan doğrulandı: akış "Kelimelerim" → "Hesabım" → "Premium planlarını gör". Abonelik aktif değilken her zaman
+görünür ve `SUBSCRIPTION_GATE_ENABLED`'dan bağımsızdır. Kapı kararı için bkz. docs/ios-release-checklist.md §5c.

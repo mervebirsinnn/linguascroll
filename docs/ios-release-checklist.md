@@ -48,16 +48,53 @@ Firebase, web client, Sentry DSN, gizlilik ve şartlar değerleri zaten tanıml�
   Render'a deploy edildi (2026-11-21). Apple hesabıyla gerçek silme TestFlight'ta §7b ile doğrulanacak.
 - [x] **Kullanım Koşulları (looplish.app/terms):** App Store bölümü eklendi (site sürüm 16).
 - [x] **Gizlilik Politikası (looplish.app/privacy):** Firebase/RevenueCat/mağaza ödemesi eklendi (site sürüm 16).
-- [ ] **App Privacy formu (App Store Connect):** güncel gizlilik politikasıyla tutarlı doldurulmalı (bkz. 8. bölüm). AÇIK.
+- [ ] **App Privacy formu (App Store Connect):** `docs/app-store-listing.md` › App Privacy tablosuna göre doldurulmalı. AÇIK.
 
-## 6. Build → TestFlight
+## 5c. Abonelik kapısı (SUBSCRIPTION_GATE_ENABLED) ve App Review
+Mevcut durum (koddan):
+- Kapı Render env'inde tek bir global değer (`true`/`false`; production'da açıkça verilmesi zorunlu). `false` iken herkes
+  sınırsız izler. Akıştaki ödeme kartı yalnız kapı `true` iken çıkar.
+- Hesap ekranındaki **"Premium planlarını gör"** butonu kapıdan bağımsız: abonelik aktif değilken her zaman ödeme ekranını açar.
+  İncelemeci kapı kapalıyken de satın alabilir (yol: Kelimelerim › Hesabım › Premium planlarını gör).
+- Satın alma sonrası backend doğrulaması (`refreshSubscription`/`getOverview`) da kapıdan bağımsız. Ancak Render'da
+  `REVENUECAT_SECRET_API_KEY` tanımlı olmalı; kapı `false` iken boot bunu zorunlu tutmaz. **Manuel kontrol.**
+
+Risk: kapı `false` iken Premium ek bir şey açmaz (hesap ekranı "Videolara erişimin şu anda açık" der). Apple, değer
+sunmayan bir aboneliği 3.1.2(a)/2.1 kapsamında reddedebilir.
+
+| Seçenek | Android | iOS incelemesi | İş |
+|---|---|---|---|
+| A. Değişiklik yok, kapı `false` | Aynı | Satın alma erişilebilir; "değer yok" reddi riski | Yok |
+| B. **Platforma göre kapı (öneri):** `SUBSCRIPTION_GATE_PLATFORMS=ios` gibi yeni bir env; istemci `X-Client-Platform` başlığını gönderir, backend kapıyı yalnız listedeki platformlara uygular. Başlıksız/Android istek → kapı kapalı | Aynı (eski sürümler başlık göndermediği için de) | 10 ücretsiz video + akışta ödeme kartı; Premium gerçek değer sunar | API (env şeması, `SubscriptionsService`, controller) + mobil başlık + testler + API deploy + yeni iOS build. Başlık sahte gönderilebilir; iOS kullanıcısı "android" yazarsa Android gibi ücretsiz izler, Android zaten ücretsiz olduğu için yeni bir açık değil |
+| C. Global `true` | **Değişir** (10 video sınırı başlar) | Tam akış | Yalnız Render env, ama Android davranışını bozar; bu aşamada kapsam dışı |
+
+Öneri: **B**. Android'i korurken incelemeciye gerçek bir abonelik değeri gösteren tek seçenek. Onay verilirse ayrı bir PR'da
+yapılır; production env değerleri değiştirilmez, yalnız yeni env tanımlanır. A ile gönderilecekse incelemeci notuna kapının geçici
+olarak açık olduğu yazılmamalı (yanıltıcı olur); doğrudan ret riski kabul edilir.
+
+## 6. Build → TestFlight (1.0.0 (2), PR #18 master'a birleştikten SONRA)
+EAS iOS build sayacı şu an **1** (`appVersionSource: remote`, `autoIncrement: true`), bir sonraki production build **2** olur.
+Build 1 (bc69fd1c) gönderilmemeli: paragraf branch'inden ve commit edilmemiş değişikliklerden alındı.
+
+PowerShell (paragraf checkout'una dokunmadan, ayrı ve temiz bir master worktree'sinden):
+```powershell
+cd "C:\Users\merve\OneDrive\Masaüstü\LinguaScroll"
+git fetch origin
+git worktree add --detach ..\LinguaScroll-release origin/master
+cd ..\LinguaScroll-release
+git log --oneline -1            # PR #18 merge commit'i görünmeli
+pnpm install --frozen-lockfile
+cd apps\mobile
+git status --short              # boş olmalı
+npx eas-cli@latest build:version:get -p ios      # "iOS buildNumber - 1"
+npx eas-cli@latest build -p ios --profile production
+# Build bitince (EAS, App Store Connect'e yüklemek için Apple girişi isteyebilir):
+npx eas-cli@latest submit -p ios --profile production --latest
 ```
-cd apps/mobile
-eas build -p ios --profile production     # Apple ID ile giriş ister; sertifika ve profili EAS oluşturur
-eas submit -p ios --profile production    # TestFlight'a yükler
-```
-Not: native modüller (Google, Apple, RevenueCat) olduğu için Expo Go ile test edilemez. Test için TestFlight
-ya da development build (`eas build -p ios --profile development`) gerekir.
+- `eas-build-pre-install` iOS release kontrolünü çalıştırır; iki iOS değişkeni EAS production'da tanımlı (doğrulandı).
+- Yerel `.env` gitignore'da olduğu için cloud build'e girmez; değerler EAS ortamından gelir.
+- Build sonrası kontrol: `npx eas-cli@latest build:list -p ios --limit 1` → appBuildVersion 2 ve gitCommitHash = master'daki PR #18 merge commit'i.
+- Native modüller (Google, Apple, RevenueCat) olduğu için Expo Go ile test edilemez; TestFlight ya da development build gerekir.
 
 ## 7. Gerçek iPhone'da doğrulama (TestFlight)
 - [ ] İlk açılış misafir → ücretsiz videolar → paywall.
@@ -106,8 +143,7 @@ doğrulama şartı arar; süre geçtiyse 401 gelir, saklanan token atılır ve s
 - [ ] 6.9" iPhone ekran görüntüleri (en az 3). iPad desteği kapalı, iPad görüntüsü gerekmez.
 - [ ] Açıklama, anahtar kelimeler, destek URL'si `https://looplish.app/support`, gizlilik URL'si `https://looplish.app/privacy`.
 - [ ] Açıklamaya Kullanım Şartları (EULA) linki: `https://looplish.app/terms` (ya da Apple'ın standart EULA'sı).
-- [ ] App Privacy formu: kullanıcı ID'si, e-posta (Google/Apple girişi), satın alma geçmişi, kullanım verisi
-  (izleme ve quiz), crash/diagnostics (Sentry). Hiçbiri izleme (tracking) amaçlı değil.
+- [ ] App Privacy formu: `docs/app-store-listing.md` › App Privacy (SDK sürümlerine göre güncel tablo).
 - [ ] Yaş derecelendirme anketi, export compliance (uygulama yalnızca muaf şifreleme kullanıyor; plist'te zaten `false`).
 - [ ] İncelemeci notu: "İlk videolar girişsiz izlenir. Abonelik hesaba bağlıdır ve Android ile ortaktır; bu yüzden satın
   alma öncesi Apple veya Google ile hesap bağlanır. Hesap silme: Hesap → Hesabımı sil."
