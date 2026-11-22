@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T19:55:15.717Z",
+    "qualityStatusAtApproval": "needsReview",
+    "acknowledgedIssueCodes": [
+      "learningPointExpressionNotInTranscript",
+      "vocabularyLemmaNotInTranscript"
+    ],
+    "note": "learning point ve craftsman uyarilari yanlis pozitif: cekim/notasyon farki (be said to have done, craftsmen); t -bowl STT hatasi tea bowl olarak duzeltildi"
+  },
+  "media": {
+    "localFileName": "c1-culture-art-kintsugi-golden-repair.mp4"
+  },
+  "draft": {
+    "contentId": "c1-culture-art-kintsugi-golden-repair",
+    "muxAssetId": "local-history-of-kintsugi-art",
+    "sourceFile": "c1-culture-art-kintsugi-golden-repair.mp4",
+    "storageKey": null,
+    "durationMs": 35230,
+    "topic": "culture",
+    "category": "cabincrew",
+    "cefrLevel": "C1",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 5660,
+        "text": "In the 15th century, a Japanese ruler is said to have broken his favorite tea bowl.",
+        "englishExplanation": "In the 15th century, a Japanese ruler reportedly broke his favorite tea bowl.",
+        "turkishExplanation": "15. yüzyılda, Japon bir hükümdarın en sevdiği çay kasesini kırdığı söylenir."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 6040,
+        "endMs": 11040,
+        "text": "He sent it away for repair, but it came back held together with ugly metal stables.",
+        "englishExplanation": "He sent the bowl to be fixed, but it returned repaired with unattractive metal staples.",
+        "turkishExplanation": "Onarılması için gönderdi, ancak çirkin metal zımbalarla tutturulmuş olarak geri geldi."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 11740,
+        "endMs": 15420,
+        "text": "Disappointed, he asked local craftsmen to find a better solution.",
+        "englishExplanation": "Unhappy with the ugly repair, he asked local artisans to find a better solution.",
+        "turkishExplanation": "Hayal kırıklığına uğrayarak, yerel zanaatkarlardan daha iyi bir çözüm bulmalarını istedi."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 16080,
+        "endMs": 20920,
+        "text": "What they came up with was a lacquer mixed with powdered gold, which turned every crack",
+        "englishExplanation": "The craftsmen created a gold-infused lacquer that transformed every crack...",
+        "turkishExplanation": "Ortaya çıkardıkları şey, her bir çatlağı dönüştüren, altın tozuyla karıştırılmış bir cilaydı"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 20920,
+        "endMs": 22260,
+        "text": "into a shining line.",
+        "englishExplanation": "...into a bright, glowing line.",
+        "turkishExplanation": "...parlayan bir çizgiye."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 22820,
+        "endMs": 25360,
+        "text": "This is how the art of Kintsugi was born.",
+        "englishExplanation": "This historic event marked the birth of the art of Kintsugi.",
+        "turkishExplanation": "Kintsugi sanatı işte böyle doğdu."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 25360,
+        "endMs": 30340,
+        "text": "What makes it remarkable is not the gold itself, but the idea behind it.",
+        "englishExplanation": "The real beauty of this art comes from its philosophy rather than the gold itself.",
+        "turkishExplanation": "Onu olağanüstü kılan şey altının kendisi değil, arkasındaki fikirdir."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 30880,
+        "endMs": 34760,
+        "text": "It is the damage, not the perfection, that tells the object's story.",
+        "englishExplanation": "An object's story is expressed through its visible flaws rather than perfection.",
+        "turkishExplanation": "Nesnenin hikayesini anlatan şey mükemmellik değil, aldığı hasardır."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "craftsman",
+        "gloss": "zanaatkar, usta"
+      },
+      {
+        "lemma": "lacquer",
+        "gloss": "vernik, cila"
+      },
+      {
+        "lemma": "remarkable",
+        "gloss": "olağanüstü, dikkate değer"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 1,
+        "type": "grammar",
+        "expression": "be said to have done",
+        "englishExplanation": "Used to report past events that are believed or rumored to have happened without direct proof.",
+        "turkishExplanation": "Geçmişte yaşandığı söylenen veya rivayet edilen olayları aktarırken kullanılır.",
+        "exampleEn": "The castle is said to have been built in the 12th century.",
+        "exampleTr": "Kalenin 12. yüzyılda inşa edildiği söylenir."
+      },
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "come up with",
+        "englishExplanation": "To think of, produce, or devise a solution, idea, or plan.",
+        "turkishExplanation": "Bir fikir, çözüm veya plan üretmek, akıl etmek.",
+        "exampleEn": "They came up with a great solution to the problem.",
+        "exampleTr": "Soruna harika bir çözüm ürettiler."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 8,
+      "question": "It is the damage, not the perfection, ______ tells the object's story.",
+      "options": [
+        {
+          "text": "that",
+          "isCorrect": true
+        },
+        {
+          "text": "what",
+          "isCorrect": false
+        },
+        {
+          "text": "whose",
+          "isCorrect": false
+        },
+        {
+          "text": "where",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "needsReview",
+      "issues": [
+        {
+          "code": "learningPointExpressionNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": 1,
+          "message": "Learning point ifadesi (\"be said to have done\") segment 1'in transcript metninde literal olarak bulunamadı — pedagojik notation/çekim farkı olabilir, yanlış pozitif olasılığı var."
+        },
+        {
+          "code": "vocabularyLemmaNotInTranscript",
+          "severity": "warning",
+          "segmentOrdinal": null,
+          "message": "\"craftsman\" transcript metninde literal olarak bulunamadı — çekim/inflection farkı olabilir, yanlış pozitif olasılığı var."
+        }
+      ]
+    }
+  }
+}

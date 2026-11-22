@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T19:55:02.419Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "c2-psychology-philosophy-chinese-room.mp4"
+  },
+  "draft": {
+    "contentId": "c2-psychology-philosophy-chinese-room",
+    "muxAssetId": "local-chinese-room-thought-experiment",
+    "sourceFile": "c2-psychology-philosophy-chinese-room.mp4",
+    "storageKey": null,
+    "durationMs": 36930,
+    "topic": "technology",
+    "category": "cabincrew",
+    "cefrLevel": "C2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3340,
+        "text": "Imagine a man locked in a room with only a small window.",
+        "englishExplanation": "Envision a man trapped inside a room that has just one small opening.",
+        "turkishExplanation": "Sadece küçük bir penceresi olan bir odaya kilitlenmiş bir adam hayal edin."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4040,
+        "endMs": 8060,
+        "text": "Notes written in Chinese are pushed through it, and although he doesn't understand a",
+        "englishExplanation": "Messages written in Chinese are passed into the room, even though he cannot read them at all.",
+        "turkishExplanation": "İçeri Çince yazılmış notlar itiliyor ve kendisi tek bir kelime bile anlamamasına rağmen..."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8060,
+        "endMs": 12880,
+        "text": "single word, he follows a huge rule book that tells him which symbols to send back.",
+        "englishExplanation": "He adheres to a massive manual guiding him on which symbols to return in response.",
+        "turkishExplanation": "...hangi sembolleri geri göndereceğini söyleyen devasa bir kural kitabını takip ediyor."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 13480,
+        "endMs": 14400,
+        "text": "To the people outside,",
+        "englishExplanation": "From the perspective of the individuals outdoors,",
+        "turkishExplanation": "Dışarıdaki insanlara göre,"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 14900,
+        "endMs": 16080,
+        "text": "his answers are perfect.",
+        "englishExplanation": "The responses he provides are completely accurate and flawless.",
+        "turkishExplanation": "verdiği cevaplar kusursuzdur."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16620,
+        "endMs": 21060,
+        "text": "Were they to judge by the answers alone, they would insist he speaks fluent Chinese.",
+        "englishExplanation": "If they were to assess him based solely on his responses, they would be convinced he speaks fluent Chinese.",
+        "turkishExplanation": "Sadece cevaplara bakarak karar verecek olsalardı, akıcı bir şekilde Çince konuştuğunu iddia ederlerdi."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 21800,
+        "endMs": 26900,
+        "text": "This is the Chinese Room, a thought experiment the philosopher John Searle proposed in",
+        "englishExplanation": "This scenario is known as the Chinese Room, a mental test conceived by philosopher John Searle in 1980.",
+        "turkishExplanation": "Bu, filozof John Searle'ün 1980'de ortaya attığı bir düşünce deneyi olan Çince Odası'dır."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 26900,
+        "endMs": 31820,
+        "text": "1980. His point was that following rules is not the same as understanding them.",
+        "englishExplanation": "He argued that merely executing instructions is fundamentally different from comprehending their meaning.",
+        "turkishExplanation": "Onun anlatmak istediği şey, kurallara uymanın onları anlamakla aynı şey olmadığıydı."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 32360,
+        "endMs": 36500,
+        "text": "Should a computer pass every test, he argued, it still might not grasp a thing.",
+        "englishExplanation": "Even if a machine were to succeed on all evaluations, he contended, it might still lack true comprehension.",
+        "turkishExplanation": "Bir bilgisayar tüm testleri geçse bile, yine de hiçbir şeyi kavramıyor olabileceğini savundu."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "thought experiment",
+        "gloss": "düşünce deneyi"
+      },
+      {
+        "lemma": "grasp",
+        "gloss": "kavramak, anlamak"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 6,
+        "type": "grammar",
+        "expression": "Were they to...",
+        "englishExplanation": "An inverted conditional structure used in formal English to express a hypothetical condition instead of using 'If they were to...'.",
+        "turkishExplanation": "'If' kullanmadan varsayımsal bir durumu ifade etmek için kullanılan resmi devrik koşul cümlesi yapısı.",
+        "exampleEn": "Were he to call, tell him I am busy.",
+        "exampleTr": "Arayacak olursa, meşgul olduğumu söyle."
+      },
+      {
+        "segmentOrdinal": 9,
+        "type": "grammar",
+        "expression": "Should a computer pass...",
+        "englishExplanation": "An inverted conditional pattern equivalent to 'If a computer should pass...', presenting a possible condition.",
+        "turkishExplanation": "'Eğer bir bilgisayar geçerse' anlamına gelen devrik koşul yapısı.",
+        "exampleEn": "Should you need help, please let us know.",
+        "exampleTr": "Yardıma ihtiyacınız olursa lütfen bize bildirin."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 6,
+      "question": "______ they to judge by the answers alone, they would insist he speaks fluent Chinese.",
+      "options": [
+        {
+          "text": "Were",
+          "isCorrect": true
+        },
+        {
+          "text": "Had",
+          "isCorrect": false
+        },
+        {
+          "text": "Did",
+          "isCorrect": false
+        },
+        {
+          "text": "Would",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}
