@@ -15,6 +15,7 @@ import { RequestLoggingMiddleware } from "./request-logging.middleware";
 import { UsersModule } from "./users/users.module";
 import { VideosModule } from "./videos/videos.module";
 import { WordsModule } from "./words/words.module";
+import { GATE_PLATFORMS_PATTERN } from "./subscriptions/gate-policy";
 
 // Uygulamanın zorunlu ortam değişkenleri. ConfigModule.forRoot'un validate fonksiyonu
 // olarak kullanılıyor: process.env eksik/bozuksa NestFactory.create() sırasında,
@@ -129,6 +130,10 @@ const baseEnvSchema = z.object({
   // var'ı sessizce sınırsız erişim açmasın, operatör "true"/"false"u bilinçli seçsin.
   SUBSCRIPTION_GATE_ENABLED: z.enum(["true", "false"]).optional(),
 
+  // 2026-11-22 — iOS yayını: kapıyı YALNIZ bu platformlara uygula (virgülle: "ios" ya da "ios,android"). Tanımsız = hiçbir platform
+  // (bugünkü davranış). SUBSCRIPTION_GATE_ENABLED="true" ise zaten tüm platformlar kapılıdır. Kural: subscriptions/gate-policy.ts.
+  SUBSCRIPTION_GATE_PLATFORMS: z.string().regex(GATE_PLATFORMS_PATTERN, 'SUBSCRIPTION_GATE_PLATFORMS virgülle ayrılmış "ios"/"android" olmalı (ör. "ios")').optional(),
+
   // 2026-10-27 — Firebase Authentication proje id'si: kullanıcıya ait TÜM endpoint'lerin
   // kimliği bu projenin ID token'larından doğrulanıyor (iss/aud bu değere bağlı, bkz.
   // auth/firebase-token-verifier.ts). Boot'ta ZORUNLU: yoksa hiçbir kullanıcı doğrulanamaz.
@@ -160,12 +165,14 @@ export const envSchema = baseEnvSchema
         message: 'Production\'da SUBSCRIPTION_GATE_ENABLED açıkça "true" ya da "false" olarak verilmeli',
       });
     }
-    if (env.SUBSCRIPTION_GATE_ENABLED === "true") {
+    // 2026-11-22 — kapı HERHANGİ bir platforma uygulanıyorsa aynı güvenceler: yalnız iOS kapılı olsa bile anahtar eksikse
+    // açılışta düşülür (sessizce "kapı açık ama doğrulama yok" durumu oluşmaz).
+    if (env.SUBSCRIPTION_GATE_ENABLED === "true" || env.SUBSCRIPTION_GATE_PLATFORMS !== undefined) {
       if (!env.REVENUECAT_SECRET_API_KEY) {
-        ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["REVENUECAT_SECRET_API_KEY"], message: "SUBSCRIPTION_GATE_ENABLED=true iken REVENUECAT_SECRET_API_KEY zorunlu" });
+        ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["REVENUECAT_SECRET_API_KEY"], message: "Abonelik kapısı (SUBSCRIPTION_GATE_ENABLED=true ya da SUBSCRIPTION_GATE_PLATFORMS) açıkken REVENUECAT_SECRET_API_KEY zorunlu" });
       }
       if (!env.MEDIA_URL_SIGNING_SECRET) {
-        ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["MEDIA_URL_SIGNING_SECRET"], message: "SUBSCRIPTION_GATE_ENABLED=true iken MEDIA_URL_SIGNING_SECRET zorunlu" });
+        ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["MEDIA_URL_SIGNING_SECRET"], message: "Abonelik kapısı (SUBSCRIPTION_GATE_ENABLED=true ya da SUBSCRIPTION_GATE_PLATFORMS) açıkken MEDIA_URL_SIGNING_SECRET zorunlu" });
       }
     }
   })

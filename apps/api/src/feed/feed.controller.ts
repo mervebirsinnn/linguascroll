@@ -1,6 +1,7 @@
 import { BadRequestException, Controller, Get, Query, UseGuards } from "@nestjs/common";
-import type { FeedPage } from "@linguascroll/shared-types";
+import type { ClientPlatform, FeedPage } from "@linguascroll/shared-types";
 import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
+import { RequestPlatform } from "../subscriptions/request-platform.decorator";
 import { resolveFeedScope } from "./feed-scope";
 import { parseSessionSeedQuery } from "./feed-session-seed";
 import { parseFeedPreferenceQuery } from "./feed-preference-query";
@@ -35,6 +36,9 @@ export class FeedController {
     // cursor'daki değerle aynı olmalı. `unknown`: tekrarlı param (dizi) da Zod'da 400'e düşsün.
     @Query("sessionSeed") sessionSeed?: unknown,
     @Query("continuous") continuous?: unknown,
+    // 2026-11-22 — platforma göre abonelik kapısı (X-Client-Platform). Sonda ve varsayılanlı: mevcut controller testleri sıralı
+    // argümanla çağırıyor; HTTP'de değeri decorator verir (başlık yoksa null = bilinmeyen platform).
+    @RequestPlatform() platform: ClientPlatform | null = null,
   ): Promise<FeedPage> {
     if (continuous !== undefined && continuous !== "true" && continuous !== "false") throw new BadRequestException("Geçersiz continuous değeri");
     return this.feedService.getFeed(
@@ -44,6 +48,7 @@ export class FeedController {
       resolveFeedScope(scope, legacyCategory),
       parseSessionSeedQuery(sessionSeed),
       continuous === "true",
+      platform,
     );
   }
 }

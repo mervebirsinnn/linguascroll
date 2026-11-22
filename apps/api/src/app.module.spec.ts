@@ -221,3 +221,28 @@ describe("app.module envSchema — FIREBASE_PROJECT_ID (2026-10-27)", () => {
     expect(() => envSchema.parse({ DATABASE_URL: "postgres://user:pass@localhost:5432/db", FEED_CURSOR_SECRET: "a".repeat(32) })).toThrow(/FIREBASE_PROJECT_ID/);
   });
 });
+
+// 2026-11-22 — platforma göre abonelik kapısı: env biçimi ve "kapı açıkken anahtar zorunlu" güvencesi.
+describe("envSchema — SUBSCRIPTION_GATE_PLATFORMS", () => {
+  const REQUIRED_BASE_ENV = { DATABASE_URL: "postgres://user:pass@localhost:5432/db", FEED_CURSOR_SECRET: "a".repeat(32), FIREBASE_PROJECT_ID: "linguascroll-test" };
+  const secrets = { REVENUECAT_SECRET_API_KEY: "sk_test_not_real", MEDIA_URL_SIGNING_SECRET: "unit-media-signing-secret-at-least-32-chars" };
+
+  it("tanımsızken bugünkü davranış: anahtar zorunlu değil", () => {
+    expect(() => envSchema.parse({ ...REQUIRED_BASE_ENV, SUBSCRIPTION_GATE_ENABLED: "false" })).not.toThrow();
+  });
+
+  it("\"ios\" geçerli; RevenueCat ve medya imza anahtarlarıyla parse edilir", () => {
+    expect(envSchema.parse({ ...REQUIRED_BASE_ENV, SUBSCRIPTION_GATE_ENABLED: "false", SUBSCRIPTION_GATE_PLATFORMS: "ios", ...secrets }).SUBSCRIPTION_GATE_PLATFORMS).toBe("ios");
+  });
+
+  it("yalnız iOS kapılı olsa bile anahtarlar eksikse açılış reddedilir", () => {
+    const result = envSchema.safeParse({ ...REQUIRED_BASE_ENV, SUBSCRIPTION_GATE_ENABLED: "false", SUBSCRIPTION_GATE_PLATFORMS: "ios" });
+    expect(result.success).toBe(false);
+    const paths = result.success ? [] : result.error.issues.map((issue) => issue.path.join("."));
+    expect(paths).toEqual(expect.arrayContaining(["REVENUECAT_SECRET_API_KEY", "MEDIA_URL_SIGNING_SECRET"]));
+  });
+
+  it.each(["IOS", "ios, android", "web", ""])("geçersiz biçim reddedilir: %p", (value) => {
+    expect(envSchema.safeParse({ ...REQUIRED_BASE_ENV, SUBSCRIPTION_GATE_PLATFORMS: value, ...secrets }).success).toBe(false);
+  });
+});

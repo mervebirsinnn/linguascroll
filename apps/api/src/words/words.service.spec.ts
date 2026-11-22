@@ -156,6 +156,13 @@ describe("WordsService", () => {
       expect(saveWordSpy).toHaveBeenCalledWith(USER_ID, WORD_A_ID, null, PASSAGE_ID, null);
     });
 
+    it("erişim kararına istemci platformu iletilir (platforma göre kapı)", async () => {
+      const hasFullAccess = jest.fn((..._args: unknown[]) => Promise.resolve(true));
+      const service = makeService({ saveWordSpy: jest.fn(), findPassageWordAccess: () => Promise.resolve(open), hasFullAccess });
+      await service.saveWord(WORD_A_ID, USER_ID, null, PASSAGE_ID, null, "ios");
+      expect(hasFullAccess).toHaveBeenCalledWith(USER_ID, "ios");
+    });
+
     it("kilitli olmayan (tam erişimli) metin kaydedilir", async () => {
       const saveWordSpy = jest.fn();
       const service = makeService({ saveWordSpy, findPassageWordAccess: () => Promise.resolve(open), hasFullAccess: () => Promise.resolve(true) });

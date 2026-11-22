@@ -1,5 +1,5 @@
 import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from "@nestjs/common";
-import { normalizeGlossWord, savedWordSchema, type SavedWord, type VideoVocabularyItem, type WordsProgress } from "@linguascroll/shared-types";
+import { normalizeGlossWord, savedWordSchema, type ClientPlatform, type SavedWord, type VideoVocabularyItem, type WordsProgress } from "@linguascroll/shared-types";
 import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { UsersService } from "../users/users.service";
 import { computeWordReviewState } from "./review-scheduling";
@@ -58,6 +58,9 @@ export class WordsService {
     sourceSegmentId?: string | null,
     sourcePassageId?: string | null,
     sourcePassageSpanId?: string | null,
+    // 2026-11-22 — yalnız metinden kayıtta erişim kararı için (subscriptions/gate-policy.ts). Sonda ve varsayılanlı: tek çağıran
+    // controller; servis testleri sıralı argümanla çağırıyor.
+    platform: ClientPlatform | null = null,
   ): Promise<{ created: boolean }> {
     if (sourceSegmentId && sourcePassageId) {
       throw new BadRequestException("sourceSegmentId ve sourcePassageId birlikte gönderilemez");
@@ -77,7 +80,7 @@ export class WordsService {
       if (sourcePassageSpanId && !access.containsSpan) {
         throw new BadRequestException(`"${sourcePassageSpanId}" geçişi, "${sourcePassageId}" metnine ve "${wordId}" kelimesine ait değil`);
       }
-      if (!access.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId))) {
+      if (!access.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId, platform))) {
         throw new ForbiddenException("Bu metin için erişim yok");
       }
     }

@@ -6,8 +6,10 @@ import {
   type PassageAnswerResult,
   type PassagePage,
   type PassagesQuery,
+  type ClientPlatform,
 } from "@linguascroll/shared-types";
 import { AuthUserId, FirebaseAuthGuard } from "../auth/firebase-auth.guard";
+import { RequestPlatform } from "../subscriptions/request-platform.decorator";
 import { PassagesService } from "./passages.service";
 
 // Kimlik SADECE doğrulanmış Firebase token'ından (query/body'de userId yok) — quizzes.controller ile aynı kural.
@@ -17,8 +19,8 @@ export class PassagesController {
   constructor(private readonly passagesService: PassagesService) {}
 
   @Get()
-  list(@Query() query: unknown, @AuthUserId() userId: string): Promise<PassagePage> {
-    return this.passagesService.listPassages(userId, this.parseQuery(query));
+  list(@Query() query: unknown, @AuthUserId() userId: string, @RequestPlatform() platform: ClientPlatform | null): Promise<PassagePage> {
+    return this.passagesService.listPassages(userId, this.parseQuery(query), platform);
   }
 
   // POST ama kaynak YARATMIYOR, bir cevabı kaydedip değerlendiriyor: 200 (quizzes answer ile aynı karar). questionId path
@@ -29,9 +31,10 @@ export class PassagesController {
     @Param("questionId", new ParseUUIDPipe()) questionId: string,
     @Body() body: unknown,
     @AuthUserId() userId: string,
+    @RequestPlatform() platform: ClientPlatform | null,
   ): Promise<PassageAnswerResult> {
     const { optionId } = this.parseAnswerRequest(body);
-    return this.passagesService.answerQuestion(userId, questionId, optionId);
+    return this.passagesService.answerQuestion(userId, questionId, optionId, platform);
   }
 
   private parseQuery(query: unknown): PassagesQuery {

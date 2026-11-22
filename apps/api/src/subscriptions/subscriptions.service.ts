@@ -1,11 +1,12 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview, FeedScope } from "@linguascroll/shared-types";
+import type { ClientPlatform, PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview, FeedScope } from "@linguascroll/shared-types";
 import { MAIN_FEED_CATALOG_FILTER } from "../feed/feed-scope";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { FreeVideoGrantsRepository } from "./free-video-grants-repository";
 import { RevenueCatClient } from "./revenue-cat-client";
+import { gatePolicyFromEnv, isGateActive, type GatePolicy } from "./gate-policy";
 
 /** Her hesap için, feed scope'larının tamamında ortak 10 kalıcı ücretsiz video. */
 export const FREE_VIDEO_CAP = 10;
@@ -47,7 +48,8 @@ export type FeedAllowance = { unlimited: true } | { unlimited: false; grantedVid
 export class SubscriptionsService {
   private readonly subscriptionCache = new Map<string, CacheEntry>();
 
-  private readonly gateEnabled: boolean;
+  // 2026-11-22 — kapının hangi isteklere uygulanacağı (global şalter + platform listesi). Karar: gate-policy.ts isGateActive.
+  private readonly gatePolicy: GatePolicy;
 
   constructor(
     private readonly videosService: VideosService,
@@ -60,13 +62,13 @@ export class SubscriptionsService {
     // canlı kullanıcıları kilitlememek için). Açıkken RevenueCat secret'ı + medya imza
     // secret'ı boot'ta zorunlu (app.module.ts envSchema) — eksik yapılandırma sessizce
     // sınırsız erişim açamaz.
-    this.gateEnabled = configService.get<string>("SUBSCRIPTION_GATE_ENABLED") === "true";
+    this.gatePolicy = gatePolicyFromEnv(configService.get<string>("SUBSCRIPTION_GATE_ENABLED"), configService.get<string>("SUBSCRIPTION_GATE_PLATFORMS"));
   }
 
   /** Tek-akış ürün kararı: ücretsiz seçki scope'tan bağımsız, kullanıcı başına
    * atomik olarak sabitlenir. Legacy animation/ielts istekleri ayrı 10'luk hak açamaz. */
-  async getFeedAllowance(userId: string, _pageVideoIds: readonly string[], _scope: FeedScope = "all"): Promise<FeedAllowance> {
-    if (!this.gateEnabled || (await this.isSubscribed(userId))) {
+  async getFeedAllowance(userId: string, platform: ClientPlatform | null, _pageVideoIds: readonly string[], _scope: FeedScope = "all"): Promise<FeedAllowance> {
+    if (!isGateActive(this.gatePolicy, platform) || (await this.isSubscribed(userId))) {
       return { unlimited: true };
     }
 
@@ -82,25 +84,25 @@ export class SubscriptionsService {
    * hak defterine (free_video_grants) hiçbir şey yazmaz ve hak tüketmez. Abonelik önbelleği/RevenueCat
    * fail-closed davranışı `isSubscribed` ile aynı.
    */
-  async hasFullAccess(userId: string): Promise<boolean> {
-    return !this.gateEnabled || (await this.isSubscribed(userId));
+  async hasFullAccess(userId: string, platform: ClientPlatform | null): Promise<boolean> {
+    return !isGateActive(this.gatePolicy, platform) || (await this.isSubscribed(userId));
   }
 
   /** İmzalı URL yalnızca seçkideki video veya doğrulanmış abonelik için verilir.
    * scope istemciden gelse bile kategorisi backend'de doğrulanır. */
-  async requestPlaybackAccess(userId: string, videoId: string, scope: FeedScope = "all"): Promise<PlaybackAccessResponse> {
+  async requestPlaybackAccess(userId: string, platform: ClientPlatform | null, videoId: string, scope: FeedScope = "all"): Promise<PlaybackAccessResponse> {
     const video = await this.videosService.getPlayableVideoById(videoId);
     if (!video) {
       throw new NotFoundException(`Video bulunamadı: "${videoId}"`);
     }
     await this.assertUserExists(userId);
 
-    if (!this.gateEnabled || (await this.isSubscribed(userId))) {
+    if (!isGateActive(this.gatePolicy, platform) || (await this.isSubscribed(userId))) {
       return { status: "granted", playbackUrl: video.playbackUrl };
     }
 
     if (scope !== "all" && video.category !== scope) throw new BadRequestException("Video bu akışa ait değil");
-    const allowance = await this.getFeedAllowance(userId, [videoId], scope);
+    const allowance = await this.getFeedAllowance(userId, platform, [videoId], scope);
     return allowance.unlimited || allowance.grantedVideoIds.has(videoId)
       ? { status: "granted", playbackUrl: video.playbackUrl }
       : { status: "paywall" };
@@ -118,9 +120,10 @@ export class SubscriptionsService {
     return { active: subscription.active };
   }
 
-  async getOverview(userId: string): Promise<SubscriptionOverview> {
+  async getOverview(userId: string, platform: ClientPlatform | null): Promise<SubscriptionOverview> {
     await this.assertUserExists(userId);
-    const base = { gateEnabled: this.gateEnabled, freeVideoLimit: FREE_VIDEO_CAP, consumedFreeVideos: 0, remainingFreeVideos: FREE_VIDEO_CAP };
+    // gateEnabled istemciye "bu cihazda kapı uygulanıyor mu" bilgisidir (Hesabım metni): platforma göre.
+    const base = { gateEnabled: isGateActive(this.gatePolicy, platform), freeVideoLimit: FREE_VIDEO_CAP, consumedFreeVideos: 0, remainingFreeVideos: FREE_VIDEO_CAP };
     try {
       const subscription = await this.revenueCatClient.readSubscription(userId);
       this.cacheSubscription(userId, subscription.active, subscription.expiresAt);

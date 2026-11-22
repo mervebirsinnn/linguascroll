@@ -7,6 +7,7 @@ import {
   type PassageAnswerResult,
   type PassagePage,
   type PassagesQuery,
+  type ClientPlatform,
 } from "@linguascroll/shared-types";
 import { SubscriptionsService } from "../subscriptions/subscriptions.service";
 import { PassageAnswersRepository } from "./passage-answers-repository";
@@ -49,9 +50,11 @@ export class PassagesService {
     private readonly subscriptionsService: SubscriptionsService,
   ) {}
 
-  async listPassages(userId: string, query: PassagesQuery): Promise<PassagePage> {
+  // 2026-11-22 — `platform`: abonelik kapısı platforma göre (subscriptions/gate-policy.ts). Tek çağıran controller; sonda ve
+  // varsayılanlı (null = bilinmeyen platform) çünkü servis testleri sıralı argümanla çağırıyor.
+  async listPassages(userId: string, query: PassagesQuery, platform: ClientPlatform | null = null): Promise<PassagePage> {
     const after = this.parseCursor(query);
-    const hasFullAccess = await this.subscriptionsService.hasFullAccess(userId);
+    const hasFullAccess = await this.subscriptionsService.hasFullAccess(userId, platform);
 
     // +1 satır: "sonraki sayfa var mı" bilgisi için (ek bir COUNT sorgusu olmadan).
     const rows = await this.passagesRepository.findActivePage(query.level, after, PASSAGES_PAGE_SIZE + 1);
@@ -72,13 +75,13 @@ export class PassagesService {
     return passagePageSchema.parse({ items, nextCursor });
   }
 
-  async answerQuestion(userId: string, questionId: string, optionId: string): Promise<PassageAnswerResult> {
+  async answerQuestion(userId: string, questionId: string, optionId: string, platform: ClientPlatform | null = null): Promise<PassageAnswerResult> {
     const context = await this.passagesRepository.findQuestionAccessContext(questionId);
     // Emekli metin kullanıcıya gösterilmediği için cevaplanamaz: bilinmeyenle aynı 404.
     if (!context || context.retiredAt !== null) {
       throw new NotFoundException(`Soru bulunamadı: "${questionId}"`);
     }
-    if (!context.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId))) {
+    if (!context.isFreeSample && !(await this.subscriptionsService.hasFullAccess(userId, platform))) {
       throw new ForbiddenException("Bu metin için abonelik gerekli");
     }
 

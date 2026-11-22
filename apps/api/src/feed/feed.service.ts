@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { feedPageSchema, type ContentCategory, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type FeedScope, type PlayableVideo } from "@linguascroll/shared-types";
+import { feedPageSchema, type ClientPlatform, type ContentCategory, type FeedItem, type FeedPage, type FeedPreferences, type FeedQuiz, type FeedScope, type PlayableVideo } from "@linguascroll/shared-types";
 import {
   decodeFeedCursor,
   encodeFeedCursor,
@@ -92,7 +92,10 @@ export class FeedService {
    * yüzden `preference` continuation isteklerinde SESSİZCE yok sayılıyor
    * (mobile zaten sadece cursor'sız isteklerde gönderiyor, bkz. fetch-feed.ts).
    */
-  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences, scope: FeedScope = "all", sessionSeed?: string, continuous = false): Promise<FeedPage> {
+  // 2026-11-22 — `platform`: abonelik kapısı platforma göre (bkz. subscriptions/gate-policy.ts). Tek çağıran FeedController;
+  // sonda ve varsayılanlı (null = bilinmeyen platform) çünkü servis testleri bu metodu sıralı argümanla çağırıyor. İçeride
+  // her kapı kararına ZORUNLU parametre olarak taşınır; cursor'a YAZILMAZ (istek başına değerlendirilir).
+  async getFeed(userId: string, cursor?: string, preference?: FeedPreferences, scope: FeedScope = "all", sessionSeed?: string, continuous = false, platform: ClientPlatform | null = null): Promise<FeedPage> {
     const userExists = await this.usersService.userExists(userId);
     if (!userExists) {
       throw new BadRequestException(`"${userId}", var olan bir kullanıcıya ait değil`);
@@ -106,20 +109,20 @@ export class FeedService {
     // Boş string de "cursor yok" sayılır — query param'ın yanlışlıkla `?cursor=`
     // olarak boş gönderilmesi bir 400 değil, yeni bir session başlatır.
     if (cursor) {
-      return this.continueSession(userId, cursor, scope, sessionSeed);
+      return this.continueSession(userId, platform, cursor, scope, sessionSeed);
     }
     // LEGACY-COMPAT(seedless-feed): kaldırma koşulu — seed gönderen mobile build'in %100'e yakın yayılması; kaldırınca
     // `?? generateServerSessionSeed()` silinir ve seed'siz istek 400 olur (feed-session-seed.ts + feed-scope.e2e-spec.ts'teki ilgili test de gider).
     // Eski mobile build'ler seed göndermez (geçici uyumluluk): sunucu üretir ve v3 cursor'a yazar. Seed VARSA
     // (yeni client) biçimi controller'da doğrulanmıştır ve aynen kullanılır.
-    return this.startSession(userId, preference, scope, sessionSeed ?? generateServerSessionSeed(), continuous);
+    return this.startSession(userId, platform, preference, scope, sessionSeed ?? generateServerSessionSeed(), continuous);
   }
 
-  private async startSession(userId: string, preference: FeedPreferences | undefined, scope: FeedScope, sessionSeed: string, continuous = false): Promise<FeedPage> {
+  private async startSession(userId: string, platform: ClientPlatform | null, preference: FeedPreferences | undefined, scope: FeedScope, sessionSeed: string, continuous = false): Promise<FeedPage> {
     // Kapsam filtresi DB'de (repository predicate'i): kapsam dışı satırlar application katmanına HİÇ taşınmaz.
     // "all" için predicate yoktur. Personalization, kapsamdaki TÜM adayları sıralamak zorunda (bkz. rankVideos).
     let videos = await this.videosService.getVideoFeed(scopeToVideoFilter(scope));
-    const allowance = await this.subscriptionsService.getFeedAllowance(userId, videos.map((v) => v.id), scope);
+    const allowance = await this.subscriptionsService.getFeedAllowance(userId, platform, videos.map((v) => v.id), scope);
     // Kategori boşsa bütün (ana) katalogdan beslenir; izole kategori (Cabin Crew) ana akış içeriğiyle DOLDURULMAZ.
     if (continuous && allowance.unlimited && videos.length === 0 && scope !== "all" && !isIsolatedScope(scope)) videos = await this.videosService.getVideoFeed(MAIN_FEED_CATALOG_FILTER);
     const candidates = allowance.unlimited ? videos : videos.filter((v) => allowance.grantedVideoIds.has(v.id));
@@ -127,7 +130,7 @@ export class FeedService {
     const boundedVideos = personalizedVideos.slice(0, MAX_SESSION_VIDEOS);
 
     const plan = await this.composePlan(boundedVideos);
-    return this.buildPage(userId, plan, 0, scope, sessionSeed, { continuous, preferences: preference, scopedCount: scope === "all" ? undefined : boundedVideos.length });
+    return this.buildPage(userId, platform, plan, 0, scope, sessionSeed, { continuous, preferences: preference, scopedCount: scope === "all" ? undefined : boundedVideos.length });
   }
 
   private async composePlan(videos: PlayableVideo[]): Promise<FeedPlanItemRef[]> {
@@ -157,7 +160,7 @@ export class FeedService {
     return {plan: await this.composePlan(selected), scopedCount: scopedCount + (remaining > 0 ? selected.length : 0)};
   }
 
-  private continueSession(userId: string, cursor: string, scope: FeedScope, sessionSeed?: string): Promise<FeedPage> {
+  private continueSession(userId: string, platform: ClientPlatform | null, cursor: string, scope: FeedScope, sessionSeed?: string): Promise<FeedPage> {
     let payload: FeedCursorPayload;
     try {
       payload = decodeFeedCursor(cursor, this.cursorSecret);
@@ -182,13 +185,13 @@ export class FeedService {
     // @deprecated v2 (seed'siz): yalnızca İÇİNDEKİ frozen plan devam ettirilir; ranking/shuffle hiç çalışmaz ve
     // sonraki cursor da v2 olarak yeniden imzalanır (sahte bir seed uydurulmaz). İmza/userId/scope kontrolleri yukarıda aynen uygulandı.
     if (payload.v === LEGACY_FEED_CURSOR_VERSION) {
-      return this.buildPage(userId, payload.plan, payload.position, scope);
+      return this.buildPage(userId, platform, payload.plan, payload.position, scope);
     }
     // v3: query'de seed verilmişse imzalı cursor'daki seed'le AYNI olmalı; verilmediyse cursor'daki değer geçerlidir.
     if (sessionSeed !== undefined && sessionSeed !== payload.sessionSeed) {
       throw new BadRequestException("Cursor, bu sessionSeed'e ait değil");
     }
-    return this.buildPage(userId, payload.plan, payload.position, scope, payload.sessionSeed, { continuous: payload.continuous, preferences: payload.preferences, scopedCount: payload.scopedCount });
+    return this.buildPage(userId, platform, payload.plan, payload.position, scope, payload.sessionSeed, { continuous: payload.continuous, preferences: payload.preferences, scopedCount: payload.scopedCount });
   }
 
   /**
@@ -207,7 +210,7 @@ export class FeedService {
    * döngü en fazla ceil(plan.length / PAGE_SIZE) kez çalışır — sonsuz döngü
    * riski yok, plan zaten sonlu ve donmuş.
    */
-  private async buildPage(userId: string, plan: FeedPlanItemRef[], startPosition: number, scope: FeedScope, sessionSeed?: string, context: ContinuousContext = {}): Promise<FeedPage> {
+  private async buildPage(userId: string, platform: ClientPlatform | null, plan: FeedPlanItemRef[], startPosition: number, scope: FeedScope, sessionSeed?: string, context: ContinuousContext = {}): Promise<FeedPage> {
     let position = startPosition;
     let items: FeedItem[] = [];
 
@@ -223,7 +226,7 @@ export class FeedService {
     }
 
     if (items.length > 0) {
-      const allowed = await this.applyFreeVideoAllowance(userId, items, scope);
+      const allowed = await this.applyFreeVideoAllowance(userId, platform, items, scope);
       if (allowed.cutOff) {
         // Hak bitti: paywall son item, session burada biter (devam cursor'ı yok).
         return feedPageSchema.parse({ items: allowed.items, nextCursor: null });
@@ -245,7 +248,7 @@ export class FeedService {
     if (nextCursor === null && context.continuous && sessionSeed !== undefined) {
       // İstemcinin continuous isteği abonelik kanıtı değildir. Her parti sonunda
       // backend yeniden yetki kontrolü yapar; biten abonelik yeni katalog açamaz.
-      const allowance = await this.subscriptionsService.getFeedAllowance(userId, [], scope);
+      const allowance = await this.subscriptionsService.getFeedAllowance(userId, platform, [], scope);
       if (allowance.unlimited) {
         const nextSeed = sessionSeed;
         const nextPlan = await this.nextContinuousPlan(userId, plan, scope, nextSeed, context.preferences, context.scopedCount);
@@ -254,7 +257,7 @@ export class FeedService {
     }
     // Ücretsiz seçki bitince Premium gelir; yenilemede aynı videolar yeniden erişilebilir.
     if (nextCursor === null && items.length > 0) {
-      const allowance = await this.subscriptionsService.getFeedAllowance(userId, [], scope);
+      const allowance = await this.subscriptionsService.getFeedAllowance(userId, platform, [], scope);
       if (!allowance.unlimited) items.push({ type: "paywall" });
     }
     return feedPageSchema.parse({ items, nextCursor });
@@ -262,9 +265,9 @@ export class FeedService {
 
   /** Eski cursor'lar dahil, ücretsiz seçki dışındaki videolara URL sızmasını engeller.
    * Yeni oturumun planı zaten seçkiden kurulur; tekrar izlemeler listeyi azaltmaz. */
-  private async applyFreeVideoAllowance(userId: string, items: FeedItem[], scope: FeedScope): Promise<{ items: FeedItem[]; cutOff: boolean }> {
+  private async applyFreeVideoAllowance(userId: string, platform: ClientPlatform | null, items: FeedItem[], scope: FeedScope): Promise<{ items: FeedItem[]; cutOff: boolean }> {
     const pageVideoIds = items.flatMap((item) => (item.type === "video" ? [item.video.id] : []));
-    const allowance = await this.subscriptionsService.getFeedAllowance(userId, pageVideoIds, scope);
+    const allowance = await this.subscriptionsService.getFeedAllowance(userId, platform, pageVideoIds, scope);
     if (allowance.unlimited) {
       return { items, cutOff: false };
     }

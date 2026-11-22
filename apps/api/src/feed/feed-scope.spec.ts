@@ -72,17 +72,17 @@ describe("FeedController scope", () => {
 
   it("scope/category yoksa all ile çağrılır", async () => {
     await controller.getFeed("user");
-    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: null, topics: [] }, "all", undefined, false);
+    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: null, topics: [] }, "all", undefined, false, null);
   });
 
   it("ielts scope'u tercih sinyalinden bağımsız geçirir (level yalnızca sıralama sinyali)", async () => {
     await controller.getFeed("user", undefined, "C1", "travel", "ielts");
-    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: "C1", topics: ["travel"] }, "ielts", undefined, false);
+    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: "C1", topics: ["travel"] }, "ielts", undefined, false, null);
   });
 
   it("continuous yalnızca açık boolean metni kabul eder", () => {
     controller.getFeed("user",undefined,undefined,undefined,"all",undefined,undefined,"true");
-    expect(getFeed).toHaveBeenLastCalledWith("user",undefined,{level:null,topics:[]},"all",undefined,true);
+    expect(getFeed).toHaveBeenLastCalledWith("user",undefined,{level:null,topics:[]},"all",undefined,true,null);
     for(const value of ["1", "", ["true", "true"]]) expect(() => controller.getFeed("user",undefined,undefined,undefined,"all",undefined,undefined,value)).toThrow(BadRequestException);
   });
 
@@ -93,13 +93,13 @@ describe("FeedController scope", () => {
 
   it("eski client'ın category=animation isteği animation scope'una gider", async () => {
     await controller.getFeed("user", undefined, undefined, undefined, undefined, "animation");
-    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: null, topics: [] }, "animation", undefined, false);
+    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: null, topics: [] }, "animation", undefined, false, null);
   });
 
   it("sessionSeed doğrulanıp service'e iletilir; geçersiz/dizi seed service çağrılmadan 400", async () => {
     const seed = "0123456789abcdef0123456789abcdef";
     await controller.getFeed("user", undefined, undefined, undefined, "ielts", undefined, seed);
-    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: null, topics: [] }, "ielts", seed, false);
+    expect(getFeed).toHaveBeenCalledWith("user", undefined, { level: null, topics: [] }, "ielts", seed, false, null);
 
     getFeed.mockClear();
     for (const bad of ["", "ABC", "a".repeat(33), "a".repeat(5000), [seed, seed]]) {
