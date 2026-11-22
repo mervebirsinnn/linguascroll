@@ -14,7 +14,7 @@ Birincil dil: Türkçe.
 
 ## Tanıtım metni (170)
 ```
-Kaydır, izle, öğren. Kısa videolarda altyazıdaki kelimeye dokun, anlamını gör, kaydet; quizlerle pekiştir.
+Kaydır, izle, öğren. Kısa videolarda ve B1–C2 okuma metinlerinde kelimeye dokun, anlamını gör, kaydet; sorularla pekiştir.
 ```
 
 ## Açıklama (4000)
@@ -23,18 +23,21 @@ Looplish, İngilizceyi kısa videolarla öğrenmenin kolay yolu.
 
 Akışı kaydır, kısa videoları izle. Altyazıdaki herhangi bir kelimeye dokunduğunda anlamını ve geçtiği cümleyi görürsün; beğendiğin kelimeyi tek dokunuşla kaydedersin. Videoların arasında çıkan kısa quizler, az önce duyduklarını pekiştirir.
 
+Okuma pratiğiyle B1'den C2'ye seviyene uygun metinler oku. Her metnin ardından dört soru gelir; her şıkkın neden doğru ya da yanlış olduğunu Türkçe açıklamasıyla görürsün. Metindeki kelimelere dokunarak anlamlarını öğren ve kelime defterine ekle.
+
 NELER VAR
 • Altyazılı kısa videolar: günlük konuşmadan gerçek hayattan sahnelere
+• Okuma pratiği: B1–C2 metinler, her metinde 4 soru ve Türkçe açıklamalar
 • Kelimeye dokun: anlamı ve geçtiği cümleyi gör
-• Kelimelerim: kaydettiğin kelimeleri tekrar et, unutmadan öğren
+• Kelimelerim: videolardan ve metinlerden kaydettiğin kelimeleri tekrar et
 • Videolara bağlı kısa quizler
-• İlgi alanına ve seviyene göre kişiselleşen akış
+• Seviyene ve ilgi alanlarına göre kişiselleşen akış; seviyeni istediğin zaman Hesabım'dan değiştir
 
 ÜCRETSİZ BAŞLA
-İlk videoları hesap açmadan izleyebilirsin. Daha fazlası için Premium'a geçebilirsin.
+İlk 10 videoyu ve seçili okuma metinlerini hesap açmadan deneyebilirsin. Daha fazlası için Premium'a geçebilirsin.
 
 LOOPLISH PREMIUM
-Premium ile tüm videolara ve quizlere sınırsız erişirsin. Abonelik, Apple Kimliği hesabından tahsil edilir ve dönem bitiminden en az 24 saat önce iptal edilmezse otomatik olarak yenilenir. Aboneliğini Ayarlar › Apple Hesabı › Abonelikler bölümünden yönetebilir veya iptal edebilirsin. Ücretsiz deneme sunuluyorsa, deneme bitmeden en az 24 saat önce iptal etmezsen ücretlendirilirsin.
+Premium ile tüm videolara, quizlere ve okuma metinlerine sınırsız erişirsin. Abonelik, Apple Kimliği hesabından tahsil edilir ve dönem bitiminden en az 24 saat önce iptal edilmezse otomatik olarak yenilenir. Aboneliğini Ayarlar › Apple Hesabı › Abonelikler bölümünden yönetebilir veya iptal edebilirsin. Ücretsiz deneme sunuluyorsa, deneme bitmeden en az 24 saat önce iptal etmezsen ücretlendirilirsin.
 
 Kullanım Koşulları: https://looplish.app/terms
 Gizlilik Politikası: https://looplish.app/privacy
@@ -42,13 +45,13 @@ Gizlilik Politikası: https://looplish.app/privacy
 
 ## Anahtar kelimeler (100, virgülle, boşluksuz)
 ```
-ingilizce,kelime,altyazı,dil öğren,video,quiz,dinleme,kelime ezberle,b1,b2,c1,ielts,pratik
+ingilizce,kelime,altyazı,dil öğren,video,quiz,okuma,kelime ezberle,b1,b2,c1,c2,ielts,pratik
 ```
-(90 karakter. Uygulama adındaki "Looplish" kelimesini tekrar yazmaya gerek yok.)
+(91 karakter; "dinleme" yerine "okuma" ve "c2" eklendi. Uygulama adındaki "Looplish" kelimesini tekrar yazmaya gerek yok.)
 
 ## Bu sürümdeki yenilikler
 ```
-Looplish artık iPhone'da! Apple veya Google hesabınla giriş yap, kelimelerin ve ilerlemen her cihazda seninle.
+Looplish artık iPhone'da! Apple veya Google hesabınla giriş yap. Yeni okuma pratiğinde B1–C2 metinler ve sorular seni bekliyor; seviyeni Hesabım'dan dilediğin zaman değiştirebilirsin.
 ```
 
 ## Yaş derecelendirmesi anketi
@@ -88,9 +91,9 @@ Uygulama ayarları:
 | Tanımlayıcılar › Kullanıcı ID'si | Evet | Hayır | Uygulama işlevselliği, Analitik | Firebase UID, backend `users.id` = RevenueCat App User ID; GoogleSignIn Analitik de beyan ediyor |
 | Tanımlayıcılar › Cihaz ID'si | Evet | Hayır | Analitik | GoogleSignIn 9.2.0 manifest'i |
 | Satın Alımlar › Satın alma geçmişi | **Evet** | Hayır | Uygulama işlevselliği, Analitik | RevenueCat; abonelik backend'de `users.id` ile eşleniyor. RevenueCat'in önerdiği asgari amaçlar bu ikisi |
-| Kullanım Verileri › Ürün etkileşimi | Evet | Hayır | Uygulama işlevselliği, Ürün kişiselleştirme | İzleme olayları, quiz cevapları, kelime tekrarları (akış sıralaması) |
+| Kullanım Verileri › Ürün etkileşimi | Evet | Hayır | Uygulama işlevselliği, Ürün kişiselleştirme | İzleme olayları, quiz ve okuma sorusu cevapları, kelime tekrarları, seçilen seviye (akış sıralaması) |
 | Kullanım Verileri › Diğer kullanım verileri | Evet | Hayır | Analitik | GoogleSignIn 9.2.0 manifest'i |
-| Kullanıcı İçeriği › Diğer kullanıcı içeriği | Evet | Hayır | Uygulama işlevselliği | Kaydedilen kelimeler, video geri bildirimi |
+| Kullanıcı İçeriği › Diğer kullanıcı içeriği | Evet | Hayır | Uygulama işlevselliği | Kaydedilen kelimeler (videodan ya da metinden, kaynak cümlesiyle), video geri bildirimi |
 | Diğer Veriler › Diğer veri türleri | Evet | Hayır | Uygulama işlevselliği, Analitik | GoogleSignIn 9.2.0 manifest'i |
 | Teşhis › Çökme verileri | Hayır | Hayır | Uygulama işlevselliği | Sentry |
 | Teşhis › Performans verileri | Hayır | Hayır | Uygulama işlevselliği | Sentry manifest'i (tracing kapalı olsa da beyan ediyor) |
@@ -133,7 +136,9 @@ Abonelik grubu görünen adı: `Looplish Premium`.
 ```
 Looplish is a short-video English learning app (UI in Turkish).
 
-- The first videos can be watched without signing in (an anonymous guest account is created automatically).
+- The first 10 videos and the free sample reading texts can be used without signing in (an anonymous guest account is created automatically). After that the feed shows the paywall.
+- Reading practice: tap "Okuma" on the feed, pick a level (B1–C2), read the text and answer 4 questions. Free sample texts are open; the others need Premium.
+- The English level can be changed under "Kelimelerim" › "Hesabım" › "İngilizce seviyem"; the feed and the reading practice use it.
 - Subscriptions are account-based and shared with our Android app, so the paywall asks the user to continue with Apple or Google before purchasing. Sign in with Apple requests no name or email. Purchases can be restored via "Satın alımları geri yükle" (Restore Purchases).
 - To reach the paywall and purchase: tap "Kelimelerim" on the feed › "Hesabım" › "Premium planlarını gör" (See Premium plans). This entry is always available while the account has no active subscription.
 - Account deletion: Kelimelerim › Hesabım › Hesabımı sil (Delete my account). The user re-authenticates, the Sign in with Apple token is revoked, and all account data is deleted. Deleting the account does not cancel an App Store subscription; the confirmation dialog explains this and links to subscription management.
