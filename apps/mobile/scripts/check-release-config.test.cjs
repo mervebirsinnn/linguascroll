@@ -11,3 +11,12 @@ test('production doğrulaması EAS build yaşam döngüsüne bağlıdır',()=>{
   const pkg=require('../package.json');
   assert.equal(pkg.scripts['eas-build-pre-install'],'node scripts/check-release-config.cjs --eas');
 });
+// 2026-11-20 — iOS yayını: platforma özel anahtarlar.
+const validIos={...valid,EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY:undefined,EXPO_PUBLIC_REVENUECAT_IOS_API_KEY:'appl_public-test',EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID:'123-abc.apps.googleusercontent.com'};
+test('tam iOS production ortamını Android anahtarı olmadan kabul eder',()=>assert.deepEqual(validateReleaseEnv(validIos,'ios'),[]));
+test('iOS build App Store anahtarı ve Google iOS client id ister',()=>assert.deepEqual(validateReleaseEnv({...validIos,EXPO_PUBLIC_REVENUECAT_IOS_API_KEY:'',EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID:' '},'ios'),['EXPO_PUBLIC_REVENUECAT_IOS_API_KEY eksik','EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID eksik']));
+test('iOS build Google Play anahtarını ve hatalı client id biçimini reddeder',()=>assert.equal(validateReleaseEnv({...validIos,EXPO_PUBLIC_REVENUECAT_IOS_API_KEY:'goog_x',EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID:'123-abc'},'ios').length,2));
+test('Android build iOS anahtarlarını zorunlu tutmaz',()=>assert.deepEqual(validateReleaseEnv(valid,'android'),[]));
+test('bilinmeyen platform reddedilir',()=>assert.equal(validateReleaseEnv(valid,'web').length,1));
+test('EAS iOS production hook iOS anahtarlarını ister',()=>{const r=spawnSync(process.execPath,[require.resolve('./check-release-config.cjs'),'--eas'],{env:{...valid,EAS_BUILD_PROFILE:'production',EAS_BUILD_PLATFORM:'ios'},encoding:'utf8'});assert.equal(r.status,1);assert.match(r.stderr,/EXPO_PUBLIC_REVENUECAT_IOS_API_KEY eksik/);assert.doesNotMatch(r.stderr,/ANDROID/);});
+test('app.config.js iOS client id değerinden Google URL şemasını üretir, hatalı biçimi reddeder',()=>{const {googleIosUrlScheme}=require('../app.config.js');assert.equal(googleIosUrlScheme('123-abc.apps.googleusercontent.com'),'com.googleusercontent.apps.123-abc');assert.throws(()=>googleIosUrlScheme('123-abc'));});

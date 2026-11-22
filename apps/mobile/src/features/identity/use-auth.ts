@@ -5,7 +5,20 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import * as Sentry from "@sentry/react-native";
 import { logOutPurchases } from "../subscription/purchases-gateway";
 import { fetchCurrentUser } from "./api/fetch-current-user";
-import { isAuthConfigured, reauthenticateForDeletion, linkGoogleAccount, signInAsGuest, signInWithGoogle, signOutOfAuth, subscribeToAuthState } from "./auth-gateway";
+import {
+  isAuthConfigured,
+  reauthenticateForDeletion,
+  linkAppleAccount as linkAppleAccountWithGateway,
+  linkGoogleAccount,
+  signInAsGuest,
+  signInWithApple as signInWithAppleGateway,
+  signInWithGoogle,
+  signOutOfAuth,
+  subscribeToAuthState,
+  currentAuthProvider,
+  type LinkOutcome,
+  type SignInOutcome,
+} from "./auth-gateway";
 import {
   applyAuthChanged,
   applyGuestFailed,
@@ -22,6 +35,7 @@ import {
   applyUserRetry,
   canStartLink,
   initialAuthState,
+  type AuthProvider,
   type AuthState,
 } from "./auth-state";
 import { markAccountLinked, readLinkedAccountFlag } from "./linked-account-flag";
@@ -29,9 +43,12 @@ import { markAccountLinked, readLinkedAccountFlag } from "./linked-account-flag"
 type UseAuthResult = {
   state: AuthState;
   signIn: () => void;
+  /** 2026-11-20 — yalnızca isAppleSignInAvailable() iken çağrılmalı (App.tsx bunu sağlıyor). */
+  signInWithApple: () => void;
   deleteAccount: () => Promise<boolean>;
   signOut: () => void;
   linkAccount: () => void;
+  linkAppleAccount: () => void;
   retryUser: () => void;
   retryGuest: () => void;
 };
@@ -60,7 +77,7 @@ export function useAuth(): UseAuthResult {
       unsubscribe = subscribeToAuthState((session) => {
         if (lastUid.current !== (session?.uid ?? null)) deletionToken.current = null;
         lastUid.current = session?.uid ?? null;
-        // Kalıcı bir Google oturumu da "bu cihazda hesap bağlandı" demektir — bayrak bu akıştan önce
+        // Kalıcı bir Google (2026-11-20: ya da Apple) oturumu da "bu cihazda hesap bağlandı" demektir — bayrak bu akıştan önce
         // (ör. 2026-10-27 build'i, girişin zorunlu olduğu sürüm) açılmış oturumlarda hiç yazılmamış
         // olabilir. Yazılmazsa çıkış giriş ekranı yerine YENİ misafir (yeni 10 hak) açmaya çalışır
         // (cihazda gerçekten yaşandı, 2026-10-28).
@@ -113,9 +130,10 @@ export function useAuth(): UseAuthResult {
     markAccountLinked().catch((error: unknown) => Sentry.captureException(error));
   }, []);
 
-  function signIn(): void {
+  // 2026-11-20 — Google ve Apple girişi AYNI geçişleri kullanır; yalnızca gateway çağrısı farklı.
+  function startSignIn(signInWithProvider: () => Promise<SignInOutcome>): void {
     setState(applySignInStarted);
-    signInWithGoogle()
+    signInWithProvider()
       .then((outcome) => {
         // "signed-in" için durum oturum dinleyicisinden ilerliyor (loadingUser → signedIn).
         if (outcome === "cancelled") setState(applySignInCancelled);
@@ -127,12 +145,13 @@ export function useAuth(): UseAuthResult {
       });
   }
 
-  // Sabit referans: App.tsx bunu useMemo'lu `account` nesnesine koyuyor (Feed'in FlatList extraData'sı).
-  const linkAccount = useCallback((): void => {
+  // 2026-11-20 — Google ve Apple bağlama AYNI kilidi (linkingLock) ve geçişleri paylaşır: biri sürerken
+  // diğer butona basmak ikinci bir native sayfa açmaz. `provider` yalnızca SDK sağlayıcıyı okuyamazsa yedek.
+  const startLink = useCallback((linkWithProvider: () => Promise<LinkOutcome>, provider: AuthProvider): void => {
     if (linkingLock.current || !canStartLink(stateRef.current)) return;
     linkingLock.current = true;
     setState(applyLinkStarted);
-    linkGoogleAccount()
+    linkWithProvider()
       .then((outcome) => {
         if (outcome === "cancelled") {
           setState(applyLinkEnded);
@@ -140,13 +159,17 @@ export function useAuth(): UseAuthResult {
         }
         rememberLinkedAccount();
         // "switched": yeni kullanıcıyı oturum dinleyicisi yüklüyor; burada sadece gösterge kapanır.
-        setState(outcome === "linked" ? applyLinkSucceeded : applyLinkEnded);
+        setState((current) => (outcome === "linked" ? applyLinkSucceeded(current, currentAuthProvider() ?? provider) : applyLinkEnded(current)));
       })
       .catch((error: unknown) => {
         Sentry.captureException(error);
         setState(applyLinkFailed);
       }).finally(() => { linkingLock.current = false; });
   }, [rememberLinkedAccount]);
+
+  // Sabit referans: App.tsx bunu useMemo'lu `account` nesnesine koyuyor (Feed'in FlatList extraData'sı).
+  const linkAccount = useCallback((): void => startLink(linkGoogleAccount, "google"), [startLink]);
+  const linkApple = useCallback((): void => startLink(linkAppleAccountWithGateway, "apple"), [startLink]);
 
   function signOut(): void {
     // Önce RevenueCat oturumu kapatılır: bir sonraki hesap, öncekinin önbellekteki müşteri
@@ -158,6 +181,11 @@ export function useAuth(): UseAuthResult {
       });
   }
 
+  // 2026-11-20 — Apple belirteci iptali reauthenticateForDeletion'ın İÇİNDE ve deletionToken'dan ÖNCE: iptal
+  // başarısızsa token önbelleğe girmez, bir sonraki deneme yeniden doğrulama + iptali baştan yapar. Önbellekli
+  // token ile tekrar deneme (DELETE geçici hata verdiyse) iptali atlar — bu doğru, çünkü iptal zaten başarılı oldu
+  // (authorizationCode tek kullanımlık; aynı yetkiyi ikinci kez iptal edecek bir şey yok). 401'de token düşer ve
+  // akış taze Apple doğrulaması + iptalle baştan başlar.
   const deleteAccount = useCallback(async (): Promise<boolean> => {
     if (!deletionToken.current) {
       if (!(await reauthenticateForDeletion())) return false;
@@ -176,10 +204,12 @@ export function useAuth(): UseAuthResult {
 
   return {
     state,
-    signIn,
+    signIn: () => startSignIn(signInWithGoogle),
+    signInWithApple: () => startSignIn(signInWithAppleGateway),
     deleteAccount,
     signOut,
     linkAccount,
+    linkAppleAccount: linkApple,
     retryUser: () => setState(applyUserRetry),
     retryGuest: () => setState(applyGuestRetry),
   };

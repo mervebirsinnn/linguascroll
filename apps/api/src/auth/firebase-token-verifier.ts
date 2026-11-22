@@ -3,6 +3,22 @@ import { ConfigService } from "@nestjs/config";
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { getAuth, type Auth } from "firebase-admin/auth";
 
+
+/**
+ * 2026-11-20 — iOS yayını: silme yalnızca SON 5 DAKİKADA gerçek bir hesap sağlayıcısıyla yeniden doğrulanmış token'la
+ * yapılır. Eskiden yalnızca "google.com" kabul ediliyordu; iOS'ta Sign in with Apple eklenince Apple kullanıcısının
+ * token'ı ("apple.com") her silmede 401 alıyordu → Apple kullanıcısı hesabını HİÇ silemezdi (App Store 5.1.1(v) reddi).
+ * "anonymous" bilinçli olarak dışarıda: misafirin silinecek kalıcı hesabı yok ve taze doğrulama kanıtı olamaz.
+ */
+const DELETION_PROVIDERS: ReadonlySet<string> = new Set(["google.com", "apple.com"]);
+
+export function isFreshDeletionLogin(decoded: { auth_time: number; firebase?: { sign_in_provider?: string } }, nowSeconds: number): boolean {
+  return Number.isFinite(decoded.auth_time)
+    && nowSeconds - decoded.auth_time <= 300
+    && decoded.auth_time <= nowSeconds + 60
+    && DELETION_PROVIDERS.has(decoded.firebase?.sign_in_provider ?? "");
+}
+
 /** Default app yerine adlandırılmış app: başka bir kod parçası default Firebase app'i başka ayarla açarsa çakışmasın. */
 const FIREBASE_APP_NAME = "linguascroll-auth";
 
@@ -56,11 +72,11 @@ export class FirebaseTokenVerifier {
     try { decoded = await this.auth.verifyIdToken(token); }
     catch (error) {
       const code = typeof error === "object" && error !== null && "code" in error ? String(error.code) : undefined;
-      if (code && INVALID_TOKEN_ERROR_CODES.has(code)) throw new UnauthorizedException("Google ile yeniden doğrula");
+      if (code && INVALID_TOKEN_ERROR_CODES.has(code)) throw new UnauthorizedException("Hesabınla yeniden doğrula");
       throw new ServiceUnavailableException("Kimlik doğrulanamadı; tekrar dene.");
     }
-    if (!Number.isFinite(decoded.auth_time) || Date.now() / 1000 - decoded.auth_time > 300 || decoded.auth_time > Date.now() / 1000 + 60 || decoded.firebase?.sign_in_provider !== "google.com") {
-      throw new UnauthorizedException("Hesabını silmek için Google ile yeniden doğrula");
+    if (!isFreshDeletionLogin(decoded, Date.now() / 1000)) {
+      throw new UnauthorizedException("Hesabını silmek için hesabınla yeniden doğrula");
     }
     return decoded.uid;
   }

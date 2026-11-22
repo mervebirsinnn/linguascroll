@@ -7,7 +7,12 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "app.looplish.mobile",
+      "usesAppleSignIn": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "app.looplish.mobile",
@@ -27,6 +32,7 @@
     },
     "plugins": [
       "expo-video",
+      "expo-apple-authentication",
       [
         "@sentry/react-native/expo",
         {

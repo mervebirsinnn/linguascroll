@@ -12,6 +12,7 @@ import {
   applyUserLoaded,
   applyUserLoadFailed,
   applyUserRetry,
+  authProviderFromProviderIds,
   canStartLink,
   initialAuthState,
   NOTICE_LINK_FAILED,
@@ -22,8 +23,8 @@ import {
 
 const USER_ID = "00000000-0000-4000-8000-000000000001";
 const OTHER_USER_ID = "00000000-0000-4000-8000-000000000002";
-const guest: AuthSession = { uid: "anon-uid", isAnonymous: true };
-const google: AuthSession = { uid: "google-uid", isAnonymous: false };
+const guest: AuthSession = { uid: "anon-uid", isAnonymous: true, provider: null };
+const google: AuthSession = { uid: "google-uid", isAnonymous: false, provider: "google" };
 const signedOut: AuthState = { status: "signedOut", notice: null };
 const signedInGuest: AuthState = { status: "signedIn", userId: USER_ID, session: guest, linking: false, notice: null };
 
@@ -104,8 +105,13 @@ describe("auth state — misafiri Google hesabına bağlama (paywall)", () => {
   });
 
   it("'linked': backend kullanıcısı (userId) ve Firebase UID AYNI kalır, sadece misafirlik biter", () => {
-    const linked = applyLinkSucceeded(applyLinkStarted(signedInGuest));
-    expect(linked).toEqual({ status: "signedIn", userId: USER_ID, session: { uid: guest.uid, isAnonymous: false }, linking: false, notice: null });
+    const linked = applyLinkSucceeded(applyLinkStarted(signedInGuest), "google");
+    expect(linked).toEqual({ status: "signedIn", userId: USER_ID, session: { uid: guest.uid, isAnonymous: false, provider: "google" }, linking: false, notice: null });
+  });
+
+  it("Apple ile bağlama: aynı kullanıcı, sağlayıcı 'apple' olarak state'e yazılır (dinleyici tetiklenmez)", () => {
+    const linked = applyLinkSucceeded(applyLinkStarted(signedInGuest), "apple");
+    expect(linked).toEqual({ status: "signedIn", userId: USER_ID, session: { uid: guest.uid, isAnonymous: false, provider: "apple" }, linking: false, notice: null });
   });
 
   it("'switched': gösterge kapanır, ardından dinleyici başka kullanıcıyı bildirince o kullanıcı yüklenir", () => {
@@ -125,5 +131,25 @@ describe("auth state — misafiri Google hesabına bağlama (paywall)", () => {
     expect(failed).toEqual({ ...signedInGuest, notice: NOTICE_LINK_FAILED });
     expect(canStartLink(failed)).toBe(true);
     expect(applyLinkStarted(failed)).toEqual({ ...signedInGuest, linking: true, notice: null });
+  });
+});
+
+describe("auth state — sağlayıcı (2026-11-20, iOS: Apple + Google)", () => {
+  it("providerData id'lerinden sağlayıcı: apple.com → apple, google.com → google, anonim/bilinmeyen → null", () => {
+    expect(authProviderFromProviderIds(["apple.com"])).toBe("apple");
+    expect(authProviderFromProviderIds(["google.com"])).toBe("google");
+    expect(authProviderFromProviderIds([])).toBeNull();
+    expect(authProviderFromProviderIds(["password"])).toBeNull();
+  });
+
+  it("ikisi birden bağlıysa Apple öncelikli (silmede Apple revoke atlanmasın)", () => {
+    expect(authProviderFromProviderIds(["google.com", "apple.com"])).toBe("apple");
+  });
+
+  it("aynı kullanıcı için sağlayıcı değişirse oturum güncellenir, kullanıcı yeniden yüklenmez", () => {
+    const signedInGoogle: AuthState = { status: "signedIn", userId: USER_ID, session: google, linking: false, notice: null };
+    const apple: AuthSession = { ...google, provider: "apple" };
+    expect(applyAuthChanged(signedInGoogle, apple, false)).toEqual({ ...signedInGoogle, session: apple });
+    expect(applyAuthChanged(signedInGoogle, { ...google }, false)).toBe(signedInGoogle);
   });
 });

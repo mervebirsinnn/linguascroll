@@ -95,7 +95,7 @@ describe("varsayılan paket, CTA ve yasal metin", () => {
 
   it("yasal metin fiyatı, 7 gün içinde iptal edince ücret alınmadığını, ücretlendirme zamanını ve iptal yolunu açıkça yazar", () => {
     expect(annual?.trialPeriod).toBe("7 gün");
-    expect(finePrint(annual!)).toBe(
+    expect(finePrint(annual!, "Google Play")).toBe(
       "İlk 7 gün ücretsiz. 7 gün içinde iptal edersen hiçbir ücret ödemezsin. " +
         "İptal etmezsen deneme bitince ₺600 / yıl ücretlendirilirsin ve abonelik iptal edene kadar her yıl yenilenir. " +
         "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.",
@@ -104,10 +104,30 @@ describe("varsayılan paket, CTA ve yasal metin", () => {
 
   it("deneme teklifi yoksa (panelden kaldırıldıysa) metin '7 gün ücretsiz' sözü VERMEZ", () => {
     expect(monthly?.trialPeriod).toBeNull();
-    expect(finePrint(monthly!)).toBe(
+    expect(finePrint(monthly!, "Google Play")).toBe(
       "₺100 / ay. Abonelik iptal edene kadar her ay yenilenir; istediğin zaman iptal edebilirsin. " +
         "İptal: Google Play › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.",
     );
-    expect(finePrint(monthly!)).not.toContain("ücretsiz");
+    expect(finePrint(monthly!, "Google Play")).not.toContain("ücretsiz");
+  });
+
+  // 2026-11-20 — iOS yayını: App Store metni mağaza adını ve Apple'ın 24 saat yenileme kuralını yazar; Google Play geçmez.
+  it("App Store: deneme metni 24 saat iptal koşulunu, fiyatı, otomatik yenilemeyi ve App Store iptal yolunu yazar", () => {
+    expect(finePrint(annual!, "App Store")).toBe(
+      "İlk 7 gün ücretsiz. Deneme bitiminden en az 24 saat önce iptal edersen hiçbir ücret ödemezsin. " +
+        "İptal etmezsen deneme bitince ₺600 / yıl ücretlendirilirsin. " +
+        "Abonelik, dönem bitiminden en az 24 saat önce iptal edilmezse her yıl otomatik yenilenir. " +
+        "İptal: Ayarlar › Apple Hesabı › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.",
+    );
+  });
+
+  it("App Store: denemesiz pakette ücretsiz sözü yok, Google Play adı geçmez", () => {
+    const text = finePrint(monthly!, "App Store");
+    expect(text).toBe(
+      "₺100 / ay. Abonelik, dönem bitiminden en az 24 saat önce iptal edilmezse her ay otomatik yenilenir. " +
+        "İptal: Ayarlar › Apple Hesabı › Abonelikler ya da uygulamada Kelimelerim › Hesabım › Aboneliği yönet.",
+    );
+    expect(text).not.toContain("ücretsiz");
+    expect(text).not.toContain("Google");
   });
 });

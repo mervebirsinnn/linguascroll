@@ -2,8 +2,10 @@ import { APP_LINKS, openAppLink } from "../../shared/app-links";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ActivityIndicator, Image, Modal, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import { AppleSignInButton } from "../identity/AppleSignInButton";
 import type { AccountLinkControl } from "../identity/auth-state";
 import { ctaLabel, finePrint, type PaywallPackage } from "./paywall-model";
+import { STORE_NAME } from "./store-name";
 import { usePaywall } from "./use-paywall";
 
 const brandMarkImage = require("../../../assets/brand-mark.png") as number;
@@ -79,6 +81,10 @@ Sınırsız öğrenme.</Text>
             ))}
           </View>
 
+          {/* 2026-11-20 — iOS yayını (Apple Kuralı 4.8 / HIG): Google ile girişin sunulduğu yerde Sign in with Apple
+              da EŞİT önemde sunulmalı — aynı genişlikte, Google butonunun hemen üstünde, aynı "meşgul" koşuluyla.
+              Yalnız onLinkAppleAccount tanımlıyken (iOS) render edilir; Android çıktısı değişmez. */}
+          {needsAccount && account.onLinkAppleAccount && <AppleSignInButton onPress={account.onLinkAppleAccount} disabled={account.linking} busy={account.linking && account.linkingProvider === "apple"} />}
           {needsAccount ? (
             <Pressable
               onPress={account.onLinkAccount}
@@ -86,7 +92,8 @@ Sınırsız öğrenme.</Text>
               accessibilityRole="button"
               style={[styles.cta, compact && styles.ctaCompact, account.linking && styles.ctaDisabled]}
             >
-              {account.linking ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
+              {/* Spinner yalnız Google ile bağlama sürerken; Apple seçildiyse bu buton yalnız pasif kalır. */}
+              {account.linking && account.linkingProvider !== "apple" ? <ActivityIndicator color="#14111d" /> : <Text style={styles.ctaText}>Google ile devam et</Text>}
             </Pressable>
           ) : (
             <Pressable
@@ -95,13 +102,13 @@ Sınırsız öğrenme.</Text>
               accessibilityRole="button"
               style={[styles.cta, compact && styles.ctaCompact, state.action !== "idle" && styles.ctaDisabled]}
             >
-              <Text style={styles.ctaText}>{state.action === "purchasing" ? "Google Play açılıyor…" : state.action === "verifying" ? "Aboneliğin doğrulanıyor…" : state.verificationPending ? "Aboneliği doğrula" : ctaLabel(selectedOf(state.packages, state.selectedId))}</Text>
+              <Text style={styles.ctaText}>{state.action === "purchasing" ? `${STORE_NAME} açılıyor…` : state.action === "verifying" ? "Aboneliğin doğrulanıyor…" : state.verificationPending ? "Aboneliği doğrula" : ctaLabel(selectedOf(state.packages, state.selectedId))}</Text>
             </Pressable>
           )}
 
           {needsAccount && <Text style={[styles.finePrint, compact && !scrollable && styles.finePrintCompact]}>Önce hesabını bağla, sonra seçtiğin planla devam et. Giriş yapmak ödeme başlatmaz.</Text>}
 
-          <Text style={[styles.finePrint, compact && !scrollable && styles.finePrintCompact]}>{finePrint(selectedOf(state.packages, state.selectedId))}</Text>
+          <Text style={[styles.finePrint, compact && !scrollable && styles.finePrintCompact]}>{finePrint(selectedOf(state.packages, state.selectedId), STORE_NAME)}</Text>
 
           {!needsAccount && (
             <Pressable onPress={restore} disabled={state.action !== "idle" || state.verificationPending} accessibilityRole="button" style={styles.restore}>
@@ -115,9 +122,11 @@ Sınırsız öğrenme.</Text>
 
           {state.notice !== null && <Text style={styles.notice}>{state.notice}</Text>}
 
-          {(APP_LINKS.privacy || APP_LINKS.terms) && <View style={{ flexDirection: "row", gap: 16 }}>
-            {APP_LINKS.privacy && <Pressable accessibilityRole="link" onPress={() => { void openAppLink(APP_LINKS.privacy!); }} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.finePrint}>Gizlilik</Text></Pressable>}
-            {APP_LINKS.terms && <Pressable accessibilityRole="link" onPress={() => { void openAppLink(APP_LINKS.terms!); }} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.finePrint}>Koşullar</Text></Pressable>}
+          {/* 2026-11-20 — iOS yayını (Apple 3.1.2): satın alma ekranında Gizlilik Politikası ve Kullanım Koşulları (EULA)
+              bağlantıları açıkça adlandırılmalı; "Gizlilik"/"Koşullar" kısaltmaları incelemede belirsiz kalıyordu. */}
+          {(APP_LINKS.privacy || APP_LINKS.terms) && <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "center", columnGap: 16 }}>
+            {APP_LINKS.privacy && <Pressable accessibilityRole="link" onPress={() => { void openAppLink(APP_LINKS.privacy!); }} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.finePrint}>Gizlilik Politikası</Text></Pressable>}
+            {APP_LINKS.terms && <Pressable accessibilityRole="link" onPress={() => { void openAppLink(APP_LINKS.terms!); }} style={{ minHeight: 44, justifyContent: "center" }}><Text style={styles.finePrint}>Kullanım Koşulları</Text></Pressable>}
           </View>}
           {state.verificationPending && state.action === "idle" && (
             <Pressable onPress={retryVerification} accessibilityRole="button" style={styles.restore}>
