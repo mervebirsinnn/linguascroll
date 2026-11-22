@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T17:12:12.979Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-science-d40-q21-although-vaccination-widely-available.mp4"
+  },
+  "draft": {
+    "contentId": "b2-science-d40-q21-although-vaccination-widely-available",
+    "muxAssetId": "local-vaccine-distribution-challenges",
+    "sourceFile": "b2-science-d40-q21-although-vaccination-widely-available.mp4",
+    "storageKey": null,
+    "durationMs": 34470,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 3360,
+        "text": "Vaccines are one of the greatest success stories in medicine.",
+        "englishExplanation": "Vaccines represent one of the most successful achievements in medical history.",
+        "turkishExplanation": "Aşılar, tıptaki en büyük başarı hikayelerinden biridir."
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4000,
+        "endMs": 7720,
+        "text": "Diseases that once filled hospitals are now rare in many places.",
+        "englishExplanation": "Illnesses that used to fill hospitals are now uncommon in many places.",
+        "turkishExplanation": "Bir zamanlar hastaneleri dolduran hastalıklar artık birçok yerde nadir görülüyor."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 8420,
+        "endMs": 12900,
+        "text": "Although vaccination is widely available and a part of the regular health program in",
+        "englishExplanation": "Even though getting vaccinated is easy to access and part of routine health care...",
+        "turkishExplanation": "Aşılamanın yaygın olarak bulunabilmesine ve rutin sağlık programının bir parçası olmasına rağmen,"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 12900,
+        "endMs": 14580,
+        "text": "almost all industrial countries,",
+        "englishExplanation": "...in nearly all developed or industrial nations,",
+        "turkishExplanation": "neredeyse tüm sanayi ülkelerinde,"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 15200,
+        "endMs": 19840,
+        "text": "there are still countries, especially in the third world, where people die of serious",
+        "englishExplanation": "...there are still countries, particularly in developing areas, where people lose their lives to severe...",
+        "turkishExplanation": "özellikle üçüncü dünya ülkelerinde, insanların ciddi hastalıklardan öldüğü ülkeler hâlâ var."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 19840,
+        "endMs": 21740,
+        "text": "diseases. Long distances,",
+        "englishExplanation": "...illnesses. Long travel distances,",
+        "turkishExplanation": "hastalıklar. Uzak mesafeler,"
+      },
+      {
+        "ordinal": 7,
+        "startMs": 22420,
+        "endMs": 27300,
+        "text": "poor roads, and a lack of fridges to keep vaccines cold make the job much harder.",
+        "englishExplanation": "...bad road conditions, and not having refrigerators to keep vaccines cold make the job much harder.",
+        "turkishExplanation": "bozuk yollar ve aşıları soğuk tutacak buzdolaplarının olmaması işi çok daha zorlaştırıyor."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 27300,
+        "endMs": 31100,
+        "text": "Health workers sometimes travel for days to reach a single village.",
+        "englishExplanation": "Medical personnel occasionally spend days traveling just to arrive at one remote village.",
+        "turkishExplanation": "Sağlık çalışanları bazen tek bir köye ulaşmak için günlerce seyahat ediyor."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 31620,
+        "endMs": 33720,
+        "text": "Every trip like that can save lives.",
+        "englishExplanation": "Each journey of this kind has the potential to prevent deaths.",
+        "turkishExplanation": "Böyle her bir yolculuk hayat kurtarabilir."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "vaccination",
+        "gloss": "aşılama, aşı olma"
+      },
+      {
+        "lemma": "lack",
+        "gloss": "eksiklik, yokluk"
+      },
+      {
+        "lemma": "industrial",
+        "gloss": "sanayileşmiş, gelişmiş"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 5,
+        "type": "grammar",
+        "expression": "die of",
+        "englishExplanation": "We use the preposition 'of' (or 'from') after 'die' when specifying the illness or cause of death.",
+        "turkishExplanation": "Bir hastalıktan veya belirli bir nedenden ölmekten bahsederken 'die' fiilinden sonra 'of' edatı kullanılır.",
+        "exampleEn": "Millions of people used to die of smallpox.",
+        "exampleTr": "Milyonlarca insan eskiden çiçek hastalığından ölürdü."
+      },
+      {
+        "segmentOrdinal": 7,
+        "type": "phrase",
+        "expression": "lack of",
+        "englishExplanation": "Used to describe the state of not having something or not having enough of it.",
+        "turkishExplanation": "Bir şeyin eksikliğini, yetersizliğini veya hiç olmadığını ifade etmek için kullanılır.",
+        "exampleEn": "The project failed due to a lack of funding.",
+        "exampleTr": "Proje, finansman eksikliği nedeniyle başarısız oldu."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 3,
+      "question": "______ vaccination is widely available and a part of the regular health program in almost all industrial countries, there are still countries where people die of serious diseases.",
+      "options": [
+        {
+          "text": "Although",
+          "isCorrect": true
+        },
+        {
+          "text": "Because of",
+          "isCorrect": false
+        },
+        {
+          "text": "Unless",
+          "isCorrect": false
+        },
+        {
+          "text": "Therefore",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

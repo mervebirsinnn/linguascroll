@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T17:12:03.200Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-science-d40-q20-some-heart-attacks-strike-suddenly.mp4"
+  },
+  "draft": {
+    "contentId": "b2-science-d40-q20-some-heart-attacks-strike-suddenly",
+    "muxAssetId": "local-heart-attack-warning-signs",
+    "sourceFile": "b2-science-d40-q20-some-heart-attacks-strike-suddenly.mp4",
+    "storageKey": null,
+    "durationMs": 31000,
+    "topic": "science",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 4400,
+        "text": "Many people imagine a heart attack as something that happens in a second, like in the",
+        "englishExplanation": "Many people picture a heart attack as an instantaneous event, like in films.",
+        "turkishExplanation": "Birçok insan kalp krizini saniyeler içinde gerçekleşen bir şey gibi hayal eder, tıpkı"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 4400,
+        "endMs": 4680,
+        "text": "movies.",
+        "englishExplanation": "Continuing from the previous line: as shown in movies.",
+        "turkishExplanation": "filmlerde olduğu gibi."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 5260,
+        "endMs": 10180,
+        "text": "Sometimes that's true, some heart attacks strike suddenly, but many people have warning",
+        "englishExplanation": "While some attacks do strike suddenly, many offer early signals.",
+        "turkishExplanation": "Bazen bu doğrudur, bazı kalp krizleri aniden vurur; ancak birçok insanda uyarı"
+      },
+      {
+        "ordinal": 4,
+        "startMs": 10180,
+        "endMs": 13460,
+        "text": "signs and symptoms hours, days, or weeks in advance.",
+        "englishExplanation": "These warning signals can appear hours, days, or weeks beforehand.",
+        "turkishExplanation": "işaretleri ve semptomları saatler, günler veya haftalar öncesinden ortaya çıkar."
+      },
+      {
+        "ordinal": 5,
+        "startMs": 14120,
+        "endMs": 15940,
+        "text": "They might feel unusually tired,",
+        "englishExplanation": "People experiencing this might feel an unusual level of fatigue.",
+        "turkishExplanation": "Sıra dışı derecede yorgun hissedebilirler,"
+      },
+      {
+        "ordinal": 6,
+        "startMs": 16440,
+        "endMs": 18800,
+        "text": "short of breath, or notice pressure in the chest.",
+        "englishExplanation": "They may have trouble breathing or experience chest tightness.",
+        "turkishExplanation": "nefes darlığı çekebilir veya göğüste baskı hissedebilirler."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 19400,
+        "endMs": 22740,
+        "text": "Because these signs can be mild, people often ignore them.",
+        "englishExplanation": "Since these symptoms can be faint, people often disregard them.",
+        "turkishExplanation": "Bu belirtiler hafif olabileceğinden, insanlar sıklıkla bunları görmezden gelir."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 23380,
+        "endMs": 27740,
+        "text": "Doctors say that paying attention to the body's small messages can make a big difference.",
+        "englishExplanation": "Doctors emphasize that paying attention to small body signals can significantly change outcomes.",
+        "turkishExplanation": "Doktorlar, vücudun küçük mesajlarına dikkat etmenin büyük bir fark yaratabileceğini söylüyor."
+      },
+      {
+        "ordinal": 9,
+        "startMs": 27740,
+        "endMs": 30580,
+        "text": "Listening early is always better than waiting.",
+        "englishExplanation": "Listening to your body early is far better than delaying response.",
+        "turkishExplanation": "Erkenden kulak vermek her zaman beklemekten iyidir."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "strike",
+        "gloss": "aniden vurmak"
+      },
+      {
+        "lemma": "in advance",
+        "gloss": "önceden"
+      },
+      {
+        "lemma": "short of breath",
+        "gloss": "nefes darlığı çeken"
+      },
+      {
+        "lemma": "ignore",
+        "gloss": "görmezden gelmek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "in advance",
+        "englishExplanation": "Used to describe something happening before a specific future time or event.",
+        "turkishExplanation": "Bir olayın öncesinde, önceden gerçekleştiğini belirtmek için kullanılan bir ifadedir.",
+        "exampleEn": "You should book your ticket in advance to get a lower price.",
+        "exampleTr": "Daha düşük bir fiyat almak için biletinizi önceden ayırtmalısınız."
+      },
+      {
+        "segmentOrdinal": 6,
+        "type": "phrase",
+        "expression": "short of breath",
+        "englishExplanation": "Experiencing difficulty breathing or feeling winded.",
+        "turkishExplanation": "Nefes almakta zorlanma veya nefessiz kalma durumunu ifade eder.",
+        "exampleEn": "He felt short of breath after walking up five flights of stairs.",
+        "exampleTr": "Beş kat merdiven çıktıktan sonra nefes darlığı hissetti."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 8,
+      "question": "Doctors say that ______ attention to the body's small messages can make a big difference.",
+      "options": [
+        {
+          "text": "paying",
+          "isCorrect": true
+        },
+        {
+          "text": "pay",
+          "isCorrect": false
+        },
+        {
+          "text": "paid",
+          "isCorrect": false
+        },
+        {
+          "text": "pays",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

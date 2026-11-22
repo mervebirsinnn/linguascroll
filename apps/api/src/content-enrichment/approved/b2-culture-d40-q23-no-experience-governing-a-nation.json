@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "approval": {
+    "approvedAt": "2026-11-22T17:12:31.289Z",
+    "qualityStatusAtApproval": "pass",
+    "acknowledgedIssueCodes": [],
+    "note": null
+  },
+  "media": {
+    "localFileName": "b2-culture-d40-q23-no-experience-governing-a-nation.mp4"
+  },
+  "draft": {
+    "contentId": "b2-culture-d40-q23-no-experience-governing-a-nation",
+    "muxAssetId": "local-african-post-independence-challenges",
+    "sourceFile": "b2-culture-d40-q23-no-experience-governing-a-nation.mp4",
+    "storageKey": null,
+    "durationMs": 35130,
+    "topic": "culture",
+    "category": "cabincrew",
+    "cefrLevel": "B2",
+    "segments": [
+      {
+        "ordinal": 1,
+        "startMs": 0,
+        "endMs": 5640,
+        "text": "In the 1960s, many African countries gained their independence after long years of",
+        "englishExplanation": "Introduces the historic period in the 1960s when many African nations gained freedom.",
+        "turkishExplanation": "1960'larda birçok Afrika ülkesi, uzun yıllar süren"
+      },
+      {
+        "ordinal": 2,
+        "startMs": 5640,
+        "endMs": 10060,
+        "text": "colonial rule. People celebrated in the streets, full of hope for the future.",
+        "englishExplanation": "Completes the sentence about colonial rule and describes the widespread public celebration.",
+        "turkishExplanation": "sömürge yönetiminin ardından bağımsızlığını kazandı. İnsanlar gelecek için umutla sokaklarda kutlama yaptı."
+      },
+      {
+        "ordinal": 3,
+        "startMs": 10600,
+        "endMs": 12460,
+        "text": "But freedom brought new challenges.",
+        "englishExplanation": "Points out that gaining freedom was accompanied by unexpected difficulties.",
+        "turkishExplanation": "Ancak özgürlük beraberinde yeni zorluklar getirdi."
+      },
+      {
+        "ordinal": 4,
+        "startMs": 13200,
+        "endMs": 17260,
+        "text": "Many African countries did not know how to cope with their newly gained independence",
+        "englishExplanation": "Explains that nations struggled to manage their new status as independent states.",
+        "turkishExplanation": "Birçok Afrika ülkesi, yeni kazandığı bağımsızlıkla nasıl başa çıkacağını bilmiyordu"
+      },
+      {
+        "ordinal": 5,
+        "startMs": 17260,
+        "endMs": 21160,
+        "text": "because they had no experience in administrating and governing a nation.",
+        "englishExplanation": "Gives the reason for their struggle: lack of practical experience in running a country.",
+        "turkishExplanation": "çünkü bir devleti yönetme ve idare etme konusunda hiçbir deneyimleri yoktu."
+      },
+      {
+        "ordinal": 6,
+        "startMs": 21820,
+        "endMs": 24760,
+        "text": "For decades, outsiders had made all the important decisions.",
+        "englishExplanation": "Notes that foreign powers had taken all major decisions for decades prior to independence.",
+        "turkishExplanation": "On yıllar boyunca tüm önemli kararları yabancılar almıştı."
+      },
+      {
+        "ordinal": 7,
+        "startMs": 25520,
+        "endMs": 30380,
+        "text": "Suddenly, new leaders had to build schools, courts and economies, almost from scratch.",
+        "englishExplanation": "Describes how new leaders had to build state institutions completely from nothing.",
+        "turkishExplanation": "Aniden, yeni liderler neredeyse sıfırdan okullar, mahkemeler ve ekonomiler inşa etmek zorunda kaldı."
+      },
+      {
+        "ordinal": 8,
+        "startMs": 31300,
+        "endMs": 34640,
+        "text": "Some countries learned quickly, while others struggled for many years.",
+        "englishExplanation": "Contrasts countries that adapted quickly with those that faced long-term difficulties.",
+        "turkishExplanation": "Bazı ülkeler çabuk öğrenirken, diğerleri uzun yıllar zorlandı."
+      }
+    ],
+    "vocabulary": [
+      {
+        "lemma": "colonial rule",
+        "gloss": "sömürge yönetimi"
+      },
+      {
+        "lemma": "cope with",
+        "gloss": "başa çıkmak, üstesinden gelmek"
+      },
+      {
+        "lemma": "administrate",
+        "gloss": "yönetmek, idare etmek"
+      },
+      {
+        "lemma": "from scratch",
+        "gloss": "sıfırdan, en baştan"
+      },
+      {
+        "lemma": "struggle",
+        "gloss": "zorlanmak, mücadele etmek"
+      }
+    ],
+    "learningPoints": [
+      {
+        "segmentOrdinal": 4,
+        "type": "phrase",
+        "expression": "cope with",
+        "englishExplanation": "Used to describe dealing successfully with a difficult situation or environment.",
+        "turkishExplanation": "Zor bir durum veya sorumlulukla başarıyla mücadele etmek veya başa çıkmak anlamında kullanılır.",
+        "exampleEn": "It took time for the company to cope with the sudden growth.",
+        "exampleTr": "Şirketin ani büyümeyle başa çıkması zaman aldı."
+      },
+      {
+        "segmentOrdinal": 7,
+        "type": "phrase",
+        "expression": "from scratch",
+        "englishExplanation": "Means starting something from the very beginning without using anything that already exists.",
+        "turkishExplanation": "Önceden var olan hiçbir şeyi kullanmadan, tamamen en baştan veya sıfırdan başlamak anlamına gelir.",
+        "exampleEn": "After losing all data, they had to rebuild the project from scratch.",
+        "exampleTr": "Tüm verileri kaybettikten sonra projeyi sıfırdan yeniden kurmak zorunda kaldılar."
+      }
+    ],
+    "quiz": {
+      "segmentOrdinal": 5,
+      "question": "Many African countries did not know how to cope with their newly gained independence because they had no experience ______ administrating and governing a nation.",
+      "options": [
+        {
+          "text": "in",
+          "isCorrect": true
+        },
+        {
+          "text": "on",
+          "isCorrect": false
+        },
+        {
+          "text": "at",
+          "isCorrect": false
+        },
+        {
+          "text": "by",
+          "isCorrect": false
+        }
+      ]
+    },
+    "quality": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}
