@@ -93,7 +93,7 @@ function makeFullSessionQuizzesByVideoId(): Map<string, FeedQuiz[]> {
 type ServiceOverrides = {
   videos?: PlayableVideo[];
   /** `VideosService.getVideoFeed`'e geçirilen DB predicate'ini kaydeder (kapsam filtresinin repository'ye taşındığının kanıtı). */
-  onGetVideoFeed?: (filter: { category?: ContentCategory }) => void;
+  onGetVideoFeed?: (filter: { category?: ContentCategory; excludeCategories?: readonly ContentCategory[] }) => void;
   /** QuizzesService.getQuizzesGroupedByVideoId'nin gerçek DB davranışını simüle eder: sourceVideoId → quiz'ler. */
   quizzesByVideoId?: Map<string, FeedQuiz[]>;
   /** Gerçek DB batch-resolve'unu simüle eder: id sırasını KARIŞTIRABİLİR, bazı id'leri hiç DÖNDÜRMEYEBİLİR (silinmiş). */
@@ -138,9 +138,15 @@ function makeFeedService(overrides: ServiceOverrides = {}): FeedService {
   const videosService = {
     // Gerçek repository davranışını simüle eder: `category` predicate'i varsa SADECE eşleşen satırlar döner
     // (kapsam dışı satırlar application katmanına hiç gelmez); yoksa hepsi.
-    getVideoFeed: (filter: { category?: ContentCategory } = {}) => {
+    getVideoFeed: (filter: { category?: ContentCategory; excludeCategories?: readonly ContentCategory[] } = {}) => {
       overrides.onGetVideoFeed?.(filter);
-      return Promise.resolve(videos.filter((video) => !filter.category || (video.category ?? "general") === filter.category));
+      return Promise.resolve(
+        videos.filter(
+          (video) =>
+            (!filter.category || (video.category ?? "general") === filter.category) &&
+            !(filter.excludeCategories ?? []).includes((video.category ?? "general") as ContentCategory),
+        ),
+      );
     },
     getPlayableVideosByIds: (ids: string[]) =>
       Promise.resolve(
@@ -775,13 +781,14 @@ describe("Feed kapsamı (scope): all | animation | ielts", () => {
     expect(videoIds((await service.getFeed(TEST_USER_ID, undefined, undefined, "ielts")).items).sort()).toEqual([vId(3), vId(6)]);
   });
 
-  it("kapsam filtresi REPOSITORY'ye taşınır: all için predicate YOK, animation/ielts için DB predicate'i var", async () => {
-    const filters: { category?: ContentCategory }[] = [];
+  it("kapsam filtresi REPOSITORY'ye taşınır: all izole kategorileri (cabincrew) DIŞLAR, animation/ielts/cabincrew için DB predicate'i var", async () => {
+    const filters: { category?: ContentCategory; excludeCategories?: readonly ContentCategory[] }[] = [];
     const service = makeFeedService({ videos: mixed, ...noQuizzes, onGetVideoFeed: (filter) => filters.push(filter) });
     await service.getFeed(TEST_USER_ID);
     await service.getFeed(TEST_USER_ID, undefined, undefined, "animation");
     await service.getFeed(TEST_USER_ID, undefined, undefined, "ielts");
-    expect(filters).toEqual([{ category: undefined }, { category: "animation" }, { category: "ielts" }]);
+    await service.getFeed(TEST_USER_ID, undefined, undefined, "cabincrew");
+    expect(filters).toEqual([{ excludeCategories: ["cabincrew"] }, { category: "animation" }, { category: "ielts" }, { category: "cabincrew" }]);
   });
 
   it("personalization'a kapsam dışı aday HİÇ verilmez (animation kapsamında adaylar sadece animasyon)", async () => {

@@ -87,3 +87,21 @@ describe("buildParagraphRuns", () => {
     expect(() => buildParagraphRuns("", [], words)).toThrow("Boş paragraf");
   });
 });
+
+describe("buildParagraphRuns — cümle çevirisi", () => {
+  const words2 = new Map<string, RunWordInfo>([[CAT, { gloss: "kedi", saved: false, contextSentence: "A cat sat." }]]);
+
+  it("span çeviri taşıyorsa run'a contextSentenceTr eklenir", () => {
+    const runs = buildParagraphRuns("A cat sat.", [{ ...sp(2, 5, CAT, "cat", "A cat sat."), contextSentenceTr: "Bir kedi oturdu." }], words2);
+    expect(runs[1]?.word?.contextSentenceTr).toBe("Bir kedi oturdu.");
+    expect(runs[1]?.word?.contextSentence).toBe("A cat sat.");
+  });
+
+  it("çeviri yoksa (null/undefined) alan HİÇ eklenmez: çevirisiz metnin yanıtı değişmez", () => {
+    for (const tr of [undefined, null]) {
+      const runs = buildParagraphRuns("A cat sat.", [{ ...sp(2, 5, CAT, "cat", "A cat sat."), contextSentenceTr: tr }], words2);
+      expect(runs[1]?.word).toBeDefined();
+      expect(Object.keys(runs[1]!.word!)).not.toContain("contextSentenceTr");
+    }
+  });
+});

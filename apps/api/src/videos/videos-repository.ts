@@ -1,6 +1,6 @@
 import { Inject, Injectable } from "@nestjs/common";
 import { videoSchema, type ContentCategory, type Video } from "@linguascroll/shared-types";
-import { eq, inArray } from "drizzle-orm";
+import { and, eq, inArray, notInArray } from "drizzle-orm";
 import { DRIZZLE_DB, type Database } from "../database/database.module";
 import { videosTable } from "./videos.schema";
 
@@ -18,9 +18,13 @@ export class VideosRepository {
    * `filter.category` verilirse predicate DB'de uygulanır (`WHERE category = ...`): kapsam dışı satırlar
    * application katmanına hiç taşınmaz. Verilmezse (feed "all" kapsamı, GET /videos) predicate yoktur.
    */
-  async findVideos(filter: { category?: ContentCategory } = {}): Promise<Video[]> {
+  async findVideos(filter: { category?: ContentCategory; excludeCategories?: readonly ContentCategory[] } = {}): Promise<Video[]> {
+    const predicates = [
+      ...(filter.category ? [eq(videosTable.category, filter.category)] : []),
+      ...(filter.excludeCategories && filter.excludeCategories.length > 0 ? [notInArray(videosTable.category, [...filter.excludeCategories])] : []),
+    ];
     const query = this.db.select().from(videosTable);
-    const rows = await (filter.category ? query.where(eq(videosTable.category, filter.category)) : query);
+    const rows = await (predicates.length > 0 ? query.where(and(...predicates)) : query);
     return rows.map(toVideo);
   }
 

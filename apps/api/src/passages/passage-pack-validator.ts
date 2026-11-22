@@ -32,6 +32,7 @@ export function validatePassagePack(input: unknown): { pack: PassagePack | null;
 
   validateParagraphs(pack, issues);
   validateWords(pack, issues);
+  validateSentenceTranslations(pack, issues);
   validateQuestions(pack, issues);
   validateEditorial(pack, issues);
   return { pack: issues.length === 0 ? pack : null, issues };
@@ -110,6 +111,25 @@ function validateWords(pack: PassagePack, issues: PackIssue[]): void {
       }
     }
   });
+}
+
+/**
+ * Cümle çevirisi: ya paketteki HER geçişte ya hiçbirinde (yarım çevirili metin, aynı pencerede kimi kelimede Türkçe kimi
+ * kelimede İngilizce cümle göstermek olurdu) ve aynı İngilizce cümleyi paylaşan geçişler AYNI çeviriyi taşımalı.
+ */
+function validateSentenceTranslations(pack: PassagePack, issues: PackIssue[]): void {
+  const all = pack.words.flatMap((word, wordIndex) => word.spans.map((span, spanIndex) => ({ span, path: `words.${wordIndex}.spans.${spanIndex}.contextSentenceTr` })));
+  const translated = all.filter(({ span }) => span.contextSentenceTr !== undefined);
+  if (translated.length === 0) return;
+  for (const { span, path } of all) {
+    if (span.contextSentenceTr === undefined) issues.push(issue("sentence-translation-incomplete", path, "Pakette bazı geçişlerin cümle çevirisi var, bu geçişinki yok (hepsi ya da hiçbiri)"));
+  }
+  const bySentence = new Map<string, string>();
+  for (const { span, path } of translated) {
+    const known = bySentence.get(span.contextSentence);
+    if (known === undefined) bySentence.set(span.contextSentence, span.contextSentenceTr!);
+    else if (known !== span.contextSentenceTr) issues.push(issue("sentence-translation-inconsistent", path, "Aynı İngilizce cümle iki farklı çeviriyle yazılmış"));
+  }
 }
 
 function containsAround(paragraph: string, sentence: string, start: number, end: number): boolean {

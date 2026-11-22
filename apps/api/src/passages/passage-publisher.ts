@@ -146,6 +146,7 @@ async function insertPack(tx: Tx, pack: PassagePack, contentHash: string): Promi
         wordId: wordIds[index]!,
         surface: span.surface,
         contextSentence: span.contextSentence,
+        contextSentenceTr: span.contextSentenceTr ?? null,
       })),
     ),
   );

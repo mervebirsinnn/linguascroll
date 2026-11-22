@@ -1,6 +1,7 @@
 import type { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { passageAnswerResultSchema, passagePageSchema, type Passage } from "@linguascroll/shared-types";
+import { eq } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import type { Pool } from "pg";
 import request from "supertest";
@@ -11,6 +12,7 @@ import { userSavedWordsTable } from "../words/user-saved-words.schema";
 import { passageAnswersTable } from "./passage-answers.schema";
 import { encodePassageCursor } from "./passage-cursor";
 import { createPassageFixture, EXPLANATION_PREFIX, FIXTURE_GLOSS, FIXTURE_PARAGRAPH } from "./passage-test-fixtures";
+import { passageWordSpansTable } from "./passages.schema";
 
 /**
  * Okuma pratiği HTTP e2e'si (gerçek Postgres, kapı KAPALI = varsayılan: herkes tam erişimli).
@@ -178,6 +180,20 @@ describe("GET /passages ve POST /passages/questions/:id/answer (e2e, gerçek Pos
       const wordRuns = runs.filter((run) => run.word);
       expect(wordRuns).toHaveLength(2);
       expect(wordRuns.every((run) => run.word?.gloss === FIXTURE_GLOSS && run.word.saved && run.word.wordId === fixture.wordId)).toBe(true);
+    });
+
+    it("cümle çevirisi: çevirisi olan geçişte contextSentenceTr gelir, olmayanda alan HİÇ gelmez (ham gövde); şema da parse eder", async () => {
+      const { authorization } = await createAuthenticatedUser(db);
+      const fixture = await createPassageFixture(db, { slug: "tr" });
+      await db.update(passageWordSpansTable).set({ contextSentenceTr: "Kedi gitti." }).where(eq(passageWordSpansTable.id, fixture.spanIds[1]));
+
+      const res = await getPassages(authorization).expect(200);
+      const raw = res.body as { items: Array<{ paragraphs: Array<Array<{ word?: Record<string, unknown> }>> }> };
+      const words = raw.items[0]!.paragraphs[0]!.filter((run) => run.word).map((run) => run.word!);
+      expect(words).toHaveLength(2);
+      expect(words[0]).not.toHaveProperty("contextSentenceTr");
+      expect(words[1]).toMatchObject({ contextSentence: "The cat left.", contextSentenceTr: "Kedi gitti." });
+      expect(passagePageSchema.parse(res.body).items).toHaveLength(1);
     });
   });
 

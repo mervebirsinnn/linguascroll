@@ -105,7 +105,7 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
           if (state.loadMoreError === null) passages.loadMore();
         }}
         renderEnd={() => <PassageEndPage height={height} width={width} loadMoreError={state.loadMoreError} hasMore={state.nextCursor !== null} onRetry={passages.loadMore} />}
-        renderPage={({ passage, page }, goNext) => {
+        renderPage={({ passage, page }, goNext, goPrev) => {
           if (passage.access === "locked" || page.kind === "locked") {
             return <PassageLockedPage title={passage.title} level={passage.level} topic={passage.topic} height={height} width={width} onUnlock={() => setPaywallOpen(true)} onNext={goNext} />;
           }
@@ -138,6 +138,7 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
               onRecheck={() => void passages.recheckAnswer(question.id)}
               onShowText={() => setTextSheetPassage(passage)}
               onNext={goNext}
+              onPrev={goPrev}
             />
           );
         }}
@@ -153,6 +154,7 @@ export function PassagesFlow({ userId, account, initialLevel, onBack, deps }: Pa
         embedded={embedded}
         entry={entry ? { title: entry.displayText, gloss: entry.gloss } : null}
         sentence={entry?.sentence}
+        sentenceTr={entry?.sentenceTr}
         closeLabel="Metne dön"
         onClose={() => setEntry(null)}
         isSaved={entrySaved}

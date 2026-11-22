@@ -17,7 +17,7 @@ export type PassageRow = typeof passagesTable.$inferSelect;
 export type PassageQuestionRow = typeof passageQuestionsTable.$inferSelect;
 export type PassageOptionRow = typeof passageOptionsTable.$inferSelect;
 export type PassageWordRow = { passageId: string; wordId: string; gloss: string; contextSentence: string };
-export type PassageSpanRow = { id: string; passageId: string; paragraphIndex: number; start: number; end: number; wordId: string; surface: string; contextSentence: string | null };
+export type PassageSpanRow = { id: string; passageId: string; paragraphIndex: number; start: number; end: number; wordId: string; surface: string; contextSentence: string | null; contextSentenceTr: string | null };
 
 export type QuestionAccessContext = { questionId: string; passageId: string; isFreeSample: boolean; retiredAt: Date | null };
 
@@ -84,6 +84,7 @@ export class PassagesRepository {
         wordId: passageWordSpansTable.wordId,
         surface: passageWordSpansTable.surface,
         contextSentence: passageWordSpansTable.contextSentence,
+        contextSentenceTr: passageWordSpansTable.contextSentenceTr,
       })
       .from(passageWordSpansTable)
       .where(inArray(passageWordSpansTable.passageId, [...passageIds]))

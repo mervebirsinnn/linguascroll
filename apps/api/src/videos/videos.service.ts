@@ -50,7 +50,7 @@ export class VideosService {
     this.mediaUrlSigningSecret = configService.get<string>("MEDIA_URL_SIGNING_SECRET");
   }
 
-  async getVideoFeed(filter: { category?: ContentCategory } = {}): Promise<PlayableVideo[]> {
+  async getVideoFeed(filter: { category?: ContentCategory; excludeCategories?: readonly ContentCategory[] } = {}): Promise<PlayableVideo[]> {
     const videos = await this.videosRepository.findVideos(filter);
     return videos.map((video) => this.toPlayableVideo(video));
   }

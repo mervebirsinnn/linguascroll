@@ -73,6 +73,12 @@ function findFirst(node: TreeNode | null, predicate: (node: TreeNode) => boolean
   return null;
 }
 
+async function layoutFeed(): Promise<void> {
+  const layoutNode = findFirst(screen.root, (node) => typeof node.props.onLayout === "function");
+  if (!layoutNode) throw new Error("Feed layout düğümü bulunamadı");
+  await fireEvent(layoutNode, "layout", { nativeEvent: { layout: { height: 800, width: 400 } } });
+}
+
 async function renderFeed(): Promise<void> {
   await render(<Feed userId={USER_ID} account={{ isAnonymous: true, linking: false, notice: null, onLinkAccount: () => {} }} onOpenMemory={() => {}} />);
   // Feed içerik alanını gerçek layout ölçümünden sonra mount eder.
@@ -170,5 +176,42 @@ describe("Feed başlığı — okuma pratiği girişi", () => {
   it("onOpenPassages verilmezse 'Okuma' düğmesi çizilmez (eski çağıranlar etkilenmez)", async () => {
     await render(<Feed userId={USER_ID} account={account} onOpenMemory={() => {}} />);
     expect(screen.queryByText("Okuma")).toBeNull();
+  });
+});
+
+describe("Feed başlığı — Cabin Crew akışı", () => {
+  const account = { isAnonymous: true, linking: false, notice: null, onLinkAccount: () => {} };
+
+  it("onOpenCabinCrew verilirse 'Cabin Crew' düğmesi çıkar ve çağrılır; verilmezse çizilmez", async () => {
+    const onOpenCabinCrew = jest.fn();
+    await render(<Feed userId={USER_ID} account={account} onOpenMemory={() => {}} onOpenCabinCrew={onOpenCabinCrew} />);
+    await fireEvent.press(screen.getByText("Gramer Pratiği"));
+    expect(onOpenCabinCrew).toHaveBeenCalledTimes(1);
+  });
+
+  it("onOpenCabinCrew yoksa düğme yok (eski çağıranlar etkilenmez)", async () => {
+    await render(<Feed userId={USER_ID} account={account} onOpenMemory={() => {}} />);
+    expect(screen.queryByText("Gramer Pratiği")).toBeNull();
+  });
+
+  it("scope=cabincrew: istek scope'u 'cabincrew' gider, başlık 'Cabin Crew', '‹ Akış' geri döner; Okuma/Kelimelerim/Cabin Crew düğmeleri çizilmez", async () => {
+    mockedFetchFeed.mockResolvedValue(videoPage("1"));
+    const onBack = jest.fn();
+    await render(<Feed userId={USER_ID} account={account} scope="cabincrew" onBack={onBack} onOpenMemory={() => {}} onOpenPassages={() => {}} onOpenCabinCrew={() => {}} />);
+    await layoutFeed();
+    await waitFor(() => expect(mockedFetchFeed).toHaveBeenCalled());
+    expect(mockedFetchFeed.mock.calls[0]?.[2]).toBe("cabincrew");
+    expect(screen.getByText("Gramer Pratiği")).toBeTruthy();
+    expect(screen.queryByText("Okuma")).toBeNull();
+    expect(screen.queryByText("Kelimelerim")).toBeNull();
+    await fireEvent.press(screen.getByText("‹ Akış"));
+    expect(onBack).toHaveBeenCalledTimes(1);
+  });
+
+  it("scope=cabincrew ve boş akış: Cabin Crew'a özel boş mesaj", async () => {
+    mockedFetchFeed.mockResolvedValue({ items: [], nextCursor: null } as never);
+    await render(<Feed userId={USER_ID} account={account} scope="cabincrew" onBack={() => {}} onOpenMemory={() => {}} />);
+    await layoutFeed();
+    await waitFor(() => expect(screen.getByText("Gramer Pratiği videoları henüz yok ya da abonelik gerektiriyor.")).toBeTruthy());
   });
 });

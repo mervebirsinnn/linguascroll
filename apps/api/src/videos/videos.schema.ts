@@ -1,6 +1,6 @@
 import { sql } from "drizzle-orm";
 import { check, integer, jsonb, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
-import { topicSchema, type VideoAttribution } from "@linguascroll/shared-types";
+import { contentCategorySchema, topicSchema, type VideoAttribution } from "@linguascroll/shared-types";
 
 /**
  * Persistence model — shared-types'taki Video (domain contract) ile KASITLI olarak
@@ -60,7 +60,7 @@ export const videosTable = pgTable(
     // content-interest taxonomy — shared-types'taki topicSchema ile birebir aynı
     // değer seti (bkz. packages/shared-types/src/video.ts).
     check("topic_check", sql`${table.topic} IN (${sql.join(topicSchema.options.map((topic) => sql.raw("'" + topic + "'")), sql`, `)})`),
-    check("video_category_check", sql`${table.category} IN ('general', 'animation', 'ielts')`),
+    check("video_category_check", sql`${table.category} IN (${sql.join(contentCategorySchema.options.map((category) => sql.raw("'" + category + "'")), sql`, `)})`),
     check("animation_attribution_check", sql`${table.category} <> 'animation' OR ${table.attribution} IS NOT NULL`),
     // Chunk 7: >= 0 yerine > 0 — "playable" bir video için 0 süre domain olarak
     // imkansız bir durum, ranking'in kolaylığı için değil, bağımsız bir domain

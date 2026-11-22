@@ -38,6 +38,11 @@ export const passageWordRefSchema = z.object({
   saved: z.boolean(),
   spanId: z.string().uuid(),
   contextSentence: z.string().min(1),
+  /**
+   * `contextSentence`'ın Türkçe anlamı. İSTEĞE BAĞLI: çevirisi olmayan metinlerde alan hiç gelmez (eski build'ler zaten
+   * bilinmeyen alanı yok sayar) ve pencere İngilizce cümleye geri düşer. Kaydedilen kaynak cümle yine `contextSentence`'tır.
+   */
+  contextSentenceTr: z.string().min(1).optional(),
 });
 
 /**

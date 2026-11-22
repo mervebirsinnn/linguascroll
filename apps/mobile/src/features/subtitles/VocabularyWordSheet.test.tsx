@@ -232,3 +232,62 @@ describe("review düzeltmeleri: taşma, duyuru, düğme durumu, stil pinleri", (
     expect(screen.getByRole("button", { name: "Kelimelerimden çıkar", disabled: true })).toHaveStyle({ opacity: 0.5 });
   });
 });
+
+describe("cümle çevirisi (okuma pratiği): Türkçe cümle + 'İngilizce cümleyi göster'", () => {
+  const TR = "Arkadaşıma gösteriyorum.";
+  const EN = "I show it to my friend.";
+
+  it("çeviri varsa Türkçe cümle görünür, İngilizce cümle gizlidir ve düğmeyle açılıp kapanır", async () => {
+    await renderSheet({ sentence: EN, sentenceTr: TR });
+    expect(screen.getByText(TR)).toBeTruthy();
+    expect(screen.queryByText(EN)).toBeNull();
+
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    expect(screen.getByText(EN)).toBeTruthy();
+    expect(screen.getByText(TR)).toBeTruthy();
+    expect(screen.getByTestId("word-sheet-toggle-english").props.accessibilityState).toMatchObject({ expanded: true });
+
+    await fireEvent.press(screen.getByText("İngilizce cümleyi gizle"));
+    expect(screen.queryByText(EN)).toBeNull();
+  });
+
+  it("çeviri yoksa davranış AYNEN eskisi gibi: İngilizce cümle doğrudan görünür, düğme çizilmez", async () => {
+    await renderSheet({ sentence: EN });
+    expect(screen.getByText(EN)).toBeTruthy();
+    expect(screen.queryByText("İngilizce cümleyi göster")).toBeNull();
+    expect(screen.queryByTestId("word-sheet-sentence-tr")).toBeNull();
+  });
+
+  it("çeviri var ama İngilizce cümle yoksa düğme çizilmez ve çökmez", async () => {
+    await renderSheet({ sentence: undefined, sentenceTr: TR });
+    expect(screen.getByText(TR)).toBeTruthy();
+    expect(screen.queryByTestId("word-sheet-toggle-english")).toBeNull();
+  });
+
+  it("açılan İngilizce cümle, pencere kapanıp başka cümleyle açılınca kapalıya döner", async () => {
+    const props = { entry: ENTRY, sentence: EN, sentenceTr: TR, onClose: jest.fn(), isSaved: false, isPending: false, onSave: jest.fn(), onRemove: jest.fn() };
+    const view = await render(<VocabularyWordSheet {...props} />);
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    expect(screen.getByText(EN)).toBeTruthy();
+
+    await view.rerender(<VocabularyWordSheet {...props} sentence="Another sentence." sentenceTr="Başka bir cümle." />);
+    expect(screen.getByText("Başka bir cümle.")).toBeTruthy();
+    expect(screen.queryByText("Another sentence.")).toBeNull();
+
+    // Aynı cümle için üst bileşen her render'da YENİ entry nesnesi verir: açık durum bunda kaybolmamalı.
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    await view.rerender(<VocabularyWordSheet {...props} sentence="Another sentence." sentenceTr="Başka bir cümle." entry={{ ...ENTRY }} />);
+    expect(screen.getByText("Another sentence.")).toBeTruthy();
+  });
+
+  it("düğme ve cümleler kaydırılan bilgi alanının İÇİNDE; kaydet/kapat/çıkar düğmeleri dışında kalır (açıp kapamak onların yerini itemez)", async () => {
+    await renderSheet({ sentence: EN, sentenceTr: TR });
+    const info = within(screen.getByTestId("word-sheet-info"));
+    expect(info.getByText(TR)).toBeTruthy();
+    expect(info.getByText("İngilizce cümleyi göster")).toBeTruthy();
+    await fireEvent.press(screen.getByText("İngilizce cümleyi göster"));
+    expect(info.getByText(EN)).toBeTruthy();
+    expect(info.queryByText("Kelimelerime kaydet")).toBeNull();
+    expect(info.queryByText("Videoya dön")).toBeNull();
+  });
+});

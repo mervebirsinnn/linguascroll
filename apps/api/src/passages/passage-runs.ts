@@ -6,10 +6,10 @@
  * doğrulayıcısının zaten engellemesi gereken bir veri bütünlüğü hatasıdır, bu yüzden burada açıkça patlar —
  * yanlış yerde vurgulanmış bir kelime, yanlış anlamı yanlış kelimeye bağlamaktan kötüdür.
  */
-export type RunSpan = { id: string; start: number; end: number; wordId: string; surface: string; contextSentence: string | null };
+export type RunSpan = { id: string; start: number; end: number; wordId: string; surface: string; contextSentence: string | null; contextSentenceTr?: string | null };
 /** `contextSentence`: kelimenin ilk geçişinin cümlesi (span'ın kendi cümlesi yoksa yedek). */
 export type RunWordInfo = { gloss: string; saved: boolean; contextSentence: string };
-export type PassageRun = { text: string; word?: { wordId: string; gloss: string; saved: boolean; spanId: string; contextSentence: string } };
+export type PassageRun = { text: string; word?: { wordId: string; gloss: string; saved: boolean; spanId: string; contextSentence: string; contextSentenceTr?: string } };
 
 export function buildParagraphRuns(paragraph: string, spans: readonly RunSpan[], words: ReadonlyMap<string, RunWordInfo>): PassageRun[] {
   if (paragraph.length === 0) {
@@ -39,7 +39,15 @@ export function buildParagraphRuns(paragraph: string, spans: readonly RunSpan[],
     }
     runs.push({
       text: span.surface,
-      word: { wordId: span.wordId, gloss: info.gloss, saved: info.saved, spanId: span.id, contextSentence: span.contextSentence ?? info.contextSentence },
+      word: {
+        wordId: span.wordId,
+        gloss: info.gloss,
+        saved: info.saved,
+        spanId: span.id,
+        contextSentence: span.contextSentence ?? info.contextSentence,
+        // Çeviri yoksa alan HİÇ eklenmez (null/undefined sızmaz): çevirisiz metnin yanıtı bugünküyle aynı kalır.
+        ...(span.contextSentenceTr ? { contextSentenceTr: span.contextSentenceTr } : {}),
+      },
     });
     cursor = span.end;
   }

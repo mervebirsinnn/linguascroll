@@ -21,6 +21,23 @@ export const textRangeSchema = z.object({ paragraphIndex: z.number().int().min(0
 
 const nonEmpty = z.string().trim().min(1);
 const keySchema = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "anahtar küçük harf/rakam ve tire olmalı");
+const editorialSourceSchema = z.object({ claim: nonEmpty, source: nonEmpty, checkedOn: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) });
+
+// Kaynak alıntısını özgün üretim diye işaretlemeden aynı içerik kontrollerinden geçir.
+// Bu kayıt kaynak türünü belirtir; yeniden kullanım izninin kanıtı değildir.
+const editorialSchema = z.discriminatedUnion("original", [
+  z.object({
+    original: z.literal(true),
+    noFactualClaims: z.boolean().optional(),
+    sources: z.array(editorialSourceSchema),
+  }),
+  z.object({
+    original: z.literal(false),
+    sourceType: z.literal("verbatim-excerpt"),
+    noFactualClaims: z.boolean().optional(),
+    sources: z.array(editorialSourceSchema).min(1),
+  }),
+]);
 
 export const passagePackSchema = z.object({
   slug: keySchema,
@@ -37,7 +54,8 @@ export const passagePackSchema = z.object({
         gloss: nonEmpty.max(160),
         // Cümle GEÇİŞ başına (aynı kelimenin iki cümlede geçtiği metinde doğru kaynak cümle). passage_words.context_sentence
         // (eski istemci yedeği) yayıncıda İLK geçişin cümlesinden türetilir.
-        spans: z.array(textRangeSchema.extend({ surface: nonEmpty, contextSentence: nonEmpty.max(500) })).min(1),
+        // `contextSentenceTr`: cümlenin Türkçe anlamı (isteğe bağlı; ya paketteki TÜM geçişlerde ya hiçbirinde, bkz. validator).
+        spans: z.array(textRangeSchema.extend({ surface: nonEmpty, contextSentence: nonEmpty.max(500), contextSentenceTr: nonEmpty.max(700).optional() })).min(1),
       }),
     )
     .min(1),
@@ -60,11 +78,7 @@ export const passagePackSchema = z.object({
       }),
     )
     .length(4),
-  editorial: z.object({
-    original: z.literal(true),
-    noFactualClaims: z.boolean().optional(),
-    sources: z.array(z.object({ claim: nonEmpty, source: nonEmpty, checkedOn: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) })),
-  }),
+  editorial: editorialSchema,
 });
 
 export type PassagePack = z.infer<typeof passagePackSchema>;
@@ -82,7 +96,12 @@ export function computePassageContentHash(pack: PassagePack): string {
       gloss: word.gloss,
       spans: [...word.spans]
         .sort((a, b) => a.paragraphIndex - b.paragraphIndex || a.start - b.start)
-        .map((span) => [span.paragraphIndex, span.start, span.end, span.surface, span.contextSentence]),
+        // Çeviri YALNIZ varsa hash'e girer: çevirisiz (yayımlanmış) paketlerin hash'i bit bit aynı kalır, "içerik farklı" olmaz.
+        .map((span) =>
+          span.contextSentenceTr === undefined
+            ? [span.paragraphIndex, span.start, span.end, span.surface, span.contextSentence]
+            : [span.paragraphIndex, span.start, span.end, span.surface, span.contextSentence, span.contextSentenceTr],
+        ),
     }))
     .sort((a, b) => (a.lemma === b.lemma ? (a.gloss < b.gloss ? -1 : a.gloss > b.gloss ? 1 : 0) : a.lemma < b.lemma ? -1 : 1));
   const canonical = {

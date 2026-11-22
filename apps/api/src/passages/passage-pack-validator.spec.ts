@@ -17,6 +17,32 @@ describe("validatePassagePack — pozitif", () => {
     pack.editorial = { original: true, sources: [{ claim: "iddia", source: "kaynak", checkedOn: "2026-11-18" }] };
     expect(codes(pack)).toEqual([]);
   });
+
+  it("kaynak alıntısını özgün beyanı olmadan aynı kalite kapısından geçirir", () => {
+    const excerpt = {
+      ...validPack(),
+      editorial: {
+        original: false,
+        sourceType: "verbatim-excerpt",
+        sources: [{ claim: "Kaynak metindeki görüş", source: "Kullanıcının sağladığı PDF, s. 1", checkedOn: "2026-11-19" }],
+      },
+    };
+    expect(codes(excerpt)).toEqual([]);
+    expect(validatePassagePack(excerpt).pack?.editorial.original).toBe(false);
+    expect(codes({ ...excerpt, words: [] })).toContain("schema");
+    const uncovered = structuredClone(excerpt);
+    uncovered.words = uncovered.words.filter((word) => word.lemma !== "the");
+    expect(codes(uncovered)).toContain("word-occurrence-uncovered");
+  });
+
+  it("alıntıda kaynak ve açık kaynak türü zorunlu; noFactualClaims bunları atlamaz", () => {
+    const base = { original: false, sourceType: "verbatim-excerpt", sources: [] };
+    expect(codes({ ...validPack(), editorial: base })).toContain("schema");
+    expect(codes({ ...validPack(), editorial: { ...base, noFactualClaims: true } })).toContain("schema");
+    const sources = [{ claim: "iddia", source: "PDF", checkedOn: "2026-11-19" }];
+    expect(codes({ ...validPack(), editorial: { original: false, sources } })).toContain("schema");
+    expect(codes({ ...validPack(), editorial: { ...base, sources, sourceType: "unknown" } })).toContain("schema");
+  });
 });
 
 describe("validatePassagePack — her kural için bir negatif test", () => {
@@ -180,7 +206,7 @@ describe("validatePassagePack — her kural için bir negatif test", () => {
     expect(codes(untrimmed)).toContain("paragraph-untrimmed");
   });
 
-  it("editoryal: kaynak yok ve noFactualClaims yok; original:true zorunlu", () => {
+  it("editoryal: özgün içerikte kaynak ya da noFactualClaims, alıntıda açık kaynak türü zorunlu", () => {
     const pack = clone();
     pack.editorial = { original: true, sources: [] };
     expect(codes(pack)).toContain("editorial-sources-missing");
@@ -231,5 +257,46 @@ describe("computePassageContentHash", () => {
 
   it("sortOrder/isFreeSample/editorial hash'e girmez (yayıncıda ayrıca karşılaştırılır / saklanmaz)", () => {
     expect(computePassageContentHash(validPack({ sortOrder: 99, isFreeSample: true }))).toBe(computePassageContentHash(validPack()));
+  });
+});
+
+describe("cümle çevirisi (contextSentenceTr)", () => {
+  const translate = (pack: ReturnType<typeof clone>, only?: (sentence: string) => boolean) => {
+    for (const word of pack.words) for (const span of word.spans) if (!only || only(span.contextSentence)) span.contextSentenceTr = `TR: ${span.contextSentence}`;
+    return pack;
+  };
+
+  it("her geçişte çeviri varsa paket geçer; hiçbirinde yoksa da geçer (çevirisiz metinler bozulmaz)", () => {
+    expect(codes(translate(clone()))).toEqual([]);
+    expect(codes(clone())).toEqual([]);
+  });
+
+  it("yarım çeviri reddedilir: kimi geçişte var kimi geçişte yok", () => {
+    const half = translate(clone(), (sentence) => sentence.startsWith("The old"));
+    const result = codes(half);
+    expect(result).toContain("sentence-translation-incomplete");
+  });
+
+  it("aynı İngilizce cümle iki farklı çeviriyle yazılamaz", () => {
+    const pack = translate(clone());
+    const spans = pack.words.flatMap((word) => word.spans).filter((span) => span.contextSentence === pack.words[0]!.spans[0]!.contextSentence);
+    expect(spans.length).toBeGreaterThan(1);
+    spans[1]!.contextSentenceTr = "TR: başka bir çeviri";
+    expect(codes(pack)).toContain("sentence-translation-inconsistent");
+  });
+
+  it("boş çeviri şema hatasıdır", () => {
+    const pack = translate(clone());
+    pack.words[0]!.spans[0]!.contextSentenceTr = "   ";
+    expect(codes(pack)).toContain("schema");
+  });
+
+  it("hash: çeviri eklenince değişir, çeviri yoksa eski hash'le bit bit aynı kalır", () => {
+    const base = validPack();
+    const translated = translate(clone());
+    expect(computePassageContentHash(translated)).not.toBe(computePassageContentHash(base));
+    const stripped = structuredClone(translated);
+    for (const word of stripped.words) for (const span of word.spans) delete span.contextSentenceTr;
+    expect(computePassageContentHash(stripped)).toBe(computePassageContentHash(base));
   });
 });

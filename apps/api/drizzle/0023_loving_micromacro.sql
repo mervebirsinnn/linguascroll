@@ -1,0 +1,1 @@
+ALTER TABLE "passage_word_spans" ADD COLUMN "context_sentence_tr" text;

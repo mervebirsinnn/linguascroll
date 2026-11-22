@@ -14,8 +14,8 @@ type PassagePagerProps = {
   pages: readonly FlatPage[];
   height: number;
   width: number;
-  /** Bir sayfanın içeriği; `goNext` sayfanın "Sonraki" düğmesi için bir sonraki sayfaya kaydırır. */
-  renderPage: (item: FlatPage, goNext: () => void) => ReactElement;
+  /** Bir sayfanın içeriği; `goNext` sayfanın "Sonraki" düğmesi için bir sonraki sayfaya kaydırır, `goPrev` "Önceki" için bir öncekine (ilk sayfada undefined). */
+  renderPage: (item: FlatPage, goNext: () => void, goPrev?: () => void) => ReactElement;
   renderEnd: () => ReactElement;
   onNearEnd: () => void;
   /** Seviye değişince/erişim yenilenince liste başa dönsün diye üst bileşen anahtarla yeniden kurar. */
@@ -57,7 +57,7 @@ export function PassagePager({ pages, height, width, renderPage, renderEnd, onNe
       testID="passage-pager"
       data={data}
       keyExtractor={(item) => item.key}
-      renderItem={({ item, index }) => (isEndItem(item) ? renderEnd() : renderPage(item, () => goTo(Math.min(index + 1, data.length - 1))))}
+      renderItem={({ item, index }) => (isEndItem(item) ? renderEnd() : renderPage(item, () => goTo(Math.min(index + 1, data.length - 1)), index > 0 ? () => goTo(index - 1) : undefined))}
       horizontal
       getItemLayout={(_, index) => ({ length: width, offset: width * index, index })}
       pagingEnabled

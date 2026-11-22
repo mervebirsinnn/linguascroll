@@ -2,7 +2,9 @@ import { z } from "zod";
 
 // Bölüm seçimi topic/CEFR tercihinden bağımsız, açık bir katalog filtresidir.
 // `cefrLevel` kategoriden de bağımsızdır: "ielts" içerik kendi gerçek seviyesini taşır.
-export const contentCategorySchema = z.enum(["general", "animation", "ielts"]);
+// "cabincrew": havayolu/kabin memuru sınav hazırlığı içeriği. ANA AKIŞTAN İZOLEDİR: scope "all" bu kategoriyi ASLA içermez
+// (bkz. apps/api feed-scope.ts), yalnızca kendi "Cabin Crew" akışında görünür.
+export const contentCategorySchema = z.enum(["general", "animation", "ielts", "cabincrew"]);
 export type ContentCategory = z.infer<typeof contentCategorySchema>;
 
 const sourceLinkSchema = z.string().url().startsWith("https://");

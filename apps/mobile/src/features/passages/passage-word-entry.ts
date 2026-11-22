@@ -23,6 +23,8 @@ export type PassageWordSheetEntry = {
   gloss: string;
   /** Bu GEÇİŞİN cümlesi (kaydedilen kaynak cümle ile aynı). */
   sentence: string;
+  /** `sentence`'ın Türkçe anlamı; çevirisi olmayan metinlerde yok (pencere o zaman İngilizce cümleyi gösterir). */
+  sentenceTr?: string;
   saved: boolean;
 };
 
@@ -35,6 +37,7 @@ export function toWordSheetEntry(passageId: string, run: PassageRun): PassageWor
     displayText: run.text,
     gloss: run.word.gloss,
     sentence: run.word.contextSentence,
+    ...(run.word.contextSentenceTr ? { sentenceTr: run.word.contextSentenceTr } : {}),
     saved: run.word.saved,
   };
 }

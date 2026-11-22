@@ -18,6 +18,13 @@ export function parseFlag(value: string | undefined): boolean {
  */
 export const PASSAGES_ENABLED: boolean = parseFlag(process.env.EXPO_PUBLIC_PASSAGES_ENABLED);
 
+/**
+ * Cabin Crew akışı (sınav hazırlığı videoları, ana akıştan İZOLE: backend scope "all" bu kategoriyi hiç getirmez).
+ * VARSAYILAN KAPALI: içerik ve backend migration'ı (0024) hazır olmadan production'da giriş görünmesin.
+ * Geliştirme/testte `.env` içine EXPO_PUBLIC_CABINCREW_ENABLED=true yaz (Expo'yu yeniden başlat).
+ */
+export const CABINCREW_ENABLED: boolean = parseFlag(process.env.EXPO_PUBLIC_CABINCREW_ENABLED);
+
 /** Bayrak kapalıysa giriş eylemi HİÇ verilmez (Feed buton çizmez); açıksa verilen eylem aynen döner. */
 export function gatedEntry(enabled: boolean, open: () => void): (() => void) | undefined {
   return enabled ? open : undefined;

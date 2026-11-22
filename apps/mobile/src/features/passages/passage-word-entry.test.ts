@@ -39,3 +39,17 @@ describe("toWordSheetEntry", () => {
     expect(entry?.saved).toBe(true);
   });
 });
+
+describe("toWordSheetEntry — cümle çevirisi", () => {
+  const passage = makeOpenPassage(1);
+  const base = passage.paragraphs[0]![1]!;
+
+  it("run çeviri taşıyorsa sentenceTr olarak aktarılır; İngilizce sentence aynen kalır", () => {
+    const run = { ...base, word: { ...base.word!, contextSentenceTr: "Bir kedi oturdu." } };
+    expect(toWordSheetEntry(passage.id, run)).toMatchObject({ sentence: "A cat sat.", sentenceTr: "Bir kedi oturdu." });
+  });
+
+  it("çeviri yoksa alan hiç eklenmez (eski metinlerin girdisi değişmez)", () => {
+    expect(toWordSheetEntry(passage.id, base)).not.toHaveProperty("sentenceTr");
+  });
+});

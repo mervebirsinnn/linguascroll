@@ -67,6 +67,10 @@ const MAX_TO_RENDER_PER_BATCH = 2;
 const FEED_SCOPE: FeedScope = "all";
 
 const EMPTY_FEED_MESSAGE = "Henüz video yok.";
+// Görünen ad kararı: bu akış video + gramer sorusu çiftlerinden oluşuyor (tense dışında passive, relative clause, gerund vb. de var);
+// "Cabin Crew" yerine "Gramer Pratiği" gösterilir. scope değeri "cabincrew" ve backend kategorisi aynı kalır — yalnızca kullanıcıya görünen metin.
+const CABINCREW_TITLE = "Gramer Pratiği";
+const EMPTY_CABINCREW_MESSAGE = "Gramer Pratiği videoları henüz yok ya da abonelik gerektiriyor.";
 
 type FeedProps = {
   userId: string;
@@ -84,12 +88,18 @@ type FeedProps = {
    * olarak enjekte edilmez). Verilmezse buton çizilmez (eski çağıranlar/testler etkilenmez).
    */
   onOpenPassages?: () => void;
+  /** Cabin Crew akışına giriş (ana akıştan izole kategori). Verilmezse buton çizilmez. */
+  onOpenCabinCrew?: () => void;
+  /** Hangi içerik kümesi (varsayılan "all" = ana akış). "cabincrew" ayrı bir akıştır ve ana akıştan geri dönüş düğmesi gösterir. */
+  scope?: FeedScope;
+  /** Ana akıştan farklı bir scope'ta (Cabin Crew) ana akışa dönüş. */
+  onBack?: () => void;
   /** 2026-10-28 — misafir/hesaplı durum ve paywall'daki "Google ile devam et" (bkz. PaywallFeedItem). */
   account: AccountLinkControl;
 };
 
 export function Feed(props: FeedProps) {
-  const scope = FEED_SCOPE;
+  const scope = props.scope ?? FEED_SCOPE;
   const insets = useSafeAreaInsets();
   const [viewport, setViewport] = useState({ height: 0, width: 0 });
   return (
@@ -98,10 +108,20 @@ export function Feed(props: FeedProps) {
         <View style={styles.headerRow}>
           <View style={styles.brandGroup}>
             <Image source={brandMarkImage} style={styles.brandMark} accessibilityLabel="Looplish" />
-            <Text style={styles.brand}>Looplish</Text>
+            <Text style={styles.brand}>{scope === "cabincrew" ? CABINCREW_TITLE : "Looplish"}</Text>
           </View>
           <View style={styles.headerActions}>
-            {props.onOpenPassages ? (
+            {scope === "cabincrew" ? (
+              <Pressable style={styles.memoryButton} onPress={props.onBack} accessibilityRole="button">
+                <Text style={styles.memoryButtonText}>‹ Akış</Text>
+              </Pressable>
+            ) : null}
+            {scope !== "cabincrew" && props.onOpenCabinCrew ? (
+              <Pressable style={styles.memoryButton} onPress={props.onOpenCabinCrew} accessibilityRole="button">
+                <Text style={styles.memoryButtonText}>{CABINCREW_TITLE}</Text>
+              </Pressable>
+            ) : null}
+            {scope !== "cabincrew" && props.onOpenPassages ? (
               <Pressable
                 style={styles.memoryButton}
                 onPress={props.onOpenPassages}
@@ -110,13 +130,15 @@ export function Feed(props: FeedProps) {
                 <Text style={styles.memoryButtonText}>Okuma</Text>
               </Pressable>
             ) : null}
-            <Pressable
-              style={styles.memoryButton}
-              onPress={props.onOpenMemory}
-              accessibilityRole="button"
-            >
-              <Text style={styles.memoryButtonText}>Kelimelerim</Text>
-            </Pressable>
+            {scope !== "cabincrew" ? (
+              <Pressable
+                style={styles.memoryButton}
+                onPress={props.onOpenMemory}
+                accessibilityRole="button"
+              >
+                <Text style={styles.memoryButtonText}>Kelimelerim</Text>
+              </Pressable>
+            ) : null}
           </View>
         </View>
       </View>
@@ -244,7 +266,7 @@ function FeedContent({
     return (
       <View style={styles.centered}>
         <Text style={styles.message}>
-          {EMPTY_FEED_MESSAGE}
+          {scope === "cabincrew" ? EMPTY_CABINCREW_MESSAGE : EMPTY_FEED_MESSAGE}
         </Text>
         <Pressable
           onPress={handleRefresh}

@@ -2,14 +2,14 @@ import { BadRequestException } from "@nestjs/common";
 import { contentCategorySchema, feedScopeSchema } from "@linguascroll/shared-types";
 import { FeedController } from "./feed.controller";
 import type { FeedService } from "./feed.service";
-import { resolveFeedScope, scopeToCategoryFilter } from "./feed-scope";
+import { CATEGORIES_OUTSIDE_MAIN_FEED, isIsolatedScope, MAIN_FEED_CATALOG_FILTER, resolveFeedScope, scopeToVideoFilter } from "./feed-scope";
 
 describe("resolveFeedScope", () => {
   it("scope yoksa ve category de yoksa all (geriye uyum)", () => {
     expect(resolveFeedScope(undefined, undefined)).toBe("all");
   });
 
-  it.each(["all", "animation", "ielts"] as const)("açık scope=%s aynen geçer", (scope) => {
+  it.each(["all", "animation", "ielts", "cabincrew"] as const)("açık scope=%s aynen geçer", (scope) => {
     expect(resolveFeedScope(scope, undefined)).toBe(scope);
   });
 
@@ -32,22 +32,35 @@ describe("resolveFeedScope", () => {
   });
 });
 
-describe("scopeToCategoryFilter", () => {
-  it("all için DB predicate'i YOK; animation/ielts için tek kategori", () => {
-    expect(scopeToCategoryFilter("all")).toBeUndefined();
-    expect(scopeToCategoryFilter("animation")).toBe("animation");
-    expect(scopeToCategoryFilter("ielts")).toBe("ielts");
+describe("scopeToVideoFilter ve izole kategoriler (Cabin Crew)", () => {
+  it("'all' izole kategorileri DIŞLAR; cabincrew yalnız kendi scope'unda görünür", () => {
+    expect(CATEGORIES_OUTSIDE_MAIN_FEED).toEqual(["cabincrew"]);
+    expect(scopeToVideoFilter("all")).toEqual(MAIN_FEED_CATALOG_FILTER);
+    expect(scopeToVideoFilter("all").category).toBeUndefined();
+    expect(scopeToVideoFilter("all").excludeCategories).toContain("cabincrew");
+    expect(scopeToVideoFilter("cabincrew")).toEqual({ category: "cabincrew" });
+    expect(scopeToVideoFilter("animation")).toEqual({ category: "animation" });
+    expect(scopeToVideoFilter("ielts")).toEqual({ category: "ielts" });
+  });
+
+  it("izole scope tespiti: yalnız cabincrew izole", () => {
+    expect(isIsolatedScope("cabincrew")).toBe(true);
+    for (const scope of ["all", "animation", "ielts"] as const) expect(isIsolatedScope(scope)).toBe(false);
+  });
+
+  it("eski category=cabincrew parametresi de cabincrew scope'una çözülür", () => {
+    expect(resolveFeedScope(undefined, "cabincrew")).toBe("cabincrew");
   });
 });
 
 describe("shared-types: ContentCategory ve FeedScope ayrımı", () => {
   it("ContentCategory persist edilen değerlerdir ve 'all' içermez", () => {
-    expect(contentCategorySchema.options).toEqual(["general", "animation", "ielts"]);
+    expect(contentCategorySchema.options).toEqual(["general", "animation", "ielts", "cabincrew"]);
     expect(contentCategorySchema.safeParse("all").success).toBe(false);
   });
 
-  it("FeedScope all | animation | ielts'tir; 'general' bir scope DEĞİLDİR, bilinmeyen değer geçersizdir", () => {
-    for (const valid of ["all", "animation", "ielts"]) expect(feedScopeSchema.safeParse(valid).success).toBe(true);
+  it("FeedScope all | animation | ielts | cabincrew'dir; 'general' bir scope DEĞİLDİR, bilinmeyen değer geçersizdir", () => {
+    for (const valid of ["all", "animation", "ielts", "cabincrew"]) expect(feedScopeSchema.safeParse(valid).success).toBe(true);
     for (const invalid of ["general", "speaking", "", "ALL"]) expect(feedScopeSchema.safeParse(invalid).success).toBe(false);
   });
 });

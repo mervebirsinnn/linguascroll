@@ -1,6 +1,7 @@
 import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import type { PlaybackAccessResponse, SubscriptionStatus, SubscriptionOverview, FeedScope } from "@linguascroll/shared-types";
+import { MAIN_FEED_CATALOG_FILTER } from "../feed/feed-scope";
 import { UsersService } from "../users/users.service";
 import { VideosService } from "../videos/videos.service";
 import { FreeVideoGrantsRepository } from "./free-video-grants-repository";
@@ -69,7 +70,8 @@ export class SubscriptionsService {
       return { unlimited: true };
     }
 
-    const catalog = await this.videosService.getVideoFeed();
+    // Ücretsiz 10'luk seçki ana akıştan seçilir: izole kategoriler (Cabin Crew) ücretsiz hak tüketmez/hak almaz.
+    const catalog = await this.videosService.getVideoFeed(MAIN_FEED_CATALOG_FILTER);
     const selected = await this.freeVideoGrantsRepository.getOrCreatePreview(userId, catalog.map((v) => v.id).sort(), FREE_VIDEO_CAP);
     return { unlimited: false, grantedVideoIds: selected, newVideoBudget: 0 };
   }

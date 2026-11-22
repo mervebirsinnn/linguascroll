@@ -1,4 +1,4 @@
-import { gatedEntry, parseFlag, PASSAGES_ENABLED, shouldRenderPassages } from "./feature-flags";
+import { CABINCREW_ENABLED, gatedEntry, parseFlag, PASSAGES_ENABLED, shouldRenderPassages } from "./feature-flags";
 
 describe("feature-flags", () => {
   it("parseFlag: yalnız 'true' açık; tanımsız/boş/'false'/'1'/'yes' KAPALI; büyük-küçük harf ve boşluk önemsiz", () => {
@@ -14,6 +14,11 @@ describe("feature-flags", () => {
   it("PASSAGES_ENABLED test ortamında (env tanımsız) KAPALI: varsayılan güvenli", () => {
     expect(process.env.EXPO_PUBLIC_PASSAGES_ENABLED).toBeUndefined();
     expect(PASSAGES_ENABLED).toBe(false);
+  });
+
+  it("CABINCREW_ENABLED test ortamında (env tanımsız) KAPALI: Cabin Crew girişi varsayılan gizli", () => {
+    expect(process.env.EXPO_PUBLIC_CABINCREW_ENABLED).toBeUndefined();
+    expect(CABINCREW_ENABLED).toBe(false);
   });
 
   it("gatedEntry: kapalıyken eylem verilmez (undefined → Feed butonu çizmez); açıkken aynı eylem döner", () => {

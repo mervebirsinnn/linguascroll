@@ -108,6 +108,21 @@ describe("skor özeti 4. sorunun İÇİNDE (metin toplam 5 sayfa; ayrı 6. sayfa
     expect(screen.getByRole("button", { name: "Metni göster" })).toHaveStyle({ flexShrink: 1, maxWidth: "100%" });
     expect(screen.getByText("Sonraki soru ›")).not.toHaveStyle({ fontSize: 12 }); // yazı boyutu düşürülerek çözülmedi
   });
+
+  it("'‹ Önceki' yalnız onPrev verilince çizilir ve onu çağırır; cevaplanmış soruda da çalışır, 'Metni göster' yerinde kalır", async () => {
+    const onPrev = jest.fn();
+    await render(<PassageQuestionPage {...baseProps(makeOpenPassage(1), 0)} onPrev={onPrev} />);
+    await fireEvent.press(screen.getByRole("button", { name: "Önceki sayfa" }));
+    expect(onPrev).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole("button", { name: "Metni göster" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Sonraki soru ›" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Önceki sayfa" })).toHaveStyle({ flexShrink: 1, maxWidth: "100%" });
+  });
+
+  it("onPrev verilmezse 'Önceki' hiç çizilmez", async () => {
+    await render(<PassageQuestionPage {...baseProps(makeOpenPassage(1), 0)} />);
+    expect(screen.queryByRole("button", { name: "Önceki sayfa" })).toBeNull();
+  });
 });
 
 describe("PassageLockedPage", () => {

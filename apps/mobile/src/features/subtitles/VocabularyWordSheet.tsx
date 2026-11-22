@@ -20,6 +20,12 @@ type VocabularyWordSheetProps = {
   entry: WordSheetEntry | null;
   /** 2026-11-17 — kelimenin dokunulduğu cümle (WordGlossSheet'teki gibi bağlam olarak gösterilir). */
   sentence?: string;
+  /**
+   * 2026-11-19 — `sentence`'ın Türkçe anlamı (okuma pratiği). Verilirse cümle alanında TÜRKÇESİ gösterilir; İngilizce cümle
+   * "İngilizce cümleyi göster" dokunuşuyla açılır. Verilmezse (video akışı, çevirisi olmayan metin) davranış AYNEN eskisi gibi:
+   * İngilizce cümle doğrudan görünür. Bilgi alanının (kaydırılan ScrollView) içinde olduğu için düğmelerin yerini değiştirmez.
+   */
+  sentenceTr?: string;
   /** "Videoya dön" (video akışı) ya da "Metne dön" (okuma pratiği): kapatma düğmesinin bağlama uygun metni. */
   closeLabel?: string;
   onClose: () => void;
@@ -58,8 +64,15 @@ type VocabularyWordSheetProps = {
  *
  * 2026-11-19 (okuma pratiği): `entry`/`closeLabel`/`error` ile genelleştirildi; ikinci bir kelime penceresi AÇILMADI.
  */
-export function VocabularyWordSheet({ embedded = false, entry, sentence, closeLabel = "Videoya dön", onClose, isSaved, isPending, error, onSave, onRemove }: VocabularyWordSheetProps) {
+export function VocabularyWordSheet({ embedded = false, entry, sentence, sentenceTr, closeLabel = "Videoya dön", onClose, isSaved, isPending, error, onSave, onRemove }: VocabularyWordSheetProps) {
   const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
+  // İngilizce cümlenin açık/kapalı durumu: pencere kapanınca ya da cümle değişince (başka kelime) kapalıya döner. `entry` nesnesi
+  // çağıranda her render'da yeniden kurulduğu için kimliğine değil, "var mı" bilgisine ve cümleye bağlanır.
+  const [showEnglish, setShowEnglish] = useState(false);
+  const entryOpen = entry !== null;
+  useEffect(() => {
+    setShowEnglish(false);
+  }, [entryOpen, sentence]);
   // Bekleme sırasında hangi yönde işlem yapıldığı (kaydet/çıkar): etiket yanlış yönü söylemesin ("Kaydediliyor…" çıkarırken).
   const [intent, setIntent] = useState<"save" | "remove">("save");
   // Bekleme bitince VEYA pencere kapanınca (başka kelimeyle yeniden açılabilir) niyet sıfırlanır: eski kelimenin yönü sızmaz.
@@ -97,7 +110,25 @@ export function VocabularyWordSheet({ embedded = false, entry, sentence, closeLa
               <ScrollView testID="word-sheet-info" style={styles.info} showsVerticalScrollIndicator={false}>
                 <Text style={styles.word}>{entry.title}</Text>
                 <Text style={styles.gloss}>{entry.gloss}</Text>
-                {sentence && <Text style={[styles.gloss, styles.sentence]}>{sentence}</Text>}
+                {sentenceTr ? (
+                  <>
+                    <Text testID="word-sheet-sentence-tr" style={[styles.gloss, styles.sentence]}>{sentenceTr}</Text>
+                    {sentence ? (
+                      <Pressable
+                        testID="word-sheet-toggle-english"
+                        accessibilityRole="button"
+                        accessibilityState={{ expanded: showEnglish }}
+                        onPress={() => setShowEnglish((open) => !open)}
+                        style={styles.englishToggle}
+                      >
+                        <Text style={styles.englishToggleText}>{showEnglish ? "İngilizce cümleyi gizle" : "İngilizce cümleyi göster"}</Text>
+                      </Pressable>
+                    ) : null}
+                    {sentence && showEnglish ? <Text testID="word-sheet-sentence-en" style={[styles.gloss, styles.englishSentence]}>{sentence}</Text> : null}
+                  </>
+                ) : (
+                  sentence && <Text style={[styles.gloss, styles.sentence]}>{sentence}</Text>
+                )}
                 {error ? (
                   <View style={styles.errorBox}>
                     <Text accessibilityRole="alert" accessibilityLiveRegion="assertive" style={styles.errorText}>{error}</Text>
@@ -195,6 +226,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   sentence: { marginTop: 12, fontStyle: "italic" },
+  // Türkçe cümlenin altındaki küçük "İngilizce cümleyi göster" dokunuşu ve açılan İngilizce cümle (düşük vurgulu).
+  englishToggle: { minHeight: 44, justifyContent: "center", alignSelf: "flex-start" },
+  englishToggleText: { color: "#9a93ab", fontSize: 13, fontWeight: "600" },
+  englishSentence: { color: "#b9b3c7", fontSize: 14, fontStyle: "italic" },
   save: { minHeight: 48, justifyContent: "center", alignItems: "center", borderRadius: 12, backgroundColor: "#2a2238", marginTop: 12 },
   saveText: { color: "#c8b5ff", fontSize: 15, fontWeight: "600" },
   // "Videoya dön"/kapat düğmesinden ayrı durması için 12 px (yanlışlıkla çıkarma ihtimalini azaltır).

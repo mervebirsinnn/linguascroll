@@ -55,6 +55,14 @@ describe("PassagePager", () => {
     expect(() => goNexts[0]!()).not.toThrow();
     expect(() => goNexts[goNexts.length - 1]!()).not.toThrow();
   });
+
+  it("goPrev: ilk sayfada yok, sonraki sayfalarda var ve çağrılınca taşmaz", async () => {
+    const goPrevs: Array<(() => void) | undefined> = [];
+    await render(<PassagePager pages={pages} height={800} width={400} renderPage={({ key }, _goNext, goPrev) => { goPrevs.push(goPrev); return <Text>{key}</Text>; }} renderEnd={() => <Text>BİTİŞ</Text>} onNearEnd={() => {}} />);
+    expect(goPrevs[0]).toBeUndefined();
+    expect(goPrevs.slice(1).every((fn) => typeof fn === "function")).toBe(true);
+    expect(() => goPrevs[1]!()).not.toThrow();
+  });
 });
 
 describe("kaydırma yapısı: sayfa geçişi YATAY, sayfa içi DİKEY (eksenler çakışmaz)", () => {

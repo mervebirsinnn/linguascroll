@@ -107,6 +107,9 @@ export const passageWordSpansTable = pgTable(
     // BU geçişin cümlesi (kaydedilen kaynak cümle + kelime penceresinde gösterilen). NULLABLE: yayıncı her span için yazar;
     // null ise (ör. bu alan gelmeden önce yazılmış satır) passage_words.context_sentence (ilk geçişin cümlesi) kullanılır.
     contextSentence: text("context_sentence"),
+    // `context_sentence`'ın Türkçe anlamı (kelime penceresinde gösterilir). NULLABLE: çevirisi olmayan metinler ve bu sütun gelmeden
+    // önce yayımlanmış satırlar null kalır; istemci o zaman İngilizce cümleye geri düşer. Kaydedilen kaynak cümle değişmez.
+    contextSentenceTr: text("context_sentence_tr"),
   },
   (table) => [
     foreignKey({

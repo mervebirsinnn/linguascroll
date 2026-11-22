@@ -159,6 +159,27 @@ describe("SubscriptionsService.getFeedAllowance", () => {
   });
 });
 
+describe("SubscriptionsService.getFeedAllowance — izole kategori (Cabin Crew)", () => {
+  it("ücretsiz seçki katalogu ana akıştan istenir: cabincrew hak havuzuna girmez", async () => {
+    const filters: unknown[] = [];
+    const videosService = {
+      getVideoFeed: async (filter: unknown) => {
+        filters.push(filter);
+        return videoIds(15).map((id) => ({ id, playbackUrl: PLAYBACK_URL }));
+      },
+    } as unknown as VideosService;
+    const service = new SubscriptionsService(
+      videosService,
+      { userExists: () => Promise.resolve(true) } as unknown as UsersService,
+      makeLedger().repository,
+      { checkEntitlement: () => Promise.resolve(false) } as unknown as RevenueCatClient,
+      { get: (key: string) => (key === "SUBSCRIPTION_GATE_ENABLED" ? "true" : undefined) } as unknown as ConfigService,
+    );
+    await service.getFeedAllowance(USER_ID, ["v1"]);
+    expect(filters).toEqual([{ excludeCategories: ["cabincrew"] }]);
+  });
+});
+
 describe("SubscriptionsService abonelik önbelleği", () => {
   it("'abone değil' kısa süre önbelleklenir: art arda isteklerde RevenueCat'e tekrar gidilmez", async () => {
     let checks = 0;

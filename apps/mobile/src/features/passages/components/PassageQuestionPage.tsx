@@ -29,6 +29,8 @@ type PassageQuestionPageProps = {
   onRecheck: () => void;
   onShowText: () => void;
   onNext: () => void;
+  /** Bir önceki sayfaya (önceki soru ya da metin) döner; cevaplanmış soru kilitli kalır, geri dönmek cevabı değiştirmez. */
+  onPrev?: () => void;
 };
 
 /**
@@ -53,6 +55,7 @@ export function PassageQuestionPage({
   onRecheck,
   onShowText,
   onNext,
+  onPrev,
 }: PassageQuestionPageProps) {
   const result = question.result;
   const pending = pendingOptionId !== undefined;
@@ -70,9 +73,17 @@ export function PassageQuestionPage({
       onNext={onNext}
       nextLabel={isLast ? "Sonraki metin ›" : "Sonraki soru ›"}
       footerExtra={
-        <Pressable accessibilityRole="button" onPress={onShowText} style={styles.showText}>
-          <Text style={styles.showTextLabel}>Metni göster</Text>
-        </Pressable>
+        // "Önceki" ve "Metni göster" aynı sol grupta; büyük yazıda grup sarılır (PageFrame çubuğu zaten flexWrap'li).
+        <View style={styles.footerLeft}>
+          {onPrev ? (
+            <Pressable accessibilityRole="button" accessibilityLabel="Önceki sayfa" onPress={onPrev} style={styles.showText}>
+              <Text style={styles.prevLabel}>‹ Önceki</Text>
+            </Pressable>
+          ) : null}
+          <Pressable accessibilityRole="button" onPress={onShowText} style={styles.showText}>
+            <Text style={styles.showTextLabel}>Metni göster</Text>
+          </Pressable>
+        </View>
       }
     >
       <Text accessibilityLiveRegion="polite" style={styles.summary}>{summary}</Text>
@@ -180,4 +191,6 @@ const styles = StyleSheet.create({
   // flexShrink + maxWidth: dar ekran/büyük yazıda "Metni göster" de çubuğu taşırmadan kendi metnini sarar (bkz. PageFrame footer).
   showText: { minHeight: 44, maxWidth: "100%", flexShrink: 1, justifyContent: "center", paddingHorizontal: 8, paddingVertical: 4 },
   showTextLabel: { color: "#ddf9a8", fontSize: 14, fontWeight: "700" },
+  prevLabel: { color: "#c8b5ff", fontSize: 14, fontWeight: "700" },
+  footerLeft: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", columnGap: 4, flexShrink: 1, maxWidth: "100%" },
 });
