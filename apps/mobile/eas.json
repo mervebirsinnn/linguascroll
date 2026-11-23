@@ -25,7 +25,11 @@
       "autoIncrement": true,
       "environment": "production",
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "env": {
+          "EXPO_PUBLIC_PASSAGES_ENABLED": "true",
+          "EXPO_PUBLIC_CABINCREW_ENABLED": "true"
+        }
       },
       "env": {
         "EXPO_PUBLIC_API_BASE_URL": "https://looplish-api.onrender.com",

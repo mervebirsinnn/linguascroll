@@ -6,6 +6,7 @@ import type { AccountLinkControl } from "../../identity/auth-state";
 import { ProgressScreen } from "./ProgressScreen";
 import { ReviewScreen } from "./ReviewScreen";
 import { SavedWordsScreen } from "./SavedWordsScreen";
+import { GuideTip, useFirstVideoGuide } from '../../onboarding/FirstVideoGuide';
 
 type MemoryFlowProps = {
   userId: string;
@@ -37,6 +38,7 @@ type MemoryTab = "saved" | "review" | "progress";
  * kesinti olarak enjekte edilmiyor.
  */
 export function MemoryFlow({ userId, onBack, onSignOut, account, level, onChangeLevel }: MemoryFlowProps) {
+  const guide = useFirstVideoGuide();
   const [tab, setTab] = useState<MemoryTab>("saved");
   const [accountOpen, setAccountOpen] = useState(false);
   const insets = useSafeAreaInsets();
@@ -51,10 +53,11 @@ export function MemoryFlow({ userId, onBack, onSignOut, account, level, onChange
           <Text style={styles.backButtonText}>‹ Keşfet</Text>
         </Pressable>
         <Text style={styles.title}>Kelimelerim</Text>
-        <Pressable onPress={() => setAccountOpen(true)} accessibilityRole="button" style={({ pressed }) => [styles.accountButton, pressed && styles.accountButtonPressed]}>
+        <Pressable onPress={() => { guide.act('account'); setAccountOpen(true); }} accessibilityRole="button" style={({ pressed }) => [styles.accountButton, pressed && styles.accountButtonPressed]}>
           <Text style={styles.accountButtonText}>Hesabım</Text>
         </Pressable>
       </View>
+      <GuideTip steps={['account']} />
       <View style={styles.tabBar}>
         <TabButton label="Kayıtlı" active={tab === "saved"} onPress={() => setTab("saved")} />
         <TabButton label="Tekrar" active={tab === "review"} onPress={() => setTab("review")} />

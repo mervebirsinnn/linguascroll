@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AccessibilityInfo, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
+import { GuideTip } from '../onboarding/FirstVideoGuide';
 
 /**
  * Pencerede gösterilen GÖRÜNTÜ modeli. Bilerek `VideoVocabularyItem` değil: video akışı sözlük biçimini (lemma), okuma
@@ -10,6 +11,7 @@ import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
 export type WordSheetEntry = { title: string; gloss: string };
 
 type VocabularyWordSheetProps = {
+  guideVisible?: boolean;
   /** Metin penceresindeki tek native Modal içinde gösterim: ikinci iOS Modal sunumu oluşturmaz. */
   embedded?: boolean;
   /**
@@ -64,7 +66,7 @@ type VocabularyWordSheetProps = {
  *
  * 2026-11-19 (okuma pratiği): `entry`/`closeLabel`/`error` ile genelleştirildi; ikinci bir kelime penceresi AÇILMADI.
  */
-export function VocabularyWordSheet({ embedded = false, entry, sentence, sentenceTr, closeLabel = "Videoya dön", onClose, isSaved, isPending, error, onSave, onRemove }: VocabularyWordSheetProps) {
+export function VocabularyWordSheet({ guideVisible = false, embedded = false, entry, sentence, sentenceTr, closeLabel = "Videoya dön", onClose, isSaved, isPending, error, onSave, onRemove }: VocabularyWordSheetProps) {
   const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
   // İngilizce cümlenin açık/kapalı durumu: pencere kapanınca ya da cümle değişince (başka kelime) kapalıya döner. `entry` nesnesi
   // çağıranda her render'da yeniden kurulduğu için kimliğine değil, "var mı" bilgisine ve cümleye bağlanır.
@@ -108,6 +110,7 @@ export function VocabularyWordSheet({ embedded = false, entry, sentence, sentenc
               {/* Bilgi alanı (başlık, anlam, cümle, hata) kaydırılabilir ve kart ekranı AŞMAZ (maxHeight); DÜĞMELER bu alanın DIŞINDA,
                   kartın altında sabit kalır: uzun cümle + hata kutusu düğmeleri ekran dışına itemez ve düğmelerin ekrandaki yeri değişmez. */}
               <ScrollView testID="word-sheet-info" style={styles.info} showsVerticalScrollIndicator={false}>
+                <GuideTip steps={['save', 'closeWord']} visible={guideVisible} />
                 <Text style={styles.word}>{entry.title}</Text>
                 <Text style={styles.gloss}>{entry.gloss}</Text>
                 {sentenceTr ? (
