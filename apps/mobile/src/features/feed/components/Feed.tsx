@@ -22,6 +22,7 @@ import { FeedListFooter } from "./FeedListFooter";
 import { getFeedOccurrenceKey } from "./get-feed-item-key";
 import { GatedVideoFeedItem } from "./GatedVideoFeedItem";
 import { QuizFeedItem } from "./QuizFeedItem";
+import { GuideTip, useFirstVideoGuide } from '../../onboarding/FirstVideoGuide';
 
 // looplish.app'in favicon.svg'siyle AYNI logo (L harfi + oynat üçgeni). react-native-svg
 // bağımlılığı eklememek için PNG olarak üretilmiş (bkz. assets/brand-mark.png).
@@ -99,6 +100,7 @@ type FeedProps = {
 };
 
 export function Feed(props: FeedProps) {
+  const guide = useFirstVideoGuide();
   const scope = props.scope ?? FEED_SCOPE;
   const insets = useSafeAreaInsets();
   const [viewport, setViewport] = useState({ height: 0, width: 0 });
@@ -133,7 +135,7 @@ export function Feed(props: FeedProps) {
             {scope !== "cabincrew" ? (
               <Pressable
                 style={styles.memoryButton}
-                onPress={props.onOpenMemory}
+                onPress={() => { if (guide.step === 'memory') guide.act('memory'); else if (!['waiting', 'done', 'account'].includes(guide.step)) guide.act('skip'); props.onOpenMemory(); }}
                 accessibilityRole="button"
               >
                 <Text style={styles.memoryButtonText}>Kelimelerim</Text>
@@ -141,6 +143,7 @@ export function Feed(props: FeedProps) {
             ) : null}
           </View>
         </View>
+        {scope === 'all' && <GuideTip steps={['memory']} />}
       </View>
       {/* Bölüm değişince bütün oyuncular/istek state'i unmount olur; eski response yeni akışa eklenemez. */}
       {/* Gerçek layout ölçülür: Android sistem çubukları ve büyük yazı ayarı sabit ekran hesabını bozmaz. */}
@@ -304,6 +307,7 @@ function FeedContent({
             return (
               <GatedVideoFeedItem
                 scope={scope}
+                guideEligible={scope === 'all' && index === items.findIndex(entry => entry.type === 'video')}
                 video={item.video}
                 isActive={isActive}
                 height={height}

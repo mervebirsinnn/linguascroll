@@ -3,8 +3,10 @@ import type { TranscriptSegment, VideoVocabularyItem } from "@linguascroll/share
 import { useExplanationLanguage } from "../preferences/use-explanation-language";
 import { resolveSegmentExplanation } from "./resolve-segment-explanation";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
+import { GuideTip } from '../onboarding/FirstVideoGuide';
 
 type ExplanationSheetProps = {
+  guideVisible?: boolean;
   /**
    * Tıklandığı ANDAKİ segment'in snapshot'ı — null ise sheet kapalı. Bu değer
    * VideoFeedItem'da SABİTLENİR: sheet açıkken video'nun canlı aktif segment'i
@@ -27,7 +29,7 @@ type ExplanationSheetProps = {
  * RN'in kendi Modal'ı MVP için yeterli. video → subtitle → tap → explanation →
  * EN/TR mode akışının son adımı.
  */
-export function ExplanationSheet({ segment, vocabulary, onClose }: ExplanationSheetProps) {
+export function ExplanationSheet({ segment, vocabulary, onClose, guideVisible = false }: ExplanationSheetProps) {
   const [language, setLanguage] = useExplanationLanguage();
   const androidBottomSheetNavInset = useAndroidBottomSheetNavInset();
   // Chunk 16 revizyon — cihaz smoke test'inde bulunan bug: `segment.englishExplanation`
@@ -69,6 +71,7 @@ export function ExplanationSheet({ segment, vocabulary, onClose }: ExplanationSh
 
           {segment && (
             <ScrollView style={styles.body}>
+              <GuideTip steps={['closeSentence']} visible={guideVisible} />
               <Text style={styles.sentence}>{segment.text}</Text>
               {resolved?.kind === "sentence" && <Text style={styles.explanation}>{resolved.text}</Text>}
               {resolved?.kind === "labeled" && (
@@ -98,6 +101,7 @@ export function ExplanationSheet({ segment, vocabulary, onClose }: ExplanationSh
               ))}
             </ScrollView>
           )}
+          {guideVisible && segment && <Pressable accessibilityRole="button" onPress={onClose} style={{ minHeight: 44, justifyContent: 'center', alignItems: 'center' }}><Text style={{ color: '#d6c5ff' }}>Videoya dön</Text></Pressable>}
         </Pressable>
       </Pressable>
     </Modal>

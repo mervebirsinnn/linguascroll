@@ -2,6 +2,9 @@ import { act, fireEvent, render, screen } from "@testing-library/react-native";
 import { StyleSheet } from "react-native";
 import type { FeedPlayableVideo } from "@linguascroll/shared-types";
 import { VideoFeedItem } from "./VideoFeedItem";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { FirstVideoGuideProvider } from '../../onboarding/FirstVideoGuideProvider';
+import { FIRST_VIDEO_GUIDE_KEY } from '../../onboarding/first-video-guide-state';
 
 // RN'in gerçek `Modal` native component spec'i (ExplanationSheet/
 // VocabularyWordSheet/VideoAttributionSheet'in üçü de kullanıyor), Jest'in
@@ -330,4 +333,27 @@ describe("VideoFeedItem — ortak kelime penceresi video akışında aynı kalı
     expect(screen.getByText("seyahat etmek")).toBeTruthy();
     expect(screen.getByText("Kaydediliyor…")).toBeTruthy();
   });
+});
+
+it('ilk videodaki gerçek kelime dokunuşunu izler, yalnız onaylı kayıt sonrası ilerler', async () => {
+  await AsyncStorage.removeItem(FIRST_VIDEO_GUIDE_KEY);
+  let saved = false;
+  const onSave = jest.fn();
+  const first = makeVideo({
+    segments: [{ id: 'segment-guide', ordinal: 1, startMs: 0, endMs: 5000, text: 'We travel often.', englishExplanation: 'e', turkishExplanation: 'Sık seyahat ederiz.', learningPoints: [] }],
+    vocabulary: [{ word: { id: 'guide-word', language: 'en', lemma: 'travel', gloss: 'seyahat' }, saved: false }],
+  });
+  const content = () => <FirstVideoGuideProvider><VideoFeedItem video={first} {...baseProps} guideEligible isWordSaved={() => saved} onToggleSaveWord={onSave} /></FirstVideoGuideProvider>;
+  const result = await render(content());
+  expect(await screen.findByTestId('guide-word')).toBeTruthy();
+  await fireEvent.press(screen.getByText('travel'));
+  expect(screen.getByTestId('guide-save')).toBeTruthy();
+  await fireEvent.press(screen.getByText('Kelimelerime kaydet'));
+  expect(onSave).toHaveBeenCalledWith('guide-word', 'segment-guide');
+  expect(screen.getByTestId('guide-save')).toBeTruthy();
+  saved = true;
+  await result.rerender(content());
+  expect(screen.getByTestId('guide-closeWord')).toBeTruthy();
+  await fireEvent.press(screen.getByText('Videoya dön'));
+  expect(screen.getByTestId('guide-sentence')).toBeTruthy();
 });

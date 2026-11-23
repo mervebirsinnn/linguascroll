@@ -12,6 +12,7 @@ import { PassagesFlow } from './src/features/passages/components/PassagesFlow';
 import { initialPassageLevel } from './src/features/passages/passages-state';
 import { CABINCREW_ENABLED, gatedEntry, PASSAGES_ENABLED, shouldRenderPassages } from './src/shared/feature-flags';
 import { OnboardingFlow } from './src/features/onboarding/OnboardingFlow';
+import { FirstVideoGuideProvider } from './src/features/onboarding/FirstVideoGuideProvider';
 import { useOnboardingState } from './src/features/onboarding/use-onboarding-state';
 import type { AccountLinkControl, AuthProvider } from './src/features/identity/auth-state';
 import { initializePurchases } from './src/features/subscription/purchases-gateway';
@@ -207,4 +208,5 @@ const styles = StyleSheet.create({
 // Sentry.wrap: native crash'leri JS tarafındaki son event'e bağlıyor (Sentry'nin
 // resmi RN entegrasyon deseni) — sadece Sentry.init (instrument.ts) çalıştıktan
 // sonra register edilecek şekilde index.ts'in import sırasına bağımlı.
-export default Sentry.wrap(App);
+function GuidedApp() { return <FirstVideoGuideProvider><App /></FirstVideoGuideProvider>; }
+export default Sentry.wrap(GuidedApp);

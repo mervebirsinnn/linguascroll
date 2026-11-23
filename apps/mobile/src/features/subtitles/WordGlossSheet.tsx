@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { saveGloss } from "./api/save-gloss";
-import { Modal, Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import { Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useAndroidBottomSheetNavInset } from "../../shared/bottom-sheet-inset";
+import { GuideTip } from '../onboarding/FirstVideoGuide';
 
 export type OpenWordGloss = { word: string; gloss: string; segmentId?: string; sentence?: string };
 
-type WordGlossSheetProps = { entry: OpenWordGloss | null; onClose: () => void };
+type WordGlossSheetProps = { entry: OpenWordGloss | null; onClose: () => void; guideVisible?: boolean; onSaved?: () => void };
 
 /** Hazırlanmış anlamı anında gösterir. Kaydet yalnızca backend kayıt işlemi yapar; AI çağrılmaz.
  * Snapshot segment bağlamını korur; kapanan/eski panelin yanıtı yeni kelimeye taşınmaz. */
-export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
+export function WordGlossSheet({ entry, onClose, guideVisible = false, onSaved }: WordGlossSheetProps) {
   const [saved, setSaved] = useState(false);
   const [pending, setPending] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -26,7 +27,7 @@ export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
     locked.current = true; setPending(true); setNotice(null);
     try {
       await saveGloss(entry.segmentId, entry.word);
-      if (generation.current === request) setSaved(true);
+      if (generation.current === request) { setSaved(true); onSaved?.(); }
     } catch {
       if (generation.current === request) setNotice("Kaydedilemedi. Bağlantını kontrol edip tekrar dene.");
     } finally {
@@ -42,10 +43,13 @@ export function WordGlossSheet({ entry, onClose }: WordGlossSheetProps) {
           onPress={() => {}}
         >
           {entry && (
-            <View>
+            <View style={{ flexShrink: 1 }}>
+              <ScrollView style={{ flexShrink: 1 }}>
+              <GuideTip steps={['save', 'closeWord']} visible={guideVisible} />
               <Text style={styles.word}>{entry.word}</Text>
               <Text style={styles.gloss}>{entry.gloss}</Text>
               {entry.sentence && <Text style={[styles.gloss, { marginTop: 12, fontStyle: "italic" }]}>{entry.sentence}</Text>}
+              </ScrollView>
               {entry.segmentId && <Pressable accessibilityRole="button" disabled={pending || saved} onPress={() => { void save(); }} style={styles.save}><Text style={styles.saveText}>{pending ? "Kaydediliyor…" : saved ? "Kelimelerine eklendi ✓" : "Kelimelerime kaydet"}</Text></Pressable>}
               {notice && <Text accessibilityRole="alert" style={styles.notice}>{notice}</Text>}
               <Pressable onPress={onClose} accessibilityRole="button" style={styles.save}><Text style={styles.saveText}>Videoya dön</Text></Pressable>
@@ -67,6 +71,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   card: {
+    maxHeight: '90%',
     backgroundColor: "#111",
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,

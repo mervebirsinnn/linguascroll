@@ -18,11 +18,14 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { VideoFeedbackSheet } from "./VideoFeedbackSheet";
 import { VideoAttributionSheet } from "./VideoAttributionSheet";
 import { formatVideoTime, seekTimeFromTap } from "../video-progress";
+import { GuideTip, useFirstVideoGuide } from '../../onboarding/FirstVideoGuide';
+import { buildSubtitleSpans } from '../../subtitles/find-vocabulary-matches';
 
 /** timeUpdate event'inin native aralığı (saniye) — okunabilirlik için yeterli, gereksiz re-render yaratmayacak kadar seyrek. */
 const SUBTITLE_TIME_UPDATE_INTERVAL_SECONDS = 0.25;
 
 type VideoFeedItemProps = {
+  guideEligible?: boolean;
   // Chunk 9 review düzeltmesi: base PlayableVideo DEĞİL — bir feed item'daki
   // video her zaman FeedService'in enrichment'ından geçmiş (vocabulary dahil).
   // 2026-10-27 — `playbackUrl` burada KESİN string: feed null taşıyabilir (erişim henüz
@@ -48,6 +51,7 @@ type VideoFeedItemProps = {
 };
 
 export function VideoFeedItem({
+  guideEligible = false,
   video,
   isActive,
   height,
@@ -57,6 +61,8 @@ export function VideoFeedItem({
   isWordPending,
   onToggleSaveWord,
 }: VideoFeedItemProps) {
+  const guide = useFirstVideoGuide();
+  const guiding = guide.videoId === video.id && isActive;
   const insets = useSafeAreaInsets();
   const [sourceOpen, setSourceOpen] = useState(false);
   const resumeAfterSource = useRef(false);
@@ -129,13 +135,28 @@ export function VideoFeedItem({
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [openGloss, setOpenGloss] = useState<OpenWordGloss | null>(null);
 
+  useEffect(() => {
+    if (guideEligible && isActive && activeSegment && guide.step === 'waiting' &&
+        buildSubtitleSpans(activeSegment.text, video.vocabulary, wordGlosses?.[activeSegment.id]).some(span => span.word || span.gloss)) {
+      guide.begin(video.id);
+    }
+  }, [guideEligible, isActive, activeSegment, guide.step, guide.begin, video.id, video.vocabulary, wordGlosses]);
+  useEffect(() => {
+    if (guiding && openVocabularyWord && isWordSaved(openVocabularyWord.word.id)) guide.act('saved');
+  }, [guiding, openVocabularyWord, isWordSaved, guide.act]);
+  useEffect(() => {
+    if (guide.videoId === video.id && !isActive && !['memory', 'account', 'done'].includes(guide.step)) guide.act('skip');
+  }, [guide.videoId, guide.step, guide.act, video.id, isActive]);
+
   function handleSubtitleTap(segment: TranscriptSegment): void {
+    if (guiding) guide.act('sentence');
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
     setOpenSegment(segment);
   }
 
   function handleCloseSheet(): void {
+    if (guiding) guide.act('closeSentence');
     setOpenSegment(null);
     // Sadece açılmadan ÖNCE gerçekten oynatılıyorduysa VE bu item hâlâ aktifse
     // resume et — isActive false'a düşmüşse (kullanıcı scroll etmiş) isActive
@@ -149,6 +170,7 @@ export function VideoFeedItem({
     word: VideoVocabularyItem,
     segment: TranscriptSegment,
   ): void {
+    if (guiding) { guide.act('word'); if (isWordSaved(word.word.id)) guide.act('saved'); }
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
     setOpenVocabularyWord(word);
@@ -156,6 +178,7 @@ export function VideoFeedItem({
   }
 
   function handleCloseVocabularySheet(): void {
+    if (guiding) guide.act('closeWord');
     setOpenVocabularyWord(null);
     setOpenVocabularySegment(null);
     if (wasPlayingBeforeOpenRef.current && isActive) {
@@ -164,12 +187,14 @@ export function VideoFeedItem({
   }
 
   function handleGlossTap(word: string, gloss: string): void {
+    if (guiding) guide.act('word');
     wasPlayingBeforeOpenRef.current = isPlayingRef.current;
     player.pause();
     setOpenGloss({ word, gloss, segmentId: activeSegment?.id, sentence: activeSegment?.text });
   }
 
   function handleCloseGlossSheet(): void {
+    if (guiding) guide.act('closeWord');
     setOpenGloss(null);
     if (wasPlayingBeforeOpenRef.current && isActive) {
       player.play();
@@ -340,6 +365,7 @@ export function VideoFeedItem({
           { paddingBottom: Math.max(insets.bottom, 12) + 8 },
         ]}
       >
+        <GuideTip steps={['word', 'sentence']} visible={guiding && !openSegment && !openVocabularyWord && !openGloss && !!activeSegment} />
         <ScrollView
           key={activeSegment?.id ?? "gap"}
           style={{ maxHeight: height * 0.3 }}
@@ -374,11 +400,13 @@ export function VideoFeedItem({
           </View>
         </Pressable>
         <ExplanationSheet
+          guideVisible={guiding}
           segment={openSegment}
           vocabulary={video.vocabulary}
           onClose={handleCloseSheet}
         />
         <VocabularyWordSheet
+          guideVisible={guiding}
           entry={vocabularyEntry}
           sentence={openVocabularySegment?.text}
           onClose={handleCloseVocabularySheet}
@@ -404,7 +432,7 @@ export function VideoFeedItem({
             }
           }}
         />
-        <WordGlossSheet entry={openGloss} onClose={handleCloseGlossSheet} />
+        <WordGlossSheet entry={openGloss} onClose={handleCloseGlossSheet} guideVisible={guiding} onSaved={() => { if (guiding) guide.act('saved'); }} />
       </View>
     </View>
   );
