@@ -1,0 +1,1761 @@
+{
+  "slug": "b1-turing-test",
+  "level": "B1",
+  "title": "Can a Machine Fool You?",
+  "topic": "Yapay zeka",
+  "sortOrder": 15,
+  "isFreeSample": false,
+  "paragraphs": [
+    "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think? He wrote about it in a famous paper. Turing thought that the question about thinking was too difficult to answer directly. The question was hard, so he suggested a game.",
+    "In the game, a person writes messages to two players in other rooms. The person cannot see the players, so only the words on the page give clues. One player is a human, and the other is a machine. If the person cannot tell which is which, the machine has done well. Turing called it the imitation game.",
+    "Today, people call it the Turing test. It does not prove that a machine really understands us. However, it gave scientists a clear way to talk about intelligent machines."
+  ],
+  "words": [
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 122,
+          "surface": "in",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 53,
+          "end": 55,
+          "surface": "in",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 11,
+          "surface": "nineteen",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "fifty",
+      "gloss": "elli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 17,
+          "surface": "fifty",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 20,
+          "surface": "a",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 64,
+          "surface": "a",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 123,
+          "end": 124,
+          "surface": "a",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 265,
+          "surface": "a",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 14,
+          "surface": "a",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 161,
+          "surface": "a",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 186,
+          "end": 187,
+          "surface": "a",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 63,
+          "surface": "a",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 124,
+          "surface": "a",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "british",
+      "gloss": "İngiliz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 28,
+          "surface": "British",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "scientist",
+      "gloss": "bilim insanı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 29,
+          "end": 38,
+          "surface": "scientist",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "named",
+      "gloss": "adlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 39,
+          "end": 44,
+          "surface": "named",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "alan",
+      "gloss": "Alan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 49,
+          "surface": "Alan",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "turing",
+      "gloss": "Turing",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 56,
+          "surface": "Turing",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 145,
+          "surface": "Turing",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 272,
+          "surface": "Turing",
+          "contextSentence": "Turing called it the imitation game.",
+          "contextSentenceTr": "Turing buna taklit oyunu dedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 32,
+          "surface": "Turing",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        }
+      ]
+    },
+    {
+      "lemma": "asked",
+      "gloss": "sordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 62,
+          "surface": "asked",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "simple",
+      "gloss": "basit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 71,
+          "surface": "simple",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "soru",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 80,
+          "surface": "question",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 163,
+          "end": 171,
+          "surface": "question",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 237,
+          "surface": "question",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir mi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 82,
+          "end": 85,
+          "surface": "can",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "machines",
+      "gloss": "makineler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 94,
+          "surface": "machines",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 169,
+          "surface": "machines",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "think",
+      "gloss": "düşünmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 95,
+          "end": 100,
+          "surface": "think",
+          "contextSentence": "In nineteen fifty, a British scientist named Alan Turing asked a simple question: can machines think?",
+          "contextSentenceTr": "1950'de Alan Turing adlı İngiliz bir bilim insanı basit bir soru sordu: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 104,
+          "surface": "He",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 253,
+          "surface": "he",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "wrote",
+      "gloss": "yazdı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 105,
+          "end": 110,
+          "surface": "wrote",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 116,
+          "surface": "about",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 148,
+          "surface": "about",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 119,
+          "surface": "it",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 280,
+          "end": 282,
+          "surface": "it",
+          "contextSentence": "Turing called it the imitation game.",
+          "contextSentenceTr": "Turing buna taklit oyunu dedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 19,
+          "end": 21,
+          "surface": "it",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 41,
+          "surface": "It",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 106,
+          "surface": "it",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "famous",
+      "gloss": "ünlü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 131,
+          "surface": "famous",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "paper",
+      "gloss": "makale",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 132,
+          "end": 137,
+          "surface": "paper",
+          "contextSentence": "He wrote about it in a famous paper.",
+          "contextSentenceTr": "Bunu ünlü bir makalede yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "thought",
+      "gloss": "düşündü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 153,
+          "surface": "thought",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 154,
+          "end": 158,
+          "surface": "that",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 61,
+          "surface": "that",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 162,
+          "surface": "the",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 228,
+          "surface": "The",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 3,
+          "end": 6,
+          "surface": "the",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 69,
+          "end": 72,
+          "surface": "The",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 94,
+          "surface": "the",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 112,
+          "end": 115,
+          "surface": "the",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 125,
+          "end": 128,
+          "surface": "the",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 176,
+          "surface": "the",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 203,
+          "surface": "the",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 242,
+          "surface": "the",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 283,
+          "end": 286,
+          "surface": "the",
+          "contextSentence": "Turing called it the imitation game.",
+          "contextSentenceTr": "Turing buna taklit oyunu dedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 25,
+          "surface": "the",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkındaki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 172,
+          "end": 177,
+          "surface": "about",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "thinking",
+      "gloss": "düşünme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 178,
+          "end": 186,
+          "surface": "thinking",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 190,
+          "surface": "was",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 238,
+          "end": 241,
+          "surface": "was",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "too",
+      "gloss": "fazla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 194,
+          "surface": "too",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "difficult",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 204,
+          "surface": "difficult",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 205,
+          "end": 207,
+          "surface": "to",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "answer",
+      "gloss": "cevaplamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 208,
+          "end": 214,
+          "surface": "answer",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "directly",
+      "gloss": "doğrudan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 215,
+          "end": 223,
+          "surface": "directly",
+          "contextSentence": "Turing thought that the question about thinking was too difficult to answer directly.",
+          "contextSentenceTr": "Turing, düşünme hakkındaki sorunun doğrudan cevaplanamayacak kadar zor olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "hard",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 242,
+          "end": 246,
+          "surface": "hard",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 248,
+          "end": 250,
+          "surface": "so",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 106,
+          "surface": "so",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "suggested",
+      "gloss": "önerdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 263,
+          "surface": "suggested",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "game",
+      "gloss": "oyun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 266,
+          "end": 270,
+          "surface": "game",
+          "contextSentence": "The question was hard, so he suggested a game.",
+          "contextSentenceTr": "Soru zordu, bu yüzden bir oyun önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 11,
+          "surface": "game",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 297,
+          "end": 301,
+          "surface": "game",
+          "contextSentence": "Turing called it the imitation game.",
+          "contextSentenceTr": "Turing buna taklit oyunu dedi."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 15,
+          "end": 21,
+          "surface": "person",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 79,
+          "surface": "person",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 204,
+          "end": 210,
+          "surface": "person",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "writes",
+      "gloss": "yazar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 28,
+          "surface": "writes",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "messages",
+      "gloss": "mesajlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 29,
+          "end": 37,
+          "surface": "messages",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 38,
+          "end": 40,
+          "surface": "to",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 41,
+          "end": 44,
+          "surface": "two",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "players",
+      "gloss": "oyuncular",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 45,
+          "end": 52,
+          "surface": "players",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 95,
+          "end": 102,
+          "surface": "players",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 56,
+          "end": 61,
+          "surface": "other",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "rooms",
+      "gloss": "odalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 62,
+          "end": 67,
+          "surface": "rooms",
+          "contextSentence": "In the game, a person writes messages to two players in other rooms.",
+          "contextSentenceTr": "Oyunda bir kişi, başka odalardaki iki oyuncuya mesaj yazar."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 86,
+          "surface": "cannot",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 211,
+          "end": 217,
+          "surface": "cannot",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "see",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 90,
+          "surface": "see",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 111,
+          "surface": "only",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "words",
+      "gloss": "sözcükler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 121,
+          "surface": "words",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerindeki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 122,
+          "end": 124,
+          "surface": "on",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "page",
+      "gloss": "sayfa",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 133,
+          "surface": "page",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "give",
+      "gloss": "vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 134,
+          "end": 138,
+          "surface": "give",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "clues",
+      "gloss": "ipuçları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 144,
+          "surface": "clues",
+          "contextSentence": "The person cannot see the players, so only the words on the page give clues.",
+          "contextSentenceTr": "Kişi oyuncuları göremez, bu yüzden yalnızca sayfadaki sözcükler ipucu verir."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 146,
+          "end": 149,
+          "surface": "One",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        }
+      ]
+    },
+    {
+      "lemma": "player",
+      "gloss": "oyuncu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 156,
+          "surface": "player",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 159,
+          "surface": "is",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 185,
+          "surface": "is",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 231,
+          "surface": "is",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 167,
+          "surface": "human",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 172,
+          "surface": "and",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğeri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 182,
+          "surface": "other",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 195,
+          "surface": "machine",
+          "contextSentence": "One player is a human, and the other is a machine.",
+          "contextSentenceTr": "Oyunculardan biri insan, diğeri makinedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 243,
+          "end": 250,
+          "surface": "machine",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 71,
+          "surface": "machine",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 197,
+          "end": 199,
+          "surface": "If",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "tell",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 218,
+          "end": 222,
+          "surface": "tell",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangisi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 223,
+          "end": 228,
+          "surface": "which",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 237,
+          "surface": "which",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 251,
+          "end": 254,
+          "surface": "has",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "done",
+      "gloss": "yaptı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 259,
+          "surface": "done",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "well",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 260,
+          "end": 264,
+          "surface": "well",
+          "contextSentence": "If the person cannot tell which is which, the machine has done well.",
+          "contextSentenceTr": "Kişi hangisinin hangisi olduğunu söyleyemezse, makine iyi iş çıkarmış demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "adlandırdı (call it: ... dedi)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 273,
+          "end": 279,
+          "surface": "called",
+          "contextSentence": "Turing called it the imitation game.",
+          "contextSentenceTr": "Turing buna taklit oyunu dedi."
+        }
+      ]
+    },
+    {
+      "lemma": "imitation",
+      "gloss": "taklit",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 296,
+          "surface": "imitation",
+          "contextSentence": "Turing called it the imitation game.",
+          "contextSentenceTr": "Turing buna taklit oyunu dedi."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 5,
+          "surface": "Today",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 7,
+          "end": 13,
+          "surface": "people",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        }
+      ]
+    },
+    {
+      "lemma": "call",
+      "gloss": "adlandırmak (call it: ... demek)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 14,
+          "end": 18,
+          "surface": "call",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "gloss": "test",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 33,
+          "end": 37,
+          "surface": "test",
+          "contextSentence": "Today, people call it the Turing test.",
+          "contextSentenceTr": "Bugün insanlar ona Turing testi der."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "-mez (olumsuz yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 46,
+          "surface": "does",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 50,
+          "surface": "not",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "prove",
+      "gloss": "kanıtlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 51,
+          "end": 56,
+          "surface": "prove",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "really",
+      "gloss": "gerçekten",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 72,
+          "end": 78,
+          "surface": "really",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "understands",
+      "gloss": "anlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 79,
+          "end": 90,
+          "surface": "understands",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "us",
+      "gloss": "bizi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 93,
+          "surface": "us",
+          "contextSentence": "It does not prove that a machine really understands us.",
+          "contextSentenceTr": "Bir makinenin bizi gerçekten anladığını kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 102,
+          "surface": "However",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "gave",
+      "gloss": "verdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 111,
+          "surface": "gave",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 112,
+          "end": 122,
+          "surface": "scientists",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "clear",
+      "gloss": "net",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 130,
+          "surface": "clear",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 131,
+          "end": 134,
+          "surface": "way",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 135,
+          "end": 137,
+          "surface": "to",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "talk",
+      "gloss": "konuşmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 138,
+          "end": 142,
+          "surface": "talk",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "intelligent",
+      "gloss": "akıllı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 160,
+          "surface": "intelligent",
+          "contextSentence": "However, it gave scientists a clear way to talk about intelligent machines.",
+          "contextSentenceTr": "Ancak bilim insanlarına akıllı makineler hakkında konuşmak için net bir yol verdi."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 197,
+        "end": 265
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How Turing built the first machine",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Makine yapımı anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "How judges write books about machines",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kitap yazımı anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "A game to test machines",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin Turing'in makineleri sınama oyununu anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "Why computers can never think",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir kesinlik söylemez."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What is the person in the game trying to tell apart?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 197,
+        "end": 265
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The human and the machine",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Kişi hangisinin insan, hangisinin makine olduğunu ayırt etmeye çalışır."
+        },
+        {
+          "key": "o2",
+          "text": "The fast and the slow players",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Hız karşılaştırması anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "The two rooms in the building",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Odalar geçer ama ayırt edilen şey odalar değildir."
+        },
+        {
+          "key": "o4",
+          "text": "The first and the last messages",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Mesaj sırası anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “imitation” mean here?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 266,
+        "end": 302
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Beating someone in a contest",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Oyun geçer ama imitation kazanmak demek değildir."
+        },
+        {
+          "key": "o2",
+          "text": "Hiding from the other players",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Saklanma anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Explaining a rule very clearly",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kural açıklaması anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Copying how someone acts",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Imitation, birinin davranışını taklit etmektir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the last paragraph suggest?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 39,
+        "end": 170
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Passing the test means a machine truly thinks.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bunun kanıtlanmadığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "The test was useful but not perfect.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Test kanıt sağlamıyor ama tartışmak için net bir yol veriyor."
+        },
+        {
+          "key": "o3",
+          "text": "No scientist ever used the test.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Test bilim insanlarına yol verdi."
+        },
+        {
+          "key": "o4",
+          "text": "The test needs ten different rooms.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Oda sayısı on değildir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Alan Turing 1950'de Mind dergisinde 'Computing Machinery and Intelligence' makalesinde 'makineler düşünebilir mi?' sorusunu ele aldı ve bir taklit oyunu önerdi: bir sorgulayıcı, ayrı odalardaki bir insan ve bir makineyle yazılı iletişim kurar.",
+        "source": "A. M. Turing, Computing Machinery and Intelligence, Mind 59(236), 1950, ss. 433-460; https://doi.org/10.1093/mind/LIX.236.433",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

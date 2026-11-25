@@ -1,0 +1,1995 @@
+{
+  "slug": "b1-penicillin-mould",
+  "level": "B1",
+  "title": "The Mould That Saved Lives",
+  "topic": "Tıp",
+  "sortOrder": 16,
+  "isFreeSample": false,
+  "paragraphs": [
+    "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday. He saw something strange in one of his dishes. Fleming was very curious, so he looked at the dish carefully. A mould was growing there, and the bacteria around it were dying.",
+    "Fleming wrote about his discovery, but he did not turn it into a medicine. Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients. Their work began to save many lives in the nineteen forties.",
+    "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery. Today, penicillin and similar medicines are called antibiotics, and they treat many infections. So a small mould in a dish changed modern medicine. Doctors still use these medicines in hospitals all over the world."
+  ],
+  "words": [
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 132,
+          "end": 134,
+          "surface": "in",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 258,
+          "surface": "in",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 206,
+          "end": 208,
+          "surface": "in",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 275,
+          "end": 277,
+          "surface": "in",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 11,
+          "surface": "nineteen",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 271,
+          "surface": "nineteen",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 11,
+          "surface": "nineteen",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "twenty",
+      "gloss": "yirmi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 18,
+          "surface": "twenty",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "eight",
+      "gloss": "sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 24,
+          "surface": "eight",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 27,
+          "surface": "a",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 96,
+          "end": 97,
+          "surface": "a",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 217,
+          "surface": "A",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 64,
+          "surface": "a",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 193,
+          "surface": "a",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 210,
+          "surface": "a",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "scientist",
+      "gloss": "bilim insanı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 37,
+          "surface": "scientist",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "named",
+      "gloss": "adlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 43,
+          "surface": "named",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "alexander",
+      "gloss": "Alexander",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 53,
+          "surface": "Alexander",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "fleming",
+      "gloss": "Fleming",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 54,
+          "end": 61,
+          "surface": "Fleming",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 154,
+          "end": 161,
+          "surface": "Fleming",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 7,
+          "surface": "Fleming",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 31,
+          "surface": "Fleming",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "came",
+      "gloss": "geldi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 66,
+          "surface": "came",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "back",
+      "gloss": "geri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 67,
+          "end": 71,
+          "surface": "back",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 74,
+          "surface": "to",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 78,
+          "surface": "his",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 142,
+          "end": 145,
+          "surface": "his",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 20,
+          "end": 23,
+          "surface": "his",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "laboratory",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 89,
+          "surface": "laboratory",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 95,
+          "surface": "after",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "holiday",
+      "gloss": "tatil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 105,
+          "surface": "holiday",
+          "contextSentence": "In nineteen twenty eight, a scientist named Alexander Fleming came back to his laboratory after a holiday.",
+          "contextSentenceTr": "1928'de Alexander Fleming adlı bir bilim insanı bir tatilden sonra laboratuvarına geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 107,
+          "end": 109,
+          "surface": "He",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 185,
+          "surface": "he",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 41,
+          "surface": "he",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "saw",
+      "gloss": "gördü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 110,
+          "end": 113,
+          "surface": "saw",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "something",
+      "gloss": "bir şey",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 123,
+          "surface": "something",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "strange",
+      "gloss": "garip",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 131,
+          "surface": "strange",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 135,
+          "end": 138,
+          "surface": "one",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 141,
+          "surface": "of",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "dishes",
+      "gloss": "kaplar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 152,
+          "surface": "dishes",
+          "contextSentence": "He saw something strange in one of his dishes.",
+          "contextSentenceTr": "Kaplarından birinde garip bir şey gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 165,
+          "surface": "was",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 227,
+          "surface": "was",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 166,
+          "end": 170,
+          "surface": "very",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        }
+      ]
+    },
+    {
+      "lemma": "curious",
+      "gloss": "meraklı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 178,
+          "surface": "curious",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 182,
+          "surface": "so",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 191,
+          "surface": "So",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "looked",
+      "gloss": "baktı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 186,
+          "end": 192,
+          "surface": "looked",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-e (bakmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 195,
+          "surface": "at",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 196,
+          "end": 199,
+          "surface": "the",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 250,
+          "surface": "the",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 259,
+          "end": 262,
+          "surface": "the",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 60,
+          "surface": "the",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 297,
+          "end": 300,
+          "surface": "the",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "dish",
+      "gloss": "kap",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 204,
+          "surface": "dish",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 211,
+          "end": 215,
+          "surface": "dish",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "carefully",
+      "gloss": "dikkatle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 205,
+          "end": 214,
+          "surface": "carefully",
+          "contextSentence": "Fleming was very curious, so he looked at the dish carefully.",
+          "contextSentenceTr": "Fleming çok meraklıydı, bu yüzden kaba dikkatle baktı."
+        }
+      ]
+    },
+    {
+      "lemma": "mould",
+      "gloss": "küf",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 218,
+          "end": 223,
+          "surface": "mould",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 200,
+          "end": 205,
+          "surface": "mould",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "growing",
+      "gloss": "büyüyordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 228,
+          "end": 235,
+          "surface": "growing",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "orada",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 241,
+          "surface": "there",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 246,
+          "surface": "and",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 127,
+          "surface": "and",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 190,
+          "end": 193,
+          "surface": "and",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 40,
+          "end": 43,
+          "surface": "and",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 111,
+          "end": 114,
+          "surface": "and",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 160,
+          "surface": "and",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "bacteria",
+      "gloss": "bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 259,
+          "surface": "bacteria",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresindeki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 260,
+          "end": 266,
+          "surface": "around",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 267,
+          "end": 269,
+          "surface": "it",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 57,
+          "surface": "it",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 274,
+          "surface": "were",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "dying",
+      "gloss": "ölüyordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 275,
+          "end": 280,
+          "surface": "dying",
+          "contextSentence": "A mould was growing there, and the bacteria around it were dying.",
+          "contextSentenceTr": "Orada bir küf büyüyordu ve çevresindeki bakteriler ölüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "wrote",
+      "gloss": "yazdı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 8,
+          "end": 13,
+          "surface": "wrote",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 19,
+          "surface": "about",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "discovery",
+      "gloss": "keşif",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 33,
+          "surface": "discovery",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 91,
+          "surface": "discovery",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 35,
+          "end": 38,
+          "surface": "but",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "-medi (olumsuz yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 45,
+          "surface": "did",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 49,
+          "surface": "not",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "turn",
+      "gloss": "dönüştürmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 54,
+          "surface": "turn",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 62,
+          "surface": "into",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "medicine",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 73,
+          "surface": "medicine",
+          "contextSentence": "Fleming wrote about his discovery, but he did not turn it into a medicine.",
+          "contextSentenceTr": "Fleming keşfini yazdı ama onu bir ilaca dönüştürmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıllar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 80,
+          "surface": "Years",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 81,
+          "end": 86,
+          "surface": "later",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 88,
+          "end": 91,
+          "surface": "two",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 97,
+          "surface": "other",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 108,
+          "surface": "scientists",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "howard",
+      "gloss": "Howard",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 110,
+          "end": 116,
+          "surface": "Howard",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "florey",
+      "gloss": "Florey",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 117,
+          "end": 123,
+          "surface": "Florey",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 33,
+          "end": 39,
+          "surface": "Florey",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "ernst",
+      "gloss": "Ernst",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 133,
+          "surface": "Ernst",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "chain",
+      "gloss": "Chain",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 134,
+          "end": 139,
+          "surface": "Chain",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 49,
+          "surface": "Chain",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "worked",
+      "gloss": "çalıştı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 141,
+          "end": 147,
+          "surface": "worked",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 152,
+          "surface": "with",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 158,
+          "surface": "their",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 225,
+          "surface": "Their",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekip",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 159,
+          "end": 163,
+          "surface": "team",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 166,
+          "surface": "to",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 171,
+          "surface": "make",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "penicillin",
+      "gloss": "penisilin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 172,
+          "end": 182,
+          "surface": "penicillin",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 110,
+          "surface": "penicillin",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "strong",
+      "gloss": "güçlü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 189,
+          "surface": "strong",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "safe",
+      "gloss": "güvenli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 194,
+          "end": 198,
+          "surface": "safe",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "enough",
+      "gloss": "yeterince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 205,
+          "surface": "enough",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 209,
+          "surface": "for",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 76,
+          "surface": "for",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "patients",
+      "gloss": "hastalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 218,
+          "surface": "patients",
+          "contextSentence": "Years later, two other scientists, Howard Florey and Ernst Chain, worked with their team to make penicillin strong and safe enough for patients.",
+          "contextSentenceTr": "Yıllar sonra başka iki bilim insanı, Howard Florey ve Ernst Chain, ekipleriyle penisilini hastalar için yeterince güçlü ve güvenli hâle getirmek için çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 226,
+          "end": 230,
+          "surface": "work",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "began",
+      "gloss": "başladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 236,
+          "surface": "began",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 239,
+          "surface": "to",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "save",
+      "gloss": "kurtarmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 244,
+          "surface": "save",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 249,
+          "surface": "many",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 172,
+          "end": 176,
+          "surface": "many",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "lives",
+      "gloss": "hayat",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 255,
+          "surface": "lives",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "forties",
+      "gloss": "kırklar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 279,
+          "surface": "forties",
+          "contextSentence": "Their work began to save many lives in the nineteen forties.",
+          "contextSentenceTr": "Çalışmaları kırklı yıllarda birçok hayat kurtarmaya başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "forty",
+      "gloss": "kırk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 17,
+          "surface": "forty",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "five",
+      "gloss": "beş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 22,
+          "surface": "five",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "shared",
+      "gloss": "paylaştı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 56,
+          "surface": "shared",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "nobel",
+      "gloss": "Nobel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 61,
+          "end": 66,
+          "surface": "Nobel",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "prize",
+      "gloss": "Ödül",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 67,
+          "end": 72,
+          "surface": "Prize",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 81,
+          "surface": "this",
+          "contextSentence": "In nineteen forty five, Fleming, Florey and Chain shared the Nobel Prize for this discovery.",
+          "contextSentenceTr": "1945'te Fleming, Florey ve Chain bu keşif için Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 93,
+          "end": 98,
+          "surface": "Today",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "similar",
+      "gloss": "benzer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 115,
+          "end": 122,
+          "surface": "similar",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "medicines",
+      "gloss": "ilaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 132,
+          "surface": "medicines",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 265,
+          "end": 274,
+          "surface": "medicines",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 136,
+          "surface": "are",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "denir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 143,
+          "surface": "called",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "antibiotics",
+      "gloss": "antibiyotikler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 144,
+          "end": 155,
+          "surface": "antibiotics",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 165,
+          "surface": "they",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "tedavi etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 171,
+          "surface": "treat",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "infections",
+      "gloss": "enfeksiyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 187,
+          "surface": "infections",
+          "contextSentence": "Today, penicillin and similar medicines are called antibiotics, and they treat many infections.",
+          "contextSentenceTr": "Bugün penisilin ve benzer ilaçlara antibiyotik denir ve birçok enfeksiyonu tedavi ederler."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 199,
+          "surface": "small",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "changed",
+      "gloss": "değiştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 216,
+          "end": 223,
+          "surface": "changed",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "modern",
+      "gloss": "modern",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 230,
+          "surface": "modern",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "medicine",
+      "gloss": "tıp",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 239,
+          "surface": "medicine",
+          "contextSentence": "So a small mould in a dish changed modern medicine.",
+          "contextSentenceTr": "Böylece bir kaptaki küçük bir küf modern tıbbı değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "doctors",
+      "gloss": "doktorlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 241,
+          "end": 248,
+          "surface": "Doctors",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 249,
+          "end": 254,
+          "surface": "still",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 255,
+          "end": 258,
+          "surface": "use",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 264,
+          "surface": "these",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "hospitals",
+      "gloss": "hastaneler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 287,
+          "surface": "hospitals",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 288,
+          "end": 291,
+          "surface": "all",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "over",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 292,
+          "end": 296,
+          "surface": "over",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "world",
+      "gloss": "dünya",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 306,
+          "surface": "world",
+          "contextSentence": "Doctors still use these medicines in hospitals all over the world.",
+          "contextSentenceTr": "Doktorlar bu ilaçları hâlâ dünyanın her yerindeki hastanelerde kullanır."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 189,
+        "end": 240
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How doctors first invented the microscope",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Mikroskop anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "How a mould led to a new medicine",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bir küften yeni bir ilaca giden yolu anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "How Fleming won the Nobel Prize alone",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Ödülü üç kişi paylaştı."
+        },
+        {
+          "key": "o4",
+          "text": "Why bacteria are good for patients",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metinde bakteriler öldürülen şeydir."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Who made penicillin safe enough for patients?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 88,
+        "end": 218
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Fleming and a hospital team",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Fleming keşfetti ama ilaca dönüştürmedi."
+        },
+        {
+          "key": "o2",
+          "text": "Florey and Fleming together",
+          "isCorrect": false,
+          "trapType": "copy",
+          "explanation": "Fleming ilaca dönüştürmeye katılmadı."
+        },
+        {
+          "key": "o3",
+          "text": "Two doctors from a London hospital",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle doktorlar anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Florey, Chain and their team",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu Florey, Chain ve ekibinin yaptığını söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “infections” mean in the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 161,
+        "end": 187
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Illnesses caused by germs",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Infection, mikropların yol açtığı hastalıktır."
+        },
+        {
+          "key": "o2",
+          "text": "Medicines that stop germs",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Antibiyotikler ilaçtır; enfeksiyonlar tedavi ettikleri hastalıklardır."
+        },
+        {
+          "key": "o3",
+          "text": "Tests done in a laboratory",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Laboratuvar geçer ama enfeksiyon test değildir."
+        },
+        {
+          "key": "o4",
+          "text": "Marks left on a dish by mould",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Küf geçer ama enfeksiyon iz değildir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about Fleming's discovery?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 74
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It was a mistake that no one wrote about.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Fleming bu konuda yazdı."
+        },
+        {
+          "key": "o2",
+          "text": "It already worked on every illness.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir şey söylemez."
+        },
+        {
+          "key": "o3",
+          "text": "It needed more work from other people.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Fleming ilaca dönüştürmedi; Florey ve Chain bunu yaptı."
+        },
+        {
+          "key": "o4",
+          "text": "It was ignored by the Nobel committee.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Üçü Nobel Ödülü'nü paylaştı."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Fleming 1928'de bir stafilokok kültürünü bulaştıran küfün çevresindeki bakterileri öldürdüğünü fark etti; sonraki on yılda ilacın tıbbi önemini tam kavramadı.",
+        "source": "PBS NewsHour, The real story behind the world's first antibiotic; https://www.pbs.org/newshour/health/the-real-story-behind-the-worlds-first-antibiotic",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Howard Florey ve Ernst Chain ekibiyle penisilini tedavide kullanılabilir hâle getirdi (1940'larda hastalarda denendi).",
+        "source": "PBS NewsHour, The real story behind the world's first antibiotic; https://www.pbs.org/newshour/health/the-real-story-behind-the-worlds-first-antibiotic",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "1945 Nobel Fizyoloji veya Tıp Ödülü, Fleming, Chain ve Florey'e 'penisilinin keşfi ve çeşitli bulaşıcı hastalıklardaki iyileştirici etkisi' için verildi.",
+        "source": "Nobel Prize Outreach, The Nobel Prize in Physiology or Medicine 1945 (Fleming, Chain, Florey); https://www.nobelprize.org/prizes/medicine/1945/summary/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

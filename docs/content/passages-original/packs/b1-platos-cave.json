@@ -1,0 +1,1919 @@
+{
+  "slug": "b1-platos-cave",
+  "level": "B1",
+  "title": "The Prisoners in the Cave",
+  "topic": "Felsefe",
+  "sortOrder": 22,
+  "isFreeSample": false,
+  "paragraphs": [
+    "More than two thousand years ago, the Greek thinker Plato told a story about a cave. In the story, some people have lived in the cave since they were children. They cannot turn their heads, so they can only look at the wall in front of them.",
+    "Behind them, there is a fire, and people carry objects past it. The fire makes shadows on the wall, and the prisoners think that these shadows are real. One day, one prisoner is freed and walks outside. At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+    "He returns to the cave to tell the others the truth. But they do not believe him, because the shadows are all they have ever known. Plato used the story to show how hard it can be to change what we think is true."
+  ],
+  "words": [
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "More",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 9,
+          "surface": "than",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 10,
+          "end": 13,
+          "surface": "two",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "thousand",
+      "gloss": "bin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 22,
+          "surface": "thousand",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 28,
+          "surface": "years",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "ago",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 29,
+          "end": 32,
+          "surface": "ago",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 34,
+          "end": 37,
+          "surface": "the",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 88,
+          "end": 91,
+          "surface": "the",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 128,
+          "surface": "the",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 215,
+          "end": 218,
+          "surface": "the",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 67,
+          "surface": "The",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 93,
+          "surface": "the",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 107,
+          "surface": "the",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 216,
+          "surface": "the",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 266,
+          "surface": "the",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 14,
+          "end": 17,
+          "surface": "the",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 34,
+          "surface": "the",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 45,
+          "surface": "the",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 90,
+          "end": 93,
+          "surface": "the",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 146,
+          "surface": "the",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "greek",
+      "gloss": "Yunan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 43,
+          "surface": "Greek",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "thinker",
+      "gloss": "düşünür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 51,
+          "surface": "thinker",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "plato",
+      "gloss": "Platon",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 57,
+          "surface": "Plato",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 132,
+          "end": 137,
+          "surface": "Plato",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "told",
+      "gloss": "anlattı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 62,
+          "surface": "told",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 64,
+          "surface": "a",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 78,
+          "surface": "a",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 23,
+          "surface": "a",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "story",
+      "gloss": "hikâye",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 70,
+          "surface": "story",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 97,
+          "surface": "story",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 147,
+          "end": 152,
+          "surface": "story",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 76,
+          "surface": "about",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        }
+      ]
+    },
+    {
+      "lemma": "cave",
+      "gloss": "mağara",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 83,
+          "surface": "cave",
+          "contextSentence": "More than two thousand years ago, the Greek thinker Plato told a story about a cave.",
+          "contextSentenceTr": "İki bin yıldan uzun süre önce Yunan düşünür Platon, bir mağara hakkında bir hikâye anlattı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 129,
+          "end": 133,
+          "surface": "cave",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 22,
+          "surface": "cave",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 87,
+          "surface": "In",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 124,
+          "surface": "in",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 226,
+          "surface": "in",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 99,
+          "end": 103,
+          "surface": "some",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 110,
+          "surface": "people",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 40,
+          "surface": "people",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 115,
+          "surface": "have",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "lived",
+      "gloss": "yaşadı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 121,
+          "surface": "lived",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "-den beri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 139,
+          "surface": "since",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 140,
+          "end": 144,
+          "surface": "they",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 160,
+          "end": 164,
+          "surface": "They",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 197,
+          "surface": "they",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 61,
+          "surface": "they",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 114,
+          "surface": "they",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 149,
+          "surface": "were",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "children",
+      "gloss": "çocuk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 158,
+          "surface": "children",
+          "contextSentence": "In the story, some people have lived in the cave since they were children.",
+          "contextSentenceTr": "Hikâyede bazı insanlar çocukluklarından beri mağarada yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 171,
+          "surface": "cannot",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "turn",
+      "gloss": "dönmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 172,
+          "end": 176,
+          "surface": "turn",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 182,
+          "surface": "their",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "heads",
+      "gloss": "başlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 188,
+          "surface": "heads",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 190,
+          "end": 192,
+          "surface": "so",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 201,
+          "surface": "can",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 176,
+          "surface": "can",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 206,
+          "surface": "only",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "look",
+      "gloss": "bakmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 207,
+          "end": 211,
+          "surface": "look",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-e (bakmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 214,
+          "surface": "at",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "wall",
+      "gloss": "duvar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 223,
+          "surface": "wall",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 98,
+          "surface": "wall",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "front",
+      "gloss": "önünde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 232,
+          "surface": "front",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 235,
+          "surface": "of",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 240,
+          "surface": "them",
+          "contextSentence": "They cannot turn their heads, so they can only look at the wall in front of them.",
+          "contextSentenceTr": "Başlarını çeviremedikleri için yalnızca önlerindeki duvara bakabiliyorlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 11,
+          "surface": "them",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "behind",
+      "gloss": "arkasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 6,
+          "surface": "Behind",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "orada",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 18,
+          "surface": "there",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 21,
+          "surface": "is",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 175,
+          "end": 177,
+          "surface": "is",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 206,
+          "surface": "is",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "fire",
+      "gloss": "ateş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 28,
+          "surface": "fire",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 72,
+          "surface": "fire",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 30,
+          "end": 33,
+          "surface": "and",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 103,
+          "surface": "and",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 187,
+          "surface": "and",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "carry",
+      "gloss": "taşır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 41,
+          "end": 46,
+          "surface": "carry",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "objects",
+      "gloss": "nesneler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 54,
+          "surface": "objects",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "past",
+      "gloss": "yanından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 59,
+          "surface": "past",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 60,
+          "end": 62,
+          "surface": "it",
+          "contextSentence": "Behind them, there is a fire, and people carry objects past it.",
+          "contextSentenceTr": "Arkalarında bir ateş var ve insanlar nesneleri onun önünden taşıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 170,
+          "end": 172,
+          "surface": "it",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "makes",
+      "gloss": "yapar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 78,
+          "surface": "makes",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "shadows",
+      "gloss": "gölgeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 86,
+          "surface": "shadows",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 142,
+          "surface": "shadows",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 101,
+          "surface": "shadows",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 89,
+          "surface": "on",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "prisoners",
+      "gloss": "mahkûmlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 117,
+          "surface": "prisoners",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "think",
+      "gloss": "düşünür",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 123,
+          "surface": "think",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 203,
+          "surface": "think",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 128,
+          "surface": "that",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 134,
+          "surface": "these",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 146,
+          "surface": "are",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 105,
+          "surface": "are",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "real",
+      "gloss": "gerçek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 151,
+          "surface": "real",
+          "contextSentence": "The fire makes shadows on the wall, and the prisoners think that these shadows are real.",
+          "contextSentenceTr": "Ateş duvarda gölgeler oluşturuyor ve mahkûmlar bu gölgelerin gerçek olduğunu sanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 271,
+          "surface": "real",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 156,
+          "surface": "One",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 165,
+          "surface": "one",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "day",
+      "gloss": "gün",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 160,
+          "surface": "day",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "prisoner",
+      "gloss": "mahkûm",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 174,
+          "surface": "prisoner",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "freed",
+      "gloss": "özgür bırakıldı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 178,
+          "end": 183,
+          "surface": "freed",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "walks",
+      "gloss": "yürür",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 193,
+          "surface": "walks",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "outside",
+      "gloss": "dışarı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 194,
+          "end": 201,
+          "surface": "outside",
+          "contextSentence": "One day, one prisoner is freed and walks outside.",
+          "contextSentenceTr": "Bir gün mahkûmlardan biri serbest bırakılır ve dışarı yürür."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 205,
+          "surface": "At",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 211,
+          "surface": "first",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "bright",
+      "gloss": "parlak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 217,
+          "end": 223,
+          "surface": "bright",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "sun",
+      "gloss": "güneş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 227,
+          "surface": "sun",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "hurts",
+      "gloss": "acıtır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 233,
+          "surface": "hurts",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 234,
+          "end": 237,
+          "surface": "his",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "eyes",
+      "gloss": "gözler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 238,
+          "end": 242,
+          "surface": "eyes",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 247,
+          "surface": "but",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 56,
+          "surface": "But",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "slowly",
+      "gloss": "yavaşça",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 254,
+          "surface": "slowly",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 257,
+          "surface": "he",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "He",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "sees",
+      "gloss": "görür",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 258,
+          "end": 262,
+          "surface": "sees",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "world",
+      "gloss": "dünya",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 277,
+          "surface": "world",
+          "contextSentence": "At first, the bright sun hurts his eyes, but slowly he sees the real world.",
+          "contextSentenceTr": "Önce parlak güneş gözlerini acıtır ama yavaş yavaş gerçek dünyayı görür."
+        }
+      ]
+    },
+    {
+      "lemma": "returns",
+      "gloss": "döner",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 10,
+          "surface": "returns",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 13,
+          "surface": "to",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 25,
+          "surface": "to",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 155,
+          "surface": "to",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "tell",
+      "gloss": "anlatmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 30,
+          "surface": "tell",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 41,
+          "surface": "others",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "truth",
+      "gloss": "gerçek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 46,
+          "end": 51,
+          "surface": "truth",
+          "contextSentence": "He returns to the cave to tell the others the truth.",
+          "contextSentenceTr": "Diğerlerine gerçeği anlatmak için mağaraya döner."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 64,
+          "surface": "do",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 68,
+          "surface": "not",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "believe",
+      "gloss": "inanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 76,
+          "surface": "believe",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "him",
+      "gloss": "ona",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 80,
+          "surface": "him",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 89,
+          "surface": "because",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "hepsi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 106,
+          "end": 109,
+          "surface": "all",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "sahip",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 115,
+          "end": 119,
+          "surface": "have",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "ever",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 124,
+          "surface": "ever",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "known",
+      "gloss": "bilmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 130,
+          "surface": "known",
+          "contextSentence": "But they do not believe him, because the shadows are all they have ever known.",
+          "contextSentenceTr": "Ama ona inanmazlar, çünkü bildikleri tek şey gölgelerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullandı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 138,
+          "end": 142,
+          "surface": "used",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "show",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 160,
+          "surface": "show",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 164,
+          "surface": "how",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "hard",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 169,
+          "surface": "hard",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 179,
+          "surface": "be",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 182,
+          "surface": "to",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değiştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 183,
+          "end": 189,
+          "surface": "change",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 190,
+          "end": 194,
+          "surface": "what",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 195,
+          "end": 197,
+          "surface": "we",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "true",
+      "gloss": "doğru",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 211,
+          "surface": "true",
+          "contextSentence": "Plato used the story to show how hard it can be to change what we think is true.",
+          "contextSentenceTr": "Platon, doğru sandığımız şeyi değiştirmenin ne kadar zor olabileceğini göstermek için bu hikâyeyi kullandı."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the main idea of the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 132,
+        "end": 212
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How a prisoner escaped from a hard prison",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Kaçış hikâyenin bir ayrıntısıdır; ana fikir değildir."
+        },
+        {
+          "key": "o2",
+          "text": "Why fire is better than sunlight",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir karşılaştırma yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "How Greeks learned to draw shadows",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Gölge çizimi anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "How hard it can be to change beliefs",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Platon hikâyeyi inançları değiştirmenin zorluğunu göstermek için kullanır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What do the prisoners think about the shadows?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 104,
+        "end": 151
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "That they are only a joke",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Şaka olarak görmezler."
+        },
+        {
+          "key": "o2",
+          "text": "That they are real",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin mahkûmların gölgeleri gerçek sandığını söyler."
+        },
+        {
+          "key": "o3",
+          "text": "That they come from a book",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kitap geçmez."
+        },
+        {
+          "key": "o4",
+          "text": "That they are made by the sun",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Gölgeleri ateş yapar; güneşi dışarıda görürler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “freed” mean in the second paragraph?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 153,
+        "end": 202
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Given a new name",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "İsim verilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Told a funny story",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Hikâye anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Allowed to go",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Freed, serbest bırakılmış demektir."
+        },
+        {
+          "key": "o4",
+          "text": "Made to wait longer",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Serbest bırakılmanın tersidir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "Why do the other prisoners not believe him?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 57,
+        "end": 130
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They know just shadows.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu açıkça söyler."
+        },
+        {
+          "key": "o2",
+          "text": "They are afraid of the fire.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Ateş korkusu geçmez."
+        },
+        {
+          "key": "o3",
+          "text": "They want to leave the cave.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Çıkmak istedikleri söylenmez."
+        },
+        {
+          "key": "o4",
+          "text": "They know the real world already.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Yalnızca gölgeleri bilirler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Platon'un Devlet'inde (Kitap VII) mağara alegorisi: çocukluktan beri zincirli mahkûmlar duvardaki gölgeleri gerçek sanır; serbest kalan biri güneşe çıkar, dönüp anlattığında diğerleri ona inanmaz.",
+        "source": "Plato, Republic VII (514a-520a), Mağara Alegorisi (Jowett çevirisi, ders notu PDF); https://scholar.harvard.edu/sites/scholar.harvard.edu/files/seyer/files/plato_republic_514b-518d_allegory-of-the-cave.pdf",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

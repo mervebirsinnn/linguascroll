@@ -1,0 +1,2699 @@
+{
+  "slug": "b2-machine-translation",
+  "level": "B2",
+  "title": "Machines That Translate",
+  "topic": "Teknoloji",
+  "sortOrder": 33,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Machine translation is the use of computers to turn text from one language into another. Early programs relied on rules written by linguists. Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step. This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+    "Later, researchers tried a statistical method. Instead of following rules, programs studied large collections of texts that humans had already translated. With enough examples, a program can find patterns without a person describing them. The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+    "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit. As a result, translated paragraphs are often smoother and easier to read. However, context and rare words remain difficult. Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms. They can also make errors that a human translator would never make, so important texts still deserve a human check."
+  ],
+  "words": [
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 7,
+          "surface": "Machine",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "translation",
+      "gloss": "çeviri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 8,
+          "end": 19,
+          "surface": "translation",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 22,
+          "surface": "is",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 26,
+          "surface": "the",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 209,
+          "surface": "the",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 242,
+          "surface": "The",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 326,
+          "end": 329,
+          "surface": "the",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 338,
+          "end": 341,
+          "surface": "the",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 30,
+          "surface": "use",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 33,
+          "surface": "of",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 283,
+          "end": 285,
+          "surface": "of",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 110,
+          "end": 112,
+          "surface": "of",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 76,
+          "surface": "of",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 335,
+          "end": 337,
+          "surface": "of",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "computers",
+      "gloss": "bilgisayarlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 34,
+          "end": 43,
+          "surface": "computers",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 46,
+          "surface": "to",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 335,
+          "surface": "to",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "turn",
+      "gloss": "dönüştürmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 51,
+          "surface": "turn",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 56,
+          "end": 60,
+          "surface": "turn",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "text",
+      "gloss": "metin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 56,
+          "surface": "text",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 61,
+          "surface": "from",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 65,
+          "surface": "one",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 322,
+          "surface": "one",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 61,
+          "end": 64,
+          "surface": "one",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 126,
+          "end": 129,
+          "surface": "one",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "language",
+      "gloss": "dil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 66,
+          "end": 74,
+          "surface": "language",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 351,
+          "end": 359,
+          "surface": "language",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 79,
+          "surface": "into",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 83,
+          "end": 87,
+          "surface": "into",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "another",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 80,
+          "end": 87,
+          "surface": "another",
+          "contextSentence": "Machine translation is the use of computers to turn text from one language into another.",
+          "contextSentenceTr": "Makine çevirisi, metni bir dilden başka bir dile dönüştürmek için bilgisayarların kullanılmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 95,
+          "surface": "another",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "early",
+      "gloss": "erken dönem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 89,
+          "end": 94,
+          "surface": "Early",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "programs",
+      "gloss": "programlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 95,
+          "end": 103,
+          "surface": "programs",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 83,
+          "surface": "programs",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "relied",
+      "gloss": "güvendi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 110,
+          "surface": "relied",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "(rely on: -e güvenmek)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 113,
+          "surface": "on",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "rules",
+      "gloss": "kurallar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 119,
+          "surface": "rules",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 73,
+          "surface": "rules",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "written",
+      "gloss": "yazılmış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 127,
+          "surface": "written",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 130,
+          "surface": "by",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "linguists",
+      "gloss": "dilbilimciler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 140,
+          "surface": "linguists",
+          "contextSentence": "Early programs relied on rules written by linguists.",
+          "contextSentenceTr": "İlk dönem programlar dilbilimciler tarafından yazılmış kurallara dayanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "experts",
+      "gloss": "uzmanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 142,
+          "end": 149,
+          "surface": "Experts",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "listed",
+      "gloss": "listeledi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 156,
+          "surface": "listed",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "grammar",
+      "gloss": "dilbilgisi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 157,
+          "end": 164,
+          "surface": "grammar",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "patterns",
+      "gloss": "kalıplar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 173,
+          "surface": "patterns",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 204,
+          "surface": "patterns",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 174,
+          "end": 177,
+          "surface": "and",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 205,
+          "surface": "and",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 96,
+          "end": 99,
+          "surface": "and",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 190,
+          "end": 193,
+          "surface": "and",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 227,
+          "end": 230,
+          "surface": "and",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 361,
+          "end": 364,
+          "surface": "and",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 413,
+          "end": 416,
+          "surface": "and",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "bilingual",
+      "gloss": "iki dilli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 178,
+          "end": 187,
+          "surface": "bilingual",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "dictionaries",
+      "gloss": "sözlükler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 200,
+          "surface": "dictionaries",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "computer",
+      "gloss": "bilgisayar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 218,
+          "surface": "computer",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "applied",
+      "gloss": "uyguladı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 226,
+          "surface": "applied",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 231,
+          "surface": "them",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 233,
+          "end": 237,
+          "surface": "them",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "step",
+      "gloss": "adım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 236,
+          "surface": "step",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 244,
+          "surface": "step",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "(step by step: adım adım)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 239,
+          "surface": "by",
+          "contextSentence": "Experts listed grammar patterns and bilingual dictionaries, and the computer applied them step by step.",
+          "contextSentenceTr": "Uzmanlar dilbilgisi kalıplarını ve iki dilli sözlükleri listeledi, bilgisayar da bunları adım adım uyguladı."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 246,
+          "end": 250,
+          "surface": "This",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "approach",
+      "gloss": "yaklaşım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 259,
+          "surface": "approach",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "worked",
+      "gloss": "işe yaradı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 260,
+          "end": 266,
+          "surface": "worked",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 267,
+          "end": 270,
+          "surface": "for",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 271,
+          "end": 272,
+          "surface": "a",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 25,
+          "end": 26,
+          "surface": "a",
+          "contextSentence": "Later, researchers tried a statistical method.",
+          "contextSentenceTr": "Daha sonra araştırmacılar istatistiksel bir yöntem denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 178,
+          "surface": "a",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 214,
+          "surface": "a",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 106,
+          "end": 107,
+          "surface": "a",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 460,
+          "end": 461,
+          "surface": "a",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 530,
+          "end": 531,
+          "surface": "a",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 278,
+          "surface": "small",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "set",
+      "gloss": "küme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 279,
+          "end": 282,
+          "surface": "set",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "simple",
+      "gloss": "basit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 286,
+          "end": 292,
+          "surface": "simple",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 260,
+          "surface": "simple",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "sentences",
+      "gloss": "cümleler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 302,
+          "surface": "sentences",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 304,
+          "end": 307,
+          "surface": "but",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 308,
+          "end": 310,
+          "surface": "it",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 290,
+          "end": 292,
+          "surface": "it",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebildi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 311,
+          "end": 316,
+          "surface": "could",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 317,
+          "end": 320,
+          "surface": "not",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 321,
+          "end": 323,
+          "surface": "be",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "expanded",
+      "gloss": "genişletmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 332,
+          "surface": "expanded",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "cover",
+      "gloss": "kapsamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 336,
+          "end": 341,
+          "surface": "cover",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "ordinary",
+      "gloss": "sıradan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 342,
+          "end": 350,
+          "surface": "ordinary",
+          "contextSentence": "This approach worked for a small set of simple sentences, but it could not be expanded to cover ordinary language.",
+          "contextSentenceTr": "Bu yaklaşım küçük bir basit cümle kümesinde işe yaradı ama sıradan dili kapsayacak şekilde genişletilemedi."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "daha sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 5,
+          "surface": "Later",
+          "contextSentence": "Later, researchers tried a statistical method.",
+          "contextSentenceTr": "Daha sonra araştırmacılar istatistiksel bir yöntem denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 18,
+          "surface": "researchers",
+          "contextSentence": "Later, researchers tried a statistical method.",
+          "contextSentenceTr": "Daha sonra araştırmacılar istatistiksel bir yöntem denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "tried",
+      "gloss": "denedi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 24,
+          "surface": "tried",
+          "contextSentence": "Later, researchers tried a statistical method.",
+          "contextSentenceTr": "Daha sonra araştırmacılar istatistiksel bir yöntem denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "statistical",
+      "gloss": "istatistiksel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 27,
+          "end": 38,
+          "surface": "statistical",
+          "contextSentence": "Later, researchers tried a statistical method.",
+          "contextSentenceTr": "Daha sonra araştırmacılar istatistiksel bir yöntem denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "method",
+      "gloss": "yöntem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 45,
+          "surface": "method",
+          "contextSentence": "Later, researchers tried a statistical method.",
+          "contextSentenceTr": "Daha sonra araştırmacılar istatistiksel bir yöntem denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 243,
+          "end": 249,
+          "surface": "method",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "instead",
+      "gloss": "yerine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 54,
+          "surface": "Instead",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "(instead of: yerine)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 57,
+          "surface": "of",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "following",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 67,
+          "surface": "following",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "studied",
+      "gloss": "inceledi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 84,
+          "end": 91,
+          "surface": "studied",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 97,
+          "surface": "large",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "collections",
+      "gloss": "koleksiyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 109,
+          "surface": "collections",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "texts",
+      "gloss": "metinler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 118,
+          "surface": "texts",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 510,
+          "end": 515,
+          "surface": "texts",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki onları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 123,
+          "surface": "that",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 455,
+          "end": 459,
+          "surface": "that",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "humans",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 130,
+          "surface": "humans",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 134,
+          "surface": "had",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "already",
+      "gloss": "zaten",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 142,
+          "surface": "already",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "translated",
+      "gloss": "çevirmişti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 153,
+          "surface": "translated",
+          "contextSentence": "Instead of following rules, programs studied large collections of texts that humans had already translated.",
+          "contextSentenceTr": "Kuralları izlemek yerine programlar, insanların zaten çevirmiş olduğu büyük metin koleksiyonlarını inceledi."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "(with: ile)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 159,
+          "surface": "With",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "enough",
+      "gloss": "yeterli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 166,
+          "surface": "enough",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "examples",
+      "gloss": "örnekler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 175,
+          "surface": "examples",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "program",
+      "gloss": "program",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 186,
+          "surface": "program",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 190,
+          "surface": "can",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 370,
+          "end": 373,
+          "surface": "can",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 434,
+          "end": 437,
+          "surface": "can",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "find",
+      "gloss": "bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 195,
+          "surface": "find",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "-meden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 212,
+          "surface": "without",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 319,
+          "surface": "without",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 221,
+          "surface": "person",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "describing",
+      "gloss": "tarif etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 222,
+          "end": 232,
+          "surface": "describing",
+          "contextSentence": "With enough examples, a program can find patterns without a person describing them.",
+          "contextSentenceTr": "Yeterli örnekle bir program, bir kişinin tarif etmesine gerek kalmadan kalıpları bulabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 253,
+          "surface": "was",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 331,
+          "surface": "was",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 263,
+          "surface": "in",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 298,
+          "end": 300,
+          "surface": "in",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "linguistic",
+      "gloss": "dilbilimsel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 274,
+          "surface": "linguistic",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "terms",
+      "gloss": "açıdan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 275,
+          "end": 280,
+          "surface": "terms",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 289,
+          "surface": "because",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 297,
+          "surface": "only",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "estimated",
+      "gloss": "tahmin etti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 298,
+          "end": 307,
+          "surface": "estimated",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 311,
+          "surface": "how",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "likely",
+      "gloss": "olası",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 318,
+          "surface": "likely",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "word",
+      "gloss": "sözcük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 327,
+          "surface": "word",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 334,
+          "surface": "to",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 55,
+          "surface": "to",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 203,
+          "surface": "to",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "follow",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 335,
+          "end": 341,
+          "surface": "follow",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 348,
+          "surface": "others",
+          "contextSentence": "The method was simple in linguistic terms, because it only estimated how likely one word was to follow others.",
+          "contextSentenceTr": "Yöntem dilbilimsel açıdan basitti, çünkü yalnızca bir sözcüğün diğerlerini ne kadar olasılıkla izlediğini tahmin ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 5,
+          "surface": "Today",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 7,
+          "end": 11,
+          "surface": "many",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "systems",
+      "gloss": "sistemler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 19,
+          "surface": "systems",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 260,
+          "end": 267,
+          "surface": "Systems",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 20,
+          "end": 23,
+          "surface": "use",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "neural",
+      "gloss": "sinir ağı tabanlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 30,
+          "surface": "neural",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "networks",
+      "gloss": "ağlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 39,
+          "surface": "networks",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bunlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 41,
+          "end": 46,
+          "surface": "which",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "learn",
+      "gloss": "öğrenir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 52,
+          "surface": "learn",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "sequence",
+      "gloss": "dizi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 73,
+          "surface": "sequence",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "words",
+      "gloss": "sözcükler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 82,
+          "surface": "words",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 236,
+          "end": 241,
+          "surface": "words",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 385,
+          "end": 390,
+          "surface": "words",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "ele alır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 105,
+          "surface": "treat",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "whole",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 108,
+          "end": 113,
+          "surface": "whole",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "sentence",
+      "gloss": "cümle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 122,
+          "surface": "sentence",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 289,
+          "end": 297,
+          "surface": "sentence",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 125,
+          "surface": "as",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "unit",
+      "gloss": "birim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 134,
+          "surface": "unit",
+          "contextSentence": "Today, many systems use neural networks, which learn to turn one sequence of words into another and treat a whole sentence as one unit.",
+          "contextSentenceTr": "Bugün birçok sistem sinir ağı kullanır; bunlar bir sözcük dizisini başka bir diziye dönüştürmeyi öğrenir ve bütün bir cümleyi tek bir birim olarak ele alır."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "(as a result: sonuç olarak)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 138,
+          "surface": "As",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "(as a result: sonuç olarak)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 140,
+          "surface": "a",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "result",
+      "gloss": "(as a result: sonuç olarak)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 147,
+          "surface": "result",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "translated",
+      "gloss": "çevrilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 159,
+          "surface": "translated",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "paragraphs",
+      "gloss": "paragraflar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 160,
+          "end": 170,
+          "surface": "paragraphs",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 174,
+          "surface": "are",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 175,
+          "end": 180,
+          "surface": "often",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 268,
+          "end": 273,
+          "surface": "often",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "smoother",
+      "gloss": "daha akıcı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 189,
+          "surface": "smoother",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "easier",
+      "gloss": "daha kolay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 200,
+          "surface": "easier",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 208,
+          "surface": "read",
+          "contextSentence": "As a result, translated paragraphs are often smoother and easier to read.",
+          "contextSentenceTr": "Sonuç olarak çevrilmiş paragraflar çoğu zaman daha akıcı ve okunması daha kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 217,
+          "surface": "However",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "context",
+      "gloss": "bağlam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 226,
+          "surface": "context",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "rare",
+      "gloss": "nadir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 235,
+          "surface": "rare",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 417,
+          "end": 421,
+          "surface": "rare",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "remain",
+      "gloss": "hâlâ ... kalır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 248,
+          "surface": "remain",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "difficult",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 249,
+          "end": 258,
+          "surface": "difficult",
+          "contextSentence": "However, context and rare words remain difficult.",
+          "contextSentenceTr": "Ancak bağlam ve nadir sözcükler hâlâ zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "translate",
+      "gloss": "çevirir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 283,
+          "surface": "translate",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 288,
+          "surface": "each",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "isolation",
+      "gloss": "yalnız başına",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 310,
+          "surface": "isolation",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "using",
+      "gloss": "kullanarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 320,
+          "end": 325,
+          "surface": "using",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "rest",
+      "gloss": "geri kalan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 334,
+          "surface": "rest",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "paragraph",
+      "gloss": "paragraf",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 342,
+          "end": 351,
+          "surface": "paragraph",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 352,
+          "end": 354,
+          "surface": "or",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 391,
+          "end": 393,
+          "surface": "or",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "page",
+      "gloss": "sayfa",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 355,
+          "end": 359,
+          "surface": "page",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 365,
+          "end": 369,
+          "surface": "they",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 429,
+          "end": 433,
+          "surface": "They",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 374,
+          "end": 379,
+          "surface": "still",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 516,
+          "end": 521,
+          "surface": "still",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "drop",
+      "gloss": "atlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 380,
+          "end": 384,
+          "surface": "drop",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "mistranslate",
+      "gloss": "yanlış çevirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 394,
+          "end": 406,
+          "surface": "mistranslate",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "names",
+      "gloss": "isimler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 407,
+          "end": 412,
+          "surface": "names",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "terms",
+      "gloss": "terimler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 422,
+          "end": 427,
+          "surface": "terms",
+          "contextSentence": "Systems often translate each sentence in isolation, without using the rest of the paragraph or page, and they can still drop words or mistranslate names and rare terms.",
+          "contextSentenceTr": "Sistemler çoğu zaman her cümleyi paragrafın ya da sayfanın geri kalanını kullanmadan tek başına çevirir ve yine de sözcükleri atlayabilir ya da isimleri ve nadir terimleri yanlış çevirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 438,
+          "end": 442,
+          "surface": "also",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 443,
+          "end": 447,
+          "surface": "make",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 491,
+          "end": 495,
+          "surface": "make",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "errors",
+      "gloss": "hatalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 448,
+          "end": 454,
+          "surface": "errors",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 462,
+          "end": 467,
+          "surface": "human",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 532,
+          "end": 537,
+          "surface": "human",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "translator",
+      "gloss": "çevirmen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 468,
+          "end": 478,
+          "surface": "translator",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-irdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 479,
+          "end": 484,
+          "surface": "would",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "never",
+      "gloss": "asla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 485,
+          "end": 490,
+          "surface": "never",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 497,
+          "end": 499,
+          "surface": "so",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "important",
+      "gloss": "önemli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 500,
+          "end": 509,
+          "surface": "important",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "deserve",
+      "gloss": "hak eder",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 522,
+          "end": 529,
+          "surface": "deserve",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "check",
+      "gloss": "kontrol",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 538,
+          "end": 543,
+          "surface": "check",
+          "contextSentence": "They can also make errors that a human translator would never make, so important texts still deserve a human check.",
+          "contextSentenceTr": "Ayrıca bir insan çevirmenin asla yapmayacağı hatalar yapabilirler; bu yüzden önemli metinler hâlâ bir insan kontrolünü hak eder."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 210,
+        "end": 259
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The history of printed bilingual dictionaries used in schools",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Sözlükler yalnızca ilk yöntemin bir parçası olarak geçer, konu bu değildir."
+        },
+        {
+          "key": "o2",
+          "text": "A new program that understands meaning in the way a person does",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin programların anlamı insan gibi anladığını söylemez; bağlamın hâlâ zor olduğunu söyler."
+        },
+        {
+          "key": "o3",
+          "text": "How computer translation developed and why it still fails",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin kural tabanlı, istatistiksel ve sinir ağı yöntemlerini anlatır ve bağlam ile nadir sözcüklerin hâlâ zor olduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Why human translators are no longer needed for any texts at all",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metne göre önemli metinleri insan çevirmenler hâlâ kontrol eder."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What did the statistical programs study?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 92,
+        "end": 153
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Texts that humans had already translated",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin istatistiksel programların insanların zaten çevirdiği metinleri incelediğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Rules that linguists had written for each language",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Bu, ilk dönem kural tabanlı programların yaklaşımıdır."
+        },
+        {
+          "key": "o3",
+          "text": "Dictionaries that the computer had compiled itself",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde bilgisayarın kendi sözlüğünü hazırladığı söylenmez."
+        },
+        {
+          "key": "o4",
+          "text": "Spoken recordings collected from native speakers",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde konuşma kayıtlarından söz edilmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"in isolation\" mean in paragraph 3?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 274,
+        "end": 310
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Together with help from a human",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Cümle insan yardımıyla değil, paragraftan ayrı çevrilir; bu anlamın tersidir."
+        },
+        {
+          "key": "o2",
+          "text": "In a quiet room without any noise",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kelimenin yalın anlamı sessiz yer çağrıştırır ama burada bağlamdan ayrılık anlatılır."
+        },
+        {
+          "key": "o3",
+          "text": "At a very high speed",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde hızdan söz edilmez."
+        },
+        {
+          "key": "o4",
+          "text": "On its own, apart from the rest",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "In isolation, tek başına, çevresinden ayrı demektir; sistem cümleyi paragrafın geri kalanından ayrı çevirir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can be inferred about important texts today?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 497,
+        "end": 543
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Rule-based programs are preferred for these texts",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir tercihten söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Machine output may still need checking by people",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Sistemlerin insanın yapmayacağı hatalar yapabilmesi, önemli metinlerde insan kontrolünün hâlâ yararlı olduğunu gösterir."
+        },
+        {
+          "key": "o3",
+          "text": "Computers have made human translators unnecessary",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin tam tersini söyler; önemli metinler hâlâ insan kontrolünü hak eder."
+        },
+        {
+          "key": "o4",
+          "text": "Neural systems now translate every sentence perfectly",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metne göre hatalar hâlâ olabilir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Makine çevirisi, bir makinenin metni bir dilden başka bir dile çevirmesidir (1954 Georgetown-IBM gösterisi 'bir makinenin anlamlı metinleri bir dilden diğerine çevirmesi' olarak haberleştirildi).",
+        "source": "W. John Hutchins, The Georgetown-IBM experiment demonstrated in January 1954 (AMTA 2004, ACL Anthology archive); https://aclanthology.org/www.mt-archive.info/00/AMTA-2004-Hutchins.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "İlk makine çevirisi, dilbilimcilerin yazdığı az sayıda kurala ve iki dilli bir sözlüğe (250 sözcük, altı kural) dayanıyordu; yöntem küçük bir cümle kümesinde çalıştı ama genel dile genişletilemedi.",
+        "source": "W. John Hutchins, The Georgetown-IBM experiment demonstrated in January 1954 (AMTA 2004, ACL Anthology archive); https://aclanthology.org/www.mt-archive.info/00/AMTA-2004-Hutchins.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "İstatistiksel yaklaşım, çok sayıda kaynak-hedef cümle çiftinden oluşan büyük bir veritabanından model parametrelerini otomatik tahmin eder; dil modeli bir sözcüğün diğerlerini izleme olasılığına dayanır ve dilbilimsel açıdan basittir.",
+        "source": "Brown et al., A Statistical Approach to Machine Translation, Computational Linguistics 16(2), 1990 (ACL Anthology); https://aclanthology.org/J90-2002.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Sinir ağı tabanlı çeviri bütün giriş cümlesini tek bir birim olarak ele alır ve cümleyi parça parça değil bütün olarak çevirir; çevrilen paragraflar daha akıcı ve okunması kolaydır. Kaynaklar Google'ın 2016 sistemini anlatır; 'birçok sistem' genellemesi bu sistem ve türevlerine dayanır.",
+        "source": "Google Research, A Neural Network for Machine Translation, at Production Scale (2016); https://www.research.google/blog/a-neural-network-for-machine-translation-at-production-scale/; Google, Found in translation: More accurate, fluent sentences in Google Translate; https://blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Sinir ağı sistemleri cümleleri tek tek (paragraf ya da sayfa bağlamı olmadan) çevirir, sözcük atlayabilir, özel isimleri ve nadir terimleri yanlış çevirebilir ve bir insan çevirmenin yapmayacağı hatalar yapabilir.",
+        "source": "Google Research, A Neural Network for Machine Translation, at Production Scale (2016); https://www.research.google/blog/a-neural-network-for-machine-translation-at-production-scale/",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

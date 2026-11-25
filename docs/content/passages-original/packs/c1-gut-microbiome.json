@@ -1,0 +1,3869 @@
+{
+  "slug": "c1-gut-microbiome",
+  "level": "C1",
+  "title": "The Gut and the Hype",
+  "topic": "Tıp",
+  "sortOrder": 30,
+  "isFreeSample": false,
+  "paragraphs": [
+    "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied. That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people. Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+    "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades. Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man. The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+    "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease. Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause. An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once. Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+    "There are, nonetheless, cases in which manipulating the microbiome has proved its worth. In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment. The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome."
+  ],
+  "words": [
+    {
+      "lemma": "for",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 3,
+          "surface": "For",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 4,
+          "end": 8,
+          "surface": "most",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 9,
+          "end": 11,
+          "surface": "of",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 221,
+          "surface": "of",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 519,
+          "end": 521,
+          "surface": "of",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 344,
+          "surface": "of",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 41,
+          "surface": "of",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 141,
+          "surface": "of",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 210,
+          "end": 212,
+          "surface": "of",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 15,
+          "surface": "the",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 35,
+          "end": 38,
+          "surface": "the",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 61,
+          "surface": "the",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 184,
+          "surface": "the",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 238,
+          "end": 241,
+          "surface": "the",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 299,
+          "end": 302,
+          "surface": "the",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 490,
+          "end": 493,
+          "surface": "the",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 189,
+          "end": 192,
+          "surface": "the",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 295,
+          "end": 298,
+          "surface": "The",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 327,
+          "end": 330,
+          "surface": "the",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 29,
+          "end": 32,
+          "surface": "the",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 282,
+          "end": 285,
+          "surface": "the",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 312,
+          "surface": "the",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 52,
+          "end": 55,
+          "surface": "the",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 97,
+          "end": 100,
+          "surface": "the",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 142,
+          "end": 145,
+          "surface": "the",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 286,
+          "end": 289,
+          "surface": "The",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "twentieth",
+      "gloss": "yirminci",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 25,
+          "surface": "twentieth",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 33,
+          "surface": "century",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "bacteria",
+      "gloss": "bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 39,
+          "end": 47,
+          "surface": "bacteria",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 253,
+          "surface": "bacteria",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "living",
+      "gloss": "yaşayan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 48,
+          "end": 54,
+          "surface": "living",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 55,
+          "end": 57,
+          "surface": "in",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 267,
+          "end": 269,
+          "surface": "in",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 271,
+          "surface": "in",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 482,
+          "end": 484,
+          "surface": "in",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 30,
+          "end": 32,
+          "surface": "in",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 89,
+          "end": 91,
+          "surface": "In",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 248,
+          "end": 250,
+          "surface": "in",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 345,
+          "end": 347,
+          "surface": "in",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 67,
+          "surface": "human",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 63,
+          "surface": "human",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 262,
+          "surface": "human",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "gut",
+      "gloss": "bağırsak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 71,
+          "surface": "gut",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 345,
+          "end": 348,
+          "surface": "gut",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 76,
+          "surface": "were",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "regarded",
+      "gloss": "kabul edilmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 85,
+          "surface": "regarded",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "chiefly",
+      "gloss": "başlıca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 93,
+          "surface": "chiefly",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 96,
+          "surface": "as",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 507,
+          "end": 509,
+          "surface": "as",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "passengers",
+      "gloss": "yolcular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 107,
+          "surface": "passengers",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "tolerated",
+      "gloss": "hoş görülen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 118,
+          "surface": "tolerated",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "-den çok (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 119,
+          "end": 125,
+          "surface": "rather",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 297,
+          "end": 303,
+          "surface": "rather",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den çok (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 130,
+          "surface": "than",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 304,
+          "end": 308,
+          "surface": "than",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "studied",
+      "gloss": "incelenen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 138,
+          "surface": "studied",
+          "contextSentence": "For most of the twentieth century, the bacteria living in the human gut were regarded chiefly as passengers, tolerated rather than studied.",
+          "contextSentenceTr": "Yirminci yüzyılın büyük bölümünde insan bağırsağında yaşayan bakteriler başlıca yolcu olarak görüldü; incelenmekten çok hoş görüldüler."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 140,
+          "end": 144,
+          "surface": "That",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "view",
+      "gloss": "görüş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 149,
+          "surface": "view",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 153,
+          "surface": "has",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 67,
+          "end": 70,
+          "surface": "has",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 327,
+          "end": 330,
+          "surface": "has",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "shifted",
+      "gloss": "değişmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 154,
+          "end": 161,
+          "surface": "shifted",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "dramatically",
+      "gloss": "çarpıcı biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 174,
+          "surface": "dramatically",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "-den beri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 180,
+          "surface": "since",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "united",
+      "gloss": "Birleşik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 191,
+          "surface": "United",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "states",
+      "gloss": "Devletler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 192,
+          "end": 198,
+          "surface": "States",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "national",
+      "gloss": "Ulusal",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 199,
+          "end": 207,
+          "surface": "National",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "institutes",
+      "gloss": "Enstitüler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 208,
+          "end": 218,
+          "surface": "Institutes",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "health",
+      "gloss": "Sağlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 222,
+          "end": 228,
+          "surface": "Health",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "launched",
+      "gloss": "başlatmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 237,
+          "surface": "launched",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "İnsan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 242,
+          "end": 247,
+          "surface": "Human",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "microbiome",
+      "gloss": "Mikrobiyom",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 248,
+          "end": 258,
+          "surface": "Microbiome",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "project",
+      "gloss": "Proje",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 259,
+          "end": 266,
+          "surface": "Project",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 278,
+          "surface": "an",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 261,
+          "surface": "An",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "effort",
+      "gloss": "çaba",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 279,
+          "end": 285,
+          "surface": "effort",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 286,
+          "end": 288,
+          "surface": "to",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "catalogue",
+      "gloss": "kataloglamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 298,
+          "surface": "catalogue",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "microbes",
+      "gloss": "mikroplar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 303,
+          "end": 311,
+          "surface": "microbes",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 349,
+          "end": 357,
+          "surface": "microbes",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 312,
+          "end": 316,
+          "surface": "that",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 362,
+          "end": 366,
+          "surface": "that",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 415,
+          "end": 419,
+          "surface": "that",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 485,
+          "end": 489,
+          "surface": "that",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 27,
+          "end": 31,
+          "surface": "that",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 188,
+          "surface": "that",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 304,
+          "end": 308,
+          "surface": "that",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 367,
+          "end": 371,
+          "surface": "that",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "inhabit",
+      "gloss": "yaşamak (bir yerde)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 317,
+          "end": 324,
+          "surface": "inhabit",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "healthy",
+      "gloss": "sağlıklı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 325,
+          "end": 332,
+          "surface": "healthy",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 339,
+          "surface": "people",
+          "contextSentence": "That view has shifted dramatically since the United States National Institutes of Health launched the Human Microbiome Project in 2007, an effort to catalogue the microbes that inhabit healthy people.",
+          "contextSentenceTr": "Bu görüş, ABD Ulusal Sağlık Enstitüleri'nin 2007'de sağlıklı insanlarda yaşayan mikropları kataloglamaya yönelik İnsan Mikrobiyom Projesi'ni başlatmasından beri çarpıcı biçimde değişti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 485,
+          "end": 491,
+          "surface": "people",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 341,
+          "end": 352,
+          "surface": "Researchers",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "now",
+      "gloss": "artık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 353,
+          "end": 356,
+          "surface": "now",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "know",
+      "gloss": "bilmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 357,
+          "end": 361,
+          "surface": "know",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 367,
+          "end": 372,
+          "surface": "these",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 147,
+          "surface": "these",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 385,
+          "end": 390,
+          "surface": "these",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "communities",
+      "gloss": "topluluklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 373,
+          "end": 384,
+          "surface": "communities",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "help",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 385,
+          "end": 389,
+          "surface": "help",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "break",
+      "gloss": "parçalamak (break down)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 390,
+          "end": 395,
+          "surface": "break",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "parçalamak (break down)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 396,
+          "end": 400,
+          "surface": "down",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "dietary",
+      "gloss": "besinsel",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 401,
+          "end": 408,
+          "surface": "dietary",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "fibre",
+      "gloss": "lif",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 409,
+          "end": 414,
+          "surface": "fibre",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "our",
+      "gloss": "bizim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 420,
+          "end": 423,
+          "surface": "our",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 427,
+          "surface": "own",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "enzymes",
+      "gloss": "enzimler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 428,
+          "end": 435,
+          "surface": "enzymes",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 436,
+          "end": 442,
+          "surface": "cannot",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "digest",
+      "gloss": "sindirmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 443,
+          "end": 449,
+          "surface": "digest",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "producing",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 451,
+          "end": 460,
+          "surface": "producing",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "short",
+      "gloss": "kısa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 461,
+          "end": 466,
+          "surface": "short",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "chain",
+      "gloss": "zincirli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 467,
+          "end": 472,
+          "surface": "chain",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "fatty",
+      "gloss": "yağ",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 473,
+          "end": 478,
+          "surface": "fatty",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "acids",
+      "gloss": "asitler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 479,
+          "end": 484,
+          "surface": "acids",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 494,
+          "end": 498,
+          "surface": "body",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 499,
+          "end": 502,
+          "surface": "can",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 503,
+          "end": 506,
+          "surface": "use",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 510,
+          "end": 511,
+          "surface": "a",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 84,
+          "end": 85,
+          "surface": "a",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 120,
+          "surface": "a",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 273,
+          "surface": "a",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 391,
+          "surface": "a",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 187,
+          "surface": "a",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 235,
+          "end": 236,
+          "surface": "a",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 250,
+          "end": 251,
+          "surface": "a",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 418,
+          "end": 419,
+          "surface": "a",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "source",
+      "gloss": "kaynak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 512,
+          "end": 518,
+          "surface": "source",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "energy",
+      "gloss": "enerji",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 522,
+          "end": 528,
+          "surface": "energy",
+          "contextSentence": "Researchers now know that these communities help break down dietary fibre that our own enzymes cannot digest, producing short-chain fatty acids that the body can use as a source of energy.",
+          "contextSentenceTr": "Araştırmacılar artık bu toplulukların kendi enzimlerimizin sindiremediği besinsel lifi parçalamaya yardım ettiğini ve vücudun bir enerji kaynağı olarak kullanabildiği kısa zincirli yağ asitleri ürettiğini biliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "popular",
+      "gloss": "popüler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 7,
+          "surface": "Popular",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "accounts",
+      "gloss": "anlatımlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 8,
+          "end": 16,
+          "surface": "accounts",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 22,
+          "surface": "often",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "add",
+      "gloss": "eklemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 26,
+          "surface": "add",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "microbial",
+      "gloss": "mikrobiyal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 32,
+          "end": 41,
+          "surface": "microbial",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 78,
+          "surface": "microbial",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 309,
+          "end": 318,
+          "surface": "microbial",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 47,
+          "surface": "cells",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 268,
+          "surface": "cells",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "outnumber",
+      "gloss": "sayıca geçmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 48,
+          "end": 57,
+          "surface": "outnumber",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 68,
+          "surface": "ones",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "oranında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 69,
+          "end": 71,
+          "surface": "by",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "ten",
+      "gloss": "on",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 72,
+          "end": 75,
+          "surface": "ten",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 76,
+          "end": 78,
+          "surface": "to",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 209,
+          "end": 211,
+          "surface": "to",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 216,
+          "end": 218,
+          "surface": "to",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 28,
+          "surface": "to",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 90,
+          "surface": "to",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 82,
+          "surface": "one",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 212,
+          "end": 215,
+          "surface": "one",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 219,
+          "end": 222,
+          "surface": "one",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "figure",
+      "gloss": "rakam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 92,
+          "surface": "figure",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "repeated",
+      "gloss": "tekrarlanan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 101,
+          "surface": "repeated",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 102,
+          "end": 105,
+          "surface": "for",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "decades",
+      "gloss": "onlarca yıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 113,
+          "surface": "decades",
+          "contextSentence": "Popular accounts often add that microbial cells outnumber human ones by ten to one, a figure repeated for decades.",
+          "contextSentenceTr": "Popüler anlatımlar sıklıkla mikrobiyal hücrelerin insan hücrelerini ona bir oranında sayıca geçtiğini ekler; bu rakam onlarca yıl tekrarlandı."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 118,
+          "surface": "Yet",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "analysis",
+      "gloss": "analiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 126,
+          "end": 134,
+          "surface": "analysis",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 137,
+          "surface": "by",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "ron",
+      "gloss": "Ron",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 141,
+          "surface": "Ron",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 165,
+          "end": 168,
+          "surface": "Ron",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "sender",
+      "gloss": "Sender",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 148,
+          "surface": "Sender",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "shai",
+      "gloss": "Shai",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 154,
+          "surface": "Shai",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "fuchs",
+      "gloss": "Fuchs",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 160,
+          "surface": "Fuchs",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 161,
+          "end": 164,
+          "surface": "and",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 206,
+          "surface": "and",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 333,
+          "surface": "and",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 461,
+          "end": 464,
+          "surface": "and",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 109,
+          "end": 112,
+          "surface": "and",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "milo",
+      "gloss": "Milo",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 173,
+          "surface": "Milo",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "concluded",
+      "gloss": "sonucuna varmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 174,
+          "end": 183,
+          "surface": "concluded",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "ratio",
+      "gloss": "oran",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 193,
+          "end": 198,
+          "surface": "ratio",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 201,
+          "surface": "is",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 212,
+          "surface": "is",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 297,
+          "end": 299,
+          "surface": "is",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "closer",
+      "gloss": "daha yakın",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 202,
+          "end": 208,
+          "surface": "closer",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 228,
+          "surface": "with",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 249,
+          "surface": "with",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "roughly",
+      "gloss": "kabaca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 236,
+          "surface": "roughly",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 239,
+          "surface": "as",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 256,
+          "surface": "as",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 244,
+          "surface": "many",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "reference",
+      "gloss": "referans",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 283,
+          "surface": "reference",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "adult",
+      "gloss": "yetişkin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 284,
+          "end": 289,
+          "surface": "adult",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "man",
+      "gloss": "erkek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 290,
+          "end": 293,
+          "surface": "man",
+          "contextSentence": "Yet a 2016 analysis by Ron Sender, Shai Fuchs and Ron Milo concluded that the ratio is closer to one to one, with roughly as many bacteria as human cells in a reference adult man.",
+          "contextSentenceTr": "Yine de Ron Sender, Shai Fuchs ve Ron Milo'nun 2016 tarihli analizi oranın bire bire daha yakın olduğu sonucuna vardı; referans bir yetişkin erkekte kabaca insan hücresi kadar bakteri vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "correction",
+      "gloss": "düzeltme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 299,
+          "end": 309,
+          "surface": "correction",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz/soru yardımcı fiili (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 310,
+          "end": 313,
+          "surface": "did",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 314,
+          "end": 317,
+          "surface": "not",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 300,
+          "end": 303,
+          "surface": "not",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "diminish",
+      "gloss": "azaltmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 326,
+          "surface": "diminish",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "importance",
+      "gloss": "önem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 331,
+          "end": 341,
+          "surface": "importance",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 359,
+          "end": 362,
+          "surface": "but",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 363,
+          "end": 366,
+          "surface": "but",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 363,
+          "end": 365,
+          "surface": "it",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 209,
+          "surface": "it",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "illustrated",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 377,
+          "surface": "illustrated",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "ne kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 378,
+          "end": 381,
+          "surface": "how",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "readily",
+      "gloss": "kolayca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 382,
+          "end": 389,
+          "surface": "readily",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "striking",
+      "gloss": "çarpıcı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 392,
+          "end": 400,
+          "surface": "striking",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "number",
+      "gloss": "sayı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 401,
+          "end": 407,
+          "surface": "number",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 408,
+          "end": 411,
+          "surface": "can",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "harden",
+      "gloss": "katılaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 412,
+          "end": 418,
+          "surface": "harden",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e dönüşerek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 419,
+          "end": 423,
+          "surface": "into",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "accepted",
+      "gloss": "kabul görmüş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 424,
+          "end": 432,
+          "surface": "accepted",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "fact",
+      "gloss": "gerçek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 433,
+          "end": 437,
+          "surface": "fact",
+          "contextSentence": "The correction did not diminish the importance of gut microbes, but it illustrated how readily a striking number can harden into accepted fact.",
+          "contextSentenceTr": "Düzeltme bağırsak mikroplarının önemini azaltmadı, ama çarpıcı bir sayının ne kadar kolayca kabul görmüş bir gerçeğe dönüşüp katılaşabileceğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "similar",
+      "gloss": "benzer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 2,
+          "end": 9,
+          "surface": "similar",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "caution",
+      "gloss": "ihtiyat",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 10,
+          "end": 17,
+          "surface": "caution",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "applies",
+      "gloss": "geçerli olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 25,
+          "surface": "applies",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "flood",
+      "gloss": "sel, yığın",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 33,
+          "end": 38,
+          "surface": "flood",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "studies",
+      "gloss": "çalışmalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 49,
+          "surface": "studies",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "linking",
+      "gloss": "bağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 57,
+          "surface": "linking",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "particular",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 58,
+          "end": 68,
+          "surface": "particular",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "profiles",
+      "gloss": "profiller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 79,
+          "end": 87,
+          "surface": "profiles",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "obesity",
+      "gloss": "obezite",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 98,
+          "surface": "obesity",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "depression",
+      "gloss": "depresyon",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 110,
+          "surface": "depression",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 111,
+          "end": 113,
+          "surface": "or",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 322,
+          "end": 324,
+          "surface": "or",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "autoimmune",
+      "gloss": "otoimmün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 124,
+          "surface": "autoimmune",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "disease",
+      "gloss": "hastalık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 132,
+          "surface": "disease",
+          "contextSentence": "A similar caution applies to the flood of studies linking particular microbial profiles to obesity, depression or autoimmune disease.",
+          "contextSentenceTr": "Benzer bir ihtiyat, belirli mikrobiyal profilleri obezite, depresyon ya da otoimmün hastalıkla ilişkilendiren çalışma selinde de geçerlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 138,
+          "surface": "Many",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "findings",
+      "gloss": "bulgular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 148,
+          "end": 156,
+          "surface": "findings",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 160,
+          "surface": "are",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 452,
+          "end": 455,
+          "surface": "are",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 6,
+          "end": 9,
+          "surface": "are",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 393,
+          "end": 396,
+          "surface": "are",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "associations",
+      "gloss": "ilişkiler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 173,
+          "surface": "associations",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "observed",
+      "gloss": "gözlenen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 174,
+          "end": 182,
+          "surface": "observed",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 183,
+          "end": 185,
+          "surface": "at",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "single",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 194,
+          "surface": "single",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "moment",
+      "gloss": "an",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 195,
+          "end": 201,
+          "surface": "moment",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "easy",
+      "gloss": "kolay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 213,
+          "end": 217,
+          "surface": "easy",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 220,
+          "surface": "to",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 475,
+          "end": 477,
+          "surface": "to",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 188,
+          "end": 190,
+          "surface": "to",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "conflate",
+      "gloss": "birbirine karıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 229,
+          "surface": "conflate",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 234,
+          "surface": "such",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "pattern",
+      "gloss": "örüntü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 244,
+          "surface": "pattern",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "cause",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 252,
+          "end": 257,
+          "surface": "cause",
+          "contextSentence": "Many of these findings are associations observed at a single moment, and it is easy to conflate such a pattern with a cause.",
+          "contextSentenceTr": "Bu bulguların çoğu tek bir anda gözlenen ilişkilerdir ve böyle bir örüntüyü bir nedenle karıştırmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "illness",
+      "gloss": "hastalık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 262,
+          "end": 269,
+          "surface": "illness",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-abilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 275,
+          "surface": "might",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 345,
+          "end": 350,
+          "surface": "might",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "alter",
+      "gloss": "değiştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 281,
+          "surface": "alter",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "microbiome",
+      "gloss": "mikrobiyom",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 296,
+          "surface": "microbiome",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 56,
+          "end": 66,
+          "surface": "microbiome",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "reverse",
+      "gloss": "tersi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 313,
+          "end": 320,
+          "surface": "reverse",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "diet",
+      "gloss": "beslenme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 325,
+          "end": 329,
+          "surface": "diet",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "medication",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 334,
+          "end": 344,
+          "surface": "medication",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "shape",
+      "gloss": "biçimlendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 356,
+          "surface": "shape",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "both",
+      "gloss": "ikisini de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 357,
+          "end": 361,
+          "surface": "both",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "aynı anda (at once)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 364,
+          "surface": "at",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "once",
+      "gloss": "aynı anda (at once)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 365,
+          "end": 369,
+          "surface": "once",
+          "contextSentence": "An illness might alter the microbiome rather than the reverse, or diet and medication might shape both at once.",
+          "contextSentenceTr": "Tersinin değil, bir hastalığın mikrobiyomu değiştirmesi mümkündür; ya da beslenme ve ilaçlar ikisini aynı anda biçimlendirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "disentangling",
+      "gloss": "ayrıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 371,
+          "end": 384,
+          "surface": "Disentangling",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "possibilities",
+      "gloss": "olasılıklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 391,
+          "end": 404,
+          "surface": "possibilities",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 405,
+          "end": 412,
+          "surface": "usually",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "requires",
+      "gloss": "gerektirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 413,
+          "end": 421,
+          "surface": "requires",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "controlled",
+      "gloss": "kontrollü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 422,
+          "end": 432,
+          "surface": "controlled",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "experiments",
+      "gloss": "deneyler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 433,
+          "end": 444,
+          "surface": "experiments",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bunlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 446,
+          "end": 451,
+          "surface": "which",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "slow",
+      "gloss": "yavaş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 456,
+          "end": 460,
+          "surface": "slow",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "expensive",
+      "gloss": "pahalı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 465,
+          "end": 474,
+          "surface": "expensive",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "run",
+      "gloss": "yürütmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 478,
+          "end": 481,
+          "surface": "run",
+          "contextSentence": "Disentangling these possibilities usually requires controlled experiments, which are slow and expensive to run in people.",
+          "contextSentenceTr": "Bu olasılıkları ayrıştırmak genellikle kontrollü deneyler gerektirir; bunları insanlarda yürütmek ise yavaş ve pahalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "vardır (there are)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 5,
+          "surface": "There",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "nonetheless",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 11,
+          "end": 22,
+          "surface": "nonetheless",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "cases",
+      "gloss": "durumlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 24,
+          "end": 29,
+          "surface": "cases",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki onlarda",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 33,
+          "end": 38,
+          "surface": "which",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "manipulating",
+      "gloss": "müdahale etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 39,
+          "end": 51,
+          "surface": "manipulating",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "proved",
+      "gloss": "kanıtlamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 71,
+          "end": 77,
+          "surface": "proved",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 78,
+          "end": 81,
+          "surface": "its",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 372,
+          "end": 375,
+          "surface": "its",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "worth",
+      "gloss": "değer",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 82,
+          "end": 87,
+          "surface": "worth",
+          "contextSentence": "There are, nonetheless, cases in which manipulating the microbiome has proved its worth.",
+          "contextSentenceTr": "Yine de mikrobiyoma müdahalenin değerini kanıtladığı durumlar vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "us",
+      "gloss": "ABD",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 101,
+          "end": 103,
+          "surface": "US",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "food",
+      "gloss": "Gıda",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 104,
+          "end": 108,
+          "surface": "Food",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "drug",
+      "gloss": "İlaç",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 113,
+          "end": 117,
+          "surface": "Drug",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "administration",
+      "gloss": "İdaresi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 118,
+          "end": 132,
+          "surface": "Administration",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "approved",
+      "gloss": "onaylamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 133,
+          "end": 141,
+          "surface": "approved",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 146,
+          "end": 151,
+          "surface": "first",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "faecal",
+      "gloss": "dışkı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 152,
+          "end": 158,
+          "surface": "faecal",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "microbiota",
+      "gloss": "mikrobiyota",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 159,
+          "end": 169,
+          "surface": "microbiota",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "product",
+      "gloss": "ürün",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 170,
+          "end": 177,
+          "surface": "product",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "intended",
+      "gloss": "amaçlanan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 179,
+          "end": 187,
+          "surface": "intended",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "prevent",
+      "gloss": "önlemek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 198,
+          "surface": "prevent",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "recurrence",
+      "gloss": "tekrarlama",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 199,
+          "end": 209,
+          "surface": "recurrence",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "clostridioides",
+      "gloss": "Clostridioides (bakteri cinsi)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 213,
+          "end": 227,
+          "surface": "Clostridioides",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "difficile",
+      "gloss": "difficile (tür adı)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 228,
+          "end": 237,
+          "surface": "difficile",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "infection",
+      "gloss": "enfeksiyon",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 238,
+          "end": 247,
+          "surface": "infection",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "adults",
+      "gloss": "yetişkinler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 251,
+          "end": 257,
+          "surface": "adults",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 258,
+          "end": 263,
+          "surface": "after",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "antibiotic",
+      "gloss": "antibiyotik",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 264,
+          "end": 274,
+          "surface": "antibiotic",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "treatment",
+      "gloss": "tedavi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 275,
+          "end": 284,
+          "surface": "treatment",
+          "contextSentence": "In 2022 the US Food and Drug Administration approved the first faecal microbiota product, intended to prevent recurrence of Clostridioides difficile infection in adults after antibiotic treatment.",
+          "contextSentenceTr": "2022'de ABD Gıda ve İlaç İdaresi, antibiyotik tedavisinden sonra yetişkinlerde Clostridioides difficile enfeksiyonunun tekrarlamasını önlemeyi amaçlayan ilk dışkı mikrobiyotası ürününü onayladı."
+        }
+      ]
+    },
+    {
+      "lemma": "lesson",
+      "gloss": "ders",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 290,
+          "end": 296,
+          "surface": "lesson",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "science",
+      "gloss": "bilim",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 319,
+          "end": 326,
+          "surface": "science",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "been",
+      "gloss": "olmuş (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 331,
+          "end": 335,
+          "surface": "been",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "oversold",
+      "gloss": "abartılmak (gereğinden çok övülmek)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 336,
+          "end": 344,
+          "surface": "oversold",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 348,
+          "end": 353,
+          "surface": "every",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "respect",
+      "gloss": "bakım",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 354,
+          "end": 361,
+          "surface": "respect",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "strongest",
+      "gloss": "en güçlü",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 376,
+          "end": 385,
+          "surface": "strongest",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "claims",
+      "gloss": "iddialar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 386,
+          "end": 392,
+          "surface": "claims",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 397,
+          "end": 402,
+          "surface": "those",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "sınanan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 403,
+          "end": 409,
+          "surface": "tested",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "against",
+      "gloss": "-e karşı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 410,
+          "end": 417,
+          "surface": "against",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "specific",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 420,
+          "end": 428,
+          "surface": "specific",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "outcome",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 429,
+          "end": 436,
+          "surface": "outcome",
+          "contextSentence": "The lesson is not that microbial science has been oversold in every respect, but that its strongest claims are those tested against a specific outcome.",
+          "contextSentenceTr": "Ders, mikrobiyal bilimin her bakımdan abartıldığı değil; en güçlü iddialarının belirli bir sonuca karşı sınananlar olduğudur."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the author's main argument?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 372,
+        "end": 436
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Gut microbes matter, yet bold claims need testing",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar mikropların önemini kabul eder ama en güçlü iddiaların belirli bir sonuçla sınananlar olduğunu savunur."
+        },
+        {
+          "key": "o2",
+          "text": "Microbiome research has been largely exaggerated",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar bilimin her bakımdan abartılmadığını açıkça söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Gut bacteria vastly outnumber the body's own cells",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bu ona bir iddiasının düzeltildiğini anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "Diet is the main cause of most chronic illness",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Beslenme yalnızca olası bir ortak etken olarak anılır; böyle bir iddia yoktur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Which statement about the ten-to-one figure does the passage support?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 174,
+        "end": 222
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It counts cells lining the colon alone",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Oran tüm vücut içindir; kalın bağırsak hücreleriyle sınırlandırılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "It is still the accepted scientific estimate",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin rakamın sorgulanıp düzeltildiğini anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "A later analysis found it far too high",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "2016 analizi oranın bire bire yakın olduğunu, yani ona birin çok yüksek olduğunu gösterdi."
+        },
+        {
+          "key": "o4",
+          "text": "It was first proposed in a 2016 study",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "2016 çalışması rakamı ortaya atmadı, düzeltti; rakam onlarca yıldır tekrarlanıyordu."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “conflate” mean in the third paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 207,
+        "end": 257
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Publish too quickly",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Yayın hızından söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Wrongly treat as the same",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Conflate, iki farklı şeyi (örüntü ve neden) aynıymış gibi ele almaktır."
+        },
+        {
+          "key": "o3",
+          "text": "Carefully tell apart",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Bu, conflate kelimesinin tam tersidir; metin ayırmanın zor olduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Measure with more precision",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Ölçüm hassasiyetiyle ilgili bir anlam yoktur."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "The author would most likely agree that a new microbiome claim...",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 286,
+        "end": 361
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "should simply be dismissed as passing fashion",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar alanı toptan reddetmez; işe yarayan örnekler verir."
+        },
+        {
+          "key": "o2",
+          "text": "becomes reliable once it is widely repeated",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Ona bir örneği, sık tekrarın bir rakamı doğru yapmadığını gösterir."
+        },
+        {
+          "key": "o3",
+          "text": "matters chiefly when it concerns digestion",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yazar önemi sindirimle sınırlamaz."
+        },
+        {
+          "key": "o4",
+          "text": "earns trust when tested on a clear outcome",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar en güçlü iddiaların belirli bir sonuca karşı sınananlar olduğunu söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "ABD Ulusal Sağlık Enstitüleri (NIH) İnsan Mikrobiyom Projesi'ni 2007'de sağlıklı insanlardaki mikropları tanımlamak için başlattı.",
+        "source": "NIH Common Fund, Human Microbiome Project; https://commonfund.nih.gov/hmp",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Bağırsak mikropları insan enzimlerinin sindiremediği lifi fermente ederek kısa zincirli yağ asitleri üretir; vücut bunları enerji kaynağı olarak kullanabilir. Mikrobiyom ile hastalık arasındaki bağların çoğu ilişkiseldir.",
+        "source": "Harvard T.H. Chan School of Public Health, The Nutrition Source: The Microbiome; https://nutritionsource.hsph.harvard.edu/microbiome/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Sender, Fuchs ve Milo (2016) referans erkekte bakteri/insan hücresi oranının eski 10:1 tahmini yerine yaklaşık 1:1 olduğunu hesapladı.",
+        "source": "Sender R, Fuchs S, Milo R (2016), Revised Estimates for the Number of Human and Bacteria Cells in the Body, PLOS Biology 14(8): e1002533; https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "FDA 2022'de, antibiyotik tedavisi sonrası yetişkinlerde tekrarlayan Clostridioides difficile enfeksiyonunu önlemeye yönelik ilk dışkı mikrobiyota ürününü onayladı.",
+        "source": "U.S. Food and Drug Administration, FDA Approves First Fecal Microbiota Product (2022); https://www.fda.gov/news-events/press-announcements/fda-approves-first-fecal-microbiota-product",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

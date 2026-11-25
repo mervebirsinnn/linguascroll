@@ -1,0 +1,3845 @@
+{
+  "slug": "c2-rosetta-narrative",
+  "level": "C2",
+  "title": "Beyond the Tidy Plot",
+  "topic": "Tarih",
+  "sortOrder": 13,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again. The historical record resists such neatness. French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+    "The stone itself is a paradox. It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version. Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+    "The obstacle was conceptual rather than linguistic. Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek. The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+    "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds. That insight allowed the Egyptian words to be read as language, not merely as emblems. Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+    "Seen this way, the Rosetta Stone is less a key than a prompt. It gave scholars the occasion to question an assumption that had gone unchallenged for centuries. The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think."
+  ],
+  "words": [
+    {
+      "lemma": "popular",
+      "gloss": "popüler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 7,
+          "surface": "Popular",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "accounts",
+      "gloss": "anlatımlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 8,
+          "end": 16,
+          "surface": "accounts",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 17,
+          "end": 19,
+          "surface": "of",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 414,
+          "end": 416,
+          "surface": "of",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 23,
+          "surface": "the",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 158,
+          "end": 161,
+          "surface": "The",
+          "contextSentence": "The historical record resists such neatness.",
+          "contextSentenceTr": "Tarihsel kayıt böyle bir düzenliliğe direnir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 228,
+          "surface": "the",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 302,
+          "end": 305,
+          "surface": "the",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 371,
+          "end": 374,
+          "surface": "the",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The stone itself is a paradox.",
+          "contextSentenceTr": "Taşın kendisi bir paradokstur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 158,
+          "surface": "the",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 223,
+          "surface": "the",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 300,
+          "end": 303,
+          "surface": "the",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 264,
+          "end": 267,
+          "surface": "The",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 307,
+          "end": 310,
+          "surface": "the",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 335,
+          "end": 338,
+          "surface": "the",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 7,
+          "end": 10,
+          "surface": "the",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 144,
+          "end": 147,
+          "surface": "the",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 270,
+          "end": 273,
+          "surface": "the",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 318,
+          "end": 321,
+          "surface": "the",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 15,
+          "end": 18,
+          "surface": "the",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 79,
+          "end": 82,
+          "surface": "the",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 160,
+          "end": 163,
+          "surface": "The",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 194,
+          "end": 197,
+          "surface": "the",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 242,
+          "end": 245,
+          "surface": "the",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 266,
+          "end": 269,
+          "surface": "the",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "rosetta",
+      "gloss": "Rosetta",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 31,
+          "surface": "Rosetta",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 19,
+          "end": 26,
+          "surface": "Rosetta",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "stone",
+      "gloss": "Taş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 37,
+          "surface": "Stone",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 27,
+          "end": 32,
+          "surface": "Stone",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "favour",
+      "gloss": "tercih etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 44,
+          "surface": "favour",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 46,
+          "surface": "a",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 59,
+          "surface": "a",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 91,
+          "surface": "a",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 125,
+          "surface": "a",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 20,
+          "end": 21,
+          "surface": "a",
+          "contextSentence": "The stone itself is a paradox.",
+          "contextSentenceTr": "Taşın kendisi bir paradokstur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 249,
+          "surface": "a",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 319,
+          "surface": "a",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 164,
+          "end": 165,
+          "surface": "a",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 235,
+          "surface": "a",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 417,
+          "end": 418,
+          "surface": "a",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 41,
+          "end": 42,
+          "surface": "a",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 52,
+          "end": 53,
+          "surface": "a",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 220,
+          "end": 221,
+          "surface": "a",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 295,
+          "end": 296,
+          "surface": "a",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "tidy",
+      "gloss": "düzenli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 51,
+          "surface": "tidy",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "plot",
+      "gloss": "olay örgüsü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 56,
+          "surface": "plot",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "mysterious",
+      "gloss": "gizemli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 60,
+          "end": 70,
+          "surface": "mysterious",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "slab",
+      "gloss": "levha",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 75,
+          "surface": "slab",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 233,
+          "surface": "slab",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 308,
+          "surface": "slab",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 78,
+          "surface": "is",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 19,
+          "surface": "is",
+          "contextSentence": "The stone itself is a paradox.",
+          "contextSentenceTr": "Taşın kendisi bir paradokstur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 81,
+          "surface": "is",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 120,
+          "surface": "is",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 33,
+          "end": 35,
+          "surface": "is",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 186,
+          "end": 188,
+          "surface": "is",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 228,
+          "end": 230,
+          "surface": "is",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 286,
+          "end": 288,
+          "surface": "is",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "unearthed",
+      "gloss": "gün yüzüne çıkarılmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 88,
+          "surface": "unearthed",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "brilliant",
+      "gloss": "parlak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 101,
+          "surface": "brilliant",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "scholar",
+      "gloss": "bilgin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 109,
+          "surface": "scholar",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "reads",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 110,
+          "end": 115,
+          "surface": "reads",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 118,
+          "surface": "it",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 323,
+          "end": 325,
+          "surface": "it",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 367,
+          "surface": "it",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 33,
+          "surface": "It",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 117,
+          "surface": "it",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 2,
+          "surface": "It",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 62,
+          "end": 64,
+          "surface": "It",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 123,
+          "surface": "and",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 211,
+          "surface": "and",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 160,
+          "end": 163,
+          "surface": "and",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 352,
+          "end": 355,
+          "surface": "and",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 266,
+          "end": 269,
+          "surface": "and",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "lost",
+      "gloss": "kayıp",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 130,
+          "surface": "lost",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "civilisation",
+      "gloss": "uygarlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 143,
+          "surface": "civilisation",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "speaks",
+      "gloss": "konuşmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 144,
+          "end": 150,
+          "surface": "speaks",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "again",
+      "gloss": "tekrar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 156,
+          "surface": "again",
+          "contextSentence": "Popular accounts of the Rosetta Stone favour a tidy plot: a mysterious slab is unearthed, a brilliant scholar reads it, and a lost civilisation speaks again.",
+          "contextSentenceTr": "Rosetta Taşı'nın popüler anlatımları düzenli bir olay örgüsünü tercih eder: gizemli bir levha gün yüzüne çıkarılır, parlak bir bilgin onu okur ve kayıp bir uygarlık yeniden konuşur."
+        }
+      ]
+    },
+    {
+      "lemma": "historical",
+      "gloss": "tarihsel",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 172,
+          "surface": "historical",
+          "contextSentence": "The historical record resists such neatness.",
+          "contextSentenceTr": "Tarihsel kayıt böyle bir düzenliliğe direnir."
+        }
+      ]
+    },
+    {
+      "lemma": "record",
+      "gloss": "kayıt",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 179,
+          "surface": "record",
+          "contextSentence": "The historical record resists such neatness.",
+          "contextSentenceTr": "Tarihsel kayıt böyle bir düzenliliğe direnir."
+        }
+      ]
+    },
+    {
+      "lemma": "resists",
+      "gloss": "direnmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 187,
+          "surface": "resists",
+          "contextSentence": "The historical record resists such neatness.",
+          "contextSentenceTr": "Tarihsel kayıt böyle bir düzenliliğe direnir."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 192,
+          "surface": "such",
+          "contextSentence": "The historical record resists such neatness.",
+          "contextSentenceTr": "Tarihsel kayıt böyle bir düzenliliğe direnir."
+        }
+      ]
+    },
+    {
+      "lemma": "neatness",
+      "gloss": "düzenlilik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 201,
+          "surface": "neatness",
+          "contextSentence": "The historical record resists such neatness.",
+          "contextSentenceTr": "Tarihsel kayıt böyle bir düzenliliğe direnir."
+        }
+      ]
+    },
+    {
+      "lemma": "french",
+      "gloss": "Fransız",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 209,
+          "surface": "French",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 306,
+          "end": 312,
+          "surface": "French",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "soldiers",
+      "gloss": "askerler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 218,
+          "surface": "soldiers",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 224,
+          "surface": "found",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 234,
+          "end": 236,
+          "surface": "in",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 368,
+          "end": 370,
+          "surface": "in",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 57,
+          "surface": "in",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 193,
+          "end": 195,
+          "surface": "in",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 217,
+          "end": 219,
+          "surface": "in",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 61,
+          "end": 63,
+          "surface": "in",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 217,
+          "end": 219,
+          "surface": "in",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 304,
+          "end": 306,
+          "surface": "in",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "seventeen",
+      "gloss": "on yedi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 246,
+          "surface": "seventeen",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "ninety",
+      "gloss": "doksan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 253,
+          "surface": "ninety",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "nine",
+      "gloss": "dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 258,
+          "surface": "nine",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "sırasında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 259,
+          "end": 265,
+          "surface": "during",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "napoleon's",
+      "gloss": "Napolyon (iyelik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 266,
+          "end": 276,
+          "surface": "Napoleon's",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "egyptian",
+      "gloss": "Mısır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 277,
+          "end": 285,
+          "surface": "Egyptian",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 159,
+          "end": 167,
+          "surface": "Egyptian",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 148,
+          "end": 156,
+          "surface": "Egyptian",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "campaign",
+      "gloss": "sefer",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 286,
+          "end": 294,
+          "surface": "campaign",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 296,
+          "end": 301,
+          "surface": "after",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "surrender",
+      "gloss": "teslim oluş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 322,
+          "surface": "surrender",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "passed",
+      "gloss": "geçmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 326,
+          "end": 332,
+          "surface": "passed",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 335,
+          "surface": "to",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "britain",
+      "gloss": "İngiltere",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 336,
+          "end": 343,
+          "surface": "Britain",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki orası",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 345,
+          "end": 350,
+          "surface": "which",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 351,
+          "end": 354,
+          "surface": "has",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "displayed",
+      "gloss": "sergilemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 355,
+          "end": 364,
+          "surface": "displayed",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "british",
+      "gloss": "İngiliz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 375,
+          "end": 382,
+          "surface": "British",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "museum",
+      "gloss": "Müze",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 383,
+          "end": 389,
+          "surface": "Museum",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "-den beri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 390,
+          "end": 395,
+          "surface": "since",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "eighteen",
+      "gloss": "on sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 396,
+          "end": 404,
+          "surface": "eighteen",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 64,
+          "end": 72,
+          "surface": "eighteen",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "oh",
+      "gloss": "sıfır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 405,
+          "end": 407,
+          "surface": "oh",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 408,
+          "end": 411,
+          "surface": "two",
+          "contextSentence": "French soldiers found the slab in seventeen ninety nine during Napoleon's Egyptian campaign; after the French surrender it passed to Britain, which has displayed it in the British Museum since eighteen oh two.",
+          "contextSentenceTr": "Fransız askerler levhayı 1799'da Napolyon'un Mısır seferi sırasında buldu; Fransız teslim oluşundan sonra levha İngiltere'ye geçti ve İngiltere onu 1802'den beri British Museum'da sergiliyor."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 80,
+          "end": 83,
+          "surface": "two",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "stone",
+      "gloss": "taş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 9,
+          "surface": "stone",
+          "contextSentence": "The stone itself is a paradox.",
+          "contextSentenceTr": "Taşın kendisi bir paradokstur."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 16,
+          "surface": "itself",
+          "contextSentence": "The stone itself is a paradox.",
+          "contextSentenceTr": "Taşın kendisi bir paradokstur."
+        }
+      ]
+    },
+    {
+      "lemma": "paradox",
+      "gloss": "paradoks",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 29,
+          "surface": "paradox",
+          "contextSentence": "The stone itself is a paradox.",
+          "contextSentenceTr": "Taşın kendisi bir paradokstur."
+        }
+      ]
+    },
+    {
+      "lemma": "preserves",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 43,
+          "surface": "preserves",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 44,
+          "end": 47,
+          "surface": "one",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "decree",
+      "gloss": "ferman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 48,
+          "end": 54,
+          "surface": "decree",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 63,
+          "surface": "three",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "scripts",
+      "gloss": "yazılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 71,
+          "surface": "scripts",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 78,
+          "surface": "which",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 85,
+          "surface": "why",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 90,
+          "surface": "some",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "specialists",
+      "gloss": "uzmanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 102,
+          "surface": "specialists",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "insist",
+      "gloss": "ısrar etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 109,
+          "surface": "insist",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 110,
+          "end": 114,
+          "surface": "that",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 333,
+          "surface": "that",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 89,
+          "surface": "that",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 334,
+          "surface": "that",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 84,
+          "end": 88,
+          "surface": "that",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 118,
+          "end": 122,
+          "surface": "that",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 189,
+          "end": 193,
+          "surface": "that",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "bilingual",
+      "gloss": "iki dilli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 130,
+          "surface": "bilingual",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 137,
+          "surface": "rather",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 34,
+          "surface": "rather",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 140,
+          "end": 146,
+          "surface": "rather",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 142,
+          "surface": "than",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 39,
+          "surface": "than",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 147,
+          "end": 151,
+          "surface": "than",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "trilingual",
+      "gloss": "üç dilli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 153,
+          "surface": "trilingual",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "text",
+      "gloss": "metin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 168,
+          "end": 172,
+          "surface": "text",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "appears",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 180,
+          "surface": "appears",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "twice",
+      "gloss": "iki kez",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 186,
+          "surface": "twice",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "once",
+      "gloss": "bir kez",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 192,
+          "surface": "once",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 212,
+          "end": 216,
+          "surface": "once",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "hieroglyphs",
+      "gloss": "hiyeroglifler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 207,
+          "surface": "hieroglyphs",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 90,
+          "end": 101,
+          "surface": "hieroglyphs",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "cursive",
+      "gloss": "el yazısı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 231,
+          "surface": "cursive",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "demotic",
+      "gloss": "Demotik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 239,
+          "surface": "Demotic",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 363,
+          "surface": "Demotic",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "beside",
+      "gloss": "yanında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 247,
+          "surface": "beside",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "greek",
+      "gloss": "Yunanca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 255,
+          "surface": "Greek",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 298,
+          "surface": "Greek",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 262,
+          "surface": "Greek",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "version",
+      "gloss": "sürüm",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 263,
+          "surface": "version",
+          "contextSentence": "It preserves one decree in three scripts, which is why some specialists insist that it is bilingual rather than trilingual: the Egyptian text appears twice, once in hieroglyphs and once in the cursive Demotic, beside a Greek version.",
+          "contextSentenceTr": "Tek bir fermanı üç yazıyla korur; bu yüzden bazı uzmanlar onun üç dilli değil iki dilli olduğunda ısrar eder: Mısırca metin bir kez hiyeroglifle, bir kez el yazısı Demotikle, bir Yunanca sürümün yanında iki kez görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 272,
+          "surface": "Because",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "scholars",
+      "gloss": "bilginler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 273,
+          "end": 281,
+          "surface": "scholars",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 70,
+          "end": 78,
+          "surface": "scholars",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 287,
+          "surface": "could",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 288,
+          "end": 292,
+          "surface": "read",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "promised",
+      "gloss": "vaat etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 317,
+          "surface": "promised",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "shortcut",
+      "gloss": "kestirme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 320,
+          "end": 328,
+          "surface": "shortcut",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "proved",
+      "gloss": "olduğu anlaşıldı (prove + sıfat)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 334,
+          "end": 340,
+          "surface": "proved",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "deceptive",
+      "gloss": "aldatıcı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 341,
+          "end": 350,
+          "surface": "deceptive",
+          "contextSentence": "Because scholars could read Greek, the slab promised a shortcut that proved deceptive.",
+          "contextSentenceTr": "Bilginler Yunancayı okuyabildiği için levha, aldatıcı olduğu anlaşılan bir kestirme vaat etti."
+        }
+      ]
+    },
+    {
+      "lemma": "obstacle",
+      "gloss": "engel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 12,
+          "surface": "obstacle",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 16,
+          "surface": "was",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 3,
+          "end": 6,
+          "surface": "was",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 328,
+          "end": 331,
+          "surface": "was",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "conceptual",
+      "gloss": "kavramsal",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 17,
+          "end": 27,
+          "surface": "conceptual",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "linguistic",
+      "gloss": "dilsel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 40,
+          "end": 50,
+          "surface": "linguistic",
+          "contextSentence": "The obstacle was conceptual rather than linguistic.",
+          "contextSentenceTr": "Engel dilsel olmaktan çok kavramsaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 52,
+          "end": 56,
+          "surface": "Many",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 89,
+          "end": 93,
+          "surface": "many",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "early",
+      "gloss": "erken",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 62,
+          "surface": "early",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "investigators",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 63,
+          "end": 76,
+          "surface": "investigators",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "assumed",
+      "gloss": "varsaymak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 84,
+          "surface": "assumed",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 106,
+          "surface": "were",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 370,
+          "end": 374,
+          "surface": "were",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "purely",
+      "gloss": "tamamen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 113,
+          "surface": "purely",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "symbolic",
+      "gloss": "simgesel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 122,
+          "surface": "symbolic",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "recording",
+      "gloss": "kaydetmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 133,
+          "surface": "recording",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "ideas",
+      "gloss": "fikirler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 139,
+          "surface": "ideas",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "sounds",
+      "gloss": "sesler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 152,
+          "end": 158,
+          "surface": "sounds",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 115,
+          "end": 121,
+          "surface": "sounds",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "script",
+      "gloss": "yazı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 172,
+          "surface": "script",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "okunmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 177,
+          "surface": "read",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 169,
+          "end": 173,
+          "surface": "read",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 178,
+          "end": 180,
+          "surface": "on",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 185,
+          "surface": "that",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 123,
+          "end": 127,
+          "surface": "That",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "premise",
+      "gloss": "öncül",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 193,
+          "surface": "premise",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 200,
+          "surface": "cannot",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 203,
+          "surface": "be",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 166,
+          "end": 168,
+          "surface": "be",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "matched",
+      "gloss": "eşleştirilmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 211,
+          "surface": "matched",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "word",
+      "gloss": "sözcük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 216,
+          "surface": "word",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 225,
+          "surface": "word",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 220,
+          "surface": "for",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 171,
+          "end": 174,
+          "surface": "for",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "against",
+      "gloss": "karşı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 226,
+          "end": 233,
+          "surface": "against",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "phonetic",
+      "gloss": "fonetik (sesleri temsil eden)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 236,
+          "end": 244,
+          "surface": "phonetic",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 248,
+          "surface": "one",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 261,
+          "end": 264,
+          "surface": "one",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "gibi (such as)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 249,
+          "end": 253,
+          "surface": "such",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "gibi (such as)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 254,
+          "end": 256,
+          "surface": "as",
+          "contextSentence": "Many early investigators assumed that hieroglyphs were purely symbolic, recording ideas rather than sounds, and a script read on that premise cannot be matched word for word against a phonetic one such as Greek.",
+          "contextSentenceTr": "Birçok erken araştırmacı hiyerogliflerin tamamen simgesel olduğunu, sesleri değil fikirleri kaydettiğini varsaydı ve bu öncülle okunan bir yazı, Yunanca gibi sesli bir yazıyla sözcük sözcük eşleştirilemez."
+        }
+      ]
+    },
+    {
+      "lemma": "english",
+      "gloss": "İngiliz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 268,
+          "end": 275,
+          "surface": "English",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "polymath",
+      "gloss": "çok yönlü bilgin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 284,
+          "surface": "polymath",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "thomas",
+      "gloss": "Thomas",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 285,
+          "end": 291,
+          "surface": "Thomas",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "young",
+      "gloss": "Young",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 292,
+          "end": 297,
+          "surface": "Young",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "advanced",
+      "gloss": "ilerletmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 298,
+          "end": 306,
+          "surface": "advanced",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "problem",
+      "gloss": "sorun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 311,
+          "end": 318,
+          "surface": "problem",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-erek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 319,
+          "end": 321,
+          "surface": "by",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "showing",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 322,
+          "end": 329,
+          "surface": "showing",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "hieroglyphic",
+      "gloss": "hiyeroglif",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 351,
+          "surface": "hieroglyphic",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "texts",
+      "gloss": "metinler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 364,
+          "end": 369,
+          "surface": "texts",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "strikingly",
+      "gloss": "çarpıcı biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 385,
+          "surface": "strikingly",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "alike",
+      "gloss": "benzer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 386,
+          "end": 391,
+          "surface": "alike",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 393,
+          "end": 396,
+          "surface": "yet",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 210,
+          "end": 213,
+          "surface": "Yet",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 397,
+          "end": 399,
+          "surface": "he",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "stopped",
+      "gloss": "durmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 400,
+          "end": 407,
+          "surface": "stopped",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "short",
+      "gloss": "kısa",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 408,
+          "end": 413,
+          "surface": "short",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "full",
+      "gloss": "tam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 419,
+          "end": 423,
+          "surface": "full",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 424,
+          "end": 430,
+          "surface": "system",
+          "contextSentence": "The English polymath Thomas Young advanced the problem by showing that the hieroglyphic and Demotic texts were strikingly alike, yet he stopped short of a full system.",
+          "contextSentenceTr": "İngiliz çok yönlü bilgin Thomas Young, hiyeroglif ve Demotik metinlerin çarpıcı biçimde benzer olduğunu göstererek sorunu ilerletti; ancak tam bir sisteme ulaşmadan durdu."
+        }
+      ]
+    },
+    {
+      "lemma": "frenchman",
+      "gloss": "Fransız",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 11,
+          "end": 20,
+          "surface": "Frenchman",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "jean",
+      "gloss": "Jean",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 21,
+          "end": 25,
+          "surface": "Jean",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "francois",
+      "gloss": "Francois",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 26,
+          "end": 34,
+          "surface": "Francois",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "champollion",
+      "gloss": "Champollion",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 35,
+          "end": 46,
+          "surface": "Champollion",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 47,
+          "end": 50,
+          "surface": "who",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "announced",
+      "gloss": "duyurmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 51,
+          "end": 60,
+          "surface": "announced",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "twenty",
+      "gloss": "yirmi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 73,
+          "end": 79,
+          "surface": "twenty",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "signs",
+      "gloss": "işaretler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 94,
+          "end": 99,
+          "surface": "signs",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 100,
+          "end": 104,
+          "surface": "also",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "stood",
+      "gloss": "temsil etmek (stand for)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 105,
+          "end": 110,
+          "surface": "stood",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "temsil etmek (stand for)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 111,
+          "end": 114,
+          "surface": "for",
+          "contextSentence": "It was the Frenchman Jean-Francois Champollion who announced in eighteen twenty two that many signs also stood for sounds.",
+          "contextSentenceTr": "Birçok işaretin ses de gösterdiğini 1822'de duyuran, Fransız Jean-François Champollion'du."
+        }
+      ]
+    },
+    {
+      "lemma": "insight",
+      "gloss": "kavrayış",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 128,
+          "end": 135,
+          "surface": "insight",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "allowed",
+      "gloss": "izin vermek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 136,
+          "end": 143,
+          "surface": "allowed",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "words",
+      "gloss": "sözcükler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 157,
+          "end": 162,
+          "surface": "words",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 163,
+          "end": 165,
+          "surface": "to",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 92,
+          "end": 94,
+          "surface": "to",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 174,
+          "end": 176,
+          "surface": "as",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 198,
+          "end": 200,
+          "surface": "as",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "language",
+      "gloss": "dil",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 177,
+          "end": 185,
+          "surface": "language",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 187,
+          "end": 190,
+          "surface": "not",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 231,
+          "end": 234,
+          "surface": "not",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "merely",
+      "gloss": "sadece",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 197,
+          "surface": "merely",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "emblems",
+      "gloss": "amblemler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 201,
+          "end": 208,
+          "surface": "emblems",
+          "contextSentence": "That insight allowed the Egyptian words to be read as language, not merely as emblems.",
+          "contextSentenceTr": "O kavrayış, Mısırca sözcüklerin yalnızca amblemler olarak değil, dil olarak okunmasına izin verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 214,
+          "end": 217,
+          "surface": "his",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "achievement",
+      "gloss": "başarı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 218,
+          "end": 229,
+          "surface": "achievement",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "rested",
+      "gloss": "dayanmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 230,
+          "end": 236,
+          "surface": "rested",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 237,
+          "end": 239,
+          "surface": "on",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "young's",
+      "gloss": "Young (iyelik)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 240,
+          "end": 247,
+          "surface": "Young's",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "partial",
+      "gloss": "kısmi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 248,
+          "end": 255,
+          "surface": "partial",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "advances",
+      "gloss": "ilerlemeler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 256,
+          "end": 264,
+          "surface": "advances",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "rivalry",
+      "gloss": "rekabet",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 274,
+          "end": 281,
+          "surface": "rivalry",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 282,
+          "end": 289,
+          "surface": "between",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 290,
+          "end": 295,
+          "surface": "their",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "supporters",
+      "gloss": "destekçiler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 296,
+          "end": 306,
+          "surface": "supporters",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "shaped",
+      "gloss": "şekillendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 307,
+          "end": 313,
+          "surface": "shaped",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 314,
+          "end": 317,
+          "surface": "how",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 307,
+          "end": 310,
+          "surface": "how",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "story",
+      "gloss": "hikâye",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 322,
+          "end": 327,
+          "surface": "story",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 222,
+          "end": 227,
+          "surface": "story",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "daha sonra",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 332,
+          "end": 337,
+          "surface": "later",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "told",
+      "gloss": "anlatılmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 338,
+          "end": 342,
+          "surface": "told",
+          "contextSentence": "Yet his achievement rested on Young's partial advances, and the rivalry between their supporters shaped how the story was later told.",
+          "contextSentenceTr": "Yine de onun başarısı Young'ın kısmi ilerlemelerine dayanıyordu ve destekçileri arasındaki rekabet, hikâyenin sonradan nasıl anlatıldığını şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "seen",
+      "gloss": "görülmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 4,
+          "surface": "Seen",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 5,
+          "end": 9,
+          "surface": "this",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "biçim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 10,
+          "end": 13,
+          "surface": "way",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 36,
+          "end": 40,
+          "surface": "less",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "key",
+      "gloss": "anahtar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 43,
+          "end": 46,
+          "surface": "key",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 47,
+          "end": 51,
+          "surface": "than",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "prompt",
+      "gloss": "uyarıcı",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 54,
+          "end": 60,
+          "surface": "prompt",
+          "contextSentence": "Seen this way, the Rosetta Stone is less a key than a prompt.",
+          "contextSentenceTr": "Bu açıdan bakıldığında Rosetta Taşı bir anahtardan çok bir uyarıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "gave",
+      "gloss": "vermek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 65,
+          "end": 69,
+          "surface": "gave",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "occasion",
+      "gloss": "fırsat",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 83,
+          "end": 91,
+          "surface": "occasion",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "sorgulamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 95,
+          "end": 103,
+          "surface": "question",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 104,
+          "end": 106,
+          "surface": "an",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "assumption",
+      "gloss": "varsayım",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 107,
+          "end": 117,
+          "surface": "assumption",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 123,
+          "end": 126,
+          "surface": "had",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "gone",
+      "gloss": "gitmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 127,
+          "end": 131,
+          "surface": "gone",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "unchallenged",
+      "gloss": "sorgulanmamış",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 132,
+          "end": 144,
+          "surface": "unchallenged",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 145,
+          "end": 148,
+          "surface": "for",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "centuries",
+      "gloss": "yüzyıllar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 149,
+          "end": 158,
+          "surface": "centuries",
+          "contextSentence": "It gave scholars the occasion to question an assumption that had gone unchallenged for centuries.",
+          "contextSentenceTr": "Bilginlere yüzyıllardır sorgulanmamış bir varsayımı sorgulama fırsatı verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "lesson",
+      "gloss": "ders",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 164,
+          "end": 170,
+          "surface": "lesson",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "historians",
+      "gloss": "tarihçiler",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 175,
+          "end": 185,
+          "surface": "historians",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 198,
+          "end": 202,
+          "surface": "most",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 246,
+          "end": 250,
+          "surface": "most",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "famous",
+      "gloss": "ünlü",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 203,
+          "end": 209,
+          "surface": "famous",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "object",
+      "gloss": "nesne",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 210,
+          "end": 216,
+          "surface": "object",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "always",
+      "gloss": "her zaman",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 235,
+          "end": 241,
+          "surface": "always",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "important",
+      "gloss": "önemli",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 251,
+          "end": 260,
+          "surface": "important",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "decisive",
+      "gloss": "belirleyici",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 270,
+          "end": 278,
+          "surface": "decisive",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değişim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 279,
+          "end": 285,
+          "surface": "change",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 297,
+          "end": 303,
+          "surface": "change",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 289,
+          "end": 294,
+          "surface": "often",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 311,
+          "end": 317,
+          "surface": "people",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    },
+    {
+      "lemma": "think",
+      "gloss": "düşünmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 318,
+          "end": 323,
+          "surface": "think",
+          "contextSentence": "The lesson for historians is that the most famous object in a story is not always the most important one; the decisive change is often a change in how people think.",
+          "contextSentenceTr": "Tarihçiler için ders, bir hikâyedeki en ünlü nesnenin her zaman en önemli olmadığıdır; belirleyici değişim çoğu zaman insanların nasıl düşündüğündeki değişimdir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the author's central thesis?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 160,
+        "end": 264
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Champollion's role has been exaggerated",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin Champollion'un başarısını kabul eder."
+        },
+        {
+          "key": "o2",
+          "text": "Thinking mattered more than the stone",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin belirleyici değişimin düşünme biçimindeki değişim olduğunu savunur."
+        },
+        {
+          "key": "o3",
+          "text": "The stone made decipherment straightforward",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bunun aldatıcı bir kestirme olduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Greek mattered more than the Egyptian scripts",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin Mısırca sistemin çözülmesini vurgular."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why do some specialists call the stone bilingual?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 155,
+        "end": 263
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It carries only Greek and Latin text",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Latince anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "It was carved by two different civilisations",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir bilgi yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "It has been repaired using other inscriptions",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Onarım anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Egyptian appears twice, beside Greek",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Mısırca iki kez, Yunancanın yanında görünür."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “deceptive” mean in the second paragraph?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 318,
+        "end": 350
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Misleading in appearance",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Deceptive, görünüşteki kolaylığıyla yanıltıcı demektir."
+        },
+        {
+          "key": "o2",
+          "text": "Carefully planned in advance",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Fully understood by everyone",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "Secretly controlled by Britain",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Gizli denetim anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the author imply about popular accounts?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 0,
+        "end": 56
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They avoid mentioning any scholar at all",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Bir bilgin anılır."
+        },
+        {
+          "key": "o2",
+          "text": "They describe the stone's weight in detail",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Ağırlık anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "They simplify a more complicated history",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin popüler anlatımların düzenli bir olay örgüsünü tercih ettiğini söyler."
+        },
+        {
+          "key": "o4",
+          "text": "They are mostly written by Egyptian scholars",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yazarlar anlatılmaz."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Taş 1799'da Mısır'da Fransız askerlerce bulundu; aynı ferman hiyeroglif, Demotik ve Yunanca yazılıdır (bazı bilginlere göre iki dilli, üç yazılı).",
+        "source": "Encyclopaedia Britannica, Rosetta Stone; https://britannica.com/topic/Rosetta-Stone",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Fransız teslimiyetinden sonra taş İngiltere'ye geçti; 1802'den beri British Museum'da sergileniyor.",
+        "source": "Smithsonian Magazine, Rosetta Stone, hieroglyphs and Champollion's decipherment; https://www.smithsonianmag.com/history/rosetta-stone-hieroglyphs-champollion-decipherment-egypt-180980834/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Thomas Young hiyeroglif ve Demotik metinler arasındaki benzerlikleri gösterdi; Champollion 1822'de birçok işaretin ses de gösterdiğini duyurdu.",
+        "source": "Smithsonian Magazine, Rosetta Stone, hieroglyphs and Champollion's decipherment; https://www.smithsonianmag.com/history/rosetta-stone-hieroglyphs-champollion-decipherment-egypt-180980834/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

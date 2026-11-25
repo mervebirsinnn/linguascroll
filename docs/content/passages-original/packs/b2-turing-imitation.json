@@ -1,0 +1,2386 @@
+{
+  "slug": "b2-turing-imitation",
+  "level": "B2",
+  "title": "Replacing a Hard Question",
+  "topic": "Yapay zeka",
+  "sortOrder": 15,
+  "isFreeSample": false,
+  "paragraphs": [
+    "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think? Because the words think and machine are hard to define, he proposed replacing the question with a practical test. He called it the imitation game. He wrote it when electronic computers were still very new.",
+    "In the game, an interrogator sits in one room and exchanges written messages with two hidden players. One is a person; the other is a machine. If the interrogator cannot reliably tell them apart, the machine is said to have passed. Notice that the test measures behaviour, not inner experience. The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+    "That distinction explains why the test remains controversial. A program might produce convincing replies without understanding anything it says. Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice. Later researchers have proposed many variations, but the original setup is still the best known."
+  ],
+  "words": [
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 36,
+          "surface": "in",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 280,
+          "end": 282,
+          "surface": "in",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 11,
+          "surface": "nineteen",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "fifty",
+      "gloss": "elli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 17,
+          "surface": "fifty",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 22,
+          "surface": "the",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 154,
+          "surface": "the",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 224,
+          "surface": "the",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 273,
+          "surface": "the",
+          "contextSentence": "He called it the imitation game.",
+          "contextSentenceTr": "Ona taklit oyunu adını verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 3,
+          "end": 6,
+          "surface": "the",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 122,
+          "surface": "the",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 146,
+          "end": 149,
+          "surface": "the",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 199,
+          "surface": "the",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 247,
+          "surface": "the",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 295,
+          "end": 298,
+          "surface": "The",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 351,
+          "surface": "the",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 369,
+          "end": 372,
+          "surface": "the",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 33,
+          "surface": "the",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 154,
+          "end": 157,
+          "surface": "the",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 175,
+          "end": 178,
+          "surface": "the",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 346,
+          "end": 349,
+          "surface": "the",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 374,
+          "end": 377,
+          "surface": "the",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "british",
+      "gloss": "İngiliz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 30,
+          "surface": "British",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "mathematician",
+      "gloss": "matematikçi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 44,
+          "surface": "mathematician",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "alan",
+      "gloss": "Alan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 49,
+          "surface": "Alan",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "turing",
+      "gloss": "Turing",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 56,
+          "surface": "Turing",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "published",
+      "gloss": "yayımladı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 66,
+          "surface": "published",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 67,
+          "end": 68,
+          "surface": "a",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 93,
+          "surface": "a",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 239,
+          "end": 240,
+          "surface": "a",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 110,
+          "surface": "a",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 133,
+          "surface": "a",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 63,
+          "surface": "A",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "paper",
+      "gloss": "makale",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 74,
+          "surface": "paper",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 79,
+          "surface": "that",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 243,
+          "surface": "that",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 307,
+          "end": 311,
+          "surface": "that",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 260,
+          "end": 264,
+          "surface": "that",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "opened",
+      "gloss": "açtı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 80,
+          "end": 86,
+          "surface": "opened",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 91,
+          "surface": "with",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 234,
+          "end": 238,
+          "surface": "with",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 81,
+          "surface": "with",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 249,
+          "surface": "with",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "deceptively",
+      "gloss": "aldatıcı biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 105,
+          "surface": "deceptively",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "simple",
+      "gloss": "basit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 112,
+          "surface": "simple",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "soru",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 121,
+          "surface": "question",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 233,
+          "surface": "question",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir mi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 123,
+          "end": 126,
+          "surface": "can",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "machines",
+      "gloss": "makineler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 127,
+          "end": 135,
+          "surface": "machines",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        }
+      ]
+    },
+    {
+      "lemma": "think",
+      "gloss": "düşünmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 141,
+          "surface": "think",
+          "contextSentence": "In nineteen fifty, the British mathematician Alan Turing published a paper that opened with a deceptively simple question: can machines think?",
+          "contextSentenceTr": "1950'de İngiliz matematikçi Alan Turing, aldatıcı biçimde basit bir soruyla açılan bir makale yayımladı: makineler düşünebilir mi?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 166,
+          "surface": "think",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 150,
+          "surface": "Because",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 187,
+          "end": 194,
+          "surface": "because",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "words",
+      "gloss": "sözcükler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 155,
+          "end": 160,
+          "surface": "words",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 170,
+          "surface": "and",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 49,
+          "surface": "and",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 178,
+          "surface": "machine",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 134,
+          "end": 141,
+          "surface": "machine",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 207,
+          "surface": "machine",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 373,
+          "end": 380,
+          "surface": "machine",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 182,
+          "surface": "are",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "hard",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 187,
+          "surface": "hard",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 190,
+          "surface": "to",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 216,
+          "end": 218,
+          "surface": "to",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 392,
+          "surface": "to",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "define",
+      "gloss": "tanımlamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 197,
+          "surface": "define",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 199,
+          "end": 201,
+          "surface": "he",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 257,
+          "end": 259,
+          "surface": "He",
+          "contextSentence": "He called it the imitation game.",
+          "contextSentenceTr": "Ona taklit oyunu adını verdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 290,
+          "end": 292,
+          "surface": "He",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "proposed",
+      "gloss": "önerdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 210,
+          "surface": "proposed",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 316,
+          "end": 324,
+          "surface": "proposed",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "replacing",
+      "gloss": "yerine koymak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 211,
+          "end": 220,
+          "surface": "replacing",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "practical",
+      "gloss": "pratik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 250,
+          "surface": "practical",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "gloss": "test",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 255,
+          "surface": "test",
+          "contextSentence": "Because the words think and machine are hard to define, he proposed replacing the question with a practical test.",
+          "contextSentenceTr": "Düşünmek ve makine sözcüklerini tanımlamak zor olduğundan soruyu pratik bir testle değiştirmeyi önerdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 252,
+          "surface": "test",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 38,
+          "surface": "test",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "adlandırdı (call it: ... dedi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 260,
+          "end": 266,
+          "surface": "called",
+          "contextSentence": "He called it the imitation game.",
+          "contextSentenceTr": "Ona taklit oyunu adını verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 267,
+          "end": 269,
+          "surface": "it",
+          "contextSentence": "He called it the imitation game.",
+          "contextSentenceTr": "Ona taklit oyunu adını verdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 299,
+          "end": 301,
+          "surface": "it",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 138,
+          "surface": "it",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 195,
+          "end": 197,
+          "surface": "it",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "imitation",
+      "gloss": "taklit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 274,
+          "end": 283,
+          "surface": "imitation",
+          "contextSentence": "He called it the imitation game.",
+          "contextSentenceTr": "Ona taklit oyunu adını verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "game",
+      "gloss": "oyun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 284,
+          "end": 288,
+          "surface": "game",
+          "contextSentence": "He called it the imitation game.",
+          "contextSentenceTr": "Ona taklit oyunu adını verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 11,
+          "surface": "game",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "wrote",
+      "gloss": "yazdı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 298,
+          "surface": "wrote",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 302,
+          "end": 306,
+          "surface": "when",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "electronic",
+      "gloss": "elektronik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 317,
+          "surface": "electronic",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "computers",
+      "gloss": "bilgisayarlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 318,
+          "end": 327,
+          "surface": "computers",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 328,
+          "end": 332,
+          "surface": "were",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 338,
+          "surface": "still",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 368,
+          "end": 373,
+          "surface": "still",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 339,
+          "end": 343,
+          "surface": "very",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 344,
+          "end": 347,
+          "surface": "new",
+          "contextSentence": "He wrote it when electronic computers were still very new.",
+          "contextSentenceTr": "Bunu elektronik bilgisayarlar hâlâ çok yeniyken yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 15,
+          "surface": "an",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 209,
+          "surface": "an",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "interrogator",
+      "gloss": "sorgulayıcı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 16,
+          "end": 28,
+          "surface": "interrogator",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 162,
+          "surface": "interrogator",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "sits",
+      "gloss": "oturur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 29,
+          "end": 33,
+          "surface": "sits",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 37,
+          "end": 40,
+          "surface": "one",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "room",
+      "gloss": "oda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 41,
+          "end": 45,
+          "surface": "room",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "exchanges",
+      "gloss": "değiş tokuş eder",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 59,
+          "surface": "exchanges",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "written",
+      "gloss": "yazılı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 60,
+          "end": 67,
+          "surface": "written",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "messages",
+      "gloss": "mesajlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 76,
+          "surface": "messages",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 85,
+          "surface": "two",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "hidden",
+      "gloss": "gizli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 92,
+          "surface": "hidden",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "players",
+      "gloss": "oyuncular",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 100,
+          "surface": "players",
+          "contextSentence": "In the game, an interrogator sits in one room and exchanges written messages with two hidden players.",
+          "contextSentenceTr": "Oyunda bir sorgulayıcı bir odada oturur ve gizli iki oyuncuyla yazılı mesaj alışverişi yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 102,
+          "end": 105,
+          "surface": "One",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 108,
+          "surface": "is",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 131,
+          "surface": "is",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 210,
+          "surface": "is",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 306,
+          "surface": "is",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 365,
+          "end": 367,
+          "surface": "is",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 117,
+          "surface": "person",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğeri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 128,
+          "surface": "other",
+          "contextSentence": "One is a person; the other is a machine.",
+          "contextSentenceTr": "Biri bir insandır, diğeri bir makine."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 145,
+          "surface": "If",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 314,
+          "surface": "if",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 163,
+          "end": 169,
+          "surface": "cannot",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 334,
+          "end": 340,
+          "surface": "cannot",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "reliably",
+      "gloss": "güvenilir biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 170,
+          "end": 178,
+          "surface": "reliably",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "tell",
+      "gloss": "ayırt etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 183,
+          "surface": "tell",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 188,
+          "surface": "them",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "apart",
+      "gloss": "ayrı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 189,
+          "end": 194,
+          "surface": "apart",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "said",
+      "gloss": "söylenir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 211,
+          "end": 215,
+          "surface": "said",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 219,
+          "end": 223,
+          "surface": "have",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 311,
+          "end": 315,
+          "surface": "have",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "passed",
+      "gloss": "geçmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 230,
+          "surface": "passed",
+          "contextSentence": "If the interrogator cannot reliably tell them apart, the machine is said to have passed.",
+          "contextSentenceTr": "Sorgulayıcı onları güvenilir biçimde ayırt edemezse makinenin testi geçtiği söylenir."
+        }
+      ]
+    },
+    {
+      "lemma": "notice",
+      "gloss": "dikkat et",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 238,
+          "surface": "Notice",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        }
+      ]
+    },
+    {
+      "lemma": "measures",
+      "gloss": "ölçer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 261,
+          "surface": "measures",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        }
+      ]
+    },
+    {
+      "lemma": "behaviour",
+      "gloss": "davranış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 262,
+          "end": 271,
+          "surface": "behaviour",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 273,
+          "end": 276,
+          "surface": "not",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        }
+      ]
+    },
+    {
+      "lemma": "inner",
+      "gloss": "iç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 277,
+          "end": 282,
+          "surface": "inner",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        }
+      ]
+    },
+    {
+      "lemma": "experience",
+      "gloss": "deneyim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 283,
+          "end": 293,
+          "surface": "experience",
+          "contextSentence": "Notice that the test measures behaviour, not inner experience.",
+          "contextSentenceTr": "Testin içsel deneyimi değil, davranışı ölçtüğüne dikkat et."
+        }
+      ]
+    },
+    {
+      "lemma": "idea",
+      "gloss": "fikir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 299,
+          "end": 303,
+          "surface": "idea",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "conversation",
+      "gloss": "konuşma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 315,
+          "end": 327,
+          "surface": "conversation",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "tek başına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 333,
+          "surface": "alone",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "reveal",
+      "gloss": "ortaya çıkarmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 341,
+          "end": 347,
+          "surface": "reveal",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "difference",
+      "gloss": "fark",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 352,
+          "end": 362,
+          "surface": "difference",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "o zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 364,
+          "end": 368,
+          "surface": "then",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "deserves",
+      "gloss": "hak etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 381,
+          "end": 389,
+          "surface": "deserves",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 393,
+          "end": 395,
+          "surface": "be",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 271,
+          "end": 273,
+          "surface": "be",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "taken",
+      "gloss": "alınmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 396,
+          "end": 401,
+          "surface": "taken",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "seriously",
+      "gloss": "ciddiye",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 402,
+          "end": 411,
+          "surface": "seriously",
+          "contextSentence": "The idea is that if conversation alone cannot reveal the difference, then the machine deserves to be taken seriously.",
+          "contextSentenceTr": "Fikir şudur: konuşma tek başına farkı ortaya çıkaramıyorsa makine ciddiye alınmayı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 4,
+          "surface": "That",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "distinction",
+      "gloss": "ayrım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 5,
+          "end": 16,
+          "surface": "distinction",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "explains",
+      "gloss": "açıklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 17,
+          "end": 25,
+          "surface": "explains",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 29,
+          "surface": "why",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 46,
+          "surface": "remains",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "controversial",
+      "gloss": "tartışmalı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 60,
+          "surface": "controversial",
+          "contextSentence": "That distinction explains why the test remains controversial.",
+          "contextSentenceTr": "Bu ayrım testin neden hâlâ tartışmalı olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "program",
+      "gloss": "program",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 71,
+          "surface": "program",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 72,
+          "end": 77,
+          "surface": "might",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "produce",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 85,
+          "surface": "produce",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "convincing",
+      "gloss": "ikna edici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 96,
+          "surface": "convincing",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "replies",
+      "gloss": "yanıtlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 104,
+          "surface": "replies",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "-meden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 112,
+          "surface": "without",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "understanding",
+      "gloss": "anlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 126,
+          "surface": "understanding",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "anything",
+      "gloss": "hiçbir şey",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 127,
+          "end": 135,
+          "surface": "anything",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "says",
+      "gloss": "söyler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 143,
+          "surface": "says",
+          "contextSentence": "A program might produce convincing replies without understanding anything it says.",
+          "contextSentenceTr": "Bir program, söylediği hiçbir şeyi anlamadan ikna edici yanıtlar üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "bile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 145,
+          "end": 149,
+          "surface": "Even",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "öyle olsa da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 152,
+          "surface": "so",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "proposal",
+      "gloss": "öneri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 166,
+          "surface": "proposal",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "changed",
+      "gloss": "değiştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 167,
+          "end": 174,
+          "surface": "changed",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "debate",
+      "gloss": "tartışma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 185,
+          "surface": "debate",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "replaced",
+      "gloss": "yerini aldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 206,
+          "surface": "replaced",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "endless",
+      "gloss": "bitmez",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 217,
+          "surface": "endless",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "argument",
+      "gloss": "tartışma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 226,
+          "surface": "argument",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 227,
+          "end": 232,
+          "surface": "about",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "definitions",
+      "gloss": "tanımlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 244,
+          "surface": "definitions",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "something",
+      "gloss": "bir şey",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 250,
+          "end": 259,
+          "surface": "something",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 265,
+          "end": 270,
+          "surface": "could",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "tried",
+      "gloss": "denenmiş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 279,
+          "surface": "tried",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "practice",
+      "gloss": "uygulama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 283,
+          "end": 291,
+          "surface": "practice",
+          "contextSentence": "Even so, the proposal changed the debate, because it replaced an endless argument about definitions with something that could be tried in practice.",
+          "contextSentenceTr": "Yine de öneri tartışmayı değiştirdi, çünkü tanımlar hakkındaki bitmek bilmeyen bir tartışmanın yerine uygulamada denenebilecek bir şey koydu."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "daha sonra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 293,
+          "end": 298,
+          "surface": "Later",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 310,
+          "surface": "researchers",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 325,
+          "end": 329,
+          "surface": "many",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "variations",
+      "gloss": "varyasyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 340,
+          "surface": "variations",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 342,
+          "end": 345,
+          "surface": "but",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "original",
+      "gloss": "özgün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 350,
+          "end": 358,
+          "surface": "original",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "setup",
+      "gloss": "kurgu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 359,
+          "end": 364,
+          "surface": "setup",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "best",
+      "gloss": "en iyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 378,
+          "end": 382,
+          "surface": "best",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    },
+    {
+      "lemma": "known",
+      "gloss": "bilinen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 383,
+          "end": 388,
+          "surface": "known",
+          "contextSentence": "Later researchers have proposed many variations, but the original setup is still the best known.",
+          "contextSentenceTr": "Sonraki araştırmacılar birçok varyasyon önerdi ama özgün kurgu hâlâ en bilinenidir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 199,
+        "end": 255
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A history of early British computers",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bilgisayar tarihi anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "A practical test for machines",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin Turing'in düşünme sorusunu pratik bir testle değiştirmesini anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "A machine that has proved it can think",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bunu kanıtlanmış saymaz."
+        },
+        {
+          "key": "o4",
+          "text": "A rule that bans machines from speaking",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Böyle bir kural yoktur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What does the interrogator in the game do?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 13,
+        "end": 100
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Builds a machine while the others watch",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Makine yapımı anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "Speaks aloud to a crowd of observers",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Konuşma yazılıdır, kalabalık yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Reads a long paper about thinking machines",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Makale Turing'e aittir."
+        },
+        {
+          "key": "o4",
+          "text": "Writes messages to two hidden players",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu açıkça söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “controversial” mean in the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 30,
+        "end": 60
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Causing disagreement among people",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Controversial, tartışma yaratan demektir."
+        },
+        {
+          "key": "o2",
+          "text": "Simple and accepted by everyone",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Easy to carry out in a small room",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Oda ayrıntısı geçer ama kelime bunu demez."
+        },
+        {
+          "key": "o4",
+          "text": "Written in a clear and formal style",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Üslupla ilgili değildir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the final paragraph imply about the test's lasting value?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 154,
+        "end": 291
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Its value lies in defining thought exactly",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tanım tartışması bilerek aşılmıştı."
+        },
+        {
+          "key": "o2",
+          "text": "Its value lies in avoiding all argument",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin tartışmayı ortadan kaldırmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Its value lies in being testable",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Önerinin değeri, tartışmanın yerine denenebilir bir şey koymasıdır."
+        },
+        {
+          "key": "o4",
+          "text": "Its value lies in settling the question",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin tartışmanın çözülmediğini söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Alan Turing 1950'de Mind dergisindeki 'Computing Machinery and Intelligence' makalesinde 'makineler düşünebilir mi?' sorusunu, 'düşünmek' ve 'makine' sözcüklerinin tanımı zor olduğu için taklit oyunu adlı pratik bir testle değiştirmeyi önerdi.",
+        "source": "A. M. Turing, Computing Machinery and Intelligence, Mind 59(236), 1950, ss. 433-460; https://doi.org/10.1093/mind/LIX.236.433",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Oyunda bir sorgulayıcı, ayrı yerlerdeki bir insan ve bir makineyle yazılı iletişim kurar; ikisini ayırt edemezse makine testi geçmiş sayılır.",
+        "source": "A. M. Turing, Computing Machinery and Intelligence, Mind 59(236), 1950, ss. 433-460; https://doi.org/10.1093/mind/LIX.236.433",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

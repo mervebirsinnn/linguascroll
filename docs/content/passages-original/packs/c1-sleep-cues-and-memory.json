@@ -1,0 +1,3667 @@
+{
+  "slug": "c1-sleep-cues-and-memory",
+  "level": "C1",
+  "title": "When a Reminder Becomes a Disruption",
+  "topic": "Uyku ve bellek",
+  "sortOrder": 102,
+  "isFreeSample": false,
+  "paragraphs": [
+    "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial? Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing. As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+    "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity. Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations. The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+    "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption. Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones. Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+    "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates. This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories. For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered."
+  ],
+  "words": [
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 103,
+          "surface": "a",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 211,
+          "surface": "a",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 371,
+          "surface": "a",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 425,
+          "surface": "a",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 3,
+          "end": 4,
+          "surface": "a",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 112,
+          "surface": "a",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 406,
+          "end": 407,
+          "surface": "a",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "reminder",
+      "gloss": "hatırlatıcı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 2,
+          "end": 10,
+          "surface": "reminder",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "edilgen yapı yardımcısı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 13,
+          "surface": "is",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 21,
+          "surface": "usually",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "judged",
+      "gloss": "değerlendirilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 22,
+          "end": 28,
+          "surface": "judged",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "göre",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 29,
+          "end": 31,
+          "surface": "by",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 35,
+          "surface": "the",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 176,
+          "end": 179,
+          "surface": "the",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 287,
+          "end": 290,
+          "surface": "the",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 311,
+          "surface": "The",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 382,
+          "end": 385,
+          "surface": "the",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 441,
+          "end": 444,
+          "surface": "the",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 95,
+          "end": 98,
+          "surface": "the",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 156,
+          "end": 159,
+          "surface": "the",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 187,
+          "end": 190,
+          "surface": "the",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 323,
+          "end": 326,
+          "surface": "the",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 361,
+          "end": 364,
+          "surface": "the",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 433,
+          "end": 436,
+          "surface": "the",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "information",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 47,
+          "surface": "information",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o (hatırlatıcı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 48,
+          "end": 50,
+          "surface": "it",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "retrieves",
+      "gloss": "geri getirir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 51,
+          "end": 60,
+          "surface": "retrieves",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 65,
+          "surface": "but",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "research",
+      "gloss": "araştırma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 66,
+          "end": 74,
+          "surface": "research",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 77,
+          "surface": "on",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "sleeping",
+      "gloss": "uyku sırasındaki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 86,
+          "surface": "sleeping",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "memory",
+      "gloss": "bellek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 93,
+          "surface": "memory",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "invites",
+      "gloss": "yöneltir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 101,
+          "surface": "invites",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 113,
+          "surface": "different",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "soru",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 122,
+          "surface": "question",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 128,
+          "surface": "what",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "conditions",
+      "gloss": "koşullar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 129,
+          "end": 139,
+          "surface": "conditions",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "kılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 140,
+          "end": 144,
+          "surface": "make",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "retrieval",
+      "gloss": "hatırlama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 154,
+          "surface": "retrieval",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "beneficial",
+      "gloss": "yararlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 155,
+          "end": 165,
+          "surface": "beneficial",
+          "contextSentence": "A reminder is usually judged by the information it retrieves, but research on sleeping memory invites a different question: what conditions make retrieval beneficial?",
+          "contextSentenceTr": "Bir hatırlatıcı genellikle geri getirdiği bilgiye göre değerlendirilir; ancak uyku sırasındaki bellek üzerine araştırmalar farklı bir soruya yöneltir: hatırlamayı hangi koşullar yararlı kılar?"
+        }
+      ]
+    },
+    {
+      "lemma": "consider",
+      "gloss": "düşünün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 175,
+          "surface": "Consider",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "distinction",
+      "gloss": "ayrım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 191,
+          "surface": "distinction",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 403,
+          "end": 414,
+          "surface": "distinction",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 192,
+          "end": 199,
+          "surface": "between",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 76,
+          "end": 83,
+          "surface": "between",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "reopening",
+      "gloss": "yeniden açmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 209,
+          "surface": "reopening",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "document",
+      "gloss": "belge",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 220,
+          "surface": "document",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 224,
+          "surface": "and",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 93,
+          "surface": "and",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 176,
+          "surface": "and",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 228,
+          "surface": "and",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 80,
+          "end": 83,
+          "surface": "and",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "preserving",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 235,
+          "surface": "preserving",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 239,
+          "surface": "its",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "contents",
+      "gloss": "içeriği",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 248,
+          "surface": "contents",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "access",
+      "gloss": "erişim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 250,
+          "end": 256,
+          "surface": "access",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "tek başına",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 257,
+          "end": 262,
+          "surface": "alone",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuzluk yardımcısı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 263,
+          "end": 267,
+          "surface": "does",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "olumsuzluk eki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 268,
+          "end": 271,
+          "surface": "not",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 273,
+          "end": 276,
+          "surface": "not",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "guarantee",
+      "gloss": "garanti etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 272,
+          "end": 281,
+          "surface": "guarantee",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "olduğunu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 282,
+          "end": 286,
+          "surface": "that",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 37,
+          "end": 41,
+          "surface": "that",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 182,
+          "end": 186,
+          "surface": "that",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 232,
+          "end": 236,
+          "surface": "that",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "material",
+      "gloss": "malzeme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 291,
+          "end": 299,
+          "surface": "material",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 398,
+          "surface": "material",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "will",
+      "gloss": "gelecek zaman yardımcısı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 300,
+          "end": 304,
+          "surface": "will",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "emerge",
+      "gloss": "çıkmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 305,
+          "end": 311,
+          "surface": "emerge",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "intact",
+      "gloss": "bozulmadan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 312,
+          "end": 318,
+          "surface": "intact",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "içinden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 323,
+          "surface": "from",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "further",
+      "gloss": "daha ileri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 331,
+          "surface": "further",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "processing",
+      "gloss": "işleme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 342,
+          "surface": "processing",
+          "contextSentence": "Consider the distinction between reopening a document and preserving its contents; access alone does not guarantee that the material will emerge intact from further processing.",
+          "contextSentenceTr": "Bir belgeyi yeniden açmak ile içeriğini korumak arasındaki ayrımı düşünün; yalnızca erişim, malzemenin daha ileri işlemlerden bozulmadan çıkacağını garanti etmez."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 344,
+          "end": 346,
+          "surface": "As",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 347,
+          "end": 349,
+          "surface": "an",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 497,
+          "end": 499,
+          "surface": "an",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 418,
+          "end": 420,
+          "surface": "an",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 42,
+          "end": 44,
+          "surface": "an",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 135,
+          "end": 137,
+          "surface": "an",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "analogy",
+      "gloss": "benzetme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 350,
+          "end": 357,
+          "surface": "analogy",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "ziyade (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 358,
+          "end": 364,
+          "surface": "rather",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 472,
+          "end": 478,
+          "surface": "rather",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 369,
+          "surface": "than",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 479,
+          "end": 483,
+          "surface": "than",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "neurological",
+      "gloss": "nörolojik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 372,
+          "end": 384,
+          "surface": "neurological",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "explanation",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 385,
+          "end": 396,
+          "surface": "explanation",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 398,
+          "end": 402,
+          "surface": "this",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 127,
+          "end": 131,
+          "surface": "This",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "provides",
+      "gloss": "sunar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 415,
+          "end": 423,
+          "surface": "provides",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "useful",
+      "gloss": "yararlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 426,
+          "end": 432,
+          "surface": "useful",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "framework",
+      "gloss": "çerçeve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 433,
+          "end": 442,
+          "surface": "framework",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 443,
+          "end": 446,
+          "surface": "for",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 437,
+          "end": 440,
+          "surface": "for",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "interpreting",
+      "gloss": "yorumlamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 447,
+          "end": 459,
+          "surface": "interpreting",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 460,
+          "end": 463,
+          "surface": "two",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 194,
+          "surface": "two",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "experiments",
+      "gloss": "deney",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 464,
+          "end": 475,
+          "surface": "experiments",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 476,
+          "end": 481,
+          "surface": "whose",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "findings",
+      "gloss": "bulgular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 482,
+          "end": 490,
+          "surface": "findings",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "initially",
+      "gloss": "başlangıçta",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 491,
+          "end": 500,
+          "surface": "initially",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "seem",
+      "gloss": "görünür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 501,
+          "end": 505,
+          "surface": "seem",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "difficult",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 506,
+          "end": 515,
+          "surface": "difficult",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "mastar işareti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 516,
+          "end": 518,
+          "surface": "to",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "reconcile",
+      "gloss": "bağdaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 519,
+          "end": 528,
+          "surface": "reconcile",
+          "contextSentence": "As an analogy rather than a neurological explanation, this distinction provides a useful framework for interpreting two experiments whose findings initially seem difficult to reconcile.",
+          "contextSentenceTr": "Nörolojik bir açıklamadan ziyade bir benzetme olarak bu ayrım, bulguları başlangıçta bağdaştırılması zor görünen iki deneyi yorumlamak için yararlı bir çerçeve sunar."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 35,
+          "surface": "in",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 37,
+          "surface": "in",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "northwestern",
+      "gloss": "Northwestern Üniversitesi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 5,
+          "end": 17,
+          "surface": "Northwestern",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 23,
+          "surface": "study",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "reported",
+      "gloss": "bildirilen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 32,
+          "surface": "reported",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "participants",
+      "gloss": "katılımcılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 54,
+          "surface": "participants",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrendi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 62,
+          "surface": "learned",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "associations",
+      "gloss": "eşleşmeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 75,
+          "surface": "associations",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "faces",
+      "gloss": "yüzler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 84,
+          "end": 89,
+          "surface": "faces",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "names",
+      "gloss": "isimler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 99,
+          "surface": "names",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 172,
+          "surface": "Names",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "ardından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 101,
+          "end": 105,
+          "surface": "then",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "took",
+      "gloss": "yaptı (took a nap: kısa süre uyudu)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 110,
+          "surface": "took",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "nap",
+      "gloss": "kısa uyku",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 116,
+          "surface": "nap",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "while",
+      "gloss": "iken",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 117,
+          "end": 122,
+          "surface": "while",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 134,
+          "surface": "researchers",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "monitored",
+      "gloss": "izledi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 144,
+          "surface": "monitored",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 145,
+          "end": 150,
+          "surface": "their",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "brain",
+      "gloss": "beyin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 156,
+          "surface": "brain",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "activity",
+      "gloss": "etkinlik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 165,
+          "surface": "activity",
+          "contextSentence": "In a Northwestern study reported in 2022, participants learned associations between faces and names, then took a nap while researchers monitored their brain activity.",
+          "contextSentenceTr": "Northwestern Üniversitesi'nin 2022 yılında bildirilen bir çalışmasında katılımcılar yüzler ile isimler arasındaki eşleşmeleri öğrendi; ardından araştırmacılar beyin etkinliklerini izlerken kısa bir uyku uyudu."
+        }
+      ]
+    },
+    {
+      "lemma": "associated",
+      "gloss": "ilişkilendirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 187,
+          "surface": "associated",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "music",
+      "gloss": "müzik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 193,
+          "surface": "music",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "edilgen geçmiş zaman yardımcısı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 194,
+          "end": 198,
+          "surface": "were",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 201,
+          "surface": "were",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "played",
+      "gloss": "çalındı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 205,
+          "surface": "played",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "sırasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 212,
+          "surface": "during",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 124,
+          "surface": "during",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "deep",
+      "gloss": "derin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 217,
+          "surface": "deep",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "sleep",
+      "gloss": "uyku",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 218,
+          "end": 223,
+          "surface": "sleep",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 251,
+          "end": 256,
+          "surface": "sleep",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 130,
+          "surface": "sleep",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 380,
+          "surface": "sleep",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "recall",
+      "gloss": "hatırlama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 235,
+          "surface": "recall",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "benefited",
+      "gloss": "iyileşti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 245,
+          "surface": "benefited",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "olduğunda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 250,
+          "surface": "when",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "remained",
+      "gloss": "kaldı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 265,
+          "surface": "remained",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "uninterrupted",
+      "gloss": "kesintisiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 279,
+          "surface": "uninterrupted",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 280,
+          "end": 286,
+          "surface": "during",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 292,
+          "surface": "these",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 15,
+          "end": 20,
+          "surface": "these",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "presentations",
+      "gloss": "sunumlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 306,
+          "surface": "presentations",
+          "contextSentence": "Names and associated music were played during deep sleep, and recall benefited when sleep remained uninterrupted during these presentations.",
+          "contextSentenceTr": "Derin uyku sırasında isimler ve bunlarla ilişkilendirilmiş müzik çalındı ve bu sunumlar boyunca uyku kesintisiz kaldığında hatırlama iyileşti."
+        }
+      ]
+    },
+    {
+      "lemma": "relevant",
+      "gloss": "ilgili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 320,
+          "surface": "relevant",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "observation",
+      "gloss": "gözlem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 332,
+          "surface": "observation",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 333,
+          "end": 336,
+          "surface": "was",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 414,
+          "end": 417,
+          "surface": "was",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "dolayısıyla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 337,
+          "end": 346,
+          "surface": "therefore",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "conditional",
+      "gloss": "koşullu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 347,
+          "end": 358,
+          "surface": "conditional",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "presenting",
+      "gloss": "sunmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 360,
+          "end": 370,
+          "surface": "presenting",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "previously",
+      "gloss": "önceden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 371,
+          "end": 381,
+          "surface": "previously",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrenilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 382,
+          "end": 389,
+          "surface": "learned",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "coincided",
+      "gloss": "örtüştü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 399,
+          "end": 408,
+          "surface": "coincided",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 409,
+          "end": 413,
+          "surface": "with",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 68,
+          "end": 72,
+          "surface": "with",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "improvement",
+      "gloss": "iyileşme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 414,
+          "end": 425,
+          "surface": "improvement",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "under",
+      "gloss": "altında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 426,
+          "end": 431,
+          "surface": "under",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "particular",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 432,
+          "end": 442,
+          "surface": "particular",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "physiological",
+      "gloss": "fizyolojik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 443,
+          "end": 456,
+          "surface": "physiological",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "circumstances",
+      "gloss": "koşullar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 457,
+          "end": 470,
+          "surface": "circumstances",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "establishing",
+      "gloss": "ortaya koymak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 484,
+          "end": 496,
+          "surface": "establishing",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "unrestricted",
+      "gloss": "sınırsız",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 500,
+          "end": 512,
+          "surface": "unrestricted",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "benefit",
+      "gloss": "yarar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 513,
+          "end": 520,
+          "surface": "benefit",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "kaynaklanan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 521,
+          "end": 525,
+          "surface": "from",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "nocturnal",
+      "gloss": "geceye ait",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 526,
+          "end": 535,
+          "surface": "nocturnal",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "stimulation",
+      "gloss": "uyarım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 536,
+          "end": 547,
+          "surface": "stimulation",
+          "contextSentence": "The relevant observation was therefore conditional: presenting previously learned material coincided with improvement under particular physiological circumstances, rather than establishing an unrestricted benefit from nocturnal stimulation.",
+          "contextSentenceTr": "Dolayısıyla ilgili gözlem koşulluydu: önceden öğrenilmiş malzemenin sunulması, gece uyarımının sınırsız bir yararını ortaya koymaktan ziyade belirli fizyolojik koşullar altında iyileşmeyle örtüşüyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "subsequent",
+      "gloss": "sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 2,
+          "end": 12,
+          "surface": "subsequent",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "experiment",
+      "gloss": "deney",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 23,
+          "surface": "experiment",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "published",
+      "gloss": "yayımlanan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 34,
+          "surface": "published",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "paired",
+      "gloss": "eşleştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 50,
+          "surface": "paired",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "object",
+      "gloss": "nesne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 51,
+          "end": 57,
+          "surface": "object",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "locations",
+      "gloss": "konumları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 58,
+          "end": 67,
+          "surface": "locations",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "sounds",
+      "gloss": "sesler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 79,
+          "surface": "sounds",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "deliberately",
+      "gloss": "kasıtlı olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 84,
+          "end": 96,
+          "surface": "deliberately",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "varied",
+      "gloss": "değiştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 103,
+          "surface": "varied",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "cue",
+      "gloss": "ipucu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 107,
+          "surface": "cue",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "intensity",
+      "gloss": "şiddeti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 108,
+          "end": 117,
+          "surface": "intensity",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 131,
+          "end": 133,
+          "surface": "to",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "provoke",
+      "gloss": "yaratmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 141,
+          "surface": "provoke",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "disruption",
+      "gloss": "kesinti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 152,
+          "surface": "disruption",
+          "contextSentence": "A subsequent experiment, published in 2023, paired object locations with sounds and deliberately varied cue intensity during sleep to provoke disruption.",
+          "contextSentenceTr": "2023 yılında yayımlanan sonraki bir deney, nesne konumlarını seslerle eşleştirdi ve kesinti yaratmak için uyku sırasında ipucunun şiddetini kasıtlı olarak değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "locations",
+      "gloss": "konumlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 154,
+          "end": 163,
+          "surface": "Locations",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 251,
+          "surface": "locations",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "cued",
+      "gloss": "ipucu verilen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 164,
+          "end": 168,
+          "surface": "cued",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "alongside",
+      "gloss": "birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 178,
+          "surface": "alongside",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "measured",
+      "gloss": "ölçülen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 187,
+          "surface": "measured",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "arousals",
+      "gloss": "uyanıklık tepkileri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 196,
+          "surface": "arousals",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "subsequently",
+      "gloss": "sonradan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 214,
+          "surface": "subsequently",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "forgotten",
+      "gloss": "unutuldu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 224,
+          "surface": "forgotten",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 225,
+          "end": 229,
+          "surface": "more",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 393,
+          "end": 397,
+          "surface": "more",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 234,
+          "surface": "than",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 322,
+          "surface": "than",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 410,
+          "end": 414,
+          "surface": "than",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "uncued",
+      "gloss": "ipucu verilmeyen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 235,
+          "end": 241,
+          "surface": "uncued",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 253,
+          "end": 256,
+          "surface": "yet",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "louder",
+      "gloss": "daha yüksek sesli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 263,
+          "surface": "louder",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "cues",
+      "gloss": "ipuçları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 264,
+          "end": 268,
+          "surface": "cues",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 248,
+          "end": 252,
+          "surface": "cues",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz geçmiş zaman yardımcısı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 269,
+          "end": 272,
+          "surface": "did",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "produce",
+      "gloss": "yol açmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 277,
+          "end": 284,
+          "surface": "produce",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "significantly",
+      "gloss": "anlamlı ölçüde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 285,
+          "end": 298,
+          "surface": "significantly",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "greater",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 306,
+          "surface": "greater",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "forgetting",
+      "gloss": "unutma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 307,
+          "end": 317,
+          "surface": "forgetting",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "softer",
+      "gloss": "daha hafif",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 329,
+          "surface": "softer",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 334,
+          "surface": "ones",
+          "contextSentence": "Locations cued alongside measured arousals were subsequently forgotten more than uncued locations, yet louder cues did not produce significantly greater forgetting than softer ones.",
+          "contextSentenceTr": "Ölçülen uyanıklık tepkileriyle birlikte ipucu verilen konumlar daha sonra ipucu verilmeyen konumlardan daha fazla unutuldu; ancak daha yüksek sesli ipuçları, daha hafif olanlardan anlamlı ölçüde daha fazla unutmaya yol açmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 343,
+          "surface": "Because",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "both",
+      "gloss": "her iki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 344,
+          "end": 348,
+          "surface": "both",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "intensities",
+      "gloss": "şiddet düzeyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 349,
+          "end": 360,
+          "surface": "intensities",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 361,
+          "end": 366,
+          "surface": "could",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "disturb",
+      "gloss": "bozmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 367,
+          "end": 374,
+          "surface": "disturb",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "nominal",
+      "gloss": "nominal",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 386,
+          "end": 393,
+          "surface": "nominal",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "strength",
+      "gloss": "şiddet",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 394,
+          "end": 402,
+          "surface": "strength",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-in",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 403,
+          "end": 405,
+          "surface": "of",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 153,
+          "end": 155,
+          "surface": "of",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "sound",
+      "gloss": "ses",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 408,
+          "end": 413,
+          "surface": "sound",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "imperfect",
+      "gloss": "kusurlu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 421,
+          "end": 430,
+          "surface": "imperfect",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "proxy",
+      "gloss": "dolaylı gösterge",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 431,
+          "end": 436,
+          "surface": "proxy",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "sleeper's",
+      "gloss": "uyuyanın",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 445,
+          "end": 454,
+          "surface": "sleeper's",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "response",
+      "gloss": "tepki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 455,
+          "end": 463,
+          "surface": "response",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 377,
+          "end": 385,
+          "surface": "response",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 464,
+          "end": 466,
+          "surface": "to",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "ona",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 467,
+          "end": 469,
+          "surface": "it",
+          "contextSentence": "Because both intensities could disturb sleep, the nominal strength of a sound was an imperfect proxy for the sleeper's response to it.",
+          "contextSentenceTr": "Her iki şiddet düzeyi de uykuyu bozabildiğinden, sesin nominal şiddeti uyuyanın ona verdiği tepki için kusurlu bir dolaylı göstergeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "ele alındığında",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 4,
+          "surface": "Read",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 5,
+          "end": 13,
+          "surface": "together",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "results",
+      "gloss": "sonuçlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 21,
+          "end": 28,
+          "surface": "results",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "suggest",
+      "gloss": "düşündürür",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 29,
+          "end": 36,
+          "surface": "suggest",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "intervention",
+      "gloss": "müdahale",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 45,
+          "end": 57,
+          "surface": "intervention",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-emez",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 58,
+          "end": 64,
+          "surface": "cannot",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "edilgen yapı yardımcısı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 65,
+          "end": 67,
+          "surface": "be",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "evaluated",
+      "gloss": "değerlendirilmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 68,
+          "end": 77,
+          "surface": "evaluated",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "independently",
+      "gloss": "bağımsız olarak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 78,
+          "end": 91,
+          "surface": "independently",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 92,
+          "end": 94,
+          "surface": "of",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "state",
+      "gloss": "durum",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 99,
+          "end": 104,
+          "surface": "state",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 105,
+          "end": 107,
+          "surface": "in",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 108,
+          "end": 113,
+          "surface": "which",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o (müdahale)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 114,
+          "end": 116,
+          "surface": "it",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "operates",
+      "gloss": "işler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 117,
+          "end": 125,
+          "surface": "operates",
+          "contextSentence": "Read together, these results suggest that an intervention cannot be evaluated independently of the state in which it operates.",
+          "contextSentenceTr": "Birlikte ele alındığında bu sonuçlar, bir müdahalenin işlediği durumdan bağımsız değerlendirilemeyeceğini düşündürür."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "olmak fiili",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 132,
+          "end": 134,
+          "surface": "is",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 339,
+          "end": 341,
+          "surface": "is",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "interpretation",
+      "gloss": "yorum",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 138,
+          "end": 152,
+          "surface": "interpretation",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "comparison",
+      "gloss": "karşılaştırma",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 160,
+          "end": 170,
+          "surface": "comparison",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 172,
+          "end": 175,
+          "surface": "not",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "proof",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 176,
+          "end": 181,
+          "surface": "proof",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "tasks",
+      "gloss": "görev",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 195,
+          "end": 200,
+          "surface": "tasks",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "engage",
+      "gloss": "devreye sokar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 201,
+          "end": 207,
+          "surface": "engage",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "identical",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 208,
+          "end": 217,
+          "surface": "identical",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "mechanisms",
+      "gloss": "mekanizmalar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 218,
+          "end": 228,
+          "surface": "mechanisms",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "veya",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 229,
+          "end": 231,
+          "surface": "or",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "laboratory",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 237,
+          "end": 247,
+          "surface": "laboratory",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 253,
+          "end": 258,
+          "surface": "could",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "reliably",
+      "gloss": "güvenilir biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 259,
+          "end": 267,
+          "surface": "reliably",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "manipulate",
+      "gloss": "değiştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 268,
+          "end": 278,
+          "surface": "manipulate",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "everyday",
+      "gloss": "gündelik",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 279,
+          "end": 287,
+          "surface": "everyday",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "memories",
+      "gloss": "anılar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 288,
+          "end": 296,
+          "surface": "memories",
+          "contextSentence": "This is an interpretation of the comparison, not proof that the two tasks engage identical mechanisms or that laboratory cues could reliably manipulate everyday memories.",
+          "contextSentenceTr": "Bu, karşılaştırmanın bir yorumudur; iki görevin aynı mekanizmaları devreye soktuğunun ya da laboratuvar ipuçlarının gündelik anıları güvenilir biçimde değiştirebileceğinin kanıtı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "açısından",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 298,
+          "end": 301,
+          "surface": "For",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "experimental",
+      "gloss": "deneysel",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 302,
+          "end": 314,
+          "surface": "experimental",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "design",
+      "gloss": "tasarım",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 315,
+          "end": 321,
+          "surface": "design",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "implication",
+      "gloss": "çıkarım",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 327,
+          "end": 338,
+          "surface": "implication",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "sharper",
+      "gloss": "daha net",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 342,
+          "end": 349,
+          "surface": "sharper",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "measuring",
+      "gloss": "ölçmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 351,
+          "end": 360,
+          "surface": "measuring",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "recipient's",
+      "gloss": "alıcının",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 365,
+          "end": 376,
+          "surface": "recipient's",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 386,
+          "end": 389,
+          "surface": "may",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 390,
+          "end": 392,
+          "surface": "be",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "informative",
+      "gloss": "bilgilendirici",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 398,
+          "end": 409,
+          "surface": "informative",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "merely",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 415,
+          "end": 421,
+          "surface": "merely",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "specifying",
+      "gloss": "belirtmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 422,
+          "end": 432,
+          "surface": "specifying",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "stimulus",
+      "gloss": "uyaran",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 437,
+          "end": 445,
+          "surface": "stimulus",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "delivered",
+      "gloss": "verilen",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 446,
+          "end": 455,
+          "surface": "delivered",
+          "contextSentence": "For experimental design, the implication is sharper: measuring the recipient's response may be more informative than merely specifying the stimulus delivered.",
+          "contextSentenceTr": "Deney tasarımı açısından çıkarım daha nettir: alıcının tepkisini ölçmek, yalnızca verilen uyaranı belirtmekten daha bilgilendirici olabilir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which claim best captures the argument?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 0,
+        "end": 126
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Contrasting memory tasks reveal which sounds preserve information most effectively.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Metin en etkili sesleri sıralamaz; müdahalenin etkisini alıcının durumuyla birlikte değerlendirmeyi savunur."
+        },
+        {
+          "key": "o2",
+          "text": "The effects of memory cues depend on the conditions of their reception.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Her iki deneyin karşılaştırılması, ipuçlarının sonucunun uykunun durumu ve verdiği tepkiyle bağlantılı olduğunu gösterir."
+        },
+        {
+          "key": "o3",
+          "text": "Differences in task difficulty explain the apparently conflicting experimental findings.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Görev güçlüğü açıklayıcı neden olarak verilmez; uykunun kesintiye uğraması üzerinde durulur."
+        },
+        {
+          "key": "o4",
+          "text": "Nighttime stimulation offers a practical method for selecting which memories survive.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Gündelik anıların güvenilir biçimde değiştirilebileceği sonucuna açıkça sınır konur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What distinction emerged in the 2023 experiment?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 154,
+        "end": 335
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Uncued locations deteriorated more than locations accompanied by measured arousals.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "İlişki ters çevrilmiştir: uyanıklık tepkileriyle ipucu verilen konumlarda daha fazla unutma görülmüştür."
+        },
+        {
+          "key": "o2",
+          "text": "Softer cues improved recall whereas louder cues substantially disrupted retention.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Hafif seslerin hatırlamayı iyileştirdiği bildirilmez; iki ses düzeyi arasında anlamlı unutma farkı yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Cue intensity predicted forgetting more accurately than the recorded sleep response.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Sesin nominal şiddeti, alıcının tepkisi için kusurlu bir gösterge olarak sunulur."
+        },
+        {
+          "key": "o4",
+          "text": "Arousals accompanied greater forgetting, without a significant loudness contrast.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Uyanıklık tepkileriyle ipucu verilen konumlar ipucu verilmeyenlerden daha fazla unutulmuş, fakat yüksek ve hafif sesler arasında anlamlı fark görülmemiştir."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “proxy” mean in paragraph 3?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 336,
+        "end": 470
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "An indirect indicator of another variable.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Ses şiddeti doğrudan uyku tepkisi değildir; o tepkiyi temsil etmekte kullanılan dolaylı bir göstergedir."
+        },
+        {
+          "key": "o2",
+          "text": "An alternative cause of the measured outcome.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Cümle ses şiddetini başka bir neden olarak değil, tepkiyi temsil eden ölçüt olarak değerlendirir."
+        },
+        {
+          "key": "o3",
+          "text": "A protective barrier against outside interference.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Uyku kesintisi bağlamına uygun görünse de proxy burada koruyucu engel anlamına gelmez."
+        },
+        {
+          "key": "o4",
+          "text": "A precise account of the underlying mechanism.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Dolaylı gösterge mekanizmanın kesin açıklaması değildir; ayrıca imperfect sözcüğü kusurlu olduğunu belirtir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "Which design change follows from the author's reasoning?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 298,
+        "end": 456
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Standardise sound volume and treat this as sufficient evidence of equivalent exposure.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Aynı fiziksel uyaranın benzer fizyolojik tepkiyi garanti etmediği, metnin temel çıkarımıdır."
+        },
+        {
+          "key": "o2",
+          "text": "Replace sleep monitoring with additional tests of participants' daytime task performance.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Gündüz performansını ayrıntılı ölçmek, müdahale sırasındaki tepkiyi ölçmenin yerini tutmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Compare memory outcomes while recording each sleeper's reaction to the cues.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Uyaranla birlikte alıcının tepkisini kaydetmek, koşullu etkilerin değerlendirilmesini sağlar."
+        },
+        {
+          "key": "o4",
+          "text": "Use different memory tasks to establish whether softer sounds consistently improve recall.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Görevleri çeşitlendirmek mümkün olsa da yazarın çıkarımı ses şiddetine göre genelleme yapmak değil, alıcının tepkisini ölçmektir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "2022 Northwestern çalışmasında katılımcılar yüz-isim eşleşmelerini uyumadan önce öğrendi; beyin etkinlikleri izlendi. Derin uykuda isimler ve ilişkili müzik çalındı; sunum sırasında uyku kesintisiz kaldığında isim hatırlama yarar gördü. İkinci paragraftaki koşulluluk yorumu bu bulgulara dayanır.",
+        "source": "Northwestern University / Northwestern Now, 12 Ocak 2022, Remembering faces and names can be improved during sleep; https://news.northwestern.edu/stories/2022/01/remembering-faces-and-names-can-be-improved-during-sleep",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "2023 deneyinde nesne konumları seslerle eşleştirildi ve uykuyu bozmak amacıyla ipucu şiddeti değiştirildi. Ölçülen uyanıklık tepkileriyle ipucu verilen konumlarda, ipucu verilmeyenlere göre daha fazla unutma görüldü; yüksek ve hafif sesli ipuçları arasında anlamlı unutma farkı bulunmadı. Her iki şiddette de uyanıklık tepkileri oluştu. Ses şiddetinin kusurlu dolaylı gösterge olduğu ifadesi bu bulguların yorumudur.",
+        "source": "Cold Spring Harbor Laboratory Press / Learning & Memory, 15 Mart 2023, Sleep disruption by memory cues selectively weakens reactivated memories; https://pmc.ncbi.nlm.nih.gov/articles/PMC10027237/",
+        "checkedOn": "2026-11-22"
+      }
+    ]
+  }
+}

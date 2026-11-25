@@ -1,0 +1,2064 @@
+{
+  "slug": "b1-printing-press",
+  "level": "B1",
+  "title": "Books for Many People",
+  "topic": "Tarih",
+  "sortOrder": 31,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Long ago in Europe, people made books by hand. A writer copied every page with a pen, one letter at a time. One book could take months, so books were rare and very expensive. Few people could afford to own books.",
+    "In the fifteenth century, a German man named Johannes Gutenberg changed this. He built a printing press that used small metal letters. The letters could be moved and used again and again. Workers put them in lines, covered them with ink, and pressed paper on top. Now a shop could make many copies of the same page in one day.",
+    "Gutenberg was not the first person to print with movable letters. People in Korea had done it with metal letters earlier. But his press spread quickly across Europe. Books became cheaper, and more people learned to read. New ideas about religion and learning could now travel much faster than before."
+  ],
+  "words": [
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "Long",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        }
+      ]
+    },
+    {
+      "lemma": "ago",
+      "gloss": "zaman önce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 8,
+          "surface": "ago",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 9,
+          "end": 11,
+          "surface": "in",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 207,
+          "surface": "in",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 315,
+          "end": 317,
+          "surface": "in",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 75,
+          "surface": "in",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "europe",
+      "gloss": "Avrupa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 18,
+          "surface": "Europe",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 164,
+          "surface": "Europe",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 26,
+          "surface": "people",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 185,
+          "surface": "people",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 72,
+          "surface": "People",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 203,
+          "surface": "people",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yaptı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 31,
+          "surface": "made",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        }
+      ]
+    },
+    {
+      "lemma": "books",
+      "gloss": "kitaplar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 37,
+          "surface": "books",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 144,
+          "surface": "books",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 211,
+          "surface": "books",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 171,
+          "surface": "Books",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 40,
+          "surface": "by",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        }
+      ]
+    },
+    {
+      "lemma": "hand",
+      "gloss": "el",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 41,
+          "end": 45,
+          "surface": "hand",
+          "contextSentence": "Long ago in Europe, people made books by hand.",
+          "contextSentenceTr": "Uzun zaman önce Avrupa'da insanlar kitapları elle yapardı."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 48,
+          "surface": "A",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 80,
+          "surface": "a",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 100,
+          "end": 101,
+          "surface": "a",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 27,
+          "surface": "a",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 88,
+          "surface": "a",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 268,
+          "end": 269,
+          "surface": "a",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "writer",
+      "gloss": "yazıcı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 55,
+          "surface": "writer",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "copied",
+      "gloss": "kopyaladı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 62,
+          "surface": "copied",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 68,
+          "surface": "every",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "page",
+      "gloss": "sayfa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 73,
+          "surface": "page",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 310,
+          "end": 314,
+          "surface": "page",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 74,
+          "end": 78,
+          "surface": "with",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 232,
+          "surface": "with",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 48,
+          "surface": "with",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 98,
+          "surface": "with",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "pen",
+      "gloss": "kalem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 81,
+          "end": 84,
+          "surface": "pen",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 89,
+          "surface": "one",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 111,
+          "surface": "One",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 321,
+          "surface": "one",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "letter",
+      "gloss": "harf",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 96,
+          "surface": "letter",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 99,
+          "surface": "at",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "seferde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 106,
+          "surface": "time",
+          "contextSentence": "A writer copied every page with a pen, one letter at a time.",
+          "contextSentenceTr": "Bir yazıcı her sayfayı kalemle, harf harf kopyalardı."
+        }
+      ]
+    },
+    {
+      "lemma": "book",
+      "gloss": "kitap",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 116,
+          "surface": "book",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 122,
+          "surface": "could",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 186,
+          "end": 191,
+          "surface": "could",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 152,
+          "surface": "could",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 275,
+          "end": 280,
+          "surface": "could",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 264,
+          "surface": "could",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "take",
+      "gloss": "sürmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 123,
+          "end": 127,
+          "surface": "take",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "months",
+      "gloss": "aylar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 134,
+          "surface": "months",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 138,
+          "surface": "so",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 149,
+          "surface": "were",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "rare",
+      "gloss": "nadir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 154,
+          "surface": "rare",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 155,
+          "end": 158,
+          "surface": "and",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 165,
+          "surface": "and",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 180,
+          "surface": "and",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 238,
+          "end": 241,
+          "surface": "and",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 191,
+          "surface": "and",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 246,
+          "end": 249,
+          "surface": "and",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 163,
+          "surface": "very",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "expensive",
+      "gloss": "pahalı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 173,
+          "surface": "expensive",
+          "contextSentence": "One book could take months, so books were rare and very expensive.",
+          "contextSentenceTr": "Bir kitap aylar sürebilirdi, bu yüzden kitaplar nadir ve çok pahalıydı."
+        }
+      ]
+    },
+    {
+      "lemma": "few",
+      "gloss": "az",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 178,
+          "surface": "Few",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "afford",
+      "gloss": "gücü yetmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 192,
+          "end": 198,
+          "surface": "afford",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 199,
+          "end": 201,
+          "surface": "to",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 205,
+          "surface": "own",
+          "contextSentence": "Few people could afford to own books.",
+          "contextSentenceTr": "Az sayıda insanın kitap sahibi olmaya gücü yetiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 3,
+          "end": 6,
+          "surface": "the",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 138,
+          "surface": "The",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 304,
+          "surface": "the",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 21,
+          "surface": "the",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "fifteenth",
+      "gloss": "on beşinci",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 16,
+          "surface": "fifteenth",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 24,
+          "surface": "century",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "german",
+      "gloss": "Alman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 34,
+          "surface": "German",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "man",
+      "gloss": "adam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 35,
+          "end": 38,
+          "surface": "man",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "named",
+      "gloss": "adlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 44,
+          "surface": "named",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "johannes",
+      "gloss": "Johannes",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 45,
+          "end": 53,
+          "surface": "Johannes",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "gutenberg",
+      "gloss": "Gutenberg",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 54,
+          "end": 63,
+          "surface": "Gutenberg",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 9,
+          "surface": "Gutenberg",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "changed",
+      "gloss": "değiştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 71,
+          "surface": "changed",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 72,
+          "end": 76,
+          "surface": "this",
+          "contextSentence": "In the fifteenth century, a German man named Johannes Gutenberg changed this.",
+          "contextSentenceTr": "On beşinci yüzyılda Johannes Gutenberg adlı bir Alman bunu değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 78,
+          "end": 80,
+          "surface": "He",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "built",
+      "gloss": "yaptı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 81,
+          "end": 86,
+          "surface": "built",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "printing",
+      "gloss": "baskı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 97,
+          "surface": "printing",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "press",
+      "gloss": "makinesi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 103,
+          "surface": "press",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 108,
+          "surface": "that",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullandı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 113,
+          "surface": "used",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 114,
+          "end": 119,
+          "surface": "small",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "metal",
+      "gloss": "metal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 120,
+          "end": 125,
+          "surface": "metal",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 99,
+          "end": 104,
+          "surface": "metal",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "letters",
+      "gloss": "harfler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 126,
+          "end": 133,
+          "surface": "letters",
+          "contextSentence": "He built a printing press that used small metal letters.",
+          "contextSentenceTr": "Küçük metal harfler kullanan bir baskı makinesi yaptı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 146,
+          "surface": "letters",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 64,
+          "surface": "letters",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 112,
+          "surface": "letters",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 155,
+          "surface": "be",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "moved",
+      "gloss": "taşınmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 161,
+          "surface": "moved",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanılmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 170,
+          "surface": "used",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "again",
+      "gloss": "tekrar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 176,
+          "surface": "again",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 186,
+          "surface": "again",
+          "contextSentence": "The letters could be moved and used again and again.",
+          "contextSentenceTr": "Harfler yerinden oynatılabilir ve tekrar tekrar kullanılabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "workers",
+      "gloss": "işçiler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 195,
+          "surface": "Workers",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "put",
+      "gloss": "koydu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 199,
+          "surface": "put",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 204,
+          "surface": "them",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 223,
+          "end": 227,
+          "surface": "them",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "lines",
+      "gloss": "satırlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 213,
+          "surface": "lines",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "covered",
+      "gloss": "kapladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 222,
+          "surface": "covered",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "ink",
+      "gloss": "mürekkep",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 233,
+          "end": 236,
+          "surface": "ink",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "pressed",
+      "gloss": "bastırdı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 242,
+          "end": 249,
+          "surface": "pressed",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "paper",
+      "gloss": "kağıt",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 255,
+          "surface": "paper",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 258,
+          "surface": "on",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "top",
+      "gloss": "üst",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 259,
+          "end": 262,
+          "surface": "top",
+          "contextSentence": "Workers put them in lines, covered them with ink, and pressed paper on top.",
+          "contextSentenceTr": "İşçiler onları satırlara dizer, mürekkeple kaplar ve üstüne kağıt bastırırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "now",
+      "gloss": "artık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 267,
+          "surface": "Now",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 265,
+          "end": 268,
+          "surface": "now",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "shop",
+      "gloss": "atölye",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 274,
+          "surface": "shop",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 285,
+          "surface": "make",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 290,
+          "surface": "many",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "copies",
+      "gloss": "kopyalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 291,
+          "end": 297,
+          "surface": "copies",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 298,
+          "end": 300,
+          "surface": "of",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 309,
+          "surface": "same",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "day",
+      "gloss": "gün",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 322,
+          "end": 325,
+          "surface": "day",
+          "contextSentence": "Now a shop could make many copies of the same page in one day.",
+          "contextSentenceTr": "Artık bir atölye aynı sayfanın birçok kopyasını bir günde yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 10,
+          "end": 13,
+          "surface": "was",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 14,
+          "end": 17,
+          "surface": "not",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 27,
+          "surface": "first",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 34,
+          "surface": "person",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-en",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 37,
+          "surface": "to",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "print",
+      "gloss": "basmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 43,
+          "surface": "print",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "movable",
+      "gloss": "hareketli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 56,
+          "surface": "movable",
+          "contextSentence": "Gutenberg was not the first person to print with movable letters.",
+          "contextSentenceTr": "Gutenberg hareketli harflerle baskı yapan ilk kişi değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "korea",
+      "gloss": "Kore",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 76,
+          "end": 81,
+          "surface": "Korea",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 85,
+          "surface": "had",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "done",
+      "gloss": "yapmış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 90,
+          "surface": "done",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 93,
+          "surface": "it",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "earlier",
+      "gloss": "daha önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 120,
+          "surface": "earlier",
+          "contextSentence": "People in Korea had done it with metal letters earlier.",
+          "contextSentenceTr": "Kore'deki insanlar bunu daha önce metal harflerle yapmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 122,
+          "end": 125,
+          "surface": "But",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 126,
+          "end": 129,
+          "surface": "his",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "press",
+      "gloss": "baskı makinesi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 135,
+          "surface": "press",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "spread",
+      "gloss": "yayıldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 142,
+          "surface": "spread",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "quickly",
+      "gloss": "hızla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 150,
+          "surface": "quickly",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "across",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 151,
+          "end": 157,
+          "surface": "across",
+          "contextSentence": "But his press spread quickly across Europe.",
+          "contextSentenceTr": "Ama onun baskı makinesi Avrupa'ya hızla yayıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "became",
+      "gloss": "oldu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 172,
+          "end": 178,
+          "surface": "became",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "cheaper",
+      "gloss": "daha ucuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 186,
+          "surface": "cheaper",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 196,
+          "surface": "more",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrendi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 211,
+          "surface": "learned",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 214,
+          "surface": "to",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 219,
+          "surface": "read",
+          "contextSentence": "Books became cheaper, and more people learned to read.",
+          "contextSentenceTr": "Kitaplar ucuzladı ve daha fazla insan okumayı öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 224,
+          "surface": "New",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "ideas",
+      "gloss": "fikirler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 225,
+          "end": 230,
+          "surface": "ideas",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 236,
+          "surface": "about",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "religion",
+      "gloss": "din",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 245,
+          "surface": "religion",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "learning",
+      "gloss": "öğrenme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 250,
+          "end": 258,
+          "surface": "learning",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "travel",
+      "gloss": "yayılmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 269,
+          "end": 275,
+          "surface": "travel",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 280,
+          "surface": "much",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "faster",
+      "gloss": "daha hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 281,
+          "end": 287,
+          "surface": "faster",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 288,
+          "end": 292,
+          "surface": "than",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 293,
+          "end": 299,
+          "surface": "before",
+          "contextSentence": "New ideas about religion and learning could now travel much faster than before.",
+          "contextSentenceTr": "Din ve öğrenme hakkındaki yeni fikirler artık eskisinden çok daha hızlı yayılabiliyordu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 77
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The life story of a famous German painter",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Gutenberg ressam değildir; hayat hikâyesi anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "How a new press changed the way books were made",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin elle kopyalamadan baskı makinesine geçişi ve sonuçlarını anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "How monks decorated old books with gold and paint",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kitap süslemesinden söz edilmez."
+        },
+        {
+          "key": "o4",
+          "text": "Why people in Europe stopped reading for many years",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin tersine daha fazla insanın okumayı öğrendiğini söyler."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why were books expensive before Gutenberg's press?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 108,
+        "end": 174
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Paper had to come from China",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kağıdın nereden geldiği anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "Metal letters cost a lot of money",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Metal harfler sonradan, baskı makinesiyle gelir."
+        },
+        {
+          "key": "o3",
+          "text": "Only kings were allowed to read them",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Okuma yasağından söz edilmez."
+        },
+        {
+          "key": "o4",
+          "text": "Each copy was written by hand",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Her sayfa elle kopyalandığı için bir kitap aylar sürüyordu."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “rare” mean in the first paragraph?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 136,
+        "end": 173
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Not easy to find or get",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Kitaplar az olduğu ve çoğu insanın kitabı olmadığı için rare, az bulunan demektir."
+        },
+        {
+          "key": "o2",
+          "text": "Very large and heavy to carry",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Boyut ve ağırlıktan söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "Written in a foreign language",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kitapların dili anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Easy to buy in any shop",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Kitaplar pahalıydı ve çoğu insanın kitabı yoktu."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about reading before the printing press?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 166,
+        "end": 220
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Printed books cost more than hand copies",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin kitapların ucuzladığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "The press made new ideas travel more slowly",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin fikirlerin daha hızlı yayıldığını söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Fewer people could read before the press",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Baskıdan sonra daha fazla insan okumayı öğrendiyse, önce daha az kişi okuyabiliyordu."
+        },
+        {
+          "key": "o4",
+          "text": "Gutenberg invented printing before anyone else",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin Kore'de bunun daha önce yapıldığını söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Baskıdan önce bir metin yazıcılar tarafından elle kopyalanırdı; tek bir el yazması için aylar ya da yıllar gerekirdi.",
+        "source": "Library of Congress, The Gutenberg Bible at the Library of Congress: A Resource Guide; https://guides.loc.gov/gutenberg",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Gutenberg 15. yüzyılda Mainz'da hareketli metal harflerle ilk büyük kitabı (İncil, 1454/1455) bastırdı.",
+        "source": "Library of Congress, The Gutenberg Bible (Bible Collection); https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Kore'de hareketli metal harfle baskı Gutenberg'den daha önce yapılmıştı (Jikji, Gutenberg'den 70 yıldan fazla önce).",
+        "source": "University of Utah Marriott Library, From Jikji to Gutenberg; https://blog.lib.utah.edu/from-jikji-to-gutenberg/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Baskı 1500'e kadar çoğu Avrupa ülkesine yayıldı; kitaplar yaklaşık sekizde bir fiyata düştü; daha fazla insanın okumayı öğrenmek için nedeni oldu ve fikirler daha geniş kitlelere ulaştı (ikincil kurs okuması).",
+        "source": "Manchester University course reading, Randall, Johannes Gutenberg's Printing Press (kurs okuma metni; ikincil); https://users.manchester.edu/facstaff/ssnaragon/kant/lp/Readings/Randall,%20Printing%20Press.html",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2743 @@
+{
+  "slug": "b2-coral-reefs-bleaching",
+  "level": "B2",
+  "title": "The Reef That Loses Its Colour",
+  "topic": "Biyoloji",
+  "sortOrder": 30,
+  "isFreeSample": false,
+  "paragraphs": [
+    "A coral reef looks like a garden of stone, but it is built by animals. Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef. Inside the tissues of most reef corals live tiny algae. The algae use sunlight to make sugars, and they pass much of this food to their host. They also give the coral most of its colour. This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+    "When the sea stays warmer than usual, the partnership breaks down. The stressed coral expels the algae, and the white skeleton shows through its clear tissue. Scientists call this bleaching. A bleached coral is not dead, but it has lost its main source of food. If the water cools soon enough, the algae can return and the colour comes back. If the heat lasts, the weakened animal may die.",
+    "Reefs matter far beyond their beauty. They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore. The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties. Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks."
+  ],
+  "words": [
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 25,
+          "surface": "a",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 95,
+          "surface": "a",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 192,
+          "surface": "A",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 51,
+          "end": 52,
+          "surface": "a",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "coral",
+      "gloss": "mercan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 2,
+          "end": 7,
+          "surface": "coral",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 81,
+          "surface": "coral",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 322,
+          "end": 327,
+          "surface": "coral",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 85,
+          "surface": "coral",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 202,
+          "end": 207,
+          "surface": "coral",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "reef",
+      "gloss": "resif",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 8,
+          "end": 12,
+          "surface": "reef",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 155,
+          "end": 159,
+          "surface": "reef",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 192,
+          "surface": "reef",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "looks",
+      "gloss": "görünür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 13,
+          "end": 18,
+          "surface": "looks",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 23,
+          "surface": "like",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "garden",
+      "gloss": "bahçe",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 32,
+          "surface": "garden",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 33,
+          "end": 35,
+          "surface": "of",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 126,
+          "surface": "of",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 182,
+          "surface": "of",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 275,
+          "end": 277,
+          "surface": "of",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 335,
+          "surface": "of",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 255,
+          "surface": "of",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 70,
+          "end": 72,
+          "surface": "of",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 116,
+          "surface": "of",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "stone",
+      "gloss": "taş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 41,
+          "surface": "stone",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 43,
+          "end": 46,
+          "surface": "but",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 224,
+          "surface": "but",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 49,
+          "surface": "it",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 227,
+          "surface": "it",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 132,
+          "surface": "it",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 52,
+          "surface": "is",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 367,
+          "surface": "is",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 441,
+          "end": 443,
+          "surface": "is",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 210,
+          "surface": "is",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "built",
+      "gloss": "inşa edilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 53,
+          "end": 58,
+          "surface": "built",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 59,
+          "end": 61,
+          "surface": "by",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "animals",
+      "gloss": "hayvanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 69,
+          "surface": "animals",
+          "contextSentence": "A coral reef looks like a garden of stone, but it is built by animals.",
+          "contextSentenceTr": "Bir mercan resifi taştan bir bahçe gibi görünür ama onu hayvanlar inşa eder."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 75,
+          "surface": "Each",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "polyp",
+      "gloss": "polip",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 82,
+          "end": 87,
+          "surface": "polyp",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "grows",
+      "gloss": "büyütür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 88,
+          "end": 93,
+          "surface": "grows",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "hard",
+      "gloss": "sert",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 96,
+          "end": 100,
+          "surface": "hard",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "skeleton",
+      "gloss": "iskelet",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 101,
+          "end": 109,
+          "surface": "skeleton",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 126,
+          "surface": "skeleton",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 114,
+          "surface": "and",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 259,
+          "surface": "and",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 107,
+          "surface": "and",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 315,
+          "end": 318,
+          "surface": "and",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 91,
+          "surface": "and",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 319,
+          "end": 322,
+          "surface": "and",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "millions",
+      "gloss": "milyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 123,
+          "surface": "millions",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "skeletons",
+      "gloss": "iskeletler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 127,
+          "end": 136,
+          "surface": "skeletons",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 145,
+          "surface": "together",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "form",
+      "gloss": "oluşturur",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 150,
+          "surface": "form",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 154,
+          "surface": "the",
+          "contextSentence": "Each coral polyp grows a hard skeleton, and millions of skeletons together form the reef.",
+          "contextSentenceTr": "Her mercan polibi sert bir iskelet büyütür ve milyonlarca iskelet birlikte resifi oluşturur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 171,
+          "surface": "the",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 217,
+          "end": 220,
+          "surface": "The",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 318,
+          "end": 321,
+          "surface": "the",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 5,
+          "end": 8,
+          "surface": "the",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 38,
+          "end": 41,
+          "surface": "the",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 67,
+          "end": 70,
+          "surface": "The",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 96,
+          "surface": "the",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 111,
+          "surface": "the",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 268,
+          "surface": "the",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 297,
+          "surface": "the",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 322,
+          "surface": "the",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 345,
+          "end": 348,
+          "surface": "the",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 364,
+          "surface": "the",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 107,
+          "surface": "the",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 144,
+          "surface": "the",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 152,
+          "end": 155,
+          "surface": "The",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 227,
+          "surface": "the",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 167,
+          "surface": "Inside",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "tissues",
+      "gloss": "dokular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 172,
+          "end": 179,
+          "surface": "tissues",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 187,
+          "surface": "most",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "corals",
+      "gloss": "mercanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 199,
+          "surface": "corals",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "live",
+      "gloss": "yaşar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 204,
+          "surface": "live",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minicik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 205,
+          "end": 209,
+          "surface": "tiny",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        }
+      ]
+    },
+    {
+      "lemma": "algae",
+      "gloss": "algler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 215,
+          "surface": "algae",
+          "contextSentence": "Inside the tissues of most reef corals live tiny algae.",
+          "contextSentenceTr": "Resif mercanlarının çoğunun dokularının içinde minicik algler yaşar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 226,
+          "surface": "algae",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 102,
+          "surface": "algae",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 298,
+          "end": 303,
+          "surface": "algae",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 230,
+          "surface": "use",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "sunlight",
+      "gloss": "güneş ışığı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 231,
+          "end": 239,
+          "surface": "sunlight",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 242,
+          "surface": "to",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 247,
+          "surface": "make",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "sugars",
+      "gloss": "şekerler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 248,
+          "end": 254,
+          "surface": "sugars",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 260,
+          "end": 264,
+          "surface": "they",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 303,
+          "end": 307,
+          "surface": "They",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 42,
+          "surface": "They",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 96,
+          "surface": "they",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "pass",
+      "gloss": "aktarır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 265,
+          "end": 269,
+          "surface": "pass",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çoğunu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 274,
+          "surface": "much",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 282,
+          "surface": "this",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 348,
+          "end": 352,
+          "surface": "This",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 175,
+          "end": 179,
+          "surface": "this",
+          "contextSentence": "Scientists call this bleaching.",
+          "contextSentenceTr": "Bilim insanları buna beyazlaşma der."
+        }
+      ]
+    },
+    {
+      "lemma": "food",
+      "gloss": "besin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 283,
+          "end": 287,
+          "surface": "food",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 436,
+          "end": 440,
+          "surface": "food",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 260,
+          "surface": "food",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 288,
+          "end": 290,
+          "surface": "to",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 291,
+          "end": 296,
+          "surface": "their",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 29,
+          "surface": "their",
+          "contextSentence": "Reefs matter far beyond their beauty.",
+          "contextSentenceTr": "Resifler güzelliklerinin çok ötesinde önem taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "host",
+      "gloss": "konak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 301,
+          "surface": "host",
+          "contextSentence": "The algae use sunlight to make sugars, and they pass much of this food to their host.",
+          "contextSentenceTr": "Algler şeker üretmek için güneş ışığını kullanır ve bu besinin çoğunu konaklarına aktarır."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 308,
+          "end": 312,
+          "surface": "also",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        }
+      ]
+    },
+    {
+      "lemma": "give",
+      "gloss": "verir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 317,
+          "surface": "give",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğunu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 328,
+          "end": 332,
+          "surface": "most",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 336,
+          "end": 339,
+          "surface": "its",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 141,
+          "end": 144,
+          "surface": "its",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 240,
+          "surface": "its",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "colour",
+      "gloss": "renk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 340,
+          "end": 346,
+          "surface": "colour",
+          "contextSentence": "They also give the coral most of its colour.",
+          "contextSentenceTr": "Ayrıca mercana renginin çoğunu da verirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 329,
+          "surface": "colour",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "partnership",
+      "gloss": "ortaklık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 353,
+          "end": 364,
+          "surface": "partnership",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 53,
+          "surface": "partnership",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "o kadar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 368,
+          "end": 370,
+          "surface": "so",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "productive",
+      "gloss": "verimli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 371,
+          "end": 381,
+          "surface": "productive",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 382,
+          "end": 386,
+          "surface": "that",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reefs",
+      "gloss": "resifler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 387,
+          "end": 392,
+          "surface": "reefs",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 5,
+          "surface": "Reefs",
+          "contextSentence": "Reefs matter far beyond their beauty.",
+          "contextSentenceTr": "Resifler güzelliklerinin çok ötesinde önem taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 252,
+          "end": 257,
+          "surface": "Reefs",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 393,
+          "end": 396,
+          "surface": "can",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 307,
+          "surface": "can",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 258,
+          "end": 261,
+          "surface": "can",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "flourish",
+      "gloss": "gelişmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 397,
+          "end": 405,
+          "surface": "flourish",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 406,
+          "end": 408,
+          "surface": "in",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "clear",
+      "gloss": "berrak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 409,
+          "end": 414,
+          "surface": "clear",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "tropical",
+      "gloss": "tropikal",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 415,
+          "end": 423,
+          "surface": "tropical",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "water",
+      "gloss": "su",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 429,
+          "surface": "water",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 274,
+          "surface": "water",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "where",
+      "gloss": "-dığı yerde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 430,
+          "end": 435,
+          "surface": "where",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "scarce",
+      "gloss": "kıt",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 444,
+          "end": 450,
+          "surface": "scarce",
+          "contextSentence": "This partnership is so productive that reefs can flourish in clear tropical water where food is scarce.",
+          "contextSentenceTr": "Bu ortaklık o kadar verimlidir ki resifler, besinin kıt olduğu berrak tropikal suda gelişebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "sea",
+      "gloss": "deniz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 9,
+          "end": 12,
+          "surface": "sea",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "stays",
+      "gloss": "kalır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 18,
+          "surface": "stays",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "warmer",
+      "gloss": "daha sıcak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 25,
+          "surface": "warmer",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 30,
+          "surface": "than",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "usual",
+      "gloss": "olağan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 36,
+          "surface": "usual",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "breaks",
+      "gloss": "bozulur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 54,
+          "end": 60,
+          "surface": "breaks",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "(break down) bozulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 65,
+          "surface": "down",
+          "contextSentence": "When the sea stays warmer than usual, the partnership breaks down.",
+          "contextSentenceTr": "Deniz olağandan daha sıcak kaldığında ortaklık bozulur."
+        }
+      ]
+    },
+    {
+      "lemma": "stressed",
+      "gloss": "baskı altındaki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 79,
+          "surface": "stressed",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "expels",
+      "gloss": "dışarı atar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 92,
+          "surface": "expels",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "white",
+      "gloss": "beyaz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 112,
+          "end": 117,
+          "surface": "white",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "shows",
+      "gloss": "görünür",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 132,
+          "surface": "shows",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "-nin arasından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 133,
+          "end": 140,
+          "surface": "through",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "clear",
+      "gloss": "saydam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 145,
+          "end": 150,
+          "surface": "clear",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "tissue",
+      "gloss": "doku",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 157,
+          "surface": "tissue",
+          "contextSentence": "The stressed coral expels the algae, and the white skeleton shows through its clear tissue.",
+          "contextSentenceTr": "Baskı altındaki mercan algleri dışarı atar ve beyaz iskelet saydam dokusunun arasından görünür."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 159,
+          "end": 169,
+          "surface": "Scientists",
+          "contextSentence": "Scientists call this bleaching.",
+          "contextSentenceTr": "Bilim insanları buna beyazlaşma der."
+        }
+      ]
+    },
+    {
+      "lemma": "call",
+      "gloss": "adlandırır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 170,
+          "end": 174,
+          "surface": "call",
+          "contextSentence": "Scientists call this bleaching.",
+          "contextSentenceTr": "Bilim insanları buna beyazlaşma der."
+        }
+      ]
+    },
+    {
+      "lemma": "bleaching",
+      "gloss": "beyazlaşma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 180,
+          "end": 189,
+          "surface": "bleaching",
+          "contextSentence": "Scientists call this bleaching.",
+          "contextSentenceTr": "Bilim insanları buna beyazlaşma der."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 210,
+          "surface": "bleaching",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "bleached",
+      "gloss": "beyazlamış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 193,
+          "end": 201,
+          "surface": "bleached",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 211,
+          "end": 214,
+          "surface": "not",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "dead",
+      "gloss": "ölü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 219,
+          "surface": "dead",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 231,
+          "surface": "has",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 175,
+          "end": 178,
+          "surface": "has",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "lost",
+      "gloss": "kaybetmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 236,
+          "surface": "lost",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "main",
+      "gloss": "ana",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 245,
+          "surface": "main",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "source",
+      "gloss": "kaynak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 252,
+          "surface": "source",
+          "contextSentence": "A bleached coral is not dead, but it has lost its main source of food.",
+          "contextSentenceTr": "Beyazlamış bir mercan ölü değildir ama ana besin kaynağını kaybetmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 262,
+          "end": 264,
+          "surface": "If",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 344,
+          "surface": "If",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "cools",
+      "gloss": "soğur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 275,
+          "end": 280,
+          "surface": "cools",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "soon",
+      "gloss": "yakında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 285,
+          "surface": "soon",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "enough",
+      "gloss": "yeterince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 292,
+          "surface": "enough",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "return",
+      "gloss": "dönmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 314,
+          "surface": "return",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "comes",
+      "gloss": "gelir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 330,
+          "end": 335,
+          "surface": "comes",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "back",
+      "gloss": "geri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 336,
+          "end": 340,
+          "surface": "back",
+          "contextSentence": "If the water cools soon enough, the algae can return and the colour comes back.",
+          "contextSentenceTr": "Su yeterince kısa sürede soğursa algler dönebilir ve renk geri gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "heat",
+      "gloss": "sıcaklık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 349,
+          "end": 353,
+          "surface": "heat",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 306,
+          "end": 310,
+          "surface": "heat",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 332,
+          "end": 336,
+          "surface": "heat",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "lasts",
+      "gloss": "sürer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 354,
+          "end": 359,
+          "surface": "lasts",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "weakened",
+      "gloss": "zayıflamış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 365,
+          "end": 373,
+          "surface": "weakened",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "animal",
+      "gloss": "hayvan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 374,
+          "end": 380,
+          "surface": "animal",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 381,
+          "end": 384,
+          "surface": "may",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "die",
+      "gloss": "ölmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 385,
+          "end": 388,
+          "surface": "die",
+          "contextSentence": "If the heat lasts, the weakened animal may die.",
+          "contextSentenceTr": "Sıcaklık sürerse zayıflamış hayvan ölebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "matter",
+      "gloss": "önemlidir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 6,
+          "end": 12,
+          "surface": "matter",
+          "contextSentence": "Reefs matter far beyond their beauty.",
+          "contextSentenceTr": "Resifler güzelliklerinin çok ötesinde önem taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 16,
+          "surface": "far",
+          "contextSentence": "Reefs matter far beyond their beauty.",
+          "contextSentenceTr": "Resifler güzelliklerinin çok ötesinde önem taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "beyond",
+      "gloss": "ötesinde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 17,
+          "end": 23,
+          "surface": "beyond",
+          "contextSentence": "Reefs matter far beyond their beauty.",
+          "contextSentenceTr": "Resifler güzelliklerinin çok ötesinde önem taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "beauty",
+      "gloss": "güzellik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 36,
+          "surface": "beauty",
+          "contextSentence": "Reefs matter far beyond their beauty.",
+          "contextSentenceTr": "Resifler güzelliklerinin çok ötesinde önem taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "shelter",
+      "gloss": "barındırır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 50,
+          "surface": "shelter",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "remarkable",
+      "gloss": "dikkat çekici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 63,
+          "surface": "remarkable",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "share",
+      "gloss": "pay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 69,
+          "surface": "share",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "ocean",
+      "gloss": "okyanus",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 78,
+          "surface": "ocean",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "species",
+      "gloss": "türler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 79,
+          "end": 86,
+          "surface": "species",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "absorb",
+      "gloss": "emer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 103,
+          "surface": "absorb",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "force",
+      "gloss": "güç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 108,
+          "end": 113,
+          "surface": "force",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "waves",
+      "gloss": "dalgalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 122,
+          "surface": "waves",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "-den önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 129,
+          "surface": "before",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "reaches",
+      "gloss": "ulaşır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 140,
+          "surface": "reaches",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "shore",
+      "gloss": "kıyı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 145,
+          "end": 150,
+          "surface": "shore",
+          "contextSentence": "They shelter a remarkable share of ocean species, and they absorb the force of waves before it reaches the shore.",
+          "contextSentenceTr": "Okyanus türlerinin dikkat çekici bir bölümünü barındırırlar ve dalgaların gücünü kıyıya ulaşmadan önce emerler."
+        }
+      ]
+    },
+    {
+      "lemma": "great",
+      "gloss": "Büyük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 161,
+          "surface": "Great",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "barrier",
+      "gloss": "Bariyer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 169,
+          "surface": "Barrier",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "reef",
+      "gloss": "Resifi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 170,
+          "end": 174,
+          "surface": "Reef",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "suffered",
+      "gloss": "maruz kaldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 187,
+          "surface": "suffered",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 195,
+          "surface": "several",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "mass",
+      "gloss": "toplu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 196,
+          "end": 200,
+          "surface": "mass",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "events",
+      "gloss": "olaylar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 211,
+          "end": 217,
+          "surface": "events",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "-den beri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 223,
+          "surface": "since",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "late",
+      "gloss": "son",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 232,
+          "surface": "late",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 241,
+          "surface": "nineteen",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "nineties",
+      "gloss": "doksanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 250,
+          "surface": "nineties",
+          "contextSentence": "The Great Barrier Reef has suffered several mass bleaching events since the late nineteen nineties.",
+          "contextSentenceTr": "Büyük Bariyer Resifi, 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayına maruz kaldı."
+        }
+      ]
+    },
+    {
+      "lemma": "regrow",
+      "gloss": "yeniden büyümek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 262,
+          "end": 268,
+          "surface": "regrow",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 273,
+          "surface": "yet",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "recovery",
+      "gloss": "iyileşme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 282,
+          "surface": "recovery",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "needs",
+      "gloss": "gerektirir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 283,
+          "end": 288,
+          "surface": "needs",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 289,
+          "end": 293,
+          "surface": "time",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 349,
+          "end": 353,
+          "surface": "time",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "-siz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 301,
+          "surface": "without",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 302,
+          "end": 305,
+          "surface": "new",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "stress",
+      "gloss": "stres",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 311,
+          "end": 317,
+          "surface": "stress",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "repeated",
+      "gloss": "tekrarlanan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 331,
+          "surface": "repeated",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "leaves",
+      "gloss": "bırakır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 337,
+          "end": 343,
+          "surface": "leaves",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 344,
+          "end": 348,
+          "surface": "less",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 354,
+          "end": 361,
+          "surface": "between",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    },
+    {
+      "lemma": "shocks",
+      "gloss": "şoklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 368,
+          "surface": "shocks",
+          "contextSentence": "Reefs can regrow, yet recovery needs time without new heat stress, and repeated heat leaves less time between shocks.",
+          "contextSentenceTr": "Resifler yeniden büyüyebilir ama iyileşme yeni sıcaklık stresi olmadan zaman gerektirir ve tekrarlanan sıcaklık şoklar arasında daha az zaman bırakır."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 67,
+        "end": 102
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Why reefs grow best in cold deep water",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin resiflerin berrak tropikal suda geliştiğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "How waves wear down a tropical shore",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kıyı erozyonu anlatılmaz; resifler dalga gücünü emer."
+        },
+        {
+          "key": "o3",
+          "text": "Why warm seas turn corals white",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin, sıcak suyun mercan ile alg ortaklığını bozup beyazlaşmaya yol açmasını anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "How coral polyps build stone gardens",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "İskelet yapımı yalnızca giriş ayrıntısıdır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "According to the passage, what has a bleached coral lost?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 191,
+        "end": 261
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Its main supply of food",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin mercanın ana besin kaynağını kaybettiğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Its hard stone skeleton",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "İskelet kalır; beyaz görünen de odur."
+        },
+        {
+          "key": "o3",
+          "text": "All of its living tissue",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Doku saydam kalır, yok olmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Its place on the reef",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yer değiştirmeden söz edilmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"scarce\" mean in the first paragraph?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 430,
+        "end": 450
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Shared between two partners",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Ortaklık ayrı bir fikirdir, kelimenin anlamı değil."
+        },
+        {
+          "key": "o2",
+          "text": "Warm and full of sunlight",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Cümlede su berraktır ama kelime bunu anlatmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Spread across a wide area",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yayılma ile ilgisi yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "Available in small amounts",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Scarce, az bulunan demektir; bu yüzden alglerin ürettiği besin önemlidir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about reefs that bleach often?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 252,
+        "end": 369
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Heat waves help young corals grow fast",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Sıcaklık mercanı zayıflatır."
+        },
+        {
+          "key": "o2",
+          "text": "Frequent heat makes recovery harder",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "İyileşme yeni sıcaklık stresi olmadan zaman gerektirdiğinden şoklar sıklaşınca resifin toparlanma şansı azalır."
+        },
+        {
+          "key": "o3",
+          "text": "A bleached reef cannot recover at all",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin suyun soğumasıyla renginin dönebileceğini söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Reefs recover faster after each event",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bunun tersini ima eder."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Resifleri oluşturan mercanlar hayvandır; polipler sert kalsiyum iskeleti büyütür ve bu iskeletler resifi oluşturur.",
+        "source": "NOAA Ocean Exploration, Are corals animals?; https://oceanexplorer.noaa.gov/facts/coral-animal.html; NOAA Ocean Service, What are corals made of?; https://oceanservice.noaa.gov/facts/coralmadeof.html",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Resif mercanlarının dokularında yaşayan mikroskobik algler fotosentezle besin üretip mercana aktarır ve mercanın renginin büyük kısmını verir.",
+        "source": "NOAA Ocean Service, What is coral bleaching?; https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Su sıcaklığı olağandan yüksek kaldığında mercan alglerini dışarı atar, beyaz iskeleti görünür; mercan ölmemiştir ama temel besin kaynağını yitirdiği için baskı sürerse ölebilir, koşullar düzelirse iyileşebilir.",
+        "source": "NOAA Ocean Service, What is coral bleaching?; https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Resifler deniz türlerinin yaklaşık yüzde 25'ini barındırır ve sağlıklı resifler bir dalganın enerjisinin yüzde 97'sine kadarını emebilir.",
+        "source": "NOAA Office for Coastal Management, Fast Facts: Coral Reefs; https://coast.noaa.gov/states/fast-facts/coral-reefs.html",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Büyük Bariyer Resifi 1990'ların sonundan bu yana birkaç toplu beyazlaşma olayı yaşadı ve iyileşme yeni sıcaklık stresi olmadan zaman gerektirir.",
+        "source": "Great Barrier Reef Marine Park Authority, Reef health; https://www.gbrmpa.gov.au/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3276 @@
+{
+  "slug": "c1-web-open-or-closed",
+  "level": "C1",
+  "title": "The Web Could Have Been Closed",
+  "topic": "Teknoloji",
+  "sortOrder": 18,
+  "isFreeSample": false,
+  "paragraphs": [
+    "It is easy to forget that the World Wide Web could have turned out very differently. Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern. This essay looks at why that did not happen. Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser. Nothing about that early success guaranteed that the technology would become a shared public resource.",
+    "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain. Anyone could now use, copy and build on the code without asking permission or paying a fee. The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way. That single statement of permission removed a barrier that might otherwise have lasted for years.",
+    "Why does the decision still matter? Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper. A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people. Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages. Even so, the freedom to publish remains its defining feature."
+  ],
+  "words": [
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "It",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 239,
+          "surface": "it",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 5,
+          "surface": "is",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "easy",
+      "gloss": "kolay",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 6,
+          "end": 10,
+          "surface": "easy",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 13,
+          "surface": "to",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 431,
+          "end": 433,
+          "surface": "to",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "forget",
+      "gloss": "unutmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 20,
+          "surface": "forget",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 25,
+          "surface": "that",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 538,
+          "end": 542,
+          "surface": "that",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 437,
+          "end": 441,
+          "surface": "that",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 29,
+          "surface": "the",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 160,
+          "end": 163,
+          "surface": "the",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 439,
+          "end": 442,
+          "surface": "the",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 543,
+          "end": 546,
+          "surface": "the",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 114,
+          "surface": "the",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 134,
+          "surface": "the",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 190,
+          "end": 193,
+          "surface": "the",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 242,
+          "end": 245,
+          "surface": "The",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 262,
+          "end": 265,
+          "surface": "the",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 12,
+          "surface": "the",
+          "contextSentence": "Why does the decision still matter?",
+          "contextSentenceTr": "Karar neden hâlâ önemli?"
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 61,
+          "end": 64,
+          "surface": "the",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 344,
+          "end": 347,
+          "surface": "the",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 419,
+          "end": 422,
+          "surface": "the",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "world",
+      "gloss": "Dünya",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 30,
+          "end": 35,
+          "surface": "World",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "wide",
+      "gloss": "Geniş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 40,
+          "surface": "Wide",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "web",
+      "gloss": "Ağ",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 41,
+          "end": 44,
+          "surface": "Web",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 50,
+          "surface": "could",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 173,
+          "surface": "could",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 162,
+          "surface": "could",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 111,
+          "end": 116,
+          "surface": "could",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 51,
+          "end": 55,
+          "surface": "have",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 185,
+          "surface": "have",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 458,
+          "end": 462,
+          "surface": "have",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 208,
+          "surface": "have",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 255,
+          "end": 259,
+          "surface": "have",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "turned",
+      "gloss": "dönüşmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 62,
+          "surface": "turned",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "out",
+      "gloss": "çıkmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 66,
+          "surface": "out",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 67,
+          "end": 71,
+          "surface": "very",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "differently",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 83,
+          "surface": "differently",
+          "contextSentence": "It is easy to forget that the World Wide Web could have turned out very differently.",
+          "contextSentenceTr": "Dünya Çapında Ağ'ın çok farklı sonuçlanabileceğini unutmak kolaydır."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 89,
+          "surface": "Many",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "early",
+      "gloss": "erken",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 95,
+          "surface": "early",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 513,
+          "end": 518,
+          "surface": "early",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "networked",
+      "gloss": "ağlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 96,
+          "end": 105,
+          "surface": "networked",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "systems",
+      "gloss": "sistemler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 113,
+          "surface": "systems",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 118,
+          "surface": "were",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "controlled",
+      "gloss": "denetlenmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 119,
+          "end": 129,
+          "surface": "controlled",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 130,
+          "end": 132,
+          "surface": "by",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 134,
+          "surface": "a",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 299,
+          "end": 300,
+          "surface": "a",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 383,
+          "end": 384,
+          "surface": "a",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 464,
+          "end": 465,
+          "surface": "a",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 571,
+          "end": 572,
+          "surface": "a",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 92,
+          "surface": "a",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 235,
+          "end": 236,
+          "surface": "a",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 364,
+          "end": 365,
+          "surface": "a",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 427,
+          "end": 428,
+          "surface": "a",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 101,
+          "surface": "a",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 126,
+          "surface": "a",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 163,
+          "surface": "a",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 176,
+          "end": 177,
+          "surface": "A",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "single",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 135,
+          "end": 141,
+          "surface": "single",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 388,
+          "end": 394,
+          "surface": "single",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "organisation",
+      "gloss": "kuruluş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 142,
+          "end": 154,
+          "surface": "organisation",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 159,
+          "surface": "and",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 432,
+          "end": 435,
+          "surface": "and",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 481,
+          "end": 484,
+          "surface": "and",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 180,
+          "surface": "and",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 281,
+          "surface": "and",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 340,
+          "end": 343,
+          "surface": "and",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 389,
+          "end": 392,
+          "surface": "and",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "web",
+      "gloss": "Web",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 167,
+          "surface": "Web",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 118,
+          "surface": "Web",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 348,
+          "end": 351,
+          "surface": "Web",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "easily",
+      "gloss": "kolayca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 174,
+          "end": 180,
+          "surface": "easily",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "followed",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 186,
+          "end": 194,
+          "surface": "followed",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 199,
+          "surface": "that",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 237,
+          "surface": "that",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 450,
+          "end": 454,
+          "surface": "that",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 508,
+          "end": 512,
+          "surface": "that",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 352,
+          "surface": "that",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 383,
+          "end": 387,
+          "surface": "That",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "pattern",
+      "gloss": "örüntü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 207,
+          "surface": "pattern",
+          "contextSentence": "Many early networked systems were controlled by a single organisation, and the Web could easily have followed that pattern.",
+          "contextSentenceTr": "Birçok erken ağlı sistem tek bir kuruluş tarafından denetleniyordu ve Web de kolayca o örüntüyü izleyebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 209,
+          "end": 213,
+          "surface": "This",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        }
+      ]
+    },
+    {
+      "lemma": "essay",
+      "gloss": "deneme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 219,
+          "surface": "essay",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        }
+      ]
+    },
+    {
+      "lemma": "looks",
+      "gloss": "bakmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 225,
+          "surface": "looks",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-e (bakmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 226,
+          "end": 228,
+          "surface": "at",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 232,
+          "surface": "why",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "Why",
+          "contextSentence": "Why does the decision still matter?",
+          "contextSentenceTr": "Karar neden hâlâ önemli?"
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz/soru yardımcı fiili (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 238,
+          "end": 241,
+          "surface": "did",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 313,
+          "end": 316,
+          "surface": "did",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 242,
+          "end": 245,
+          "surface": "not",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 317,
+          "end": 320,
+          "surface": "not",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "happen",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 246,
+          "end": 252,
+          "surface": "happen",
+          "contextSentence": "This essay looks at why that did not happen.",
+          "contextSentenceTr": "Bu deneme, bunun neden olmadığına bakar."
+        }
+      ]
+    },
+    {
+      "lemma": "tim",
+      "gloss": "Tim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 257,
+          "surface": "Tim",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "berners",
+      "gloss": "Berners",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 265,
+          "surface": "Berners",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "lee",
+      "gloss": "Lee",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 266,
+          "end": 269,
+          "surface": "Lee",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "wrote",
+      "gloss": "yazdı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 275,
+          "surface": "wrote",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 279,
+          "surface": "his",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 280,
+          "end": 285,
+          "surface": "first",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "proposal",
+      "gloss": "öneri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 286,
+          "end": 294,
+          "surface": "proposal",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 295,
+          "end": 298,
+          "surface": "for",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "distributed",
+      "gloss": "dağıtık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 301,
+          "end": 312,
+          "surface": "distributed",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "information",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 324,
+          "surface": "information",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 325,
+          "end": 331,
+          "surface": "system",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 185,
+          "end": 191,
+          "surface": "system",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 334,
+          "surface": "at",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "cern",
+      "gloss": "CERN",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 339,
+          "surface": "CERN",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 340,
+          "end": 342,
+          "surface": "in",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 408,
+          "end": 410,
+          "surface": "in",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 275,
+          "end": 277,
+          "surface": "in",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 363,
+          "surface": "in",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "march",
+      "gloss": "Mart",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 343,
+          "end": 348,
+          "surface": "March",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 349,
+          "end": 357,
+          "surface": "nineteen",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 415,
+          "end": 423,
+          "surface": "nineteen",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 47,
+          "surface": "nineteen",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 278,
+          "end": 286,
+          "surface": "nineteen",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "eighty",
+      "gloss": "seksen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 358,
+          "end": 364,
+          "surface": "eighty",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "nine",
+      "gloss": "dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 369,
+          "surface": "nine",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "resubmitted",
+      "gloss": "yeniden sunmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 371,
+          "end": 382,
+          "surface": "resubmitted",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "lightly",
+      "gloss": "hafifçe",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 385,
+          "end": 392,
+          "surface": "lightly",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "edited",
+      "gloss": "düzenlenmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 393,
+          "end": 399,
+          "surface": "edited",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "version",
+      "gloss": "sürüm",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 400,
+          "end": 407,
+          "surface": "version",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 251,
+          "end": 258,
+          "surface": "version",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "Mayıs",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 411,
+          "end": 414,
+          "surface": "May",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "ninety",
+      "gloss": "doksan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 430,
+          "surface": "ninety",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 48,
+          "end": 54,
+          "surface": "ninety",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 293,
+          "surface": "ninety",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-e kadar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 436,
+          "end": 438,
+          "surface": "by",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "end",
+      "gloss": "son",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 443,
+          "end": 446,
+          "surface": "end",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 447,
+          "end": 449,
+          "surface": "of",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 259,
+          "end": 261,
+          "surface": "of",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 405,
+          "end": 407,
+          "surface": "of",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 70,
+          "end": 72,
+          "surface": "of",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "year",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 455,
+          "end": 459,
+          "surface": "year",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "sahipti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 460,
+          "end": 463,
+          "surface": "had",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "working",
+      "gloss": "çalışan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 466,
+          "end": 473,
+          "surface": "working",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "server",
+      "gloss": "sunucu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 474,
+          "end": 480,
+          "surface": "server",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "browser",
+      "gloss": "tarayıcı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 485,
+          "end": 492,
+          "surface": "browser",
+          "contextSentence": "Tim Berners-Lee wrote his first proposal for a distributed information system at CERN in March nineteen eighty nine, resubmitted a lightly edited version in May nineteen ninety, and by the end of that year had a working server and browser.",
+          "contextSentenceTr": "Tim Berners-Lee, CERN'de Mart 1989'da dağıtık bir bilgi sistemi için ilk önerisini yazdı, Mayıs 1990'da hafifçe düzenlenmiş bir sürümü yeniden sundu ve o yılın sonuna kadar çalışan bir sunucu ve tarayıcıya sahip oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "nothing",
+      "gloss": "hiçbir şey",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 494,
+          "end": 501,
+          "surface": "Nothing",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 502,
+          "end": 507,
+          "surface": "about",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "success",
+      "gloss": "başarı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 519,
+          "end": 526,
+          "surface": "success",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "guaranteed",
+      "gloss": "garanti etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 527,
+          "end": 537,
+          "surface": "guaranteed",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "technology",
+      "gloss": "teknoloji",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 547,
+          "end": 557,
+          "surface": "technology",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-ecekti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 558,
+          "end": 563,
+          "surface": "would",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 240,
+          "end": 245,
+          "surface": "would",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 564,
+          "end": 570,
+          "surface": "become",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "shared",
+      "gloss": "ortak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 573,
+          "end": 579,
+          "surface": "shared",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "kamu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 580,
+          "end": 586,
+          "surface": "public",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 141,
+          "surface": "public",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "resource",
+      "gloss": "kaynak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 587,
+          "end": 595,
+          "surface": "resource",
+          "contextSentence": "Nothing about that early success guaranteed that the technology would become a shared public resource.",
+          "contextSentenceTr": "O erken başarının hiçbir yanı teknolojinin ortak bir kamu kaynağı olacağını garanti etmiyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "turning",
+      "gloss": "dönüm",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 11,
+          "surface": "turning",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "point",
+      "gloss": "nokta",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 12,
+          "end": 17,
+          "surface": "point",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "came",
+      "gloss": "gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 22,
+          "surface": "came",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 25,
+          "surface": "on",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "thirty",
+      "gloss": "otuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 32,
+          "surface": "thirty",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "april",
+      "gloss": "Nisan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 38,
+          "surface": "April",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 60,
+          "surface": "three",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 62,
+          "end": 66,
+          "surface": "when",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "cern's",
+      "gloss": "CERN (iyelik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 67,
+          "end": 73,
+          "surface": "CERN's",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "directors",
+      "gloss": "müdürler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 74,
+          "end": 83,
+          "surface": "directors",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "signed",
+      "gloss": "imzalamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 84,
+          "end": 90,
+          "surface": "signed",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "statement",
+      "gloss": "bildiri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 102,
+          "surface": "statement",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 395,
+          "end": 404,
+          "surface": "statement",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "placing",
+      "gloss": "yerleştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 110,
+          "surface": "placing",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "software",
+      "gloss": "yazılım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 127,
+          "surface": "software",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 274,
+          "surface": "software",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 130,
+          "surface": "in",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "domain",
+      "gloss": "alan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 148,
+          "surface": "domain",
+          "contextSentence": "The turning point came on thirty April nineteen ninety three, when CERN's directors signed a statement placing the Web software in the public domain.",
+          "contextSentenceTr": "Dönüm noktası, CERN yöneticilerinin Web yazılımını kamu malı kılan bir bildiriyi imzaladığı 30 Nisan 1993'te geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "anyone",
+      "gloss": "herkes",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 156,
+          "surface": "Anyone",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 94,
+          "surface": "anyone",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "now",
+      "gloss": "şimdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 163,
+          "end": 166,
+          "surface": "now",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 170,
+          "surface": "use",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "copy",
+      "gloss": "kopyalamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 172,
+          "end": 176,
+          "surface": "copy",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "build",
+      "gloss": "inşa etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 186,
+          "surface": "build",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 189,
+          "surface": "on",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "code",
+      "gloss": "kod",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 194,
+          "end": 198,
+          "surface": "code",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "-meden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 206,
+          "surface": "without",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 132,
+          "end": 139,
+          "surface": "without",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "asking",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 213,
+          "surface": "asking",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "permission",
+      "gloss": "izin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 224,
+          "surface": "permission",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 408,
+          "end": 418,
+          "surface": "permission",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 227,
+          "surface": "or",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "paying",
+      "gloss": "ödemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 234,
+          "surface": "paying",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "fee",
+      "gloss": "ücret",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 240,
+          "surface": "fee",
+          "contextSentence": "Anyone could now use, copy and build on the code without asking permission or paying a fee.",
+          "contextSentenceTr": "Artık herkes izin istemeden ya da ücret ödemeden kodu kullanabilir, kopyalayabilir ve üzerine inşa edebilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "next",
+      "gloss": "sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 250,
+          "surface": "next",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "four",
+      "gloss": "dört",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 298,
+          "surface": "four",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "moved",
+      "gloss": "taşınmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 299,
+          "end": 304,
+          "surface": "moved",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 307,
+          "surface": "to",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 310,
+          "surface": "an",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "open",
+      "gloss": "açık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 311,
+          "end": 315,
+          "surface": "open",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "source",
+      "gloss": "kaynak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 316,
+          "end": 322,
+          "surface": "source",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "licence",
+      "gloss": "lisans",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 330,
+          "surface": "licence",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 337,
+          "surface": "which",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "preserved",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 338,
+          "end": 347,
+          "surface": "preserved",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "freedom",
+      "gloss": "özgürlük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 353,
+          "end": 360,
+          "surface": "freedom",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 423,
+          "end": 430,
+          "surface": "freedom",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 370,
+          "surface": "more",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 270,
+          "surface": "more",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "formal",
+      "gloss": "resmi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 371,
+          "end": 377,
+          "surface": "formal",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "biçim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 378,
+          "end": 381,
+          "surface": "way",
+          "contextSentence": "The next version of the software in nineteen ninety four moved to an open source licence, which preserved that freedom in a more formal way.",
+          "contextSentenceTr": "Yazılımın 1994'teki sonraki sürümü açık kaynak lisansına geçti; bu, o özgürlüğü daha resmî bir biçimde korudu."
+        }
+      ]
+    },
+    {
+      "lemma": "removed",
+      "gloss": "kaldırmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 419,
+          "end": 426,
+          "surface": "removed",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "barrier",
+      "gloss": "engel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 429,
+          "end": 436,
+          "surface": "barrier",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 442,
+          "end": 447,
+          "surface": "might",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 197,
+          "surface": "might",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "otherwise",
+      "gloss": "aksi hâlde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 448,
+          "end": 457,
+          "surface": "otherwise",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "lasted",
+      "gloss": "sürmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 463,
+          "end": 469,
+          "surface": "lasted",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 470,
+          "end": 473,
+          "surface": "for",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıllar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 474,
+          "end": 479,
+          "surface": "years",
+          "contextSentence": "That single statement of permission removed a barrier that might otherwise have lasted for years.",
+          "contextSentenceTr": "O tek izin bildirisi, aksi hâlde yıllarca sürebilecek bir engeli kaldırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 8,
+          "surface": "does",
+          "contextSentence": "Why does the decision still matter?",
+          "contextSentenceTr": "Karar neden hâlâ önemli?"
+        }
+      ]
+    },
+    {
+      "lemma": "decision",
+      "gloss": "karar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 21,
+          "surface": "decision",
+          "contextSentence": "Why does the decision still matter?",
+          "contextSentenceTr": "Karar neden hâlâ önemli?"
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 27,
+          "surface": "still",
+          "contextSentence": "Why does the decision still matter?",
+          "contextSentenceTr": "Karar neden hâlâ önemli?"
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 203,
+          "surface": "still",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "matter",
+      "gloss": "önemli olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 34,
+          "surface": "matter",
+          "contextSentence": "Why does the decision still matter?",
+          "contextSentenceTr": "Karar neden hâlâ önemli?"
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 36,
+          "end": 43,
+          "surface": "Because",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "openness",
+      "gloss": "açıklık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 52,
+          "surface": "openness",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 304,
+          "end": 312,
+          "surface": "Openness",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "lowered",
+      "gloss": "azaltmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 60,
+          "surface": "lowered",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "cost",
+      "gloss": "maliyet",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 69,
+          "surface": "cost",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "experimenting",
+      "gloss": "denemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 86,
+          "surface": "experimenting",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 99,
+          "surface": "with",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 369,
+          "end": 373,
+          "surface": "with",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "computer",
+      "gloss": "bilgisayar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 110,
+          "surface": "computer",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "publish",
+      "gloss": "yayımlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 124,
+          "surface": "publish",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 434,
+          "end": 441,
+          "surface": "publish",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "page",
+      "gloss": "sayfa",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 127,
+          "end": 131,
+          "surface": "page",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "seeking",
+      "gloss": "aramak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 140,
+          "end": 147,
+          "surface": "seeking",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "approval",
+      "gloss": "onay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 148,
+          "end": 156,
+          "surface": "approval",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 161,
+          "surface": "from",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "gatekeeper",
+      "gloss": "kapı bekçisi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 164,
+          "end": 174,
+          "surface": "gatekeeper",
+          "contextSentence": "Because openness lowered the cost of experimenting: anyone with a computer could publish a page without seeking approval from a gatekeeper.",
+          "contextSentenceTr": "Çünkü açıklık denemenin maliyetini düşürdü: bilgisayarı olan herkes bir kapı bekçisinden onay aramadan bir sayfa yayımlayabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "closed",
+      "gloss": "kapalı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 178,
+          "end": 184,
+          "surface": "closed",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "succeeded",
+      "gloss": "başarılı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 218,
+          "surface": "succeeded",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "commercially",
+      "gloss": "ticari olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 231,
+          "surface": "commercially",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 236,
+          "surface": "but",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "probably",
+      "gloss": "muhtemelen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 246,
+          "end": 254,
+          "surface": "probably",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "grown",
+      "gloss": "büyümek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 260,
+          "end": 265,
+          "surface": "grown",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "slowly",
+      "gloss": "yavaş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 271,
+          "end": 277,
+          "surface": "slowly",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "reached",
+      "gloss": "ulaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 282,
+          "end": 289,
+          "surface": "reached",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "fewer",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 290,
+          "end": 295,
+          "surface": "fewer",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 302,
+          "surface": "people",
+          "contextSentence": "A closed system might still have succeeded commercially, but it would probably have grown more slowly and reached fewer people.",
+          "contextSentenceTr": "Kapalı bir sistem ticari olarak yine de başarılı olabilirdi ama muhtemelen daha yavaş büyür ve daha az kişiye ulaşırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "guarantee",
+      "gloss": "garanti etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 321,
+          "end": 330,
+          "surface": "guarantee",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "quality",
+      "gloss": "kalite",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 331,
+          "end": 338,
+          "surface": "quality",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 352,
+          "end": 355,
+          "surface": "has",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "o zamandan beri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 361,
+          "surface": "since",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "filled",
+      "gloss": "dolmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 368,
+          "surface": "filled",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "both",
+      "gloss": "hem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 374,
+          "end": 378,
+          "surface": "both",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "brilliant",
+      "gloss": "parlak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 379,
+          "end": 388,
+          "surface": "brilliant",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "worthless",
+      "gloss": "değersiz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 393,
+          "end": 402,
+          "surface": "worthless",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "pages",
+      "gloss": "sayfalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 403,
+          "end": 408,
+          "surface": "pages",
+          "contextSentence": "Openness did not guarantee quality, and the Web has since filled with both brilliant and worthless pages.",
+          "contextSentenceTr": "Açıklık kaliteyi garanti etmedi ve Web o zamandan beri hem parlak hem değersiz sayfalarla doldu."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "bile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 410,
+          "end": 414,
+          "surface": "Even",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "öyle olsa da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 415,
+          "end": 417,
+          "surface": "so",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 442,
+          "end": 449,
+          "surface": "remains",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 450,
+          "end": 453,
+          "surface": "its",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "defining",
+      "gloss": "belirleyici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 454,
+          "end": 462,
+          "surface": "defining",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "feature",
+      "gloss": "özellik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 463,
+          "end": 470,
+          "surface": "feature",
+          "contextSentence": "Even so, the freedom to publish remains its defining feature.",
+          "contextSentenceTr": "Yine de yayımlama özgürlüğü onun belirleyici özelliği olmaya devam ediyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the main argument of the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 44,
+        "end": 86
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Commercial control would have sped growth",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin kapalı sistemin daha yavaş büyüyeceğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Browsers mattered more than servers",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir karşılaştırma yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Licences prevent all copying of code",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin lisansın özgürlüğü koruduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Open release helped the Web grow",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin açık serbest bırakmanın Web'in büyümesine yardım ettiğini savunur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What happened in nineteen ninety four?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 242,
+        "end": 330
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The first server and browser were running",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Bunlar 1990 sonudur."
+        },
+        {
+          "key": "o2",
+          "text": "Software got an open licence",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu söyler."
+        },
+        {
+          "key": "o3",
+          "text": "The first proposal was written at CERN",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "İlk öneri 1989'dadır."
+        },
+        {
+          "key": "o4",
+          "text": "The software was placed in the public domain",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Kamu malı kararı 1993'tür."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “gatekeeper” mean in the final paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 132,
+        "end": 174
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A free piece of public software",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Yazılım anlamı yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "A guard at the laboratory door",
+          "isCorrect": false,
+          "trapType": "sound",
+          "explanation": "Kapı sözcüğüne dayalı yanıltıcı anlamdır; mecazi kullanılmıştır."
+        },
+        {
+          "key": "o3",
+          "text": "Someone who controls access",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Gatekeeper, erişimi denetleyen kişidir."
+        },
+        {
+          "key": "o4",
+          "text": "A tool for building computers",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Bilgisayar yapımı anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the last paragraph suggest about a closed system?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 176,
+        "end": 303
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It would have spread slowly",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin daha yavaş büyüyeceğini ve daha az kişiye ulaşacağını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "It would have failed in all markets",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin ticari başarı olasılığını kabul eder."
+        },
+        {
+          "key": "o3",
+          "text": "It would have been cheaper to join",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Maliyet karşılaştırması yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "It would have replaced email entirely",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "E-posta anlatılmaz."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Berners-Lee Mart 1989'da ilk öneriyi yazdı, Mayıs 1990'da hafif düzenlenmiş sürümü yeniden sundu; 1990 sonunda CERN'de ilk Web sunucusu ve tarayıcı çalışıyordu.",
+        "source": "CERN, A short history of the Web; https://home.cern/science/computing/birth-web/short-history-web",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "30 Nisan 1993'te CERN yönetimi Web yazılımını kamu malı kılan bildiriyi imzaladı; 1994'teki sonraki sürüm açık kaynak lisansına geçti.",
+        "source": "CERN, A short history of the Web; https://home.cern/science/computing/birth-web/short-history-web",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

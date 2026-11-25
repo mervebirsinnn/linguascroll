@@ -1,0 +1,3233 @@
+{
+  "slug": "b2-microbots-clot-dissolving",
+  "level": "B2",
+  "title": "Microbots That Carry Medicine to a Clot",
+  "topic": "Bilim ve sağlık",
+  "sortOrder": 1,
+  "isFreeSample": true,
+  "paragraphs": [
+    "When a blood clot blocks an artery, every minute counts. Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs. Clot-dissolving drugs already exist, but delivering them is harder than it sounds. Normally the drug is released through a catheter and the bloodstream carries it forward. Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+    "Researchers at ETH Zurich believe they have found a way around this problem. Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them. Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body. Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips. This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+    "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving. In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone. Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients."
+  ],
+  "words": [
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 337,
+          "end": 341,
+          "surface": "when",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 291,
+          "surface": "when",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 89,
+          "end": 93,
+          "surface": "when",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 6,
+          "surface": "a",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 91,
+          "end": 92,
+          "surface": "a",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 109,
+          "surface": "a",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 118,
+          "end": 119,
+          "surface": "a",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 137,
+          "surface": "a",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 282,
+          "end": 283,
+          "surface": "a",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 51,
+          "surface": "a",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 112,
+          "end": 113,
+          "surface": "a",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 271,
+          "surface": "a",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 292,
+          "end": 293,
+          "surface": "a",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 440,
+          "end": 441,
+          "surface": "a",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 12,
+          "surface": "blood",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 160,
+          "surface": "blood",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 504,
+          "end": 509,
+          "surface": "blood",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 32,
+          "end": 37,
+          "surface": "blood",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 140,
+          "end": 145,
+          "surface": "blood",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "clot",
+      "gloss": "pıhtı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 13,
+          "end": 17,
+          "surface": "clot",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 93,
+          "end": 97,
+          "surface": "clot",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 165,
+          "surface": "Clot",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 346,
+          "end": 350,
+          "surface": "clot",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 370,
+          "end": 374,
+          "surface": "clot",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "blocks",
+      "gloss": "tıkar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 18,
+          "end": 24,
+          "surface": "blocks",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 27,
+          "surface": "an",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "artery",
+      "gloss": "atardamar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 34,
+          "surface": "artery",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 41,
+          "surface": "every",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "minute",
+      "gloss": "dakika",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 48,
+          "surface": "minute",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "counts",
+      "gloss": "önemlidir (count: önemli olmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 55,
+          "surface": "counts",
+          "contextSentence": "When a blood clot blocks an artery, every minute counts.",
+          "contextSentenceTr": "Bir kan pıhtısı bir atardamarı tıkadığında her dakika önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "depending",
+      "gloss": "bağlı olarak (depending on)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 66,
+          "surface": "Depending",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "depending on: -e bağlı olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 67,
+          "end": 69,
+          "surface": "on",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "where",
+      "gloss": "nereye, nerede",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 70,
+          "end": 75,
+          "surface": "where",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o (pıhtı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 78,
+          "surface": "it",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "gets",
+      "gloss": "olur (get stuck: takılmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 83,
+          "surface": "gets",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "stuck",
+      "gloss": "takılı (get stuck: takılmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 89,
+          "surface": "stuck",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 101,
+          "surface": "can",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 389,
+          "end": 392,
+          "surface": "can",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "cause",
+      "gloss": "yol açmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 107,
+          "surface": "cause",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "stroke",
+      "gloss": "inme (beyne giden kanın kesilmesi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 110,
+          "end": 116,
+          "surface": "stroke",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "heart",
+      "gloss": "kalp",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 125,
+          "surface": "heart",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "attack",
+      "gloss": "kriz (heart attack: kalp krizi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 132,
+          "surface": "attack",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 135,
+          "surface": "or",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "blockage",
+      "gloss": "tıkanma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 138,
+          "end": 146,
+          "surface": "blockage",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de (yer)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 147,
+          "end": 149,
+          "surface": "in",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 116,
+          "end": 118,
+          "surface": "In",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık; bilinen ismi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 153,
+          "surface": "the",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 253,
+          "end": 256,
+          "surface": "the",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 300,
+          "surface": "the",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 342,
+          "end": 345,
+          "surface": "the",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 373,
+          "surface": "the",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 380,
+          "end": 383,
+          "surface": "the",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 142,
+          "surface": "the",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 345,
+          "surface": "the",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 369,
+          "surface": "the",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 389,
+          "end": 392,
+          "surface": "the",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 399,
+          "end": 402,
+          "surface": "the",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 421,
+          "end": 424,
+          "surface": "the",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 488,
+          "end": 491,
+          "surface": "the",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 546,
+          "end": 549,
+          "surface": "the",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 50,
+          "surface": "the",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 97,
+          "surface": "the",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 128,
+          "surface": "the",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 208,
+          "end": 211,
+          "surface": "the",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 236,
+          "surface": "the",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 282,
+          "end": 285,
+          "surface": "the",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "lungs",
+      "gloss": "akciğerler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 154,
+          "end": 159,
+          "surface": "lungs",
+          "contextSentence": "Depending on where it gets stuck, a clot can cause a stroke, a heart attack or a blockage in the lungs.",
+          "contextSentenceTr": "Nereye takıldığına bağlı olarak bir pıhtı inmeye, kalp krizine ya da akciğerlerde tıkanmaya yol açabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "dissolving",
+      "gloss": "eriten (clot-dissolving: pıhtı eritici)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 166,
+          "end": 176,
+          "surface": "dissolving",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "drugs",
+      "gloss": "ilaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 182,
+          "surface": "drugs",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "already",
+      "gloss": "zaten",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 190,
+          "surface": "already",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "exist",
+      "gloss": "var olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 196,
+          "surface": "exist",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 201,
+          "surface": "but",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "delivering",
+      "gloss": "ulaştırmak, iletmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 212,
+          "surface": "delivering",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 217,
+          "surface": "them",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 218,
+          "end": 220,
+          "surface": "is",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "harder",
+      "gloss": "daha zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 227,
+          "surface": "harder",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den (karşılaştırma)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 228,
+          "end": 232,
+          "surface": "than",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o (durum)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 235,
+          "surface": "it",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "sounds",
+      "gloss": "kulağa gelmek (than it sounds: göründüğünden)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 242,
+          "surface": "sounds",
+          "contextSentence": "Clot-dissolving drugs already exist, but delivering them is harder than it sounds.",
+          "contextSentenceTr": "Pıhtı eritici ilaçlar zaten var, ama onları hedefe ulaştırmak göründüğünden daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "normally",
+      "gloss": "normalde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 244,
+          "end": 252,
+          "surface": "Normally",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "drug",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 257,
+          "end": 261,
+          "surface": "drug",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 384,
+          "end": 388,
+          "surface": "drug",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 393,
+          "end": 397,
+          "surface": "drug",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 51,
+          "end": 55,
+          "surface": "drug",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 216,
+          "surface": "drug",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "edilgen yapıyı kuran yardımcı fiil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 262,
+          "end": 264,
+          "surface": "is",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 320,
+          "surface": "is",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "released",
+      "gloss": "bırakılır, verilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 265,
+          "end": 273,
+          "surface": "released",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "-den, aracılığıyla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 274,
+          "end": 281,
+          "surface": "through",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "catheter",
+      "gloss": "kateter (damara sokulan ince tüp)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 284,
+          "end": 292,
+          "surface": "catheter",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 296,
+          "surface": "and",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 478,
+          "end": 481,
+          "surface": "and",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 281,
+          "surface": "and",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "bloodstream",
+      "gloss": "kan akışı, kan dolaşımı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 301,
+          "end": 312,
+          "surface": "bloodstream",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "carries",
+      "gloss": "taşır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 320,
+          "surface": "carries",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 321,
+          "end": 323,
+          "surface": "it",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "forward",
+      "gloss": "ileri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 331,
+          "surface": "forward",
+          "contextSentence": "Normally the drug is released through a catheter and the bloodstream carries it forward.",
+          "contextSentenceTr": "Normalde ilaç bir kateterle verilir ve kan akışı onu ileri taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "ancak, yine de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 336,
+          "surface": "Yet",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 351,
+          "end": 357,
+          "surface": "itself",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "yardımcı fiil (yakın geçmiş zaman)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 358,
+          "end": 361,
+          "surface": "has",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "stopped",
+      "gloss": "durdurdu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 362,
+          "end": 369,
+          "surface": "stopped",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "flow",
+      "gloss": "akış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 374,
+          "end": 378,
+          "surface": "flow",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 146,
+          "end": 150,
+          "surface": "flow",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 393,
+          "end": 397,
+          "surface": "only",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "spread",
+      "gloss": "yayılmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 398,
+          "end": 404,
+          "surface": "spread",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "slowly",
+      "gloss": "yavaşça",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 405,
+          "end": 411,
+          "surface": "slowly",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "bu da (önceki durumu niteler)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 413,
+          "end": 418,
+          "surface": "which",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "wastes",
+      "gloss": "boşa harcar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 419,
+          "end": 425,
+          "surface": "wastes",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "precious",
+      "gloss": "değerli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 426,
+          "end": 434,
+          "surface": "precious",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 435,
+          "end": 439,
+          "surface": "time",
+          "contextSentence": "Yet when the clot itself has stopped the flow, the drug can only spread slowly, which wastes precious time.",
+          "contextSentenceTr": "Ancak akışı pıhtının kendisi durdurduğunda ilaç yalnızca yavaşça yayılabilir; bu da değerli zamanın boşa gitmesine yol açar."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 11,
+          "surface": "Researchers",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de (yer)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 12,
+          "end": 14,
+          "surface": "at",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "eth",
+      "gloss": "ETH (İsviçre Federal Teknoloji Enstitüsü)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 15,
+          "end": 18,
+          "surface": "ETH",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "zurich",
+      "gloss": "Zürih (İsviçre'de bir şehir)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 25,
+          "surface": "Zurich",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "believe",
+      "gloss": "inanmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 33,
+          "surface": "believe",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 38,
+          "surface": "they",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "yardımcı fiil (yakın geçmiş zaman)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 43,
+          "surface": "have",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 249,
+          "surface": "have",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "buldu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 44,
+          "end": 49,
+          "surface": "found",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 55,
+          "surface": "way",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "etrafından (a way around: aşmanın yolu)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 56,
+          "end": 62,
+          "surface": "around",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 67,
+          "surface": "this",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 236,
+          "surface": "this",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 459,
+          "end": 463,
+          "surface": "This",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "problem",
+      "gloss": "sorun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 75,
+          "surface": "problem",
+          "contextSentence": "Researchers at ETH Zurich believe they have found a way around this problem.",
+          "contextSentenceTr": "ETH Zürih'teki araştırmacılar bu sorunu aşmanın bir yolunu bulduklarına inanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 82,
+          "surface": "Their",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "microbots",
+      "gloss": "mikrorobotlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 92,
+          "surface": "microbots",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 96,
+          "surface": "are",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "oval",
+      "gloss": "oval",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 101,
+          "surface": "oval",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "grains",
+      "gloss": "taneler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 102,
+          "end": 108,
+          "surface": "grains",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-den yapılmış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 111,
+          "surface": "of",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "sugar",
+      "gloss": "şeker",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 114,
+          "end": 119,
+          "surface": "sugar",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "based",
+      "gloss": "bazlı (sugar-based: şeker bazlı)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 120,
+          "end": 125,
+          "surface": "based",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "gel",
+      "gloss": "jel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 126,
+          "end": 129,
+          "surface": "gel",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "roughly",
+      "gloss": "kabaca, yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 138,
+          "surface": "roughly",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "size",
+      "gloss": "boyut, büyüklük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 147,
+          "surface": "size",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-in",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 150,
+          "surface": "of",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "red",
+      "gloss": "kırmızı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 154,
+          "surface": "red",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 161,
+          "end": 166,
+          "surface": "cells",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "-li, ile birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 168,
+          "end": 172,
+          "surface": "with",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 177,
+          "surface": "tiny",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "iron",
+      "gloss": "demir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 178,
+          "end": 182,
+          "surface": "iron",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "oxide",
+      "gloss": "oksit",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 188,
+          "surface": "oxide",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "particles",
+      "gloss": "parçacıklar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 189,
+          "end": 198,
+          "surface": "particles",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "lined",
+      "gloss": "sıraya dizilmiş (lined up)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 204,
+          "surface": "lined",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "up",
+      "gloss": "lined up: sıraya dizilmiş (fiili tamamlar)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 207,
+          "surface": "up",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 214,
+          "surface": "inside",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 219,
+          "surface": "them",
+          "contextSentence": "Their microbots are oval grains of a sugar-based gel, roughly the size of red blood cells, with tiny iron oxide particles lined up inside them.",
+          "contextSentenceTr": "Mikrorobotları, şeker bazlı bir jelden yapılmış, kabaca kırmızı kan hücresi büyüklüğünde oval tanelerdir ve içlerinde sıraya dizilmiş minik demir oksit parçacıkları bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "because of: sayesinde, yüzünden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 228,
+          "surface": "Because",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "because of: sayesinde, yüzünden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 231,
+          "surface": "of",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "arrangement",
+      "gloss": "diziliş, düzen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 248,
+          "surface": "arrangement",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 254,
+          "surface": "each",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "bot",
+      "gloss": "robot",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 258,
+          "surface": "bot",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "turns",
+      "gloss": "döner",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 259,
+          "end": 264,
+          "surface": "turns",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 269,
+          "surface": "like",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "compass",
+      "gloss": "pusula",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 279,
+          "surface": "compass",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "needle",
+      "gloss": "iğne",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 280,
+          "end": 286,
+          "surface": "needle",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "rotating",
+      "gloss": "dönen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 302,
+          "surface": "rotating",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "magnetic",
+      "gloss": "manyetik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 303,
+          "end": 311,
+          "surface": "magnetic",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "field",
+      "gloss": "alan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 317,
+          "surface": "field",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "applied",
+      "gloss": "uygulanır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 328,
+          "surface": "applied",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 333,
+          "surface": "from",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "outside",
+      "gloss": "dışarısı, dış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 334,
+          "end": 341,
+          "surface": "outside",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 346,
+          "end": 350,
+          "surface": "body",
+          "contextSentence": "Because of this arrangement, each bot turns like a compass needle when a rotating magnetic field is applied from outside the body.",
+          "contextSentenceTr": "Bu diziliş sayesinde, vücudun dışından dönen bir manyetik alan uygulandığında her robot bir pusula iğnesi gibi döner."
+        }
+      ]
+    },
+    {
+      "lemma": "released",
+      "gloss": "bırakılan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 352,
+          "end": 360,
+          "surface": "Released",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "near",
+      "gloss": "yakınına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 365,
+          "surface": "near",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "birlikte (together with: ile birlikte)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 375,
+          "end": 383,
+          "surface": "together",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 384,
+          "end": 388,
+          "surface": "with",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 207,
+          "surface": "with",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "bots",
+      "gloss": "robotlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 403,
+          "end": 407,
+          "surface": "bots",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 98,
+          "end": 102,
+          "surface": "bots",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "tumble",
+      "gloss": "yuvarlanır, takla atar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 408,
+          "end": 414,
+          "surface": "tumble",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "along",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 415,
+          "end": 420,
+          "surface": "along",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "vessel",
+      "gloss": "damar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 425,
+          "end": 431,
+          "surface": "vessel",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "wall",
+      "gloss": "duvar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 432,
+          "end": 436,
+          "surface": "wall",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "in a series of: art arda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 437,
+          "end": 439,
+          "surface": "in",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "series",
+      "gloss": "dizi (a series of: art arda)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 442,
+          "end": 448,
+          "surface": "series",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-den oluşan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 449,
+          "end": 451,
+          "surface": "of",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "flips",
+      "gloss": "taklalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 452,
+          "end": 457,
+          "surface": "flips",
+          "contextSentence": "Released near the clot together with the drug, the bots tumble along the vessel wall in a series of flips.",
+          "contextSentenceTr": "Pıhtının yakınına ilaçla birlikte bırakılan robotlar, art arda taklalar atarak damar duvarı boyunca yuvarlanır."
+        }
+      ]
+    },
+    {
+      "lemma": "motion",
+      "gloss": "hareket",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 464,
+          "end": 470,
+          "surface": "motion",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "pushes",
+      "gloss": "iter",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 471,
+          "end": 477,
+          "surface": "pushes",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "pulls",
+      "gloss": "çeker",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 482,
+          "end": 487,
+          "surface": "pulls",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "surrounding",
+      "gloss": "çevredeki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 492,
+          "end": 503,
+          "surface": "surrounding",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "creating",
+      "gloss": "oluşturarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 511,
+          "end": 519,
+          "surface": "creating",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 520,
+          "end": 525,
+          "surface": "small",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "currents",
+      "gloss": "akıntılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 526,
+          "end": 534,
+          "surface": "currents",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki (önündeki ismi niteleyen yan cümleyi bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 535,
+          "end": 539,
+          "surface": "that",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "carry",
+      "gloss": "taşır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 540,
+          "end": 545,
+          "surface": "carry",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "medicine",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 550,
+          "end": 558,
+          "surface": "medicine",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e (yönelme)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 559,
+          "end": 561,
+          "surface": "to",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 562,
+          "end": 565,
+          "surface": "its",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "target",
+      "gloss": "hedef",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 566,
+          "end": 572,
+          "surface": "target",
+          "contextSentence": "This motion pushes and pulls the surrounding blood, creating small currents that carry the medicine to its target.",
+          "contextSentenceTr": "Bu hareket çevredeki kanı itip çeker ve ilacı hedefine taşıyan küçük akıntılar oluşturur."
+        }
+      ]
+    },
+    {
+      "lemma": "channels",
+      "gloss": "kanallar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 11,
+          "surface": "channels",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "designed",
+      "gloss": "tasarlanmış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 20,
+          "surface": "designed",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mak için (amaç)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 21,
+          "end": 23,
+          "surface": "to",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "imitate",
+      "gloss": "taklit etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 31,
+          "surface": "imitate",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "vessels",
+      "gloss": "damarlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 45,
+          "surface": "vessels",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "dissolved",
+      "gloss": "eritti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 56,
+          "end": 65,
+          "surface": "dissolved",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "clots",
+      "gloss": "pıhtılar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 71,
+          "surface": "clots",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "six",
+      "gloss": "altı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 72,
+          "end": 75,
+          "surface": "six",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "times",
+      "gloss": "kat",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 76,
+          "end": 81,
+          "surface": "times",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "faster",
+      "gloss": "daha hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 88,
+          "surface": "faster",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "geçmiş zaman yardımcı fiili (sürerken)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 103,
+          "end": 107,
+          "surface": "were",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "moving",
+      "gloss": "hareket ediyor",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 108,
+          "end": 114,
+          "surface": "moving",
+          "contextSentence": "In channels designed to imitate blood vessels, the drug dissolved clots six times faster when the bots were moving.",
+          "contextSentenceTr": "Kan damarlarını taklit etmek için tasarlanmış kanallarda, robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti."
+        }
+      ]
+    },
+    {
+      "lemma": "pigs",
+      "gloss": "domuzlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 119,
+          "end": 123,
+          "surface": "pigs",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "area",
+      "gloss": "alan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 129,
+          "end": 133,
+          "surface": "area",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "where",
+      "gloss": "-dığı (yer)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 139,
+          "surface": "where",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "returned",
+      "gloss": "geri geldi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 151,
+          "end": 159,
+          "surface": "returned",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 160,
+          "end": 165,
+          "surface": "after",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "thirty",
+      "gloss": "otuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 172,
+          "surface": "thirty",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "minutes",
+      "gloss": "dakika",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 180,
+          "surface": "minutes",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "-dı (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 184,
+          "surface": "was",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "twice",
+      "gloss": "iki kat",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 185,
+          "end": 190,
+          "surface": "twice",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "kadar (as ... as: ... kadar)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 191,
+          "end": 193,
+          "surface": "as",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 200,
+          "end": 202,
+          "surface": "as",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 199,
+          "surface": "large",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "tek başına, yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 222,
+          "surface": "alone",
+          "contextSentence": "In pigs, the area where blood flow returned after thirty minutes was twice as large as with the drug alone.",
+          "contextSentenceTr": "Domuzlarda, otuz dakika sonra kan akışının geri geldiği alan, yalnızca ilaç kullanıldığındakinin iki katı büyüklüğündeydi."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "bile (even so: yine de)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 228,
+          "surface": "Even",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "even so: yine de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 229,
+          "end": 231,
+          "surface": "so",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "results",
+      "gloss": "sonuçlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 244,
+          "surface": "results",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 250,
+          "end": 253,
+          "surface": "not",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "henüz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 254,
+          "end": 257,
+          "surface": "yet",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "passed",
+      "gloss": "geçti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 258,
+          "end": 264,
+          "surface": "passed",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "peer",
+      "gloss": "meslektaş (peer review: hakem değerlendirmesi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 265,
+          "end": 269,
+          "surface": "peer",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "review",
+      "gloss": "değerlendirme (peer review: hakem değerlendirmesi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 276,
+          "surface": "review",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekip",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 290,
+          "surface": "team",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "says",
+      "gloss": "söyler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 291,
+          "end": 295,
+          "surface": "says",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "longer",
+      "gloss": "daha uzun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 302,
+          "surface": "longer",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "safety",
+      "gloss": "güvenlik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 303,
+          "end": 309,
+          "surface": "safety",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "studies",
+      "gloss": "çalışmalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 310,
+          "end": 317,
+          "surface": "studies",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de, üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 320,
+          "surface": "in",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 357,
+          "end": 359,
+          "surface": "in",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "animals",
+      "gloss": "hayvanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 321,
+          "end": 328,
+          "surface": "animals",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "-meli, zorunda",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 329,
+          "end": 333,
+          "surface": "must",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "come",
+      "gloss": "gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 334,
+          "end": 338,
+          "surface": "come",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 345,
+          "surface": "before",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 346,
+          "end": 349,
+          "surface": "any",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "trials",
+      "gloss": "denemeler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 350,
+          "end": 356,
+          "surface": "trials",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "patients",
+      "gloss": "hastalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 360,
+          "end": 368,
+          "surface": "patients",
+          "contextSentence": "Even so, the results have not yet passed peer review, and the team says longer safety studies in animals must come before any trials in patients.",
+          "contextSentenceTr": "Yine de sonuçlar henüz hakem değerlendirmesinden geçmedi ve ekip, hastalarda herhangi bir deneme yapılmadan önce hayvanlarda daha uzun güvenlik çalışmalarının gelmesi gerektiğini söylüyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the main point of the passage?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 459,
+        "end": 573
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Microbots can replace drugs in treating strokes.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Robotlar ilacın yerini almaz; ilacın pıhtıya ulaşmasına yardım eder."
+        },
+        {
+          "key": "o2",
+          "text": "Catheters are too dangerous to use in human arteries.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kateter, ilacın normalde nasıl verildiğini anlatmak için geçer; tehlikeli olduğu söylenmez."
+        },
+        {
+          "key": "o3",
+          "text": "Pig tests proved the bots are safe for patients.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersine, hastalarda denemeden önce daha uzun güvenlik çalışmaları gerektiği söylenir."
+        },
+        {
+          "key": "o4",
+          "text": "Moving microbots may help drugs reach clots faster.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metnin özü budur: robotların hareketi küçük akıntılar oluşturarak ilacı pıhtıya taşır ve pıhtıyı daha hızlı eritir."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why does each bot turn like a compass needle?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 168,
+        "end": 286
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Its iron oxide particles are lined up inside it.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "'Because of this arrangement' ifadesi, demir oksit parçacıklarının içeride sıraya dizilmesini gösterir."
+        },
+        {
+          "key": "o2",
+          "text": "It is made of a sugar-based gel.",
+          "isCorrect": false,
+          "trapType": "copy",
+          "explanation": "Jel robotun malzemesidir ama pusula gibi dönmesinin nedeni olarak verilmez."
+        },
+        {
+          "key": "o3",
+          "text": "The blood current around it pushes it toward the clot.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Akıntıyı oluşturan robotlardır; robotu döndüren kan akıntısı değil, manyetik alandır."
+        },
+        {
+          "key": "o4",
+          "text": "Its shape is the same as a red blood cell.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Metin robotların büyüklüğünü kırmızı kan hücresine benzetir, şeklini değil; robotlar ovaldir."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "In paragraph 1, the word “precious” is closest in meaning to …",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 413,
+        "end": 439
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "extra and unnecessary",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Boşa harcandığı için üzülünen zaman gereksiz değil, değerli zamandır."
+        },
+        {
+          "key": "o2",
+          "text": "valuable and important",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Pıhtı söz konusuyken her dakika önemlidir; kaybedilen zaman bu yüzden değerlidir."
+        },
+        {
+          "key": "o3",
+          "text": "dangerous and very painful",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Pıhtı tehlikelidir, ama 'precious' zamanı niteler; tehlikeli anlamına gelmez."
+        },
+        {
+          "key": "o4",
+          "text": "short and fast",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kelime zamanın süresini değil, önemini anlatır."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the final paragraph suggest about the research?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 233,
+        "end": 276
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It has already been approved for use in hospitals.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Hastalarda deneme bile yapılmamıştır; hastanede kullanım onayı yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "The bots worked in pigs but not in the artificial vessels.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Robotlar damarları taklit eden kanallarda da işe yaramıştır: ilaç altı kat daha hızlı etki etmiştir."
+        },
+        {
+          "key": "o3",
+          "text": "Its results still need to be checked by other experts.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Sonuçlar henüz hakem değerlendirmesinden geçmemiştir; yani başka uzmanlarca incelenmesi gerekir."
+        },
+        {
+          "key": "o4",
+          "text": "Patients had fewer strokes after the treatment.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Tedavi hastalarda denenmemiştir; inme sayısıyla ilgili bir sonuç yoktur."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Pıhtılar, tıkadıkları yere göre inme, kalp krizi ya da akciğer tıkanmasına yol açabilir; damar tıkalıyken ilaç pıhtıya ancak yavaş yayılarak ulaşır.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Mikrorobotlar yaklaşık kırmızı kan hücresi büyüklüğünde, şeker bazlı jelden yapılmış oval tanelerdir; içlerindeki demir oksit nanoparçacıkları uzun eksen boyunca dizildiği için pusula iğnesi gibi döner.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Robotlar ilaçla birlikte pıhtının yakınına verilir; dönen manyetik alanla damar duvarı boyunca takla atarak ilerler ve kanı itip çekerek ilacı pıhtıya taşıyan küçük akışlar oluşturur.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Damar modeli kanallarda ilaç, hareket eden robotlarla pıhtıları altı kat daha hızlı eritti; domuzlarda 30 dakika sonra kan akışının geri geldiği alan yalnız ilaca göre iki kat büyüktü.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Sonuçlar hakem değerlendirmesindedir; hastalarda denemeden önce hayvanlarda daha uzun güvenlik çalışmaları gerekir.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      }
+    ]
+  }
+}

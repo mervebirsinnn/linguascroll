@@ -1,0 +1,3777 @@
+{
+  "slug": "c2-penicillin-system",
+  "level": "C2",
+  "title": "A System, Not a Hero",
+  "topic": "Tıp",
+  "sortOrder": 16,
+  "isFreeSample": false,
+  "paragraphs": [
+    "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false. Between them, these two facts frame the whole story. In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died. But an observation is not yet a treatment, and the distance between the two was considerable.",
+    "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree. For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise. Such caution was not unreasonable for its time, but it delayed progress by years.",
+    "The decisive labour fell to others. At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy. Norman Heatley, whose extraction methods helped make production practical, belonged to that group too. Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+    "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley. Oxford would not award him an honorary doctorate until nineteen ninety. The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+    "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work. It is a less romantic story, but it is the one that best explains how a curiosity became a medicine."
+  ],
+  "words": [
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 83,
+          "end": 86,
+          "surface": "the",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 158,
+          "end": 161,
+          "surface": "the",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 315,
+          "end": 318,
+          "surface": "the",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 395,
+          "end": 398,
+          "surface": "the",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 416,
+          "end": 419,
+          "surface": "the",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 182,
+          "surface": "the",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The decisive labour fell to others.",
+          "contextSentenceTr": "Belirleyici emek başkalarına düştü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 120,
+          "surface": "the",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 5,
+          "end": 8,
+          "surface": "the",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 219,
+          "end": 222,
+          "surface": "The",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 60,
+          "end": 63,
+          "surface": "the",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 153,
+          "end": 156,
+          "surface": "the",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 214,
+          "end": 217,
+          "surface": "the",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "legend",
+      "gloss": "efsane",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 4,
+          "end": 10,
+          "surface": "legend",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 13,
+          "surface": "of",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 22,
+          "end": 24,
+          "surface": "of",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "penicillin",
+      "gloss": "penisilin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 24,
+          "surface": "penicillin",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 364,
+          "end": 374,
+          "surface": "penicillin",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 25,
+          "end": 35,
+          "surface": "penicillin",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "attributes",
+      "gloss": "atfetmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 35,
+          "surface": "attributes",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 37,
+          "surface": "a",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 60,
+          "end": 61,
+          "surface": "a",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 234,
+          "surface": "a",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 257,
+          "surface": "a",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 281,
+          "end": 282,
+          "surface": "a",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 378,
+          "end": 379,
+          "surface": "a",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 158,
+          "end": 159,
+          "surface": "a",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 204,
+          "surface": "a",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 87,
+          "end": 88,
+          "surface": "a",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 216,
+          "surface": "a",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 395,
+          "end": 396,
+          "surface": "a",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 409,
+          "end": 410,
+          "surface": "a",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 244,
+          "end": 245,
+          "surface": "a",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 81,
+          "end": 82,
+          "surface": "a",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 112,
+          "end": 113,
+          "surface": "a",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 132,
+          "end": 133,
+          "surface": "a",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 181,
+          "end": 182,
+          "surface": "a",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 245,
+          "end": 246,
+          "surface": "a",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 264,
+          "end": 265,
+          "surface": "a",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "medical",
+      "gloss": "tıbbi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 45,
+          "surface": "medical",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "revolution",
+      "gloss": "devrim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 46,
+          "end": 56,
+          "surface": "revolution",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 59,
+          "surface": "to",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 245,
+          "surface": "to",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 310,
+          "end": 312,
+          "surface": "to",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "single",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 68,
+          "surface": "single",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "accident",
+      "gloss": "kaza",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 77,
+          "surface": "accident",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 82,
+          "surface": "and",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 306,
+          "end": 309,
+          "surface": "and",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 391,
+          "end": 394,
+          "surface": "and",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 100,
+          "surface": "and",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 234,
+          "end": 237,
+          "surface": "and",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 61,
+          "end": 64,
+          "surface": "and",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 164,
+          "end": 167,
+          "surface": "and",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 116,
+          "end": 119,
+          "surface": "and",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 128,
+          "end": 131,
+          "surface": "and",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "attribution",
+      "gloss": "atıf",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 98,
+          "surface": "attribution",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 99,
+          "end": 101,
+          "surface": "is",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 367,
+          "end": 369,
+          "surface": "is",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 178,
+          "end": 180,
+          "surface": "is",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 211,
+          "end": 213,
+          "surface": "is",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 105,
+          "surface": "not",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 373,
+          "surface": "not",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 131,
+          "surface": "not",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 248,
+          "surface": "not",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 297,
+          "end": 300,
+          "surface": "not",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 131,
+          "end": 134,
+          "surface": "not",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 160,
+          "end": 163,
+          "surface": "not",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "entirely",
+      "gloss": "tamamen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 114,
+          "surface": "entirely",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "false",
+      "gloss": "yanlış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 120,
+          "surface": "false",
+          "contextSentence": "The legend of penicillin attributes a medical revolution to a single accident, and the attribution is not entirely false.",
+          "contextSentenceTr": "Penisilin efsanesi tıbbi bir devrimi tek bir kazaya atfeder ve bu atıf tamamen yanlış değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 129,
+          "surface": "Between",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 408,
+          "end": 415,
+          "surface": "between",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 130,
+          "end": 134,
+          "surface": "them",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 141,
+          "surface": "these",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 142,
+          "end": 145,
+          "surface": "two",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 420,
+          "end": 423,
+          "surface": "two",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "facts",
+      "gloss": "olgular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 151,
+          "surface": "facts",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        }
+      ]
+    },
+    {
+      "lemma": "frame",
+      "gloss": "çerçevelemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 152,
+          "end": 157,
+          "surface": "frame",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        }
+      ]
+    },
+    {
+      "lemma": "whole",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 167,
+          "surface": "whole",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        }
+      ]
+    },
+    {
+      "lemma": "story",
+      "gloss": "hikâye",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 173,
+          "surface": "story",
+          "contextSentence": "Between them, these two facts frame the whole story.",
+          "contextSentenceTr": "Bu iki olgu birlikte tüm hikâyeyi çerçeveler."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 16,
+          "end": 21,
+          "surface": "story",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 197,
+          "end": 202,
+          "surface": "story",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 177,
+          "surface": "In",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 33,
+          "surface": "in",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 406,
+          "end": 408,
+          "surface": "in",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 21,
+          "end": 23,
+          "surface": "in",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 59,
+          "end": 61,
+          "surface": "in",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 178,
+          "end": 186,
+          "surface": "nineteen",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 42,
+          "surface": "nineteen",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 179,
+          "surface": "nineteen",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 62,
+          "end": 70,
+          "surface": "nineteen",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 202,
+          "end": 210,
+          "surface": "nineteen",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "twenty",
+      "gloss": "yirmi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 193,
+          "surface": "twenty",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 43,
+          "end": 49,
+          "surface": "twenty",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "eight",
+      "gloss": "sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 199,
+          "surface": "eight",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "alexander",
+      "gloss": "Alexander",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 201,
+          "end": 210,
+          "surface": "Alexander",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "fleming",
+      "gloss": "Fleming",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 211,
+          "end": 218,
+          "surface": "Fleming",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 7,
+          "surface": "Fleming",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 100,
+          "end": 107,
+          "surface": "Fleming",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "returned",
+      "gloss": "dönmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 227,
+          "surface": "returned",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 228,
+          "end": 232,
+          "surface": "from",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "holiday",
+      "gloss": "tatil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 235,
+          "end": 242,
+          "surface": "holiday",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "find",
+      "gloss": "bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 246,
+          "end": 250,
+          "surface": "find",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 255,
+          "surface": "that",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 314,
+          "surface": "that",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 98,
+          "surface": "that",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 193,
+          "end": 197,
+          "surface": "that",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 222,
+          "end": 226,
+          "surface": "that",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "mould",
+      "gloss": "küf",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 263,
+          "surface": "mould",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 267,
+          "surface": "had",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 338,
+          "end": 341,
+          "surface": "had",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "contaminated",
+      "gloss": "bulaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 268,
+          "end": 280,
+          "surface": "contaminated",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "staphylococcus",
+      "gloss": "stafilokok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 283,
+          "end": 297,
+          "surface": "staphylococcus",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "culture",
+      "gloss": "kültür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 298,
+          "end": 305,
+          "surface": "culture",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "bacteria",
+      "gloss": "bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 327,
+          "surface": "bacteria",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 328,
+          "end": 334,
+          "surface": "around",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 337,
+          "surface": "it",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 334,
+          "surface": "it",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 136,
+          "surface": "it",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 200,
+          "surface": "it",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 83,
+          "end": 85,
+          "surface": "it",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 175,
+          "end": 177,
+          "surface": "It",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 208,
+          "end": 210,
+          "surface": "it",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "died",
+      "gloss": "ölmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 342,
+          "end": 346,
+          "surface": "died",
+          "contextSentence": "In nineteen twenty eight, Alexander Fleming returned from a holiday to find that a mould had contaminated a staphylococcus culture and that the bacteria around it had died.",
+          "contextSentenceTr": "1928'de Alexander Fleming bir tatilden dönünce bir küfün bir stafilokok kültürüne bulaştığını ve çevresindeki bakterilerin ölmüş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 348,
+          "end": 351,
+          "surface": "But",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 56,
+          "end": 59,
+          "surface": "but",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 331,
+          "surface": "but",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 127,
+          "end": 130,
+          "surface": "but",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 204,
+          "end": 207,
+          "surface": "but",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 352,
+          "end": 354,
+          "surface": "an",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 174,
+          "end": 176,
+          "surface": "an",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 93,
+          "end": 95,
+          "surface": "an",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "observation",
+      "gloss": "gözlem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 355,
+          "end": 366,
+          "surface": "observation",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "henüz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 374,
+          "end": 377,
+          "surface": "yet",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "treatment",
+      "gloss": "tedavi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 380,
+          "end": 389,
+          "surface": "treatment",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "distance",
+      "gloss": "mesafe",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 399,
+          "end": 407,
+          "surface": "distance",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 427,
+          "surface": "was",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 296,
+          "surface": "was",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 47,
+          "end": 50,
+          "surface": "was",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 86,
+          "end": 89,
+          "surface": "was",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "considerable",
+      "gloss": "hatırı sayılır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 428,
+          "end": 440,
+          "surface": "considerable",
+          "contextSentence": "But an observation is not yet a treatment, and the distance between the two was considerable.",
+          "contextSentenceTr": "Ama bir gözlem henüz bir tedavi değildir ve ikisi arasındaki mesafe hatırı sayılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "published",
+      "gloss": "yayımlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 8,
+          "end": 17,
+          "surface": "published",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 21,
+          "surface": "his",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 60,
+          "end": 63,
+          "surface": "his",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 101,
+          "end": 104,
+          "surface": "his",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "findings",
+      "gloss": "bulgular",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 30,
+          "surface": "findings",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "nine",
+      "gloss": "dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 54,
+          "surface": "nine",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "laboratory",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 74,
+          "surface": "laboratory",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 411,
+          "end": 421,
+          "surface": "laboratory",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "notebooks",
+      "gloss": "defterler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 84,
+          "surface": "notebooks",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 88,
+          "surface": "are",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 326,
+          "end": 329,
+          "surface": "are",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "sketchy",
+      "gloss": "özensiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 96,
+          "surface": "sketchy",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "daha sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 105,
+          "end": 110,
+          "surface": "later",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "recollections",
+      "gloss": "hatıralar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 124,
+          "surface": "recollections",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 125,
+          "end": 127,
+          "surface": "do",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "always",
+      "gloss": "her zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 138,
+          "surface": "always",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "agree",
+      "gloss": "aynı fikirde olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 144,
+          "surface": "agree",
+          "contextSentence": "Fleming published his findings in nineteen twenty nine, but his laboratory notebooks are sketchy and his later recollections do not always agree.",
+          "contextSentenceTr": "Fleming bulgularını 1929'da yayımladı; ancak laboratuvar defterleri özensizdir ve sonraki hatıraları her zaman birbiriyle uyuşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 146,
+          "end": 149,
+          "surface": "For",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "roughly",
+      "gloss": "kabaca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 157,
+          "surface": "roughly",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "decade",
+      "gloss": "on yıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 166,
+          "surface": "decade",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 169,
+          "surface": "he",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 238,
+          "end": 240,
+          "surface": "he",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "regarded",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 170,
+          "end": 178,
+          "surface": "regarded",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "substance",
+      "gloss": "madde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 192,
+          "surface": "substance",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "mainly",
+      "gloss": "esas olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 193,
+          "end": 199,
+          "surface": "mainly",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 202,
+          "surface": "as",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 214,
+          "surface": "as",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "possible",
+      "gloss": "olası",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 213,
+          "surface": "possible",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "topical",
+      "gloss": "yerel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 221,
+          "surface": "topical",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "antiseptic",
+      "gloss": "antiseptik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 222,
+          "end": 232,
+          "surface": "antiseptic",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz/soru yardımcı fiili (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 244,
+          "surface": "did",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "fully",
+      "gloss": "tamamen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 249,
+          "end": 254,
+          "surface": "fully",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "grasp",
+      "gloss": "kavramak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 260,
+          "surface": "grasp",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 264,
+          "surface": "its",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 321,
+          "surface": "its",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "wider",
+      "gloss": "daha geniş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 270,
+          "surface": "wider",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "promise",
+      "gloss": "vaat",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 271,
+          "end": 278,
+          "surface": "promise",
+          "contextSentence": "For roughly a decade he regarded the substance mainly as a possible topical antiseptic, and he did not fully grasp its wider promise.",
+          "contextSentenceTr": "Yaklaşık on yıl boyunca maddeyi esas olarak olası bir yerel antiseptik olarak gördü ve daha geniş vaadini tam olarak kavramadı."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 280,
+          "end": 284,
+          "surface": "Such",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "caution",
+      "gloss": "temkin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 285,
+          "end": 292,
+          "surface": "caution",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "unreasonable",
+      "gloss": "makul olmayan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 313,
+          "surface": "unreasonable",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 314,
+          "end": 317,
+          "surface": "for",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 322,
+          "end": 326,
+          "surface": "time",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "delayed",
+      "gloss": "geciktirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 335,
+          "end": 342,
+          "surface": "delayed",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "progress",
+      "gloss": "ilerleme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 351,
+          "surface": "progress",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 352,
+          "end": 354,
+          "surface": "by",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıllar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 360,
+          "surface": "years",
+          "contextSentence": "Such caution was not unreasonable for its time, but it delayed progress by years.",
+          "contextSentenceTr": "Böyle bir temkin kendi zamanı için makul olmayan değildi ama ilerlemeyi yıllarca geciktirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "decisive",
+      "gloss": "belirleyici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 12,
+          "surface": "decisive",
+          "contextSentence": "The decisive labour fell to others.",
+          "contextSentenceTr": "Belirleyici emek başkalarına düştü."
+        }
+      ]
+    },
+    {
+      "lemma": "labour",
+      "gloss": "emek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 19,
+          "surface": "labour",
+          "contextSentence": "The decisive labour fell to others.",
+          "contextSentenceTr": "Belirleyici emek başkalarına düştü."
+        }
+      ]
+    },
+    {
+      "lemma": "fell",
+      "gloss": "düşmek (görev ...e düştü)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 20,
+          "end": 24,
+          "surface": "fell",
+          "contextSentence": "The decisive labour fell to others.",
+          "contextSentenceTr": "Belirleyici emek başkalarına düştü."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "düşmek (görev ...e düştü)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 27,
+          "surface": "to",
+          "contextSentence": "The decisive labour fell to others.",
+          "contextSentenceTr": "Belirleyici emek başkalarına düştü."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "başkaları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 34,
+          "surface": "others",
+          "contextSentence": "The decisive labour fell to others.",
+          "contextSentenceTr": "Belirleyici emek başkalarına düştü."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 36,
+          "end": 38,
+          "surface": "At",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "oxford",
+      "gloss": "Oxford",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 45,
+          "surface": "Oxford",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 147,
+          "end": 153,
+          "surface": "Oxford",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "howard",
+      "gloss": "Howard",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 53,
+          "surface": "Howard",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "florey",
+      "gloss": "Florey",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 54,
+          "end": 60,
+          "surface": "Florey",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 109,
+          "end": 115,
+          "surface": "Florey",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "ernst",
+      "gloss": "Ernst",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 70,
+          "surface": "Ernst",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "chain",
+      "gloss": "Chain",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 71,
+          "end": 76,
+          "surface": "Chain",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 120,
+          "end": 125,
+          "surface": "Chain",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "assembled",
+      "gloss": "bir araya getirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 86,
+          "surface": "assembled",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekip",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 89,
+          "end": 93,
+          "surface": "team",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 134,
+          "end": 138,
+          "surface": "team",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrenmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 99,
+          "end": 106,
+          "surface": "learned",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 109,
+          "surface": "to",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 147,
+          "end": 149,
+          "surface": "to",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "purify",
+      "gloss": "arıtmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 116,
+          "surface": "purify",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "drug",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 121,
+          "end": 125,
+          "surface": "drug",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "denemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 127,
+          "end": 133,
+          "surface": "tested",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "against",
+      "gloss": "karşı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 144,
+          "surface": "against",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "bacterial",
+      "gloss": "bakteriyel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 145,
+          "end": 154,
+          "surface": "bacterial",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "disease",
+      "gloss": "hastalık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 155,
+          "end": 162,
+          "surface": "disease",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-e kadar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 168,
+          "end": 170,
+          "surface": "by",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "forty",
+      "gloss": "kırk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 185,
+          "surface": "forty",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 71,
+          "end": 76,
+          "surface": "forty",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "showed",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 192,
+          "surface": "showed",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 206,
+          "surface": "could",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "işlemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 211,
+          "surface": "work",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "therapy",
+      "gloss": "tedavi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 224,
+          "surface": "therapy",
+          "contextSentence": "At Oxford, Howard Florey and Ernst Chain assembled a team that learned to purify the drug, tested it against bacterial disease, and by nineteen forty showed that it could work as a therapy.",
+          "contextSentenceTr": "Oxford'da Howard Florey ve Ernst Chain, ilacı arıtmayı öğrenen, bakteriyel hastalığa karşı deneyen ve 1940'a gelindiğinde bir tedavi olarak işleyebileceğini gösteren bir ekip kurdu."
+        }
+      ]
+    },
+    {
+      "lemma": "norman",
+      "gloss": "Norman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 226,
+          "end": 232,
+          "surface": "Norman",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "heatley",
+      "gloss": "Heatley",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 240,
+          "surface": "Heatley",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 138,
+          "end": 145,
+          "surface": "Heatley",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "kimin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 247,
+          "surface": "whose",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "extraction",
+      "gloss": "çıkarma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 248,
+          "end": 258,
+          "surface": "extraction",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "methods",
+      "gloss": "yöntemler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 266,
+          "surface": "methods",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "helped",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 267,
+          "end": 273,
+          "surface": "helped",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 278,
+          "surface": "make",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "production",
+      "gloss": "üretim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 279,
+          "end": 289,
+          "surface": "production",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "practical",
+      "gloss": "pratik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 290,
+          "end": 299,
+          "surface": "practical",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "belonged",
+      "gloss": "ait olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 309,
+          "surface": "belonged",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 313,
+          "end": 317,
+          "surface": "that",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "group",
+      "gloss": "grup",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 323,
+          "surface": "group",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "too",
+      "gloss": "de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 327,
+          "surface": "too",
+          "contextSentence": "Norman Heatley, whose extraction methods helped make production practical, belonged to that group too.",
+          "contextSentenceTr": "Çıkarma yöntemleriyle üretimi pratik kılmaya yardım eden Norman Heatley de o gruba aitti."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "olmadan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 329,
+          "end": 336,
+          "surface": "Without",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 337,
+          "end": 342,
+          "surface": "their",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "patient",
+      "gloss": "sabırlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 343,
+          "end": 350,
+          "surface": "patient",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "experiments",
+      "gloss": "deneyler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 362,
+          "surface": "experiments",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 380,
+          "surface": "might",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 381,
+          "end": 385,
+          "surface": "have",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "remained",
+      "gloss": "kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 386,
+          "end": 394,
+          "surface": "remained",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "footnote",
+      "gloss": "dipnot",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 397,
+          "end": 405,
+          "surface": "footnote",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "notebook",
+      "gloss": "defter",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 422,
+          "end": 430,
+          "surface": "notebook",
+          "contextSentence": "Without their patient experiments, penicillin might have remained a footnote in a laboratory notebook.",
+          "contextSentenceTr": "Onların sabırlı deneyleri olmasaydı penisilin bir laboratuvar defterinde dipnot olarak kalabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "nobel",
+      "gloss": "Nobel",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 9,
+          "end": 14,
+          "surface": "Nobel",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "prize",
+      "gloss": "Ödül",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 15,
+          "end": 20,
+          "surface": "Prize",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "physiology",
+      "gloss": "Fizyoloji",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 24,
+          "end": 34,
+          "surface": "Physiology",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 35,
+          "end": 37,
+          "surface": "or",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "medicine",
+      "gloss": "Tıp",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 38,
+          "end": 46,
+          "surface": "Medicine",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "awarded",
+      "gloss": "ödüllendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 51,
+          "end": 58,
+          "surface": "awarded",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "five",
+      "gloss": "beş",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 77,
+          "end": 81,
+          "surface": "five",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "shared",
+      "gloss": "paylaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 90,
+          "end": 96,
+          "surface": "shared",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 97,
+          "end": 99,
+          "surface": "by",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 135,
+          "end": 137,
+          "surface": "by",
+          "contextSentence": "When the Nobel Prize in Physiology or Medicine was awarded in nineteen forty five, it was shared by Fleming, Florey and Chain, but not by Heatley.",
+          "contextSentenceTr": "1945'te Nobel Fizyoloji veya Tıp Ödülü verildiğinde Fleming, Florey ve Chain tarafından paylaşıldı ama Heatley tarafından paylaşılmadı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 339,
+          "end": 341,
+          "surface": "by",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-ecekti",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 154,
+          "end": 159,
+          "surface": "would",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 36,
+          "end": 41,
+          "surface": "would",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "award",
+      "gloss": "vermek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 164,
+          "end": 169,
+          "surface": "award",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "him",
+      "gloss": "ona",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 170,
+          "end": 173,
+          "surface": "him",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "honorary",
+      "gloss": "fahri",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 177,
+          "end": 185,
+          "surface": "honorary",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "doctorate",
+      "gloss": "doktora",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 186,
+          "end": 195,
+          "surface": "doctorate",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "until",
+      "gloss": "-e kadar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 196,
+          "end": 201,
+          "surface": "until",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "ninety",
+      "gloss": "doksan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 211,
+          "end": 217,
+          "surface": "ninety",
+          "contextSentence": "Oxford would not award him an honorary doctorate until nineteen ninety.",
+          "contextSentenceTr": "Oxford ona fahri doktorayı ancak 1990'da verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "omission",
+      "gloss": "eksik bırakma",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 223,
+          "end": 231,
+          "surface": "omission",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "illustrates",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 232,
+          "end": 243,
+          "surface": "illustrates",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "general",
+      "gloss": "genel",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 246,
+          "end": 253,
+          "surface": "general",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "difficulty",
+      "gloss": "zorluk",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 254,
+          "end": 264,
+          "surface": "difficulty",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "prizes",
+      "gloss": "ödüller",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 266,
+          "end": 272,
+          "surface": "prizes",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reward",
+      "gloss": "ödüllendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 273,
+          "end": 279,
+          "surface": "reward",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "identifiable",
+      "gloss": "tanımlanabilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 280,
+          "end": 292,
+          "surface": "identifiable",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "individuals",
+      "gloss": "bireyler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 293,
+          "end": 304,
+          "surface": "individuals",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "whereas",
+      "gloss": "oysa",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 306,
+          "end": 313,
+          "surface": "whereas",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "discoveries",
+      "gloss": "keşifler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 314,
+          "end": 325,
+          "surface": "discoveries",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "produced",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 330,
+          "end": 338,
+          "surface": "produced",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "systems",
+      "gloss": "sistemler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 342,
+          "end": 349,
+          "surface": "systems",
+          "contextSentence": "The omission illustrates a general difficulty: prizes reward identifiable individuals, whereas discoveries are produced by systems.",
+          "contextSentenceTr": "Bu eksik bırakma genel bir zorluğu gösterir: ödüller tanımlanabilir bireyleri ödüllendirir, keşifler ise sistemlerce üretilir."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 2,
+          "end": 6,
+          "surface": "more",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "accurate",
+      "gloss": "doğru",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 7,
+          "end": 15,
+          "surface": "accurate",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 42,
+          "end": 51,
+          "surface": "therefore",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "replace",
+      "gloss": "yerine koymak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 52,
+          "end": 59,
+          "surface": "replace",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "lone",
+      "gloss": "yalnız",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 64,
+          "end": 68,
+          "surface": "lone",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "genius",
+      "gloss": "deha",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 69,
+          "end": 75,
+          "surface": "genius",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 76,
+          "end": 80,
+          "surface": "with",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "sequence",
+      "gloss": "dizi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 83,
+          "end": 91,
+          "surface": "sequence",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "alert",
+      "gloss": "uyanık",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 96,
+          "end": 101,
+          "surface": "alert",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "observer",
+      "gloss": "gözlemci",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 102,
+          "end": 110,
+          "surface": "observer",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "stalled",
+      "gloss": "durmuş",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 114,
+          "end": 121,
+          "surface": "stalled",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "idea",
+      "gloss": "fikir",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 122,
+          "end": 126,
+          "surface": "idea",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "willing",
+      "gloss": "istekli",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 139,
+          "end": 146,
+          "surface": "willing",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 150,
+          "end": 152,
+          "surface": "do",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "unglamorous",
+      "gloss": "gösterişsiz",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 157,
+          "end": 168,
+          "surface": "unglamorous",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "iş",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 169,
+          "end": 173,
+          "surface": "work",
+          "contextSentence": "A more accurate story of penicillin would therefore replace the lone genius with a sequence: an alert observer, a stalled idea, and a team willing to do the unglamorous work.",
+          "contextSentenceTr": "Penisilinin daha doğru bir hikâyesi bu nedenle yalnız deha yerine bir diziyi koyardı: uyanık bir gözlemci, durmuş bir fikir ve gösterişsiz işi yapmaya istekli bir ekip."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 183,
+          "end": 187,
+          "surface": "less",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "romantic",
+      "gloss": "romantik",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 188,
+          "end": 196,
+          "surface": "romantic",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 218,
+          "end": 221,
+          "surface": "one",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "best",
+      "gloss": "en iyi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 227,
+          "end": 231,
+          "surface": "best",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "explains",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 232,
+          "end": 240,
+          "surface": "explains",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 241,
+          "end": 244,
+          "surface": "how",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "curiosity",
+      "gloss": "merak konusu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 247,
+          "end": 256,
+          "surface": "curiosity",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "became",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 257,
+          "end": 263,
+          "surface": "became",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    },
+    {
+      "lemma": "medicine",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 266,
+          "end": 274,
+          "surface": "medicine",
+          "contextSentence": "It is a less romantic story, but it is the one that best explains how a curiosity became a medicine.",
+          "contextSentenceTr": "Daha az romantik bir hikâyedir ama bir merak konusunun nasıl ilaca dönüştüğünü en iyi açıklayan hikâyedir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the author's central argument?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 0,
+        "end": 91
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Fleming made no contribution to penicillin",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin Fleming'in gözlemini kabul eder."
+        },
+        {
+          "key": "o2",
+          "text": "Prizes are always shared fairly among teams",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin Heatley'nin dışarıda kaldığını söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Moulds are a reliable source of medicines",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir genelleme yapmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Penicillin came from collective effort",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin keşfin bir ekip ve dizi sonucu olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What did Fleming mainly think of the substance for about a decade?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 167,
+        "end": 232
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A tool for making cultures",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir kullanım yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "A local antiseptic",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu söyler."
+        },
+        {
+          "key": "o3",
+          "text": "A cure for every illness",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir görüş söylemez."
+        },
+        {
+          "key": "o4",
+          "text": "A harmless food ingredient",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Gıda anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “unglamorous” mean in the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 132,
+        "end": 173
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Paid for by a famous prize",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Ödül metinde geçer ama sözcüğün anlamı bu değildir."
+        },
+        {
+          "key": "o2",
+          "text": "Done by one lonely genius",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bunun tersini, ekip çalışmasını vurgular."
+        },
+        {
+          "key": "o3",
+          "text": "Ordinary and unexciting",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Unglamorous, gösterişsiz, heyecan uyandırmayan, sıradan demektir."
+        },
+        {
+          "key": "o4",
+          "text": "Dangerous and unpredictable",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Tehlike ve belirsizlik anlamı yoktur; metin işin gösterişsiz olduğunu söyler."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the passage imply about Heatley's treatment?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 147,
+        "end": 217
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "His role was recognised late",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Fahri doktorası ancak 1990'da verildi."
+        },
+        {
+          "key": "o2",
+          "text": "He refused to share in the work",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir bilgi yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "His methods were never used again",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin yöntemlerin üretimi pratik kıldığını söyler."
+        },
+        {
+          "key": "o4",
+          "text": "He received the Nobel Prize alone",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Ödül Fleming, Florey ve Chain'e verildi."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Fleming 1928'de bir stafilokok kültürünü bulaştıran küfün çevresindeki bakterileri öldürdüğünü gördü; 1929'da yayımladı, laboratuvar defterleri özensiz ve sonraki anlatımları çelişkilidir; yaklaşık on yıl boyunca maddeyi esas olarak yerel antiseptik olarak düşündü.",
+        "source": "Science History Institute, Alexander Fleming; https://sciencehistory.org/education/scientific-biographies/alexander-fleming/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Howard Florey ve Ernst Chain Oxford'daki ekipleriyle penisilini arıtıp denedi ve 1940'a gelindiğinde tedavi olarak işleyebileceğini gösterdi; Norman Heatley çıkarma yöntemleriyle katkı yaptı.",
+        "source": "PBS NewsHour, The real story behind the world's first antibiotic; https://www.pbs.org/newshour/health/the-real-story-behind-the-worlds-first-antibiotic",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "1945 Nobel Fizyoloji veya Tıp Ödülü Fleming, Chain ve Florey arasında paylaşıldı; Heatley ödüle dahil edilmedi ve Oxford ona 1990'da ilk fahri tıp doktorasını verdi.",
+        "source": "Nobel Prize Outreach, The Nobel Prize in Physiology or Medicine 1945 (Fleming, Chain, Florey); https://www.nobelprize.org/prizes/medicine/1945/summary/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

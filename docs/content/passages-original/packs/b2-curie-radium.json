@@ -1,0 +1,2597 @@
+{
+  "slug": "b2-curie-radium",
+  "level": "B2",
+  "title": "The Scientist Who Won Twice",
+  "topic": "Önemli insanlar",
+  "sortOrder": 19,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there. She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use. They married the following year and began working side by side. Her determination to learn shaped everything that followed.",
+    "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered. Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain. They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium. Their work was slow and physically demanding.",
+    "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel. After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own. To this day, she remains the only person to have won Nobel Prizes in two different scientific fields. Her life shows how curiosity and persistence can change science."
+  ],
+  "words": [
+    {
+      "lemma": "marie",
+      "gloss": "Marie",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 5,
+          "surface": "Marie",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 27,
+          "surface": "Marie",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "curie",
+      "gloss": "Curie",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 6,
+          "end": 11,
+          "surface": "Curie",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 207,
+          "end": 212,
+          "surface": "Curie",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 15,
+          "surface": "was",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 161,
+          "end": 164,
+          "surface": "was",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 394,
+          "end": 397,
+          "surface": "was",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        }
+      ]
+    },
+    {
+      "lemma": "born",
+      "gloss": "doğdu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 20,
+          "surface": "born",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 23,
+          "surface": "in",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 33,
+          "surface": "in",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 170,
+          "surface": "in",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 29,
+          "end": 31,
+          "surface": "in",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 64,
+          "surface": "in",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 112,
+          "surface": "in",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 167,
+          "end": 169,
+          "surface": "in",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 217,
+          "surface": "in",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 306,
+          "end": 308,
+          "surface": "in",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "warsaw",
+      "gloss": "Varşova",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 30,
+          "surface": "Warsaw",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "eighteen",
+      "gloss": "on sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 34,
+          "end": 42,
+          "surface": "eighteen",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 179,
+          "surface": "eighteen",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "sixty",
+      "gloss": "altmış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 43,
+          "end": 48,
+          "surface": "sixty",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "seven",
+      "gloss": "yedi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 54,
+          "surface": "seven",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 58,
+          "surface": "at",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 93,
+          "end": 95,
+          "surface": "at",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 59,
+          "end": 60,
+          "surface": "a",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 215,
+          "surface": "a",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 109,
+          "surface": "a",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 61,
+          "end": 65,
+          "surface": "time",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "ki o zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 66,
+          "end": 70,
+          "surface": "when",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "women",
+      "gloss": "kadınlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 76,
+          "surface": "women",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 82,
+          "surface": "could",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 206,
+          "surface": "could",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 83,
+          "end": 86,
+          "surface": "not",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 92,
+          "surface": "study",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 96,
+          "end": 99,
+          "surface": "the",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 274,
+          "end": 277,
+          "surface": "the",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 32,
+          "end": 35,
+          "surface": "the",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 46,
+          "end": 49,
+          "surface": "the",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 202,
+          "surface": "the",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 265,
+          "end": 268,
+          "surface": "the",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "university",
+      "gloss": "üniversite",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 100,
+          "end": 110,
+          "surface": "university",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "orada",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 116,
+          "surface": "there",
+          "contextSentence": "Marie Curie was born in Warsaw in eighteen sixty seven, at a time when women could not study at the university there.",
+          "contextSentenceTr": "Marie Curie 1867'de, kadınların orada üniversitede okuyamadığı bir dönemde Varşova'da doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 118,
+          "end": 121,
+          "surface": "She",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 192,
+          "end": 195,
+          "surface": "she",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 246,
+          "surface": "she",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 133,
+          "surface": "she",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 189,
+          "surface": "she",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 253,
+          "end": 256,
+          "surface": "she",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "moved",
+      "gloss": "taşındı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 127,
+          "surface": "moved",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 130,
+          "surface": "to",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 240,
+          "end": 242,
+          "surface": "To",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "paris",
+      "gloss": "Paris",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 136,
+          "surface": "Paris",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 139,
+          "surface": "to",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "continue",
+      "gloss": "sürdürmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 140,
+          "end": 148,
+          "surface": "continue",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 149,
+          "end": 152,
+          "surface": "her",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 325,
+          "end": 328,
+          "surface": "Her",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 352,
+          "end": 355,
+          "surface": "her",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 234,
+          "surface": "her",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 342,
+          "end": 345,
+          "surface": "Her",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "education",
+      "gloss": "eğitim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 153,
+          "end": 162,
+          "surface": "education",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 167,
+          "surface": "and",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 296,
+          "surface": "and",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 285,
+          "surface": "and",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 371,
+          "end": 374,
+          "surface": "and",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 403,
+          "end": 406,
+          "surface": "and",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 31,
+          "surface": "and",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 166,
+          "surface": "and",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 371,
+          "end": 374,
+          "surface": "and",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "ninety",
+      "gloss": "doksan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 186,
+          "surface": "ninety",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "four",
+      "gloss": "dört",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 191,
+          "surface": "four",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "met",
+      "gloss": "tanıştı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 196,
+          "end": 199,
+          "surface": "met",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "pierre",
+      "gloss": "Pierre",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 206,
+          "surface": "Pierre",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 32,
+          "end": 38,
+          "surface": "Pierre",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "physicist",
+      "gloss": "fizikçi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 225,
+          "surface": "physicist",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "kimin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 226,
+          "end": 231,
+          "surface": "whose",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "laboratory",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 242,
+          "surface": "laboratory",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "began",
+      "gloss": "başladı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 252,
+          "surface": "began",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 302,
+          "surface": "began",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 253,
+          "end": 255,
+          "surface": "to",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 343,
+          "end": 345,
+          "surface": "to",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 281,
+          "end": 283,
+          "surface": "to",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 259,
+          "surface": "use",
+          "contextSentence": "She moved to Paris to continue her education, and in eighteen ninety four she met Pierre Curie, a physicist whose laboratory she began to use.",
+          "contextSentenceTr": "Eğitimini sürdürmek için Paris'e taşındı ve 1894'te laboratuvarını kullanmaya başladığı fizikçi Pierre Curie ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 261,
+          "end": 265,
+          "surface": "They",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 144,
+          "surface": "they",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 216,
+          "end": 220,
+          "surface": "They",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 290,
+          "surface": "they",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "married",
+      "gloss": "evlendi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 266,
+          "end": 273,
+          "surface": "married",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "following",
+      "gloss": "sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 287,
+          "surface": "following",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "year",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 288,
+          "end": 292,
+          "surface": "year",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "working",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 303,
+          "end": 310,
+          "surface": "working",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "side",
+      "gloss": "yan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 311,
+          "end": 315,
+          "surface": "side",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "yana",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 316,
+          "end": 318,
+          "surface": "by",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "side",
+      "gloss": "yana",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 323,
+          "surface": "side",
+          "contextSentence": "They married the following year and began working side by side.",
+          "contextSentenceTr": "Ertesi yıl evlendiler ve yan yana çalışmaya başladılar."
+        }
+      ]
+    },
+    {
+      "lemma": "determination",
+      "gloss": "kararlılık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 329,
+          "end": 342,
+          "surface": "determination",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "learn",
+      "gloss": "öğrenmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 346,
+          "end": 351,
+          "surface": "learn",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "shaped",
+      "gloss": "şekillendirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 352,
+          "end": 358,
+          "surface": "shaped",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "everything",
+      "gloss": "her şey",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 359,
+          "end": 369,
+          "surface": "everything",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 374,
+          "surface": "that",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 62,
+          "surface": "that",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 157,
+          "surface": "that",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 235,
+          "surface": "that",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "followed",
+      "gloss": "izledi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 375,
+          "end": 383,
+          "surface": "followed",
+          "contextSentence": "Her determination to learn shaped everything that followed.",
+          "contextSentenceTr": "Öğrenme kararlılığı, ardından gelen her şeyi şekillendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "couple",
+      "gloss": "çift",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 10,
+          "surface": "couple",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "became",
+      "gloss": "oldu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 11,
+          "end": 17,
+          "surface": "became",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "interested",
+      "gloss": "ilgili",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 28,
+          "surface": "interested",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "spontaneous",
+      "gloss": "kendiliğinden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 36,
+          "end": 47,
+          "surface": "spontaneous",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "radiation",
+      "gloss": "ışıma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 48,
+          "end": 57,
+          "surface": "radiation",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "henri",
+      "gloss": "Henri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 68,
+          "surface": "Henri",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "becquerel",
+      "gloss": "Becquerel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 69,
+          "end": 78,
+          "surface": "Becquerel",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 87,
+          "surface": "Becquerel",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 82,
+          "surface": "had",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "discovered",
+      "gloss": "keşfetmişti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 93,
+          "surface": "discovered",
+          "contextSentence": "The couple became interested in the spontaneous radiation that Henri Becquerel had discovered.",
+          "contextSentenceTr": "Çift, Henri Becquerel'in keşfettiği kendiliğinden ışımayla ilgilenmeye başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "working",
+      "gloss": "çalışarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 95,
+          "end": 102,
+          "surface": "Working",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 107,
+          "surface": "with",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 77,
+          "surface": "with",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "heavy",
+      "gloss": "ağır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 110,
+          "end": 115,
+          "surface": "heavy",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "ore",
+      "gloss": "cevher",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 119,
+          "surface": "ore",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "denen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 120,
+          "end": 126,
+          "surface": "called",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "pitchblende",
+      "gloss": "uranit",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 138,
+          "surface": "pitchblende",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "noticed",
+      "gloss": "fark etti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 145,
+          "end": 152,
+          "surface": "noticed",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 158,
+          "end": 160,
+          "surface": "it",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 238,
+          "surface": "it",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 165,
+          "end": 169,
+          "surface": "more",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "radioactive",
+      "gloss": "radyoaktif",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 170,
+          "end": 181,
+          "surface": "radioactive",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 258,
+          "end": 269,
+          "surface": "radioactive",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 182,
+          "end": 186,
+          "surface": "than",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "uranium",
+      "gloss": "uranyum",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 194,
+          "surface": "uranium",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "tek başına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 195,
+          "end": 200,
+          "surface": "alone",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "explain",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 214,
+          "surface": "explain",
+          "contextSentence": "Working with a heavy ore called pitchblende, they noticed that it was more radioactive than uranium alone could explain.",
+          "contextSentenceTr": "Uranit adlı ağır bir cevherle çalışırken onun, uranyumun tek başına açıklayabileceğinden daha radyoaktif olduğunu fark ettiler."
+        }
+      ]
+    },
+    {
+      "lemma": "concluded",
+      "gloss": "sonuca vardı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 230,
+          "surface": "concluded",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 243,
+          "surface": "must",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "contain",
+      "gloss": "içermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 251,
+          "surface": "contain",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 257,
+          "surface": "other",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "substances",
+      "gloss": "maddeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 280,
+          "surface": "substances",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "eventually",
+      "gloss": "sonunda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 291,
+          "end": 301,
+          "surface": "eventually",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "extracted",
+      "gloss": "çıkarmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 302,
+          "end": 311,
+          "surface": "extracted",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 315,
+          "surface": "two",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 312,
+          "surface": "two",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 316,
+          "end": 319,
+          "surface": "new",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "elements",
+      "gloss": "elementler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 320,
+          "end": 328,
+          "surface": "elements",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "polonium",
+      "gloss": "polonyum",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 330,
+          "end": 338,
+          "surface": "polonium",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "named",
+      "gloss": "adlandırılan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 340,
+          "end": 345,
+          "surface": "named",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "-nin adına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 346,
+          "end": 351,
+          "surface": "after",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "native",
+      "gloss": "doğduğu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 356,
+          "end": 362,
+          "surface": "native",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "poland",
+      "gloss": "Polonya",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 363,
+          "end": 369,
+          "surface": "Poland",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "radium",
+      "gloss": "radyum",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 375,
+          "end": 381,
+          "surface": "radium",
+          "contextSentence": "They concluded that it must contain other radioactive substances, and they eventually extracted two new elements: polonium, named after her native Poland, and radium.",
+          "contextSentenceTr": "Başka radyoaktif maddeler içermesi gerektiği sonucuna vardılar ve sonunda iki yeni element ayırdılar: kendi doğduğu Polonya'nın adını taşıyan polonyum ve radyum."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 383,
+          "end": 388,
+          "surface": "Their",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 389,
+          "end": 393,
+          "surface": "work",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        }
+      ]
+    },
+    {
+      "lemma": "slow",
+      "gloss": "yavaş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 398,
+          "end": 402,
+          "surface": "slow",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        }
+      ]
+    },
+    {
+      "lemma": "physically",
+      "gloss": "fiziksel olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 407,
+          "end": 417,
+          "surface": "physically",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        }
+      ]
+    },
+    {
+      "lemma": "demanding",
+      "gloss": "zorlu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 418,
+          "end": 427,
+          "surface": "demanding",
+          "contextSentence": "Their work was slow and physically demanding.",
+          "contextSentenceTr": "Çalışmaları yavaş ve fiziksel olarak zorluydu."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 11,
+          "surface": "nineteen",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 121,
+          "surface": "nineteen",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 170,
+          "end": 178,
+          "surface": "nineteen",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "oh",
+      "gloss": "sıfır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 14,
+          "surface": "oh",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 122,
+          "end": 124,
+          "surface": "oh",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 15,
+          "end": 20,
+          "surface": "three",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "shared",
+      "gloss": "paylaştı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 45,
+          "surface": "shared",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "nobel",
+      "gloss": "Nobel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 55,
+          "surface": "Nobel",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 208,
+          "surface": "Nobel",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 293,
+          "end": 298,
+          "surface": "Nobel",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "prize",
+      "gloss": "Ödül",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 56,
+          "end": 61,
+          "surface": "Prize",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 214,
+          "surface": "Prize",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "physics",
+      "gloss": "Fizik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 72,
+          "surface": "Physics",
+          "contextSentence": "In nineteen oh three, Marie and Pierre shared the Nobel Prize in Physics with Becquerel.",
+          "contextSentenceTr": "1903'te Marie ve Pierre, Nobel Fizik Ödülü'nü Becquerel ile paylaştı."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 89,
+          "end": 94,
+          "surface": "After",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "pierre's",
+      "gloss": "Pierre'in",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 103,
+          "surface": "Pierre's",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "death",
+      "gloss": "ölüm",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 109,
+          "surface": "death",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "six",
+      "gloss": "altı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 128,
+          "surface": "six",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "took",
+      "gloss": "devralmak (take over)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 138,
+          "surface": "took",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "over",
+      "gloss": "devralmak (take over)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 143,
+          "surface": "over",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 144,
+          "end": 147,
+          "surface": "his",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "professorship",
+      "gloss": "profesörlük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 148,
+          "end": 161,
+          "surface": "professorship",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "eleven",
+      "gloss": "on bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 185,
+          "surface": "eleven",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "received",
+      "gloss": "aldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 190,
+          "end": 198,
+          "surface": "received",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "chemistry",
+      "gloss": "Kimya",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 227,
+          "surface": "Chemistry",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "kendi başına (on one's own kalıbı)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 230,
+          "surface": "on",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi başına (on one's own kalıbı)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 235,
+          "end": 238,
+          "surface": "own",
+          "contextSentence": "After Pierre's death in nineteen oh six, she took over his professorship, and in nineteen eleven she received the Nobel Prize in Chemistry on her own.",
+          "contextSentenceTr": "Pierre 1906'da ölünce profesörlüğünü devraldı ve 1911'de Nobel Kimya Ödülü'nü tek başına aldı."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 243,
+          "end": 247,
+          "surface": "this",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "day",
+      "gloss": "gün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 248,
+          "end": 251,
+          "surface": "day",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 264,
+          "surface": "remains",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 269,
+          "end": 273,
+          "surface": "only",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 280,
+          "surface": "person",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 288,
+          "surface": "have",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "won",
+      "gloss": "kazanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 289,
+          "end": 292,
+          "surface": "won",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "prizes",
+      "gloss": "Ödüller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 305,
+          "surface": "Prizes",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 313,
+          "end": 322,
+          "surface": "different",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "scientific",
+      "gloss": "bilimsel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 333,
+          "surface": "scientific",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "fields",
+      "gloss": "alanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 334,
+          "end": 340,
+          "surface": "fields",
+          "contextSentence": "To this day, she remains the only person to have won Nobel Prizes in two different scientific fields.",
+          "contextSentenceTr": "Bugüne dek iki farklı bilim alanında Nobel Ödülü kazanan tek kişi olmaya devam ediyor."
+        }
+      ]
+    },
+    {
+      "lemma": "life",
+      "gloss": "hayat",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 346,
+          "end": 350,
+          "surface": "life",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "shows",
+      "gloss": "gösterir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 356,
+          "surface": "shows",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 357,
+          "end": 360,
+          "surface": "how",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "curiosity",
+      "gloss": "merak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 361,
+          "end": 370,
+          "surface": "curiosity",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "persistence",
+      "gloss": "azim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 386,
+          "surface": "persistence",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 387,
+          "end": 390,
+          "surface": "can",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değiştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 391,
+          "end": 397,
+          "surface": "change",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "science",
+      "gloss": "bilim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 398,
+          "end": 405,
+          "surface": "science",
+          "contextSentence": "Her life shows how curiosity and persistence can change science.",
+          "contextSentenceTr": "Hayatı, merak ve azmin bilimi nasıl değiştirebileceğini gösterir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 253,
+        "end": 340
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Marie Curie's work and discoveries",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin Curie'nin çalışmalarını ve keşiflerini anlatır."
+        },
+        {
+          "key": "o2",
+          "text": "The politics of awarding Nobel Prizes",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Ödül siyaseti anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "How uranium was first mined in Poland",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Madencilik anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Pierre Curie's career as a lone physicist",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Pierre tek başına değil, Marie ile çalışır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why did the Curies think pitchblende contained other substances?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 158,
+        "end": 214
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It was found only in the city of Paris",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bulunduğu yer söylenmez."
+        },
+        {
+          "key": "o2",
+          "text": "It had a strong smell in the laboratory",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Koku anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "More radioactive than uranium",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu açıkça söyler."
+        },
+        {
+          "key": "o4",
+          "text": "It was much heavier than any known metal",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Ağır olduğu geçer ama gerekçe bu değildir."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “extracted” mean in the second paragraph?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 286,
+        "end": 328
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Carried carefully to another city",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Taşıma anlamı yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "Separated and took out",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Extract, bir şeyi ayırıp çıkarmak demektir."
+        },
+        {
+          "key": "o3",
+          "text": "Wrote a long report about",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Rapor yazmak değildir."
+        },
+        {
+          "key": "o4",
+          "text": "Added to a mixture of acids",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Eklemenin tersidir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the passage suggest about Marie's career?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 89,
+        "end": 161
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "She stopped research after her husband died.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Devam etti, ikinci ödülünü aldı."
+        },
+        {
+          "key": "o2",
+          "text": "She left science to teach at school.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Okul öğretmenliği anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "She won both prizes together with Pierre.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Kimya ödülünü tek başına aldı."
+        },
+        {
+          "key": "o4",
+          "text": "She continued important work after loss.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Pierre ölünce çalışmayı sürdürdü, profesörlüğü devraldı."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Marie Curie 1867'de Varşova'da doğdu; Paris'e taşındı, 1894'te Pierre Curie ile tanıştı, ertesi yıl evlendiler.",
+        "source": "Nobel Prize Outreach, Marie Curie - Biographical / Physics 1903; https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Curie'ler uranyumdan daha radyoaktif bir cevherden polonyum (Polonya'nın adını taşır) ve radyum elementlerini ayırdı.",
+        "source": "Nobel Prize Outreach, Marie Curie - Biographical / Physics 1903; https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "1903 Nobel Fizik Ödülü Marie, Pierre Curie ve Henri Becquerel arasında paylaşıldı; Pierre 1906'da öldü, Marie profesörlüğünü devraldı; 1911 Nobel Kimya Ödülü'nü tek başına aldı; iki farklı bilim alanında Nobel kazanan tek kişidir.",
+        "source": "Nobel Prize Outreach, Marie Curie - Facts / Chemistry 1911; https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

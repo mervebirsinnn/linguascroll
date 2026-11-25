@@ -1,0 +1,3099 @@
+{
+  "slug": "b2-frida-kahlo",
+  "level": "B2",
+  "title": "A Life Painted in Self-Portraits",
+  "topic": "Sanat",
+  "sortOrder": 41,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it. As a child she survived polio, which left one leg shorter than the other. At eighteen, she was badly injured when the bus she was riding in collided with a streetcar. During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+    "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father. In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art. She explained that she painted self-portraits because she was often alone and because she was the person she knew best. She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later. Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+    "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital. The museum describes her as a reference that goes beyond the myth she created around herself. Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured."
+  ],
+  "words": [
+    {
+      "lemma": "frida",
+      "gloss": "Frida",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 5,
+          "surface": "Frida",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 83,
+          "surface": "Frida",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "kahlo",
+      "gloss": "Kahlo",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 6,
+          "end": 11,
+          "surface": "Kahlo",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 84,
+          "end": 89,
+          "surface": "Kahlo",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 15,
+          "surface": "was",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 223,
+          "end": 226,
+          "surface": "was",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 261,
+          "surface": "was",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 88,
+          "surface": "was",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 311,
+          "surface": "was",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 340,
+          "end": 343,
+          "surface": "was",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 494,
+          "end": 497,
+          "surface": "was",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 46,
+          "end": 49,
+          "surface": "was",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "born",
+      "gloss": "doğdu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 20,
+          "surface": "born",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 23,
+          "surface": "in",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 38,
+          "surface": "in",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 47,
+          "surface": "in",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 334,
+          "surface": "in",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 159,
+          "surface": "In",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 408,
+          "end": 410,
+          "surface": "in",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 430,
+          "end": 432,
+          "surface": "in",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 11,
+          "surface": "in",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 24,
+          "surface": "in",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 136,
+          "surface": "in",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "mexico",
+      "gloss": "Meksiko",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 30,
+          "surface": "Mexico",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "city",
+      "gloss": "Şehri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 35,
+          "surface": "City",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 48,
+          "end": 49,
+          "surface": "a",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 69,
+          "surface": "a",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 135,
+          "end": 136,
+          "surface": "a",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 286,
+          "end": 287,
+          "surface": "a",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 366,
+          "end": 367,
+          "surface": "a",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 456,
+          "end": 457,
+          "surface": "a",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 498,
+          "end": 499,
+          "surface": "a",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 187,
+          "surface": "a",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "house",
+      "gloss": "ev",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 55,
+          "surface": "house",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 263,
+          "end": 268,
+          "surface": "house",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 60,
+          "surface": "that",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 395,
+          "end": 399,
+          "surface": "that",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 268,
+          "surface": "that",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 202,
+          "surface": "that",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 61,
+          "end": 63,
+          "surface": "is",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "now",
+      "gloss": "şimdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 64,
+          "end": 67,
+          "surface": "now",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 98,
+          "end": 101,
+          "surface": "now",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "museum",
+      "gloss": "müze",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 70,
+          "end": 76,
+          "surface": "museum",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 168,
+          "surface": "museum",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "dedicated",
+      "gloss": "adanmış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 86,
+          "surface": "dedicated",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 89,
+          "surface": "to",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 127,
+          "surface": "to",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 59,
+          "surface": "to",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 93,
+          "surface": "her",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 416,
+          "end": 419,
+          "surface": "her",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "Her",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 59,
+          "end": 62,
+          "surface": "her",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 145,
+          "end": 148,
+          "surface": "her",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 163,
+          "surface": "her",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 180,
+          "surface": "her",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 559,
+          "end": 562,
+          "surface": "her",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 33,
+          "surface": "her",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 182,
+          "surface": "her",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 273,
+          "surface": "her",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "life",
+      "gloss": "yaşam",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 98,
+          "surface": "life",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 100,
+          "end": 103,
+          "surface": "and",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 69,
+          "end": 72,
+          "surface": "and",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 176,
+          "surface": "and",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 324,
+          "end": 327,
+          "surface": "and",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 438,
+          "end": 441,
+          "surface": "and",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 538,
+          "end": 541,
+          "surface": "and",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 21,
+          "surface": "and",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 292,
+          "end": 295,
+          "surface": "and",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 340,
+          "end": 343,
+          "surface": "and",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 107,
+          "surface": "she",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 146,
+          "surface": "she",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 222,
+          "surface": "she",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 257,
+          "surface": "she",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 322,
+          "end": 325,
+          "surface": "she",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 340,
+          "end": 343,
+          "surface": "she",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 400,
+          "end": 403,
+          "surface": "she",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 131,
+          "surface": "she",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 198,
+          "end": 201,
+          "surface": "she",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 253,
+          "surface": "She",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 272,
+          "surface": "she",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 307,
+          "surface": "she",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 336,
+          "end": 339,
+          "surface": "she",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 358,
+          "surface": "she",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 370,
+          "end": 373,
+          "surface": "She",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 490,
+          "end": 493,
+          "surface": "she",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 516,
+          "end": 519,
+          "surface": "she",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 547,
+          "end": 550,
+          "surface": "she",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "She",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 227,
+          "surface": "she",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 360,
+          "end": 363,
+          "surface": "she",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "always",
+      "gloss": "her zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 114,
+          "surface": "always",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "came",
+      "gloss": "geldi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 119,
+          "surface": "came",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "back",
+      "gloss": "geri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 124,
+          "surface": "back",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 130,
+          "surface": "it",
+          "contextSentence": "Frida Kahlo was born in Mexico City in 1907, in a house that is now a museum dedicated to her life, and she always came back to it.",
+          "contextSentenceTr": "Frida Kahlo 1907'de Mexico City'de, bugün yaşamına adanmış bir müze olan bir evde doğdu ve hep oraya geri döndü."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 132,
+          "end": 134,
+          "surface": "As",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 71,
+          "end": 73,
+          "surface": "as",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 183,
+          "end": 185,
+          "surface": "as",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "child",
+      "gloss": "çocuk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 142,
+          "surface": "child",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "survived",
+      "gloss": "atlattı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 147,
+          "end": 155,
+          "surface": "survived",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "polio",
+      "gloss": "çocuk felci",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 161,
+          "surface": "polio",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 163,
+          "end": 168,
+          "surface": "which",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "left",
+      "gloss": "bıraktı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 169,
+          "end": 173,
+          "surface": "left",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 174,
+          "end": 177,
+          "surface": "one",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 105,
+          "surface": "one",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "leg",
+      "gloss": "bacak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 178,
+          "end": 181,
+          "surface": "leg",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "shorter",
+      "gloss": "daha kısa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 182,
+          "end": 189,
+          "surface": "shorter",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 190,
+          "end": 194,
+          "surface": "than",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 198,
+          "surface": "the",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 246,
+          "end": 249,
+          "surface": "the",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 306,
+          "end": 309,
+          "surface": "the",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 29,
+          "end": 32,
+          "surface": "the",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 106,
+          "surface": "the",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 219,
+          "end": 222,
+          "surface": "the",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 344,
+          "end": 347,
+          "surface": "the",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 382,
+          "end": 385,
+          "surface": "the",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 529,
+          "end": 532,
+          "surface": "the",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 60,
+          "end": 63,
+          "surface": "the",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 77,
+          "surface": "the",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 109,
+          "end": 112,
+          "surface": "the",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 140,
+          "surface": "the",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 161,
+          "surface": "The",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 218,
+          "surface": "the",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 262,
+          "surface": "the",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 317,
+          "end": 320,
+          "surface": "the",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğeri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 199,
+          "end": 204,
+          "surface": "other",
+          "contextSentence": "As a child she survived polio, which left one leg shorter than the other.",
+          "contextSentenceTr": "Çocukken çocuk felcini atlattı; hastalık bir bacağını diğerinden daha kısa bıraktı."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 208,
+          "surface": "At",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "eighteen",
+      "gloss": "on sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 209,
+          "end": 217,
+          "surface": "eighteen",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "badly",
+      "gloss": "ağır şekilde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 232,
+          "surface": "badly",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "injured",
+      "gloss": "yaralandı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 240,
+          "surface": "injured",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 245,
+          "surface": "when",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "bus",
+      "gloss": "otobüs",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 250,
+          "end": 253,
+          "surface": "bus",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "riding",
+      "gloss": "biniyordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 262,
+          "end": 268,
+          "surface": "riding",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 269,
+          "end": 271,
+          "surface": "in",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "collided",
+      "gloss": "çarpıştı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 272,
+          "end": 280,
+          "surface": "collided",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 281,
+          "end": 285,
+          "surface": "with",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "streetcar",
+      "gloss": "tramvay",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 288,
+          "end": 297,
+          "surface": "streetcar",
+          "contextSentence": "At eighteen, she was badly injured when the bus she was riding in collided with a streetcar.",
+          "contextSentenceTr": "On sekiz yaşında, bindiği otobüs bir tramvayla çarpıştığında ağır yaralandı."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "sırasında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 299,
+          "end": 305,
+          "surface": "During",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 314,
+          "surface": "long",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "months",
+      "gloss": "aylar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 315,
+          "end": 321,
+          "surface": "months",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "spent",
+      "gloss": "geçirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 326,
+          "end": 331,
+          "surface": "spent",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "bed",
+      "gloss": "yatak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 338,
+          "surface": "bed",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "began",
+      "gloss": "başladı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 344,
+          "end": 349,
+          "surface": "began",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meye",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 350,
+          "end": 352,
+          "surface": "to",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 210,
+          "surface": "to",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "paint",
+      "gloss": "resim yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 353,
+          "end": 358,
+          "surface": "paint",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "using",
+      "gloss": "kullanarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 360,
+          "end": 365,
+          "surface": "using",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "mirror",
+      "gloss": "ayna",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 368,
+          "end": 374,
+          "surface": "mirror",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "placed",
+      "gloss": "yerleştirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 375,
+          "end": 381,
+          "surface": "placed",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "above",
+      "gloss": "üstüne",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 382,
+          "end": 387,
+          "surface": "above",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun (ona)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 388,
+          "end": 391,
+          "surface": "her",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "böylece",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 392,
+          "end": 394,
+          "surface": "so",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebildi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 404,
+          "end": 409,
+          "surface": "could",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "incelemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 410,
+          "end": 415,
+          "surface": "study",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 420,
+          "end": 423,
+          "surface": "own",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 563,
+          "end": 566,
+          "surface": "own",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "face",
+      "gloss": "yüz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 428,
+          "surface": "face",
+          "contextSentence": "During the long months she spent in bed, she began to paint, using a mirror placed above her so that she could study her own face.",
+          "contextSentenceTr": "Yatakta geçirdiği uzun aylar boyunca resim yapmaya başladı; kendi yüzünü inceleyebilmek için üstüne yerleştirilmiş bir ayna kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "self",
+      "gloss": "öz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 8,
+          "surface": "self",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 285,
+          "surface": "self",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "portraits",
+      "gloss": "portreler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 9,
+          "end": 18,
+          "surface": "portraits",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 295,
+          "surface": "portraits",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 22,
+          "surface": "are",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "among",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 28,
+          "surface": "among",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 37,
+          "surface": "most",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 117,
+          "surface": "most",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "outstanding",
+      "gloss": "dikkat çekici",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 38,
+          "end": 49,
+          "surface": "outstanding",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "parts",
+      "gloss": "bölümler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 55,
+          "surface": "parts",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 56,
+          "end": 58,
+          "surface": "of",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 231,
+          "surface": "of",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 106,
+          "end": 108,
+          "surface": "of",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "eser",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 67,
+          "surface": "work",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 78,
+          "surface": "their",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "style",
+      "gloss": "üslup",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 84,
+          "surface": "style",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "influenced",
+      "gloss": "etkilendi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 99,
+          "surface": "influenced",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 102,
+          "surface": "by",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "portrait",
+      "gloss": "portre",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 115,
+          "surface": "portrait",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "photography",
+      "gloss": "fotoğrafçılık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 127,
+          "surface": "photography",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrendi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 139,
+          "surface": "learned",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 144,
+          "surface": "from",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "father",
+      "gloss": "baba",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 149,
+          "end": 155,
+          "surface": "father",
+          "contextSentence": "Her self-portraits are among the most outstanding parts of her work, and their style was influenced by the portrait photography she learned from her father.",
+          "contextSentenceTr": "Otoportreleri eserinin en dikkat çekici bölümleri arasındadır ve üslupları, babasından öğrendiği portre fotoğrafçılığından etkilenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "clothing",
+      "gloss": "giysi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 172,
+          "surface": "clothing",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "paintings",
+      "gloss": "resimler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 190,
+          "surface": "paintings",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "alike",
+      "gloss": "aynı şekilde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 196,
+          "surface": "alike",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "tried",
+      "gloss": "çalıştı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 202,
+          "end": 207,
+          "surface": "tried",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "reclaim",
+      "gloss": "yeniden sahiplenmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 211,
+          "end": 218,
+          "surface": "reclaim",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "roots",
+      "gloss": "kökler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 223,
+          "end": 228,
+          "surface": "roots",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "mexican",
+      "gloss": "Meksika",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 239,
+          "surface": "Mexican",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 148,
+          "surface": "Mexican",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "folk",
+      "gloss": "halk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 244,
+          "surface": "folk",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "art",
+      "gloss": "sanatı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 248,
+          "surface": "art",
+          "contextSentence": "In her clothing and her paintings alike, she tried to reclaim the roots of Mexican folk art.",
+          "contextSentenceTr": "Hem giysilerinde hem resimlerinde Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "explained",
+      "gloss": "açıkladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 263,
+          "surface": "explained",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "painted",
+      "gloss": "resmetti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 273,
+          "end": 280,
+          "surface": "painted",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 551,
+          "end": 558,
+          "surface": "painted",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 296,
+          "end": 303,
+          "surface": "because",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 335,
+          "surface": "because",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 317,
+          "surface": "often",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "yalnız",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 323,
+          "surface": "alone",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 354,
+          "surface": "person",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "knew",
+      "gloss": "tanıdığı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 359,
+          "end": 363,
+          "surface": "knew",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "best",
+      "gloss": "en iyi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 364,
+          "end": 368,
+          "surface": "best",
+          "contextSentence": "She explained that she painted self-portraits because she was often alone and because she was the person she knew best.",
+          "contextSentenceTr": "Otoportreler yaptığını, çünkü sık sık yalnız olduğunu ve en iyi tanıdığı kişinin kendisi olduğunu açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "married",
+      "gloss": "evlendi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 374,
+          "end": 381,
+          "surface": "married",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "muralist",
+      "gloss": "duvar resmi sanatçısı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 386,
+          "end": 394,
+          "surface": "muralist",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "diego",
+      "gloss": "Diego",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 395,
+          "end": 400,
+          "surface": "Diego",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "rivera",
+      "gloss": "Rivera",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 401,
+          "end": 407,
+          "surface": "Rivera",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "divorced",
+      "gloss": "boşandı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 417,
+          "end": 425,
+          "surface": "divorced",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "him",
+      "gloss": "ondan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 426,
+          "end": 429,
+          "surface": "him",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "remarried",
+      "gloss": "yeniden evlendi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 442,
+          "end": 451,
+          "surface": "remarried",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "him",
+      "gloss": "onunla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 452,
+          "end": 455,
+          "surface": "him",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "year",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 458,
+          "end": 462,
+          "surface": "year",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 463,
+          "end": 468,
+          "surface": "later",
+          "contextSentence": "She married the muralist Diego Rivera in 1929, divorced him in 1939 and remarried him a year later.",
+          "contextSentenceTr": "1929'da duvar resmi sanatçısı Diego Rivera ile evlendi, 1939'da ondan boşandı ve bir yıl sonra onunla yeniden evlendi."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 470,
+          "end": 474,
+          "surface": "Some",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 475,
+          "end": 481,
+          "surface": "people",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "thought",
+      "gloss": "düşündü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 482,
+          "end": 489,
+          "surface": "thought",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "surrealist",
+      "gloss": "gerçeküstücü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 500,
+          "end": 510,
+          "surface": "surrealist",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 512,
+          "end": 515,
+          "surface": "but",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "rejected",
+      "gloss": "reddetti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 520,
+          "end": 528,
+          "surface": "rejected",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "term",
+      "gloss": "terim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 533,
+          "end": 537,
+          "surface": "term",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "said",
+      "gloss": "söyledi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 542,
+          "end": 546,
+          "surface": "said",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "reality",
+      "gloss": "gerçeklik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 567,
+          "end": 574,
+          "surface": "reality",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 576,
+          "end": 579,
+          "surface": "not",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "dreams",
+      "gloss": "rüyalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 580,
+          "end": 586,
+          "surface": "dreams",
+          "contextSentence": "Some people thought she was a surrealist, but she rejected the term and said she painted her own reality, not dreams.",
+          "contextSentenceTr": "Bazı insanlar onun gerçeküstücü olduğunu düşündü, ama o bu terimi reddetti ve rüyalarını değil, kendi gerçekliğini resmettiğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "died",
+      "gloss": "öldü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 8,
+          "surface": "died",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "family",
+      "gloss": "aile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 40,
+          "surface": "family",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "home",
+      "gloss": "ev",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 41,
+          "end": 45,
+          "surface": "home",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "opened",
+      "gloss": "açıldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 56,
+          "surface": "opened",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "halk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 70,
+          "surface": "public",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "museum",
+      "gloss": "Müzesi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 90,
+          "end": 96,
+          "surface": "Museum",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "popular",
+      "gloss": "popüler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 125,
+          "surface": "popular",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "museums",
+      "gloss": "müzeler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 126,
+          "end": 133,
+          "surface": "museums",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "capital",
+      "gloss": "başkent",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 156,
+          "surface": "capital",
+          "contextSentence": "She died in 1954, and in 1958 her family home was opened to the public as the Frida Kahlo Museum, now one of the most popular museums in the Mexican capital.",
+          "contextSentenceTr": "1954'te öldü; 1958'de aile evi Frida Kahlo Müzesi olarak halka açıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir."
+        }
+      ]
+    },
+    {
+      "lemma": "describes",
+      "gloss": "tanımlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 178,
+          "surface": "describes",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "reference",
+      "gloss": "referans",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 197,
+          "surface": "reference",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "goes",
+      "gloss": "gider",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 207,
+          "surface": "goes",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "beyond",
+      "gloss": "ötesine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 208,
+          "end": 214,
+          "surface": "beyond",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "myth",
+      "gloss": "efsane",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 223,
+          "surface": "myth",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "created",
+      "gloss": "yarattı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 235,
+          "surface": "created",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresinde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 236,
+          "end": 242,
+          "surface": "around",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "herself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 243,
+          "end": 250,
+          "surface": "herself",
+          "contextSentence": "The museum describes her as a reference that goes beyond the myth she created around herself.",
+          "contextSentenceTr": "Müze onu, kendi çevresinde yarattığı efsanenin ötesine geçen bir referans olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 252,
+          "end": 258,
+          "surface": "Inside",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "crutches",
+      "gloss": "koltuk değnekleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 282,
+          "surface": "crutches",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "corsets",
+      "gloss": "korseler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 291,
+          "surface": "corsets",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "medicines",
+      "gloss": "ilaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 305,
+          "surface": "medicines",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 306,
+          "end": 311,
+          "surface": "still",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "show",
+      "gloss": "gösterir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 316,
+          "surface": "show",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "physical",
+      "gloss": "fiziksel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 321,
+          "end": 329,
+          "surface": "physical",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "suffering",
+      "gloss": "acı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 339,
+          "surface": "suffering",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 344,
+          "end": 348,
+          "surface": "many",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "operations",
+      "gloss": "ameliyat",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 349,
+          "end": 359,
+          "surface": "operations",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "endured",
+      "gloss": "katlandı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 364,
+          "end": 371,
+          "surface": "endured",
+          "contextSentence": "Inside the house, her crutches, corsets and medicines still show the physical suffering and many operations she endured.",
+          "contextSentenceTr": "Evin içinde koltuk değnekleri, korseleri ve ilaçları, katlandığı fiziksel acıyı ve birçok ameliyatı hâlâ gösteriyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 269,
+        "end": 323
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How Diego Rivera taught Kahlo to paint murals",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Rivera yalnızca eşi olarak anılır; ona resim öğrettiği söylenmez."
+        },
+        {
+          "key": "o2",
+          "text": "Why Kahlo called herself a surrealist",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Kahlo gerçeküstücü terimini reddetti."
+        },
+        {
+          "key": "o3",
+          "text": "The history of Mexico City's museums",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Müze yalnızca doğduğu ev için tek cümlede geçer."
+        },
+        {
+          "key": "o4",
+          "text": "How Kahlo turned her experiences into art",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin hastalık ve kazanın ardından otoportreler yapan Kahlo'nun yaşamını ve mirasını anlatır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "How did Kahlo study her own face while recovering?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 360,
+        "end": 428
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "She painted from memory in a studio",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metne göre o dönemde yataktaydı ve ayna kullandı."
+        },
+        {
+          "key": "o2",
+          "text": "She used a mirror placed above her bed",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin yatakta yatarken üstüne yerleştirilmiş bir ayna kullandığını söyler."
+        },
+        {
+          "key": "o3",
+          "text": "She asked Diego Rivera to describe it",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir bilgi yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "She copied photographs taken by friends",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Fotoğraflardan söz edilmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “rejected” mean in paragraph 2?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 516,
+        "end": 537
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Invented for herself",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Terimi eleştirmenler kullandı; o icat etmedi."
+        },
+        {
+          "key": "o2",
+          "text": "Painted in bright colours",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Cümle resimle ilgili ama kelime boyamak demek değildir."
+        },
+        {
+          "key": "o3",
+          "text": "Refused to accept",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Reject, bir şeyi kabul etmemek, reddetmek demektir."
+        },
+        {
+          "key": "o4",
+          "text": "Happily agreed with",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tam ters anlamdır; terimi benimsemedi."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the final paragraph suggest about how Kahlo is seen today?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 186,
+        "end": 250
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "She is seen as more than her own myth",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Müze onu kendi yarattığı efsanenin ötesine geçen bir referans olarak tanımlar."
+        },
+        {
+          "key": "o2",
+          "text": "She is remembered only through her own myth",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin tam tersini söyler: efsanenin ötesine geçen bir referanstır."
+        },
+        {
+          "key": "o3",
+          "text": "Her fame ended when the museum opened",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Müze 1958'de açıldı ve bugün en popüler müzelerden biridir."
+        },
+        {
+          "key": "o4",
+          "text": "Her work is mainly known through her husband",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir bilgi yoktur; Rivera yalnızca eşi olarak anılır."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Frida Kahlo 6 Temmuz 1907'de Mexico City'de, ailesinin bugün Mavi Ev (Casa Azul) olarak bilinen evinde doğdu; altı yaşında çocuk felci geçirdi ve bir bacağı diğerinden kısa kaldı.",
+        "source": "Museo Frida Kahlo, Biography of Frida Kahlo (resmi PDF, 2020); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/Biografias-Frida-Kahlo-ingles.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "18 yaşında, 17 Eylül 1925'te bindiği otobüse bir tramvay çarptı; aylarca hareketsiz kaldığı dönemde resim yapmaya başladı.",
+        "source": "Museo Frida Kahlo, Biography of Frida Kahlo (resmi PDF, 2020); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/Biografias-Frida-Kahlo-ingles.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Mavi Ev, Kahlo'nun doğduğu ve öldüğü yerdir; evlendikten sonra başka yerlerde yaşasa da hep aile evine döndü. Ev 1958'de, ölümünden dört yıl sonra müze yapıldı ve bugün Meksika başkentinin en popüler müzelerinden biridir.",
+        "source": "Museo Frida Kahlo, The Blue House: Frida Kahlo's Intimate Universe (resmi PDF); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/The-Blue-House.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Ev müzesinde aynalı yatak (kazadan sonra annesi kurmuştur), koltuk değnekleri, korseler ve ilaçlar sergilenir; bunlar fiziksel acılarına ve geçirdiği çok sayıda ameliyata tanıklık eder.",
+        "source": "Museo Frida Kahlo, The Blue House: Frida Kahlo's Intimate Universe (resmi PDF); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/The-Blue-House.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Otoportreleri, babasından öğrendiği fotoğraf portreciliğinden etkilenmiştir; giyiminde ve yaşamında Meksika halk sanatının köklerini yeniden sahiplenmeye çalıştı.",
+        "source": "Museo Frida Kahlo, Biography of Frida Kahlo (resmi PDF, 2020); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/Biografias-Frida-Kahlo-ingles.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "1929'da Diego Rivera ile evlendi, 1939'da boşandı, bir yıl sonra yeniden evlendi.",
+        "source": "Museo Frida Kahlo, Biography of Frida Kahlo (resmi PDF, 2020); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/Biografias-Frida-Kahlo-ingles.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Sürrealistlerin aksine rüyalarını değil gerçekliğini resmettiğini söyledi.",
+        "source": "Museo Frida Kahlo, Biography of Frida Kahlo (resmi PDF, 2020); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/Biografias-Frida-Kahlo-ingles.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Otoportre yapmasını sık sık yalnız olmasına ve en iyi tanıdığı kişinin kendisi olmasına bağladı; gerçeküstücü etiketini reddetti, 'Rüya resmetmedim, kendi gerçekliğimi resmettim' dedi; Casa Azul 1958'den beri halka açıktır.",
+        "source": "Centre Pompidou, Frida Kahlo kaynak sayfasi; https://www.centrepompidou.fr/en/ressources/personne/cGE5K89",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Kahlo 13 Temmuz 1954'te Mavi Ev'de öldü; müzenin metni onu kendi yarattığı efsanenin ötesine geçen bir referans olarak tanımlar.",
+        "source": "Museo Frida Kahlo, Biography of Frida Kahlo (resmi PDF, 2020); https://www.museofridakahlo.org.mx/wp/wp-content/uploads/2022/08/Biografias-Frida-Kahlo-ingles.pdf",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

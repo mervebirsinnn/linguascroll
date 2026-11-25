@@ -1,0 +1,2176 @@
+{
+  "slug": "b1-light-bulb-invention",
+  "level": "B1",
+  "title": "A Thin Thread of Light",
+  "topic": "Teknoloji",
+  "sortOrder": 34,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Before electric lights, people used candles and oil lamps at night. These gave weak light, made smoke, and could easily start fires. In the nineteenth century, many inventors tried to make light with electricity. It was a hard problem.",
+    "A light bulb works in a simple way. Electricity passes through a very thin thread inside the glass. The thread gets so hot that it starts to glow. The air is taken out of the bulb, because air would make the hot thread burn up quickly. The hardest part was finding a thread that could glow for a long time.",
+    "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours. They tested many materials before they found good ones. At about the same time, Joseph Swan in England made a similar bulb. So the light bulb was not the work of just one person. Today, many homes use LED bulbs, which need much less energy."
+  ],
+  "words": [
+    {
+      "lemma": "before",
+      "gloss": "-den önce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 6,
+          "surface": "Before",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "electric",
+      "gloss": "elektrikli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 15,
+          "surface": "electric",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "lights",
+      "gloss": "ışıklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 22,
+          "surface": "lights",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 30,
+          "surface": "people",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullandı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 35,
+          "surface": "used",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "candles",
+      "gloss": "mumlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 43,
+          "surface": "candles",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 47,
+          "surface": "and",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 106,
+          "surface": "and",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 26,
+          "surface": "and",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "oil",
+      "gloss": "yağ",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 48,
+          "end": 51,
+          "surface": "oil",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "lamps",
+      "gloss": "lambalar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 57,
+          "surface": "lamps",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 60,
+          "surface": "at",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 155,
+          "surface": "At",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "night",
+      "gloss": "gece",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 61,
+          "end": 66,
+          "surface": "night",
+          "contextSentence": "Before electric lights, people used candles and oil lamps at night.",
+          "contextSentenceTr": "Elektrikli ışıklardan önce insanlar geceleri mum ve yağ lambası kullanırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 73,
+          "surface": "These",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "gave",
+      "gloss": "verdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 74,
+          "end": 78,
+          "surface": "gave",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "weak",
+      "gloss": "zayıf",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 83,
+          "surface": "weak",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "light",
+      "gloss": "ışık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 89,
+          "surface": "light",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 189,
+          "end": 194,
+          "surface": "light",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 2,
+          "end": 7,
+          "surface": "light",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 233,
+          "surface": "light",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "çıkardı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 91,
+          "end": 95,
+          "surface": "made",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "smoke",
+      "gloss": "duman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 96,
+          "end": 101,
+          "surface": "smoke",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 107,
+          "end": 112,
+          "surface": "could",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "easily",
+      "gloss": "kolayca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 119,
+          "surface": "easily",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "start",
+      "gloss": "başlatmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 125,
+          "surface": "start",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "fires",
+      "gloss": "yangınlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 131,
+          "surface": "fires",
+          "contextSentence": "These gave weak light, made smoke, and could easily start fires.",
+          "contextSentenceTr": "Bunlar zayıf ışık verir, duman çıkarır ve kolayca yangın başlatabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 135,
+          "surface": "In",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 21,
+          "surface": "in",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 36,
+          "end": 38,
+          "surface": "in",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 191,
+          "surface": "in",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 139,
+          "surface": "the",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 92,
+          "surface": "the",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 103,
+          "surface": "The",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 150,
+          "surface": "The",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 174,
+          "surface": "the",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 204,
+          "end": 207,
+          "surface": "the",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 239,
+          "surface": "The",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 42,
+          "surface": "the",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 165,
+          "surface": "the",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 227,
+          "surface": "the",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 247,
+          "end": 250,
+          "surface": "the",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteenth",
+      "gloss": "on dokuzuncu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 140,
+          "end": 150,
+          "surface": "nineteenth",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 158,
+          "surface": "century",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 160,
+          "end": 164,
+          "surface": "many",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 89,
+          "surface": "many",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 283,
+          "end": 287,
+          "surface": "many",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "inventors",
+      "gloss": "mucitler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 174,
+          "surface": "inventors",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "tried",
+      "gloss": "denedi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 180,
+          "surface": "tried",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meyi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 183,
+          "surface": "to",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 184,
+          "end": 188,
+          "surface": "make",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 199,
+          "surface": "with",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "electricity",
+      "gloss": "elektrik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 211,
+          "surface": "electricity",
+          "contextSentence": "In the nineteenth century, many inventors tried to make light with electricity.",
+          "contextSentenceTr": "On dokuzuncu yüzyılda birçok mucit elektrikle ışık yapmayı denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 36,
+          "end": 47,
+          "surface": "Electricity",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 215,
+          "surface": "It",
+          "contextSentence": "It was a hard problem.",
+          "contextSentenceTr": "Bu zor bir sorundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 130,
+          "surface": "it",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 219,
+          "surface": "was",
+          "contextSentence": "It was a hard problem.",
+          "contextSentenceTr": "Bu zor bir sorundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 256,
+          "surface": "was",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 242,
+          "surface": "was",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 221,
+          "surface": "a",
+          "contextSentence": "It was a hard problem.",
+          "contextSentenceTr": "Bu zor bir sorundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 23,
+          "surface": "a",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 64,
+          "surface": "a",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 266,
+          "surface": "a",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 295,
+          "surface": "a",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 63,
+          "surface": "a",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 205,
+          "end": 206,
+          "surface": "a",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "hard",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 222,
+          "end": 226,
+          "surface": "hard",
+          "contextSentence": "It was a hard problem.",
+          "contextSentenceTr": "Bu zor bir sorundu."
+        }
+      ]
+    },
+    {
+      "lemma": "problem",
+      "gloss": "sorun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 234,
+          "surface": "problem",
+          "contextSentence": "It was a hard problem.",
+          "contextSentenceTr": "Bu zor bir sorundu."
+        }
+      ]
+    },
+    {
+      "lemma": "bulb",
+      "gloss": "ampul",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 8,
+          "end": 12,
+          "surface": "bulb",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 175,
+          "end": 179,
+          "surface": "bulb",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 68,
+          "surface": "bulb",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 219,
+          "surface": "bulb",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 238,
+          "surface": "bulb",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "works",
+      "gloss": "çalışır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 18,
+          "surface": "works",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "simple",
+      "gloss": "basit",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 30,
+          "surface": "simple",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "şekil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 34,
+          "surface": "way",
+          "contextSentence": "A light bulb works in a simple way.",
+          "contextSentenceTr": "Bir ampul basit bir şekilde çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "passes",
+      "gloss": "geçer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 48,
+          "end": 54,
+          "surface": "passes",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "içinden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 62,
+          "surface": "through",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 69,
+          "surface": "very",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "thin",
+      "gloss": "ince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 70,
+          "end": 74,
+          "surface": "thin",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "thread",
+      "gloss": "tel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 81,
+          "surface": "thread",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 110,
+          "surface": "thread",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 212,
+          "end": 218,
+          "surface": "thread",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 273,
+          "surface": "thread",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 88,
+          "surface": "inside",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "glass",
+      "gloss": "cam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 98,
+          "surface": "glass",
+          "contextSentence": "Electricity passes through a very thin thread inside the glass.",
+          "contextSentenceTr": "Elektrik, camın içindeki çok ince bir telden geçer."
+        }
+      ]
+    },
+    {
+      "lemma": "gets",
+      "gloss": "olur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 115,
+          "surface": "gets",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "o kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 118,
+          "surface": "so",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        }
+      ]
+    },
+    {
+      "lemma": "hot",
+      "gloss": "sıcak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 122,
+          "surface": "hot",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 211,
+          "surface": "hot",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 127,
+          "surface": "that",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 278,
+          "surface": "that",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 73,
+          "surface": "that",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "starts",
+      "gloss": "başlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 137,
+          "surface": "starts",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meye",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 140,
+          "surface": "to",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        }
+      ]
+    },
+    {
+      "lemma": "glow",
+      "gloss": "parlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 141,
+          "end": 145,
+          "surface": "glow",
+          "contextSentence": "The thread gets so hot that it starts to glow.",
+          "contextSentenceTr": "Tel o kadar ısınır ki parlamaya başlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 285,
+          "end": 289,
+          "surface": "glow",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "air",
+      "gloss": "hava",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 154,
+          "surface": "air",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 189,
+          "end": 192,
+          "surface": "air",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 157,
+          "surface": "is",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "taken",
+      "gloss": "alınır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 158,
+          "end": 163,
+          "surface": "taken",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "out",
+      "gloss": "dışarı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 167,
+          "surface": "out",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 168,
+          "end": 170,
+          "surface": "of",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 256,
+          "end": 258,
+          "surface": "of",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 188,
+          "surface": "because",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-ardı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 193,
+          "end": 198,
+          "surface": "would",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "sağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 203,
+          "surface": "make",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "burn",
+      "gloss": "yanmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 219,
+          "end": 223,
+          "surface": "burn",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "up",
+      "gloss": "tamamen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 226,
+          "surface": "up",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "quickly",
+      "gloss": "hızla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 227,
+          "end": 234,
+          "surface": "quickly",
+          "contextSentence": "The air is taken out of the bulb, because air would make the hot thread burn up quickly.",
+          "contextSentenceTr": "Ampulün içindeki hava alınır, çünkü hava sıcak telin hızla yanıp bitmesine yol açardı."
+        }
+      ]
+    },
+    {
+      "lemma": "hardest",
+      "gloss": "en zor",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 247,
+          "surface": "hardest",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "part",
+      "gloss": "kısım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 252,
+          "surface": "part",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "finding",
+      "gloss": "bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 264,
+          "surface": "finding",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 284,
+          "surface": "could",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 290,
+          "end": 293,
+          "surface": "for",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 81,
+          "end": 84,
+          "surface": "for",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 296,
+          "end": 300,
+          "surface": "long",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "süre",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 305,
+          "surface": "time",
+          "contextSentence": "The hardest part was finding a thread that could glow for a long time.",
+          "contextSentenceTr": "En zor kısım, uzun süre parlayabilen bir tel bulmaktı."
+        }
+      ]
+    },
+    {
+      "lemma": "thomas",
+      "gloss": "Thomas",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 15,
+          "surface": "Thomas",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "edison",
+      "gloss": "Edison",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 22,
+          "surface": "Edison",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 27,
+          "end": 30,
+          "surface": "his",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekip",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 35,
+          "surface": "team",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "united",
+      "gloss": "Birleşik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 49,
+          "surface": "United",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "states",
+      "gloss": "Devletler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 56,
+          "surface": "States",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yaptı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 61,
+          "surface": "made",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 200,
+          "end": 204,
+          "surface": "made",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "lasted",
+      "gloss": "dayandı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 80,
+          "surface": "lasted",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "hours",
+      "gloss": "saatler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 90,
+          "end": 95,
+          "surface": "hours",
+          "contextSentence": "In 1879, Thomas Edison and his team in the United States made a bulb that lasted for many hours.",
+          "contextSentenceTr": "1879'da Thomas Edison ve Amerika Birleşik Devletleri'ndeki ekibi saatlerce dayanan bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 101,
+          "surface": "They",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 131,
+          "end": 135,
+          "surface": "they",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "denedi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 108,
+          "surface": "tested",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "çok sayıda",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 109,
+          "end": 113,
+          "surface": "many",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "materials",
+      "gloss": "malzemeler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 123,
+          "surface": "materials",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "-meden önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 130,
+          "surface": "before",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "buldular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 141,
+          "surface": "found",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "good",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 146,
+          "surface": "good",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 147,
+          "end": 151,
+          "surface": "ones",
+          "contextSentence": "They tested many materials before they found good ones.",
+          "contextSentenceTr": "İyi olanları bulmadan önce çok sayıda malzeme denediler."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 161,
+          "surface": "about",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 170,
+          "surface": "same",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 175,
+          "surface": "time",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "joseph",
+      "gloss": "Joseph",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 183,
+          "surface": "Joseph",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "swan",
+      "gloss": "Swan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 184,
+          "end": 188,
+          "surface": "Swan",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "england",
+      "gloss": "İngiltere",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 199,
+          "surface": "England",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "similar",
+      "gloss": "benzer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 214,
+          "surface": "similar",
+          "contextSentence": "At about the same time, Joseph Swan in England made a similar bulb.",
+          "contextSentenceTr": "Yaklaşık aynı zamanda İngiltere'de Joseph Swan benzer bir ampul yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "yani",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 223,
+          "surface": "So",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 243,
+          "end": 246,
+          "surface": "not",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "eser",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 251,
+          "end": 255,
+          "surface": "work",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "just",
+      "gloss": "sadece",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 263,
+          "surface": "just",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 264,
+          "end": 267,
+          "surface": "one",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 268,
+          "end": 274,
+          "surface": "person",
+          "contextSentence": "So the light bulb was not the work of just one person.",
+          "contextSentenceTr": "Yani ampul tek bir kişinin eseri değildi."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 281,
+          "surface": "Today",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "homes",
+      "gloss": "evler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 288,
+          "end": 293,
+          "surface": "homes",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 297,
+          "surface": "use",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "led",
+      "gloss": "LED",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 298,
+          "end": 301,
+          "surface": "LED",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "bulbs",
+      "gloss": "ampuller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 302,
+          "end": 307,
+          "surface": "bulbs",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 314,
+          "surface": "which",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "need",
+      "gloss": "ihtiyaç duyar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 319,
+          "surface": "need",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 320,
+          "end": 324,
+          "surface": "much",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 325,
+          "end": 329,
+          "surface": "less",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "energy",
+      "gloss": "enerji",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 336,
+          "surface": "energy",
+          "contextSentence": "Today, many homes use LED bulbs, which need much less energy.",
+          "contextSentenceTr": "Bugün birçok ev çok daha az enerjiye ihtiyaç duyan LED ampuller kullanıyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 133,
+        "end": 212
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How electricity is made in big power stations",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Elektriğin üretimi anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "How the light bulb works and was developed",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin ampulün nasıl çalıştığını ve nasıl geliştirildiğini anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Why candles are still better than bulbs",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin mumların zayıf ışık verdiğini ve yangın çıkarabildiğini söyler."
+        },
+        {
+          "key": "o4",
+          "text": "The life of Thomas Edison as a young boy",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Edison'un çocukluğu anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why is the air taken out of the bulb?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 181,
+        "end": 234
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "So the glass stays cool to touch",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Camın sıcaklığından söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "So the light becomes a different colour",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Işığın renginden söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "So the bulb is lighter to carry",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Ampulün ağırlığı anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "So the thread does not burn up",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin havanın sıcak telin hızla yanmasına yol açacağını söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “glow” mean in the second paragraph?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 100,
+        "end": 146
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Shine because it is hot",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Tel çok ısındığı için ışık vermeye başlar; glow bu anlamdadır."
+        },
+        {
+          "key": "o2",
+          "text": "Break into many small pieces",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kırılmaktan söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "Turn cold and dark very fast",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tel soğumaz, tersine çok ısınır ve ışık verir."
+        },
+        {
+          "key": "o4",
+          "text": "Make a loud ringing sound",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Sesle ilgisi yoktur."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about the early bulb threads?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 97,
+        "end": 152
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Swan copied Edison's bulb years later",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin Swan'ın yaklaşık aynı zamanda çalıştığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Making the glass was the hardest part",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin en zor kısmın uygun teli bulmak olduğunu söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Many early threads did not last long",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Çok sayıda malzeme denenmesi ve en zor kısmın uzun süre parlayan tel bulmak olması, çoğunun çabuk bittiğini düşündürür."
+        },
+        {
+          "key": "o4",
+          "text": "Edison found the right thread on his first try",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin çok sayıda malzeme denendiğini söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "19. yüzyılda dünyanın dört bir yanında bilim insanları akkor lamba üzerinde çalıştı; filamanın oksitlenip yanmaması için ampulden hava vakumla alınır (veya inert gaz doldurulur).",
+        "source": "U.S. Department of Energy, The History of the Light Bulb; https://www.energy.gov/articles/history-light-bulb",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Edison'un ekibi birkaç malzemeyi (karbon, platin, sonra yine karbon) denedi; 1879'da karbon filaman saatlerce (14,5 saat) dayandı.",
+        "source": "U.S. Department of Energy, The History of the Light Bulb; https://www.energy.gov/articles/history-light-bulb",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Joseph Swan İngiltere'de karbon filamanlı ampulünü 3 Şubat 1879'da Newcastle'da gösterdi; Edison ve Swan şirketleri sonra birleşti.",
+        "source": "Linda Hall Library, Scientist of the Day: Joseph Wilson Swan; https://www.lindahall.org/about/news/scientist-of-the-day/joseph-wilson-swan/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "LED ürünler akkor ampullere göre yaklaşık %90'a kadar daha verimli ışık üretir (az enerji).",
+        "source": "ENERGY STAR, Learn About LED Bulbs; https://www.energystar.gov/products/lighting_fans/light_bulbs/learn_about_led_bulbs",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

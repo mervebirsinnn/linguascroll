@@ -1,0 +1,3933 @@
+{
+  "slug": "c2-dark-matter-inference",
+  "level": "C2",
+  "title": "Weighing What Cannot Be Seen",
+  "topic": "Bilim",
+  "sortOrder": 35,
+  "isFreeSample": false,
+  "paragraphs": [
+    "No one has ever seen dark matter. Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+    "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone. In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies. Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+    "Faced with such a mismatch, physicists had two broad options. They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see. Most chose the first path, and the unseen mass became dark matter. A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+    "What persuades most astronomers is not any single observation but convergence. In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter. Each line of evidence might be explained differently; together they are far harder to dismiss.",
+    "Still, the case remains circumstantial in a precise sense. Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see. That is no scandal; much of science has worked this way. It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely."
+  ],
+  "words": [
+    {
+      "lemma": "no",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "No",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 235,
+          "end": 237,
+          "surface": "no",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "kimse",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 6,
+          "surface": "one",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 10,
+          "surface": "has",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 263,
+          "end": 266,
+          "surface": "has",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "ever",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 15,
+          "surface": "ever",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "seen",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 20,
+          "surface": "seen",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "dark",
+      "gloss": "karanlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 25,
+          "surface": "dark",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 261,
+          "end": 265,
+          "surface": "dark",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 109,
+          "end": 113,
+          "surface": "dark",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "matter",
+      "gloss": "madde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 32,
+          "surface": "matter",
+          "contextSentence": "No one has ever seen dark matter.",
+          "contextSentenceTr": "Karanlık maddeyi hiç kimse görmedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 374,
+          "end": 380,
+          "surface": "matter",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 272,
+          "surface": "matter",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 244,
+          "end": 250,
+          "surface": "matter",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 114,
+          "end": 120,
+          "surface": "matter",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 34,
+          "end": 37,
+          "surface": "Its",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 103,
+          "surface": "its",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 195,
+          "end": 198,
+          "surface": "its",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "existence",
+      "gloss": "varlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 47,
+          "surface": "existence",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 48,
+          "end": 50,
+          "surface": "is",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 32,
+          "end": 34,
+          "surface": "is",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 183,
+          "end": 185,
+          "surface": "is",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 232,
+          "end": 234,
+          "surface": "is",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 287,
+          "end": 289,
+          "surface": "is",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "inferred",
+      "gloss": "çıkarsanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 51,
+          "end": 59,
+          "surface": "inferred",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 61,
+          "end": 64,
+          "surface": "and",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 93,
+          "surface": "and",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 217,
+          "surface": "and",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 168,
+          "surface": "and",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 237,
+          "surface": "and",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 339,
+          "end": 342,
+          "surface": "and",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 68,
+          "surface": "the",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 167,
+          "surface": "the",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 198,
+          "surface": "the",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 223,
+          "surface": "the",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 27,
+          "surface": "the",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 76,
+          "surface": "the",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 152,
+          "end": 155,
+          "surface": "the",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 182,
+          "surface": "the",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 304,
+          "surface": "the",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 362,
+          "end": 365,
+          "surface": "the",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 420,
+          "end": 423,
+          "surface": "the",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 445,
+          "end": 448,
+          "surface": "the",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 470,
+          "end": 473,
+          "surface": "the",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 111,
+          "end": 114,
+          "surface": "the",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 160,
+          "surface": "the",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 182,
+          "end": 185,
+          "surface": "the",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 221,
+          "surface": "the",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 238,
+          "end": 241,
+          "surface": "the",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 365,
+          "surface": "the",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 82,
+          "end": 85,
+          "surface": "the",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 180,
+          "end": 183,
+          "surface": "the",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 200,
+          "end": 203,
+          "surface": "the",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 231,
+          "end": 234,
+          "surface": "the",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 7,
+          "end": 10,
+          "surface": "the",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 83,
+          "end": 86,
+          "surface": "the",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 169,
+          "end": 172,
+          "surface": "the",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 317,
+          "end": 320,
+          "surface": "the",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "inference",
+      "gloss": "çıkarım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 78,
+          "surface": "inference",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "deserves",
+      "gloss": "hak etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 87,
+          "surface": "deserves",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "scrutiny",
+      "gloss": "dikkatli inceleme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 88,
+          "end": 96,
+          "surface": "scrutiny",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 104,
+          "surface": "because",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 105,
+          "end": 107,
+          "surface": "it",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 284,
+          "end": 286,
+          "surface": "It",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "rests",
+      "gloss": "dayanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 113,
+          "surface": "rests",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 116,
+          "surface": "on",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 119,
+          "surface": "an",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "assumption",
+      "gloss": "varsayım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 130,
+          "surface": "assumption",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 135,
+          "surface": "that",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 163,
+          "surface": "that",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 86,
+          "surface": "that",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 212,
+          "end": 216,
+          "surface": "that",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 143,
+          "surface": "usually",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "goes",
+      "gloss": "kalmak (go unstated)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 144,
+          "end": 148,
+          "surface": "goes",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "unstated",
+      "gloss": "dile getirilmemiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 149,
+          "end": 157,
+          "surface": "unstated",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "gravity",
+      "gloss": "kütle çekimi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 175,
+          "surface": "gravity",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 176,
+          "end": 178,
+          "surface": "we",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 215,
+          "end": 217,
+          "surface": "we",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "understand",
+      "gloss": "anlamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 189,
+          "surface": "understand",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 190,
+          "end": 194,
+          "surface": "from",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 296,
+          "end": 300,
+          "surface": "from",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 195,
+          "end": 199,
+          "surface": "from",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "solar",
+      "gloss": "güneş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 199,
+          "end": 204,
+          "surface": "solar",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 205,
+          "end": 211,
+          "surface": "system",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "behaves",
+      "gloss": "davranmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 219,
+          "surface": "behaves",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 228,
+          "surface": "same",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "biçim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 232,
+          "surface": "way",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 279,
+          "end": 282,
+          "surface": "way",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "across",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 239,
+          "surface": "across",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "entire",
+      "gloss": "koca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 246,
+          "surface": "entire",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        }
+      ]
+    },
+    {
+      "lemma": "galaxies",
+      "gloss": "gökadalar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 255,
+          "surface": "galaxies",
+          "contextSentence": "Its existence is inferred, and the inference deserves scrutiny because it rests on an assumption that usually goes unstated: that the gravity we understand from the solar system behaves the same way across entire galaxies.",
+          "contextSentenceTr": "Varlığı çıkarsanır ve bu çıkarım dikkatli incelemeyi hak eder, çünkü genellikle dile getirilmeyen bir varsayıma dayanır: Güneş sisteminden anladığımız kütle çekiminin koca gökadalar boyunca da aynı biçimde davrandığı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 112,
+          "surface": "galaxies",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 276,
+          "end": 284,
+          "surface": "galaxies",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 124,
+          "end": 132,
+          "surface": "galaxies",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 9,
+          "surface": "first",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 222,
+          "end": 227,
+          "surface": "first",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "hints",
+      "gloss": "ipuçları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 15,
+          "surface": "hints",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "came",
+      "gloss": "gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 16,
+          "end": 20,
+          "surface": "came",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 21,
+          "end": 23,
+          "surface": "in",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 178,
+          "surface": "In",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 268,
+          "surface": "in",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 79,
+          "end": 81,
+          "surface": "In",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 39,
+          "end": 41,
+          "surface": "in",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 36,
+          "surface": "nineteen",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 191,
+          "surface": "nineteen",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "thirties",
+      "gloss": "otuzlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 37,
+          "end": 45,
+          "surface": "thirties",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 51,
+          "surface": "when",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "fritz",
+      "gloss": "Fritz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 57,
+          "surface": "Fritz",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "zwicky",
+      "gloss": "Zwicky",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 64,
+          "surface": "Zwicky",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "studied",
+      "gloss": "incelemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 72,
+          "surface": "studied",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "coma",
+      "gloss": "Coma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 81,
+          "surface": "Coma",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "cluster",
+      "gloss": "küme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 89,
+          "surface": "cluster",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 99,
+          "surface": "found",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "moving",
+      "gloss": "hareket etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 119,
+          "surface": "moving",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "too",
+      "gloss": "fazla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 120,
+          "end": 123,
+          "surface": "too",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "fast",
+      "gloss": "hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 128,
+          "surface": "fast",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 333,
+          "surface": "fast",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 131,
+          "surface": "to",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 335,
+          "end": 337,
+          "surface": "to",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 309,
+          "end": 311,
+          "surface": "to",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 134,
+          "surface": "be",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 280,
+          "end": 282,
+          "surface": "be",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "held",
+      "gloss": "tutulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 139,
+          "surface": "held",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "bir arada",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 148,
+          "surface": "together",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 149,
+          "end": 151,
+          "surface": "by",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "visible",
+      "gloss": "görünür",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 163,
+          "surface": "visible",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 373,
+          "surface": "visible",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "mass",
+      "gloss": "kütle",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 168,
+          "surface": "mass",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 81,
+          "surface": "mass",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 190,
+          "surface": "mass",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 249,
+          "end": 253,
+          "surface": "mass",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 184,
+          "end": 188,
+          "surface": "mass",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "tek başına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 174,
+          "surface": "alone",
+          "contextSentence": "The first hints came in the nineteen thirties, when Fritz Zwicky studied the Coma cluster and found its galaxies moving too fast to be held together by the visible mass alone.",
+          "contextSentenceTr": "İlk ipuçları 1930'larda, Fritz Zwicky Coma kümesini inceleyip gökadalarının yalnızca görünür kütle tarafından bir arada tutulamayacak kadar hızlı hareket ettiğini bulduğunda geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "seventies",
+      "gloss": "yetmişler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 192,
+          "end": 201,
+          "surface": "seventies",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "vera",
+      "gloss": "Vera",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 207,
+          "surface": "Vera",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "rubin",
+      "gloss": "Rubin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 213,
+          "surface": "Rubin",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 218,
+          "end": 221,
+          "surface": "her",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "colleagues",
+      "gloss": "meslektaşlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 222,
+          "end": 232,
+          "surface": "colleagues",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "measured",
+      "gloss": "ölçmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 233,
+          "end": 241,
+          "surface": "measured",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "ne kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 242,
+          "end": 245,
+          "surface": "how",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "quickly",
+      "gloss": "hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 253,
+          "surface": "quickly",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "stars",
+      "gloss": "yıldızlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 259,
+          "surface": "stars",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 291,
+          "surface": "Stars",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "orbit",
+      "gloss": "yörüngede dolanmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 260,
+          "end": 265,
+          "surface": "orbit",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "spiral",
+      "gloss": "sarmal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 275,
+          "surface": "spiral",
+          "contextSentence": "In the nineteen seventies, Vera Rubin and her colleagues measured how quickly stars orbit in spiral galaxies.",
+          "contextSentenceTr": "1970'lerde Vera Rubin ve meslektaşları sarmal gökadalarda yıldızların ne kadar hızlı dolandığını ölçtü."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "uzak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 292,
+          "end": 295,
+          "surface": "far",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "centre",
+      "gloss": "merkez",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 311,
+          "surface": "centre",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "moved",
+      "gloss": "hareket etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 317,
+          "surface": "moved",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "roughly",
+      "gloss": "aşağı yukarı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 325,
+          "surface": "roughly",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 326,
+          "end": 328,
+          "surface": "as",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 334,
+          "end": 336,
+          "surface": "as",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 417,
+          "end": 419,
+          "surface": "as",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 106,
+          "end": 108,
+          "surface": "as",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 337,
+          "end": 342,
+          "surface": "those",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "nearer",
+      "gloss": "daha yakın",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 349,
+          "surface": "nearer",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "içeride",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 350,
+          "end": 352,
+          "surface": "in",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "whereas",
+      "gloss": "oysa",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 354,
+          "end": 361,
+          "surface": "whereas",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "implied",
+      "gloss": "ima etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 381,
+          "end": 388,
+          "surface": "implied",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 389,
+          "end": 393,
+          "surface": "they",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 66,
+          "surface": "They",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 143,
+          "surface": "they",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 191,
+          "end": 195,
+          "surface": "they",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 315,
+          "end": 319,
+          "surface": "they",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "should",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 394,
+          "end": 400,
+          "surface": "should",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "slow",
+      "gloss": "yavaşlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 401,
+          "end": 405,
+          "surface": "slow",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "yavaşlamak (slow down)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 406,
+          "end": 410,
+          "surface": "down",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "tıpkı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 412,
+          "end": 416,
+          "surface": "much",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "outer",
+      "gloss": "dış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 424,
+          "end": 429,
+          "surface": "outer",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "planets",
+      "gloss": "gezegenler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 430,
+          "end": 437,
+          "surface": "planets",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "circle",
+      "gloss": "dönmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 438,
+          "end": 444,
+          "surface": "circle",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "sun",
+      "gloss": "Güneş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 449,
+          "end": 452,
+          "surface": "Sun",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 453,
+          "end": 457,
+          "surface": "more",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 372,
+          "end": 376,
+          "surface": "more",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "slowly",
+      "gloss": "yavaş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 458,
+          "end": 464,
+          "surface": "slowly",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 465,
+          "end": 469,
+          "surface": "than",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "inner",
+      "gloss": "iç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 474,
+          "end": 479,
+          "surface": "inner",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 480,
+          "end": 484,
+          "surface": "ones",
+          "contextSentence": "Stars far from the centre moved roughly as fast as those nearer in, whereas the visible matter implied they should slow down, much as the outer planets circle the Sun more slowly than the inner ones.",
+          "contextSentenceTr": "Merkezden uzak yıldızlar, içeriye daha yakın olanlar kadar hızlı hareket ediyordu; oysa görünür madde, tıpkı dış gezegenlerin Güneş'in çevresinde iç gezegenlerden daha yavaş dönmesi gibi yavaşlamaları gerektiğini ima ediyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "faced",
+      "gloss": "karşı karşıya kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 5,
+          "surface": "Faced",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 6,
+          "end": 10,
+          "surface": "with",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 181,
+          "surface": "with",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 15,
+          "surface": "such",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 17,
+          "surface": "a",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 275,
+          "surface": "A",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 42,
+          "end": 43,
+          "surface": "a",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 143,
+          "end": 144,
+          "surface": "a",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 300,
+          "end": 301,
+          "surface": "a",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "mismatch",
+      "gloss": "uyumsuzluk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 26,
+          "surface": "mismatch",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "physicists",
+      "gloss": "fizikçiler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 38,
+          "surface": "physicists",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "sahip olmak (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 42,
+          "surface": "had",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 46,
+          "surface": "two",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 108,
+          "end": 111,
+          "surface": "two",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "broad",
+      "gloss": "geniş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 52,
+          "surface": "broad",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "options",
+      "gloss": "seçenekler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 60,
+          "surface": "options",
+          "contextSentence": "Faced with such a mismatch, physicists had two broad options.",
+          "contextSentenceTr": "Böyle bir uyumsuzlukla karşılaşan fizikçilerin iki geniş seçeneği vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 67,
+          "end": 72,
+          "surface": "could",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 144,
+          "end": 149,
+          "surface": "could",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 196,
+          "end": 201,
+          "surface": "could",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "add",
+      "gloss": "eklemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 76,
+          "surface": "add",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 87,
+          "end": 91,
+          "surface": "does",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 95,
+          "surface": "not",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 35,
+          "end": 38,
+          "surface": "not",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 126,
+          "end": 129,
+          "surface": "not",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "shine",
+      "gloss": "parlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 96,
+          "end": 101,
+          "surface": "shine",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "keeping",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 103,
+          "end": 110,
+          "surface": "keeping",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "familiar",
+      "gloss": "bilindik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 115,
+          "end": 123,
+          "surface": "familiar",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "law",
+      "gloss": "yasa",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 127,
+          "surface": "law",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 164,
+          "surface": "law",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "intact",
+      "gloss": "bozulmamış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 128,
+          "end": 134,
+          "surface": "intact",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 138,
+          "surface": "or",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "revise",
+      "gloss": "gözden geçirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 156,
+          "surface": "revise",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yetinmek (make do with)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 173,
+          "surface": "make",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yetinmek (make do with)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 174,
+          "end": 176,
+          "surface": "do",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "see",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 205,
+          "surface": "see",
+          "contextSentence": "They could add mass that does not shine, keeping the familiar law intact, or they could revise the law and make do with the mass they could see.",
+          "contextSentenceTr": "Bilindik yasayı bozmadan parlamayan kütle ekleyebilirlerdi ya da yasayı gözden geçirip görebildikleri kütleyle yetinebilirlerdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 222,
+          "end": 225,
+          "surface": "see",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 211,
+          "surface": "Most",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 15,
+          "end": 19,
+          "surface": "most",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 172,
+          "end": 176,
+          "surface": "most",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 223,
+          "end": 227,
+          "surface": "most",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "chose",
+      "gloss": "seçmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 217,
+          "surface": "chose",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 361,
+          "surface": "chose",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "path",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 232,
+          "surface": "path",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "unseen",
+      "gloss": "görünmeyen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 248,
+          "surface": "unseen",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "became",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 254,
+          "end": 260,
+          "surface": "became",
+          "contextSentence": "Most chose the first path, and the unseen mass became dark matter.",
+          "contextSentenceTr": "Çoğu ilk yolu seçti ve görünmeyen kütle karanlık madde oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "minority",
+      "gloss": "azınlık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 284,
+          "surface": "minority",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "following",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 295,
+          "surface": "following",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "mordehai",
+      "gloss": "Mordehai",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 304,
+          "surface": "Mordehai",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "milgrom's",
+      "gloss": "Milgrom'un",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 314,
+          "surface": "Milgrom's",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "proposal",
+      "gloss": "önerisi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 323,
+          "surface": "proposal",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 326,
+          "surface": "of",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 121,
+          "end": 123,
+          "surface": "of",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 177,
+          "end": 179,
+          "surface": "of",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 228,
+          "end": 230,
+          "surface": "of",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 262,
+          "end": 264,
+          "surface": "of",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 252,
+          "end": 254,
+          "surface": "of",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 366,
+          "end": 368,
+          "surface": "of",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "modified",
+      "gloss": "değiştirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 327,
+          "end": 335,
+          "surface": "modified",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "newtonian",
+      "gloss": "Newton",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 345,
+          "surface": "Newtonian",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "dynamics",
+      "gloss": "dinamiği",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 346,
+          "end": 354,
+          "surface": "dynamics",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "second",
+      "gloss": "ikinci",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 366,
+          "end": 372,
+          "surface": "second",
+          "contextSentence": "A minority, following Mordehai Milgrom's proposal of modified Newtonian dynamics, chose the second.",
+          "contextSentenceTr": "Bir azınlık, Mordehai Milgrom'un değiştirilmiş Newton dinamiği önerisini izleyerek ikincisini seçti."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 210,
+          "end": 214,
+          "surface": "what",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "persuades",
+      "gloss": "ikna etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 5,
+          "end": 14,
+          "surface": "persuades",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "astronomers",
+      "gloss": "gökbilimciler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 20,
+          "end": 31,
+          "surface": "astronomers",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi bir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 39,
+          "end": 42,
+          "surface": "any",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 343,
+          "end": 346,
+          "surface": "any",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "single",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 43,
+          "end": 49,
+          "surface": "single",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "observation",
+      "gloss": "gözlem",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 50,
+          "end": 61,
+          "surface": "observation",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 62,
+          "end": 65,
+          "surface": "but",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "convergence",
+      "gloss": "yakınsama (kanıtların birleşmesi)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 66,
+          "end": 77,
+          "surface": "convergence",
+          "contextSentence": "What persuades most astronomers is not any single observation but convergence.",
+          "contextSentenceTr": "Gökbilimcilerin çoğunu ikna eden, tek bir gözlem değil, kanıtların birleşmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "bullet",
+      "gloss": "Mermi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 86,
+          "end": 92,
+          "surface": "Bullet",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "cluster",
+      "gloss": "Kümesi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 93,
+          "end": 100,
+          "surface": "Cluster",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "where",
+      "gloss": "-dığı yer",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 102,
+          "end": 107,
+          "surface": "where",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "clusters",
+      "gloss": "kümeler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 112,
+          "end": 120,
+          "surface": "clusters",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "collided",
+      "gloss": "çarpışmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 133,
+          "end": 141,
+          "surface": "collided",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "gravitational",
+      "gloss": "kütle çekimsel",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 143,
+          "end": 156,
+          "surface": "gravitational",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "lensing",
+      "gloss": "merceklenme",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 157,
+          "end": 164,
+          "surface": "lensing",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "places",
+      "gloss": "yerleştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 165,
+          "end": 171,
+          "surface": "places",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "apart",
+      "gloss": "ayrı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 189,
+          "end": 194,
+          "surface": "apart",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "hot",
+      "gloss": "sıcak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 204,
+          "end": 207,
+          "surface": "hot",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "gas",
+      "gloss": "gaz",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 208,
+          "end": 211,
+          "surface": "gas",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "holds",
+      "gloss": "barındırmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 217,
+          "end": 222,
+          "surface": "holds",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "ordinary",
+      "gloss": "sıradan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 235,
+          "end": 243,
+          "surface": "ordinary",
+          "contextSentence": "In the Bullet Cluster, where two clusters of galaxies collided, gravitational lensing places most of the mass apart from the hot gas that holds most of the ordinary matter.",
+          "contextSentenceTr": "İki gökada kümesinin çarpıştığı Mermi Kümesi'nde kütle çekimsel merceklenme, kütlenin çoğunu sıradan maddenin çoğunu barındıran sıcak gazdan ayrı bir yere yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 252,
+          "end": 256,
+          "surface": "Each",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "line",
+      "gloss": "çizgi (kanıt kolu)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 257,
+          "end": 261,
+          "surface": "line",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 265,
+          "end": 273,
+          "surface": "evidence",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 274,
+          "end": 279,
+          "surface": "might",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "explained",
+      "gloss": "açıklanmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 283,
+          "end": 292,
+          "surface": "explained",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "differently",
+      "gloss": "farklı biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 293,
+          "end": 304,
+          "surface": "differently",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 306,
+          "end": 314,
+          "surface": "together",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 320,
+          "end": 323,
+          "surface": "are",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 324,
+          "end": 327,
+          "surface": "far",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "harder",
+      "gloss": "daha zor",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 328,
+          "end": 334,
+          "surface": "harder",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "dismiss",
+      "gloss": "reddetmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 338,
+          "end": 345,
+          "surface": "dismiss",
+          "contextSentence": "Each line of evidence might be explained differently; together they are far harder to dismiss.",
+          "contextSentenceTr": "Her kanıt kolu farklı biçimde açıklanabilir; birlikte ise reddedilmeleri çok daha zordur."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 5,
+          "surface": "Still",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "case",
+      "gloss": "dava (kanıt dosyası)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 11,
+          "end": 15,
+          "surface": "case",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 16,
+          "end": 23,
+          "surface": "remains",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "circumstantial",
+      "gloss": "dolaylı (ipucuna dayalı)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 24,
+          "end": 38,
+          "surface": "circumstantial",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "precise",
+      "gloss": "kesin",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 44,
+          "end": 51,
+          "surface": "precise",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "sense",
+      "gloss": "anlam",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 52,
+          "end": 57,
+          "surface": "sense",
+          "contextSentence": "Still, the case remains circumstantial in a precise sense.",
+          "contextSentenceTr": "Yine de dava, kesin bir anlamda dolaylı kanıta dayalı kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "laboratory",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 59,
+          "end": 69,
+          "surface": "Laboratory",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "searches",
+      "gloss": "aramalar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 70,
+          "end": 78,
+          "surface": "searches",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 79,
+          "end": 82,
+          "surface": "for",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "particles",
+      "gloss": "parçacıklar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 87,
+          "end": 96,
+          "surface": "particles",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "proposed",
+      "gloss": "önerilmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 97,
+          "end": 105,
+          "surface": "proposed",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 121,
+          "end": 125,
+          "surface": "have",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "henüz",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 130,
+          "end": 133,
+          "surface": "yet",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "produced",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 134,
+          "end": 142,
+          "surface": "produced",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "confirmed",
+      "gloss": "doğrulanmış",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 145,
+          "end": 154,
+          "surface": "confirmed",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "detection",
+      "gloss": "algılama",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 155,
+          "end": 164,
+          "surface": "detection",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 166,
+          "end": 168,
+          "surface": "so",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "substance",
+      "gloss": "madde",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 173,
+          "end": 182,
+          "surface": "substance",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "known",
+      "gloss": "bilinmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 186,
+          "end": 191,
+          "surface": "known",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-den (by its effects)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 192,
+          "end": 194,
+          "surface": "by",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "effects",
+      "gloss": "etkiler",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 199,
+          "end": 206,
+          "surface": "effects",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 207,
+          "end": 209,
+          "surface": "on",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 218,
+          "end": 221,
+          "surface": "can",
+          "contextSentence": "Laboratory searches for the particles proposed as dark matter have not yet produced a confirmed detection, so the substance is known by its effects on what we can see.",
+          "contextSentenceTr": "Karanlık madde olarak önerilen parçacıklar için yapılan laboratuvar aramaları henüz doğrulanmış bir algılama üretmedi; bu yüzden madde, görebildiğimiz şeyler üzerindeki etkilerinden tanınır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 227,
+          "end": 231,
+          "surface": "That",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "scandal",
+      "gloss": "skandal",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 238,
+          "end": 245,
+          "surface": "scandal",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 247,
+          "end": 251,
+          "surface": "much",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "science",
+      "gloss": "bilim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 255,
+          "end": 262,
+          "surface": "science",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "worked",
+      "gloss": "işlemek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 267,
+          "end": 273,
+          "surface": "worked",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 274,
+          "end": 278,
+          "surface": "this",
+          "contextSentence": "That is no scandal; much of science has worked this way.",
+          "contextSentenceTr": "Bu bir skandal değildir; bilimin çoğu bu biçimde işlemiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 291,
+          "end": 298,
+          "surface": "however",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "reason",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 302,
+          "end": 308,
+          "surface": "reason",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "hold",
+      "gloss": "tutmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 312,
+          "end": 316,
+          "surface": "hold",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "conclusion",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 321,
+          "end": 331,
+          "surface": "conclusion",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "firmly",
+      "gloss": "sıkıca",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 332,
+          "end": 338,
+          "surface": "firmly",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "particular",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 347,
+          "end": 357,
+          "surface": "particular",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "account",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 358,
+          "end": 365,
+          "surface": "account",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 369,
+          "end": 371,
+          "surface": "it",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    },
+    {
+      "lemma": "loosely",
+      "gloss": "gevşekçe",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 377,
+          "end": 384,
+          "surface": "loosely",
+          "contextSentence": "It is, however, a reason to hold the conclusion firmly and any particular account of it more loosely.",
+          "contextSentenceTr": "Ancak sonucu sıkıca, onun herhangi bir belirli açıklamasını ise daha gevşekçe tutmak için bir nedendir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which best describes the author's stance on dark matter?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 300,
+        "end": 384
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Probably an error that will soon vanish",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Yazar kanıtların birleşmesini reddedilmesi zor bulur."
+        },
+        {
+          "key": "o2",
+          "text": "Less convincing than modified gravity theories",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yazar değiştirilmiş dinamiği bir azınlık görüşü olarak anar, daha ikna edici bulmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Well supported, though its nature is unknown",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar sonucu sıkı tutmayı, ama maddenin ne olduğuna dair açıklamaları gevşek tutmayı önerir."
+        },
+        {
+          "key": "o4",
+          "text": "Proven beyond doubt by direct detection",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metne göre doğrulanmış bir laboratuvar algılaması henüz yoktur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What did Rubin's measurements show, according to the text?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 286,
+        "end": 352
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Outer stars kept pace with inner ones",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Merkezden uzak yıldızlar içteki yıldızlar kadar hızlı hareket ediyordu."
+        },
+        {
+          "key": "o2",
+          "text": "Outer stars moved more slowly, as expected",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Görünür madde yavaşlamayı öngörüyordu, ama ölçüm bunu göstermedi."
+        },
+        {
+          "key": "o3",
+          "text": "Galaxies in Coma moved too fast",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Bu Zwicky'nin Coma kümesi bulgusudur, Rubin'inki değil."
+        },
+        {
+          "key": "o4",
+          "text": "Visible matter explained the speeds well",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Uyumsuzluk tam olarak görünür maddenin hızları açıklayamamasıdır."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “circumstantial” mean in the final paragraph?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 7,
+        "end": 57
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Weak and probably mistaken",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar bunun bir skandal olmadığını, sonucun sıkı tutulabileceğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Dependent on lucky circumstances",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Sözcüğün kökü 'koşul' anlamı çağrıştırsa da şans kastedilmez."
+        },
+        {
+          "key": "o3",
+          "text": "Confirmed by laboratory detection",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Laboratuvar algılaması henüz yoktur; dolaylılık buradan gelir."
+        },
+        {
+          "key": "o4",
+          "text": "Indirect, inferred from effects",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Circumstantial, doğrudan gözleme değil, etkilerden yapılan çıkarıma dayanan kanıt demektir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the third paragraph imply about the original cluster and rotation data?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 60
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They directly revealed dark matter particles",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Parçacıklar henüz doğrudan algılanmadı."
+        },
+        {
+          "key": "o2",
+          "text": "They could not by themselves decide the issue",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Aynı uyumsuzluk iki yolla da açıklanabiliyordu; karar için başka kanıtların birleşmesi gerekti."
+        },
+        {
+          "key": "o3",
+          "text": "They proved that Newtonian gravity was wrong everywhere",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin yasayı değiştirmeyi yalnızca bir seçenek olarak sunar."
+        },
+        {
+          "key": "o4",
+          "text": "They were later shown to be measurement errors",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Ölçümlerin hatalı çıktığından söz edilmez."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Fritz Zwicky 1930'larda Coma kümesindeki gökadaların görünür kütleyle bir arada tutulamayacak kadar hızlı hareket ettiğini buldu.",
+        "source": "Encyclopaedia Britannica, Fritz Zwicky; https://www.britannica.com/biography/Fritz-Zwicky",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Vera Rubin ve meslektaşları 1970'lerde sarmal gökadalarda merkezden uzak yıldızların beklenenden hızlı (yaklaşık sabit hızla) dolandığını ölçtü.",
+        "source": "Encyclopaedia Britannica, Vera Rubin; https://www.britannica.com/biography/Vera-Rubin",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Mermi Kümesi'nde kütle çekimsel merceklenme kütlenin çoğunu, sıradan maddenin çoğunu barındıran sıcak gazdan ayrı konumlandırır.",
+        "source": "NASA Chandra X-ray Observatory, 1E 0657-56: NASA Finds Direct Proof of Dark Matter (2006); https://chandra.harvard.edu/photo/2006/1e0657/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Değiştirilmiş Newton dinamiği (MOND) Mordehai Milgrom'un önerisidir; karanlık madde parçacıkları henüz doğrudan algılanmamıştır.",
+        "source": "Encyclopaedia Britannica, Dark matter; https://www.britannica.com/science/dark-matter",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Karanlık madde doğrudan görülmez; varlığı kütle çekimsel etkilerinden çıkarsanır.",
+        "source": "NASA Science, Dark Matter and Dark Energy; https://science.nasa.gov/universe/dark-matter-dark-energy/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3796 @@
+{
+  "slug": "c2-ai-understanding",
+  "level": "C2",
+  "title": "Behaviour Is Not Understanding",
+  "topic": "Yapay zeka",
+  "sortOrder": 15,
+  "isFreeSample": false,
+  "paragraphs": [
+    "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought. The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one. His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+    "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding. The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment. Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back. To observers outside, his replies are flawless; to the man, they are meaningless shapes. Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+    "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output. Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part. The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies. Each side can cite the same scenario in its own favour, which is part of the problem.",
+    "What the debate clarifies, at least, is what we mean when we ask the question. If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+    "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them. Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking."
+  ],
+  "words": [
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 53,
+          "end": 57,
+          "surface": "when",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "alan",
+      "gloss": "Alan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 9,
+          "surface": "Alan",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "turing",
+      "gloss": "Turing",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 10,
+          "end": 16,
+          "surface": "Turing",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "asked",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 17,
+          "end": 22,
+          "surface": "asked",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 250,
+          "end": 255,
+          "surface": "asked",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 25,
+          "surface": "in",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 162,
+          "surface": "in",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 242,
+          "end": 244,
+          "surface": "in",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 277,
+          "end": 279,
+          "surface": "in",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 389,
+          "end": 391,
+          "surface": "in",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 34,
+          "surface": "nineteen",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 163,
+          "end": 171,
+          "surface": "nineteen",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "fifty",
+      "gloss": "elli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 35,
+          "end": 40,
+          "surface": "fifty",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "whether",
+      "gloss": "-ip -mediğini",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 41,
+          "end": 48,
+          "surface": "whether",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 261,
+          "end": 268,
+          "surface": "whether",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "machines",
+      "gloss": "makineler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 57,
+          "surface": "machines",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 61,
+          "surface": "can",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 365,
+          "surface": "can",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "think",
+      "gloss": "düşünmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 67,
+          "surface": "think",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 71,
+          "surface": "he",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "deliberately",
+      "gloss": "kasıtlı olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 84,
+          "surface": "deliberately",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "sidestepped",
+      "gloss": "etrafından dolaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 96,
+          "surface": "sidestepped",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 100,
+          "surface": "the",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 136,
+          "surface": "The",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 83,
+          "surface": "the",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 110,
+          "surface": "The",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 408,
+          "end": 411,
+          "surface": "the",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 470,
+          "end": 473,
+          "surface": "the",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 106,
+          "end": 109,
+          "surface": "the",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 172,
+          "surface": "the",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 241,
+          "end": 244,
+          "surface": "The",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 371,
+          "end": 374,
+          "surface": "the",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 425,
+          "end": 428,
+          "surface": "the",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 5,
+          "end": 8,
+          "surface": "the",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 65,
+          "end": 68,
+          "surface": "the",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 108,
+          "end": 111,
+          "surface": "the",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 51,
+          "end": 54,
+          "surface": "the",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 144,
+          "end": 147,
+          "surface": "the",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "difficulty",
+      "gloss": "zorluk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 101,
+          "end": 111,
+          "surface": "difficulty",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 114,
+          "surface": "of",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 422,
+          "end": 424,
+          "surface": "of",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 48,
+          "end": 50,
+          "surface": "of",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "defining",
+      "gloss": "tanımlamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 123,
+          "surface": "defining",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "thought",
+      "gloss": "düşünce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 131,
+          "surface": "thought",
+          "contextSentence": "When Alan Turing asked in nineteen fifty whether machines can think, he deliberately sidestepped the difficulty of defining thought.",
+          "contextSentenceTr": "Alan Turing 1950'de makinelerin düşünüp düşünemeyeceğini sorduğunda, düşünceyi tanımlamanın zorluğunu kasıtlı olarak aşmaya çalıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 208,
+          "surface": "thought",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 474,
+          "end": 481,
+          "surface": "thought",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "move",
+      "gloss": "hamle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 141,
+          "surface": "move",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 142,
+          "end": 145,
+          "surface": "was",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 16,
+          "surface": "was",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 20,
+          "end": 23,
+          "surface": "was",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "philosophically",
+      "gloss": "felsefi olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 161,
+          "surface": "philosophically",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "bold",
+      "gloss": "cesur",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 166,
+          "surface": "bold",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 175,
+          "surface": "because",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 523,
+          "end": 530,
+          "surface": "because",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 176,
+          "end": 178,
+          "surface": "it",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 30,
+          "end": 32,
+          "surface": "it",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 531,
+          "end": 533,
+          "surface": "it",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 281,
+          "end": 283,
+          "surface": "it",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 182,
+          "end": 184,
+          "surface": "it",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 196,
+          "end": 198,
+          "surface": "it",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "turned",
+      "gloss": "dönüştürmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 185,
+          "surface": "turned",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 186,
+          "end": 187,
+          "surface": "a",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 269,
+          "end": 270,
+          "surface": "a",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 357,
+          "end": 358,
+          "surface": "a",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 377,
+          "end": 378,
+          "surface": "a",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 230,
+          "surface": "a",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 246,
+          "surface": "a",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 302,
+          "end": 303,
+          "surface": "a",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 130,
+          "end": 131,
+          "surface": "a",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "metaphysical",
+      "gloss": "metafizik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 200,
+          "surface": "metaphysical",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "puzzle",
+      "gloss": "bilmece",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 201,
+          "end": 207,
+          "surface": "puzzle",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 208,
+          "end": 212,
+          "surface": "into",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 215,
+          "surface": "an",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 309,
+          "surface": "an",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 41,
+          "end": 43,
+          "surface": "an",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "empirical",
+      "gloss": "deneysel",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 225,
+          "surface": "empirical",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 226,
+          "end": 229,
+          "surface": "one",
+          "contextSentence": "The move was philosophically bold, because it turned a metaphysical puzzle into an empirical one.",
+          "contextSentenceTr": "Hamle felsefi olarak cesurdu, çünkü metafizik bir bilmeceyi deneysel bir bilmeceye dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 231,
+          "end": 234,
+          "surface": "His",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 187,
+          "surface": "his",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 379,
+          "end": 382,
+          "surface": "his",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "imitation",
+      "gloss": "taklit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 235,
+          "end": 244,
+          "surface": "imitation",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 112,
+          "end": 121,
+          "surface": "imitation",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "game",
+      "gloss": "oyun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 245,
+          "end": 249,
+          "surface": "game",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 122,
+          "end": 126,
+          "surface": "game",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 260,
+          "surface": "only",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 271,
+          "end": 278,
+          "surface": "machine",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 386,
+          "end": 393,
+          "surface": "machine",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 279,
+          "end": 284,
+          "surface": "could",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 395,
+          "end": 400,
+          "surface": "could",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "converse",
+      "gloss": "konuşmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 285,
+          "end": 293,
+          "surface": "converse",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "öyle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 294,
+          "end": 296,
+          "surface": "so",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "well",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 301,
+          "surface": "well",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 302,
+          "end": 306,
+          "surface": "that",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 314,
+          "end": 318,
+          "surface": "that",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 28,
+          "surface": "that",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 138,
+          "surface": "that",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "interrogator",
+      "gloss": "sorgulayıcı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 322,
+          "surface": "interrogator",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "exchanging",
+      "gloss": "değiş tokuş etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 334,
+          "surface": "exchanging",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "written",
+      "gloss": "yazılı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 342,
+          "surface": "written",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "messages",
+      "gloss": "mesajlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 343,
+          "end": 351,
+          "surface": "messages",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 352,
+          "end": 356,
+          "surface": "with",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 183,
+          "surface": "with",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 557,
+          "end": 561,
+          "surface": "with",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "hidden",
+      "gloss": "gizli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 359,
+          "end": 365,
+          "surface": "hidden",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 379,
+          "end": 385,
+          "surface": "hidden",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 366,
+          "end": 372,
+          "surface": "person",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 373,
+          "end": 376,
+          "surface": "and",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 288,
+          "end": 291,
+          "surface": "and",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 200,
+          "surface": "and",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 277,
+          "end": 280,
+          "surface": "and",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 39,
+          "end": 42,
+          "surface": "and",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 401,
+          "end": 404,
+          "surface": "not",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 76,
+          "end": 79,
+          "surface": "not",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 164,
+          "end": 167,
+          "surface": "not",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "reliably",
+      "gloss": "güvenilir biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 405,
+          "end": 413,
+          "surface": "reliably",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "tell",
+      "gloss": "ayırt etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 414,
+          "end": 418,
+          "surface": "tell",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 419,
+          "end": 423,
+          "surface": "them",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 126,
+          "end": 130,
+          "surface": "them",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "apart",
+      "gloss": "ayrı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 429,
+          "surface": "apart",
+          "contextSentence": "His imitation game asked only whether a machine could converse so well that an interrogator, exchanging written messages with a hidden person and a hidden machine, could not reliably tell them apart.",
+          "contextSentenceTr": "Taklit oyunu yalnızca, bir makinenin yazılı mesajlaştığı gizli bir kişiyle gizli bir makineyi güvenilir biçimde ayırt edemeyen bir sorgulayıcıyı yanıltacak kadar iyi konuşup konuşamayacağını sordu."
+        }
+      ]
+    },
+    {
+      "lemma": "proposal",
+      "gloss": "öneri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 12,
+          "surface": "proposal",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "elegant",
+      "gloss": "zarif",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 24,
+          "surface": "elegant",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 29,
+          "surface": "but",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 192,
+          "end": 195,
+          "surface": "but",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "invited",
+      "gloss": "davet etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 40,
+          "surface": "invited",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "obvious",
+      "gloss": "açık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 44,
+          "end": 51,
+          "surface": "obvious",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "objection",
+      "gloss": "itiraz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 61,
+          "surface": "objection",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 159,
+          "surface": "objection",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "behaviour",
+      "gloss": "davranış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 63,
+          "end": 72,
+          "surface": "behaviour",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 97,
+          "end": 106,
+          "surface": "behaviour",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 75,
+          "surface": "is",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 414,
+          "end": 416,
+          "surface": "is",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 37,
+          "end": 39,
+          "surface": "is",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 127,
+          "end": 129,
+          "surface": "is",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 185,
+          "end": 187,
+          "surface": "is",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 84,
+          "end": 88,
+          "surface": "same",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 379,
+          "surface": "same",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 91,
+          "surface": "as",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "understanding",
+      "gloss": "anlayış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 105,
+          "surface": "understanding",
+          "contextSentence": "The proposal was elegant, but it invited an obvious objection: behaviour is not the same as understanding.",
+          "contextSentenceTr": "Öneri zarifti ama açık bir itirazı davet etti: davranış anlayışla aynı şey değildir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 72,
+          "end": 85,
+          "surface": "understanding",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 152,
+          "surface": "understanding",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "philosopher",
+      "gloss": "filozof",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 122,
+          "surface": "philosopher",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "john",
+      "gloss": "John",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 127,
+          "surface": "John",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "searle",
+      "gloss": "Searle",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 134,
+          "surface": "Searle",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "sharpened",
+      "gloss": "keskinleştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 144,
+          "surface": "sharpened",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 145,
+          "end": 149,
+          "surface": "that",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "eighty",
+      "gloss": "seksen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 172,
+          "end": 178,
+          "surface": "eighty",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "chinese",
+      "gloss": "Çince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 195,
+          "surface": "Chinese",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 280,
+          "end": 287,
+          "surface": "Chinese",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "room",
+      "gloss": "Oda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 200,
+          "surface": "Room",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "experiment",
+      "gloss": "deney",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 209,
+          "end": 219,
+          "surface": "experiment",
+          "contextSentence": "The philosopher John Searle sharpened that objection in nineteen eighty with his Chinese Room thought experiment.",
+          "contextSentenceTr": "Filozof John Searle bu itirazı 1980'de Çin Odası düşünce deneyiyle keskinleştirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 482,
+          "end": 492,
+          "surface": "experiment",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "imagine",
+      "gloss": "hayal etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 228,
+          "surface": "Imagine",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "man",
+      "gloss": "adam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 234,
+          "surface": "man",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 412,
+          "end": 415,
+          "surface": "man",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 187,
+          "end": 190,
+          "surface": "man",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "locked",
+      "gloss": "kilitli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 235,
+          "end": 241,
+          "surface": "locked",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "room",
+      "gloss": "oda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 247,
+          "end": 251,
+          "surface": "room",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 205,
+          "surface": "room",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "receiving",
+      "gloss": "almak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 262,
+          "surface": "receiving",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "notes",
+      "gloss": "notlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 268,
+          "surface": "notes",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "written",
+      "gloss": "yazılmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 276,
+          "surface": "written",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "following",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 292,
+          "end": 301,
+          "surface": "following",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 29,
+          "end": 38,
+          "surface": "following",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "rule",
+      "gloss": "kural",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 308,
+          "surface": "rule",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "book",
+      "gloss": "kitap",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 313,
+          "surface": "book",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 196,
+          "surface": "book",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "tells",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 324,
+          "surface": "tells",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "him",
+      "gloss": "ona",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 325,
+          "end": 328,
+          "surface": "him",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangisi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 334,
+          "surface": "which",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 234,
+          "end": 239,
+          "surface": "which",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "symbols",
+      "gloss": "semboller",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 335,
+          "end": 342,
+          "surface": "symbols",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 345,
+          "surface": "to",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "send",
+      "gloss": "göndermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 346,
+          "end": 350,
+          "surface": "send",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "back",
+      "gloss": "geri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 351,
+          "end": 355,
+          "surface": "back",
+          "contextSentence": "Imagine a man locked in a room, receiving notes written in Chinese and following a rule book that tells him which symbols to send back.",
+          "contextSentenceTr": "Bir odaya kilitlenmiş, Çince yazılmış notlar alan ve hangi sembolleri geri göndereceğini söyleyen bir kural kitabını izleyen bir adamı hayal et."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 357,
+          "end": 359,
+          "surface": "To",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 405,
+          "end": 407,
+          "surface": "to",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 71,
+          "surface": "to",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 168,
+          "surface": "to",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 230,
+          "surface": "to",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "observers",
+      "gloss": "gözlemciler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 360,
+          "end": 369,
+          "surface": "observers",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "outside",
+      "gloss": "dışarıda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 370,
+          "end": 377,
+          "surface": "outside",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "replies",
+      "gloss": "yanıtlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 383,
+          "end": 390,
+          "surface": "replies",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 343,
+          "end": 350,
+          "surface": "replies",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 391,
+          "end": 394,
+          "surface": "are",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 422,
+          "end": 425,
+          "surface": "are",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 18,
+          "end": 21,
+          "surface": "are",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 247,
+          "end": 250,
+          "surface": "are",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "flawless",
+      "gloss": "kusursuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 395,
+          "end": 403,
+          "surface": "flawless",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 417,
+          "end": 421,
+          "surface": "they",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "meaningless",
+      "gloss": "anlamsız",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 426,
+          "end": 437,
+          "surface": "meaningless",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "shapes",
+      "gloss": "şekiller",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 438,
+          "end": 444,
+          "surface": "shapes",
+          "contextSentence": "To observers outside, his replies are flawless; to the man, they are meaningless shapes.",
+          "contextSentenceTr": "Dışarıdaki gözlemcilere göre yanıtları kusursuzdur; adama göre ise anlamsız şekillerdir."
+        }
+      ]
+    },
+    {
+      "lemma": "whatever",
+      "gloss": "ne olursa olsun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 446,
+          "end": 454,
+          "surface": "Whatever",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 455,
+          "end": 458,
+          "surface": "one",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "concludes",
+      "gloss": "sonuca varmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 459,
+          "end": 468,
+          "surface": "concludes",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 493,
+          "end": 496,
+          "surface": "has",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 253,
+          "end": 256,
+          "surface": "has",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 287,
+          "surface": "has",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "proved",
+      "gloss": "olduğu anlaşıldı (prove + sıfat)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 497,
+          "end": 503,
+          "surface": "proved",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "remarkably",
+      "gloss": "dikkate değer biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 504,
+          "end": 514,
+          "surface": "remarkably",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "durable",
+      "gloss": "dayanıklı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 515,
+          "end": 522,
+          "surface": "durable",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "isolates",
+      "gloss": "ayırmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 534,
+          "end": 542,
+          "surface": "isolates",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 543,
+          "end": 546,
+          "surface": "one",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "intuition",
+      "gloss": "sezgi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 547,
+          "end": 556,
+          "surface": "intuition",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "unusual",
+      "gloss": "olağandışı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 562,
+          "end": 569,
+          "surface": "unusual",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "clarity",
+      "gloss": "açıklık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 570,
+          "end": 577,
+          "surface": "clarity",
+          "contextSentence": "Whatever one concludes, the thought experiment has proved remarkably durable because it isolates one intuition with unusual clarity.",
+          "contextSentenceTr": "Kişi ne sonuca varırsa varsın, düşünce deneyi tek bir sezgiyi olağandışı bir açıklıkla ayırdığı için dikkate değer biçimde dayanıklı çıktı."
+        }
+      ]
+    },
+    {
+      "lemma": "searle's",
+      "gloss": "Searle (iyelik)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 8,
+          "surface": "Searle's",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "conclusion",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 19,
+          "surface": "conclusion",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "rules",
+      "gloss": "kurallar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 44,
+          "surface": "rules",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 45,
+          "end": 51,
+          "surface": "cannot",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 52,
+          "end": 54,
+          "surface": "by",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 55,
+          "end": 61,
+          "surface": "itself",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "amount",
+      "gloss": "eşit olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 68,
+          "surface": "amount",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ne kadar olursa olsun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 87,
+          "end": 94,
+          "surface": "however",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "convincing",
+      "gloss": "ikna edici",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 105,
+          "surface": "convincing",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "output",
+      "gloss": "çıktı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 116,
+          "surface": "output",
+          "contextSentence": "Searle's conclusion was that following rules cannot by itself amount to understanding, however convincing the output.",
+          "contextSentenceTr": "Searle'ün sonucu, çıktı ne kadar ikna edici olursa olsun, kuralları izlemenin tek başına anlayış anlamına gelemeyeceğiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "critics",
+      "gloss": "eleştirmenler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 125,
+          "surface": "Critics",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "replied",
+      "gloss": "cevap vermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 126,
+          "end": 133,
+          "surface": "replied",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 158,
+          "surface": "might",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "belong",
+      "gloss": "ait olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 159,
+          "end": 165,
+          "surface": "belong",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "whole",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 178,
+          "surface": "whole",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 179,
+          "end": 185,
+          "surface": "system",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 206,
+          "end": 214,
+          "surface": "together",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 216,
+          "end": 222,
+          "surface": "rather",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 223,
+          "end": 227,
+          "surface": "than",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 234,
+          "surface": "any",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "lemma": "part",
+      "gloss": "parça",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 235,
+          "end": 239,
+          "surface": "part",
+          "contextSentence": "Critics replied that understanding might belong to the whole system, man, book and room together, rather than to any part.",
+          "contextSentenceTr": "Eleştirmenler anlayışın herhangi bir parçaya değil, adam, kitap ve odadan oluşan bütün sisteme ait olabileceğini söyledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 417,
+          "end": 421,
+          "surface": "part",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "dispute",
+      "gloss": "anlaşmazlık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 252,
+          "surface": "dispute",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "never",
+      "gloss": "asla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 262,
+          "surface": "never",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "been",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 263,
+          "end": 267,
+          "surface": "been",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "settled",
+      "gloss": "çözülmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 268,
+          "end": 275,
+          "surface": "settled",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "grown",
+      "gloss": "büyümek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 288,
+          "end": 293,
+          "surface": "grown",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 298,
+          "surface": "more",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 331,
+          "end": 335,
+          "surface": "more",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "urgent",
+      "gloss": "acil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 305,
+          "surface": "urgent",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 306,
+          "end": 308,
+          "surface": "as",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "programs",
+      "gloss": "programlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 317,
+          "surface": "programs",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "produce",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 325,
+          "surface": "produce",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "ever",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 326,
+          "end": 330,
+          "surface": "ever",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "fluent",
+      "gloss": "akıcı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 342,
+          "surface": "fluent",
+          "contextSentence": "The dispute has never been settled, and it has grown more urgent as programs produce ever more fluent replies.",
+          "contextSentenceTr": "Anlaşmazlık hiç çözülmedi ve programlar giderek daha akıcı yanıtlar ürettikçe daha acil hâle geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 352,
+          "end": 356,
+          "surface": "Each",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "side",
+      "gloss": "taraf",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 357,
+          "end": 361,
+          "surface": "side",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "cite",
+      "gloss": "anmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 366,
+          "end": 370,
+          "surface": "cite",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "scenario",
+      "gloss": "senaryo",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 380,
+          "end": 388,
+          "surface": "scenario",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 392,
+          "end": 395,
+          "surface": "its",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 396,
+          "end": 399,
+          "surface": "own",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "favour",
+      "gloss": "lehine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 400,
+          "end": 406,
+          "surface": "favour",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 408,
+          "end": 413,
+          "surface": "which",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "problem",
+      "gloss": "sorun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 429,
+          "end": 436,
+          "surface": "problem",
+          "contextSentence": "Each side can cite the same scenario in its own favour, which is part of the problem.",
+          "contextSentenceTr": "Her iki taraf da aynı senaryoyu kendi lehine anabilir; bu da sorunun bir parçasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 40,
+          "end": 44,
+          "surface": "what",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "debate",
+      "gloss": "tartışma",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 9,
+          "end": 15,
+          "surface": "debate",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "clarifies",
+      "gloss": "netleştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 16,
+          "end": 25,
+          "surface": "clarifies",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 27,
+          "end": 29,
+          "surface": "at",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 204,
+          "end": 206,
+          "surface": "at",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "least",
+      "gloss": "en az",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 30,
+          "end": 35,
+          "surface": "least",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 207,
+          "end": 212,
+          "surface": "least",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 45,
+          "end": 47,
+          "surface": "we",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 58,
+          "end": 60,
+          "surface": "we",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 82,
+          "end": 84,
+          "surface": "we",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 156,
+          "end": 158,
+          "surface": "we",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 244,
+          "end": 246,
+          "surface": "we",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "mean",
+      "gloss": "kastetmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 48,
+          "end": 52,
+          "surface": "mean",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 85,
+          "end": 89,
+          "surface": "mean",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 159,
+          "end": 163,
+          "surface": "mean",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "ask",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 61,
+          "end": 64,
+          "surface": "ask",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "soru",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 69,
+          "end": 77,
+          "surface": "question",
+          "contextSentence": "What the debate clarifies, at least, is what we mean when we ask the question.",
+          "contextSentenceTr": "Tartışmanın en azından netleştirdiği şey, soruyu sorarken ne kastettiğimizdir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 182,
+          "end": 190,
+          "surface": "question",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 79,
+          "end": 81,
+          "surface": "If",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 153,
+          "end": 155,
+          "surface": "if",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "useful",
+      "gloss": "yararlı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 90,
+          "end": 96,
+          "surface": "useful",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "reasonable",
+      "gloss": "makul",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 132,
+          "end": 142,
+          "surface": "reasonable",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "standard",
+      "gloss": "ölçüt",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 143,
+          "end": 151,
+          "surface": "standard",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "inner",
+      "gloss": "iç",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 164,
+          "end": 169,
+          "surface": "inner",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "experience",
+      "gloss": "deneyim",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 170,
+          "end": 180,
+          "surface": "experience",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "silent",
+      "gloss": "sessiz",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 188,
+          "end": 194,
+          "surface": "silent",
+          "contextSentence": "If we mean useful behaviour, the imitation game is a reasonable standard; if we mean inner experience, it is silent.",
+          "contextSentenceTr": "Yararlı davranışı kastediyorsak taklit oyunu makul bir ölçüttür; iç deneyimi kastediyorsak sessizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 4,
+          "end": 7,
+          "surface": "two",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "questions",
+      "gloss": "sorular",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 8,
+          "end": 17,
+          "surface": "questions",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "easily",
+      "gloss": "kolayca",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 22,
+          "end": 28,
+          "surface": "easily",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "confused",
+      "gloss": "karıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 29,
+          "end": 37,
+          "surface": "confused",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 43,
+          "end": 47,
+          "surface": "much",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "kamu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 55,
+          "end": 61,
+          "surface": "public",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "conversation",
+      "gloss": "konuşma",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 62,
+          "end": 74,
+          "surface": "conversation",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 75,
+          "end": 80,
+          "surface": "about",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 228,
+          "end": 233,
+          "surface": "about",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "artificial",
+      "gloss": "yapay",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 81,
+          "end": 91,
+          "surface": "artificial",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "intelligence",
+      "gloss": "zeka",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 92,
+          "end": 104,
+          "surface": "intelligence",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "depends",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 105,
+          "end": 112,
+          "surface": "depends",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 113,
+          "end": 115,
+          "surface": "on",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "confusing",
+      "gloss": "karıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 116,
+          "end": 125,
+          "surface": "confusing",
+          "contextSentence": "The two questions are easily confused, and much of the public conversation about artificial intelligence depends on confusing them.",
+          "contextSentenceTr": "İki soru kolayca karıştırılır ve yapay zeka hakkındaki kamusal konuşmanın büyük kısmı onları karıştırmaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "recognising",
+      "gloss": "fark etmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 132,
+          "end": 143,
+          "surface": "Recognising",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "difference",
+      "gloss": "fark",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 148,
+          "end": 158,
+          "surface": "difference",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "will",
+      "gloss": "-ecek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 159,
+          "end": 163,
+          "surface": "will",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 199,
+          "end": 203,
+          "surface": "will",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "answer",
+      "gloss": "cevaplamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 168,
+          "end": 174,
+          "surface": "answer",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "either",
+      "gloss": "ikisinden biri",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 175,
+          "end": 181,
+          "surface": "either",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "keep",
+      "gloss": "tutmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 213,
+          "end": 217,
+          "surface": "keep",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "us",
+      "gloss": "bizi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 218,
+          "end": 220,
+          "surface": "us",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "honest",
+      "gloss": "dürüst",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 221,
+          "end": 227,
+          "surface": "honest",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 240,
+          "end": 243,
+          "surface": "one",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "asking",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 251,
+          "end": 257,
+          "surface": "asking",
+          "contextSentence": "Recognising the difference will not answer either question, but it will at least keep us honest about which one we are asking.",
+          "contextSentenceTr": "Farkı fark etmek iki sorudan hiçbirini cevaplamaz ama en azından hangisini sorduğumuz konusunda bizi dürüst tutar."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the central point of the passage?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 132,
+        "end": 258
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Machines now understand language as people do",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bunu kanıtlanmış saymaz."
+        },
+        {
+          "key": "o2",
+          "text": "Turing's test is worthless as a standard",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin onu makul bir ölçüt olarak değerlendirir."
+        },
+        {
+          "key": "o3",
+          "text": "Searle's argument ended the debate",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin tartışmanın hiç çözülmediğini söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Behaviour and understanding differ",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin davranış ile anlayışın ayrı sorular olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "How did critics respond to Searle's argument?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 118,
+        "end": 240
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The experiment was performed too early",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Zamanlama itirazı yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "It may belong to the whole system",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bunu açıkça söyler."
+        },
+        {
+          "key": "o3",
+          "text": "The man in the room secretly knew Chinese",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir itiraz yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "Rule books can never be written down",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin böyle bir iddia taşımaz."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “flawless” mean in the second paragraph?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 357,
+        "end": 403
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Based on real experience",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin yanıtların anlamsız şekillerden geldiğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Spoken in a foreign language",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Çince geçer ama kelimenin anlamı bu değildir."
+        },
+        {
+          "key": "o3",
+          "text": "Without any visible fault",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Flawless, kusursuz demektir."
+        },
+        {
+          "key": "o4",
+          "text": "Written very quickly",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Hız anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the author suggest about public conversation on artificial intelligence?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 43,
+        "end": 130
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It often mixes up two different questions",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bu karışıklığı eleştirir."
+        },
+        {
+          "key": "o2",
+          "text": "It is based mainly on careful experiments",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin tersini ima eder."
+        },
+        {
+          "key": "o3",
+          "text": "It rarely mentions the imitation game",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir bilgi yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "It agrees that machines understand language",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin böyle bir uzlaşıdan söz etmez."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Alan Turing 1950'de Mind dergisindeki makalesinde 'makineler düşünebilir mi?' sorusunu taklit oyunu adlı bir testle değiştirmeyi önerdi: sorgulayıcı yazılı mesajlarla gizli bir insan ve gizli bir makineyle iletişim kurar, onları güvenilir biçimde ayıramazsa makine testi geçer.",
+        "source": "A. M. Turing, Computing Machinery and Intelligence, Mind 59(236), 1950, ss. 433-460; https://doi.org/10.1093/mind/LIX.236.433",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "John Searle 1980'de Çin Odası düşünce deneyini önerdi: Çince bilmeyen bir adam kural kitabını izleyerek Çince notlara kusursuz görünen yanıtlar verir; Searle kural izlemenin tek başına anlayış olmadığını savundu; eleştirmenler anlayışın bütün sisteme ait olabileceğini söyledi.",
+        "source": "John R. Searle, Minds, Brains, and Programs, Behavioral and Brain Sciences 3(3), 1980, ss. 417-424; https://doi.org/10.1017/S0140525X00005756",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

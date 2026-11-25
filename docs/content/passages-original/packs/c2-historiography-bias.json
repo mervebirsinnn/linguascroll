@@ -1,0 +1,4211 @@
+{
+  "slug": "c2-historiography-bias",
+  "level": "C2",
+  "title": "Who Keeps the Archive?",
+  "topic": "Tarih",
+  "sortOrder": 31,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was. The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons. His insistence on archives and original documents helped shape the modern discipline.",
+    "Yet archives are not neutral either. Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all. A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving. The bias, in such cases, lies not in the method but upstream of it.",
+    "In the early nineteen sixties, E. H. Carr pushed the point further. In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses. On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+    "The danger is that this insight can be stretched into something Carr did not intend. If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing. Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+    "What emerges is a discipline that is neither a mirror nor a mere opinion. Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives. The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last."
+  ],
+  "words": [
+    {
+      "lemma": "leopold",
+      "gloss": "Leopold",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 7,
+          "surface": "Leopold",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "von",
+      "gloss": "von",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 8,
+          "end": 11,
+          "surface": "von",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "ranke",
+      "gloss": "Ranke",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 17,
+          "surface": "Ranke",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 180,
+          "surface": "Ranke",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 22,
+          "surface": "the",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 97,
+          "surface": "the",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 123,
+          "end": 126,
+          "surface": "The",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 337,
+          "end": 340,
+          "surface": "the",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 255,
+          "surface": "the",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 273,
+          "surface": "the",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 289,
+          "end": 292,
+          "surface": "the",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 308,
+          "surface": "The",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 345,
+          "surface": "the",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 6,
+          "surface": "the",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 52,
+          "surface": "the",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 155,
+          "end": 158,
+          "surface": "the",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 342,
+          "end": 345,
+          "surface": "the",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 236,
+          "end": 239,
+          "surface": "the",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 216,
+          "end": 219,
+          "surface": "The",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 263,
+          "end": 266,
+          "surface": "the",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 363,
+          "end": 366,
+          "surface": "the",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteenth",
+      "gloss": "on dokuzuncu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 33,
+          "surface": "nineteenth",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 34,
+          "end": 41,
+          "surface": "century",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "german",
+      "gloss": "Alman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 48,
+          "surface": "German",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "historian",
+      "gloss": "tarihçi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 58,
+          "surface": "historian",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 180,
+          "surface": "historian",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 159,
+          "end": 168,
+          "surface": "historian",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "famously",
+      "gloss": "ünlü biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 60,
+          "end": 68,
+          "surface": "famously",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "urged",
+      "gloss": "teşvik etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 74,
+          "surface": "urged",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "historians",
+      "gloss": "tarihçiler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 85,
+          "surface": "historians",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 176,
+          "end": 186,
+          "surface": "historians",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meye",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 88,
+          "surface": "to",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "show",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 89,
+          "end": 93,
+          "surface": "show",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "past",
+      "gloss": "geçmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 102,
+          "surface": "past",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 105,
+          "surface": "as",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 152,
+          "surface": "as",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 244,
+          "end": 246,
+          "surface": "as",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 108,
+          "surface": "it",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 158,
+          "surface": "it",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 338,
+          "surface": "it",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 109,
+          "end": 111,
+          "surface": "it",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "actually",
+      "gloss": "gerçekten",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 117,
+          "surface": "actually",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 118,
+          "end": 121,
+          "surface": "was",
+          "contextSentence": "Leopold von Ranke, the nineteenth century German historian, famously urged historians to show the past as it actually was.",
+          "contextSentenceTr": "On dokuzuncu yüzyıl Alman tarihçisi Leopold von Ranke, tarihçileri geçmişi gerçekte olduğu gibi göstermeye ünlü biçimde teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 184,
+          "surface": "was",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "phrase",
+      "gloss": "ifade",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 127,
+          "end": 133,
+          "surface": "phrase",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 136,
+          "surface": "is",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 87,
+          "surface": "Is",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 291,
+          "end": 293,
+          "surface": "is",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 341,
+          "surface": "is",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 11,
+          "end": 13,
+          "surface": "is",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 102,
+          "end": 104,
+          "surface": "is",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 13,
+          "end": 15,
+          "surface": "is",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 34,
+          "end": 36,
+          "surface": "is",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 249,
+          "end": 251,
+          "surface": "is",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 142,
+          "surface": "often",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "quoted",
+      "gloss": "alıntılanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 149,
+          "surface": "quoted",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 153,
+          "end": 155,
+          "surface": "if",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 85,
+          "end": 87,
+          "surface": "If",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "-mış gibi (were)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 163,
+          "surface": "were",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "naive",
+      "gloss": "saf",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 169,
+          "surface": "naive",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 174,
+          "surface": "but",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 353,
+          "end": 356,
+          "surface": "but",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 206,
+          "surface": "but",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 105,
+          "end": 108,
+          "surface": "but",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 388,
+          "end": 391,
+          "surface": "but",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "arguing",
+      "gloss": "savunmak (argue against: karşı çıkmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 192,
+          "surface": "arguing",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "against",
+      "gloss": "karşı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 200,
+          "surface": "against",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 201,
+          "end": 202,
+          "surface": "a",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 248,
+          "surface": "a",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 170,
+          "surface": "A",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 137,
+          "surface": "a",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 298,
+          "end": 299,
+          "surface": "a",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 368,
+          "end": 369,
+          "surface": "a",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 134,
+          "end": 135,
+          "surface": "a",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 172,
+          "end": 173,
+          "surface": "a",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 330,
+          "end": 331,
+          "surface": "a",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 16,
+          "end": 17,
+          "surface": "a",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 45,
+          "end": 46,
+          "surface": "a",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 58,
+          "end": 59,
+          "surface": "a",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "specific",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 211,
+          "surface": "specific",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "habit",
+      "gloss": "alışkanlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 217,
+          "surface": "habit",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "treating",
+      "gloss": "ele almak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 227,
+          "surface": "treating",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "history",
+      "gloss": "tarih",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 228,
+          "end": 235,
+          "surface": "history",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 389,
+          "end": 396,
+          "surface": "history",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 241,
+          "end": 248,
+          "surface": "history",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "chiefly",
+      "gloss": "başlıca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 243,
+          "surface": "chiefly",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "source",
+      "gloss": "kaynak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 255,
+          "surface": "source",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 258,
+          "surface": "of",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 269,
+          "surface": "of",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 368,
+          "surface": "of",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 375,
+          "end": 377,
+          "surface": "of",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 150,
+          "end": 152,
+          "surface": "of",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 180,
+          "end": 182,
+          "surface": "of",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 354,
+          "end": 356,
+          "surface": "of",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "moral",
+      "gloss": "ahlaki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 259,
+          "end": 264,
+          "surface": "moral",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "lessons",
+      "gloss": "dersler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 265,
+          "end": 272,
+          "surface": "lessons",
+          "contextSentence": "The phrase is often quoted as if it were naive, but Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons.",
+          "contextSentenceTr": "İfade sık sık safmış gibi alıntılanır, ama Ranke belirli bir alışkanlığa karşı çıkıyordu: tarihi başlıca bir ahlak dersleri kaynağı olarak ele almak."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 274,
+          "end": 277,
+          "surface": "His",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 71,
+          "end": 74,
+          "surface": "his",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "insistence",
+      "gloss": "ısrar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 288,
+          "surface": "insistence",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 291,
+          "surface": "on",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "archives",
+      "gloss": "arşivler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 292,
+          "end": 300,
+          "surface": "archives",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 12,
+          "surface": "archives",
+          "contextSentence": "Yet archives are not neutral either.",
+          "contextSentenceTr": "Yine de arşivler de tarafsız değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 206,
+          "end": 214,
+          "surface": "archives",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 301,
+          "end": 304,
+          "surface": "and",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 80,
+          "surface": "and",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 130,
+          "surface": "and",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 245,
+          "surface": "and",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 168,
+          "end": 171,
+          "surface": "and",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 232,
+          "end": 235,
+          "surface": "and",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 153,
+          "end": 156,
+          "surface": "and",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "original",
+      "gloss": "özgün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 305,
+          "end": 313,
+          "surface": "original",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "documents",
+      "gloss": "belgeler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 314,
+          "end": 323,
+          "surface": "documents",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "helped",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 330,
+          "surface": "helped",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "shape",
+      "gloss": "biçimlendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 331,
+          "end": 336,
+          "surface": "shape",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "modern",
+      "gloss": "modern",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 341,
+          "end": 347,
+          "surface": "modern",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "discipline",
+      "gloss": "disiplin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 348,
+          "end": 358,
+          "surface": "discipline",
+          "contextSentence": "His insistence on archives and original documents helped shape the modern discipline.",
+          "contextSentenceTr": "Arşivler ve özgün belgeler konusundaki ısrarı modern disiplinin biçimlenmesine yardım etti."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 18,
+          "end": 28,
+          "surface": "discipline",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "Yet",
+          "contextSentence": "Yet archives are not neutral either.",
+          "contextSentenceTr": "Yine de arşivler de tarafsız değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 16,
+          "surface": "are",
+          "contextSentence": "Yet archives are not neutral either.",
+          "contextSentenceTr": "Yine de arşivler de tarafsız değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 20,
+          "surface": "not",
+          "contextSentence": "Yet archives are not neutral either.",
+          "contextSentenceTr": "Yine de arşivler de tarafsız değildir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 335,
+          "end": 338,
+          "surface": "not",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 297,
+          "surface": "not",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 73,
+          "end": 76,
+          "surface": "not",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 390,
+          "end": 393,
+          "surface": "not",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "neutral",
+      "gloss": "tarafsız",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 21,
+          "end": 28,
+          "surface": "neutral",
+          "contextSentence": "Yet archives are not neutral either.",
+          "contextSentenceTr": "Yine de arşivler de tarafsız değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "either",
+      "gloss": "de (olumsuzda)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 29,
+          "end": 35,
+          "surface": "either",
+          "contextSentence": "Yet archives are not neutral either.",
+          "contextSentenceTr": "Yine de arşivler de tarafsız değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "someone",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 37,
+          "end": 44,
+          "surface": "Someone",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "decided",
+      "gloss": "karar vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 45,
+          "end": 52,
+          "surface": "decided",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 53,
+          "end": 58,
+          "surface": "which",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 105,
+          "surface": "which",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "letters",
+      "gloss": "mektuplar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 59,
+          "end": 66,
+          "surface": "letters",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 67,
+          "end": 71,
+          "surface": "were",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 91,
+          "surface": "were",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 117,
+          "surface": "were",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 137,
+          "end": 141,
+          "surface": "were",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "saklanmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 72,
+          "end": 76,
+          "surface": "kept",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangileri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 81,
+          "end": 86,
+          "surface": "which",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 136,
+          "surface": "which",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "burned",
+      "gloss": "yakılmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 98,
+          "surface": "burned",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "voices",
+      "gloss": "sesler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 112,
+          "surface": "voices",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "recorded",
+      "gloss": "kaydedilmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 126,
+          "surface": "recorded",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "never",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 147,
+          "surface": "never",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "written",
+      "gloss": "yazılmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 155,
+          "surface": "written",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 252,
+          "end": 259,
+          "surface": "written",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "yazıya geçirmek (write down)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 160,
+          "surface": "down",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "hiç (at all)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 161,
+          "end": 163,
+          "surface": "at",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "hiç (at all)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 167,
+          "surface": "all",
+          "contextSentence": "Someone decided which letters were kept and which were burned, which voices were recorded and which were never written down at all.",
+          "contextSentenceTr": "Hangi mektupların saklanıp hangilerinin yakılacağına, hangi seslerin kaydedilip hangilerinin hiç yazıya geçirilmeyeceğine biri karar verdi."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 184,
+          "surface": "who",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reads",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 185,
+          "end": 190,
+          "surface": "reads",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 195,
+          "surface": "only",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 344,
+          "end": 348,
+          "surface": "only",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 200,
+          "surface": "what",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 80,
+          "end": 84,
+          "surface": "What",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 154,
+          "surface": "what",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "survives",
+      "gloss": "günümüze kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 209,
+          "surface": "survives",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 213,
+          "surface": "may",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reproduce",
+      "gloss": "yeniden üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 223,
+          "surface": "reproduce",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 229,
+          "surface": "with",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "impeccable",
+      "gloss": "kusursuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 230,
+          "end": 240,
+          "surface": "impeccable",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "footnotes",
+      "gloss": "dipnotlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 250,
+          "surface": "footnotes",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "priorities",
+      "gloss": "öncelikler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 266,
+          "surface": "priorities",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 280,
+          "surface": "people",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 284,
+          "surface": "who",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 285,
+          "end": 288,
+          "surface": "did",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "preserving",
+      "gloss": "koruma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 303,
+          "surface": "preserving",
+          "contextSentence": "A historian who reads only what survives may reproduce, with impeccable footnotes, the priorities of the people who did the preserving.",
+          "contextSentenceTr": "Yalnızca günümüze kalanı okuyan bir tarihçi, kusursuz dipnotlarla, korumayı yapan insanların önceliklerini yeniden üretebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "bias",
+      "gloss": "yanlılık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 313,
+          "surface": "bias",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 315,
+          "end": 317,
+          "surface": "in",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 339,
+          "end": 341,
+          "surface": "in",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 68,
+          "end": 70,
+          "surface": "In",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 135,
+          "surface": "in",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 322,
+          "surface": "such",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "cases",
+      "gloss": "durumlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 328,
+          "surface": "cases",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "lies",
+      "gloss": "yatmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 330,
+          "end": 334,
+          "surface": "lies",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "method",
+      "gloss": "yöntem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 346,
+          "end": 352,
+          "surface": "method",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "upstream",
+      "gloss": "akış yukarısında (daha önceki aşamada)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 357,
+          "end": 365,
+          "surface": "upstream",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 369,
+          "end": 371,
+          "surface": "it",
+          "contextSentence": "The bias, in such cases, lies not in the method but upstream of it.",
+          "contextSentenceTr": "Böyle durumlarda yanlılık yöntemde değil, ondan önceki aşamada yatar."
+        }
+      ]
+    },
+    {
+      "lemma": "early",
+      "gloss": "erken",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 7,
+          "end": 12,
+          "surface": "early",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteen",
+      "gloss": "on dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 21,
+          "surface": "nineteen",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "sixties",
+      "gloss": "altmışlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 29,
+          "surface": "sixties",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "e",
+      "gloss": "E",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 32,
+          "surface": "E",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "h",
+      "gloss": "H",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 35,
+          "surface": "H",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "carr",
+      "gloss": "Carr",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 37,
+          "end": 41,
+          "surface": "Carr",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 64,
+          "end": 68,
+          "surface": "Carr",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 281,
+          "end": 285,
+          "surface": "Carr",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "pushed",
+      "gloss": "itmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 48,
+          "surface": "pushed",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "point",
+      "gloss": "nokta",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 58,
+          "surface": "point",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "further",
+      "gloss": "daha ileri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 59,
+          "end": 66,
+          "surface": "further",
+          "contextSentence": "In the early nineteen sixties, E. H. Carr pushed the point further.",
+          "contextSentenceTr": "1960'ların başında E. H. Carr bu noktayı daha ileri taşıdı."
+        }
+      ]
+    },
+    {
+      "lemma": "book",
+      "gloss": "kitap",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 75,
+          "end": 79,
+          "surface": "book",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "history",
+      "gloss": "Tarih",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 95,
+          "surface": "History",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 98,
+          "end": 100,
+          "surface": "he",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 223,
+          "end": 225,
+          "surface": "he",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 258,
+          "end": 260,
+          "surface": "he",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "compared",
+      "gloss": "karşılaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 109,
+          "surface": "compared",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "facts",
+      "gloss": "olgular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 115,
+          "surface": "facts",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 378,
+          "end": 383,
+          "surface": "facts",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 116,
+          "end": 118,
+          "surface": "to",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "fish",
+      "gloss": "balık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 119,
+          "end": 123,
+          "surface": "fish",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "swimming",
+      "gloss": "yüzmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 132,
+          "surface": "swimming",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "vast",
+      "gloss": "uçsuz bucaksız",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 138,
+          "end": 142,
+          "surface": "vast",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "ocean",
+      "gloss": "okyanus",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 148,
+          "surface": "ocean",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "catches",
+      "gloss": "yakalamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 176,
+          "surface": "catches",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "depends",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 184,
+          "surface": "depends",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "partly",
+      "gloss": "kısmen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 185,
+          "end": 191,
+          "surface": "partly",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 194,
+          "surface": "on",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 214,
+          "end": 216,
+          "surface": "on",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "chance",
+      "gloss": "şans",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 195,
+          "end": 201,
+          "surface": "chance",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "mainly",
+      "gloss": "esas olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 213,
+          "surface": "mainly",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "where",
+      "gloss": "nerede",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 222,
+          "surface": "where",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "chooses",
+      "gloss": "seçmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 226,
+          "end": 233,
+          "surface": "chooses",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 236,
+          "surface": "to",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "fish",
+      "gloss": "balık tutmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 241,
+          "surface": "fish",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 246,
+          "end": 250,
+          "surface": "what",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "tackle",
+      "gloss": "olta takımı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 251,
+          "end": 257,
+          "surface": "tackle",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "uses",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 261,
+          "end": 265,
+          "surface": "uses",
+          "contextSentence": "In his book What Is History?, he compared facts to fish swimming in a vast ocean: what the historian catches depends partly on chance, but mainly on where he chooses to fish and what tackle he uses.",
+          "contextSentenceTr": "Tarih Nedir? adlı kitabında olguları uçsuz bucaksız bir okyanusta yüzen balıklara benzetti: tarihçinin yakaladığı şey kısmen şansa, ama esas olarak nerede balık tutmayı seçtiğine ve hangi olta takımını kullandığına bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e göre",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 267,
+          "end": 269,
+          "surface": "On",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 274,
+          "surface": "this",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 19,
+          "end": 23,
+          "surface": "this",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 357,
+          "end": 361,
+          "surface": "this",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "view",
+      "gloss": "görüş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 275,
+          "end": 279,
+          "surface": "view",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "selection",
+      "gloss": "seçme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 281,
+          "end": 290,
+          "surface": "selection",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "regrettable",
+      "gloss": "üzücü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 300,
+          "end": 311,
+          "surface": "regrettable",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "lapse",
+      "gloss": "sapma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 317,
+          "surface": "lapse",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 322,
+          "surface": "from",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 363,
+          "end": 367,
+          "surface": "from",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 195,
+          "end": 199,
+          "surface": "from",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "objectivity",
+      "gloss": "nesnellik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 334,
+          "surface": "objectivity",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "tam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 346,
+          "end": 350,
+          "surface": "very",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "thing",
+      "gloss": "şey",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 356,
+          "surface": "thing",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 357,
+          "end": 361,
+          "surface": "that",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 14,
+          "end": 18,
+          "surface": "that",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 325,
+          "end": 329,
+          "surface": "that",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 29,
+          "end": 33,
+          "surface": "that",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 236,
+          "end": 240,
+          "surface": "that",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 294,
+          "end": 298,
+          "surface": "that",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "turns",
+      "gloss": "dönüştürmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 367,
+          "surface": "turns",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "heap",
+      "gloss": "yığın",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 370,
+          "end": 374,
+          "surface": "heap",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 384,
+          "end": 388,
+          "surface": "into",
+          "contextSentence": "On this view, selection is not a regrettable lapse from objectivity; it is the very thing that turns a heap of facts into history.",
+          "contextSentenceTr": "Bu görüşe göre seçme, nesnellikten üzücü bir sapma değildir; bir olgu yığınını tarihe dönüştüren tam da odur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 49,
+          "end": 53,
+          "surface": "into",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "danger",
+      "gloss": "tehlike",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 4,
+          "end": 10,
+          "surface": "danger",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "insight",
+      "gloss": "kavrayış",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 24,
+          "end": 31,
+          "surface": "insight",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 32,
+          "end": 35,
+          "surface": "can",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 112,
+          "end": 115,
+          "surface": "can",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 36,
+          "end": 38,
+          "surface": "be",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 93,
+          "end": 95,
+          "surface": "be",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 116,
+          "end": 118,
+          "surface": "be",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "stretched",
+      "gloss": "zorlanmak (esnetilmek)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 39,
+          "end": 48,
+          "surface": "stretched",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "something",
+      "gloss": "bir şey",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 54,
+          "end": 63,
+          "surface": "something",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz/soru yardımcı fiili (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 69,
+          "end": 72,
+          "surface": "did",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "intend",
+      "gloss": "amaçlamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 77,
+          "end": 83,
+          "surface": "intend",
+          "contextSentence": "The danger is that this insight can be stretched into something Carr did not intend.",
+          "contextSentenceTr": "Tehlike, bu kavrayışın Carr'ın amaçlamadığı bir şeye doğru esnetilebilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 88,
+          "end": 93,
+          "surface": "every",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "account",
+      "gloss": "anlatı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 94,
+          "end": 101,
+          "surface": "account",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "merely",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 105,
+          "end": 111,
+          "surface": "merely",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 112,
+          "end": 115,
+          "surface": "one",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "perspective",
+      "gloss": "bakış açısı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 116,
+          "end": 127,
+          "surface": "perspective",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 74,
+          "end": 85,
+          "surface": "Perspective",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "o halde",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 129,
+          "end": 133,
+          "surface": "then",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "careful",
+      "gloss": "dikkatli",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 136,
+          "end": 143,
+          "surface": "careful",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "inceleme",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 144,
+          "end": 149,
+          "surface": "study",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "census",
+      "gloss": "nüfus sayımı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 153,
+          "end": 159,
+          "surface": "census",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "records",
+      "gloss": "kayıtlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 160,
+          "end": 167,
+          "surface": "records",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "piece",
+      "gloss": "parça",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 174,
+          "end": 179,
+          "surface": "piece",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "wartime",
+      "gloss": "savaş dönemi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 183,
+          "end": 190,
+          "surface": "wartime",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "propaganda",
+      "gloss": "propaganda",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 201,
+          "surface": "propaganda",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 202,
+          "end": 208,
+          "surface": "become",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "equally",
+      "gloss": "eşit derecede",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 209,
+          "end": 216,
+          "surface": "equally",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "valid",
+      "gloss": "geçerli",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 217,
+          "end": 222,
+          "surface": "valid",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "stories",
+      "gloss": "öyküler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 223,
+          "end": 230,
+          "surface": "stories",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "historian's",
+      "gloss": "tarihçinin",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 240,
+          "end": 251,
+          "surface": "historian's",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "training",
+      "gloss": "eğitim",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 252,
+          "end": 260,
+          "surface": "training",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "counts",
+      "gloss": "sayılmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 261,
+          "end": 267,
+          "surface": "counts",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "olarak (count for)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 268,
+          "end": 271,
+          "surface": "for",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "nothing",
+      "gloss": "hiçbir şey",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 272,
+          "end": 279,
+          "surface": "nothing",
+          "contextSentence": "If every account is merely one perspective, then a careful study of census records and a piece of wartime propaganda become equally valid stories, and the historian's training counts for nothing.",
+          "contextSentenceTr": "Her anlatı yalnızca bir bakış açısıysa, nüfus sayımı kayıtlarının dikkatli bir incelemesi ile bir parça savaş propagandası eşit derecede geçerli öyküler olur ve tarihçinin eğitimi hiçbir şey sayılmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "himself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 286,
+          "end": 293,
+          "surface": "himself",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "resisted",
+      "gloss": "direnmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 294,
+          "end": 302,
+          "surface": "resisted",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 303,
+          "end": 307,
+          "surface": "that",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "slide",
+      "gloss": "kayma",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 308,
+          "end": 313,
+          "surface": "slide",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "observing",
+      "gloss": "gözlemlemek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 315,
+          "end": 324,
+          "surface": "observing",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "mountain",
+      "gloss": "dağ",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 332,
+          "end": 340,
+          "surface": "mountain",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 341,
+          "end": 346,
+          "surface": "which",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "looks",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 347,
+          "end": 352,
+          "surface": "looks",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 353,
+          "end": 362,
+          "surface": "different",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 368,
+          "end": 377,
+          "surface": "different",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "angles",
+      "gloss": "açılar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 378,
+          "end": 384,
+          "surface": "angles",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 385,
+          "end": 389,
+          "surface": "does",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 394,
+          "end": 403,
+          "surface": "therefore",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 404,
+          "end": 408,
+          "surface": "have",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "no",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 409,
+          "end": 411,
+          "surface": "no",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "shape",
+      "gloss": "biçim",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 412,
+          "end": 417,
+          "surface": "shape",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 419,
+          "end": 421,
+          "surface": "or",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "infinitely",
+      "gloss": "sonsuz",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 422,
+          "end": 432,
+          "surface": "infinitely",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 433,
+          "end": 437,
+          "surface": "many",
+          "contextSentence": "Carr himself resisted that slide, observing that a mountain which looks different from different angles does not therefore have no shape, or infinitely many.",
+          "contextSentenceTr": "Carr'ın kendisi bu kaymaya direndi; farklı açılardan farklı görünen bir dağın bu yüzden hiç biçimi olmadığını ya da sonsuz sayıda biçimi olduğunu söylemenin yanlış olduğunu gözlemledi."
+        }
+      ]
+    },
+    {
+      "lemma": "emerges",
+      "gloss": "ortaya çıkmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 5,
+          "end": 12,
+          "surface": "emerges",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "neither",
+      "gloss": "ne ... ne de",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 37,
+          "end": 44,
+          "surface": "neither",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "mirror",
+      "gloss": "ayna",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 47,
+          "end": 53,
+          "surface": "mirror",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "nor",
+      "gloss": "ne de",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 54,
+          "end": 57,
+          "surface": "nor",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "mere",
+      "gloss": "salt",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 60,
+          "end": 64,
+          "surface": "mere",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "opinion",
+      "gloss": "görüş",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 65,
+          "end": 72,
+          "surface": "opinion",
+          "contextSentence": "What emerges is a discipline that is neither a mirror nor a mere opinion.",
+          "contextSentenceTr": "Ortaya çıkan, ne bir ayna ne de salt bir görüş olan bir disiplindir."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-emez",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 86,
+          "end": 92,
+          "surface": "cannot",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "removed",
+      "gloss": "kaldırılmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 96,
+          "end": 103,
+          "surface": "removed",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "declared",
+      "gloss": "açıkça belirtilmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 119,
+          "end": 127,
+          "surface": "declared",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "sınanmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 129,
+          "end": 135,
+          "surface": "tested",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "against",
+      "gloss": "karşısında",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 136,
+          "end": 143,
+          "surface": "against",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 144,
+          "end": 152,
+          "surface": "evidence",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "corrected",
+      "gloss": "düzeltilmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 157,
+          "end": 166,
+          "surface": "corrected",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 167,
+          "end": 169,
+          "surface": "by",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 260,
+          "end": 262,
+          "surface": "by",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğer",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 170,
+          "end": 175,
+          "surface": "other",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 200,
+          "end": 205,
+          "surface": "other",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "working",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 187,
+          "end": 194,
+          "surface": "working",
+          "contextSentence": "Perspective cannot be removed, but it can be declared, tested against evidence and corrected by other historians working from other archives.",
+          "contextSentenceTr": "Bakış açısı kaldırılamaz, ama açıkça belirtilebilir, kanıta karşı sınanabilir ve başka arşivlerden çalışan başka tarihçilerce düzeltilebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "familiar",
+      "gloss": "bilindik",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 220,
+          "end": 228,
+          "surface": "familiar",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "slogan",
+      "gloss": "slogan",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 229,
+          "end": 235,
+          "surface": "slogan",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "victors",
+      "gloss": "galipler",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 267,
+          "end": 274,
+          "surface": "victors",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 367,
+          "end": 374,
+          "surface": "victors",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "repeated",
+      "gloss": "tekrarlanmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 276,
+          "end": 284,
+          "surface": "repeated",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "öylesine",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 285,
+          "end": 287,
+          "surface": "so",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 288,
+          "end": 293,
+          "surface": "often",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "few",
+      "gloss": "az kişi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 299,
+          "end": 302,
+          "surface": "few",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "pause",
+      "gloss": "durmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 303,
+          "end": 308,
+          "surface": "pause",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 309,
+          "end": 311,
+          "surface": "to",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "ask",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 312,
+          "end": 315,
+          "surface": "ask",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "kim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 316,
+          "end": 319,
+          "surface": "who",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 320,
+          "end": 325,
+          "surface": "first",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 381,
+          "end": 386,
+          "surface": "first",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "said",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 326,
+          "end": 330,
+          "surface": "said",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 331,
+          "end": 333,
+          "surface": "it",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "captures",
+      "gloss": "yakalamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 335,
+          "end": 343,
+          "surface": "captures",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "half",
+      "gloss": "yarı",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 349,
+          "end": 353,
+          "surface": "half",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "write",
+      "gloss": "yazmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 375,
+          "end": 380,
+          "surface": "write",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 404,
+          "end": 409,
+          "surface": "write",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 392,
+          "end": 396,
+          "surface": "they",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "rarely",
+      "gloss": "nadiren",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 397,
+          "end": 403,
+          "surface": "rarely",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    },
+    {
+      "lemma": "last",
+      "gloss": "son",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 410,
+          "end": 414,
+          "surface": "last",
+          "contextSentence": "The familiar slogan that history is written by the victors, repeated so often that few pause to ask who first said it, captures only half of this: the victors write first, but they rarely write last.",
+          "contextSentenceTr": "Tarihi galiplerin yazdığına dair, ilk kimin söylediğini sormak için pek az kişinin durduğu kadar sık tekrarlanan bilindik slogan bunun yalnızca yarısını yakalar: galipler ilk yazar, ama nadiren son yazan olurlar."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which statement best captures the author's view of perspective in history?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 74,
+        "end": 214
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It can be removed by careful archival work",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin arşivlerin de tarafsız olmadığını ve bakış açısının kaldırılamayacağını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "It matters mainly in wartime propaganda",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Propaganda yalnızca bir örnektir; konu tüm tarih yazımıdır."
+        },
+        {
+          "key": "o3",
+          "text": "It is unavoidable but open to correction",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar bakış açısının kaldırılamayacağını, ama sınanıp düzeltilebileceğini söyler."
+        },
+        {
+          "key": "o4",
+          "text": "It makes all historical accounts equally valid",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar ve Carr bu göreceliğe açıkça karşı çıkar."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "According to the text, what was Ranke's famous phrase directed against?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 175,
+        "end": 272
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Using history mainly to teach morals",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Ranke, tarihi başlıca ahlak dersi kaynağı olarak kullanma alışkanlığına karşı çıkıyordu."
+        },
+        {
+          "key": "o2",
+          "text": "Relying too heavily on original archives",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Ranke tam tersine arşivlerde ve özgün belgelerde ısrar etti."
+        },
+        {
+          "key": "o3",
+          "text": "Historians who admitted their own bias",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin Ranke'nin böyle bir hedefi olduğunu söylemez."
+        },
+        {
+          "key": "o4",
+          "text": "The naive belief in objective facts",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "İfade safça bulunur, ama Ranke nesnelliğe değil ahlak dersciliğine karşıydı."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "In the second paragraph, what does the bias lying “upstream of it” mean?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 330,
+        "end": 371
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Hidden inside the historian's method",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin yanlılığın yöntemde olmadığını açıkça söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Beside a river near the archive",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Akarsu anlamı mecaz kullanımın gerçek anlamıdır; bağlama uymaz."
+        },
+        {
+          "key": "o3",
+          "text": "Added later by careless readers",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Upstream sonrası değil, öncesini anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "Earlier, in what was preserved",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Upstream burada mecazdır: yanlılık yöntemden önceki aşamada, neyin saklandığında yatar."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What irony lies in the remark that few people “pause to ask who first said it”?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 276,
+        "end": 333
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Victors never write any history at all",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin galiplerin ilk yazdığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "A claim about sources goes unexamined",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Kaynakların yanlılığını anlatan bir slogan, kendi kaynağı sorgulanmadan tekrarlanır; ironi budur."
+        },
+        {
+          "key": "o3",
+          "text": "Most people know exactly who coined it",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin pek az kişinin bunu sorduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "The slogan was first said by Carr himself",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin sloganı Carr'a bağlamaz."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Leopold von Ranke 19. yüzyıl Alman tarihçisidir; geçmişi gerçekte olduğu gibi gösterme ilkesi ve arşivlere/özgün belgelere dayanması modern tarih disiplinini etkiledi; ilkeyi geçmişi yargılayıp gelecek için ders verme iddiasına karşı koydu.",
+        "source": "Encyclopaedia Britannica, Leopold von Ranke; https://www.britannica.com/biography/Leopold-von-Ranke",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "E. H. Carr'ın What Is History? kitabı 1961'de yayımlanan derslerine dayanır.",
+        "source": "Encyclopaedia Britannica, E.H. Carr; https://www.britannica.com/biography/E-H-Carr",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Carr olguları okyanusta yüzen balıklara benzetir (tarihçinin yakaladığı kısmen şansa, esas olarak nerede ve hangi takımla avlandığına bağlıdır) ve farklı açılardan farklı görünen bir dağın biçimsiz ya da sonsuz biçimli olmadığını söyleyerek aşırı göreceliği reddeder.",
+        "source": "E. H. Carr, What Is History? (Macmillan, 1961), Bolum 1: The Historian and His Facts",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

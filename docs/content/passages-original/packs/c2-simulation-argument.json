@@ -1,0 +1,4268 @@
+{
+  "slug": "c2-simulation-argument",
+  "level": "C2",
+  "title": "A Trilemma, Not a Verdict",
+  "topic": "Felsefe",
+  "sortOrder": 39,
+  "isFreeSample": false,
+  "paragraphs": [
+    "The simulation argument is often summarised as the claim that we are probably living inside a computer. That summary gets its author wrong. In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+    "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves. The reasoning behind the third option is statistical rather than mystical. If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+    "Critics have pressed on several joints of this structure. Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish. Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own. These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+    "The argument also has an older relative. Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty. Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology. It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+    "Whether that trade is progress depends on what one wants from philosophy. As a forecast, the argument is no stronger than its premises. As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why."
+  ],
+  "words": [
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 50,
+          "surface": "the",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 184,
+          "end": 187,
+          "surface": "the",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 251,
+          "surface": "The",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 272,
+          "surface": "the",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 413,
+          "end": 416,
+          "surface": "the",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 494,
+          "end": 497,
+          "surface": "the",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 142,
+          "surface": "the",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 201,
+          "surface": "the",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 242,
+          "surface": "the",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 416,
+          "end": 419,
+          "surface": "the",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 453,
+          "end": 456,
+          "surface": "the",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 125,
+          "end": 128,
+          "surface": "the",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 380,
+          "end": 383,
+          "surface": "the",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 402,
+          "end": 405,
+          "surface": "the",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 89,
+          "end": 92,
+          "surface": "the",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "simulation",
+      "gloss": "simülasyon",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 4,
+          "end": 14,
+          "surface": "simulation",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "argument",
+      "gloss": "argüman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 15,
+          "end": 23,
+          "surface": "argument",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 151,
+          "surface": "argument",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 420,
+          "end": 428,
+          "surface": "argument",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 4,
+          "end": 12,
+          "surface": "argument",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 93,
+          "end": 101,
+          "surface": "argument",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 26,
+          "surface": "is",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 291,
+          "surface": "is",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 288,
+          "surface": "is",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 323,
+          "end": 325,
+          "surface": "is",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 19,
+          "end": 21,
+          "surface": "is",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 102,
+          "end": 104,
+          "surface": "is",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 32,
+          "surface": "often",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "summarised",
+      "gloss": "özetlenmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 33,
+          "end": 43,
+          "surface": "summarised",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 46,
+          "surface": "as",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 293,
+          "end": 295,
+          "surface": "as",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 74,
+          "end": 76,
+          "surface": "As",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 136,
+          "end": 138,
+          "surface": "As",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "claim",
+      "gloss": "iddia",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 51,
+          "end": 56,
+          "surface": "claim",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 61,
+          "surface": "that",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 253,
+          "surface": "that",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 73,
+          "surface": "that",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 225,
+          "end": 229,
+          "surface": "that",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 476,
+          "end": 480,
+          "surface": "that",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 64,
+          "surface": "we",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 205,
+          "surface": "we",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 271,
+          "end": 273,
+          "surface": "we",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 68,
+          "surface": "are",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 124,
+          "surface": "are",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 209,
+          "surface": "are",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 481,
+          "end": 484,
+          "surface": "are",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "probably",
+      "gloss": "muhtemelen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 77,
+          "surface": "probably",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "living",
+      "gloss": "yaşamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 84,
+          "surface": "living",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 91,
+          "surface": "inside",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 93,
+          "surface": "a",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 144,
+          "surface": "a",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 383,
+          "end": 384,
+          "surface": "a",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 267,
+          "surface": "a",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 297,
+          "surface": "a",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 60,
+          "end": 61,
+          "surface": "a",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 101,
+          "end": 102,
+          "surface": "a",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 430,
+          "end": 431,
+          "surface": "a",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 77,
+          "end": 78,
+          "surface": "a",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 139,
+          "end": 140,
+          "surface": "a",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "computer",
+      "gloss": "bilgisayar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 102,
+          "surface": "computer",
+          "contextSentence": "The simulation argument is often summarised as the claim that we are probably living inside a computer.",
+          "contextSentenceTr": "Simülasyon argümanı sıklıkla muhtemelen bir bilgisayarın içinde yaşadığımız iddiası olarak özetlenir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 108,
+          "surface": "That",
+          "contextSentence": "That summary gets its author wrong.",
+          "contextSentenceTr": "Bu özet yazarını yanlış anlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 8,
+          "end": 12,
+          "surface": "that",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "summary",
+      "gloss": "özet",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 116,
+          "surface": "summary",
+          "contextSentence": "That summary gets its author wrong.",
+          "contextSentenceTr": "Bu özet yazarını yanlış anlar."
+        }
+      ]
+    },
+    {
+      "lemma": "gets",
+      "gloss": "anlamak (get wrong: yanlış anlamak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 121,
+          "surface": "gets",
+          "contextSentence": "That summary gets its author wrong.",
+          "contextSentenceTr": "Bu özet yazarını yanlış anlar."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 125,
+          "surface": "its",
+          "contextSentence": "That summary gets its author wrong.",
+          "contextSentenceTr": "Bu özet yazarını yanlış anlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 376,
+          "end": 379,
+          "surface": "its",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 122,
+          "end": 125,
+          "surface": "its",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "author",
+      "gloss": "yazar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 132,
+          "surface": "author",
+          "contextSentence": "That summary gets its author wrong.",
+          "contextSentenceTr": "Bu özet yazarını yanlış anlar."
+        }
+      ]
+    },
+    {
+      "lemma": "wrong",
+      "gloss": "yanlış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 138,
+          "surface": "wrong",
+          "contextSentence": "That summary gets its author wrong.",
+          "contextSentenceTr": "Bu özet yazarını yanlış anlar."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 140,
+          "end": 142,
+          "surface": "In",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 163,
+          "surface": "in",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 224,
+          "end": 226,
+          "surface": "in",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "paper",
+      "gloss": "makale",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 150,
+          "surface": "paper",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "published",
+      "gloss": "yayımlanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 160,
+          "surface": "published",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 167,
+          "surface": "two",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "thousand",
+      "gloss": "bin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 176,
+          "surface": "thousand",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 182,
+          "surface": "three",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 275,
+          "surface": "three",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "philosopher",
+      "gloss": "filozof",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 199,
+          "surface": "philosopher",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "nick",
+      "gloss": "Nick",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 204,
+          "surface": "Nick",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "bostrom",
+      "gloss": "Bostrom",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 205,
+          "end": 212,
+          "surface": "Bostrom",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "argued",
+      "gloss": "savunmak (argue for)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 219,
+          "surface": "argued",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "savunmak (argue for)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 223,
+          "surface": "for",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "something",
+      "gloss": "bir şey",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 233,
+          "surface": "something",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 234,
+          "end": 238,
+          "surface": "more",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "cautious",
+      "gloss": "temkinli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 239,
+          "end": 247,
+          "surface": "cautious",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "en az (at least)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 256,
+          "surface": "at",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "least",
+      "gloss": "en az (at least)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 257,
+          "end": 262,
+          "surface": "least",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 263,
+          "end": 266,
+          "surface": "one",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 267,
+          "end": 269,
+          "surface": "of",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 165,
+          "end": 167,
+          "surface": "of",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 180,
+          "end": 182,
+          "surface": "of",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 402,
+          "end": 404,
+          "surface": "of",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 459,
+          "end": 461,
+          "surface": "of",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 41,
+          "surface": "of",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 399,
+          "end": 401,
+          "surface": "of",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 469,
+          "end": 471,
+          "surface": "of",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "propositions",
+      "gloss": "önermeler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 288,
+          "surface": "propositions",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "true",
+      "gloss": "doğru",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 292,
+          "end": 296,
+          "surface": "true",
+          "contextSentence": "In a paper published in two thousand three, the philosopher Nick Bostrom argued for something more cautious: that at least one of three propositions is true.",
+          "contextSentenceTr": "2003'te yayımlanan bir makalede filozof Nick Bostrom daha temkinli bir şeyi savundu: üç önermeden en az birinin doğru olduğunu."
+        }
+      ]
+    },
+    {
+      "lemma": "either",
+      "gloss": "ya",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 6,
+          "surface": "Either",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "almost",
+      "gloss": "neredeyse",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 13,
+          "surface": "almost",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 216,
+          "surface": "almost",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 19,
+          "surface": "every",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "civilisation",
+      "gloss": "uygarlık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 20,
+          "end": 32,
+          "surface": "civilisation",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 35,
+          "surface": "at",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "our",
+      "gloss": "bizim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 36,
+          "end": 39,
+          "surface": "our",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "stage",
+      "gloss": "aşama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 45,
+          "surface": "stage",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "dies",
+      "gloss": "yok olmak (die out)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 50,
+          "surface": "dies",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "out",
+      "gloss": "yok olmak (die out)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 51,
+          "end": 54,
+          "surface": "out",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "-meden önce",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 61,
+          "surface": "before",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 62,
+          "end": 64,
+          "surface": "it",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 247,
+          "end": 249,
+          "surface": "it",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 370,
+          "end": 372,
+          "surface": "It",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 176,
+          "end": 178,
+          "surface": "it",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 203,
+          "end": 205,
+          "surface": "it",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "becomes",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 72,
+          "surface": "becomes",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "technologically",
+      "gloss": "teknolojik olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 73,
+          "end": 88,
+          "surface": "technologically",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "mature",
+      "gloss": "olgun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 95,
+          "surface": "mature",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 106,
+          "surface": "mature",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 99,
+          "surface": "or",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 202,
+          "surface": "or",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "civilisations",
+      "gloss": "uygarlıklar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 120,
+          "surface": "civilisations",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "extremely",
+      "gloss": "son derece",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 125,
+          "end": 134,
+          "surface": "extremely",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "unlikely",
+      "gloss": "olası olmayan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 143,
+          "surface": "unlikely",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 144,
+          "end": 146,
+          "surface": "to",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 482,
+          "end": 484,
+          "surface": "to",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "run",
+      "gloss": "çalıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 150,
+          "surface": "run",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 156,
+          "surface": "large",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "numbers",
+      "gloss": "sayılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 164,
+          "surface": "numbers",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "simulations",
+      "gloss": "simülasyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 168,
+          "end": 179,
+          "surface": "simulations",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 188,
+          "surface": "their",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "ancestors",
+      "gloss": "atalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 189,
+          "end": 198,
+          "surface": "ancestors",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "certainly",
+      "gloss": "kesinlikle",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 217,
+          "end": 226,
+          "surface": "certainly",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "simulated",
+      "gloss": "simüle edilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 227,
+          "end": 236,
+          "surface": "simulated",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 326,
+          "end": 335,
+          "surface": "simulated",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "ourselves",
+      "gloss": "kendimiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 246,
+          "surface": "ourselves",
+          "contextSentence": "Either almost every civilisation at our stage dies out before it becomes technologically mature; or mature civilisations are extremely unlikely to run large numbers of simulations of their ancestors; or we are almost certainly simulated ourselves.",
+          "contextSentenceTr": "Ya bizim aşamamızdaki neredeyse her uygarlık teknolojik olarak olgunlaşmadan yok olur; ya olgun uygarlıkların atalarının çok sayıda simülasyonunu çalıştırması son derece düşük olasılıklıdır; ya da biz kendimiz neredeyse kesinlikle simüle edilmişizdir."
+        }
+      ]
+    },
+    {
+      "lemma": "reasoning",
+      "gloss": "akıl yürütme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 261,
+          "surface": "reasoning",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 156,
+          "end": 165,
+          "surface": "reasoning",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "behind",
+      "gloss": "arkasındaki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 262,
+          "end": 268,
+          "surface": "behind",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        }
+      ]
+    },
+    {
+      "lemma": "third",
+      "gloss": "üçüncü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 273,
+          "end": 278,
+          "surface": "third",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        }
+      ]
+    },
+    {
+      "lemma": "option",
+      "gloss": "seçenek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 285,
+          "surface": "option",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        }
+      ]
+    },
+    {
+      "lemma": "statistical",
+      "gloss": "istatistiksel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 289,
+          "end": 300,
+          "surface": "statistical",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "-den çok (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 307,
+          "surface": "rather",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 331,
+          "end": 337,
+          "surface": "rather",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den çok (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 312,
+          "surface": "than",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 338,
+          "end": 342,
+          "surface": "than",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "mystical",
+      "gloss": "mistik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 313,
+          "end": 321,
+          "surface": "mystical",
+          "contextSentence": "The reasoning behind the third option is statistical rather than mystical.",
+          "contextSentenceTr": "Üçüncü seçeneğin arkasındaki akıl yürütme mistik değil istatistikseldir."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 325,
+          "surface": "If",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 154,
+          "end": 156,
+          "surface": "if",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "minds",
+      "gloss": "zihinler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 336,
+          "end": 341,
+          "surface": "minds",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "vastly",
+      "gloss": "büyük ölçüde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 348,
+          "surface": "vastly",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "outnumbered",
+      "gloss": "sayıca geçmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 349,
+          "end": 360,
+          "surface": "outnumbered",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "biological",
+      "gloss": "biyolojik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 371,
+          "surface": "biological",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 372,
+          "end": 376,
+          "surface": "ones",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "o zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 378,
+          "end": 382,
+          "surface": "then",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "mind",
+      "gloss": "zihin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 385,
+          "end": 389,
+          "surface": "mind",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 268,
+          "end": 272,
+          "surface": "mind",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "sahip",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 394,
+          "surface": "with",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 354,
+          "end": 358,
+          "surface": "with",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "no",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 395,
+          "end": 397,
+          "surface": "no",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 105,
+          "end": 107,
+          "surface": "no",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 398,
+          "end": 401,
+          "surface": "way",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "telling",
+      "gloss": "ayırt etmek (tell the difference)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 405,
+          "end": 412,
+          "surface": "telling",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "difference",
+      "gloss": "fark",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 417,
+          "end": 427,
+          "surface": "difference",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "should",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 428,
+          "end": 434,
+          "surface": "should",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 273,
+          "end": 279,
+          "surface": "should",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e göre",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 436,
+          "end": 438,
+          "surface": "on",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "ordinary",
+      "gloss": "olağan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 439,
+          "end": 447,
+          "surface": "ordinary",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "principles",
+      "gloss": "ilkeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 448,
+          "end": 458,
+          "surface": "principles",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "probability",
+      "gloss": "olasılık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 462,
+          "end": 473,
+          "surface": "probability",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "expect",
+      "gloss": "beklemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 475,
+          "end": 481,
+          "surface": "expect",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 485,
+          "end": 487,
+          "surface": "be",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 173,
+          "end": 175,
+          "surface": "be",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "among",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 488,
+          "end": 493,
+          "surface": "among",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "majority",
+      "gloss": "çoğunluk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 498,
+          "end": 506,
+          "surface": "majority",
+          "contextSentence": "If simulated minds vastly outnumbered biological ones, then a mind with no way of telling the difference should, on ordinary principles of probability, expect to be among the majority.",
+          "contextSentenceTr": "Simüle edilmiş zihinler biyolojik olanları büyük ölçüde sayıca geçseydi, farkı ayırt etmenin hiçbir yolu olmayan bir zihin, olağan olasılık ilkelerine göre çoğunluk arasında olmayı beklemelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "critics",
+      "gloss": "eleştirmenler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 7,
+          "surface": "Critics",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 8,
+          "end": 12,
+          "surface": "have",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "pressed",
+      "gloss": "bastırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 20,
+          "surface": "pressed",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 21,
+          "end": 23,
+          "surface": "on",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 31,
+          "surface": "several",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "joints",
+      "gloss": "eklem yerleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 32,
+          "end": 38,
+          "surface": "joints",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 46,
+          "surface": "this",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "structure",
+      "gloss": "yapı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 56,
+          "surface": "structure",
+          "contextSentence": "Critics have pressed on several joints of this structure.",
+          "contextSentenceTr": "Eleştirmenler bu yapının birkaç eklem yerine bastırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazıları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 58,
+          "end": 62,
+          "surface": "Some",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "doubt",
+      "gloss": "şüphe etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 63,
+          "end": 68,
+          "surface": "doubt",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "consciousness",
+      "gloss": "bilinç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 87,
+          "surface": "consciousness",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 93,
+          "surface": "could",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 167,
+          "end": 172,
+          "surface": "could",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "arise",
+      "gloss": "ortaya çıkmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 99,
+          "surface": "arise",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 104,
+          "surface": "from",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 316,
+          "surface": "from",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 343,
+          "end": 347,
+          "surface": "from",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 57,
+          "end": 61,
+          "surface": "from",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "computation",
+      "gloss": "hesaplama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 116,
+          "surface": "computation",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "hiç (at all)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 119,
+          "surface": "at",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "hiç (at all)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 123,
+          "surface": "all",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 125,
+          "end": 127,
+          "surface": "an",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 22,
+          "end": 24,
+          "surface": "an",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 227,
+          "end": 229,
+          "surface": "an",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 462,
+          "end": 464,
+          "surface": "an",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "assumption",
+      "gloss": "varsayım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 128,
+          "end": 138,
+          "surface": "assumption",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "needs",
+      "gloss": "ihtiyaç duymak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 152,
+          "end": 157,
+          "surface": "needs",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 161,
+          "surface": "but",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 298,
+          "end": 301,
+          "surface": "but",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 166,
+          "surface": "does",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 250,
+          "end": 254,
+          "surface": "does",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 167,
+          "end": 170,
+          "surface": "not",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 405,
+          "end": 408,
+          "surface": "not",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 255,
+          "end": 258,
+          "surface": "not",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "establish",
+      "gloss": "kanıtlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 180,
+          "surface": "establish",
+          "contextSentence": "Some doubt that consciousness could arise from computation at all, an assumption the argument needs but does not establish.",
+          "contextSentenceTr": "Bazıları bilincin hesaplamadan hiç ortaya çıkıp çıkamayacağından şüphe eder; bu, argümanın ihtiyaç duyduğu ama kanıtlamadığı bir varsayımdır."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 182,
+          "end": 188,
+          "surface": "Others",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "sorgulamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 197,
+          "surface": "question",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "indifference",
+      "gloss": "kayıtsızlık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 214,
+          "surface": "indifference",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "principle",
+      "gloss": "ilke",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 224,
+          "surface": "principle",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "licenses",
+      "gloss": "izin vermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 238,
+          "surface": "licenses",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "final",
+      "gloss": "son",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 243,
+          "end": 248,
+          "surface": "final",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "step",
+      "gloss": "adım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 249,
+          "end": 253,
+          "surface": "step",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "asking",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 255,
+          "end": 261,
+          "surface": "asking",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 262,
+          "end": 265,
+          "surface": "why",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 283,
+          "end": 286,
+          "surface": "why",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 280,
+          "end": 285,
+          "surface": "treat",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendisini",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 292,
+          "surface": "itself",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "random",
+      "gloss": "rastgele",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 298,
+          "end": 304,
+          "surface": "random",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "sample",
+      "gloss": "örneklem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 311,
+          "surface": "sample",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "tüm",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 317,
+          "end": 320,
+          "surface": "all",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "observers",
+      "gloss": "gözlemciler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 321,
+          "end": 330,
+          "surface": "observers",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 348,
+          "end": 353,
+          "surface": "those",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "experiences",
+      "gloss": "deneyimler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 359,
+          "end": 370,
+          "surface": "experiences",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 371,
+          "end": 375,
+          "surface": "like",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 380,
+          "end": 383,
+          "surface": "own",
+          "contextSentence": "Others question the indifference principle that licenses the final step, asking why a mind should treat itself as a random sample from all observers rather than from those with experiences like its own.",
+          "contextSentenceTr": "Diğerleri son adıma izin veren kayıtsızlık ilkesini sorgular ve bir zihnin kendini neden kendi deneyimlerine benzer deneyimleri olanlardan değil de tüm gözlemcilerden alınmış rastgele bir örneklem olarak görmesi gerektiğini sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 385,
+          "end": 390,
+          "surface": "These",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "objections",
+      "gloss": "itirazlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 391,
+          "end": 401,
+          "surface": "objections",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 402,
+          "end": 404,
+          "surface": "do",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "refute",
+      "gloss": "çürütmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 409,
+          "end": 415,
+          "surface": "refute",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "outright",
+      "gloss": "doğrudan, tamamen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 429,
+          "end": 437,
+          "surface": "outright",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 439,
+          "end": 443,
+          "surface": "they",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 266,
+          "end": 270,
+          "surface": "they",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "relocate",
+      "gloss": "taşımak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 444,
+          "end": 452,
+          "surface": "relocate",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "debate",
+      "gloss": "tartışma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 457,
+          "end": 463,
+          "surface": "debate",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 464,
+          "end": 466,
+          "surface": "to",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 459,
+          "end": 461,
+          "surface": "to",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "premises",
+      "gloss": "öncüller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 467,
+          "end": 475,
+          "surface": "premises",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 126,
+          "end": 134,
+          "surface": "premises",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "themselves",
+      "gloss": "kendileri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 485,
+          "end": 495,
+          "surface": "themselves",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "deeply",
+      "gloss": "derinden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 496,
+          "end": 502,
+          "surface": "deeply",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "contested",
+      "gloss": "tartışmalı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 503,
+          "end": 512,
+          "surface": "contested",
+          "contextSentence": "These objections do not refute the argument outright; they relocate the debate to premises that are themselves deeply contested.",
+          "contextSentenceTr": "Bu itirazlar argümanı doğrudan çürütmez; tartışmayı kendileri de derinden tartışmalı olan öncüllere taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 13,
+          "end": 17,
+          "surface": "also",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 18,
+          "end": 21,
+          "surface": "has",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 179,
+          "end": 182,
+          "surface": "has",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "older",
+      "gloss": "daha eski",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 25,
+          "end": 30,
+          "surface": "older",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "relative",
+      "gloss": "akraba",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 31,
+          "end": 39,
+          "surface": "relative",
+          "contextSentence": "The argument also has an older relative.",
+          "contextSentenceTr": "Argümanın daha eski bir akrabası da vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "descartes",
+      "gloss": "Descartes",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 41,
+          "end": 50,
+          "surface": "Descartes",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "imagined",
+      "gloss": "hayal etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 51,
+          "end": 59,
+          "surface": "imagined",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "deceiving",
+      "gloss": "aldatan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 62,
+          "end": 71,
+          "surface": "deceiving",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "demon",
+      "gloss": "iblis",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 72,
+          "end": 77,
+          "surface": "demon",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "capable",
+      "gloss": "yetenekli",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 78,
+          "end": 85,
+          "surface": "capable",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 86,
+          "end": 88,
+          "surface": "of",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "feeding",
+      "gloss": "sunmak, beslemek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 89,
+          "end": 96,
+          "surface": "feeding",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "him",
+      "gloss": "ona",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 97,
+          "end": 100,
+          "surface": "him",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "false",
+      "gloss": "sahte",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 103,
+          "end": 108,
+          "surface": "false",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "world",
+      "gloss": "dünya",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 109,
+          "end": 114,
+          "surface": "world",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 116,
+          "end": 119,
+          "surface": "and",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 279,
+          "end": 282,
+          "surface": "and",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 120,
+          "end": 124,
+          "surface": "used",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "possibility",
+      "gloss": "olasılık",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 129,
+          "end": 140,
+          "surface": "possibility",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 141,
+          "end": 143,
+          "surface": "to",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "ask",
+      "gloss": "sormak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 144,
+          "end": 147,
+          "surface": "ask",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 259,
+          "end": 262,
+          "surface": "ask",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 148,
+          "end": 152,
+          "surface": "what",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 42,
+          "end": 46,
+          "surface": "what",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "anything",
+      "gloss": "herhangi bir şey",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 157,
+          "end": 165,
+          "surface": "anything",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "known",
+      "gloss": "bilinmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 176,
+          "end": 181,
+          "surface": "known",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 182,
+          "end": 186,
+          "surface": "with",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "certainty",
+      "gloss": "kesinlik",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 187,
+          "end": 196,
+          "surface": "certainty",
+          "contextSentence": "Descartes imagined a deceiving demon capable of feeding him a false world, and used the possibility to ask what, if anything, could be known with certainty.",
+          "contextSentenceTr": "Descartes kendisine sahte bir dünya sunabilecek aldatıcı bir iblis hayal etti ve bu olasılığı, eğer varsa neyin kesinlikle bilinebileceğini sormak için kullandı."
+        }
+      ]
+    },
+    {
+      "lemma": "bostrom's",
+      "gloss": "Bostrom'un",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 198,
+          "end": 207,
+          "surface": "Bostrom's",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "version",
+      "gloss": "versiyon",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 208,
+          "end": 215,
+          "surface": "version",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "differs",
+      "gloss": "farklılaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 216,
+          "end": 223,
+          "surface": "differs",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "instructive",
+      "gloss": "öğretici",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 230,
+          "end": 241,
+          "surface": "instructive",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "şekil",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 242,
+          "end": 245,
+          "surface": "way",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "whether",
+      "gloss": "-ip -mediğini",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 263,
+          "end": 270,
+          "surface": "whether",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 274,
+          "end": 277,
+          "surface": "can",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "rule",
+      "gloss": "dışlamak (rule out)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 278,
+          "end": 282,
+          "surface": "rule",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "out",
+      "gloss": "dışlamak (rule out)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 283,
+          "end": 286,
+          "surface": "out",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "deception",
+      "gloss": "aldatma",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 287,
+          "end": 296,
+          "surface": "deception",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 313,
+          "end": 322,
+          "surface": "deception",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "ne kadar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 302,
+          "end": 305,
+          "surface": "how",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "likely",
+      "gloss": "olası",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 306,
+          "end": 312,
+          "surface": "likely",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "given",
+      "gloss": "göz önüne alındığında",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 327,
+          "end": 332,
+          "surface": "given",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "assumptions",
+      "gloss": "varsayımlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 333,
+          "end": 344,
+          "surface": "assumptions",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 345,
+          "end": 350,
+          "surface": "about",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "future",
+      "gloss": "gelecek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 351,
+          "end": 357,
+          "surface": "future",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "technology",
+      "gloss": "teknoloji",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 358,
+          "end": 368,
+          "surface": "technology",
+          "contextSentence": "Bostrom's version differs in an instructive way: it does not ask whether we can rule out deception, but how likely deception is, given assumptions about future technology.",
+          "contextSentenceTr": "Bostrom'un versiyonu öğretici bir şekilde farklılaşır: aldatmayı dışlayıp dışlayamayacağımızı değil, gelecek teknoloji hakkındaki varsayımlar göz önüne alındığında aldatmanın ne kadar olası olduğunu sorar."
+        }
+      ]
+    },
+    {
+      "lemma": "trades",
+      "gloss": "takas etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 373,
+          "end": 379,
+          "surface": "trades",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "absolute",
+      "gloss": "mutlak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 384,
+          "end": 392,
+          "surface": "absolute",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "doubt",
+      "gloss": "şüphe",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 393,
+          "end": 398,
+          "surface": "doubt",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 446,
+          "end": 451,
+          "surface": "doubt",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "seventeenth",
+      "gloss": "on yedinci",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 406,
+          "end": 417,
+          "surface": "seventeenth",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 418,
+          "end": 425,
+          "surface": "century",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "karşılığında",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 426,
+          "end": 429,
+          "surface": "for",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "probabilistic",
+      "gloss": "olasılıksal",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 432,
+          "end": 445,
+          "surface": "probabilistic",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "suited",
+      "gloss": "uygun",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 452,
+          "end": 458,
+          "surface": "suited",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "age",
+      "gloss": "çağ",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 465,
+          "end": 468,
+          "surface": "age",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "computers",
+      "gloss": "bilgisayarlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 472,
+          "end": 481,
+          "surface": "computers",
+          "contextSentence": "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers.",
+          "contextSentenceTr": "On yedinci yüzyılın mutlak şüphesini bilgisayar çağına uygun olasılıksal bir şüpheyle takas eder."
+        }
+      ]
+    },
+    {
+      "lemma": "whether",
+      "gloss": "-ip -mediği",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 7,
+          "surface": "Whether",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "trade",
+      "gloss": "takas",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 13,
+          "end": 18,
+          "surface": "trade",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "progress",
+      "gloss": "ilerleme",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 22,
+          "end": 30,
+          "surface": "progress",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "depends",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 31,
+          "end": 38,
+          "surface": "depends",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 39,
+          "end": 41,
+          "surface": "on",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 47,
+          "end": 50,
+          "surface": "one",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "wants",
+      "gloss": "istemek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 51,
+          "end": 56,
+          "surface": "wants",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "philosophy",
+      "gloss": "felsefe",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 62,
+          "end": 72,
+          "surface": "philosophy",
+          "contextSentence": "Whether that trade is progress depends on what one wants from philosophy.",
+          "contextSentenceTr": "Bu takasın ilerleme olup olmadığı, kişinin felsefeden ne istediğine bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "forecast",
+      "gloss": "tahmin",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 79,
+          "end": 87,
+          "surface": "forecast",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "stronger",
+      "gloss": "daha güçlü",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 108,
+          "end": 116,
+          "surface": "stronger",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 117,
+          "end": 121,
+          "surface": "than",
+          "contextSentence": "As a forecast, the argument is no stronger than its premises.",
+          "contextSentenceTr": "Bir tahmin olarak argüman öncüllerinden daha güçlü değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "discipline",
+      "gloss": "disiplin",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 141,
+          "end": 151,
+          "surface": "discipline",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 152,
+          "end": 155,
+          "surface": "for",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 167,
+          "end": 174,
+          "surface": "however",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "real",
+      "gloss": "gerçek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 183,
+          "end": 187,
+          "surface": "real",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "value",
+      "gloss": "değer",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 188,
+          "end": 193,
+          "surface": "value",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 195,
+          "end": 202,
+          "surface": "because",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "forces",
+      "gloss": "zorlamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 206,
+          "end": 212,
+          "surface": "forces",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "anyone",
+      "gloss": "herkes",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 213,
+          "end": 219,
+          "surface": "anyone",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 220,
+          "end": 223,
+          "surface": "who",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "dismisses",
+      "gloss": "reddetmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 224,
+          "end": 233,
+          "surface": "dismisses",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 234,
+          "end": 236,
+          "surface": "it",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meye",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 237,
+          "end": 239,
+          "surface": "to",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "say",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 240,
+          "end": 243,
+          "surface": "say",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "exactly",
+      "gloss": "tam olarak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 244,
+          "end": 251,
+          "surface": "exactly",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 252,
+          "end": 257,
+          "surface": "which",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "premise",
+      "gloss": "öncül",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 258,
+          "end": 265,
+          "surface": "premise",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "reject",
+      "gloss": "reddetmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 271,
+          "end": 277,
+          "surface": "reject",
+          "contextSentence": "As a discipline for reasoning, however, it has real value, because it forces anyone who dismisses it to say exactly which premise they reject, and why.",
+          "contextSentenceTr": "Ancak akıl yürütme disiplini olarak gerçek bir değeri vardır, çünkü onu reddeden herkesi tam olarak hangi öncülü neden reddettiğini söylemeye zorlar."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which best describes the author's view of the simulation argument?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 74,
+        "end": 135
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It proves that we live in a simulation",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Yazar bu özetin Bostrom'u yanlış anladığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "It is a mystical idea without any logical basis",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin akıl yürütmenin mistik değil istatistiksel olduğunu söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Its premises have been decisively refuted",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "İtirazların argümanı doğrudan çürütmediği söylenir."
+        },
+        {
+          "key": "o4",
+          "text": "Limited as a forecast, valuable for reasoning",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar argümanı tahmin olarak öncüllerine bağlı, akıl yürütme disiplini olarak değerli bulur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "According to the first paragraph, what did Bostrom actually argue?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 249,
+        "end": 296
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Consciousness cannot arise from computers",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bu, Bostrom'un değil bazı eleştirmenlerin şüphesidir."
+        },
+        {
+          "key": "o2",
+          "text": "At least one of three claims holds",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Bostrom üç önermeden en az birinin doğru olduğunu savunur."
+        },
+        {
+          "key": "o3",
+          "text": "We are most probably inside a computer",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Bu, yazarın yanlış bulduğu popüler özettir."
+        },
+        {
+          "key": "o4",
+          "text": "Civilisations never build any simulations",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Bu, üç seçenekten birinin aşırılaştırılmış hâlidir; iddia bu değildir."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "In the third paragraph, what are the “joints” of the argument?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 57
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Shared research projects",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "'Joint' sıfat olarak ortak demektir; burada isimdir."
+        },
+        {
+          "key": "o2",
+          "text": "Final conclusions of the paper",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kelime sonuç anlamına gelmez."
+        },
+        {
+          "key": "o3",
+          "text": "Points where its parts connect",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Mecazen argümanın parçalarının birleştiği, zayıf olabilecek yerlerdir."
+        },
+        {
+          "key": "o4",
+          "text": "Places where bones meet in the body",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Gerçek anatomik anlam bu bağlamda kastedilmez."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What is the main purpose of the comparison with Descartes?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 370,
+        "end": 482
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "To show how the kind of doubt has shifted",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Karşılaştırma mutlak şüpheden olasılıksal şüpheye geçişi gösterir."
+        },
+        {
+          "key": "o2",
+          "text": "To suggest Descartes foresaw modern computers",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir öngörüden söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "To argue that Bostrom copied Descartes",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin 'akraba' der; kopyalama iddiası yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "To show both thinkers reached certainty",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Her iki düşünce de şüpheyle ilgilidir, kesinliğe varmaz."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Nick Bostrom 2003'te Philosophical Quarterly'de yayımlanan makalesinde şu üç önermeden en az birinin doğru olduğunu savundu: insan düzeyindeki uygarlıklar olgunlaşmadan yok olur; olgun uygarlıklar çok sayıda ata simülasyonu çalıştırmaz; ya da neredeyse kesinlikle bir simülasyonda yaşıyoruz. Argüman bilincin hesaplamaya dayanabileceği varsayımını ve bir kayıtsızlık ilkesini kullanır.",
+        "source": "Bostrom N (2003), Are You Living in a Computer Simulation?, Philosophical Quarterly; https://www.simulation-argument.com/simulation.pdf",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Descartes (17. yüzyıl) Meditasyonlar'da kendisini aldatan kötü bir varlık olasılığını kesin bilginin sınırlarını sınamak için kullandı.",
+        "source": "Stanford Encyclopedia of Philosophy, Descartes' Epistemology; https://plato.stanford.edu/entries/descartes-epistemology/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

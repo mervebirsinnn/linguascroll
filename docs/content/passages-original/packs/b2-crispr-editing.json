@@ -1,0 +1,2595 @@
+{
+  "slug": "b2-crispr-editing",
+  "level": "B2",
+  "title": "Molecular Scissors",
+  "topic": "Biyoloji",
+  "sortOrder": 32,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Bacteria are tiny living things, yet they have a long history of fighting viruses. Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA. If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA. In this way, the cell works like a simple immune system.",
+    "Scientists later realised that this natural process could be copied in the laboratory. The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors. Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there. The cell then repairs the cut, and researchers can change the gene during this repair.",
+    "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients. However, changes made to reproductive cells or embryos would be passed on to future generations. For this reason, many people argue that editing human embryos raises serious ethical questions. Strict rules and open public discussion are therefore needed before the technology is used widely."
+  ],
+  "words": [
+    {
+      "lemma": "bacteria",
+      "gloss": "Bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 8,
+          "surface": "Bacteria",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 9,
+          "end": 12,
+          "surface": "are",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 366,
+          "end": 369,
+          "surface": "are",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 13,
+          "end": 17,
+          "surface": "tiny",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "living",
+      "gloss": "canlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 18,
+          "end": 24,
+          "surface": "living",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "things",
+      "gloss": "varlıklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 31,
+          "surface": "things",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 33,
+          "end": 36,
+          "surface": "yet",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 41,
+          "surface": "they",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 46,
+          "surface": "have",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 99,
+          "surface": "have",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 48,
+          "surface": "a",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 147,
+          "end": 148,
+          "surface": "a",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 336,
+          "surface": "a",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 120,
+          "surface": "a",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 200,
+          "surface": "a",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 249,
+          "surface": "a",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 53,
+          "surface": "long",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "history",
+      "gloss": "geçmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 54,
+          "end": 61,
+          "surface": "history",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 64,
+          "surface": "of",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 144,
+          "end": 146,
+          "surface": "of",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "fighting",
+      "gloss": "savaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 73,
+          "surface": "fighting",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "viruses",
+      "gloss": "virüsler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 74,
+          "end": 81,
+          "surface": "viruses",
+          "contextSentence": "Bacteria are tiny living things, yet they have a long history of fighting viruses.",
+          "contextSentenceTr": "Bakteriler minik canlılardır, ancak virüslerle savaşmanın uzun bir geçmişi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "Araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 83,
+          "end": 94,
+          "surface": "Researchers",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "discovered",
+      "gloss": "keşfetti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 95,
+          "end": 105,
+          "surface": "discovered",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 110,
+          "surface": "that",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 30,
+          "surface": "that",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 17,
+          "surface": "that",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 265,
+          "end": 269,
+          "surface": "that",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 115,
+          "surface": "some",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 77,
+          "surface": "some",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "bacteria",
+      "gloss": "bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 124,
+          "surface": "bacteria",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "store",
+      "gloss": "saklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 130,
+          "surface": "store",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 136,
+          "surface": "small",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "pieces",
+      "gloss": "parçalar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 143,
+          "surface": "pieces",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 253,
+          "end": 259,
+          "surface": "pieces",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "virus's",
+      "gloss": "virüsün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 149,
+          "end": 156,
+          "surface": "virus's",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "genetic",
+      "gloss": "genetik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 157,
+          "end": 164,
+          "surface": "genetic",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "code",
+      "gloss": "kod",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 169,
+          "surface": "code",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 170,
+          "end": 172,
+          "surface": "in",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 302,
+          "end": 304,
+          "surface": "In",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 70,
+          "surface": "in",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 247,
+          "surface": "in",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 122,
+          "surface": "in",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 178,
+          "surface": "their",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 182,
+          "surface": "own",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "dna",
+      "gloss": "DNA",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 186,
+          "surface": "DNA",
+          "contextSentence": "Researchers discovered that some bacteria store small pieces of a virus's genetic code in their own DNA.",
+          "contextSentenceTr": "Araştırmacılar, bazı bakterilerin bir virüsün genetik kodundan küçük parçaları kendi DNA'larında sakladığını keşfetti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 300,
+          "surface": "DNA",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 273,
+          "surface": "DNA",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 190,
+          "surface": "If",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 194,
+          "surface": "the",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 224,
+          "surface": "the",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 276,
+          "surface": "the",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 315,
+          "end": 318,
+          "surface": "the",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 74,
+          "surface": "the",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 90,
+          "surface": "The",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 269,
+          "surface": "the",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 284,
+          "surface": "The",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 303,
+          "end": 306,
+          "surface": "the",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 339,
+          "end": 342,
+          "surface": "the",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 394,
+          "end": 397,
+          "surface": "the",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 199,
+          "surface": "same",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "virus",
+      "gloss": "virüs",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 205,
+          "surface": "virus",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "attacks",
+      "gloss": "saldırır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 213,
+          "surface": "attacks",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "again",
+      "gloss": "tekrar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 219,
+          "surface": "again",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "bacterium",
+      "gloss": "bakteri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 234,
+          "surface": "bacterium",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "uses",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 235,
+          "end": 239,
+          "surface": "uses",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 114,
+          "end": 118,
+          "surface": "uses",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 245,
+          "surface": "these",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "stored",
+      "gloss": "saklanan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 246,
+          "end": 252,
+          "surface": "stored",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 260,
+          "end": 262,
+          "surface": "to",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "recognise",
+      "gloss": "tanımak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 263,
+          "end": 272,
+          "surface": "recognise",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "invader",
+      "gloss": "istilacı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 277,
+          "end": 284,
+          "surface": "invader",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 285,
+          "end": 288,
+          "surface": "and",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 260,
+          "surface": "and",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 315,
+          "surface": "and",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 72,
+          "surface": "and",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 342,
+          "surface": "and",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "cut",
+      "gloss": "kesmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 292,
+          "surface": "cut",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 296,
+          "surface": "its",
+          "contextSentence": "If the same virus attacks again, the bacterium uses these stored pieces to recognise the invader and cut its DNA.",
+          "contextSentenceTr": "Aynı virüs tekrar saldırırsa bakteri, istilacıyı tanımak ve DNA'sını kesmek için bu saklanan parçaları kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 305,
+          "end": 309,
+          "surface": "this",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 35,
+          "surface": "this",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 359,
+          "surface": "this",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 238,
+          "surface": "this",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 313,
+          "surface": "way",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "cell",
+      "gloss": "hücre",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 323,
+          "surface": "cell",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 285,
+          "end": 289,
+          "surface": "cell",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "works",
+      "gloss": "çalışır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 329,
+          "surface": "works",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 330,
+          "end": 334,
+          "surface": "like",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "simple",
+      "gloss": "basit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 337,
+          "end": 343,
+          "surface": "simple",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "immune",
+      "gloss": "bağışıklık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 344,
+          "end": 350,
+          "surface": "immune",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 351,
+          "end": 357,
+          "surface": "system",
+          "contextSentence": "In this way, the cell works like a simple immune system.",
+          "contextSentenceTr": "Bu şekilde hücre, basit bir bağışıklık sistemi gibi çalışır."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "Bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 10,
+          "surface": "Scientists",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "daha sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 11,
+          "end": 16,
+          "surface": "later",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "realised",
+      "gloss": "fark etti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 25,
+          "surface": "realised",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "natural",
+      "gloss": "doğal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 36,
+          "end": 43,
+          "surface": "natural",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "process",
+      "gloss": "süreç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 44,
+          "end": 51,
+          "surface": "process",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 57,
+          "surface": "could",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 60,
+          "surface": "be",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 196,
+          "surface": "be",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "copied",
+      "gloss": "kopyalanmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 67,
+          "surface": "copied",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "laboratory",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 85,
+          "surface": "laboratory",
+          "contextSentence": "Scientists later realised that this natural process could be copied in the laboratory.",
+          "contextSentenceTr": "Bilim insanları daha sonra bu doğal sürecin laboratuvarda kopyalanabileceğini fark etti."
+        }
+      ]
+    },
+    {
+      "lemma": "method",
+      "gloss": "yöntem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 97,
+          "surface": "method",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "denilen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 99,
+          "end": 105,
+          "surface": "called",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "crispr",
+      "gloss": "CRISPR",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 112,
+          "surface": "CRISPR",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 24,
+          "surface": "CRISPR",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "protein",
+      "gloss": "protein",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 128,
+          "surface": "protein",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "named",
+      "gloss": "adlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 134,
+          "surface": "named",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "cas",
+      "gloss": "Cas9 proteini",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 138,
+          "surface": "Cas",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 141,
+          "end": 146,
+          "surface": "which",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 149,
+          "surface": "is",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 409,
+          "end": 411,
+          "surface": "is",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 155,
+          "surface": "often",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "described",
+      "gloss": "tanımlanır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 165,
+          "surface": "described",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 168,
+          "surface": "as",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "molecular",
+      "gloss": "moleküler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 178,
+          "surface": "molecular",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "scissors",
+      "gloss": "makas",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 187,
+          "surface": "scissors",
+          "contextSentence": "The method, called CRISPR, uses a protein named Cas9, which is often described as molecular scissors.",
+          "contextSentenceTr": "CRISPR adlı yöntem, sıklıkla moleküler makas olarak tanımlanan Cas9 adlı bir protein kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "guided",
+      "gloss": "Yönlendirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 189,
+          "end": 195,
+          "surface": "Guided",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 198,
+          "surface": "by",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "short",
+      "gloss": "kısa",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 206,
+          "surface": "short",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "rna",
+      "gloss": "RNA",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 210,
+          "surface": "RNA",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "sequence",
+      "gloss": "dizi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 211,
+          "end": 219,
+          "surface": "sequence",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 223,
+          "surface": "it",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "finds",
+      "gloss": "bulur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 229,
+          "surface": "finds",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 230,
+          "end": 233,
+          "surface": "one",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "exact",
+      "gloss": "tam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 234,
+          "end": 239,
+          "surface": "exact",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "spot",
+      "gloss": "nokta",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 244,
+          "surface": "spot",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "genome",
+      "gloss": "genom",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 256,
+          "surface": "genome",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "cuts",
+      "gloss": "keser",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 265,
+          "surface": "cuts",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "orada",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 279,
+          "surface": "there",
+          "contextSentence": "Guided by a short RNA sequence, it finds one exact spot in a genome and cuts the DNA there.",
+          "contextSentenceTr": "Kısa bir RNA dizisi tarafından yönlendirilen protein, genomda tam bir noktayı bulur ve DNA'yı orada keser."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 290,
+          "end": 294,
+          "surface": "then",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "repairs",
+      "gloss": "onarır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 295,
+          "end": 302,
+          "surface": "repairs",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "cut",
+      "gloss": "kesik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 307,
+          "end": 310,
+          "surface": "cut",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 316,
+          "end": 327,
+          "surface": "researchers",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 331,
+          "surface": "can",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değiştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 338,
+          "surface": "change",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "gene",
+      "gloss": "gen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 347,
+          "surface": "gene",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "sırasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 354,
+          "surface": "during",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "repair",
+      "gloss": "onarım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 360,
+          "end": 366,
+          "surface": "repair",
+          "contextSentence": "The cell then repairs the cut, and researchers can change the gene during this repair.",
+          "contextSentenceTr": "Hücre daha sonra kesiği onarır ve araştırmacılar bu onarım sırasında geni değiştirebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "doctors",
+      "gloss": "Doktorlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 7,
+          "surface": "Doctors",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "hope",
+      "gloss": "umut eder",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 8,
+          "end": 12,
+          "surface": "hope",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "will",
+      "gloss": "-ecek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 29,
+          "surface": "will",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "help",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 34,
+          "surface": "help",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "tedavi etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 40,
+          "surface": "treat",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "certain",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 41,
+          "end": 48,
+          "surface": "certain",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "inherited",
+      "gloss": "kalıtsal",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 58,
+          "surface": "inherited",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "diseases",
+      "gloss": "hastalıklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 59,
+          "end": 67,
+          "surface": "diseases",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "early",
+      "gloss": "erken",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 83,
+          "surface": "early",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "treatments",
+      "gloss": "tedaviler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 84,
+          "end": 94,
+          "surface": "treatments",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "already",
+      "gloss": "zaten",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 107,
+          "surface": "already",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "been",
+      "gloss": "olmuş (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 108,
+          "end": 112,
+          "surface": "been",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "test edildi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 119,
+          "surface": "tested",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "patients",
+      "gloss": "hastalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 131,
+          "surface": "patients",
+          "contextSentence": "Doctors hope that CRISPR will help treat certain inherited diseases, and some early treatments have already been tested in patients.",
+          "contextSentenceTr": "Doktorlar CRISPR'ın bazı kalıtsal hastalıkların tedavisine yardımcı olacağını umuyor ve bazı erken tedaviler zaten hastalarda test edildi."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "Ancak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 140,
+          "surface": "However",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "changes",
+      "gloss": "değişiklikler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 149,
+          "surface": "changes",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yapılan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 154,
+          "surface": "made",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 155,
+          "end": 157,
+          "surface": "to",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 209,
+          "surface": "to",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "reproductive",
+      "gloss": "üreme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 170,
+          "surface": "reproductive",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 176,
+          "surface": "cells",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 179,
+          "surface": "or",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "embryos",
+      "gloss": "embriyolar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 187,
+          "surface": "embryos",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 291,
+          "surface": "embryos",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-irdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 193,
+          "surface": "would",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "passed",
+      "gloss": "aktarılmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 203,
+          "surface": "passed",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "(pass on: aktarmak)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 206,
+          "surface": "on",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "future",
+      "gloss": "gelecek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 216,
+          "surface": "future",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "generations",
+      "gloss": "nesiller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 228,
+          "surface": "generations",
+          "contextSentence": "However, changes made to reproductive cells or embryos would be passed on to future generations.",
+          "contextSentenceTr": "Ancak üreme hücrelerinde veya embriyolarda yapılan değişiklikler gelecek nesillere aktarılırdı."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 233,
+          "surface": "For",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "reason",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 245,
+          "surface": "reason",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 247,
+          "end": 251,
+          "surface": "many",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 252,
+          "end": 258,
+          "surface": "people",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "argue",
+      "gloss": "savunur",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 264,
+          "surface": "argue",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "editing",
+      "gloss": "düzenleme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 277,
+          "surface": "editing",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 283,
+          "surface": "human",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "raises",
+      "gloss": "doğurur",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 292,
+          "end": 298,
+          "surface": "raises",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "serious",
+      "gloss": "ciddi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 306,
+          "surface": "serious",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "ethical",
+      "gloss": "etik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 307,
+          "end": 314,
+          "surface": "ethical",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "questions",
+      "gloss": "sorular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 324,
+          "surface": "questions",
+          "contextSentence": "For this reason, many people argue that editing human embryos raises serious ethical questions.",
+          "contextSentenceTr": "Bu nedenle birçok kişi, insan embriyolarını düzenlemenin ciddi etik sorular doğurduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "strict",
+      "gloss": "Katı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 326,
+          "end": 332,
+          "surface": "Strict",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "rules",
+      "gloss": "kurallar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 333,
+          "end": 338,
+          "surface": "rules",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "open",
+      "gloss": "açık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 343,
+          "end": 347,
+          "surface": "open",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "kamusal",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 348,
+          "end": 354,
+          "surface": "public",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "discussion",
+      "gloss": "tartışma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 355,
+          "end": 365,
+          "surface": "discussion",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 370,
+          "end": 379,
+          "surface": "therefore",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "needed",
+      "gloss": "gerekli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 380,
+          "end": 386,
+          "surface": "needed",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 387,
+          "end": 393,
+          "surface": "before",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "technology",
+      "gloss": "teknoloji",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 398,
+          "end": 408,
+          "surface": "technology",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanılmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 412,
+          "end": 416,
+          "surface": "used",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "widely",
+      "gloss": "yaygın olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 417,
+          "end": 423,
+          "surface": "widely",
+          "contextSentence": "Strict rules and open public discussion are therefore needed before the technology is used widely.",
+          "contextSentenceTr": "Bu nedenle teknoloji yaygın olarak kullanılmadan önce katı kurallara ve açık bir kamusal tartışmaya ihtiyaç vardır."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 86
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A record of the diseases CRISPR has already cured",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin hangi hastalıkların iyileştirildiğini listelemez."
+        },
+        {
+          "key": "o2",
+          "text": "How a bacterial defence became a gene-editing tool",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin bakterilerin doğal savunmasını, bunun laboratuvarda gen düzenleme aracına dönüşmesini ve etik sorunları anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Why viruses are far more dangerous than bacteria are today",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Virüsler ve bakteriler yalnızca konunun arka planıdır; metin virüslerin tehlikesini karşılaştırmaz."
+        },
+        {
+          "key": "o4",
+          "text": "A complete ban on every kind of medical research",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin kurallar ve tartışma ister; tüm tıbbi araştırmaların yasaklanmasını önermez."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "According to the passage, what does the protein do once it finds its exact spot?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 221,
+        "end": 279
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It copies the entire genome into a new virus",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir şey yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "It repairs the cut without any help from the cell",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Kesiği onaran hücredir, protein değildir."
+        },
+        {
+          "key": "o3",
+          "text": "It stores the virus's code for use in later attacks",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kodu saklayanlar bakterilerdir; bu birinci paragraftaki doğal süreçtir."
+        },
+        {
+          "key": "o4",
+          "text": "It cuts the DNA at that place",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin proteinin tam noktayı bulup DNA'yı orada kestiğini söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"invader\" mean in paragraph 1?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 263,
+        "end": 284
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Something that enters to attack",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Invader, saldırmak için içeri giren şey, istilacı demektir; burada virüstür."
+        },
+        {
+          "key": "o2",
+          "text": "A scientist who studies viruses closely in a laboratory",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Laboratuvar ve bilim insanları ikinci paragrafın konusudur; kelime bunu anlatmaz."
+        },
+        {
+          "key": "o3",
+          "text": "A protein that fixes damaged DNA after a cut",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "DNA onarımı başka bir bilgidir; kelimenin anlamıyla ilgisi yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "A helper that protects the cell from harm",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tam tersi: istilacı hücreye zarar vermeye çalışandır."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "Why are changes to embryos seen as more serious than other edits?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 142,
+        "end": 228
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "CRISPR is unable to cut the DNA of human cells",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin yöntemin hastalarda test edildiğini söyler; kesemediğini değil."
+        },
+        {
+          "key": "o2",
+          "text": "Doctors have already edited a large number of embryos",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir sayı veya uygulama bildirmez."
+        },
+        {
+          "key": "o3",
+          "text": "The changes could affect people not yet born",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Embriyodaki değişiklikler gelecek nesillere geçer; bu da henüz doğmamış insanları etkileyebileceği anlamına gelir."
+        },
+        {
+          "key": "o4",
+          "text": "Embryos are too small for scientists to examine at all",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin embriyoların boyutundan söz etmez."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Bazı bakteriler virüslerin genetik kodundan küçük parçaları kendi DNA'larında saklar ve aynı virüs tekrar saldırdığında bu parçalarla onu tanıyıp DNA'sını keser; CRISPR doğal bir bakteriyel bağışıklık sistemidir.",
+        "source": "NIH Intramural Research Program, Next Big Thing in Genome Modification: the CRISPR/Cas9 System; https://irp.nih.gov/blog/post/2015/04/next-big-thing-in-genome-modification-the-crispr-cas9-system; NIGMS, CRISPR; https://www.nigms.nih.gov/biobeat/tag/crispr",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "CRISPR gen düzenleme yöntemi bu doğal süreçten uyarlanmıştır; Cas9 proteini kısa bir kılavuz RNA ile belirli bir DNA noktasına yönlendirilir ve orada keser (moleküler makas benzetmesi).",
+        "source": "NIH Intramural Research Program, Next Big Thing in Genome Modification: the CRISPR/Cas9 System; https://irp.nih.gov/blog/post/2015/04/next-big-thing-in-genome-modification-the-crispr-cas9-system",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Kesilen DNA'yı hücre kendi onarım mekanizmalarıyla onarır; araştırmacılar bu onarım sırasında geni değiştirebilir.",
+        "source": "NIH Intramural Research Program, Next Big Thing in Genome Modification: the CRISPR/Cas9 System; https://irp.nih.gov/blog/post/2015/04/next-big-thing-in-genome-modification-the-crispr-cas9-system; NIGMS, CRISPR; https://www.nigms.nih.gov/biobeat/tag/crispr",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "CRISPR tabanlı bazı erken tedaviler hastalarda denenmiştir; kalıtsal hastalıkların tedavisi için umut vaat eder.",
+        "source": "World Health Organization (WHO); https://www.who.int/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Üreme hücrelerinde veya embriyolarda yapılan genetik değişiklikler sonraki nesillere aktarılır; bu nedenle insan embriyosu düzenleme ciddi etik tartışmalara yol açar ve sıkı kurallar ile kamusal tartışma gerektirir.",
+        "source": "World Health Organization (WHO); https://www.who.int/",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

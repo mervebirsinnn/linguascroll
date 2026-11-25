@@ -1,0 +1,2757 @@
+{
+  "slug": "b2-antibiotic-resistance",
+  "level": "B2",
+  "title": "When Drugs Stop Working",
+  "topic": "Tıp",
+  "sortOrder": 36,
+  "isFreeSample": false,
+  "paragraphs": [
+    "When an antibiotic enters the body, it kills bacteria or stops them from multiplying. Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug. Those survivors then multiply, and their descendants inherit the same protection. Over many generations, a whole population can become resistant. Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+    "This process can happen naturally, but human behaviour has sped it up. Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt. Large amounts are also used in farming. Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+    "The World Health Organization now describes antimicrobial resistance as a major global threat to public health. When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier. Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much. That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains."
+  ],
+  "words": [
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 112,
+          "end": 116,
+          "surface": "When",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 372,
+          "end": 376,
+          "surface": "when",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 7,
+          "surface": "an",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "antibiotic",
+      "gloss": "antibiyotik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 8,
+          "end": 18,
+          "surface": "antibiotic",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "enters",
+      "gloss": "girer",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 25,
+          "surface": "enters",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 29,
+          "surface": "the",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 97,
+          "surface": "the",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 184,
+          "surface": "the",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 252,
+          "end": 255,
+          "surface": "the",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 153,
+          "surface": "the",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 297,
+          "end": 300,
+          "surface": "the",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 30,
+          "end": 34,
+          "surface": "body",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 38,
+          "surface": "it",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 66,
+          "surface": "it",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "kills",
+      "gloss": "öldürür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 39,
+          "end": 44,
+          "surface": "kills",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "bacteria",
+      "gloss": "bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 53,
+          "surface": "bacteria",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 106,
+          "surface": "bacteria",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 337,
+          "end": 345,
+          "surface": "Bacteria",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 191,
+          "surface": "bacteria",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 54,
+          "end": 56,
+          "surface": "or",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "stops",
+      "gloss": "durdurur",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 62,
+          "surface": "stops",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 67,
+          "surface": "them",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 172,
+          "surface": "them",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 366,
+          "surface": "them",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-mekten",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 72,
+          "surface": "from",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "multiplying",
+      "gloss": "çoğalmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 73,
+          "end": 84,
+          "surface": "multiplying",
+          "contextSentence": "When an antibiotic enters the body, it kills bacteria or stops them from multiplying.",
+          "contextSentenceTr": "Bir antibiyotik vücuda girdiğinde bakterileri öldürür ya da çoğalmalarını durdurur."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 90,
+          "surface": "Most",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 91,
+          "end": 93,
+          "surface": "of",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "die",
+      "gloss": "ölür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 107,
+          "end": 110,
+          "surface": "die",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 115,
+          "surface": "but",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 35,
+          "end": 38,
+          "surface": "but",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 117,
+          "surface": "a",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 296,
+          "end": 297,
+          "surface": "a",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 72,
+          "end": 73,
+          "surface": "a",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "few",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 118,
+          "end": 121,
+          "surface": "few",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 125,
+          "surface": "may",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "carry",
+      "gloss": "taşımak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 131,
+          "surface": "carry",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 132,
+          "end": 137,
+          "surface": "small",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "genetic",
+      "gloss": "genetik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 138,
+          "end": 145,
+          "surface": "genetic",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "differences",
+      "gloss": "farklılıklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 157,
+          "surface": "differences",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 158,
+          "end": 162,
+          "surface": "that",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 281,
+          "end": 285,
+          "surface": "that",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "help",
+      "gloss": "yardım eder",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 163,
+          "end": 167,
+          "surface": "help",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "survive",
+      "gloss": "hayatta kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 180,
+          "surface": "survive",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "drug",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 189,
+          "surface": "drug",
+          "contextSentence": "Most of the bacteria die, but a few may carry small genetic differences that help them survive the drug.",
+          "contextSentenceTr": "Bakterilerin çoğu ölür, ama birkaçı ilaçtan sağ çıkmalarına yardım eden küçük genetik farklılıklar taşıyabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 196,
+          "surface": "Those",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "survivors",
+      "gloss": "hayatta kalanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 197,
+          "end": 206,
+          "surface": "survivors",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 207,
+          "end": 211,
+          "surface": "then",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "multiply",
+      "gloss": "çoğalır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 220,
+          "surface": "multiply",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 222,
+          "end": 225,
+          "surface": "and",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 112,
+          "surface": "and",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 183,
+          "surface": "and",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 442,
+          "end": 445,
+          "surface": "and",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 456,
+          "end": 459,
+          "surface": "and",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 226,
+          "end": 231,
+          "surface": "their",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 385,
+          "end": 390,
+          "surface": "their",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "descendants",
+      "gloss": "soyundan gelenler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 243,
+          "surface": "descendants",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "inherit",
+      "gloss": "miras alır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 244,
+          "end": 251,
+          "surface": "inherit",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 260,
+          "surface": "same",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "protection",
+      "gloss": "koruma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 261,
+          "end": 271,
+          "surface": "protection",
+          "contextSentence": "Those survivors then multiply, and their descendants inherit the same protection.",
+          "contextSentenceTr": "Sonra bu hayatta kalanlar çoğalır ve onların soyundan gelenler aynı korumayı miras alır."
+        }
+      ]
+    },
+    {
+      "lemma": "over",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 277,
+          "surface": "Over",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 282,
+          "surface": "many",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "generations",
+      "gloss": "kuşaklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 283,
+          "end": 294,
+          "surface": "generations",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "whole",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 298,
+          "end": 303,
+          "surface": "whole",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "population",
+      "gloss": "topluluk, popülasyon",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 304,
+          "end": 314,
+          "surface": "population",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 315,
+          "end": 318,
+          "surface": "can",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 346,
+          "end": 349,
+          "surface": "can",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 16,
+          "surface": "can",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 325,
+          "surface": "become",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "resistant",
+      "gloss": "dirençli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 326,
+          "end": 335,
+          "surface": "resistant",
+          "contextSentence": "Over many generations, a whole population can become resistant.",
+          "contextSentenceTr": "Birçok kuşak boyunca bütün bir topluluk dirençli hâle gelebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 483,
+          "end": 492,
+          "surface": "resistant",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 350,
+          "end": 354,
+          "surface": "also",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 233,
+          "end": 237,
+          "surface": "also",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        }
+      ]
+    },
+    {
+      "lemma": "pass",
+      "gloss": "aktarmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 355,
+          "end": 359,
+          "surface": "pass",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "useful",
+      "gloss": "yararlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 360,
+          "end": 366,
+          "surface": "useful",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "genes",
+      "gloss": "genler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 367,
+          "end": 372,
+          "surface": "genes",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "directly",
+      "gloss": "doğrudan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 373,
+          "end": 381,
+          "surface": "directly",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 382,
+          "end": 384,
+          "surface": "to",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "neighbours",
+      "gloss": "komşular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 391,
+          "end": 401,
+          "surface": "neighbours",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 403,
+          "end": 408,
+          "surface": "which",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "spreads",
+      "gloss": "yayar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 409,
+          "end": 416,
+          "surface": "spreads",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "resistance",
+      "gloss": "direnç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 417,
+          "end": 427,
+          "surface": "resistance",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 58,
+          "end": 68,
+          "surface": "resistance",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "daha da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 428,
+          "end": 432,
+          "surface": "even",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "faster",
+      "gloss": "hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 433,
+          "end": 439,
+          "surface": "faster",
+          "contextSentence": "Bacteria can also pass useful genes directly to their neighbours, which spreads resistance even faster.",
+          "contextSentenceTr": "Bakteriler yararlı genleri doğrudan komşularına da aktarabilir; bu da direnci daha da hızlı yayar."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 314,
+          "end": 318,
+          "surface": "this",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "process",
+      "gloss": "süreç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 5,
+          "end": 12,
+          "surface": "process",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "happen",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 23,
+          "surface": "happen",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "naturally",
+      "gloss": "doğal olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 33,
+          "surface": "naturally",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 44,
+          "surface": "human",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "behaviour",
+      "gloss": "davranış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 45,
+          "end": 54,
+          "surface": "behaviour",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 58,
+          "surface": "has",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "sped",
+      "gloss": "hızlandırdı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 59,
+          "end": 63,
+          "surface": "sped",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "up",
+      "gloss": "(speed up: hızlandırmak)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 67,
+          "end": 69,
+          "surface": "up",
+          "contextSentence": "This process can happen naturally, but human behaviour has sped it up.",
+          "contextSentenceTr": "Bu süreç doğal olarak gerçekleşebilir, ama insan davranışı onu hızlandırmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "antibiotics",
+      "gloss": "antibiyotikler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 82,
+          "surface": "Antibiotics",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 242,
+          "surface": "antibiotics",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 86,
+          "surface": "are",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 127,
+          "surface": "are",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 232,
+          "surface": "are",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 243,
+          "end": 246,
+          "surface": "are",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 382,
+          "end": 385,
+          "surface": "are",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 92,
+          "surface": "often",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "taken",
+      "gloss": "alınır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 98,
+          "surface": "taken",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 99,
+          "end": 102,
+          "surface": "for",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 479,
+          "end": 482,
+          "surface": "for",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "colds",
+      "gloss": "soğuk algınlıkları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 108,
+          "surface": "colds",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "flu",
+      "gloss": "grip",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 116,
+          "surface": "flu",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bunlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 123,
+          "surface": "which",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "caused",
+      "gloss": "neden olunur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 134,
+          "surface": "caused",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 137,
+          "surface": "by",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "viruses",
+      "gloss": "virüsler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 145,
+          "surface": "viruses",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 149,
+          "surface": "so",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 264,
+          "end": 266,
+          "surface": "so",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "drugs",
+      "gloss": "ilaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 154,
+          "end": 159,
+          "surface": "drugs",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 129,
+          "surface": "drugs",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 306,
+          "surface": "drugs",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 162,
+          "surface": "do",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "nothing",
+      "gloss": "hiçbir şey",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 163,
+          "end": 170,
+          "surface": "nothing",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "except",
+      "gloss": "dışında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 177,
+          "surface": "except",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "give",
+      "gloss": "vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 178,
+          "end": 182,
+          "surface": "give",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 192,
+          "end": 196,
+          "surface": "more",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "chances",
+      "gloss": "fırsatlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 197,
+          "end": 204,
+          "surface": "chances",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 207,
+          "surface": "to",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 170,
+          "end": 172,
+          "surface": "to",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "adapt",
+      "gloss": "uyum sağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 213,
+          "surface": "adapt",
+          "contextSentence": "Antibiotics are often taken for colds and flu, which are caused by viruses, so the drugs do nothing except give bacteria more chances to adapt.",
+          "contextSentenceTr": "Antibiyotikler sık sık virüslerin neden olduğu soğuk algınlığı ve grip için alınır; bu yüzden ilaçlar bakterilere uyum sağlamaları için daha fazla fırsat vermekten başka bir şey yapmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 220,
+          "surface": "Large",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        }
+      ]
+    },
+    {
+      "lemma": "amounts",
+      "gloss": "miktarlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 228,
+          "surface": "amounts",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanılır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 238,
+          "end": 242,
+          "surface": "used",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 243,
+          "end": 245,
+          "surface": "in",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 326,
+          "end": 328,
+          "surface": "in",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 347,
+          "end": 349,
+          "surface": "in",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "farming",
+      "gloss": "hayvancılık, tarım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 253,
+          "surface": "farming",
+          "contextSentence": "Large amounts are also used in farming.",
+          "contextSentenceTr": "Büyük miktarlar hayvancılıkta da kullanılır."
+        }
+      ]
+    },
+    {
+      "lemma": "alexander",
+      "gloss": "Alexander",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 264,
+          "surface": "Alexander",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "fleming",
+      "gloss": "Fleming",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 272,
+          "surface": "Fleming",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 277,
+          "surface": "who",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "discovered",
+      "gloss": "keşfetti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 278,
+          "end": 288,
+          "surface": "discovered",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "penicillin",
+      "gloss": "penisilin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 289,
+          "end": 299,
+          "surface": "penicillin",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "warned",
+      "gloss": "uyardı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 307,
+          "surface": "warned",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 313,
+          "surface": "about",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "danger",
+      "gloss": "tehlike",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 325,
+          "surface": "danger",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "his",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 332,
+          "surface": "his",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "nobel",
+      "gloss": "Nobel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 333,
+          "end": 338,
+          "surface": "Nobel",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "lecture",
+      "gloss": "konuşma, ders",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 339,
+          "end": 346,
+          "surface": "lecture",
+          "contextSentence": "Alexander Fleming, who discovered penicillin, warned about this danger in his Nobel lecture in 1945.",
+          "contextSentenceTr": "Penisilini keşfeden Alexander Fleming, 1945'teki Nobel konuşmasında bu tehlikeye karşı uyardı."
+        }
+      ]
+    },
+    {
+      "lemma": "world",
+      "gloss": "Dünya",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 9,
+          "surface": "World",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "health",
+      "gloss": "Sağlık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 10,
+          "end": 16,
+          "surface": "Health",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "organization",
+      "gloss": "Örgütü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 17,
+          "end": 29,
+          "surface": "Organization",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "now",
+      "gloss": "artık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 33,
+          "surface": "now",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "describes",
+      "gloss": "tanımlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 43,
+          "surface": "describes",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "antimicrobial",
+      "gloss": "antimikrobiyal",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 57,
+          "surface": "antimicrobial",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 71,
+          "surface": "as",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 338,
+          "surface": "as",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "major",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 79,
+          "surface": "major",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "global",
+      "gloss": "küresel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 80,
+          "end": 86,
+          "surface": "global",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "threat",
+      "gloss": "tehdit",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 87,
+          "end": 93,
+          "surface": "threat",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e yönelik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 96,
+          "surface": "to",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "halk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 103,
+          "surface": "public",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "health",
+      "gloss": "sağlığı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 110,
+          "surface": "health",
+          "contextSentence": "The World Health Organization now describes antimicrobial resistance as a major global threat to public health.",
+          "contextSentenceTr": "Dünya Sağlık Örgütü artık antimikrobiyal direnci halk sağlığına yönelik büyük bir küresel tehdit olarak tanımlıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "common",
+      "gloss": "yaygın",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 123,
+          "surface": "common",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "fail",
+      "gloss": "işe yaramaz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 134,
+          "surface": "fail",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "ordinary",
+      "gloss": "sıradan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 144,
+          "surface": "ordinary",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "infections",
+      "gloss": "enfeksiyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 145,
+          "end": 155,
+          "surface": "infections",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 411,
+          "end": 421,
+          "surface": "infections",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "olur",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 162,
+          "surface": "become",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 209,
+          "surface": "become",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "harder",
+      "gloss": "daha zor",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 169,
+          "surface": "harder",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "tedavi etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 178,
+          "surface": "treat",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "routine",
+      "gloss": "rutin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 184,
+          "end": 191,
+          "surface": "routine",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "operations",
+      "gloss": "ameliyatlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 202,
+          "surface": "operations",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "riskier",
+      "gloss": "daha riskli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 217,
+          "surface": "riskier",
+          "contextSentence": "When common drugs fail, ordinary infections become harder to treat, and routine operations become riskier.",
+          "contextSentenceTr": "Yaygın ilaçlar işe yaramadığında sıradan enfeksiyonları tedavi etmek zorlaşır ve rutin ameliyatlar daha riskli hâle gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "too",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 222,
+          "surface": "Too",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "few",
+      "gloss": "az",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 223,
+          "end": 226,
+          "surface": "few",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 227,
+          "end": 230,
+          "surface": "new",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "being",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 247,
+          "end": 252,
+          "surface": "being",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "developed",
+      "gloss": "geliştirilmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 253,
+          "end": 262,
+          "surface": "developed",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "experts",
+      "gloss": "uzmanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 267,
+          "end": 274,
+          "surface": "experts",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "argue",
+      "gloss": "savunur",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 275,
+          "end": 280,
+          "surface": "argue",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "protecting",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 296,
+          "surface": "protecting",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 307,
+          "end": 309,
+          "surface": "we",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "already",
+      "gloss": "zaten",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 310,
+          "end": 317,
+          "surface": "already",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 322,
+          "surface": "have",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "matters",
+      "gloss": "önemlidir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 330,
+          "surface": "matters",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "just",
+      "gloss": "tam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 331,
+          "end": 335,
+          "surface": "just",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "o kadar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 343,
+          "surface": "much",
+          "contextSentence": "Too few new antibiotics are being developed, so experts argue that protecting the drugs we already have matters just as much.",
+          "contextSentenceTr": "Çok az yeni antibiyotik geliştiriliyor, bu yüzden uzmanlar elimizdeki ilaçları korumanın da tam o kadar önemli olduğunu savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 345,
+          "end": 349,
+          "surface": "That",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "means",
+      "gloss": "demektir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 350,
+          "end": 355,
+          "surface": "means",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "using",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 361,
+          "surface": "using",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 367,
+          "end": 371,
+          "surface": "only",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 377,
+          "end": 381,
+          "surface": "they",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "truly",
+      "gloss": "gerçekten",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 386,
+          "end": 391,
+          "surface": "truly",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "needed",
+      "gloss": "gerekli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 392,
+          "end": 398,
+          "surface": "needed",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "preventing",
+      "gloss": "önlemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 400,
+          "end": 410,
+          "surface": "preventing",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "yoluyla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 422,
+          "end": 429,
+          "surface": "through",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "clean",
+      "gloss": "temiz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 430,
+          "end": 435,
+          "surface": "clean",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "water",
+      "gloss": "su",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 436,
+          "end": 441,
+          "surface": "water",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "vaccines",
+      "gloss": "aşılar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 446,
+          "end": 454,
+          "surface": "vaccines",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "watching",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 460,
+          "end": 468,
+          "surface": "watching",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "carefully",
+      "gloss": "dikkatle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 469,
+          "end": 478,
+          "surface": "carefully",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    },
+    {
+      "lemma": "strains",
+      "gloss": "suşlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 493,
+          "end": 500,
+          "surface": "strains",
+          "contextSentence": "That means using them only when they are truly needed, preventing infections through clean water and vaccines, and watching carefully for resistant strains.",
+          "contextSentenceTr": "Bu, onları yalnızca gerçekten gerektiğinde kullanmak, temiz su ve aşılarla enfeksiyonları önlemek ve dirençli suşları dikkatle izlemek demektir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 296,
+        "end": 335
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Why farm animals no longer need any medicine",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir iddia yoktur; hayvancılıktaki kullanım bir risk olarak geçer."
+        },
+        {
+          "key": "o2",
+          "text": "How bacteria resist drugs and why it matters",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin direncin nasıl oluştuğunu, nasıl hızlandığını ve neden önemli bir tehdit olduğunu anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Why antibiotics cure colds and flu quickly",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin antibiyotiklerin virüslerin yol açtığı bu hastalıklarda işe yaramadığını söyler."
+        },
+        {
+          "key": "o4",
+          "text": "How Alexander Fleming first discovered penicillin",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Fleming yalnızca uyarısıyla anılır; keşif hikâyesi anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "According to the passage, why are antibiotics useless against colds and flu?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 118,
+        "end": 145
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Colds are caused by resistant bacteria",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metne göre nedeni bakteri değil virüstür."
+        },
+        {
+          "key": "o2",
+          "text": "The drugs are too expensive for patients",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Pahalılık yalnızca yeni ilaç geliştirmek için söylenir."
+        },
+        {
+          "key": "o3",
+          "text": "Patients usually stop taking the pills early",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir neden verilmez."
+        },
+        {
+          "key": "o4",
+          "text": "These illnesses are caused by viruses",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin soğuk algınlığı ve gribin virüslerden kaynaklandığını açıkça söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “inherit” mean in paragraph 1?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 226,
+        "end": 271
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Receive from their parents",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Inherit, bir özelliği önceki kuşaktan almak demektir; soyundan gelenler korumayı ebeveynlerinden alır."
+        },
+        {
+          "key": "o2",
+          "text": "Lose over a short time",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Koruma kaybedilmez, aksine aktarılır."
+        },
+        {
+          "key": "o3",
+          "text": "Pass to nearby bacteria",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Komşulara gen aktarımı ayrı bir cümlede anlatılır; inherit bu anlama gelmez."
+        },
+        {
+          "key": "o4",
+          "text": "Produce inside a laboratory",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Laboratuvar üretimi metinde geçmez."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can be inferred from the final paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 286,
+        "end": 343
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Resistance affects only rare, exotic infections",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin sıradan enfeksiyonların tedavisinin zorlaştığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Vaccines have replaced the need for antibiotics",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Aşılar önleme araçlarından biri olarak geçer; antibiyotiklerin yerini aldığı söylenmez."
+        },
+        {
+          "key": "o3",
+          "text": "Careful use of current drugs is a key defence",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yeni ilaçlar yeterince gelmediği için mevcut ilaçları dikkatli kullanmak temel bir savunma olarak sunulur."
+        },
+        {
+          "key": "o4",
+          "text": "New antibiotics will soon solve the problem",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin çok az yeni antibiyotik geliştirildiğini söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Antibiyotikler bakterileri öldürür ya da çoğalmalarını durdurur; ilaçtan sağ çıkan bakteriler çoğalarak dirençli popülasyonlar oluşturabilir ve direnç genleri bakteriler arasında aktarılabilir.",
+        "source": "U.S. Centers for Disease Control and Prevention, Antimicrobial Resistance; https://www.cdc.gov/antimicrobial-resistance/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Antibiyotikler virüslerin yol açtığı soğuk algınlığı ve gribe karşı etkisizdir; gereksiz kullanım direnci hızlandırır.",
+        "source": "U.S. Centers for Disease Control and Prevention, Antimicrobial Resistance; https://www.cdc.gov/antimicrobial-resistance/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Antibiyotiklerin insanlarda ve hayvancılık/gıda sektöründe yanlış ve aşırı kullanımı direnci hızlandırır.",
+        "source": "World Health Organization, Antimicrobial resistance (fact sheet); https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Alexander Fleming 1945 Nobel konuşmasında penisilinin yetersiz dozda kullanılmasının mikropları dirençli hâle getirebileceği konusunda uyardı.",
+        "source": "Alexander Fleming, Penicillin, Nobel Lecture, 11 Aralık 1945; https://www.nobelprize.org/prizes/medicine/1945/fleming/lecture/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "DSÖ antimikrobiyal direnci büyük bir küresel halk sağlığı tehdidi olarak tanımlar; yeterli sayıda yeni antibiyotik geliştirilmemektedir; direnç enfeksiyon tedavisini ve ameliyatları daha riskli kılar; önleme için temiz su, hijyen, aşılar ve izleme önerilir.",
+        "source": "World Health Organization, Antimicrobial resistance (fact sheet); https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

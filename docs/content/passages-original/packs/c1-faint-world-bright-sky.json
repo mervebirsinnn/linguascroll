@@ -1,0 +1,2592 @@
+{
+  "slug": "c1-faint-world-bright-sky",
+  "level": "C1",
+  "title": "Finding a faint world in a bright sky",
+  "topic": "Bilim · Astronomi ve yapay zekâ",
+  "sortOrder": 202,
+  "isFreeSample": false,
+  "paragraphs": [
+    "A powerful telescope does not necessarily make every astronomical object easy to observe. A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study. Even minor imperfections in an instrument can complicate the interpretation of its images.",
+    "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation. Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+    "The process combined established physical knowledge with machine-learning methods. In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles. The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+    "The case illustrates why advances in observational science need not depend solely on building more powerful instruments. Improved interpretation can increase the value of information that an existing telescope has already collected. Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable."
+  ],
+  "words": [
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 90,
+          "end": 91,
+          "surface": "A",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 216,
+          "surface": "a",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 279,
+          "surface": "a",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 247,
+          "end": 248,
+          "surface": "a",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "powerful",
+      "gloss": "güçlü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 2,
+          "end": 10,
+          "surface": "powerful",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 99,
+          "end": 107,
+          "surface": "powerful",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "telescope",
+      "gloss": "teleskop",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 20,
+          "surface": "telescope",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 70,
+          "surface": "Telescope",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 200,
+          "end": 209,
+          "surface": "telescope",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "yardımcı fiil (olumsuzluğu kurar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 25,
+          "surface": "does",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 291,
+          "end": 295,
+          "surface": "does",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 29,
+          "surface": "not",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 64,
+          "end": 67,
+          "surface": "not",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 296,
+          "end": 299,
+          "surface": "not",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "necessarily",
+      "gloss": "mutlaka",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 30,
+          "end": 41,
+          "surface": "necessarily",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "kılmak, yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 46,
+          "surface": "make",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 52,
+          "surface": "every",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "astronomical",
+      "gloss": "astronomik, gökbilimsel",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 53,
+          "end": 65,
+          "surface": "astronomical",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "object",
+      "gloss": "gök cismi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 66,
+          "end": 72,
+          "surface": "object",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 208,
+          "end": 214,
+          "surface": "object",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "easy",
+      "gloss": "kolay",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 73,
+          "end": 77,
+          "surface": "easy",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "mastar işareti (-mek)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 80,
+          "surface": "to",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 239,
+          "surface": "to",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 110,
+          "surface": "to",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 271,
+          "end": 273,
+          "surface": "to",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 254,
+          "end": 256,
+          "surface": "to",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 317,
+          "surface": "to",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 272,
+          "end": 274,
+          "surface": "to",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "observe",
+      "gloss": "gözlemlemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 81,
+          "end": 88,
+          "surface": "observe",
+          "contextSentence": "A powerful telescope does not necessarily make every astronomical object easy to observe.",
+          "contextSentenceTr": "Güçlü bir teleskop her gök cismini gözlemlemeyi mutlaka kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "planet",
+      "gloss": "gezegen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 98,
+          "surface": "planet",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "orbiting",
+      "gloss": "yörüngede dönen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 99,
+          "end": 107,
+          "surface": "orbiting",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "another",
+      "gloss": "başka bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 115,
+          "surface": "another",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "star",
+      "gloss": "yıldız",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 120,
+          "surface": "star",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 121,
+          "end": 124,
+          "surface": "may",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 127,
+          "surface": "be",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok (karşılaştırmayı güçlendirir)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 132,
+          "surface": "much",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "fainter",
+      "gloss": "daha sönük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 140,
+          "surface": "fainter",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den (karşılaştırma)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 141,
+          "end": 145,
+          "surface": "than",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 147,
+          "surface": "than",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 149,
+          "surface": "its",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 326,
+          "end": 329,
+          "surface": "its",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 249,
+          "end": 252,
+          "surface": "its",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "surroundings",
+      "gloss": "çevresindeki ortam",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 162,
+          "surface": "surroundings",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 166,
+          "surface": "so",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık; bilinen ismi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 170,
+          "surface": "the",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 204,
+          "end": 207,
+          "surface": "the",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 304,
+          "end": 307,
+          "surface": "the",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 43,
+          "surface": "the",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 174,
+          "surface": "the",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 308,
+          "surface": "the",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 176,
+          "end": 179,
+          "surface": "the",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 214,
+          "end": 217,
+          "surface": "The",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 248,
+          "surface": "the",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 333,
+          "end": 336,
+          "surface": "the",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 158,
+          "end": 161,
+          "surface": "the",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "star's",
+      "gloss": "yıldızın",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 177,
+          "surface": "star’s",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "intense",
+      "gloss": "yoğun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 178,
+          "end": 185,
+          "surface": "intense",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "light",
+      "gloss": "ışık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 186,
+          "end": 191,
+          "surface": "light",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 192,
+          "end": 195,
+          "surface": "can",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 292,
+          "surface": "can",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 145,
+          "end": 148,
+          "surface": "can",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "obscure",
+      "gloss": "görülmesini zorlaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 196,
+          "end": 203,
+          "surface": "obscure",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki (yan cümleyi bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 215,
+          "end": 219,
+          "surface": "that",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 300,
+          "surface": "that",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 183,
+          "end": 187,
+          "surface": "that",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 310,
+          "end": 314,
+          "surface": "that",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 231,
+          "surface": "researchers",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "want",
+      "gloss": "istemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 236,
+          "surface": "want",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "incelemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 245,
+          "surface": "study",
+          "contextSentence": "A planet orbiting another star may be much fainter than its surroundings, so the star’s intense light can obscure the object that researchers want to study.",
+          "contextSentenceTr": "Başka bir yıldızın çevresinde dönen bir gezegen, çevresinden çok daha sönük olabilir; bu yüzden yıldızın yoğun ışığı araştırmacıların incelemek istediği cismi gölgede bırakabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "bile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 251,
+          "surface": "Even",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "minor",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 252,
+          "end": 257,
+          "surface": "minor",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "imperfections",
+      "gloss": "kusurlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 271,
+          "surface": "imperfections",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 272,
+          "end": 274,
+          "surface": "in",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 83,
+          "end": 85,
+          "surface": "In",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 332,
+          "surface": "in",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 34,
+          "end": 36,
+          "surface": "in",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 275,
+          "end": 277,
+          "surface": "an",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 91,
+          "surface": "an",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 136,
+          "surface": "an",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 188,
+          "end": 190,
+          "surface": "an",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "instrument",
+      "gloss": "ölçüm cihazı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 288,
+          "surface": "instrument",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "complicate",
+      "gloss": "karmaşıklaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 303,
+          "surface": "complicate",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "interpretation",
+      "gloss": "yorumlama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 308,
+          "end": 322,
+          "surface": "interpretation",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 130,
+          "end": 144,
+          "surface": "interpretation",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-in",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 323,
+          "end": 325,
+          "surface": "of",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 248,
+          "surface": "of",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 302,
+          "end": 304,
+          "surface": "of",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 165,
+          "surface": "of",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 275,
+          "end": 277,
+          "surface": "of",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 168,
+          "end": 170,
+          "surface": "of",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "images",
+      "gloss": "görüntüler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 330,
+          "end": 336,
+          "surface": "images",
+          "contextSentence": "Even minor imperfections in an instrument can complicate the interpretation of its images.",
+          "contextSentenceTr": "Bir aletteki küçük kusurlar bile görüntülerinin yorumlanmasını zorlaştırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "astronomers",
+      "gloss": "gökbilimciler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 11,
+          "surface": "Astronomers",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "examining",
+      "gloss": "inceleyen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 12,
+          "end": 21,
+          "surface": "examining",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "observations",
+      "gloss": "gözlemler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 34,
+          "surface": "observations",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 35,
+          "end": 39,
+          "surface": "from",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "james",
+      "gloss": "James (teleskobun adı)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 44,
+          "end": 49,
+          "surface": "James",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "webb",
+      "gloss": "Webb (James Webb Uzay Teleskobu)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 54,
+          "surface": "Webb",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "space",
+      "gloss": "uzay",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 60,
+          "surface": "Space",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "recently",
+      "gloss": "yakın zamanda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 79,
+          "surface": "recently",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "explored",
+      "gloss": "araştırdı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 88,
+          "surface": "explored",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "alternative",
+      "gloss": "alternatif",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 103,
+          "surface": "alternative",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol, yöntem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 104,
+          "end": 107,
+          "surface": "way",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "address",
+      "gloss": "ele almak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 118,
+          "surface": "address",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 123,
+          "surface": "this",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 90,
+          "surface": "this",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "limitation",
+      "gloss": "sınırlama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 134,
+          "surface": "limitation",
+          "contextSentence": "Astronomers examining observations from the James Webb Space Telescope recently explored an alternative way to address this limitation.",
+          "contextSentenceTr": "James Webb Uzay Teleskobu'nun gözlemlerini inceleyen gökbilimciler, bu sınırlamayı aşmak için yakın zamanda farklı bir yol denedi."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 136,
+          "end": 142,
+          "surface": "Rather",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "relying",
+      "gloss": "dayanmak (rely on)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 155,
+          "surface": "relying",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "exclusively",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 167,
+          "surface": "exclusively",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e (rely on: -e dayanmak)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 168,
+          "end": 170,
+          "surface": "on",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 82,
+          "end": 84,
+          "surface": "on",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "instrument's",
+      "gloss": "ölçüm cihazları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 175,
+          "end": 187,
+          "surface": "instrument’s",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "original",
+      "gloss": "ilk, orijinal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 188,
+          "end": 196,
+          "surface": "original",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 337,
+          "end": 345,
+          "surface": "original",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "output",
+      "gloss": "çıktı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 197,
+          "end": 203,
+          "surface": "output",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 209,
+          "surface": "they",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullandılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 214,
+          "surface": "used",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "computational",
+      "gloss": "hesaplamalı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 217,
+          "end": 230,
+          "surface": "computational",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "representation",
+      "gloss": "temsil, model",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 245,
+          "surface": "representation",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "optical",
+      "gloss": "optik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 260,
+          "surface": "optical",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "behaviour",
+      "gloss": "davranış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 270,
+          "surface": "behaviour",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "improve",
+      "gloss": "iyileştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 281,
+          "surface": "improve",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 287,
+          "surface": "their",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "understanding",
+      "gloss": "anlayış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 288,
+          "end": 301,
+          "surface": "understanding",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "recorded",
+      "gloss": "kaydedilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 317,
+          "surface": "recorded",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "data",
+      "gloss": "veriler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 322,
+          "surface": "data",
+          "contextSentence": "Rather than relying exclusively on the instrument’s original output, they used a computational representation of its optical behaviour to improve their understanding of the recorded data.",
+          "contextSentenceTr": "Yalnızca aletin ilk çıktısına dayanmak yerine, kaydedilen verileri daha iyi anlamak için aletin optik davranışının hesaplamalı bir modelini kullandılar."
+        }
+      ]
+    },
+    {
+      "lemma": "process",
+      "gloss": "süreç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 11,
+          "surface": "process",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "combined",
+      "gloss": "birleştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 20,
+          "surface": "combined",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "established",
+      "gloss": "yerleşik, doğrulanmış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 21,
+          "end": 32,
+          "surface": "established",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "physical",
+      "gloss": "fiziksel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 33,
+          "end": 41,
+          "surface": "physical",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "knowledge",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 51,
+          "surface": "knowledge",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 52,
+          "end": 56,
+          "surface": "with",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine öğrenmesi (machine-learning)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 64,
+          "surface": "machine",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "learning",
+      "gloss": "makine öğrenmesi (machine-learning)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 73,
+          "surface": "learning",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "methods",
+      "gloss": "yöntemler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 81,
+          "surface": "methods",
+          "contextSentence": "The process combined established physical knowledge with machine-learning methods.",
+          "contextSentenceTr": "Süreç, yerleşik fizik bilgisini makine öğrenmesi yöntemleriyle birleştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "context",
+      "gloss": "bağlam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 98,
+          "surface": "context",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "learning",
+      "gloss": "öğrenme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 108,
+          "surface": "learning",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "techniques",
+      "gloss": "teknikler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 109,
+          "end": 119,
+          "surface": "techniques",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "helped",
+      "gloss": "yardımcı oldu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 126,
+          "surface": "helped",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "adjust",
+      "gloss": "ayarlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 127,
+          "end": 133,
+          "surface": "adjust",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "explanatory",
+      "gloss": "açıklayıcı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 148,
+          "surface": "explanatory",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "model",
+      "gloss": "model",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 154,
+          "surface": "model",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "instead",
+      "gloss": "yerine (instead of)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 155,
+          "end": 162,
+          "surface": "instead",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "replacing",
+      "gloss": "yerini almak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 175,
+          "surface": "replacing",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "underlying",
+      "gloss": "temelindeki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 190,
+          "surface": "underlying",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "scientific",
+      "gloss": "bilimsel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 191,
+          "end": 201,
+          "surface": "scientific",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "principles",
+      "gloss": "ilkeler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 212,
+          "surface": "principles",
+          "contextSentence": "In this context, learning techniques helped adjust an explanatory model instead of replacing the underlying scientific principles.",
+          "contextSentenceTr": "Bu bağlamda öğrenme teknikleri, temeldeki bilimsel ilkelerin yerini almak yerine açıklayıcı bir modeli ayarlamaya yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "resulting",
+      "gloss": "ortaya çıkan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 227,
+          "surface": "resulting",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "analysis",
+      "gloss": "analiz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 228,
+          "end": 236,
+          "surface": "analysis",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "enabled",
+      "gloss": "mümkün kıldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 244,
+          "surface": "enabled",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekip",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 249,
+          "end": 253,
+          "surface": "team",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "identify",
+      "gloss": "belirlemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 265,
+          "surface": "identify",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 274,
+          "surface": "evidence",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "giant",
+      "gloss": "dev",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 280,
+          "end": 285,
+          "surface": "giant",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "exoplanet",
+      "gloss": "ötegezegen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 295,
+          "surface": "exoplanet",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "-dı (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 304,
+          "surface": "was",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "difficult",
+      "gloss": "zor",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 314,
+          "surface": "difficult",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "distinguish",
+      "gloss": "ayırt etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 329,
+          "surface": "distinguish",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "image",
+      "gloss": "görüntü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 346,
+          "end": 351,
+          "surface": "image",
+          "contextSentence": "The resulting analysis enabled the team to identify evidence of a giant exoplanet that was difficult to distinguish in the original image.",
+          "contextSentenceTr": "Ortaya çıkan analiz, ekibin ilk görüntüde ayırt edilmesi zor olan dev bir ötegezegene ait kanıtları belirlemesini sağladı."
+        }
+      ]
+    },
+    {
+      "lemma": "case",
+      "gloss": "örnek, durum",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 4,
+          "end": 8,
+          "surface": "case",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "illustrates",
+      "gloss": "örnekleyerek gösterir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 9,
+          "end": 20,
+          "surface": "illustrates",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 21,
+          "end": 24,
+          "surface": "why",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "advances",
+      "gloss": "ilerlemeler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 25,
+          "end": 33,
+          "surface": "advances",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "observational",
+      "gloss": "gözleme dayalı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 37,
+          "end": 50,
+          "surface": "observational",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "science",
+      "gloss": "bilim",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 51,
+          "end": 58,
+          "surface": "science",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "need",
+      "gloss": "need not: zorunda olmamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 59,
+          "end": 63,
+          "surface": "need",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "depend",
+      "gloss": "bağlı olmak (depend on)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 68,
+          "end": 74,
+          "surface": "depend",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "solely",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 75,
+          "end": 81,
+          "surface": "solely",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "building",
+      "gloss": "inşa etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 85,
+          "end": 93,
+          "surface": "building",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 94,
+          "end": 98,
+          "surface": "more",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "instruments",
+      "gloss": "ölçüm cihazları",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 108,
+          "end": 119,
+          "surface": "instruments",
+          "contextSentence": "The case illustrates why advances in observational science need not depend solely on building more powerful instruments.",
+          "contextSentenceTr": "Bu örnek, gözlem bilimindeki ilerlemelerin neden yalnızca daha güçlü aletler yapmaya bağlı olmak zorunda olmadığını gösteriyor."
+        }
+      ]
+    },
+    {
+      "lemma": "improved",
+      "gloss": "iyileştirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 121,
+          "end": 129,
+          "surface": "Improved",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "increase",
+      "gloss": "artırmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 149,
+          "end": 157,
+          "surface": "increase",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "value",
+      "gloss": "değer",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 162,
+          "end": 167,
+          "surface": "value",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "information",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 171,
+          "end": 182,
+          "surface": "information",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "existing",
+      "gloss": "mevcut",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 199,
+          "surface": "existing",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "yardımcı fiil (yakın geçmiş zaman)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 210,
+          "end": 213,
+          "surface": "has",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "already",
+      "gloss": "çoktan, zaten",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 214,
+          "end": 221,
+          "surface": "already",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "collected",
+      "gloss": "toplanmış",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 222,
+          "end": 231,
+          "surface": "collected",
+          "contextSentence": "Improved interpretation can increase the value of information that an existing telescope has already collected.",
+          "contextSentenceTr": "Daha iyi bir yorumlama, mevcut bir teleskobun çoktan topladığı bilginin değerini artırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "nevertheless",
+      "gloss": "bununla birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 233,
+          "end": 245,
+          "surface": "Nevertheless",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "successful",
+      "gloss": "başarılı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 249,
+          "end": 259,
+          "surface": "successful",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "application",
+      "gloss": "uygulama",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 260,
+          "end": 271,
+          "surface": "application",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "tek, bir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 275,
+          "end": 278,
+          "surface": "one",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "observation",
+      "gloss": "gözlem",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 279,
+          "end": 290,
+          "surface": "observation",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "establish",
+      "gloss": "kanıtlamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 300,
+          "end": 309,
+          "surface": "establish",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 315,
+          "end": 318,
+          "surface": "all",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "hidden",
+      "gloss": "gizli",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 319,
+          "end": 325,
+          "surface": "hidden",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "planets",
+      "gloss": "gezegenler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 326,
+          "end": 333,
+          "surface": "planets",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "will",
+      "gloss": "-ecek (gelecek zaman)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 334,
+          "end": 338,
+          "surface": "will",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "hâline gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 339,
+          "end": 345,
+          "surface": "become",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "detectable",
+      "gloss": "saptanabilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 346,
+          "end": 356,
+          "surface": "detectable",
+          "contextSentence": "Nevertheless, a successful application to one observation does not establish that all hidden planets will become detectable.",
+          "contextSentenceTr": "Yine de tek bir gözleme yapılan başarılı bir uygulama, gizli gezegenlerin hepsinin saptanabilir hâle geleceğini kanıtlamaz."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the central argument of the passage?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 135
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Machine learning has made optical instruments unnecessary in astronomical research.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Cihaz hâlâ veri toplamak için gerekli."
+        },
+        {
+          "key": "o2",
+          "text": "Astronomers can identify every planet that is hidden by the light of its star.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Son cümle bu genellemeyi açıkça sınırlar."
+        },
+        {
+          "key": "o3",
+          "text": "More informative analysis of existing observations can complement advances in telescope technology.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yeni analiz, mevcut cihazdan elde edilen bilginin değerini artırabiliyor."
+        },
+        {
+          "key": "o4",
+          "text": "The main limitation of modern telescopes is the inability to collect light from distant stars.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Sorun ışığı toplamaktan çok zayıf sinyali güçlü ışık içinde ayırt etmek."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "inference",
+      "prompt": "Why does the author emphasise established physical knowledge in the third paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 352
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "To indicate that the learning method operated within a scientific framework rather than independently of it",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Makine öğrenmesi fiziksel ilkeleri desteklemek için kullanılmış."
+        },
+        {
+          "key": "o2",
+          "text": "To suggest that computational representations are less informative than telescope observations",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Bilgisayarlı temsilin daha az bilgi verdiği söylenmiyor."
+        },
+        {
+          "key": "o3",
+          "text": "To establish that the use of learning methods removes errors from every image",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Her görüntüdeki hataların ortadan kalkacağına dair kanıt yok."
+        },
+        {
+          "key": "o4",
+          "text": "To explain why the original telescope output could not be collected",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Orijinal veriler zaten toplanmıştı."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "In the first paragraph, “obscure” most nearly means…",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 90,
+        "end": 246
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "make more intense",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Yoğunlaştırmak değil."
+        },
+        {
+          "key": "o2",
+          "text": "estimate indirectly",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Dolaylı tahmin etmek anlamına gelmez."
+        },
+        {
+          "key": "o3",
+          "text": "compare precisely",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Karşılaştırmak anlamına gelmez."
+        },
+        {
+          "key": "o4",
+          "text": "make difficult to see",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yıldız ışığı gezegenin görülmesini zorlaştırıyor."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "paraphrase",
+      "prompt": "Which statement accurately restates the final sentence?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 233,
+        "end": 357
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Every planet that remains hidden is beyond the capabilities of existing instruments.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Yazar diğer gizli gezegenlerin saptanamayacağını söylemiyor."
+        },
+        {
+          "key": "o2",
+          "text": "A method’s success in one instance cannot by itself guarantee success in other observations.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Tek başarılı uygulama evrensel başarı garantisi vermez."
+        },
+        {
+          "key": "o3",
+          "text": "Detecting hidden planets is possible only when the same method is applied to every image.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yöntemin her görüntüye uygulanması şartı yok."
+        },
+        {
+          "key": "o4",
+          "text": "A successful observation demonstrates that all remaining detection problems are temporary.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Öteki sorunların geçici olduğu sonucuna varılamaz."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Metin looplish.app/reading'de yayımlanan özgün bir çalışmadır; kaynak notu: Live Science, 6 Kasım 2026 — James Webb teleskobu verilerinden ötegezegenlerin incelenmesi konulu haberden hareketle hazırlanmış özgün metin. Olgular bu aktarımda bağımsız olarak yeniden doğrulanmadı.",
+        "source": "Live Science, 6 Kasım 2026; https://www.livescience.com/space/scientists-removed-the-glare-from-a-james-webb-telescope-image-and-unmasked-a-hidden-world",
+        "checkedOn": "2026-11-22"
+      }
+    ]
+  }
+}

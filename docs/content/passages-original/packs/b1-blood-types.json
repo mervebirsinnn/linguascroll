@@ -1,0 +1,1912 @@
+{
+  "slug": "b1-blood-types",
+  "level": "B1",
+  "title": "Not All Blood Is the Same",
+  "topic": "Tıp",
+  "sortOrder": 38,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Everyone's blood looks red, but it is not all the same. Doctors divide blood into four main groups: A, B, AB, and O. The group depends on tiny markers on the surface of red blood cells. Your blood group comes from your parents. A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+    "Blood groups are very important when a patient needs blood from another person. If a patient gets the wrong type, the body may attack the new blood cells. This can make the patient very ill. For this reason, hospitals usually check blood groups carefully before they give blood.",
+    "There is also a second system, called the Rh factor. Blood can be Rh positive or Rh negative. People with group O negative blood can usually give red blood cells to almost anyone. Because of this, their blood is very useful in emergencies."
+  ],
+  "words": [
+    {
+      "lemma": "everyone's",
+      "gloss": "herkesin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 10,
+          "surface": "Everyone's",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 16,
+          "surface": "blood",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 76,
+          "surface": "blood",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 178,
+          "surface": "blood",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 191,
+          "end": 196,
+          "surface": "blood",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 281,
+          "end": 286,
+          "surface": "blood",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 5,
+          "surface": "Blood",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 53,
+          "end": 58,
+          "surface": "blood",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 147,
+          "surface": "blood",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 237,
+          "surface": "blood",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 277,
+          "surface": "blood",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 58,
+          "surface": "Blood",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 128,
+          "surface": "blood",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 155,
+          "surface": "blood",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 208,
+          "surface": "blood",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "looks",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 17,
+          "end": 22,
+          "surface": "looks",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "red",
+      "gloss": "kırmızı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 26,
+          "surface": "red",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 169,
+          "end": 172,
+          "surface": "red",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 146,
+          "end": 149,
+          "surface": "red",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 31,
+          "surface": "but",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 34,
+          "surface": "it",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 35,
+          "end": 37,
+          "surface": "is",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 6,
+          "end": 8,
+          "surface": "is",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 211,
+          "surface": "is",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 41,
+          "surface": "not",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "all",
+      "gloss": "hepsi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 45,
+          "surface": "all",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 46,
+          "end": 49,
+          "surface": "the",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 120,
+          "surface": "The",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 154,
+          "end": 157,
+          "surface": "the",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 101,
+          "surface": "the",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 114,
+          "end": 117,
+          "surface": "the",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 134,
+          "end": 137,
+          "surface": "the",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 172,
+          "surface": "the",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 41,
+          "surface": "the",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 54,
+          "surface": "same",
+          "contextSentence": "Everyone's blood looks red, but it is not all the same.",
+          "contextSentenceTr": "Herkesin kanı kırmızı görünür ama hepsi aynı değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "doctors",
+      "gloss": "doktorlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 63,
+          "surface": "Doctors",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "divide",
+      "gloss": "ayırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 64,
+          "end": 70,
+          "surface": "divide",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 81,
+          "surface": "into",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "four",
+      "gloss": "dört",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 82,
+          "end": 86,
+          "surface": "four",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "main",
+      "gloss": "ana",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 91,
+          "surface": "main",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "groups",
+      "gloss": "gruplar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 98,
+          "surface": "groups",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 287,
+          "end": 293,
+          "surface": "groups",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 6,
+          "end": 12,
+          "surface": "groups",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 238,
+          "end": 244,
+          "surface": "groups",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "A grubu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 100,
+          "end": 101,
+          "surface": "A",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "b",
+      "gloss": "B grubu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 104,
+          "surface": "B",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "ab",
+      "gloss": "AB grubu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 108,
+          "surface": "AB",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 110,
+          "end": 113,
+          "surface": "and",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "o",
+      "gloss": "0 grubu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 115,
+          "surface": "O",
+          "contextSentence": "Doctors divide blood into four main groups: A, B, AB, and O.",
+          "contextSentenceTr": "Doktorlar kanı dört ana gruba ayırır: A, B, AB ve 0."
+        }
+      ]
+    },
+    {
+      "lemma": "group",
+      "gloss": "grup",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 121,
+          "end": 126,
+          "surface": "group",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 197,
+          "end": 202,
+          "surface": "group",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 106,
+          "end": 111,
+          "surface": "group",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "depends",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 127,
+          "end": 134,
+          "surface": "depends",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 135,
+          "end": 137,
+          "surface": "on",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minicik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 138,
+          "end": 142,
+          "surface": "tiny",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "markers",
+      "gloss": "işaretler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 150,
+          "surface": "markers",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 153,
+          "surface": "on",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "surface",
+      "gloss": "yüzey",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 158,
+          "end": 165,
+          "surface": "surface",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 166,
+          "end": 168,
+          "surface": "of",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 184,
+          "surface": "cells",
+          "contextSentence": "The group depends on tiny markers on the surface of red blood cells.",
+          "contextSentenceTr": "Grup, kırmızı kan hücrelerinin yüzeyindeki minicik işaretlere bağlıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 153,
+          "surface": "cells",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 161,
+          "surface": "cells",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "your",
+      "gloss": "senin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 186,
+          "end": 190,
+          "surface": "Your",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 218,
+          "surface": "your",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "comes",
+      "gloss": "gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 208,
+          "surface": "comes",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 209,
+          "end": 213,
+          "surface": "from",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 59,
+          "end": 63,
+          "surface": "from",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "parents",
+      "gloss": "ebeveynler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 226,
+          "surface": "parents",
+          "contextSentence": "Your blood group comes from your parents.",
+          "contextSentenceTr": "Kan grubunuz ebeveynlerinizden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 228,
+          "end": 229,
+          "surface": "A",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 37,
+          "end": 38,
+          "surface": "a",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 84,
+          "surface": "a",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 14,
+          "end": 15,
+          "surface": "a",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "scientist",
+      "gloss": "bilim insanı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 230,
+          "end": 239,
+          "surface": "scientist",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "adlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 246,
+          "surface": "called",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 37,
+          "surface": "called",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "karl",
+      "gloss": "Karl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 251,
+          "surface": "Karl",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "landsteiner",
+      "gloss": "Landsteiner",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 252,
+          "end": 263,
+          "surface": "Landsteiner",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk kez",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 269,
+          "surface": "first",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "discovered",
+      "gloss": "keşfetti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 280,
+          "surface": "discovered",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 294,
+          "end": 296,
+          "surface": "in",
+          "contextSentence": "A scientist called Karl Landsteiner first discovered blood groups in 1901.",
+          "contextSentenceTr": "Karl Landsteiner adlı bir bilim insanı kan gruplarını ilk kez 1901'de keşfetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 226,
+          "surface": "in",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 16,
+          "surface": "are",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 21,
+          "surface": "very",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 185,
+          "surface": "very",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 216,
+          "surface": "very",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "important",
+      "gloss": "önemli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 31,
+          "surface": "important",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 32,
+          "end": 36,
+          "surface": "when",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "patient",
+      "gloss": "hasta",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 46,
+          "surface": "patient",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 92,
+          "surface": "patient",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 180,
+          "surface": "patient",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "needs",
+      "gloss": "ihtiyaç duymak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 52,
+          "surface": "needs",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "another",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 71,
+          "surface": "another",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 72,
+          "end": 78,
+          "surface": "person",
+          "contextSentence": "Blood groups are very important when a patient needs blood from another person.",
+          "contextSentenceTr": "Bir hastanın başka birinden kana ihtiyacı olduğunda kan grupları çok önemlidir."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 82,
+          "surface": "If",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "gets",
+      "gloss": "almak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 97,
+          "surface": "gets",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "wrong",
+      "gloss": "yanlış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 102,
+          "end": 107,
+          "surface": "wrong",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "type",
+      "gloss": "tür",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 112,
+          "surface": "type",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 122,
+          "surface": "body",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 126,
+          "surface": "may",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "attack",
+      "gloss": "saldırmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 133,
+          "surface": "attack",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 141,
+          "surface": "new",
+          "contextSentence": "If a patient gets the wrong type, the body may attack the new blood cells.",
+          "contextSentenceTr": "Bir hasta yanlış türü alırsa vücut yeni kan hücrelerine saldırabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 159,
+          "surface": "This",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 195,
+          "end": 199,
+          "surface": "this",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 191,
+          "end": 195,
+          "surface": "this",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 163,
+          "surface": "can",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 59,
+          "end": 62,
+          "surface": "can",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 129,
+          "end": 132,
+          "surface": "can",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 168,
+          "surface": "make",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "ill",
+      "gloss": "hasta",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 186,
+          "end": 189,
+          "surface": "ill",
+          "contextSentence": "This can make the patient very ill.",
+          "contextSentenceTr": "Bu, hastayı çok hasta edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 194,
+          "surface": "For",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "reason",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 206,
+          "surface": "reason",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "hospitals",
+      "gloss": "hastaneler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 217,
+          "surface": "hospitals",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 218,
+          "end": 225,
+          "surface": "usually",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 140,
+          "surface": "usually",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "check",
+      "gloss": "kontrol etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 226,
+          "end": 231,
+          "surface": "check",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "carefully",
+      "gloss": "dikkatlice",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 254,
+          "surface": "carefully",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 261,
+          "surface": "before",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 262,
+          "end": 266,
+          "surface": "they",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        }
+      ]
+    },
+    {
+      "lemma": "give",
+      "gloss": "vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 271,
+          "surface": "give",
+          "contextSentence": "For this reason, hospitals usually check blood groups carefully before they give blood.",
+          "contextSentenceTr": "Bu nedenle hastaneler kan vermeden önce kan gruplarını genellikle dikkatlice kontrol eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 145,
+          "surface": "give",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "(there is) var",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 5,
+          "surface": "There",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 13,
+          "surface": "also",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "second",
+      "gloss": "ikinci",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 22,
+          "surface": "second",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 29,
+          "surface": "system",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "rh",
+      "gloss": "Rh",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 44,
+          "surface": "Rh",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 68,
+          "surface": "Rh",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 81,
+          "end": 83,
+          "surface": "Rh",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "factor",
+      "gloss": "faktör",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 45,
+          "end": 51,
+          "surface": "factor",
+          "contextSentence": "There is also a second system, called the Rh factor.",
+          "contextSentenceTr": "Rh faktörü adlı ikinci bir sistem de vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 63,
+          "end": 65,
+          "surface": "be",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "positive",
+      "gloss": "pozitif",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 77,
+          "surface": "positive",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 80,
+          "surface": "or",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "negative",
+      "gloss": "negatif",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 84,
+          "end": 92,
+          "surface": "negative",
+          "contextSentence": "Blood can be Rh positive or Rh negative.",
+          "contextSentenceTr": "Kan Rh pozitif ya da Rh negatif olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 122,
+          "surface": "negative",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 100,
+          "surface": "People",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 105,
+          "surface": "with",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "o",
+      "gloss": "0",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 112,
+          "end": 113,
+          "surface": "O",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 164,
+          "surface": "to",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "almost",
+      "gloss": "neredeyse",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 171,
+          "surface": "almost",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "anyone",
+      "gloss": "herkes",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 172,
+          "end": 178,
+          "surface": "anyone",
+          "contextSentence": "People with group O negative blood can usually give red blood cells to almost anyone.",
+          "contextSentenceTr": "0 negatif kanı olan insanlar genellikle neredeyse herkese kırmızı kan hücresi verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 187,
+          "surface": "Because",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "(because of) -den dolayı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 190,
+          "surface": "of",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 202,
+          "surface": "their",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "useful",
+      "gloss": "yararlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 223,
+          "surface": "useful",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "emergencies",
+      "gloss": "acil durumlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 227,
+          "end": 238,
+          "surface": "emergencies",
+          "contextSentence": "Because of this, their blood is very useful in emergencies.",
+          "contextSentenceTr": "Bu yüzden onların kanı acil durumlarda çok yararlıdır."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 79
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Why some people are born with blue blood",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Mavi kandan söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "How hospitals train new doctors and nurses",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Doktor ve hemşire eğitimi anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "What blood groups are and why they matter",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin kan gruplarını tanıtır ve kan naklinde neden önemli olduklarını açıklar."
+        },
+        {
+          "key": "o4",
+          "text": "How red blood cells carry oxygen in the body",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Oksijen taşınması anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What decides a person's blood group?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 117,
+        "end": 185
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Small markers on red blood cells",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin grubun kırmızı kan hücrelerinin yüzeyindeki işaretlere bağlı olduğunu söyler."
+        },
+        {
+          "key": "o2",
+          "text": "The colour of the person's blood",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin herkesin kanının kırmızı göründüğünü söyler."
+        },
+        {
+          "key": "o3",
+          "text": "The food that a person eats every day",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Beslenmeden söz edilmez."
+        },
+        {
+          "key": "o4",
+          "text": "The hospital where the person was born",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Doğulan hastane grubu belirlemez; grup ebeveynlerden gelir."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"emergencies\" mean in the third paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 197,
+        "end": 238
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Quiet, normal days at work",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Acil durum sakin, olağan bir günün tersidir."
+        },
+        {
+          "key": "o2",
+          "text": "Long lessons about science",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kelime dersle ilgili değildir."
+        },
+        {
+          "key": "o3",
+          "text": "Small tests at the doctor's office",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Basit muayene testleri acil durum değildir."
+        },
+        {
+          "key": "o4",
+          "text": "Sudden, dangerous situations",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Emergency, hemen müdahale gereken ani ve tehlikeli durumdur."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about group O negative blood?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 180,
+        "end": 239
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It makes patients ill much more often than others.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Böyle bir şey söylenmez; hastalık yanlış türün verilmesiyle ilişkilidir."
+        },
+        {
+          "key": "o2",
+          "text": "It can help when there is no time to test.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Neredeyse herkese verilebildiği için grubu test etmeye vakit olmayan durumlarda işe yarar."
+        },
+        {
+          "key": "o3",
+          "text": "It is the least useful group of the four.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bu kanın çok yararlı olduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "It can be given to no other people.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Neredeyse herkese verilebilir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "ABO sisteminde dört ana kan grubu vardır (A, B, AB, 0); grup kırmızı kan hücrelerinin yüzeyindeki antijenlere bağlıdır ve ebeveynlerden kalıtılır.",
+        "source": "NHS, Blood groups; https://www.nhs.uk/conditions/blood-groups/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Karl Landsteiner kan gruplarını 1901'de keşfetti ve 1930 Nobel Fizyoloji veya Tıp Ödülü'nü aldı.",
+        "source": "The Nobel Prize, Karl Landsteiner - Facts (Physiology or Medicine 1930); https://www.nobelprize.org/prizes/medicine/1930/landsteiner/facts/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Yanlış ABO grubundan kan almak hayati tehlike yaratabilir; alıcının antikorları verilen hücrelere saldırır.",
+        "source": "NHS, Blood groups; https://www.nhs.uk/conditions/blood-groups/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Rh faktörü pozitif ya da negatif olabilir; 0 negatif kırmızı hücreler neredeyse herkese verilebildiği için acil durumlarda kullanılır.",
+        "source": "NHS, Blood groups; https://www.nhs.uk/conditions/blood-groups/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}
