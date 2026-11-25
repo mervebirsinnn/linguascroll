@@ -1,0 +1,2395 @@
+{
+  "slug": "b1-tiny-robots-blood-clots",
+  "level": "B1",
+  "title": "Tiny Robots Against Blood Clots",
+  "topic": "Bilim ve sağlık",
+  "sortOrder": 1,
+  "isFreeSample": true,
+  "paragraphs": [
+    "Blood clots are small lumps of blood that can block a blood vessel. When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous. Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly. If the vessel is blocked, the medicine moves very slowly.",
+    "Scientists at ETH Zurich in Switzerland have made tiny robots to help. Each robot is about as small as a red blood cell. Doctors put the robots and the medicine into the vessel through a thin tube. Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts. As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+    "In a lab test, the medicine broke down clots six times faster with the robots. The team also tested the robots in pigs, and the results were good. However, the robots are not ready for people yet. The scientists say they need to do more safety tests first."
+  ],
+  "words": [
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 5,
+          "surface": "Blood",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 36,
+          "surface": "blood",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 54,
+          "end": 59,
+          "surface": "blood",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 91,
+          "surface": "blood",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 114,
+          "surface": "blood",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 357,
+          "end": 362,
+          "surface": "blood",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 391,
+          "end": 396,
+          "surface": "blood",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "clots",
+      "gloss": "pıhtılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 6,
+          "end": 11,
+          "surface": "clots",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 204,
+          "end": 209,
+          "surface": "clots",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 44,
+          "surface": "clots",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 15,
+          "surface": "are",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 167,
+          "end": 170,
+          "surface": "are",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 21,
+          "surface": "small",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 99,
+          "surface": "small",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "lumps",
+      "gloss": "topaklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 22,
+          "end": 27,
+          "surface": "lumps",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-den oluşan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 30,
+          "surface": "of",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki (önündeki ismi niteleyen yan cümleyi bağlar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 41,
+          "surface": "that",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 189,
+          "end": 193,
+          "surface": "that",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 45,
+          "surface": "can",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 144,
+          "end": 147,
+          "surface": "can",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 197,
+          "surface": "can",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "block",
+      "gloss": "tıkamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 46,
+          "end": 51,
+          "surface": "block",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 53,
+          "surface": "a",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 73,
+          "end": 74,
+          "surface": "a",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 104,
+          "surface": "a",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 185,
+          "end": 186,
+          "surface": "a",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 204,
+          "surface": "a",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 238,
+          "end": 239,
+          "surface": "a",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 4,
+          "surface": "a",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "vessel",
+      "gloss": "damar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 60,
+          "end": 66,
+          "surface": "vessel",
+          "contextSentence": "Blood clots are small lumps of blood that can block a blood vessel.",
+          "contextSentenceTr": "Kan pıhtıları, bir kan damarını tıkayabilen küçük kan topaklarıdır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 280,
+          "end": 286,
+          "surface": "vessel",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 170,
+          "end": 176,
+          "surface": "vessel",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 306,
+          "end": 312,
+          "surface": "vessel",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 72,
+          "surface": "When",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "clot",
+      "gloss": "pıhtı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 79,
+          "surface": "clot",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 259,
+          "end": 263,
+          "surface": "clot",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 425,
+          "end": 429,
+          "surface": "clot",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "stops",
+      "gloss": "engeller, durdurur",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 80,
+          "end": 85,
+          "surface": "stops",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den (stop ... from: -mesini engellemek)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 96,
+          "surface": "from",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reaching",
+      "gloss": "ulaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 105,
+          "surface": "reaching",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık; bilinen ismi belirtir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 109,
+          "surface": "the",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 120,
+          "surface": "the",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 130,
+          "end": 133,
+          "surface": "the",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 223,
+          "surface": "the",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 255,
+          "end": 258,
+          "surface": "the",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 279,
+          "surface": "the",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 299,
+          "end": 302,
+          "surface": "the",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 133,
+          "end": 136,
+          "surface": "the",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 151,
+          "surface": "the",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 169,
+          "surface": "the",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 224,
+          "surface": "the",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 268,
+          "end": 271,
+          "surface": "the",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 290,
+          "end": 293,
+          "surface": "the",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 302,
+          "end": 305,
+          "surface": "the",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 353,
+          "end": 356,
+          "surface": "the",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 380,
+          "end": 383,
+          "surface": "the",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 405,
+          "end": 408,
+          "surface": "the",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 421,
+          "end": 424,
+          "surface": "the",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 15,
+          "end": 18,
+          "surface": "the",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 67,
+          "end": 70,
+          "surface": "the",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 79,
+          "end": 82,
+          "surface": "The",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 103,
+          "surface": "the",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 127,
+          "surface": "the",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 159,
+          "surface": "the",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 200,
+          "surface": "The",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "brain",
+      "gloss": "beyin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 110,
+          "end": 115,
+          "surface": "brain",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "heart",
+      "gloss": "kalp",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 121,
+          "end": 126,
+          "surface": "heart",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 127,
+          "end": 129,
+          "surface": "or",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "lungs",
+      "gloss": "akciğerler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 139,
+          "surface": "lungs",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o (pıhtı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 141,
+          "end": 143,
+          "surface": "it",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 148,
+          "end": 150,
+          "surface": "be",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 155,
+          "surface": "very",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 318,
+          "end": 322,
+          "surface": "very",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "dangerous",
+      "gloss": "tehlikeli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 165,
+          "surface": "dangerous",
+          "contextSentence": "When a clot stops blood from reaching the brain, the heart or the lungs, it can be very dangerous.",
+          "contextSentenceTr": "Bir pıhtı kanın beyne, kalbe ya da akciğerlere ulaşmasını engellediğinde çok tehlikeli olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "doctors",
+      "gloss": "doktorlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 174,
+          "surface": "Doctors",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 128,
+          "surface": "Doctors",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "sahip olmak, -si var",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 179,
+          "surface": "have",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "medicine",
+      "gloss": "ilaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 188,
+          "surface": "medicine",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 232,
+          "surface": "medicine",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 303,
+          "end": 311,
+          "surface": "medicine",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 152,
+          "end": 160,
+          "surface": "medicine",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 409,
+          "end": 417,
+          "surface": "medicine",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 19,
+          "end": 27,
+          "surface": "medicine",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "break",
+      "gloss": "kırmak (break down: parçalamak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 203,
+          "surface": "break",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "break ... down: parçalamak (fiili tamamlar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 214,
+          "surface": "down",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 219,
+          "surface": "but",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "yardımcı fiil (olumsuzluğu kurar)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 237,
+          "surface": "does",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 238,
+          "end": 241,
+          "surface": "not",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 174,
+          "surface": "not",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "always",
+      "gloss": "her zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 242,
+          "end": 248,
+          "surface": "always",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "reach",
+      "gloss": "ulaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 254,
+          "surface": "reach",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "quickly",
+      "gloss": "hızlıca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 271,
+          "surface": "quickly",
+          "contextSentence": "Doctors have medicine that can break clots down, but the medicine does not always reach the clot quickly.",
+          "contextSentenceTr": "Doktorların pıhtıları parçalayabilen ilaçları var, ama ilaç pıhtıya her zaman hızlı ulaşmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer, -sa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 275,
+          "surface": "If",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 287,
+          "end": 289,
+          "surface": "is",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 84,
+          "surface": "is",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "blocked",
+      "gloss": "tıkalı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 290,
+          "end": 297,
+          "surface": "blocked",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "moves",
+      "gloss": "hareket eder, ilerler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 312,
+          "end": 317,
+          "surface": "moves",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "slowly",
+      "gloss": "yavaşça",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 323,
+          "end": 329,
+          "surface": "slowly",
+          "contextSentence": "If the vessel is blocked, the medicine moves very slowly.",
+          "contextSentenceTr": "Damar tıkalıysa ilaç çok yavaş ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 10,
+          "surface": "Scientists",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 211,
+          "surface": "scientists",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de (yer)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 11,
+          "end": 13,
+          "surface": "at",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "eth",
+      "gloss": "ETH (İsviçre Federal Teknoloji Enstitüsü)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 17,
+          "surface": "ETH",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "zurich",
+      "gloss": "Zürih (İsviçre'de bir şehir)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 24,
+          "surface": "Zurich",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de (yer)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 25,
+          "end": 27,
+          "surface": "in",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "switzerland",
+      "gloss": "İsviçre",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 39,
+          "surface": "Switzerland",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "yardımcı fiil (yakın geçmiş zaman)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 44,
+          "surface": "have",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yaptı, üretti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 45,
+          "end": 49,
+          "surface": "made",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minicik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 54,
+          "surface": "tiny",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "robots",
+      "gloss": "robotlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 61,
+          "surface": "robots",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 137,
+          "end": 143,
+          "surface": "robots",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 278,
+          "surface": "robots",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 71,
+          "end": 77,
+          "surface": "robots",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 110,
+          "surface": "robots",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 160,
+          "end": 166,
+          "surface": "robots",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mak için (amaç)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 62,
+          "end": 64,
+          "surface": "to",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "help",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 69,
+          "surface": "help",
+          "contextSentence": "Scientists at ETH Zurich in Switzerland have made tiny robots to help.",
+          "contextSentenceTr": "İsviçre'deki ETH Zürih'te bilim insanları yardımcı olmak için minicik robotlar yaptı."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 75,
+          "surface": "Each",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "robot",
+      "gloss": "robot",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 76,
+          "end": 81,
+          "surface": "robot",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 90,
+          "surface": "about",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "kadar (as ... as: ... kadar)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 93,
+          "surface": "as",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 102,
+          "surface": "as",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "red",
+      "gloss": "kırmızı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 105,
+          "end": 108,
+          "surface": "red",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "cell",
+      "gloss": "hücre",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 119,
+          "surface": "cell",
+          "contextSentence": "Each robot is about as small as a red blood cell.",
+          "contextSentenceTr": "Her robot yaklaşık bir kırmızı kan hücresi kadar küçüktür."
+        }
+      ]
+    },
+    {
+      "lemma": "put",
+      "gloss": "koyar, yerleştirir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 132,
+          "surface": "put",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 144,
+          "end": 147,
+          "surface": "and",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 267,
+          "surface": "and",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 376,
+          "end": 379,
+          "surface": "and",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 123,
+          "surface": "and",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-in içine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 161,
+          "end": 165,
+          "surface": "into",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "-den, aracılığıyla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 177,
+          "end": 184,
+          "surface": "through",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "thin",
+      "gloss": "ince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 191,
+          "surface": "thin",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "tube",
+      "gloss": "tüp",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 192,
+          "end": 196,
+          "surface": "tube",
+          "contextSentence": "Doctors put the robots and the medicine into the vessel through a thin tube.",
+          "contextSentenceTr": "Doktorlar robotları ve ilacı ince bir tüple damarın içine yerleştirir."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 198,
+          "end": 202,
+          "surface": "Then",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 212,
+          "surface": "machine",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "outside",
+      "gloss": "dışındaki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 220,
+          "surface": "outside",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 229,
+          "surface": "body",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "creates",
+      "gloss": "oluşturur",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 230,
+          "end": 237,
+          "surface": "creates",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "turning",
+      "gloss": "dönen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 247,
+          "surface": "turning",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "magnetic",
+      "gloss": "manyetik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 248,
+          "end": 256,
+          "surface": "magnetic",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "field",
+      "gloss": "alan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 262,
+          "surface": "field",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "flip",
+      "gloss": "takla atar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 283,
+          "surface": "flip",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "along",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 284,
+          "end": 289,
+          "surface": "along",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "wall",
+      "gloss": "duvar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 298,
+          "surface": "wall",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-in",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 299,
+          "end": 301,
+          "surface": "of",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 314,
+          "end": 318,
+          "surface": "like",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "gymnasts",
+      "gloss": "jimnastikçiler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 327,
+          "surface": "gymnasts",
+          "contextSentence": "Then a machine outside the body creates a turning magnetic field, and the robots flip along the wall of the vessel, like gymnasts.",
+          "contextSentenceTr": "Sonra vücudun dışındaki bir makine dönen bir manyetik alan oluşturur ve robotlar jimnastikçiler gibi takla atarak damar duvarı boyunca ilerler."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "-dıkça",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 331,
+          "surface": "As",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 336,
+          "surface": "they",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 347,
+          "surface": "they",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 216,
+          "end": 220,
+          "surface": "they",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "move",
+      "gloss": "hareket etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 337,
+          "end": 341,
+          "surface": "move",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "push",
+      "gloss": "itmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 348,
+          "end": 352,
+          "surface": "push",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 363,
+          "end": 369,
+          "surface": "around",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları, onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 370,
+          "end": 374,
+          "surface": "them",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "moving",
+      "gloss": "hareket eden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 384,
+          "end": 390,
+          "surface": "moving",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "carries",
+      "gloss": "taşır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 397,
+          "end": 404,
+          "surface": "carries",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e (yönelme)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 418,
+          "end": 420,
+          "surface": "to",
+          "contextSentence": "As they move, they push the blood around them, and the moving blood carries the medicine to the clot.",
+          "contextSentenceTr": "Hareket ettikçe çevrelerindeki kanı iterler ve hareket eden kan ilacı pıhtıya taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "lab",
+      "gloss": "laboratuvar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 5,
+          "end": 8,
+          "surface": "lab",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "gloss": "test, deney",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 13,
+          "surface": "test",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "broke",
+      "gloss": "kırdı (broke down: parçaladı)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 33,
+          "surface": "broke",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "broke down: parçaladı (fiili tamamlar)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 38,
+          "surface": "down",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "six",
+      "gloss": "altı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 45,
+          "end": 48,
+          "surface": "six",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "times",
+      "gloss": "kat",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 54,
+          "surface": "times",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "faster",
+      "gloss": "daha hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 55,
+          "end": 61,
+          "surface": "faster",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile, birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 66,
+          "surface": "with",
+          "contextSentence": "In a lab test, the medicine broke down clots six times faster with the robots.",
+          "contextSentenceTr": "Bir laboratuvar testinde ilaç, robotlarla birlikte pıhtıları altı kat daha hızlı parçaladı."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekip",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 83,
+          "end": 87,
+          "surface": "team",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "da, ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 92,
+          "surface": "also",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "tested",
+      "gloss": "test etti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 93,
+          "end": 99,
+          "surface": "tested",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de, üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 111,
+          "end": 113,
+          "surface": "in",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "pigs",
+      "gloss": "domuzlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 114,
+          "end": 118,
+          "surface": "pigs",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "results",
+      "gloss": "sonuçlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 128,
+          "end": 135,
+          "surface": "results",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "-dı (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 140,
+          "surface": "were",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "good",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 145,
+          "surface": "good",
+          "contextSentence": "The team also tested the robots in pigs, and the results were good.",
+          "contextSentenceTr": "Ekip robotları domuzlarda da test etti ve sonuçlar iyiydi."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 147,
+          "end": 154,
+          "surface": "However",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "ready",
+      "gloss": "hazır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 175,
+          "end": 180,
+          "surface": "ready",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 184,
+          "surface": "for",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 185,
+          "end": 191,
+          "surface": "people",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "henüz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 195,
+          "surface": "yet",
+          "contextSentence": "However, the robots are not ready for people yet.",
+          "contextSentenceTr": "Ancak robotlar henüz insanlar için hazır değil."
+        }
+      ]
+    },
+    {
+      "lemma": "say",
+      "gloss": "söyler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 215,
+          "surface": "say",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "need",
+      "gloss": "gerekmek, ihtiyaç duymak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 225,
+          "surface": "need",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "mastar işareti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 226,
+          "end": 228,
+          "surface": "to",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 229,
+          "end": 231,
+          "surface": "do",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 232,
+          "end": 236,
+          "surface": "more",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "safety",
+      "gloss": "güvenlik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 243,
+          "surface": "safety",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "tests",
+      "gloss": "testler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 244,
+          "end": 249,
+          "surface": "tests",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 250,
+          "end": 255,
+          "surface": "first",
+          "contextSentence": "The scientists say they need to do more safety tests first.",
+          "contextSentenceTr": "Bilim insanları önce daha fazla güvenlik testi yapmaları gerektiğini söylüyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 70
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A new medicine that stops all blood clots.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin yeni bir ilaçtan değil, mevcut ilacın pıhtıya ulaşmasına yardım eden robotlardan söz eder; 'tüm pıhtıları durdurur' da abartıdır."
+        },
+        {
+          "key": "o2",
+          "text": "Tiny robots that help medicine reach blood clots.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metnin ana konusu budur: robotlar kanı hareket ettirerek ilacı pıhtıya taşır."
+        },
+        {
+          "key": "o3",
+          "text": "How doctors find dangerous clots in the brain and the heart.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Beyin yalnızca pıhtının tehlikeli olabileceği yerlerden biri olarak geçer; pıhtının nasıl bulunduğu anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Why pigs get more blood clots than people.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Domuzlar yalnızca testin yapıldığı hayvanlardır; pıhtıların domuzlarda daha sık olduğu söylenmez."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "How do the robots move inside the blood vessel?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 198,
+        "end": 328
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They flip along the wall when a magnetic field turns.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Vücudun dışındaki makine dönen bir manyetik alan oluşturur ve robotlar damar duvarı boyunca takla atarak ilerler."
+        },
+        {
+          "key": "o2",
+          "text": "They swim on their own with small motors inside them.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde motor yoktur; robotları dışarıdaki manyetik alan hareket ettirir."
+        },
+        {
+          "key": "o3",
+          "text": "The blood carries them straight to the heart.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersine, robotlar kanı hareket ettirir ve kan ilacı pıhtıya taşır; kalbe gittikleri söylenmez."
+        },
+        {
+          "key": "o4",
+          "text": "Doctors pull them forward with a thin tube.",
+          "isCorrect": false,
+          "trapType": "copy",
+          "explanation": "İnce tüp yalnızca robotları ve ilacı damara yerleştirmek için kullanılır; robotları çekmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "In paragraph 1, the word “blocked” is closest in meaning to …",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 273,
+        "end": 330
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "broken into small pieces",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Parçalanan şey pıhtıdır; 'blocked' damarın durumunu anlatır."
+        },
+        {
+          "key": "o2",
+          "text": "filled with medicine",
+          "isCorrect": false,
+          "trapType": "copy",
+          "explanation": "Aynı cümlede 'medicine' geçer ama damarın ilaçla dolu olduğu söylenmez."
+        },
+        {
+          "key": "o3",
+          "text": "closed so that nothing can pass",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Damar tıkalı olduğunda içinden geçiş zorlaşır; bu yüzden ilaç çok yavaş ilerler."
+        },
+        {
+          "key": "o4",
+          "text": "made longer and wider than before",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tıkanmak, damarın genişlemesinin tersidir; akışı azaltır."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we understand about the robots from the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 147,
+        "end": 196
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They are already used in many hospitals.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Robotlar henüz insanlar için hazır değildir; hastanelerde kullanılmaları söz konusu değildir."
+        },
+        {
+          "key": "o2",
+          "text": "They worked in the lab but failed in pigs.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metne göre domuzlardaki sonuçlar da iyidir."
+        },
+        {
+          "key": "o3",
+          "text": "They break down clots without any medicine.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Pıhtıyı parçalayan ilaçtır; robotlar ilacın daha hızlı çalışmasına yardım eder."
+        },
+        {
+          "key": "o4",
+          "text": "Doctors cannot use them on patients yet.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Robotlar henüz insanlar için hazır değildir; önce daha fazla güvenlik testi gerekir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Robotlar yaklaşık bir kırmızı kan hücresi büyüklüğündedir; ilaçla birlikte damara verilir, dışarıdaki bir sistemin dönen manyetik alanıyla damar duvarı boyunca takla atarak ilerler ve kanı hareket ettirerek ilacı pıhtıya taşır.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Laboratuvar testinde robotlar hareket ederken ilaç pıhtıları altı kat daha hızlı eritti; domuzlarda da olumlu sonuç alındı.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Robotlar henüz insanlarda denenmedi; önce hayvanlarda daha uzun süreli güvenlik çalışmaları gerekiyor.",
+        "source": "ETH Zürih News, 9 Kasım 2026, “Dissolving blood clots with flow-generating microbots” (Fabio Bergamin); https://ethz.ch/en/news-and-events/eth-news/news/2026/11/dissolving-blood-clots-with-flow-generating-microbots.html",
+        "checkedOn": "2026-11-22"
+      }
+    ]
+  }
+}

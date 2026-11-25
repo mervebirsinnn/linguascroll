@@ -1,0 +1,1953 @@
+{
+  "slug": "b1-dinosaurs-still-here",
+  "level": "B1",
+  "title": "Dinosaurs Are Still Here",
+  "topic": "Dinozorlar",
+  "sortOrder": 11,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Many people think dinosaurs disappeared a very long time ago. In fact, one group of dinosaurs is still alive today. You can see them in your garden, in the park and on the roof of your house. They are birds.",
+    "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs. These animals walked on two legs, and many of them had feathers. The first feathered dinosaurs were found in China more than thirty years ago. Since then, scientists have found dozens more.",
+    "Scientists are still not sure why feathers first appeared. Some think that feathers kept the animals warm, and others think they helped animals to attract partners. The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago. So the next time you see a bird, remember that it is a living dinosaur."
+  ],
+  "words": [
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "Many",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 11,
+          "surface": "people",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        }
+      ]
+    },
+    {
+      "lemma": "think",
+      "gloss": "düşünür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 17,
+          "surface": "think",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 69,
+          "surface": "think",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 123,
+          "surface": "think",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "dinosaurs",
+      "gloss": "dinozorlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 18,
+          "end": 27,
+          "surface": "dinosaurs",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 93,
+          "surface": "dinosaurs",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 99,
+          "surface": "dinosaurs",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 186,
+          "end": 195,
+          "surface": "dinosaurs",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 198,
+          "surface": "dinosaurs",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "disappeared",
+      "gloss": "yok oldu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 39,
+          "surface": "disappeared",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 40,
+          "end": 41,
+          "surface": "a",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 302,
+          "end": 303,
+          "surface": "a",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 331,
+          "surface": "a",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 46,
+          "surface": "very",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 51,
+          "surface": "long",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 56,
+          "surface": "time",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        }
+      ]
+    },
+    {
+      "lemma": "ago",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 60,
+          "surface": "ago",
+          "contextSentence": "Many people think dinosaurs disappeared a very long time ago.",
+          "contextSentenceTr": "Birçok insan dinozorların çok uzun zaman önce yok olduğunu düşünür."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 242,
+          "surface": "ago",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 272,
+          "end": 275,
+          "surface": "ago",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "aslında (in fact kalıbı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 64,
+          "surface": "In",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "fact",
+      "gloss": "aslında (in fact kalıbı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 69,
+          "surface": "fact",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 74,
+          "surface": "one",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 236,
+          "end": 239,
+          "surface": "one",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "group",
+      "gloss": "grup",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 80,
+          "surface": "group",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 81,
+          "end": 83,
+          "surface": "of",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 179,
+          "surface": "of",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 70,
+          "surface": "of",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 144,
+          "end": 146,
+          "surface": "of",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 96,
+          "surface": "is",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 327,
+          "end": 329,
+          "surface": "is",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 102,
+          "surface": "still",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 15,
+          "end": 20,
+          "surface": "still",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "alive",
+      "gloss": "canlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 108,
+          "surface": "alive",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 114,
+          "surface": "today",
+          "contextSentence": "In fact, one group of dinosaurs is still alive today.",
+          "contextSentenceTr": "Aslında dinozorların bir grubu bugün hâlâ yaşıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "you",
+      "gloss": "sen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 116,
+          "end": 119,
+          "surface": "You",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 297,
+          "surface": "you",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilirsin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 123,
+          "surface": "can",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "see",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 127,
+          "surface": "see",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 298,
+          "end": 301,
+          "surface": "see",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 132,
+          "surface": "them",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 135,
+          "surface": "in",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 149,
+          "end": 151,
+          "surface": "in",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 209,
+          "surface": "in",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "your",
+      "gloss": "senin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 140,
+          "surface": "your",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 184,
+          "surface": "your",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "garden",
+      "gloss": "bahçe",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 141,
+          "end": 147,
+          "surface": "garden",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 152,
+          "end": 155,
+          "surface": "the",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 171,
+          "surface": "the",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 169,
+          "surface": "The",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 89,
+          "end": 92,
+          "surface": "the",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 168,
+          "surface": "The",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 280,
+          "end": 283,
+          "surface": "the",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "park",
+      "gloss": "park",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 160,
+          "surface": "park",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 164,
+          "surface": "and",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 27,
+          "end": 30,
+          "surface": "and",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 138,
+          "surface": "and",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 110,
+          "surface": "and",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 248,
+          "end": 251,
+          "surface": "and",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 167,
+          "surface": "on",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 122,
+          "end": 124,
+          "surface": "on",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "roof",
+      "gloss": "çatı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 172,
+          "end": 176,
+          "surface": "roof",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "house",
+      "gloss": "ev",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 190,
+          "surface": "house",
+          "contextSentence": "You can see them in your garden, in the park and on the roof of your house.",
+          "contextSentenceTr": "Onları bahçende, parkta ve evinin çatısında görebilirsin."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 192,
+          "end": 196,
+          "surface": "They",
+          "contextSentence": "They are birds.",
+          "contextSentenceTr": "Onlar kuşlardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 128,
+          "surface": "they",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 197,
+          "end": 200,
+          "surface": "are",
+          "contextSentence": "They are birds.",
+          "contextSentenceTr": "Onlar kuşlardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 48,
+          "end": 51,
+          "surface": "are",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 14,
+          "surface": "are",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "birds",
+      "gloss": "kuşlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 201,
+          "end": 206,
+          "surface": "birds",
+          "contextSentence": "They are birds.",
+          "contextSentenceTr": "Onlar kuşlardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 47,
+          "surface": "birds",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 214,
+          "surface": "birds",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 10,
+          "surface": "Scientists",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 266,
+          "surface": "scientists",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 10,
+          "surface": "Scientists",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "studied",
+      "gloss": "inceledi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 11,
+          "end": 18,
+          "surface": "studied",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "fossils",
+      "gloss": "fosiller",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 26,
+          "surface": "fossils",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "buldu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 36,
+          "surface": "found",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 272,
+          "end": 277,
+          "surface": "found",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 37,
+          "end": 41,
+          "surface": "that",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 70,
+          "end": 74,
+          "surface": "that",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 319,
+          "end": 323,
+          "surface": "that",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "close",
+      "gloss": "yakın",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 57,
+          "surface": "close",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "relatives",
+      "gloss": "akrabalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 67,
+          "surface": "relatives",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 76,
+          "surface": "small",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "meat",
+      "gloss": "et",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 78,
+          "end": 82,
+          "surface": "meat",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "eating",
+      "gloss": "yiyen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 89,
+          "surface": "eating",
+          "contextSentence": "Scientists studied fossils and found that birds are close relatives of small, meat-eating dinosaurs.",
+          "contextSentenceTr": "Bilim insanları fosilleri inceledi ve kuşların küçük, etobur dinozorların yakın akrabaları olduğunu buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 101,
+          "end": 106,
+          "surface": "These",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "animals",
+      "gloss": "hayvanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 114,
+          "surface": "animals",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 93,
+          "end": 100,
+          "surface": "animals",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 136,
+          "end": 143,
+          "surface": "animals",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "walked",
+      "gloss": "yürüdü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 121,
+          "surface": "walked",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 125,
+          "end": 128,
+          "surface": "two",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "legs",
+      "gloss": "bacak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 133,
+          "surface": "legs",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçoğu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 143,
+          "surface": "many",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 151,
+          "surface": "them",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "vardı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 152,
+          "end": 155,
+          "surface": "had",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "feathers",
+      "gloss": "tüyler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 164,
+          "surface": "feathers",
+          "contextSentence": "These animals walked on two legs, and many of them had feathers.",
+          "contextSentenceTr": "Bu hayvanlar iki bacak üzerinde yürüyordu ve birçoğunun tüyleri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 42,
+          "surface": "feathers",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 75,
+          "end": 83,
+          "surface": "feathers",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 170,
+          "end": 175,
+          "surface": "first",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 48,
+          "surface": "first",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "feathered",
+      "gloss": "tüylü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 185,
+          "surface": "feathered",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 200,
+          "surface": "were",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "bulundu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 206,
+          "surface": "found",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "china",
+      "gloss": "Çin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 215,
+          "surface": "China",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 216,
+          "end": 220,
+          "surface": "more",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 285,
+          "end": 289,
+          "surface": "more",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den (karşılaştırma)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 225,
+          "surface": "than",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "thirty",
+      "gloss": "otuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 226,
+          "end": 232,
+          "surface": "thirty",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 233,
+          "end": 238,
+          "surface": "years",
+          "contextSentence": "The first feathered dinosaurs were found in China more than thirty years ago.",
+          "contextSentenceTr": "İlk tüylü dinozorlar Çin'de otuz yıldan uzun süre önce bulundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 271,
+          "surface": "years",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "-den beri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 249,
+          "surface": "Since",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "o zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 254,
+          "surface": "then",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 271,
+          "surface": "have",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "dozens",
+      "gloss": "düzinelerce",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 278,
+          "end": 284,
+          "surface": "dozens",
+          "contextSentence": "Since then, scientists have found dozens more.",
+          "contextSentenceTr": "O zamandan beri bilim insanları düzinelerce tane daha buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 21,
+          "end": 24,
+          "surface": "not",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "sure",
+      "gloss": "emin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 29,
+          "surface": "sure",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 33,
+          "surface": "why",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "appeared",
+      "gloss": "ortaya çıktı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 57,
+          "surface": "appeared",
+          "contextSentence": "Scientists are still not sure why feathers first appeared.",
+          "contextSentenceTr": "Bilim insanları tüylerin ilk kez neden ortaya çıktığından hâlâ emin değil."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazıları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 59,
+          "end": 63,
+          "surface": "Some",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "tuttu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 84,
+          "end": 88,
+          "surface": "kept",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "warm",
+      "gloss": "sıcak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 105,
+          "surface": "warm",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 111,
+          "end": 117,
+          "surface": "others",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "helped",
+      "gloss": "yardım etti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 129,
+          "end": 135,
+          "surface": "helped",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 144,
+          "end": 146,
+          "surface": "to",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "attract",
+      "gloss": "çekmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 147,
+          "end": 154,
+          "surface": "attract",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "partners",
+      "gloss": "eşler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 155,
+          "end": 163,
+          "surface": "partners",
+          "contextSentence": "Some think that feathers kept the animals warm, and others think they helped animals to attract partners.",
+          "contextSentenceTr": "Bazıları tüylerin hayvanları sıcak tuttuğunu, bazıları da eş çekmelerine yardım ettiğini düşünüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değişim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 175,
+          "surface": "change",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 176,
+          "end": 180,
+          "surface": "from",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "running",
+      "gloss": "koşan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 188,
+          "surface": "running",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 201,
+          "surface": "to",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "flying",
+      "gloss": "uçan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 208,
+          "surface": "flying",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "probably",
+      "gloss": "muhtemelen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 223,
+          "surface": "probably",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "began",
+      "gloss": "başladı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 229,
+          "surface": "began",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 235,
+          "surface": "about",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "hundred",
+      "gloss": "yüz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 240,
+          "end": 247,
+          "surface": "hundred",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "sixty",
+      "gloss": "altmış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 252,
+          "end": 257,
+          "surface": "sixty",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "million",
+      "gloss": "milyon",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 258,
+          "end": 265,
+          "surface": "million",
+          "contextSentence": "The change from running dinosaurs to flying birds probably began about one hundred and sixty million years ago.",
+          "contextSentenceTr": "Koşan dinozorlardan uçan kuşlara değişim muhtemelen yaklaşık yüz altmış milyon yıl önce başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 277,
+          "end": 279,
+          "surface": "So",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "next",
+      "gloss": "bir sonraki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 288,
+          "surface": "next",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "kez",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 289,
+          "end": 293,
+          "surface": "time",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "bird",
+      "gloss": "kuş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 304,
+          "end": 308,
+          "surface": "bird",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "remember",
+      "gloss": "hatırla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 310,
+          "end": 318,
+          "surface": "remember",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 326,
+          "surface": "it",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "living",
+      "gloss": "yaşayan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 332,
+          "end": 338,
+          "surface": "living",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    },
+    {
+      "lemma": "dinosaur",
+      "gloss": "dinozor",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 347,
+          "surface": "dinosaur",
+          "contextSentence": "So the next time you see a bird, remember that it is a living dinosaur.",
+          "contextSentenceTr": "Bu yüzden bir dahaki sefere bir kuş gördüğünde, onun yaşayan bir dinozor olduğunu hatırla."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the main idea of the passage?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 62,
+        "end": 207
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "All dinosaurs learned to fly after a big change.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin yalnızca küçük, tüylü bir dinozor grubundan söz eder; tüm dinozorların uçtuğunu söylemez."
+        },
+        {
+          "key": "o2",
+          "text": "Birds belong to the dinosaur family.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin kuşların dinozorların yaşayan bir grubu olduğunu anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Scientists know why feathers first appeared.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metinde bilim insanlarının bunu hâlâ bilmediği söylenir."
+        },
+        {
+          "key": "o4",
+          "text": "The first feathered dinosaurs lived in China.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Bu doğru bir ayrıntıdır ama metnin ana fikri değildir."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Where were the first feathered dinosaurs found?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 166,
+        "end": 243
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "In a garden",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Bahçe, kuşları nerede görebileceğimiz örneklerden biridir."
+        },
+        {
+          "key": "o2",
+          "text": "In Africa",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde Afrika'dan söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "In a park",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Park da kuşları görebileceğimiz bir yerdir; fosillerin bulunduğu yer değil."
+        },
+        {
+          "key": "o4",
+          "text": "In China",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin ilk tüylü dinozorların Çin'de bulunduğunu söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “attract” mean in the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 111,
+        "end": 163
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Push away",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Eş çekmek, uzaklaştırmanın tersidir."
+        },
+        {
+          "key": "o2",
+          "text": "Bring closer",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Attract, birini kendine doğru çekmek, yaklaştırmak demektir."
+        },
+        {
+          "key": "o3",
+          "text": "Look for food",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Cümlede yiyecek aramaktan değil, eş bulmaktan söz edilir."
+        },
+        {
+          "key": "o4",
+          "text": "Hide from",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Saklanmak, çekmenin tersidir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about feathers?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 105
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Every feathered dinosaur could fly above the trees.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin tüylü dinozorların hepsinin uçtuğunu söylemez; birçoğu yerde yürüyordu."
+        },
+        {
+          "key": "o2",
+          "text": "Scientists already know the one true reason for feathers.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bilim insanlarının hâlâ emin olmadığını söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Only the dinosaurs of China had feathers on them.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Çin yalnızca ilk bulgunun yeridir; başka tüylü dinozorlar da bulundu."
+        },
+        {
+          "key": "o4",
+          "text": "Feathers may not have started for flying.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Tüylerin sıcak tutma ya da eş çekme gibi başka amaçlarla ortaya çıkmış olabileceği anlatılıyor."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Kuşlar canlı dinozorlardır (theropod soyundan); tüylü dinozorlar 1990'lardan beri bulunuyor ve onlarca tür biliniyor.",
+        "source": "Natural History Museum, Londra, How dinosaurs evolved into birds; https://www.nhm.ac.uk/discover/how-dinosaurs-evolved-into-birds",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Koşan, yerde yaşayan theropodlardan uçan kuşlara geçiş muhtemelen yaklaşık 160 milyon yıl önce başladı.",
+        "source": "Natural History Museum, Londra, How dinosaurs evolved into birds; https://www.nhm.ac.uk/discover/how-dinosaurs-evolved-into-birds",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Tüylerin ilk kez ne için ortaya çıktığı tartışmalıdır (sıcak tutma, gösteriş vb.); bilim insanları bu konuda hemfikir değildir.",
+        "source": "Natural History Museum, Londra, How dinosaurs evolved into birds; https://www.nhm.ac.uk/discover/how-dinosaurs-evolved-into-birds",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2549 @@
+{
+  "slug": "b2-octopus-body",
+  "level": "B2",
+  "title": "A Body Plan Unlike Our Own",
+  "topic": "Biyoloji",
+  "sortOrder": 17,
+  "isFreeSample": false,
+  "paragraphs": [
+    "An octopus is built differently from almost any animal we know, and its circulation is a good example. That makes it one of the strangest bodies in the animal kingdom. It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body. Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+    "The nervous system is just as unusual. Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain. As a result, each arm can explore, grasp and react with a high degree of independence. This arrangement helps the animal react quickly. Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+    "Such figures vary between sources, so they are best read as approximate. What remains clear is that the octopus solves everyday problems with a body plan very unlike our own. Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways."
+  ],
+  "words": [
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "An",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 428,
+          "end": 430,
+          "surface": "an",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 63,
+          "surface": "an",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "octopus",
+      "gloss": "ahtapot",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 10,
+          "surface": "octopus",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 111,
+          "surface": "octopus",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 13,
+          "surface": "is",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 86,
+          "surface": "is",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 335,
+          "surface": "is",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 19,
+          "end": 21,
+          "surface": "is",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 362,
+          "end": 364,
+          "surface": "is",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 94,
+          "surface": "is",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "built",
+      "gloss": "inşa edilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 19,
+          "surface": "built",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "differently",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 31,
+          "surface": "differently",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 36,
+          "surface": "from",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "almost",
+      "gloss": "neredeyse",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 43,
+          "surface": "almost",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 47,
+          "surface": "any",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "animal",
+      "gloss": "hayvan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 48,
+          "end": 54,
+          "surface": "animal",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 152,
+          "end": 158,
+          "surface": "animal",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 260,
+          "surface": "animal",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 311,
+          "end": 317,
+          "surface": "animal",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 55,
+          "end": 57,
+          "surface": "we",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "know",
+      "gloss": "bilmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 62,
+          "surface": "know",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 64,
+          "end": 67,
+          "surface": "and",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 184,
+          "surface": "and",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 71,
+          "surface": "its",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 323,
+          "end": 326,
+          "surface": "Its",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 100,
+          "surface": "its",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 124,
+          "surface": "its",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "circulation",
+      "gloss": "dolaşım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 83,
+          "surface": "circulation",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 88,
+          "surface": "a",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 363,
+          "end": 364,
+          "surface": "a",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 197,
+          "surface": "a",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 365,
+          "end": 366,
+          "surface": "a",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 143,
+          "surface": "a",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "good",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 89,
+          "end": 93,
+          "surface": "good",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "example",
+      "gloss": "örnek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 101,
+          "surface": "example",
+          "contextSentence": "An octopus is built differently from almost any animal we know, and its circulation is a good example.",
+          "contextSentenceTr": "Bir ahtapot, bildiğimiz hemen her hayvandan farklı yapılmıştır ve dolaşım sistemi bunun iyi bir örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 107,
+          "surface": "That",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 271,
+          "end": 275,
+          "surface": "that",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 350,
+          "end": 354,
+          "surface": "that",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "makes",
+      "gloss": "yapar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 113,
+          "surface": "makes",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 116,
+          "surface": "it",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 170,
+          "surface": "It",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 231,
+          "surface": "it",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 350,
+          "end": 352,
+          "surface": "it",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 120,
+          "surface": "one",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 121,
+          "end": 123,
+          "surface": "of",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 312,
+          "surface": "of",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 60,
+          "surface": "of",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 212,
+          "surface": "of",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 127,
+          "surface": "the",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 148,
+          "end": 151,
+          "surface": "the",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 215,
+          "surface": "the",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 255,
+          "end": 258,
+          "surface": "the",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 301,
+          "end": 304,
+          "surface": "the",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 316,
+          "surface": "the",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 253,
+          "surface": "the",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 307,
+          "end": 310,
+          "surface": "the",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 103,
+          "surface": "the",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "strangest",
+      "gloss": "en garip",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 137,
+          "surface": "strangest",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "bodies",
+      "gloss": "vücutlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 138,
+          "end": 144,
+          "surface": "bodies",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 230,
+          "surface": "bodies",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 147,
+          "surface": "in",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 96,
+          "surface": "in",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 120,
+          "surface": "in",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 268,
+          "end": 270,
+          "surface": "in",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "kingdom",
+      "gloss": "alem",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 166,
+          "surface": "kingdom",
+          "contextSentence": "That makes it one of the strangest bodies in the animal kingdom.",
+          "contextSentenceTr": "Bu onu hayvanlar âlemindeki en garip vücutlardan biri yapar."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahiptir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 174,
+          "surface": "has",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 180,
+          "surface": "three",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "hearts",
+      "gloss": "kalpler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 187,
+          "surface": "hearts",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 189,
+          "end": 192,
+          "surface": "two",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 50,
+          "surface": "two",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "pump",
+      "gloss": "pompalamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 197,
+          "surface": "pump",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 203,
+          "surface": "blood",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 288,
+          "end": 293,
+          "surface": "blood",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 327,
+          "end": 332,
+          "surface": "blood",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 417,
+          "end": 422,
+          "surface": "blood",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "içinden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 204,
+          "end": 211,
+          "surface": "through",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "gills",
+      "gloss": "solungaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 221,
+          "surface": "gills",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "where",
+      "gloss": "ki orada",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 223,
+          "end": 228,
+          "surface": "where",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "picks",
+      "gloss": "almak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 237,
+          "surface": "picks",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "up",
+      "gloss": "yukarı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 238,
+          "end": 240,
+          "surface": "up",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "oxygen",
+      "gloss": "oksijen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 247,
+          "surface": "oxygen",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 282,
+          "surface": "oxygen",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 395,
+          "end": 401,
+          "surface": "oxygen",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "while",
+      "gloss": "iken",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 249,
+          "end": 254,
+          "surface": "while",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "third",
+      "gloss": "üçüncü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 259,
+          "end": 264,
+          "surface": "third",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "sends",
+      "gloss": "göndermek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 265,
+          "end": 270,
+          "surface": "sends",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "rich",
+      "gloss": "zengin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 283,
+          "end": 287,
+          "surface": "rich",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 294,
+          "end": 300,
+          "surface": "around",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "rest",
+      "gloss": "geri kalan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 305,
+          "end": 309,
+          "surface": "rest",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 317,
+          "end": 321,
+          "surface": "body",
+          "contextSentence": "It has three hearts: two pump blood through the gills, where it picks up oxygen, while the third sends that oxygen-rich blood around the rest of the body.",
+          "contextSentenceTr": "Üç kalbi vardır: ikisi kanı oksijen aldığı solungaçlardan geçirir, üçüncüsü ise bu oksijen bakımından zengin kanı vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 144,
+          "end": 148,
+          "surface": "body",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "blue",
+      "gloss": "mavi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 336,
+          "end": 340,
+          "surface": "blue",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 342,
+          "end": 349,
+          "surface": "because",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 217,
+          "surface": "because",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "relies",
+      "gloss": "güvenir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 353,
+          "end": 359,
+          "surface": "relies",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 360,
+          "end": 362,
+          "surface": "on",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "copper",
+      "gloss": "bakır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 371,
+          "surface": "copper",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "based",
+      "gloss": "temelli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 372,
+          "end": 377,
+          "surface": "based",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 436,
+          "end": 441,
+          "surface": "based",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "protein",
+      "gloss": "protein",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 378,
+          "end": 385,
+          "surface": "protein",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 386,
+          "end": 388,
+          "surface": "to",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "carry",
+      "gloss": "taşımak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 389,
+          "end": 394,
+          "surface": "carry",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "whereas",
+      "gloss": "oysa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 403,
+          "end": 410,
+          "surface": "whereas",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 411,
+          "end": 416,
+          "surface": "human",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "uses",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 423,
+          "end": 427,
+          "surface": "uses",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "iron",
+      "gloss": "demir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 431,
+          "end": 435,
+          "surface": "iron",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 442,
+          "end": 445,
+          "surface": "one",
+          "contextSentence": "Its blood is blue, because it relies on a copper-based protein to carry oxygen, whereas human blood uses an iron-based one.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni taşımak için bakır temelli bir proteine güvenir; insan kanı ise demir temelli olanı kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "nervous",
+      "gloss": "sinir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 11,
+          "surface": "nervous",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 12,
+          "end": 18,
+          "surface": "system",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "just",
+      "gloss": "tam olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 26,
+          "surface": "just",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 27,
+          "end": 29,
+          "surface": "as",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "unusual",
+      "gloss": "sıra dışı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 30,
+          "end": 37,
+          "surface": "unusual",
+          "contextSentence": "The nervous system is just as unusual.",
+          "contextSentenceTr": "Sinir sistemi de aynı derecede sıra dışıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "roughly",
+      "gloss": "kabaca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 46,
+          "surface": "Roughly",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "thirds",
+      "gloss": "üçte",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 51,
+          "end": 57,
+          "surface": "thirds",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "octopus's",
+      "gloss": "ahtapotun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 73,
+          "surface": "octopus's",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "neurons",
+      "gloss": "sinir hücreleri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 74,
+          "end": 81,
+          "surface": "neurons",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 85,
+          "surface": "are",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 46,
+          "surface": "are",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "located",
+      "gloss": "yerleşmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 93,
+          "surface": "located",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "arms",
+      "gloss": "kollar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 101,
+          "end": 105,
+          "surface": "arms",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 112,
+          "surface": "rather",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 117,
+          "surface": "than",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "central",
+      "gloss": "merkezi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 125,
+          "end": 132,
+          "surface": "central",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "brain",
+      "gloss": "beyin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 133,
+          "end": 138,
+          "surface": "brain",
+          "contextSentence": "Roughly two thirds of an octopus's neurons are located in its arms rather than in its central brain.",
+          "contextSentenceTr": "Bir ahtapotun sinir hücrelerinin kabaca üçte ikisi merkezi beyninde değil, kollarında bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "sonuç olarak (as a result)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 142,
+          "surface": "As",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "sonuç olarak (as a result)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 144,
+          "surface": "a",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "result",
+      "gloss": "sonuç olarak (as a result)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 145,
+          "end": 151,
+          "surface": "result",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 157,
+          "surface": "each",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "arm",
+      "gloss": "kol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 158,
+          "end": 161,
+          "surface": "arm",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 165,
+          "surface": "can",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 260,
+          "surface": "can",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "explore",
+      "gloss": "keşfetmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 173,
+          "surface": "explore",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "grasp",
+      "gloss": "kavramak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 175,
+          "end": 180,
+          "surface": "grasp",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "react",
+      "gloss": "tepki vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 185,
+          "end": 190,
+          "surface": "react",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 266,
+          "surface": "react",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 195,
+          "surface": "with",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 141,
+          "surface": "with",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "high",
+      "gloss": "yüksek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 198,
+          "end": 202,
+          "surface": "high",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "degree",
+      "gloss": "derece",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 209,
+          "surface": "degree",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "independence",
+      "gloss": "bağımsızlık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 225,
+          "surface": "independence",
+          "contextSentence": "As a result, each arm can explore, grasp and react with a high degree of independence.",
+          "contextSentenceTr": "Sonuç olarak her kol yüksek derecede bağımsızlıkla keşfedebilir, kavrayabilir ve tepki verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 227,
+          "end": 231,
+          "surface": "This",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "arrangement",
+      "gloss": "düzen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 243,
+          "surface": "arrangement",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "helps",
+      "gloss": "yardım eder",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 249,
+          "surface": "helps",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "quickly",
+      "gloss": "hızla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 274,
+          "surface": "quickly",
+          "contextSentence": "This arrangement helps the animal react quickly.",
+          "contextSentenceTr": "Bu düzen hayvanın hızla tepki vermesine yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 276,
+          "end": 280,
+          "surface": "Some",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 292,
+          "surface": "researchers",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "hatta",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 297,
+          "surface": "even",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "describe",
+      "gloss": "tanımlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 298,
+          "end": 306,
+          "surface": "describe",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 320,
+          "surface": "as",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 59,
+          "surface": "as",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "having",
+      "gloss": "sahip",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 327,
+          "surface": "having",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "nine",
+      "gloss": "dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 328,
+          "end": 332,
+          "surface": "nine",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "brains",
+      "gloss": "beyinler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 333,
+          "end": 339,
+          "surface": "brains",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "although",
+      "gloss": "rağmen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 341,
+          "end": 349,
+          "surface": "although",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "phrase",
+      "gloss": "ifade",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 361,
+          "surface": "phrase",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "simplification",
+      "gloss": "basitleştirme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 367,
+          "end": 381,
+          "surface": "simplification",
+          "contextSentence": "Some researchers even describe the animal as having nine brains, although that phrase is a simplification.",
+          "contextSentenceTr": "Bazı araştırmacılar hayvanı hatta dokuz beyni olan bir hayvan olarak tanımlar, ancak bu ifade bir basitleştirmedir."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 4,
+          "surface": "Such",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "figures",
+      "gloss": "rakamlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 5,
+          "end": 12,
+          "surface": "figures",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "vary",
+      "gloss": "değişir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 17,
+          "surface": "vary",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 25,
+          "surface": "between",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "sources",
+      "gloss": "kaynaklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 33,
+          "surface": "sources",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 37,
+          "surface": "so",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 42,
+          "surface": "they",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "best",
+      "gloss": "en iyi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 51,
+          "surface": "best",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "okunmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 52,
+          "end": 56,
+          "surface": "read",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "approximate",
+      "gloss": "yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 60,
+          "end": 71,
+          "surface": "approximate",
+          "contextSentence": "Such figures vary between sources, so they are best read as approximate.",
+          "contextSentenceTr": "Bu rakamlar kaynaklara göre değişir; bu yüzden yaklaşık olarak okunmaları en iyisidir."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 77,
+          "surface": "What",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 85,
+          "surface": "remains",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "clear",
+      "gloss": "açık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 91,
+          "surface": "clear",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 99,
+          "surface": "that",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 243,
+          "surface": "that",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "solves",
+      "gloss": "çözer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 112,
+          "end": 118,
+          "surface": "solves",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "everyday",
+      "gloss": "gündelik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 119,
+          "end": 127,
+          "surface": "everyday",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "problems",
+      "gloss": "sorunlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 128,
+          "end": 136,
+          "surface": "problems",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "plan",
+      "gloss": "plan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 153,
+          "surface": "plan",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 154,
+          "end": 158,
+          "surface": "very",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 271,
+          "end": 275,
+          "surface": "very",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "unlike",
+      "gloss": "-den farklı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 159,
+          "end": 165,
+          "surface": "unlike",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "our",
+      "gloss": "bizim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 166,
+          "end": 169,
+          "surface": "our",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 170,
+          "end": 173,
+          "surface": "own",
+          "contextSentence": "What remains clear is that the octopus solves everyday problems with a body plan very unlike our own.",
+          "contextSentenceTr": "Açık olan şey, ahtapotun gündelik sorunları bizimkinden çok farklı bir vücut planıyla çözdüğüdür."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 175,
+          "end": 185,
+          "surface": "Scientists",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "keep",
+      "gloss": "sürdürmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 190,
+          "surface": "keep",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "studying",
+      "gloss": "incelemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 191,
+          "end": 199,
+          "surface": "studying",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "octopuses",
+      "gloss": "ahtapotlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 200,
+          "end": 209,
+          "surface": "octopuses",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 223,
+          "surface": "their",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "suggest",
+      "gloss": "düşündürmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 238,
+          "surface": "suggest",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "intelligence",
+      "gloss": "zeka",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 244,
+          "end": 256,
+          "surface": "intelligence",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "evolve",
+      "gloss": "evrimleşmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 261,
+          "end": 267,
+          "surface": "evolve",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 285,
+          "surface": "different",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    },
+    {
+      "lemma": "ways",
+      "gloss": "yollar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 286,
+          "end": 290,
+          "surface": "ways",
+          "contextSentence": "Scientists keep studying octopuses because their bodies suggest that intelligence can evolve in very different ways.",
+          "contextSentenceTr": "Bilim insanları ahtapotları incelemeyi sürdürüyor, çünkü vücutları zekânın çok farklı yollarla evrimleşebileceğini düşündürüyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 100,
+        "end": 173
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How blood differs across all animals",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin yalnızca ahtapot ve insanı karşılaştırır."
+        },
+        {
+          "key": "o2",
+          "text": "An octopus's unusual body",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin ahtapotun olağandışı vücut yapısını anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "How octopuses hunt in deep, cold water",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Avlanma anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Why octopuses prefer shallow reefs",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yaşam alanı anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What do two of the octopus's hearts do?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 189,
+        "end": 247
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Send blood to the arms only",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Vücuda kanı üçüncü kalp gönderir."
+        },
+        {
+          "key": "o2",
+          "text": "Control the movement of each arm",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kolların kontrolü sinir sistemine aittir."
+        },
+        {
+          "key": "o3",
+          "text": "Store oxygen for use during the night",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Depolama anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Pump blood through the gills",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin iki kalbin kanı solungaçlara pompaladığını söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “approximate” mean in the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 38,
+        "end": 71
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Close but not exact",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Approximate, kesin olmayan ama yakın demektir."
+        },
+        {
+          "key": "o2",
+          "text": "Completely certain and fixed",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Very large and surprising",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Büyüklükle ilgili değildir."
+        },
+        {
+          "key": "o4",
+          "text": "Written in a scientific journal",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yayın türüyle ilgisi yoktur."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does calling “nine brains” a simplification imply?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 276,
+        "end": 382
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It means there is no central brain.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Merkezi bir beyin vardır."
+        },
+        {
+          "key": "o2",
+          "text": "It was found by counting neurons.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Sayım yöntemi anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "It is a loose way of speaking.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Basitleştirme, ifadenin kesin bir sayı değil gevşek bir anlatım olduğunu ima eder."
+        },
+        {
+          "key": "o4",
+          "text": "It means each arm is a full brain.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin kollardaki sinir hücresi kümelerinden söz eder; tam beyinden değil."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Ahtapotun üç kalbi vardır: ikisi kanı solungaçlara, üçüncüsü vücuda pompalar.",
+        "source": "PBS Nature, Octopus (other species); https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Kanı bakır temelli hemosiyanin yüzünden mavidir; insan kanı demirli hemoglobin kullanır.",
+        "source": "Smithsonian Magazine, Ten wild facts about octopuses: they have three hearts, big brains and blue blood; https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Sinir hücrelerinin yaklaşık üçte ikisi kollardadır; 'dokuz beyin' ifadesi bir basitleştirmedir ve rakamlar kaynaklara göre değişir.",
+        "source": "PBS Nature, Octopus (other species); https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

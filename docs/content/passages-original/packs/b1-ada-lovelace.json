@@ -1,0 +1,1883 @@
+{
+  "slug": "b1-ada-lovelace",
+  "level": "B1",
+  "title": "The Woman Who Imagined Computers",
+  "topic": "Önemli insanlar",
+  "sortOrder": 37,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Ada Lovelace was born in 1815. Her father was the famous poet Lord Byron. Ada studied mathematics and science, and her mother encouraged this.",
+    "As a young woman, she met Charles Babbage, an inventor and mathematician. Babbage planned a large machine called the Analytical Engine. It was designed to follow instructions and do many kinds of calculations. Ada wrote long notes about this machine. In them, she explained step by step how it could work out a series of special numbers. Many people call this the first computer program.",
+    "Ada also had an idea that was far ahead of her time. She believed that such a machine might one day work with music and other symbols, not only with numbers. Sadly, the machine was never finished, and Ada died young. Today, people see her as an early pioneer of computing."
+  ],
+  "words": [
+    {
+      "lemma": "ada",
+      "gloss": "Ada",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 3,
+          "surface": "Ada",
+          "contextSentence": "Ada Lovelace was born in 1815.",
+          "contextSentenceTr": "Ada Lovelace 1815'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 74,
+          "end": 77,
+          "surface": "Ada",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 213,
+          "surface": "Ada",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "Ada",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 201,
+          "end": 204,
+          "surface": "Ada",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "lovelace",
+      "gloss": "Lovelace",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 4,
+          "end": 12,
+          "surface": "Lovelace",
+          "contextSentence": "Ada Lovelace was born in 1815.",
+          "contextSentenceTr": "Ada Lovelace 1815'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 13,
+          "end": 16,
+          "surface": "was",
+          "contextSentence": "Ada Lovelace was born in 1815.",
+          "contextSentenceTr": "Ada Lovelace 1815'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 45,
+          "surface": "was",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 142,
+          "surface": "was",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 29,
+          "surface": "was",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 180,
+          "surface": "was",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "born",
+      "gloss": "doğdu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 17,
+          "end": 21,
+          "surface": "born",
+          "contextSentence": "Ada Lovelace was born in 1815.",
+          "contextSentenceTr": "Ada Lovelace 1815'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 22,
+          "end": 24,
+          "surface": "in",
+          "contextSentence": "Ada Lovelace was born in 1815.",
+          "contextSentenceTr": "Ada Lovelace 1815'te doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 251,
+          "end": 253,
+          "surface": "In",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 31,
+          "end": 34,
+          "surface": "Her",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 118,
+          "surface": "her",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 46,
+          "surface": "her",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 235,
+          "end": 238,
+          "surface": "her",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "father",
+      "gloss": "baba",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 35,
+          "end": 41,
+          "surface": "father",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 46,
+          "end": 49,
+          "surface": "the",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 116,
+          "surface": "the",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 360,
+          "end": 363,
+          "surface": "the",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 168,
+          "surface": "the",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "famous",
+      "gloss": "ünlü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 56,
+          "surface": "famous",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        }
+      ]
+    },
+    {
+      "lemma": "poet",
+      "gloss": "şair",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 61,
+          "surface": "poet",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        }
+      ]
+    },
+    {
+      "lemma": "lord",
+      "gloss": "Lord",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 66,
+          "surface": "Lord",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        }
+      ]
+    },
+    {
+      "lemma": "byron",
+      "gloss": "Byron",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 67,
+          "end": 72,
+          "surface": "Byron",
+          "contextSentence": "Her father was the famous poet Lord Byron.",
+          "contextSentenceTr": "Babası ünlü şair Lord Byron'dı."
+        }
+      ]
+    },
+    {
+      "lemma": "studied",
+      "gloss": "öğrendi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 85,
+          "surface": "studied",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "mathematics",
+      "gloss": "matematik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 97,
+          "surface": "mathematics",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 101,
+          "surface": "and",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 114,
+          "surface": "and",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 58,
+          "surface": "and",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 175,
+          "end": 178,
+          "surface": "and",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 116,
+          "end": 119,
+          "surface": "and",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 197,
+          "end": 200,
+          "surface": "and",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "science",
+      "gloss": "bilim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 109,
+          "surface": "science",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "mother",
+      "gloss": "annesi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 119,
+          "end": 125,
+          "surface": "mother",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "encouraged",
+      "gloss": "teşvik etti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 136,
+          "surface": "encouraged",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 141,
+          "surface": "this",
+          "contextSentence": "Ada studied mathematics and science, and her mother encouraged this.",
+          "contextSentenceTr": "Ada matematik ve bilim öğrendi ve annesi bunu teşvik etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 241,
+          "surface": "this",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 359,
+          "surface": "this",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 2,
+          "surface": "As",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 241,
+          "surface": "as",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 3,
+          "end": 4,
+          "surface": "a",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 91,
+          "surface": "a",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 310,
+          "surface": "a",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 76,
+          "end": 77,
+          "surface": "a",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "young",
+      "gloss": "genç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 5,
+          "end": 10,
+          "surface": "young",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 210,
+          "end": 215,
+          "surface": "young",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "woman",
+      "gloss": "kadın",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 11,
+          "end": 16,
+          "surface": "woman",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 21,
+          "surface": "she",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 260,
+          "end": 263,
+          "surface": "she",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 56,
+          "surface": "She",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "met",
+      "gloss": "tanıştı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 25,
+          "surface": "met",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "charles",
+      "gloss": "Charles",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 33,
+          "surface": "Charles",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "babbage",
+      "gloss": "Babbage",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 41,
+          "surface": "Babbage",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 74,
+          "end": 81,
+          "surface": "Babbage",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 43,
+          "end": 45,
+          "surface": "an",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 15,
+          "surface": "an",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 244,
+          "surface": "an",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "inventor",
+      "gloss": "mucit",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 54,
+          "surface": "inventor",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "mathematician",
+      "gloss": "matematikçi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 59,
+          "end": 72,
+          "surface": "mathematician",
+          "contextSentence": "As a young woman, she met Charles Babbage, an inventor and mathematician.",
+          "contextSentenceTr": "Genç bir kadınken bir mucit ve matematikçi olan Charles Babbage ile tanıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "planned",
+      "gloss": "planladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 89,
+          "surface": "planned",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 97,
+          "surface": "large",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 105,
+          "surface": "machine",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 242,
+          "end": 249,
+          "surface": "machine",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 85,
+          "surface": "machine",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 176,
+          "surface": "machine",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "adlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 106,
+          "end": 112,
+          "surface": "called",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        }
+      ]
+    },
+    {
+      "lemma": "analytical",
+      "gloss": "Analitik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 117,
+          "end": 127,
+          "surface": "Analytical",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        }
+      ]
+    },
+    {
+      "lemma": "engine",
+      "gloss": "Makine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 134,
+          "surface": "Engine",
+          "contextSentence": "Babbage planned a large machine called the Analytical Engine.",
+          "contextSentenceTr": "Babbage, Analitik Makine adlı büyük bir makine planladı."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 136,
+          "end": 138,
+          "surface": "It",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 291,
+          "end": 293,
+          "surface": "it",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "designed",
+      "gloss": "tasarlandı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 143,
+          "end": 151,
+          "surface": "designed",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 152,
+          "end": 154,
+          "surface": "to",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "follow",
+      "gloss": "izlemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 155,
+          "end": 161,
+          "surface": "follow",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "instructions",
+      "gloss": "talimatlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 174,
+          "surface": "instructions",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 181,
+          "surface": "do",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 182,
+          "end": 186,
+          "surface": "many",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 338,
+          "end": 342,
+          "surface": "Many",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        }
+      ]
+    },
+    {
+      "lemma": "kinds",
+      "gloss": "türler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 192,
+          "surface": "kinds",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 193,
+          "end": 195,
+          "surface": "of",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 320,
+          "surface": "of",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 40,
+          "end": 42,
+          "surface": "of",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 261,
+          "surface": "of",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "calculations",
+      "gloss": "hesaplamalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 208,
+          "surface": "calculations",
+          "contextSentence": "It was designed to follow instructions and do many kinds of calculations.",
+          "contextSentenceTr": "Talimatları izlemek ve birçok türde hesaplama yapmak için tasarlanmıştı."
+        }
+      ]
+    },
+    {
+      "lemma": "wrote",
+      "gloss": "yazdı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 219,
+          "surface": "wrote",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 224,
+          "surface": "long",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "notes",
+      "gloss": "notlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 230,
+          "surface": "notes",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 236,
+          "surface": "about",
+          "contextSentence": "Ada wrote long notes about this machine.",
+          "contextSentenceTr": "Ada bu makine hakkında uzun notlar yazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onlarda",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 258,
+          "surface": "them",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "explained",
+      "gloss": "açıkladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 273,
+          "surface": "explained",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "step",
+      "gloss": "adım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 278,
+          "surface": "step",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 286,
+          "surface": "step",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 281,
+          "surface": "by",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 290,
+          "surface": "how",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 299,
+          "surface": "could",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "hesaplamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 300,
+          "end": 304,
+          "surface": "work",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "out",
+      "gloss": "(work out) bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 308,
+          "surface": "out",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "series",
+      "gloss": "dizi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 311,
+          "end": 317,
+          "surface": "series",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "special",
+      "gloss": "özel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 328,
+          "surface": "special",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        }
+      ]
+    },
+    {
+      "lemma": "numbers",
+      "gloss": "sayılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 336,
+          "surface": "numbers",
+          "contextSentence": "In them, she explained step by step how it could work out a series of special numbers.",
+          "contextSentenceTr": "Bu notlarda makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 156,
+          "surface": "numbers",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 349,
+          "surface": "people",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 230,
+          "surface": "people",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "call",
+      "gloss": "adlandırmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 350,
+          "end": 354,
+          "surface": "call",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 364,
+          "end": 369,
+          "surface": "first",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        }
+      ]
+    },
+    {
+      "lemma": "computer",
+      "gloss": "bilgisayar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 370,
+          "end": 378,
+          "surface": "computer",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        }
+      ]
+    },
+    {
+      "lemma": "program",
+      "gloss": "program",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 379,
+          "end": 386,
+          "surface": "program",
+          "contextSentence": "Many people call this the first computer program.",
+          "contextSentenceTr": "Birçok insan buna ilk bilgisayar programı der."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 8,
+          "surface": "also",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "vardı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 12,
+          "surface": "had",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "idea",
+      "gloss": "fikir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 20,
+          "surface": "idea",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 21,
+          "end": 25,
+          "surface": "that",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 70,
+          "surface": "that",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 33,
+          "surface": "far",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "ahead",
+      "gloss": "ileride",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 39,
+          "surface": "ahead",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 51,
+          "surface": "time",
+          "contextSentence": "Ada also had an idea that was far ahead of her time.",
+          "contextSentenceTr": "Ada'nın ayrıca zamanının çok ilerisinde bir fikri vardı."
+        }
+      ]
+    },
+    {
+      "lemma": "believed",
+      "gloss": "inanıyordu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 65,
+          "surface": "believed",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 71,
+          "end": 75,
+          "surface": "such",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "might",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 91,
+          "surface": "might",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 95,
+          "surface": "one",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "day",
+      "gloss": "gün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 96,
+          "end": 99,
+          "surface": "day",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 104,
+          "surface": "work",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 109,
+          "surface": "with",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 144,
+          "end": 148,
+          "surface": "with",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "music",
+      "gloss": "müzik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 115,
+          "surface": "music",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 125,
+          "surface": "other",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "symbols",
+      "gloss": "semboller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 126,
+          "end": 133,
+          "surface": "symbols",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 135,
+          "end": 138,
+          "surface": "not",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 143,
+          "surface": "only",
+          "contextSentence": "She believed that such a machine might one day work with music and other symbols, not only with numbers.",
+          "contextSentenceTr": "Böyle bir makinenin bir gün yalnızca sayılarla değil, müzik ve başka sembollerle de çalışabileceğine inanıyordu."
+        }
+      ]
+    },
+    {
+      "lemma": "sadly",
+      "gloss": "ne yazık ki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 163,
+          "surface": "Sadly",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "never",
+      "gloss": "asla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 186,
+          "surface": "never",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "finished",
+      "gloss": "tamamlandı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 187,
+          "end": 195,
+          "surface": "finished",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "died",
+      "gloss": "öldü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 205,
+          "end": 209,
+          "surface": "died",
+          "contextSentence": "Sadly, the machine was never finished, and Ada died young.",
+          "contextSentenceTr": "Ne yazık ki makine hiç tamamlanmadı ve Ada genç yaşta öldü."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 222,
+          "surface": "Today",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "see",
+      "gloss": "görmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 231,
+          "end": 234,
+          "surface": "see",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "early",
+      "gloss": "erken",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 250,
+          "surface": "early",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "pioneer",
+      "gloss": "öncü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 251,
+          "end": 258,
+          "surface": "pioneer",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    },
+    {
+      "lemma": "computing",
+      "gloss": "bilişim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 262,
+          "end": 271,
+          "surface": "computing",
+          "contextSentence": "Today, people see her as an early pioneer of computing.",
+          "contextSentenceTr": "Bugün insanlar onu bilişimin erken bir öncüsü olarak görür."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 217,
+        "end": 272
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Lord Byron's poems and his famous family life",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Byron yalnızca Ada'nın babası olarak anılır."
+        },
+        {
+          "key": "o2",
+          "text": "Why maths was a hard subject in old London",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Matematiğin zorluğu anlatılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Ada Lovelace's early ideas about computers",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin Ada Lovelace'ın hayatını ve bilgisayarlarla ilgili erken fikirlerini anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "How Babbage built and sold his big machine",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin makinenin hiç tamamlanmadığını söyler."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What did Ada explain in her notes?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 260,
+        "end": 336
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How the machine could find special numbers",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Notlarında makinenin özel bir sayı dizisini nasıl hesaplayabileceğini adım adım açıkladı."
+        },
+        {
+          "key": "o2",
+          "text": "How to build the machine with cheap parts",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Ucuz parçalardan söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "Why her father wrote poems about machines",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Babasının makineler hakkında şiir yazdığı söylenmez."
+        },
+        {
+          "key": "o4",
+          "text": "How music was written by famous poets in London",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Müzik, makinenin gelecekte çalışabileceği bir alan olarak geçer."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"pioneer\" mean in the third paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 242,
+        "end": 271
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A person who builds big machines",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Makineyi Ada değil Babbage planladı; kelime bunu anlatmaz."
+        },
+        {
+          "key": "o2",
+          "text": "A person who writes famous poems",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Şiir babasıyla ilgilidir, bu kelimeyle değil."
+        },
+        {
+          "key": "o3",
+          "text": "A person who teaches music to young children",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Öğretmenlik anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "One of the first people in a new field",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Pioneer, yeni bir alanda ilk adımları atan kişi, öncü demektir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about Ada's ideas?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 52
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Babbage disagreed with every idea she had about it.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Babbage'ın onunla anlaşmazlığı anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "Few people in her time thought like her.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Fikri zamanının çok ilerisinde olduğuna göre, döneminde böyle düşünen pek az kişi vardı."
+        },
+        {
+          "key": "o3",
+          "text": "Her ideas were tested on a real machine.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Makine hiç tamamlanmadı, bu yüzden fikirleri gerçek bir makinede denenmedi."
+        },
+        {
+          "key": "o4",
+          "text": "She thought machines could not use music.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Makinenin bir gün müzikle çalışabileceğine inanıyordu."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Ada Lovelace 10 Aralık 1815'te doğdu; babası şair Lord Byron, annesi matematikçi Annabella Milbanke'ydi; annesi matematik eğitimini destekledi. (Doğum yeri kaynakta yok; metinden çıkarıldı.)",
+        "source": "National Geographic, This 'Countess of Computing' wrote the first computer program; https://www.nationalgeographic.com/history/history-magazine/article/this-countess-of-computing-wrote-the-first-computer-program",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Babbage ile tanıştı; Menabrea'nın Analitik Makine makalesini çevirdi, kendi notları çevirinin kendisinden uzundu; Not G Bernoulli sayıları dizisini nasıl üreteceğini anlatır ve yaygın olarak ilk bilgisayar programı sayılır.",
+        "source": "National Geographic, This 'Countess of Computing' wrote the first computer program; https://www.nationalgeographic.com/history/history-magazine/article/this-countess-of-computing-wrote-the-first-computer-program",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Notlar makinenin sayılar dışında sembol, harf ve müzik notalarını da işleyebileceğini öne sürer; Babbage tasarımı hiç tamamlamadı, yalnız deneme parçaları kaldı.",
+        "source": "Science Museum Group, Women in computing; https://www.sciencemuseum.org.uk/objects-and-stories/women-computing",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Not G, motorun yalnızca emredildiği şeyi yapabileceğini ve Bernoulli sayıları için bir plan olduğunu belirtir.",
+        "source": "Yale University CS (TAP), Ada Lovelace - Notes; http://www.cs.yale.edu/homes/tap/Files/ada-lovelace-notes.html",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Ada 1852'de 36 yaşında öldü.",
+        "source": "National Geographic, This 'Countess of Computing' wrote the first computer program; https://www.nationalgeographic.com/history/history-magazine/article/this-countess-of-computing-wrote-the-first-computer-program",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

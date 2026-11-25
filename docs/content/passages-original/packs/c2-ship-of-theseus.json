@@ -1,0 +1,4069 @@
+{
+  "slug": "c2-ship-of-theseus",
+  "level": "C2",
+  "title": "The Ship That Would Not Settle",
+  "topic": "Felsefe",
+  "sortOrder": 33,
+  "isFreeSample": false,
+  "paragraphs": [
+    "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed. Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not. The puzzle has long outlived the timber.",
+    "Thomas Hobbes later added a twist that makes the problem far less comfortable. Suppose someone collected the discarded planks and reassembled them in their original order. Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece. Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+    "Philosophers have proposed several exits. Some say identity over time is a matter of continuity, so the repaired ship wins. Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using. A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+    "Each answer purchases tidiness at a price. The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood. The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+    "Perhaps the ship's real lesson concerns us rather than the vessel. Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph. That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship."
+  ],
+  "words": [
+    {
+      "lemma": "according",
+      "gloss": "-e göre (according to)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 9,
+          "surface": "According",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e göre (according to)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 10,
+          "end": 12,
+          "surface": "to",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "plutarch",
+      "gloss": "Plutarkhos",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 13,
+          "end": 21,
+          "surface": "Plutarch",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 148,
+          "end": 156,
+          "surface": "Plutarch",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 26,
+          "surface": "the",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 50,
+          "surface": "the",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 188,
+          "surface": "the",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 273,
+          "surface": "the",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 309,
+          "end": 312,
+          "surface": "The",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 338,
+          "end": 341,
+          "surface": "the",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 45,
+          "end": 48,
+          "surface": "the",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 105,
+          "end": 108,
+          "surface": "the",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 264,
+          "end": 267,
+          "surface": "the",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 103,
+          "surface": "the",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 140,
+          "surface": "the",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 222,
+          "end": 225,
+          "surface": "the",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 43,
+          "end": 46,
+          "surface": "The",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 80,
+          "end": 83,
+          "surface": "the",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 169,
+          "end": 172,
+          "surface": "The",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 8,
+          "end": 11,
+          "surface": "the",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 55,
+          "end": 58,
+          "surface": "the",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 103,
+          "end": 106,
+          "surface": "the",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 192,
+          "end": 195,
+          "surface": "the",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 321,
+          "end": 324,
+          "surface": "the",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "athenians",
+      "gloss": "Atinalılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 36,
+          "surface": "Athenians",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "preserved",
+      "gloss": "korumak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 46,
+          "surface": "preserved",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "ship",
+      "gloss": "gemi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 51,
+          "end": 55,
+          "surface": "ship",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 189,
+          "end": 193,
+          "surface": "ship",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 279,
+          "end": 283,
+          "surface": "ship",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 117,
+          "surface": "ship",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 174,
+          "end": 178,
+          "surface": "ship",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 356,
+          "end": 360,
+          "surface": "ship",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 58,
+          "surface": "on",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 59,
+          "end": 64,
+          "surface": "which",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "theseus",
+      "gloss": "Theseus",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 72,
+          "surface": "Theseus",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 73,
+          "end": 76,
+          "surface": "had",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "returned",
+      "gloss": "dönmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 77,
+          "end": 85,
+          "surface": "returned",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 90,
+          "surface": "from",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "crete",
+      "gloss": "Girit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 91,
+          "end": 96,
+          "surface": "Crete",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "replacing",
+      "gloss": "değiştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 107,
+          "surface": "replacing",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 108,
+          "end": 111,
+          "surface": "its",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "timbers",
+      "gloss": "keresteler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 119,
+          "surface": "timbers",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 123,
+          "surface": "one",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 127,
+          "end": 130,
+          "surface": "one",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 197,
+          "surface": "one",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-er (one by one: teker teker)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 126,
+          "surface": "by",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "-dıkça",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 131,
+          "end": 133,
+          "surface": "as",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 137,
+          "end": 139,
+          "surface": "as",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 138,
+          "surface": "they",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "decayed",
+      "gloss": "çürümek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 146,
+          "surface": "decayed",
+          "contextSentence": "According to Plutarch, the Athenians preserved the ship on which Theseus had returned from Crete, replacing its timbers one by one as they decayed.",
+          "contextSentenceTr": "Plutarkhos'a göre Atinalılar, Theseus'un Girit'ten döndüğü gemiyi korudu ve keresteleri çürüdükçe onları teker teker değiştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "adds",
+      "gloss": "eklemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 157,
+          "end": 161,
+          "surface": "adds",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 166,
+          "surface": "that",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 236,
+          "surface": "that",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 253,
+          "end": 257,
+          "surface": "that",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 292,
+          "end": 296,
+          "surface": "that",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 34,
+          "end": 38,
+          "surface": "that",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 311,
+          "end": 315,
+          "surface": "that",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 200,
+          "end": 204,
+          "surface": "that",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 180,
+          "end": 184,
+          "surface": "that",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "philosophers",
+      "gloss": "filozoflar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 179,
+          "surface": "philosophers",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 12,
+          "surface": "Philosophers",
+          "contextSentence": "Philosophers have proposed several exits.",
+          "contextSentenceTr": "Filozoflar birkaç çıkış yolu önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 180,
+          "end": 184,
+          "surface": "used",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 196,
+          "surface": "as",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 152,
+          "surface": "as",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 197,
+          "end": 199,
+          "surface": "an",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 344,
+          "surface": "an",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 316,
+          "end": 318,
+          "surface": "an",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 403,
+          "end": 405,
+          "surface": "an",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "example",
+      "gloss": "örnek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 207,
+          "surface": "example",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 208,
+          "end": 210,
+          "surface": "in",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 149,
+          "surface": "in",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "debates",
+      "gloss": "tartışmalar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 211,
+          "end": 218,
+          "surface": "debates",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 224,
+          "surface": "about",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 310,
+          "end": 315,
+          "surface": "about",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "things",
+      "gloss": "şeyler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 231,
+          "surface": "things",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "grow",
+      "gloss": "büyümek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 241,
+          "surface": "grow",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazıları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 247,
+          "surface": "some",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 42,
+          "end": 46,
+          "surface": "Some",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "held",
+      "gloss": "savunmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 248,
+          "end": 252,
+          "surface": "held",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 260,
+          "surface": "it",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 299,
+          "surface": "it",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 280,
+          "end": 282,
+          "surface": "it",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "remained",
+      "gloss": "kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 261,
+          "end": 269,
+          "surface": "remained",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 274,
+          "end": 278,
+          "surface": "same",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 173,
+          "surface": "same",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 196,
+          "end": 200,
+          "surface": "same",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 285,
+          "end": 291,
+          "surface": "others",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 130,
+          "surface": "Others",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz/soru yardımcı fiili (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 300,
+          "end": 303,
+          "surface": "did",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 304,
+          "end": 307,
+          "surface": "not",
+          "contextSentence": "Plutarch adds that philosophers used the ship as an example in debates about things that grow: some held that it remained the same ship, others that it did not.",
+          "contextSentenceTr": "Plutarkhos, filozofların gemiyi büyüyen şeyler hakkındaki tartışmalarda örnek olarak kullandığını ekler: bazıları onun aynı gemi olarak kaldığını, diğerleri kalmadığını savundu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 329,
+          "end": 332,
+          "surface": "not",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 286,
+          "end": 289,
+          "surface": "not",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "puzzle",
+      "gloss": "bilmece",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 319,
+          "surface": "puzzle",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 226,
+          "end": 232,
+          "surface": "puzzle",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 320,
+          "end": 323,
+          "surface": "has",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "çoktan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 328,
+          "surface": "long",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        }
+      ]
+    },
+    {
+      "lemma": "outlived",
+      "gloss": "-den uzun yaşamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 329,
+          "end": 337,
+          "surface": "outlived",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        }
+      ]
+    },
+    {
+      "lemma": "timber",
+      "gloss": "kereste",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 342,
+          "end": 348,
+          "surface": "timber",
+          "contextSentence": "The puzzle has long outlived the timber.",
+          "contextSentenceTr": "Bilmece keresteden çok daha uzun yaşadı."
+        }
+      ]
+    },
+    {
+      "lemma": "thomas",
+      "gloss": "Thomas",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 6,
+          "surface": "Thomas",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "hobbes",
+      "gloss": "Hobbes",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 13,
+          "surface": "Hobbes",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "later",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 19,
+          "surface": "later",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "added",
+      "gloss": "eklemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 20,
+          "end": 25,
+          "surface": "added",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 27,
+          "surface": "a",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 208,
+          "surface": "a",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 74,
+          "surface": "a",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 285,
+          "end": 286,
+          "surface": "A",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 34,
+          "end": 35,
+          "surface": "a",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 116,
+          "end": 117,
+          "surface": "a",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 144,
+          "end": 145,
+          "surface": "a",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "twist",
+      "gloss": "beklenmedik dönemeç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 33,
+          "surface": "twist",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "makes",
+      "gloss": "kılmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 44,
+          "surface": "makes",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "problem",
+      "gloss": "sorun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 49,
+          "end": 56,
+          "surface": "problem",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 57,
+          "end": 60,
+          "surface": "far",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 65,
+          "surface": "less",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "comfortable",
+      "gloss": "rahat",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 66,
+          "end": 77,
+          "surface": "comfortable",
+          "contextSentence": "Thomas Hobbes later added a twist that makes the problem far less comfortable.",
+          "contextSentenceTr": "Thomas Hobbes daha sonra sorunu çok daha az rahat kılan beklenmedik bir dönemeç ekledi."
+        }
+      ]
+    },
+    {
+      "lemma": "suppose",
+      "gloss": "varsayalım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 86,
+          "surface": "Suppose",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "someone",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 87,
+          "end": 94,
+          "surface": "someone",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "collected",
+      "gloss": "toplamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 95,
+          "end": 104,
+          "surface": "collected",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "discarded",
+      "gloss": "atılmış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 118,
+          "surface": "discarded",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "planks",
+      "gloss": "tahtalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 125,
+          "surface": "planks",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 126,
+          "end": 129,
+          "surface": "and",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 258,
+          "surface": "and",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 218,
+          "end": 221,
+          "surface": "and",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 292,
+          "end": 295,
+          "surface": "and",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 156,
+          "end": 159,
+          "surface": "and",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "reassembled",
+      "gloss": "yeniden birleştirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 130,
+          "end": 141,
+          "surface": "reassembled",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 146,
+          "surface": "them",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 150,
+          "end": 154,
+          "surface": "them",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 155,
+          "surface": "their",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 350,
+          "end": 355,
+          "surface": "their",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "original",
+      "gloss": "asıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 164,
+          "surface": "original",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 284,
+          "end": 292,
+          "surface": "original",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 96,
+          "end": 104,
+          "surface": "original",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "order",
+      "gloss": "sıra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 165,
+          "end": 170,
+          "surface": "order",
+          "contextSentence": "Suppose someone collected the discarded planks and reassembled them in their original order.",
+          "contextSentenceTr": "Birinin atılmış tahtaları toplayıp asıl sıralarıyla yeniden birleştirdiğini varsayalım."
+        }
+      ]
+    },
+    {
+      "lemma": "now",
+      "gloss": "şimdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 172,
+          "end": 175,
+          "surface": "Now",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "there",
+      "gloss": "orada (there are: vardır)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 181,
+          "surface": "there",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 182,
+          "end": 185,
+          "surface": "are",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 85,
+          "end": 88,
+          "surface": "are",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 188,
+          "end": 191,
+          "surface": "are",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 186,
+          "end": 189,
+          "surface": "two",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "ships",
+      "gloss": "gemiler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 190,
+          "end": 195,
+          "surface": "ships",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 197,
+          "end": 201,
+          "surface": "each",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 202,
+          "end": 206,
+          "surface": "with",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "respectable",
+      "gloss": "saygın",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 209,
+          "end": 220,
+          "surface": "respectable",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "claim",
+      "gloss": "iddia",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 226,
+          "surface": "claim",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 231,
+          "surface": "one",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 235,
+          "surface": "has",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 277,
+          "surface": "has",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 183,
+          "surface": "has",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "continuity",
+      "gloss": "süreklilik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 246,
+          "surface": "continuity",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 95,
+          "surface": "continuity",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 47,
+          "end": 57,
+          "surface": "continuity",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 247,
+          "end": 249,
+          "surface": "of",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 84,
+          "surface": "of",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 151,
+          "end": 153,
+          "surface": "of",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 72,
+          "end": 74,
+          "surface": "of",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "form",
+      "gloss": "biçim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 250,
+          "end": 254,
+          "surface": "form",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 259,
+          "end": 262,
+          "surface": "use",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "diğeri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 268,
+          "end": 273,
+          "surface": "other",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 278,
+          "end": 283,
+          "surface": "every",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "piece",
+      "gloss": "parça",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 298,
+          "surface": "piece",
+          "contextSentence": "Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece.",
+          "contextSentenceTr": "Şimdi her biri saygın bir iddiaya sahip iki gemi vardır: biri biçim ve kullanım sürekliliğine, diğeri her asıl parçaya sahiptir."
+        }
+      ]
+    },
+    {
+      "lemma": "whichever",
+      "gloss": "hangisini",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 300,
+          "end": 309,
+          "surface": "Whichever",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 310,
+          "end": 312,
+          "surface": "we",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 323,
+          "surface": "we",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 357,
+          "surface": "we",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 368,
+          "surface": "we",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 272,
+          "surface": "we",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 140,
+          "end": 142,
+          "surface": "we",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 164,
+          "end": 166,
+          "surface": "we",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 185,
+          "end": 187,
+          "surface": "we",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "choose",
+      "gloss": "seçmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 313,
+          "end": 319,
+          "surface": "choose",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "seem",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 324,
+          "end": 328,
+          "surface": "seem",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 331,
+          "surface": "to",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "surrender",
+      "gloss": "teslim etmek (vazgeçmek)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 341,
+          "surface": "surrender",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "intuition",
+      "gloss": "sezgi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 345,
+          "end": 354,
+          "surface": "intuition",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "thought",
+      "gloss": "düşünmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 358,
+          "end": 365,
+          "surface": "thought",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "held",
+      "gloss": "tutmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 369,
+          "end": 373,
+          "surface": "held",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "firmly",
+      "gloss": "sıkıca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 374,
+          "end": 380,
+          "surface": "firmly",
+          "contextSentence": "Whichever we choose, we seem to surrender an intuition we thought we held firmly.",
+          "contextSentenceTr": "Hangisini seçersek seçelim, sıkıca tuttuğumuzu düşündüğümüz bir sezgiden vazgeçiyor gibiyiz."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 17,
+          "surface": "have",
+          "contextSentence": "Philosophers have proposed several exits.",
+          "contextSentenceTr": "Filozoflar birkaç çıkış yolu önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "proposed",
+      "gloss": "önermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 26,
+          "surface": "proposed",
+          "contextSentence": "Philosophers have proposed several exits.",
+          "contextSentenceTr": "Filozoflar birkaç çıkış yolu önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 27,
+          "end": 34,
+          "surface": "several",
+          "contextSentence": "Philosophers have proposed several exits.",
+          "contextSentenceTr": "Filozoflar birkaç çıkış yolu önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "exits",
+      "gloss": "çıkış yolları",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 40,
+          "surface": "exits",
+          "contextSentence": "Philosophers have proposed several exits.",
+          "contextSentenceTr": "Filozoflar birkaç çıkış yolu önerdi."
+        }
+      ]
+    },
+    {
+      "lemma": "say",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 50,
+          "surface": "say",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "identity",
+      "gloss": "kimlik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 51,
+          "end": 59,
+          "surface": "identity",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "over",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 60,
+          "end": 64,
+          "surface": "over",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 98,
+          "end": 102,
+          "surface": "over",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 69,
+          "surface": "time",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 387,
+          "end": 391,
+          "surface": "time",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 70,
+          "end": 72,
+          "surface": "is",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 326,
+          "end": 328,
+          "surface": "is",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 366,
+          "end": 368,
+          "surface": "is",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 358,
+          "end": 360,
+          "surface": "is",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 283,
+          "end": 285,
+          "surface": "is",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "matter",
+      "gloss": "mesele",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 75,
+          "end": 81,
+          "surface": "matter",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 97,
+          "end": 99,
+          "surface": "so",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "repaired",
+      "gloss": "onarılmış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 112,
+          "surface": "repaired",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "wins",
+      "gloss": "kazanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 122,
+          "surface": "wins",
+          "contextSentence": "Some say identity over time is a matter of continuity, so the repaired ship wins.",
+          "contextSentenceTr": "Bazıları zaman içindeki kimliğin bir süreklilik meselesi olduğunu söyler; bu yüzden onarılmış gemi kazanır."
+        }
+      ]
+    },
+    {
+      "lemma": "treat",
+      "gloss": "ele almak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 131,
+          "end": 136,
+          "surface": "treat",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "question",
+      "gloss": "soru",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 149,
+          "surface": "question",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "partly",
+      "gloss": "kısmen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 159,
+          "surface": "partly",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "verbal",
+      "gloss": "sözel",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 160,
+          "end": 166,
+          "surface": "verbal",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 173,
+          "end": 179,
+          "surface": "verbal",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 184,
+          "end": 188,
+          "surface": "more",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 193,
+          "surface": "than",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 316,
+          "end": 320,
+          "surface": "than",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "legitimate",
+      "gloss": "meşru",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 208,
+          "surface": "legitimate",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "meaning",
+      "gloss": "anlam",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 216,
+          "surface": "meaning",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "merely",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 239,
+          "surface": "merely",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "forces",
+      "gloss": "zorlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 240,
+          "end": 246,
+          "surface": "forces",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "us",
+      "gloss": "bizi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 247,
+          "end": 249,
+          "surface": "us",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 40,
+          "end": 42,
+          "surface": "us",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-meye",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 250,
+          "end": 252,
+          "surface": "to",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "notice",
+      "gloss": "fark etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 253,
+          "end": 259,
+          "surface": "notice",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 260,
+          "end": 265,
+          "surface": "which",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 345,
+          "end": 350,
+          "surface": "which",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 269,
+          "surface": "one",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 273,
+          "end": 277,
+          "surface": "were",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "using",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 283,
+          "surface": "using",
+          "contextSentence": "Others treat the question as partly verbal: 'same ship' has more than one legitimate meaning, and the puzzle merely forces us to notice which one we were using.",
+          "contextSentenceTr": "Diğerleri soruyu kısmen sözel sayar: 'aynı gemi' ifadesinin birden fazla meşru anlamı vardır ve bilmece yalnızca hangisini kullandığımızı fark etmeye bizi zorlar."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 287,
+          "end": 291,
+          "surface": "more",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "radical",
+      "gloss": "köklü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 292,
+          "end": 299,
+          "surface": "radical",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "view",
+      "gloss": "görüş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 300,
+          "end": 304,
+          "surface": "view",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 58,
+          "end": 62,
+          "surface": "view",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 180,
+          "end": 184,
+          "surface": "view",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "holds",
+      "gloss": "savunmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 310,
+          "surface": "holds",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "object",
+      "gloss": "nesne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 319,
+          "end": 325,
+          "surface": "object",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 351,
+          "end": 357,
+          "surface": "object",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "wholly",
+      "gloss": "tamamen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 333,
+          "end": 339,
+          "surface": "wholly",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "present",
+      "gloss": "mevcut",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 340,
+          "end": 347,
+          "surface": "present",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 348,
+          "end": 350,
+          "surface": "at",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 31,
+          "end": 33,
+          "surface": "at",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 354,
+          "surface": "any",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "moment",
+      "gloss": "an",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 355,
+          "end": 361,
+          "surface": "moment",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 365,
+          "surface": "but",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 276,
+          "end": 279,
+          "surface": "but",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "spread",
+      "gloss": "yayılmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 369,
+          "end": 375,
+          "surface": "spread",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "out",
+      "gloss": "yayılmak (spread out)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 376,
+          "end": 379,
+          "surface": "out",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "across",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 380,
+          "end": 386,
+          "surface": "across",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 393,
+          "end": 397,
+          "surface": "much",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 398,
+          "end": 402,
+          "surface": "like",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 111,
+          "end": 115,
+          "surface": "like",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "event",
+      "gloss": "olay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 406,
+          "end": 411,
+          "surface": "event",
+          "contextSentence": "A more radical view holds that an object is not wholly present at any moment but is spread out across time, much like an event.",
+          "contextSentenceTr": "Daha köklü bir görüş, bir nesnenin herhangi bir anda tamamen mevcut olmadığını, tıpkı bir olay gibi zamana yayıldığını savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 4,
+          "surface": "Each",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        }
+      ]
+    },
+    {
+      "lemma": "answer",
+      "gloss": "yanıt",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 5,
+          "end": 11,
+          "surface": "answer",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        }
+      ]
+    },
+    {
+      "lemma": "purchases",
+      "gloss": "satın almak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 12,
+          "end": 21,
+          "surface": "purchases",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        }
+      ]
+    },
+    {
+      "lemma": "tidiness",
+      "gloss": "düzenlilik",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 22,
+          "end": 30,
+          "surface": "tidiness",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        }
+      ]
+    },
+    {
+      "lemma": "price",
+      "gloss": "bedel",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 36,
+          "end": 41,
+          "surface": "price",
+          "contextSentence": "Each answer purchases tidiness at a price.",
+          "contextSentenceTr": "Her yanıt düzenliliği bir bedel karşılığında satın alır."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 63,
+          "end": 67,
+          "surface": "must",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "explain",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 68,
+          "end": 75,
+          "surface": "explain",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 76,
+          "end": 79,
+          "surface": "why",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "reassembled",
+      "gloss": "yeniden birleştirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 84,
+          "end": 95,
+          "surface": "reassembled",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "feels",
+      "gloss": "hissettirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 105,
+          "end": 110,
+          "surface": "feels",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "serious",
+      "gloss": "ciddi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 118,
+          "end": 125,
+          "surface": "serious",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "rival",
+      "gloss": "rakip",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 126,
+          "end": 131,
+          "surface": "rival",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 132,
+          "end": 138,
+          "surface": "rather",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 43,
+          "end": 49,
+          "surface": "rather",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 139,
+          "end": 143,
+          "surface": "than",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 50,
+          "end": 54,
+          "surface": "than",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "pile",
+      "gloss": "yığın",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 146,
+          "end": 150,
+          "surface": "pile",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "recycled",
+      "gloss": "geri dönüştürülmüş",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 154,
+          "end": 162,
+          "surface": "recycled",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "wood",
+      "gloss": "tahta",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 163,
+          "end": 167,
+          "surface": "wood",
+          "contextSentence": "The continuity view must explain why the reassembled original feels like a serious rival rather than a pile of recycled wood.",
+          "contextSentenceTr": "Süreklilik görüşü, yeniden birleştirilmiş aslın neden bir geri dönüştürülmüş tahta yığını yerine ciddi bir rakip gibi hissettirdiğini açıklamalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "risks",
+      "gloss": "riske girmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 185,
+          "end": 190,
+          "surface": "risks",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "implying",
+      "gloss": "ima etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 199,
+          "surface": "implying",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "nothing",
+      "gloss": "hiçbir şey",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 205,
+          "end": 212,
+          "surface": "nothing",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "deep",
+      "gloss": "derin",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 213,
+          "end": 217,
+          "surface": "deep",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 218,
+          "end": 221,
+          "surface": "was",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "ever",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 222,
+          "end": 226,
+          "surface": "ever",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de (at stake: tehlikede)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 227,
+          "end": 229,
+          "surface": "at",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "stake",
+      "gloss": "tehlikede olan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 230,
+          "end": 235,
+          "surface": "stake",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 237,
+          "end": 242,
+          "surface": "which",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "seems",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 243,
+          "end": 248,
+          "surface": "seems",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "too",
+      "gloss": "fazla",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 249,
+          "end": 252,
+          "surface": "too",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "quick",
+      "gloss": "hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 253,
+          "end": 258,
+          "surface": "quick",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "insurance",
+      "gloss": "sigorta",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 260,
+          "end": 269,
+          "surface": "insurance",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "claims",
+      "gloss": "talepler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 270,
+          "end": 276,
+          "surface": "claims",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "museum",
+      "gloss": "müze",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 278,
+          "end": 284,
+          "surface": "museum",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "labels",
+      "gloss": "etiketler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 285,
+          "end": 291,
+          "surface": "labels",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "court",
+      "gloss": "mahkeme",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 296,
+          "end": 301,
+          "surface": "court",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "rulings",
+      "gloss": "kararlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 302,
+          "end": 309,
+          "surface": "rulings",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "ownership",
+      "gloss": "mülkiyet",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 316,
+          "end": 325,
+          "surface": "ownership",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "depend",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 326,
+          "end": 332,
+          "surface": "depend",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 333,
+          "end": 335,
+          "surface": "on",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "settling",
+      "gloss": "karara bağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 336,
+          "end": 344,
+          "surface": "settling",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "hangisi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 361,
+          "end": 366,
+          "surface": "which",
+          "contextSentence": "The verbal view risks implying that nothing deep was ever at stake, which seems too quick: insurance claims, museum labels and court rulings about ownership depend on settling which object is which.",
+          "contextSentenceTr": "Sözel görüş, hiçbir derin şeyin tehlikede olmadığını ima etme riskine girer ve bu fazla aceleci görünür: sigorta talepleri, müze etiketleri ve mülkiyetle ilgili mahkeme kararları hangi nesnenin hangisi olduğunu karara bağlamaya dayanır."
+        }
+      ]
+    },
+    {
+      "lemma": "perhaps",
+      "gloss": "belki",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 7,
+          "surface": "Perhaps",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "ship's",
+      "gloss": "geminin",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 12,
+          "end": 18,
+          "surface": "ship's",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "real",
+      "gloss": "gerçek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 19,
+          "end": 23,
+          "surface": "real",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "lesson",
+      "gloss": "ders",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 24,
+          "end": 30,
+          "surface": "lesson",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "concerns",
+      "gloss": "ilgilendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 31,
+          "end": 39,
+          "surface": "concerns",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "vessel",
+      "gloss": "tekne",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 59,
+          "end": 65,
+          "surface": "vessel",
+          "contextSentence": "Perhaps the ship's real lesson concerns us rather than the vessel.",
+          "contextSentenceTr": "Belki geminin gerçek dersi tekneyi değil bizi ilgilendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 67,
+          "end": 71,
+          "surface": "Many",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "our",
+      "gloss": "bizim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 75,
+          "end": 78,
+          "surface": "our",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 114,
+          "end": 117,
+          "surface": "our",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 79,
+          "end": 84,
+          "surface": "cells",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "replaced",
+      "gloss": "yenilenmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 89,
+          "end": 97,
+          "surface": "replaced",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıllar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 107,
+          "end": 112,
+          "surface": "years",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "memories",
+      "gloss": "anılar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 118,
+          "end": 126,
+          "surface": "memories",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 127,
+          "end": 130,
+          "surface": "can",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "shift",
+      "gloss": "kaymak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 131,
+          "end": 136,
+          "surface": "shift",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "recall",
+      "gloss": "hatırlamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 143,
+          "end": 149,
+          "surface": "recall",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 160,
+          "end": 163,
+          "surface": "yet",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "rarely",
+      "gloss": "nadiren",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 167,
+          "end": 173,
+          "surface": "rarely",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "doubt",
+      "gloss": "kuşku duymak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 174,
+          "end": 179,
+          "surface": "doubt",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 201,
+          "end": 207,
+          "surface": "person",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 208,
+          "end": 211,
+          "surface": "who",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "began",
+      "gloss": "başlamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 212,
+          "end": 217,
+          "surface": "began",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "reading",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 218,
+          "end": 225,
+          "surface": "reading",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 226,
+          "end": 230,
+          "surface": "this",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "paragraph",
+      "gloss": "paragraf",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 231,
+          "end": 240,
+          "surface": "paragraph",
+          "contextSentence": "Many of our cells are replaced over the years, our memories can shift as we recall them, and yet we rarely doubt that we are the same person who began reading this paragraph.",
+          "contextSentenceTr": "Hücrelerimizin birçoğu yıllar içinde yenilenir, anılarımız hatırladıkça kayabilir, yine de bu paragrafı okumaya başlayan kişiyle aynı kişi olduğumuzdan nadiren kuşku duyarız."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 242,
+          "end": 246,
+          "surface": "That",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "confidence",
+      "gloss": "güven",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 247,
+          "end": 257,
+          "surface": "confidence",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 336,
+          "end": 346,
+          "surface": "confidence",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 258,
+          "end": 261,
+          "surface": "may",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 262,
+          "end": 264,
+          "surface": "be",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "justified",
+      "gloss": "haklı çıkmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 265,
+          "end": 274,
+          "surface": "justified",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "obviously",
+      "gloss": "açıkça",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 290,
+          "end": 299,
+          "surface": "obviously",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "better",
+      "gloss": "daha iyi",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 300,
+          "end": 306,
+          "surface": "better",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "grounded",
+      "gloss": "temellendirilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 307,
+          "end": 315,
+          "surface": "grounded",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "athenians",
+      "gloss": "Atinalıların",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 325,
+          "end": 334,
+          "surface": "Athenians",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 347,
+          "end": 349,
+          "surface": "in",
+          "contextSentence": "That confidence may be justified, but it is not obviously better grounded than the Athenians' confidence in their ship.",
+          "contextSentenceTr": "Bu güven haklı olabilir, ama Atinalıların gemilerine duyduğu güvenden açıkça daha iyi temellendirilmiş değildir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the author's attitude toward the proposed solutions?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 300,
+        "end": 380
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The puzzle is a merely verbal game",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Yazar sözel görüşü fazla aceleci bulur; sigorta ve mahkeme örnekleri verir."
+        },
+        {
+          "key": "o2",
+          "text": "Hobbes's version has been fully refuted",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin Hobbes'un sürümünün çürütüldüğünü söylemez."
+        },
+        {
+          "key": "o3",
+          "text": "Each solves something but has a cost",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar her yanıtın düzen sağladığını ama bir bedeli olduğunu söyler."
+        },
+        {
+          "key": "o4",
+          "text": "One of them clearly settles the puzzle",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Yazar hiçbir yanıtı kesin çözüm olarak sunmaz."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "In Hobbes's version, what does the repaired ship have that the reassembled one lacks?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 228,
+        "end": 298
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Continuity of form and use",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Onarılan gemi biçim ve kullanım sürekliliğine sahiptir; asıl parçalar diğerindedir."
+        },
+        {
+          "key": "o2",
+          "text": "Every one of the original planks",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Asıl parçalar yeniden birleştirilen gemidedir."
+        },
+        {
+          "key": "o3",
+          "text": "Stronger and newer wooden timber",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin yeni kerestenin daha sağlam olduğunu söylemez."
+        },
+        {
+          "key": "o4",
+          "text": "Official approval from Athens",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Resmi onaydan söz edilmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “purchases tidiness at a price” suggest in the fourth paragraph?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 0,
+        "end": 41
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Costs real money to put into practice",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Purchase ve price burada mecazdır; parasal bir maliyet kastedilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Removes every difficulty without any cost",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "At a price, tam tersine bir bedel olduğunu anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Makes the ship cleaner and safer",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Tidiness kavramsal düzenliliktir; geminin temizliği değildir."
+        },
+        {
+          "key": "o4",
+          "text": "Gains neatness by losing something",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Mecaz anlamda her yanıt düzenli bir sonuç kazanır ama karşılığında bir şeyden vazgeçer."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What is the main purpose of the final paragraph?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 0,
+        "end": 65
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "To argue that memory never changes",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin anıların kayabileceğini söyler."
+        },
+        {
+          "key": "o2",
+          "text": "To turn the puzzle back on the reader",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar bilmeceyi okurun kendi kimliğine uygular ve kendi güvenini sorgulatır."
+        },
+        {
+          "key": "o3",
+          "text": "To prove that personal identity is an illusion",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar güvenin haklı olabileceğini kabul eder; yanılsama demez."
+        },
+        {
+          "key": "o4",
+          "text": "To describe how the Athenians built ships",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Gemi yapımı anlatılmaz; Atinalılar yalnızca karşılaştırma içindir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Plutarkhos'a göre Atinalılar Theseus'un Girit'ten döndüğü gemiyi korudu, çürüyen kerestelerini yenileriyle değiştirdi; gemi büyüyen şeyler hakkındaki mantık sorusunda filozoflar için örnek oldu, bir taraf aynı gemi olduğunu, diğeri olmadığını savundu.",
+        "source": "Plutarch, Life of Theseus, 23 (Loeb ceviri, LacusCurtius); https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Hobbes, atılan asıl tahtaların toplanıp yeniden birleştirildiği sürümü ekledi; süreklilik görüşleri, sözel/çoklu anlam yaklaşımları tartışılır.",
+        "source": "Stanford Encyclopedia of Philosophy, Identity Over Time; https://plato.stanford.edu/entries/identity-time/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Dört boyutçuluk (perdurantizm) nesnelerin zamana yayıldığını, herhangi bir anda tamamen mevcut olmadığını savunur.",
+        "source": "Stanford Encyclopedia of Philosophy, Temporal Parts; https://plato.stanford.edu/entries/temporal-parts/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "İnsan vücudundaki birçok hücre türü yıllar içinde yenilenir.",
+        "source": "Spalding KL ve ark., Retrospective Birth Dating of Cells in Humans, Cell (2005); https://doi.org/10.1016/j.cell.2005.04.028",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Hatırlanan anılar yeniden pekiştirme sürecinde değişebilir.",
+        "source": "Nader K., Schafe GE, LeDoux JE, Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval, Nature (2000); https://doi.org/10.1038/35021052",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

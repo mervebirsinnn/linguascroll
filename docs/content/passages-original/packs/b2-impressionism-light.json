@@ -1,0 +1,2352 @@
+{
+  "slug": "b2-impressionism-light",
+  "level": "B2",
+  "title": "Painting the Moment",
+  "topic": "Sanat",
+  "sortOrder": 34,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors. Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment. Their brushstrokes were quick and visible, and their colours often looked bright and fresh. A reviewer of their first exhibition even described the painters as lunatics.",
+    "Practical inventions made this new way of working possible. Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster. Landscapes and scenes of modern city life, painted in bright, pure colours, became typical. Speed mattered, because the light outdoors changes quickly.",
+    "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874. After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group. Over time, the painters became known by that name. Their search for light and the passing moment still shows in their work. Today, their paintings are widely admired."
+  ],
+  "words": [
+    {
+      "lemma": "impressionism",
+      "gloss": "İzlenimcilik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 13,
+          "surface": "Impressionism",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "began",
+      "gloss": "başladı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 19,
+          "surface": "began",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 22,
+          "surface": "in",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 29,
+          "end": 31,
+          "surface": "in",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 164,
+          "end": 166,
+          "surface": "in",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 84,
+          "surface": "in",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 222,
+          "surface": "in",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 94,
+          "surface": "in",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 121,
+          "end": 123,
+          "surface": "in",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 317,
+          "surface": "in",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "paris",
+      "gloss": "Paris",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 28,
+          "surface": "Paris",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 35,
+          "surface": "the",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 101,
+          "surface": "the",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 170,
+          "surface": "the",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 201,
+          "end": 204,
+          "surface": "the",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 384,
+          "end": 387,
+          "surface": "the",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 285,
+          "end": 288,
+          "surface": "the",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 15,
+          "surface": "the",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 35,
+          "end": 38,
+          "surface": "the",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 133,
+          "surface": "the",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 192,
+          "surface": "the",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 220,
+          "surface": "the",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 287,
+          "surface": "the",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "nineteenth",
+      "gloss": "on dokuzuncu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 46,
+          "surface": "nineteenth",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 54,
+          "surface": "century",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 60,
+          "surface": "when",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 61,
+          "end": 62,
+          "surface": "a",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 157,
+          "surface": "a",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 223,
+          "end": 224,
+          "surface": "a",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 333,
+          "surface": "A",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 48,
+          "end": 49,
+          "surface": "a",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "group",
+      "gloss": "grup",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 68,
+          "surface": "group",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 204,
+          "surface": "group",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 71,
+          "surface": "of",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 222,
+          "surface": "of",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 343,
+          "end": 345,
+          "surface": "of",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 41,
+          "surface": "of",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 193,
+          "surface": "of",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 11,
+          "surface": "of",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 45,
+          "end": 47,
+          "surface": "of",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "painters",
+      "gloss": "ressamlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 80,
+          "surface": "painters",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 388,
+          "end": 396,
+          "surface": "painters",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 229,
+          "surface": "painters",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "decided",
+      "gloss": "karar verdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 81,
+          "end": 88,
+          "surface": "decided",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 89,
+          "end": 91,
+          "surface": "to",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 190,
+          "end": 192,
+          "surface": "to",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "leave",
+      "gloss": "terk etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 97,
+          "surface": "leave",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        }
+      ]
+    },
+    {
+      "lemma": "studio",
+      "gloss": "atölye",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 108,
+          "surface": "studio",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 177,
+          "surface": "studio",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 112,
+          "surface": "and",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 273,
+          "surface": "and",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 283,
+          "end": 286,
+          "surface": "and",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 321,
+          "end": 324,
+          "surface": "and",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 134,
+          "surface": "and",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 180,
+          "end": 183,
+          "surface": "and",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 280,
+          "end": 283,
+          "surface": "and",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 117,
+          "surface": "work",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 120,
+          "surface": "work",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 155,
+          "surface": "work",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "outdoors",
+      "gloss": "açık havada",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 118,
+          "end": 126,
+          "surface": "outdoors",
+          "contextSentence": "Impressionism began in Paris in the nineteenth century, when a group of painters decided to leave the studio and work outdoors.",
+          "contextSentenceTr": "İzlenimcilik on dokuzuncu yüzyılda Paris'te, bir grup ressamın atölyeyi bırakıp açık havada çalışmaya karar vermesiyle başladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 129,
+          "surface": "outdoors",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 295,
+          "end": 303,
+          "surface": "outdoors",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        }
+      ]
+    },
+    {
+      "lemma": "instead",
+      "gloss": "yerine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 135,
+          "surface": "Instead",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "(instead of: yerine)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 136,
+          "end": 138,
+          "surface": "of",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "slowly",
+      "gloss": "yavaşça",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 145,
+          "surface": "slowly",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "polishing",
+      "gloss": "cilalamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 146,
+          "end": 155,
+          "surface": "polishing",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "scene",
+      "gloss": "sahne",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 158,
+          "end": 163,
+          "surface": "scene",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 183,
+          "surface": "they",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 139,
+          "surface": "they",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "tried",
+      "gloss": "denedi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 184,
+          "end": 189,
+          "surface": "tried",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "capture",
+      "gloss": "yakalamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 200,
+          "surface": "capture",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "changing",
+      "gloss": "değişen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 205,
+          "end": 213,
+          "surface": "changing",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "light",
+      "gloss": "ışık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 219,
+          "surface": "light",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 289,
+          "end": 294,
+          "surface": "light",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 274,
+          "end": 279,
+          "surface": "light",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "single",
+      "gloss": "tek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 231,
+          "surface": "single",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        }
+      ]
+    },
+    {
+      "lemma": "moment",
+      "gloss": "an",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 238,
+          "surface": "moment",
+          "contextSentence": "Instead of slowly polishing a scene in the studio, they tried to capture the changing light of a single moment.",
+          "contextSentenceTr": "Atölyede bir sahneyi yavaş yavaş cilalamak yerine, tek bir anın değişen ışığını yakalamaya çalıştılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 302,
+          "surface": "moment",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 245,
+          "surface": "Their",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 287,
+          "end": 292,
+          "surface": "their",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 346,
+          "end": 351,
+          "surface": "their",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 257,
+          "end": 262,
+          "surface": "Their",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 318,
+          "end": 323,
+          "surface": "their",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 337,
+          "end": 342,
+          "surface": "their",
+          "contextSentence": "Today, their paintings are widely admired.",
+          "contextSentenceTr": "Bugün tabloları geniş çapta hayranlıkla izleniyor."
+        }
+      ]
+    },
+    {
+      "lemma": "brushstrokes",
+      "gloss": "fırça darbeleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 246,
+          "end": 258,
+          "surface": "brushstrokes",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 259,
+          "end": 263,
+          "surface": "were",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "quick",
+      "gloss": "hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 269,
+          "surface": "quick",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "visible",
+      "gloss": "görünür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 274,
+          "end": 281,
+          "surface": "visible",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "colours",
+      "gloss": "renkler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 300,
+          "surface": "colours",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 243,
+          "surface": "colours",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 301,
+          "end": 306,
+          "surface": "often",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "looked",
+      "gloss": "görünüyordu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 313,
+          "surface": "looked",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "bright",
+      "gloss": "parlak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 314,
+          "end": 320,
+          "surface": "bright",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 223,
+          "end": 229,
+          "surface": "bright",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "fresh",
+      "gloss": "taze",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 325,
+          "end": 330,
+          "surface": "fresh",
+          "contextSentence": "Their brushstrokes were quick and visible, and their colours often looked bright and fresh.",
+          "contextSentenceTr": "Fırça darbeleri hızlı ve görünürdü; renkleri sık sık parlak ve taze görünürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "reviewer",
+      "gloss": "eleştirmen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 334,
+          "end": 342,
+          "surface": "reviewer",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 352,
+          "end": 357,
+          "surface": "first",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 162,
+          "surface": "first",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "exhibition",
+      "gloss": "sergi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 358,
+          "end": 368,
+          "surface": "exhibition",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 120,
+          "surface": "exhibition",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "hatta",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 369,
+          "end": 373,
+          "surface": "even",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "described",
+      "gloss": "nitelendirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 374,
+          "end": 383,
+          "surface": "described",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 397,
+          "end": 399,
+          "surface": "as",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 168,
+          "end": 170,
+          "surface": "as",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "lunatics",
+      "gloss": "deliler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 400,
+          "end": 408,
+          "surface": "lunatics",
+          "contextSentence": "A reviewer of their first exhibition even described the painters as lunatics.",
+          "contextSentenceTr": "İlk sergilerini değerlendiren bir eleştirmen, ressamları hatta deli olarak nitelendirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "practical",
+      "gloss": "pratik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 9,
+          "surface": "Practical",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "inventions",
+      "gloss": "icatlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 20,
+          "surface": "inventions",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yaptı (made possible: mümkün kıldı)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 21,
+          "end": 25,
+          "surface": "made",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 30,
+          "surface": "this",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 34,
+          "surface": "new",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 35,
+          "end": 38,
+          "surface": "way",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "working",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 49,
+          "surface": "working",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "possible",
+      "gloss": "mümkün",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 58,
+          "surface": "possible",
+          "contextSentence": "Practical inventions made this new way of working possible.",
+          "contextSentenceTr": "Pratik icatlar bu yeni çalışma biçimini mümkün kıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "ready",
+      "gloss": "hazır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 60,
+          "end": 65,
+          "surface": "Ready",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yapılmış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 66,
+          "end": 70,
+          "surface": "made",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "paint",
+      "gloss": "boya",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 76,
+          "surface": "paint",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "sold",
+      "gloss": "satılan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 81,
+          "surface": "sold",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "tubes",
+      "gloss": "tüpler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 90,
+          "surface": "tubes",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "meant",
+      "gloss": "demekti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 96,
+          "surface": "meant",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 101,
+          "surface": "that",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "artists",
+      "gloss": "sanatçılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 102,
+          "end": 109,
+          "surface": "artists",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 110,
+          "end": 115,
+          "surface": "could",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 145,
+          "surface": "could",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 146,
+          "end": 150,
+          "surface": "also",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 160,
+          "surface": "much",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "faster",
+      "gloss": "daha hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 161,
+          "end": 167,
+          "surface": "faster",
+          "contextSentence": "Ready-made paint sold in tubes meant that artists could work outdoors, and they could also work much faster.",
+          "contextSentenceTr": "Tüplerde satılan hazır boya, sanatçıların açık havada çalışabilmesi demekti ve onlar ayrıca çok daha hızlı çalışabilirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "landscapes",
+      "gloss": "manzaralar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 169,
+          "end": 179,
+          "surface": "Landscapes",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "scenes",
+      "gloss": "sahneler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 190,
+          "surface": "scenes",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "modern",
+      "gloss": "modern",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 194,
+          "end": 200,
+          "surface": "modern",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "city",
+      "gloss": "şehir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 201,
+          "end": 205,
+          "surface": "city",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "life",
+      "gloss": "yaşam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 206,
+          "end": 210,
+          "surface": "life",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "painted",
+      "gloss": "boyanmış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 212,
+          "end": 219,
+          "surface": "painted",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "pure",
+      "gloss": "saf",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 235,
+          "surface": "pure",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "became",
+      "gloss": "oldu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 251,
+          "surface": "became",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 230,
+          "end": 236,
+          "surface": "became",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "typical",
+      "gloss": "tipik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 259,
+          "surface": "typical",
+          "contextSentence": "Landscapes and scenes of modern city life, painted in bright, pure colours, became typical.",
+          "contextSentenceTr": "Parlak, saf renklerle boyanmış manzaralar ve modern şehir hayatı sahneleri tipik hale geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "speed",
+      "gloss": "hız",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 266,
+          "surface": "Speed",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        }
+      ]
+    },
+    {
+      "lemma": "mattered",
+      "gloss": "önemliydi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 275,
+          "surface": "mattered",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 277,
+          "end": 284,
+          "surface": "because",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        }
+      ]
+    },
+    {
+      "lemma": "changes",
+      "gloss": "değişir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 311,
+          "surface": "changes",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        }
+      ]
+    },
+    {
+      "lemma": "quickly",
+      "gloss": "hızla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 319,
+          "surface": "quickly",
+          "contextSentence": "Speed mattered, because the light outdoors changes quickly.",
+          "contextSentenceTr": "Hız önemliydi, çünkü açık havadaki ışık hızla değişir."
+        }
+      ]
+    },
+    {
+      "lemma": "name",
+      "gloss": "ad",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 8,
+          "surface": "name",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 251,
+          "end": 255,
+          "surface": "name",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "movement",
+      "gloss": "akım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 24,
+          "surface": "movement",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "came",
+      "gloss": "geldi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 29,
+          "surface": "came",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 30,
+          "end": 34,
+          "surface": "from",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "title",
+      "gloss": "başlık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 39,
+          "end": 44,
+          "surface": "title",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "painting",
+      "gloss": "tablo",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 58,
+          "surface": "painting",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 59,
+          "end": 61,
+          "surface": "by",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 243,
+          "end": 245,
+          "surface": "by",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "claude",
+      "gloss": "Claude",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 68,
+          "surface": "Claude",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "monet",
+      "gloss": "Monet",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 74,
+          "surface": "Monet",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 76,
+          "end": 81,
+          "surface": "which",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 85,
+          "surface": "was",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 156,
+          "surface": "was",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "shown",
+      "gloss": "gösterilmişti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 91,
+          "surface": "shown",
+          "contextSentence": "The name of the movement came from the title of a painting by Claude Monet, which was shown in 1874.",
+          "contextSentenceTr": "Akımın adı, 1874'te gösterilen Claude Monet'nin bir tablosunun başlığından geldi."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "-den sonra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 106,
+          "surface": "After",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 109,
+          "surface": "an",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 173,
+          "surface": "an",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "word",
+      "gloss": "sözcük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 138,
+          "surface": "word",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "impressionist",
+      "gloss": "İzlenimci",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 152,
+          "surface": "Impressionist",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanıldı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 167,
+          "surface": "used",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "insult",
+      "gloss": "hakaret",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 174,
+          "end": 180,
+          "surface": "insult",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "against",
+      "gloss": "karşı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 188,
+          "surface": "against",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "whole",
+      "gloss": "bütün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 193,
+          "end": 198,
+          "surface": "whole",
+          "contextSentence": "After an exhibition in 1874, the word Impressionist was first used as an insult against the whole group.",
+          "contextSentenceTr": "1874'teki bir sergiden sonra 'İzlenimci' sözcüğü ilk kez bütün gruba karşı bir hakaret olarak kullanıldı."
+        }
+      ]
+    },
+    {
+      "lemma": "over",
+      "gloss": "-boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 206,
+          "end": 210,
+          "surface": "Over",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 211,
+          "end": 215,
+          "surface": "time",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "known",
+      "gloss": "tanınan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 242,
+          "surface": "known",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 246,
+          "end": 250,
+          "surface": "that",
+          "contextSentence": "Over time, the painters became known by that name.",
+          "contextSentenceTr": "Zamanla ressamlar bu adla tanındı."
+        }
+      ]
+    },
+    {
+      "lemma": "search",
+      "gloss": "arayış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 263,
+          "end": 269,
+          "surface": "search",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 273,
+          "surface": "for",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "passing",
+      "gloss": "geçip giden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 288,
+          "end": 295,
+          "surface": "passing",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 303,
+          "end": 308,
+          "surface": "still",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "shows",
+      "gloss": "görünür",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 314,
+          "surface": "shows",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "eser",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 328,
+          "surface": "work",
+          "contextSentence": "Their search for light and the passing moment still shows in their work.",
+          "contextSentenceTr": "Işık ve geçip giden an arayışları eserlerinde hâlâ görülür."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 330,
+          "end": 335,
+          "surface": "Today",
+          "contextSentence": "Today, their paintings are widely admired.",
+          "contextSentenceTr": "Bugün tabloları geniş çapta hayranlıkla izleniyor."
+        }
+      ]
+    },
+    {
+      "lemma": "paintings",
+      "gloss": "tablolar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 343,
+          "end": 352,
+          "surface": "paintings",
+          "contextSentence": "Today, their paintings are widely admired.",
+          "contextSentenceTr": "Bugün tabloları geniş çapta hayranlıkla izleniyor."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 353,
+          "end": 356,
+          "surface": "are",
+          "contextSentence": "Today, their paintings are widely admired.",
+          "contextSentenceTr": "Bugün tabloları geniş çapta hayranlıkla izleniyor."
+        }
+      ]
+    },
+    {
+      "lemma": "widely",
+      "gloss": "geniş çapta",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 357,
+          "end": 363,
+          "surface": "widely",
+          "contextSentence": "Today, their paintings are widely admired.",
+          "contextSentenceTr": "Bugün tabloları geniş çapta hayranlıkla izleniyor."
+        }
+      ]
+    },
+    {
+      "lemma": "admired",
+      "gloss": "hayranlıkla izlenen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 364,
+          "end": 371,
+          "surface": "admired",
+          "contextSentence": "Today, their paintings are widely admired.",
+          "contextSentenceTr": "Bugün tabloları geniş çapta hayranlıkla izleniyor."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 179,
+        "end": 238
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Painters who left the studio to capture light",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin, ressamların atölyeden çıkıp ışığı ve anı yakalamaya çalışmasını ve bunu mümkün kılan etkenleri anlatır."
+        },
+        {
+          "key": "o2",
+          "text": "The long history of portable camera design",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde kamera tasarımından söz edilmez."
+        },
+        {
+          "key": "o3",
+          "text": "Critics who refused to visit any museum",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin yalnızca bir eleştirmenin sert sözünden ve hakaret olarak kullanılan bir sözcükten bahseder; bu abartılı bir genellemedir."
+        },
+        {
+          "key": "o4",
+          "text": "A hidden technique that erased every brushstroke",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metne göre fırça darbeleri hızlı ve görünürdü; silinmiyordu."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Which invention helped artists work outdoors?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 60,
+        "end": 129
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A new type of camera used outdoors",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde kameradan söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Heavy glass bottles of liquid paint",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Metin cam şişelerden değil, metal tüplerden söz eder."
+        },
+        {
+          "key": "o3",
+          "text": "Ready-made paint sold in tubes",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin, tüplerde satılan hazır boyanın sanatçıların açık havada çalışmasını sağladığını söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Large studio lamps for night work",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Metin gece çalışmasından değil, gün ışığında çalışmaktan söz eder."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does \"capture\" mean in paragraph 1?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 179,
+        "end": 219
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Sell at a high price",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde satış fiyatından söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Record in a picture",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Burada capture, ışığı ve anı bir resimde kaydetmek anlamındadır."
+        },
+        {
+          "key": "o3",
+          "text": "Catch and put in prison",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Capture'ın 'yakalayıp hapse atmak' anlamı vardır, ama burada ışıktan söz ediliyor; bağlama uymaz."
+        },
+        {
+          "key": "o4",
+          "text": "Ignore and forget about",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Ressamlar ışığı görmezden gelmedi, tam tersine onu resmetmeye çalıştı."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can be inferred about the people who first used the word \"Impressionist\"?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 130,
+        "end": 204
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They belonged to the painters' own group",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin böyle bir şey söylemez; sözcük gruba karşı kullanıldı."
+        },
+        {
+          "key": "o2",
+          "text": "They felt every painter should give up",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle aşırı bir görüş belirtmez."
+        },
+        {
+          "key": "o3",
+          "text": "They wanted to praise the group warmly",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Hakaret etmek övmenin tersidir."
+        },
+        {
+          "key": "o4",
+          "text": "They did not respect the new style",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Sözcük hakaret olarak kullanıldı; bu, yeni üsluba saygı duymadıklarını gösterir."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Ressamlar atölye dışında, çoğu kez açık havada çalıştı; fırça darbeleri hızlı ve çoğunlukla görünürdü, değişen ışığın geçici niteliğini yakalamaya çalıştılar. 'İzlenimci' terimi 1874'te Paris'te açılan bir sergiye tepki olarak kullanıldı.",
+        "source": "The National Gallery, London, Guide to Impressionism; https://nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism; The National Gallery, London, Glossary: Impressionism; https://www.nationalgallery.org.uk/paintings/glossary/impressionism",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Manzaralar ve modern kent yaşamı sahneleri parlak, saf renklerle boyanmak tipikti; ilk sergiyi değerlendiren bir eleştirmen ressamları 'deli' diye niteledi.",
+        "source": "The National Gallery, London, Guide to Impressionism; https://nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Tüplerde satılan hazır boya, sanatçıların atölye yerine açık havada çalışmasını ve çok daha hızlı çalışmasını sağladı.",
+        "source": "The National Gallery, London, Guide to Impressionism; https://nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Terim Monet'nin 1874'te sergilenen bir tablosunun başlığından türedi ve ilk kez hakaret olarak kullanıldı; sergileyen ressamlar sonradan 'İzlenimciler' diye tanındı.",
+        "source": "The National Gallery, London, Glossary: Impressionism; https://www.nationalgallery.org.uk/paintings/glossary/impressionism; The National Gallery, London, Guide to Impressionism; https://nationalgallery.org.uk/paintings/learn-about-art/guide-to-impressionism",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

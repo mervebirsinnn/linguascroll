@@ -1,0 +1,2910 @@
+{
+  "slug": "b2-renewable-grid",
+  "level": "B2",
+  "title": "Keeping the Lights On",
+  "topic": "Teknoloji",
+  "sortOrder": 38,
+  "isFreeSample": false,
+  "paragraphs": [
+    "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used. For most of the last century, operators managed this by burning more or less fuel in large power stations. Sun and wind are cleaner sources, but they cannot be switched on when needed. Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+    "Engineers are tackling this variability in several ways. Batteries can store extra energy on a sunny afternoon and release it after sunset. Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed. Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions. Better weather forecasts allow operators to plan hours or days ahead.",
+    "Demand can also become more flexible. Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce. None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable. The challenge, in other words, is less about producing clean energy and more about managing it wisely."
+  ],
+  "words": [
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "An",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "electricity",
+      "gloss": "elektrik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 14,
+          "surface": "electricity",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 175,
+          "surface": "electricity",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "grid",
+      "gloss": "şebekesi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 15,
+          "end": 19,
+          "surface": "grid",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahiptir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 23,
+          "surface": "has",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 25,
+          "surface": "a",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 94,
+          "surface": "a",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 367,
+          "end": 368,
+          "surface": "a",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 222,
+          "end": 223,
+          "surface": "a",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 235,
+          "surface": "a",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "demanding",
+      "gloss": "zorlu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 35,
+          "surface": "demanding",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "job",
+      "gloss": "görev",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 39,
+          "surface": "job",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 41,
+          "end": 43,
+          "surface": "at",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 337,
+          "surface": "at",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 49,
+          "surface": "every",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "moment",
+      "gloss": "an",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 50,
+          "end": 56,
+          "surface": "moment",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 61,
+          "surface": "the",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 101,
+          "surface": "the",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 136,
+          "surface": "the",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 375,
+          "end": 378,
+          "surface": "the",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 320,
+          "end": 323,
+          "surface": "the",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 281,
+          "end": 284,
+          "surface": "The",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "amount",
+      "gloss": "miktar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 62,
+          "end": 68,
+          "surface": "amount",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 108,
+          "surface": "amount",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 71,
+          "surface": "of",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 130,
+          "end": 132,
+          "surface": "of",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 164,
+          "surface": "of",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 248,
+          "end": 250,
+          "surface": "of",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "power",
+      "gloss": "elektrik, güç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 77,
+          "surface": "power",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "produced",
+      "gloss": "üretilen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 86,
+          "surface": "produced",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "zorunda",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 87,
+          "end": 91,
+          "surface": "must",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "match",
+      "gloss": "eşleşmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 97,
+          "surface": "match",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "being",
+      "gloss": "-mekte olan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 114,
+          "surface": "being",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "used",
+      "gloss": "kullanılan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 119,
+          "surface": "used",
+          "contextSentence": "An electricity grid has a demanding job: at every moment, the amount of power produced must match the amount being used.",
+          "contextSentenceTr": "Bir elektrik şebekesinin zorlu bir görevi vardır: her an üretilen elektrik miktarı, kullanılan miktarla eşleşmek zorundadır."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 121,
+          "end": 124,
+          "surface": "For",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 129,
+          "surface": "most",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "last",
+      "gloss": "geçen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 137,
+          "end": 141,
+          "surface": "last",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "century",
+      "gloss": "yüzyıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 142,
+          "end": 149,
+          "surface": "century",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "operators",
+      "gloss": "işletmeciler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 160,
+          "surface": "operators",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 444,
+          "end": 453,
+          "surface": "operators",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "managed",
+      "gloss": "yönetti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 168,
+          "surface": "managed",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 169,
+          "end": 173,
+          "surface": "this",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 27,
+          "surface": "this",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "-erek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 174,
+          "end": 176,
+          "surface": "by",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "burning",
+      "gloss": "yakmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 184,
+          "surface": "burning",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 189,
+          "surface": "more",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 353,
+          "end": 357,
+          "surface": "more",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 190,
+          "end": 192,
+          "surface": "or",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 468,
+          "end": 470,
+          "surface": "or",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 197,
+          "surface": "less",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 319,
+          "surface": "less",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "fuel",
+      "gloss": "yakıt",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 202,
+          "surface": "fuel",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 205,
+          "surface": "in",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 42,
+          "surface": "in",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 296,
+          "end": 298,
+          "surface": "in",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 211,
+          "surface": "large",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 236,
+          "end": 241,
+          "surface": "large",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "power",
+      "gloss": "elektrik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 212,
+          "end": 217,
+          "surface": "power",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 249,
+          "end": 254,
+          "surface": "power",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 395,
+          "surface": "power",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 89,
+          "end": 94,
+          "surface": "power",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "stations",
+      "gloss": "santraller",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 218,
+          "end": 226,
+          "surface": "stations",
+          "contextSentence": "For most of the last century, operators managed this by burning more or less fuel in large power stations.",
+          "contextSentenceTr": "Geçen yüzyılın büyük bölümünde işletmeciler bunu büyük santrallerde daha çok ya da daha az yakıt yakarak yönetti."
+        }
+      ]
+    },
+    {
+      "lemma": "sun",
+      "gloss": "güneş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 228,
+          "end": 231,
+          "surface": "Sun",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 235,
+          "surface": "and",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 345,
+          "end": 348,
+          "surface": "and",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 114,
+          "surface": "and",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 56,
+          "surface": "and",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 116,
+          "end": 119,
+          "surface": "and",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 349,
+          "end": 352,
+          "surface": "and",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "wind",
+      "gloss": "rüzgar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 240,
+          "surface": "wind",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 349,
+          "end": 353,
+          "surface": "wind",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 324,
+          "end": 328,
+          "surface": "wind",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 244,
+          "surface": "are",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 13,
+          "surface": "are",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "cleaner",
+      "gloss": "daha temiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 245,
+          "end": 252,
+          "surface": "cleaner",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        }
+      ]
+    },
+    {
+      "lemma": "sources",
+      "gloss": "kaynaklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 253,
+          "end": 260,
+          "surface": "sources",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 262,
+          "end": 265,
+          "surface": "but",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 202,
+          "surface": "but",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 266,
+          "end": 270,
+          "surface": "they",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 216,
+          "surface": "they",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-amaz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 271,
+          "end": 277,
+          "surface": "cannot",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 280,
+          "surface": "be",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 75,
+          "end": 77,
+          "surface": "be",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "switched",
+      "gloss": "açılmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 281,
+          "end": 289,
+          "surface": "switched",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "(switch on: açmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 290,
+          "end": 292,
+          "surface": "on",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 297,
+          "surface": "when",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 374,
+          "surface": "when",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 259,
+          "surface": "when",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 95,
+          "end": 99,
+          "surface": "when",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 138,
+          "end": 142,
+          "surface": "when",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "needed",
+      "gloss": "gerekli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 298,
+          "end": 304,
+          "surface": "needed",
+          "contextSentence": "Sun and wind are cleaner sources, but they cannot be switched on when needed.",
+          "contextSentenceTr": "Güneş ve rüzgar daha temiz kaynaklardır, ama gerektiğinde açılamazlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 272,
+          "surface": "needed",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "solar",
+      "gloss": "güneş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 306,
+          "end": 311,
+          "surface": "Solar",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "panels",
+      "gloss": "panelleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 312,
+          "end": 318,
+          "surface": "panels",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "produce",
+      "gloss": "üretir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 326,
+          "surface": "produce",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "nothing",
+      "gloss": "hiçbir şey",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 327,
+          "end": 334,
+          "surface": "nothing",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "night",
+      "gloss": "gece",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 338,
+          "end": 343,
+          "surface": "night",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "farms",
+      "gloss": "çiftlikleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 354,
+          "end": 359,
+          "surface": "farms",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "slow",
+      "gloss": "yavaşlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 360,
+          "end": 364,
+          "surface": "slow",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "(slow down: yavaşlamak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 365,
+          "end": 369,
+          "surface": "down",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "air",
+      "gloss": "hava",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 379,
+          "end": 382,
+          "surface": "air",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 383,
+          "end": 385,
+          "surface": "is",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 265,
+          "surface": "is",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 329,
+          "end": 331,
+          "surface": "is",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 103,
+          "end": 105,
+          "surface": "is",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 146,
+          "end": 148,
+          "surface": "is",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 179,
+          "surface": "is",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 314,
+          "surface": "is",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "calm",
+      "gloss": "durgun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 386,
+          "end": 390,
+          "surface": "calm",
+          "contextSentence": "Solar panels produce nothing at night, and wind farms slow down when the air is calm.",
+          "contextSentenceTr": "Güneş panelleri gece hiçbir şey üretmez, rüzgar çiftlikleri de hava durgun olduğunda yavaşlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 339,
+          "end": 343,
+          "surface": "calm",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "engineers",
+      "gloss": "mühendisler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 9,
+          "surface": "Engineers",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "tackling",
+      "gloss": "ele alıyor",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 14,
+          "end": 22,
+          "surface": "tackling",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "variability",
+      "gloss": "değişkenlik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 39,
+          "surface": "variability",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 43,
+          "end": 50,
+          "surface": "several",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "ways",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 51,
+          "end": 55,
+          "surface": "ways",
+          "contextSentence": "Engineers are tackling this variability in several ways.",
+          "contextSentenceTr": "Mühendisler bu değişkenliği birkaç yolla ele alıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "batteries",
+      "gloss": "bataryalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 57,
+          "end": 66,
+          "surface": "Batteries",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 67,
+          "end": 70,
+          "surface": "can",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 380,
+          "end": 383,
+          "surface": "can",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 7,
+          "end": 10,
+          "surface": "can",
+          "contextSentence": "Demand can also become more flexible.",
+          "contextSentenceTr": "Talep de daha esnek hâle gelebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 71,
+          "end": 74,
+          "surface": "can",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "store",
+      "gloss": "depolamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 76,
+          "surface": "store",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "extra",
+      "gloss": "fazla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 82,
+          "surface": "extra",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "energy",
+      "gloss": "enerji",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 83,
+          "end": 89,
+          "surface": "energy",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 342,
+          "end": 348,
+          "surface": "energy",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 90,
+          "end": 92,
+          "surface": "on",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "sunny",
+      "gloss": "güneşli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 95,
+          "end": 100,
+          "surface": "sunny",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "afternoon",
+      "gloss": "öğleden sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 101,
+          "end": 110,
+          "surface": "afternoon",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "release",
+      "gloss": "salmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 115,
+          "end": 122,
+          "surface": "release",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 125,
+          "surface": "it",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 207,
+          "end": 209,
+          "surface": "it",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 260,
+          "end": 262,
+          "surface": "it",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 102,
+          "surface": "it",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 145,
+          "surface": "it",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 373,
+          "end": 375,
+          "surface": "it",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 126,
+          "end": 131,
+          "surface": "after",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "sunset",
+      "gloss": "gün batımı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 138,
+          "surface": "sunset",
+          "contextSentence": "Batteries can store extra energy on a sunny afternoon and release it after sunset.",
+          "contextSentenceTr": "Bataryalar güneşli bir öğleden sonra fazla enerjiyi depolayıp gün batımından sonra salabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "pumped",
+      "gloss": "pompajlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 146,
+          "surface": "Pumped",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "hydro",
+      "gloss": "hidroelektrik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 152,
+          "surface": "hydro",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "plants",
+      "gloss": "santraller",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 159,
+          "surface": "plants",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 163,
+          "surface": "use",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 178,
+          "surface": "to",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 237,
+          "end": 239,
+          "surface": "to",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "pump",
+      "gloss": "pompalamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 183,
+          "surface": "pump",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "water",
+      "gloss": "su",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 189,
+          "surface": "water",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "uphill",
+      "gloss": "yokuş yukarı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 190,
+          "end": 196,
+          "surface": "uphill",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 198,
+          "end": 202,
+          "surface": "then",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "let",
+      "gloss": "izin vermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 203,
+          "end": 206,
+          "surface": "let",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "flow",
+      "gloss": "akmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 214,
+          "surface": "flow",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "down",
+      "gloss": "aşağı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 215,
+          "end": 219,
+          "surface": "down",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "içinden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 220,
+          "end": 227,
+          "surface": "through",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "turbines",
+      "gloss": "türbinler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 236,
+          "surface": "turbines",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "generate",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 240,
+          "end": 248,
+          "surface": "generate",
+          "contextSentence": "Pumped hydro plants use electricity to pump water uphill, then let it flow down through turbines to generate power when it is needed.",
+          "contextSentenceTr": "Pompajlı hidroelektrik santralleri suyu yukarı pompalamak için elektrik kullanır, sonra gerektiğinde elektrik üretmek için suyun türbinlerden aşağı akmasına izin verir."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 278,
+          "surface": "Long",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "transmission",
+      "gloss": "iletim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 291,
+          "surface": "transmission",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "lines",
+      "gloss": "hatları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 292,
+          "end": 297,
+          "surface": "lines",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "help",
+      "gloss": "yardım eder",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 298,
+          "end": 302,
+          "surface": "help",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "(as well: de, da)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 303,
+          "end": 305,
+          "surface": "as",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "well",
+      "gloss": "(as well: de, da)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 306,
+          "end": 310,
+          "surface": "well",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 312,
+          "end": 319,
+          "surface": "because",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "rarely",
+      "gloss": "nadiren",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 338,
+          "surface": "rarely",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "everywhere",
+      "gloss": "her yerde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 344,
+          "end": 354,
+          "surface": "everywhere",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "(at once: aynı anda)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 357,
+          "surface": "at",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "once",
+      "gloss": "(at once: aynı anda)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 358,
+          "end": 362,
+          "surface": "once",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 364,
+          "end": 366,
+          "surface": "so",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "wider",
+      "gloss": "daha geniş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 369,
+          "end": 374,
+          "surface": "wider",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "grid",
+      "gloss": "şebeke",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 375,
+          "end": 379,
+          "surface": "grid",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 228,
+          "surface": "grid",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "share",
+      "gloss": "paylaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 384,
+          "end": 389,
+          "surface": "share",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 396,
+          "end": 403,
+          "surface": "between",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "regions",
+      "gloss": "bölgeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 404,
+          "end": 411,
+          "surface": "regions",
+          "contextSentence": "Long transmission lines help as well, because the wind is rarely calm everywhere at once, so a wider grid can share power between regions.",
+          "contextSentenceTr": "Uzun iletim hatları da yardımcı olur, çünkü rüzgar nadiren her yerde aynı anda durgundur; bu yüzden daha geniş bir şebeke elektriği bölgeler arasında paylaşabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "better",
+      "gloss": "daha iyi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 413,
+          "end": 419,
+          "surface": "Better",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "weather",
+      "gloss": "hava",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 420,
+          "end": 427,
+          "surface": "weather",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "forecasts",
+      "gloss": "tahminleri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 428,
+          "end": 437,
+          "surface": "forecasts",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "allow",
+      "gloss": "olanak tanır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 438,
+          "end": 443,
+          "surface": "allow",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mesine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 454,
+          "end": 456,
+          "surface": "to",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "plan",
+      "gloss": "planlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 457,
+          "end": 461,
+          "surface": "plan",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "hours",
+      "gloss": "saatler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 462,
+          "end": 467,
+          "surface": "hours",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "days",
+      "gloss": "günler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 471,
+          "end": 475,
+          "surface": "days",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "ahead",
+      "gloss": "önceden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 476,
+          "end": 481,
+          "surface": "ahead",
+          "contextSentence": "Better weather forecasts allow operators to plan hours or days ahead.",
+          "contextSentenceTr": "Daha iyi hava tahminleri işletmecilerin saatler ya da günler önceden plan yapmasına olanak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "demand",
+      "gloss": "talep",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 6,
+          "surface": "Demand",
+          "contextSentence": "Demand can also become more flexible.",
+          "contextSentenceTr": "Talep de daha esnek hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 15,
+          "surface": "also",
+          "contextSentence": "Demand can also become more flexible.",
+          "contextSentenceTr": "Talep de daha esnek hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "become",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 22,
+          "surface": "become",
+          "contextSentence": "Demand can also become more flexible.",
+          "contextSentenceTr": "Talep de daha esnek hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 27,
+          "surface": "more",
+          "contextSentence": "Demand can also become more flexible.",
+          "contextSentenceTr": "Talep de daha esnek hâle gelebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 270,
+          "surface": "more",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "flexible",
+      "gloss": "esnek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 36,
+          "surface": "flexible",
+          "contextSentence": "Demand can also become more flexible.",
+          "contextSentenceTr": "Talep de daha esnek hâle gelebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 42,
+          "surface": "Some",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "factories",
+      "gloss": "fabrikalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 52,
+          "surface": "factories",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "electric",
+      "gloss": "elektrikli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 65,
+          "surface": "electric",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "cars",
+      "gloss": "arabalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 70,
+          "surface": "cars",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "set",
+      "gloss": "ayarlanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 81,
+          "surface": "set",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 84,
+          "surface": "to",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 88,
+          "surface": "use",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "plentiful",
+      "gloss": "bol",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 106,
+          "end": 115,
+          "surface": "plentiful",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "cheap",
+      "gloss": "ucuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 120,
+          "end": 125,
+          "surface": "cheap",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "instead",
+      "gloss": "yerine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 127,
+          "end": 134,
+          "surface": "instead",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "(instead of: yerine)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 135,
+          "end": 137,
+          "surface": "of",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "scarce",
+      "gloss": "kıt",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 155,
+          "surface": "scarce",
+          "contextSentence": "Some factories and electric cars can be set to use power when it is plentiful and cheap, instead of when it is scarce.",
+          "contextSentenceTr": "Bazı fabrikalar ve elektrikli arabalar, elektriği kıt olduğunda değil, bol ve ucuz olduğunda kullanacak şekilde ayarlanabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "none",
+      "gloss": "hiçbiri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 161,
+          "surface": "None",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 170,
+          "surface": "these",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "tools",
+      "gloss": "araçlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 176,
+          "surface": "tools",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "enough",
+      "gloss": "yeterli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 180,
+          "end": 186,
+          "surface": "enough",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "(on its own: tek başına)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 187,
+          "end": 189,
+          "surface": "on",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 190,
+          "end": 193,
+          "surface": "its",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 194,
+          "end": 197,
+          "surface": "own",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "together",
+      "gloss": "birlikte",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 211,
+          "surface": "together",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "yapar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 221,
+          "surface": "make",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 229,
+          "end": 233,
+          "surface": "with",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "share",
+      "gloss": "pay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 242,
+          "end": 247,
+          "surface": "share",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "renewables",
+      "gloss": "yenilenebilir kaynaklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 251,
+          "end": 261,
+          "surface": "renewables",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 262,
+          "end": 265,
+          "surface": "far",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "reliable",
+      "gloss": "güvenilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 271,
+          "end": 279,
+          "surface": "reliable",
+          "contextSentence": "None of these tools is enough on its own, but together they make a grid with a large share of renewables far more reliable.",
+          "contextSentenceTr": "Bu araçların hiçbiri tek başına yeterli değildir, ama birlikte, yenilenebilir kaynakların payı büyük olan bir şebekeyi çok daha güvenilir kılar."
+        }
+      ]
+    },
+    {
+      "lemma": "challenge",
+      "gloss": "zorluk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 285,
+          "end": 294,
+          "surface": "challenge",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 304,
+          "surface": "other",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "words",
+      "gloss": "sözcükler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 310,
+          "surface": "words",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "ile ilgili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 320,
+          "end": 325,
+          "surface": "about",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 358,
+          "end": 363,
+          "surface": "about",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "producing",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 326,
+          "end": 335,
+          "surface": "producing",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "clean",
+      "gloss": "temiz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 341,
+          "surface": "clean",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "managing",
+      "gloss": "yönetmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 364,
+          "end": 372,
+          "surface": "managing",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    },
+    {
+      "lemma": "wisely",
+      "gloss": "akıllıca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 376,
+          "end": 382,
+          "surface": "wisely",
+          "contextSentence": "The challenge, in other words, is less about producing clean energy and more about managing it wisely.",
+          "contextSentenceTr": "Başka bir deyişle zorluk, temiz enerji üretmekten çok onu akıllıca yönetmekle ilgilidir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 203,
+        "end": 279
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Reasons to stop building transmission lines entirely",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin iletim hatlarını bir çözüm olarak sunar."
+        },
+        {
+          "key": "o2",
+          "text": "Ways to balance a grid that relies on renewables",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin güneş ve rüzgarın değişkenliğini ve şebekeyi dengelemenin yollarını anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "Why solar panels work better than wind farms",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin iki kaynağı karşılaştırıp birini üstün tutmaz."
+        },
+        {
+          "key": "o4",
+          "text": "How old power stations burned more fuel",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Eski santraller yalnızca giriş bağlamında anılır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "How does a pumped hydro plant store energy?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 140,
+        "end": 196
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "By keeping batteries charged at night",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Bataryalar ayrı bir çözüm olarak anlatılır."
+        },
+        {
+          "key": "o2",
+          "text": "By burning extra fuel during the day",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Yakıt yakmak eski santrallerin yöntemidir."
+        },
+        {
+          "key": "o3",
+          "text": "By sending power along long transmission lines",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "İletim hatları ayrı bir çözümdür; depolama yapmaz."
+        },
+        {
+          "key": "o4",
+          "text": "By pumping water uphill using electricity",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin elektrik kullanılarak suyun yukarı pompalandığını açıkça söyler."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “plentiful” mean in paragraph 3?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 85,
+        "end": 125
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Available in large amounts",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Plentiful, bol miktarda bulunan demektir; cümlede 'scarce' (kıt) ile karşıtlık kurulur."
+        },
+        {
+          "key": "o2",
+          "text": "Produced mainly during the night hours",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Metin güneş panellerinin gece üretmediğini söyler; kelimeyle ilgisi yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Difficult to find or to obtain",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Bu anlam cümledeki 'scarce' kelimesine aittir."
+        },
+        {
+          "key": "o4",
+          "text": "Too expensive for most people to buy",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Cümlede plentiful 'cheap' (ucuz) ile birlikte geçer."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the passage suggest about a grid with many renewables?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 157,
+        "end": 197
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It cannot be made reliable at all",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin araçların birlikte şebekeyi çok daha güvenilir kıldığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Its main problem is producing enough clean power",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metne göre asıl zorluk üretmek değil, yönetmektir."
+        },
+        {
+          "key": "o3",
+          "text": "It needs several solutions working together",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Hiçbir araç tek başına yetmediği, ama birlikte şebekeyi güvenilir kıldığı için birden çok çözüm gerekir."
+        },
+        {
+          "key": "o4",
+          "text": "One large battery can fully solve its problems",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin tek bir aracın yeterli olmadığını söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Şebeke işletmecisi talep ve arzı gerçek zamanlı olarak dengede tutar; dengesizlik yerel ya da geniş çaplı elektrik kesintilerine yol açabilir.",
+        "source": "U.S. Energy Information Administration, U.S. electric system is made up of interconnections and balancing authorities (Today in Energy); https://www.eia.gov/todayinenergy/detail.php?id=27152",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Rüzgar ve güneş gibi değişken üretim, rüzgar durduğunda ya da güneş battığında esnek kapasite gerektirir; iletim değişkenliğin bir kısmını ortalayabilir, bu kaynakların toplanması değişkenliği azaltır; talep tepkisi ve depolama dengelemeye yardım eder.",
+        "source": "U.S. Department of Energy, Maintaining Reliability in the Modern Power System; https://www.energy.gov/sites/prod/files/2017/01/f34/Maintaining%20Reliability%20in%20the%20Modern%20Power%20System.pdf",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Değişken yenilenebilir kaynakların şebekeye entegrasyonu için depolama (bataryalar), iletim hatlarının genişletilmesi, talep esnekliği ve daha iyi tahminler kullanılır.",
+        "source": "International Energy Agency, Integrating Solar and Wind (Executive summary); https://www.iea.org/reports/integrating-solar-and-wind/executive-summary",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Pompajlı hidroelektrik depolama suyu yukarıdaki bir hazneye pompalar ve gerektiğinde suyu türbinlerden geçirerek elektrik üretir.",
+        "source": "U.S. Department of Energy, Pumped Storage Hydropower; https://www.energy.gov/eere/water/pumped-storage-hydropower",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

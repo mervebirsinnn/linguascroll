@@ -1,0 +1,3419 @@
+{
+  "slug": "c1-ai-explanations-that-hold-up",
+  "level": "C1",
+  "title": "Explanations That Hold Up",
+  "topic": "Yapay zeka",
+  "sortOrder": 11,
+  "isFreeSample": false,
+  "paragraphs": [
+    "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics. What they want is a reason they can understand, challenge and, if necessary, correct. That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+    "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect. The first is that a system should supply evidence or reasons for its outputs. The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them. The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story. The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+    "The principles are modest, yet they expose a tension. An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy. Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected. Designers must therefore decide whom an explanation is for before they decide what it should say.",
+    "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning. If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test."
+  ],
+  "words": [
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 683,
+          "end": 687,
+          "surface": "when",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 6,
+          "surface": "a",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 77,
+          "surface": "a",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 121,
+          "surface": "a",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 262,
+          "end": 263,
+          "surface": "a",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 292,
+          "end": 293,
+          "surface": "a",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 182,
+          "surface": "a",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 363,
+          "end": 364,
+          "surface": "a",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 529,
+          "end": 530,
+          "surface": "a",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 568,
+          "end": 569,
+          "surface": "a",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 44,
+          "surface": "a",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 100,
+          "end": 101,
+          "surface": "a",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 122,
+          "end": 123,
+          "surface": "a",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 175,
+          "end": 176,
+          "surface": "a",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 75,
+          "end": 76,
+          "surface": "a",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 96,
+          "end": 97,
+          "surface": "a",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "lending",
+      "gloss": "borç verme",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 14,
+          "surface": "lending",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "algorithm",
+      "gloss": "algoritma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 15,
+          "end": 24,
+          "surface": "algorithm",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "rejects",
+      "gloss": "reddeder",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 32,
+          "surface": "rejects",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 33,
+          "end": 35,
+          "surface": "an",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 350,
+          "end": 352,
+          "surface": "an",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 434,
+          "end": 436,
+          "surface": "an",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 54,
+          "end": 56,
+          "surface": "An",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 336,
+          "end": 338,
+          "surface": "an",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "application",
+      "gloss": "başvuru",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 47,
+          "surface": "application",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 52,
+          "surface": "the",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 223,
+          "surface": "the",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 31,
+          "surface": "the",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 163,
+          "end": 166,
+          "surface": "The",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 244,
+          "surface": "The",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 321,
+          "surface": "the",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 405,
+          "end": 408,
+          "surface": "The",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 476,
+          "end": 479,
+          "surface": "the",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 549,
+          "end": 552,
+          "surface": "The",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 638,
+          "end": 641,
+          "surface": "the",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 278,
+          "end": 281,
+          "surface": "the",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 47,
+          "end": 50,
+          "surface": "the",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 191,
+          "end": 194,
+          "surface": "the",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "applicant",
+      "gloss": "başvuran",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 53,
+          "end": 62,
+          "surface": "applicant",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "rarely",
+      "gloss": "nadiren",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 69,
+          "surface": "rarely",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "wants",
+      "gloss": "ister",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 70,
+          "end": 75,
+          "surface": "wants",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "lecture",
+      "gloss": "ders, nutuk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 85,
+          "surface": "lecture",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 86,
+          "end": 88,
+          "surface": "on",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "mathematics",
+      "gloss": "matematik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 89,
+          "end": 100,
+          "surface": "mathematics",
+          "contextSentence": "When a lending algorithm rejects an application, the applicant rarely wants a lecture on mathematics.",
+          "contextSentenceTr": "Bir borç verme algoritması bir başvuruyu reddettiğinde, başvuran kişi nadiren matematik üzerine bir nutuk ister."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 106,
+          "surface": "What",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 377,
+          "end": 381,
+          "surface": "what",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 107,
+          "end": 111,
+          "surface": "they",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 129,
+          "end": 133,
+          "surface": "they",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 35,
+          "surface": "they",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 365,
+          "end": 369,
+          "surface": "they",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "want",
+      "gloss": "ister",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 116,
+          "surface": "want",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 119,
+          "surface": "is",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 175,
+          "surface": "is",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 254,
+          "surface": "is",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 560,
+          "end": 562,
+          "surface": "is",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 691,
+          "end": 693,
+          "surface": "is",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 76,
+          "surface": "is",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 93,
+          "surface": "is",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 353,
+          "surface": "is",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 93,
+          "end": 95,
+          "surface": "is",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "reason",
+      "gloss": "gerekçe",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 122,
+          "end": 128,
+          "surface": "reason",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 137,
+          "surface": "can",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 375,
+          "end": 378,
+          "surface": "can",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 293,
+          "end": 296,
+          "surface": "can",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "understand",
+      "gloss": "anlamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 138,
+          "end": 148,
+          "surface": "understand",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 388,
+          "end": 398,
+          "surface": "understand",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "challenge",
+      "gloss": "itiraz etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 159,
+          "surface": "challenge",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 160,
+          "end": 163,
+          "surface": "and",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 288,
+          "end": 291,
+          "surface": "and",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 78,
+          "end": 81,
+          "surface": "and",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 615,
+          "end": 618,
+          "surface": "and",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 674,
+          "end": 677,
+          "surface": "and",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 121,
+          "surface": "and",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "if",
+      "gloss": "eğer",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 167,
+          "surface": "if",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 184,
+          "end": 186,
+          "surface": "If",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "necessary",
+      "gloss": "gerekirse",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 177,
+          "surface": "necessary",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        }
+      ]
+    },
+    {
+      "lemma": "correct",
+      "gloss": "düzeltmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 186,
+          "surface": "correct",
+          "contextSentence": "What they want is a reason they can understand, challenge and, if necessary, correct.",
+          "contextSentenceTr": "İstedikleri, anlayabilecekleri, itiraz edebilecekleri ve gerekirse düzeltebilecekleri bir gerekçedir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 192,
+          "surface": "That",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "ordinary",
+      "gloss": "olağan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 201,
+          "surface": "ordinary",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "demand",
+      "gloss": "talep",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 202,
+          "end": 208,
+          "surface": "demand",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 209,
+          "end": 212,
+          "surface": "has",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "turned",
+      "gloss": "çevirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 219,
+          "surface": "turned",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "explanation",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 235,
+          "surface": "explanation",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 437,
+          "end": 448,
+          "surface": "explanation",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 68,
+          "surface": "explanation",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 339,
+          "end": 350,
+          "surface": "explanation",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 238,
+          "surface": "of",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 67,
+          "surface": "of",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 204,
+          "end": 206,
+          "surface": "of",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 216,
+          "end": 218,
+          "surface": "of",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 160,
+          "end": 162,
+          "surface": "of",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "machine",
+      "gloss": "makine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 239,
+          "end": 246,
+          "surface": "machine",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "decisions",
+      "gloss": "kararlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 256,
+          "surface": "decisions",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "-e dönüştürmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 257,
+          "end": 261,
+          "surface": "into",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "serious",
+      "gloss": "ciddi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 264,
+          "end": 271,
+          "surface": "serious",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "research",
+      "gloss": "araştırma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 272,
+          "end": 280,
+          "surface": "research",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "field",
+      "gloss": "alan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 281,
+          "end": 286,
+          "surface": "field",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "surprisingly",
+      "gloss": "şaşırtıcı biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 294,
+          "end": 306,
+          "surface": "surprisingly",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "slippery",
+      "gloss": "kaygan, kavranması zor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 315,
+          "surface": "slippery",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 316,
+          "end": 319,
+          "surface": "one",
+          "contextSentence": "That ordinary demand has turned the explanation of machine decisions into a serious research field, and a surprisingly slippery one.",
+          "contextSentenceTr": "Bu olağan talep, makine kararlarının açıklanmasını ciddi bir araştırma alanına ve şaşırtıcı biçimde kavranması zor bir alana dönüştürdü."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 3,
+          "end": 6,
+          "surface": "two",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "thousand",
+      "gloss": "bin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 15,
+          "surface": "thousand",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "twenty",
+      "gloss": "yirmi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 16,
+          "end": 22,
+          "surface": "twenty",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 26,
+          "surface": "one",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "united",
+      "gloss": "Birleşik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 32,
+          "end": 38,
+          "surface": "United",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "states",
+      "gloss": "Devletler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 39,
+          "end": 45,
+          "surface": "States",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "national",
+      "gloss": "Ulusal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 54,
+          "surface": "National",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "institute",
+      "gloss": "Enstitü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 64,
+          "surface": "Institute",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "standards",
+      "gloss": "Standartlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 77,
+          "surface": "Standards",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "technology",
+      "gloss": "Teknoloji",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 82,
+          "end": 92,
+          "surface": "Technology",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "published",
+      "gloss": "yayımladı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 102,
+          "surface": "published",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "four",
+      "gloss": "dört",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 107,
+          "surface": "four",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 56,
+          "end": 60,
+          "surface": "four",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "principles",
+      "gloss": "ilkeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 118,
+          "surface": "principles",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 14,
+          "surface": "principles",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 61,
+          "end": 71,
+          "surface": "principles",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 123,
+          "surface": "that",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 180,
+          "surface": "that",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 259,
+          "surface": "that",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 313,
+          "end": 317,
+          "surface": "that",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 563,
+          "end": 567,
+          "surface": "that",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 73,
+          "surface": "that",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 114,
+          "end": 118,
+          "surface": "that",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 229,
+          "end": 233,
+          "surface": "that",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 127,
+          "surface": "any",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "explainable",
+      "gloss": "açıklanabilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 139,
+          "surface": "explainable",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 146,
+          "surface": "system",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 183,
+          "end": 189,
+          "surface": "system",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 480,
+          "end": 486,
+          "surface": "system",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 570,
+          "end": 576,
+          "surface": "system",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "should",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 153,
+          "surface": "should",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 190,
+          "end": 196,
+          "surface": "should",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 285,
+          "surface": "should",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 577,
+          "end": 583,
+          "surface": "should",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 385,
+          "end": 391,
+          "surface": "should",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "respect",
+      "gloss": "uymak (ilkelere)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 154,
+          "end": 161,
+          "surface": "respect",
+          "contextSentence": "In two thousand twenty one, the United States National Institute of Standards and Technology published four principles that any explainable system should respect.",
+          "contextSentenceTr": "2021'de Amerika Birleşik Devletleri Ulusal Standartlar ve Teknoloji Enstitüsü, açıklanabilir her sistemin uyması gereken dört ilke yayımladı."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 172,
+          "surface": "first",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "supply",
+      "gloss": "sağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 197,
+          "end": 203,
+          "surface": "supply",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 204,
+          "end": 212,
+          "surface": "evidence",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 215,
+          "surface": "or",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 360,
+          "end": 362,
+          "surface": "or",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "reasons",
+      "gloss": "gerekçeler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 216,
+          "end": 223,
+          "surface": "reasons",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 224,
+          "end": 227,
+          "surface": "for",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 669,
+          "end": 672,
+          "surface": "for",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 354,
+          "end": 357,
+          "surface": "for",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 228,
+          "end": 231,
+          "surface": "its",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 496,
+          "end": 499,
+          "surface": "its",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 594,
+          "end": 597,
+          "surface": "its",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "outputs",
+      "gloss": "çıktılar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 239,
+          "surface": "outputs",
+          "contextSentence": "The first is that a system should supply evidence or reasons for its outputs.",
+          "contextSentenceTr": "İlki, bir sistemin çıktıları için kanıt ya da gerekçe sunması gerektiğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "second",
+      "gloss": "ikinci",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 251,
+          "surface": "second",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 260,
+          "end": 265,
+          "surface": "those",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "explanations",
+      "gloss": "açıklamalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 266,
+          "end": 278,
+          "surface": "explanations",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 28,
+          "end": 40,
+          "surface": "explanations",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 277,
+          "end": 289,
+          "surface": "explanations",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 288,
+          "surface": "be",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 236,
+          "end": 238,
+          "surface": "be",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 208,
+          "end": 210,
+          "surface": "be",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "meaningful",
+      "gloss": "anlamlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 289,
+          "end": 299,
+          "surface": "meaningful",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 306,
+          "surface": "which",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 87,
+          "end": 92,
+          "surface": "which",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "means",
+      "gloss": "demektir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 307,
+          "end": 312,
+          "surface": "means",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "intended",
+      "gloss": "hedeflenen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 322,
+          "end": 330,
+          "surface": "intended",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "recipient",
+      "gloss": "alıcı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 331,
+          "end": 340,
+          "surface": "recipient",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "whether",
+      "gloss": "ister",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 342,
+          "end": 349,
+          "surface": "whether",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "expert",
+      "gloss": "uzman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 353,
+          "end": 359,
+          "surface": "expert",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "customer",
+      "gloss": "müşteri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 365,
+          "end": 373,
+          "surface": "customer",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "actually",
+      "gloss": "gerçekten",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 379,
+          "end": 387,
+          "surface": "actually",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 399,
+          "end": 403,
+          "surface": "them",
+          "contextSentence": "The second is that those explanations should be meaningful, which means that the intended recipient, whether an expert or a customer, can actually understand them.",
+          "contextSentenceTr": "İkincisi, bu açıklamaların anlamlı olması, yani hedeflenen alıcının, ister uzman ister müşteri olsun, onları gerçekten anlayabilmesidir."
+        }
+      ]
+    },
+    {
+      "lemma": "third",
+      "gloss": "üçüncü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 409,
+          "end": 414,
+          "surface": "third",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "concerns",
+      "gloss": "ilgilendirir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 415,
+          "end": 423,
+          "surface": "concerns",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "accuracy",
+      "gloss": "doğruluk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 424,
+          "end": 432,
+          "surface": "accuracy",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 161,
+          "surface": "accuracy",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "-malı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 449,
+          "end": 453,
+          "surface": "must",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 313,
+          "surface": "must",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "correctly",
+      "gloss": "doğru biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 454,
+          "end": 463,
+          "surface": "correctly",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "reflect",
+      "gloss": "yansıtmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 464,
+          "end": 471,
+          "surface": "reflect",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 472,
+          "end": 475,
+          "surface": "how",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "produced",
+      "gloss": "üretti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 487,
+          "end": 495,
+          "surface": "produced",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "result",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 500,
+          "end": 506,
+          "surface": "result",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 508,
+          "end": 514,
+          "surface": "rather",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 515,
+          "end": 519,
+          "surface": "than",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "offering",
+      "gloss": "sunmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 520,
+          "end": 528,
+          "surface": "offering",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "comforting",
+      "gloss": "teselli edici",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 531,
+          "end": 541,
+          "surface": "comforting",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "story",
+      "gloss": "hikâye",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 542,
+          "end": 547,
+          "surface": "story",
+          "contextSentence": "The third concerns accuracy: an explanation must correctly reflect how the system produced its result, rather than offering a comforting story.",
+          "contextSentenceTr": "Üçüncüsü doğrulukla ilgilidir: bir açıklama, teselli edici bir hikâye sunmak yerine sistemin sonucunu nasıl ürettiğini doğru biçimde yansıtmalıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "fourth",
+      "gloss": "dördüncü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 553,
+          "end": 559,
+          "surface": "fourth",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "recognise",
+      "gloss": "fark etmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 584,
+          "end": 593,
+          "surface": "recognise",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "knowledge",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 598,
+          "end": 607,
+          "surface": "knowledge",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "limits",
+      "gloss": "sınırlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 608,
+          "end": 614,
+          "surface": "limits",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "operate",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 619,
+          "end": 626,
+          "surface": "operate",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "only",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 627,
+          "end": 631,
+          "surface": "only",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 678,
+          "end": 682,
+          "surface": "only",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "under",
+      "gloss": "altında",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 632,
+          "end": 637,
+          "surface": "under",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "conditions",
+      "gloss": "koşullar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 642,
+          "end": 652,
+          "surface": "conditions",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 653,
+          "end": 655,
+          "surface": "it",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 688,
+          "end": 690,
+          "surface": "it",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 382,
+          "end": 384,
+          "surface": "it",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 656,
+          "end": 659,
+          "surface": "was",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "designed",
+      "gloss": "tasarlandı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 660,
+          "end": 668,
+          "surface": "designed",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "sufficiently",
+      "gloss": "yeterince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 694,
+          "end": 706,
+          "surface": "sufficiently",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "confident",
+      "gloss": "emin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 707,
+          "end": 716,
+          "surface": "confident",
+          "contextSentence": "The fourth is that a system should recognise its knowledge limits and operate only under the conditions it was designed for, and only when it is sufficiently confident.",
+          "contextSentenceTr": "Dördüncüsü, bir sistemin bilgi sınırlarını fark etmesi ve yalnızca tasarlandığı koşullarda ve yalnızca yeterince emin olduğunda çalışmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 15,
+          "end": 18,
+          "surface": "are",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 126,
+          "end": 129,
+          "surface": "are",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "modest",
+      "gloss": "mütevazı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 19,
+          "end": 25,
+          "surface": "modest",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 27,
+          "end": 30,
+          "surface": "yet",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "expose",
+      "gloss": "açığa çıkarmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 36,
+          "end": 42,
+          "surface": "expose",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "tension",
+      "gloss": "gerilim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 45,
+          "end": 52,
+          "surface": "tension",
+          "contextSentence": "The principles are modest, yet they expose a tension.",
+          "contextSentenceTr": "İlkeler mütevazı ama bir gerilimi açığa çıkarıyor."
+        }
+      ]
+    },
+    {
+      "lemma": "easy",
+      "gloss": "kolay",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 81,
+          "surface": "easy",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 84,
+          "surface": "to",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 211,
+          "end": 213,
+          "surface": "to",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 257,
+          "end": 259,
+          "surface": "to",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "grasp",
+      "gloss": "kavramak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 90,
+          "surface": "grasp",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 99,
+          "surface": "often",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "simplification",
+      "gloss": "basitleştirme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 116,
+          "surface": "simplification",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 138,
+          "surface": "simplification",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 142,
+          "surface": "may",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 232,
+          "end": 235,
+          "surface": "may",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 200,
+          "end": 203,
+          "surface": "may",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "sacrifice",
+      "gloss": "feda etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 152,
+          "surface": "sacrifice",
+          "contextSentence": "An explanation that is easy to grasp is often a simplification, and a simplification may sacrifice accuracy.",
+          "contextSentenceTr": "Kolay kavranan bir açıklama çoğu zaman bir basitleştirmedir ve basitleştirme doğruluktan taviz verebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "conversely",
+      "gloss": "tersine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 173,
+          "surface": "Conversely",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "perfectly",
+      "gloss": "mükemmel biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 177,
+          "end": 186,
+          "surface": "perfectly",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 242,
+          "end": 251,
+          "surface": "perfectly",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "faithful",
+      "gloss": "sadık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 187,
+          "end": 195,
+          "surface": "faithful",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "account",
+      "gloss": "anlatım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 196,
+          "end": 203,
+          "surface": "account",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "millions",
+      "gloss": "milyonlarca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 215,
+          "surface": "millions",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "calculations",
+      "gloss": "hesaplamalar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 231,
+          "surface": "calculations",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "technically",
+      "gloss": "teknik olarak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 250,
+          "surface": "technically",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "correct",
+      "gloss": "doğru",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 251,
+          "end": 258,
+          "surface": "correct",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 259,
+          "end": 262,
+          "surface": "but",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 253,
+          "end": 256,
+          "surface": "but",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "meaningless",
+      "gloss": "anlamsız",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 263,
+          "end": 274,
+          "surface": "meaningless",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 275,
+          "end": 277,
+          "surface": "to",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 282,
+          "end": 288,
+          "surface": "person",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "affected",
+      "gloss": "etkilenen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 289,
+          "end": 297,
+          "surface": "affected",
+          "contextSentence": "Conversely, a perfectly faithful account of millions of calculations may be technically correct but meaningless to the person affected.",
+          "contextSentenceTr": "Tersine, milyonlarca hesaplamanın mükemmel biçimde sadık bir anlatımı teknik olarak doğru ama etkilenen kişi için anlamsız olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "designers",
+      "gloss": "tasarımcılar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 308,
+          "surface": "Designers",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 314,
+          "end": 323,
+          "surface": "therefore",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "decide",
+      "gloss": "karar vermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 330,
+          "surface": "decide",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 370,
+          "end": 376,
+          "surface": "decide",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "whom",
+      "gloss": "kimi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 331,
+          "end": 335,
+          "surface": "whom",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "before",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 358,
+          "end": 364,
+          "surface": "before",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "say",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 392,
+          "end": 395,
+          "surface": "say",
+          "contextSentence": "Designers must therefore decide whom an explanation is for before they decide what it should say.",
+          "contextSentenceTr": "Bu nedenle tasarımcılar, bir açıklamanın ne söylemesi gerektiğine karar vermeden önce kimin için olduğuna karar vermelidir."
+        }
+      ]
+    },
+    {
+      "lemma": "report",
+      "gloss": "rapor",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 4,
+          "end": 10,
+          "surface": "report",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 11,
+          "end": 15,
+          "surface": "also",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "holds",
+      "gloss": "değerlendirmek (hold up to)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 16,
+          "end": 21,
+          "surface": "holds",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 22,
+          "end": 27,
+          "surface": "human",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "up",
+      "gloss": "değerlendirmek (hold up to)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 41,
+          "end": 43,
+          "surface": "up",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "değerlendirmek (hold up to)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 44,
+          "end": 46,
+          "surface": "to",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 51,
+          "end": 55,
+          "surface": "same",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 72,
+          "end": 74,
+          "surface": "as",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "baseline",
+      "gloss": "temel ölçüt",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 77,
+          "end": 85,
+          "surface": "baseline",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "useful",
+      "gloss": "yararlı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 98,
+          "end": 104,
+          "surface": "useful",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "reminder",
+      "gloss": "hatırlatma",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 105,
+          "end": 113,
+          "surface": "reminder",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 119,
+          "end": 125,
+          "surface": "people",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 130,
+          "end": 133,
+          "surface": "not",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 204,
+          "end": 207,
+          "surface": "not",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "always",
+      "gloss": "her zaman",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 134,
+          "end": 140,
+          "surface": "always",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "accurate",
+      "gloss": "doğru",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 141,
+          "end": 149,
+          "surface": "accurate",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "narrators",
+      "gloss": "anlatıcılar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 150,
+          "end": 159,
+          "surface": "narrators",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 163,
+          "end": 168,
+          "surface": "their",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 169,
+          "end": 172,
+          "surface": "own",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "reasoning",
+      "gloss": "akıl yürütme",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 173,
+          "end": 182,
+          "surface": "reasoning",
+          "contextSentence": "The report also holds human explanations up to the same four principles as a baseline, which is a useful reminder that people are not always accurate narrators of their own reasoning.",
+          "contextSentenceTr": "Rapor, insan açıklamalarını da temel ölçüt olarak aynı dört ilkeye göre tartar; bu, insanların kendi akıl yürütmelerinin her zaman doğru anlatıcıları olmadığının yararlı bir hatırlatmasıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "öyleyse",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 187,
+          "end": 189,
+          "surface": "so",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "goal",
+      "gloss": "hedef",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 195,
+          "end": 199,
+          "surface": "goal",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "build",
+      "gloss": "inşa etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 214,
+          "end": 219,
+          "surface": "build",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 260,
+          "end": 265,
+          "surface": "build",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "machines",
+      "gloss": "makineler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 220,
+          "end": 228,
+          "surface": "machines",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "explain",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 234,
+          "end": 241,
+          "surface": "explain",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 266,
+          "end": 270,
+          "surface": "ones",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "kimin",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 271,
+          "end": 276,
+          "surface": "whose",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 290,
+          "end": 292,
+          "surface": "we",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "fairly",
+      "gloss": "adil biçimde",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 297,
+          "end": 303,
+          "surface": "fairly",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "gloss": "sınamak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 304,
+          "end": 308,
+          "surface": "test",
+          "contextSentence": "If so, the goal may not be to build machines that explain perfectly, but to build ones whose explanations we can fairly test.",
+          "contextSentenceTr": "Öyleyse hedef, kusursuz açıklayan makineler kurmak değil, açıklamalarını adil biçimde sınayabileceğimiz makineler kurmak olabilir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which statement best summarises the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 54,
+        "end": 162
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Good explanations of machine decisions must balance clarity and accuracy.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin anlaşılırlık ile doğruluk arasındaki gerilimi ve dengeyi anlatır."
+        },
+        {
+          "key": "o2",
+          "text": "Explaining machine decisions is a problem that researchers have largely solved.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Alan 'kaygan' olarak anılır; çözülmüş değildir."
+        },
+        {
+          "key": "o3",
+          "text": "Human explanations are always more reliable than those of machines.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin insanların da her zaman doğru anlatıcı olmadığını söyler."
+        },
+        {
+          "key": "o4",
+          "text": "Companies should avoid using algorithms to make decisions at all.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin algoritmayı yasaklamaz; açıklamanın niteliğini tartışır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What does the principle of knowledge limits require?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 568,
+        "end": 716
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "That it acts within its design and confidence",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin sistemin yalnızca tasarlandığı koşullarda VE yalnızca yeterince emin olduğunda çalışması gerektiğini söyler; iki şart birlikte aranır."
+        },
+        {
+          "key": "o2",
+          "text": "That it explains every calculation it performs in full detail",
+          "isCorrect": false,
+          "trapType": "copy",
+          "explanation": "Her hesaplamanın anlatılması bu ilkeyle ilgili değildir; metin bunu anlamsız bulur."
+        },
+        {
+          "key": "o3",
+          "text": "That it refuses to answer whenever a customer asks a question",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Müşteri sorularını reddetmek anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "That it keeps its reasoning private to protect trade secrets",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "İlk ilke sistemin gerekçe sunmasını ister."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “slippery” mean in the first paragraph?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 262,
+        "end": 319
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Dangerous for the public",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Metin alanı tehlikeli değil, kavraması zor olarak niteler."
+        },
+        {
+          "key": "o2",
+          "text": "Covered with water",
+          "isCorrect": false,
+          "trapType": "sound",
+          "explanation": "Sözcüğün gerçek anlamıdır; burada mecaz kullanılmıştır."
+        },
+        {
+          "key": "o3",
+          "text": "Difficult to handle",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Slippery burada tutması, tam olarak kavraması zor demektir."
+        },
+        {
+          "key": "o4",
+          "text": "Moving very quickly",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Alanın hızından söz edilmez."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the last paragraph suggest?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 119,
+        "end": 182
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Machines already explain themselves better than people.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir karşılaştırma sonucu vermez."
+        },
+        {
+          "key": "o2",
+          "text": "Testing explanations is unnecessary for human beings.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde insanlar için sınama gereksiz sayılmaz."
+        },
+        {
+          "key": "o3",
+          "text": "Researchers want machines to copy human mistakes.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Amaç hataları kopyalamak değil, açıklamaları adil biçimde sınamaktır."
+        },
+        {
+          "key": "o4",
+          "text": "People can be unreliable explainers too.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin insanların kendi akıl yürütmelerinin her zaman doğru anlatıcısı olmadığını söyler."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "NIST'in açıklanabilir yapay zeka raporu (NISTIR 8312, 2021) dört ilke tanımlar: açıklama (explanation), anlamlılık (meaningful), açıklama doğruluğu (explanation accuracy) ve bilgi sınırları (knowledge limits: sistem yalnızca tasarlandığı koşullarda ve yalnızca çıktısında yeterli güvene ulaştığında çalışmalıdır).",
+        "source": "NIST (ABD Ulusal Standartlar ve Teknoloji Enstitüsü), NISTIR 8312, Four Principles of Explainable Artificial Intelligence, 2021 (P. Jonathon Phillips ve diğerleri); https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Rapor, insanların verdiği açıklamaları aynı dört ilkeye göre temel ölçüt olarak değerlendirir.",
+        "source": "NIST (ABD Ulusal Standartlar ve Teknoloji Enstitüsü), NISTIR 8312, Four Principles of Explainable Artificial Intelligence, 2021 (P. Jonathon Phillips ve diğerleri); https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

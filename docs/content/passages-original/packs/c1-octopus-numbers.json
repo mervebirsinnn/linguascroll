@@ -1,0 +1,3281 @@
+{
+  "slug": "c1-octopus-numbers",
+  "level": "C1",
+  "title": "Handle Octopus Numbers With Care",
+  "topic": "Biyoloji",
+  "sortOrder": 16,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look. That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree. It makes a good test case for reading popular science. That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body. Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+    "Its blue blood is equally well documented. The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead. Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry. None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+    "The popular claim that an octopus has nine brains is different. It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan. Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms. The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it. Readers who want to repeat an octopus fact would do well to name the source and the date."
+  ],
+  "words": [
+    {
+      "lemma": "few",
+      "gloss": "az",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 3,
+          "surface": "Few",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "animals",
+      "gloss": "hayvanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 4,
+          "end": 11,
+          "surface": "animals",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "invite",
+      "gloss": "davet etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 18,
+          "surface": "invite",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "kadar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 19,
+          "end": 21,
+          "surface": "as",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 22,
+          "end": 26,
+          "surface": "many",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "superlatives",
+      "gloss": "üstünlük ifadeleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 39,
+          "surface": "superlatives",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 40,
+          "end": 42,
+          "surface": "as",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 278,
+          "end": 280,
+          "surface": "as",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 288,
+          "surface": "as",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 43,
+          "end": 46,
+          "surface": "the",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 60,
+          "end": 63,
+          "surface": "the",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 371,
+          "end": 374,
+          "surface": "the",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 388,
+          "end": 391,
+          "surface": "the",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 419,
+          "end": 422,
+          "surface": "the",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 446,
+          "end": 449,
+          "surface": "the",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 481,
+          "end": 484,
+          "surface": "the",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 43,
+          "end": 46,
+          "surface": "The",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 141,
+          "surface": "the",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 235,
+          "end": 238,
+          "surface": "the",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 260,
+          "surface": "the",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 377,
+          "end": 380,
+          "surface": "the",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 118,
+          "end": 121,
+          "surface": "the",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 184,
+          "end": 187,
+          "surface": "the",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 280,
+          "end": 283,
+          "surface": "the",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 290,
+          "end": 293,
+          "surface": "The",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 313,
+          "end": 316,
+          "surface": "the",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 391,
+          "end": 394,
+          "surface": "the",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 480,
+          "end": 483,
+          "surface": "the",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 495,
+          "end": 498,
+          "surface": "the",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "octopus",
+      "gloss": "ahtapot",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 54,
+          "surface": "octopus",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 33,
+          "surface": "octopus",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 445,
+          "end": 452,
+          "surface": "octopus",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 59,
+          "surface": "yet",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 64,
+          "end": 68,
+          "surface": "most",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "repeated",
+      "gloss": "tekrarlanan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 77,
+          "surface": "repeated",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "claims",
+      "gloss": "iddialar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 78,
+          "end": 84,
+          "surface": "claims",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 209,
+          "surface": "claims",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 90,
+          "surface": "about",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 91,
+          "end": 93,
+          "surface": "it",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 163,
+          "end": 165,
+          "surface": "it",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 249,
+          "surface": "It",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 309,
+          "surface": "it",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 409,
+          "end": 411,
+          "surface": "it",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 356,
+          "end": 358,
+          "surface": "it",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 64,
+          "end": 66,
+          "surface": "It",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 411,
+          "end": 413,
+          "surface": "it",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "deserve",
+      "gloss": "hak etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 101,
+          "surface": "deserve",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 103,
+          "surface": "a",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 256,
+          "end": 257,
+          "surface": "a",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 78,
+          "surface": "a",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 319,
+          "end": 320,
+          "surface": "a",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 79,
+          "surface": "a",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 162,
+          "surface": "a",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 343,
+          "end": 344,
+          "surface": "a",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "careful",
+      "gloss": "dikkatli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 111,
+          "surface": "careful",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "second",
+      "gloss": "ikinci",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 112,
+          "end": 118,
+          "surface": "second",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "look",
+      "gloss": "bakış",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 119,
+          "end": 123,
+          "surface": "look",
+          "contextSentence": "Few animals invite as many superlatives as the octopus, yet the most repeated claims about it deserve a careful second look.",
+          "contextSentenceTr": "Çok az hayvan ahtapot kadar çok üstünlük ifadesini çağırır; yine de onun hakkındaki en çok tekrarlanan iddialar dikkatli bir ikinci bakışı hak eder."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 125,
+          "end": 129,
+          "surface": "That",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 302,
+          "end": 306,
+          "surface": "That",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "sentence",
+      "gloss": "cümle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 130,
+          "end": 138,
+          "surface": "sentence",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 142,
+          "surface": "may",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 505,
+          "end": 508,
+          "surface": "may",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 245,
+          "end": 248,
+          "surface": "may",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "sound",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 148,
+          "surface": "sound",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "cautious",
+      "gloss": "temkinli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 149,
+          "end": 157,
+          "surface": "cautious",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 162,
+          "surface": "but",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 334,
+          "end": 337,
+          "surface": "but",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "reflects",
+      "gloss": "yansıtmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 166,
+          "end": 174,
+          "surface": "reflects",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 178,
+          "surface": "how",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "science",
+      "gloss": "bilim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 179,
+          "end": 186,
+          "surface": "science",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 293,
+          "end": 300,
+          "surface": "science",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "actually",
+      "gloss": "gerçekten",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 195,
+          "surface": "actually",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "works",
+      "gloss": "çalışır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 196,
+          "end": 201,
+          "surface": "works",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 213,
+          "surface": "are",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "korunmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 214,
+          "end": 218,
+          "surface": "kept",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 219,
+          "end": 223,
+          "surface": "when",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "several",
+      "gloss": "birkaç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 224,
+          "end": 231,
+          "surface": "several",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "sources",
+      "gloss": "kaynaklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 239,
+          "surface": "sources",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 252,
+          "surface": "sources",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "agree",
+      "gloss": "aynı fikirde olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 240,
+          "end": 245,
+          "surface": "agree",
+          "contextSentence": "That sentence may sound cautious, but it reflects how science actually works: claims are kept when several sources agree.",
+          "contextSentenceTr": "Bu cümle temkinli görünebilir ama bilimin gerçekte nasıl işlediğini yansıtır: iddialar birkaç kaynak hemfikir olduğunda korunur."
+        }
+      ]
+    },
+    {
+      "lemma": "makes",
+      "gloss": "yapar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 250,
+          "end": 255,
+          "surface": "makes",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "good",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 262,
+          "surface": "good",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "gloss": "test",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 263,
+          "end": 267,
+          "surface": "test",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "case",
+      "gloss": "örnek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 268,
+          "end": 272,
+          "surface": "case",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 276,
+          "surface": "for",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 335,
+          "surface": "for",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 279,
+          "surface": "for",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "reading",
+      "gloss": "okumak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 277,
+          "end": 284,
+          "surface": "reading",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "popular",
+      "gloss": "popüler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 285,
+          "end": 292,
+          "surface": "popular",
+          "contextSentence": "It makes a good test case for reading popular science.",
+          "contextSentenceTr": "Popüler bilimi okumak için iyi bir deneme örneğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 11,
+          "surface": "popular",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahiptir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 313,
+          "surface": "has",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 34,
+          "end": 37,
+          "surface": "has",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 314,
+          "end": 319,
+          "surface": "three",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "hearts",
+      "gloss": "kalpler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 320,
+          "end": 326,
+          "surface": "hearts",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 327,
+          "end": 329,
+          "surface": "is",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 15,
+          "end": 17,
+          "surface": "is",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 316,
+          "end": 318,
+          "surface": "is",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 52,
+          "surface": "is",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 303,
+          "surface": "is",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 326,
+          "surface": "is",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "well",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 330,
+          "end": 334,
+          "surface": "well",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 26,
+          "end": 30,
+          "surface": "well",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 204,
+          "surface": "well",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 467,
+          "end": 471,
+          "surface": "well",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "established",
+      "gloss": "yerleşmiş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 346,
+          "surface": "established",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 348,
+          "end": 351,
+          "surface": "two",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 224,
+          "surface": "two",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "pump",
+      "gloss": "pompalamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 352,
+          "end": 356,
+          "surface": "pump",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 357,
+          "end": 362,
+          "surface": "blood",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 9,
+          "end": 14,
+          "surface": "blood",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 132,
+          "surface": "blood",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 244,
+          "surface": "blood",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "içinden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 363,
+          "end": 370,
+          "surface": "through",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "gills",
+      "gloss": "solungaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 375,
+          "end": 380,
+          "surface": "gills",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "while",
+      "gloss": "iken",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 382,
+          "end": 387,
+          "surface": "while",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 475,
+          "end": 480,
+          "surface": "while",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 233,
+          "end": 238,
+          "surface": "while",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "third",
+      "gloss": "üçüncü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 392,
+          "end": 397,
+          "surface": "third",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "circulates",
+      "gloss": "dolaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 398,
+          "end": 408,
+          "surface": "circulates",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresine",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 412,
+          "end": 418,
+          "surface": "around",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 423,
+          "end": 427,
+          "surface": "body",
+          "contextSentence": "That it has three hearts is well established: two pump blood through the gills, while the third circulates it around the body.",
+          "contextSentenceTr": "Üç kalbi olduğu iyi yerleşmiş bir bilgidir: ikisi kanı solungaçlardan geçirir, üçüncüsü ise vücuda dolaştırır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 450,
+          "end": 454,
+          "surface": "body",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reports",
+      "gloss": "raporlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 429,
+          "end": 436,
+          "surface": "Reports",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "add",
+      "gloss": "eklemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 437,
+          "end": 440,
+          "surface": "add",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 441,
+          "end": 445,
+          "surface": "that",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 104,
+          "surface": "that",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 372,
+          "end": 376,
+          "surface": "that",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 22,
+          "surface": "that",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 109,
+          "surface": "that",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 308,
+          "end": 312,
+          "surface": "that",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 338,
+          "end": 342,
+          "surface": "that",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "heart",
+      "gloss": "kalp",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 455,
+          "end": 460,
+          "surface": "heart",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "stops",
+      "gloss": "durmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 461,
+          "end": 466,
+          "surface": "stops",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "beating",
+      "gloss": "atmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 467,
+          "end": 474,
+          "surface": "beating",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "animal",
+      "gloss": "hayvan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 485,
+          "end": 491,
+          "surface": "animal",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "swims",
+      "gloss": "yüzmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 492,
+          "end": 497,
+          "surface": "swims",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 499,
+          "end": 504,
+          "surface": "which",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "help",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 509,
+          "end": 513,
+          "surface": "help",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "explain",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 514,
+          "end": 521,
+          "surface": "explain",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 522,
+          "end": 525,
+          "surface": "why",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "octopuses",
+      "gloss": "ahtapotlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 526,
+          "end": 535,
+          "surface": "octopuses",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 536,
+          "end": 543,
+          "surface": "usually",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "prefer",
+      "gloss": "tercih etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 544,
+          "end": 550,
+          "surface": "prefer",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 551,
+          "end": 553,
+          "surface": "to",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 192,
+          "end": 194,
+          "surface": "to",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 432,
+          "end": 434,
+          "surface": "to",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 472,
+          "end": 474,
+          "surface": "to",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "crawl",
+      "gloss": "sürünmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 554,
+          "end": 559,
+          "surface": "crawl",
+          "contextSentence": "Reports add that the body heart stops beating while the animal swims, which may help explain why octopuses usually prefer to crawl.",
+          "contextSentenceTr": "Raporlar, hayvan yüzerken vücut kalbinin atmayı bıraktığını ekler; bu, ahtapotların neden genellikle sürünmeyi tercih ettiğini açıklamaya yardım edebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "Its",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 289,
+          "end": 292,
+          "surface": "its",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 146,
+          "end": 149,
+          "surface": "its",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "blue",
+      "gloss": "mavi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 8,
+          "surface": "blue",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "equally",
+      "gloss": "eşit derecede",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 25,
+          "surface": "equally",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "documented",
+      "gloss": "belgelenmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 41,
+          "surface": "documented",
+          "contextSentence": "Its blue blood is equally well documented.",
+          "contextSentenceTr": "Mavi kanı da aynı derecede iyi belgelenmiştir."
+        }
+      ]
+    },
+    {
+      "lemma": "colour",
+      "gloss": "renk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 53,
+          "surface": "colour",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "comes",
+      "gloss": "gelir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 54,
+          "end": 59,
+          "surface": "comes",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 60,
+          "end": 64,
+          "surface": "from",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "hemocyanin",
+      "gloss": "hemosiyanin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 75,
+          "surface": "hemocyanin",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 183,
+          "surface": "Hemocyanin",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "copper",
+      "gloss": "bakır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 79,
+          "end": 85,
+          "surface": "copper",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "based",
+      "gloss": "temelli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 91,
+          "surface": "based",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 152,
+          "surface": "based",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "protein",
+      "gloss": "protein",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 92,
+          "end": 99,
+          "surface": "protein",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "carries",
+      "gloss": "taşımak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 105,
+          "end": 112,
+          "surface": "carries",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "oxygen",
+      "gloss": "oksijen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 119,
+          "surface": "oxygen",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 218,
+          "end": 224,
+          "surface": "oxygen",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 121,
+          "end": 126,
+          "surface": "human",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "uses",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 133,
+          "end": 137,
+          "surface": "uses",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "iron",
+      "gloss": "demir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 146,
+          "surface": "iron",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "hemoglobin",
+      "gloss": "hemoglobin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 153,
+          "end": 163,
+          "surface": "hemoglobin",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "instead",
+      "gloss": "bunun yerine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 164,
+          "end": 171,
+          "surface": "instead",
+          "contextSentence": "The colour comes from hemocyanin, a copper-based protein that carries oxygen; human blood uses the iron-based hemoglobin instead.",
+          "contextSentenceTr": "Renk, oksijen taşıyan bakır temelli bir protein olan hemosiyaninden gelir; insan kanı bunun yerine demir temelli hemoglobini kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "appears",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 191,
+          "surface": "appears",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 195,
+          "end": 199,
+          "surface": "work",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 207,
+          "surface": "in",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 403,
+          "end": 405,
+          "surface": "in",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 145,
+          "surface": "in",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "cold",
+      "gloss": "soğuk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 208,
+          "end": 212,
+          "surface": "cold",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "low",
+      "gloss": "düşük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 217,
+          "surface": "low",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "water",
+      "gloss": "su",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 230,
+          "surface": "water",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 232,
+          "end": 234,
+          "surface": "so",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "reflect",
+      "gloss": "yansıtmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 249,
+          "end": 256,
+          "surface": "reflect",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "animal's",
+      "gloss": "hayvan (iyelik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 269,
+          "surface": "animal's",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 122,
+          "end": 130,
+          "surface": "animal's",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "habitat",
+      "gloss": "yaşam alanı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 270,
+          "end": 277,
+          "surface": "habitat",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 281,
+          "end": 285,
+          "surface": "much",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "ancestry",
+      "gloss": "soy",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 301,
+          "surface": "ancestry",
+          "contextSentence": "Hemocyanin appears to work well in cold, low-oxygen water, so the blood may reflect the animal's habitat as much as its ancestry.",
+          "contextSentenceTr": "Hemosiyanin soğuk, düşük oksijenli suda iyi çalışıyor gibi görünür; bu yüzden kan, hayvanın soyunu kadar yaşam alanını da yansıtıyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "none",
+      "gloss": "hiçbiri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 303,
+          "end": 307,
+          "surface": "None",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 310,
+          "surface": "of",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 115,
+          "end": 117,
+          "surface": "of",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 183,
+          "surface": "of",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 311,
+          "end": 315,
+          "surface": "this",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "substitute",
+      "gloss": "yerine geçen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 331,
+          "surface": "substitute",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "direct",
+      "gloss": "doğrudan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 336,
+          "end": 342,
+          "surface": "direct",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "measurement",
+      "gloss": "ölçüm",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 343,
+          "end": 354,
+          "surface": "measurement",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "simply",
+      "gloss": "sadece",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 359,
+          "end": 365,
+          "surface": "simply",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "shows",
+      "gloss": "gösterir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 371,
+          "surface": "shows",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 381,
+          "end": 385,
+          "surface": "same",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "fact",
+      "gloss": "olgu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 386,
+          "end": 390,
+          "surface": "fact",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 453,
+          "end": 457,
+          "surface": "fact",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 391,
+          "end": 394,
+          "surface": "can",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 362,
+          "end": 365,
+          "surface": "can",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 395,
+          "end": 397,
+          "surface": "be",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "read",
+      "gloss": "okunmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 398,
+          "end": 402,
+          "surface": "read",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 406,
+          "end": 410,
+          "surface": "more",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 411,
+          "end": 415,
+          "surface": "than",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 386,
+          "end": 390,
+          "surface": "than",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 416,
+          "end": 419,
+          "surface": "one",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 420,
+          "end": 423,
+          "surface": "way",
+          "contextSentence": "None of this is a substitute for direct measurement; it simply shows that the same fact can be read in more than one way.",
+          "contextSentenceTr": "Bunların hiçbiri doğrudan ölçümün yerini tutmaz; yalnızca aynı olgunun birden fazla biçimde okunabileceğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "claim",
+      "gloss": "iddia",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 12,
+          "end": 17,
+          "surface": "claim",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 25,
+          "surface": "an",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 442,
+          "end": 444,
+          "surface": "an",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "nine",
+      "gloss": "dokuz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 42,
+          "surface": "nine",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "brains",
+      "gloss": "beyinler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 43,
+          "end": 49,
+          "surface": "brains",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 62,
+          "surface": "different",
+          "contextSentence": "The popular claim that an octopus has nine brains is different.",
+          "contextSentenceTr": "Bir ahtapotun dokuz beyni olduğu yönündeki popüler iddia farklıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "compresses",
+      "gloss": "sıkıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 67,
+          "end": 77,
+          "surface": "compresses",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "real",
+      "gloss": "gerçek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 80,
+          "end": 84,
+          "surface": "real",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "observation",
+      "gloss": "gözlem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 96,
+          "surface": "observation",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "namely",
+      "gloss": "yani",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 98,
+          "end": 104,
+          "surface": "namely",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 114,
+          "surface": "most",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "neurons",
+      "gloss": "sinir hücreleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 131,
+          "end": 138,
+          "surface": "neurons",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "sit",
+      "gloss": "durmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 139,
+          "end": 142,
+          "surface": "sit",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "arms",
+      "gloss": "kollar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 150,
+          "end": 154,
+          "surface": "arms",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 288,
+          "surface": "arms",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "içine",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 160,
+          "surface": "into",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "slogan",
+      "gloss": "slogan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 169,
+          "surface": "slogan",
+          "contextSentence": "It compresses a real observation, namely that most of the animal's neurons sit in its arms, into a slogan.",
+          "contextSentenceTr": "Gerçek bir gözlemi, yani hayvanın sinir hücrelerinin çoğunun kollarında bulunduğunu, bir sloganın içine sıkıştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 317,
+          "end": 323,
+          "surface": "slogan",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "estimates",
+      "gloss": "tahminler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 180,
+          "surface": "Estimates",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "proportion",
+      "gloss": "oran",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 188,
+          "end": 198,
+          "surface": "proportion",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "vary",
+      "gloss": "değişir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 203,
+          "surface": "vary",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "pbs",
+      "gloss": "PBS",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 205,
+          "end": 208,
+          "surface": "PBS",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "gives",
+      "gloss": "vermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 209,
+          "end": 214,
+          "surface": "gives",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 215,
+          "end": 220,
+          "surface": "about",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "thirds",
+      "gloss": "üçte",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 225,
+          "end": 231,
+          "surface": "thirds",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "other",
+      "gloss": "başka",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 239,
+          "end": 244,
+          "surface": "other",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "cite",
+      "gloss": "anmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 253,
+          "end": 257,
+          "surface": "cite",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "lower",
+      "gloss": "daha düşük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 258,
+          "end": 263,
+          "surface": "lower",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "percentages",
+      "gloss": "yüzdeler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 264,
+          "end": 275,
+          "surface": "percentages",
+          "contextSentence": "Estimates of the proportion vary: PBS gives about two thirds, while other sources cite lower percentages for the arms.",
+          "contextSentenceTr": "Oran tahminleri değişir: PBS yaklaşık üçte ikisini verir; başka kaynaklar ise kollar için daha düşük yüzdeler anar."
+        }
+      ]
+    },
+    {
+      "lemma": "lesson",
+      "gloss": "ders",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 294,
+          "end": 300,
+          "surface": "lesson",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 304,
+          "end": 307,
+          "surface": "not",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "false",
+      "gloss": "yanlış",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 327,
+          "end": 332,
+          "surface": "false",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "memorable",
+      "gloss": "akılda kalıcı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 345,
+          "end": 354,
+          "surface": "memorable",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "number",
+      "gloss": "sayı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 355,
+          "end": 361,
+          "surface": "number",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "travel",
+      "gloss": "yolculuk etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 366,
+          "end": 372,
+          "surface": "travel",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "much",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 373,
+          "end": 377,
+          "surface": "much",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "further",
+      "gloss": "daha uzağa",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 378,
+          "end": 385,
+          "surface": "further",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 395,
+          "end": 403,
+          "surface": "evidence",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "behind",
+      "gloss": "arkasındaki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 404,
+          "end": 410,
+          "surface": "behind",
+          "contextSentence": "The lesson is not that the slogan is false, but that a memorable number can travel much further than the evidence behind it.",
+          "contextSentenceTr": "Ders, sloganın yanlış olduğu değil, akılda kalıcı bir sayının arkasındaki kanıttan çok daha uzağa gidebileceğidir."
+        }
+      ]
+    },
+    {
+      "lemma": "readers",
+      "gloss": "okuyucular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 415,
+          "end": 422,
+          "surface": "Readers",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 423,
+          "end": 426,
+          "surface": "who",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "want",
+      "gloss": "istemek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 427,
+          "end": 431,
+          "surface": "want",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "repeat",
+      "gloss": "tekrarlamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 435,
+          "end": 441,
+          "surface": "repeat",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-ecekti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 458,
+          "end": 463,
+          "surface": "would",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 464,
+          "end": 466,
+          "surface": "do",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "name",
+      "gloss": "adlandırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 475,
+          "end": 479,
+          "surface": "name",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "source",
+      "gloss": "kaynak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 484,
+          "end": 490,
+          "surface": "source",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 491,
+          "end": 494,
+          "surface": "and",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    },
+    {
+      "lemma": "date",
+      "gloss": "tarih",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 499,
+          "end": 503,
+          "surface": "date",
+          "contextSentence": "Readers who want to repeat an octopus fact would do well to name the source and the date.",
+          "contextSentenceTr": "Bir ahtapot olgusunu tekrarlamak isteyen okuyucular kaynağı ve tarihi belirtmeyi iyi ederdi."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the central message of the passage?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 343,
+        "end": 413
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Most famous octopus facts are myths",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Üç kalp ve mavi kan iyi belgelenmiş olgulardır."
+        },
+        {
+          "key": "o2",
+          "text": "Octopus blood is red despite appearances",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Kanı mavidir."
+        },
+        {
+          "key": "o3",
+          "text": "Researchers agree on every octopus figure",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Oran tahminleri kaynaklara göre değişir."
+        },
+        {
+          "key": "o4",
+          "text": "Famous octopus claims need checking",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin ünlü ahtapot iddialarının dikkatle gözden geçirilmesini savunur."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Where does the blue colour of the blood come from?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 43,
+        "end": 119
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A chemical in the animal's food",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Beslenme anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "A copper-based protein",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin hemosiyanini bakır temelli protein olarak söyler."
+        },
+        {
+          "key": "o3",
+          "text": "A protein that contains iron",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Demir insan kanıdır."
+        },
+        {
+          "key": "o4",
+          "text": "The colour of the surrounding sea",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Deniz rengi anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “slogan” mean in the last paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 64,
+        "end": 96
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A rule about animal care",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Bakım kuralı anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "A type of research method",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Araştırma bağlamı yanıltır."
+        },
+        {
+          "key": "o3",
+          "text": "A short, catchy phrase",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Slogan, kısa ve akılda kalıcı ifadedir."
+        },
+        {
+          "key": "o4",
+          "text": "A detailed scientific report",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini anlatır."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the discussion of PBS and other sources suggest?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 171,
+        "end": 289
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Exact figures are still uncertain",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Kaynaklar farklı oranlar verir; kesin rakamlar belirsizdir."
+        },
+        {
+          "key": "o2",
+          "text": "PBS has made a serious mistake",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Hata suçlaması yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Arms contain no nerve cells at all",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Kollarda sinir hücresi vardır."
+        },
+        {
+          "key": "o4",
+          "text": "The slogan is completely correct",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin sloganı basitleştirme olarak sunar."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Ahtapotun üç kalbi vardır (ikisi solungaçlara, biri vücuda pompalar); vücut kalbi ahtapot yüzerken atmayı bırakır, bu yüzden sürünmeyi tercih edebilir.",
+        "source": "PBS Nature, Octopus (other species); https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Mavi kan bakır temelli hemosiyaninden gelir (insan kanı demirli hemoglobin kullanır); hemosiyanin soğuk, düşük oksijenli suda etkilidir.",
+        "source": "Smithsonian Magazine, Ten wild facts about octopuses: they have three hearts, big brains and blue blood; https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Sinir hücrelerinin yaklaşık üçte ikisi kollardadır (PBS); başka kaynaklar kollar için daha düşük yüzdeler verir; 'dokuz beyin' bir basitleştirmedir.",
+        "source": "PBS Nature, Octopus (other species); https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

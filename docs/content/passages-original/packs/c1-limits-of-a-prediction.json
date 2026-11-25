@@ -1,0 +1,787 @@
+{
+  "slug": "c1-limits-of-a-prediction",
+  "level": "C1",
+  "title": "The limits of a prediction",
+  "topic": "Bilim · Araştırma yöntemleri",
+  "sortOrder": 201,
+  "isFreeSample": false,
+  "paragraphs": [
+    "A research team developed a model to predict demand for public transport.",
+    "Its accuracy was impressive during ordinary weeks.",
+    "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+    "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones."
+  ],
+  "words": [
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 26,
+          "end": 27,
+          "surface": "a",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "research",
+      "gloss": "araştırma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 2,
+          "end": 10,
+          "surface": "research",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "team",
+      "gloss": "ekibi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 15,
+          "surface": "team",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "developed",
+      "gloss": "geliştirdi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 25,
+          "surface": "developed",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "model",
+      "gloss": "model",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 33,
+          "surface": "model",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "amacıyla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 34,
+          "end": 36,
+          "surface": "to",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "predict",
+      "gloss": "tahmin etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 44,
+          "surface": "predict",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "demand",
+      "gloss": "talep",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 51,
+          "surface": "demand",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 55,
+          "surface": "for",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "public",
+      "gloss": "toplu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 62,
+          "surface": "public",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "transport",
+      "gloss": "ulaşım",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 72,
+          "surface": "transport",
+          "contextSentence": "A research team developed a model to predict demand for public transport.",
+          "contextSentenceTr": "Bir araştırma ekibi toplu taşıma talebini tahmin etmek için bir model geliştirdi."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "Its",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "accuracy",
+      "gloss": "doğruluğu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 12,
+          "surface": "accuracy",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 16,
+          "surface": "was",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "impressive",
+      "gloss": "etkileyici",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 27,
+          "surface": "impressive",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "during",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 34,
+          "surface": "during",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "ordinary",
+      "gloss": "olağan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 35,
+          "end": 43,
+          "surface": "ordinary",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "weeks",
+      "gloss": "haftalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 44,
+          "end": 49,
+          "surface": "weeks",
+          "contextSentence": "Its accuracy was impressive during ordinary weeks.",
+          "contextSentenceTr": "Modelin doğruluğu sıradan haftalarda etkileyiciydi."
+        }
+      ]
+    },
+    {
+      "lemma": "unexpected",
+      "gloss": "beklenmedik",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 10,
+          "surface": "Unexpected",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "disruptions",
+      "gloss": "aksaklıklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 22,
+          "surface": "disruptions",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "nevertheless",
+      "gloss": "buna rağmen",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 24,
+          "end": 36,
+          "surface": "nevertheless",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "exposed",
+      "gloss": "ortaya çıkardı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 45,
+          "surface": "exposed",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "weaknesses",
+      "gloss": "zayıflıklar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 46,
+          "end": 56,
+          "surface": "weaknesses",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 61,
+          "surface": "that",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "average",
+      "gloss": "ortalama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 69,
+          "surface": "average",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "performance",
+      "gloss": "performans",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 70,
+          "end": 81,
+          "surface": "performance",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "geçmiş zaman yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 85,
+          "surface": "had",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "concealed",
+      "gloss": "gizlemişti",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 86,
+          "end": 95,
+          "surface": "concealed",
+          "contextSentence": "Unexpected disruptions, nevertheless, exposed weaknesses that average performance had concealed.",
+          "contextSentenceTr": "Yine de beklenmedik aksaklıklar, ortalama performansın gizlediği zayıflıkları ortaya çıkardı."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli nesne",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 4,
+          "end": 15,
+          "surface": "researchers",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "therefore",
+      "gloss": "bu nedenle",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 16,
+          "end": 25,
+          "surface": "therefore",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "argued",
+      "gloss": "savundular, yapılması gerektiğini ileri sürdüler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 26,
+          "end": 32,
+          "surface": "argued",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "savundular, yapılması gerektiğini ileri sürdüler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 33,
+          "end": 36,
+          "surface": "for",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "evaluating",
+      "gloss": "değerlendirme",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 37,
+          "end": 47,
+          "surface": "evaluating",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "predictions",
+      "gloss": "tahminler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 48,
+          "end": 59,
+          "surface": "predictions",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "under",
+      "gloss": "olağan dışı koşullarda",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 60,
+          "end": 65,
+          "surface": "under",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "exceptional",
+      "gloss": "olağan dışı koşullarda",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 66,
+          "end": 77,
+          "surface": "exceptional",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "conditions",
+      "gloss": "olağan dışı koşullarda",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 78,
+          "end": 88,
+          "surface": "conditions",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "yanı sıra; ... da",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 89,
+          "end": 91,
+          "surface": "as",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 97,
+          "end": 99,
+          "surface": "as",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "well",
+      "gloss": "yanı sıra; ... da",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 92,
+          "end": 96,
+          "surface": "well",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "routine",
+      "gloss": "normal koşullar (ones burada conditions sözcüğünün yerine geçer)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 100,
+          "end": 107,
+          "surface": "routine",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    },
+    {
+      "lemma": "ones",
+      "gloss": "normal koşullar (ones burada conditions sözcüğünün yerine geçer)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 108,
+          "end": 112,
+          "surface": "ones",
+          "contextSentence": "The researchers therefore argued for evaluating predictions under exceptional conditions as well as routine ones.",
+          "contextSentenceTr": "Bu yüzden araştırmacılar tahminlerin olağan koşulların yanı sıra olağanüstü koşullarda da değerlendirilmesini savundu."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the central argument?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 0,
+        "end": 73
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Models should be abandoned entirely.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Modelin terk edilmesi önerilmiyor."
+        },
+        {
+          "key": "o2",
+          "text": "Reliable evaluation must include unusual situations.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Olağandışı koşullar da değerlendirmeye dahil edilmeli."
+        },
+        {
+          "key": "o3",
+          "text": "Transport demand cannot be predicted.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Olağan haftalarda tahmin başarılı."
+        },
+        {
+          "key": "o4",
+          "text": "Accuracy is always a misleading concept.",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Doğruluğun her zaman yanıltıcı olduğu söylenmiyor."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "inference",
+      "prompt": "What can be inferred about average performance?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 0,
+        "end": 73
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It was deliberately falsified.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Veri uydurma iddiası yok."
+        },
+        {
+          "key": "o2",
+          "text": "It was lower than every individual prediction.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Sayısal karşılaştırma verilmiyor."
+        },
+        {
+          "key": "o3",
+          "text": "It can hide failures in particular circumstances.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Ortalama başarı özel koşullardaki zayıflıkları gizleyebiliyor."
+        },
+        {
+          "key": "o4",
+          "text": "It automatically accounts for disruptions.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Aksaklıkların etkisi ayrıca ortaya çıkıyor."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "“Concealed” most nearly means…",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 0,
+        "end": 96
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Kept hidden",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Zayıflıkların görünmemesi kastediliyor."
+        },
+        {
+          "key": "o2",
+          "text": "Repeated accurately",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Tekrarlama anlamı yok."
+        },
+        {
+          "key": "o3",
+          "text": "Made permanent",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kalıcılık anlatılmıyor."
+        },
+        {
+          "key": "o4",
+          "text": "Caused directly",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Ortalama bu zayıflıkları doğrudan yaratmıyor."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "author-purpose",
+      "prompt": "Why are ordinary weeks contrasted with disruptions?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 0,
+        "end": 73
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "To establish that disruptions never occur",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Aksaklıkların yaşandığı açık."
+        },
+        {
+          "key": "o2",
+          "text": "To show that the team changed the data",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Veri değiştirme iddiası yok."
+        },
+        {
+          "key": "o3",
+          "text": "To compare two transport companies",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Şirket karşılaştırması yok."
+        },
+        {
+          "key": "o4",
+          "text": "To demonstrate the need for broader evaluation",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Farklı koşulların değerlendirme kapsamına alınması gerektiğini gösteriyor."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "noFactualClaims": true,
+    "sources": []
+  }
+}

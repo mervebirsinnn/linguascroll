@@ -1,0 +1,3761 @@
+{
+  "slug": "c2-climate-feedback",
+  "level": "C2",
+  "title": "Small Pushes, Large Effects",
+  "topic": "İklim",
+  "sortOrder": 22,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled. Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter. That is why the subject rewards patient explanation far more than confident slogans.",
+    "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life. Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests. NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+    "Water vapour complicates the account. It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming. The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+    "Evidence for how the system behaves comes partly from ice cores. Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements. They show that Earth's climate has always responded to changes in greenhouse gases.",
+    "What is new is the pace. NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age. A system that amplifies small pushes is least forgiving when the push is large and sudden. Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters."
+  ],
+  "words": [
+    {
+      "lemma": "public",
+      "gloss": "kamusal",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 6,
+          "surface": "Public",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "discussion",
+      "gloss": "tartışma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 17,
+          "surface": "discussion",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 18,
+          "end": 20,
+          "surface": "of",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 107,
+          "end": 109,
+          "surface": "of",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 178,
+          "end": 180,
+          "surface": "of",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 147,
+          "end": 149,
+          "surface": "of",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 363,
+          "end": 365,
+          "surface": "of",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "climate",
+      "gloss": "iklim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 28,
+          "surface": "climate",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 252,
+          "end": 259,
+          "surface": "climate",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "change",
+      "gloss": "değişim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 29,
+          "end": 35,
+          "surface": "change",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "tends",
+      "gloss": "eğilimli olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 41,
+          "surface": "tends",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 44,
+          "surface": "to",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "fix",
+      "gloss": "sabitlemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 45,
+          "end": 48,
+          "surface": "fix",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 51,
+          "surface": "on",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "carbon",
+      "gloss": "karbon",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 58,
+          "surface": "carbon",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 150,
+          "end": 156,
+          "surface": "Carbon",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 309,
+          "end": 315,
+          "surface": "carbon",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 42,
+          "end": 48,
+          "surface": "carbon",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "dioxide",
+      "gloss": "dioksit",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 59,
+          "end": 66,
+          "surface": "dioxide",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 164,
+          "surface": "dioxide",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 316,
+          "end": 323,
+          "surface": "dioxide",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 49,
+          "end": 56,
+          "surface": "dioxide",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 68,
+          "end": 71,
+          "surface": "and",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 232,
+          "surface": "and",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 76,
+          "end": 79,
+          "surface": "and",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 213,
+          "surface": "and",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 265,
+          "end": 268,
+          "surface": "and",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 198,
+          "end": 201,
+          "surface": "and",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 98,
+          "end": 101,
+          "surface": "and",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 107,
+          "end": 110,
+          "surface": "and",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 266,
+          "end": 269,
+          "surface": "and",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 75,
+          "surface": "for",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 140,
+          "end": 143,
+          "surface": "for",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 9,
+          "end": 12,
+          "surface": "for",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "good",
+      "gloss": "iyi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 80,
+          "surface": "good",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "reason",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 81,
+          "end": 87,
+          "surface": "reason",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 89,
+          "end": 92,
+          "surface": "the",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 100,
+          "end": 103,
+          "surface": "the",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 154,
+          "surface": "the",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 186,
+          "surface": "the",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 216,
+          "surface": "the",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 236,
+          "surface": "the",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 304,
+          "end": 307,
+          "surface": "the",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 119,
+          "surface": "the",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 326,
+          "end": 329,
+          "surface": "the",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 28,
+          "surface": "the",
+          "contextSentence": "Water vapour complicates the account.",
+          "contextSentenceTr": "Su buharı anlatımı karmaşıklaştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 44,
+          "end": 47,
+          "surface": "the",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 192,
+          "surface": "the",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 205,
+          "surface": "the",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 234,
+          "end": 237,
+          "surface": "the",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 256,
+          "end": 259,
+          "surface": "The",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 340,
+          "end": 343,
+          "surface": "the",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 17,
+          "end": 20,
+          "surface": "the",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 15,
+          "end": 18,
+          "surface": "the",
+          "contextSentence": "What is new is the pace.",
+          "contextSentenceTr": "Yeni olan şey tempodur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 169,
+          "end": 172,
+          "surface": "the",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 248,
+          "end": 251,
+          "surface": "the",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 352,
+          "end": 355,
+          "surface": "the",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "gas",
+      "gloss": "gaz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 93,
+          "end": 96,
+          "surface": "gas",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 217,
+          "end": 220,
+          "surface": "gas",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 76,
+          "surface": "gas",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 99,
+          "surface": "is",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 299,
+          "surface": "is",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 20,
+          "surface": "is",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 41,
+          "end": 43,
+          "surface": "is",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 87,
+          "surface": "is",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 267,
+          "end": 269,
+          "surface": "is",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 326,
+          "surface": "is",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "contextSentence": "What is new is the pace.",
+          "contextSentenceTr": "Yeni olan şey tempodur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 12,
+          "end": 14,
+          "surface": "is",
+          "contextSentence": "What is new is the pace.",
+          "contextSentenceTr": "Yeni olan şey tempodur."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 73,
+          "end": 75,
+          "surface": "is",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 224,
+          "end": 226,
+          "surface": "is",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 257,
+          "end": 259,
+          "surface": "is",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "main",
+      "gloss": "ana",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 108,
+          "surface": "main",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "lever",
+      "gloss": "kaldıraç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 114,
+          "surface": "lever",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 115,
+          "end": 119,
+          "surface": "that",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 300,
+          "end": 304,
+          "surface": "that",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 239,
+          "end": 243,
+          "surface": "that",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 37,
+          "end": 41,
+          "surface": "that",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 196,
+          "end": 200,
+          "surface": "that",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 120,
+          "end": 125,
+          "surface": "human",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 219,
+          "end": 224,
+          "surface": "human",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "activity",
+      "gloss": "faaliyet",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 134,
+          "surface": "activity",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 135,
+          "end": 138,
+          "surface": "has",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 341,
+          "end": 344,
+          "surface": "has",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 260,
+          "end": 263,
+          "surface": "has",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "pulled",
+      "gloss": "çekmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 145,
+          "surface": "pulled",
+          "contextSentence": "Public discussion of climate change tends to fix on carbon dioxide, and for good reason: the gas is the main lever that human activity has pulled.",
+          "contextSentenceTr": "Kamusal iklim değişikliği tartışması karbondioksit üzerinde odaklanma eğilimindedir ve bunun iyi bir nedeni vardır: gaz, insan faaliyetinin çektiği ana kaldıraçtır."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 147,
+          "end": 150,
+          "surface": "Yet",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 81,
+          "surface": "yet",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "mechanism",
+      "gloss": "mekanizma",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 155,
+          "end": 164,
+          "surface": "mechanism",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 167,
+          "surface": "by",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 173,
+          "surface": "which",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 174,
+          "end": 176,
+          "surface": "it",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 38,
+          "end": 40,
+          "surface": "It",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 82,
+          "end": 84,
+          "surface": "it",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 119,
+          "end": 121,
+          "surface": "it",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 181,
+          "end": 183,
+          "surface": "it",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 351,
+          "end": 353,
+          "surface": "it",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 135,
+          "end": 137,
+          "surface": "it",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 336,
+          "end": 338,
+          "surface": "it",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "warms",
+      "gloss": "ısıtmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 182,
+          "surface": "warms",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "planet",
+      "gloss": "gezegen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 193,
+          "surface": "planet",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "involves",
+      "gloss": "içermek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 202,
+          "surface": "involves",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha fazla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 207,
+          "surface": "more",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 348,
+          "end": 352,
+          "surface": "more",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 177,
+          "surface": "more",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 208,
+          "end": 212,
+          "surface": "than",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 353,
+          "end": 357,
+          "surface": "than",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 130,
+          "end": 134,
+          "surface": "than",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendisi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 227,
+          "surface": "itself",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "fuller",
+      "gloss": "daha tam",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 237,
+          "end": 243,
+          "surface": "fuller",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "picture",
+      "gloss": "resim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 244,
+          "end": 251,
+          "surface": "picture",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "helps",
+      "gloss": "yardım etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 252,
+          "end": 257,
+          "surface": "helps",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "explain",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 258,
+          "end": 265,
+          "surface": "explain",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 266,
+          "end": 269,
+          "surface": "why",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 300,
+          "end": 303,
+          "surface": "why",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 348,
+          "end": 351,
+          "surface": "why",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 275,
+          "surface": "small",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 211,
+          "end": 216,
+          "surface": "small",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "changes",
+      "gloss": "değişimler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 283,
+          "surface": "changes",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 284,
+          "end": 291,
+          "surface": "changes",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "matter",
+      "gloss": "önemli olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 284,
+          "end": 290,
+          "surface": "matter",
+          "contextSentence": "Yet the mechanism by which it warms the planet involves more than the gas itself, and the fuller picture helps explain why small changes matter.",
+          "contextSentenceTr": "Yine de gazın gezegeni ısıtma mekanizması gazın kendisinden fazlasını içerir ve daha tam resim, küçük değişimlerin neden önemli olduğunu açıklamaya yardım eder."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 292,
+          "end": 296,
+          "surface": "That",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 292,
+          "end": 296,
+          "surface": "that",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "subject",
+      "gloss": "konu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 308,
+          "end": 315,
+          "surface": "subject",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "rewards",
+      "gloss": "ödüllendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 316,
+          "end": 323,
+          "surface": "rewards",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "patient",
+      "gloss": "sabırlı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 331,
+          "surface": "patient",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "explanation",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 343,
+          "surface": "explanation",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 344,
+          "end": 347,
+          "surface": "far",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "confident",
+      "gloss": "kendinden emin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 358,
+          "end": 367,
+          "surface": "confident",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "slogans",
+      "gloss": "sloganlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 368,
+          "end": 375,
+          "surface": "slogans",
+          "contextSentence": "That is why the subject rewards patient explanation far more than confident slogans.",
+          "contextSentenceTr": "Bu yüzden konu, kendinden emin sloganlardan çok sabırlı açıklamayı ödüllendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "basic",
+      "gloss": "temel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 9,
+          "surface": "basic",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "physics",
+      "gloss": "fizik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 17,
+          "surface": "physics",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 21,
+          "end": 22,
+          "surface": "a",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 93,
+          "surface": "a",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 271,
+          "surface": "a",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 282,
+          "end": 283,
+          "surface": "a",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 187,
+          "end": 188,
+          "surface": "A",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 322,
+          "end": 323,
+          "surface": "a",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "natural",
+      "gloss": "doğal",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 30,
+          "surface": "natural",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 183,
+          "surface": "natural",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 147,
+          "end": 154,
+          "surface": "natural",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "greenhouse",
+      "gloss": "sera",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 31,
+          "end": 41,
+          "surface": "greenhouse",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 72,
+          "surface": "greenhouse",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 295,
+          "end": 305,
+          "surface": "greenhouse",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "effect",
+      "gloss": "etki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 48,
+          "surface": "effect",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "certain",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 50,
+          "end": 57,
+          "surface": "certain",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "gases",
+      "gloss": "gazlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 63,
+          "surface": "gases",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 306,
+          "end": 311,
+          "surface": "gases",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "absorb",
+      "gloss": "emmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 64,
+          "end": 70,
+          "surface": "absorb",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "heat",
+      "gloss": "ısı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 71,
+          "end": 75,
+          "surface": "heat",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "slow",
+      "gloss": "yavaşlatmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 84,
+          "surface": "slow",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 88,
+          "surface": "its",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 305,
+          "end": 308,
+          "surface": "its",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "escape",
+      "gloss": "kaçış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 95,
+          "surface": "escape",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "into",
+      "gloss": "içine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 96,
+          "end": 100,
+          "surface": "into",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 184,
+          "end": 188,
+          "surface": "into",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "space",
+      "gloss": "uzay",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 101,
+          "end": 106,
+          "surface": "space",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "keeping",
+      "gloss": "tutmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 108,
+          "end": 115,
+          "surface": "keeping",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "surface",
+      "gloss": "yüzey",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 120,
+          "end": 127,
+          "surface": "surface",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "warm",
+      "gloss": "sıcak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 128,
+          "end": 132,
+          "surface": "warm",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "enough",
+      "gloss": "yeterince",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 133,
+          "end": 139,
+          "surface": "enough",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "life",
+      "gloss": "yaşam",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 144,
+          "end": 148,
+          "surface": "life",
+          "contextSentence": "The basic physics is a natural greenhouse effect: certain gases absorb heat and slow its escape into space, keeping the surface warm enough for life.",
+          "contextSentenceTr": "Temel fizik doğal bir sera etkisidir: bazı gazlar ısıyı emer ve uzaya kaçışını yavaşlatarak yüzeyi yaşam için yeterince sıcak tutar."
+        }
+      ]
+    },
+    {
+      "lemma": "comes",
+      "gloss": "gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 165,
+          "end": 170,
+          "surface": "comes",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 36,
+          "end": 41,
+          "surface": "comes",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 175,
+          "surface": "from",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 218,
+          "surface": "from",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 304,
+          "end": 308,
+          "surface": "from",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 49,
+          "end": 53,
+          "surface": "from",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 142,
+          "end": 146,
+          "surface": "from",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "sources",
+      "gloss": "kaynaklar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 191,
+          "surface": "sources",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 155,
+          "end": 162,
+          "surface": "sources",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 192,
+          "end": 196,
+          "surface": "such",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 236,
+          "end": 240,
+          "surface": "such",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 197,
+          "end": 199,
+          "surface": "as",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 241,
+          "end": 243,
+          "surface": "as",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "volcanoes",
+      "gloss": "yanardağlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 200,
+          "end": 209,
+          "surface": "volcanoes",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "activities",
+      "gloss": "faaliyetler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 225,
+          "end": 235,
+          "surface": "activities",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "burning",
+      "gloss": "yakmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 251,
+          "surface": "burning",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "fossil",
+      "gloss": "fosil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 258,
+          "surface": "fossil",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "fuels",
+      "gloss": "yakıtlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 259,
+          "end": 264,
+          "surface": "fuels",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "clearing",
+      "gloss": "kesip alan açmak (ormanları)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 269,
+          "end": 277,
+          "surface": "clearing",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "forests",
+      "gloss": "ormanlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 278,
+          "end": 285,
+          "surface": "forests",
+          "contextSentence": "Carbon dioxide comes from natural sources such as volcanoes and from human activities such as burning fossil fuels and clearing forests.",
+          "contextSentenceTr": "Karbondioksit yanardağlar gibi doğal kaynaklardan ve fosil yakıt yakmak ile ormanları temizlemek gibi insan faaliyetlerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "nasa",
+      "gloss": "NASA",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 291,
+          "surface": "NASA",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 25,
+          "end": 29,
+          "surface": "NASA",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "reports",
+      "gloss": "bildirmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 292,
+          "end": 299,
+          "surface": "reports",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "concentration",
+      "gloss": "yoğunluk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 322,
+          "surface": "concentration",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 325,
+          "surface": "in",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 73,
+          "end": 75,
+          "surface": "in",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 292,
+          "end": 294,
+          "surface": "in",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "atmosphere",
+      "gloss": "atmosfer",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 330,
+          "end": 340,
+          "surface": "atmosphere",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "risen",
+      "gloss": "yükselmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 345,
+          "end": 350,
+          "surface": "risen",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "kadar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 351,
+          "end": 353,
+          "surface": "by",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "nearly",
+      "gloss": "neredeyse",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 354,
+          "end": 360,
+          "surface": "nearly",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "fifty",
+      "gloss": "elli",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 366,
+          "surface": "fifty",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 391,
+          "end": 396,
+          "surface": "fifty",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 111,
+          "end": 116,
+          "surface": "fifty",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "percent",
+      "gloss": "yüzde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 367,
+          "end": 374,
+          "surface": "percent",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "since",
+      "gloss": "-den beri",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 375,
+          "end": 380,
+          "surface": "since",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "seventeen",
+      "gloss": "on yedi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 381,
+          "end": 390,
+          "surface": "seventeen",
+          "contextSentence": "NASA reports that its concentration in the atmosphere has risen by nearly fifty percent since seventeen fifty.",
+          "contextSentenceTr": "NASA, atmosferdeki yoğunluğunun 1750'den beri neredeyse yüzde elli arttığını bildirir."
+        }
+      ]
+    },
+    {
+      "lemma": "water",
+      "gloss": "su",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 5,
+          "surface": "Water",
+          "contextSentence": "Water vapour complicates the account.",
+          "contextSentenceTr": "Su buharı anlatımı karmaşıklaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "vapour",
+      "gloss": "buhar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 6,
+          "end": 12,
+          "surface": "vapour",
+          "contextSentence": "Water vapour complicates the account.",
+          "contextSentenceTr": "Su buharı anlatımı karmaşıklaştırır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 212,
+          "end": 218,
+          "surface": "vapour",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "complicates",
+      "gloss": "karmaşıklaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 24,
+          "surface": "complicates",
+          "contextSentence": "Water vapour complicates the account.",
+          "contextSentenceTr": "Su buharı anlatımı karmaşıklaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "account",
+      "gloss": "anlatım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 29,
+          "end": 36,
+          "surface": "account",
+          "contextSentence": "Water vapour complicates the account.",
+          "contextSentenceTr": "Su buharı anlatımı karmaşıklaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 48,
+          "end": 52,
+          "surface": "most",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "abundant",
+      "gloss": "bol",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 53,
+          "end": 61,
+          "surface": "abundant",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 91,
+          "surface": "not",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 308,
+          "end": 311,
+          "surface": "not",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "direct",
+      "gloss": "doğrudan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 100,
+          "surface": "direct",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 208,
+          "end": 214,
+          "surface": "direct",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "cause",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 106,
+          "surface": "cause",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "warming",
+      "gloss": "ısınma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 117,
+          "surface": "warming",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 247,
+          "end": 254,
+          "surface": "warming",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "responds",
+      "gloss": "tepki vermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 122,
+          "end": 130,
+          "surface": "responds",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 131,
+          "end": 133,
+          "surface": "to",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 281,
+          "end": 283,
+          "surface": "to",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "temperature",
+      "gloss": "sıcaklık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 145,
+          "surface": "temperature",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 147,
+          "end": 154,
+          "surface": "because",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "warmer",
+      "gloss": "daha sıcak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 155,
+          "end": 161,
+          "surface": "warmer",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "oceans",
+      "gloss": "okyanuslar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 162,
+          "end": 168,
+          "surface": "oceans",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "put",
+      "gloss": "koymak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 172,
+          "surface": "put",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "air",
+      "gloss": "hava",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 193,
+          "end": 196,
+          "surface": "air",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 158,
+          "end": 161,
+          "surface": "air",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "extra",
+      "gloss": "ekstra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 206,
+          "end": 211,
+          "surface": "extra",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 223,
+          "surface": "then",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "amplifies",
+      "gloss": "güçlendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 233,
+          "surface": "amplifies",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 201,
+          "end": 210,
+          "surface": "amplifies",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "original",
+      "gloss": "özgün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 238,
+          "end": 246,
+          "surface": "original",
+          "contextSentence": "It is the most abundant greenhouse gas, yet it is not a direct cause of warming: it responds to temperature, because warmer oceans put more of it into the air, and the extra vapour then amplifies the original warming.",
+          "contextSentenceTr": "Bu en bol sera gazıdır; yine de ısınmanın doğrudan nedeni değildir: sıcaklığa tepki verir, çünkü daha sıcak okyanuslar havaya daha fazlasını verir ve fazla buhar özgün ısınmayı güçlendirir."
+        }
+      ]
+    },
+    {
+      "lemma": "result",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 260,
+          "end": 266,
+          "surface": "result",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        }
+      ]
+    },
+    {
+      "lemma": "feedback",
+      "gloss": "geri besleme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 272,
+          "end": 280,
+          "surface": "feedback",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        }
+      ]
+    },
+    {
+      "lemma": "modest",
+      "gloss": "mütevazı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 290,
+          "surface": "modest",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        }
+      ]
+    },
+    {
+      "lemma": "initial",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 291,
+          "end": 298,
+          "surface": "initial",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        }
+      ]
+    },
+    {
+      "lemma": "push",
+      "gloss": "itme",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 299,
+          "end": 303,
+          "surface": "push",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 252,
+          "end": 256,
+          "surface": "push",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "magnified",
+      "gloss": "büyütmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 327,
+          "end": 336,
+          "surface": "magnified",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "tarafından",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 337,
+          "end": 339,
+          "surface": "by",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 63,
+          "end": 65,
+          "surface": "by",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 344,
+          "end": 350,
+          "surface": "system",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 21,
+          "end": 27,
+          "surface": "system",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 189,
+          "end": 195,
+          "surface": "system",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "disturbs",
+      "gloss": "rahatsız etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 354,
+          "end": 362,
+          "surface": "disturbs",
+          "contextSentence": "The result is a feedback: a modest initial push from carbon dioxide is magnified by the system it disturbs.",
+          "contextSentenceTr": "Sonuç bir geri beslemedir: karbondioksitten gelen mütevazı bir ilk itme, rahatsız ettiği sistem tarafından büyütülür."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 8,
+          "surface": "Evidence",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 13,
+          "end": 16,
+          "surface": "how",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "behaves",
+      "gloss": "davranmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 28,
+          "end": 35,
+          "surface": "behaves",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "partly",
+      "gloss": "kısmen",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 42,
+          "end": 48,
+          "surface": "partly",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "ice",
+      "gloss": "buz",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 54,
+          "end": 57,
+          "surface": "ice",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 178,
+          "end": 181,
+          "surface": "ice",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "cores",
+      "gloss": "çekirdekler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 58,
+          "end": 63,
+          "surface": "cores",
+          "contextSentence": "Evidence for how the system behaves comes partly from ice cores.",
+          "contextSentenceTr": "Sistemin nasıl davrandığına dair kanıt kısmen buz çekirdeklerinden gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "drilled",
+      "gloss": "delinmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 65,
+          "end": 72,
+          "surface": "Drilled",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "greenland",
+      "gloss": "Grönland",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 76,
+          "end": 85,
+          "surface": "Greenland",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "antarctica",
+      "gloss": "Antarktika",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 87,
+          "end": 97,
+          "surface": "Antarctica",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "tropical",
+      "gloss": "tropikal",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 102,
+          "end": 110,
+          "surface": "tropical",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "glaciers",
+      "gloss": "buzullar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 111,
+          "end": 119,
+          "surface": "glaciers",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 121,
+          "end": 125,
+          "surface": "they",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 229,
+          "end": 233,
+          "surface": "They",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "contain",
+      "gloss": "içermek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 126,
+          "end": 133,
+          "surface": "contain",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minik",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 134,
+          "end": 138,
+          "surface": "tiny",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "bubbles",
+      "gloss": "kabarcıklar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 139,
+          "end": 146,
+          "surface": "bubbles",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "ancient",
+      "gloss": "eski",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 150,
+          "end": 157,
+          "surface": "ancient",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "kimin",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 162,
+          "end": 167,
+          "surface": "whose",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "composition",
+      "gloss": "bileşim",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 168,
+          "end": 179,
+          "surface": "composition",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 180,
+          "end": 183,
+          "surface": "can",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 184,
+          "end": 186,
+          "surface": "be",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "compared",
+      "gloss": "karşılaştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 187,
+          "end": 195,
+          "surface": "compared",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 196,
+          "end": 200,
+          "surface": "with",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "recent",
+      "gloss": "yakın",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 201,
+          "end": 207,
+          "surface": "recent",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "measurements",
+      "gloss": "ölçümler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 215,
+          "end": 227,
+          "surface": "measurements",
+          "contextSentence": "Drilled in Greenland, Antarctica and tropical glaciers, they contain tiny bubbles of ancient air whose composition can be compared with recent direct measurements.",
+          "contextSentenceTr": "Grönland, Antarktika ve tropik buzullarda delinen çekirdekler, bileşimi yakın tarihli doğrudan ölçümlerle karşılaştırılabilen eski havanın minik kabarcıklarını içerir."
+        }
+      ]
+    },
+    {
+      "lemma": "show",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 234,
+          "end": 238,
+          "surface": "show",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "earth's",
+      "gloss": "Dünya (iyelik)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 244,
+          "end": 251,
+          "surface": "Earth's",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "always",
+      "gloss": "her zaman",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 264,
+          "end": 270,
+          "surface": "always",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "responded",
+      "gloss": "tepki vermek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 271,
+          "end": 280,
+          "surface": "responded",
+          "contextSentence": "They show that Earth's climate has always responded to changes in greenhouse gases.",
+          "contextSentenceTr": "Dünya'nın ikliminin sera gazlarındaki değişimlere her zaman tepki verdiğini gösterirler."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "contextSentence": "What is new is the pace.",
+          "contextSentenceTr": "Yeni olan şey tempodur."
+        }
+      ]
+    },
+    {
+      "lemma": "new",
+      "gloss": "yeni",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 8,
+          "end": 11,
+          "surface": "new",
+          "contextSentence": "What is new is the pace.",
+          "contextSentenceTr": "Yeni olan şey tempodur."
+        }
+      ]
+    },
+    {
+      "lemma": "pace",
+      "gloss": "tempo",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 19,
+          "end": 23,
+          "surface": "pace",
+          "contextSentence": "What is new is the pace.",
+          "contextSentenceTr": "Yeni olan şey tempodur."
+        }
+      ]
+    },
+    {
+      "lemma": "states",
+      "gloss": "belirtmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 30,
+          "end": 36,
+          "surface": "states",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "added",
+      "gloss": "eklenmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 57,
+          "end": 62,
+          "surface": "added",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 66,
+          "end": 72,
+          "surface": "people",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "increasing",
+      "gloss": "artıyor",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 76,
+          "end": 86,
+          "surface": "increasing",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "roughly",
+      "gloss": "kabaca",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 87,
+          "end": 94,
+          "surface": "roughly",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 95,
+          "end": 98,
+          "surface": "two",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "hundred",
+      "gloss": "yüz",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 99,
+          "end": 106,
+          "surface": "hundred",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "times",
+      "gloss": "kat",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 117,
+          "end": 122,
+          "surface": "times",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "faster",
+      "gloss": "daha hızlı",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 123,
+          "end": 129,
+          "surface": "faster",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "(önceki fiilin yerine) artmıştı",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 138,
+          "end": 141,
+          "surface": "did",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 163,
+          "end": 168,
+          "surface": "after",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "last",
+      "gloss": "son",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 173,
+          "end": 177,
+          "surface": "last",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "age",
+      "gloss": "çağ",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 182,
+          "end": 185,
+          "surface": "age",
+          "contextSentence": "NASA states that carbon dioxide added by people is increasing roughly two hundred and fifty times faster than it did from natural sources after the last ice age.",
+          "contextSentenceTr": "NASA, insanların eklediği karbondioksitin son buz çağından sonra doğal kaynaklardan arttığından kabaca iki yüz elli kat daha hızlı arttığını belirtir."
+        }
+      ]
+    },
+    {
+      "lemma": "pushes",
+      "gloss": "itmeler",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 217,
+          "end": 223,
+          "surface": "pushes",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "least",
+      "gloss": "en az",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 227,
+          "end": 232,
+          "surface": "least",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "forgiving",
+      "gloss": "bağışlayıcı",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 233,
+          "end": 242,
+          "surface": "forgiving",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 243,
+          "end": 247,
+          "surface": "when",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 260,
+          "end": 265,
+          "surface": "large",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "sudden",
+      "gloss": "ani",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 270,
+          "end": 276,
+          "surface": "sudden",
+          "contextSentence": "A system that amplifies small pushes is least forgiving when the push is large and sudden.",
+          "contextSentenceTr": "Küçük itmeleri güçlendiren bir sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "understanding",
+      "gloss": "anlamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 278,
+          "end": 291,
+          "surface": "Understanding",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "logic",
+      "gloss": "mantık",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 297,
+          "end": 302,
+          "surface": "logic",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 303,
+          "end": 307,
+          "surface": "does",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "prescribe",
+      "gloss": "reçete etmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 312,
+          "end": 321,
+          "surface": "prescribe",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "policy",
+      "gloss": "politika",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 324,
+          "end": 330,
+          "surface": "policy",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 370,
+          "end": 376,
+          "surface": "policy",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 332,
+          "end": 335,
+          "surface": "but",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "explains",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 339,
+          "end": 347,
+          "surface": "explains",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "timing",
+      "gloss": "zamanlama",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 356,
+          "end": 362,
+          "surface": "timing",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "any",
+      "gloss": "herhangi bir",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 366,
+          "end": 369,
+          "surface": "any",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    },
+    {
+      "lemma": "matters",
+      "gloss": "önemli olmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 377,
+          "end": 384,
+          "surface": "matters",
+          "contextSentence": "Understanding that logic does not prescribe a policy, but it explains why the timing of any policy matters.",
+          "contextSentenceTr": "O mantığı anlamak bir politika reçete etmez ama herhangi bir politikanın zamanlamasının neden önemli olduğunu açıklar."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the central argument of the passage?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 187,
+        "end": 277
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Water vapour alone drives all warming",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Su buharı doğrudan neden değildir."
+        },
+        {
+          "key": "o2",
+          "text": "Natural gases cannot change the climate",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin sera etkisini doğal ve etkili sayar."
+        },
+        {
+          "key": "o3",
+          "text": "Ice-core records contradict direct data",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin onların karşılaştırıldığını anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "Feedback and speed amplify warming",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin geri besleme ve hızın önemini vurgular."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why is water vapour described as a feedback?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 119,
+        "end": 254
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It is released directly by human activity",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Okyanuslar ısındıkça havaya karışır; doğrudan insan salımı değildir."
+        },
+        {
+          "key": "o2",
+          "text": "It responds and amplifies",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin sıcaklığa tepki verdiğini ve ısınmayı güçlendirdiğini söyler."
+        },
+        {
+          "key": "o3",
+          "text": "It is the main gas added by fossil fuels",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Fosil yakıtlarla eklenen karbondioksittir."
+        },
+        {
+          "key": "o4",
+          "text": "It cools the planet whenever it is warmed",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin güçlendirmeyi anlatır; soğutmayı değil."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “amplifies” mean in the third paragraph?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 202,
+        "end": 254
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Measures very precisely",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Ölçme anlamı yoktur."
+        },
+        {
+          "key": "o2",
+          "text": "Records in a notebook",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kayıt anlamı yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Makes it stronger",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Amplify, güçlendirmek, büyütmek demektir."
+        },
+        {
+          "key": "o4",
+          "text": "Slowly removes entirely",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini anlatır."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "Why does timing matter for any policy?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 187,
+        "end": 277
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Fast change leaves less time",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Büyük ve ani itme sistemi en az bağışlayıcı kılar."
+        },
+        {
+          "key": "o2",
+          "text": "Policy has no effect on the climate",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin böyle bir şey söylemez."
+        },
+        {
+          "key": "o3",
+          "text": "Slow pushes are always more harmful",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tersini ima eder."
+        },
+        {
+          "key": "o4",
+          "text": "Timing matters only for water vapour",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin böyle bir sınırlama yapmaz."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Sera etkisi doğaldır: bazı gazlar ısıyı emip uzaya kaçışını yavaşlatır; karbondioksit volkanlar gibi doğal kaynaklardan ve fosil yakıt yakma ile ormansızlaşmadan gelir; atmosferdeki karbondioksit 1750'den beri yaklaşık yüzde 50 arttı.",
+        "source": "NASA, Causes of Climate Change; https://science.nasa.gov/climate-change/causes/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Su buharı en bol sera gazıdır ama ısınmanın doğrudan nedeni değildir; ısınan okyanuslar havaya daha fazla su buharı ekler (geri besleme).",
+        "source": "NASA, Causes of Climate Change; https://science.nasa.gov/climate-change/causes/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Grönland, Antarktika ve tropik buzullardan alınan buz çekirdekleri iklimin sera gazı değişimlerine tepki verdiğini gösterir; insan kaynaklı karbondioksit son buz çağından sonra doğal kaynakların artışından yaklaşık 250 kat daha hızlı artıyor.",
+        "source": "NASA, Evidence (Climate Change); https://climate.nasa.gov/evidence/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1823 @@
+{
+  "slug": "b1-octopus-hearts",
+  "level": "B1",
+  "title": "The Animal With Three Hearts",
+  "topic": "Biyoloji",
+  "sortOrder": 17,
+  "isFreeSample": false,
+  "paragraphs": [
+    "An octopus is a soft sea animal with eight arms. It has no bones, so it can squeeze through very small holes. But the most surprising things about it are inside its body. Scientists often study it to learn how clever animals can be.",
+    "First, an octopus has three hearts. Two hearts push blood through the gills, and the third sends it around the rest of the body. Its blood is blue, because it carries oxygen with a substance that contains copper. Our blood is red, because it uses iron. Without these special hearts, an octopus could not live for long.",
+    "An octopus also has a clever nervous system. About two thirds of its nerve cells are in its arms, not in its head. Because of this, each arm can do some work by itself."
+  ],
+  "words": [
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 2,
+          "surface": "An",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 9,
+          "surface": "an",
+          "contextSentence": "First, an octopus has three hearts.",
+          "contextSentenceTr": "Birincisi, bir ahtapotun üç kalbi vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 283,
+          "end": 285,
+          "surface": "an",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "An",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "octopus",
+      "gloss": "ahtapot",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 3,
+          "end": 10,
+          "surface": "octopus",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 17,
+          "surface": "octopus",
+          "contextSentence": "First, an octopus has three hearts.",
+          "contextSentenceTr": "Birincisi, bir ahtapotun üç kalbi vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 286,
+          "end": 293,
+          "surface": "octopus",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 10,
+          "surface": "octopus",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 11,
+          "end": 13,
+          "surface": "is",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 141,
+          "surface": "is",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 223,
+          "end": 225,
+          "surface": "is",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 15,
+          "surface": "a",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 179,
+          "end": 180,
+          "surface": "a",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 20,
+          "end": 21,
+          "surface": "a",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "soft",
+      "gloss": "yumuşak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 20,
+          "surface": "soft",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "sea",
+      "gloss": "deniz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 24,
+          "surface": "sea",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "animal",
+      "gloss": "hayvan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 31,
+          "surface": "animal",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 36,
+          "surface": "with",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 174,
+          "end": 178,
+          "surface": "with",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "eight",
+      "gloss": "sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 42,
+          "surface": "eight",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "arms",
+      "gloss": "kollar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 43,
+          "end": 47,
+          "surface": "arms",
+          "contextSentence": "An octopus is a soft sea animal with eight arms.",
+          "contextSentenceTr": "Ahtapot, sekiz kolu olan yumuşak bir deniz hayvanıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 92,
+          "end": 96,
+          "surface": "arms",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 49,
+          "end": 51,
+          "surface": "It",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 69,
+          "end": 71,
+          "surface": "it",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 147,
+          "end": 149,
+          "surface": "it",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 194,
+          "end": 196,
+          "surface": "it",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 97,
+          "end": 99,
+          "surface": "it",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 156,
+          "end": 158,
+          "surface": "it",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 241,
+          "surface": "it",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahiptir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 55,
+          "surface": "has",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 18,
+          "end": 21,
+          "surface": "has",
+          "contextSentence": "First, an octopus has three hearts.",
+          "contextSentenceTr": "Birincisi, bir ahtapotun üç kalbi vardır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 16,
+          "end": 19,
+          "surface": "has",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "no",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 56,
+          "end": 58,
+          "surface": "no",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "bones",
+      "gloss": "kemikler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 59,
+          "end": 64,
+          "surface": "bones",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 66,
+          "end": 68,
+          "surface": "so",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 72,
+          "end": 75,
+          "surface": "can",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 228,
+          "surface": "can",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 141,
+          "end": 144,
+          "surface": "can",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "squeeze",
+      "gloss": "sıkışmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 83,
+          "surface": "squeeze",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "through",
+      "gloss": "içinden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 91,
+          "surface": "through",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 65,
+          "surface": "through",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "very",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 96,
+          "surface": "very",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 97,
+          "end": 102,
+          "surface": "small",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "holes",
+      "gloss": "delikler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 108,
+          "surface": "holes",
+          "contextSentence": "It has no bones, so it can squeeze through very small holes.",
+          "contextSentenceTr": "Hiç kemiği yoktur, bu yüzden çok küçük deliklerden sıkışarak geçebilir."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 110,
+          "end": 113,
+          "surface": "But",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 114,
+          "end": 117,
+          "surface": "the",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 66,
+          "end": 69,
+          "surface": "the",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 81,
+          "end": 84,
+          "surface": "the",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 110,
+          "surface": "the",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 122,
+          "surface": "the",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 118,
+          "end": 122,
+          "surface": "most",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        }
+      ]
+    },
+    {
+      "lemma": "surprising",
+      "gloss": "şaşırtıcı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 123,
+          "end": 133,
+          "surface": "surprising",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        }
+      ]
+    },
+    {
+      "lemma": "things",
+      "gloss": "şeyler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 140,
+          "surface": "things",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 141,
+          "end": 146,
+          "surface": "about",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 150,
+          "end": 153,
+          "surface": "are",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 81,
+          "end": 84,
+          "surface": "are",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 154,
+          "end": 160,
+          "surface": "inside",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 161,
+          "end": 164,
+          "surface": "its",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 129,
+          "end": 132,
+          "surface": "Its",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 65,
+          "end": 68,
+          "surface": "its",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 88,
+          "end": 91,
+          "surface": "its",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 108,
+          "surface": "its",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 165,
+          "end": 169,
+          "surface": "body",
+          "contextSentence": "But the most surprising things about it are inside its body.",
+          "contextSentenceTr": "Ama en şaşırtıcı şeyler vücudunun içindedir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 127,
+          "surface": "body",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 171,
+          "end": 181,
+          "surface": "Scientists",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 182,
+          "end": 187,
+          "surface": "often",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "study",
+      "gloss": "incelemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 188,
+          "end": 193,
+          "surface": "study",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 197,
+          "end": 199,
+          "surface": "to",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "learn",
+      "gloss": "öğrenmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 205,
+          "surface": "learn",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "ne kadar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 209,
+          "surface": "how",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "clever",
+      "gloss": "zeki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 210,
+          "end": 216,
+          "surface": "clever",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 22,
+          "end": 28,
+          "surface": "clever",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "animals",
+      "gloss": "hayvanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 217,
+          "end": 224,
+          "surface": "animals",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 231,
+          "surface": "be",
+          "contextSentence": "Scientists often study it to learn how clever animals can be.",
+          "contextSentenceTr": "Bilim insanları hayvanların ne kadar zeki olabileceğini öğrenmek için onu sık sık inceler."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk olarak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 5,
+          "surface": "First",
+          "contextSentence": "First, an octopus has three hearts.",
+          "contextSentenceTr": "Birincisi, bir ahtapotun üç kalbi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "three",
+      "gloss": "üç",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 22,
+          "end": 27,
+          "surface": "three",
+          "contextSentence": "First, an octopus has three hearts.",
+          "contextSentenceTr": "Birincisi, bir ahtapotun üç kalbi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "hearts",
+      "gloss": "kalpler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 34,
+          "surface": "hearts",
+          "contextSentence": "First, an octopus has three hearts.",
+          "contextSentenceTr": "Birincisi, bir ahtapotun üç kalbi vardır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 46,
+          "surface": "hearts",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 275,
+          "end": 281,
+          "surface": "hearts",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 36,
+          "end": 39,
+          "surface": "Two",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 51,
+          "end": 54,
+          "surface": "two",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "push",
+      "gloss": "itmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 51,
+          "surface": "push",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 57,
+          "surface": "blood",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 133,
+          "end": 138,
+          "surface": "blood",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 217,
+          "end": 222,
+          "surface": "blood",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "gills",
+      "gloss": "solungaçlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 70,
+          "end": 75,
+          "surface": "gills",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 77,
+          "end": 80,
+          "surface": "and",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "third",
+      "gloss": "üçüncü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 85,
+          "end": 90,
+          "surface": "third",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "sends",
+      "gloss": "gönderir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 91,
+          "end": 96,
+          "surface": "sends",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "around",
+      "gloss": "çevresine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 106,
+          "surface": "around",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "rest",
+      "gloss": "geri kalan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 115,
+          "surface": "rest",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 116,
+          "end": 118,
+          "surface": "of",
+          "contextSentence": "Two hearts push blood through the gills, and the third sends it around the rest of the body.",
+          "contextSentenceTr": "İki kalp kanı solungaçlardan geçirir, üçüncüsü ise onu vücudun geri kalanına gönderir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 62,
+          "end": 64,
+          "surface": "of",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "blue",
+      "gloss": "mavi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 146,
+          "surface": "blue",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 148,
+          "end": 155,
+          "surface": "because",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 231,
+          "end": 238,
+          "surface": "because",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 115,
+          "end": 122,
+          "surface": "Because",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "carries",
+      "gloss": "taşır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 159,
+          "end": 166,
+          "surface": "carries",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "oxygen",
+      "gloss": "oksijen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 173,
+          "surface": "oxygen",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "substance",
+      "gloss": "madde",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 190,
+          "surface": "substance",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 195,
+          "surface": "that",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "contains",
+      "gloss": "içerir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 196,
+          "end": 204,
+          "surface": "contains",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "copper",
+      "gloss": "bakır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 211,
+          "surface": "copper",
+          "contextSentence": "Its blood is blue, because it carries oxygen with a substance that contains copper.",
+          "contextSentenceTr": "Kanı mavidir, çünkü oksijeni bakır içeren bir maddeyle taşır."
+        }
+      ]
+    },
+    {
+      "lemma": "our",
+      "gloss": "bizim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 216,
+          "surface": "Our",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "red",
+      "gloss": "kırmızı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 226,
+          "end": 229,
+          "surface": "red",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "uses",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 242,
+          "end": 246,
+          "surface": "uses",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "iron",
+      "gloss": "demir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 247,
+          "end": 251,
+          "surface": "iron",
+          "contextSentence": "Our blood is red, because it uses iron.",
+          "contextSentenceTr": "Bizim kanımız kırmızıdır, çünkü demir kullanır."
+        }
+      ]
+    },
+    {
+      "lemma": "without",
+      "gloss": "olmadan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 253,
+          "end": 260,
+          "surface": "Without",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "these",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 266,
+          "surface": "these",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "special",
+      "gloss": "özel",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 274,
+          "surface": "special",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "could",
+      "gloss": "-ebilirdi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 294,
+          "end": 299,
+          "surface": "could",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 300,
+          "end": 303,
+          "surface": "not",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 98,
+          "end": 101,
+          "surface": "not",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "live",
+      "gloss": "yaşamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 308,
+          "surface": "live",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 309,
+          "end": 312,
+          "surface": "for",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "long",
+      "gloss": "uzun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 313,
+          "end": 317,
+          "surface": "long",
+          "contextSentence": "Without these special hearts, an octopus could not live for long.",
+          "contextSentenceTr": "Bu özel kalpler olmadan bir ahtapot uzun süre yaşayamazdı."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 15,
+          "surface": "also",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "nervous",
+      "gloss": "sinir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 29,
+          "end": 36,
+          "surface": "nervous",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 37,
+          "end": 43,
+          "surface": "system",
+          "contextSentence": "An octopus also has a clever nervous system.",
+          "contextSentenceTr": "Bir ahtapotun ayrıca zeki bir sinir sistemi vardır."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "yaklaşık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 45,
+          "end": 50,
+          "surface": "About",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "thirds",
+      "gloss": "üçte",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 55,
+          "end": 61,
+          "surface": "thirds",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "nerve",
+      "gloss": "sinir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 74,
+          "surface": "nerve",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 75,
+          "end": 80,
+          "surface": "cells",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 87,
+          "surface": "in",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 102,
+          "end": 104,
+          "surface": "in",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "head",
+      "gloss": "baş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 109,
+          "end": 113,
+          "surface": "head",
+          "contextSentence": "About two thirds of its nerve cells are in its arms, not in its head.",
+          "contextSentenceTr": "Sinir hücrelerinin yaklaşık üçte ikisi başında değil, kollarındadır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-den dolayı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 125,
+          "surface": "of",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 126,
+          "end": 130,
+          "surface": "this",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "each",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 132,
+          "end": 136,
+          "surface": "each",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "arm",
+      "gloss": "kol",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 137,
+          "end": 140,
+          "surface": "arm",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "yapmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 145,
+          "end": 147,
+          "surface": "do",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 148,
+          "end": 152,
+          "surface": "some",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "iş",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 153,
+          "end": 157,
+          "surface": "work",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 158,
+          "end": 160,
+          "surface": "by",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "itself",
+      "gloss": "kendi başına",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 167,
+          "surface": "itself",
+          "contextSentence": "Because of this, each arm can do some work by itself.",
+          "contextSentenceTr": "Bu yüzden her kol bazı işleri kendi başına yapabilir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 110,
+        "end": 170
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "How octopuses walk across the sea floor",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Yürüme anlatılmaz."
+        },
+        {
+          "key": "o2",
+          "text": "Surprising octopus body facts",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin ahtapotun vücudundaki şaşırtıcı özellikleri anlatır."
+        },
+        {
+          "key": "o3",
+          "text": "How octopuses hunt in the dark sea",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Avlanma anlatılmaz."
+        },
+        {
+          "key": "o4",
+          "text": "Why octopuses change colour to hide",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Renk değiştirme anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Why is an octopus's blood blue?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 129,
+        "end": 212
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It lives very deep under the cold sea.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Metin derinlikten söz etmez."
+        },
+        {
+          "key": "o2",
+          "text": "It uses iron, just like human blood does.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Demir insan kanı içindir."
+        },
+        {
+          "key": "o3",
+          "text": "It has three hearts that make it blue.",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kalp sayısı rengi açıklamaz."
+        },
+        {
+          "key": "o4",
+          "text": "It uses a substance with copper.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin mavi rengi bakırlı maddeye bağlar."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “squeeze” mean in the first paragraph?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 69,
+        "end": 108
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Push into a very tight space",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Squeeze, dar bir yerden zorla geçmek demektir."
+        },
+        {
+          "key": "o2",
+          "text": "Grow very tall very quickly",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Büyümeyle ilgili değil."
+        },
+        {
+          "key": "o3",
+          "text": "Shine in the dark sea water",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Işıkla ilgisi yok."
+        },
+        {
+          "key": "o4",
+          "text": "Sleep for hours on the sea floor",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Uyumak anlatılmaz."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can we infer about an octopus's arms?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 45,
+        "end": 114
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "The arms cannot sense anything at all.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Sinir hücreleri kolların hissedebildiğini ima eder."
+        },
+        {
+          "key": "o2",
+          "text": "The head has two thirds of the nerve cells.",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Oran kollar içindir; baş için değil."
+        },
+        {
+          "key": "o3",
+          "text": "The head may not control every move.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Sinir hücrelerinin çoğu kollarda olduğu için baş her hareketi yönetmeyebilir."
+        },
+        {
+          "key": "o4",
+          "text": "The arms are controlled only by the hearts.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kalplerin kolları yönettiği söylenmez."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Ahtapotun üç kalbi vardır: ikisi kanı solungaçlara, biri vücuda pompalar.",
+        "source": "PBS Nature, Octopus (other species); https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Kanı, bakır içeren hemosiyanin proteini yüzünden mavidir; insan kanı demirli hemoglobin kullanır.",
+        "source": "Smithsonian Magazine, Ten wild facts about octopuses: they have three hearts, big brains and blue blood; https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Sinir hücrelerinin yaklaşık üçte ikisi kollardadır (kaynaklar oranı biraz farklı verir; en yaygın değer üçte iki).",
+        "source": "PBS Nature, Octopus (other species); https://www.pbs.org/wnet/nature/group/other-species/octopus/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}

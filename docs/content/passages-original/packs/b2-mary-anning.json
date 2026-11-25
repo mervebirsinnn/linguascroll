@@ -1,0 +1,2691 @@
+{
+  "slug": "b2-mary-anning",
+  "level": "B2",
+  "title": "The Fossil Hunter of Lyme Regis",
+  "topic": "Bilim Tarihi",
+  "sortOrder": 35,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England. Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home. As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago. The find attracted the attention of collectors and scholars far beyond her small town.",
+    "After her father died, Mary kept searching the cliffs and the beach, often just after a storm. That is still the best time to find fossils on that coast. In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake. She sold her fossils to collectors and scholars, and this trade helped support her family. She also taught herself anatomy and geology, even though she had little formal education.",
+    "The Geological Society of London did not accept women as members, so she was never one of them. Scholars studied and wrote about her fossils, but they often did not credit her discoveries. Today, historians recognise her as an important pioneer of palaeontology. Her story shows how class and gender once decided whose work was celebrated."
+  ],
+  "words": [
+    {
+      "lemma": "mary",
+      "gloss": "Mary (kişi adı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 4,
+          "surface": "Mary",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 23,
+          "end": 27,
+          "surface": "Mary",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "anning",
+      "gloss": "Anning (soyadı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 5,
+          "end": 11,
+          "surface": "Anning",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 12,
+          "end": 15,
+          "surface": "was",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 99,
+          "end": 102,
+          "surface": "was",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 271,
+          "end": 274,
+          "surface": "was",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 76,
+          "surface": "was",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 324,
+          "end": 327,
+          "surface": "was",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "born",
+      "gloss": "doğdu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 20,
+          "surface": "born",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 21,
+          "end": 23,
+          "surface": "in",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 29,
+          "end": 31,
+          "surface": "in",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 154,
+          "end": 156,
+          "surface": "In",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "lyme",
+      "gloss": "Lyme (yer adı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 32,
+          "end": 36,
+          "surface": "Lyme",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "regis",
+      "gloss": "Regis (yer adı)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 37,
+          "end": 42,
+          "surface": "Regis",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 45,
+          "surface": "a",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 174,
+          "surface": "a",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 204,
+          "end": 205,
+          "surface": "a",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 271,
+          "surface": "a",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 86,
+          "end": 87,
+          "surface": "a",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 275,
+          "end": 276,
+          "surface": "a",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 46,
+          "end": 51,
+          "surface": "small",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 399,
+          "end": 404,
+          "surface": "small",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "town",
+      "gloss": "kasaba",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 52,
+          "end": 56,
+          "surface": "town",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 405,
+          "end": 409,
+          "surface": "town",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "üzerinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 57,
+          "end": 59,
+          "surface": "on",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 139,
+          "end": 141,
+          "surface": "on",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 60,
+          "end": 63,
+          "surface": "the",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 239,
+          "end": 242,
+          "surface": "the",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 324,
+          "end": 327,
+          "surface": "The",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 343,
+          "end": 346,
+          "surface": "the",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 43,
+          "end": 46,
+          "surface": "the",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 61,
+          "surface": "the",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 109,
+          "end": 112,
+          "surface": "the",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 172,
+          "end": 175,
+          "surface": "the",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 218,
+          "end": 221,
+          "surface": "the",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "south",
+      "gloss": "güney",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 64,
+          "end": 69,
+          "surface": "south",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "coast",
+      "gloss": "kıyı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 70,
+          "end": 75,
+          "surface": "coast",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 147,
+          "end": 152,
+          "surface": "coast",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 76,
+          "end": 78,
+          "surface": "of",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 251,
+          "end": 253,
+          "surface": "of",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 310,
+          "end": 312,
+          "surface": "of",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 357,
+          "end": 359,
+          "surface": "of",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 25,
+          "surface": "of",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 87,
+          "end": 89,
+          "surface": "of",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 245,
+          "end": 247,
+          "surface": "of",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "england",
+      "gloss": "İngiltere",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 86,
+          "surface": "England",
+          "contextSentence": "Mary Anning was born in 1799 in Lyme Regis, a small town on the south coast of England.",
+          "contextSentenceTr": "Mary Anning 1799'da İngiltere'nin güney kıyısındaki küçük bir kasaba olan Lyme Regis'te doğdu."
+        }
+      ]
+    },
+    {
+      "lemma": "her",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 88,
+          "end": 91,
+          "surface": "Her",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 116,
+          "surface": "her",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 224,
+          "surface": "her",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 395,
+          "end": 398,
+          "surface": "her",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 6,
+          "end": 9,
+          "surface": "her",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 292,
+          "end": 295,
+          "surface": "her",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 362,
+          "end": 365,
+          "surface": "her",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 129,
+          "end": 132,
+          "surface": "her",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 172,
+          "end": 175,
+          "surface": "her",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 217,
+          "end": 220,
+          "surface": "her",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 263,
+          "end": 266,
+          "surface": "Her",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "family",
+      "gloss": "aile",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 92,
+          "end": 98,
+          "surface": "family",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 366,
+          "end": 372,
+          "surface": "family",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "poor",
+      "gloss": "yoksul",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 103,
+          "end": 107,
+          "surface": "poor",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 109,
+          "end": 112,
+          "surface": "and",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 142,
+          "surface": "and",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 217,
+          "end": 220,
+          "surface": "and",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 371,
+          "end": 374,
+          "surface": "and",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 54,
+          "end": 57,
+          "surface": "and",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 321,
+          "surface": "and",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 332,
+          "end": 335,
+          "surface": "and",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 406,
+          "end": 409,
+          "surface": "and",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 116,
+          "surface": "and",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 289,
+          "end": 292,
+          "surface": "and",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "father",
+      "gloss": "baba",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 123,
+          "surface": "father",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 10,
+          "end": 16,
+          "surface": "father",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "made",
+      "gloss": "yaptı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 124,
+          "end": 128,
+          "surface": "made",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "furniture",
+      "gloss": "mobilya",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 129,
+          "end": 138,
+          "surface": "furniture",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "sold",
+      "gloss": "sattı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 143,
+          "end": 147,
+          "surface": "sold",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 291,
+          "surface": "sold",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "fossils",
+      "gloss": "fosiller",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 148,
+          "end": 155,
+          "surface": "fossils",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 131,
+          "end": 138,
+          "surface": "fossils",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 296,
+          "end": 303,
+          "surface": "fossils",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 140,
+          "surface": "fossils",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 158,
+          "surface": "to",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 304,
+          "end": 306,
+          "surface": "to",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "visitors",
+      "gloss": "ziyaretçiler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 159,
+          "end": 167,
+          "surface": "visitors",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 168,
+          "end": 172,
+          "surface": "from",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "table",
+      "gloss": "masa",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 175,
+          "end": 180,
+          "surface": "table",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "outside",
+      "gloss": "dışında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 181,
+          "end": 188,
+          "surface": "outside",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 189,
+          "end": 194,
+          "surface": "their",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "home",
+      "gloss": "ev",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 195,
+          "end": 199,
+          "surface": "home",
+          "contextSentence": "Her family was poor, and her father made furniture and sold fossils to visitors from a table outside their home.",
+          "contextSentenceTr": "Ailesi yoksuldu ve babası mobilya yapıp evlerinin önündeki bir masadan ziyaretçilere fosil satardı."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 201,
+          "end": 203,
+          "surface": "As",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "child",
+      "gloss": "çocuk",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 211,
+          "surface": "child",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 216,
+          "surface": "she",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 165,
+          "surface": "she",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 283,
+          "end": 286,
+          "surface": "She",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 374,
+          "end": 377,
+          "surface": "She",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 431,
+          "end": 434,
+          "surface": "she",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 72,
+          "surface": "she",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "brother",
+      "gloss": "erkek kardeş",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 225,
+          "end": 232,
+          "surface": "brother",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "found",
+      "gloss": "buldu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 233,
+          "end": 238,
+          "surface": "found",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 166,
+          "end": 171,
+          "surface": "found",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "remains",
+      "gloss": "kalıntılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 250,
+          "surface": "remains",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 256,
+          "surface": "an",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 224,
+          "end": 226,
+          "surface": "an",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "ichthyosaur",
+      "gloss": "ihtiyozor",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 257,
+          "end": 268,
+          "surface": "ichthyosaur",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "large",
+      "gloss": "büyük",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 272,
+          "end": 277,
+          "surface": "large",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "sea",
+      "gloss": "deniz",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 278,
+          "end": 281,
+          "surface": "sea",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "reptile",
+      "gloss": "sürüngen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 282,
+          "end": 289,
+          "surface": "reptile",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 290,
+          "end": 294,
+          "surface": "that",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "lived",
+      "gloss": "yaşadı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 295,
+          "end": 300,
+          "surface": "lived",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "millions",
+      "gloss": "milyonlarca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 301,
+          "end": 309,
+          "surface": "millions",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 313,
+          "end": 318,
+          "surface": "years",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "ago",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 319,
+          "end": 322,
+          "surface": "ago",
+          "contextSentence": "As a child, she and her brother found the remains of an ichthyosaur, a large sea reptile that lived millions of years ago.",
+          "contextSentenceTr": "Çocukken erkek kardeşiyle birlikte, milyonlarca yıl önce yaşamış büyük bir deniz sürüngeni olan ihtiyozorun kalıntılarını buldu."
+        }
+      ]
+    },
+    {
+      "lemma": "find",
+      "gloss": "buluntu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 328,
+          "end": 332,
+          "surface": "find",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "attracted",
+      "gloss": "çekti",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 333,
+          "end": 342,
+          "surface": "attracted",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "attention",
+      "gloss": "dikkat",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 347,
+          "end": 356,
+          "surface": "attention",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "collectors",
+      "gloss": "koleksiyoncular",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 360,
+          "end": 370,
+          "surface": "collectors",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 307,
+          "end": 317,
+          "surface": "collectors",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "scholars",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 375,
+          "end": 383,
+          "surface": "scholars",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 322,
+          "end": 330,
+          "surface": "scholars",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 96,
+          "end": 104,
+          "surface": "Scholars",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "far",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 384,
+          "end": 387,
+          "surface": "far",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "beyond",
+      "gloss": "ötesinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 388,
+          "end": 394,
+          "surface": "beyond",
+          "contextSentence": "The find attracted the attention of collectors and scholars far beyond her small town.",
+          "contextSentenceTr": "Bu buluntu, küçük kasabasının çok ötesindeki koleksiyoncuların ve bilim insanlarının dikkatini çekti."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 5,
+          "surface": "After",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 85,
+          "surface": "after",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "died",
+      "gloss": "öldü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 21,
+          "surface": "died",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "kept",
+      "gloss": "sürdürdü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 32,
+          "surface": "kept",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "searching",
+      "gloss": "aramayı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 42,
+          "surface": "searching",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "cliffs",
+      "gloss": "uçurumlar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 47,
+          "end": 53,
+          "surface": "cliffs",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "beach",
+      "gloss": "plaj",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 62,
+          "end": 67,
+          "surface": "beach",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 69,
+          "end": 74,
+          "surface": "often",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 151,
+          "end": 156,
+          "surface": "often",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "just",
+      "gloss": "hemen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 79,
+          "surface": "just",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "storm",
+      "gloss": "fırtına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 88,
+          "end": 93,
+          "surface": "storm",
+          "contextSentence": "After her father died, Mary kept searching the cliffs and the beach, often just after a storm.",
+          "contextSentenceTr": "Babası öldükten sonra Mary, çoğu zaman bir fırtınanın hemen ardından uçurumlarda ve plajda aramaya devam etti."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 95,
+          "end": 99,
+          "surface": "That",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 142,
+          "end": 146,
+          "surface": "that",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 100,
+          "end": 102,
+          "surface": "is",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 108,
+          "surface": "still",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "best",
+      "gloss": "en iyi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 113,
+          "end": 117,
+          "surface": "best",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 118,
+          "end": 122,
+          "surface": "time",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 125,
+          "surface": "to",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "find",
+      "gloss": "bulmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 126,
+          "end": 130,
+          "surface": "find",
+          "contextSentence": "That is still the best time to find fossils on that coast.",
+          "contextSentenceTr": "Bu, o kıyıda fosil bulmak için hâlâ en iyi zamandır."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 181,
+          "surface": "first",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "complete",
+      "gloss": "eksiksiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 182,
+          "end": 190,
+          "surface": "complete",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "plesiosaur",
+      "gloss": "plesiyozor",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 201,
+          "surface": "plesiosaur",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "skeleton",
+      "gloss": "iskelet",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 202,
+          "end": 210,
+          "surface": "skeleton",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 212,
+          "end": 217,
+          "surface": "which",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "famous",
+      "gloss": "ünlü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 222,
+          "end": 228,
+          "surface": "famous",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "scientist",
+      "gloss": "bilim insanı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 229,
+          "end": 238,
+          "surface": "scientist",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "georges",
+      "gloss": "Georges (kişi adı)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 239,
+          "end": 246,
+          "surface": "Georges",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "cuvier",
+      "gloss": "Cuvier (soyadı)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 247,
+          "end": 253,
+          "surface": "Cuvier",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "(at first: önce)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 254,
+          "end": 256,
+          "surface": "at",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "(at first: önce)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 257,
+          "end": 262,
+          "surface": "first",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "thought",
+      "gloss": "düşündü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 263,
+          "end": 270,
+          "surface": "thought",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "fake",
+      "gloss": "sahte",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 277,
+          "end": 281,
+          "surface": "fake",
+          "contextSentence": "In 1823 she found the first complete plesiosaur skeleton, which the famous scientist Georges Cuvier at first thought was a fake.",
+          "contextSentenceTr": "1823'te ilk eksiksiz plesiyozor iskeletini buldu; ünlü bilim insanı Georges Cuvier başta bunun sahte olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 336,
+          "end": 340,
+          "surface": "this",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "trade",
+      "gloss": "ticaret",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 341,
+          "end": 346,
+          "surface": "trade",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "helped",
+      "gloss": "yardım etti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 347,
+          "end": 353,
+          "surface": "helped",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "support",
+      "gloss": "desteklemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 354,
+          "end": 361,
+          "surface": "support",
+          "contextSentence": "She sold her fossils to collectors and scholars, and this trade helped support her family.",
+          "contextSentenceTr": "Fosillerini koleksiyoncu ve bilim insanlarına sattı ve bu ticaret ailesini desteklemeye yardım etti."
+        }
+      ]
+    },
+    {
+      "lemma": "also",
+      "gloss": "ayrıca",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 378,
+          "end": 382,
+          "surface": "also",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "taught",
+      "gloss": "öğretti",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 383,
+          "end": 389,
+          "surface": "taught",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "herself",
+      "gloss": "kendi kendine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 397,
+          "surface": "herself",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "anatomy",
+      "gloss": "anatomi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 398,
+          "end": 405,
+          "surface": "anatomy",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "geology",
+      "gloss": "jeoloji",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 410,
+          "end": 417,
+          "surface": "geology",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "-e rağmen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 419,
+          "end": 423,
+          "surface": "even",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "though",
+      "gloss": "(even though: -e rağmen)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 424,
+          "end": 430,
+          "surface": "though",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 435,
+          "end": 438,
+          "surface": "had",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "little",
+      "gloss": "az",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 439,
+          "end": 445,
+          "surface": "little",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "formal",
+      "gloss": "resmi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 446,
+          "end": 452,
+          "surface": "formal",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "education",
+      "gloss": "eğitim",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 453,
+          "end": 462,
+          "surface": "education",
+          "contextSentence": "She also taught herself anatomy and geology, even though she had little formal education.",
+          "contextSentenceTr": "Ayrıca az resmi eğitimi olmasına rağmen kendi kendine anatomi ve jeoloji öğrendi."
+        }
+      ]
+    },
+    {
+      "lemma": "geological",
+      "gloss": "Jeoloji (sıfat)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 14,
+          "surface": "Geological",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "society",
+      "gloss": "Cemiyet",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 15,
+          "end": 22,
+          "surface": "Society",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "london",
+      "gloss": "Londra",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 26,
+          "end": 32,
+          "surface": "London",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "did",
+      "gloss": "olumsuz/soru yardımcı fiili (geçmiş)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 33,
+          "end": 36,
+          "surface": "did",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 157,
+          "end": 160,
+          "surface": "did",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 37,
+          "end": 40,
+          "surface": "not",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 164,
+          "surface": "not",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "accept",
+      "gloss": "kabul etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 41,
+          "end": 47,
+          "surface": "accept",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "women",
+      "gloss": "kadınlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 48,
+          "end": 53,
+          "surface": "women",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "(as: olarak)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 54,
+          "end": 56,
+          "surface": "as",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 221,
+          "end": 223,
+          "surface": "as",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "members",
+      "gloss": "üyeler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 64,
+          "surface": "members",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "so",
+      "gloss": "bu yüzden",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 68,
+          "surface": "so",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "never",
+      "gloss": "asla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 77,
+          "end": 82,
+          "surface": "never",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 83,
+          "end": 86,
+          "surface": "one",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onlardan",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 90,
+          "end": 94,
+          "surface": "them",
+          "contextSentence": "The Geological Society of London did not accept women as members, so she was never one of them.",
+          "contextSentenceTr": "Londra Jeoloji Cemiyeti kadınları üye olarak kabul etmiyordu; bu yüzden o hiçbir zaman üyelerinden biri olmadı."
+        }
+      ]
+    },
+    {
+      "lemma": "studied",
+      "gloss": "inceledi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 105,
+          "end": 112,
+          "surface": "studied",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "wrote",
+      "gloss": "yazdı",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 122,
+          "surface": "wrote",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "about",
+      "gloss": "hakkında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 123,
+          "end": 128,
+          "surface": "about",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 142,
+          "end": 145,
+          "surface": "but",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 146,
+          "end": 150,
+          "surface": "they",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "credit",
+      "gloss": "takdir etmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 165,
+          "end": 171,
+          "surface": "credit",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "discoveries",
+      "gloss": "keşifler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 176,
+          "end": 187,
+          "surface": "discoveries",
+          "contextSentence": "Scholars studied and wrote about her fossils, but they often did not credit her discoveries.",
+          "contextSentenceTr": "Bilim insanları onun fosillerini inceleyip hakkında yazdı ama keşiflerinin hakkını çoğu zaman teslim etmedi."
+        }
+      ]
+    },
+    {
+      "lemma": "today",
+      "gloss": "bugün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 189,
+          "end": 194,
+          "surface": "Today",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "historians",
+      "gloss": "tarihçiler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 196,
+          "end": 206,
+          "surface": "historians",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "recognise",
+      "gloss": "tanır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 216,
+          "surface": "recognise",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "important",
+      "gloss": "önemli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 227,
+          "end": 236,
+          "surface": "important",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "pioneer",
+      "gloss": "öncü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 244,
+          "surface": "pioneer",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "palaeontology",
+      "gloss": "paleontoloji",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 248,
+          "end": 261,
+          "surface": "palaeontology",
+          "contextSentence": "Today, historians recognise her as an important pioneer of palaeontology.",
+          "contextSentenceTr": "Bugün tarihçiler onu paleontolojinin önemli bir öncüsü olarak tanır."
+        }
+      ]
+    },
+    {
+      "lemma": "story",
+      "gloss": "hikâye",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 267,
+          "end": 272,
+          "surface": "story",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "shows",
+      "gloss": "gösterir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 273,
+          "end": 278,
+          "surface": "shows",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 279,
+          "end": 282,
+          "surface": "how",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "class",
+      "gloss": "sınıf",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 283,
+          "end": 288,
+          "surface": "class",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "gender",
+      "gloss": "cinsiyet",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 293,
+          "end": 299,
+          "surface": "gender",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "once",
+      "gloss": "bir zamanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 300,
+          "end": 304,
+          "surface": "once",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "decided",
+      "gloss": "belirledi",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 312,
+          "surface": "decided",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "whose",
+      "gloss": "kimin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 313,
+          "end": 318,
+          "surface": "whose",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 319,
+          "end": 323,
+          "surface": "work",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    },
+    {
+      "lemma": "celebrated",
+      "gloss": "övüldü",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 328,
+          "end": 338,
+          "surface": "celebrated",
+          "contextSentence": "Her story shows how class and gender once decided whose work was celebrated.",
+          "contextSentenceTr": "Hikâyesi, sınıfın ve cinsiyetin bir zamanlar kimin çalışmasının övüleceğini nasıl belirlediğini gösterir."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 151,
+        "end": 187
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A storm that destroyed a town on the English coast",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Fırtınalar yalnızca fosillerin ortaya çıkmasına yardım eden ayrıntıdır; ana konu değildir."
+        },
+        {
+          "key": "o2",
+          "text": "An early experiment in teaching anatomy to children",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Anning'in kendi kendine anatomi öğrenmesi küçük bir ayrıntıdır; metin çocuklara anatomi öğretmeyi anlatmaz."
+        },
+        {
+          "key": "o3",
+          "text": "A fossil hunter who was undervalued in her time",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin Mary Anning'in keşiflerini ve cinsiyet ile sınıf yüzünden hak ettiği tanınmayı geç aldığını anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "A wealthy collector who ran a famous museum",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Anning yoksul bir aileden gelen bir fosil toplayıcısıydı; zengin koleksiyoncular başkalarıydı."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What did Mary Anning find in 1823?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 162,
+        "end": 210
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "A complete plesiosaur skeleton",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin 1823'te ilk eksiksiz plesiyozor iskeletini bulduğunu söyler."
+        },
+        {
+          "key": "o2",
+          "text": "An ichthyosaur skeleton found as a child",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "İhtiyozor iskeletini çocukken buldu; 1823'te değil."
+        },
+        {
+          "key": "o3",
+          "text": "Hidden records kept by the Geological Society",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir buluntudan söz edilmez."
+        },
+        {
+          "key": "o4",
+          "text": "A rare book about anatomy",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir kitap bulunduğu söylenmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does 'credit' mean in paragraph 3?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 151,
+        "end": 187
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Pay a sum of money for",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Credit'in para ödemek anlamı vardır ama burada keşiflerin hakkının teslim edilmesinden söz edilir."
+        },
+        {
+          "key": "o2",
+          "text": "Disagree with the findings",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin keşiflere itiraz edildiğini değil, sahibinin anılmadığını söyler."
+        },
+        {
+          "key": "o3",
+          "text": "Look at it very closely",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Bilim insanları fosilleri zaten inceledi; sorun hakkın teslim edilmemesiydi."
+        },
+        {
+          "key": "o4",
+          "text": "Give recognition for",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Credit, bir kişinin başarısını açıkça kabul edip ona hakkını vermek demektir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can be inferred about the Geological Society of London in her time?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 33,
+        "end": 64
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It ignored fossils from Lyme Regis",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin bilim insanlarının onun fosillerini incelediğini söyler; tamamen yok saymaktan söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Its rules made it hard for women to join",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Cemiyet kadınları üye olarak kabul etmiyordu; bu, kurallarının kadınlar için engel olduğunu gösterir."
+        },
+        {
+          "key": "o3",
+          "text": "It paid her a regular salary for her work",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde cemiyetin ona maaş ödediği söylenmez; geçimini fosil satarak sağladı."
+        },
+        {
+          "key": "o4",
+          "text": "It welcomed people from every background",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin tam tersini söyler; kadınlar üye olamıyordu."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Mary Anning 1799'da Lyme Regis'te doğdu; ailesi çok yoksuldu; babası marangoz/mobilya ustasıydı (cabinetmaker) ve fosil toplayıp satıyordu.",
+        "source": "Natural History Museum, London, Mary Anning: unsung hero; https://www.nhm.ac.uk/discover/mary-anning-unsung-hero.html",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Anning ailesi buluntularını evlerinin dışındaki bir masadan ziyaretçilere satardı; baba çocuklara fosil bulmayı ve hazırlamayı öğretti.",
+        "source": "Lyme Regis Museum, Mary Anning; https://www.lymeregismuseum.co.uk/collection/mary-anning/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Erkek kardeşi Joseph dev bir kafatası buldu, Mary iskeletin geri kalanını çıkardı (ihtiyozor); Mary 1823'te ilk eksiksiz plesiyozor iskeletini buldu.",
+        "source": "Lyme Regis Museum, Mary Anning; https://www.lymeregismuseum.co.uk/collection/mary-anning/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Plesiyozor 10 Aralık 1823'te bulundu; Cuvier başta bunun sahte olduğunu düşündü.",
+        "source": "Geological Society of London, Plesiosaurus dolichodeirus, found 1823; https://www.geolsoc.org.uk/the-library/online-exhibitions/mary-anning-and-the-geological-society/reconstruction-of-life/plesiosaurus-dolichodeirus/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Fırtınadan hemen sonra fosil aramak Lyme Regis'te hâlâ en iyi zamandır; Anning fırtına sonrası arama yapardı.",
+        "source": "Geological Society of London, Murchison's account of meeting Mary Anning; https://www.geolsoc.org.uk/the-library/online-exhibitions/mary-anning-and-the-geological-society/geologising-with-mary-anning/murchisons-account-of-meeting-mary-anning/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Az resmi eğitim almasına rağmen okumayı biliyordu ve jeoloji ile anatomiyi kendi kendine öğrendi; bilim insanları buluntularını satın aldı ama çoğu zaman keşiflerinin hakkını vermedi; Londra Jeoloji Cemiyeti onu kabul etmedi; fosil satışı ailenin borçlarına katkı sağladı; öncü paleontolog.",
+        "source": "Natural History Museum, London, Mary Anning: unsung hero; https://www.nhm.ac.uk/discover/mary-anning-unsung-hero.html",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Cinsiyeti nedeniyle Anning hiçbir zaman Jeoloji Cemiyeti üyesi olmadı.",
+        "source": "Geological Society of London, Mary Anning and the Geological Society; https://www.geolsoc.org.uk/the-library/online-exhibitions/mary-anning-and-the-geological-society/",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

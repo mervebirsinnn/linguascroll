@@ -1,0 +1,2599 @@
+{
+  "slug": "b2-mitochondria",
+  "level": "B2",
+  "title": "Power Stations with a Past",
+  "topic": "Biyoloji",
+  "sortOrder": 40,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Inside almost every cell in your body are tiny structures called mitochondria. They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities. Cells that work especially hard, such as those in muscles and the heart, depend heavily on them. Mature red blood cells are an exception, because they have none.",
+    "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus. This clue supports a remarkable idea known as the endosymbiotic theory. According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago. Instead of being digested, the bacteria stayed and became permanent partners. The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+    "In humans, mitochondrial DNA is usually inherited from the mother alone. When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer."
+  ],
+  "words": [
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 6,
+          "surface": "Inside",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "almost",
+      "gloss": "neredeyse",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 13,
+          "surface": "almost",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "every",
+      "gloss": "her",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 19,
+          "surface": "every",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "cell",
+      "gloss": "hücre",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 20,
+          "end": 24,
+          "surface": "cell",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 133,
+          "end": 137,
+          "surface": "cell",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 127,
+          "end": 131,
+          "surface": "cell",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 308,
+          "end": 312,
+          "surface": "cell",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 25,
+          "end": 27,
+          "surface": "in",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 320,
+          "end": 322,
+          "surface": "in",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 25,
+          "end": 27,
+          "surface": "in",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 120,
+          "end": 122,
+          "surface": "in",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 2,
+          "surface": "In",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "your",
+      "gloss": "senin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 28,
+          "end": 32,
+          "surface": "your",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "body",
+      "gloss": "vücut",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 33,
+          "end": 37,
+          "surface": "body",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 38,
+          "end": 41,
+          "surface": "are",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 84,
+          "end": 87,
+          "surface": "are",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 393,
+          "end": 396,
+          "surface": "are",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 13,
+          "end": 16,
+          "surface": "are",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 182,
+          "end": 185,
+          "surface": "are",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "tiny",
+      "gloss": "minicik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 42,
+          "end": 46,
+          "surface": "tiny",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "structures",
+      "gloss": "yapılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 47,
+          "end": 57,
+          "surface": "structures",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        }
+      ]
+    },
+    {
+      "lemma": "called",
+      "gloss": "adı verilen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 58,
+          "end": 64,
+          "surface": "called",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 209,
+          "end": 215,
+          "surface": "called",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "mitochondria",
+      "gloss": "mitokondriler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 65,
+          "end": 77,
+          "surface": "mitochondria",
+          "contextSentence": "Inside almost every cell in your body are tiny structures called mitochondria.",
+          "contextSentenceTr": "Vücudundaki neredeyse her hücrenin içinde mitokondri adı verilen minicik yapılar bulunur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 12,
+          "surface": "Mitochondria",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 230,
+          "end": 242,
+          "surface": "mitochondria",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 90,
+          "surface": "mitochondria",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 79,
+          "end": 83,
+          "surface": "They",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 147,
+          "end": 151,
+          "surface": "they",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 419,
+          "end": 423,
+          "surface": "they",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 41,
+          "end": 45,
+          "surface": "they",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sık sık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 88,
+          "end": 93,
+          "surface": "often",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 186,
+          "end": 191,
+          "surface": "often",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "described",
+      "gloss": "tanımlanır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 94,
+          "end": 103,
+          "surface": "described",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak / kadar (as)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 104,
+          "end": 106,
+          "surface": "as",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 184,
+          "end": 186,
+          "surface": "as",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 107,
+          "end": 110,
+          "surface": "the",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 129,
+          "end": 132,
+          "surface": "the",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 335,
+          "end": 338,
+          "surface": "the",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 94,
+          "end": 97,
+          "surface": "the",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 123,
+          "end": 126,
+          "surface": "the",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 187,
+          "end": 190,
+          "surface": "the",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 371,
+          "end": 374,
+          "surface": "the",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 422,
+          "end": 425,
+          "surface": "The",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 55,
+          "end": 58,
+          "surface": "the",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 116,
+          "surface": "the",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 134,
+          "end": 137,
+          "surface": "the",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 159,
+          "end": 162,
+          "surface": "the",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 192,
+          "end": 195,
+          "surface": "the",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "power",
+      "gloss": "enerji",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 111,
+          "end": 116,
+          "surface": "power",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "stations",
+      "gloss": "santralleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 125,
+          "surface": "stations",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 126,
+          "end": 128,
+          "surface": "of",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 72,
+          "end": 74,
+          "surface": "of",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "because",
+      "gloss": "çünkü",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 139,
+          "end": 146,
+          "surface": "because",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 411,
+          "end": 418,
+          "surface": "because",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 152,
+          "end": 155,
+          "surface": "use",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "oxygen",
+      "gloss": "oksijen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 156,
+          "end": 162,
+          "surface": "oxygen",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 163,
+          "end": 166,
+          "surface": "and",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 331,
+          "end": 334,
+          "surface": "and",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 391,
+          "end": 394,
+          "surface": "and",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 169,
+          "end": 172,
+          "surface": "and",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "nutrients",
+      "gloss": "besinler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 167,
+          "end": 176,
+          "surface": "nutrients",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den gelen",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 177,
+          "end": 181,
+          "surface": "from",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "food",
+      "gloss": "yiyecek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 182,
+          "end": 186,
+          "surface": "food",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 187,
+          "end": 189,
+          "surface": "to",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "produce",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 190,
+          "end": 197,
+          "surface": "produce",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 198,
+          "end": 199,
+          "surface": "a",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 160,
+          "end": 161,
+          "surface": "a",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 323,
+          "end": 324,
+          "surface": "a",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 494,
+          "end": 495,
+          "surface": "a",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "molecule",
+      "gloss": "molekül",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 200,
+          "end": 208,
+          "surface": "molecule",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "atp",
+      "gloss": "ATP",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 216,
+          "end": 219,
+          "surface": "ATP",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki o",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 221,
+          "end": 226,
+          "surface": "which",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "supplies",
+      "gloss": "sağlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 227,
+          "end": 235,
+          "surface": "supplies",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "energy",
+      "gloss": "enerji",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 236,
+          "end": 242,
+          "surface": "energy",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 143,
+          "end": 149,
+          "surface": "energy",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 243,
+          "end": 246,
+          "surface": "for",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "çoğu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 247,
+          "end": 251,
+          "surface": "most",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "cellular",
+      "gloss": "hücresel",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 252,
+          "end": 260,
+          "surface": "cellular",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "activities",
+      "gloss": "etkinlikler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 261,
+          "end": 271,
+          "surface": "activities",
+          "contextSentence": "They are often described as the power stations of the cell, because they use oxygen and nutrients from food to produce a molecule called ATP, which supplies energy for most cellular activities.",
+          "contextSentenceTr": "Sık sık hücrenin enerji santralleri olarak tanımlanırlar, çünkü yiyeceklerden gelen oksijen ve besinleri kullanarak hücresel etkinliklerin çoğuna enerji sağlayan ATP adlı bir molekül üretirler."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 273,
+          "end": 278,
+          "surface": "Cells",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 279,
+          "end": 283,
+          "surface": "that",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 277,
+          "end": 281,
+          "surface": "that",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 124,
+          "end": 128,
+          "surface": "that",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışır",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 284,
+          "end": 288,
+          "surface": "work",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "especially",
+      "gloss": "özellikle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 289,
+          "end": 299,
+          "surface": "especially",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "hard",
+      "gloss": "sıkı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 300,
+          "end": 304,
+          "surface": "hard",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 306,
+          "end": 310,
+          "surface": "such",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 151,
+          "end": 155,
+          "surface": "such",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "(such as: gibi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 311,
+          "end": 313,
+          "surface": "as",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 158,
+          "surface": "as",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "olanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 314,
+          "end": 319,
+          "surface": "those",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "muscles",
+      "gloss": "kaslar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 323,
+          "end": 330,
+          "surface": "muscles",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 173,
+          "end": 180,
+          "surface": "muscles",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "heart",
+      "gloss": "kalp",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 339,
+          "end": 344,
+          "surface": "heart",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "depend",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 346,
+          "end": 352,
+          "surface": "depend",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "heavily",
+      "gloss": "büyük ölçüde",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 353,
+          "end": 360,
+          "surface": "heavily",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "(depend on: -e bağlı olmak)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 361,
+          "end": 363,
+          "surface": "on",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 364,
+          "end": 368,
+          "surface": "them",
+          "contextSentence": "Cells that work especially hard, such as those in muscles and the heart, depend heavily on them.",
+          "contextSentenceTr": "Kaslardakiler ve kalptekiler gibi özellikle sıkı çalışan hücreler büyük ölçüde onlara bağlıdır."
+        }
+      ]
+    },
+    {
+      "lemma": "mature",
+      "gloss": "olgun",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 370,
+          "end": 376,
+          "surface": "Mature",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "red",
+      "gloss": "kırmızı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 377,
+          "end": 380,
+          "surface": "red",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "blood",
+      "gloss": "kan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 381,
+          "end": 386,
+          "surface": "blood",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "cells",
+      "gloss": "hücreleri",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 387,
+          "end": 392,
+          "surface": "cells",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 397,
+          "end": 399,
+          "surface": "an",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "exception",
+      "gloss": "istisna",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 400,
+          "end": 409,
+          "surface": "exception",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "have",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 424,
+          "end": 428,
+          "surface": "have",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "none",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 429,
+          "end": 433,
+          "surface": "none",
+          "contextSentence": "Mature red blood cells are an exception, because they have none.",
+          "contextSentenceTr": "Olgun kırmızı kan hücreleri bir istisnadır, çünkü hiç mitokondrileri yoktur."
+        }
+      ]
+    },
+    {
+      "lemma": "unusual",
+      "gloss": "alışılmadık",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 24,
+          "surface": "unusual",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "another",
+      "gloss": "başka bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 35,
+          "surface": "another",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 300,
+          "end": 307,
+          "surface": "another",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "yol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 36,
+          "end": 39,
+          "surface": "way",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "carry",
+      "gloss": "taşır",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 46,
+          "end": 51,
+          "surface": "carry",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 52,
+          "end": 57,
+          "surface": "their",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "own",
+      "gloss": "kendi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 58,
+          "end": 61,
+          "surface": "own",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "small",
+      "gloss": "küçük",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 62,
+          "end": 67,
+          "surface": "small",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "set",
+      "gloss": "takım",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 68,
+          "end": 71,
+          "surface": "set",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "dna",
+      "gloss": "DNA",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 75,
+          "end": 78,
+          "surface": "DNA",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 25,
+          "end": 28,
+          "surface": "DNA",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "separate",
+      "gloss": "ayrı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 88,
+          "surface": "separate",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "from",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 89,
+          "end": 93,
+          "surface": "from",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 251,
+          "end": 255,
+          "surface": "from",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 50,
+          "end": 54,
+          "surface": "from",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "main",
+      "gloss": "ana",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 98,
+          "end": 102,
+          "surface": "main",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "genetic",
+      "gloss": "genetik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 110,
+          "surface": "genetic",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "material",
+      "gloss": "malzeme",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 111,
+          "end": 119,
+          "surface": "material",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "nucleus",
+      "gloss": "çekirdeği",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 132,
+          "end": 139,
+          "surface": "nucleus",
+          "contextSentence": "Mitochondria are unusual in another way: they carry their own small set of DNA, separate from the main genetic material in the cell nucleus.",
+          "contextSentenceTr": "Mitokondriler başka bir açıdan da alışılmadıktır: hücre çekirdeğindeki ana genetik malzemeden ayrı, kendi küçük DNA takımlarını taşırlar."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 141,
+          "end": 145,
+          "surface": "This",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "clue",
+      "gloss": "ipucu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 146,
+          "end": 150,
+          "surface": "clue",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "supports",
+      "gloss": "destekler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 151,
+          "end": 159,
+          "surface": "supports",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "remarkable",
+      "gloss": "dikkat çekici",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 162,
+          "end": 172,
+          "surface": "remarkable",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "idea",
+      "gloss": "fikir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 173,
+          "end": 177,
+          "surface": "idea",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "known",
+      "gloss": "bilinen",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 178,
+          "end": 183,
+          "surface": "known",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 475,
+          "end": 480,
+          "surface": "known",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "endosymbiotic",
+      "gloss": "endosimbiyotik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 191,
+          "end": 204,
+          "surface": "endosymbiotic",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "theory",
+      "gloss": "kuram",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 205,
+          "end": 211,
+          "surface": "theory",
+          "contextSentence": "This clue supports a remarkable idea known as the endosymbiotic theory.",
+          "contextSentenceTr": "Bu ipucu, endosimbiyotik kuram olarak bilinen dikkat çekici bir fikri destekler."
+        }
+      ]
+    },
+    {
+      "lemma": "according",
+      "gloss": "göre",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 213,
+          "end": 222,
+          "surface": "According",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "(according to: -e göre)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 223,
+          "end": 225,
+          "surface": "to",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 226,
+          "end": 228,
+          "surface": "it",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 536,
+          "end": 538,
+          "surface": "it",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "descend",
+      "gloss": "soyundan gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 243,
+          "end": 250,
+          "surface": "descend",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "free",
+      "gloss": "serbest",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 256,
+          "end": 260,
+          "surface": "free",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "living",
+      "gloss": "yaşayan",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 261,
+          "end": 267,
+          "surface": "living",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "bacteria",
+      "gloss": "bakteriler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 268,
+          "end": 276,
+          "surface": "bacteria",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 375,
+          "end": 383,
+          "surface": "bacteria",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "were",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 282,
+          "end": 286,
+          "surface": "were",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "taken",
+      "gloss": "alınmış",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 287,
+          "end": 292,
+          "surface": "taken",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 299,
+          "surface": "inside",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "more",
+      "gloss": "daha",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 313,
+          "end": 317,
+          "surface": "more",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 318,
+          "end": 322,
+          "surface": "than",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "billion",
+      "gloss": "milyar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 325,
+          "end": 332,
+          "surface": "billion",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "years",
+      "gloss": "yıl",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 333,
+          "end": 338,
+          "surface": "years",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "ago",
+      "gloss": "önce",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 339,
+          "end": 342,
+          "surface": "ago",
+          "contextSentence": "According to it, mitochondria descend from free-living bacteria that were taken inside another cell more than a billion years ago.",
+          "contextSentenceTr": "Bu kurama göre mitokondriler, bir milyar yıldan daha uzun zaman önce başka bir hücrenin içine alınmış serbest yaşayan bakterilerin soyundan gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "instead",
+      "gloss": "yerine",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 344,
+          "end": 351,
+          "surface": "Instead",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "(instead of: yerine)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 352,
+          "end": 354,
+          "surface": "of",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "being",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 355,
+          "end": 360,
+          "surface": "being",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "digested",
+      "gloss": "sindirilmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 369,
+          "surface": "digested",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "stayed",
+      "gloss": "kaldı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 384,
+          "end": 390,
+          "surface": "stayed",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "became",
+      "gloss": "oldu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 395,
+          "end": 401,
+          "surface": "became",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 459,
+          "end": 465,
+          "surface": "became",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "permanent",
+      "gloss": "kalıcı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 402,
+          "end": 411,
+          "surface": "permanent",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "partners",
+      "gloss": "ortaklar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 412,
+          "end": 420,
+          "surface": "partners",
+          "contextSentence": "Instead of being digested, the bacteria stayed and became permanent partners.",
+          "contextSentenceTr": "Bakteriler sindirilmek yerine kaldı ve kalıcı ortaklar oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "american",
+      "gloss": "Amerikalı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 426,
+          "end": 434,
+          "surface": "American",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "biologist",
+      "gloss": "biyolog",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 435,
+          "end": 444,
+          "surface": "biologist",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "lynn",
+      "gloss": "Lynn",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 445,
+          "end": 449,
+          "surface": "Lynn",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "margulis",
+      "gloss": "Margulis",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 450,
+          "end": 458,
+          "surface": "Margulis",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "its",
+      "gloss": "onun",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 466,
+          "end": 469,
+          "surface": "its",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "best",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 470,
+          "end": 474,
+          "surface": "best",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "champion",
+      "gloss": "savunucu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 481,
+          "end": 489,
+          "surface": "champion",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 491,
+          "end": 493,
+          "surface": "at",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "time",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 496,
+          "end": 500,
+          "surface": "time",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 501,
+          "end": 505,
+          "surface": "when",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "birçok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 506,
+          "end": 510,
+          "surface": "many",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "scientists",
+      "gloss": "bilim insanları",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 511,
+          "end": 521,
+          "surface": "scientists",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "still",
+      "gloss": "hâlâ",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 522,
+          "end": 527,
+          "surface": "still",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "doubted",
+      "gloss": "kuşkuyla bakıyordu",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 528,
+          "end": 535,
+          "surface": "doubted",
+          "contextSentence": "The American biologist Lynn Margulis became its best known champion, at a time when many scientists still doubted it.",
+          "contextSentenceTr": "Amerikalı biyolog Lynn Margulis, birçok bilim insanının hâlâ kuşkuyla baktığı bir dönemde bu kuramın en bilinen savunucusu oldu."
+        }
+      ]
+    },
+    {
+      "lemma": "humans",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 3,
+          "end": 9,
+          "surface": "humans",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "mitochondrial",
+      "gloss": "mitokondriyal",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 11,
+          "end": 24,
+          "surface": "mitochondrial",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 29,
+          "end": 31,
+          "surface": "is",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "usually",
+      "gloss": "genellikle",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 32,
+          "end": 39,
+          "surface": "usually",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "inherited",
+      "gloss": "kalıtılır",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 40,
+          "end": 49,
+          "surface": "inherited",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "mother",
+      "gloss": "anne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 59,
+          "end": 65,
+          "surface": "mother",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "alone",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 66,
+          "end": 71,
+          "surface": "alone",
+          "contextSentence": "In humans, mitochondrial DNA is usually inherited from the mother alone.",
+          "contextSentenceTr": "İnsanlarda mitokondriyal DNA genellikle yalnızca anneden kalıtılır."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 77,
+          "surface": "When",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "do",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 91,
+          "end": 93,
+          "surface": "do",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 94,
+          "end": 97,
+          "surface": "not",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "work",
+      "gloss": "çalışmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 98,
+          "end": 102,
+          "surface": "work",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "properly",
+      "gloss": "düzgün",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 103,
+          "end": 111,
+          "surface": "properly",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "organs",
+      "gloss": "organlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 117,
+          "end": 123,
+          "surface": "organs",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "need",
+      "gloss": "ihtiyaç duyar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 129,
+          "end": 133,
+          "surface": "need",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en çok",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 138,
+          "end": 142,
+          "surface": "most",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "brain",
+      "gloss": "beyin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 163,
+          "end": 168,
+          "surface": "brain",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "first",
+      "gloss": "ilk",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 196,
+          "end": 201,
+          "surface": "first",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 202,
+          "end": 204,
+          "surface": "to",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    },
+    {
+      "lemma": "suffer",
+      "gloss": "zarar görmek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 205,
+          "end": 211,
+          "surface": "suffer",
+          "contextSentence": "When mitochondria do not work properly, the organs that need the most energy, such as the brain and muscles, are often the first to suffer.",
+          "contextSentenceTr": "Mitokondriler düzgün çalışmadığında beyin ve kaslar gibi en çok enerjiye ihtiyaç duyan organlar çoğu zaman ilk zarar görenler olur."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the passage mainly about?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 79,
+        "end": 137
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Why the cell nucleus has no DNA of its own",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin ana genetik malzemenin çekirdekte olduğunu söyler."
+        },
+        {
+          "key": "o2",
+          "text": "A debate that proved Lynn Margulis wrong",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Margulis kuramın savunucusu olarak anılır; yanıldığı söylenmez."
+        },
+        {
+          "key": "o3",
+          "text": "The role and unusual origin of mitochondria",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin mitokondrinin enerji üretimindeki görevini, kendi DNA'sını ve bakteri kökenini anlatır."
+        },
+        {
+          "key": "o4",
+          "text": "How red blood cells carry oxygen around the body",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Kırmızı kan hücreleri yalnızca bir istisna olarak anılır."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "Which cells, according to the passage, have no mitochondria?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 370,
+        "end": 434
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Mature red blood cells",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Metin olgun kırmızı kan hücrelerinin hiç mitokondrisi olmadığını söyler."
+        },
+        {
+          "key": "o2",
+          "text": "Cells in the heart",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Kalp hücreleri enerji için mitokondrilere büyük ölçüde bağlıdır."
+        },
+        {
+          "key": "o3",
+          "text": "Muscle cells that work hard",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Sıkı çalışan kas hücreleri enerji için mitokondrilere büyük ölçüde bağlıdır."
+        },
+        {
+          "key": "o4",
+          "text": "Cells in the brain",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Beyin enerji ihtiyacı yüksek bir organ olarak anılır; mitokondrisiz olduğu söylenmez."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does “descend from” mean in paragraph 2?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 230,
+        "end": 276
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Slowly move downwards towards",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Descend'in fiziksel 'aşağı inmek' anlamı bu bağlama uymaz."
+        },
+        {
+          "key": "o2",
+          "text": "Fight against and destroy",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metin bakterilerin kalıcı ortak olduğunu söyler; savaş yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Break down into smaller parts",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Sindirilme anılır ama bakterilerin sindirilmediği söylenir."
+        },
+        {
+          "key": "o4",
+          "text": "Come originally from",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Descend from, bir şeyin soyundan gelmek, kökeni oraya dayanmak demektir."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What can be inferred about a person's mitochondrial DNA?",
+      "evidence": {
+        "paragraphIndex": 2,
+        "start": 11,
+        "end": 71
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It is destroyed before a baby is born",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir şeyden söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "It points to the maternal line",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Mitokondriyal DNA genellikle yalnızca anneden geçtiği için kişiyi anne tarafındaki soya bağlar."
+        },
+        {
+          "key": "o3",
+          "text": "It is mixed from both parents",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin genellikle yalnızca anneden geldiğini söyler."
+        },
+        {
+          "key": "o4",
+          "text": "It is stored inside the cell nucleus",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Mitokondriyal DNA çekirdekteki malzemeden ayrıdır."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "Mitokondriler hücre enerjisinin %90'ından fazlasını üretir; en yaygın hücresel enerji kaynağı olan ATP'yi oluştururlar; olgun kırmızı kan hücreleri dışındaki her hücre mitokondri içerir.",
+        "source": "National Institute of General Medical Sciences (NIH), Mitochondria; https://www.nigms.nih.gov/node/144581",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Mitokondrilerin çekirdekteki kromozomlardan ayrı, kendi küçük DNA'sı vardır; bozuklukları en çok beyin, kas ve kalp gibi yüksek enerji gerektiren dokuları etkiler.",
+        "source": "MedlinePlus Genetics, Mitochondrial DNA; https://medlineplus.gov/genetics/chromosome/mitochondrial-dna/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Yumurta hücresi mitokondri katar, sperm katmaz; mtDNA kaynaklı durumlar yalnızca anneden kalıtılır.",
+        "source": "MedlinePlus Genetics, Mitochondrial complex V deficiency (maternal inheritance of mtDNA); https://medlineplus.gov/genetics/condition/mitochondrial-complex-v-deficiency/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Endosimbiyotik hipoteze göre mitokondriler bakteriyel kökenlidir; olay yaklaşık 1,45 milyar yıl önce gerçekleşmiştir (bakteri konak hücre tarafından içe alınmıştır).",
+        "source": "PMC (NIH), Independent and sensory human mitochondrial functions reflecting symbiotic evolution; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10302212/",
+        "checkedOn": "2026-11-25"
+      },
+      {
+        "claim": "Lynn Margulis (Amerikalı biyolog) endosimbiyoz kuramını savundu; ilk makalesi onlarca dergi tarafından reddedildi ve eleştiri sert oldu.",
+        "source": "PMC (NIH), Lynn Margulis, 1938-2011; https://pmc.ncbi.nlm.nih.gov/articles/PMC3268288",
+        "checkedOn": "2026-11-25"
+      }
+    ]
+  }
+}

@@ -1,0 +1,833 @@
+{
+  "slug": "c2-ambiguity-of-choice",
+  "level": "C2",
+  "title": "The ambiguity of choice",
+  "topic": "Felsefe · Karar verme",
+  "sortOrder": 201,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Choice is often invoked as evidence of autonomy.",
+    "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+    "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+    "The issue, then, is not merely how many options exist, but how intelligible their consequences are."
+  ],
+  "words": [
+    {
+      "lemma": "choice",
+      "gloss": "seçim",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 6,
+          "surface": "Choice",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 9,
+          "surface": "is",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 17,
+          "end": 19,
+          "surface": "is",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 10,
+          "end": 15,
+          "surface": "often",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        }
+      ]
+    },
+    {
+      "lemma": "invoked",
+      "gloss": "öne sürülür",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 16,
+          "end": 23,
+          "surface": "invoked",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "olarak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 24,
+          "end": 26,
+          "surface": "as",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "gloss": "kanıt",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 35,
+          "surface": "evidence",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "aitlik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 38,
+          "surface": "of",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 17,
+          "end": 19,
+          "surface": "of",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 15,
+          "end": 17,
+          "surface": "of",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "autonomy",
+      "gloss": "özerklik",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 39,
+          "end": 47,
+          "surface": "autonomy",
+          "contextSentence": "Choice is often invoked as evidence of autonomy.",
+          "contextSentenceTr": "Seçim, sıklıkla özerkliğin kanıtı olarak gösterilir."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "Yet",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 6,
+          "surface": "an",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "abundance",
+      "gloss": "bolluk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 7,
+          "end": 16,
+          "surface": "abundance",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "alternatives",
+      "gloss": "seçenekler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 20,
+          "end": 32,
+          "surface": "alternatives",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "yardımcı fiil",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 33,
+          "end": 37,
+          "surface": "does",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "olumsuzluk",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 38,
+          "end": 41,
+          "surface": "not",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 20,
+          "end": 23,
+          "surface": "not",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "necessarily",
+      "gloss": "mutlaka",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 42,
+          "end": 53,
+          "surface": "necessarily",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "confer",
+      "gloss": "sağlamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 54,
+          "end": 60,
+          "surface": "confer",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "meaningful",
+      "gloss": "anlamlı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 61,
+          "end": 71,
+          "surface": "meaningful",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "control",
+      "gloss": "kontrol",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 72,
+          "end": 79,
+          "surface": "control",
+          "contextSentence": "Yet an abundance of alternatives does not necessarily confer meaningful control.",
+          "contextSentenceTr": "Yine de seçeneklerin bolluğu mutlaka anlamlı bir denetim sağlamaz."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "zaman",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 4,
+          "surface": "When",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli nesne",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 5,
+          "end": 8,
+          "surface": "the",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "terms",
+      "gloss": "koşullar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 9,
+          "end": 14,
+          "surface": "terms",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "selection",
+      "gloss": "seçim",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 18,
+          "end": 27,
+          "surface": "selection",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 28,
+          "end": 31,
+          "surface": "are",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 95,
+          "end": 98,
+          "surface": "are",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "opaque",
+      "gloss": "anlaşılmaz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 32,
+          "end": 38,
+          "surface": "opaque",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "apparent",
+      "gloss": "görünürdeki",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 40,
+          "end": 48,
+          "surface": "apparent",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "freedom",
+      "gloss": "özgürlük",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 56,
+          "surface": "freedom",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "olabilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 60,
+          "surface": "may",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "coexist",
+      "gloss": "bir arada bulunmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 61,
+          "end": 68,
+          "surface": "coexist",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "gloss": "ile",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 73,
+          "surface": "with",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "considerable",
+      "gloss": "kayda değer",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 74,
+          "end": 86,
+          "surface": "considerable",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "dependence",
+      "gloss": "bağımlılık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 87,
+          "end": 97,
+          "surface": "dependence",
+          "contextSentence": "When the terms of selection are opaque, apparent freedom may coexist with considerable dependence.",
+          "contextSentenceTr": "Seçimin koşulları belirsiz olduğunda, görünürdeki özgürlük kayda değer bir bağımlılıkla bir arada var olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "issue",
+      "gloss": "mesele",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 4,
+          "end": 9,
+          "surface": "issue",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "öyleyse",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 11,
+          "end": 15,
+          "surface": "then",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "merely",
+      "gloss": "yalnızca",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 24,
+          "end": 30,
+          "surface": "merely",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "ne kadar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 31,
+          "end": 34,
+          "surface": "how",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "many",
+      "gloss": "çok",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 35,
+          "end": 39,
+          "surface": "many",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "options",
+      "gloss": "seçenekler",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 40,
+          "end": 47,
+          "surface": "options",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "exist",
+      "gloss": "var olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 48,
+          "end": 53,
+          "surface": "exist",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "fakat",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 55,
+          "end": 58,
+          "surface": "but",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "how",
+      "gloss": "nasıl",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 59,
+          "end": 62,
+          "surface": "how",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "intelligible",
+      "gloss": "anlaşılır",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 63,
+          "end": 75,
+          "surface": "intelligible",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "their",
+      "gloss": "onların",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 76,
+          "end": 81,
+          "surface": "their",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    },
+    {
+      "lemma": "consequences",
+      "gloss": "sonuçları",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 82,
+          "end": 94,
+          "surface": "consequences",
+          "contextSentence": "The issue, then, is not merely how many options exist, but how intelligible their consequences are.",
+          "contextSentenceTr": "Öyleyse mesele yalnızca kaç seçenek olduğu değil, bu seçeneklerin sonuçlarının ne kadar anlaşılır olduğudur."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "Which claim best reflects the argument?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 0,
+        "end": 48
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Choice eliminates dependence.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Seçim ve bağımlılık bir arada bulunabilir."
+        },
+        {
+          "key": "o2",
+          "text": "Autonomy requires more than the availability of options.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Seçeneklerin sonuçlarının anlaşılır olması da gerekiyor."
+        },
+        {
+          "key": "o3",
+          "text": "The number of alternatives should always be reduced.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Seçenek sayısını azaltma önerisi yok."
+        },
+        {
+          "key": "o4",
+          "text": "Uncertainty makes every decision irrational.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Her karar irrasyonel olarak nitelenmiyor."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "inference",
+      "prompt": "What does the passage imply about opaque terms?",
+      "evidence": {
+        "paragraphIndex": 0,
+        "start": 0,
+        "end": 48
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They may limit meaningful autonomy despite apparent choice.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Anlaşılmaz koşullar gerçek kontrolü sınırlayabilir."
+        },
+        {
+          "key": "o2",
+          "text": "They are always deliberately deceptive.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kasıtlı aldatma iddiası yok."
+        },
+        {
+          "key": "o3",
+          "text": "They make alternatives more attractive.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Çekicilik hakkında bilgi yok."
+        },
+        {
+          "key": "o4",
+          "text": "They prove that no options exist.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Seçenekler mevcut olabilir."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "phrase-meaning",
+      "prompt": "“Confer meaningful control” is closest to…",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 0,
+        "end": 80
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Remove every constraint",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Bütün kısıtların kaldırılması gerekmiyor."
+        },
+        {
+          "key": "o2",
+          "text": "Conceal the available evidence",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kanıt gizleme anlamı yok."
+        },
+        {
+          "key": "o3",
+          "text": "Give genuine influence over outcomes",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Gerçek kontrol veya etki sağlamak kastediliyor."
+        },
+        {
+          "key": "o4",
+          "text": "Create more uncertainty",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Belirsizlik yaratmak anlamına gelmez."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "rhetorical-function",
+      "prompt": "What does the final sentence do?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 0,
+        "end": 99
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "It offers a numerical measure of freedom.",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Sayısal ölçüt yok."
+        },
+        {
+          "key": "o2",
+          "text": "It rejects the existence of autonomy.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Özerklik kavramı reddedilmiyor."
+        },
+        {
+          "key": "o3",
+          "text": "It describes an unrelated practical problem.",
+          "isCorrect": false,
+          "trapType": "detail",
+          "explanation": "Aynı tartışmayı sürdürüyor."
+        },
+        {
+          "key": "o4",
+          "text": "It shifts emphasis from quantity to comprehensibility.",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Seçenek sayısından sonuçların anlaşılabilirliğine geçiyor."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "noFactualClaims": true,
+    "sources": []
+  }
+}

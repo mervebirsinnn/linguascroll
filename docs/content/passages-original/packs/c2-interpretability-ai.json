@@ -1,0 +1,3975 @@
+{
+  "slug": "c2-interpretability-ai",
+  "level": "C2",
+  "title": "Explanations for Whom?",
+  "topic": "Yapay zeka",
+  "sortOrder": 32,
+  "isFreeSample": false,
+  "paragraphs": [
+    "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced. A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise. This is what researchers mean when they call such systems opaque.",
+    "One popular response is the explanation produced after the fact. Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer. But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised. An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+    "The computer scientist Cynthia Rudin has drawn a sharper conclusion. For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design. Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+    "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks. In practice, explanations are written for someone. A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+    "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it. Treating it that way does not make the technical problem easier. It does, however, make it harder to mistake a persuasive picture for an honest one."
+  ],
+  "words": [
+    {
+      "lemma": "modern",
+      "gloss": "modern",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 0,
+          "end": 6,
+          "surface": "Modern",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "neural",
+      "gloss": "sinir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 7,
+          "end": 13,
+          "surface": "neural",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "networks",
+      "gloss": "ağlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 14,
+          "end": 22,
+          "surface": "networks",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "can",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 23,
+          "end": 26,
+          "surface": "can",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "classify",
+      "gloss": "sınıflandırmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 27,
+          "end": 35,
+          "surface": "classify",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "images",
+      "gloss": "görüntüler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 36,
+          "end": 42,
+          "surface": "images",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 305,
+          "end": 311,
+          "surface": "images",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "translate",
+      "gloss": "çevirmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 44,
+          "end": 53,
+          "surface": "translate",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "text",
+      "gloss": "metin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 54,
+          "end": 58,
+          "surface": "text",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "gloss": "ve",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 59,
+          "end": 62,
+          "surface": "and",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 167,
+          "end": 170,
+          "surface": "and",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 230,
+          "end": 233,
+          "surface": "and",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 199,
+          "end": 202,
+          "surface": "and",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 183,
+          "end": 186,
+          "surface": "and",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 255,
+          "end": 258,
+          "surface": "and",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 106,
+          "end": 109,
+          "surface": "and",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "predict",
+      "gloss": "tahmin etmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 63,
+          "end": 70,
+          "surface": "predict",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "the",
+      "gloss": "belirli tanımlık",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 71,
+          "end": 74,
+          "surface": "the",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 102,
+          "end": 105,
+          "surface": "the",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 24,
+          "end": 27,
+          "surface": "the",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 55,
+          "end": 58,
+          "surface": "the",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 103,
+          "end": 106,
+          "surface": "the",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 317,
+          "end": 320,
+          "surface": "the",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 341,
+          "end": 344,
+          "surface": "the",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 430,
+          "end": 433,
+          "surface": "the",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 471,
+          "end": 474,
+          "surface": "the",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 493,
+          "end": 496,
+          "surface": "the",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 266,
+          "end": 269,
+          "surface": "the",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 287,
+          "end": 290,
+          "surface": "the",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 323,
+          "end": 326,
+          "surface": "the",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 236,
+          "end": 239,
+          "surface": "the",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 285,
+          "end": 288,
+          "surface": "the",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 308,
+          "end": 311,
+          "surface": "the",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 57,
+          "end": 60,
+          "surface": "the",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 110,
+          "end": 113,
+          "surface": "the",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 186,
+          "end": 189,
+          "surface": "the",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "structure",
+      "gloss": "yapı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 75,
+          "end": 84,
+          "surface": "structure",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "gloss": "-nin (aitlik)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 85,
+          "end": 87,
+          "surface": "of",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 241,
+          "end": 243,
+          "surface": "of",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 267,
+          "end": 269,
+          "surface": "of",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 252,
+          "end": 254,
+          "surface": "of",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 233,
+          "end": 235,
+          "surface": "of",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "proteins",
+      "gloss": "proteinler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 88,
+          "end": 96,
+          "surface": "proteins",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "yet",
+      "gloss": "yine de",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 98,
+          "end": 101,
+          "surface": "yet",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "people",
+      "gloss": "insanlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 106,
+          "end": 112,
+          "surface": "people",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 114,
+          "end": 120,
+          "surface": "people",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "who",
+      "gloss": "ki onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 113,
+          "end": 116,
+          "surface": "who",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 121,
+          "end": 124,
+          "surface": "who",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "build",
+      "gloss": "kurmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 117,
+          "end": 122,
+          "surface": "build",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "them",
+      "gloss": "onları",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 123,
+          "end": 127,
+          "surface": "them",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "often",
+      "gloss": "sıklıkla",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 128,
+          "end": 133,
+          "surface": "often",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "cannot",
+      "gloss": "-emez",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 134,
+          "end": 140,
+          "surface": "cannot",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "say",
+      "gloss": "söylemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 141,
+          "end": 144,
+          "surface": "say",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "why",
+      "gloss": "neden",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 145,
+          "end": 148,
+          "surface": "why",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "a",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 149,
+          "end": 150,
+          "surface": "a",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 183,
+          "end": 184,
+          "surface": "A",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 297,
+          "end": 298,
+          "surface": "a",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 307,
+          "end": 308,
+          "surface": "a",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 244,
+          "end": 245,
+          "surface": "a",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 47,
+          "end": 48,
+          "surface": "a",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 81,
+          "end": 82,
+          "surface": "a",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 161,
+          "end": 162,
+          "surface": "A",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 174,
+          "end": 175,
+          "surface": "a",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 187,
+          "end": 188,
+          "surface": "a",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 32,
+          "end": 33,
+          "surface": "a",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 74,
+          "end": 75,
+          "surface": "a",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 97,
+          "end": 98,
+          "surface": "a",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 260,
+          "end": 261,
+          "surface": "a",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "particular",
+      "gloss": "belirli",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 151,
+          "end": 161,
+          "surface": "particular",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "output",
+      "gloss": "çıktı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 162,
+          "end": 168,
+          "surface": "output",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "was",
+      "gloss": "idi (olmak fiilinin geçmişi)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 169,
+          "end": 172,
+          "surface": "was",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        }
+      ]
+    },
+    {
+      "lemma": "produced",
+      "gloss": "üretilmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 173,
+          "end": 181,
+          "surface": "produced",
+          "contextSentence": "Modern neural networks can classify images, translate text and predict the structure of proteins, yet the people who build them often cannot say why a particular output was produced.",
+          "contextSentenceTr": "Modern sinir ağları görüntüleri sınıflandırabilir, metin çevirebilir ve proteinlerin yapısını tahmin edebilir; yine de onları kuran insanlar çoğu zaman belirli bir çıktının neden üretildiğini söyleyemez."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 40,
+          "end": 48,
+          "surface": "produced",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        }
+      ]
+    },
+    {
+      "lemma": "model's",
+      "gloss": "modelin",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 185,
+          "end": 192,
+          "surface": "model's",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 345,
+          "end": 352,
+          "surface": "model's",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "knowledge",
+      "gloss": "bilgi",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 193,
+          "end": 202,
+          "surface": "knowledge",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "is",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 203,
+          "end": 205,
+          "surface": "is",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 0,
+          "start": 337,
+          "end": 339,
+          "surface": "is",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 21,
+          "end": 23,
+          "surface": "is",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 440,
+          "end": 442,
+          "surface": "is",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 68,
+          "end": 70,
+          "surface": "is",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 24,
+          "end": 26,
+          "surface": "is",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "spread",
+      "gloss": "yayılmak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 206,
+          "end": 212,
+          "surface": "spread",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "across",
+      "gloss": "boyunca",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 213,
+          "end": 219,
+          "surface": "across",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "millions",
+      "gloss": "milyonlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 220,
+          "end": 228,
+          "surface": "millions",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "or",
+      "gloss": "ya da",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 229,
+          "end": 231,
+          "surface": "or",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 130,
+          "end": 132,
+          "surface": "or",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 312,
+          "end": 314,
+          "surface": "or",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 100,
+          "end": 102,
+          "surface": "or",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 136,
+          "end": 138,
+          "surface": "or",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "billions",
+      "gloss": "milyarlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 232,
+          "end": 240,
+          "surface": "billions",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "numerical",
+      "gloss": "sayısal",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 244,
+          "end": 253,
+          "surface": "numerical",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "weights",
+      "gloss": "ağırlıklar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 254,
+          "end": 261,
+          "surface": "weights",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 361,
+          "end": 368,
+          "surface": "weights",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "few",
+      "gloss": "azı",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 263,
+          "end": 266,
+          "surface": "few",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "which",
+      "gloss": "ki bunlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 270,
+          "end": 275,
+          "surface": "which",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "correspond",
+      "gloss": "karşılık gelmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 276,
+          "end": 286,
+          "surface": "correspond",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "neatly",
+      "gloss": "düzgünce",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 287,
+          "end": 293,
+          "surface": "neatly",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 294,
+          "end": 296,
+          "surface": "to",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "concept",
+      "gloss": "kavram",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 299,
+          "end": 306,
+          "surface": "concept",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "human",
+      "gloss": "insan",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 309,
+          "end": 314,
+          "surface": "human",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "would",
+      "gloss": "-ecek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 315,
+          "end": 320,
+          "surface": "would",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "recognise",
+      "gloss": "tanımak",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 321,
+          "end": 330,
+          "surface": "recognise",
+          "contextSentence": "A model's knowledge is spread across millions or billions of numerical weights, few of which correspond neatly to a concept a human would recognise.",
+          "contextSentenceTr": "Bir modelin bilgisi milyonlarca ya da milyarlarca sayısal ağırlığa yayılmıştır ve bunların pek azı bir insanın tanıyacağı bir kavrama düzgünce karşılık gelir."
+        }
+      ]
+    },
+    {
+      "lemma": "this",
+      "gloss": "bu",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 332,
+          "end": 336,
+          "surface": "This",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "gloss": "ne",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 340,
+          "end": 344,
+          "surface": "what",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        }
+      ]
+    },
+    {
+      "lemma": "researchers",
+      "gloss": "araştırmacılar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 345,
+          "end": 356,
+          "surface": "researchers",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 255,
+          "end": 266,
+          "surface": "researchers",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "mean",
+      "gloss": "kastetmek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 357,
+          "end": 361,
+          "surface": "mean",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        }
+      ]
+    },
+    {
+      "lemma": "when",
+      "gloss": "-dığında",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 362,
+          "end": 366,
+          "surface": "when",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 336,
+          "end": 340,
+          "surface": "when",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 425,
+          "end": 429,
+          "surface": "when",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "they",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 367,
+          "end": 371,
+          "surface": "they",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 171,
+          "end": 175,
+          "surface": "they",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "call",
+      "gloss": "nitelemek",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 372,
+          "end": 376,
+          "surface": "call",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "böyle",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 377,
+          "end": 381,
+          "surface": "such",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        }
+      ]
+    },
+    {
+      "lemma": "systems",
+      "gloss": "sistemler",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 382,
+          "end": 389,
+          "surface": "systems",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 341,
+          "end": 348,
+          "surface": "systems",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "opaque",
+      "gloss": "opak (içi görülmeyen)",
+      "spans": [
+        {
+          "paragraphIndex": 0,
+          "start": 390,
+          "end": 396,
+          "surface": "opaque",
+          "contextSentence": "This is what researchers mean when they call such systems opaque.",
+          "contextSentenceTr": "Araştırmacılar böyle sistemleri opak diye nitelediklerinde bunu kastederler."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 0,
+          "end": 3,
+          "surface": "One",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        }
+      ]
+    },
+    {
+      "lemma": "popular",
+      "gloss": "yaygın",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 4,
+          "end": 11,
+          "surface": "popular",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        }
+      ]
+    },
+    {
+      "lemma": "response",
+      "gloss": "yanıt",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 12,
+          "end": 20,
+          "surface": "response",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        }
+      ]
+    },
+    {
+      "lemma": "explanation",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 28,
+          "end": 39,
+          "surface": "explanation",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 393,
+          "end": 404,
+          "surface": "explanation",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 56,
+          "end": 67,
+          "surface": "explanation",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "after",
+      "gloss": "sonra",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 49,
+          "end": 54,
+          "surface": "after",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        }
+      ]
+    },
+    {
+      "lemma": "fact",
+      "gloss": "olgu (after the fact: olup bittikten sonra)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 59,
+          "end": 63,
+          "surface": "fact",
+          "contextSentence": "One popular response is the explanation produced after the fact.",
+          "contextSentenceTr": "Yaygın yanıtlardan biri, olup bittikten sonra üretilen açıklamadır."
+        }
+      ]
+    },
+    {
+      "lemma": "saliency",
+      "gloss": "belirginlik",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 65,
+          "end": 73,
+          "surface": "Saliency",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 284,
+          "end": 292,
+          "surface": "saliency",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "maps",
+      "gloss": "haritalar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 74,
+          "end": 78,
+          "surface": "maps",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 326,
+          "end": 330,
+          "surface": "maps",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "örneğin (for example)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 80,
+          "end": 83,
+          "surface": "for",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "example",
+      "gloss": "örneğin (for example)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 84,
+          "end": 91,
+          "surface": "example",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "highlight",
+      "gloss": "vurgulamak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 93,
+          "end": 102,
+          "surface": "highlight",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "pixels",
+      "gloss": "pikseller",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 107,
+          "end": 113,
+          "surface": "pixels",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "ki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 114,
+          "end": 118,
+          "surface": "that",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 274,
+          "end": 278,
+          "surface": "that",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 405,
+          "end": 409,
+          "surface": "that",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 156,
+          "end": 160,
+          "surface": "that",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 214,
+          "end": 218,
+          "surface": "that",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 261,
+          "end": 265,
+          "surface": "that",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 48,
+          "end": 52,
+          "surface": "that",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 270,
+          "end": 274,
+          "surface": "that",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en çok",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 119,
+          "end": 123,
+          "surface": "most",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "influenced",
+      "gloss": "etkilemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 124,
+          "end": 134,
+          "surface": "influenced",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "an",
+      "gloss": "bir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 135,
+          "end": 137,
+          "surface": "an",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 199,
+          "end": 201,
+          "surface": "an",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 390,
+          "end": 392,
+          "surface": "An",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 17,
+          "end": 19,
+          "surface": "an",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 53,
+          "end": 55,
+          "surface": "an",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 259,
+          "end": 261,
+          "surface": "an",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 285,
+          "end": 287,
+          "surface": "an",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "image",
+      "gloss": "görüntü",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 138,
+          "end": 143,
+          "surface": "image",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 475,
+          "end": 480,
+          "surface": "image",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "classifier's",
+      "gloss": "sınıflandırıcının",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 144,
+          "end": 156,
+          "surface": "classifier's",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "decision",
+      "gloss": "karar",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 157,
+          "end": 165,
+          "surface": "decision",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 245,
+          "end": 253,
+          "surface": "decision",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "look",
+      "gloss": "görünmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 176,
+          "end": 180,
+          "surface": "look",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "reassuringly",
+      "gloss": "insanı rahatlatırcasına",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 181,
+          "end": 193,
+          "surface": "reassuringly",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "gloss": "gibi",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 194,
+          "end": 198,
+          "surface": "like",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "answer",
+      "gloss": "yanıt",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 202,
+          "end": 208,
+          "surface": "answer",
+          "contextSentence": "Saliency maps, for example, highlight the pixels that most influenced an image classifier's decision, and they look reassuringly like an answer.",
+          "contextSentenceTr": "Örneğin belirginlik haritaları bir görüntü sınıflandırıcısının kararını en çok etkileyen pikselleri vurgular ve insanı rahatlatırcasına bir yanıta benzer."
+        }
+      ]
+    },
+    {
+      "lemma": "but",
+      "gloss": "ama",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 210,
+          "end": 213,
+          "surface": "But",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "gloss": "-de",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 214,
+          "end": 216,
+          "surface": "in",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 110,
+          "end": 112,
+          "surface": "in",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 110,
+          "end": 112,
+          "surface": "In",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "two",
+      "gloss": "iki",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 217,
+          "end": 220,
+          "surface": "two",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "thousand",
+      "gloss": "bin",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 221,
+          "end": 229,
+          "surface": "thousand",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "eighteen",
+      "gloss": "on sekiz",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 234,
+          "end": 242,
+          "surface": "eighteen",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "group",
+      "gloss": "grup",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 246,
+          "end": 251,
+          "surface": "group",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "showed",
+      "gloss": "göstermek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 267,
+          "end": 273,
+          "surface": "showed",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "some",
+      "gloss": "bazı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 279,
+          "end": 283,
+          "surface": "some",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "methods",
+      "gloss": "yöntemler",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 293,
+          "end": 300,
+          "surface": "methods",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "produced",
+      "gloss": "üretmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 301,
+          "end": 309,
+          "surface": "produced",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "almost",
+      "gloss": "neredeyse",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 310,
+          "end": 316,
+          "surface": "almost",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "same",
+      "gloss": "aynı",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 321,
+          "end": 325,
+          "surface": "same",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 240,
+          "end": 244,
+          "surface": "same",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "even",
+      "gloss": "bile",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 331,
+          "end": 335,
+          "surface": "even",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "learned",
+      "gloss": "öğrenilmiş",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 353,
+          "end": 360,
+          "surface": "learned",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "had",
+      "gloss": "-mişti (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 369,
+          "end": 372,
+          "surface": "had",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "been",
+      "gloss": "olmuş (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 373,
+          "end": 377,
+          "surface": "been",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "randomised",
+      "gloss": "rastgeleleştirilmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 378,
+          "end": 388,
+          "surface": "randomised",
+          "contextSentence": "But in two thousand and eighteen, a group of researchers showed that some saliency methods produced almost the same maps even when the model's learned weights had been randomised.",
+          "contextSentenceTr": "Ama 2018'de bir grup araştırmacı, bazı belirginlik yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi."
+        }
+      ]
+    },
+    {
+      "lemma": "barely",
+      "gloss": "zar zor",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 410,
+          "end": 416,
+          "surface": "barely",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "changes",
+      "gloss": "değişmek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 417,
+          "end": 424,
+          "surface": "changes",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "model",
+      "gloss": "model",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 434,
+          "end": 439,
+          "surface": "model",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 1,
+          "start": 497,
+          "end": 502,
+          "surface": "model",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 83,
+          "end": 88,
+          "surface": "model",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "scrambled",
+      "gloss": "karıştırılmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 443,
+          "end": 452,
+          "surface": "scrambled",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "may",
+      "gloss": "-ebilir",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 453,
+          "end": 456,
+          "surface": "may",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 199,
+          "end": 202,
+          "surface": "may",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 298,
+          "end": 301,
+          "surface": "may",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "be",
+      "gloss": "olmak",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 457,
+          "end": 459,
+          "surface": "be",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "describing",
+      "gloss": "betimlemek",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 460,
+          "end": 470,
+          "surface": "describing",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "rather",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 481,
+          "end": 487,
+          "surface": "rather",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "yerine (rather than)",
+      "spans": [
+        {
+          "paragraphIndex": 1,
+          "start": 488,
+          "end": 492,
+          "surface": "than",
+          "contextSentence": "An explanation that barely changes when the model is scrambled may be describing the image rather than the model.",
+          "contextSentenceTr": "Model karıştırıldığında zar zor değişen bir açıklama, modeli değil görüntüyü betimliyor olabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "computer",
+      "gloss": "bilgisayar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 4,
+          "end": 12,
+          "surface": "computer",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "scientist",
+      "gloss": "bilimci",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 13,
+          "end": 22,
+          "surface": "scientist",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "cynthia",
+      "gloss": "Cynthia",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 23,
+          "end": 30,
+          "surface": "Cynthia",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "rudin",
+      "gloss": "Rudin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 31,
+          "end": 36,
+          "surface": "Rudin",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "-miştir (yardımcı fiil)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 37,
+          "end": 40,
+          "surface": "has",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "drawn",
+      "gloss": "çıkarmak (sonuç)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 41,
+          "end": 46,
+          "surface": "drawn",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "sharper",
+      "gloss": "daha keskin",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 49,
+          "end": 56,
+          "surface": "sharper",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "conclusion",
+      "gloss": "sonuç",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 57,
+          "end": 67,
+          "surface": "conclusion",
+          "contextSentence": "The computer scientist Cynthia Rudin has drawn a sharper conclusion.",
+          "contextSentenceTr": "Bilgisayar bilimci Cynthia Rudin daha keskin bir sonuç çıkarmıştır."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "için",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 69,
+          "end": 72,
+          "surface": "For",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 2,
+          "start": 297,
+          "end": 300,
+          "surface": "for",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 148,
+          "end": 151,
+          "surface": "for",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "high",
+      "gloss": "yüksek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 73,
+          "end": 77,
+          "surface": "high",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "stakes",
+      "gloss": "riskler",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 78,
+          "end": 84,
+          "surface": "stakes",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "decisions",
+      "gloss": "kararlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 85,
+          "end": 94,
+          "surface": "decisions",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "such",
+      "gloss": "gibi (such as)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 96,
+          "end": 100,
+          "surface": "such",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "as",
+      "gloss": "gibi (such as)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 101,
+          "end": 103,
+          "surface": "as",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "those",
+      "gloss": "onlar",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 104,
+          "end": 109,
+          "surface": "those",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "criminal",
+      "gloss": "ceza",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 113,
+          "end": 121,
+          "surface": "criminal",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "justice",
+      "gloss": "adalet",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 122,
+          "end": 129,
+          "surface": "justice",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "healthcare",
+      "gloss": "sağlık hizmetleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 133,
+          "end": 143,
+          "surface": "healthcare",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "she",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 145,
+          "end": 148,
+          "surface": "she",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "argues",
+      "gloss": "savunmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 149,
+          "end": 155,
+          "surface": "argues",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "gloss": "biz",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 161,
+          "end": 163,
+          "surface": "we",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "should",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 164,
+          "end": 170,
+          "surface": "should",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "stop",
+      "gloss": "bırakmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 171,
+          "end": 175,
+          "surface": "stop",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "explaining",
+      "gloss": "açıklamak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 176,
+          "end": 186,
+          "surface": "explaining",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "black",
+      "gloss": "kara",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 187,
+          "end": 192,
+          "surface": "black",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "boxes",
+      "gloss": "kutular",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 193,
+          "end": 198,
+          "surface": "boxes",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "use",
+      "gloss": "kullanmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 203,
+          "end": 206,
+          "surface": "use",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "models",
+      "gloss": "modeller",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 207,
+          "end": 213,
+          "surface": "models",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "are",
+      "gloss": "-dır (olmak fiili)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 219,
+          "end": 222,
+          "surface": "are",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        },
+        {
+          "paragraphIndex": 3,
+          "start": 136,
+          "end": 139,
+          "surface": "are",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "interpretable",
+      "gloss": "yorumlanabilir",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 223,
+          "end": 236,
+          "surface": "interpretable",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "by",
+      "gloss": "gereği (by design)",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 237,
+          "end": 239,
+          "surface": "by",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "design",
+      "gloss": "tasarım",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 240,
+          "end": 246,
+          "surface": "design",
+          "contextSentence": "For high stakes decisions, such as those in criminal justice or healthcare, she argues that we should stop explaining black boxes and use models that are interpretable by design.",
+          "contextSentenceTr": "Ceza adaleti ya da sağlık hizmetlerindeki gibi yüksek riskli kararlarda kara kutuları açıklamayı bırakıp tasarımı gereği yorumlanabilir modeller kullanmamız gerektiğini savunur."
+        }
+      ]
+    },
+    {
+      "lemma": "others",
+      "gloss": "diğerleri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 248,
+          "end": 254,
+          "surface": "Others",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "reply",
+      "gloss": "yanıt vermek",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 255,
+          "end": 260,
+          "surface": "reply",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "point",
+      "gloss": "nokta",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 270,
+          "end": 275,
+          "surface": "point",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "depends",
+      "gloss": "bağlı olmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 276,
+          "end": 283,
+          "surface": "depends",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "gloss": "-e",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 284,
+          "end": 286,
+          "surface": "on",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "data",
+      "gloss": "veri",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 291,
+          "end": 295,
+          "surface": "data",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "raw",
+      "gloss": "ham",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 301,
+          "end": 304,
+          "surface": "raw",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "speech",
+      "gloss": "konuşma",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 315,
+          "end": 321,
+          "surface": "speech",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "most",
+      "gloss": "en",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 327,
+          "end": 331,
+          "surface": "most",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "accurate",
+      "gloss": "doğru",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 332,
+          "end": 340,
+          "surface": "accurate",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "remain",
+      "gloss": "kalmak",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 349,
+          "end": 355,
+          "surface": "remain",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "stubbornly",
+      "gloss": "inatla",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 356,
+          "end": 366,
+          "surface": "stubbornly",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "complex",
+      "gloss": "karmaşık",
+      "spans": [
+        {
+          "paragraphIndex": 2,
+          "start": 367,
+          "end": 374,
+          "surface": "complex",
+          "contextSentence": "Others reply that the point depends on the data: for raw images or speech, the most accurate systems remain stubbornly complex.",
+          "contextSentenceTr": "Diğerleri bu noktanın veriye bağlı olduğunu yanıtlar: ham görüntüler ya da konuşma için en doğru sistemler inatla karmaşık kalır."
+        }
+      ]
+    },
+    {
+      "lemma": "both",
+      "gloss": "her iki",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 0,
+          "end": 4,
+          "surface": "Both",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "sides",
+      "gloss": "taraflar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 5,
+          "end": 10,
+          "surface": "sides",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "share",
+      "gloss": "paylaşmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 11,
+          "end": 16,
+          "surface": "share",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "assumption",
+      "gloss": "varsayım",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 20,
+          "end": 30,
+          "surface": "assumption",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "worth",
+      "gloss": "değer",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 31,
+          "end": 36,
+          "surface": "worth",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "examining",
+      "gloss": "incelemek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 37,
+          "end": 46,
+          "surface": "examining",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "something",
+      "gloss": "bir şey",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 71,
+          "end": 80,
+          "surface": "something",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "either",
+      "gloss": "ya",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 89,
+          "end": 95,
+          "surface": "either",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "has",
+      "gloss": "sahip olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 96,
+          "end": 99,
+          "surface": "has",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "lacks",
+      "gloss": "yoksun olmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 103,
+          "end": 108,
+          "surface": "lacks",
+          "contextSentence": "Both sides share an assumption worth examining: that an explanation is something a model either has or lacks.",
+          "contextSentenceTr": "Her iki taraf da incelemeye değer bir varsayımı paylaşır: açıklamanın bir modelin ya sahip olduğu ya da yoksun olduğu bir şey olduğu."
+        }
+      ]
+    },
+    {
+      "lemma": "practice",
+      "gloss": "uygulama",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 113,
+          "end": 121,
+          "surface": "practice",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "explanations",
+      "gloss": "açıklamalar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 123,
+          "end": 135,
+          "surface": "explanations",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "written",
+      "gloss": "yazılmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 140,
+          "end": 147,
+          "surface": "written",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "someone",
+      "gloss": "biri",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 152,
+          "end": 159,
+          "surface": "someone",
+          "contextSentence": "In practice, explanations are written for someone.",
+          "contextSentenceTr": "Uygulamada açıklamalar biri için yazılır."
+        }
+      ]
+    },
+    {
+      "lemma": "regulator",
+      "gloss": "düzenleyici",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 163,
+          "end": 172,
+          "surface": "regulator",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "doctor",
+      "gloss": "doktor",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 176,
+          "end": 182,
+          "surface": "doctor",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "defendant",
+      "gloss": "sanık",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 189,
+          "end": 198,
+          "surface": "defendant",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "need",
+      "gloss": "ihtiyaç duymak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 203,
+          "end": 207,
+          "surface": "need",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "quite",
+      "gloss": "oldukça",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 208,
+          "end": 213,
+          "surface": "quite",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "different",
+      "gloss": "farklı",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 214,
+          "end": 223,
+          "surface": "different",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "accounts",
+      "gloss": "açıklamalar",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 224,
+          "end": 232,
+          "surface": "accounts",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "account",
+      "gloss": "açıklama",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 262,
+          "end": 269,
+          "surface": "account",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "satisfies",
+      "gloss": "tatmin etmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 275,
+          "end": 284,
+          "surface": "satisfies",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "engineer",
+      "gloss": "mühendis",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 289,
+          "end": 297,
+          "surface": "engineer",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "leave",
+      "gloss": "bırakmak",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 302,
+          "end": 307,
+          "surface": "leave",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "person",
+      "gloss": "kişi",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 312,
+          "end": 318,
+          "surface": "person",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 319,
+          "end": 321,
+          "surface": "it",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 216,
+          "end": 218,
+          "surface": "It",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 239,
+          "end": 241,
+          "surface": "it",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "concerns",
+      "gloss": "ilgilendirmek",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 322,
+          "end": 330,
+          "surface": "concerns",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "no",
+      "gloss": "hiç",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 331,
+          "end": 333,
+          "surface": "no",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "wiser",
+      "gloss": "daha bilge (no wiser: hiç daha bilgili değil)",
+      "spans": [
+        {
+          "paragraphIndex": 3,
+          "start": 334,
+          "end": 339,
+          "surface": "wiser",
+          "contextSentence": "A regulator, a doctor and a defendant may need quite different accounts of the same decision, and an account that satisfies the engineer may leave the person it concerns no wiser.",
+          "contextSentenceTr": "Bir düzenleyici, bir doktor ve bir sanık aynı karar için oldukça farklı açıklamalara ihtiyaç duyabilir; mühendisi tatmin eden bir açıklama, kararın ilgilendirdiği kişiyi hiç daha bilgili bırakmayabilir."
+        }
+      ]
+    },
+    {
+      "lemma": "interpretability",
+      "gloss": "yorumlanabilirlik",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 0,
+          "end": 16,
+          "surface": "Interpretability",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "then",
+      "gloss": "öyleyse",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 18,
+          "end": 22,
+          "surface": "then",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "less",
+      "gloss": "daha az",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 27,
+          "end": 31,
+          "surface": "less",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "property",
+      "gloss": "özellik",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 34,
+          "end": 42,
+          "surface": "property",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "hidden",
+      "gloss": "gizli",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 43,
+          "end": 49,
+          "surface": "hidden",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "inside",
+      "gloss": "içinde",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 50,
+          "end": 56,
+          "surface": "inside",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "network",
+      "gloss": "ağ",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 61,
+          "end": 68,
+          "surface": "network",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "than",
+      "gloss": "-den",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 69,
+          "end": 73,
+          "surface": "than",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "relationship",
+      "gloss": "ilişki",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 76,
+          "end": 88,
+          "surface": "relationship",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "between",
+      "gloss": "arasında",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 89,
+          "end": 96,
+          "surface": "between",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "system",
+      "gloss": "sistem",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 99,
+          "end": 105,
+          "surface": "system",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "must",
+      "gloss": "-meli",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 125,
+          "end": 129,
+          "surface": "must",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "trust",
+      "gloss": "güvenmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 130,
+          "end": 135,
+          "surface": "trust",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "contest",
+      "gloss": "itiraz etmek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 139,
+          "end": 146,
+          "surface": "contest",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "ona",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 147,
+          "end": 149,
+          "surface": "it",
+          "contextSentence": "Interpretability, then, is less a property hidden inside the network than a relationship between a system and the people who must trust or contest it.",
+          "contextSentenceTr": "Öyleyse yorumlanabilirlik, ağın içinde gizli bir özellikten çok, bir sistem ile ona güvenmesi ya da itiraz etmesi gereken insanlar arasındaki bir ilişkidir."
+        }
+      ]
+    },
+    {
+      "lemma": "treating",
+      "gloss": "ele almak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 151,
+          "end": 159,
+          "surface": "Treating",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "it",
+      "gloss": "onu",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 160,
+          "end": 162,
+          "surface": "it",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "gloss": "o",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 163,
+          "end": 167,
+          "surface": "that",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "way",
+      "gloss": "biçim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 168,
+          "end": 171,
+          "surface": "way",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "olumsuz/soru yardımcı fiili",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 172,
+          "end": 176,
+          "surface": "does",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "not",
+      "gloss": "değil",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 177,
+          "end": 180,
+          "surface": "not",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "make",
+      "gloss": "kılmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 181,
+          "end": 185,
+          "surface": "make",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        },
+        {
+          "paragraphIndex": 4,
+          "start": 234,
+          "end": 238,
+          "surface": "make",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "technical",
+      "gloss": "teknik",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 190,
+          "end": 199,
+          "surface": "technical",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "problem",
+      "gloss": "sorun",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 200,
+          "end": 207,
+          "surface": "problem",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "easier",
+      "gloss": "daha kolay",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 208,
+          "end": 214,
+          "surface": "easier",
+          "contextSentence": "Treating it that way does not make the technical problem easier.",
+          "contextSentenceTr": "Onu bu biçimde ele almak teknik sorunu kolaylaştırmaz."
+        }
+      ]
+    },
+    {
+      "lemma": "does",
+      "gloss": "gerçekten (vurgu)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 219,
+          "end": 223,
+          "surface": "does",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "however",
+      "gloss": "ancak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 225,
+          "end": 232,
+          "surface": "however",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "harder",
+      "gloss": "daha zor",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 242,
+          "end": 248,
+          "surface": "harder",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "gloss": "-mek",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 249,
+          "end": 251,
+          "surface": "to",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "mistake",
+      "gloss": "karıştırmak",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 252,
+          "end": 259,
+          "surface": "mistake",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "persuasive",
+      "gloss": "ikna edici",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 262,
+          "end": 272,
+          "surface": "persuasive",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "picture",
+      "gloss": "resim",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 273,
+          "end": 280,
+          "surface": "picture",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "for",
+      "gloss": "ile (mistake for)",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 281,
+          "end": 284,
+          "surface": "for",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "honest",
+      "gloss": "dürüst",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 288,
+          "end": 294,
+          "surface": "honest",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "gloss": "olan",
+      "spans": [
+        {
+          "paragraphIndex": 4,
+          "start": 295,
+          "end": 298,
+          "surface": "one",
+          "contextSentence": "It does, however, make it harder to mistake a persuasive picture for an honest one.",
+          "contextSentenceTr": "Ancak ikna edici bir resmi dürüst bir resimle karıştırmayı gerçekten zorlaştırır."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "type": "main-idea",
+      "prompt": "What is the author's main argument?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 24,
+        "end": 149
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Interpretability depends on who needs the explanation",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar yorumlanabilirliği ağın içindeki bir özellikten çok, insanlarla kurulan bir ilişki olarak görür."
+        },
+        {
+          "key": "o2",
+          "text": "Simple models should replace every complex system in use",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Bu Rudin'in görüşünün aşırı genellemesidir; yazar iki tarafın da varsayımını sorgular."
+        },
+        {
+          "key": "o3",
+          "text": "Neural networks can never be understood by anyone",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar teknik sorunun zor olduğunu söyler, imkânsız olduğunu değil."
+        },
+        {
+          "key": "o4",
+          "text": "Saliency maps fully reveal how models reason",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Metin bazı haritaların modeli değil görüntüyü betimleyebileceğini söyler."
+        }
+      ]
+    },
+    {
+      "key": "q2",
+      "type": "detail",
+      "prompt": "What did the study mentioned in the second paragraph find about some saliency methods?",
+      "evidence": {
+        "paragraphIndex": 1,
+        "start": 279,
+        "end": 388
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They exposed errors in the model's training",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Çalışmanın eğitim hatası bulduğu söylenmez."
+        },
+        {
+          "key": "o2",
+          "text": "They were more accurate than the classifier",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir doğruluk karşılaştırması yoktur."
+        },
+        {
+          "key": "o3",
+          "text": "Their output barely depended on the model",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Ağırlıklar rastgeleleştirilse bile haritalar neredeyse aynı kaldı; yani çıktı modele pek bağlı değildi."
+        },
+        {
+          "key": "o4",
+          "text": "They changed sharply when weights were randomised",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tam tersine haritalar neredeyse hiç değişmedi."
+        }
+      ]
+    },
+    {
+      "key": "q3",
+      "type": "vocabulary",
+      "prompt": "What does it mean to leave someone “no wiser” in the fourth paragraph?",
+      "evidence": {
+        "paragraphIndex": 3,
+        "start": 298,
+        "end": 339
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "Unwilling to learn about technology",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Kişinin isteksizliğinden söz edilmez."
+        },
+        {
+          "key": "o2",
+          "text": "Understanding no more than before",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "No wiser, açıklamadan sonra kişinin öncekinden fazla bir şey anlamaması demektir."
+        },
+        {
+          "key": "o3",
+          "text": "Less intelligent than the engineer",
+          "isCorrect": false,
+          "trapType": "context",
+          "explanation": "Zekâ karşılaştırması değil, anlayışta ilerleme olmaması kastedilir."
+        },
+        {
+          "key": "o4",
+          "text": "Fully satisfied with the decision",
+          "isCorrect": false,
+          "trapType": "reverse",
+          "explanation": "Tatmin olan mühendistir; etkilenen kişi bir şey kazanmaz."
+        }
+      ]
+    },
+    {
+      "key": "q4",
+      "type": "inference",
+      "prompt": "What does the final sentence imply about visual explanations such as saliency maps?",
+      "evidence": {
+        "paragraphIndex": 4,
+        "start": 234,
+        "end": 298
+      },
+      "options": [
+        {
+          "key": "o1",
+          "text": "They are deliberately designed to deceive",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Metin kasıtlı aldatmadan söz etmez; sorun yanıltıcı görünüştür."
+        },
+        {
+          "key": "o2",
+          "text": "They are useless in every setting",
+          "isCorrect": false,
+          "trapType": "extreme",
+          "explanation": "Yazar yararsız olduklarını söylemez, yalnızca dikkat ister."
+        },
+        {
+          "key": "o3",
+          "text": "They are more honest than simple models",
+          "isCorrect": false,
+          "trapType": "notstated",
+          "explanation": "Metinde böyle bir karşılaştırma yoktur."
+        },
+        {
+          "key": "o4",
+          "text": "They can persuade without being faithful",
+          "isCorrect": true,
+          "trapType": null,
+          "explanation": "Yazar, ikna edici bir resmin modeli dürüstçe yansıtmayabileceğini ima eder."
+        }
+      ]
+    }
+  ],
+  "editorial": {
+    "original": true,
+    "sources": [
+      {
+        "claim": "2018'de yayımlanan bir çalışma, bazı belirginlik haritası yöntemlerinin modelin öğrenilmiş ağırlıkları rastgeleleştirildiğinde bile neredeyse aynı haritaları ürettiğini gösterdi.",
+        "source": "Adebayo J. ve ark., Sanity Checks for Saliency Maps, NeurIPS 2018; https://arxiv.org/abs/1810.03292",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Cynthia Rudin, yüksek riskli kararlarda kara kutu modelleri sonradan açıklamak yerine baştan yorumlanabilir modeller kullanılması gerektiğini savunur.",
+        "source": "Rudin C., Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead, Nature Machine Intelligence (2019); https://arxiv.org/abs/1811.10154",
+        "checkedOn": "2026-11-23"
+      },
+      {
+        "claim": "Sinir ağı tabanlı sistemler protein yapısı tahmininde kullanılır (AlphaFold).",
+        "source": "EMBL-EBI, AlphaFold Protein Structure Database; https://alphafold.ebi.ac.uk/",
+        "checkedOn": "2026-11-23"
+      }
+    ]
+  }
+}
