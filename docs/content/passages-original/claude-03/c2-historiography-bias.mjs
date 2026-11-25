@@ -43,17 +43,17 @@ export default {
       option("o3", "It can be removed by careful archival work", false, "reverse", "Metin arşivlerin de tarafsız olmadığını ve bakış açısının kaldırılamayacağını söyler."),
       option("o4", "It matters mainly in wartime propaganda", false, "context", "Propaganda yalnızca bir örnektir; konu tüm tarih yazımıdır."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the text, what was Ranke's famous phrase directed against?", evidence: findEvidence(paragraphs, "Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons"), options: [
-      option("o1", "Using history mainly to teach morals", true, null, "Ranke, tarihi başlıca ahlak dersi kaynağı olarak kullanma alışkanlığına karşı çıkıyordu."),
-      option("o2", "Relying too heavily on original archives", false, "reverse", "Ranke tam tersine arşivlerde ve özgün belgelerde ısrar etti."),
-      option("o3", "Historians who admitted their own bias", false, "notstated", "Metin Ranke'nin böyle bir hedefi olduğunu söylemez."),
-      option("o4", "The naive belief in objective facts", false, "reverse", "İfade safça bulunur, ama Ranke nesnelliğe değil ahlak dersciliğine karşıydı."),
+    { key: "q2", type: "detail", prompt: "According to the text, what was Ranke arguing against when he urged historians to show the past as it actually was?", evidence: findEvidence(paragraphs, "Ranke was arguing against a specific habit: treating history chiefly as a source of moral lessons"), options: [
+      option("o1", "Reading the past mainly for moral instruction", true, null, "Ranke tarihi başlıca ahlak dersi kaynağı yapma alışkanlığına karşıydı."),
+      option("o2", "Treating facts as fish that the historian happens to catch", false, "detail", "Balık benzetmesi Carr'a aittir."),
+      option("o3", "Trusting only what archives and original documents preserve", false, "reverse", "Ranke arşiv ve özgün belgelerde ısrar etti."),
+      option("o4", "Treating every account as one equally valid perspective", false, "detail", "Bu, Carr'ın görüşünün gerilmiş halidir ve Ranke'ye ait değildir."),
     ] },
     { key: "q3", type: "vocabulary", prompt: "In the second paragraph, what does the bias lying “upstream of it” mean?", evidence: findEvidence(paragraphs, "lies not in the method but upstream of it"), options: [
-      option("o1", "Earlier, in what was preserved", true, null, "Upstream burada mecazdır: yanlılık yöntemden önceki aşamada, neyin saklandığında yatar."),
-      option("o2", "Hidden inside the historian's method", false, "reverse", "Metin yanlılığın yöntemde olmadığını açıkça söyler."),
-      option("o3", "Beside a river near the archive", false, "context", "Akarsu anlamı mecaz kullanımın gerçek anlamıdır; bağlama uymaz."),
-      option("o4", "Added later by careless readers", false, "reverse", "Upstream sonrası değil, öncesini anlatır."),
+      option("o1", "At an earlier stage than the method", true, null, "Upstream mecazdır: yanlılık yöntemden önceki aşamada, neyin saklandığında yatar."),
+      option("o2", "In opposition to accepted opinion", false, "context", "'Swim upstream' akıntıya karşı gitmektir ama burada karşıtlık kastedilmez."),
+      option("o3", "At a higher level of institutional authority", false, "context", "Hiyerarşide üst düzey anlamı bağlama uymaz."),
+      option("o4", "At a later stage, in publication", false, "reverse", "Upstream sonrası değil öncesini anlatır."),
     ] },
     { key: "q4", type: "inference", prompt: "What irony lies in the remark that few people “pause to ask who first said it”?", evidence: findEvidence(paragraphs, "repeated so often that few pause to ask who first said it"), options: [
       option("o1", "A claim about sources goes unexamined", true, null, "Kaynakların yanlılığını anlatan bir slogan, kendi kaynağı sorgulanmadan tekrarlanır; ironi budur."),

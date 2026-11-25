@@ -43,17 +43,17 @@ export default {
       option("o3", "The Luddites simply feared new machines", false, "reverse", "Metin Ludditlerin şikayetinin makinelerin kullanım biçimiyle ilgili olduğunu söyler."),
       option("o4", "The speed of invention decides automation's outcome", false, "reverse", "Yazar soruların teknik olmadan önce siyasi olduğunu söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "Why, according to the third paragraph, did teller numbers not collapse?", evidence: findEvidence(paragraphs, "partly because cheaper branches encouraged banks to open more of them"), options: [
-      option("o1", "Cheaper branches led banks to open more", true, null, "Metin daha ucuz şubelerin bankaları daha fazla şube açmaya teşvik ettiğini söyler."),
-      option("o2", "Machines absorbed every task tellers once did", false, "reverse", "Veznedarlar müşteri ilişkilerine kaydı; tüm görevler makinelere devredilmedi."),
-      option("o3", "Banks were legally barred from cutting tellers", false, "notstated", "Yasal bir engelden söz edilmez."),
-      option("o4", "Customers refused to use the new machines", false, "notstated", "Müşteri tepkisi anlatılmaz."),
+    { key: "q2", type: "detail", prompt: "Which statement about the teller example is supported by the third paragraph?", evidence: findEvidence(paragraphs, "partly because cheaper branches encouraged banks to open more of them and tellers shifted towards building relationships with customers"), options: [
+      option("o1", "Cheaper branches meant more openings, and tellers turned to customer relationships", true, null, "Metin ucuzlayan şubelerin daha fazla şube açtırdığını ve veznedarların müşteri ilişkilerine yöneldiğini söyler."),
+      option("o2", "Cheaper branches meant more openings, and tellers turned to routine cash handling", false, "detail", "Veznedarlar rutin nakit işlerine değil, müşteri ilişkilerine yöneldi."),
+      option("o3", "Banks closed branches to save money, and tellers turned to customer relationships", false, "reverse", "Bankalar şube kapatmadı; daha ucuz şubeler yüzünden daha fazla şube açtı."),
+      option("o4", "Machines took over whole jobs, but banks opened more branches to rehire displaced tellers", false, "detail", "Metin makinelerin tüm işleri değil görevleri devraldığını söyler."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "In the final paragraph, what does a machine that “saves on them” do?", evidence: findEvidence(paragraphs, "saves labour for them or merely saves on them"), options: [
-      option("o1", "Reduces spending on workers", true, null, "'Save on' bir şeyden tasarruf etmek, kısmak demektir; yazar işçilere yapılan harcamanın kısılmasını kastediyor."),
-      option("o2", "Protects workers from harm", false, "context", "'Save' kurtarmak anlamına da gelir ama 'save on' bu anlamda değildir."),
-      option("o3", "Gives workers more free time", false, "reverse", "Bu, karşıtlığın öbür tarafı olan 'saves labour for them' anlamıdır."),
-      option("o4", "Stores data about workers", false, "context", "Bilgisayardaki 'save' (kaydetmek) anlamı bu bağlama uymaz."),
+    { key: "q3", type: "vocabulary", prompt: "In the final paragraph, which meaning of “saves on them” fits the context?", evidence: findEvidence(paragraphs, "saves labour for them or merely saves on them"), options: [
+      option("o1", "Economises by spending less on them", true, null, "'Save on' bir şeye harcamayı kısmak demektir; yazar işçilere yapılan harcamanın kısılmasını kastediyor."),
+      option("o2", "Spares them effort they would otherwise make", false, "reverse", "Bu, karşıtlığın öbür yarısı olan 'saves labour for them' anlamıdır."),
+      option("o3", "Sets them aside as a reserve for later", false, "context", "'Save' biriktirmek anlamına da gelir ama 'save on' bu anlamda değildir."),
+      option("o4", "Rescues them from the loss of their jobs", false, "context", "'Save' kurtarmak anlamına gelir ama 'save on' kurtarma demek değildir."),
     ] },
     { key: "q4", type: "inference", prompt: "Why does the author concede that the ATM example is “often overused”?", evidence: findEvidence(paragraphs, "The example is often overused, but its point is sound"), options: [
       option("o1", "To admit a weakness while keeping its point", true, null, "Yazar örneğin sık tekrarlandığını kabul eder ama ana fikrini sağlam bulur."),

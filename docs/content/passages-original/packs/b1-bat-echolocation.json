@@ -1691,31 +1691,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Bats cannot hear their own sounds well.",
+          "text": "Bats depend more on their eyes than their ears.",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Yarasalar kendi seslerinin yankılarını kulaklarıyla dinler."
+          "explanation": "İşitmeleri mükemmeldir ve yollarını ses ile bulurlar; gözlere dayanmazlar."
         },
         {
           "key": "o2",
-          "text": "Bats need light to catch their food.",
+          "text": "Bats hunt best when the moon gives some light.",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Bazı yarasalar tam karanlıkta böcek yakalayabilir."
+          "explanation": "Bazı yarasalar karanlıkta böcek yakalayabilir; ışığa ihtiyaç duyulduğu söylenmez."
         },
         {
           "key": "o3",
-          "text": "People can hear every sound a bat makes nearby.",
+          "text": "Bats stop making sounds as they reach their food.",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Seslerin birçoğunu insanlar duyamaz."
+          "explanation": "Yiyeceğe yaklaşınca sesleri çok daha hızlı çıkarırlar, durmazlar."
         },
         {
           "key": "o4",
-          "text": "A hunting bat may seem quiet to people.",
+          "text": "Hunting bats may be noisier than we realise.",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Seslerin birçoğu insan kulağı için fazla yüksek olduğundan avlanan yarasa insanlara sessiz görünebilir."
+          "explanation": "Seslerin birçoğu insan kulağı için fazla yüksek olduğundan, avlanan bir yarasa duyduğumuzdan çok daha gürültülü olabilir."
         }
       ]
     }

@@ -2537,31 +2537,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "He had published several books that attacked the gods",
+          "text": "He had written books that mocked the city's gods",
           "isCorrect": false,
           "trapType": "reverse",
           "explanation": "Sokrates hiç kitap yazmadı."
         },
         {
           "key": "o2",
-          "text": "Plato reported him to the city's judges",
+          "text": "Plato's dialogues had embarrassed the city's judges",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Metinde böyle bir bilgi yoktur."
+          "explanation": "Metinde Platon'un diyaloglarının yargıçları utandırdığına dair bir bilgi yoktur."
         },
         {
           "key": "o3",
-          "text": "His questioning may have angered some citizens",
+          "text": "His questioning probably upset some citizens",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Yargılanmadan hemen önce herkesin herkesin önünde sorgulanmaktan hoşlanmadığı söylenir; bu, sorularının bazılarını kızdırmış olabileceğini düşündürür."
+          "explanation": "Yargılamadan hemen önce herkesin herkesin önünde sorgulanmaktan hoşlanmadığı söylenir; bu, sorularının bazı kişileri rahatsız etmiş olabileceğini düşündürür."
         },
         {
           "key": "o4",
-          "text": "He refused to ask anyone any questions",
+          "text": "He had stopped asking questions in public by then",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Metin onun sürekli soru sorduğunu anlatır."
+          "explanation": "Metin onun şehirde herkesle konuşup soru sormaya devam ettiğini anlatır."
         }
       ]
     }

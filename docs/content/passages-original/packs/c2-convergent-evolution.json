@@ -3970,7 +3970,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the second paragraph, what produces the vertebrate blind spot?",
+      "prompt": "According to the second paragraph, why do vertebrates have a blind spot that octopuses lack?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 94,
@@ -3979,31 +3979,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "The eye lacks a chamber behind the lens",
+          "text": "Their retina sits at the back of the chamber, whereas the octopus retina lies at the front",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Metin her iki gözde de hazne olduğunu ima eder."
+          "trapType": "detail",
+          "explanation": "Metin iki gözde de retinanın haznenin arkasında olduğunu söyler."
         },
         {
           "key": "o2",
-          "text": "Nerve fibres must pass back through the retina",
+          "text": "Their nerve fibres cross the retina's front and must pass back through it",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Lifler retinanın önünden geçip beyne ulaşmak için retinadan geri geçer; bu kör nokta bırakır."
+          "explanation": "Omurgalılarda lifler retinanın önünden geçip retinadan geri geçer ve kör nokta bırakır."
         },
         {
           "key": "o3",
-          "text": "The receptors face directly towards the incoming light",
+          "text": "Their receptors face the incoming light, with nerve fibres tucked behind them",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bu, kör noktası olmayan ahtapot retinasının özelliğidir."
+          "trapType": "detail",
+          "explanation": "Alıcıların ışığa dönük olması ahtapot retinasının özelliğidir."
         },
         {
           "key": "o4",
-          "text": "The lens focuses light onto the wrong area",
+          "text": "Octopus-style wiring puts their receptors toward the light, leaving a small gap",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Merceğin yanlış odaklaması anlatılmaz."
+          "trapType": "detail",
+          "explanation": "Bu kablolama ahtapota aittir ve kör nokta bırakmaz."
         }
       ]
     },
@@ -4019,31 +4019,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Following fixed and predictable natural laws",
+          "text": "Forming a delegation of one group",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Gould'un vurgusu bunun tersidir."
+          "trapType": "context",
+          "explanation": "İsim anlamı (birlik, heyet) burada sıfat kullanımına uymaz."
         },
         {
           "key": "o2",
-          "text": "Happening at the same moment",
+          "text": "Unavoidable given the prior state of things",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "Eşzamanlılık anlamı yoktur."
+          "trapType": "reverse",
+          "explanation": "Kaçınılmazlık, Gould'un olumsallık vurgusunun tersidir."
         },
         {
           "key": "o3",
-          "text": "Dependent on chance circumstances",
+          "text": "Dependent on unpredictable circumstances",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "'Contingent' burada rastlantılara ve koşullara bağlı demektir."
+          "explanation": "Gould'a göre olaylar öngörülemeyen koşullara bağlıdır."
         },
         {
           "key": "o4",
-          "text": "Forming a large group",
+          "text": "Bound by terms agreed in advance",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "İsim olarak 'contingent' bir grup/birlik demektir; burada sıfattır."
+          "explanation": "'Contingent on' koşula bağlı anlamı olabilir ama önceden kararlaştırılan şartlar kastedilmez."
         }
       ]
     },

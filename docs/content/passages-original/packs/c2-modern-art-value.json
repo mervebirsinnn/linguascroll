@@ -3854,7 +3854,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the text, what do the theories of Danto and Dickie fail to explain on their own?",
+      "prompt": "Which statement about the theories of Danto and Dickie is supported by the text?",
       "evidence": {
         "paragraphIndex": 2,
         "start": 393,
@@ -3863,71 +3863,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "How an ordinary object can become a work of art",
+          "text": "Danto defined art as an artifact presented to an artworld public",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metne göre iki görüş de tam olarak bunu açıklar."
+          "trapType": "detail",
+          "explanation": "Bu tanım Dickie'nin kurumsal kuramına aittir; Danto'ya atfedilmiş."
         },
         {
           "key": "o2",
-          "text": "Why Fountain was refused in New York",
+          "text": "Dickie held that seeing art requires an atmosphere of theory",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Kuramların bu olayı açıklayıp açıklamadığından söz edilmez."
+          "trapType": "detail",
+          "explanation": "Kuram atmosferi Danto'nundur; Dickie'ye atfedilmiş."
         },
         {
           "key": "o3",
-          "text": "Who first owned the original urinal",
+          "text": "Both explain price differences but not how objects become art",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Sahiplik konusu metinde geçmez."
+          "trapType": "reverse",
+          "explanation": "Tam tersi: nesnenin sanata nasıl dönüştüğünü açıklarlar, fiyat farkını açıklamazlar."
         },
         {
           "key": "o4",
-          "text": "Differences in value between artworks",
+          "text": "Neither alone accounts for why one artwork outprices another",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Kuramlar nesnenin nasıl sanat olduğunu açıklar, ama değer farklarını tek başına açıklamaz."
+          "explanation": "Metin, ikisinin de bir nesnenin neden diğerinden değerli olduğunu tek başına açıklamadığını söyler."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “a confidence trick” mean in the final paragraph?",
+      "prompt": "What does “conferred” mean in “was conferred, not manufactured”?",
       "evidence": {
-        "paragraphIndex": 4,
-        "start": 0,
-        "end": 57
+        "paragraphIndex": 1,
+        "start": 219,
+        "end": 272
       },
       "options": [
         {
           "key": "o1",
-          "text": "A scheme to deceive people",
+          "text": "Granted by outside recognition",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Confidence trick, insanların güvenini kazanıp onları aldatan dolandırıcılıktır."
+          "explanation": "Confer burada 'bahşetmek, tanıyıp vermek' demektir; değer nesnede üretilmedi, dışarıdan verildi."
         },
         {
           "key": "o2",
-          "text": "A display of artistic self-belief",
+          "text": "Debated in a formal meeting",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Confidence burada özgüven değil, istismar edilen güvendir."
+          "explanation": "Confer'in 'görüşmek, danışmak' anlamıdır; değer görüşülmez, verilir."
         },
         {
           "key": "o3",
-          "text": "A clever technique for painting",
+          "text": "Passed down through inheritance",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "Trick teknik anlamında kullanılmamıştır."
+          "trapType": "notstated",
+          "explanation": "Miras yoluyla geçiş metinde yoktur."
         },
         {
           "key": "o4",
-          "text": "A test of public trust in museums",
+          "text": "Negotiated between buyers and sellers",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Müzelere güvenin ölçülmesinden söz edilmez."
+          "explanation": "Pazarlık anlamı cümleye uymaz; değer üretimin karşıtı olarak 'verilen' bir şeydir."
         }
       ]
     },

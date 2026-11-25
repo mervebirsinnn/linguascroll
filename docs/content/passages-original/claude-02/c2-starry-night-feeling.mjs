@@ -57,10 +57,10 @@ export default {
       option("o4", "Ignores without comment", false, "notstated", "Görmezden gelme anlamı yoktur."),
     ] },
     { key: "q4", type: "inference", prompt: "What assumption does the author attribute to the “outpouring” view?", evidence: findEvidence(paragraphs, "the spontaneous outpouring of a troubled mind"), options: [
-      option("o1", "That feeling leaves no room for planning", true, null, "Kendiliğinden taşma görüşü, duygunun planlamayı dışladığını varsayar."),
-      option("o2", "That the painter never visited the asylum", false, "notstated", "Böyle bir varsayım anlatılmaz."),
-      option("o3", "That the sky was copied exactly from nature", false, "reverse", "Metin doğrudan kopyalamayı reddeder."),
-      option("o4", "That the painting was finished in one hour", false, "notstated", "Böyle bir varsayım anlatılmaz."),
+      option("o1", "That illness, rather than skill, produced it", true, null, "Yazar bu görüşün kasıtlı seçimleri hastalığa indirgediğini söyler."),
+      option("o2", "That the painter followed a careful plan", false, "reverse", "Kendiliğinden taşma görüşü planlı çalışmanın tersini varsayar."),
+      option("o3", "That he painted it from memory in a quiet studio", false, "notstated", "Böyle bir varsayım anlatılmaz."),
+      option("o4", "That he had been trained by older artists", false, "notstated", "Eğitim konusu anlatılmaz."),
     ] },
   ],
   editorial: { original: true, sources: [

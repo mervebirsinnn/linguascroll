@@ -1865,31 +1865,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Where Neanderthals found their food",
+          "text": "How scientists learned to read old bones",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Beslenme anlatılmaz."
+          "trapType": "detail",
+          "explanation": "Kemiklerden DNA okunması yalnızca bir araçtır; metin DNA bulgularını anlatır."
         },
         {
           "key": "o2",
-          "text": "Why some people carry Neanderthal DNA",
+          "text": "What DNA shows about our link to Neanderthals",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin Neandertal DNA'sının bugünkü insanlarda bulunuşunu anlatır."
+          "explanation": "Metin, DNA karşılaştırmasının Neandertallerle bugünkü insanlar arasındaki bağı gösterdiğini anlatır."
         },
         {
           "key": "o3",
-          "text": "How Neanderthals taught people to farm",
+          "text": "Where Neanderthals lived in Europe and Asia",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Tarım öğretimi anlatılmaz."
+          "trapType": "detail",
+          "explanation": "Yaşadıkları yer yalnızca ilk cümlede geçer; metnin asıl konusu değildir."
         },
         {
           "key": "o4",
-          "text": "Why Neanderthals disappeared from Europe",
+          "text": "Why Neanderthals were slower than early humans",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Yok oluş nedeni anlatılmaz."
+          "trapType": "reverse",
+          "explanation": "Metin onların yavaş sanıldığını ama bu resmin DNA bulgularıyla değiştiğini söyler."
         }
       ]
     },

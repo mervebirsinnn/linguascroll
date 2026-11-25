@@ -3918,80 +3918,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "In Hobbes's version, what does the repaired ship have that the reassembled one lacks?",
+      "prompt": "Which statement correctly describes Hobbes's added twist?",
       "evidence": {
         "paragraphIndex": 1,
-        "start": 228,
+        "start": 130,
         "end": 298
       },
       "options": [
         {
           "key": "o1",
-          "text": "Continuity of form and use",
+          "text": "The ship rebuilt from old planks has the original timber",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Onarılan gemi biçim ve kullanım sürekliliğine sahiptir; asıl parçalar diğerindedir."
+          "explanation": "Yeniden birleştirilen gemi her özgün parçaya sahiptir; onarılan gemi ise biçim ve kullanım sürekliliğine."
         },
         {
           "key": "o2",
-          "text": "Every one of the original planks",
+          "text": "The continuously repaired ship keeps the original timber in full",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Asıl parçalar yeniden birleştirilen gemidedir."
+          "trapType": "detail",
+          "explanation": "Sürekli onarılan gemide tahtalar değiştirilmiştir; özgün tahtalar öbür gemidedir."
         },
         {
           "key": "o3",
-          "text": "Stronger and newer wooden timber",
+          "text": "The reassembled ship has the stronger claim from continuity of use",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Metin yeni kerestenin daha sağlam olduğunu söylemez."
+          "trapType": "detail",
+          "explanation": "Biçim ve kullanım sürekliliği onarılan geminin iddiasıdır."
         },
         {
           "key": "o4",
-          "text": "Official approval from Athens",
+          "text": "The planks were reassembled in a new order to form a second ship",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Resmi onaydan söz edilmez."
+          "trapType": "reverse",
+          "explanation": "Tahtalar özgün sıralarıyla yeniden birleştirildi."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “purchases tidiness at a price” suggest in the fourth paragraph?",
+      "prompt": "What does “settling” mean in “depend on settling which object is which”?",
       "evidence": {
         "paragraphIndex": 3,
-        "start": 0,
-        "end": 41
+        "start": 326,
+        "end": 366
       },
       "options": [
         {
           "key": "o1",
-          "text": "Costs real money to put into practice",
+          "text": "Paying off an outstanding debt",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Purchase ve price burada mecazdır; parasal bir maliyet kastedilmez."
+          "explanation": "Settle'ın 'borcu ödemek' anlamıdır; sigorta bağlamı kandırıcıdır ama cümlede nesne 'hangisi hangisi' sorusudur."
         },
         {
           "key": "o2",
-          "text": "Removes every difficulty without any cost",
+          "text": "Moving to live in a new place",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "At a price, tam tersine bir bedel olduğunu anlatır."
+          "trapType": "context",
+          "explanation": "Settle'ın 'yerleşmek' anlamıdır; bağlama uymaz."
         },
         {
           "key": "o3",
-          "text": "Makes the ship cleaner and safer",
+          "text": "Calming a dispute by compromise",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Tidiness kavramsal düzenliliktir; geminin temizliği değildir."
+          "explanation": "Uzlaşma yoluyla yatıştırma kastedilmez; amaç hangi nesnenin hangisi olduğuna karar vermektir."
         },
         {
           "key": "o4",
-          "text": "Gains neatness by losing something",
+          "text": "Deciding it conclusively",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Mecaz anlamda her yanıt düzenli bir sonuç kazanır ama karşılığında bir şeyden vazgeçer."
+          "explanation": "Settling burada bir sorunu kesin olarak karara bağlamak demektir; mahkeme ve sigorta bağlamına uyar."
         }
       ]
     },

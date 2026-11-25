@@ -3723,7 +3723,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "Which statement about the ten-to-one figure does the passage support?",
+      "prompt": "Which statement about the bacteria-to-human-cell ratio does the passage support?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 174,
@@ -3732,71 +3732,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "It counts cells lining the colon alone",
+          "text": "The Human Microbiome Project, launched in 2016, corrected the ten-to-one figure",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Oran tüm vücut içindir; kalın bağırsak hücreleriyle sınırlandırılmaz."
+          "trapType": "detail",
+          "explanation": "Proje 2007'de başladı ve mikropları kataloglamayı amaçladı; oranı Sender, Fuchs ve Milo'nun 2016 analizi düzeltti."
         },
         {
           "key": "o2",
-          "text": "It is still the accepted scientific estimate",
+          "text": "A 2022 FDA approval concerned a product to treat obesity after antibiotics",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin rakamın sorgulanıp düzeltildiğini anlatır."
+          "trapType": "detail",
+          "explanation": "2022 onayı antibiyotik sonrası C. difficile enfeksiyonunun nüksünü önleyen bir ürüne aittir, obeziteye değil."
         },
         {
           "key": "o3",
-          "text": "A later analysis found it far too high",
+          "text": "A 2016 analysis put the two cell counts at roughly equal",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "2016 analizi oranın bire bire yakın olduğunu, yani ona birin çok yüksek olduğunu gösterdi."
+          "explanation": "2016 analizi oranın bire bire yakın olduğunu, yani bakteri ve insan hücresi sayısının kabaca eşit olduğunu buldu."
         },
         {
           "key": "o4",
-          "text": "It was first proposed in a 2016 study",
+          "text": "A 2016 analysis confirmed ten bacterial cells for each human cell",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "2016 çalışması rakamı ortaya atmadı, düzeltti; rakam onlarca yıldır tekrarlanıyordu."
+          "explanation": "On'a bir rakamı onlarca yıldır tekrarlanıyordu; 2016 analizi onu doğrulamadı, düzeltti."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “conflate” mean in the third paragraph?",
+      "prompt": "What does \"harden\" mean in \"a striking number can harden into accepted fact\"?",
       "evidence": {
-        "paragraphIndex": 2,
-        "start": 207,
-        "end": 257
+        "paragraphIndex": 1,
+        "start": 408,
+        "end": 437
       },
       "options": [
         {
           "key": "o1",
-          "text": "Publish too quickly",
+          "text": "Be made stronger against attack",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Yayın hızından söz edilmez."
+          "explanation": "Sistemi saldırıya karşı güçlendirmek gerçek bir anlamdır ama burada anlatılan yerleşme sürecine uymaz."
         },
         {
           "key": "o2",
-          "text": "Wrongly treat as the same",
+          "text": "Settle into an unquestioned belief",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Conflate, iki farklı şeyi (örüntü ve neden) aynıymış gibi ele almaktır."
+          "explanation": "Harden into accepted fact, çarpıcı bir rakamın zamanla sorgulanmayan, yerleşik bir bilgiye dönüşmesini anlatır."
         },
         {
           "key": "o3",
-          "text": "Carefully tell apart",
+          "text": "Turn physically solid, as concrete does",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bu, conflate kelimesinin tam tersidir; metin ayırmanın zor olduğunu söyler."
+          "trapType": "context",
+          "explanation": "Harden'ın fiziksel sertleşme anlamıdır; bir rakam için uymaz."
         },
         {
           "key": "o4",
-          "text": "Measure with more precision",
+          "text": "Become emotionally callous or unfeeling",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Ölçüm hassasiyetiyle ilgili bir anlam yoktur."
+          "explanation": "Duygusal olarak nasırlaşmak gerçek bir anlamdır ama bir rakam için geçerli değildir."
         }
       ]
     },

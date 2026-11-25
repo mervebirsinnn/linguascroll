@@ -45,11 +45,11 @@ export default {
       option("o3", "Rules written to protect forests", false, "context", "Ormanlar geçer; kelimenin anlamı kural değildir."),
       option("o4", "Layers of ice below the ground", false, "context", "Buz geçer; emission buz değildir."),
     ] },
-    { key: "q4", type: "inference", prompt: "Why is the speed of the change important?", evidence: findEvidence(paragraphs, "the carbon dioxide added by people is increasing far faster than natural sources did after the last ice age"), options: [
-      option("o1", "Fast change gives less time to adapt.", true, null, "Hızlı değişim uyum için daha az zaman bırakır."),
-      option("o2", "Fast change is easier to measure.", false, "notstated", "Ölçülebilirlik anlatılmaz."),
-      option("o3", "Fast change lets natural sources keep up.", false, "reverse", "Metin insan kaynaklı artışın doğal olandan çok hızlı olduğunu söyler."),
-      option("o4", "Fast change mainly affects ice cores.", false, "notstated", "Buz çekirdekleri yalnızca veri kaynağıdır."),
+    { key: "q4", type: "inference", prompt: "Why is the speed of the change important?", evidence: findEvidence(paragraphs, "reducing emissions is often described as a race against time"), options: [
+      option("o1", "It leaves less time to respond", true, null, "Salınımları azaltmak zamana karşı yarış diye anılır; hızlı artış tepki için az zaman bırakır."),
+      option("o2", "It proves volcanoes are now the main cause", false, "reverse", "Metin insan kaynaklı karbondioksitin doğal kaynaklardan çok daha hızlı arttığını söyler."),
+      option("o3", "It makes ice-core records harder to read", false, "notstated", "Hızın buz çekirdeği kayıtlarını etkilediği anlatılmaz."),
+      option("o4", "It shows the natural greenhouse effect should end", false, "reverse", "Metin doğal sera etkisini yaşam için gerekli sayar; sorun gücüdür."),
     ] },
   ],
   editorial: { original: true, sources: [

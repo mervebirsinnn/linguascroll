@@ -4176,7 +4176,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the text, what did the trial participants receive besides the pills?",
+      "prompt": "Besides learning that the pills were inert, what were the open-label participants told?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 379,
@@ -4185,71 +4185,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "A promise that their symptoms would soon vanish",
+          "text": "That the pills had been proven to cure bowel syndrome in 2010",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Önceki sonuçlardan söz edildi; belirtilerin yok olacağı vaat edilmedi."
+          "trapType": "detail",
+          "explanation": "2010 çalışması bu denemenin kendisidir; 'iyileştirdiği kanıtlandı' diye bir bilgi verilmedi."
         },
         {
           "key": "o2",
-          "text": "No explanation of what the pills contained",
+          "text": "That the AMA had approved placebos for general clinical practice",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Hapların etken madde içermediği açıkça söylendi."
+          "trapType": "detail",
+          "explanation": "AMA onay vermez, genel onam alınmasını önerir; ayrıca bu katılımcılara söylenmedi."
         },
         {
           "key": "o3",
-          "text": "A hidden active ingredient in each pill",
+          "text": "That the comparison group would be given a different placebo",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Hapların hiç etken madde içermediği belirtilir."
+          "trapType": "notstated",
+          "explanation": "Karşılaştırma grubu hiçbir tedavi almadı."
         },
         {
           "key": "o4",
-          "text": "A claim that placebos had worked before",
+          "text": "That earlier studies had linked such pills to improvement",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Katılımcılara plasebo haplarının önceki çalışmalarda iyileşme sağladığı söylendi."
+          "explanation": "Katılımcılara plasebo haplarının önceki klinik çalışmalarda iyileşme sağladığı söylendi."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “the triumphant reading” mean in the third paragraph?",
+      "prompt": "What does “suggestion” mean in “a more respectable form of suggestion”?",
       "evidence": {
         "paragraphIndex": 2,
-        "start": 37,
-        "end": 74
+        "start": 311,
+        "end": 358
       },
       "options": [
         {
           "key": "o1",
-          "text": "An overly celebratory interpretation",
+          "text": "Steering expectations indirectly",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Reading burada yorum demektir; triumphant, sonucu zafer gibi kutlayan bir tavrı anlatır."
+          "explanation": "Burada suggestion, beklentiyi telkinle yönlendirmek anlamındadır; ikna ile birlikte anılır."
         },
         {
           "key": "o2",
-          "text": "A loud reading of the trial results",
+          "text": "A proposal offered for someone to consider",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Sesli okuma anlamı bağlama uymaz; söz konusu olan bir yorumdur."
+          "explanation": "Suggestion'ın 'öneri' anlamıdır; cümlede kastedilen telkindir."
         },
         {
           "key": "o3",
-          "text": "A cautious statistical analysis of data",
+          "text": "A faint trace pointing to a hidden cause",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Triumphant temkinli değil, coşkulu bir tavırdır."
+          "trapType": "context",
+          "explanation": "Suggestion'ın 'ima, iz' anlamıdır; bağlama uymaz."
         },
         {
           "key": "o4",
-          "text": "The patients' feeling of recovery",
+          "text": "An order disguised as polite advice",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Hastaların iyileşme duygusu değil, sonucun nasıl yorumlandığı kastedilir."
+          "explanation": "Emir anlamı yoktur; kastedilen hastanın beklentisinin etkilenmesidir."
         }
       ]
     },

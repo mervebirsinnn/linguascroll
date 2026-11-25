@@ -4132,80 +4132,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the first paragraph, what did Bostrom actually argue?",
+      "prompt": "Which statement is consistent with the passage's account of Bostrom's argument?",
       "evidence": {
         "paragraphIndex": 0,
-        "start": 249,
+        "start": 254,
         "end": 296
       },
       "options": [
         {
           "key": "o1",
-          "text": "Consciousness cannot arise from computers",
+          "text": "Descartes's demon was invoked to estimate how likely deception is",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Bu, Bostrom'un değil bazı eleştirmenlerin şüphesidir."
+          "trapType": "detail",
+          "explanation": "Olasılık sorusu Bostrom'a aittir; Descartes aldatmayı dışlayıp dışlayamayacağımızı sorar."
         },
         {
           "key": "o2",
-          "text": "At least one of three claims holds",
+          "text": "Being simulated is one of three alternatives, not a flat prediction",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Bostrom üç önermeden en az birinin doğru olduğunu savunur."
+          "explanation": "Bostrom üç önermeden en az birinin doğru olduğunu savunur; simülasyon yalnızca bir seçenektir."
         },
         {
           "key": "o3",
-          "text": "We are most probably inside a computer",
+          "text": "Its second alternative says most civilisations perish before maturity",
           "isCorrect": false,
           "trapType": "detail",
-          "explanation": "Bu, yazarın yanlış bulduğu popüler özettir."
+          "explanation": "Medeniyetlerin olgunlaşmadan yok olması birinci seçenektir."
         },
         {
           "key": "o4",
-          "text": "Civilisations never build any simulations",
+          "text": "Its statistical step presumes consciousness cannot arise from computation",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Bu, üç seçenekten birinin aşırılaştırılmış hâlidir; iddia bu değildir."
+          "trapType": "reverse",
+          "explanation": "Argüman, bilincin hesaplamadan doğabileceğini varsayar; bunu eleştirmenler sorgular."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "In the third paragraph, what are the “joints” of the argument?",
+      "prompt": "What does “licenses” mean in “the indifference principle that licenses the final step”?",
       "evidence": {
         "paragraphIndex": 2,
-        "start": 0,
-        "end": 57
+        "start": 198,
+        "end": 253
       },
       "options": [
         {
           "key": "o1",
-          "text": "Shared research projects",
+          "text": "Sells usage rights for",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "'Joint' sıfat olarak ortak demektir; burada isimdir."
+          "explanation": "Lisans satma anlamıdır; bağlama uymaz."
         },
         {
           "key": "o2",
-          "text": "Final conclusions of the paper",
+          "text": "Restricts to approved cases",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Kelime sonuç anlamına gelmez."
+          "trapType": "reverse",
+          "explanation": "Anlamın tersi: ilke adımı sınırlamaz, olanaklı kılar."
         },
         {
           "key": "o3",
-          "text": "Points where its parts connect",
+          "text": "Makes the move seem justified",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Mecazen argümanın parçalarının birleştiği, zayıf olabilecek yerlerdir."
+          "explanation": "Licenses burada 'haklı kılmak, izin vermek' anlamındadır; ilke son adımı mümkün kılar."
         },
         {
           "key": "o4",
-          "text": "Places where bones meet in the body",
+          "text": "Grants formal legal permission for",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Gerçek anatomik anlam bu bağlamda kastedilmez."
+          "explanation": "Licence'ın hukuki izin anlamıdır; felsefi bir ilke için kullanılmaz."
         }
       ]
     },

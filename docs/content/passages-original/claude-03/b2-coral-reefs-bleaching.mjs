@@ -35,11 +35,11 @@ export default {
   slug: "b2-coral-reefs-bleaching", level: "B2", title: "The Reef That Loses Its Colour", topic: "Biyoloji", sortOrder: 30, isFreeSample: false,
   paragraphs, words,
   questions: [
-    { key: "q1", type: "main-idea", prompt: "What is the passage mainly about?", evidence: ev(1, "The stressed coral expels the algae"), options: [
-      option("o1", "Why warm seas turn corals white", true, null, "Metin, sıcak suyun mercan ile alg ortaklığını bozup beyazlaşmaya yol açmasını anlatır."),
-      option("o2", "How coral polyps build stone gardens", false, "context", "İskelet yapımı yalnızca giriş ayrıntısıdır."),
-      option("o3", "Why reefs grow best in cold deep water", false, "reverse", "Metin resiflerin berrak tropikal suda geliştiğini söyler."),
-      option("o4", "How waves wear down a tropical shore", false, "notstated", "Kıyı erozyonu anlatılmaz; resifler dalga gücünü emer."),
+    { key: "q1", type: "main-idea", prompt: "What is the passage mainly about?", evidence: ev(1, "When the sea stays warmer than usual, the partnership breaks down."), options: [
+      option("o1", "How reefs work and why heat harms them", true, null, "Metin resifin alg ortaklığıyla nasıl çalıştığını, sıcaklığın bu ortaklığı bozarak mercanı nasıl zayıflattığını ve resiflere etkisini anlatır."),
+      option("o2", "How coral polyps grow hard skeletons for reefs", false, "detail", "İskelet oluşumu yalnızca ilk paragraftaki bir ayrıntıdır; metnin asıl konusu değildir."),
+      option("o3", "Why storms are the main danger to reefs", false, "notstated", "Fırtınaların resiflere zarar verdiği anlatılmaz; tehdit sıcaklıktır."),
+      option("o4", "How fishing has changed life on the reef", false, "notstated", "Balıkçılıktan söz edilmez."),
     ] },
     { key: "q2", type: "detail", prompt: "According to the passage, what has a bleached coral lost?", evidence: ev(1, "A bleached coral is not dead, but it has lost its main source of food."), options: [
       option("o1", "Its main supply of food", true, null, "Metin mercanın ana besin kaynağını kaybettiğini söyler."),

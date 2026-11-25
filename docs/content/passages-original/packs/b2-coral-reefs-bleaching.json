@@ -2555,37 +2555,37 @@
       "prompt": "What is the passage mainly about?",
       "evidence": {
         "paragraphIndex": 1,
-        "start": 67,
-        "end": 102
+        "start": 0,
+        "end": 66
       },
       "options": [
         {
           "key": "o1",
-          "text": "Why reefs grow best in cold deep water",
+          "text": "Why storms are the main danger to reefs",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin resiflerin berrak tropikal suda geliştiğini söyler."
+          "trapType": "notstated",
+          "explanation": "Fırtınaların resiflere zarar verdiği anlatılmaz; tehdit sıcaklıktır."
         },
         {
           "key": "o2",
-          "text": "How waves wear down a tropical shore",
+          "text": "How fishing has changed life on the reef",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Kıyı erozyonu anlatılmaz; resifler dalga gücünü emer."
+          "explanation": "Balıkçılıktan söz edilmez."
         },
         {
           "key": "o3",
-          "text": "Why warm seas turn corals white",
+          "text": "How reefs work and why heat harms them",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin, sıcak suyun mercan ile alg ortaklığını bozup beyazlaşmaya yol açmasını anlatır."
+          "explanation": "Metin resifin alg ortaklığıyla nasıl çalıştığını, sıcaklığın bu ortaklığı bozarak mercanı nasıl zayıflattığını ve resiflere etkisini anlatır."
         },
         {
           "key": "o4",
-          "text": "How coral polyps build stone gardens",
+          "text": "How coral polyps grow hard skeletons for reefs",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "İskelet yapımı yalnızca giriş ayrıntısıdır."
+          "trapType": "detail",
+          "explanation": "İskelet oluşumu yalnızca ilk paragraftaki bir ayrıntıdır; metnin asıl konusu değildir."
         }
       ]
     },

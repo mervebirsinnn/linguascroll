@@ -35,22 +35,22 @@ export default {
   paragraphs, words,
   questions: [
     { key: "q1", type: "main-idea", prompt: "What is the central argument of the passage?", evidence: findEvidence(paragraphs, "created pressure for change without dictating its direction"), options: [
-      option("o1", "The plague's effects hinged on local power", true, null, "Yazar vebanın değişim baskısı yarattığını ama sonucun kurumlara ve göreli güce bağlı olduğunu savunur."),
-      option("o2", "Labour scarcity by itself made peasants richer", false, "extreme", "Yazar kıtlığın tek başına daha iyi yaşam garanti ettiği fikrini açıkça sorgular."),
-      option("o3", "English wage laws successfully kept pay frozen", false, "reverse", "Metin uygulamanın düzensiz olduğunu ve ücretlerin yükseldiğini söyler."),
-      option("o4", "Lords elsewhere lost most power after the plague", false, "reverse", "Avrupa'nın başka bölgelerinde toprak ağaları köylüler üzerindeki hakimiyetini sıkılaştırdı."),
+      option("o1", "The plague opened a door, but regional power shaped the result", true, null, "Yazar vebanın değişim baskısı yarattığını ama sonucun kurumlara ve göreli güce bağlı olduğunu savunur."),
+      option("o2", "Labour scarcity on its own made ordinary people better off everywhere", false, "extreme", "Yazar kıtlığın tek başına daha iyi yaşam garanti ettiği fikrini açıkça sorgular."),
+      option("o3", "English laws succeeded in keeping workers' pay at its old level", false, "reverse", "Metin uygulamanın düzensiz olduğunu ve ücretlerin yükseldiğini söyler."),
+      option("o4", "Landlords across Europe lost control of the peasants after the plague", false, "reverse", "Avrupa'nın başka bölgelerinde toprak ağaları köylüler üzerindeki hakimiyetini sıkılaştırdı."),
     ] },
-    { key: "q2", type: "detail", prompt: "Which statement about the English wage laws does the passage support?", evidence: findEvidence(paragraphs, "wages for many workers rose in the decades that followed despite the law"), options: [
-      option("o1", "Wages for many rose in spite of them", true, null, "Metin birçok işçinin ücretinin yasaya rağmen yükseldiğini söyler."),
-      option("o2", "They were introduced after the 1381 revolt", false, "reverse", "Yasalar 1349 ve 1351 tarihlidir; ayaklanma 1381'de, onlardan sonra oldu."),
-      option("o3", "They succeeded in holding pay at old levels", false, "reverse", "Amaç buydu ama uygulama düzensiz kaldı ve ücretler yükseldi."),
-      option("o4", "They raised pay to attract scarce workers", false, "reverse", "Yasalar ücretleri yükseltmeyi değil, eski düzeyde tutmayı amaçladı."),
+    { key: "q2", type: "detail", prompt: "Which statement about the English labour laws does the passage support?", evidence: findEvidence(paragraphs, "wages for many workers rose in the decades that followed despite the law"), options: [
+      option("o1", "They tried to freeze pay and tie workers down, yet wages still rose", true, null, "Yasalar ücretleri veba öncesi düzeyde tutmaya ve işçilerin erken ayrılmasını önlemeye çalıştı; uygulama düzensiz kaldı ve birçok işçinin ücreti yükseldi."),
+      option("o2", "They tried to freeze pay and tie workers down, and wages stayed near old levels", false, "reverse", "Amaç buydu ama sonuç tersi oldu: ücretler yasaya rağmen yükseldi."),
+      option("o3", "They were backed by a poll tax in 1380 that helped provoke a revolt the next year", false, "detail", "Poll tax ve 1381 ayaklanması metinde geçer ama yasaları destekleyen bir önlem olarak değil, ayrı bir olay olarak."),
+      option("o4", "Parliament passed them in 1349 and a royal ordinance followed in 1351", false, "detail", "Sıra ters verilmiş: 1349 kraliyet kararnamesi, 1351 Parlamento'nun Statute of Labourers'ıdır."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “patchy” mean in the second paragraph?", evidence: findEvidence(paragraphs, "Enforcement proved patchy"), options: [
-      option("o1", "Inconsistent in practice", true, null, "Patchy, yer yer işleyen, düzensiz ve tutarsız demektir; ücretlerin yine de yükselmesi bunu destekler."),
-      option("o2", "Harsh and strictly applied", false, "reverse", "Sıkı uygulama olsaydı ücretler yasaya rağmen yükselmezdi."),
-      option("o3", "Popular among the workers", false, "context", "Metin işçilerin bu denetimleri sevdiğinden söz etmez; uygulama düzensiz kaldı ve ücretler yasaya rağmen yükseldi."),
-      option("o4", "Quickly withdrawn by law", false, "context", "Yasanın geri çekildiğinden söz edilmez."),
+    { key: "q3", type: "vocabulary", prompt: "What does \"hold\" mean in \"tried to hold wages at the levels paid before the plague\"?", evidence: findEvidence(paragraphs, "tried to hold wages at the levels paid before the plague"), options: [
+      option("o1", "Keep at a set level", true, null, "Hold wages at a level, ücretleri belirli bir düzeyde sabit tutmak demektir; yasaların amacı buydu."),
+      option("o2", "Carry in one's hands", false, "context", "Hold'un fiziksel tutma anlamıdır; ücretler için uymaz."),
+      option("o3", "Contain or have room for", false, "context", "Bir şeyi içermek, almak anlamı gerçektir (a hall holds 500) ama burada geçerli değildir."),
+      option("o4", "Organise, as a meeting", false, "context", "Hold a meeting kalıbındaki düzenlemek anlamı bu cümleye uymaz."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the image of an “opened door” suggest?", evidence: findEvidence(paragraphs, "Demographic disaster opened a door"), options: [
       option("o1", "Gains were possible, not guaranteed", true, null, "Kapı açıldı, ama içinden geçilip geçilemeyeceği kurumlara bağlıydı; kazanç bir olasılıktı."),

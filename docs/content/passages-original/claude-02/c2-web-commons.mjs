@@ -57,10 +57,10 @@ export default {
       option("o4", "A type of licence fee", false, "context", "Lisans geçer ama kelime ücret değildir."),
     ] },
     { key: "q4", type: "inference", prompt: "What assumption does the final paragraph quietly challenge?", evidence: findEvidence(paragraphs, "Whether it remains one depends on choices as deliberate as the one made in nineteen ninety three."), options: [
-      option("o1", "That openness, once won, stays secure", true, null, "Açıklığın kalıcı olduğu varsayımı, kasıtlı seçimlere bağlı olduğu söylenerek sorgulanır."),
-      option("o2", "That the Web was owned by Berners-Lee", false, "notstated", "Sahiplik anlatılmaz."),
-      option("o3", "That nobody can publish without approval", false, "reverse", "Metin bunun tersini, izinsiz yayımlamayı anlatır."),
-      option("o4", "That CERN still controls the software today", false, "notstated", "Böyle bir iddia yoktur."),
+      option("o1", "That open access will last without effort", true, null, "Metin Web'in ortak alan olarak kalmasının kasıtlı seçimlere bağlı olduğunu söyler."),
+      option("o2", "That the 1993 decision was made carelessly", false, "reverse", "Metin 1993 kararını belirleyici ve kasıtlı bir seçim olarak sunar."),
+      option("o3", "That Berners-Lee meant to keep control of it", false, "notstated", "Berners-Lee'nin denetim istediği anlatılmaz."),
+      option("o4", "That the Web was released a few years too soon", false, "notstated", "Erken serbest bırakma eleştirisi yoktur."),
     ] },
   ],
   editorial: { original: true, sources: [

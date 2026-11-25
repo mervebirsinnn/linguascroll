@@ -3765,80 +3765,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What does the passage say about the problem of inflammation?",
+      "prompt": "Which statement about the vaccine's genetic instructions is supported?",
       "evidence": {
-        "paragraphIndex": 2,
-        "start": 338,
-        "end": 429
+        "paragraphIndex": 1,
+        "start": 222,
+        "end": 273
       },
       "options": [
         {
           "key": "o1",
-          "text": "It was fully eliminated before the first trials",
+          "text": "They are carried inside a weakened form of the pathogen",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Metin 'largely' der: tepki büyük ölçüde azaldı, tamamen yok edildiği söylenmez."
+          "trapType": "detail",
+          "explanation": "Talimatlar zayıflatılmış patojenle değil, küçük yağlı parçacıklarla taşınır."
         },
         {
           "key": "o2",
-          "text": "It made the vaccines unable to enter cells",
+          "text": "They make cells produce the whole virus for a short time",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "İltihaplanma RNA'yı insanlarda kullanıma uygunsuz kılıyordu; hücreye girememekten söz edilmez."
+          "trapType": "detail",
+          "explanation": "Hücreler virüsün tamamını değil, zararsız bir parçasını üretir."
         },
         {
           "key": "o3",
-          "text": "Chemical changes to the RNA largely reduced it",
+          "text": "Cells break them down once the protein is made",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Kariko ve Weissman, yapı taşlarını kimyasal olarak değiştirmenin tepkiyi büyük ölçüde bastırdığını gösterdi."
+          "explanation": "CDC'ye göre hücreler mesajcı molekülü protein yapıldıktan sonra parçalar."
         },
         {
           "key": "o4",
-          "text": "It was caused by the fatty particles around the RNA",
+          "text": "They are stored in the nucleus until the protein is needed",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin iltihaplanmayı sentetik RNA'nın kendisine bağlar; yağlı parçacıklar başka bir bağlamda geçer."
+          "trapType": "detail",
+          "explanation": "Molekül çekirdeğe hiç girmez ve saklanmaz; okunur ve atılır."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does \"dampened\" most nearly mean in the third paragraph?",
+      "prompt": "What does “prompt” mean in “instructions ... that prompt the recipient's own cells to manufacture”?",
       "evidence": {
-        "paragraphIndex": 2,
-        "start": 399,
-        "end": 429
+        "paragraphIndex": 0,
+        "start": 367,
+        "end": 439
       },
       "options": [
         {
           "key": "o1",
-          "text": "Caused to spread",
+          "text": "Ask for payment",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Yayılma anlamı bağlama uymaz; amaç tepkiyi azaltmaktı."
+          "explanation": "Ödeme isteme anlamı yoktur; talimatlar hücreleri harekete geçirir."
         },
         {
           "key": "o2",
-          "text": "Made less intense",
+          "text": "Cause to act",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Dampen burada bir tepkiyi bastırmak, şiddetini azaltmak anlamındadır."
+          "explanation": "Prompt burada bir şeyi harekete geçirmek, tetiklemek anlamında fiildir."
         },
         {
           "key": "o3",
-          "text": "Made slightly wet",
+          "text": "Feed lines to a speaker",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Kelimenin 'nemlendirmek' anlamı vardır ama bu bağlamda bir tepkiden söz edilmektedir."
+          "explanation": "Tiyatroda suflörlük anlamı gerçektir ama bu bağlama uymaz."
         },
         {
           "key": "o4",
-          "text": "Made easier to notice",
+          "text": "Be done on time",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Tepki daha belirgin değil, daha zayıf hâle gelmiştir."
+          "trapType": "context",
+          "explanation": "'Prompt' sıfatı hızlı demektir; burada fiil olarak kullanılmıştır."
         }
       ]
     },

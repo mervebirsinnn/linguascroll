@@ -42,17 +42,17 @@ export default {
       option("o3", "Whatever archives omit is the most important past", false, "reverse", "Yazar bu 'romantik sonucu' dikkatsiz diye reddeder."),
       option("o4", "Historians should stop relying on archives entirely", false, "extreme", "Yazar belgeyi dikkatle okumayı hâlâ gerekli görür."),
     ] },
-    { key: "q2", type: "detail", prompt: "When, according to the second paragraph, can a gap not be blamed solely on careless clerks?", evidence: findEvidence(paragraphs, "A gap cannot be blamed solely on careless clerks or lost boxes if it was already built into what the clerks were asked to record."), options: [
-      option("o1", "When the omission was part of their instructions", true, null, "Boşluk, katiplerden kaydetmeleri istenen şeye zaten yerleşmişse bu koşul geçerlidir."),
-      option("o2", "When boxes of documents were later lost", false, "reverse", "Kayıp kutular, yazarın yetersiz bulduğu açıklamadır, koşul değildir."),
-      option("o3", "When historians fail to visit the archive", false, "notstated", "Arşiv ziyareti metinde geçmez."),
-      option("o4", "When the clerks were too poorly trained to write well", false, "notstated", "Katiplerin eğitimi hakkında bilgi yoktur."),
+    { key: "q2", type: "detail", prompt: "What does the passage say about a gap that cannot be blamed solely on careless clerks or lost boxes?", evidence: findEvidence(paragraphs, "A gap cannot be blamed solely on careless clerks or lost boxes if it was already built into what the clerks were asked to record."), options: [
+      option("o1", "It was already embedded in what clerks were told to record", true, null, "Metin, boşluğun katiplerden kaydetmeleri istenen şeye zaten yerleşmiş olabileceğini söyler."),
+      option("o2", "It arose only once sources were assembled into archives afterwards", false, "detail", "Sessizlikler kaynakların hem yaratıldığı hem de arşivlerde toplandığı anlarda girer; yalnızca toplama aşamasına bağlanamaz."),
+      option("o3", "It was imposed later by forgetful historians reading the documents", false, "reverse", "Metin sessizliğin yalnızca sonradan unutkan tarihçilerce dayatılmadığını söyler."),
+      option("o4", "It came from clerks' categories that could not conceive an uprising", false, "detail", "Kategorilerin tasavvur edememesi dönemin Batılı gözlemcileri için söylenir ve Haiti örneğine aittir, bu koşulun açıklaması değildir."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "In the second paragraph, what does “alibi” mean as the author uses it?", evidence: findEvidence(paragraphs, "The scheme matters because it denies historians an easy alibi."), options: [
-      option("o1", "An excuse that shifts blame elsewhere", true, null, "Yazar kelimeyi mecazen, sorumluluğu başka yere atan mazeret anlamında kullanır."),
-      option("o2", "Proof of being somewhere else during a crime", false, "context", "Hukuki gerçek anlam bu bağlamda kastedilmez."),
-      option("o3", "A reliable source of historical evidence", false, "context", "Kaynaklar geçer ama kelime kaynak demek değildir."),
-      option("o4", "A method for organising archives", false, "notstated", "Arşiv düzenleme yöntemi anlamı yoktur."),
+    { key: "q3", type: "vocabulary", prompt: "In the third paragraph, what does “grain” mean in “reading against the grain of a document”?", evidence: findEvidence(paragraphs, "reading against the grain of a document still requires reading the document closely"), options: [
+      option("o1", "The usual direction of meaning", true, null, "'Grain' burada odun lifi gibi bir akış yönüdür: belgenin alışılmış yorum doğrultusu; tersinden okumak buna karşı okumaktır."),
+      option("o2", "A small trace of surviving proof", false, "context", "'A grain of truth' gibi 'zerre' anlamıdır; bağlamda 'against' ile uyumsuzdur."),
+      option("o3", "Its finest details of wording", false, "context", "Yakın okuma sonraki yarıda geçer ama 'grain' ayrıntı demek değildir; 'against' ayrıntıya karşı okumayı anlatmaz."),
+      option("o4", "The physical texture of its paper", false, "context", "Gerçek anlam olan doku, bir belgenin okunuş biçimi için kullanılmaz."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author suggest about the silence surrounding the Haitian Revolution?", evidence: findEvidence(paragraphs, "It could already lie in the documents themselves, written into the vocabulary of the people producing them."), options: [
       option("o1", "It arose from the observers' own categories", true, null, "Sessizlik, dönemin gözlemcilerinin kategorilerinden ve söz dağarcığından doğmuştu."),

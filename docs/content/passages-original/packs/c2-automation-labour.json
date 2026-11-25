@@ -4186,47 +4186,47 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "Why, according to the third paragraph, did teller numbers not collapse?",
+      "prompt": "Which statement about the teller example is supported by the third paragraph?",
       "evidence": {
         "paragraphIndex": 2,
         "start": 267,
-        "end": 336
+        "end": 402
       },
       "options": [
         {
           "key": "o1",
-          "text": "Machines absorbed every task tellers once did",
+          "text": "Cheaper branches meant more openings, and tellers turned to routine cash handling",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Veznedarlar müşteri ilişkilerine kaydı; tüm görevler makinelere devredilmedi."
+          "trapType": "detail",
+          "explanation": "Veznedarlar rutin nakit işlerine değil, müşteri ilişkilerine yöneldi."
         },
         {
           "key": "o2",
-          "text": "Banks were legally barred from cutting tellers",
+          "text": "Banks closed branches to save money, and tellers turned to customer relationships",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Yasal bir engelden söz edilmez."
+          "trapType": "reverse",
+          "explanation": "Bankalar şube kapatmadı; daha ucuz şubeler yüzünden daha fazla şube açtı."
         },
         {
           "key": "o3",
-          "text": "Customers refused to use the new machines",
+          "text": "Machines took over whole jobs, but banks opened more branches to rehire displaced tellers",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Müşteri tepkisi anlatılmaz."
+          "trapType": "detail",
+          "explanation": "Metin makinelerin tüm işleri değil görevleri devraldığını söyler."
         },
         {
           "key": "o4",
-          "text": "Cheaper branches led banks to open more",
+          "text": "Cheaper branches meant more openings, and tellers turned to customer relationships",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin daha ucuz şubelerin bankaları daha fazla şube açmaya teşvik ettiğini söyler."
+          "explanation": "Metin ucuzlayan şubelerin daha fazla şube açtırdığını ve veznedarların müşteri ilişkilerine yöneldiğini söyler."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "In the final paragraph, what does a machine that “saves on them” do?",
+      "prompt": "In the final paragraph, which meaning of “saves on them” fits the context?",
       "evidence": {
         "paragraphIndex": 4,
         "start": 193,
@@ -4235,31 +4235,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Reduces spending on workers",
+          "text": "Economises by spending less on them",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "'Save on' bir şeyden tasarruf etmek, kısmak demektir; yazar işçilere yapılan harcamanın kısılmasını kastediyor."
+          "explanation": "'Save on' bir şeye harcamayı kısmak demektir; yazar işçilere yapılan harcamanın kısılmasını kastediyor."
         },
         {
           "key": "o2",
-          "text": "Protects workers from harm",
+          "text": "Spares them effort they would otherwise make",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "'Save' kurtarmak anlamına da gelir ama 'save on' bu anlamda değildir."
+          "trapType": "reverse",
+          "explanation": "Bu, karşıtlığın öbür yarısı olan 'saves labour for them' anlamıdır."
         },
         {
           "key": "o3",
-          "text": "Gives workers more free time",
+          "text": "Sets them aside as a reserve for later",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bu, karşıtlığın öbür tarafı olan 'saves labour for them' anlamıdır."
+          "trapType": "context",
+          "explanation": "'Save' biriktirmek anlamına da gelir ama 'save on' bu anlamda değildir."
         },
         {
           "key": "o4",
-          "text": "Stores data about workers",
+          "text": "Rescues them from the loss of their jobs",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Bilgisayardaki 'save' (kaydetmek) anlamı bu bağlama uymaz."
+          "explanation": "'Save' kurtarmak anlamına gelir ama 'save on' kurtarma demek değildir."
         }
       ]
     },

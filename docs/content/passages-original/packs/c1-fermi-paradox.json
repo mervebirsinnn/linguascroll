@@ -3683,7 +3683,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What does the passage say about the terms of the Drake equation?",
+      "prompt": "Which statement about the Drake equation does the passage support?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 345,
@@ -3692,71 +3692,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "Kepler measured how long civilisations remain detectable",
+          "text": "Kepler observations helped fix the fraction of planets on which life arises",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Kepler gezegenlerle ilgili bilgi sağladı; uygarlıkların saptanabilir kalma süresi tahmine dayalı bir terimdir."
+          "trapType": "detail",
+          "explanation": "Kepler gezegenlerin yaygın olduğuna işaret eder; yaşamın ortaya çıktığı gezegen oranı sonraki, tahmine dayalı terimlerdendir."
         },
         {
           "key": "o2",
-          "text": "Its first terms are the most uncertain ones",
+          "text": "Drake devised it in 1950 at Los Alamos to restate Fermi's lunchtime question",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "En belirsiz olanlar sonraki terimlerdir."
+          "trapType": "detail",
+          "explanation": "Fermi'nin sorusu 1950'dedir ama Drake denklemi 1961'de yazdı; iki olay birbirine karıştırılmış."
         },
         {
           "key": "o3",
-          "text": "The early terms are better known than the later ones",
+          "text": "Star-formation estimates are sounder than those for how long societies stay detectable",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "İlk birkaç terim için makul tahminler varken sonraki terimler neredeyse tamamen tahmine dayanır."
+          "explanation": "Denklem yıldız oluşum hızından saptanabilir kalma süresine uzanır; ilk terimler için makul tahminler vardır, sonraki terimler neredeyse tahmindir."
         },
         {
           "key": "o4",
-          "text": "All of its terms are now known with fair accuracy",
+          "text": "Estimates for how long societies stay detectable are sounder than those for star formation",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Makul tahminler yalnızca ilk birkaç terim için vardır."
+          "trapType": "reverse",
+          "explanation": "Sıralama tersine çevrilmiş: belirsiz olanlar sonraki terimlerdir (ör. saptanabilir kalma süresi)."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does \"deceptively simple\" mean in the first paragraph?",
+      "prompt": "What does \"ran\" mean in \"His reasoning, as later reconstructed, ran roughly as follows\"?",
       "evidence": {
         "paragraphIndex": 0,
-        "start": 99,
-        "end": 134
+        "start": 195,
+        "end": 217
       },
       "options": [
         {
           "key": "o1",
-          "text": "Asked in a humorous way",
+          "text": "Flowed, as a liquid does",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Sorunun üslubundan, mizahından söz edilmez."
+          "explanation": "Akmak anlamı gerçektir ama 'as follows' ile birlikte burada içeriğin düzenini anlatır."
         },
         {
           "key": "o2",
-          "text": "Simpler in appearance than in reality",
+          "text": "Had, in outline, this form",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Deceptively simple, basit görünen ama aslında derin ve karmaşık olan anlamına gelir; paragrafın geri kalanı sorunun ardındaki akıl yürütmeyi açar."
+          "explanation": "Ran burada bir akıl yürütmenin ana hatlarıyla şu biçimde olduğunu bildirir; ardından argüman gelir."
         },
         {
           "key": "o3",
-          "text": "Dishonest and intended to mislead listeners",
+          "text": "Moved quickly on foot",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Deceive kökü aldatmayı çağrıştırsa da Fermi'nin dinleyicileri kandırmak istediği söylenmez; aldatıcı olan sorunun görünüşüdür."
+          "explanation": "Ran'ın temel koşma anlamıdır; akıl yürütme için uymaz."
         },
         {
           "key": "o4",
-          "text": "Clearly and completely simple",
+          "text": "Operated, as a machine does",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "İfade sorunun göründüğü kadar basit olmadığını vurgular."
+          "trapType": "context",
+          "explanation": "Çalışmak anlamı (the engine ran) gerçek bir kullanımdır ama bağlama uymaz."
         }
       ]
     },

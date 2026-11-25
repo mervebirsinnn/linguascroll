@@ -3893,31 +3893,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "That nobody can publish without approval",
+          "text": "That Berners-Lee meant to keep control of it",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin bunun tersini, izinsiz yayımlamayı anlatır."
+          "trapType": "notstated",
+          "explanation": "Berners-Lee'nin denetim istediği anlatılmaz."
         },
         {
           "key": "o2",
-          "text": "That CERN still controls the software today",
+          "text": "That the Web was released a few years too soon",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Böyle bir iddia yoktur."
+          "explanation": "Erken serbest bırakma eleştirisi yoktur."
         },
         {
           "key": "o3",
-          "text": "That openness, once won, stays secure",
+          "text": "That open access will last without effort",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Açıklığın kalıcı olduğu varsayımı, kasıtlı seçimlere bağlı olduğu söylenerek sorgulanır."
+          "explanation": "Metin Web'in ortak alan olarak kalmasının kasıtlı seçimlere bağlı olduğunu söyler."
         },
         {
           "key": "o4",
-          "text": "That the Web was owned by Berners-Lee",
+          "text": "That the 1993 decision was made carelessly",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Sahiplik anlatılmaz."
+          "trapType": "reverse",
+          "explanation": "Metin 1993 kararını belirleyici ve kasıtlı bir seçim olarak sunar."
         }
       ]
     }

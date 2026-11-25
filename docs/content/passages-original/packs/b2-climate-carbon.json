@@ -2423,37 +2423,37 @@
       "prompt": "Why is the speed of the change important?",
       "evidence": {
         "paragraphIndex": 2,
-        "start": 145,
-        "end": 252
+        "start": 271,
+        "end": 331
       },
       "options": [
         {
           "key": "o1",
-          "text": "Fast change mainly affects ice cores.",
+          "text": "It shows the natural greenhouse effect should end",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Buz çekirdekleri yalnızca veri kaynağıdır."
+          "trapType": "reverse",
+          "explanation": "Metin doğal sera etkisini yaşam için gerekli sayar; sorun gücüdür."
         },
         {
           "key": "o2",
-          "text": "Fast change gives less time to adapt.",
+          "text": "It leaves less time to respond",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Hızlı değişim uyum için daha az zaman bırakır."
+          "explanation": "Salınımları azaltmak zamana karşı yarış diye anılır; hızlı artış tepki için az zaman bırakır."
         },
         {
           "key": "o3",
-          "text": "Fast change is easier to measure.",
+          "text": "It proves volcanoes are now the main cause",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Ölçülebilirlik anlatılmaz."
+          "trapType": "reverse",
+          "explanation": "Metin insan kaynaklı karbondioksitin doğal kaynaklardan çok daha hızlı arttığını söyler."
         },
         {
           "key": "o4",
-          "text": "Fast change lets natural sources keep up.",
+          "text": "It makes ice-core records harder to read",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin insan kaynaklı artışın doğal olandan çok hızlı olduğunu söyler."
+          "trapType": "notstated",
+          "explanation": "Hızın buz çekirdeği kayıtlarını etkilediği anlatılmaz."
         }
       ]
     }

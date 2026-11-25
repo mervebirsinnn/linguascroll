@@ -3443,7 +3443,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What did Libet and his colleagues report in 1983?",
+      "prompt": "Which statement about Libet's 1983 findings does the passage support?",
       "evidence": {
         "paragraphIndex": 2,
         "start": 157,
@@ -3452,71 +3452,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "Brain activity rose before people reported deciding",
+          "text": "A brain signal began just before people noticed deciding to move",
           "isCorrect": true,
           "trapType": null,
           "explanation": "Hazırlık potansiyeli, gönüllülerin karar verdiklerinin farkına vardıklarını söyledikleri andan saniyenin bir kesri kadar önce başladı."
         },
         {
           "key": "o2",
-          "text": "People decided to move before any brain activity began",
+          "text": "People reported deciding to move just before the readiness potential began",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Sıralama tersidir: beyin etkinliği bildirilen farkındalıktan önce başladı."
+          "explanation": "Sıra tersine çevrilmiş: beyin sinyali bildirilen farkındalıktan önce başladı."
         },
         {
           "key": "o3",
-          "text": "The signal began several seconds before people moved",
+          "text": "A brain signal began just after people noticed deciding, as random fluctuations built up",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin 'saniyenin bir kesri' der; birkaç saniye değil."
+          "trapType": "detail",
+          "explanation": "Rastgele dalgalanmalar 2012'de Schurger ekibinin yorumudur; Libet'in bulgusunun parçası değildir."
         },
         {
           "key": "o4",
-          "text": "Random neural noise explained the whole signal",
+          "text": "The team concluded that random neural fluctuations, not a decision, produced the signal",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bu, 2012'de Schurger ekibinin öne sürdüğü bir olasılıktır; Libet'in bulgusu değildir ve kesinlik taşımaz."
+          "trapType": "detail",
+          "explanation": "Bu sonuç Schurger'in 2012 önerisidir, Libet ekibinin 1983 bulgusu değildir."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does \"complicated that reading\" mean in the third paragraph?",
+      "prompt": "What does \"reading\" mean in \"Later work has complicated that reading\"?",
       "evidence": {
         "paragraphIndex": 2,
         "start": 337,
-        "end": 377
+        "end": 376
       },
       "options": [
         {
           "key": "o1",
-          "text": "Made the data harder to read aloud",
+          "text": "A figure shown on an instrument",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Reading'in 'okuma' anlamı bağlama uymaz; bir yorumdan söz edilir."
+          "explanation": "Bir aletin gösterdiği değer anlamı gerçek bir kullanımdır ama burada 'that reading' bir yorumu işaret eder."
         },
         {
           "key": "o2",
-          "text": "Confirmed that interpretation in detail",
+          "text": "Silent study of a written text",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Sonraki çalışma yorumu doğrulamadı, ona alternatif bir açıklama önerdi."
+          "trapType": "context",
+          "explanation": "Yazılı metni okuma eylemi anlamı bağlama uymaz."
         },
         {
           "key": "o3",
-          "text": "Made the experiment more expensive",
+          "text": "A public recital of a written work",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Maliyetle ilgili bir anlam yoktur."
+          "explanation": "Bir eserin topluluğa okunması anlamı gerçektir ama burada geçerli değildir."
         },
         {
           "key": "o4",
-          "text": "Made that interpretation less simple",
+          "text": "A particular way of interpreting",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Reading burada 'yorum' anlamındadır; sonraki çalışmalar bu yorumu daha az kesin ve basit hâle getirdi."
+          "explanation": "Reading burada bir verinin yorumu anlamındadır; sonraki çalışmalar bu yorumu karmaşıklaştırdı."
         }
       ]
     },

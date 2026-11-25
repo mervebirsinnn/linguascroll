@@ -46,10 +46,10 @@ export default {
       option("o4", "Turn away from bright objects", false, "context", "Kaçınmak anlamı yoktur."),
     ] },
     { key: "q4", type: "inference", prompt: "Why do the prisoners refuse to leave?", evidence: ev(2, "The prisoners conclude that the journey has damaged him, and they refuse to leave."), options: [
-      option("o1", "They fear the change will harm them.", true, null, "Yolculuğun ona zarar verdiğini düşünür ve ayrılmayı reddederler."),
-      option("o2", "They have no way of getting out.", false, "notstated", "Çıkışın imkânsız olduğu söylenmez."),
-      option("o3", "They already know the real world.", false, "reverse", "Hiç görmemişlerdir."),
-      option("o4", "They are waiting for the fire to go out.", false, "notstated", "Böyle bir bekleyiş anlatılmaz."),
+      option("o1", "They think the journey harmed him", true, null, "Mahkûmlar yolculuğun ona zarar verdiği sonucuna varır."),
+      option("o2", "They are afraid of the fire behind them", false, "notstated", "Ateşten korktukları anlatılmaz."),
+      option("o3", "They think he has become wiser than them", false, "reverse", "Metin onların adamın zarar gördüğünü düşündüğünü söyler."),
+      option("o4", "They were told to stay by the guards", false, "notstated", "Gardiyanlardan söz edilmez."),
     ] },
   ],
   editorial: { original: true, sources: [

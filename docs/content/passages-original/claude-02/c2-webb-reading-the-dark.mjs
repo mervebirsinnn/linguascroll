@@ -55,10 +55,10 @@ export default {
       option("o4", "Quietly record", false, "context", "Kayıt etme anlamı yoktur."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply about a telescope that only confirmed old beliefs?", evidence: findEvidence(paragraphs, "A telescope that only confirmed what astronomers already believed would be a poor investment"), options: [
-      option("o1", "Surprising results are part of its value", true, null, "Yalnızca doğrulayan bir teleskop zayıf yatırımdır; yeni, şaşırtıcı sonuçlar değerin parçasıdır."),
-      option("o2", "Confirmation is the main aim of all astronomy", false, "reverse", "Metin bunun tersini söyler."),
-      option("o3", "Its mirror matters more than its observations", false, "reverse", "Ayna ne kadar muhteşem olursa olsun yatırım zayıf kalır."),
-      option("o4", "Existing theory should never be tested again", false, "reverse", "Metin teorinin kanıtla sınanmasını savunur."),
+      option("o1", "A good telescope should challenge theory", true, null, "Yalnızca doğrulayan teleskop zayıf yatırım sayılır; yeni kanıt teoriyi sınamalıdır."),
+      option("o2", "Its mirror would need to be bigger", false, "notstated", "Ayna büyüklüğünden değil, sonuçların değerinden söz edilir."),
+      option("o3", "It would cost less to build and run", false, "notstated", "Maliyet karşılaştırması anlatılmaz."),
+      option("o4", "It would be best for studying nearby stars", false, "notstated", "Yakın yıldızlar anlatılmaz."),
     ] },
   ],
   editorial: { original: true, sources: [

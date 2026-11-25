@@ -41,17 +41,17 @@ export default {
       option("o3", "The Drake equation has now fully solved the question of alien life", false, "extreme", "Denklemin sonraki terimlerinin neredeyse tamamen tahmine dayandığı söylenir."),
       option("o4", "Kepler has detected signals from distant civilisations", false, "notstated", "Kepler gözlemleri gezegenlerin yaygın olduğuna işaret eder; sinyal tespitinden söz edilmez."),
     ] },
-    { key: "q2", type: "detail", prompt: "What does the passage say about the terms of the Drake equation?", evidence: findEvidence(paragraphs, "Astronomers now have reasonable estimates for the first few terms"), options: [
-      option("o1", "The early terms are better known than the later ones", true, null, "İlk birkaç terim için makul tahminler varken sonraki terimler neredeyse tamamen tahmine dayanır."),
-      option("o2", "All of its terms are now known with fair accuracy", false, "extreme", "Makul tahminler yalnızca ilk birkaç terim için vardır."),
-      option("o3", "Kepler measured how long civilisations remain detectable", false, "reverse", "Kepler gezegenlerle ilgili bilgi sağladı; uygarlıkların saptanabilir kalma süresi tahmine dayalı bir terimdir."),
-      option("o4", "Its first terms are the most uncertain ones", false, "reverse", "En belirsiz olanlar sonraki terimlerdir."),
+    { key: "q2", type: "detail", prompt: "Which statement about the Drake equation does the passage support?", evidence: findEvidence(paragraphs, "Astronomers now have reasonable estimates for the first few terms"), options: [
+      option("o1", "Star-formation estimates are sounder than those for how long societies stay detectable", true, null, "Denklem yıldız oluşum hızından saptanabilir kalma süresine uzanır; ilk terimler için makul tahminler vardır, sonraki terimler neredeyse tahmindir."),
+      option("o2", "Estimates for how long societies stay detectable are sounder than those for star formation", false, "reverse", "Sıralama tersine çevrilmiş: belirsiz olanlar sonraki terimlerdir (ör. saptanabilir kalma süresi)."),
+      option("o3", "Kepler observations helped fix the fraction of planets on which life arises", false, "detail", "Kepler gezegenlerin yaygın olduğuna işaret eder; yaşamın ortaya çıktığı gezegen oranı sonraki, tahmine dayalı terimlerdendir."),
+      option("o4", "Drake devised it in 1950 at Los Alamos to restate Fermi's lunchtime question", false, "detail", "Fermi'nin sorusu 1950'dedir ama Drake denklemi 1961'de yazdı; iki olay birbirine karıştırılmış."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: 'What does "deceptively simple" mean in the first paragraph?', evidence: findEvidence(paragraphs, "asked a deceptively simple question"), options: [
-      option("o1", "Simpler in appearance than in reality", true, null, "Deceptively simple, basit görünen ama aslında derin ve karmaşık olan anlamına gelir; paragrafın geri kalanı sorunun ardındaki akıl yürütmeyi açar."),
-      option("o2", "Dishonest and intended to mislead listeners", false, "context", "Deceive kökü aldatmayı çağrıştırsa da Fermi'nin dinleyicileri kandırmak istediği söylenmez; aldatıcı olan sorunun görünüşüdür."),
-      option("o3", "Clearly and completely simple", false, "reverse", "İfade sorunun göründüğü kadar basit olmadığını vurgular."),
-      option("o4", "Asked in a humorous way", false, "context", "Sorunun üslubundan, mizahından söz edilmez."),
+    { key: "q3", type: "vocabulary", prompt: "What does \"ran\" mean in \"His reasoning, as later reconstructed, ran roughly as follows\"?", evidence: findEvidence(paragraphs, "ran roughly as follows"), options: [
+      option("o1", "Had, in outline, this form", true, null, "Ran burada bir akıl yürütmenin ana hatlarıyla şu biçimde olduğunu bildirir; ardından argüman gelir."),
+      option("o2", "Moved quickly on foot", false, "context", "Ran'ın temel koşma anlamıdır; akıl yürütme için uymaz."),
+      option("o3", "Operated, as a machine does", false, "context", "Çalışmak anlamı (the engine ran) gerçek bir kullanımdır ama bağlama uymaz."),
+      option("o4", "Flowed, as a liquid does", false, "context", "Akmak anlamı gerçektir ama 'as follows' ile birlikte burada içeriğin düzenini anlatır."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply in the final paragraph?", evidence: findEvidence(paragraphs, "if it lies ahead, the silence may be a warning"), options: [
       option("o1", "Silence would be worse news if the hard step is ahead", true, null, "Olası olmayan adım ileride ise sessizlik, uygarlıkların o adımı aşamadığını düşündürür ve bizim için bir uyarı olabilir."),

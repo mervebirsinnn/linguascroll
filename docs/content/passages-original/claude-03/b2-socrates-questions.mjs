@@ -47,10 +47,10 @@ export default {
       option("o4", "Explained in a much simpler way", false, "notstated", "Kelimenin basitleştirmeyle ilgisi yoktur."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the passage suggest about why Socrates was put on trial?", evidence: ev("Not everyone enjoyed being questioned in public."), options: [
-      option("o1", "His questioning may have angered some citizens", true, null, "Yargılanmadan hemen önce herkesin herkesin önünde sorgulanmaktan hoşlanmadığı söylenir; bu, sorularının bazılarını kızdırmış olabileceğini düşündürür."),
-      option("o2", "He refused to ask anyone any questions", false, "reverse", "Metin onun sürekli soru sorduğunu anlatır."),
-      option("o3", "He had published several books that attacked the gods", false, "reverse", "Sokrates hiç kitap yazmadı."),
-      option("o4", "Plato reported him to the city's judges", false, "notstated", "Metinde böyle bir bilgi yoktur."),
+      option("o1", "His questioning probably upset some citizens", true, null, "Yargılamadan hemen önce herkesin herkesin önünde sorgulanmaktan hoşlanmadığı söylenir; bu, sorularının bazı kişileri rahatsız etmiş olabileceğini düşündürür."),
+      option("o2", "He had stopped asking questions in public by then", false, "reverse", "Metin onun şehirde herkesle konuşup soru sormaya devam ettiğini anlatır."),
+      option("o3", "He had written books that mocked the city's gods", false, "reverse", "Sokrates hiç kitap yazmadı."),
+      option("o4", "Plato's dialogues had embarrassed the city's judges", false, "notstated", "Metinde Platon'un diyaloglarının yargıçları utandırdığına dair bir bilgi yoktur."),
     ] },
   ],
   editorial: { original: true, sources: [

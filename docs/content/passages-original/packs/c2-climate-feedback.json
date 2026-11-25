@@ -3709,31 +3709,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Fast change leaves less time",
+          "text": "A sudden change is hardest to absorb",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Büyük ve ani itme sistemi en az bağışlayıcı kılar."
+          "explanation": "Metne göre sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."
         },
         {
           "key": "o2",
-          "text": "Policy has no effect on the climate",
+          "text": "Delay would make the system more forgiving",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Metin böyle bir şey söylemez."
+          "explanation": "Metin ani ve büyük itmenin sistemi daha az bağışlayıcı kıldığını söyler."
         },
         {
           "key": "o3",
-          "text": "Slow pushes are always more harmful",
+          "text": "Water vapour changes more slowly than carbon dioxide",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Tersini ima eder."
+          "trapType": "notstated",
+          "explanation": "Su buharı ile karbondioksitin değişim hızı karşılaştırılmaz."
         },
         {
           "key": "o4",
-          "text": "Timing matters only for water vapour",
+          "text": "Ice cores lose accuracy as time passes",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Metin böyle bir sınırlama yapmaz."
+          "trapType": "notstated",
+          "explanation": "Buz çekirdeklerinin doğruluk kaybı anlatılmaz."
         }
       ]
     }

@@ -39,17 +39,17 @@ export default {
       option("o3", "Gut bacteria vastly outnumber the body's own cells", false, "reverse", "Metin bu ona bir iddiasının düzeltildiğini anlatır."),
       option("o4", "Diet is the main cause of most chronic illness", false, "notstated", "Beslenme yalnızca olası bir ortak etken olarak anılır; böyle bir iddia yoktur."),
     ] },
-    { key: "q2", type: "detail", prompt: "Which statement about the ten-to-one figure does the passage support?", evidence: findEvidence(paragraphs, "concluded that the ratio is closer to one to one"), options: [
-      option("o1", "A later analysis found it far too high", true, null, "2016 analizi oranın bire bire yakın olduğunu, yani ona birin çok yüksek olduğunu gösterdi."),
-      option("o2", "It was first proposed in a 2016 study", false, "reverse", "2016 çalışması rakamı ortaya atmadı, düzeltti; rakam onlarca yıldır tekrarlanıyordu."),
-      option("o3", "It counts cells lining the colon alone", false, "notstated", "Oran tüm vücut içindir; kalın bağırsak hücreleriyle sınırlandırılmaz."),
-      option("o4", "It is still the accepted scientific estimate", false, "reverse", "Metin rakamın sorgulanıp düzeltildiğini anlatır."),
+    { key: "q2", type: "detail", prompt: "Which statement about the bacteria-to-human-cell ratio does the passage support?", evidence: findEvidence(paragraphs, "concluded that the ratio is closer to one to one"), options: [
+      option("o1", "A 2016 analysis put the two cell counts at roughly equal", true, null, "2016 analizi oranın bire bire yakın olduğunu, yani bakteri ve insan hücresi sayısının kabaca eşit olduğunu buldu."),
+      option("o2", "A 2016 analysis confirmed ten bacterial cells for each human cell", false, "reverse", "On'a bir rakamı onlarca yıldır tekrarlanıyordu; 2016 analizi onu doğrulamadı, düzeltti."),
+      option("o3", "The Human Microbiome Project, launched in 2016, corrected the ten-to-one figure", false, "detail", "Proje 2007'de başladı ve mikropları kataloglamayı amaçladı; oranı Sender, Fuchs ve Milo'nun 2016 analizi düzeltti."),
+      option("o4", "A 2022 FDA approval concerned a product to treat obesity after antibiotics", false, "detail", "2022 onayı antibiyotik sonrası C. difficile enfeksiyonunun nüksünü önleyen bir ürüne aittir, obeziteye değil."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “conflate” mean in the third paragraph?", evidence: findEvidence(paragraphs, "it is easy to conflate such a pattern with a cause"), options: [
-      option("o1", "Wrongly treat as the same", true, null, "Conflate, iki farklı şeyi (örüntü ve neden) aynıymış gibi ele almaktır."),
-      option("o2", "Carefully tell apart", false, "reverse", "Bu, conflate kelimesinin tam tersidir; metin ayırmanın zor olduğunu söyler."),
-      option("o3", "Measure with more precision", false, "context", "Ölçüm hassasiyetiyle ilgili bir anlam yoktur."),
-      option("o4", "Publish too quickly", false, "context", "Yayın hızından söz edilmez."),
+    { key: "q3", type: "vocabulary", prompt: "What does \"harden\" mean in \"a striking number can harden into accepted fact\"?", evidence: findEvidence(paragraphs, "can harden into accepted fact"), options: [
+      option("o1", "Settle into an unquestioned belief", true, null, "Harden into accepted fact, çarpıcı bir rakamın zamanla sorgulanmayan, yerleşik bir bilgiye dönüşmesini anlatır."),
+      option("o2", "Turn physically solid, as concrete does", false, "context", "Harden'ın fiziksel sertleşme anlamıdır; bir rakam için uymaz."),
+      option("o3", "Become emotionally callous or unfeeling", false, "context", "Duygusal olarak nasırlaşmak gerçek bir anlamdır ama bir rakam için geçerli değildir."),
+      option("o4", "Be made stronger against attack", false, "context", "Sistemi saldırıya karşı güçlendirmek gerçek bir anlamdır ama burada anlatılan yerleşme sürecine uymaz."),
     ] },
     { key: "q4", type: "inference", prompt: "The author would most likely agree that a new microbiome claim...", evidence: findEvidence(paragraphs, "The lesson is not that microbial science has been oversold in every respect"), options: [
       option("o1", "earns trust when tested on a clear outcome", true, null, "Yazar en güçlü iddiaların belirli bir sonuca karşı sınananlar olduğunu söyler."),

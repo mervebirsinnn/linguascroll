@@ -39,17 +39,17 @@ export default {
       option("o3", "Human feedback has removed hallucinations", false, "reverse", "Geri bildirim davranışı iyileştirir ama hatalar sürer; rapor modelin tamamen güvenilir olmadığını kabul eder."),
       option("o4", "Transformers were built mainly to verify facts", false, "reverse", "Modeller olgu denetlemek için değil, sonraki belirteci tahmin etmek için eğitilir."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the passage, why can a model state a wrong date confidently?", evidence: findEvidence(paragraphs, "trained to produce plausible continuations rather than to check claims against the world"), options: [
-      option("o1", "It predicts likely text, not true facts", true, null, "Model akla yatkın devamlar üretmek için eğitilir; iddiaları dünyaya karşı denetlemez."),
-      option("o2", "Its training data were gathered after 2023", false, "reverse", "2023 raporun yılıdır; metin verinin ne zaman toplandığını böyle söylemez."),
-      option("o3", "Human feedback teaches it to sound certain", false, "notstated", "Geri bildirimin özgüven öğrettiği söylenmez."),
-      option("o4", "It is designed to conceal its own doubts", false, "notstated", "Şüphe gizlemek için tasarlandığından söz edilmez."),
+    { key: "q2", type: "detail", prompt: "What limitation of GPT-4 does the passage say OpenAI's report noted?", evidence: findEvidence(paragraphs, "lacked knowledge of events after most of its training data had been collected"), options: [
+      option("o1", "Mostly unaware of events after its data was collected", true, null, "Rapor sistemin eğitim verisi toplandıktan sonraki olaylardan genellikle habersiz olduğunu belirtti."),
+      option("o2", "Weak knowledge of events before most of its training data", false, "reverse", "Yön ters çevrilmiş: eksik olan, veri toplandıktan sonraki olaylar bilgisidir."),
+      option("o3", "A habit of inventing citations only in its later training stages", false, "notstated", "Uydurma atıflar eğitimin geç aşamalarına bağlanmaz; model plausible devam üretmek için eğitilir."),
+      option("o4", "Inability to write fluent prose without human feedback", false, "notstated", "Akıcılığın geri bildirime bağlı olduğu söylenmez; rapordaki sınırlama başkadır."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “counter” mean in the third paragraph?", evidence: findEvidence(paragraphs, "Other researchers counter that the ability to solve unfamiliar problems"), options: [
-      option("o1", "Argue in response", true, null, "Burada counter fiildir: karşı görüşe yanıt olarak itiraz edip savunmak."),
-      option("o2", "Count something carefully", false, "context", "Count ile benzerlik yanıltıcıdır; sayma anlamı yoktur."),
-      option("o3", "Fully agree with them", false, "reverse", "Diğer araştırmacılar papağan görüşüne karşı çıkar, katılmaz."),
-      option("o4", "Serve customers at a desk", false, "context", "Tezgah (isim) anlamı bu cümlede geçerli değildir."),
+    { key: "q3", type: "vocabulary", prompt: "What does “rest” mean in “Most current systems rest on the transformer”?", evidence: findEvidence(paragraphs, "Most current systems rest on the transformer"), options: [
+      option("o1", "Be founded upon", true, null, "Rest on, bir şeye dayanmak demektir: sistemler transformer mimarisine dayanır."),
+      option("o2", "Pause and recover from", false, "context", "Dinlenmek anlamı bu cümlede geçerli değildir."),
+      option("o3", "Physically lean against", false, "context", "Fiziksel yaslanma anlamı vardır ama sistemler mimariye yaslanmaz, ona dayanır."),
+      option("o4", "Be left to the care of", false, "context", "'Rest with' bu anlamı taşır ama 'rest on' burada dayanmak demektir."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply about the debate over whether models understand?", evidence: findEvidence(paragraphs, "the philosophical debate matters less than a simple discipline"), options: [
       option("o1", "It need not be settled to use models wisely", true, null, "Yazar pratikte tartışmadan çok doğrulama disiplininin önemli olduğunu söyler; tartışma çözülmeden de akıllıca kullanım mümkündür."),

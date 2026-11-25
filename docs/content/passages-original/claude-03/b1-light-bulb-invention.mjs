@@ -50,11 +50,11 @@ export default {
       option("o3", "Turn cold and dark very fast", false, "reverse", "Tel soğumaz, tersine çok ısınır ve ışık verir."),
       option("o4", "Make a loud ringing sound", false, "context", "Sesle ilgisi yoktur."),
     ] },
-    { key: "q4", type: "inference", prompt: "What can we infer about the early bulb threads?", evidence: findEvidence(paragraphs, "They tested many materials before they found good ones."), options: [
+    { key: "q4", type: "inference", prompt: "What can we infer about the early bulb threads?", evidence: evidenceOf(paragraphs, 1, "The hardest part was finding a thread that could glow for a long time."), options: [
       option("o1", "Many early threads did not last long", true, null, "Çok sayıda malzeme denenmesi ve en zor kısmın uzun süre parlayan tel bulmak olması, çoğunun çabuk bittiğini düşündürür."),
-      option("o2", "Edison found the right thread on his first try", false, "reverse", "Metin çok sayıda malzeme denendiğini söyler."),
-      option("o3", "Swan copied Edison's bulb years later", false, "reverse", "Metin Swan'ın yaklaşık aynı zamanda çalıştığını söyler."),
-      option("o4", "Making the glass was the hardest part", false, "reverse", "Metin en zor kısmın uygun teli bulmak olduğunu söyler."),
+      option("o2", "Edison's team found a good thread very quickly", false, "reverse", "Metin çok sayıda malzeme denendiğini ve en zor kısmın uygun teli bulmak olduğunu söyler."),
+      option("o3", "Threads glowed longest when air stayed in the bulb", false, "reverse", "Hava ampulde kalırsa sıcak tel hızla yanar; bu yüzden hava alınır."),
+      option("o4", "Making the glass was the hardest part", false, "detail", "Metin en zor kısmın camı yapmak değil, uzun süre parlayan teli bulmak olduğunu söyler."),
     ] },
   ],
   editorial: { original: true, sources: [

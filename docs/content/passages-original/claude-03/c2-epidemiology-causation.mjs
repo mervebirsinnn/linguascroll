@@ -43,17 +43,17 @@ export default {
       option("o3", "Every observed link in epidemiology is confounded", false, "extreme", "Yazar bunu açıkça 'karşıt hata' olarak reddeder."),
       option("o4", "Removing the pump handle proved Snow's theory beyond doubt", false, "detail", "Metin kolun sökülmesinin tek başına kanıt olamayacağını söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the author, what made Snow's comparison of the two water companies persuasive?", evidence: findEvidence(paragraphs, "the households differed in water but resembled each other in most other respects"), options: [
-      option("o1", "Households differed mainly in their water", true, null, "Haneler su bakımından farklı, diğer çoğu açıdan benzerdi; bu rakip açıklamaları zayıflattı."),
-      option("o2", "Both companies drew water from the same clean stretch", false, "detail", "Şirketlerden biri kirlenmiş bir kesimden su çekiyordu."),
-      option("o3", "Customers of both companies died at similar rates", false, "reverse", "Bir şirketin müşterilerinde ölüm oranı çok daha yüksekti."),
-      option("o4", "Officials ordered every pump in London closed", false, "notstated", "Metinde böyle bir emir yoktur; yalnız bir pompanın kolu söküldü."),
+    { key: "q2", type: "detail", prompt: "According to the author, why did Snow's comparison of the two water companies carry the argument?", evidence: findEvidence(paragraphs, "Because the pipes of both companies ran along the same streets, the households differed in water but resembled each other in most other respects."), options: [
+      option("o1", "Customers lived along the same streets, so water was the main difference", true, null, "Haneler su dışında büyük ölçüde benzerdi; bu rakip açıklamaları zayıflattı."),
+      option("o2", "Cholera mortality dropped soon after the handle came off the Broad Street pump", false, "detail", "Metin salgının zaten gerilediğini ve kolun sökülmesinin tek başına kanıt olmadığını söyler."),
+      option("o3", "Hill's criteria, such as timing and consistency, were applied to both groups", false, "detail", "Hill yaklaşık bir yüzyıl sonra gelir; Snow'un karşılaştırmasıyla ilgili değildir."),
+      option("o4", "Deaths clustered around one pump that both companies' pipes happened to feed", false, "detail", "Ölümlerin pompa çevresinde kümelenmesi haritalama kanıtıdır, şirket karşılaştırması değildir."),
     ] },
     { key: "q3", type: "vocabulary", prompt: "In the final paragraph, what does “confounded” mean?", evidence: findEvidence(paragraphs, "treating every observed link as hopelessly confounded"), options: [
-      option("o1", "Distorted by other hidden factors", true, null, "Epidemiyolojide 'confounded', ilişkinin gizli üçüncü etkenlerle bozulmuş olması demektir."),
-      option("o2", "Proved beyond any reasonable doubt", false, "reverse", "Anlam neredeyse tam tersidir."),
-      option("o3", "Feeling puzzled and embarrassed", false, "context", "Gündelik 'şaşkın' anlamı bu teknik bağlama uymaz."),
-      option("o4", "Counted twice by mistake", false, "context", "Sayma geçer ama kelime çift sayım demek değildir."),
+      option("o1", "Skewed by hidden other factors", true, null, "Epidemiyolojide 'confounded', ilişkinin gizli üçüncü etkenlerce bozulması demektir."),
+      option("o2", "Defeated, as a plan is thwarted", false, "context", "'Confound' boşa çıkarmak anlamına gelir ama ilişkiler için kullanılmaz."),
+      option("o3", "Described in needlessly confusing terms", false, "context", "Karmaşık anlatılmak ayrı bir şeydir; burada ilişkinin gizli etkenlerce bozulması kastedilir."),
+      option("o4", "Contradicted by later studies", false, "context", "Çelişen sonuç ile gizli etken tarafından bozulma farklı şeylerdir."),
     ] },
     { key: "q4", type: "inference", prompt: "Why does the author open the final paragraph by rejecting “the opposite error”?", evidence: findEvidence(paragraphs, "None of this licenses the opposite error of treating every observed link as hopelessly confounded."), options: [
       option("o1", "To guard against blanket scepticism", true, null, "Yazar, eleştirisinin her bağlantıyı reddetmeye dönüşmesini önlemek ister."),

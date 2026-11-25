@@ -45,17 +45,17 @@ export default {
       option("o3", "Octopus and human eyes are identical in design", false, "reverse", "Metin kablolamanın ters olduğunu vurgular."),
       option("o4", "Gould's view has been decisively disproved", false, "notstated", "Yazar iki görüşün düşünüldüğünden az karşıt olduğunu söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the second paragraph, what produces the vertebrate blind spot?", evidence: findEvidence(paragraphs, "the nerve fibres run across the front of the retina and must pass back through it to reach the brain"), options: [
-      option("o1", "Nerve fibres must pass back through the retina", true, null, "Lifler retinanın önünden geçip beyne ulaşmak için retinadan geri geçer; bu kör nokta bırakır."),
-      option("o2", "The receptors face directly towards the incoming light", false, "reverse", "Bu, kör noktası olmayan ahtapot retinasının özelliğidir."),
-      option("o3", "The lens focuses light onto the wrong area", false, "notstated", "Merceğin yanlış odaklaması anlatılmaz."),
-      option("o4", "The eye lacks a chamber behind the lens", false, "notstated", "Metin her iki gözde de hazne olduğunu ima eder."),
+    { key: "q2", type: "detail", prompt: "According to the second paragraph, why do vertebrates have a blind spot that octopuses lack?", evidence: findEvidence(paragraphs, "the nerve fibres run across the front of the retina and must pass back through it to reach the brain"), options: [
+      option("o1", "Their nerve fibres cross the retina's front and must pass back through it", true, null, "Omurgalılarda lifler retinanın önünden geçip retinadan geri geçer ve kör nokta bırakır."),
+      option("o2", "Their receptors face the incoming light, with nerve fibres tucked behind them", false, "detail", "Alıcıların ışığa dönük olması ahtapot retinasının özelliğidir."),
+      option("o3", "Octopus-style wiring puts their receptors toward the light, leaving a small gap", false, "detail", "Bu kablolama ahtapota aittir ve kör nokta bırakmaz."),
+      option("o4", "Their retina sits at the back of the chamber, whereas the octopus retina lies at the front", false, "detail", "Metin iki gözde de retinanın haznenin arkasında olduğunu söyler."),
     ] },
     { key: "q3", type: "vocabulary", prompt: "What does “contingent” mean in the third paragraph?", evidence: findEvidence(paragraphs, "because history is shaped by countless contingent events"), options: [
-      option("o1", "Dependent on chance circumstances", true, null, "'Contingent' burada rastlantılara ve koşullara bağlı demektir."),
-      option("o2", "Forming a large group", false, "context", "İsim olarak 'contingent' bir grup/birlik demektir; burada sıfattır."),
-      option("o3", "Following fixed and predictable natural laws", false, "reverse", "Gould'un vurgusu bunun tersidir."),
-      option("o4", "Happening at the same moment", false, "context", "Eşzamanlılık anlamı yoktur."),
+      option("o1", "Dependent on unpredictable circumstances", true, null, "Gould'a göre olaylar öngörülemeyen koşullara bağlıdır."),
+      option("o2", "Bound by terms agreed in advance", false, "context", "'Contingent on' koşula bağlı anlamı olabilir ama önceden kararlaştırılan şartlar kastedilmez."),
+      option("o3", "Forming a delegation of one group", false, "context", "İsim anlamı (birlik, heyet) burada sıfat kullanımına uymaz."),
+      option("o4", "Unavoidable given the prior state of things", false, "reverse", "Kaçınılmazlık, Gould'un olumsallık vurgusunun tersidir."),
     ] },
     { key: "q4", type: "inference", prompt: "Why does the author consider the two positions “less opposed than they first appear”?", evidence: findEvidence(paragraphs, "Convergence can make broad outcomes such as eyes, wings or sonar likely without making any particular eye predictable"), options: [
       option("o1", "Each holds at a different level of detail", true, null, "Genel sonuçlar olası, belirli ayrıntılar öngörülemez olabilir; iki görüş farklı düzeylerde doğrudur."),

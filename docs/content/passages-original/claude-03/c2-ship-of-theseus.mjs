@@ -46,17 +46,17 @@ export default {
       option("o3", "The puzzle is a merely verbal game", false, "reverse", "Yazar sözel görüşü fazla aceleci bulur; sigorta ve mahkeme örnekleri verir."),
       option("o4", "Hobbes's version has been fully refuted", false, "notstated", "Metin Hobbes'un sürümünün çürütüldüğünü söylemez."),
     ] },
-    { key: "q2", type: "detail", prompt: "In Hobbes's version, what does the repaired ship have that the reassembled one lacks?", evidence: findEvidence(paragraphs, "one has continuity of form and use, the other has every original piece"), options: [
-      option("o1", "Continuity of form and use", true, null, "Onarılan gemi biçim ve kullanım sürekliliğine sahiptir; asıl parçalar diğerindedir."),
-      option("o2", "Every one of the original planks", false, "reverse", "Asıl parçalar yeniden birleştirilen gemidedir."),
-      option("o3", "Stronger and newer wooden timber", false, "notstated", "Metin yeni kerestenin daha sağlam olduğunu söylemez."),
-      option("o4", "Official approval from Athens", false, "notstated", "Resmi onaydan söz edilmez."),
+    { key: "q2", type: "detail", prompt: "Which statement correctly describes Hobbes's added twist?", evidence: findEvidence(paragraphs, "reassembled them in their original order. Now there are two ships, each with a respectable claim: one has continuity of form and use, the other has every original piece"), options: [
+      option("o1", "The ship rebuilt from old planks has the original timber", true, null, "Yeniden birleştirilen gemi her özgün parçaya sahiptir; onarılan gemi ise biçim ve kullanım sürekliliğine."),
+      option("o2", "The continuously repaired ship keeps the original timber in full", false, "detail", "Sürekli onarılan gemide tahtalar değiştirilmiştir; özgün tahtalar öbür gemidedir."),
+      option("o3", "The reassembled ship has the stronger claim from continuity of use", false, "detail", "Biçim ve kullanım sürekliliği onarılan geminin iddiasıdır."),
+      option("o4", "The planks were reassembled in a new order to form a second ship", false, "reverse", "Tahtalar özgün sıralarıyla yeniden birleştirildi."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “purchases tidiness at a price” suggest in the fourth paragraph?", evidence: findEvidence(paragraphs, "Each answer purchases tidiness at a price"), options: [
-      option("o1", "Gains neatness by losing something", true, null, "Mecaz anlamda her yanıt düzenli bir sonuç kazanır ama karşılığında bir şeyden vazgeçer."),
-      option("o2", "Costs real money to put into practice", false, "context", "Purchase ve price burada mecazdır; parasal bir maliyet kastedilmez."),
-      option("o3", "Removes every difficulty without any cost", false, "reverse", "At a price, tam tersine bir bedel olduğunu anlatır."),
-      option("o4", "Makes the ship cleaner and safer", false, "context", "Tidiness kavramsal düzenliliktir; geminin temizliği değildir."),
+    { key: "q3", type: "vocabulary", prompt: "What does “settling” mean in “depend on settling which object is which”?", evidence: findEvidence(paragraphs, "depend on settling which object is which"), options: [
+      option("o1", "Deciding it conclusively", true, null, "Settling burada bir sorunu kesin olarak karara bağlamak demektir; mahkeme ve sigorta bağlamına uyar."),
+      option("o2", "Paying off an outstanding debt", false, "context", "Settle'ın 'borcu ödemek' anlamıdır; sigorta bağlamı kandırıcıdır ama cümlede nesne 'hangisi hangisi' sorusudur."),
+      option("o3", "Moving to live in a new place", false, "context", "Settle'ın 'yerleşmek' anlamıdır; bağlama uymaz."),
+      option("o4", "Calming a dispute by compromise", false, "context", "Uzlaşma yoluyla yatıştırma kastedilmez; amaç hangi nesnenin hangisi olduğuna karar vermektir."),
     ] },
     { key: "q4", type: "inference", prompt: "What is the main purpose of the final paragraph?", evidence: findEvidence(paragraphs, "Perhaps the ship's real lesson concerns us rather than the vessel"), options: [
       option("o1", "To turn the puzzle back on the reader", true, null, "Yazar bilmeceyi okurun kendi kimliğine uygular ve kendi güvenini sorgulatır."),

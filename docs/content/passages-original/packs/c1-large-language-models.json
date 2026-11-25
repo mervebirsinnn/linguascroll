@@ -3539,80 +3539,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the passage, why can a model state a wrong date confidently?",
+      "prompt": "What limitation of GPT-4 does the passage say OpenAI's report noted?",
       "evidence": {
         "paragraphIndex": 1,
-        "start": 110,
-        "end": 198
+        "start": 489,
+        "end": 566
       },
       "options": [
         {
           "key": "o1",
-          "text": "It predicts likely text, not true facts",
+          "text": "Mostly unaware of events after its data was collected",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Model akla yatkın devamlar üretmek için eğitilir; iddiaları dünyaya karşı denetlemez."
+          "explanation": "Rapor sistemin eğitim verisi toplandıktan sonraki olaylardan genellikle habersiz olduğunu belirtti."
         },
         {
           "key": "o2",
-          "text": "Its training data were gathered after 2023",
+          "text": "Weak knowledge of events before most of its training data",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "2023 raporun yılıdır; metin verinin ne zaman toplandığını böyle söylemez."
+          "explanation": "Yön ters çevrilmiş: eksik olan, veri toplandıktan sonraki olaylar bilgisidir."
         },
         {
           "key": "o3",
-          "text": "Human feedback teaches it to sound certain",
+          "text": "A habit of inventing citations only in its later training stages",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Geri bildirimin özgüven öğrettiği söylenmez."
+          "explanation": "Uydurma atıflar eğitimin geç aşamalarına bağlanmaz; model plausible devam üretmek için eğitilir."
         },
         {
           "key": "o4",
-          "text": "It is designed to conceal its own doubts",
+          "text": "Inability to write fluent prose without human feedback",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Şüphe gizlemek için tasarlandığından söz edilmez."
+          "explanation": "Akıcılığın geri bildirime bağlı olduğu söylenmez; rapordaki sınırlama başkadır."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “counter” mean in the third paragraph?",
+      "prompt": "What does “rest” mean in “Most current systems rest on the transformer”?",
       "evidence": {
-        "paragraphIndex": 2,
-        "start": 247,
-        "end": 318
+        "paragraphIndex": 0,
+        "start": 146,
+        "end": 190
       },
       "options": [
         {
           "key": "o1",
-          "text": "Count something carefully",
+          "text": "Pause and recover from",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Count ile benzerlik yanıltıcıdır; sayma anlamı yoktur."
+          "explanation": "Dinlenmek anlamı bu cümlede geçerli değildir."
         },
         {
           "key": "o2",
-          "text": "Fully agree with them",
+          "text": "Physically lean against",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Diğer araştırmacılar papağan görüşüne karşı çıkar, katılmaz."
+          "trapType": "context",
+          "explanation": "Fiziksel yaslanma anlamı vardır ama sistemler mimariye yaslanmaz, ona dayanır."
         },
         {
           "key": "o3",
-          "text": "Serve customers at a desk",
+          "text": "Be left to the care of",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Tezgah (isim) anlamı bu cümlede geçerli değildir."
+          "explanation": "'Rest with' bu anlamı taşır ama 'rest on' burada dayanmak demektir."
         },
         {
           "key": "o4",
-          "text": "Argue in response",
+          "text": "Be founded upon",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Burada counter fiildir: karşı görüşe yanıt olarak itiraz edip savunmak."
+          "explanation": "Rest on, bir şeye dayanmak demektir: sistemler transformer mimarisine dayanır."
         }
       ]
     },

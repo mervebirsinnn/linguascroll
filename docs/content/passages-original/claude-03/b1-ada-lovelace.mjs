@@ -50,10 +50,10 @@ export default {
       option("o4", "A person who teaches music to young children", false, "context", "Öğretmenlik anlatılmaz."),
     ] },
     { key: "q4", type: "inference", prompt: "What can we infer about Ada's ideas?", evidence: findEvidence(paragraphs, "Ada also had an idea that was far ahead of her time."), options: [
-      option("o1", "Few people in her time thought like her.", true, null, "Fikri zamanının çok ilerisinde olduğuna göre, döneminde böyle düşünen pek az kişi vardı."),
-      option("o2", "Her ideas were tested on a real machine.", false, "reverse", "Makine hiç tamamlanmadı, bu yüzden fikirleri gerçek bir makinede denenmedi."),
-      option("o3", "She thought machines could not use music.", false, "reverse", "Makinenin bir gün müzikle çalışabileceğine inanıyordu."),
-      option("o4", "Babbage disagreed with every idea she had about it.", false, "notstated", "Babbage'ın onunla anlaşmazlığı anlatılmaz."),
+      option("o1", "Her ideas about machines were unusual in her day.", true, null, "Fikrinin zamanının çok ilerisinde olduğu söylenir; yani o dönemde makineler hakkında böyle düşünmek alışılmış değildi."),
+      option("o2", "Her notes were used to build the machine quickly.", false, "reverse", "Makine hiç tamamlanmadı; notlar makinenin hızla yapılmasını sağlamadı."),
+      option("o3", "She thought machines could only ever work with numbers.", false, "reverse", "Makinenin bir gün müzik ve başka sembollerle de çalışabileceğine inanıyordu."),
+      option("o4", "Babbage had already imagined the music idea before her.", false, "notstated", "Müzik fikrinin Babbage'a ait olduğu söylenmez; bu fikir Ada'nın inancı olarak verilir."),
     ] },
   ],
   editorial: { original: true, sources: [

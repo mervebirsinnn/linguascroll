@@ -40,17 +40,17 @@ export default {
       option("o3", "Sullivan founded the school's teaching ideas", false, "reverse", "Sullivan yalnızca slogana adı karışan Amerikalı mimardır; okulu Gropius kurdu."),
       option("o4", "Its ideas died when the school closed in 1933", false, "reverse", "Öğretmen ve öğrenciler yöntemlerini yurt dışına taşıdı."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the passage, what changed after the move to Dessau?", evidence: findEvidence(paragraphs, "its workshops increasingly produced prototypes intended for industrial manufacture"), options: [
-      option("o1", "Workshops turned more toward industry", true, null, "Dessau'dan sonra atölyeler giderek endüstriyel üretime yönelik prototipler üretti."),
-      option("o2", "Mies van der Rohe became its founder", false, "reverse", "Mies okulu Berlin'de yönetti; kurucu Gropius'tur."),
-      option("o3", "The school was closed by the government", false, "reverse", "Kapanış 1933'te, Berlin döneminde oldu, Dessau taşınmasının hemen ardından değil."),
-      option("o4", "UNESCO listed its buildings at once", false, "reverse", "UNESCO listesine giriş 1996'dadır, taşınmadan çok sonra."),
+    { key: "q2", type: "detail", prompt: "According to the passage, which statement about the school's history is accurate?", evidence: findEvidence(paragraphs, "its workshops increasingly produced prototypes intended for industrial manufacture"), options: [
+      option("o1", "At Dessau its workshops began aiming at industrial production", true, null, "Dessau'ya taşınmanın ardından atölyeler giderek endüstriyel üretime yönelik prototipler üretti."),
+      option("o2", "In Berlin under Mies its workshops began aiming at industrial production", false, "detail", "Endüstriye yönelme Dessau döneminde başladı; Berlin ve Mies sonraki taşınmadır. Doğru ayrıntı yanlış yere bağlanmış."),
+      option("o3", "Gropius directed the school in Berlin until the government shut it in 1933", false, "detail", "Berlin'de okulu Mies van der Rohe yönetti; Gropius Weimar'daki kurucudur."),
+      option("o4", "UNESCO added its sites in Weimar and Berlin to the World Heritage List", false, "detail", "UNESCO 1996'da Weimar ve Dessau alanlarını ekledi, Berlin'i değil."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “telling” mean in the last paragraph?", evidence: findEvidence(paragraphs, "The confusion is telling."), options: [
-      option("o1", "Quite revealing", true, null, "Telling burada sıfattır: bir şeyi açığa vuran, çok şey anlatan."),
-      option("o2", "Spoken aloud to others", false, "context", "Tell (anlatmak) fiiline benzerlik yanıltıcıdır; birine bir şey söylenmez."),
-      option("o3", "Easily forgiven", false, "context", "Bağışlama anlamı yoktur."),
-      option("o4", "Damaging to its name", false, "context", "Yazar karışıklığın okula zarar verdiğini değil, bir şeyi gösterdiğini söyler."),
+    { key: "q3", type: "vocabulary", prompt: "What does \"set out\" mean in \"set out less to invent a style than to reform how designers were trained\"?", evidence: findEvidence(paragraphs, "set out less to invent a style"), options: [
+      option("o1", "Had as its aim", true, null, "Set out to + fiil, bir şeyi amaçlamak demektir; okul üslup icadından çok eğitimi yenilemeyi amaçladı."),
+      option("o2", "Began a journey", false, "context", "Set out yolculuğa çıkmak anlamına da gelir ama burada fiziksel bir yolculuk yoktur."),
+      option("o3", "Arranged for display", false, "context", "Eşyaları sergilemek için dizmek de set out'un bir anlamıdır; bağlama uymaz."),
+      option("o4", "Explained in detail", false, "context", "Bir görüşü ayrıntılı ortaya koymak da set out olabilir ama 'to invent' ile kurulan yapı amaç bildirir."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply about linking the slogan to the Bauhaus?", evidence: findEvidence(paragraphs, "Reducing the Bauhaus to a set of visual signatures obscures"), options: [
       option("o1", "It reflects an oversimplified view", true, null, "Karışıklık, Bauhaus'un görsel imzalara indirgendiği yüzeysel bir hatırlamayı yansıtır."),

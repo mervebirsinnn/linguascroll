@@ -1775,31 +1775,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "A feeling of deep sadness",
+          "text": "A wish to visit faraway places",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Duygular ayrı bir sözcük olarak geçer."
+          "explanation": "Uzak yerlere gitme isteği anlatılmaz."
         },
         {
           "key": "o2",
-          "text": "Power to picture things",
+          "text": "Power to picture new things",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Imagination, zihinde şeyler canlandırma gücüdür."
+          "explanation": "Imagination, zihinde yeni şeyler canlandırma gücüdür; Van Gogh gördüğünü kopyalamakla kalmamıştır."
         },
         {
           "key": "o3",
-          "text": "Skill at mixing paint well",
+          "text": "Skill at copying what you see",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "Boya karıştırma anlatılmaz."
+          "trapType": "reverse",
+          "explanation": "Metin Van Gogh'un gördüğünü yalnızca kopyalamadığını söyler."
         },
         {
           "key": "o4",
-          "text": "Memory of many past events",
+          "text": "Knowledge learned from school lessons",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Anılar ayrı bir sözcük olarak geçer."
+          "explanation": "Okul dersleriyle ilgili bir bilgi anlatılmaz."
         }
       ]
     },

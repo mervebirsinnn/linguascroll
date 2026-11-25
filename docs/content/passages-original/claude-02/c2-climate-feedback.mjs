@@ -56,10 +56,10 @@ export default {
       option("o4", "Records in a notebook", false, "context", "Kayıt anlamı yoktur."),
     ] },
     { key: "q4", type: "inference", prompt: "Why does timing matter for any policy?", evidence: ev(4, "A system that amplifies small pushes is least forgiving when the push is large and sudden."), options: [
-      option("o1", "Fast change leaves less time", true, null, "Büyük ve ani itme sistemi en az bağışlayıcı kılar."),
-      option("o2", "Policy has no effect on the climate", false, "reverse", "Metin böyle bir şey söylemez."),
-      option("o3", "Slow pushes are always more harmful", false, "reverse", "Tersini ima eder."),
-      option("o4", "Timing matters only for water vapour", false, "extreme", "Metin böyle bir sınırlama yapmaz."),
+      option("o1", "A sudden change is hardest to absorb", true, null, "Metne göre sistem, itme büyük ve ani olduğunda en az bağışlayıcıdır."),
+      option("o2", "Delay would make the system more forgiving", false, "reverse", "Metin ani ve büyük itmenin sistemi daha az bağışlayıcı kıldığını söyler."),
+      option("o3", "Water vapour changes more slowly than carbon dioxide", false, "notstated", "Su buharı ile karbondioksitin değişim hızı karşılaştırılmaz."),
+      option("o4", "Ice cores lose accuracy as time passes", false, "notstated", "Buz çekirdeklerinin doğruluk kaybı anlatılmaz."),
     ] },
   ],
   editorial: { original: true, sources: [
