@@ -31,10 +31,10 @@ export default {
   paragraphs, words,
   questions: [
     { key: "q1", type: "main-idea", prompt: "What is the passage mainly about?", evidence: ev("she painted self-portraits because she was often alone"), options: [
-      option("o1", "How Kahlo turned her experiences into art", true, null, "Metin hastalık ve kazanın ardından otoportreler yapan Kahlo'nun yaşamını ve mirasını anlatır."),
-      option("o2", "How Diego Rivera taught Kahlo to paint murals", false, "notstated", "Rivera yalnızca eşi olarak anılır; ona resim öğrettiği söylenmez."),
-      option("o3", "Why Kahlo called herself a surrealist", false, "reverse", "Kahlo gerçeküstücü terimini reddetti."),
-      option("o4", "The history of Mexico City's museums", false, "context", "Müze yalnızca doğduğu ev için tek cümlede geçer."),
+      option("o1", "Kahlo's life and the art she made from it", true, null, "Metin Kahlo'nun yaşamını, hastalık ve kazanın ardından yaptığı otoportreleri ve mirasını anlatır."),
+      option("o2", "How Kahlo learned mural painting from Rivera", false, "notstated", "Rivera yalnızca eşi olarak anılır; ona duvar resmi öğrettiği söylenmez."),
+      option("o3", "Why Kahlo is best described as a surrealist", false, "reverse", "Kahlo gerçeküstücü terimini reddetti."),
+      option("o4", "How Mexican folk art became popular abroad", false, "notstated", "Halk sanatının yurt dışında yaygınlaşması anlatılmaz; yalnızca köklerini sahiplenmeye çalıştığı söylenir."),
     ] },
     { key: "q2", type: "detail", prompt: "How did Kahlo study her own face while recovering?", evidence: ev("using a mirror placed above her so that she could study her own face"), options: [
       option("o1", "She used a mirror placed above her bed", true, null, "Metin yatakta yatarken üstüne yerleştirilmiş bir ayna kullandığını söyler."),

@@ -38,17 +38,17 @@ export default {
       option("o3", "Why compatibilism has finally ended the debate", false, "extreme", "Bağdaşırcılık yalnızca üç tutumdan biri olarak sunulur; tartışmanın bittiği söylenmez."),
       option("o4", "How the readiness potential shapes our everyday moral choices", false, "reverse", "Metin tam tersine düğmeye basma deneylerinin ahlaki seçimlerden çok uzak olduğunu söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "What did Libet and his colleagues report in 1983?", evidence: findEvidence(paragraphs, "began a fraction of a second before volunteers said they had become aware of deciding to move"), options: [
-      option("o1", "Brain activity rose before people reported deciding", true, null, "Hazırlık potansiyeli, gönüllülerin karar verdiklerinin farkına vardıklarını söyledikleri andan saniyenin bir kesri kadar önce başladı."),
-      option("o2", "People decided to move before any brain activity began", false, "reverse", "Sıralama tersidir: beyin etkinliği bildirilen farkındalıktan önce başladı."),
-      option("o3", "The signal began several seconds before people moved", false, "reverse", "Metin 'saniyenin bir kesri' der; birkaç saniye değil."),
-      option("o4", "Random neural noise explained the whole signal", false, "reverse", "Bu, 2012'de Schurger ekibinin öne sürdüğü bir olasılıktır; Libet'in bulgusu değildir ve kesinlik taşımaz."),
+    { key: "q2", type: "detail", prompt: "Which statement about Libet's 1983 findings does the passage support?", evidence: findEvidence(paragraphs, "began a fraction of a second before volunteers said they had become aware of deciding to move"), options: [
+      option("o1", "A brain signal began just before people noticed deciding to move", true, null, "Hazırlık potansiyeli, gönüllülerin karar verdiklerinin farkına vardıklarını söyledikleri andan saniyenin bir kesri kadar önce başladı."),
+      option("o2", "People reported deciding to move just before the readiness potential began", false, "reverse", "Sıra tersine çevrilmiş: beyin sinyali bildirilen farkındalıktan önce başladı."),
+      option("o3", "A brain signal began just after people noticed deciding, as random fluctuations built up", false, "detail", "Rastgele dalgalanmalar 2012'de Schurger ekibinin yorumudur; Libet'in bulgusunun parçası değildir."),
+      option("o4", "The team concluded that random neural fluctuations, not a decision, produced the signal", false, "detail", "Bu sonuç Schurger'in 2012 önerisidir, Libet ekibinin 1983 bulgusu değildir."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: 'What does "complicated that reading" mean in the third paragraph?', evidence: findEvidence(paragraphs, "Later work has complicated that reading."), options: [
-      option("o1", "Made that interpretation less simple", true, null, "Reading burada 'yorum' anlamındadır; sonraki çalışmalar bu yorumu daha az kesin ve basit hâle getirdi."),
-      option("o2", "Made the data harder to read aloud", false, "context", "Reading'in 'okuma' anlamı bağlama uymaz; bir yorumdan söz edilir."),
-      option("o3", "Confirmed that interpretation in detail", false, "reverse", "Sonraki çalışma yorumu doğrulamadı, ona alternatif bir açıklama önerdi."),
-      option("o4", "Made the experiment more expensive", false, "context", "Maliyetle ilgili bir anlam yoktur."),
+    { key: "q3", type: "vocabulary", prompt: "What does \"reading\" mean in \"Later work has complicated that reading\"?", evidence: findEvidence(paragraphs, "Later work has complicated that reading"), options: [
+      option("o1", "A particular way of interpreting", true, null, "Reading burada bir verinin yorumu anlamındadır; sonraki çalışmalar bu yorumu karmaşıklaştırdı."),
+      option("o2", "A figure shown on an instrument", false, "context", "Bir aletin gösterdiği değer anlamı gerçek bir kullanımdır ama burada 'that reading' bir yorumu işaret eder."),
+      option("o3", "Silent study of a written text", false, "context", "Yazılı metni okuma eylemi anlamı bağlama uymaz."),
+      option("o4", "A public recital of a written work", false, "context", "Bir eserin topluluğa okunması anlamı gerçektir ama burada geçerli değildir."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply about button-pressing experiments?", evidence: findEvidence(paragraphs, "Pressing a button at a moment of one's own choosing is far removed from deciding whom to marry"), options: [
       option("o1", "They tell us little about weighty moral decisions", true, null, "Yazar düğmeye basmanın evlilik ya da söz tutma gibi bilinçli seçimlerden çok uzak olduğunu söyler; yani bu deneyler sorumluluk sorusuna sınırlı ışık tutar."),

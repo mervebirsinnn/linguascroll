@@ -3782,7 +3782,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What did Rubin's measurements show, according to the text?",
+      "prompt": "According to the text, what did Rubin's measurements of spiral galaxies reveal?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 286,
@@ -3791,31 +3791,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Outer stars kept pace with inner ones",
+          "text": "Orbital speeds held up towards the edge rather than declining",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Merkezden uzak yıldızlar içteki yıldızlar kadar hızlı hareket ediyordu."
+          "explanation": "Uzak yıldızlar içtekiler kadar hızlı hareket ediyordu; hız azalmıyordu."
         },
         {
           "key": "o2",
-          "text": "Outer stars moved more slowly, as expected",
+          "text": "Orbital speeds dropped towards the edge, just as visible matter predicted",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Görünür madde yavaşlamayı öngörüyordu, ama ölçüm bunu göstermedi."
+          "explanation": "Görünür madde yavaşlamayı öngörüyordu ama ölçüm bunu göstermedi."
         },
         {
           "key": "o3",
-          "text": "Galaxies in Coma moved too fast",
+          "text": "The galaxies moved too fast for their visible mass to hold them together",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "Bu Zwicky'nin Coma kümesi bulgusudur, Rubin'inki değil."
+          "trapType": "detail",
+          "explanation": "Bu Zwicky'nin Coma kümesi bulgusudur, Rubin'in spiral galaksi ölçümü değil."
         },
         {
           "key": "o4",
-          "text": "Visible matter explained the speeds well",
+          "text": "Outer stars orbited faster than inner ones, unlike the planets of the Sun",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Uyumsuzluk tam olarak görünür maddenin hızları açıklayamamasıdır."
+          "trapType": "detail",
+          "explanation": "Dış yıldızlar daha hızlı değil, kabaca eşit hızdaydı."
         }
       ]
     },
@@ -3831,31 +3831,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Weak and probably mistaken",
+          "text": "Concerned with incidental details",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Yazar bunun bir skandal olmadığını, sonucun sıkı tutulabileceğini söyler."
+          "trapType": "context",
+          "explanation": "'Circumstantial detail' ayrıntı anlamı gerçek bir anlamdır ama burada kanıtın dolaylılığı kastedilir."
         },
         {
           "key": "o2",
-          "text": "Dependent on lucky circumstances",
+          "text": "Valid only under special conditions",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Sözcüğün kökü 'koşul' anlamı çağrıştırsa da şans kastedilmez."
+          "explanation": "Koşullara bağlı geçerlilik anlamı metinde kastedilmez."
         },
         {
           "key": "o3",
-          "text": "Confirmed by laboratory detection",
+          "text": "Based on second-hand reports",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Laboratuvar algılaması henüz yoktur; dolaylılık buradan gelir."
+          "trapType": "context",
+          "explanation": "Dolaylılık tanık anlatımından değil, etkilerden çıkarımdan gelir."
         },
         {
           "key": "o4",
-          "text": "Indirect, inferred from effects",
+          "text": "Based on indirect inference",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Circumstantial, doğrudan gözleme değil, etkilerden yapılan çıkarıma dayanan kanıt demektir."
+          "explanation": "Circumstantial, doğrudan gözleme değil etkilerden çıkarıma dayanan kanıt demektir."
         }
       ]
     },
@@ -3878,17 +3878,17 @@
         },
         {
           "key": "o2",
-          "text": "They could not by themselves decide the issue",
+          "text": "The data alone left both explanations open",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Aynı uyumsuzluk iki yolla da açıklanabiliyordu; karar için başka kanıtların birleşmesi gerekti."
+          "explanation": "Aynı uyumsuzluk hem görünmeyen kütleyle hem de yasayı değiştirmekle açıklanabiliyordu; karar için başka kanıtların birleşmesi gerekti."
         },
         {
           "key": "o3",
-          "text": "They proved that Newtonian gravity was wrong everywhere",
+          "text": "They ruled out any revision of the law of gravity",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Metin yasayı değiştirmeyi yalnızca bir seçenek olarak sunar."
+          "trapType": "reverse",
+          "explanation": "Metin yasayı değiştirmeyi ikinci bir seçenek olarak sunar ve bir azınlık bunu seçti."
         },
         {
           "key": "o4",

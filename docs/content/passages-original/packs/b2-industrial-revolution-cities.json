@@ -2483,24 +2483,24 @@
       "options": [
         {
           "key": "o1",
-          "text": "Why cholera was first found in Manchester",
+          "text": "Why Manchester became the richest city in Europe",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Koleranın ilk nerede görüldüğü söylenmez."
+          "explanation": "Manchester yalnızca değişimin simgesi olarak geçer; zenginlik karşılaştırması yoktur."
         },
         {
           "key": "o2",
           "text": "Why farming grew in British villages",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Metin insanların topraktan fabrikaya geçtiğini anlatır."
+          "explanation": "Metin insanların topraktan fabrikaya ve şehre geçtiğini anlatır."
         },
         {
           "key": "o3",
-          "text": "How factories reshaped British towns",
+          "text": "How industry reshaped British towns and health",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin fabrikaların insanları kasabalara çekmesini, sorunları ve getirilen çözümleri anlatır."
+          "explanation": "Metin sanayinin insanları kasabalara çekmesini, sağlık sorunlarını ve bunlara getirilen çözümleri anlatır."
         },
         {
           "key": "o4",

@@ -3634,109 +3634,109 @@
           "key": "o1",
           "text": "Bentham devised the trolley puzzle in 1967",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "1967'de bilmeceyi betimleyen Philippa Foot'tur."
+          "trapType": "detail",
+          "explanation": "1967'de bilmeceyi betimleyen Philippa Foot'tur; üstelik bu ana fikir değildir."
         },
         {
           "key": "o2",
-          "text": "Theories must address how harm is caused",
+          "text": "A credible theory must account for how harm is caused",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Yazar yargılarımızın zararın nasıl verildiğine duyarlı olduğunu ve kuramların bunu hesaba katması gerektiğini savunur."
+          "explanation": "Yazar yargılarımızın zararın nasıl verildiğine duyarlı olduğunu ve kuramların bunu açıklaması (ya da vazgeçilmesi gerektiğini ikna edici biçimde savunması) gerektiğini söyler."
         },
         {
           "key": "o3",
-          "text": "The trolley cases prove utilitarianism wrong",
+          "text": "The trolley cases have settled the debate over utilitarianism",
           "isCorrect": false,
-          "trapType": "extreme",
-          "explanation": "Yazar bu durumların bir hükümden çok ahlaki düşünme hakkında bir olgu gösterdiğini söyler."
+          "trapType": "reverse",
+          "explanation": "Metin hiçbir yanıtın zorluktan arınmış olmadığını ve tartışmanın on yıllardır sürdüğünü söyler."
         },
         {
           "key": "o4",
-          "text": "Pushing the stranger is clearly the right act",
+          "text": "Most people judge pushing and steering as equally acceptable",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Bu yalnızca katı faydacıların görüşüdür; yazar onu benimsemez."
+          "explanation": "Çoğunluk tramvayı çevirmeyi kabul eder ama itmeyi reddeder."
         }
       ]
     },
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What does the passage say about the footbridge case?",
+      "prompt": "On the doctrine of double effect, how is the side-track worker treated?",
       "evidence": {
-        "paragraphIndex": 1,
-        "start": 429,
-        "end": 491
+        "paragraphIndex": 2,
+        "start": 372,
+        "end": 415
       },
       "options": [
         {
           "key": "o1",
-          "text": "Most people agree to push the stranger",
+          "text": "He is used as a tool, just like the stranger",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Çoğunluk itmeyi reddeder; kabul edilen tramvayı çevirmektir."
+          "explanation": "Araç olarak kullanılan, köprüdeki yabancıdır; işçi değildir."
         },
         {
           "key": "o2",
-          "text": "Philippa Foot devised it in 1967",
+          "text": "His death is intended as the means of saving five",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Foot 1967'de ilk durumu betimledi; köprü çeşitlemesini Thomson ekledi."
+          "explanation": "Amaçlanan araç zarar köprü örneğine aittir."
         },
         {
           "key": "o3",
-          "text": "It saves more lives than the first case",
+          "text": "His welfare counts for less because he is a worker",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin hesabın aynı olduğunu söyler."
+          "trapType": "notstated",
+          "explanation": "Faydacılık herkesin refahını eşit sayar; işçinin değersiz görüldüğü söylenmez."
         },
         {
           "key": "o4",
-          "text": "The numbers match, but most refuse",
+          "text": "His death is foreseen but not used as a tool",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Hesap aynıdır (beşe karşı bir) ama açık bir çoğunluk itmeyi reddeder."
+          "explanation": "Çift etki ilkesine göre işçinin ölümü yalnızca öngörülen bir yan etkidir, araç olarak kullanılmaz."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “bite the bullet” mean in the third paragraph?",
+      "prompt": "What does “appeal to” mean in “Others appeal to the doctrine of double effect”?",
       "evidence": {
         "paragraphIndex": 2,
-        "start": 0,
-        "end": 39
+        "start": 146,
+        "end": 192
       },
       "options": [
         {
           "key": "o1",
-          "text": "Accept a hard conclusion",
+          "text": "Invoke as support",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Bite the bullet, hoş olmayan bir sonucu kabullenmek demektir; burada itmenin doğru olduğu sonucu."
+          "explanation": "Appeal to, bir ilkeye başvurup onu dayanak göstermek demektir."
         },
         {
           "key": "o2",
-          "text": "Refuse to answer the question",
+          "text": "Be attractive to",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Katı faydacılar yanıt vermekten kaçınmaz; açık bir yanıtta ısrar eder."
+          "explanation": "Çekici olmak anlamı gerçektir (ilk paragraftaki 'appeal') ama burada fiil başvurmaktır."
         },
         {
           "key": "o3",
-          "text": "Change their theory entirely",
+          "text": "Ask a court to review",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Tersine, kuramlarına sadık kalırlar."
+          "trapType": "context",
+          "explanation": "Mahkemeye başvurmak anlamı bu bağlama uymaz."
         },
         {
           "key": "o4",
-          "text": "Act violently against others",
+          "text": "Make an earnest request of",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Kurşun sözcüğü yanıltıcıdır; deyimin şiddetle ilgisi yoktur."
+          "explanation": "Yalvarmak anlamı yoktur; ilke bir dayanak olarak kullanılır."
         }
       ]
     },

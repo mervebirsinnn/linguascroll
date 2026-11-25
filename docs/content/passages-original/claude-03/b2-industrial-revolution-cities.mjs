@@ -36,10 +36,10 @@ export default {
   paragraphs, words,
   questions: [
     { key: "q1", type: "main-idea", prompt: "What is the passage mainly about?", evidence: ev(0, "production moved out of the cottage and into the factory"), options: [
-      option("o1", "How factories reshaped British towns", true, null, "Metin fabrikaların insanları kasabalara çekmesini, sorunları ve getirilen çözümleri anlatır."),
+      option("o1", "How industry reshaped British towns and health", true, null, "Metin sanayinin insanları kasabalara çekmesini, sağlık sorunlarını ve bunlara getirilen çözümleri anlatır."),
       option("o2", "How steam engines were invented and sold abroad", false, "notstated", "İcat ya da ihracat anlatılmaz."),
-      option("o3", "Why cholera was first found in Manchester", false, "notstated", "Koleranın ilk nerede görüldüğü söylenmez."),
-      option("o4", "Why farming grew in British villages", false, "reverse", "Metin insanların topraktan fabrikaya geçtiğini anlatır."),
+      option("o3", "Why Manchester became the richest city in Europe", false, "notstated", "Manchester yalnızca değişimin simgesi olarak geçer; zenginlik karşılaştırması yoktur."),
+      option("o4", "Why farming grew in British villages", false, "reverse", "Metin insanların topraktan fabrikaya ve şehre geçtiğini anlatır."),
     ] },
     { key: "q2", type: "detail", prompt: "What were many households not connected to?", evidence: ev(1, "households probably were not connected to clean water or sewers"), options: [
       option("o1", "Clean water or sewers", true, null, "Metin birçok hanenin temiz suya ya da kanalizasyona bağlı olmadığını söyler."),

@@ -2897,31 +2897,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "How Diego Rivera taught Kahlo to paint murals",
+          "text": "How Kahlo learned mural painting from Rivera",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Rivera yalnızca eşi olarak anılır; ona resim öğrettiği söylenmez."
+          "explanation": "Rivera yalnızca eşi olarak anılır; ona duvar resmi öğrettiği söylenmez."
         },
         {
           "key": "o2",
-          "text": "Why Kahlo called herself a surrealist",
+          "text": "Why Kahlo is best described as a surrealist",
           "isCorrect": false,
           "trapType": "reverse",
           "explanation": "Kahlo gerçeküstücü terimini reddetti."
         },
         {
           "key": "o3",
-          "text": "The history of Mexico City's museums",
+          "text": "How Mexican folk art became popular abroad",
           "isCorrect": false,
-          "trapType": "context",
-          "explanation": "Müze yalnızca doğduğu ev için tek cümlede geçer."
+          "trapType": "notstated",
+          "explanation": "Halk sanatının yurt dışında yaygınlaşması anlatılmaz; yalnızca köklerini sahiplenmeye çalıştığı söylenir."
         },
         {
           "key": "o4",
-          "text": "How Kahlo turned her experiences into art",
+          "text": "Kahlo's life and the art she made from it",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin hastalık ve kazanın ardından otoportreler yapan Kahlo'nun yaşamını ve mirasını anlatır."
+          "explanation": "Metin Kahlo'nun yaşamını, hastalık ve kazanın ardından yaptığı otoportreleri ve mirasını anlatır."
         }
       ]
     },

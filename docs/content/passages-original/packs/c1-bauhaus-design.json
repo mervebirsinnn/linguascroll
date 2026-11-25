@@ -3327,7 +3327,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the passage, what changed after the move to Dessau?",
+      "prompt": "According to the passage, which statement about the school's history is accurate?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 271,
@@ -3336,71 +3336,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "Mies van der Rohe became its founder",
+          "text": "In Berlin under Mies its workshops began aiming at industrial production",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Mies okulu Berlin'de yönetti; kurucu Gropius'tur."
+          "trapType": "detail",
+          "explanation": "Endüstriye yönelme Dessau döneminde başladı; Berlin ve Mies sonraki taşınmadır. Doğru ayrıntı yanlış yere bağlanmış."
         },
         {
           "key": "o2",
-          "text": "The school was closed by the government",
+          "text": "Gropius directed the school in Berlin until the government shut it in 1933",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Kapanış 1933'te, Berlin döneminde oldu, Dessau taşınmasının hemen ardından değil."
+          "trapType": "detail",
+          "explanation": "Berlin'de okulu Mies van der Rohe yönetti; Gropius Weimar'daki kurucudur."
         },
         {
           "key": "o3",
-          "text": "UNESCO listed its buildings at once",
+          "text": "UNESCO added its sites in Weimar and Berlin to the World Heritage List",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "UNESCO listesine giriş 1996'dadır, taşınmadan çok sonra."
+          "trapType": "detail",
+          "explanation": "UNESCO 1996'da Weimar ve Dessau alanlarını ekledi, Berlin'i değil."
         },
         {
           "key": "o4",
-          "text": "Workshops turned more toward industry",
+          "text": "At Dessau its workshops began aiming at industrial production",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Dessau'dan sonra atölyeler giderek endüstriyel üretime yönelik prototipler üretti."
+          "explanation": "Dessau'ya taşınmanın ardından atölyeler giderek endüstriyel üretime yönelik prototipler üretti."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “telling” mean in the last paragraph?",
+      "prompt": "What does \"set out\" mean in \"set out less to invent a style than to reform how designers were trained\"?",
       "evidence": {
-        "paragraphIndex": 3,
-        "start": 197,
-        "end": 222
+        "paragraphIndex": 0,
+        "start": 180,
+        "end": 210
       },
       "options": [
         {
           "key": "o1",
-          "text": "Quite revealing",
+          "text": "Had as its aim",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Telling burada sıfattır: bir şeyi açığa vuran, çok şey anlatan."
+          "explanation": "Set out to + fiil, bir şeyi amaçlamak demektir; okul üslup icadından çok eğitimi yenilemeyi amaçladı."
         },
         {
           "key": "o2",
-          "text": "Spoken aloud to others",
+          "text": "Began a journey",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Tell (anlatmak) fiiline benzerlik yanıltıcıdır; birine bir şey söylenmez."
+          "explanation": "Set out yolculuğa çıkmak anlamına da gelir ama burada fiziksel bir yolculuk yoktur."
         },
         {
           "key": "o3",
-          "text": "Easily forgiven",
+          "text": "Arranged for display",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Bağışlama anlamı yoktur."
+          "explanation": "Eşyaları sergilemek için dizmek de set out'un bir anlamıdır; bağlama uymaz."
         },
         {
           "key": "o4",
-          "text": "Damaging to its name",
+          "text": "Explained in detail",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Yazar karışıklığın okula zarar verdiğini değil, bir şeyi gösterdiğini söyler."
+          "explanation": "Bir görüşü ayrıntılı ortaya koymak da set out olabilir ama 'to invent' ile kurulan yapı amaç bildirir."
         }
       ]
     },

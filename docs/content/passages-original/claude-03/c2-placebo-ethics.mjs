@@ -42,17 +42,17 @@ export default {
       option("o3", "Open-label trials have settled the ethical debate", false, "extreme", "Yazar onam sorusunu denemenin yanıtlayamayacağını vurgular; tartışma kapanmış değildir."),
       option("o4", "Doctors should replace most drugs with placebos", false, "notstated", "Metinde ilaçların yerine plasebo önerisi yoktur."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the text, what did the trial participants receive besides the pills?", evidence: findEvidence(paragraphs, "participants were also told that placebo pills had been shown to produce improvement in earlier clinical studies"), options: [
-      option("o1", "A claim that placebos had worked before", true, null, "Katılımcılara plasebo haplarının önceki çalışmalarda iyileşme sağladığı söylendi."),
-      option("o2", "A promise that their symptoms would soon vanish", false, "extreme", "Önceki sonuçlardan söz edildi; belirtilerin yok olacağı vaat edilmedi."),
-      option("o3", "No explanation of what the pills contained", false, "reverse", "Hapların etken madde içermediği açıkça söylendi."),
-      option("o4", "A hidden active ingredient in each pill", false, "reverse", "Hapların hiç etken madde içermediği belirtilir."),
+    { key: "q2", type: "detail", prompt: "Besides learning that the pills were inert, what were the open-label participants told?", evidence: findEvidence(paragraphs, "participants were also told that placebo pills had been shown to produce improvement in earlier clinical studies"), options: [
+      option("o1", "That earlier studies had linked such pills to improvement", true, null, "Katılımcılara plasebo haplarının önceki klinik çalışmalarda iyileşme sağladığı söylendi."),
+      option("o2", "That the pills had been proven to cure bowel syndrome in 2010", false, "detail", "2010 çalışması bu denemenin kendisidir; 'iyileştirdiği kanıtlandı' diye bir bilgi verilmedi."),
+      option("o3", "That the AMA had approved placebos for general clinical practice", false, "detail", "AMA onay vermez, genel onam alınmasını önerir; ayrıca bu katılımcılara söylenmedi."),
+      option("o4", "That the comparison group would be given a different placebo", false, "notstated", "Karşılaştırma grubu hiçbir tedavi almadı."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “the triumphant reading” mean in the third paragraph?", evidence: findEvidence(paragraphs, "it complicates the triumphant reading"), options: [
-      option("o1", "An overly celebratory interpretation", true, null, "Reading burada yorum demektir; triumphant, sonucu zafer gibi kutlayan bir tavrı anlatır."),
-      option("o2", "A loud reading of the trial results", false, "context", "Sesli okuma anlamı bağlama uymaz; söz konusu olan bir yorumdur."),
-      option("o3", "A cautious statistical analysis of data", false, "reverse", "Triumphant temkinli değil, coşkulu bir tavırdır."),
-      option("o4", "The patients' feeling of recovery", false, "context", "Hastaların iyileşme duygusu değil, sonucun nasıl yorumlandığı kastedilir."),
+    { key: "q3", type: "vocabulary", prompt: "What does “suggestion” mean in “a more respectable form of suggestion”?", evidence: findEvidence(paragraphs, "merely as a more respectable form of suggestion"), options: [
+      option("o1", "Steering expectations indirectly", true, null, "Burada suggestion, beklentiyi telkinle yönlendirmek anlamındadır; ikna ile birlikte anılır."),
+      option("o2", "A proposal offered for someone to consider", false, "context", "Suggestion'ın 'öneri' anlamıdır; cümlede kastedilen telkindir."),
+      option("o3", "A faint trace pointing to a hidden cause", false, "context", "Suggestion'ın 'ima, iz' anlamıdır; bağlama uymaz."),
+      option("o4", "An order disguised as polite advice", false, "context", "Emir anlamı yoktur; kastedilen hastanın beklentisinin etkilenmesidir."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the final sentence imply about the traditional, deceptive use of placebos?", evidence: findEvidence(paragraphs, "yet it is one a doctor can prescribe without having to hope the patient never asks"), options: [
       option("o1", "It relied on patients not asking questions", true, null, "Eski kullanım, hastanın gerçeği sormamasına ve öğrenmemesine dayanıyordu."),

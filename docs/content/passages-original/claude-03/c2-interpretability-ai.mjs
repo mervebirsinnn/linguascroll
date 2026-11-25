@@ -43,17 +43,17 @@ export default {
       option("o3", "Neural networks can never be understood by anyone", false, "extreme", "Yazar teknik sorunun zor olduğunu söyler, imkânsız olduğunu değil."),
       option("o4", "Saliency maps fully reveal how models reason", false, "reverse", "Metin bazı haritaların modeli değil görüntüyü betimleyebileceğini söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "What did the study mentioned in the second paragraph find about some saliency methods?", evidence: findEvidence(paragraphs, "some saliency methods produced almost the same maps even when the model's learned weights had been randomised"), options: [
-      option("o1", "Their output barely depended on the model", true, null, "Ağırlıklar rastgeleleştirilse bile haritalar neredeyse aynı kaldı; yani çıktı modele pek bağlı değildi."),
-      option("o2", "They changed sharply when weights were randomised", false, "reverse", "Tam tersine haritalar neredeyse hiç değişmedi."),
-      option("o3", "They exposed errors in the model's training", false, "notstated", "Çalışmanın eğitim hatası bulduğu söylenmez."),
-      option("o4", "They were more accurate than the classifier", false, "notstated", "Metinde böyle bir doğruluk karşılaştırması yoktur."),
+    { key: "q2", type: "detail", prompt: "What did the 2018 researchers establish about some saliency methods?", evidence: findEvidence(paragraphs, "some saliency methods produced almost the same maps even when the model's learned weights had been randomised"), options: [
+      option("o1", "Maps were near-identical for trained and untrained models", true, null, "Ağırlıklar rastgeleleştirilince bile haritalar neredeyse aynı kaldı; yani eğitilmiş ve eğitilmemiş model benzer harita verdi."),
+      option("o2", "Maps were near-identical once the input images were randomised", false, "detail", "Rastgeleleştirilen girdi görüntüleri değil, modelin öğrenilmiş ağırlıklarıdır; doğru olgu yanlış nesneye bağlanmış."),
+      option("o3", "Maps changed sharply once the learned weights were randomised", false, "reverse", "Tam tersi: haritalar neredeyse hiç değişmedi."),
+      option("o4", "Maps were reliable for speech but not for raw images", false, "notstated", "Konuşma ve ham görüntü, açıklanabilirlik tartışmasında geçer; çalışmanın bulgusu bu değildir."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does it mean to leave someone “no wiser” in the fourth paragraph?", evidence: findEvidence(paragraphs, "may leave the person it concerns no wiser"), options: [
-      option("o1", "Understanding no more than before", true, null, "No wiser, açıklamadan sonra kişinin öncekinden fazla bir şey anlamaması demektir."),
-      option("o2", "Less intelligent than the engineer", false, "context", "Zekâ karşılaştırması değil, anlayışta ilerleme olmaması kastedilir."),
-      option("o3", "Fully satisfied with the decision", false, "reverse", "Tatmin olan mühendistir; etkilenen kişi bir şey kazanmaz."),
-      option("o4", "Unwilling to learn about technology", false, "notstated", "Kişinin isteksizliğinden söz edilmez."),
+    { key: "q3", type: "vocabulary", prompt: "What does “contest” mean in “people who must trust or contest it”?", evidence: findEvidence(paragraphs, "must trust or contest it"), options: [
+      option("o1", "Challenge as mistaken or unfair", true, null, "Burada contest, bir karara itiraz etmek / karşı çıkmak anlamındadır; trust ile karşıt konumlanır."),
+      option("o2", "Compete against it in a match", false, "context", "Contest'in 'yarışmak' anlamıdır; sistemle rekabet edilmez, karara itiraz edilir."),
+      option("o3", "Hold a public competition over it", false, "context", "Contest'in 'yarışma düzenlemek' anlamıdır; bağlama uymaz."),
+      option("o4", "Defend it against criticism", false, "reverse", "Anlamın tersi: contest eden taraf savunmaz, itiraz eder."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the final sentence imply about visual explanations such as saliency maps?", evidence: findEvidence(paragraphs, "make it harder to mistake a persuasive picture for an honest one"), options: [
       option("o1", "They can persuade without being faithful", true, null, "Yazar, ikna edici bir resmin modeli dürüstçe yansıtmayabileceğini ima eder."),

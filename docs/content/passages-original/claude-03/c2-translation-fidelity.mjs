@@ -41,17 +41,17 @@ export default {
       option("o3", "Literal translation is the most faithful kind", false, "extreme", "Nabokov örneği harfi harfine çevirinin bedelini de gösterir."),
       option("o4", "Translators are inevitably traitors to authors", false, "context", "Yazar bu kelime oyununun sorunun yapısını yakalamadığını söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "Which kind of translation, according to Venuti, had English-language publishing long favoured?", evidence: findEvidence(paragraphs, "prizing translations that read as though they had never been translated"), options: [
-      option("o1", "Translations that read like originals", true, null, "'İkincisi' yerlileştirici stratejidir: hiç çevrilmemiş gibi okunan çeviriler."),
-      option("o2", "Translations that keep foreign strangeness", false, "reverse", "Bu, kayırılmayan yabancılaştırıcı stratejidir."),
-      option("o3", "Translations with long scholarly commentaries", false, "detail", "Uzun şerh Nabokov'un çevirisine aittir, Venuti'nin tespitine değil."),
-      option("o4", "Translations that rhymed in every line", false, "notstated", "Uyak Venuti bağlamında geçmez."),
+    { key: "q2", type: "detail", prompt: "Which statement about Nabokov's Eugene Onegin is supported by the text?", evidence: findEvidence(paragraphs, "abandoned rhyme in favour of strict literal sense, supported by a commentary far longer than the poem itself"), options: [
+      option("o1", "It dropped rhyme and added a commentary longer than the poem", true, null, "Nabokov kafiyeyi bırakıp şiirden çok daha uzun bir yorumla desteklemiştir."),
+      option("o2", "Edmund Wilson defended it as an act of scholarly honesty", false, "detail", "Bilimsel dürüstlüğü öven hayranlardır; Wilson ise sert eleştirmiştir."),
+      option("o3", "Venuti condemned it for making Pushkin sound too familiar", false, "notstated", "Venuti'nin Nabokov'a yönelik bir eleştirisi anılmaz; çeviri de yabancılaştırıcıdır."),
+      option("o4", "It kept the rhyme but surrounded it with a very brief commentary", false, "reverse", "Kafiye bırakıldı ve yorum çok uzundu."),
     ] },
     { key: "q3", type: "vocabulary", prompt: "In the third paragraph, what does “innocent” mean as the author uses it?", evidence: findEvidence(paragraphs, "Neither strategy is innocent."), options: [
-      option("o1", "Free of hidden costs", true, null, "Yazar her stratejinin bir bedeli olduğunu anlatır; 'innocent' burada bedelsiz, zararsız demektir."),
-      option("o2", "Not guilty of a crime", false, "context", "Hukuki gerçek anlam bu bağlamda kastedilmez."),
-      option("o3", "Naive and inexperienced", false, "context", "Saflık anlamı stratejilere uymaz."),
-      option("o4", "Widely accepted by readers", false, "notstated", "Kabul görme anlamı yoktur."),
+      option("o1", "Without any cost or drawback", true, null, "Yazar her stratejinin bir bedeli olduğunu anlatır; 'innocent' burada bedelsiz, kusursuz demektir."),
+      option("o2", "Free of legal blame", false, "context", "Hukuki suçsuzluk anlamı bu bağlamda kastedilmez."),
+      option("o3", "Naive about the original text", false, "context", "Saflık anlamı stratejilere uymaz."),
+      option("o4", "Popular with most readers", false, "notstated", "Kabul görme anlamı yoktur; metin okurların bazılarının bırakabileceğini söyler."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply by noting that an unread book “cannot be misunderstood”?", evidence: findEvidence(paragraphs, "which protects the original only in the sense that an unread book cannot be misunderstood"), options: [
       option("o1", "The protection it offers is hollow", true, null, "İroni: okunmayan kitabı 'korumak' gerçek bir kazanç değildir."),

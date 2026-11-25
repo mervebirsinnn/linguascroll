@@ -3439,80 +3439,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What does the passage say about the fall of 0.1 in pH?",
+      "prompt": "What does the passage link to the larval losses at Pacific oyster hatcheries?",
       "evidence": {
-        "paragraphIndex": 1,
-        "start": 79,
-        "end": 156
+        "paragraphIndex": 2,
+        "start": 527,
+        "end": 581
       },
       "options": [
         {
           "key": "o1",
-          "text": "It equals a ten percent rise in acidity",
+          "text": "Falling oxygen that left larvae unable to build shells",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "0,1 rakamı yüzde ona çevrilemez; ölçek logaritmik olduğu için artış yaklaşık yüzde otuzdur."
+          "trapType": "notstated",
+          "explanation": "Oksijen düşüşü genel bir ek stres olarak anılır; larva kayıpları için neden gösterilmez."
         },
         {
           "key": "o2",
-          "text": "It means acidity has risen by about thirty percent",
+          "text": "Corrosive water coming up from the depths",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "pH ölçeği logaritmik olduğundan 0,1'lik düşüş asitlikte kabaca yüzde otuzluk artışa karşılık gelir."
+          "explanation": "Araştırmacılar kayıpları kısmen derinden yükselen aşındırıcı suya bağlar."
         },
         {
           "key": "o3",
-          "text": "It means seawater has turned from basic to acidic",
+          "text": "A surface-water pH drop of 0.1 since the industrial era",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Deniz suyu hâlâ hafif baziktir; asitlenme yalnızca değişimin yönünü anlatır."
+          "trapType": "detail",
+          "explanation": "Bu rakam yüzey sularının ortalama değişimidir; kuluçkahane kayıplarına bağlanmaz."
         },
         {
           "key": "o4",
-          "text": "It is too small a change to have any effect on living things",
+          "text": "Seagrass growth that removed carbonate from nearby water",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Yazar rakamın ancak ilk bakışta önemsiz göründüğünü söyler."
+          "trapType": "notstated",
+          "explanation": "Deniz çayırlarının büyümesi kayıplara bağlanmaz."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does \"stakes\" mean in the third paragraph?",
+      "prompt": "What does “stakes” mean in “The biological stakes lie mainly in what the extra acid removes”?",
       "evidence": {
         "paragraphIndex": 2,
         "start": 0,
-        "end": 64
+        "end": 63
       },
       "options": [
         {
           "key": "o1",
-          "text": "Money placed on a bet",
+          "text": "Pointed posts driven into ground",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Bahis parası anlamı burada geçerli değildir; söz konusu olan biyolojik risklerdir."
+          "explanation": "Kazık anlamı bu bağlamda geçerli değildir."
         },
         {
           "key": "o2",
-          "text": "Laboratory measurements",
+          "text": "Prizes offered for winning a contest",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Ölçüm anlamı yoktur; cümle neyin tehlikede olduğunu tanımlar."
+          "explanation": "Ödül anlamı yoktur; paragraf neyin tehlikede olduğunu anlatır."
         },
         {
           "key": "o3",
-          "text": "What is at risk",
+          "text": "What could be lost",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Stakes burada tehlikede olan, kaybedilebilecek şeyler anlamındadır; paragraf canlıların neyi kaybettiğini anlatır."
+          "explanation": "Stakes burada risk altındaki, kaybedilebilecek şeyler demektir."
         },
         {
           "key": "o4",
-          "text": "Wooden posts in the ground",
+          "text": "Ownership shares held in a firm",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Stake'in 'kazık' anlamı bu bağlama uymaz."
+          "explanation": "'Hisse' anlamı gerçektir ama biyolojik bağlama uymaz."
         }
       ]
     },

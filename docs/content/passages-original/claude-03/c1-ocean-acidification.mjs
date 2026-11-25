@@ -40,17 +40,17 @@ export default {
       option("o3", "Acidification harms every marine species equally", false, "extreme", "Duyarlılığın türler, hatta popülasyonlar arasında büyük ölçüde değiştiği söylenir."),
       option("o4", "Warming is a far greater threat to the sea than acidification", false, "notstated", "Isınma ile asitlenmenin tehlikesi kıyaslanmaz; birlikte etki ettikleri söylenir."),
     ] },
-    { key: "q2", type: "detail", prompt: "What does the passage say about the fall of 0.1 in pH?", evidence: findEvidence(paragraphs, "a fall of 0.1 corresponds to an increase of roughly thirty percent in acidity"), options: [
-      option("o1", "It means acidity has risen by about thirty percent", true, null, "pH ölçeği logaritmik olduğundan 0,1'lik düşüş asitlikte kabaca yüzde otuzluk artışa karşılık gelir."),
-      option("o2", "It means seawater has turned from basic to acidic", false, "reverse", "Deniz suyu hâlâ hafif baziktir; asitlenme yalnızca değişimin yönünü anlatır."),
-      option("o3", "It is too small a change to have any effect on living things", false, "reverse", "Yazar rakamın ancak ilk bakışta önemsiz göründüğünü söyler."),
-      option("o4", "It equals a ten percent rise in acidity", false, "reverse", "0,1 rakamı yüzde ona çevrilemez; ölçek logaritmik olduğu için artış yaklaşık yüzde otuzdur."),
+    { key: "q2", type: "detail", prompt: "What does the passage link to the larval losses at Pacific oyster hatcheries?", evidence: findEvidence(paragraphs, "linked in part to corrosive water rising from the deep"), options: [
+      option("o1", "Corrosive water coming up from the depths", true, null, "Araştırmacılar kayıpları kısmen derinden yükselen aşındırıcı suya bağlar."),
+      option("o2", "A surface-water pH drop of 0.1 since the industrial era", false, "detail", "Bu rakam yüzey sularının ortalama değişimidir; kuluçkahane kayıplarına bağlanmaz."),
+      option("o3", "Seagrass growth that removed carbonate from nearby water", false, "notstated", "Deniz çayırlarının büyümesi kayıplara bağlanmaz."),
+      option("o4", "Falling oxygen that left larvae unable to build shells", false, "notstated", "Oksijen düşüşü genel bir ek stres olarak anılır; larva kayıpları için neden gösterilmez."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: 'What does "stakes" mean in the third paragraph?', evidence: findEvidence(paragraphs, "The biological stakes lie mainly in what the extra acid removes."), options: [
-      option("o1", "What is at risk", true, null, "Stakes burada tehlikede olan, kaybedilebilecek şeyler anlamındadır; paragraf canlıların neyi kaybettiğini anlatır."),
-      option("o2", "Wooden posts in the ground", false, "context", "Stake'in 'kazık' anlamı bu bağlama uymaz."),
-      option("o3", "Money placed on a bet", false, "context", "Bahis parası anlamı burada geçerli değildir; söz konusu olan biyolojik risklerdir."),
-      option("o4", "Laboratory measurements", false, "context", "Ölçüm anlamı yoktur; cümle neyin tehlikede olduğunu tanımlar."),
+    { key: "q3", type: "vocabulary", prompt: "What does “stakes” mean in “The biological stakes lie mainly in what the extra acid removes”?", evidence: findEvidence(paragraphs, "The biological stakes lie mainly in what the extra acid removes"), options: [
+      option("o1", "What could be lost", true, null, "Stakes burada risk altındaki, kaybedilebilecek şeyler demektir."),
+      option("o2", "Ownership shares held in a firm", false, "context", "'Hisse' anlamı gerçektir ama biyolojik bağlama uymaz."),
+      option("o3", "Pointed posts driven into ground", false, "context", "Kazık anlamı bu bağlamda geçerli değildir."),
+      option("o4", "Prizes offered for winning a contest", false, "context", "Ödül anlamı yoktur; paragraf neyin tehlikede olduğunu anlatır."),
     ] },
     { key: "q4", type: "inference", prompt: "What can be inferred from the final paragraph?", evidence: findEvidence(paragraphs, "organisms rarely face a single stress at a time"), options: [
       option("o1", "Effects on sea life will be hard to predict precisely", true, null, "Duyarlılık türden türe değişir ve asitlenme ısınma ile oksijen kaybıyla birlikte ilerler; bu, sonuçları öngörmeyi zorlaştırır."),

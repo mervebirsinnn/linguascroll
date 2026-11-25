@@ -43,17 +43,17 @@ export default {
       option("o3", "It is a mystical idea without any logical basis", false, "reverse", "Metin akıl yürütmenin mistik değil istatistiksel olduğunu söyler."),
       option("o4", "Its premises have been decisively refuted", false, "reverse", "İtirazların argümanı doğrudan çürütmediği söylenir."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the first paragraph, what did Bostrom actually argue?", evidence: findEvidence(paragraphs, "that at least one of three propositions is true"), options: [
-      option("o1", "At least one of three claims holds", true, null, "Bostrom üç önermeden en az birinin doğru olduğunu savunur."),
-      option("o2", "We are most probably inside a computer", false, "detail", "Bu, yazarın yanlış bulduğu popüler özettir."),
-      option("o3", "Civilisations never build any simulations", false, "extreme", "Bu, üç seçenekten birinin aşırılaştırılmış hâlidir; iddia bu değildir."),
-      option("o4", "Consciousness cannot arise from computers", false, "notstated", "Bu, Bostrom'un değil bazı eleştirmenlerin şüphesidir."),
+    { key: "q2", type: "detail", prompt: "Which statement is consistent with the passage's account of Bostrom's argument?", evidence: findEvidence(paragraphs, "at least one of three propositions is true"), options: [
+      option("o1", "Being simulated is one of three alternatives, not a flat prediction", true, null, "Bostrom üç önermeden en az birinin doğru olduğunu savunur; simülasyon yalnızca bir seçenektir."),
+      option("o2", "Its second alternative says most civilisations perish before maturity", false, "detail", "Medeniyetlerin olgunlaşmadan yok olması birinci seçenektir."),
+      option("o3", "Its statistical step presumes consciousness cannot arise from computation", false, "reverse", "Argüman, bilincin hesaplamadan doğabileceğini varsayar; bunu eleştirmenler sorgular."),
+      option("o4", "Descartes's demon was invoked to estimate how likely deception is", false, "detail", "Olasılık sorusu Bostrom'a aittir; Descartes aldatmayı dışlayıp dışlayamayacağımızı sorar."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "In the third paragraph, what are the “joints” of the argument?", evidence: findEvidence(paragraphs, "Critics have pressed on several joints of this structure."), options: [
-      option("o1", "Points where its parts connect", true, null, "Mecazen argümanın parçalarının birleştiği, zayıf olabilecek yerlerdir."),
-      option("o2", "Places where bones meet in the body", false, "context", "Gerçek anatomik anlam bu bağlamda kastedilmez."),
-      option("o3", "Shared research projects", false, "context", "'Joint' sıfat olarak ortak demektir; burada isimdir."),
-      option("o4", "Final conclusions of the paper", false, "notstated", "Kelime sonuç anlamına gelmez."),
+    { key: "q3", type: "vocabulary", prompt: "What does “licenses” mean in “the indifference principle that licenses the final step”?", evidence: findEvidence(paragraphs, "the indifference principle that licenses the final step"), options: [
+      option("o1", "Makes the move seem justified", true, null, "Licenses burada 'haklı kılmak, izin vermek' anlamındadır; ilke son adımı mümkün kılar."),
+      option("o2", "Grants formal legal permission for", false, "context", "Licence'ın hukuki izin anlamıdır; felsefi bir ilke için kullanılmaz."),
+      option("o3", "Sells usage rights for", false, "context", "Lisans satma anlamıdır; bağlama uymaz."),
+      option("o4", "Restricts to approved cases", false, "reverse", "Anlamın tersi: ilke adımı sınırlamaz, olanaklı kılar."),
     ] },
     { key: "q4", type: "inference", prompt: "What is the main purpose of the comparison with Descartes?", evidence: findEvidence(paragraphs, "It trades the absolute doubt of the seventeenth century for a probabilistic doubt suited to an age of computers."), options: [
       option("o1", "To show how the kind of doubt has shifted", true, null, "Karşılaştırma mutlak şüpheden olasılıksal şüpheye geçişi gösterir."),

@@ -3834,7 +3834,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "What did the study mentioned in the second paragraph find about some saliency methods?",
+      "prompt": "What did the 2018 researchers establish about some saliency methods?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 279,
@@ -3843,71 +3843,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "They exposed errors in the model's training",
+          "text": "Maps changed sharply once the learned weights were randomised",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Çalışmanın eğitim hatası bulduğu söylenmez."
+          "trapType": "reverse",
+          "explanation": "Tam tersi: haritalar neredeyse hiç değişmedi."
         },
         {
           "key": "o2",
-          "text": "They were more accurate than the classifier",
+          "text": "Maps were reliable for speech but not for raw images",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Metinde böyle bir doğruluk karşılaştırması yoktur."
+          "explanation": "Konuşma ve ham görüntü, açıklanabilirlik tartışmasında geçer; çalışmanın bulgusu bu değildir."
         },
         {
           "key": "o3",
-          "text": "Their output barely depended on the model",
+          "text": "Maps were near-identical for trained and untrained models",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Ağırlıklar rastgeleleştirilse bile haritalar neredeyse aynı kaldı; yani çıktı modele pek bağlı değildi."
+          "explanation": "Ağırlıklar rastgeleleştirilince bile haritalar neredeyse aynı kaldı; yani eğitilmiş ve eğitilmemiş model benzer harita verdi."
         },
         {
           "key": "o4",
-          "text": "They changed sharply when weights were randomised",
+          "text": "Maps were near-identical once the input images were randomised",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Tam tersine haritalar neredeyse hiç değişmedi."
+          "trapType": "detail",
+          "explanation": "Rastgeleleştirilen girdi görüntüleri değil, modelin öğrenilmiş ağırlıklarıdır; doğru olgu yanlış nesneye bağlanmış."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does it mean to leave someone “no wiser” in the fourth paragraph?",
+      "prompt": "What does “contest” mean in “people who must trust or contest it”?",
       "evidence": {
-        "paragraphIndex": 3,
-        "start": 298,
-        "end": 339
+        "paragraphIndex": 4,
+        "start": 125,
+        "end": 149
       },
       "options": [
         {
           "key": "o1",
-          "text": "Unwilling to learn about technology",
+          "text": "Defend it against criticism",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Kişinin isteksizliğinden söz edilmez."
+          "trapType": "reverse",
+          "explanation": "Anlamın tersi: contest eden taraf savunmaz, itiraz eder."
         },
         {
           "key": "o2",
-          "text": "Understanding no more than before",
+          "text": "Challenge as mistaken or unfair",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "No wiser, açıklamadan sonra kişinin öncekinden fazla bir şey anlamaması demektir."
+          "explanation": "Burada contest, bir karara itiraz etmek / karşı çıkmak anlamındadır; trust ile karşıt konumlanır."
         },
         {
           "key": "o3",
-          "text": "Less intelligent than the engineer",
+          "text": "Compete against it in a match",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Zekâ karşılaştırması değil, anlayışta ilerleme olmaması kastedilir."
+          "explanation": "Contest'in 'yarışmak' anlamıdır; sistemle rekabet edilmez, karara itiraz edilir."
         },
         {
           "key": "o4",
-          "text": "Fully satisfied with the decision",
+          "text": "Hold a public competition over it",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Tatmin olan mühendistir; etkilenen kişi bir şey kazanmaz."
+          "trapType": "context",
+          "explanation": "Contest'in 'yarışma düzenlemek' anlamıdır; bağlama uymaz."
         }
       ]
     },

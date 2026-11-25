@@ -3975,31 +3975,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Existing theory should never be tested again",
+          "text": "It would be best for studying nearby stars",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin teorinin kanıtla sınanmasını savunur."
+          "trapType": "notstated",
+          "explanation": "Yakın yıldızlar anlatılmaz."
         },
         {
           "key": "o2",
-          "text": "Surprising results are part of its value",
+          "text": "A good telescope should challenge theory",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Yalnızca doğrulayan bir teleskop zayıf yatırımdır; yeni, şaşırtıcı sonuçlar değerin parçasıdır."
+          "explanation": "Yalnızca doğrulayan teleskop zayıf yatırım sayılır; yeni kanıt teoriyi sınamalıdır."
         },
         {
           "key": "o3",
-          "text": "Confirmation is the main aim of all astronomy",
+          "text": "Its mirror would need to be bigger",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin bunun tersini söyler."
+          "trapType": "notstated",
+          "explanation": "Ayna büyüklüğünden değil, sonuçların değerinden söz edilir."
         },
         {
           "key": "o4",
-          "text": "Its mirror matters more than its observations",
+          "text": "It would cost less to build and run",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Ayna ne kadar muhteşem olursa olsun yatırım zayıf kalır."
+          "trapType": "notstated",
+          "explanation": "Maliyet karşılaştırması anlatılmaz."
         }
       ]
     }

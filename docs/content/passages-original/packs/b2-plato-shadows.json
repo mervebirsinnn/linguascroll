@@ -2425,31 +2425,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "They fear the change will harm them.",
+          "text": "They think the journey harmed him",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Yolculuğun ona zarar verdiğini düşünür ve ayrılmayı reddederler."
+          "explanation": "Mahkûmlar yolculuğun ona zarar verdiği sonucuna varır."
         },
         {
           "key": "o2",
-          "text": "They have no way of getting out.",
+          "text": "They are afraid of the fire behind them",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Çıkışın imkânsız olduğu söylenmez."
+          "explanation": "Ateşten korktukları anlatılmaz."
         },
         {
           "key": "o3",
-          "text": "They already know the real world.",
+          "text": "They think he has become wiser than them",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Hiç görmemişlerdir."
+          "explanation": "Metin onların adamın zarar gördüğünü düşündüğünü söyler."
         },
         {
           "key": "o4",
-          "text": "They are waiting for the fire to go out.",
+          "text": "They were told to stay by the guards",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Böyle bir bekleyiş anlatılmaz."
+          "explanation": "Gardiyanlardan söz edilmez."
         }
       ]
     }

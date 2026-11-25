@@ -3647,7 +3647,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the passage, why did the hospital algorithm underestimate some patients' needs?",
+      "prompt": "According to the passage, why did the hospital algorithm underestimate how sick some patients were?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 313,
@@ -3656,71 +3656,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "It relied on doctors' notes that contained prejudice",
+          "text": "It predicted spending, and more had been spent on equally needy Black patients",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Doktor notlarından söz edilmez."
+          "trapType": "reverse",
+          "explanation": "Yön tersine çevrilmiş: metne göre aynı ihtiyaç düzeyindeki siyahi hastalara daha az para harcanmıştı."
         },
         {
           "key": "o2",
-          "text": "It predicted illness, but too little money was available",
+          "text": "It flagged patients needing extra care, and reworking its target widened the disparity",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Algoritma hastalığı değil harcamayı tahmin ediyordu; para yetersizliği bir bütçe sorunu olarak anlatılmaz."
+          "explanation": "Hedef yeniden düzenlenince eşitsizlik arttı değil, önemli ölçüde azaldı; ayrıca soru eksikliğin nedenini soruyor."
         },
         {
           "key": "o3",
-          "text": "It used past spending as a stand-in for illness",
+          "text": "It predicted spending, and less had been spent on equally needy Black patients",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Algoritma hastalığın yerine sağlık harcamasını tahmin ediyordu; siyahi hastalara tarihsel olarak daha az harcandığı için ihtiyaçları düşük görünüyordu."
+          "explanation": "Algoritma hastalık yerine harcamayı tahmin ediyordu ve aynı ihtiyaç düzeyindeki siyahi hastalara tarihsel olarak daha az para harcanmıştı; bu yüzden onlar olduklarından sağlıklı görünüyordu."
         },
         {
           "key": "o4",
-          "text": "It was programmed to treat Black patients differently",
+          "text": "It predicted illness, and less had been spent on equally needy Black patients",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin sorunun açık bir kuraldan değil, masum görünen bir vekil değişkenden geldiğini anlatır."
+          "trapType": "detail",
+          "explanation": "Harcama geçmişi doğru ayrıntıdır ama algoritma hastalığı değil harcamayı tahmin ediyordu; ayrıntı yanlış öğeye bağlanmış."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does \"cloud\" mean in the first paragraph?",
+      "prompt": "What does \"absorb\" mean in \"can absorb the pattern and apply it\"?",
       "evidence": {
         "paragraphIndex": 0,
-        "start": 53,
-        "end": 102
+        "start": 295,
+        "end": 330
       },
       "options": [
         {
           "key": "o1",
-          "text": "Make more confident",
+          "text": "Take on the cost of, as a firm absorbs a fee",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Önyargıların yargıyı güçlendirdiği değil, bulandırdığı söylenir."
+          "explanation": "Maliyeti üstlenmek gerçek bir anlamdır ama modelin örüntüyle ilişkisiyle ilgisi yoktur."
         },
         {
           "key": "o2",
-          "text": "Make less clear",
+          "text": "Learn and take in as its own",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Burada fiil olarak kullanılan cloud, yargıyı bulandırmak, berraklığını bozmak anlamındadır."
+          "explanation": "Burada absorb, modelin bir örüntüyü içselleştirmesi, öğrenip kendi parçası yapması demektir; ardından onu uygular."
         },
         {
           "key": "o3",
-          "text": "Gather above",
+          "text": "Soak up, as a sponge soaks up liquid",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "İsim olarak 'bulut' anlamı bağlama uymaz; önyargılar yargıyı etkiler."
+          "explanation": "Bu fiziksel emme anlamıdır; soyut bir örüntü için uymaz."
         },
         {
           "key": "o4",
-          "text": "Store online",
+          "text": "Cushion the impact of, as a shock absorber",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Bilişimdeki 'bulut' anlamı bu cümlede geçerli değildir."
+          "explanation": "Absorb bir darbeyi hafifletmek anlamına da gelir ama burada örüntü sönümlenmez, benimsenir."
         }
       ]
     },

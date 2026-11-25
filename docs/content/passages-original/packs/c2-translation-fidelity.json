@@ -3990,40 +3990,40 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "Which kind of translation, according to Venuti, had English-language publishing long favoured?",
+      "prompt": "Which statement about Nabokov's Eugene Onegin is supported by the text?",
       "evidence": {
-        "paragraphIndex": 1,
-        "start": 472,
-        "end": 543
+        "paragraphIndex": 3,
+        "start": 135,
+        "end": 243
       },
       "options": [
         {
           "key": "o1",
-          "text": "Translations with long scholarly commentaries",
+          "text": "Venuti condemned it for making Pushkin sound too familiar",
           "isCorrect": false,
-          "trapType": "detail",
-          "explanation": "Uzun şerh Nabokov'un çevirisine aittir, Venuti'nin tespitine değil."
+          "trapType": "notstated",
+          "explanation": "Venuti'nin Nabokov'a yönelik bir eleştirisi anılmaz; çeviri de yabancılaştırıcıdır."
         },
         {
           "key": "o2",
-          "text": "Translations that rhymed in every line",
+          "text": "It kept the rhyme but surrounded it with a very brief commentary",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Uyak Venuti bağlamında geçmez."
+          "trapType": "reverse",
+          "explanation": "Kafiye bırakıldı ve yorum çok uzundu."
         },
         {
           "key": "o3",
-          "text": "Translations that read like originals",
+          "text": "It dropped rhyme and added a commentary longer than the poem",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "'İkincisi' yerlileştirici stratejidir: hiç çevrilmemiş gibi okunan çeviriler."
+          "explanation": "Nabokov kafiyeyi bırakıp şiirden çok daha uzun bir yorumla desteklemiştir."
         },
         {
           "key": "o4",
-          "text": "Translations that keep foreign strangeness",
+          "text": "Edmund Wilson defended it as an act of scholarly honesty",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bu, kayırılmayan yabancılaştırıcı stratejidir."
+          "trapType": "detail",
+          "explanation": "Bilimsel dürüstlüğü öven hayranlardır; Wilson ise sert eleştirmiştir."
         }
       ]
     },
@@ -4039,28 +4039,28 @@
       "options": [
         {
           "key": "o1",
-          "text": "Widely accepted by readers",
+          "text": "Popular with most readers",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Kabul görme anlamı yoktur."
+          "explanation": "Kabul görme anlamı yoktur; metin okurların bazılarının bırakabileceğini söyler."
         },
         {
           "key": "o2",
-          "text": "Free of hidden costs",
+          "text": "Without any cost or drawback",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Yazar her stratejinin bir bedeli olduğunu anlatır; 'innocent' burada bedelsiz, zararsız demektir."
+          "explanation": "Yazar her stratejinin bir bedeli olduğunu anlatır; 'innocent' burada bedelsiz, kusursuz demektir."
         },
         {
           "key": "o3",
-          "text": "Not guilty of a crime",
+          "text": "Free of legal blame",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Hukuki gerçek anlam bu bağlamda kastedilmez."
+          "explanation": "Hukuki suçsuzluk anlamı bu bağlamda kastedilmez."
         },
         {
           "key": "o4",
-          "text": "Naive and inexperienced",
+          "text": "Naive about the original text",
           "isCorrect": false,
           "trapType": "context",
           "explanation": "Saflık anlamı stratejilere uymaz."

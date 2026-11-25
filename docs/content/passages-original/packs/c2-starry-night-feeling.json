@@ -3741,31 +3741,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "That the sky was copied exactly from nature",
+          "text": "That he painted it from memory in a quiet studio",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin doğrudan kopyalamayı reddeder."
+          "trapType": "notstated",
+          "explanation": "Böyle bir varsayım anlatılmaz."
         },
         {
           "key": "o2",
-          "text": "That the painting was finished in one hour",
+          "text": "That he had been trained by older artists",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Böyle bir varsayım anlatılmaz."
+          "explanation": "Eğitim konusu anlatılmaz."
         },
         {
           "key": "o3",
-          "text": "That feeling leaves no room for planning",
+          "text": "That illness, rather than skill, produced it",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Kendiliğinden taşma görüşü, duygunun planlamayı dışladığını varsayar."
+          "explanation": "Yazar bu görüşün kasıtlı seçimleri hastalığa indirgediğini söyler."
         },
         {
           "key": "o4",
-          "text": "That the painter never visited the asylum",
+          "text": "That the painter followed a careful plan",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Böyle bir varsayım anlatılmaz."
+          "trapType": "reverse",
+          "explanation": "Kendiliğinden taşma görüşü planlı çalışmanın tersini varsayar."
         }
       ]
     }

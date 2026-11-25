@@ -1821,31 +1821,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Babbage disagreed with every idea she had about it.",
+          "text": "Babbage had already imagined the music idea before her.",
           "isCorrect": false,
           "trapType": "notstated",
-          "explanation": "Babbage'ın onunla anlaşmazlığı anlatılmaz."
+          "explanation": "Müzik fikrinin Babbage'a ait olduğu söylenmez; bu fikir Ada'nın inancı olarak verilir."
         },
         {
           "key": "o2",
-          "text": "Few people in her time thought like her.",
+          "text": "Her ideas about machines were unusual in her day.",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Fikri zamanının çok ilerisinde olduğuna göre, döneminde böyle düşünen pek az kişi vardı."
+          "explanation": "Fikrinin zamanının çok ilerisinde olduğu söylenir; yani o dönemde makineler hakkında böyle düşünmek alışılmış değildi."
         },
         {
           "key": "o3",
-          "text": "Her ideas were tested on a real machine.",
+          "text": "Her notes were used to build the machine quickly.",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Makine hiç tamamlanmadı, bu yüzden fikirleri gerçek bir makinede denenmedi."
+          "explanation": "Makine hiç tamamlanmadı; notlar makinenin hızla yapılmasını sağlamadı."
         },
         {
           "key": "o4",
-          "text": "She thought machines could not use music.",
+          "text": "She thought machines could only ever work with numbers.",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Makinenin bir gün müzikle çalışabileceğine inanıyordu."
+          "explanation": "Makinenin bir gün müzik ve başka sembollerle de çalışabileceğine inanıyordu."
         }
       ]
     }

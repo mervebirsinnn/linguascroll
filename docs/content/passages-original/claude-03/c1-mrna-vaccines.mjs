@@ -39,17 +39,17 @@ export default {
       option("o3", "A rushed technology whose safety tests were shortened", false, "reverse", "Metin hızın güvenlik testlerinin atlanmasından kaynaklanmadığını açıkça söyler."),
       option("o4", "A debate over whether mRNA can permanently change our genes", false, "reverse", "Gen endişesi yalnızca bir paragrafta anılır ve hemen yanıtlanır; metnin ana konusu değildir."),
     ] },
-    { key: "q2", type: "detail", prompt: "What does the passage say about the problem of inflammation?", evidence: findEvidence(paragraphs, "chemically modifying certain building blocks of the molecule largely dampened that reaction"), options: [
-      option("o1", "Chemical changes to the RNA largely reduced it", true, null, "Kariko ve Weissman, yapı taşlarını kimyasal olarak değiştirmenin tepkiyi büyük ölçüde bastırdığını gösterdi."),
-      option("o2", "It was caused by the fatty particles around the RNA", false, "reverse", "Metin iltihaplanmayı sentetik RNA'nın kendisine bağlar; yağlı parçacıklar başka bir bağlamda geçer."),
-      option("o3", "It was fully eliminated before the first trials", false, "extreme", "Metin 'largely' der: tepki büyük ölçüde azaldı, tamamen yok edildiği söylenmez."),
-      option("o4", "It made the vaccines unable to enter cells", false, "notstated", "İltihaplanma RNA'yı insanlarda kullanıma uygunsuz kılıyordu; hücreye girememekten söz edilmez."),
+    { key: "q2", type: "detail", prompt: "Which statement about the vaccine's genetic instructions is supported?", evidence: findEvidence(paragraphs, "cells break it down after the protein has been made"), options: [
+      option("o1", "Cells break them down once the protein is made", true, null, "CDC'ye göre hücreler mesajcı molekülü protein yapıldıktan sonra parçalar."),
+      option("o2", "They are stored in the nucleus until the protein is needed", false, "detail", "Molekül çekirdeğe hiç girmez ve saklanmaz; okunur ve atılır."),
+      option("o3", "They are carried inside a weakened form of the pathogen", false, "detail", "Talimatlar zayıflatılmış patojenle değil, küçük yağlı parçacıklarla taşınır."),
+      option("o4", "They make cells produce the whole virus for a short time", false, "detail", "Hücreler virüsün tamamını değil, zararsız bir parçasını üretir."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: 'What does "dampened" most nearly mean in the third paragraph?', evidence: findEvidence(paragraphs, "largely dampened that reaction"), options: [
-      option("o1", "Made less intense", true, null, "Dampen burada bir tepkiyi bastırmak, şiddetini azaltmak anlamındadır."),
-      option("o2", "Made slightly wet", false, "context", "Kelimenin 'nemlendirmek' anlamı vardır ama bu bağlamda bir tepkiden söz edilmektedir."),
-      option("o3", "Made easier to notice", false, "reverse", "Tepki daha belirgin değil, daha zayıf hâle gelmiştir."),
-      option("o4", "Caused to spread", false, "context", "Yayılma anlamı bağlama uymaz; amaç tepkiyi azaltmaktı."),
+    { key: "q3", type: "vocabulary", prompt: "What does “prompt” mean in “instructions ... that prompt the recipient's own cells to manufacture”?", evidence: findEvidence(paragraphs, "that prompt the recipient's own cells to manufacture a harmless fragment"), options: [
+      option("o1", "Cause to act", true, null, "Prompt burada bir şeyi harekete geçirmek, tetiklemek anlamında fiildir."),
+      option("o2", "Feed lines to a speaker", false, "context", "Tiyatroda suflörlük anlamı gerçektir ama bu bağlama uymaz."),
+      option("o3", "Be done on time", false, "context", "'Prompt' sıfatı hızlı demektir; burada fiil olarak kullanılmıştır."),
+      option("o4", "Ask for payment", false, "context", "Ödeme isteme anlamı yoktur; talimatlar hücreleri harekete geçirir."),
     ] },
     { key: "q4", type: "inference", prompt: 'What can be inferred about the impression that the technology "emerged from nowhere"?', evidence: findEvidence(paragraphs, "The technology also appeared, to many observers, to have emerged from nowhere."), options: [
       option("o1", "It overlooked a long history of research", true, null, "Yazar hemen ardından teknolojinin onlarca yıllık çalışmaya dayandığını söyleyerek bu izlenimi düzeltir."),

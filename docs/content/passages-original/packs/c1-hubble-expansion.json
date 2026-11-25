@@ -3340,28 +3340,28 @@
       "options": [
         {
           "key": "o1",
-          "text": "The expansion rate is now precisely known",
+          "text": "Different methods now agree on the expansion rate",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Hubble sabitini kesin belirlemek hâlâ zordur."
+          "explanation": "Farklı yöntemler farklı Hubble sabiti değerleri verir; fark çözülmemiştir."
         },
         {
           "key": "o2",
-          "text": "A famous result is still being refined",
+          "text": "An old discovery still raises open questions",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin genişleme bulgusunun yorumunun, kime ait olduğunun ve ölçümünün hâlâ yeniden ele alındığını anlatır."
+          "explanation": "Metin genişleme bulgusunun yorumunun, kime ait olduğunun ve ölçümünün (Hubble sabiti) hâlâ tartışmalı olduğunu anlatır."
         },
         {
           "key": "o3",
-          "text": "Hubble alone discovered cosmic expansion",
+          "text": "Hubble's measurements were mostly proved wrong",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin Lemaitre'nin daha önce aynı sonuca vardığını ve Slipher'ın ölçümlerini anlatır."
+          "trapType": "notstated",
+          "explanation": "Metinde Hubble'ın ölçümlerinin yanlış çıktığı söylenmez; yalnızca kredi ve Hubble sabiti tartışılır."
         },
         {
           "key": "o4",
-          "text": "Galaxies fly out from a central blast",
+          "text": "Galaxies are flying out from a central blast",
           "isCorrect": false,
           "trapType": "reverse",
           "explanation": "Metin bunun yaygın bir yanlış okuma olduğunu söyler."
@@ -3371,80 +3371,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "Which statement about Lemaitre's work does the passage support?",
+      "prompt": "How does the passage describe the evidence Hubble used in 1929?",
       "evidence": {
-        "paragraphIndex": 2,
-        "start": 194,
-        "end": 239
+        "paragraphIndex": 0,
+        "start": 320,
+        "end": 362
       },
       "options": [
         {
           "key": "o1",
-          "text": "It was published in English for experts",
+          "text": "Lemaitre's 1927 paper supplied its distance estimates",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Makale Belçika'da bir dergide Fransızca yayımlandı."
+          "trapType": "detail",
+          "explanation": "Uzaklık tahminleri Hubble'ın kendisine aittir; Lemaitre'nin makalesi bir öngörü ve hız tahmini içerir."
         },
         {
           "key": "o2",
-          "text": "It measured the cosmic microwave background",
+          "text": "Slipher's distance figures were combined with Lemaitre's redshifts",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Mikrodalga arka plan bugünkü Hubble sabiti ölçümleriyle ilgilidir, Lemaitre'yle değil."
+          "trapType": "detail",
+          "explanation": "Slipher kırmızıya kayma ölçtü, uzaklık değil; roller yer değiştirilmiş."
         },
         {
           "key": "o3",
-          "text": "It won immediate and wide recognition",
+          "text": "Hubble measured every redshift himself before publishing",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Yıllarca pek az ilgi gördü."
+          "explanation": "Birçok ölçüm daha önce Slipher tarafından yapılmıştı."
         },
         {
           "key": "o4",
-          "text": "It came out two years before Hubble's",
+          "text": "Much of its redshift data came from Slipher",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Lemaitre'nin makalesi 1927'de, Hubble'ınkinden iki yıl önce çıktı."
+          "explanation": "Metin kırmızıya kayma ölçümlerinin birçoğunun daha önce Slipher tarafından yapıldığını söyler."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does “scant” mean in the third paragraph?",
+      "prompt": "What does “yield” mean in the sentence “...can still yield surprises”?",
       "evidence": {
-        "paragraphIndex": 2,
-        "start": 288,
-        "end": 323
+        "paragraphIndex": 3,
+        "start": 423,
+        "end": 448
       },
       "options": [
         {
           "key": "o1",
-          "text": "Very little",
+          "text": "Bring about",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Scant, çok az ve yetersiz demektir; makale yıllarca pek ilgi çekmedi."
+          "explanation": "Yield burada üretmek, doğurmak anlamındadır: eski bir sonuç hâlâ sürpriz doğurabilir."
         },
         {
           "key": "o2",
-          "text": "A great deal of",
+          "text": "Give way to",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bu scant kelimesinin tersidir."
+          "trapType": "context",
+          "explanation": "Yield'in teslim olmak/boyun eğmek anlamı vardır ama sonuç sürpriz üretir; kimseye boyun eğmez."
         },
         {
           "key": "o3",
-          "text": "Harsh and unfair",
+          "text": "Hand over to others",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Eleştirinin sertliğinden söz edilmez; konu ilginin miktarıdır."
+          "explanation": "Devretmek anlamı gerçek bir anlamdır, ancak cümlede bir şeyin devredilmesi söz konusu değildir."
         },
         {
           "key": "o4",
-          "text": "Slow but steady",
+          "text": "Slow down for",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Yavaş ama düzenli artan bir ilgi anlatılmaz."
+          "explanation": "Trafikte yol vermek anlamı bu bağlama uymaz."
         }
       ]
     },

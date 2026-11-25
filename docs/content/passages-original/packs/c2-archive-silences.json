@@ -3858,7 +3858,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "When, according to the second paragraph, can a gap not be blamed solely on careless clerks?",
+      "prompt": "What does the passage say about a gap that cannot be blamed solely on careless clerks or lost boxes?",
       "evidence": {
         "paragraphIndex": 1,
         "start": 352,
@@ -3867,71 +3867,71 @@
       "options": [
         {
           "key": "o1",
-          "text": "When the clerks were too poorly trained to write well",
+          "text": "It came from clerks' categories that could not conceive an uprising",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Katiplerin eğitimi hakkında bilgi yoktur."
+          "trapType": "detail",
+          "explanation": "Kategorilerin tasavvur edememesi dönemin Batılı gözlemcileri için söylenir ve Haiti örneğine aittir, bu koşulun açıklaması değildir."
         },
         {
           "key": "o2",
-          "text": "When the omission was part of their instructions",
+          "text": "It was already embedded in what clerks were told to record",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Boşluk, katiplerden kaydetmeleri istenen şeye zaten yerleşmişse bu koşul geçerlidir."
+          "explanation": "Metin, boşluğun katiplerden kaydetmeleri istenen şeye zaten yerleşmiş olabileceğini söyler."
         },
         {
           "key": "o3",
-          "text": "When boxes of documents were later lost",
+          "text": "It arose only once sources were assembled into archives afterwards",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Kayıp kutular, yazarın yetersiz bulduğu açıklamadır, koşul değildir."
+          "trapType": "detail",
+          "explanation": "Sessizlikler kaynakların hem yaratıldığı hem de arşivlerde toplandığı anlarda girer; yalnızca toplama aşamasına bağlanamaz."
         },
         {
           "key": "o4",
-          "text": "When historians fail to visit the archive",
+          "text": "It was imposed later by forgetful historians reading the documents",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Arşiv ziyareti metinde geçmez."
+          "trapType": "reverse",
+          "explanation": "Metin sessizliğin yalnızca sonradan unutkan tarihçilerce dayatılmadığını söyler."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "In the second paragraph, what does “alibi” mean as the author uses it?",
+      "prompt": "In the third paragraph, what does “grain” mean in “reading against the grain of a document”?",
       "evidence": {
-        "paragraphIndex": 1,
-        "start": 289,
-        "end": 351
+        "paragraphIndex": 3,
+        "start": 297,
+        "end": 380
       },
       "options": [
         {
           "key": "o1",
-          "text": "A reliable source of historical evidence",
+          "text": "Its finest details of wording",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Kaynaklar geçer ama kelime kaynak demek değildir."
+          "explanation": "Yakın okuma sonraki yarıda geçer ama 'grain' ayrıntı demek değildir; 'against' ayrıntıya karşı okumayı anlatmaz."
         },
         {
           "key": "o2",
-          "text": "A method for organising archives",
+          "text": "The physical texture of its paper",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Arşiv düzenleme yöntemi anlamı yoktur."
+          "trapType": "context",
+          "explanation": "Gerçek anlam olan doku, bir belgenin okunuş biçimi için kullanılmaz."
         },
         {
           "key": "o3",
-          "text": "An excuse that shifts blame elsewhere",
+          "text": "The usual direction of meaning",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Yazar kelimeyi mecazen, sorumluluğu başka yere atan mazeret anlamında kullanır."
+          "explanation": "'Grain' burada odun lifi gibi bir akış yönüdür: belgenin alışılmış yorum doğrultusu; tersinden okumak buna karşı okumaktır."
         },
         {
           "key": "o4",
-          "text": "Proof of being somewhere else during a crime",
+          "text": "A small trace of surviving proof",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Hukuki gerçek anlam bu bağlamda kastedilmez."
+          "explanation": "'A grain of truth' gibi 'zerre' anlamıdır; bağlamda 'against' ile uyumsuzdur."
         }
       ]
     },

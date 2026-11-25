@@ -41,10 +41,10 @@ export default {
       option("o4", "In a ship near the coast", false, "notstated", "Gemi anlatılmaz."),
     ] },
     { key: "q3", type: "vocabulary", prompt: "What does “imagination” mean here?", evidence: findEvidence(paragraphs, "He also used his imagination, his memories and his feelings."), options: [
-      option("o1", "Power to picture things", true, null, "Imagination, zihinde şeyler canlandırma gücüdür."),
-      option("o2", "Skill at mixing paint well", false, "context", "Boya karıştırma anlatılmaz."),
-      option("o3", "Memory of many past events", false, "context", "Anılar ayrı bir sözcük olarak geçer."),
-      option("o4", "A feeling of deep sadness", false, "context", "Duygular ayrı bir sözcük olarak geçer."),
+      option("o1", "Power to picture new things", true, null, "Imagination, zihinde yeni şeyler canlandırma gücüdür; Van Gogh gördüğünü kopyalamakla kalmamıştır."),
+      option("o2", "Skill at copying what you see", false, "reverse", "Metin Van Gogh'un gördüğünü yalnızca kopyalamadığını söyler."),
+      option("o3", "Knowledge learned from school lessons", false, "context", "Okul dersleriyle ilgili bir bilgi anlatılmaz."),
+      option("o4", "A wish to visit faraway places", false, "context", "Uzak yerlere gitme isteği anlatılmaz."),
     ] },
     { key: "q4", type: "inference", prompt: "What can we infer about the village in the picture?", evidence: ev(2, "Van Gogh did not only copy what he saw. He also used his imagination"), options: [
       option("o1", "It was exactly the same as the real one.", false, "reverse", "Hayal gücünü de kullandığı söylenir."),

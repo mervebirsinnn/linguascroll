@@ -36,22 +36,22 @@ export default {
   paragraphs, words,
   questions: [
     { key: "q1", type: "main-idea", prompt: "What is the central point of the passage?", evidence: findEvidence(paragraphs, "even a result nearly a century old can still yield surprises"), options: [
-      option("o1", "A famous result is still being refined", true, null, "Metin genişleme bulgusunun yorumunun, kime ait olduğunun ve ölçümünün hâlâ yeniden ele alındığını anlatır."),
-      option("o2", "Hubble alone discovered cosmic expansion", false, "reverse", "Metin Lemaitre'nin daha önce aynı sonuca vardığını ve Slipher'ın ölçümlerini anlatır."),
-      option("o3", "Galaxies fly out from a central blast", false, "reverse", "Metin bunun yaygın bir yanlış okuma olduğunu söyler."),
-      option("o4", "The expansion rate is now precisely known", false, "reverse", "Hubble sabitini kesin belirlemek hâlâ zordur."),
+      option("o1", "An old discovery still raises open questions", true, null, "Metin genişleme bulgusunun yorumunun, kime ait olduğunun ve ölçümünün (Hubble sabiti) hâlâ tartışmalı olduğunu anlatır."),
+      option("o2", "Hubble's measurements were mostly proved wrong", false, "notstated", "Metinde Hubble'ın ölçümlerinin yanlış çıktığı söylenmez; yalnızca kredi ve Hubble sabiti tartışılır."),
+      option("o3", "Galaxies are flying out from a central blast", false, "reverse", "Metin bunun yaygın bir yanlış okuma olduğunu söyler."),
+      option("o4", "Different methods now agree on the expansion rate", false, "reverse", "Farklı yöntemler farklı Hubble sabiti değerleri verir; fark çözülmemiştir."),
     ] },
-    { key: "q2", type: "detail", prompt: "Which statement about Lemaitre's work does the passage support?", evidence: findEvidence(paragraphs, "in a paper of 1927, two years before Hubble's"), options: [
-      option("o1", "It came out two years before Hubble's", true, null, "Lemaitre'nin makalesi 1927'de, Hubble'ınkinden iki yıl önce çıktı."),
-      option("o2", "It was published in English for experts", false, "reverse", "Makale Belçika'da bir dergide Fransızca yayımlandı."),
-      option("o3", "It measured the cosmic microwave background", false, "reverse", "Mikrodalga arka plan bugünkü Hubble sabiti ölçümleriyle ilgilidir, Lemaitre'yle değil."),
-      option("o4", "It won immediate and wide recognition", false, "reverse", "Yıllarca pek az ilgi gördü."),
+    { key: "q2", type: "detail", prompt: "How does the passage describe the evidence Hubble used in 1929?", evidence: findEvidence(paragraphs, "many of them made earlier by Vesto Slipher"), options: [
+      option("o1", "Much of its redshift data came from Slipher", true, null, "Metin kırmızıya kayma ölçümlerinin birçoğunun daha önce Slipher tarafından yapıldığını söyler."),
+      option("o2", "Lemaitre's 1927 paper supplied its distance estimates", false, "detail", "Uzaklık tahminleri Hubble'ın kendisine aittir; Lemaitre'nin makalesi bir öngörü ve hız tahmini içerir."),
+      option("o3", "Slipher's distance figures were combined with Lemaitre's redshifts", false, "detail", "Slipher kırmızıya kayma ölçtü, uzaklık değil; roller yer değiştirilmiş."),
+      option("o4", "Hubble measured every redshift himself before publishing", false, "reverse", "Birçok ölçüm daha önce Slipher tarafından yapılmıştı."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “scant” mean in the third paragraph?", evidence: findEvidence(paragraphs, "attracted scant attention for years"), options: [
-      option("o1", "Very little", true, null, "Scant, çok az ve yetersiz demektir; makale yıllarca pek ilgi çekmedi."),
-      option("o2", "A great deal of", false, "reverse", "Bu scant kelimesinin tersidir."),
-      option("o3", "Harsh and unfair", false, "context", "Eleştirinin sertliğinden söz edilmez; konu ilginin miktarıdır."),
-      option("o4", "Slow but steady", false, "context", "Yavaş ama düzenli artan bir ilgi anlatılmaz."),
+    { key: "q3", type: "vocabulary", prompt: "What does “yield” mean in the sentence “...can still yield surprises”?", evidence: findEvidence(paragraphs, "can still yield surprises"), options: [
+      option("o1", "Bring about", true, null, "Yield burada üretmek, doğurmak anlamındadır: eski bir sonuç hâlâ sürpriz doğurabilir."),
+      option("o2", "Give way to", false, "context", "Yield'in teslim olmak/boyun eğmek anlamı vardır ama sonuç sürpriz üretir; kimseye boyun eğmez."),
+      option("o3", "Hand over to others", false, "context", "Devretmek anlamı gerçek bir anlamdır, ancak cümlede bir şeyin devredilmesi söz konusu değildir."),
+      option("o4", "Slow down for", false, "context", "Trafikte yol vermek anlamı bu bağlama uymaz."),
     ] },
     { key: "q4", type: "inference", prompt: "What can be inferred about the position of our own galaxy?", evidence: findEvidence(paragraphs, "none occupies a privileged centre"), options: [
       option("o1", "It is not at a special centre", true, null, "Her gökadadan aynı örüntü görüldüğüne göre bizim gökadamız da ayrıcalıklı bir merkezde değildir."),

@@ -40,17 +40,17 @@ export default {
       option("o3", "Luther's theses mattered less than Hus's ideas", false, "notstated", "Metin iki reformcunun önemini kıyaslamaz; Hus örneğini yayılma hızı için kullanır."),
       option("o4", "The Church tried to ban printing from the very beginning", false, "reverse", "Metne göre Kilise baskı makinelerinin ilk müşterileri arasındaydı."),
     ] },
-    { key: "q2", type: "detail", prompt: "Which statement about the Ninety-five Theses does the passage support?", evidence: findEvidence(paragraphs, "he wrote them in Latin as propositions for academic debate"), options: [
-      option("o1", "They were written in Latin as points for debate", true, null, "Metin tezlerin akademik tartışma için önermeler olarak Latince yazıldığını söyler."),
-      option("o2", "They were written in German to reach ordinary readers", false, "reverse", "Almanca olanlar Luther'in sonraki kısa broşürleridir; tezlerin kendisi Latinceydi."),
-      option("o3", "Historians agree they were nailed to a church door", false, "reverse", "Metin tarihçilerin bu sahnenin yaşanıp yaşanmadığı konusunda hâlâ anlaşamadığını belirtir."),
-      option("o4", "They were kept unprinted until Luther's later years", false, "reverse", "Matbaacılar tezleri kısa sürede çoğalttı."),
+    { key: "q2", type: "detail", prompt: "What does the passage say about letters of indulgence?", evidence: findEvidence(paragraphs, "were letters of indulgence"), options: [
+      option("o1", "Among the earliest dated items to come off a press", true, null, "Metne göre en eski tarihli basılı ürünler arasında indulgence mektupları vardı."),
+      option("o2", "Documents Luther had printed to spread his theses widely", false, "detail", "Luther'i kışkırtan şey bu belgelerin satışıydı; onları çoğaltan Luther değildi."),
+      option("o3", "Texts that Gutenberg refused to print for the Church", false, "reverse", "Kilise matbaanın ilk müşterilerindendi; reddedilmediler."),
+      option("o4", "Items Hus circulated in Bohemia before his death in 1415", false, "detail", "Hus ve Bohemya başka bir bağlamda anılır; indulgence mektuplarıyla ilgisi kurulmaz."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: 'What does "defensible" mean in the final paragraph?', evidence: findEvidence(paragraphs, "The more defensible view is that printing was a necessary condition"), options: [
-      option("o1", "Easier to support with argument", true, null, "Defensible, kanıt ve gerekçeyle savunulabilir demektir; yazar iki uç görüş arasında daha sağlam olanı seçer."),
-      option("o2", "More willing to protect the Church", false, "context", "'Defend' kökü korumayı çağrıştırsa da burada bir görüşün savunulabilirliği kastedilir."),
-      option("o3", "More popular among ordinary readers", false, "context", "Görüşün yaygınlığından değil, gerekçelendirilebilirliğinden söz edilir."),
-      option("o4", "More cautious about using sources", false, "context", "Kaynak kullanımındaki temkinle ilgili bir anlam yoktur."),
+    { key: "q3", type: "vocabulary", prompt: "What does “agent” mean in “print was a genuine agent of change”?", evidence: findEvidence(paragraphs, "print was a genuine agent of change"), options: [
+      option("o1", "Force that causes change", true, null, "Agent burada bir şeyi doğuran etken, güç anlamındadır."),
+      option("o2", "Representative acting for a client", false, "context", "Temsilci anlamı gerçektir ama matbaa bir kişi değildir."),
+      option("o3", "Substance that causes a reaction", false, "context", "Kimyasal madde anlamı bu bağlamda geçerli değildir."),
+      option("o4", "Secret informer for a state", false, "context", "Casus anlamı bağlama uymaz."),
     ] },
     { key: "q4", type: "inference", prompt: "Why does the author most likely mention Jan Hus?", evidence: findEvidence(paragraphs, "His ideas survived in Bohemia, but without presses they travelled slowly."), options: [
       option("o1", "To show similar criticism spread slowly without print", true, null, "Benzer eleştiriler matbaa olmadan yavaş yayıldı; bu karşılaştırma matbaanın hızlandırıcı rolünü gösterir."),

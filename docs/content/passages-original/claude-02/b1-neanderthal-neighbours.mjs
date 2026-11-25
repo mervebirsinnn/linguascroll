@@ -30,10 +30,10 @@ export default {
   paragraphs, words,
   questions: [
     { key: "q1", type: "main-idea", prompt: "What is the passage mainly about?", evidence: ev(1, "many of the people tested carried a small amount of Neanderthal DNA"), options: [
-      option("o1", "Why some people carry Neanderthal DNA", true, null, "Metin Neandertal DNA'sının bugünkü insanlarda bulunuşunu anlatır."),
-      option("o2", "How Neanderthals taught people to farm", false, "notstated", "Tarım öğretimi anlatılmaz."),
-      option("o3", "Why Neanderthals disappeared from Europe", false, "notstated", "Yok oluş nedeni anlatılmaz."),
-      option("o4", "Where Neanderthals found their food", false, "notstated", "Beslenme anlatılmaz."),
+      option("o1", "What DNA shows about our link to Neanderthals", true, null, "Metin, DNA karşılaştırmasının Neandertallerle bugünkü insanlar arasındaki bağı gösterdiğini anlatır."),
+      option("o2", "Where Neanderthals lived in Europe and Asia", false, "detail", "Yaşadıkları yer yalnızca ilk cümlede geçer; metnin asıl konusu değildir."),
+      option("o3", "Why Neanderthals were slower than early humans", false, "reverse", "Metin onların yavaş sanıldığını ama bu resmin DNA bulgularıyla değiştiğini söyler."),
+      option("o4", "How scientists learned to read old bones", false, "detail", "Kemiklerden DNA okunması yalnızca bir araçtır; metin DNA bulgularını anlatır."),
     ] },
     { key: "q2", type: "detail", prompt: "How much Neanderthal DNA do many people with ancestors outside Africa carry?", evidence: ev(1, "it was usually between one and two percent"), options: [
       option("o1", "About one to two percent", true, null, "Metin yüzde bir ile iki arası der."),

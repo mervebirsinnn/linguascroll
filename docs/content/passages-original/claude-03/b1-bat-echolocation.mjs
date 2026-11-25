@@ -52,10 +52,10 @@ export default {
       option("o4", "Very new and strange to use", false, "context", "Yöntemin yeniliği anlatılmaz."),
     ] },
     { key: "q4", type: "inference", prompt: "What can we infer from the passage?", evidence: findEvidence(paragraphs, "Many of these sounds are too high for people to hear."), options: [
-      option("o1", "A hunting bat may seem quiet to people.", true, null, "Seslerin birçoğu insan kulağı için fazla yüksek olduğundan avlanan yarasa insanlara sessiz görünebilir."),
-      option("o2", "Bats cannot hear their own sounds well.", false, "reverse", "Yarasalar kendi seslerinin yankılarını kulaklarıyla dinler."),
-      option("o3", "Bats need light to catch their food.", false, "reverse", "Bazı yarasalar tam karanlıkta böcek yakalayabilir."),
-      option("o4", "People can hear every sound a bat makes nearby.", false, "reverse", "Seslerin birçoğunu insanlar duyamaz."),
+      option("o1", "Hunting bats may be noisier than we realise.", true, null, "Seslerin birçoğu insan kulağı için fazla yüksek olduğundan, avlanan bir yarasa duyduğumuzdan çok daha gürültülü olabilir."),
+      option("o2", "Bats depend more on their eyes than their ears.", false, "reverse", "İşitmeleri mükemmeldir ve yollarını ses ile bulurlar; gözlere dayanmazlar."),
+      option("o3", "Bats hunt best when the moon gives some light.", false, "reverse", "Bazı yarasalar karanlıkta böcek yakalayabilir; ışığa ihtiyaç duyulduğu söylenmez."),
+      option("o4", "Bats stop making sounds as they reach their food.", false, "reverse", "Yiyeceğe yaklaşınca sesleri çok daha hızlı çıkarırlar, durmazlar."),
     ] },
   ],
   editorial: { original: true, sources: [

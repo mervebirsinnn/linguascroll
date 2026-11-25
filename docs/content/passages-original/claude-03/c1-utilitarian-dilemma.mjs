@@ -38,22 +38,22 @@ export default {
   paragraphs, words,
   questions: [
     { key: "q1", type: "main-idea", prompt: "What is the author's central claim?", evidence: findEvidence(paragraphs, "any credible theory must either explain that sensitivity or argue convincingly that it should be abandoned"), options: [
-      option("o1", "Theories must address how harm is caused", true, null, "Yazar yargılarımızın zararın nasıl verildiğine duyarlı olduğunu ve kuramların bunu hesaba katması gerektiğini savunur."),
-      option("o2", "The trolley cases prove utilitarianism wrong", false, "extreme", "Yazar bu durumların bir hükümden çok ahlaki düşünme hakkında bir olgu gösterdiğini söyler."),
-      option("o3", "Pushing the stranger is clearly the right act", false, "reverse", "Bu yalnızca katı faydacıların görüşüdür; yazar onu benimsemez."),
-      option("o4", "Bentham devised the trolley puzzle in 1967", false, "reverse", "1967'de bilmeceyi betimleyen Philippa Foot'tur."),
+      option("o1", "A credible theory must account for how harm is caused", true, null, "Yazar yargılarımızın zararın nasıl verildiğine duyarlı olduğunu ve kuramların bunu açıklaması (ya da vazgeçilmesi gerektiğini ikna edici biçimde savunması) gerektiğini söyler."),
+      option("o2", "The trolley cases have settled the debate over utilitarianism", false, "reverse", "Metin hiçbir yanıtın zorluktan arınmış olmadığını ve tartışmanın on yıllardır sürdüğünü söyler."),
+      option("o3", "Most people judge pushing and steering as equally acceptable", false, "reverse", "Çoğunluk tramvayı çevirmeyi kabul eder ama itmeyi reddeder."),
+      option("o4", "Bentham devised the trolley puzzle in 1967", false, "detail", "1967'de bilmeceyi betimleyen Philippa Foot'tur; üstelik bu ana fikir değildir."),
     ] },
-    { key: "q2", type: "detail", prompt: "What does the passage say about the footbridge case?", evidence: findEvidence(paragraphs, "although the arithmetic is identical, a clear majority refuses"), options: [
-      option("o1", "The numbers match, but most refuse", true, null, "Hesap aynıdır (beşe karşı bir) ama açık bir çoğunluk itmeyi reddeder."),
-      option("o2", "Most people agree to push the stranger", false, "reverse", "Çoğunluk itmeyi reddeder; kabul edilen tramvayı çevirmektir."),
-      option("o3", "Philippa Foot devised it in 1967", false, "reverse", "Foot 1967'de ilk durumu betimledi; köprü çeşitlemesini Thomson ekledi."),
-      option("o4", "It saves more lives than the first case", false, "reverse", "Metin hesabın aynı olduğunu söyler."),
+    { key: "q2", type: "detail", prompt: "On the doctrine of double effect, how is the side-track worker treated?", evidence: findEvidence(paragraphs, "whereas the worker on the side track is not"), options: [
+      option("o1", "His death is foreseen but not used as a tool", true, null, "Çift etki ilkesine göre işçinin ölümü yalnızca öngörülen bir yan etkidir, araç olarak kullanılmaz."),
+      option("o2", "He is used as a tool, just like the stranger", false, "reverse", "Araç olarak kullanılan, köprüdeki yabancıdır; işçi değildir."),
+      option("o3", "His death is intended as the means of saving five", false, "reverse", "Amaçlanan araç zarar köprü örneğine aittir."),
+      option("o4", "His welfare counts for less because he is a worker", false, "notstated", "Faydacılık herkesin refahını eşit sayar; işçinin değersiz görüldüğü söylenmez."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “bite the bullet” mean in the third paragraph?", evidence: findEvidence(paragraphs, "Strict utilitarians can bite the bullet"), options: [
-      option("o1", "Accept a hard conclusion", true, null, "Bite the bullet, hoş olmayan bir sonucu kabullenmek demektir; burada itmenin doğru olduğu sonucu."),
-      option("o2", "Refuse to answer the question", false, "context", "Katı faydacılar yanıt vermekten kaçınmaz; açık bir yanıtta ısrar eder."),
-      option("o3", "Change their theory entirely", false, "reverse", "Tersine, kuramlarına sadık kalırlar."),
-      option("o4", "Act violently against others", false, "context", "Kurşun sözcüğü yanıltıcıdır; deyimin şiddetle ilgisi yoktur."),
+    { key: "q3", type: "vocabulary", prompt: "What does “appeal to” mean in “Others appeal to the doctrine of double effect”?", evidence: findEvidence(paragraphs, "Others appeal to the doctrine of double effect"), options: [
+      option("o1", "Invoke as support", true, null, "Appeal to, bir ilkeye başvurup onu dayanak göstermek demektir."),
+      option("o2", "Be attractive to", false, "context", "Çekici olmak anlamı gerçektir (ilk paragraftaki 'appeal') ama burada fiil başvurmaktır."),
+      option("o3", "Ask a court to review", false, "context", "Mahkemeye başvurmak anlamı bu bağlama uymaz."),
+      option("o4", "Make an earnest request of", false, "context", "Yalvarmak anlamı yoktur; ilke bir dayanak olarak kullanılır."),
     ] },
     { key: "q4", type: "inference", prompt: "Why does the author stress that the arithmetic is “identical”?", evidence: findEvidence(paragraphs, "although the arithmetic is identical"), options: [
       option("o1", "To show numbers cannot explain the shift", true, null, "Sayılar aynıyken yanıtlar değişiyorsa, farkı sonuçlar değil zararın veriliş biçimi açıklamalıdır."),

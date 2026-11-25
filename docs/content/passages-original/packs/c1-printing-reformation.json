@@ -3643,80 +3643,80 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "Which statement about the Ninety-five Theses does the passage support?",
+      "prompt": "What does the passage say about letters of indulgence?",
       "evidence": {
-        "paragraphIndex": 1,
-        "start": 52,
-        "end": 110
+        "paragraphIndex": 0,
+        "start": 484,
+        "end": 510
       },
       "options": [
         {
           "key": "o1",
-          "text": "They were kept unprinted until Luther's later years",
+          "text": "Items Hus circulated in Bohemia before his death in 1415",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Matbaacılar tezleri kısa sürede çoğalttı."
+          "trapType": "detail",
+          "explanation": "Hus ve Bohemya başka bir bağlamda anılır; indulgence mektuplarıyla ilgisi kurulmaz."
         },
         {
           "key": "o2",
-          "text": "They were written in Latin as points for debate",
+          "text": "Among the earliest dated items to come off a press",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Metin tezlerin akademik tartışma için önermeler olarak Latince yazıldığını söyler."
+          "explanation": "Metne göre en eski tarihli basılı ürünler arasında indulgence mektupları vardı."
         },
         {
           "key": "o3",
-          "text": "They were written in German to reach ordinary readers",
+          "text": "Documents Luther had printed to spread his theses widely",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Almanca olanlar Luther'in sonraki kısa broşürleridir; tezlerin kendisi Latinceydi."
+          "trapType": "detail",
+          "explanation": "Luther'i kışkırtan şey bu belgelerin satışıydı; onları çoğaltan Luther değildi."
         },
         {
           "key": "o4",
-          "text": "Historians agree they were nailed to a church door",
+          "text": "Texts that Gutenberg refused to print for the Church",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Metin tarihçilerin bu sahnenin yaşanıp yaşanmadığı konusunda hâlâ anlaşamadığını belirtir."
+          "explanation": "Kilise matbaanın ilk müşterilerindendi; reddedilmediler."
         }
       ]
     },
     {
       "key": "q3",
       "type": "vocabulary",
-      "prompt": "What does \"defensible\" mean in the final paragraph?",
+      "prompt": "What does “agent” mean in “print was a genuine agent of change”?",
       "evidence": {
         "paragraphIndex": 3,
-        "start": 291,
-        "end": 358
+        "start": 115,
+        "end": 150
       },
       "options": [
         {
           "key": "o1",
-          "text": "More popular among ordinary readers",
+          "text": "Substance that causes a reaction",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Görüşün yaygınlığından değil, gerekçelendirilebilirliğinden söz edilir."
+          "explanation": "Kimyasal madde anlamı bu bağlamda geçerli değildir."
         },
         {
           "key": "o2",
-          "text": "More cautious about using sources",
+          "text": "Secret informer for a state",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Kaynak kullanımındaki temkinle ilgili bir anlam yoktur."
+          "explanation": "Casus anlamı bağlama uymaz."
         },
         {
           "key": "o3",
-          "text": "Easier to support with argument",
+          "text": "Force that causes change",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Defensible, kanıt ve gerekçeyle savunulabilir demektir; yazar iki uç görüş arasında daha sağlam olanı seçer."
+          "explanation": "Agent burada bir şeyi doğuran etken, güç anlamındadır."
         },
         {
           "key": "o4",
-          "text": "More willing to protect the Church",
+          "text": "Representative acting for a client",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "'Defend' kökü korumayı çağrıştırsa da burada bir görüşün savunulabilirliği kastedilir."
+          "explanation": "Temsilci anlamı gerçektir ama matbaa bir kişi değildir."
         }
       ]
     },

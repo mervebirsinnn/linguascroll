@@ -4524,40 +4524,40 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the author, what made Snow's comparison of the two water companies persuasive?",
+      "prompt": "According to the author, why did Snow's comparison of the two water companies carry the argument?",
       "evidence": {
         "paragraphIndex": 2,
-        "start": 311,
-        "end": 391
+        "start": 247,
+        "end": 392
       },
       "options": [
         {
           "key": "o1",
-          "text": "Both companies drew water from the same clean stretch",
+          "text": "Cholera mortality dropped soon after the handle came off the Broad Street pump",
           "isCorrect": false,
           "trapType": "detail",
-          "explanation": "Şirketlerden biri kirlenmiş bir kesimden su çekiyordu."
+          "explanation": "Metin salgının zaten gerilediğini ve kolun sökülmesinin tek başına kanıt olmadığını söyler."
         },
         {
           "key": "o2",
-          "text": "Customers of both companies died at similar rates",
+          "text": "Hill's criteria, such as timing and consistency, were applied to both groups",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Bir şirketin müşterilerinde ölüm oranı çok daha yüksekti."
+          "trapType": "detail",
+          "explanation": "Hill yaklaşık bir yüzyıl sonra gelir; Snow'un karşılaştırmasıyla ilgili değildir."
         },
         {
           "key": "o3",
-          "text": "Officials ordered every pump in London closed",
+          "text": "Deaths clustered around one pump that both companies' pipes happened to feed",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Metinde böyle bir emir yoktur; yalnız bir pompanın kolu söküldü."
+          "trapType": "detail",
+          "explanation": "Ölümlerin pompa çevresinde kümelenmesi haritalama kanıtıdır, şirket karşılaştırması değildir."
         },
         {
           "key": "o4",
-          "text": "Households differed mainly in their water",
+          "text": "Customers lived along the same streets, so water was the main difference",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Haneler su bakımından farklı, diğer çoğu açıdan benzerdi; bu rakip açıklamaları zayıflattı."
+          "explanation": "Haneler su dışında büyük ölçüde benzerdi; bu rakip açıklamaları zayıflattı."
         }
       ]
     },
@@ -4573,31 +4573,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Distorted by other hidden factors",
+          "text": "Skewed by hidden other factors",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Epidemiyolojide 'confounded', ilişkinin gizli üçüncü etkenlerle bozulmuş olması demektir."
+          "explanation": "Epidemiyolojide 'confounded', ilişkinin gizli üçüncü etkenlerce bozulması demektir."
         },
         {
           "key": "o2",
-          "text": "Proved beyond any reasonable doubt",
+          "text": "Defeated, as a plan is thwarted",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Anlam neredeyse tam tersidir."
+          "trapType": "context",
+          "explanation": "'Confound' boşa çıkarmak anlamına gelir ama ilişkiler için kullanılmaz."
         },
         {
           "key": "o3",
-          "text": "Feeling puzzled and embarrassed",
+          "text": "Described in needlessly confusing terms",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Gündelik 'şaşkın' anlamı bu teknik bağlama uymaz."
+          "explanation": "Karmaşık anlatılmak ayrı bir şeydir; burada ilişkinin gizli etkenlerce bozulması kastedilir."
         },
         {
           "key": "o4",
-          "text": "Counted twice by mistake",
+          "text": "Contradicted by later studies",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Sayma geçer ama kelime çift sayım demek değildir."
+          "explanation": "Çelişen sonuç ile gizli etken tarafından bozulma farklı şeylerdir."
         }
       ]
     },

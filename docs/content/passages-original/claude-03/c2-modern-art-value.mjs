@@ -43,17 +43,17 @@ export default {
       option("o3", "Market prices reveal the true worth of art", false, "notstated", "Yazar piyasanın yanıtını balon ile sohbet arasında belirsiz bırakır."),
       option("o4", "It depends on skill and materials", false, "reverse", "Metin malzeme ve zanaatın değeri açıklamadığını söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the text, what do the theories of Danto and Dickie fail to explain on their own?", evidence: findEvidence(paragraphs, "neither, taken alone, explains why one such object should be worth more than another"), options: [
-      option("o1", "Differences in value between artworks", true, null, "Kuramlar nesnenin nasıl sanat olduğunu açıklar, ama değer farklarını tek başına açıklamaz."),
-      option("o2", "How an ordinary object can become a work of art", false, "reverse", "Metne göre iki görüş de tam olarak bunu açıklar."),
-      option("o3", "Why Fountain was refused in New York", false, "notstated", "Kuramların bu olayı açıklayıp açıklamadığından söz edilmez."),
-      option("o4", "Who first owned the original urinal", false, "notstated", "Sahiplik konusu metinde geçmez."),
+    { key: "q2", type: "detail", prompt: "Which statement about the theories of Danto and Dickie is supported by the text?", evidence: findEvidence(paragraphs, "neither, taken alone, explains why one such object should be worth more than another"), options: [
+      option("o1", "Neither alone accounts for why one artwork outprices another", true, null, "Metin, ikisinin de bir nesnenin neden diğerinden değerli olduğunu tek başına açıklamadığını söyler."),
+      option("o2", "Danto defined art as an artifact presented to an artworld public", false, "detail", "Bu tanım Dickie'nin kurumsal kuramına aittir; Danto'ya atfedilmiş."),
+      option("o3", "Dickie held that seeing art requires an atmosphere of theory", false, "detail", "Kuram atmosferi Danto'nundur; Dickie'ye atfedilmiş."),
+      option("o4", "Both explain price differences but not how objects become art", false, "reverse", "Tam tersi: nesnenin sanata nasıl dönüştüğünü açıklarlar, fiyat farkını açıklamazlar."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: "What does “a confidence trick” mean in the final paragraph?", evidence: findEvidence(paragraphs, "None of this proves that modern art is a confidence trick"), options: [
-      option("o1", "A scheme to deceive people", true, null, "Confidence trick, insanların güvenini kazanıp onları aldatan dolandırıcılıktır."),
-      option("o2", "A display of artistic self-belief", false, "context", "Confidence burada özgüven değil, istismar edilen güvendir."),
-      option("o3", "A clever technique for painting", false, "context", "Trick teknik anlamında kullanılmamıştır."),
-      option("o4", "A test of public trust in museums", false, "context", "Müzelere güvenin ölçülmesinden söz edilmez."),
+    { key: "q3", type: "vocabulary", prompt: "What does “conferred” mean in “was conferred, not manufactured”?", evidence: findEvidence(paragraphs, "Whatever value it has was conferred, not manufactured"), options: [
+      option("o1", "Granted by outside recognition", true, null, "Confer burada 'bahşetmek, tanıyıp vermek' demektir; değer nesnede üretilmedi, dışarıdan verildi."),
+      option("o2", "Debated in a formal meeting", false, "context", "Confer'in 'görüşmek, danışmak' anlamıdır; değer görüşülmez, verilir."),
+      option("o3", "Passed down through inheritance", false, "notstated", "Miras yoluyla geçiş metinde yoktur."),
+      option("o4", "Negotiated between buyers and sellers", false, "context", "Pazarlık anlamı cümleye uymaz; değer üretimin karşıtı olarak 'verilen' bir şeydir."),
     ] },
     { key: "q4", type: "inference", prompt: "What does the author imply about critics who say “anyone could have made it”?", evidence: findEvidence(paragraphs, "are, in a sense, agreeing with him: the making was never the whole point"), options: [
       option("o1", "They share his premise unknowingly", true, null, "Yapımın asıl mesele olmadığını söyleyerek farkında olmadan Duchamp'ın öncülünü paylaşırlar."),

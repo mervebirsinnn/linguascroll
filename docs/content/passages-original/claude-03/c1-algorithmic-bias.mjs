@@ -39,17 +39,17 @@ export default {
       option("o3", "Bias in algorithms comes from openly prejudiced rules", false, "reverse", "Metne göre sorun nadiren açıkça önyargılı bir kuraldan gelir; çoğunlukla vekil değişkenlerden girer."),
       option("o4", "Better engineering will soon remove bias from software entirely", false, "extreme", "Yazar önyargıyı düzeltmenin yalnızca daha iyi mühendislik meselesi olmadığını söyler."),
     ] },
-    { key: "q2", type: "detail", prompt: "According to the passage, why did the hospital algorithm underestimate some patients' needs?", evidence: findEvidence(paragraphs, "Because it predicted future health spending rather than illness itself"), options: [
-      option("o1", "It used past spending as a stand-in for illness", true, null, "Algoritma hastalığın yerine sağlık harcamasını tahmin ediyordu; siyahi hastalara tarihsel olarak daha az harcandığı için ihtiyaçları düşük görünüyordu."),
-      option("o2", "It was programmed to treat Black patients differently", false, "reverse", "Metin sorunun açık bir kuraldan değil, masum görünen bir vekil değişkenden geldiğini anlatır."),
-      option("o3", "It relied on doctors' notes that contained prejudice", false, "notstated", "Doktor notlarından söz edilmez."),
-      option("o4", "It predicted illness, but too little money was available", false, "reverse", "Algoritma hastalığı değil harcamayı tahmin ediyordu; para yetersizliği bir bütçe sorunu olarak anlatılmaz."),
+    { key: "q2", type: "detail", prompt: "According to the passage, why did the hospital algorithm underestimate how sick some patients were?", evidence: findEvidence(paragraphs, "Because it predicted future health spending rather than illness itself"), options: [
+      option("o1", "It predicted spending, and less had been spent on equally needy Black patients", true, null, "Algoritma hastalık yerine harcamayı tahmin ediyordu ve aynı ihtiyaç düzeyindeki siyahi hastalara tarihsel olarak daha az para harcanmıştı; bu yüzden onlar olduklarından sağlıklı görünüyordu."),
+      option("o2", "It predicted illness, and less had been spent on equally needy Black patients", false, "detail", "Harcama geçmişi doğru ayrıntıdır ama algoritma hastalığı değil harcamayı tahmin ediyordu; ayrıntı yanlış öğeye bağlanmış."),
+      option("o3", "It predicted spending, and more had been spent on equally needy Black patients", false, "reverse", "Yön tersine çevrilmiş: metne göre aynı ihtiyaç düzeyindeki siyahi hastalara daha az para harcanmıştı."),
+      option("o4", "It flagged patients needing extra care, and reworking its target widened the disparity", false, "reverse", "Hedef yeniden düzenlenince eşitsizlik arttı değil, önemli ölçüde azaldı; ayrıca soru eksikliğin nedenini soruyor."),
     ] },
-    { key: "q3", type: "vocabulary", prompt: 'What does "cloud" mean in the first paragraph?', evidence: findEvidence(paragraphs, "free of the prejudices that cloud human judgement"), options: [
-      option("o1", "Make less clear", true, null, "Burada fiil olarak kullanılan cloud, yargıyı bulandırmak, berraklığını bozmak anlamındadır."),
-      option("o2", "Gather above", false, "context", "İsim olarak 'bulut' anlamı bağlama uymaz; önyargılar yargıyı etkiler."),
-      option("o3", "Store online", false, "context", "Bilişimdeki 'bulut' anlamı bu cümlede geçerli değildir."),
-      option("o4", "Make more confident", false, "context", "Önyargıların yargıyı güçlendirdiği değil, bulandırdığı söylenir."),
+    { key: "q3", type: "vocabulary", prompt: "What does \"absorb\" mean in \"can absorb the pattern and apply it\"?", evidence: findEvidence(paragraphs, "can absorb the pattern and apply it"), options: [
+      option("o1", "Learn and take in as its own", true, null, "Burada absorb, modelin bir örüntüyü içselleştirmesi, öğrenip kendi parçası yapması demektir; ardından onu uygular."),
+      option("o2", "Soak up, as a sponge soaks up liquid", false, "context", "Bu fiziksel emme anlamıdır; soyut bir örüntü için uymaz."),
+      option("o3", "Cushion the impact of, as a shock absorber", false, "context", "Absorb bir darbeyi hafifletmek anlamına da gelir ama burada örüntü sönümlenmez, benimsenir."),
+      option("o4", "Take on the cost of, as a firm absorbs a fee", false, "context", "Maliyeti üstlenmek gerçek bir anlamdır ama modelin örüntüyle ilişkisiyle ilgisi yoktur."),
     ] },
     { key: "q4", type: "inference", prompt: "What can be inferred from the final paragraph?", evidence: findEvidence(paragraphs, "it is one that the people affected arguably have a right to help answer"), options: [
       option("o1", "Fairness choices should not be left to engineers alone", true, null, "Seçim bir değer meselesidir ve etkilenen insanların da yanıta katkı hakkı olduğu ileri sürülür; bu, kararın yalnız teknik uzmanlara bırakılmaması gerektiğini ima eder."),

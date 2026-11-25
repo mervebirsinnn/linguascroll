@@ -4070,7 +4070,7 @@
     {
       "key": "q2",
       "type": "detail",
-      "prompt": "According to the text, what was Ranke's famous phrase directed against?",
+      "prompt": "According to the text, what was Ranke arguing against when he urged historians to show the past as it actually was?",
       "evidence": {
         "paragraphIndex": 0,
         "start": 175,
@@ -4079,31 +4079,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Using history mainly to teach morals",
+          "text": "Reading the past mainly for moral instruction",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Ranke, tarihi başlıca ahlak dersi kaynağı olarak kullanma alışkanlığına karşı çıkıyordu."
+          "explanation": "Ranke tarihi başlıca ahlak dersi kaynağı yapma alışkanlığına karşıydı."
         },
         {
           "key": "o2",
-          "text": "Relying too heavily on original archives",
+          "text": "Treating facts as fish that the historian happens to catch",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Ranke tam tersine arşivlerde ve özgün belgelerde ısrar etti."
+          "trapType": "detail",
+          "explanation": "Balık benzetmesi Carr'a aittir."
         },
         {
           "key": "o3",
-          "text": "Historians who admitted their own bias",
+          "text": "Trusting only what archives and original documents preserve",
           "isCorrect": false,
-          "trapType": "notstated",
-          "explanation": "Metin Ranke'nin böyle bir hedefi olduğunu söylemez."
+          "trapType": "reverse",
+          "explanation": "Ranke arşiv ve özgün belgelerde ısrar etti."
         },
         {
           "key": "o4",
-          "text": "The naive belief in objective facts",
+          "text": "Treating every account as one equally valid perspective",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "İfade safça bulunur, ama Ranke nesnelliğe değil ahlak dersciliğine karşıydı."
+          "trapType": "detail",
+          "explanation": "Bu, Carr'ın görüşünün gerilmiş halidir ve Ranke'ye ait değildir."
         }
       ]
     },
@@ -4119,31 +4119,31 @@
       "options": [
         {
           "key": "o1",
-          "text": "Hidden inside the historian's method",
+          "text": "In opposition to accepted opinion",
           "isCorrect": false,
-          "trapType": "reverse",
-          "explanation": "Metin yanlılığın yöntemde olmadığını açıkça söyler."
+          "trapType": "context",
+          "explanation": "'Swim upstream' akıntıya karşı gitmektir ama burada karşıtlık kastedilmez."
         },
         {
           "key": "o2",
-          "text": "Beside a river near the archive",
+          "text": "At a higher level of institutional authority",
           "isCorrect": false,
           "trapType": "context",
-          "explanation": "Akarsu anlamı mecaz kullanımın gerçek anlamıdır; bağlama uymaz."
+          "explanation": "Hiyerarşide üst düzey anlamı bağlama uymaz."
         },
         {
           "key": "o3",
-          "text": "Added later by careless readers",
+          "text": "At a later stage, in publication",
           "isCorrect": false,
           "trapType": "reverse",
-          "explanation": "Upstream sonrası değil, öncesini anlatır."
+          "explanation": "Upstream sonrası değil öncesini anlatır."
         },
         {
           "key": "o4",
-          "text": "Earlier, in what was preserved",
+          "text": "At an earlier stage than the method",
           "isCorrect": true,
           "trapType": null,
-          "explanation": "Upstream burada mecazdır: yanlılık yöntemden önceki aşamada, neyin saklandığında yatar."
+          "explanation": "Upstream mecazdır: yanlılık yöntemden önceki aşamada, neyin saklandığında yatar."
         }
       ]
     },
